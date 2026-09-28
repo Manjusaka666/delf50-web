@@ -78,7 +78,7 @@
 | 方法 路径 | 说明 |
 |---|---|
 | `GET health` | 数据库 / R2 / 注册开关状态 |
-| `POST auth/register` | `{email,password,displayName?,inviteCode,client?,transport?}` |
+| `POST auth/register` | `{email,password,displayName?,inviteCode?,client?,transport?}`（仅在服务器设置了邀请码时需要 `inviteCode`） |
 | `POST auth/login` | `{email,password,client?,transport?}`；`transport:"bearer"` 返回 App 用 token |
 | `POST auth/logout` · `GET auth/me` · `POST auth/password` · `GET/DELETE auth/sessions[/:id]` | 会话管理；改密会登出其他所有会话 |
 | `GET sync/state?have=<rev>` | 原始文档（头：`X-DELF50-Rev`、`X-DELF50-Hash`）；无变化 204 |
@@ -142,6 +142,6 @@ node scripts/verify.js           # 原有 41 项（内容与学习记录保护�
 TEST_DATABASE_URL=postgres://…  NODE_PATH=<含 jsdom、pg、fake-indexeddb 的目录> node scripts/verify-cloud.js
 ```
 
-`verify-cloud.js` 共 132 项：SigV4 官方向量、合并与投影单元测试；在真实 PostgreSQL 上跑完整 API（CSRF、限流、并发 CAS 只有一个胜出、字节级往返、历史恢复、读模型、事件幂等、R2 签名校验与越权隔离、分片中转上传下载、注册模式与账号上限）；再用 jsdom 把真实 `index.html` + 云同步层 + 应用 bundle 作为多台设备运行：带既有进度注册上传、第二台设备接收、两台设备同时学习后合并计数精确相加、无共同基线时的选择弹窗、共用设备切换账号、录音上传与跨设备恢复、重开应用不产生新版本也不触发其他设备刷新。
+`verify-cloud.js` 共 137 项：SigV4 官方向量、合并与投影单元测试；在真实 PostgreSQL 上跑完整 API（CSRF、限流、并发 CAS 只有一个胜出、字节级往返、历史恢复、读模型、事件幂等、R2 签名校验与越权隔离、分片中转上传下载、注册模式与账号上限）；再用 jsdom 把真实 `index.html` + 云同步层 + 应用 bundle 作为多台设备运行：带既有进度注册上传、第二台设备接收、两台设备同时学习后合并计数精确相加、无共同基线时的选择弹窗、共用设备切换账号、录音上传与跨设备恢复、重开应用不产生新版本也不触发其他设备刷新。
 
 线上排障：浏览器控制台执行 `__DELF50_CLOUD.status()` 可看到同步状态、元数据与最近 60 条同步轨迹。

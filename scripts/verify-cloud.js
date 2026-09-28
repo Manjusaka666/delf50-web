@@ -257,6 +257,9 @@ async function apiTests(base, pool, s3) {
   delete process.env.DELF50_INVITE_CODE;
   let rm = await A.req('POST', '/auth/register', { json: { email: 'open@example.com', password: 'longpassword' } });
   check(rm.status === 403 && rm.data.error.code === 'registration_closed', 'no invite code and no cap: registration stays closed');
+  process.env.DELF50_MAX_USERS = '2.5';
+  const hbad = await A.req('GET', '/health', { auth: false });
+  check(hbad.data.registration === false, 'a malformed account cap keeps registration closed', hbad.data);
   process.env.DELF50_MAX_USERS = '100';
   const hm = await A.req('GET', '/health', { auth: false });
   rm = await apiClient(base).req('POST', '/auth/register', { json: { email: 'open@example.com', password: 'longpassword' } });
@@ -446,8 +449,9 @@ async function apiTests(base, pool, s3) {
   r = await A.req('DELETE', '/media?clipId=d2-half');
   check(r.status === 200 && ![...s3.objects.keys()].some((k) => k.includes('d2-half')), 'deleting an unfinished parted upload leaves no parts behind');
 
-  r = await A.req('PUT', '/media/raw?clipId=d2-s9x&part=0&parts=1', { body: crypto.randomBytes(PART + 1) });
-  check(r.status === 404 || r.status === 413, 'a proxy part above the part size is refused', r.status);
+  await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-over', contentType: 'audio/webm', size: PART * 2 } });
+  r = await A.req('PUT', '/media/raw?clipId=d2-over&part=0&parts=2', { body: crypto.randomBytes(PART + 1), headers: { 'Content-Type': 'audio/webm' } });
+  check(r.status === 413 && ![...s3.objects.keys()].some((k) => k.includes('d2-over')), 'a proxy part above the part size is refused with 413 and not stored', r.status);
 
   r = await A.req('GET', '/media/url?clipId=d2-s1');
   const dl = await fetch(r.data.url);

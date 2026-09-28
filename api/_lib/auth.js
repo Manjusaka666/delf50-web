@@ -228,8 +228,9 @@ function publicUser(u) {
  */
 function registrationMode() {
   const inviteRequired = Boolean(process.env.DELF50_INVITE_CODE);
-  const maxUsers = Number(process.env.DELF50_MAX_USERS || 0);
-  return { open: inviteRequired || maxUsers > 0, inviteRequired, maxUsers: maxUsers > 0 ? maxUsers : null };
+  const raw = String(process.env.DELF50_MAX_USERS || '').trim();
+  const maxUsers = /^[1-9]\d{0,5}$/.test(raw) ? Number(raw) : null;
+  return { open: inviteRequired || maxUsers !== null, inviteRequired, maxUsers };
 }
 
 async function register(req, res, body) {
@@ -245,13 +246,12 @@ async function register(req, res, body) {
   const displayName = str(body.displayName || body.email.split('@')[0], 'displayName', { max: 60 });
   const password = validPassword(body.password);
 
-  const maxUsers = Number(process.env.DELF50_MAX_USERS || 0);
   const hash = await hashPassword(password);
   // Capacity check and insert run under one advisory lock (delf50.create_user),
   // so concurrent registrations cannot exceed DELF50_MAX_USERS.
   const created = await db.one(
     'select status, id, email, display_name, role from delf50.create_user($1, $2, $3, $4, $5)',
-    [body.email.trim(), emailNorm, displayName, hash, maxUsers > 0 ? maxUsers : null]);
+    [body.email.trim(), emailNorm, displayName, hash, mode.maxUsers]);
   if (created.status === 'full') throw new HttpError(403, 'registration_full', 'The maximum number of accounts has been reached');
   const user = created.status === 'ok' ? created : null;
   await recordAttempt('register', ip, Boolean(user));
