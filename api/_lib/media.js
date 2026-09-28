@@ -75,6 +75,7 @@ async function uploadUrl(req, res, auth, body) {
        size_bytes   = case when delf50.media_objects.status = 'stored' then delf50.media_objects.size_bytes else excluded.size_bytes end,
        day = coalesce(excluded.day, delf50.media_objects.day),
        duration_sec = coalesce(excluded.duration_sec, delf50.media_objects.duration_sec),
+       meta = case when delf50.media_objects.status = 'deleted' then delf50.media_objects.meta - 'parts' - 'pendingParts' else delf50.media_objects.meta end,
        status = case when delf50.media_objects.status = 'deleted' then 'pending' else delf50.media_objects.status end
      returning object_key, status, content_type`,
     [auth.userId, kind, clipId, key, contentType, size, day, durationSec]);
@@ -102,7 +103,8 @@ async function markStored(auth, row) {
     throw new HttpError(422, 'size_mismatch', `Uploaded object is ${h.size} bytes; ${declared} bytes were declared`);
   }
   await db.query(
-    `update delf50.media_objects set status = 'stored', size_bytes = $3, stored_at = coalesce(stored_at, now())
+    `update delf50.media_objects set status = 'stored', size_bytes = $3, stored_at = coalesce(stored_at, now()),
+            meta = meta - 'parts' - 'pendingParts'
       where user_id = $1 and id = $2`, [auth.userId, row.id, h.size]);
   return h;
 }
@@ -120,7 +122,7 @@ async function markStoredParts(auth, row, n) {
   }
   await db.query(
     `update delf50.media_objects set status = 'stored', size_bytes = $3, stored_at = coalesce(stored_at, now()),
-            meta = meta || jsonb_build_object('parts', $4::int)
+            meta = (meta - 'pendingParts') || jsonb_build_object('parts', $4::int)
       where user_id = $1 and id = $2`, [auth.userId, row.id, total, n]);
   return { size: total };
 }
@@ -143,6 +145,12 @@ async function proxyUpload(req, res, auth) {
   if (row.status === 'stored') { send(res, 200, { status: 'stored', clipId, size: Number(row.size_bytes) }); return; }
   const bytes = await readRaw(req, PART_BYTES);
   if (!bytes.length) throw new HttpError(400, 'empty_body', 'Empty upload');
+  if (n > 1 && Number(row.meta && row.meta.pendingParts) !== n) {
+    // Remember the planned part count so an unfinished upload can be deleted.
+    await db.query(
+      `update delf50.media_objects set meta = meta || jsonb_build_object('pendingParts', greatest($3::int, coalesce((meta->>'pendingParts')::int, 0)))
+        where user_id = $1 and id = $2`, [auth.userId, row.id, n]);
+  }
   await r2.put(partKey(row, i, n), bytes, row.content_type);
   if (n > 1) { send(res, 200, { status: 'part', clipId, part: i, parts: n, size: bytes.length }); return; }
   const h = await markStored(auth, row);
@@ -184,9 +192,11 @@ async function proxyDownload(req, res, auth) {
 async function remove(req, res, auth) {
   requireR2();
   const row = await findClip(auth, clipParam(req.query.clipId));
-  const n = partsOf(row);
-  await Promise.all(Array.from({ length: n }, (_, i) => r2.del(partKey(row, i, n))));
-  await db.query(`update delf50.media_objects set status = 'deleted', deleted_at = now() where id = $1`, [row.id]);
+  const n = Math.max(partsOf(row), Number(row.meta && row.meta.pendingParts) || 1);
+  const keys = [row.object_key];
+  for (let i = 0; n > 1 && i < n; i++) keys.push(partKey(row, i, n));
+  await Promise.all(keys.map((k) => r2.del(k)));
+  await db.query(`update delf50.media_objects set status = 'deleted', deleted_at = now(), meta = meta - 'parts' - 'pendingParts' where id = $1`, [row.id]);
   send(res, 200, { ok: true });
 }
 

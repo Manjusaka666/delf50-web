@@ -430,6 +430,22 @@ async function apiTests(base, pool, s3) {
   await A.req('PUT', '/media/raw?clipId=d2-bad&part=1&parts=2', { body: crypto.randomBytes(PART), headers: { 'Content-Type': 'audio/webm' } });
   r = await A.req('POST', '/media/complete', { json: { clipId: 'd2-bad', parts: 2 } });
   check(r.status === 422 && ![...s3.objects.keys()].some((k) => k.includes('d2-bad')), 'mis-sized parts are refused and deleted');
+  // Delete a parted clip, then upload it again as one object: no stale part count.
+  r = await A.req('DELETE', '/media?clipId=d2-long');
+  check(r.status === 200 && ![...s3.objects.keys()].some((k) => k.includes('d2-long')), 'deleting a parted recording removes every part');
+  const small = crypto.randomBytes(2000);
+  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-long', contentType: 'audio/webm', size: small.length } });
+  await fetch(r.data.upload.url, { method: 'PUT', body: small, headers: r.data.upload.headers });
+  await A.req('POST', '/media/complete', { json: { clipId: 'd2-long' } });
+  r = await A.req('GET', '/media/url?clipId=d2-long');
+  check(r.data.parts === 1 && typeof r.data.url === 'string', 're-uploading a deleted parted clip as one object clears the part count', r.data);
+  // An unfinished parted upload is fully removed on delete.
+  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-half', contentType: 'audio/webm', size: PART * 2 } });
+  await A.req('PUT', '/media/raw?clipId=d2-half&part=0&parts=2', { body: crypto.randomBytes(PART), headers: { 'Content-Type': 'audio/webm' } });
+  check([...s3.objects.keys()].some((k) => k.includes('d2-half.webm.part-0000')), 'a half-finished parted upload has its first part stored');
+  r = await A.req('DELETE', '/media?clipId=d2-half');
+  check(r.status === 200 && ![...s3.objects.keys()].some((k) => k.includes('d2-half')), 'deleting an unfinished parted upload leaves no parts behind');
+
   r = await A.req('PUT', '/media/raw?clipId=d2-s9x&part=0&parts=1', { body: crypto.randomBytes(PART + 1) });
   check(r.status === 404 || r.status === 413, 'a proxy part above the part size is refused', r.status);
 

@@ -580,18 +580,18 @@
    */
   async function applyRemote(m, remote, compute, kind) {
     trace('apply ' + kind + ' rev=' + remote.rev + (isBooted() ? ' (reload)' : ' (pre-boot)'));
-    await kvPut('base:' + m.userId, { rev: remote.rev, hash: remote.hash, text: remote.text });
     if (!isBooted()) {
       var text = compute(lsGet(STATE_KEY));
-      // If the browser refuses the write (storage full), the base must not move:
-      // the old local text would otherwise look like new work and be pushed.
+      // The base only moves once the document is really in localStorage; if
+      // the browser refuses the write (storage full), nothing changes.
       if (!lsSet(STATE_KEY, text) || lsGet(STATE_KEY) !== text) throw new Error('本机存储空间不足，无法载入云端记录；请清理浏览器存储后重试');
+      await kvPut('base:' + m.userId, { rev: remote.rev, hash: remote.hash, text: remote.text });
       patchMeta({ rev: remote.rev, hash: remote.hash, sem: await semHash(remote.text), syncedAt: nowIso() });
       setStatus(kind === 'merged' ? 'dirty' : 'synced');
       if (kind === 'merged') E.again = true;
       return;
     }
-    E.reload = { remote: remote, compute: compute, kind: kind };
+    E.reload = { remote: remote, compute: compute, kind: kind, userId: m.userId };
     setStatus('reload', kind === 'merged' ? '已合并其他设备的学习记录，页面将刷新以载入。' : '其他设备有新的学习记录，页面将刷新以载入。');
     tryReload();
   }
@@ -635,8 +635,12 @@
       setStatus('error', '本机存储空间不足，无法载入云端记录；请清理浏览器存储后重试。');
       return;
     }
-    patchMeta({ rev: job.remote.rev, hash: job.remote.hash, sem: job.sem, syncedAt: nowIso() });
-    W.location.reload();
+    // Document written: now commit the base, then reload (app writes stay
+    // suppressed meanwhile, so nothing can overwrite the new document).
+    kvPut('base:' + job.userId, { rev: job.remote.rev, hash: job.remote.hash, text: job.remote.text }).then(function () {
+      patchMeta({ rev: job.remote.rev, hash: job.remote.hash, sem: job.sem, syncedAt: nowIso() });
+      W.location.reload();
+    });
   }
 
   async function resolveDecision(choice) {
@@ -1009,7 +1013,7 @@
       mask.querySelector('[data-dc="tab-login"]').addEventListener('click', function () { view.tab = 'login'; view.msg = null; renderAuth(); });
       mask.querySelector('[data-dc="tab-register"]').addEventListener('click', function () { view.tab = 'register'; view.msg = null; renderAuth(); loadRegistrationMode(); });
       var form = mask.querySelector('[data-dc="form"]');
-      Array.prototype.forEach.call(form.elements, function (el) { if (el.name && typed[el.name]) el.value = typed[el.name]; });
+      Array.prototype.forEach.call(form.elements, function (el) { if (el.name && hasOwn(typed, el.name)) el.value = typed[el.name]; });
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         var fd = {}; Array.prototype.forEach.call(form.elements, function (el) { if (el.name) fd[el.name] = el.value; });
