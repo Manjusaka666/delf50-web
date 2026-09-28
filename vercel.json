@@ -1,12 +1,23 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "regions": [
+    "fra1"
+  ],
   "rewrites": [
-    { "source": "/api/v1/:path*", "destination": "/api/v1?__route=:path*" }
+    {
+      "source": "/api/v1/:path*",
+      "destination": "/api/v1?__route=:path*"
+    }
   ],
   "headers": [
     {
       "source": "/cloud/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
     }
   ]
 }

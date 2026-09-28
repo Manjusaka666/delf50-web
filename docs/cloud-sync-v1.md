@@ -89,11 +89,11 @@
 | `GET media` · `POST media/upload-url` · `POST media/complete` · `PUT/GET media/raw` · `GET media/url` · `DELETE media` | 录音（R2） |
 | `POST events` · `GET events?after=&limit=` | App 事件日志 |
 
-**安全**：Cookie 为 `HttpOnly; Secure; SameSite=Lax`；Cookie 认证的写请求必须带 `X-DELF50-Client` 头且 Origin 同源（CSRF）。Bearer token 不能当 Cookie 用。注册需要邀请码（`DELF50_INVITE_CODE`）。登录失败 8 次/15 分钟锁定该邮箱，40 次/15 分钟锁定该 IP。
+**安全**：Cookie 为 `HttpOnly; Secure; SameSite=Lax`；Cookie 认证的写请求必须带 `X-DELF50-Client` 头且 Origin 同源（CSRF）。Bearer token 不能当 Cookie 用。注册规则：设置了 `DELF50_INVITE_CODE` 时需邀请码；未设置时，只有同时设置了账号上限 `DELF50_MAX_USERS` 才开放注册（“检查上限 + 建号”在数据库锁内原子完成），因此接口永远不会对公网无限开放。当前生产配置：无邀请码、上限 2 个账号。登录失败 8 次/15 分钟锁定该邮箱，40 次/15 分钟锁定该 IP。
 
 ## 5. 录音（Cloudflare R2）
 
-对象键：`u/<userId>/speaking/<clipId>.<ext>`。上传：`upload-url` 取 15 分钟预签名 PUT → 浏览器直传 R2 → `complete`（服务端 HEAD 核实：实际大小必须等于声明大小且不超过 50 MB，否则删除对象并拒绝）。只上传当前账号学习记录中引用的录音——浏览器的录音库是按设备而非按账号的，共用设备时不会把别人的录音传进自己的账号。若浏览器无法直连 R2（例如桶未配置 CORS），自动改走函数中转（≤ 4 MB）。其他设备登录后，状态中引用、但本机 IndexedDB 没有的录音会被下载写入应用自己的 `delf50_audio_v1`，应用原有的回放功能直接可用。SigV4 签名器为零依赖实现，已用 AWS 官方测试向量验证。
+对象键：`u/<userId>/speaking/<clipId>.<ext>`。上传：`upload-url` 取 15 分钟预签名 PUT → 浏览器直传 R2 → `complete`（服务端 HEAD 核实：实际大小必须等于声明大小且不超过 50 MB，否则删除对象并拒绝）。只上传当前账号学习记录中引用的录音——浏览器的录音库是按设备而非按账号的，共用设备时不会把别人的录音传进自己的账号。若浏览器无法直连 R2（例如桶未配置 CORS），自动改走函数中转：录音按 3.5 MB 分片逐片上传（受 Vercel 4.5 MB 请求体限制），以 `<key>.part-0000…` 分片对象保存，`complete` 校验分片齐全、顺序尺寸正确且总大小等于声明值；下载时按片取回再拼接，并核对总大小。因此不论是否配置 CORS，任意长度（≤ 50 MB）的录音都能可靠同步。其他设备登录后，状态中引用、但本机 IndexedDB 没有的录音会被下载写入应用自己的 `delf50_audio_v1`，应用原有的回放功能直接可用。SigV4 签名器为零依赖实现，已用 AWS 官方测试向量验证。
 
 ## 6. 为未来 App 预留
 
@@ -103,22 +103,19 @@
 
 ## 7. 部署与配置
 
-Vercel 项目 `delf50-mvp` 已配置：
+Vercel 项目 `delf50-mvp` 已配置（函数区域 `fra1`，与 Neon 法兰克福同区）：
 
 | 变量 | 状态 |
 |---|---|
-| `DATABASE_URL` | ✅ 已设置（Neon `DELF-Learning` 主分支，pooled） |
-| `DELF50_INVITE_CODE` | ✅ 已设置（注册所需邀请码） |
-| `R2_BUCKET` | ✅ `delf50-learning`（已创建） |
-| `R2_ACCOUNT_ID` | ⏳ 待填：Cloudflare 账号 ID |
-| `R2_ACCESS_KEY_ID` / `R2_SECRET_ACCESS_KEY` | ⏳ 待填：R2 API Token（见下） |
-| `DELF50_MAX_USERS` | 可选：账号数量上限 |
+| `DATABASE_URL` | ✅ Neon `DELF-Learning` 主分支（pooled） |
+| `DELF50_MAX_USERS` | ✅ `2`（仅两位学习者；无邀请码） |
+| `DELF50_INVITE_CODE` | 未设置（如需邀请码注册，设置即可生效） |
+| `R2_ACCOUNT_ID` · `R2_BUCKET` | ✅ 账号 ID · `delf50-learning` |
+| `R2_ACCESS_KEY_ID` / `R2_SECRET_ACCESS_KEY` | ✅ R2 API Token（Object Read & Write，限定该桶） |
 
-未配置 R2 时一切照常，只是录音暂存本机；配置后下一次同步会自动补传全部历史录音。
+验证 R2 凭据：`GET /api/v1/health?deep=1` 返回 `"r2Reachable": true`。
 
-**创建 R2 API Token**：Cloudflare 控制台 → R2 → Manage R2 API Tokens → Create API Token → 权限 *Object Read & Write*，限定桶 `delf50-learning` → 得到 Access Key ID 与 Secret Access Key；账号 ID 在 R2 概览页右侧。
-
-**R2 CORS**（可选，让浏览器直传直取，省去函数中转）：R2 → `delf50-learning` → Settings → CORS Policy：
+**R2 CORS**（可选，让浏览器直传直取，省去函数中转）：当前的对象读写 token 无权修改桶设置，需在 Cloudflare 控制台操作一次：R2 → `delf50-learning` → Settings → CORS Policy：
 
 ```json
 [
@@ -132,9 +129,11 @@ Vercel 项目 `delf50-mvp` 已配置：
 ]
 ```
 
+或使用有 *Admin Read & Write* 权限的 R2 token 运行 `node scripts/r2-cors.js`。不配置也完全可用（走分片中转）。
+
 **数据库迁移**：`DATABASE_URL=… npm run db:migrate`（需 Node ≥ 22；生产库已执行 `0001_init`、`0002_create_user`）。
 
-**部署**：`vercel --prod`（本项目为 CLI 部署）。`package.json` 只有运行时依赖 `@neondatabase/serverless`，没有 build 脚本，Vercel 仍按静态站点 + 函数处理。
+**部署**：`vercel --prod`，或在 Vercel 上以 Git 源（`manjusaka666/delf50-web` 的 `main`）创建生产部署。`package.json` 只有运行时依赖 `@neondatabase/serverless`，没有 build 脚本，Vercel 仍按静态站点 + 函数处理。
 
 ## 8. 验证
 
@@ -143,6 +142,6 @@ node scripts/verify.js           # 原有 41 项（内容与学习记录保护�
 TEST_DATABASE_URL=postgres://…  NODE_PATH=<含 jsdom、pg、fake-indexeddb 的目录> node scripts/verify-cloud.js
 ```
 
-`verify-cloud.js` 共 121 项：SigV4 官方向量、合并与投影单元测试；在真实 PostgreSQL 上跑完整 API（CSRF、限流、并发 CAS 只有一个胜出、字节级往返、历史恢复、读模型、事件幂等、R2 签名校验与越权隔离）；再用 jsdom 把真实 `index.html` + 云同步层 + 应用 bundle 作为多台设备运行：带既有进度注册上传、第二台设备接收、两台设备同时学习后合并计数精确相加、无共同基线时的选择弹窗、共用设备切换账号、录音上传与跨设备恢复、重开应用不产生新版本也不触发其他设备刷新。
+`verify-cloud.js` 共 132 项：SigV4 官方向量、合并与投影单元测试；在真实 PostgreSQL 上跑完整 API（CSRF、限流、并发 CAS 只有一个胜出、字节级往返、历史恢复、读模型、事件幂等、R2 签名校验与越权隔离、分片中转上传下载、注册模式与账号上限）；再用 jsdom 把真实 `index.html` + 云同步层 + 应用 bundle 作为多台设备运行：带既有进度注册上传、第二台设备接收、两台设备同时学习后合并计数精确相加、无共同基线时的选择弹窗、共用设备切换账号、录音上传与跨设备恢复、重开应用不产生新版本也不触发其他设备刷新。
 
 线上排障：浏览器控制台执行 `__DELF50_CLOUD.status()` 可看到同步状态、元数据与最近 60 条同步轨迹。

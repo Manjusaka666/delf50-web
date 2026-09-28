@@ -8,7 +8,7 @@
  * All responses are JSON unless noted; errors are {error:{code,message,…}}.
  *
  *   GET    health
- *   POST   auth/register      {email,password,displayName?,inviteCode,client?,transport?}
+ *   POST   auth/register      {email,password,displayName?,inviteCode?,client?,transport?}
  *   POST   auth/login         {email,password,client?,transport?}
  *   POST   auth/logout
  *   GET    auth/me
@@ -28,8 +28,8 @@
  *   GET    media
  *   POST   media/upload-url   {clipId,contentType,size,kind?,day?,durationSec?}
  *   POST   media/complete     {clipId}
- *   PUT    media/raw?clipId=              raw bytes (≤ 4 MB)
- *   GET    media/raw?clipId=              raw bytes
+ *   PUT    media/raw?clipId=[&part=&parts=]   raw bytes (≤ 3.5 MB per part)
+ *   GET    media/raw?clipId=[&part=]          raw bytes
  *   GET    media/url?clipId=
  *   DELETE media?clipId=
  *   POST   events             {events:[…]}
@@ -71,7 +71,16 @@ async function dispatch(req, res) {
     if (db.configured()) {
       try { dbOk = Boolean(await db.one('select 1 as ok')); } catch (e) { dbOk = false; }
     }
-    return send(res, dbOk ? 200 : 503, { ok: dbOk, db: dbOk, r2: r2.configured(), registration: Boolean(process.env.DELF50_INVITE_CODE), api: 1 });
+    // ?deep=1 also proves the R2 credentials with a signed HEAD (404 = OK).
+    let r2Reachable = null;
+    if (r2.configured() && req.query.deep === '1') {
+      try { await r2.head('_healthcheck/ping'); r2Reachable = true; } catch (e) { r2Reachable = false; }
+    }
+    const reg = auth.registrationMode();
+    return send(res, dbOk ? 200 : 503, {
+      ok: dbOk, db: dbOk, r2: r2.configured(), r2Reachable,
+      registration: reg.open, inviteRequired: reg.inviteRequired, api: 1
+    });
   }
 
   if (a === 'auth') {

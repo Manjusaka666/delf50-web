@@ -249,6 +249,22 @@ async function apiTests(base, pool, s3) {
   const health = await A.req('GET', '/health', { auth: false });
   check(health.status === 200 && health.data.db === true && health.data.r2 === true, 'health reports database and R2', health.data);
 
+  const deep = await A.req('GET', '/health?deep=1', { auth: false });
+  check(deep.data.r2Reachable === true && deep.data.inviteRequired === true, 'deep health proves R2 credentials with a signed request', deep.data);
+
+  // Without an invite code, sign-up needs an account cap; never open-ended.
+  const savedInvite = process.env.DELF50_INVITE_CODE;
+  delete process.env.DELF50_INVITE_CODE;
+  let rm = await A.req('POST', '/auth/register', { json: { email: 'open@example.com', password: 'longpassword' } });
+  check(rm.status === 403 && rm.data.error.code === 'registration_closed', 'no invite code and no cap: registration stays closed');
+  process.env.DELF50_MAX_USERS = '100';
+  const hm = await A.req('GET', '/health', { auth: false });
+  rm = await apiClient(base).req('POST', '/auth/register', { json: { email: 'open@example.com', password: 'longpassword' } });
+  check(hm.data.registration === true && hm.data.inviteRequired === false && rm.status === 201, 'no invite code with a cap: registration needs no code', { health: hm.data, status: rm.status });
+  delete process.env.DELF50_MAX_USERS;
+  process.env.DELF50_INVITE_CODE = savedInvite;
+  await pool.query("delete from delf50.users where email_norm = 'open@example.com'");
+
   let r = await A.req('POST', '/auth/register', { json: { email: 'a@example.com', password: 'longpassword', inviteCode: 'nope' } });
   check(r.status === 403 && r.data.error.code === 'invalid_invite', 'registration requires the invite code');
   r = await A.req('POST', '/auth/register', { json: { email: 'a@example.com', password: 'short', inviteCode: 'INVITE-123' } });
@@ -392,13 +408,38 @@ async function apiTests(base, pool, s3) {
   r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-s9', contentType: 'audio/mp4', size: 10 } });
   r = await A.req('PUT', '/media/raw?clipId=d2-s9', { body: Buffer.from('0123456789'), headers: { 'Content-Type': 'audio/mp4' } });
   check(r.data.status === 'stored' && s3.objects.has(`u/${uid}/speaking/d2-s9.m4a`), 'proxy upload stores through the function (header-signed)');
+  const big = crypto.randomBytes(8 * 1024 * 1024 + 123);
+  const PART = 3.5 * 1024 * 1024;
+  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-long', contentType: 'audio/webm', size: big.length } });
+  check(r.data.proxy.partBytes === PART, 'upload-url advertises the proxy part size');
+  const nParts = Math.ceil(big.length / PART);
+  const partRes = [];
+  for (let i = 0; i < nParts; i++) {
+    partRes.push(await A.req('PUT', `/media/raw?clipId=d2-long&part=${i}&parts=${nParts}`, { body: big.subarray(i * PART, (i + 1) * PART), headers: { 'Content-Type': 'audio/webm' } }));
+  }
+  r = await A.req('POST', '/media/complete', { json: { clipId: 'd2-long', parts: nParts } });
+  check(partRes.every((x) => x.status === 200) && r.data.status === 'stored' && r.data.size === big.length, 'a long recording uploads through the API in parts', r.data);
+  r = await A.req('GET', '/media/url?clipId=d2-long');
+  const got3 = [];
+  for (let i = 0; i < r.data.parts; i++) got3.push((await A.req('GET', `/media/raw?clipId=d2-long&part=${i}`)).data);
+  check(r.data.parts === nParts && Buffer.concat(got3).equals(big), 'a parted recording downloads back byte-identical', { parts: r.data.parts });
+  r = await A.req('PUT', '/media/raw?clipId=d2-long&part=0&parts=1', { body: crypto.randomBytes(PART + 1), headers: { 'Content-Type': 'audio/webm' } });
+  check(r.status === 200 && r.data.status === 'stored', 'a stored recording is not overwritten by a late part');
+  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-bad', contentType: 'audio/webm', size: PART * 2 } });
+  await A.req('PUT', '/media/raw?clipId=d2-bad&part=0&parts=2', { body: crypto.randomBytes(1000), headers: { 'Content-Type': 'audio/webm' } });
+  await A.req('PUT', '/media/raw?clipId=d2-bad&part=1&parts=2', { body: crypto.randomBytes(PART), headers: { 'Content-Type': 'audio/webm' } });
+  r = await A.req('POST', '/media/complete', { json: { clipId: 'd2-bad', parts: 2 } });
+  check(r.status === 422 && ![...s3.objects.keys()].some((k) => k.includes('d2-bad')), 'mis-sized parts are refused and deleted');
+  r = await A.req('PUT', '/media/raw?clipId=d2-s9x&part=0&parts=1', { body: crypto.randomBytes(PART + 1) });
+  check(r.status === 404 || r.status === 413, 'a proxy part above the part size is refused', r.status);
+
   r = await A.req('GET', '/media/url?clipId=d2-s1');
   const dl = await fetch(r.data.url);
   check(dl.ok && Buffer.from(await dl.arrayBuffer()).equals(audio), 'presigned GET returns the exact bytes');
   r = await A.req('GET', '/media/raw?clipId=d2-s9');
   check(r.data.toString() === '0123456789', 'proxy download returns the exact bytes');
   r = await A.req('GET', '/media');
-  check(r.data.media.length === 2 && r.data.media.every((x) => x.status === 'stored'), 'media list');
+  check(r.data.media.filter((x) => x.status === 'stored').length === 3, 'media list', r.data.media.map((x) => [x.clipId, x.status]));
   r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-big', contentType: 'audio/webm', size: 10 } });
   put = await fetch(r.data.upload.url, { method: 'PUT', body: crypto.randomBytes(5000), headers: r.data.upload.headers });
   r = await A.req('POST', '/media/complete', { json: { clipId: 'd2-big' } });
@@ -596,6 +637,11 @@ async function browserTests(base, pool, s3) {
   const s0 = JSON.parse(beforeLogin);
   check(s0.grammar.attempts >= 1 && Object.keys(s0.reading.answers).length === 3 && s0.writing.count === 1, 'anonymous learning is recorded locally', { g: s0.grammar.attempts, r: Object.keys(s0.reading.answers).length, w: s0.writing.count });
   await sleep(1500);
+  if (!A.w.document.querySelector('[data-dc="form"]')) A.click('.dc-chip');
+  await until(() => A.w.document.querySelector('[data-dc="tab-register"]'), 5000, 'auth panel');
+  A.click('[data-dc="tab-register"]');
+  await sleep(600);
+  check(A.w.document.querySelector('[data-dc="form"] [name="displayName"]') && !A.w.document.querySelector('[name="inviteCode"]'), 'the sign-up form asks for no invite code when the server needs none');
   await A.signIn('register', 'lea@example.com', 'correct-horse-9', { displayName: 'Léa', inviteCode: 'INVITE-123' });
   await synced(A, 'lea@example.com');
   let h = await head('lea@example.com');
@@ -658,7 +704,8 @@ async function browserTests(base, pool, s3) {
   check(Cl.semanticText(A.text()) === Cl.semanticText(B.text()), 'both devices end with the same learning record');
 
   // ── recordings ──
-  const clip = { id: 'd1-s' + Date.now(), blob: new Blob([crypto.randomBytes(4096)], { type: 'audio/webm' }), at: Date.now() };
+  // 8 MB: larger than one proxy part, so the client must split it.
+  const clip = { id: 'd1-s' + Date.now(), blob: new Blob([crypto.randomBytes(8 * 1024 * 1024 + 77)], { type: 'audio/webm' }), at: Date.now() };
   await new Promise((resolve, reject) => {
     const rq = A.w.indexedDB.open('delf50_audio_v1', 1);
     rq.onupgradeneeded = () => rq.result.createObjectStore('clips', { keyPath: 'id' });
@@ -673,8 +720,9 @@ async function browserTests(base, pool, s3) {
   await synced(A, 'lea@example.com');
   await A.w.__DELF50_CLOUD.syncMedia();
   const leaId = (await pool.query("select id from delf50.users where email_norm='lea@example.com'")).rows[0].id;
-  const stored = s3.objects.get(`u/${leaId}/speaking/${clip.id}.webm`);
-  check(stored && stored.body.equals(Buffer.from(await clip.blob.arrayBuffer())), 'a recording is uploaded to R2 (proxy fallback when direct upload is blocked)', A.cloud().media);
+  const partKeys = [...s3.objects.keys()].filter((k) => k.startsWith(`u/${leaId}/speaking/${clip.id}.webm.part-`)).sort();
+  const stored = Buffer.concat(partKeys.map((k) => s3.objects.get(k).body));
+  check(partKeys.length === 3 && stored.equals(Buffer.from(await clip.blob.arrayBuffer())), 'an 8 MB recording is uploaded to R2 in parts when direct upload is blocked (no CORS)', { parts: partKeys.length, media: A.cloud().media });
   await catchUp(B);
   await settle(B, 'lea@example.com');
   await B.w.__DELF50_CLOUD.syncMedia();
@@ -683,7 +731,7 @@ async function browserTests(base, pool, s3) {
     rq.onupgradeneeded = () => rq.result.createObjectStore('clips', { keyPath: 'id' });
     rq.onsuccess = () => { const g = rq.result.transaction('clips').objectStore('clips').get(clip.id); g.onsuccess = () => { rq.result.close(); resolve(g.result); }; };
   });
-  check(got && got.blob && Buffer.from(await got.blob.arrayBuffer()).equals(Buffer.from(await clip.blob.arrayBuffer())), 'the recording is restored into the second device’s audio store (direct presigned GET)');
+  check(got && got.blob && Buffer.from(await got.blob.arrayBuffer()).equals(Buffer.from(await clip.blob.arrayBuffer())), 'the parted recording is restored byte-identical into the second device’s audio store');
 
   // ── C: independent local history meets an existing account ──
   const C = new Device('C');
@@ -741,6 +789,9 @@ async function browserTests(base, pool, s3) {
   await settle(C, 'lea@example.com');
   check(C.state().grammar.attempts === JSON.parse((await head('lea@example.com')).state_text).grammar.attempts && C.state().grammar.attempts > 0, 'the first learner signs back in and gets their record back');
 
+  const third = await apiClient(base).req('POST', '/auth/register', { json: { email: 'third@example.com', password: 'longpassword' } });
+  check(third.status === 403 && third.data.error.code === 'registration_full', 'with two learners registered, a third sign-up is refused', third.data);
+
   // ── "use this device" archives the cloud copy before replacing it ──
   const D = new Device('D');
   await D.open();
@@ -789,6 +840,10 @@ async function main() {
       await apiTests(app.base, pool, s3);
       await pool.query('delete from delf50.users');
       s3.objects.clear();
+      // The browser section runs the production configuration: no invite
+      // code, two accounts at most.
+      delete process.env.DELF50_INVITE_CODE;
+      process.env.DELF50_MAX_USERS = '2';
       await browserTests(app.base, pool, s3);
     } catch (e) {
       check(false, 'suite aborted', e.stack || String(e));

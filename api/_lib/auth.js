@@ -221,12 +221,23 @@ function publicUser(u) {
   return { id: u.id, email: u.email, displayName: u.display_name || u.displayName, role: u.role };
 }
 
+/**
+ * Registration is open when an invite code is configured (DELF50_INVITE_CODE),
+ * or, without one, only when an account cap is set (DELF50_MAX_USERS) — so the
+ * API is never left open to unlimited sign-ups from the internet.
+ */
+function registrationMode() {
+  const inviteRequired = Boolean(process.env.DELF50_INVITE_CODE);
+  const maxUsers = Number(process.env.DELF50_MAX_USERS || 0);
+  return { open: inviteRequired || maxUsers > 0, inviteRequired, maxUsers: maxUsers > 0 ? maxUsers : null };
+}
+
 async function register(req, res, body) {
-  const invite = process.env.DELF50_INVITE_CODE;
-  if (!invite) throw new HttpError(403, 'registration_closed', 'Registration is closed');
+  const mode = registrationMode();
+  if (!mode.open) throw new HttpError(403, 'registration_closed', 'Registration is closed');
   const ip = clientIp(req);
   await enforceLimit('register', ip, 10, 60);
-  if (typeof body.inviteCode !== 'string' || !timingSafeStrEq(body.inviteCode.trim(), invite)) {
+  if (mode.inviteRequired && (typeof body.inviteCode !== 'string' || !timingSafeStrEq(body.inviteCode.trim(), process.env.DELF50_INVITE_CODE))) {
     await recordAttempt('register', ip, false);
     throw new HttpError(403, 'invalid_invite', 'Invalid invite code', { field: 'inviteCode' });
   }
@@ -320,6 +331,6 @@ async function revokeSession(auth, id) {
 }
 
 module.exports = {
-  authenticate, requireAuth, assertCsrf, register, login, logout, changePassword, listSessions, revokeSession,
+  authenticate, requireAuth, assertCsrf, registrationMode, register, login, logout, changePassword, listSessions, revokeSession,
   hashPassword, verifyPassword, COOKIE
 };
