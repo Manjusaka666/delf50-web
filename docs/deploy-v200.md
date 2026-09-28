@@ -87,7 +87,7 @@ curl -s "https://delf50-mvp.vercel.app/api/source?i=12&v=v200-answer-order-rando
 | `index.html` | 删除死代码 | 移除已失效的 commit 常量；加载契约未变 |
 | `README.md` | 更新 | 记录架构改动、内容口径与验证方式 |
 
-`v199-authentic-materials.js` **未删除**，只是移出加载链，保留在仓库中供参考。
+`v199-authentic-materials.js` 已移出加载链，现已从仓库删除。
 
 ## 修改内容后必须重新构建
 

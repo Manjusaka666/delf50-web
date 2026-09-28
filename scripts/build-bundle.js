@@ -57,12 +57,8 @@ const LAYERS = [
   'v187-curriculum-aligned-reading.js',
   'v188-full-curriculum-bank.js',
   'v189-input-quality.js',
-  // v199-authentic-materials.js is deliberately out of the chain: it rewrote every
-  // day 5-50 document from 26 shared four-part skeletons, so 368 documents shared
-  // one rhetorical shape, each day's 4th reading and 1st listening drew the same
-  // material, and every correct option was a verbatim copy of a sentence from the
-  // text. The file stays in the repository for reference. v189 (180 sourced seeds,
-  // per-day whitelists, genre-specific stems) is the better generator underneath.
+  // (v199-authentic-materials was deliberately left out of the chain and has been
+  // removed from the repository, together with the other unused v14/v185 files.)
   'content/corpus-v200.js',
   'content/corpus-v200-d03.js',
   'content/corpus-v200-d04-d09.js',

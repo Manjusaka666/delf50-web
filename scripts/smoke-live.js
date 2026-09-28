@@ -4,9 +4,10 @@
  * Live smoke test against real infrastructure: runs the API in-process against
  * DATABASE_URL (the delf50_api role) and NEON_AUTH_BASE_URL, signs up two
  * throwaway accounts (use a test branch), and checks exact round trips,
- * latency, JWTs, RLS isolation, vocabulary and sign-out.
+ * latency, JWTs, RLS isolation, vocabulary, sign-out and, with R2_* set, a
+ * real R2 upload/download/delete.
  *
- *   DATABASE_URL=… NEON_AUTH_BASE_URL=… node scripts/smoke-live.js
+ *   DATABASE_URL=… NEON_AUTH_BASE_URL=… [R2_ACCOUNT_ID=… R2_ACCESS_KEY_ID=… R2_SECRET_ACCESS_KEY=… R2_BUCKET=…] node scripts/smoke-live.js
  */
 const http = require('http');
 const v1 = require('../api/v1.js');
@@ -88,6 +89,14 @@ function client(base) {
     const rv = r.data.item ? await B.req('POST', '/vocab/review', { vocabularyId: r.data.item.id, rating: 4 }) : { data: {} };
     check(r.status === 201 && rv.data.item && rv.data.item.interval_days === 1, 'vocabulary add + review', { add: r.data, review: rv.data });
 
+    if (process.env.R2_BUCKET) { // a real R2 round trip through the API, then removed again
+      const clip = require('crypto').randomBytes(200 * 1024);
+      const put = await fetch(`${base}/api/v1/media/raw?clipId=smoke-${Date.now()}&type=audio%2Fwebm&size=${clip.length}`, { method: 'PUT', headers: { cookie: A.cookie, origin: ORIGIN, 'content-type': 'application/octet-stream' }, body: clip });
+      const stored = await put.json();
+      const got = Buffer.from(await (await fetch(`${base}/api/v1/media/raw?clipId=${stored.clipId}`, { headers: { cookie: A.cookie } })).arrayBuffer());
+      const del = await fetch(`${base}/api/v1/media?clipId=${stored.clipId}`, { method: 'DELETE', headers: { cookie: A.cookie, origin: ORIGIN } });
+      check(stored.status === 'stored' && Buffer.compare(got, clip) === 0 && del.status === 200, 'R2: a recording uploads, downloads byte-identical and is deleted', stored);
+    }
     const old = A.cookie;
     r = await A.req('POST', '/auth/sign-out', {});
     const after = await fetch(base + '/api/v1/bootstrap', { headers: { cookie: old } });
