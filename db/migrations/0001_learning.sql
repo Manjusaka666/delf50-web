@@ -219,7 +219,8 @@ create table if not exists delf50.vocabulary_reviews (
 );
 
 -- Daily activity, derived from the records (never stored twice).
-create or replace view delf50.daily_activity with (security_invoker = true) as
+drop view if exists delf50.daily_activity;
+create view delf50.daily_activity with (security_invoker = true) as
             select user_id, answered_at::date as day, 'grammar' as module, count(*) as n from delf50.grammar_attempts group by 1, 2
   union all select user_id, answered_at::date, 'reading', count(*) from delf50.reading_answers group by 1, 2
   union all select user_id, answered_at::date, 'listening', count(*) from delf50.listening_answers group by 1, 2

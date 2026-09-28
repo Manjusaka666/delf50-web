@@ -48,7 +48,8 @@ alter table delf50.user_vocabulary add column if not exists course text;
 alter table delf50.vocabulary_reviews add column if not exists course text;
 
 -- Daily activity per course (course is appended as the last column).
-create or replace view delf50.daily_activity with (security_invoker = true) as
+drop view if exists delf50.daily_activity;
+create view delf50.daily_activity with (security_invoker = true) as
             select user_id, answered_at::date as day, 'grammar' as module, count(*) as n, course from delf50.grammar_attempts where not deleted group by user_id, 2, course
   union all select user_id, recorded_at::date, 'grammar_production', count(*), course from delf50.grammar_productions where done group by user_id, 2, course
   union all select user_id, answered_at::date, 'reading', count(*), course from delf50.reading_answers group by user_id, 2, course
