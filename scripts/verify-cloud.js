@@ -61,7 +61,7 @@ function sampleState() {
     version: '2.0.2', selectedDay: 3, intensity: 'standard', taskDone: { '3-0': true },
     grammar: { attempts: 4, correct: 3, skill: { subj: { a: 2, c: 1 } } },
     reading: { attempts: 3, correct: 2, index: 1, answers: { '3:r181-d03-s01:0': 1, '3:r181-d03-s01:1': 0, 'odd-key': 'x' } },
-    listening: { attempts: 1, correct: 1, index: 0, answers: { '2:l1:0': 2 } },
+    listening: { attempts: 0, correct: 0, index: 0 }, // no answers map at all: absence must round-trip too
     application: { count: 1, index: 1, records: [{ day: 3, title: 'Lettre', text: 'Madame, …', hits: ['donc'], at: '2026-09-28T08:00:00.000Z', contentId: 'a1' }] },
     writing: { count: 2, index: 2, records: [
       { day: 2, title: 'Essai', text: 'Je pense que…', words: 120, connectors: ['cependant'], paragraphs: 3, at: '2026-09-27T09:15:00.123Z', contentId: 'w1' },
@@ -104,10 +104,11 @@ function unitTests() {
 
   const S = sampleState();
   const d0 = C.diff({}, {}, S, SPEC);
-  const docKeys = d0.doc.map((o) => o[0].join('.'));
-  check(!docKeys.some((k) => /answers|records|^errors|grammarReview202|drafts171\.writing|completed/.test(k)) && docKeys.includes('reading') && docKeys.includes('meta172'),
-    'records are never part of the document batch', docKeys);
-  check(d0.ops.writing.set.length === 2 && d0.ops.errors.set.length === 4 && d0.ops.completions.set.length === 2 && d0.ops.reading.set.length === 3,
+  const docOf = Object.fromEntries(d0.doc.map((o) => [o[0].join('.'), o[1]]));
+  check(C.equal(docOf.errors, []) && C.equal(docOf.grammarReview202, {}) && C.equal(docOf.reading.answers, {}) && !('answers' in docOf.listening)
+    && C.equal(docOf.contentProgress172, { completed: { writing: {}, reading: {} } }) && C.equal(docOf.drafts171, { writing: {}, application: {} }) && docOf.meta172,
+    'the document holds only empty record containers, never records', docOf);
+  check(!d0.ops.listening && d0.ops.writing.set.length === 2 && d0.ops.errors.set.length === 4 && d0.ops.completions.set.length === 2 && d0.ops.reading.set.length === 3,
     'a first batch writes every record as its own row');
   check(C.equal(d0.pos.errors, [0, 1, 2, 3]) && new Set(d0.ops.errors.set.map((x) => x[0][0])).size === 4, 'identical list items get distinct keys');
 
@@ -135,7 +136,7 @@ function unitTests() {
   // Column mapping round trip for every collection.
   let exact = true;
   for (const c of SPEC) {
-    const v = c.path.reduce((o, k) => o && o[k], S);
+    const v = c.path.reduce((o, k) => o && o[k], S) || {};
     const items = c.kind === 'list' ? v.map((x, i) => [[String(i)], x]) : c.kind === 'map2'
       ? Object.entries(v).flatMap(([m, o]) => Object.entries(o).map(([k, x]) => [[m, k], x])) : Object.entries(v).map(([k, x]) => [[k], x]);
     for (const [key, x] of items) {

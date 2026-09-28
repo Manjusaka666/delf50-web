@@ -10,8 +10,8 @@
  *
  * A record's fields go to typed columns when the value has the column's type,
  * anything else to `extra`, so every record reads back exactly as written.
- * (A two-level map keeps its first level, e.g. the module names, in the
- * document, so empty modules survive.)
+ * The document keeps each collection's empty container (a two-level map
+ * keeps its first level, e.g. the module names), so presence round-trips.
  *
  * Wire format of a change batch (see cloud/delf50-cloud.js):
  *   doc: [[path, value] | [path]]                     set / delete in the document
@@ -170,24 +170,25 @@ async function bootstrap(user) {
   names.forEach((n, i) => {
     const c = COLLECTIONS[n];
     const rows = res[i + 1];
-    let parent = state;
-    for (const k of c.path.slice(0, -1)) parent = isObj(parent) ? parent[k] : undefined;
-    if (!rows.length && !isObj(parent)) return;
+    // The document holds the collection's empty container (a two-level map:
+    // its first level), so a collection's presence round-trips; rows fill it.
+    let cur = state;
+    for (const k of c.path) cur = isObj(cur) ? cur[k] : undefined;
+    const list = c.kind === 'list';
+    if (!rows.length && !(list ? Array.isArray(cur) : isObj(cur))) return;
     let value;
-    if (c.kind === 'list') {
+    if (list) {
       value = rows.map((r) => fromRow(c, r));
       positions[n] = rows.map((r) => Number(r.pos));
-    } else if (c.kind === 'map2') {
-      // The document keeps the first level (possibly empty maps) as a skeleton.
-      value = isObj(parent) && isObj(parent[c.path[c.path.length - 1]]) ? parent[c.path[c.path.length - 1]] : {};
-      for (const r of rows) {
-        const m = r[c.keys[0]];
-        if (!isObj(value[m])) value[m] = {};
-        value[m][r[c.keys[1]]] = fromRow(c, r);
-      }
     } else {
-      value = {};
-      for (const r of rows) value[r[c.keys[0]]] = fromRow(c, r);
+      value = isObj(cur) ? cur : {};
+      for (const r of rows) {
+        if (c.kind === 'map2') {
+          const m = r[c.keys[0]];
+          if (!isObj(value[m])) value[m] = {};
+          value[m][r[c.keys[1]]] = fromRow(c, r);
+        } else value[r[c.keys[0]]] = fromRow(c, r);
+      }
     }
     setPath(state, c.path, value);
   });

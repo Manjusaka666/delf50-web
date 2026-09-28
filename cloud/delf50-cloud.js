@@ -62,8 +62,9 @@
   }
 
   /**
-   * S without the record collections (those are rows, not document). A
-   * two-level map keeps its first level as an empty skeleton.
+   * S with each record collection emptied (its records are rows, not
+   * document). The empty container stays, so a collection's presence round
+   * trips; a two-level map keeps its first level (e.g. module names).
    */
   function docView(S, spec) {
     var out = Object.assign({}, S);
@@ -73,11 +74,12 @@
         if (!isObj(o[c.path[i]])) return;
         o = o[c.path[i]] = Object.assign({}, o[c.path[i]]);
       }
-      if (c.kind === 'map2' && isObj(o[last])) {
-        var sk = {};
-        Object.keys(o[last]).forEach(function (m) { sk[m] = isObj(o[last][m]) ? {} : o[last][m]; });
-        o[last] = sk;
-      } else delete o[last];
+      var v = o[last];
+      if (c.kind === 'list') { if (Array.isArray(v)) o[last] = []; return; }
+      if (!isObj(v)) return;
+      var sk = {};
+      if (c.kind === 'map2') Object.keys(v).forEach(function (m) { sk[m] = isObj(v[m]) ? {} : v[m]; });
+      o[last] = sk;
     });
     return out;
   }
