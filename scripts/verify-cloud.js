@@ -102,6 +102,11 @@ function unitTests() {
   const arr = C.mergeArray(['r1', 'r2'], ['r1', 'r3'], ['r1', 'r2', 'r4']);
   check(arr.join() === 'r1,r3,r4', 'array merge applies removals and additions from both sides', arr);
 
+  const H = require(path.join(ROOT, 'api/_lib/http.js'));
+  results.push('  (async readRaw checks run with the API section)');
+  H.readRaw({ rawBody: Buffer.alloc(11) }, 10).then(() => check(false, 'buffered rawBody over the limit is refused'), (e) => check(e.status === 413, 'buffered rawBody over the limit is refused'));
+  H.readRaw({ body: 'x'.repeat(11) }, 10).then(() => check(false, 'buffered string body over the limit is refused'), (e) => check(e.status === 413, 'buffered string body over the limit is refused'));
+
   const P = require(path.join(ROOT, 'api/_lib/projection.js'));
   const S = {
     version: '1.9.4', selectedDay: 2, grammar: { attempts: 3, correct: 2 }, reading: { attempts: 2, correct: 1, answers: { '2:r181-d02-s01:0': 1, '2:r181-d02-s01:1': 0 } },
@@ -389,6 +394,10 @@ async function apiTests(base, pool, s3) {
   check(r.data.toString() === '0123456789', 'proxy download returns the exact bytes');
   r = await A.req('GET', '/media');
   check(r.data.media.length === 2 && r.data.media.every((x) => x.status === 'stored'), 'media list');
+  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-big', contentType: 'audio/webm', size: 10 } });
+  put = await fetch(r.data.upload.url, { method: 'PUT', body: crypto.randomBytes(5000), headers: r.data.upload.headers });
+  r = await A.req('POST', '/media/complete', { json: { clipId: 'd2-big' } });
+  check(r.status === 422 && r.data.error.code === 'size_mismatch' && !s3.objects.has(`u/${uid}/speaking/d2-big.webm`), 'an upload larger than declared is refused and deleted', r.data);
   r = await A.req('POST', '/media/upload-url', { json: { clipId: '../../etc', contentType: 'audio/webm', size: 10 } });
   check(r.status === 400, 'clip ids cannot escape the user prefix');
   check(s3.stats.badSig === 1, 'no request from the server failed signature checks', s3.stats);
@@ -400,6 +409,14 @@ async function apiTests(base, pool, s3) {
   check(r.status === 204, 'another account does not see the first account’s document');
   r = await B.req('GET', '/media/url?clipId=d2-s1');
   check(r.status === 404, 'another account cannot reach the first account’s recordings');
+
+  // Account cap under concurrent registrations.
+  const before = (await pool.query('select count(*)::int n from delf50.users')).rows[0].n;
+  process.env.DELF50_MAX_USERS = String(before + 2);
+  const regs = await Promise.all([1, 2, 3, 4, 5, 6].map((i) => apiClient(base).req('POST', '/auth/register', { json: { email: `cap${i}@example.com`, password: 'longpassword', inviteCode: 'INVITE-123' } })));
+  delete process.env.DELF50_MAX_USERS;
+  const after = (await pool.query('select count(*)::int n from delf50.users')).rows[0].n;
+  check(after === before + 2 && regs.filter((x) => x.status === 201).length === 2 && regs.filter((x) => x.status === 403 && x.data.error.code === 'registration_full').length === 4, 'concurrent registrations never exceed DELF50_MAX_USERS', { before, after, statuses: regs.map((x) => x.status) });
 
   // Bearer tokens for apps.
   const T = apiClient(base);
@@ -698,6 +715,15 @@ async function browserTests(base, pool, s3) {
   check(!tomHead || JSON.parse(tomHead.state_text).grammar.attempts === 0, 'the first learner’s data never reaches the second account');
   await C.answerGrammar(1);
   await synced(C, 'tom@example.com');
+  // A clip left in this browser's audio store by another learner.
+  await new Promise((resolve, reject) => {
+    const rq = C.w.indexedDB.open('delf50_audio_v1', 1);
+    rq.onupgradeneeded = () => rq.result.createObjectStore('clips', { keyPath: 'id' });
+    rq.onsuccess = () => { const tx = rq.result.transaction('clips', 'readwrite'); tx.objectStore('clips').put({ id: 'd1-s-foreign', blob: new Blob([Buffer.alloc(64)], { type: 'audio/webm' }), at: Date.now() }); tx.oncomplete = () => { rq.result.close(); resolve(); }; tx.onerror = () => reject(tx.error); };
+  });
+  await C.w.__DELF50_CLOUD.syncMedia();
+  const tomId = (await pool.query("select id from delf50.users where email_norm='tom@example.com'")).rows[0].id;
+  check(![...s3.objects.keys()].some((k) => k.startsWith(`u/${tomId}/`)), 'recordings in a shared browser are never uploaded to another account', [...s3.objects.keys()]);
   C.click('.dc-chip');
   await until(() => C.w.document.querySelector('[data-dc="logout"]'), 5000, 'account panel');
   C.w.document.querySelector('[data-dc="wipe"]').checked = true;
@@ -710,8 +736,23 @@ async function browserTests(base, pool, s3) {
   await settle(C, 'lea@example.com');
   check(C.state().grammar.attempts === JSON.parse((await head('lea@example.com')).state_text).grammar.attempts && C.state().grammar.attempts > 0, 'the first learner signs back in and gets their record back');
 
+  // ── "use this device" archives the cloud copy before replacing it ──
+  const D = new Device('D');
+  await D.open();
+  await D.answerGrammar(2);
+  await sleep(1400);
+  await D.signIn('login', 'lea@example.com', 'correct-horse-9');
+  await until(() => D.cloud().decision, 15000, 'decision D');
+  const cloudText = (await head('lea@example.com')).state_text;
+  D.click('[data-dc="local"]');
+  await settle(D, 'lea@example.com');
+  const arch = await pool.query("select count(*)::int n from delf50.state_archives where user_id=$1 and hash=$2 and reason='replaced-by-local'", [leaId, sha256hex(cloudText)]);
+  check(arch.rows[0].n === 1, 'choosing this device archives the replaced cloud document first');
+  check(Cl.semanticText((await head('lea@example.com')).state_text) === Cl.semanticText(D.text()), 'choosing this device makes its record the account head');
+  D.close();
+
   // ── the rest ──
-  const allErrors = [A, B, C].flatMap((d) => d.errors.filter((e) => !/Could not load (img|link)|not implemented/i.test(e)));
+  const allErrors = [A, B, C, D].flatMap((d) => d.errors.filter((e) => !/Could not load (img|link)|not implemented/i.test(e)));
   check(allErrors.length === 0, 'no script errors in any device', allErrors.slice(0, 5));
   for (const d of [A, B, C]) d.close();
 }
@@ -728,7 +769,9 @@ async function main() {
   } else {
     const pool = installPgShim(url);
     await pool.query('drop schema if exists delf50 cascade');
-    await pool.query(fs.readFileSync(path.join(ROOT, 'db/migrations/0001_init.sql'), 'utf8'));
+    for (const f of fs.readdirSync(path.join(ROOT, 'db/migrations')).filter((x) => x.endsWith('.sql')).sort()) {
+      await pool.query(fs.readFileSync(path.join(ROOT, 'db/migrations', f), 'utf8'));
+    }
     process.env.DATABASE_URL = 'postgres://shim';
     process.env.DELF50_INVITE_CODE = 'INVITE-123';
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';

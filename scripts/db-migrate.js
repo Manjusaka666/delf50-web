@@ -12,8 +12,11 @@ const fs = require('fs');
 const path = require('path');
 const { Pool, neonConfig } = require('@neondatabase/serverless');
 
-if (typeof WebSocket === 'function') neonConfig.webSocketConstructor = WebSocket;
-else neonConfig.webSocketConstructor = require('ws');
+if (typeof WebSocket !== 'function') {
+  console.error('This script needs a runtime with a global WebSocket (Node.js 22 or newer).');
+  process.exit(2);
+}
+neonConfig.webSocketConstructor = WebSocket;
 
 async function main() {
   const url = process.env.DATABASE_URL;

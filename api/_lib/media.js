@@ -74,9 +74,19 @@ async function uploadUrl(req, res, auth, body) {
   });
 }
 
+/**
+ * Confirms the object in R2. Its real size must equal the size declared at
+ * upload-url (and stay within MAX_UPLOAD); otherwise it is deleted and refused,
+ * since a presigned PUT does not itself bound the body.
+ */
 async function markStored(auth, row) {
   const h = await r2.head(row.object_key);
   if (!h) return null;
+  const declared = row.size_bytes === null ? null : Number(row.size_bytes);
+  if (!Number.isFinite(h.size) || h.size > MAX_UPLOAD || (declared !== null && h.size !== declared)) {
+    await r2.del(row.object_key);
+    throw new HttpError(422, 'size_mismatch', `Uploaded object is ${h.size} bytes; ${declared} bytes were declared`);
+  }
   await db.query(
     `update delf50.media_objects set status = 'stored', size_bytes = $3, stored_at = coalesce(stored_at, now())
       where user_id = $1 and id = $2`, [auth.userId, row.id, h.size]);

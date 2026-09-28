@@ -18,7 +18,11 @@ const MAX_BODY = 12 * 1024 * 1024;
  * as-is.
  */
 async function readRaw(req, limit = MAX_BODY) {
-  if (Buffer.isBuffer(req.rawBody)) return req.rawBody;
+  const checked = (buf) => {
+    if (buf.length > limit) throw new HttpError(413, 'body_too_large', `Request body exceeds ${limit} bytes`);
+    return buf;
+  };
+  if (Buffer.isBuffer(req.rawBody)) return checked(req.rawBody);
   const chunks = [];
   let size = 0;
   if (typeof req[Symbol.asyncIterator] === 'function' && !req.readableEnded) {
@@ -31,9 +35,9 @@ async function readRaw(req, limit = MAX_BODY) {
   }
   if (chunks.length) return Buffer.concat(chunks);
   const b = req.body;
-  if (Buffer.isBuffer(b)) return b;
-  if (typeof b === 'string') return Buffer.from(b, 'utf8');
-  if (b && typeof b === 'object') return Buffer.from(JSON.stringify(b), 'utf8');
+  if (Buffer.isBuffer(b)) return checked(b);
+  if (typeof b === 'string') return checked(Buffer.from(b, 'utf8'));
+  if (b && typeof b === 'object') return checked(Buffer.from(JSON.stringify(b), 'utf8'));
   return Buffer.alloc(0);
 }
 

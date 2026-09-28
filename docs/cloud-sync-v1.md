@@ -54,7 +54,7 @@
 
 ## 3. 数据库（Neon · schema `delf50`）
 
-迁移文件：`db/migrations/0001_init.sql`（幂等）。
+迁移文件：`db/migrations/0001_init.sql`、`0002_create_user.sql`（均幂等；`0002` 用 advisory lock 让“人数上限检查 + 建号”原子化）。
 
 | 表 | 用途 |
 |---|---|
@@ -93,7 +93,7 @@
 
 ## 5. 录音（Cloudflare R2）
 
-对象键：`u/<userId>/speaking/<clipId>.<ext>`。上传：`upload-url` 取 15 分钟预签名 PUT → 浏览器直传 R2 → `complete`（服务端 HEAD 核实真实大小）。若浏览器无法直连 R2（例如桶未配置 CORS），自动改走函数中转（≤ 4 MB）。其他设备登录后，状态中引用、但本机 IndexedDB 没有的录音会被下载写入应用自己的 `delf50_audio_v1`，应用原有的回放功能直接可用。SigV4 签名器为零依赖实现，已用 AWS 官方测试向量验证。
+对象键：`u/<userId>/speaking/<clipId>.<ext>`。上传：`upload-url` 取 15 分钟预签名 PUT → 浏览器直传 R2 → `complete`（服务端 HEAD 核实：实际大小必须等于声明大小且不超过 50 MB，否则删除对象并拒绝）。只上传当前账号学习记录中引用的录音——浏览器的录音库是按设备而非按账号的，共用设备时不会把别人的录音传进自己的账号。若浏览器无法直连 R2（例如桶未配置 CORS），自动改走函数中转（≤ 4 MB）。其他设备登录后，状态中引用、但本机 IndexedDB 没有的录音会被下载写入应用自己的 `delf50_audio_v1`，应用原有的回放功能直接可用。SigV4 签名器为零依赖实现，已用 AWS 官方测试向量验证。
 
 ## 6. 为未来 App 预留
 
@@ -132,7 +132,7 @@ Vercel 项目 `delf50-mvp` 已配置：
 ]
 ```
 
-**数据库迁移**：`DATABASE_URL=… npm run db:migrate`（已在生产库执行过 `0001_init`）。
+**数据库迁移**：`DATABASE_URL=… npm run db:migrate`（需 Node ≥ 22；生产库已执行 `0001_init`、`0002_create_user`）。
 
 **部署**：`vercel --prod`（本项目为 CLI 部署）。`package.json` 只有运行时依赖 `@neondatabase/serverless`，没有 build 脚本，Vercel 仍按静态站点 + 函数处理。
 
@@ -143,6 +143,6 @@ node scripts/verify.js           # 原有 41 项（内容与学习记录保护�
 TEST_DATABASE_URL=postgres://…  NODE_PATH=<含 jsdom、pg、fake-indexeddb 的目录> node scripts/verify-cloud.js
 ```
 
-`verify-cloud.js` 共 112 项：SigV4 官方向量、合并与投影单元测试；在真实 PostgreSQL 上跑完整 API（CSRF、限流、并发 CAS 只有一个胜出、字节级往返、历史恢复、读模型、事件幂等、R2 签名校验与越权隔离）；再用 jsdom 把真实 `index.html` + 云同步层 + 应用 bundle 作为多台设备运行：带既有进度注册上传、第二台设备接收、两台设备同时学习后合并计数精确相加、无共同基线时的选择弹窗、共用设备切换账号、录音上传与跨设备恢复、重开应用不产生新版本也不触发其他设备刷新。
+`verify-cloud.js` 共 119 项：SigV4 官方向量、合并与投影单元测试；在真实 PostgreSQL 上跑完整 API（CSRF、限流、并发 CAS 只有一个胜出、字节级往返、历史恢复、读模型、事件幂等、R2 签名校验与越权隔离）；再用 jsdom 把真实 `index.html` + 云同步层 + 应用 bundle 作为多台设备运行：带既有进度注册上传、第二台设备接收、两台设备同时学习后合并计数精确相加、无共同基线时的选择弹窗、共用设备切换账号、录音上传与跨设备恢复、重开应用不产生新版本也不触发其他设备刷新。
 
 线上排障：浏览器控制台执行 `__DELF50_CLOUD.status()` 可看到同步状态、元数据与最近 60 条同步轨迹。

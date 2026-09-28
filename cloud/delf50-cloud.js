@@ -642,6 +642,8 @@
         E.decision = null;
         await adopt(m, d.remote, 'replaced-by-cloud');
       } else if (choice === 'local') {
+        // Archive the cloud document first; if that fails, nothing is replaced.
+        await archiveRemote(d.remote.text, 'replaced-by-local');
         var cur = lsGet(STATE_KEY);
         var h = await sha256(cur);
         var r = await putRemote(cur, h, d.remote.rev, 'adopt');
@@ -818,7 +820,10 @@
       var local = await audioAll();
       var localIds = new Set(local.map(function (x) { return x.id; }));
       var recs = speakingRecords();
-      var toUp = local.filter(function (x) { return x.size > 0 && !stored.has(x.id) && /^[A-Za-z0-9._-]{1,120}$/.test(x.id); });
+      // The audio store is per browser, not per account: only clips this
+      // account's own record refers to are uploaded (a shared device may hold
+      // another learner's recordings).
+      var toUp = local.filter(function (x) { return x.size > 0 && recs.has(x.id) && !stored.has(x.id) && /^[A-Za-z0-9._-]{1,120}$/.test(x.id); });
       var toDown = Array.from(stored).filter(function (id) { return !localIds.has(id) && recs.has(id); });
       E.media = { state: toUp.length || toDown.length ? 'running' : 'done', uploaded: stored.size, pending: toUp.length, downloaded: 0, error: null };
       setStatus(E.status, E.detail);

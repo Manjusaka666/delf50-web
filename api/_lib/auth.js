@@ -232,18 +232,14 @@ async function register(req, res, body) {
   const password = validPassword(body.password);
 
   const maxUsers = Number(process.env.DELF50_MAX_USERS || 0);
-  if (maxUsers > 0) {
-    const c = await db.one('select count(*)::int as n from delf50.users where disabled_at is null');
-    if (c.n >= maxUsers) throw new HttpError(403, 'registration_full', 'The maximum number of accounts has been reached');
-  }
-
   const hash = await hashPassword(password);
-  const user = await db.one(
-    `insert into delf50.users (email, email_norm, display_name, password_hash)
-     values ($1, $2, $3, $4)
-     on conflict (email_norm) do nothing
-     returning id, email, display_name, role`,
-    [body.email.trim(), emailNorm, displayName, hash]);
+  // Capacity check and insert run under one advisory lock (delf50.create_user),
+  // so concurrent registrations cannot exceed DELF50_MAX_USERS.
+  const created = await db.one(
+    'select status, id, email, display_name, role from delf50.create_user($1, $2, $3, $4, $5)',
+    [body.email.trim(), emailNorm, displayName, hash, maxUsers > 0 ? maxUsers : null]);
+  if (created.status === 'full') throw new HttpError(403, 'registration_full', 'The maximum number of accounts has been reached');
+  const user = created.status === 'ok' ? created : null;
   await recordAttempt('register', ip, Boolean(user));
   if (!user) throw new HttpError(409, 'email_taken', 'An account with this email already exists', { field: 'email' });
 
