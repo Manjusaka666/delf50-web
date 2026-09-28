@@ -9,7 +9,8 @@
  *    fine-grained changes within ~60–300 ms (one request in flight).
  *  - The recordings database (delf50_audio_v1) is served by the API: a saved
  *    clip is uploaded to R2 at once, a played clip is fetched from it.
- * Nothing is kept in the browser beyond the page's lifetime.
+ * Nothing is written to browser storage; whatever an older version left there
+ * is neither read nor touched.
  */
 (function (root, factory) {
   'use strict';
@@ -184,11 +185,6 @@
       if (k === STATE_KEY) changed();
     };
     SP.removeItem = function (k) { return mine(this, k) ? void mem.delete(k) : rawDel.call(this, k); };
-    // Earlier versions kept data in the browser; the account is now the only copy.
-    try {
-      for (var i = LS.length - 1; i >= 0; i--) { var k = LS.key(i); if (k && k.indexOf('delf50_') === 0) rawDel.call(LS, k); }
-      ['delf50_cloud_v1', AUDIO_DB].forEach(function (n) { W.indexedDB.deleteDatabase(n); });
-    } catch (e) { /* storage unavailable */ }
   }
 
   // ── HTTP ──
@@ -357,11 +353,19 @@
 
   // ── start: the app bundle waits until the account's state is loaded ──
 
+  // The loader fetches the bundle with no-store and a per-attempt URL. The first
+  // attempt goes through the HTTP cache instead, revalidated by ETag (a 304 when
+  // the release is unchanged); retries keep the loader's own no-store request.
   var openGate, gate = new Promise(function (r) { openGate = r; });
   W.fetch = function (input, init) {
-    var p = realFetch(input, init);
     var url = typeof input === 'string' ? input : (input && input.url) || '';
-    return /\/api\/source\?/.test(url) ? p.then(function (r) { return gate.then(function () { return r; }); }) : p;
+    var source = /\/api\/source\?/.test(url);
+    if (source && typeof input === 'string' && /[?&]attempt=1(&|$)/.test(url)) {
+      input = url.replace(/([?&])attempt=1(&|$)/, function (m, lead, tail) { return tail ? lead : ''; });
+      init = Object.assign({}, init, { cache: 'no-cache' });
+    }
+    var p = realFetch(input, init);
+    return source ? p.then(function (r) { return gate.then(function () { return r; }); }) : p;
   };
 
   function load() {

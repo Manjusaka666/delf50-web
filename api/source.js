@@ -14,11 +14,16 @@
  * integrity layer. This avoids rebuilding or re-identifying any historical corpus
  * item while allowing completed grammar evidence to remain immutable.
  */
+const crypto = require('crypto');
 const RELEASE = require('../release-meta.js');
 const BUNDLE = require('../build/bundle-parts.js');
 const GRAMMAR_INTEGRITY = require('../v202-grammar-integrity.js');
 
-const CACHE_CONTROL = 'public, max-age=60, s-maxage=600, stale-while-revalidate=86400';
+// Browsers revalidate every load (a 304 when unchanged, so the ~600 KB bundle
+// is downloaded once per release); Vercel's CDN keeps each part for the
+// lifetime of the deployment (its cache is per deployment).
+const CACHE_CONTROL = 'public, max-age=0, must-revalidate';
+const CDN_CACHE_CONTROL = 'max-age=31536000';
 
 const HEADERS = {
   'X-DELF50-App': RELEASE.app,
@@ -58,6 +63,7 @@ const HEADERS = {
 
 /** Assembled once per warm instance; the strings are immutable for a deployment. */
 let cachedSources = null;
+let etags = null;
 
 function buildSources() {
   const sources = BUNDLE.base.slice();
@@ -88,10 +94,16 @@ module.exports = function handler(req, res) {
     return;
   }
   try {
-    if (!cachedSources) cachedSources = buildSources();
+    if (!cachedSources) {
+      cachedSources = buildSources();
+      etags = cachedSources.map((t) => `"${crypto.createHash('sha256').update(t).digest('base64url').slice(0, 22)}"`);
+    }
     const text = cachedSources[i];
     res.setHeader('Cache-Control', CACHE_CONTROL);
-    res.setHeader('ETag', `"${BUNDLE.buildId}-${RELEASE.app}-${i}"`);
+    res.setHeader('Vercel-CDN-Cache-Control', CDN_CACHE_CONTROL);
+    res.setHeader('ETag', etags[i]); // content hash: changes exactly when the part does
+    const seen = String((req.headers && req.headers['if-none-match']) || '').split(',').map((x) => x.trim().replace(/^W\//, ''));
+    if (seen.includes(etags[i])) { res.statusCode = 304; res.end(); return; }
     for (const [k, v] of Object.entries(HEADERS)) res.setHeader(k, v);
     res.setHeader('X-DELF50-Source-File', BUNDLE.baseFiles[i]);
     res.status(200).send(text);
