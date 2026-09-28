@@ -79,5 +79,8 @@ Neon Auth 的受信任域名需包含站点域名（`https://delf50-mvp.vercel.a
 
 ## 5. 验证
 
+所有验证都在云端运行：Vercel Sandbox（fra1）中执行，数据库使用 Neon **测试分支**（`ci-cloud-sync-test`）上的专用数据库 `delf50_ci`，从不触碰生产数据，也不使用任何本地数据库。测试依赖只在 Sandbox 中安装：`npm i --no-save jsdom@24.1.3 pg@8.23.0 fake-indexeddb@6.2.5`。
+
 * `npm run verify` — 原有 41 项应用检查。
-* `TEST_DATABASE_URL=postgres://… NODE_PATH=… npm run verify:cloud` — 单元 + 真实 PostgreSQL（以 RLS 角色连接）+ Neon Auth 模拟（真实 Cookie 与 EdDSA JWT）+ S3 签名校验模拟 + jsdom 中运行真实应用：登录闸门、保存延迟 < 500 ms、浏览器零持久化、刷新/第二设备/跨设备刷新、8 MB 录音、会话过期不丢数据、退出登录。
+* `TEST_DATABASE_URL=<测试分支 delf50_ci 的 owner 连接串> npm run verify:cloud` — 单元 + Neon PostgreSQL（以 RLS 角色连接）+ Neon Auth 模拟（真实 Cookie 与 EdDSA JWT）+ S3 签名校验模拟 + jsdom 中运行真实应用：登录闸门、保存延迟 < 500 ms、浏览器零持久化、刷新/第二设备/跨设备刷新、8 MB 录音、会话过期不丢数据、退出登录。
+* `DATABASE_URL=… NEON_AUTH_BASE_URL=… R2_…=… npm run smoke:live` — 真实 Neon 数据库 + 真实 Neon Auth + 真实 R2 的端到端检查（使用测试分支，临时账号用后即删）。

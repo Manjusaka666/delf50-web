@@ -5,7 +5,7 @@
  *
  *   1. Units: SigV4 against the AWS test vectors, the client's change batches,
  *      the column mapping.
- *   2. API against a real PostgreSQL, connected as the RLS-bound delf50_api
+ *   2. API against Neon PostgreSQL, connected as the RLS-bound delf50_api
  *      role: Neon Auth proxy (against a mock that issues real cookies and
  *      EdDSA JWTs), exact state round trips, idempotent replays, append-only
  *      grammar history, row-level isolation, bearer tokens, R2 media (HTTPS
@@ -15,10 +15,15 @@
  *      reload / second device / cross-device refresh, recordings, session
  *      expiry mid-study, sign-out.
  *
- * Needs (resolved via NODE_PATH): jsdom, pg, fake-indexeddb, and an empty
- * scratch PostgreSQL (superuser) in TEST_DATABASE_URL.
+ * Runs in the cloud: a Vercel Sandbox (fra1) against a dedicated database on
+ * the Neon test branch (never production). TEST_DATABASE_URL is that
+ * database's owner connection; the suite resets its delf50 schema and a stub
+ * neon_auth schema, and sets a fresh random password on the branch's
+ * delf50_api role for each run. Test-only dependencies are installed there:
  *
- *   TEST_DATABASE_URL=postgres://… NODE_PATH=… node scripts/verify-cloud.js
+ *   npm i --no-save jsdom@24.1.3 pg@8.23.0 fake-indexeddb@6.2.5
+ *   TEST_DATABASE_URL=postgresql://neondb_owner:…@<test-branch-host>/delf50_ci?sslmode=require \
+ *     node scripts/verify-cloud.js
  */
 const fs = require('fs');
 const os = require('os');
@@ -153,25 +158,6 @@ function unitTests() {
 }
 
 // ───────────────────────── infrastructure ──────────────────────────────────
-
-function useDatabase(apiUrl) {
-  const { Pool } = require('pg');
-  const pool = new Pool({ connectionString: apiUrl, max: 10 });
-  require(path.join(ROOT, 'api/_lib/db.js')).setDriver({
-    query: (t, p) => pool.query(t, p).then((r) => r.rows),
-    async transaction(list) {
-      const c = await pool.connect();
-      try {
-        await c.query('begin');
-        const out = [];
-        for (const [t, p] of list) out.push((await c.query(t, p)).rows);
-        await c.query('commit');
-        return out;
-      } catch (e) { await c.query('rollback'); throw e; } finally { c.release(); }
-    }
-  });
-  return pool;
-}
 
 /** Neon Auth as seen through its REST API: users and sessions in neon_auth.*, cookies, EdDSA JWTs. */
 function startAuthMock(owner) {
@@ -696,18 +682,20 @@ async function main() {
   } else {
     const { Pool } = require('pg');
     const owner = new Pool({ connectionString: url, max: 4 });
+    const apiPassword = crypto.randomBytes(24).toString('base64url');
     await owner.query('drop schema if exists delf50 cascade; drop schema if exists neon_auth cascade');
     await owner.query(`create schema neon_auth;
       create table neon_auth."user" (id uuid primary key, email text unique not null, name text);
       create table neon_auth.session (id uuid primary key, token text unique not null, "userId" uuid references neon_auth."user"(id) on delete cascade, "expiresAt" timestamptz not null);
       do $$ begin if not exists (select from pg_roles where rolname = 'delf50_api') then create role delf50_api; end if; end $$;
-      alter role delf50_api login password 'api-test-password'`);
+      alter role delf50_api login password '${apiPassword}'`);
     for (const f of fs.readdirSync(path.join(ROOT, 'db/migrations')).filter((x) => x.endsWith('.sql')).sort()) {
       await owner.query(fs.readFileSync(path.join(ROOT, 'db/migrations', f), 'utf8'));
     }
-    const u = new URL(url); u.username = 'delf50_api'; u.password = 'api-test-password';
+    const u = new URL(url); u.username = 'delf50_api'; u.password = apiPassword;
     process.env.API_DATABASE_URL = u.toString();
-    const apiPool = useDatabase(process.env.API_DATABASE_URL);
+    // The API uses its production driver (Neon over HTTP), connected as delf50_api.
+    process.env.DATABASE_URL = process.env.API_DATABASE_URL;
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
     const creds = { id: 'TESTKEYID', secret: crypto.randomBytes(20).toString('hex') };
     const s3 = await startS3Mock(makeCert(fs.mkdtempSync(path.join(os.tmpdir(), 'delf50-'))), creds);
@@ -721,7 +709,7 @@ async function main() {
     } catch (e) {
       check(false, 'suite aborted', e.stack || String(e));
     } finally {
-      app.server.close(); s3.server.close(); auth.server.close(); await apiPool.end(); await owner.end();
+      app.server.close(); s3.server.close(); auth.server.close(); await owner.end();
     }
   }
   console.log(results.join('\n'));
