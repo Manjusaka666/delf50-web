@@ -426,8 +426,9 @@ async function apiTests(base, owner, auth, s3) {
     try { await api.query(`select set_config('app.user_id', $1, true)`, [id || '']); return (await api.query(sql, params)).rows; } finally { await api.query('rollback'); }
   };
   const noah = ids.find((x) => x.email === 'noah@example.com').id, lea = ids.find((x) => x.email === 'lea@example.com').id;
-  check((await asUser(noah, 'select * from delf50.error_items')).length === 0 && (await asUser(lea, 'select * from delf50.error_items')).length === 5
-    && (await asUser(noah, 'select * from delf50.daily_progress')).length === 0 && (await asUser(lea, 'select * from delf50.daily_progress')).length === 1, 'RLS: rows are visible to their owner only');
+  const b1 = " where course = 'delf-b1'";
+  check((await asUser(noah, 'select * from delf50.error_items')).length === 0 && (await asUser(lea, 'select * from delf50.error_items' + b1)).length === 5
+    && (await asUser(noah, 'select * from delf50.daily_progress')).length === 0 && (await asUser(lea, 'select * from delf50.daily_progress' + b1)).length === 1, 'RLS: rows are visible to their owner only');
   check((await asUser(null, 'select * from delf50.study_state')).length === 0, 'RLS: without a user, nothing is visible');
   let denied = false;
   try { await asUser(noah, `insert into delf50.drafts (user_id, kind, draft_key, body) values ($1, 'writing', 'x', 'y')`, [lea]); } catch (e) { denied = /row-level security/.test(e.message); }
