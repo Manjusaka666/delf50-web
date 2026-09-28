@@ -28,8 +28,16 @@ const TYPES = {
   ts: ['timestamptz', (v) => typeof v === 'string' && ISO_MS.test(v) && new Date(v).toISOString() === v]
 };
 
-const answers = (path, table) => ({ path, table, kind: 'map', keys: ['answer_key'], scalar: ['selected', 'int'], touch: 'answered_at', parse: answerKey });
-const productions = (path, table, fields) => ({ path, table, kind: 'list', keys: ['item_key'], fields });
+// Record types, as the app writes them (see the probe in scripts/verify-cloud.js):
+//   map  — S.path[key] = value      list — S.path = [record, …]      map2 — S.path[module][id] = value
+// parse/parsed: descriptive columns derived from the key (the key stays authoritative).
+const int = (s) => (/^\d{1,6}$/.test(s) ? Number(s) : null);
+const answerKey = (k) => { const p = k.split(':'); return { day: int(p[0]), content_id: p.slice(1, -1).join(':') || null, q_index: int(p[p.length - 1]) }; };
+const DAY = { parse: (k) => ({ day: int(k) }), parsed: [['day', 'int']] };
+const answers = (path, table) => ({ path, table, kind: 'map', keys: ['answer_key'], scalar: ['selected', 'int'], touch: 'answered_at',
+  parse: answerKey, parsed: [['day', 'int'], ['content_id', 'text'], ['q_index', 'int']] });
+const productions = (path, table, fields, extra) => Object.assign({ path, table, kind: 'list', keys: ['item_key'], fields }, extra);
+const perDay = (path, table, fields) => Object.assign({ path, table, kind: 'map', keys: ['day_key'], fields }, DAY);
 
 const COLLECTIONS = {
   reading: answers(['reading', 'answers'], 'reading_answers'),
@@ -45,8 +53,22 @@ const COLLECTIONS = {
     ['title', 'title', 'text'], ['body', 'text', 'text'], ['created_at', 'at', 'ts']]),
   speaking: productions(['speaking', 'records'], 'speaking_attempts', [['clip_id', 'id', 'text'], ['day', 'day', 'int'],
     ['content_id', 'contentId', 'text'], ['title', 'title', 'text'], ['duration_sec', 'sec', 'int'], ['created_at', 'at', 'ts']]),
+  // Fixing an error removes it from the app's list; here it is kept as resolved.
   errors: productions(['errors'], 'error_items', [['skill', 'skill', 'text'], ['original', 'original', 'text'],
-    ['correction', 'correct', 'text'], ['explanation', 'why', 'text'], ['created_at', 'at', 'ts']]),
+    ['correction', 'correct', 'text'], ['explanation', 'why', 'text'], ['created_at', 'at', 'ts']], { soft: 'resolved_at' }),
+  // Grammar output practice: prodDone["<day>:<node>:<prompt>"] = true.
+  grammarProductions: { path: ['prodDone'], table: 'grammar_productions', kind: 'map', keys: ['prod_key'], scalar: ['done', 'bool'],
+    parse: (k) => { const p = k.split(':'); return { day: int(p[0]), node_id: p.slice(1, -1).join(':') || null, prompt_index: int(p[p.length - 1]) }; },
+    parsed: [['day', 'int'], ['node_id', 'text'], ['prompt_index', 'int']] },
+  // Daily checklist: taskDone["<day>:<task id>"] = bool.
+  tasks: { path: ['taskDone'], table: 'task_checks', kind: 'map', keys: ['task_key'], scalar: ['done', 'bool'], touch: 'updated_at',
+    parse: (k) => { const i = k.indexOf(':'); return { day: int(k.slice(0, i)), task_id: i < 0 ? k : k.slice(i + 1) }; }, parsed: [['day', 'int'], ['task_id', 'text']] },
+  dailyProgress: perDay(['daily'], 'daily_progress', [['grammar', 'grammar', 'int'], ['grammar_prod', 'grammarProd', 'int'], ['reading', 'reading', 'int'],
+    ['listening', 'listening', 'int'], ['writing', 'writing', 'int'], ['speaking', 'speaking', 'int'], ['application', 'application', 'int']]),
+  studyDays: perDay(['dayHistory171'], 'study_days', [['first_activity_at', 'firstActivityAt', 'ts'], ['last_activity_at', 'lastActivityAt', 'ts'],
+    ['actions', 'actions', 'int'], ['last_action', 'lastAction', 'text']]),
+  // Vocabulary (词块) and review practice counts per day.
+  practice: perDay(['practiceCounters172'], 'practice_counters', [['vocab', 'vocab', 'int'], ['review', 'review', 'int'], ['legacy_inferred', 'legacyInferred', 'bool']]),
   writingDrafts: { path: ['drafts171', 'writing'], table: 'drafts', kind: 'map', keys: ['draft_key'], fixed: { kind: 'writing' }, scalar: ['body', 'text'], touch: 'updated_at' },
   applicationDrafts: { path: ['drafts171', 'application'], table: 'drafts', kind: 'map', keys: ['draft_key'], fixed: { kind: 'application' }, scalar: ['body', 'text'], touch: 'updated_at' },
   completions: {
@@ -54,12 +76,6 @@ const COLLECTIONS = {
     fields: [['day', 'day', 'int'], ['correct', 'correct', 'bool'], ['first_completed_at', 'firstCompletedAt', 'ts'], ['last_completed_at', 'lastCompletedAt', 'ts']]
   }
 };
-
-/** "day:contentId:q" → descriptive columns (the key itself stays authoritative). */
-function answerKey(k) {
-  const p = k.split(':');
-  return { day: /^\d{1,6}$/.test(p[0]) ? Number(p[0]) : null, content_id: p.slice(1, -1).join(':') || null, q_index: /^\d{1,6}$/.test(p[p.length - 1]) ? Number(p[p.length - 1]) : null };
-}
 
 const isObj = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
 const stable = (v) => (Array.isArray(v) ? `[${v.map(stable).join(',')}]`
@@ -72,7 +88,7 @@ function columns(c) {
   if (c.kind === 'list') cols.push(['pos', 'float8']);
   if (c.fixed) for (const k of Object.keys(c.fixed)) cols.push([k, 'text']);
   if (c.scalar) cols.push([c.scalar[0], TYPES[c.scalar[1]][0]], ['value', 'jsonb']);
-  if (c.parse) cols.push(['day', 'int'], ['content_id', 'text'], ['q_index', 'int']);
+  if (c.parsed) cols.push(...c.parsed);
   if (c.fields) { for (const [col, , t] of c.fields) cols.push([col, TYPES[t][0]]); cols.push(['extra', 'jsonb']); }
   if (c.history) cols.push(['sig', 'text']);
   return cols;
@@ -125,7 +141,8 @@ function statements(name, change) {
         from (select e->>0 as answer_key from jsonb_array_elements($1::jsonb) e) x where exists (select 1 from ${LATEST(c)} l where not l.deleted)`, [del]]);
     } else {
       const sel = c.keys.map((_, i) => `x->>${i}`).join(', ');
-      out.push([`delete from delf50.${c.table} where (${c.keys.join(', ')}) in (select ${sel} from jsonb_array_elements($1::jsonb) x)${fixedWhere(c)}`, [del]]);
+      if (c.soft) out.push([`update delf50.${c.table} set ${c.soft} = now() where ${c.soft} is null and (${c.keys.join(', ')}) in (select ${sel} from jsonb_array_elements($1::jsonb) x)`, [del]]);
+      else out.push([`delete from delf50.${c.table} where (${c.keys.join(', ')}) in (select ${sel} from jsonb_array_elements($1::jsonb) x)${fixedWhere(c)}`, [del]]);
     }
   }
   if (Array.isArray(change.set) && change.set.length) {
@@ -139,7 +156,7 @@ function statements(name, change) {
     } else {
       const target = c.keys.concat(c.fixed ? Object.keys(c.fixed) : []);
       const update = cols.filter(([n]) => !target.includes(n)).map(([n]) => `${n} = excluded.${n}`)
-        .concat(c.touch ? [`${c.touch} = now()`] : []).join(', ');
+        .concat(c.touch ? [`${c.touch} = now()`] : [], c.soft ? [`${c.soft} = null`] : []).join(', ');
       out.push([`insert into delf50.${c.table} (${names}) select ${names} ${from}
         on conflict (user_id, ${target.join(', ')}) do update set ${update}`, rows]);
     }
@@ -168,7 +185,7 @@ async function sync(user, body) {
 
 function selectFor(c) {
   const cols = columns(c).map(([n]) => n).join(', ');
-  const where = c.fixed ? ` where true${fixedWhere(c)}` : '';
+  const where = c.fixed || c.soft ? ` where true${fixedWhere(c)}${c.soft ? ` and ${c.soft} is null` : ''}` : '';
   if (c.history) {
     return `select * from (select distinct on (answer_key) ${cols}, deleted from delf50.${c.table} order by answer_key, id desc) t where not deleted`;
   }

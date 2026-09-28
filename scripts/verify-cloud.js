@@ -58,7 +58,8 @@ const sameData = (a, b) => C.equal(a, b);
 /** A realistic learner state, with edge cases the column mapping must keep. */
 function sampleState() {
   return {
-    version: '2.0.2', selectedDay: 3, intensity: 'standard', taskDone: { '3-0': true },
+    version: '2.0.2', selectedDay: 3, intensity: 'standard', taskDone: { '3:grammar': true, '3:vocab': false },
+    prodDone: { '3:subj:0': true, '3:subj:1': true }, practiceCounters172: { 3: { vocab: 35, review: 0, legacyInferred: false } },
     grammar: { attempts: 4, correct: 3, skill: { subj: { a: 2, c: 1 } } },
     reading: { attempts: 3, correct: 2, index: 1, answers: { '3:r181-d03-s01:0': 1, '3:r181-d03-s01:1': 0, 'odd-key': 'x' } },
     listening: { attempts: 0, correct: 0, index: 0 }, // no answers map at all: absence must round-trip too
@@ -106,7 +107,8 @@ function unitTests() {
   const d0 = C.diff({}, {}, S, SPEC);
   const docOf = Object.fromEntries(d0.doc.map((o) => [o[0].join('.'), o[1]]));
   check(C.equal(docOf.errors, []) && C.equal(docOf.grammarReview202, {}) && C.equal(docOf.reading.answers, {}) && !('answers' in docOf.listening)
-    && C.equal(docOf.contentProgress172, { completed: { writing: {}, reading: {} } }) && C.equal(docOf.drafts171, { writing: {}, application: {} }) && docOf.meta172,
+    && C.equal(docOf.contentProgress172, { completed: { writing: {}, reading: {} } }) && C.equal(docOf.drafts171, { writing: {}, application: {} }) && docOf.meta172
+    && ['daily', 'dayHistory171', 'prodDone', 'taskDone', 'practiceCounters172'].every((k) => C.equal(docOf[k], {})),
     'the document holds only empty record containers, never records', docOf);
   check(!d0.ops.listening && d0.ops.writing.set.length === 2 && d0.ops.errors.set.length === 4 && d0.ops.completions.set.length === 2 && d0.ops.reading.set.length === 3,
     'a first batch writes every record as its own row');
@@ -122,13 +124,14 @@ function unitTests() {
   S2.reading.answers['3:r181-d03-s01:2'] = 3; delete S2.reading.answers['odd-key'];
   S2.contentProgress172.completed.listening = { l1: { day: 3 } };
   delete S2.drafts171.writing['d3-w'];
-  S2.selectedDay = 4; S2.daily['4'] = { grammar: 1 }; delete S2.taskDone['3-0'];
+  S2.selectedDay = 4; S2.daily['4'] = { grammar: 1 }; delete S2.taskDone['3:grammar'];
   const d1 = C.diff(S, d0.pos, S2, SPEC);
   check(d1.ops.errors.set.length === 1 && d1.ops.errors.set[0][2] < 0 && !d1.ops.errors.del.length, 'prepending an error writes one row before the others', d1.ops.errors);
   check(d1.ops.speaking.set.length === 1 && d1.ops.speaking.del.length === 1 && d1.ops.speaking.set[0][2] > d0.pos.speaking[0], 'an edited record replaces its row in place', d1.ops.speaking);
   check(d1.ops.writing.del.length === 1 && !d1.ops.writing.set.length, 'a removed record deletes one row');
   check(C.equal(d1.ops.reading, { set: [[['3:r181-d03-s01:2'], 3]], del: [['odd-key']] }) && C.equal(d1.ops.completions.set, [[['listening', 'l1'], { day: 3 }]]), 'map changes are per key');
-  check(C.equal(d1.doc.map((o) => o[0].join('.')).sort(), ['contentProgress172.completed.listening', 'daily.4', 'selectedDay', 'taskDone.3-0']), 'document changes are per field (a new module only adds its skeleton)', d1.doc);
+  check(C.equal(d1.doc.map((o) => o[0].join('.')).sort(), ['contentProgress172.completed.listening', 'selectedDay']), 'document changes are per field (a new module only adds its skeleton)', d1.doc);
+  check(C.equal(d1.ops.dailyProgress.set, [[['4'], { grammar: 1 }]]) && C.equal(d1.ops.tasks.del, [['3:grammar']]), 'per-day counters and the checklist change as rows', d1.ops);
   const S3 = clone(S2); S3.errors.reverse();
   const d2 = C.diff(S2, d1.pos, S3, SPEC);
   check(C.equal(d2.pos.errors, [0, 1, 2, 3, 4]) && d2.ops.errors.set.length === 5, 'a reordered list is renumbered');
@@ -352,6 +355,11 @@ async function apiTests(base, owner, auth, s3) {
     (select count(*) from delf50.writing_submissions)::int w, (select count(*) from delf50.reading_answers)::int ra, (select count(*) from delf50.content_completions)::int cc`)).rows[0];
   const c1 = await counts();
   check(c1.g === 2 && c1.e === 4 && c1.w === 2 && c1.ra === 3 && c1.cc === 2, 'each record is its own row', c1);
+  const more = (await owner.query(`select (select count(*) from delf50.grammar_productions where done)::int gp, (select count(*) from delf50.task_checks)::int tc,
+    (select grammar from delf50.daily_progress where day = 3) dg, (select actions from delf50.study_days where day = 3) sd, (select vocab from delf50.practice_counters where day = 3) pv,
+    (select node_id || '#' || prompt_index from delf50.grammar_productions order by prod_key limit 1) gpk, (select task_id from delf50.task_checks where done) tid`)).rows[0];
+  check(more.gp === 2 && more.tc === 2 && more.dg === 4 && more.pv === 35 && more.gpk === 'subj#0' && more.tid === 'grammar',
+    'grammar output practice, checklist, per-day counters and vocabulary practice are rows with parsed columns', more);
   const typed = (await owner.query(`select body, word_count, created_at, extra from delf50.writing_submissions order by pos`)).rows;
   check(typed[0].word_count === 120 && typed[0].created_at.toISOString() === '2026-09-27T09:15:00.123Z' && typed[0].extra.connectors[0] === 'cependant', 'writing is stored as typed columns', typed[0]);
 
@@ -382,8 +390,19 @@ async function apiTests(base, owner, auth, s3) {
   const hist = (await owner.query(`select answer_key, deleted from delf50.grammar_attempts where answer_key = '3:GQ-1' order by id`)).rows;
   check(sameData(b3.state, S3) && sameData(b4.state, S2) && C.equal(hist.map((x) => x.deleted), [false, true, false]),
     'removing an answer appends a tombstone, re-adding appends again; nothing is rewritten', hist);
+  const S4 = clone(S2); S4.errors.splice(1, 1);
+  const d4 = C.diff(S2, d3.pos, S4, SPEC);
+  await A.req('POST', '/sync', { json: { doc: d4.doc, ops: d4.ops } });
+  const b5 = (await A.req('GET', '/bootstrap')).data;
+  const er = (await owner.query(`select count(*)::int n, count(resolved_at)::int resolved from delf50.error_items`)).rows[0];
+  check(sameData(b5.state, S4) && er.n === 5 && er.resolved === 1, 'a fixed error leaves the app state but stays in the database as resolved', er);
+  const S5 = clone(S4); S5.errors.splice(1, 0, clone(S2.errors[1]));
+  const d5 = C.diff(S4, d4.pos, S5, SPEC);
+  await A.req('POST', '/sync', { json: { doc: d5.doc, ops: d5.ops } });
+  const er2 = (await owner.query(`select count(*)::int n, count(resolved_at)::int resolved from delf50.error_items`)).rows[0];
+  check(sameData((await A.req('GET', '/bootstrap')).data.state, S5) && er2.n === 5 && er2.resolved === 0, 'the same error made again reopens its row', er2);
   const rev = await A.req('GET', '/rev');
-  check(rev.data.rev === 4, 'rev reports the latest revision', rev.data);
+  check(rev.data.rev === 6, 'rev reports the latest revision', rev.data);
 
   // Row-level security: the API role sees only the caller's rows.
   const B = client(base);
@@ -398,7 +417,8 @@ async function apiTests(base, owner, auth, s3) {
     try { await api.query(`select set_config('app.user_id', $1, true)`, [id || '']); return (await api.query(sql, params)).rows; } finally { await api.query('rollback'); }
   };
   const noah = ids.find((x) => x.email === 'noah@example.com').id, lea = ids.find((x) => x.email === 'lea@example.com').id;
-  check((await asUser(noah, 'select * from delf50.error_items')).length === 0 && (await asUser(lea, 'select * from delf50.error_items')).length === 5, 'RLS: rows are visible to their owner only');
+  check((await asUser(noah, 'select * from delf50.error_items')).length === 0 && (await asUser(lea, 'select * from delf50.error_items')).length === 5
+    && (await asUser(noah, 'select * from delf50.daily_progress')).length === 0 && (await asUser(lea, 'select * from delf50.daily_progress')).length === 1, 'RLS: rows are visible to their owner only');
   check((await asUser(null, 'select * from delf50.study_state')).length === 0, 'RLS: without a user, nothing is visible');
   let denied = false;
   try { await asUser(noah, `insert into delf50.drafts (user_id, kind, draft_key, body) values ($1, 'writing', 'x', 'y')`, [lea]); } catch (e) { denied = /row-level security/.test(e.message); }
@@ -577,13 +597,31 @@ async function browserTests(base, owner, app) {
   A.answerReading(['0:0', '1:1']); await A.saved();
   A.write('Bonjour madame, je vous écris parce que je voudrais des informations sur le cours de français du soir.');
   await A.saved();
+  A.click('[data-nav="grammar"]'); A.click('[data-prod-record]'); await A.saved();
+  A.click('[data-nav="output"]'); A.click('[data-outputtab="speaking"]');
+  [...A.w.document.querySelectorAll('button')].find((b) => /无录音时/.test(b.textContent)).click(); await A.saved();
+  A.click('[data-nav="grammar"]');
+  for (let i = 0; i < 6 && !A.state().errors.length; i++) { // answer until one is wrong
+    const next = [...A.w.document.querySelectorAll('button')].find((x) => /下一题|继续/.test(x.textContent) && !x.disabled);
+    if (next) next.click();
+    const opt = A.$(`[data-gopt="${1 + (i % 2)}"]`); if (opt) opt.click();
+    const sub = A.w.document.getElementById('submitG'); if (sub) sub.click();
+    await sleep(30);
+  }
+  await A.saved();
+  const errBefore = A.state().errors.length;
+  A.click('[data-nav="progress"]'); if (A.$('[data-fixerr]')) A.click('[data-fixerr]'); await A.saved();
   const lat = A.cloud().latency.slice(from).map((x) => x[0]);
   check(lat.length >= 3 && Math.max(...lat) < 500, `every change reaches the database within 500 ms (max ${Math.max(...lat)} ms; request times ${app.stats.sync.join('/')} ms)`, lat);
   const sA = A.state();
   const srv = await server(A);
   check(sameData(srv.state, sA), 'the database holds exactly the app state', (function walk(a, b, p) { if (sameData(a, b)) return []; if (a && b && typeof a === 'object' && typeof b === 'object') return [...new Set([...Object.keys(a), ...Object.keys(b)])].flatMap((k) => walk(a[k], b[k], p + '.' + k)); return [[p, a, b]]; })(sA, srv.state, 'S').slice(0, 5));
-  const rows = (await owner.query(`select (select count(*) from delf50.grammar_attempts)::int g, (select count(*) from delf50.reading_answers)::int r, (select count(*) from delf50.writing_submissions)::int w`)).rows[0];
+  const rows = (await owner.query(`select (select count(*) from delf50.grammar_attempts where not deleted)::int g, (select count(*) from delf50.reading_answers)::int r, (select count(*) from delf50.writing_submissions)::int w`)).rows[0];
   check(rows.g >= 1 && rows.r === Object.keys(sA.reading.answers).length && rows.w === 1, 'answers and writing are rows in their tables', rows);
+  const real = (await owner.query(`select (select count(*) from delf50.grammar_productions where done)::int gp, (select count(*) from delf50.speaking_attempts where extra->>'manual' = 'true')::int manual,
+    (select count(*) from delf50.error_items where resolved_at is not null)::int fixed, (select count(*) from delf50.study_days)::int days, (select count(*) from delf50.daily_progress)::int daily`)).rows[0];
+  check(real.gp === 1 && real.manual === 1 && real.fixed === (errBefore > 0 ? 1 : 0) && real.days >= 1 && real.daily >= 1 && errBefore > 0,
+    'real app flows land in their tables: grammar output practice, offline speaking, fixed error, study day, daily counters', Object.assign({ errBefore }, real));
   check(!A.realKeys().some((k) => k.startsWith('delf50_')), 'nothing is written to browser storage');
 
   // ── recordings ──

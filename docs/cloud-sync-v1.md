@@ -28,12 +28,15 @@
 
 | 表 | 内容 | 键 |
 |---|---|---|
-| `study_state` | 非记录类工作状态：学习计划、路由、计数器、设置（jsonb 文档）+ `rev` | user_id |
+| `study_state` | 非记录类工作状态：学习计划（assignments172、dayPlans172）、内容路由、设置（jsonb 文档）+ `rev` | user_id |
 | `reading_answers` / `listening_answers` | 每道客观题的作答 | (user, answer_key) |
-| `grammar_attempts` | 语法作答，**只追加**：每个不同作答时间一行，最新一行为当前 | id；唯一 (user, key, answered_at) |
-| `writing_submissions` / `application_submissions` | 写作与应用任务（正文、字数、标题、时间） | (user, item_key)，`pos` 保序 |
-| `speaking_attempts` | 口语记录（clip_id、时长） | 同上 |
-| `error_items` | 错题本 | 同上 |
+| `grammar_attempts` | 语法选择题（题干、选项、所选、正确项、对错、作答时间），**只追加**：内容变化追加一行，重放不追加，删除写墓碑行；API 角色无 UPDATE/DELETE 权限 | id |
+| `grammar_productions` | 语法主动产出练习（`prodDone["天:语法点:题号"]`） | (user, prod_key) |
+| `writing_submissions` / `application_submissions` | 写作与应用任务（正文、字数、连接词、命中表达、标题、时间） | (user, item_key)，`pos` 保序 |
+| `speaking_attempts` | 口语记录（录音 clip_id、时长；线下练习 manual） | 同上 |
+| `error_items` | 错题本；在应用中“已纠正”后行保留并标记 `resolved_at` | 同上 |
+| `task_checks` | 每日任务清单勾选（`taskDone["天:任务"]`） | (user, task_key) |
+| `daily_progress` · `study_days` · `practice_counters` | 每日各模块计数 · 学习日（首次/最后活动、次数）· 词块与复习练习数 | (user, day_key) |
 | `drafts` | 正在写的草稿（写作/应用） | (user, kind, key) |
 | `content_completions` | 每个内容的完成记录 | (user, module, content_id) |
 | `media_objects` | R2 对象记录（大小经 HEAD 核验后才为 stored） | (user, clip_id) |
