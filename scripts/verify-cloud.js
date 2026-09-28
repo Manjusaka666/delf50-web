@@ -283,7 +283,7 @@ const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'application/javascri
 function startApp() {
   const v1 = require(path.join(ROOT, 'api/v1.js'));
   const source = require(path.join(ROOT, 'api/source.js'));
-  const stats = { sync: [] };
+  const stats = { sync: [], source: [] };
   const server = http.createServer((req, res) => {
     const u = new URL(req.url, 'http://x');
     if (u.pathname.startsWith('/api/v1/')) {
@@ -294,6 +294,7 @@ function startApp() {
     }
     if (u.pathname === '/api/source') {
       req.query = Object.fromEntries(u.searchParams);
+      stats.source.push(u.search + (req.headers['if-none-match'] ? ' inm' : ''));
       res.status = (c) => { res.statusCode = c; return res; };
       res.send = (b) => res.end(b);
       return source(req, res);
@@ -583,12 +584,20 @@ async function browserTests(base, owner, app) {
   await until(() => A.$('.dc-mask form'), 10000, 'login overlay');
   await sleep(1500);
   check(A.w.__DELF50_BOOT.status !== 'ready', 'signed out, the app does not start; the sign-in form is shown');
-  check(!A.realKeys().some((k) => k.startsWith('delf50_')) && A.realKeys().includes('other_site_key'), 'old browser copies are removed; other keys are untouched', A.realKeys());
-  A.realLs = {};
   await A.signIn('register', 'lea@example.com', 'correct-horse-9', 'Léa');
   await A.booted();
   await A.saved();
   check(A.$('.dc-chip').textContent.includes('Léa') && A.$('.dc-chip').textContent.includes('已保存') && !A.$('.dc-mask'), 'after sign-up the app starts and everything is saved', A.$('.dc-chip').textContent);
+
+  // ── the bundle is cached by the browser, revalidated by ETag ──
+  const s0 = await fetch(base + '/api/source?i=3&v=x');
+  const etag = s0.headers.get('etag');
+  const s1 = await fetch(base + '/api/source?i=3&v=x', { headers: { 'if-none-match': etag } });
+  const s2 = await fetch(base + '/api/source?i=3&v=x', { headers: { 'if-none-match': '"stale"' } });
+  check(s0.status === 200 && /^"[A-Za-z0-9_-]{22}"$/.test(etag) && s0.headers.get('cache-control') === 'public, max-age=0, must-revalidate'
+    && s1.status === 304 && s2.status === 200, 'bundle parts carry a content-hash ETag: unchanged → 304, changed → full part', { etag, a: s0.status, b: s1.status, c: s2.status });
+  const firstTry = app.stats.source.filter((q) => !/attempt=[2-9]/.test(q));
+  check(firstTry.length >= 13 && firstTry.every((q) => !/attempt=/.test(q)), 'the loader’s first attempt goes through the HTTP cache (no per-attempt URL)', app.stats.source.slice(0, 3));
 
   // ── live saving ──
   app.stats.sync.length = 0;
@@ -622,7 +631,9 @@ async function browserTests(base, owner, app) {
     (select count(*) from delf50.error_items where resolved_at is not null)::int fixed, (select count(*) from delf50.study_days)::int days, (select count(*) from delf50.daily_progress)::int daily`)).rows[0];
   check(real.gp === 1 && real.manual === 1 && real.fixed === (errBefore > 0 ? 1 : 0) && real.days >= 1 && real.daily >= 1 && errBefore > 0,
     'real app flows land in their tables: grammar output practice, offline speaking, fixed error, study day, daily counters', Object.assign({ errBefore }, real));
-  check(!A.realKeys().some((k) => k.startsWith('delf50_')), 'nothing is written to browser storage');
+  const realState = A.w.localStorage['delf50_v12_state']; // named access reads the real storage, not the app's in-memory view
+  check(A.realKeys().sort().join() === 'delf50_cloud_meta_v1,delf50_v12_state,other_site_key' && realState === '{"old":"local copy"}' && !('old' in sA),
+    'whatever an older version left in the browser is neither used nor touched; nothing new is written', A.realKeys());
 
   // ── recordings ──
   const clip = crypto.randomBytes(8 * 1024 * 1024 + 7);
