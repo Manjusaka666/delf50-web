@@ -45,6 +45,7 @@
 | `vocabulary_items` · `user_vocabulary` · `vocabulary_reviews` | 共享词典 · 个人词库（SM-2）· 复习日志（只追加） | |
 | 视图 `daily_activity` | 每日各模块活动量，由记录**派生**，不重复存储 | |
 
+* **多级别**：所有学习数据带 `course`（当前为 `delf-b1`，是主键的一部分），一个账号可以同时学 B1/B2/C1/C2，互不影响。设计与新增级别的步骤见 [`multi-level-architecture.md`](multi-level-architecture.md)。
 * 记录字段类型匹配时进入强类型列（int / text / bool / 精确到毫秒的 ISO 时间），其余进入 `extra jsonb`，因此每条记录都能**逐字节语义等价**地读回。
 * 所有用户表 `user_id → neon_auth.user(id) on delete cascade`，默认值为当前调用者。
 * **RLS**：API 以无 BYPASSRLS 的角色 `delf50_api` 连接；每个事务先 `set_config('app.user_id', …)`，策略 `user_id = delf50.uid()`。该角色读不到 `neon_auth`；会话校验经 `security definer` 函数 `delf50.session_user(token)`。

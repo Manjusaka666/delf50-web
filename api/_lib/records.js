@@ -13,6 +13,9 @@
  * The document keeps each collection's empty container (a two-level map
  * keeps its first level, e.g. the module names), so presence round-trips.
  *
+ * Everything is per course (CEFR level; see _lib/courses.js): each statement
+ * carries the course, which is part of every record table's primary key.
+ *
  * Wire format of a change batch (see cloud/delf50-cloud.js):
  *   doc: [[path, value] | [path]]                     set / delete in the document
  *   ops: {name: {set: [[key, value, pos?]], del: [key]}}  key = [part, …]
@@ -127,38 +130,40 @@ function fromRow(c, r) {
 
 const fixedWhere = (c) => (c.fixed ? Object.keys(c.fixed).map((k) => ` and ${k} = '${c.fixed[k]}'`).join('') : '');
 
-// The latest history row for x.answer_key (row-level security scopes it to the caller).
-const LATEST = (c) => `(select g.sig, g.deleted from delf50.${c.table} g where g.answer_key = x.answer_key order by g.id desc limit 1)`;
+// The latest history row for x.answer_key in the course (row-level security scopes it to the caller).
+const LATEST = (c) => `(select g.sig, g.deleted from delf50.${c.table} g where g.course = $2 and g.answer_key = x.answer_key order by g.id desc limit 1)`;
 
-function statements(name, change) {
+/** Statements for one collection's changes; $1 = the rows or keys, $2 = the course. */
+function statements(name, change, course) {
   const c = COLLECTIONS[name];
   if (!c) return [];
   const out = [];
   if (Array.isArray(change.del) && change.del.length) {
     const del = JSON.stringify(change.del);
     if (c.history) { // a removal is a tombstone row
-      out.push([`insert into delf50.${c.table} (answer_key, sig, deleted) select x.answer_key, 'deleted', true
-        from (select e->>0 as answer_key from jsonb_array_elements($1::jsonb) e) x where exists (select 1 from ${LATEST(c)} l where not l.deleted)`, [del]]);
+      out.push([`insert into delf50.${c.table} (course, answer_key, sig, deleted) select $2, x.answer_key, 'deleted', true
+        from (select e->>0 as answer_key from jsonb_array_elements($1::jsonb) e) x where exists (select 1 from ${LATEST(c)} l where not l.deleted)`, [del, course]]);
     } else {
       const sel = c.keys.map((_, i) => `x->>${i}`).join(', ');
-      if (c.soft) out.push([`update delf50.${c.table} set ${c.soft} = now() where ${c.soft} is null and (${c.keys.join(', ')}) in (select ${sel} from jsonb_array_elements($1::jsonb) x)`, [del]]);
-      else out.push([`delete from delf50.${c.table} where (${c.keys.join(', ')}) in (select ${sel} from jsonb_array_elements($1::jsonb) x)${fixedWhere(c)}`, [del]]);
+      const where = `course = $2 and (${c.keys.join(', ')}) in (select ${sel} from jsonb_array_elements($1::jsonb) x)`;
+      if (c.soft) out.push([`update delf50.${c.table} set ${c.soft} = now() where ${c.soft} is null and ${where}`, [del, course]]);
+      else out.push([`delete from delf50.${c.table} where ${where}${fixedWhere(c)}`, [del, course]]);
     }
   }
   if (Array.isArray(change.set) && change.set.length) {
     const cols = columns(c);
     const names = cols.map(([n]) => n).join(', ');
-    const rows = [JSON.stringify(change.set.map(([key, value, pos]) => toRow(c, key, value, pos)))];
+    const rows = [JSON.stringify(change.set.map(([key, value, pos]) => toRow(c, key, value, pos))), course];
     const from = `from jsonb_to_recordset($1::jsonb) as x(${cols.map(([n, t]) => `${n} ${t}`).join(', ')})`;
     if (c.history) { // append unless it repeats the current content (a replay)
-      out.push([`insert into delf50.${c.table} (${names}) select ${names} ${from}
+      out.push([`insert into delf50.${c.table} (course, ${names}) select $2, ${names} ${from}
         where not exists (select 1 from ${LATEST(c)} l where l.sig = x.sig and not l.deleted)`, rows]);
     } else {
       const target = c.keys.concat(c.fixed ? Object.keys(c.fixed) : []);
       const update = cols.filter(([n]) => !target.includes(n)).map(([n]) => `${n} = excluded.${n}`)
         .concat(c.touch ? [`${c.touch} = now()`] : [], c.soft ? [`${c.soft} = null`] : []).join(', ');
-      out.push([`insert into delf50.${c.table} (${names}) select ${names} ${from}
-        on conflict (user_id, ${target.join(', ')}) do update set ${update}`, rows]);
+      out.push([`insert into delf50.${c.table} (course, ${names}) select $2, ${names} ${from}
+        on conflict (user_id, course, ${target.join(', ')}) do update set ${update}`, rows]);
     }
   }
   return out;
@@ -169,15 +174,15 @@ function statements(name, change) {
  * repeats the previous one (same `batch` id: a retry or a keepalive replay)
  * keeps the revision.
  */
-async function sync(user, body) {
+async function sync(user, body, course) {
   const stmts = [];
-  for (const name of Object.keys(body.ops || {})) stmts.push(...statements(name, body.ops[name]));
+  for (const name of Object.keys(body.ops || {})) stmts.push(...statements(name, body.ops[name], course));
   stmts.push([
-    `insert into delf50.study_state (doc, rev, device, batch) values (delf50.jsonb_patch('{}', $1::jsonb), 1, $2, $3)
-     on conflict (user_id) do update set doc = delf50.jsonb_patch(study_state.doc, $1::jsonb), device = $2, batch = $3, updated_at = now(),
+    `insert into delf50.study_state (course, doc, rev, device, batch) values ($4, delf50.jsonb_patch('{}', $1::jsonb), 1, $2, $3)
+     on conflict (user_id, course) do update set doc = delf50.jsonb_patch(study_state.doc, $1::jsonb), device = $2, batch = $3, updated_at = now(),
        rev = study_state.rev + case when $3::text is not null and study_state.batch = $3 then 0 else 1 end
      returning rev`,
-    [JSON.stringify(body.doc || []), typeof body.device === 'string' ? body.device.slice(0, 80) : null, typeof body.batch === 'string' ? body.batch.slice(0, 64) : null]
+    [JSON.stringify(body.doc || []), typeof body.device === 'string' ? body.device.slice(0, 80) : null, typeof body.batch === 'string' ? body.batch.slice(0, 64) : null, course]
   ]);
   const res = await db.tx(user.id, stmts);
   return { rev: Number(res[res.length - 1][0].rev) };
@@ -185,9 +190,9 @@ async function sync(user, body) {
 
 function selectFor(c) {
   const cols = columns(c).map(([n]) => n).join(', ');
-  const where = c.fixed || c.soft ? ` where true${fixedWhere(c)}${c.soft ? ` and ${c.soft} is null` : ''}` : '';
+  const where = ` where course = $1${fixedWhere(c)}${c.soft ? ` and ${c.soft} is null` : ''}`;
   if (c.history) {
-    return `select * from (select distinct on (answer_key) ${cols}, deleted from delf50.${c.table} order by answer_key, id desc) t where not deleted`;
+    return `select * from (select distinct on (answer_key) ${cols}, deleted from delf50.${c.table} where course = $1 order by answer_key, id desc) t where not deleted`;
   }
   return `select ${cols} from delf50.${c.table}${where} order by ${c.kind === 'list' ? 'pos' : c.keys.join(', ')}`;
 }
@@ -198,12 +203,12 @@ function setPath(obj, path, value) {
   o[path[path.length - 1]] = value;
 }
 
-/** The learner's whole state, rebuilt from the tables, plus list positions. */
-async function bootstrap(user) {
+/** The learner's whole state in one course, rebuilt from the tables, plus list positions. */
+async function bootstrap(user, course) {
   const names = Object.keys(COLLECTIONS);
   const res = await db.tx(user.id, [
-    ['select doc, rev from delf50.study_state', []],
-    ...names.map((n) => [selectFor(COLLECTIONS[n]), []])
+    ['select doc, rev from delf50.study_state where course = $1', [course]],
+    ...names.map((n) => [selectFor(COLLECTIONS[n]), [course]])
   ]);
   const head = res[0][0];
   const has = head || res.slice(1).some((rows) => rows.length);
