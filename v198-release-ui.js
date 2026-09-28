@@ -34,7 +34,7 @@
           ?'当前有效内容分配与最新题库审计一致；新增模块继续使用独立字段和 migration。已有学习计数、文本、错题与录音引用不得减少，已开始或已完成内容继续按 ID 锁定。'
           :'当前有效 Content ID 仍有重复项需要检查；系统不会因此改写已有学习证据。这里仅统计有效 Content ID，不再把题干、正文或旧 Trace ID 重复混入此指标。')+
       '</div>'+
-      '<div class="storage">App '+RELEASE.app+' · Content '+RELEASE.content+' · 迁移记录：'+migrationCount+' · 安全快照：'+snapshot198()+'</div>'+
+      '<div class="storage">App '+RELEASE.app+' · Content '+RELEASE.content+' · 迁移记录：'+migrationCount+'</div>'+
     '</div>';
   }
 
