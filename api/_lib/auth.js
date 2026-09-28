@@ -85,6 +85,9 @@ async function recentFailures(kind, subject, minutes) {
 
 async function recordAttempt(kind, subject, ok) {
   await db.query('insert into delf50.auth_attempts (kind, subject, ok) values ($1, $2, $3)', [kind, subject, ok]);
+  // Limits look back at most an hour; keep a day for diagnosis, prune the rest
+  // now and then so the table stays small.
+  if (Math.random() < 0.05) await db.query("delete from delf50.auth_attempts where at < now() - interval '1 day'");
 }
 
 async function enforceLimit(kind, subject, max, minutes) {

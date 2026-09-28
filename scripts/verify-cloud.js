@@ -284,6 +284,9 @@ async function apiTests(base, pool, s3) {
   const bad = pushBody('{"x":2}');
   r = await A.req('PUT', '/sync/state', { body: bad.body, headers: Object.assign({}, bad.headers, { 'X-DELF50-Base-Rev': '1', 'X-DELF50-Hash': sha256hex('something else') }) });
   check(r.status === 422 && r.data.error.code === 'hash_mismatch', 'a body that does not match its hash is refused');
+  const badUtf8 = Buffer.from([0x7b, 0x22, 0x61, 0x22, 0x3a, 0x22, 0xff, 0x22, 0x7d]);
+  r = await A.req('PUT', '/sync/state', { body: badUtf8, headers: { 'Content-Type': 'application/octet-stream', 'X-DELF50-Encoding': 'identity', 'X-DELF50-Hash': sha256hex(badUtf8), 'X-DELF50-Base-Rev': '1' } });
+  check(r.status === 422 && r.data.error.code === 'invalid_utf8', 'a document that is not valid UTF-8 is refused (its hash could never verify)');
   const notJson = pushBody('{not json');
   r = await A.req('PUT', '/sync/state', { body: notJson.body, headers: Object.assign({ 'X-DELF50-Base-Rev': '1' }, notJson.headers) });
   check(r.status === 422, 'a document that is not a JSON object is refused');
@@ -366,6 +369,8 @@ async function apiTests(base, pool, s3) {
   r = await A.req('POST', '/events', { json: { events: evs } });
   const r2x = await A.req('POST', '/events', { json: { events: evs } });
   check(r.data.accepted === 2 && r2x.data.accepted === 0 && r2x.data.duplicates.length === 2, 'events are idempotent by client id');
+  const dup = await A.req('POST', '/events', { json: { events: [{ id: 'e3', type: 'x', occurredAt: '2026-09-02T10:02:00Z' }, { id: 'e3', type: 'x', occurredAt: '2026-09-02T10:02:00Z' }] } });
+  check(dup.data.accepted === 1 && dup.data.duplicates.join() === 'e3', 'a repeated id within one batch is reported as a duplicate', dup.data);
   r = await A.req('GET', '/events?after=0');
   const cursor = r.data.nextCursor;
   r = await A.req('GET', '/events?after=' + cursor);

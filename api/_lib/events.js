@@ -33,17 +33,25 @@ async function post(req, res, auth, body) {
       payload
     };
   });
+  // A repeated id inside one batch is a duplicate of its first occurrence.
+  const seen = new Set();
+  const repeated = [];
+  const unique = rows.filter((r) => {
+    if (seen.has(r.client_event_id)) { repeated.push(r.client_event_id); return false; }
+    seen.add(r.client_event_id);
+    return true;
+  });
   const inserted = await db.query(
     `insert into delf50.learning_events (user_id, device_id, client_event_id, type, day, module, content_id, occurred_at, payload)
      select $1, $2, x.client_event_id, x.type, x.day, x.module, x.content_id, x.occurred_at, coalesce(x.payload, '{}'::jsonb)
        from jsonb_to_recordset($3::jsonb) as x(client_event_id text, type text, day int, module text, content_id text, occurred_at timestamptz, payload jsonb)
      on conflict (user_id, client_event_id) do nothing
      returning client_event_id, seq`,
-    [auth.userId, auth.deviceId, jsonbSafe(rows)]);
+    [auth.userId, auth.deviceId, jsonbSafe(unique)]);
   const got = new Set(inserted.map((r) => r.client_event_id));
   send(res, 200, {
     accepted: inserted.length,
-    duplicates: rows.filter((r) => !got.has(r.client_event_id)).map((r) => r.client_event_id)
+    duplicates: unique.filter((r) => !got.has(r.client_event_id)).map((r) => r.client_event_id).concat(repeated)
   });
 }
 

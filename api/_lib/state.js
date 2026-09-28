@@ -53,6 +53,9 @@ async function readDocument(req) {
   if (bytes.length > MAX_STATE_BYTES) throw new HttpError(413, 'state_too_large', 'State document is too large');
   if (sha256hex(bytes) !== hash) throw new HttpError(422, 'hash_mismatch', 'Body does not match X-DELF50-Hash');
   const textValue = bytes.toString('utf8');
+  // Invalid UTF-8 would be replaced during decoding, so the stored text would
+  // no longer match the hash every client verifies on download.
+  if (!Buffer.from(textValue, 'utf8').equals(bytes)) throw new HttpError(422, 'invalid_utf8', 'State document is not valid UTF-8');
   let parsed;
   try { parsed = JSON.parse(textValue); } catch (e) { throw new HttpError(422, 'invalid_state', 'State document is not valid JSON'); }
   if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw new HttpError(422, 'invalid_state', 'State document must be a JSON object');
