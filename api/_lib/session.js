@@ -47,7 +47,10 @@ async function proxy(req, res, path) {
 
 function tokenOf(req) {
   const auth = header(req, 'authorization');
-  if (auth && /^Bearer /i.test(auth)) return auth.slice(7).trim();
+  if (auth && /^Bearer /i.test(auth)) {
+    const t = auth.slice(7).trim();
+    return t.split('.').length === 3 ? t : t.split('.')[0]; // a JWT, or a session token (signed form accepted)
+  }
   const c = parseCookies(req)[COOKIE];
   return c ? c.split('.')[0] : null;
 }

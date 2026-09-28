@@ -195,7 +195,7 @@
 
   function call(method, path, body, opts) {
     opts = opts || {};
-    var init = { method: method, credentials: 'same-origin', keepalive: Boolean(opts.keepalive), headers: {} };
+    var init = { method: method, credentials: 'same-origin', cache: 'no-store', keepalive: Boolean(opts.keepalive), headers: {} };
     if (body instanceof Blob) { init.body = body; init.headers['Content-Type'] = 'application/octet-stream'; }
     else if (body !== undefined) { init.body = JSON.stringify(body); init.headers['Content-Type'] = 'application/json'; }
     return realFetch(API + path, init).then(function (r) {
@@ -230,7 +230,8 @@
   function batchFor(text) {
     var next = JSON.parse(text);
     var d = diff(E.acked, E.pos, next, E.spec);
-    return { next: next, d: d, body: { doc: d.doc, ops: d.ops, device: 'web' } };
+    // The batch id makes a replay (retry, keepalive) keep the server revision.
+    return { next: next, d: d, body: { doc: d.doc, ops: d.ops, device: 'web', batch: hash(JSON.stringify([d.doc, d.ops])) } };
   }
 
   function flush() {

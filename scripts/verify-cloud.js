@@ -342,7 +342,7 @@ async function apiTests(base, owner, auth, s3) {
 
   const S = sampleState();
   const d0 = C.diff({}, {}, S, SPEC);
-  r = await A.req('POST', '/sync', { json: { doc: d0.doc, ops: d0.ops, device: 'test' } });
+  r = await A.req('POST', '/sync', { json: { doc: d0.doc, ops: d0.ops, device: 'test', batch: 'b0' } });
   check(r.status === 200 && r.data.rev === 1, 'the first batch commits as revision 1', r.data);
   r = await A.req('GET', '/bootstrap');
   check(sameData(r.data.state, S), 'bootstrap rebuilds the state exactly from the tables', r.data.state);
@@ -355,9 +355,9 @@ async function apiTests(base, owner, auth, s3) {
   const typed = (await owner.query(`select body, word_count, created_at, extra from delf50.writing_submissions order by pos`)).rows;
   check(typed[0].word_count === 120 && typed[0].created_at.toISOString() === '2026-09-27T09:15:00.123Z' && typed[0].extra.connectors[0] === 'cependant', 'writing is stored as typed columns', typed[0]);
 
-  r = await A.req('POST', '/sync', { json: { doc: d0.doc, ops: d0.ops } });
+  r = await A.req('POST', '/sync', { json: { doc: d0.doc, ops: d0.ops, batch: 'b0' } });
   const c2 = await counts();
-  check(r.status === 200 && C.equal(c1, c2) && sameData((await A.req('GET', '/bootstrap')).data.state, S), 'replaying a batch changes nothing (idempotent)');
+  check(r.status === 200 && r.data.rev === 1 && C.equal(c1, c2) && sameData((await A.req('GET', '/bootstrap')).data.state, S), 'replaying a batch changes nothing, not even the revision', r.data);
 
   const S2 = clone(S);
   S2.grammarReview202['3:GQ-2'] = Object.assign({}, S2.grammarReview202['3:GQ-2'], { selectedIndex: 1, correct: true, answeredAt: '2026-09-28T08:30:00.000Z' });
@@ -367,13 +367,23 @@ async function apiTests(base, owner, auth, s3) {
   delete S2.drafts171.writing['d3-w'];
   S2.selectedDay = 4;
   const d1 = C.diff(S, d0.pos, S2, SPEC);
-  r = await A.req('POST', '/sync', { json: { doc: d1.doc, ops: d1.ops } });
+  r = await A.req('POST', '/sync', { json: { doc: d1.doc, ops: d1.ops, batch: 'b1' } });
   const b2 = (await A.req('GET', '/bootstrap')).data;
-  check(r.data.rev === 3 && sameData(b2.state, S2) && C.equal(b2.positions, d1.pos), 'incremental batches keep the state exact', b2.state);
+  check(r.data.rev === 2 && sameData(b2.state, S2) && C.equal(b2.positions, d1.pos), 'incremental batches keep the state exact', b2.state);
   const g = (await owner.query(`select answer_key, selected, correct from delf50.grammar_attempts order by id`)).rows;
-  check(g.length === 3 && g[1].correct === false && g[2].correct === true && g[2].selected === 1, 'grammar history is append-only; the latest answer is current', g);
+  check(g.length === 3 && g[1].correct === false && g[2].correct === true && g[2].selected === 1, 'a changed grammar answer appends a row; the latest is current', g);
+  const S3 = clone(S2); delete S3.grammarReview202['3:GQ-1'];
+  const d2 = C.diff(S2, d1.pos, S3, SPEC);
+  await A.req('POST', '/sync', { json: { doc: d2.doc, ops: d2.ops } });
+  const b3 = (await A.req('GET', '/bootstrap')).data;
+  const d3 = C.diff(S3, d2.pos, S2, SPEC);
+  await A.req('POST', '/sync', { json: { doc: d3.doc, ops: d3.ops } });
+  const b4 = (await A.req('GET', '/bootstrap')).data;
+  const hist = (await owner.query(`select answer_key, deleted from delf50.grammar_attempts where answer_key = '3:GQ-1' order by id`)).rows;
+  check(sameData(b3.state, S3) && sameData(b4.state, S2) && C.equal(hist.map((x) => x.deleted), [false, true, false]),
+    'removing an answer appends a tombstone, re-adding appends again; nothing is rewritten', hist);
   const rev = await A.req('GET', '/rev');
-  check(rev.data.rev === 3, 'rev reports the latest revision');
+  check(rev.data.rev === 4, 'rev reports the latest revision', rev.data);
 
   // Row-level security: the API role sees only the caller's rows.
   const B = client(base);
@@ -396,6 +406,11 @@ async function apiTests(base, owner, auth, s3) {
   denied = false;
   try { await asUser(noah, 'select * from neon_auth.session'); } catch (e) { denied = /permission denied/.test(e.message); }
   check(denied, 'the API role cannot read Neon Auth tables');
+  for (const sql of ['update delf50.grammar_attempts set correct = false', 'delete from delf50.grammar_attempts', 'delete from delf50.vocabulary_reviews']) {
+    denied = false;
+    try { await asUser(lea, sql); } catch (e) { denied = /permission denied/.test(e.message); }
+    check(denied, `history is insert-only for the API role: ${sql.split(' ').slice(0, 3).join(' ')} is refused`);
+  }
   await api.end();
 
   // Bearer tokens for apps.
@@ -405,7 +420,8 @@ async function apiTests(base, owner, auth, s3) {
   check(token && (await asBearer(token)) === 200, 'a Neon Auth JWT works as a bearer token');
   const forged = token.split('.').slice(0, 2).join('.') + '.' + crypto.randomBytes(64).toString('base64url');
   check((await asBearer(forged)) === 401, 'a JWT with a bad signature is refused');
-  check((await asBearer(decodeURIComponent(A.cookie.split('=')[1]).split('.')[0])) === 200, 'a session token works as a bearer token');
+  const signed = decodeURIComponent(A.cookie.split('=')[1]);
+  check((await asBearer(signed.split('.')[0])) === 200 && (await asBearer(signed)) === 200, 'a session token works as a bearer token, plain or signed');
 
   // Media in R2.
   const clip = crypto.randomBytes(300 * 1024);
@@ -637,7 +653,9 @@ async function main() {
       create table neon_auth.session (id uuid primary key, token text unique not null, "userId" uuid references neon_auth."user"(id) on delete cascade, "expiresAt" timestamptz not null);
       do $$ begin if not exists (select from pg_roles where rolname = 'delf50_api') then create role delf50_api; end if; end $$;
       alter role delf50_api login password 'api-test-password'`);
-    await owner.query(fs.readFileSync(path.join(ROOT, 'db/migrations/0001_learning.sql'), 'utf8'));
+    for (const f of fs.readdirSync(path.join(ROOT, 'db/migrations')).filter((x) => x.endsWith('.sql')).sort()) {
+      await owner.query(fs.readFileSync(path.join(ROOT, 'db/migrations', f), 'utf8'));
+    }
     const u = new URL(url); u.username = 'delf50_api'; u.password = 'api-test-password';
     process.env.API_DATABASE_URL = u.toString();
     const apiPool = useDatabase(process.env.API_DATABASE_URL);

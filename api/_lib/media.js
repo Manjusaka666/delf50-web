@@ -19,7 +19,7 @@ const TYPE_RE = /^(audio|video)\/[A-Za-z0-9.+-]{1,40}(;[ A-Za-z0-9=.,+-]{0,80})?
 const MAX_BYTES = 50 * 1024 * 1024;
 const PART_BYTES = 3.5 * 1024 * 1024;
 const MAX_PARTS = Math.ceil(MAX_BYTES / PART_BYTES);
-const EXT = { webm: 'webm', ogg: 'ogg', mp4: 'm4a', 'x-m4a': 'm4a', aac: 'aac', mpeg: 'mp3', wav: 'wav' };
+const EXT = { webm: 'webm', ogg: 'ogg', mp4: 'm4a', 'x-m4a': 'm4a', aac: 'aac', mpeg: 'mp3', mp3: 'mp3', wav: 'wav', 'x-wav': 'wav', wave: 'wav' };
 
 const COLS = 'clip_id, object_key, mime_type, size_bytes, parts, status, created_at, uploaded_at';
 
