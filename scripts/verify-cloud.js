@@ -391,6 +391,28 @@ async function apiTests(base, owner, auth, s3) {
   const rev = await A.req('GET', '/rev');
   check(rev.data.rev === 6, 'rev reports the latest revision', rev.data);
 
+  // Courses (CEFR levels): one account, separate records per course.
+  const courses = require(path.join(ROOT, 'api/_lib/courses.js'));
+  courses.COURSES['delf-b2-test'] = { level: 'B2', exam: 'DELF', days: 50, title: 'test only' };
+  r = await A.req('GET', '/bootstrap?course=nope');
+  check(r.status === 400 && r.data.error.code === 'unknown_course', 'an unknown course is refused');
+  const explicitB1 = (await A.req('GET', '/bootstrap?course=delf-b1')).data;
+  check(explicitB1.course === 'delf-b1' && sameData(explicitB1.state, S5), 'requests without a course address delf-b1 (the current site)');
+  r = await A.req('GET', '/bootstrap?course=delf-b2-test');
+  check(r.status === 200 && r.data.state === null && r.data.rev === 0, 'a new course starts empty for the same account');
+  const T = sampleState(); T.selectedDay = 9; T.writing.records[0].text = 'Texte de niveau B2';
+  const dT = C.diff({}, {}, T, SPEC);
+  r = await A.req('POST', '/sync?course=delf-b2-test', { json: { doc: dT.doc, ops: dT.ops, batch: 'b0' } });
+  const bT = (await A.req('GET', '/bootstrap?course=delf-b2-test')).data;
+  const b1Again = (await A.req('GET', '/bootstrap')).data;
+  check(r.data.rev === 1 && sameData(bT.state, T) && sameData(b1Again.state, S5) && b1Again.rev === 6,
+    'the same question ids in two courses never collide; each course keeps its own state and revision', { rev: r.data.rev, b1rev: b1Again.rev });
+  const perCourse = (await owner.query(`select course, count(*)::int n from delf50.reading_answers group by course order by course`)).rows;
+  check(C.equal(perCourse, [{ course: 'delf-b1', n: 3 }, { course: 'delf-b2-test', n: 3 }]), 'records carry their course', perCourse);
+  r = await A.req('GET', '/courses');
+  check(r.data.courses.some((c) => c.id === 'delf-b1' && c.level === 'B1') && r.data.enrolled.map((e) => e.course).sort().join() === 'delf-b1,delf-b2-test',
+    'the account lists its courses', r.data.enrolled);
+
   // Row-level security: the API role sees only the caller's rows.
   const B = client(base);
   await B.req('POST', '/auth/sign-up/email', { json: { email: 'noah@example.com', password: 'correct-horse-10', name: 'Noah' } });
@@ -404,8 +426,9 @@ async function apiTests(base, owner, auth, s3) {
     try { await api.query(`select set_config('app.user_id', $1, true)`, [id || '']); return (await api.query(sql, params)).rows; } finally { await api.query('rollback'); }
   };
   const noah = ids.find((x) => x.email === 'noah@example.com').id, lea = ids.find((x) => x.email === 'lea@example.com').id;
-  check((await asUser(noah, 'select * from delf50.error_items')).length === 0 && (await asUser(lea, 'select * from delf50.error_items')).length === 5
-    && (await asUser(noah, 'select * from delf50.daily_progress')).length === 0 && (await asUser(lea, 'select * from delf50.daily_progress')).length === 1, 'RLS: rows are visible to their owner only');
+  const b1 = " where course = 'delf-b1'";
+  check((await asUser(noah, 'select * from delf50.error_items')).length === 0 && (await asUser(lea, 'select * from delf50.error_items' + b1)).length === 5
+    && (await asUser(noah, 'select * from delf50.daily_progress')).length === 0 && (await asUser(lea, 'select * from delf50.daily_progress' + b1)).length === 1, 'RLS: rows are visible to their owner only');
   check((await asUser(null, 'select * from delf50.study_state')).length === 0, 'RLS: without a user, nothing is visible');
   let denied = false;
   try { await asUser(noah, `insert into delf50.drafts (user_id, kind, draft_key, body) values ($1, 'writing', 'x', 'y')`, [lea]); } catch (e) { denied = /row-level security/.test(e.message); }
@@ -452,10 +475,16 @@ async function apiTests(base, owner, auth, s3) {
   r = await A.req('GET', '/media/url?clipId=d3-s1');
   const direct = await fetch(r.data.urls[0]);
   check(Buffer.compare(Buffer.from(await direct.arrayBuffer()), clip) === 0, 'presigned download URLs work (for apps)');
+  const clip2 = crypto.randomBytes(1000);
+  r = await A.req('PUT', `/media/raw?course=delf-b2-test&clipId=d3-s1&type=audio%2Fwebm&size=${clip2.length}`, { body: clip2, headers: { 'Content-Type': 'application/octet-stream' } });
+  const m1 = await A.req('GET', '/media/raw?clipId=d3-s1', { raw: true });
+  const m2 = await A.req('GET', '/media/raw?course=delf-b2-test&clipId=d3-s1', { raw: true });
+  check(r.data.status === 'stored' && Buffer.compare(m1.data, clip) === 0 && Buffer.compare(m2.data, clip2) === 0
+    && [...s3.objects.keys()].some((k) => k.includes('/delf-b2-test/speaking/d3-s1')), 'recordings are stored per course (u/<user>/<course>/…)');
   check(s3.stats.badSig === 0, 'every R2 request was correctly signed');
 
   // Vocabulary.
-  r = await A.req('POST', '/vocab', { json: { lemma: 'néanmoins', definition: 'nevertheless', partOfSpeech: 'adv' } });
+  r = await A.req('POST', '/vocab', { json: { lemma: 'néanmoins', definition: 'nevertheless', partOfSpeech: 'adv', level: 'B2' } });
   const vid = r.data.item && r.data.item.id;
   check(r.status === 201 && vid, 'a word is added to the shared dictionary and the deck', r.data);
   r = await B.req('POST', '/vocab', { json: { lemma: 'néanmoins', partOfSpeech: 'adv' } });
@@ -467,6 +496,8 @@ async function apiTests(base, owner, auth, s3) {
   r = await A.req('GET', '/vocab');
   const nb = (await B.req('GET', '/vocab')).data.items;
   check(r.data.items.length === 1 && nb.length === 1 && nb[0].repetitions === 0, 'each deck keeps its own schedule');
+  const lv = (await A.req('GET', '/vocab?level=B2')).data.items, lc = (await A.req('GET', '/vocab?level=C1')).data.items;
+  check(lv.length === 1 && lv[0].cefr_level === 'B2' && lv[0].course === 'delf-b1' && lc.length === 0, 'words carry their CEFR level and the course they came from', lv[0]);
   const rv = (await owner.query('select count(*)::int n from delf50.vocabulary_reviews')).rows[0].n;
   check(rv === 4, 'every review is logged');
   const act = (await owner.query(`select module, n from delf50.daily_activity where user_id = $1`, [lea])).rows;
@@ -689,8 +720,10 @@ async function main() {
       create table neon_auth.session (id uuid primary key, token text unique not null, "userId" uuid references neon_auth."user"(id) on delete cascade, "expiresAt" timestamptz not null);
       do $$ begin if not exists (select from pg_roles where rolname = 'delf50_api') then create role delf50_api; end if; end $$;
       alter role delf50_api login password '${apiPassword}'`);
-    for (const f of fs.readdirSync(path.join(ROOT, 'db/migrations')).filter((x) => x.endsWith('.sql')).sort()) {
-      await owner.query(fs.readFileSync(path.join(ROOT, 'db/migrations', f), 'utf8'));
+    for (let pass = 0; pass < 2; pass++) { // twice: every migration must be safe to re-run
+      for (const f of fs.readdirSync(path.join(ROOT, 'db/migrations')).filter((x) => x.endsWith('.sql')).sort()) {
+        await owner.query(fs.readFileSync(path.join(ROOT, 'db/migrations', f), 'utf8'));
+      }
     }
     const u = new URL(url); u.username = 'delf50_api'; u.password = apiPassword;
     process.env.API_DATABASE_URL = u.toString();

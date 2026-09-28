@@ -7,10 +7,14 @@
  * proxy below); apps send `Authorization: Bearer <JWT | session token>`.
  * Errors are {error:{code,message}}.
  *
+ * Courses: learning routes take `?course=<id>` (see _lib/courses.js); without
+ * it they address the default course, delf-b1. Accounts span all courses.
+ *
  *   GET        health[?deep=1]
  *   *          auth/<neon-auth route>   e.g. sign-up/email, sign-in/email, get-session, sign-out, token
- *   GET        bootstrap                {user, state, rev, positions, collections}
- *   POST       sync                     {doc, ops, device} → {rev}
+ *   GET        courses                  {courses, enrolled: [{course, rev, updatedAt}]}
+ *   GET        bootstrap                {user, course, state, rev, positions, collections}
+ *   POST       sync                     {doc, ops, device, batch} → {rev}
  *   GET        rev                      {rev}
  *   GET|DELETE media[?clipId=]
  *   PUT|GET    media/raw?clipId=…       POST media/upload-url · POST media/complete · GET media/url
@@ -22,6 +26,7 @@ const session = require('./_lib/session');
 const records = require('./_lib/records');
 const media = require('./_lib/media');
 const vocab = require('./_lib/vocab');
+const courses = require('./_lib/courses');
 const { HttpError, readJson, send } = require('./_lib/http');
 
 function route(req) {
@@ -48,26 +53,32 @@ async function dispatch(req, res) {
   }
 
   const user = await session.requireUser(req);
+  const course = courses.courseOf(req.query.course);
 
-  if (path === 'bootstrap' && m === 'GET') {
-    return send(res, 200, Object.assign({ user, collections: records.collections() }, await records.bootstrap(user)));
+  if (path === 'courses' && m === 'GET') {
+    const [rows] = await db.tx(user.id, [['select course, rev, updated_at from delf50.study_state order by updated_at desc', []]]);
+    return send(res, 200, { courses: courses.list(), enrolled: rows.map((r) => ({ course: r.course, rev: Number(r.rev), updatedAt: r.updated_at })) });
   }
-  if (path === 'sync' && m === 'POST') return send(res, 200, await records.sync(user, await readJson(req, 4 * 1024 * 1024)));
+  if (path === 'bootstrap' && m === 'GET') {
+    return send(res, 200, Object.assign({ user, course, collections: records.collections() }, await records.bootstrap(user, course)));
+  }
+  if (path === 'sync' && m === 'POST') return send(res, 200, await records.sync(user, await readJson(req, 4 * 1024 * 1024), course));
   if (path === 'rev' && m === 'GET') {
-    const [rows] = await db.tx(user.id, [['select rev from delf50.study_state', []]]);
+    const [rows] = await db.tx(user.id, [['select rev from delf50.study_state where course = $1', [course]]]);
     return send(res, 200, { rev: rows[0] ? Number(rows[0].rev) : 0 });
   }
 
-  if (path === 'media' && m === 'GET') return media.list(req, res, user);
-  if (path === 'media' && m === 'DELETE') return media.remove(req, res, user);
-  if (path === 'media/raw' && m === 'PUT') return media.proxyUpload(req, res, user);
-  if (path === 'media/raw' && m === 'GET') return media.proxyDownload(req, res, user);
-  if (path === 'media/url' && m === 'GET') return media.downloadUrl(req, res, user);
-  if (path === 'media/upload-url' && m === 'POST') return media.uploadUrl(req, res, user, await readJson(req));
-  if (path === 'media/complete' && m === 'POST') return media.complete(req, res, user, await readJson(req));
+  if (path === 'media' && m === 'GET') return media.list(req, res, user, course);
+  if (path === 'media' && m === 'DELETE') return media.remove(req, res, user, course);
+  if (path === 'media/raw' && m === 'PUT') return media.proxyUpload(req, res, user, course);
+  if (path === 'media/raw' && m === 'GET') return media.proxyDownload(req, res, user, course);
+  if (path === 'media/url' && m === 'GET') return media.downloadUrl(req, res, user, course);
+  if (path === 'media/upload-url' && m === 'POST') return media.uploadUrl(req, res, user, await readJson(req), course);
+  if (path === 'media/complete' && m === 'POST') return media.complete(req, res, user, await readJson(req), course);
 
+  // Vocabulary is one deck across courses; `course` records where a word was added.
   if (path === 'vocab' && m === 'GET') return vocab.list(req, res, user);
-  if (path === 'vocab' && m === 'POST') return vocab.add(req, res, user, await readJson(req));
+  if (path === 'vocab' && m === 'POST') return vocab.add(req, res, user, await readJson(req), course);
   if (path === 'vocab' && m === 'DELETE') return vocab.remove(req, res, user);
   if (path === 'vocab/review' && m === 'POST') return vocab.review(req, res, user, await readJson(req));
 

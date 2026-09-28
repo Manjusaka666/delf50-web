@@ -156,6 +156,8 @@
 
   var D = W.document;
   var API = '/api/v1';
+  // The course (CEFR level) this site serves; each course has its own records.
+  var COURSE = (W.__DELF50_RELEASE && W.__DELF50_RELEASE.course) || 'delf-b1';
   var STATE_KEY = 'delf50_v12_state';
   var AUDIO_DB = 'delf50_audio_v1';
   var DEBOUNCE_MS = 60, MAX_WAIT_MS = 300;
@@ -194,7 +196,8 @@
     var init = { method: method, credentials: 'same-origin', cache: 'no-store', keepalive: Boolean(opts.keepalive), headers: {} };
     if (body instanceof Blob) { init.body = body; init.headers['Content-Type'] = 'application/octet-stream'; }
     else if (body !== undefined) { init.body = JSON.stringify(body); init.headers['Content-Type'] = 'application/json'; }
-    return realFetch(API + path, init).then(function (r) {
+    var url = API + path + (/^\/auth\//.test(path) ? '' : (path.indexOf('?') < 0 ? '?' : '&') + 'course=' + encodeURIComponent(COURSE));
+    return realFetch(url, init).then(function (r) {
       if (opts.raw && r.ok) return r;
       return r.text().then(function (t) {
         var data = null;
@@ -497,7 +500,7 @@
   })();
 
   var API_OBJ = Object.assign({}, CORE, {
-    state: function () { return { status: E.status, user: E.user, rev: E.rev, ready: E.ready, pending: pending(), inflight: E.inflight, uploads: E.uploads, latency: E.latency.slice(), savedAt: E.savedAt }; },
+    state: function () { return { course: COURSE, status: E.status, user: E.user, rev: E.rev, ready: E.ready, pending: pending(), inflight: E.inflight, uploads: E.uploads, latency: E.latency.slice(), savedAt: E.savedAt }; },
     flush: flush
   });
   W.__DELF50_CLOUD = API_OBJ;
