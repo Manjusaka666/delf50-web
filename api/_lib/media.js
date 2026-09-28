@@ -1,17 +1,14 @@
 'use strict';
 /**
- * Learner media in Cloudflare R2 (speaking recordings today; the table also
- * models shared course audio for later).
+ * Speaking recordings in Cloudflare R2; delf50.media_objects is their record.
  *
- * Upload, preferred: POST /media/upload-url → PUT the bytes to the presigned
- *   R2 URL → POST /media/complete (the server HEADs R2 and checks the size).
- * Upload, fallback (the browser cannot reach R2, e.g. bucket CORS not set):
- *   PUT /media/raw?clipId=…&part=i&parts=n streams each ≤ 3.5 MB part through
- *   the function (under Vercel's 4.5 MB body limit), then POST /media/complete
- *   {clipId, parts:n}. A one-part upload completes by itself. Parts are stored
- *   as separate objects `<key>.part-0000…`, so any length is supported.
- * Download: GET /media/url → {url} (presigned GET), or {parts:n} for a parted
- *   object; GET /media/raw?clipId=…&part=i returns one object/part (≤ 3.5 MB).
+ * Web upload: PUT /media/raw?clipId&type&size[&part&parts] streams each
+ *   ≤ 3.5 MB part through the function (Vercel's body limit is 4.5 MB; the
+ *   bucket has no browser CORS). One part completes by itself; n parts
+ *   complete with POST /media/complete {clipId, parts}.
+ * App upload: POST /media/upload-url → PUT to the presigned URL → complete.
+ * Download: GET /media/raw?clipId[&part] or GET /media/url (presigned).
+ * The object is verified in R2 (HEAD, exact size) before a row turns 'stored'.
  */
 const db = require('./db');
 const r2 = require('./r2');
@@ -19,185 +16,112 @@ const { HttpError, readRaw, send, str, int } = require('./http');
 
 const CLIP_RE = /^[A-Za-z0-9._-]{1,120}$/;
 const TYPE_RE = /^(audio|video)\/[A-Za-z0-9.+-]{1,40}(;[ A-Za-z0-9=.,+-]{0,80})?$/;
-const KINDS = new Set(['speaking_recording', 'attachment']);
-const MAX_UPLOAD = 50 * 1024 * 1024;
+const MAX_BYTES = 50 * 1024 * 1024;
 const PART_BYTES = 3.5 * 1024 * 1024;
-const MAX_PARTS = Math.ceil(MAX_UPLOAD / PART_BYTES);
+const MAX_PARTS = Math.ceil(MAX_BYTES / PART_BYTES);
+const EXT = { webm: 'webm', ogg: 'ogg', mp4: 'm4a', 'x-m4a': 'm4a', aac: 'aac', mpeg: 'mp3', wav: 'wav' };
 
-const EXT = { webm: 'webm', ogg: 'ogg', mp4: 'm4a', 'x-m4a': 'm4a', aac: 'aac', mpeg: 'mp3', mp3: 'mp3', wav: 'wav', 'x-wav': 'wav' };
+const COLS = 'clip_id, object_key, mime_type, size_bytes, parts, status, created_at, uploaded_at';
 
-function requireR2() {
-  if (!r2.configured()) throw new HttpError(503, 'r2_not_configured', 'Media storage is not configured on the server');
+function need() {
+  if (!r2.configured()) throw new HttpError(503, 'r2_not_configured', 'Media storage is not configured');
 }
 
-function extFor(contentType) {
-  const sub = contentType.split(';')[0].split('/')[1].toLowerCase();
-  return EXT[sub] || 'bin';
+const clipOf = (v) => str(v, 'clipId', { max: 120, pattern: CLIP_RE });
+const keyOf = (row, i) => (row.parts > 1 ? `${row.object_key}.part-${String(i).padStart(4, '0')}` : row.object_key);
+
+async function find(user, clipId) {
+  const [rows] = await db.tx(user.id, [[`select ${COLS} from delf50.media_objects where clip_id = $1`, [clipId]]]);
+  if (!rows[0]) throw new HttpError(404, 'not_found', 'Media not found');
+  return rows[0];
 }
 
-function clipParam(v) {
-  return str(v, 'clipId', { max: 120, pattern: CLIP_RE });
+/** Creates (or returns) the pending record for a clip. */
+async function open(user, clipId, type, size) {
+  const mime = str(type || 'audio/webm', 'type', { max: 130, pattern: TYPE_RE });
+  const key = `u/${user.id}/speaking/${clipId}.${EXT[mime.split(';')[0].split('/')[1].toLowerCase()] || 'bin'}`;
+  const [rows] = await db.tx(user.id, [[
+    `insert into delf50.media_objects (clip_id, object_key, mime_type, size_bytes) values ($1, $2, $3, $4)
+     on conflict (user_id, clip_id) do update set
+       mime_type = case when media_objects.status = 'stored' then media_objects.mime_type else excluded.mime_type end,
+       size_bytes = case when media_objects.status = 'stored' then media_objects.size_bytes else excluded.size_bytes end
+     returning ${COLS}`, [clipId, key, mime, int(size, 'size', { min: 1, max: MAX_BYTES })]]]);
+  return rows[0];
 }
 
-function partsOf(row) {
-  const n = row.meta && Number.isInteger(row.meta.parts) ? row.meta.parts : 1;
-  return n > 1 ? n : 1;
+/** Marks the clip stored once R2 holds exactly the declared bytes in n parts. */
+async function seal(user, row, n) {
+  const heads = await Promise.all(Array.from({ length: n }, (_, i) => r2.head(keyOf({ object_key: row.object_key, parts: n }, i))));
+  if (heads.some((h) => !h)) throw new HttpError(409, 'not_uploaded', 'Upload incomplete');
+  const total = heads.reduce((a, h) => a + h.size, 0);
+  if (total !== Number(row.size_bytes)) {
+    await Promise.all(heads.map((_, i) => r2.del(keyOf({ object_key: row.object_key, parts: n }, i))));
+    throw new HttpError(422, 'size_mismatch', `Stored ${total} bytes; ${row.size_bytes} were declared`);
+  }
+  await db.tx(user.id, [[`update delf50.media_objects set status = 'stored', parts = $2, uploaded_at = now() where clip_id = $1`, [row.clip_id, n]]]);
+  return { status: 'stored', clipId: row.clip_id, size: total };
 }
 
-function partKey(row, i, n) {
-  return n > 1 ? `${row.object_key}.part-${String(i).padStart(4, '0')}` : row.object_key;
+async function proxyUpload(req, res, user) {
+  need();
+  const q = req.query;
+  const clipId = clipOf(q.clipId);
+  const n = int(q.parts || 1, 'parts', { min: 1, max: MAX_PARTS });
+  const i = int(q.part || 0, 'part', { min: 0, max: n - 1 });
+  const row = await open(user, clipId, q.type, q.size);
+  if (row.status === 'stored') return send(res, 200, { status: 'stored', clipId, size: Number(row.size_bytes) });
+  const bytes = await readRaw(req, PART_BYTES);
+  if (!bytes.length) throw new HttpError(400, 'empty_body', 'Empty upload');
+  await r2.put(keyOf({ object_key: row.object_key, parts: n }, i), bytes, row.mime_type);
+  if (n > 1) return send(res, 200, { status: 'part', clipId, part: i, parts: n });
+  send(res, 200, await seal(user, row, 1));
 }
 
-async function findClip(auth, clipId) {
-  const row = await db.one(
-    `select id, object_key, content_type, size_bytes, status, kind, day, duration_sec, stored_at, meta
-       from delf50.media_objects where user_id = $1 and client_clip_id = $2`, [auth.userId, clipId]);
-  if (!row || row.status === 'deleted') throw new HttpError(404, 'not_found', 'Media not found');
+async function uploadUrl(req, res, user, body) {
+  need();
+  const row = await open(user, clipOf(body.clipId), body.type, body.size);
+  if (row.status === 'stored') return send(res, 200, { status: 'stored', clipId: row.clip_id });
+  send(res, 200, { status: 'pending', clipId: row.clip_id, upload: { method: 'PUT', url: r2.presignPut(row.object_key, 900), headers: { 'Content-Type': row.mime_type } } });
+}
+
+async function complete(req, res, user, body) {
+  need();
+  const row = await find(user, clipOf(body.clipId));
+  if (row.status === 'stored') return send(res, 200, { status: 'stored', clipId: row.clip_id, size: Number(row.size_bytes) });
+  send(res, 200, await seal(user, row, int(body.parts || 1, 'parts', { min: 1, max: MAX_PARTS })));
+}
+
+async function stored(user, req) {
+  need();
+  const row = await find(user, clipOf(req.query.clipId));
+  if (row.status !== 'stored') throw new HttpError(409, 'not_uploaded', 'Upload incomplete');
   return row;
 }
 
-async function uploadUrl(req, res, auth, body) {
-  requireR2();
-  const clipId = clipParam(body.clipId);
-  const contentType = str(body.contentType || 'audio/webm', 'contentType', { max: 130, pattern: TYPE_RE });
-  const size = int(body.size, 'size', { min: 1, max: MAX_UPLOAD });
-  const kind = KINDS.has(body.kind) ? body.kind : 'speaking_recording';
-  const day = int(body.day, 'day', { min: 1, max: 366, optional: true });
-  const durationSec = int(body.durationSec, 'durationSec', { min: 0, max: 86400, optional: true });
-  const folder = kind === 'speaking_recording' ? 'speaking' : 'files';
-  const key = `u/${auth.userId}/${folder}/${clipId}.${extFor(contentType)}`;
-
-  const row = await db.one(
-    `insert into delf50.media_objects (scope, user_id, kind, client_clip_id, object_key, content_type, size_bytes, day, duration_sec)
-     values ('user', $1, $2, $3, $4, $5, $6, $7, $8)
-     on conflict (user_id, client_clip_id) where client_clip_id is not null do update set
-       content_type = case when delf50.media_objects.status = 'stored' then delf50.media_objects.content_type else excluded.content_type end,
-       size_bytes   = case when delf50.media_objects.status = 'stored' then delf50.media_objects.size_bytes else excluded.size_bytes end,
-       day = coalesce(excluded.day, delf50.media_objects.day),
-       duration_sec = coalesce(excluded.duration_sec, delf50.media_objects.duration_sec),
-       meta = case when delf50.media_objects.status = 'deleted' then delf50.media_objects.meta - 'parts' - 'pendingParts' else delf50.media_objects.meta end,
-       status = case when delf50.media_objects.status = 'deleted' then 'pending' else delf50.media_objects.status end
-     returning object_key, status, content_type`,
-    [auth.userId, kind, clipId, key, contentType, size, day, durationSec]);
-
-  if (row.status === 'stored') { send(res, 200, { status: 'stored', clipId }); return; }
-  send(res, 200, {
-    status: 'pending',
-    clipId,
-    upload: { method: 'PUT', url: r2.presignPut(row.object_key, 900), headers: { 'Content-Type': row.content_type }, expiresIn: 900 },
-    proxy: { method: 'PUT', url: `/api/v1/media/raw?clipId=${encodeURIComponent(clipId)}`, partBytes: PART_BYTES, maxParts: MAX_PARTS }
-  });
-}
-
-/**
- * Confirms the object in R2. Its real size must equal the size declared at
- * upload-url (and stay within MAX_UPLOAD); otherwise it is deleted and refused,
- * since a presigned PUT does not itself bound the body.
- */
-async function markStored(auth, row) {
-  const h = await r2.head(row.object_key);
-  if (!h) return null;
-  const declared = row.size_bytes === null ? null : Number(row.size_bytes);
-  if (!Number.isFinite(h.size) || h.size > MAX_UPLOAD || (declared !== null && h.size !== declared)) {
-    await r2.del(row.object_key);
-    throw new HttpError(422, 'size_mismatch', `Uploaded object is ${h.size} bytes; ${declared} bytes were declared`);
-  }
-  await db.query(
-    `update delf50.media_objects set status = 'stored', size_bytes = $3, stored_at = coalesce(stored_at, now()),
-            meta = meta - 'parts' - 'pendingParts'
-      where user_id = $1 and id = $2`, [auth.userId, row.id, h.size]);
-  return h;
-}
-
-/** Verifies an n-part upload: every part present, full-size parts in order, exact total. */
-async function markStoredParts(auth, row, n) {
-  const heads = await Promise.all(Array.from({ length: n }, (_, i) => r2.head(partKey(row, i, n))));
-  if (heads.some((h) => !h)) return null;
-  const declared = row.size_bytes === null ? null : Number(row.size_bytes);
-  const total = heads.reduce((a, h) => a + h.size, 0);
-  const shapeOk = heads.every((h, i) => (i < n - 1 ? h.size === PART_BYTES : h.size >= 1 && h.size <= PART_BYTES));
-  if (!shapeOk || total > MAX_UPLOAD || (declared !== null && total !== declared)) {
-    await Promise.all(heads.map((_, i) => r2.del(partKey(row, i, n))));
-    throw new HttpError(422, 'size_mismatch', `Uploaded parts total ${total} bytes; ${declared} bytes were declared`);
-  }
-  await db.query(
-    `update delf50.media_objects set status = 'stored', size_bytes = $3, stored_at = coalesce(stored_at, now()),
-            meta = (meta - 'pendingParts') || jsonb_build_object('parts', $4::int)
-      where user_id = $1 and id = $2`, [auth.userId, row.id, total, n]);
-  return { size: total };
-}
-
-async function complete(req, res, auth, body) {
-  requireR2();
-  const row = await findClip(auth, clipParam(body.clipId));
-  const n = int(body.parts === undefined ? 1 : body.parts, 'parts', { min: 1, max: MAX_PARTS });
-  const h = n > 1 ? await markStoredParts(auth, row, n) : await markStored(auth, row);
-  if (!h) throw new HttpError(409, 'not_uploaded', 'The object is not in storage yet');
-  send(res, 200, { status: 'stored', clipId: body.clipId, size: h.size });
-}
-
-async function proxyUpload(req, res, auth) {
-  requireR2();
-  const clipId = clipParam(req.query.clipId);
-  const n = int(req.query.parts === undefined ? 1 : req.query.parts, 'parts', { min: 1, max: MAX_PARTS });
-  const i = int(req.query.part === undefined ? 0 : req.query.part, 'part', { min: 0, max: n - 1 });
-  const row = await findClip(auth, clipId);
-  if (row.status === 'stored') { send(res, 200, { status: 'stored', clipId, size: Number(row.size_bytes) }); return; }
-  const bytes = await readRaw(req, PART_BYTES);
-  if (!bytes.length) throw new HttpError(400, 'empty_body', 'Empty upload');
-  if (n > 1 && Number(row.meta && row.meta.pendingParts) !== n) {
-    // Remember the planned part count so an unfinished upload can be deleted.
-    await db.query(
-      `update delf50.media_objects set meta = meta || jsonb_build_object('pendingParts', greatest($3::int, coalesce((meta->>'pendingParts')::int, 0)))
-        where user_id = $1 and id = $2`, [auth.userId, row.id, n]);
-  }
-  await r2.put(partKey(row, i, n), bytes, row.content_type);
-  if (n > 1) { send(res, 200, { status: 'part', clipId, part: i, parts: n, size: bytes.length }); return; }
-  const h = await markStored(auth, row);
-  send(res, 200, { status: 'stored', clipId, size: h ? h.size : bytes.length });
-}
-
-async function list(req, res, auth) {
-  const rows = await db.query(
-    `select client_clip_id, kind, status, content_type, size_bytes, day, duration_sec, created_at, stored_at
-       from delf50.media_objects where user_id = $1 and status <> 'deleted' order by created_at`, [auth.userId]);
-  send(res, 200, { r2: r2.configured(), media: rows.map((r) => ({
-    clipId: r.client_clip_id, kind: r.kind, status: r.status, contentType: r.content_type,
-    size: r.size_bytes === null ? null : Number(r.size_bytes), day: r.day, durationSec: r.duration_sec,
-    createdAt: r.created_at, storedAt: r.stored_at
-  })) });
-}
-
-async function downloadUrl(req, res, auth) {
-  requireR2();
-  const row = await findClip(auth, clipParam(req.query.clipId));
-  if (row.status !== 'stored') throw new HttpError(409, 'not_uploaded', 'The object is not in storage yet');
-  const n = partsOf(row);
-  const base = { contentType: row.content_type, size: Number(row.size_bytes), parts: n };
-  if (n > 1) { send(res, 200, base); return; }
-  send(res, 200, Object.assign(base, { url: r2.presignGet(row.object_key, 900), expiresIn: 900 }));
-}
-
-async function proxyDownload(req, res, auth) {
-  requireR2();
-  const row = await findClip(auth, clipParam(req.query.clipId));
-  if (row.status !== 'stored') throw new HttpError(409, 'not_uploaded', 'The object is not in storage yet');
-  const n = partsOf(row);
-  const i = int(req.query.part === undefined ? 0 : req.query.part, 'part', { min: 0, max: n - 1 });
-  const obj = await r2.get(partKey(row, i, n));
+async function proxyDownload(req, res, user) {
+  const row = await stored(user, req);
+  const obj = await r2.get(keyOf(row, int(req.query.part || 0, 'part', { min: 0, max: row.parts - 1 })));
   if (!obj) throw new HttpError(404, 'not_found', 'Object missing from storage');
-  send(res, 200, obj.body, { 'Content-Type': row.content_type });
+  send(res, 200, obj.body, { 'Content-Type': row.mime_type, 'X-Parts': String(row.parts) });
 }
 
-async function remove(req, res, auth) {
-  requireR2();
-  const row = await findClip(auth, clipParam(req.query.clipId));
-  const n = Math.max(partsOf(row), Number(row.meta && row.meta.pendingParts) || 1);
-  const keys = [row.object_key];
-  for (let i = 0; n > 1 && i < n; i++) keys.push(partKey(row, i, n));
-  await Promise.all(keys.map((k) => r2.del(k)));
-  await db.query(`update delf50.media_objects set status = 'deleted', deleted_at = now(), meta = meta - 'parts' - 'pendingParts' where id = $1`, [row.id]);
+async function downloadUrl(req, res, user) {
+  const row = await stored(user, req);
+  send(res, 200, { type: row.mime_type, size: Number(row.size_bytes), parts: row.parts,
+    urls: Array.from({ length: row.parts }, (_, i) => r2.presignGet(keyOf(row, i), 900)) });
+}
+
+async function list(req, res, user) {
+  const [rows] = await db.tx(user.id, [[`select ${COLS} from delf50.media_objects order by created_at`, []]]);
+  send(res, 200, { media: rows.map((r) => ({ clipId: r.clip_id, type: r.mime_type, size: Number(r.size_bytes), parts: r.parts, status: r.status, createdAt: r.created_at, uploadedAt: r.uploaded_at })) });
+}
+
+async function remove(req, res, user) {
+  need();
+  const row = await find(user, clipOf(req.query.clipId));
+  await Promise.all(Array.from({ length: row.parts }, (_, i) => r2.del(keyOf(row, i))));
+  await db.tx(user.id, [['delete from delf50.media_objects where clip_id = $1', [row.clip_id]]]);
   send(res, 200, { ok: true });
 }
 
-module.exports = { uploadUrl, complete, proxyUpload, list, downloadUrl, proxyDownload, remove };
+module.exports = { proxyUpload, uploadUrl, complete, proxyDownload, downloadUrl, list, remove, PART_BYTES };

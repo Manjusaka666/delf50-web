@@ -182,4 +182,4 @@ V1.8.1 的 source seeds 使用法国公共服务、就业、教育、医疗、�
 
 ## 账号与云端学习记录（Cloud v1）
 
-登录后，学习记录（答题、写作、应用、口语记录、草稿、每日进度）自动同步到 Neon，口语录音同步到 Cloudflare R2；不登录时网站与之前完全一样，只保存在本机。该层独立于现有代码，唯一改动是 `index.html` 中新增的一行 `<script src="/cloud/delf50-cloud.js">`。架构、同步与合并算法、数据库表、API（含未来 App 使用的 Bearer token 与事件接口）、部署配置与验证方法见 [`docs/cloud-sync-v1.md`](docs/cloud-sync-v1.md)。
+使用 Neon Auth 登录后开始学习；答题、语法作答、写作、应用任务、口语记录、错题、草稿、内容完成与学习计划都作为数据库实体实时写入 Neon（通常 < 500 ms），口语录音直接存入 Cloudflare R2。浏览器不再保存任何学习数据。该层独立于现有代码，唯一改动是 `index.html` 中的一行 `<script src="/cloud/delf50-cloud.js">`。架构、数据表、RLS、API（含未来 App 使用的 Bearer JWT 与词汇 SM-2 接口）、配置与验证见 [`docs/cloud-sync-v1.md`](docs/cloud-sync-v1.md)。

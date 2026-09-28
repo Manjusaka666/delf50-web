@@ -1,147 +1,78 @@
-# DELF50 Cloud · 账号与学习记录云端存储（v1）
+# DELF50 Cloud · 账号与学习记录（v2 架构，API v1）
 
-本层为网站加入账号登录与学习记录自动云端保存，**不修改任何现有学习逻辑与内容**。现有代码只改动了一处：`index.html` 在加载器之前多了一行 `<script src="/cloud/delf50-cloud.js"></script>`。
+**三条原则：** Neon Auth 是唯一身份源；Neon PostgreSQL 是唯一的结构化数据源；Cloudflare R2 是唯一的二进制存储。浏览器只保留当前页面的内存状态，不再有“先存本机、再上传”。
 
-## 1. 总体架构
+现有应用代码与内容**一行未改**；`index.html` 仍只多一行 `<script src="/cloud/delf50-cloud.js">`。
+
+## 1. 数据流
 
 ```
-浏览器（现有应用，照旧读写本机）                          Vercel Functions            数据层
-┌───────────────────────────────────┐                  ┌──────────────────┐     ┌──────────────────────┐
-│ localStorage['delf50_v12_state']  │◀── 观察写入 ──┐   │ /api/v1/*        │     │ Neon Postgres        │
-│ IndexedDB delf50_audio_v1.clips   │◀── 观察录音 ──┤   │  auth · sync ·   │────▶│  schema delf50       │
-└───────────────────────────────────┘               │   │  media · events  │     │  (真源 + 历史 + 读模型)│
-┌───────────────────────────────────┐               │   └──────────────────┘     └──────────────────────┘
-│ cloud/delf50-cloud.js             │───────────────┘            │               ┌──────────────────────┐
-│  • 启动闸门：首轮拉取完成才放行 bundle │── HTTPS (Cookie) ──────▶│──预签名 URL──▶│ Cloudflare R2        │
-│  • 三方合并 · 语义指纹 · 录音同步     │──────── 直传/直取录音 ─────────────────────▶│  delf50-learning     │
-└───────────────────────────────────┘                                            └──────────────────────┘
+浏览器                                   Vercel fra1 · /api/v1               Neon (eu-central-1)        R2
+┌──────────────────────────────┐        ┌──────────────────────┐          ┌───────────────────┐
+│ 现有应用（未改）               │        │ auth/*  → Neon Auth   │─────────▶│ neon_auth.*        │
+│  localStorage.setItem(S)  ───┼─内存──▶│ bootstrap · sync · rev│─1 个事务─▶│ delf50.* （RLS）   │
+│  IndexedDB clips.put/get  ───┼────────▶ media/raw            │────────────────────────────────────▶ 录音
+│ cloud/delf50-cloud.js         │        └──────────────────────┘          └───────────────────┘
+│  · 登录闸门：载入账号数据后才启动应用                                                                   
+│  · 每次保存：与“服务器已确认状态”做差异 → 60–300 ms 内发出细粒度变更（同一时间只有一个请求）
+└──────────────────────────────┘
 ```
 
-**设计原则**
+* **启动**：应用 bundle 的下载与 `GET bootstrap` 并行；bootstrap 从各表重建应用的状态对象 S，放入内存中的 `delf50_v12_state`，然后才执行 bundle。未登录时显示登录/注册框，应用不启动。
+* **保存**：应用每次 `save()` 写入内存；客户端计算与上次确认状态的差异（文档按字段、记录按条），`POST sync` 在**一个事务**里写入所有表并返回 `rev`。批次幂等：失败自动重试（指数退避），重复提交不会产生重复数据。页面关闭时用 `keepalive` 补发，未保存时离开页面会提示。
+* **录音**：应用写入 `delf50_audio_v1` 时直接上传 R2（≤ 3.5 MB 一段，经函数中转；R2 桶没有浏览器 CORS）；播放时从 R2 取回。浏览器中不存录音。
+* **多设备**：页面回到前台时比较 `rev`；如其他设备已保存，则重新载入，始终以数据库为准。
+* **会话过期**：保存得到 401 时弹出登录框；重新登录后，未保存的修改自动补存（换了账号则重新载入）。
 
-| 原则 | 实现 |
+## 2. 数据库（`db/migrations/0001_learning.sql`）
+
+| 表 | 内容 | 键 |
+|---|---|---|
+| `study_state` | 非记录类工作状态：学习计划、路由、计数器、设置（jsonb 文档）+ `rev` | user_id |
+| `reading_answers` / `listening_answers` | 每道客观题的作答 | (user, answer_key) |
+| `grammar_attempts` | 语法作答，**只追加**：每个不同作答时间一行，最新一行为当前 | id；唯一 (user, key, answered_at) |
+| `writing_submissions` / `application_submissions` | 写作与应用任务（正文、字数、标题、时间） | (user, item_key)，`pos` 保序 |
+| `speaking_attempts` | 口语记录（clip_id、时长） | 同上 |
+| `error_items` | 错题本 | 同上 |
+| `drafts` | 正在写的草稿（写作/应用） | (user, kind, key) |
+| `content_completions` | 每个内容的完成记录 | (user, module, content_id) |
+| `media_objects` | R2 对象记录（大小经 HEAD 核验后才为 stored） | (user, clip_id) |
+| `vocabulary_items` · `user_vocabulary` · `vocabulary_reviews` | 共享词典 · 个人词库（SM-2）· 复习日志（只追加） | |
+| 视图 `daily_activity` | 每日各模块活动量，由记录**派生**，不重复存储 | |
+
+* 记录字段类型匹配时进入强类型列（int / text / bool / 精确到毫秒的 ISO 时间），其余进入 `extra jsonb`，因此每条记录都能**逐字节语义等价**地读回。
+* 所有用户表 `user_id → neon_auth.user(id) on delete cascade`，默认值为当前调用者。
+* **RLS**：API 以无 BYPASSRLS 的角色 `delf50_api` 连接；每个事务先 `set_config('app.user_id', …)`，策略 `user_id = delf50.uid()`。该角色读不到 `neon_auth`；会话校验经 `security definer` 函数 `delf50.session_user(token)`。
+
+## 3. API（`api/v1.js`）
+
+| 方法 | 路径 | 说明 |
+|---|---|---|
+| GET | `health[?deep=1]` | 数据库 / Auth / R2 状态 |
+| * | `auth/<route>` | 代理 Neon Auth：`sign-up/email`、`sign-in/email`、`get-session`、`sign-out`、`token` … Cookie 因此成为本站第一方 Cookie |
+| GET | `bootstrap` | `{user, state, rev, positions, collections}` |
+| POST | `sync` | `{doc:[[path,value]|[path]], ops:{集合:{set:[[key,value,pos?]],del:[key]}}}` → `{rev}` |
+| GET | `rev` | 最新修订号 |
+| PUT/GET | `media/raw?clipId&type&size&part&parts` | 分段上传 / 下载录音 |
+| POST | `media/upload-url` · `media/complete` | App 用预签名直传 |
+| GET · DELETE | `media` · `media/url` | 列表 / 预签名下载 / 删除 |
+| GET · POST · DELETE | `vocab` · `vocab/review` | 词库与 SM-2 复习 |
+
+身份：网页用 Neon Auth 会话 Cookie（每个函数实例缓存 60 s）；**未来 App** 用 `Authorization: Bearer <Neon Auth JWT>`（EdDSA，按 JWKS 校验）或会话 token。
+
+## 4. 配置
+
+Vercel 环境变量：
+
+| 变量 | 值 |
 |---|---|
-| 本机优先 | 应用仍然只读写 localStorage / IndexedDB。未登录、离线、API 故障时，应用行为与之前完全一致。 |
-| 精确 | 同步的是应用写入 localStorage 的**原始文本**（服务端以 `text` 原样存储，`jsonb` 会重排键）。两端都校验 SHA-256：上传后服务端复算，下载后浏览器复算。 |
-| 不丢数据 | 每次上传都是基于服务端版本号的 compare-and-swap；冲突走三方合并；被替换的本机副本先存档到服务端；每个云端版本都进入历史，可一键恢复。 |
-| 不打扰 | 应用每次启动都会刷新约 8 个簿记时间戳。同步层用**语义指纹**（去掉 `at`/`*At` 键、根级 `version`、`meta172`）判断是否真有学习变化：仅簿记变化既不上传，也不会让其他设备刷新。 |
-| 应用自己加载数据 | 远端数据只在两个时机进入应用：① 页面启动时（bundle 下载等待首轮拉取，最多 8 秒）；② 需要载入其他设备的新进度时，在安全时刻（不在录音、不在输入框中）写入 localStorage 并刷新页面。应用始终从自己写过的文档启动，并跑自己的迁移。 |
+| `DATABASE_URL` | Neon **pooled** 连接串，角色 `delf50_api`（不是 owner） |
+| `NEON_AUTH_BASE_URL` | Neon 控制台 Auth 页的 Auth URL（…/neondb/auth） |
+| `R2_ACCOUNT_ID` · `R2_ACCESS_KEY_ID` · `R2_SECRET_ACCESS_KEY` · `R2_BUCKET` | Cloudflare R2（`R2_ENDPOINT` 可选） |
 
-## 2. 同步算法
+Neon Auth 的受信任域名需包含站点域名（`https://delf50-mvp.vercel.app`）。迁移：`DATABASE_URL=<owner 连接串> npm run db:migrate`，然后 `alter role delf50_api login password '…'`。
 
-设本机文本 `L`、同步基线 `B`（最近一次与服务端一致的文档，存于 IndexedDB `delf50_cloud_v1`，版本号/哈希/语义哈希存于 `localStorage['delf50_cloud_meta_v1']`），服务端头版本 `R`。
+## 5. 验证
 
-- **推送**：应用每次写入 localStorage 后 2.5 秒（最长 15 秒）触发；页面隐藏时立即触发（keepalive）。若 `sem(L) = sem(B)` 则无需推送。否则 `PUT /sync/state`，携带 `Base-Rev = rev(B)`。服务端在单事务内比较版本：一致则写入新版本、历史与读模型；不一致返回 409。
-- **拉取**：启动时、页面重新可见时、每 60 秒（仅可见时）、网络恢复时。`GET /sync/state?have=rev(B)`，无变化返回 204（无正文）。
-- **协调**（服务端已前进）：
-  1. `L = R`（字节相同）→ 仅更新基线。
-  2. `sem(R) = sem(B)`（对方只动了簿记）→ 基线前移，页面不动；若本机有学习变化则随后推送。
-  3. `sem(L) = sem(R)` → 仅更新基线。
-  4. 本机无学习变化 → 采用 `R`（启动前直接写入；运行中则刷新载入）。
-  5. 双方都有学习变化且有基线 → **三方合并** `merge3(B, L, R)` 后载入并推送。
-  6. 无共同基线（登录前两台设备各自学过）→ 弹窗让学习者选择：合并两份 / 使用云端 / 使用本设备。被替换的一份先存档到 `state_archives`。
-
-**三方合并规则**（`cloud/delf50-cloud.js · merge3`）
-
-| 数据 | 规则 |
-|---|---|
-| 仅一侧修改 | 取修改的一侧（精确）。 |
-| 对象（答题表、每日进度、草稿等） | 按键递归合并；一侧删除且另一侧未改动 → 删除；一侧删除而另一侧修改过 → 保留修改（证据优先）。 |
-| 计数器（`attempts / correct / count / totalSec / a / c` 及每日各模块计数） | `B + (L−B) + (R−B)`：两台设备各做 3 题 → 合计 +6。 |
-| 数组（记录、错题、分配） | 多重集合三方合并：双方删除只删一次，双方相同的新增视为同一事件去重；带 `at` 的记录按时间排序并保持原方向（错题最新在前）。 |
-| `first*/started*` 时间 | 取较早；其他 `*At` 取较晚。 |
-| 其他标量（`selectedDay`、游标等） | 取最后保存（`lastSavedAt` 较新）的一侧。 |
-
-## 3. 数据库（Neon · schema `delf50`）
-
-迁移文件：`db/migrations/0001_init.sql`、`0002_create_user.sql`（均幂等；`0002` 用 advisory lock 让“人数上限检查 + 建号”原子化）。
-
-| 表 | 用途 |
-|---|---|
-| `users` | 账号（scrypt 密码哈希，邮箱大小写不敏感唯一） |
-| `devices` | 每个安装一行（浏览器 / 未来的 iOS、Android 客户端） |
-| `sessions` | 会话；仅存 token 的 SHA-256。`cookie`（网页）与 `bearer`（App）两种 |
-| `auth_attempts` | 登录/注册/改密限流（持久化，跨函数实例生效） |
-| `learning_state` | **真源**：每人一份，原始文本 + 版本号 + 哈希 |
-| `learning_state_revisions` | 历史（gzip）。保留：非自动推送的全部、最近 40 次、14 天内每小时首个、每天首个 |
-| `state_archives` | 被替换的本机副本 |
-| `learning_stats` · `daily_progress` · `item_answers` · `content_completions` · `production_records` · `error_items` | **读模型**：每次推送在同一事务内按差量更新；供进度 API、统计分析与未来 App 使用，从不回写网页 |
-| `media_objects` | R2 对象登记；`scope='user'` 为个人录音，`scope='content'` 预留给课程听力音频 |
-| `learning_events` | 原生 App 的细粒度事件日志（幂等、游标分页） |
-
-核心写入是 `delf50.push_state(...)`：行锁 → 版本比较 → 更新头 → 写历史 → 应用读模型差量 → 清理历史，全部一个事务。重试同一内容返回 `same`，天然幂等。
-
-## 4. API（`/api/v1`）
-
-所有路由由单个函数 `api/v1.js` 处理（`vercel.json` 把 `/api/v1/*` 改写过去），不占用 Hobby 计划的函数配额。
-
-| 方法 路径 | 说明 |
-|---|---|
-| `GET health` | 数据库 / R2 / 注册开关状态 |
-| `POST auth/register` | `{email,password,displayName?,inviteCode?,client?,transport?}`（仅在服务器设置了邀请码时需要 `inviteCode`） |
-| `POST auth/login` | `{email,password,client?,transport?}`；`transport:"bearer"` 返回 App 用 token |
-| `POST auth/logout` · `GET auth/me` · `POST auth/password` · `GET/DELETE auth/sessions[/:id]` | 会话管理；改密会登出其他所有会话 |
-| `GET sync/state?have=<rev>` | 原始文档（头：`X-DELF50-Rev`、`X-DELF50-Hash`）；无变化 204 |
-| `PUT sync/state` | 原始文档（可 gzip），头：`X-DELF50-Hash`、`X-DELF50-Base-Rev`、`X-DELF50-Reason`、`X-DELF50-Encoding` |
-| `GET sync/revisions[/:rev]` · `POST sync/restore` | 历史与恢复（恢复生成新版本，不改写历史） |
-| `POST sync/archive` · `GET sync/archives[/:id]` | 本机副本存档 |
-| `GET progress/summary` · `GET progress/answers\|productions\|completions?module=&day=` | 读模型 |
-| `GET media` · `POST media/upload-url` · `POST media/complete` · `PUT/GET media/raw` · `GET media/url` · `DELETE media` | 录音（R2） |
-| `POST events` · `GET events?after=&limit=` | App 事件日志 |
-
-**安全**：Cookie 为 `HttpOnly; Secure; SameSite=Lax`；Cookie 认证的写请求必须带 `X-DELF50-Client` 头且 Origin 同源（CSRF）。Bearer token 不能当 Cookie 用。注册规则：设置了 `DELF50_INVITE_CODE` 时需邀请码；未设置时，只有同时设置了账号上限 `DELF50_MAX_USERS` 才开放注册（“检查上限 + 建号”在数据库锁内原子完成），因此接口永远不会对公网无限开放。当前生产配置：无邀请码、上限 2 个账号。登录失败 8 次/15 分钟锁定该邮箱，40 次/15 分钟锁定该 IP。
-
-## 5. 录音（Cloudflare R2）
-
-对象键：`u/<userId>/speaking/<clipId>.<ext>`。上传：`upload-url` 取 15 分钟预签名 PUT → 浏览器直传 R2 → `complete`（服务端 HEAD 核实：实际大小必须等于声明大小且不超过 50 MB，否则删除对象并拒绝）。只上传当前账号学习记录中引用的录音——浏览器的录音库是按设备而非按账号的，共用设备时不会把别人的录音传进自己的账号。若浏览器无法直连 R2（例如桶未配置 CORS），自动改走函数中转：录音按 3.5 MB 分片逐片上传（受 Vercel 4.5 MB 请求体限制），以 `<key>.part-0000…` 分片对象保存，`complete` 校验分片齐全、顺序尺寸正确且总大小等于声明值；下载时按片取回再拼接，并核对总大小。因此不论是否配置 CORS，任意长度（≤ 50 MB）的录音都能可靠同步。其他设备登录后，状态中引用、但本机 IndexedDB 没有的录音会被下载写入应用自己的 `delf50_audio_v1`，应用原有的回放功能直接可用。SigV4 签名器为零依赖实现，已用 AWS 官方测试向量验证。
-
-## 6. 为未来 App 预留
-
-- **认证**：`transport:"bearer"` 登录，token 有效期 180 天（滑动续期），`devices.platform` 区分 `ios/android/desktop`。
-- **两条同步路径**：若 App 复用网页的学习引擎（WebView/共享 JS），直接使用同一份 `sync/state` 文档与同一套合并算法；若 App 是原生重写，可写入 `learning_events`（幂等），读取 `progress/*` 读模型，二者互不干扰。
-- **课程音频**：`media_objects.scope='content'`、`kind='listening_audio'` 已预留，未来可把听力音频放进 R2 并由 App 离线缓存。
-
-## 7. 部署与配置
-
-Vercel 项目 `delf50-mvp` 已配置（函数区域 `fra1`，与 Neon 法兰克福同区）：
-
-| 变量 | 状态 |
-|---|---|
-| `DATABASE_URL` | ✅ Neon `DELF-Learning` 主分支（pooled） |
-| `DELF50_MAX_USERS` | ✅ `2`（仅两位学习者；无邀请码） |
-| `DELF50_INVITE_CODE` | 未设置（如需邀请码注册，设置即可生效） |
-| `R2_ACCOUNT_ID` · `R2_BUCKET` | ✅ 账号 ID · `delf50-learning` |
-| `R2_ACCESS_KEY_ID` / `R2_SECRET_ACCESS_KEY` | ✅ R2 API Token（Object Read & Write，限定该桶） |
-
-验证 R2 凭据：`GET /api/v1/health?deep=1` 返回 `"r2Reachable": true`。
-
-**R2 CORS**（可选，让浏览器直传直取，省去函数中转）：当前的对象读写 token 无权修改桶设置，需在 Cloudflare 控制台操作一次：R2 → `delf50-learning` → Settings → CORS Policy：
-
-```json
-[
-  {
-    "AllowedOrigins": ["https://delf50-mvp.vercel.app"],
-    "AllowedMethods": ["GET", "PUT", "HEAD"],
-    "AllowedHeaders": ["content-type"],
-    "ExposeHeaders": ["etag"],
-    "MaxAgeSeconds": 3600
-  }
-]
-```
-
-或使用有 *Admin Read & Write* 权限的 R2 token 运行 `node scripts/r2-cors.js`。不配置也完全可用（走分片中转）。
-
-**数据库迁移**：`DATABASE_URL=… npm run db:migrate`（需 Node ≥ 22；生产库已执行 `0001_init`、`0002_create_user`）。
-
-**部署**：`vercel --prod`，或在 Vercel 上以 Git 源（`manjusaka666/delf50-web` 的 `main`）创建生产部署。`package.json` 只有运行时依赖 `@neondatabase/serverless`，没有 build 脚本，Vercel 仍按静态站点 + 函数处理。
-
-## 8. 验证
-
-```bash
-node scripts/verify.js           # 原有 41 项（内容与学习记录保护）——不受影响
-TEST_DATABASE_URL=postgres://…  NODE_PATH=<含 jsdom、pg、fake-indexeddb 的目录> node scripts/verify-cloud.js
-```
-
-`verify-cloud.js` 共 137 项：SigV4 官方向量、合并与投影单元测试；在真实 PostgreSQL 上跑完整 API（CSRF、限流、并发 CAS 只有一个胜出、字节级往返、历史恢复、读模型、事件幂等、R2 签名校验与越权隔离、分片中转上传下载、注册模式与账号上限）；再用 jsdom 把真实 `index.html` + 云同步层 + 应用 bundle 作为多台设备运行：带既有进度注册上传、第二台设备接收、两台设备同时学习后合并计数精确相加、无共同基线时的选择弹窗、共用设备切换账号、录音上传与跨设备恢复、重开应用不产生新版本也不触发其他设备刷新。
-
-线上排障：浏览器控制台执行 `__DELF50_CLOUD.status()` 可看到同步状态、元数据与最近 60 条同步轨迹。
+* `npm run verify` — 原有 41 项应用检查。
+* `TEST_DATABASE_URL=postgres://… NODE_PATH=… npm run verify:cloud` — 单元 + 真实 PostgreSQL（以 RLS 角色连接）+ Neon Auth 模拟（真实 Cookie 与 EdDSA JWT）+ S3 签名校验模拟 + jsdom 中运行真实应用：登录闸门、保存延迟 < 500 ms、浏览器零持久化、刷新/第二设备/跨设备刷新、8 MB 录音、会话过期不丢数据、退出登录。
