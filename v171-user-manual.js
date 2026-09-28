@@ -68,11 +68,6 @@ submitApp=function(){
   if(S.application.count>before){delete S.drafts171.application[key];markDayActivity171('应用提交');saveBase171();}
 };
 
-function autosaveCard171(){
-  const started=!!S.startedAt;
-  const last=S.lastSavedAt?new Date(S.lastSavedAt).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'}):'';
-  return `<div class="card savecard171"><div class="row wrap"><div><b>${started?'✓ 自动保存已开启':'自动保存将在学习开始后启用'}</b><div class="muted" id="autosaveText171">${started?`已自动保存 · Day ${S.selectedDay} · ${last||'刚刚'} · 本机浏览器`:'尚未开始 · 第一次答题、输入或录音后自动保存'}</div></div><span class="pill ${started?'':'blue'}">${started?'持续保存':'等待首次学习操作'}</span></div><div class="savefacts171"><span>答题/进度 → localStorage</span><span>写作/应用草稿 → 自动保存</span><span>口语录音 → IndexedDB</span></div></div>`;
-}
 function manual171(){
   const open=S.manualAcknowledged171?'':' open';
   return `<div class="card manual171"><details${open}><summary><span><b>用户手册 · 建议首次学习前阅读</b><small>了解每一步为什么做、怎么做，以及数据如何保存</small></span><span class="manualchev171">⌄</span></summary><div class="manualbody171">
@@ -85,8 +80,7 @@ function manual171(){
       <div class="manualstep171"><span>05</span><div><b>写作 + 口语：形成输出能力</b><p><strong>目的：</strong>训练 DELF 真正需要的连续表达。<br><strong>方式：</strong>写作先列点再写并检查；口语录音后回听。Day 31+ 才系统进入 ≥160词写作与 DELF 三类口语任务。没有可靠评分器前，不显示虚假写作/口语百分比。</p></div></div>
       <div class="manualstep171"><span>06</span><div><b>错题回炉与第二天</b><p><strong>目的：</strong>防止“当天会、两天后忘”。<br><strong>方式：</strong>错题进入 Error Book；复习时写出规则、正确句和一个新例句。可以提前进入下一天，但之前的完成度不会被自动补齐。</p></div></div>
     </div>
-    <div class="manualstorage171"><b>连续学习如何保存？</b><p><strong>自动：</strong>答题、任务完成、Day/强度调整、写作/应用提交、口语记录都会自动写入浏览器；写作和应用输入停止约 0.7 秒后也会保存草稿。<br><strong>录音：</strong>口语音频单独保存在当前浏览器 IndexedDB。<br><strong>重要：</strong>目前不是云同步。清除站点数据或换设备可能丢失本机数据，建议每周在「进度」页导出一次 JSON 备份；JSON 不包含录音文件。</p></div>
-    <div class="row wrap"><button class="btn" data-manual-ok171>${S.manualAcknowledged171?'已了解':'我已了解，开始学习'}</button><button class="btn secondary" data-goto-progress171>查看存储与备份</button></div>
+    <div class="row wrap"><button class="btn" data-manual-ok171>${S.manualAcknowledged171?'已了解':'我已了解，开始学习'}</button></div>
   </div></details></div>`;
 }
 
@@ -96,7 +90,7 @@ injectManualStyles171();
 const todayBase171=today;
 today=function(){
   let h=todayBase171();
-  const insert=autosaveCard171()+manual171();
+  const insert=manual171();
   const pos=h.indexOf('</section>');
   return pos>=0?h.slice(0,pos+10)+insert+h.slice(pos+10):insert+h;
 };
