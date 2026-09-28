@@ -221,12 +221,24 @@ function publicUser(u) {
   return { id: u.id, email: u.email, displayName: u.display_name || u.displayName, role: u.role };
 }
 
+/**
+ * Registration is open when an invite code is configured (DELF50_INVITE_CODE),
+ * or, without one, only when an account cap is set (DELF50_MAX_USERS) — so the
+ * API is never left open to unlimited sign-ups from the internet.
+ */
+function registrationMode() {
+  const inviteRequired = Boolean(process.env.DELF50_INVITE_CODE);
+  const raw = String(process.env.DELF50_MAX_USERS || '').trim();
+  const maxUsers = /^[1-9]\d{0,5}$/.test(raw) ? Number(raw) : null;
+  return { open: inviteRequired || maxUsers !== null, inviteRequired, maxUsers };
+}
+
 async function register(req, res, body) {
-  const invite = process.env.DELF50_INVITE_CODE;
-  if (!invite) throw new HttpError(403, 'registration_closed', 'Registration is closed');
+  const mode = registrationMode();
+  if (!mode.open) throw new HttpError(403, 'registration_closed', 'Registration is closed');
   const ip = clientIp(req);
   await enforceLimit('register', ip, 10, 60);
-  if (typeof body.inviteCode !== 'string' || !timingSafeStrEq(body.inviteCode.trim(), invite)) {
+  if (mode.inviteRequired && (typeof body.inviteCode !== 'string' || !timingSafeStrEq(body.inviteCode.trim(), process.env.DELF50_INVITE_CODE))) {
     await recordAttempt('register', ip, false);
     throw new HttpError(403, 'invalid_invite', 'Invalid invite code', { field: 'inviteCode' });
   }
@@ -234,13 +246,12 @@ async function register(req, res, body) {
   const displayName = str(body.displayName || body.email.split('@')[0], 'displayName', { max: 60 });
   const password = validPassword(body.password);
 
-  const maxUsers = Number(process.env.DELF50_MAX_USERS || 0);
   const hash = await hashPassword(password);
   // Capacity check and insert run under one advisory lock (delf50.create_user),
   // so concurrent registrations cannot exceed DELF50_MAX_USERS.
   const created = await db.one(
     'select status, id, email, display_name, role from delf50.create_user($1, $2, $3, $4, $5)',
-    [body.email.trim(), emailNorm, displayName, hash, maxUsers > 0 ? maxUsers : null]);
+    [body.email.trim(), emailNorm, displayName, hash, mode.maxUsers]);
   if (created.status === 'full') throw new HttpError(403, 'registration_full', 'The maximum number of accounts has been reached');
   const user = created.status === 'ok' ? created : null;
   await recordAttempt('register', ip, Boolean(user));
@@ -320,6 +331,6 @@ async function revokeSession(auth, id) {
 }
 
 module.exports = {
-  authenticate, requireAuth, assertCsrf, register, login, logout, changePassword, listSessions, revokeSession,
+  authenticate, requireAuth, assertCsrf, registrationMode, register, login, logout, changePassword, listSessions, revokeSession,
   hashPassword, verifyPassword, COOKIE
 };

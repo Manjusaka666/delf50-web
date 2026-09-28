@@ -580,16 +580,18 @@
    */
   async function applyRemote(m, remote, compute, kind) {
     trace('apply ' + kind + ' rev=' + remote.rev + (isBooted() ? ' (reload)' : ' (pre-boot)'));
-    await kvPut('base:' + m.userId, { rev: remote.rev, hash: remote.hash, text: remote.text });
     if (!isBooted()) {
       var text = compute(lsGet(STATE_KEY));
-      lsSet(STATE_KEY, text);
+      // The base only moves once the document is really in localStorage; if
+      // the browser refuses the write (storage full), nothing changes.
+      if (!lsSet(STATE_KEY, text) || lsGet(STATE_KEY) !== text) throw new Error('本机存储空间不足，无法载入云端记录；请清理浏览器存储后重试');
+      await kvPut('base:' + m.userId, { rev: remote.rev, hash: remote.hash, text: remote.text });
       patchMeta({ rev: remote.rev, hash: remote.hash, sem: await semHash(remote.text), syncedAt: nowIso() });
       setStatus(kind === 'merged' ? 'dirty' : 'synced');
       if (kind === 'merged') E.again = true;
       return;
     }
-    E.reload = { remote: remote, compute: compute, kind: kind };
+    E.reload = { remote: remote, compute: compute, kind: kind, userId: m.userId };
     setStatus('reload', kind === 'merged' ? '已合并其他设备的学习记录，页面将刷新以载入。' : '其他设备有新的学习记录，页面将刷新以载入。');
     tryReload();
   }
@@ -625,11 +627,20 @@
       setStatus('error', '自动刷新过于频繁，已暂停。请手动刷新页面。');
       return;
     }
-    E.suppressAppWrites = true;
     var text = job.compute(lsGet(STATE_KEY));
-    lsSet(STATE_KEY, text);
-    patchMeta({ rev: job.remote.rev, hash: job.remote.hash, sem: job.sem, syncedAt: nowIso() });
-    W.location.reload();
+    E.suppressAppWrites = true;
+    if (!lsSet(STATE_KEY, text) || lsGet(STATE_KEY) !== text) {
+      E.suppressAppWrites = false;
+      E.reload = null;
+      setStatus('error', '本机存储空间不足，无法载入云端记录；请清理浏览器存储后重试。');
+      return;
+    }
+    // Document written: now commit the base, then reload (app writes stay
+    // suppressed meanwhile, so nothing can overwrite the new document).
+    kvPut('base:' + job.userId, { rev: job.remote.rev, hash: job.remote.hash, text: job.remote.text }).then(function () {
+      patchMeta({ rev: job.remote.rev, hash: job.remote.hash, sem: job.sem, syncedAt: nowIso() });
+      W.location.reload();
+    });
   }
 
   async function resolveDecision(choice) {
@@ -773,22 +784,45 @@
       await call('POST', '/media/complete', { json: { clipId: id } });
       return;
     }
-    if (blob.size > r.proxy.maxBytes) throw new Error('录音过大且无法直传 R2（请检查存储桶 CORS 设置）');
-    await call('PUT', '/media/raw?clipId=' + encodeURIComponent(id), { body: blob, headers: { 'Content-Type': type }, timeout: 60000 });
+    // No direct path to R2 (e.g. bucket CORS not set): stream through the API
+    // in parts small enough for the function body limit.
+    var partBytes = r.proxy.partBytes;
+    var n = Math.max(1, Math.ceil(blob.size / partBytes));
+    if (n > r.proxy.maxParts) throw new Error('录音过大，无法上传');
+    for (var i = 0; i < n; i++) {
+      var part = blob.slice(i * partBytes, Math.min(blob.size, (i + 1) * partBytes), type);
+      var q = '/media/raw?clipId=' + encodeURIComponent(id) + (n > 1 ? '&part=' + i + '&parts=' + n : '');
+      try {
+        await call('PUT', q, { body: part, headers: { 'Content-Type': type }, timeout: 60000 });
+      } catch (e) {
+        if (e && e.status && e.status < 500) throw e;
+        await call('PUT', q, { body: part, headers: { 'Content-Type': type }, timeout: 60000 });
+      }
+    }
+    if (n > 1) await call('POST', '/media/complete', { json: { clipId: id, parts: n } });
+  }
+
+  async function fetchPart(id, i, parted) {
+    var p = await call('GET', '/media/raw?clipId=' + encodeURIComponent(id) + (parted ? '&part=' + i : ''), { raw: true, timeout: 60000 });
+    if (!p.ok) throw ApiError(p.status, null);
+    return p.blob();
   }
 
   async function downloadClip(id, rec) {
+    var info = (await call('GET', '/media/url?clipId=' + encodeURIComponent(id))).data;
     var blob = null;
-    try {
-      var u = (await call('GET', '/media/url?clipId=' + encodeURIComponent(id))).data;
-      var r = await realFetch(u.url);
-      if (r.ok) blob = await r.blob();
-    } catch (e) { blob = null; }
-    if (!blob) {
-      var p = await call('GET', '/media/raw?clipId=' + encodeURIComponent(id), { raw: true, timeout: 60000 });
-      if (!p.ok) throw ApiError(p.status, null);
-      blob = await p.blob();
+    if (info.parts > 1) {
+      var parts = [];
+      for (var i = 0; i < info.parts; i++) parts.push(await fetchPart(id, i, true));
+      blob = new Blob(parts, { type: info.contentType });
+    } else {
+      try {
+        var r = await realFetch(info.url);
+        if (r.ok) blob = await r.blob();
+      } catch (e) { blob = null; }
+      if (!blob) blob = await fetchPart(id, 0, false);
     }
+    if (info.size && blob.size !== info.size) throw new Error('录音下载不完整，稍后重试');
     var at = rec && rec.at ? Date.parse(rec.at) : Date.now();
     await audioPut({ id: id, blob: blob, at: isFinite(at) ? at : Date.now() });
   }
@@ -886,7 +920,7 @@
 
   var View = (function () {
     var host, chip, mask;
-    var view = { tab: 'login', msg: null };
+    var view = { tab: 'login', msg: null, inviteRequired: undefined };
 
     function ensureHost() {
       if (host) return;
@@ -897,6 +931,7 @@
       chip.addEventListener('click', function () { openPanel(); });
       host.appendChild(chip);
       renderChip();
+      loadRegistrationMode();
     }
 
     function chipState() {
@@ -945,9 +980,23 @@
 
     function msgHtml() { return view.msg ? '<div class="dc-msg ' + view.msg[0] + '">' + esc(view.msg[1]) + '</div>' : ''; }
 
+    function loadRegistrationMode() {
+      if (view.inviteRequired !== undefined || view.modeLoading) return;
+      view.modeLoading = true;
+      call('GET', '/health', { okStatuses: [503] }).then(function (h) {
+        view.inviteRequired = Boolean(h.data && h.data.inviteRequired);
+        view.registrationOpen = !(h.data && h.data.registration === false);
+        if (mask && view.kind === 'auth' && view.tab === 'register') renderAuth();
+      }).catch(function () { view.modeLoading = false; });
+    }
+
     function renderAuth() {
       var reg = view.tab === 'register';
       var m = readMeta();
+      // Keep whatever was typed across a re-render.
+      var typed = {};
+      var oldForm = mask && mask.querySelector('[data-dc="form"]');
+      if (oldForm) Array.prototype.forEach.call(oldForm.elements, function (el) { if (el.name) typed[el.name] = el.value; });
       openShell(
         '<button class="dc-x" data-dc="close" aria-label="关闭">×</button><h3>' + (reg ? '注册账号' : '登录') + '</h3>' +
         '<p class="dc-sub">登录后，答题、写作、口语录音与每日进度会自动保存到云端，换设备也能继续学习。不登录也可照常使用，数据仅保存在本机。</p>' +
@@ -957,12 +1006,14 @@
         '<label class="dc-field">邮箱<input name="email" type="email" autocomplete="username" required value="' + esc((m.user && m.user.email) || '') + '"></label>' +
         (reg ? '<label class="dc-field">昵称<input name="displayName" maxlength="60" autocomplete="nickname"></label>' : '') +
         '<label class="dc-field">密码' + (reg ? '（至少 8 位）' : '') + '<input name="password" type="password" autocomplete="' + (reg ? 'new-password' : 'current-password') + '" required minlength="' + (reg ? 8 : 1) + '"></label>' +
-        (reg ? '<label class="dc-field">邀请码<input name="inviteCode" autocomplete="off" required></label>' : '') +
+        (reg && view.registrationOpen === false ? '<div class="dc-msg info">暂未开放注册。</div>' : '') +
+        (reg && view.inviteRequired ? '<label class="dc-field">邀请码<input name="inviteCode" autocomplete="off" required></label>' : '') +
         '<button class="dc-btn" style="width:100%" type="submit">' + (reg ? '注册并开始同步' : '登录并同步') + '</button></form>' + msgHtml()
       );
       mask.querySelector('[data-dc="tab-login"]').addEventListener('click', function () { view.tab = 'login'; view.msg = null; renderAuth(); });
-      mask.querySelector('[data-dc="tab-register"]').addEventListener('click', function () { view.tab = 'register'; view.msg = null; renderAuth(); });
+      mask.querySelector('[data-dc="tab-register"]').addEventListener('click', function () { view.tab = 'register'; view.msg = null; renderAuth(); loadRegistrationMode(); });
       var form = mask.querySelector('[data-dc="form"]');
+      Array.prototype.forEach.call(form.elements, function (el) { if (el.name && hasOwn(typed, el.name)) el.value = typed[el.name]; });
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         var fd = {}; Array.prototype.forEach.call(form.elements, function (el) { if (el.name) fd[el.name] = el.value; });
