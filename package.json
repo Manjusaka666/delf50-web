@@ -1,0 +1,13 @@
+{
+  "name": "delf50-web",
+  "private": true,
+  "description": "DELF50 web app with cloud account and learning-record sync (Neon + Cloudflare R2)",
+  "scripts": {
+    "verify": "node scripts/verify.js",
+    "verify:cloud": "node scripts/verify-cloud.js",
+    "db:migrate": "node scripts/db-migrate.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0"
+  }
+}

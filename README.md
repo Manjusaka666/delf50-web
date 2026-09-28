@@ -179,3 +179,7 @@ V1.8.1 的 source seeds 使用法国公共服务、就业、教育、医疗、�
 - `api/source.js`
 - `index.html`（loader cache key 由 `release-meta.js` 提供）\n- `release-meta.js`（App / Content / Schema / Route / Input Quality 的单一版本源）
 - `v198-release-ui.js`（兼容与升级保护页面统一读取当前发布版本与最新运行审计）
+
+## 账号与云端学习记录（Cloud v1）
+
+登录后，学习记录（答题、写作、应用、口语记录、草稿、每日进度）自动同步到 Neon，口语录音同步到 Cloudflare R2；不登录时网站与之前完全一样，只保存在本机。该层独立于现有代码，唯一改动是 `index.html` 中新增的一行 `<script src="/cloud/delf50-cloud.js">`。架构、同步与合并算法、数据库表、API（含未来 App 使用的 Bearer token 与事件接口）、部署配置与验证方法见 [`docs/cloud-sync-v1.md`](docs/cloud-sync-v1.md)。
