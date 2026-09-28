@@ -3,19 +3,20 @@
 /**
  * Verifies the cloud layer end to end.
  *
- *   1. Units: SigV4 against the published AWS vectors, the three-way merge, the
- *      projection extractor.
- *   2. API against a real PostgreSQL: accounts, sessions, CSRF, rate limits,
- *      compare-and-swap sync, exact round trips, history, archives, projection
- *      rows, events, media (against an HTTPS S3 mock that checks signatures).
- *   3. Browser: the real index.html + cloud layer + app bundle booted in jsdom
- *      as several devices against the local API, covering first sign-in with
- *      existing progress, a second device, concurrent edits on two devices,
- *      conflicting histories, shared-device account switching and recordings.
+ *   1. Units: SigV4 against the AWS test vectors, the client's change batches,
+ *      the column mapping.
+ *   2. API against a real PostgreSQL, connected as the RLS-bound delf50_api
+ *      role: Neon Auth proxy (against a mock that issues real cookies and
+ *      EdDSA JWTs), exact state round trips, idempotent replays, append-only
+ *      grammar history, row-level isolation, bearer tokens, R2 media (HTTPS
+ *      S3 mock that checks signatures), vocabulary SM-2.
+ *   3. Browser: index.html + cloud layer + the real app bundle in jsdom:
+ *      sign-in gate, live saving latency, nothing persisted in the browser,
+ *      reload / second device / cross-device refresh, recordings, session
+ *      expiry mid-study, sign-out.
  *
- * Needs (outside the deployment, resolved via NODE_PATH): jsdom, pg,
- * fake-indexeddb. Needs a PostgreSQL URL in TEST_DATABASE_URL (an empty scratch
- * database; the schema is created by the migration).
+ * Needs (resolved via NODE_PATH): jsdom, pg, fake-indexeddb, and an empty
+ * scratch PostgreSQL (superuser) in TEST_DATABASE_URL.
  *
  *   TEST_DATABASE_URL=postgres://… NODE_PATH=… node scripts/verify-cloud.js
  */
@@ -25,7 +26,6 @@ const path = require('path');
 const http = require('http');
 const https = require('https');
 const crypto = require('crypto');
-const zlib = require('zlib');
 const { execFileSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
@@ -35,7 +35,7 @@ function check(ok, label, detail) {
   results.push(`  ${ok ? 'ok  ' : 'FAIL'} ${label}${!ok && detail !== undefined ? ' — ' + (typeof detail === 'string' ? detail : JSON.stringify(detail)) : ''}`);
   if (!ok) failed++;
 }
-function section(name) { results.push(`\n${name}`); }
+const section = (name) => results.push(`\n${name}`);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function until(fn, ms = 20000, label = 'condition') {
   const t0 = Date.now();
@@ -44,103 +44,195 @@ async function until(fn, ms = 20000, label = 'condition') {
     try { v = await fn(); } catch (e) { v = false; }
     if (v) return v;
     if (Date.now() - t0 > ms) throw new Error(`timeout waiting for ${label}`);
-    await sleep(60);
+    await sleep(20);
   }
 }
 const sha256hex = (s) => crypto.createHash('sha256').update(s).digest('hex');
+const clone = (x) => JSON.parse(JSON.stringify(x));
+
+const C = require(path.join(ROOT, 'cloud/delf50-cloud.js'));
+const records = require(path.join(ROOT, 'api/_lib/records.js'));
+const SPEC = records.collections();
+const sameData = (a, b) => C.equal(a, b);
+
+/** A realistic learner state, with edge cases the column mapping must keep. */
+function sampleState() {
+  return {
+    version: '2.0.2', selectedDay: 3, intensity: 'standard', taskDone: { '3:grammar': true, '3:vocab': false },
+    prodDone: { '3:subj:0': true, '3:subj:1': true }, practiceCounters172: { 3: { vocab: 35, review: 0, legacyInferred: false } },
+    grammar: { attempts: 4, correct: 3, skill: { subj: { a: 2, c: 1 } } },
+    reading: { attempts: 3, correct: 2, index: 1, answers: { '3:r181-d03-s01:0': 1, '3:r181-d03-s01:1': 0, 'odd-key': 'x' } },
+    listening: { attempts: 0, correct: 0, index: 0 }, // no answers map at all: absence must round-trip too
+    application: { count: 1, index: 1, records: [{ day: 3, title: 'Lettre', text: 'Madame, …', hits: ['donc'], at: '2026-09-28T08:00:00.000Z', contentId: 'a1' }] },
+    writing: { count: 2, index: 2, records: [
+      { day: 2, title: 'Essai', text: 'Je pense que…', words: 120, connectors: ['cependant'], paragraphs: 3, at: '2026-09-27T09:15:00.123Z', contentId: 'w1' },
+      { day: 3, title: 'Essai 2', text: 'Premièrement 😀 "quotes" \\ back', words: 12.5, at: 'not a date', contentId: null }
+    ] },
+    speaking: { count: 2, totalSec: 95, index: 2, records: [
+      { id: 'd3-s1', day: 3, title: 'Monologue', sec: 60, stored: true, at: '2026-09-28T08:10:00.000Z' },
+      { id: 'd3-s2', day: 3, title: 'Dialogue', sec: 35.5, stored: false, manual: true, at: '2026-09-28T08:12:00.000Z', contentId: 's2' }
+    ] },
+    errors: [
+      { skill: 'grammar', original: 'je suis allé', correct: 'je suis allée', why: 'accord', at: '2026-09-28T08:20:00.000Z' },
+      { skill: 'grammar', original: 'x', correct: 'y', why: 'z', at: '2026-09-28T08:19:00.000Z' },
+      { skill: 'grammar', original: 'x', correct: 'y', why: 'z', at: '2026-09-28T08:19:00.000Z' },
+      'legacy string item'
+    ],
+    startedAt: '2026-09-26T07:00:00.000Z', lastSavedAt: '2026-09-28T08:20:01.000Z',
+    daily: { 3: { grammar: 4, reading: 3, writing: 1 } },
+    drafts171: { writing: { 'd3-w': 'brouillon', 'd3-x': { rich: true } }, application: {} },
+    dayHistory171: { 3: { firstActivityAt: '2026-09-28T07:00:00.000Z' } },
+    meta172: { schemaVersion: 2, migrations: ['a', 'b'] },
+    contentProgress172: { completed: { writing: { w1: { firstCompletedAt: '2026-09-27T09:15:00.123Z', lastCompletedAt: '2026-09-28T09:15:00.123Z', day: 2 } }, reading: { r1: { day: 3, correct: true, firstCompletedAt: '2026-09-28T08:00:00.000Z' } } } },
+    grammarReview202: {
+      '3:GQ-1': { day: 3, contentId: 'GQ-1', nodeId: 'subj', nodeName: 'Subjonctif', question: 'Il faut que tu …', options: ['viens', 'viennes'], selectedIndex: 1, correctIndex: 1, correct: true, explanation: '…', answeredAt: '2026-09-28T08:05:00.000Z', route: 'main' },
+      '3:GQ-2': { day: 3, contentId: 'GQ-2', selectedIndex: 0, correctIndex: 1, correct: false, answeredAt: '2026-09-28T08:06:00.000Z' }
+    }
+  };
+}
 
 // ───────────────────────── 1. units ─────────────────────────────────────────
 
 function unitTests() {
   section('Units');
   const r2 = require(path.join(ROOT, 'api/_lib/r2.js'));
-  const now = new Date(Date.UTC(2013, 4, 24));
-  const K = { accessKeyId: 'AKIAIOSFODNN7EXAMPLE', secretAccessKey: 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY', region: 'us-east-1', now };
+  const K = { accessKeyId: 'AKIAIOSFODNN7EXAMPLE', secretAccessKey: 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY', region: 'us-east-1', now: new Date(Date.UTC(2013, 4, 24)) };
   const url = r2.presign(Object.assign({ method: 'GET', host: 'examplebucket.s3.amazonaws.com', path: '/test.txt', expires: 86400 }, K));
   check(url.endsWith('X-Amz-Signature=aeeed9bbccd4d02ee5c0109b86d86835f995330da4c265957d157751f604d404'), 'SigV4 presigned URL matches the AWS test vector');
   const h = r2.signHeaders(Object.assign({ method: 'GET', host: 'examplebucket.s3.amazonaws.com', path: '/test.txt', headers: { range: 'bytes=0-9' },
     payloadHash: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' }, K));
   check(h.authorization.endsWith('Signature=f0e8bdb87c964420e857bd35b5d6ed310bd44f0170aba48dd91039c6036bdb41'), 'SigV4 header signature matches the AWS test vector');
 
-  const C = require(path.join(ROOT, 'cloud/delf50-cloud.js'));
-  const base = { v: 1, grammar: { attempts: 10, correct: 8, skill: { p: { a: 10, c: 8 } } }, reading: { index: 2, answers: { '1:r1:0': 1 } },
-    writing: { count: 1, records: [{ at: '2026-09-01T10:00:00.000Z', text: 'a' }] }, drafts171: { writing: { k1: 'draft' } },
-    errors: [{ at: '2026-09-01T09:00:00.000Z', q: 'x' }], startedAt: '2026-09-01T08:00:00.000Z', lastSavedAt: '2026-09-01T10:00:00.000Z', selectedDay: 3 };
-  const ours = JSON.parse(JSON.stringify(base));
-  ours.grammar.attempts = 13; ours.grammar.correct = 10; ours.grammar.skill.p = { a: 13, c: 10 };
-  ours.reading.answers['1:r1:1'] = 2; ours.reading.index = 3;
-  ours.writing.count = 2; ours.writing.records.push({ at: '2026-09-02T10:00:00.000Z', text: 'ours' });
-  delete ours.drafts171.writing.k1;
-  ours.errors.unshift({ at: '2026-09-02T09:00:00.000Z', q: 'ours-err' });
-  ours.lastSavedAt = '2026-09-02T10:00:00.000Z'; ours.selectedDay = 4;
-  const theirs = JSON.parse(JSON.stringify(base));
-  theirs.grammar.attempts = 15; theirs.grammar.correct = 9; theirs.grammar.skill.p = { a: 15, c: 9 }; theirs.grammar.skill.q = { a: 1, c: 1 };
-  theirs.reading.answers['2:r9:0'] = 0;
-  theirs.writing.count = 2; theirs.writing.records.push({ at: '2026-09-01T12:00:00.000Z', text: 'theirs' });
-  theirs.errors.unshift({ at: '2026-09-01T11:00:00.000Z', q: 'theirs-err' });
-  theirs.lastSavedAt = '2026-09-01T12:00:00.000Z'; theirs.selectedDay = 5; theirs.startedAt = '2026-08-31T08:00:00.000Z';
-  const m = C.merge3(base, ours, theirs);
-  check(m.grammar.attempts === 18 && m.grammar.correct === 11, 'merge adds both sides’ counter increments', m.grammar);
-  check(m.grammar.skill.p.a === 18 && m.grammar.skill.p.c === 11 && m.grammar.skill.q.a === 1, 'merge adds per-skill counters and keeps skills only one side has', m.grammar.skill);
-  check(Object.keys(m.reading.answers).length === 3, 'merge keeps every answered question from both sides', m.reading.answers);
-  check(m.writing.count === 3 && m.writing.records.map((r) => r.text).join() === 'a,theirs,ours', 'merge keeps both new writing records in time order', m.writing.records);
-  check(!('k1' in m.drafts171.writing), 'a draft one side submitted (deleted) and the other left untouched stays deleted');
-  check(m.errors.map((e) => e.q).join() === 'ours-err,theirs-err,x', 'merge keeps newest-first error list order', m.errors);
-  check(m.selectedDay === 4 && m.reading.index === 3, 'non-counter scalars resolve to the side saved last');
-  check(m.startedAt === '2026-08-31T08:00:00.000Z' && m.lastSavedAt === '2026-09-02T10:00:00.000Z', 'startedAt takes the earliest, lastSavedAt the latest');
+  const S = sampleState();
+  const d0 = C.diff({}, {}, S, SPEC);
+  const docOf = Object.fromEntries(d0.doc.map((o) => [o[0].join('.'), o[1]]));
+  check(C.equal(docOf.errors, []) && C.equal(docOf.grammarReview202, {}) && C.equal(docOf.reading.answers, {}) && !('answers' in docOf.listening)
+    && C.equal(docOf.contentProgress172, { completed: { writing: {}, reading: {} } }) && C.equal(docOf.drafts171, { writing: {}, application: {} }) && docOf.meta172
+    && ['daily', 'dayHistory171', 'prodDone', 'taskDone', 'practiceCounters172'].every((k) => C.equal(docOf[k], {})),
+    'the document holds only empty record containers, never records', docOf);
+  check(!d0.ops.listening && d0.ops.writing.set.length === 2 && d0.ops.errors.set.length === 4 && d0.ops.completions.set.length === 2 && d0.ops.reading.set.length === 3,
+    'a first batch writes every record as its own row');
+  check(C.equal(d0.pos.errors, [0, 1, 2, 3]) && new Set(d0.ops.errors.set.map((x) => x[0][0])).size === 4, 'identical list items get distinct keys');
 
-  const t2 = JSON.parse(JSON.stringify(base)); t2.drafts171.writing.k1 = 'edited on other device';
-  const m2 = C.merge3(base, ours, t2);
-  check(m2.drafts171.writing.k1 === 'edited on other device', 'a draft edited on one side survives its deletion on the other');
-  check(C.deepEqual(C.merge3(base, ours, base), ours) && C.deepEqual(C.merge3(base, base, theirs), theirs), 'one-sided change merges to that side exactly');
-  const m3 = C.merge3(undefined, ours, ours);
-  check(C.deepEqual(m3, ours), 'merging identical documents without a base is the identity');
-  const m4 = C.merge3(undefined, ours, theirs);
-  check(m4.writing.records.length === 3 && m4.writing.records.filter((r) => r.text === 'a').length === 1, 'base-less merge unions records and de-duplicates shared ones', m4.writing.records);
-  const same = C.merge3({ w: { count: 1, n: 'x' } }, { w: { count: 2, n: 'y' } }, { w: { count: 2, n: 'y' } });
-  check(same.w.count === 3 && same.w.n === 'y', 'identical counter increments on two devices are two events, identical values one', same);
-  const arr = C.mergeArray(['r1', 'r2'], ['r1', 'r3'], ['r1', 'r2', 'r4']);
-  check(arr.join() === 'r1,r3,r4', 'array merge applies removals and additions from both sides', arr);
+  const noop = C.diff(S, d0.pos, clone(S), SPEC);
+  check(noop.empty, 'an unchanged state produces an empty batch');
 
-  const H = require(path.join(ROOT, 'api/_lib/http.js'));
-  results.push('  (async readRaw checks run with the API section)');
-  H.readRaw({ rawBody: Buffer.alloc(11) }, 10).then(() => check(false, 'buffered rawBody over the limit is refused'), (e) => check(e.status === 413, 'buffered rawBody over the limit is refused'));
-  H.readRaw({ body: 'x'.repeat(11) }, 10).then(() => check(false, 'buffered string body over the limit is refused'), (e) => check(e.status === 413, 'buffered string body over the limit is refused'));
+  const S2 = clone(S);
+  S2.errors.unshift({ skill: 'reading', original: 'a', correct: 'b', why: 'c', at: '2026-09-28T09:00:00.000Z' });
+  S2.speaking.records[1].stored = true;
+  S2.writing.records.splice(0, 1);
+  S2.reading.answers['3:r181-d03-s01:2'] = 3; delete S2.reading.answers['odd-key'];
+  S2.contentProgress172.completed.listening = { l1: { day: 3 } };
+  delete S2.drafts171.writing['d3-w'];
+  S2.selectedDay = 4; S2.daily['4'] = { grammar: 1 }; delete S2.taskDone['3:grammar'];
+  const d1 = C.diff(S, d0.pos, S2, SPEC);
+  check(d1.ops.errors.set.length === 1 && d1.ops.errors.set[0][2] < 0 && !d1.ops.errors.del.length, 'prepending an error writes one row before the others', d1.ops.errors);
+  check(d1.ops.speaking.set.length === 1 && d1.ops.speaking.del.length === 1 && d1.ops.speaking.set[0][2] > d0.pos.speaking[0], 'an edited record replaces its row in place', d1.ops.speaking);
+  check(d1.ops.writing.del.length === 1 && !d1.ops.writing.set.length, 'a removed record deletes one row');
+  check(C.equal(d1.ops.reading, { set: [[['3:r181-d03-s01:2'], 3]], del: [['odd-key']] }) && C.equal(d1.ops.completions.set, [[['listening', 'l1'], { day: 3 }]]), 'map changes are per key');
+  check(C.equal(d1.doc.map((o) => o[0].join('.')).sort(), ['contentProgress172.completed.listening', 'selectedDay']), 'document changes are per field (a new module only adds its skeleton)', d1.doc);
+  check(C.equal(d1.ops.dailyProgress.set, [[['4'], { grammar: 1 }]]) && C.equal(d1.ops.tasks.del, [['3:grammar']]), 'per-day counters and the checklist change as rows', d1.ops);
+  const S3 = clone(S2); S3.errors.reverse();
+  const d2 = C.diff(S2, d1.pos, S3, SPEC);
+  check(C.equal(d2.pos.errors, [0, 1, 2, 3, 4]) && d2.ops.errors.set.length === 5, 'a reordered list is renumbered');
 
-  const P = require(path.join(ROOT, 'api/_lib/projection.js'));
-  const S = {
-    version: '1.9.4', selectedDay: 2, grammar: { attempts: 3, correct: 2 }, reading: { attempts: 2, correct: 1, answers: { '2:r181-d02-s01:0': 1, '2:r181-d02-s01:1': 0 } },
-    listening: { answers: { '4:1': 2 } }, daily: { 1: { grammar: 3 }, 2: { reading: 2 } }, dayHistory171: { 2: { firstActivityAt: '2026-09-02T08:00:00.000Z', lastActivityAt: 'bad', actions: 5 } },
-    writing: { count: 1, records: [{ day: 2, title: 'T', text: 'Bonjour\u0000', words: 1, at: '2026-09-02T08:00:00.000Z', contentId: 'w1', connectors: [] }] },
-    grammarReview202: { '2:GQ-1': { day: 2, contentId: 'GQ-1', selectedIndex: 1, correctIndex: 1, correct: true, answeredAt: '2026-09-02T08:00:00.000Z' } },
-    contentProgress172: { completed: { writing: { w1: { day: 2, firstCompletedAt: '2026-09-02T08:00:00.000Z' } } } },
-    errors: [{ q: 'x', day: 2 }]
-  };
-  const x = P.extract(S);
-  check(x.answers.get('reading|2:r181-d02-s01:0').content_id === 'r181-d02-s01' && x.answers.get('reading|2:r181-d02-s01:0').day === 2, 'projection parses "<day>:<contentId>:<q>" answer keys');
-  check(x.answers.get('listening|4:1').content_id === 'legacy-index-4', 'projection keeps legacy "<index>:<q>" answer keys');
-  check(x.answers.get('grammar|2:GQ-1').correct === true, 'projection carries grammar correctness from grammarReview202');
-  check(x.daily.get('2').metrics.actions === 5 && x.daily.get('2').last_activity_at === null, 'projection merges day history and drops invalid timestamps');
-  check(x.productions.size === 1 && x.completions.size === 1 && x.errors.size === 1, 'projection extracts records, completions and errors');
-  const d1 = P.diff(S, S);
-  check(!d1.rebuild && ['daily', 'answers', 'completions', 'productions', 'errors'].every((t) => d1[t].upsert.length === 0 && d1[t].delete.length === 0), 'projection diff of an unchanged document is empty');
-  const S2 = JSON.parse(JSON.stringify(S)); S2.reading.answers['2:r181-d02-s02:0'] = 2; delete S2.listening.answers['4:1'];
-  const d2 = P.diff(S, S2);
-  check(d2.answers.upsert.length === 1 && d2.answers.delete.join() === 'listening|4:1', 'projection diff writes only changed rows', d2.answers);
-  check(P.diff(null, S).rebuild === true, 'projection without a previous head rebuilds');
+  // Column mapping round trip for every collection.
+  let exact = true;
+  for (const c of SPEC) {
+    const v = c.path.reduce((o, k) => o && o[k], S) || {};
+    const items = c.kind === 'list' ? v.map((x, i) => [[String(i)], x]) : c.kind === 'map2'
+      ? Object.entries(v).flatMap(([m, o]) => Object.entries(o).map(([k, x]) => [[m, k], x])) : Object.entries(v).map(([k, x]) => [[k], x]);
+    for (const [key, x] of items) {
+      const row = JSON.parse(JSON.stringify(records.toRow(records.COLLECTIONS[c.name], key, x, 0)));
+      if (!sameData(records.fromRow(records.COLLECTIONS[c.name], row), x)) { exact = false; results.push(`      ${c.name} ${JSON.stringify(x)}`); }
+    }
+  }
+  check(exact, 'every record maps to columns (+extra) and back exactly');
+  const wrow = records.toRow(records.COLLECTIONS.writing, ['k'], S.writing.records[1], 1);
+  check(wrow.word_count === undefined && wrow.extra.words === 12.5 && wrow.extra.at === 'not a date' && wrow.body.startsWith('Premièrement'), 'values of the wrong type stay in extra, the rest are typed columns', wrow);
 }
 
-// ───────────────────────── test infrastructure ─────────────────────────────
+// ───────────────────────── infrastructure ──────────────────────────────────
 
-function installPgShim(url) {
-  const { Pool, types } = require('pg');
-  const pool = new Pool({ connectionString: url, max: 8 });
-  const neonPath = require.resolve('@neondatabase/serverless', { paths: [path.join(ROOT, 'api/_lib')] });
-  const fn = () => { throw new Error('tagged template not used'); };
-  fn.query = (text, params) => pool.query(text, params).then((r) => r.rows);
-  require.cache[neonPath] = { id: neonPath, filename: neonPath, loaded: true, exports: { neon: () => fn } };
-  void types;
+function useDatabase(apiUrl) {
+  const { Pool } = require('pg');
+  const pool = new Pool({ connectionString: apiUrl, max: 10 });
+  require(path.join(ROOT, 'api/_lib/db.js')).setDriver({
+    query: (t, p) => pool.query(t, p).then((r) => r.rows),
+    async transaction(list) {
+      const c = await pool.connect();
+      try {
+        await c.query('begin');
+        const out = [];
+        for (const [t, p] of list) out.push((await c.query(t, p)).rows);
+        await c.query('commit');
+        return out;
+      } catch (e) { await c.query('rollback'); throw e; } finally { c.release(); }
+    }
+  });
   return pool;
+}
+
+/** Neon Auth as seen through its REST API: users and sessions in neon_auth.*, cookies, EdDSA JWTs. */
+function startAuthMock(owner) {
+  const { privateKey, publicKey } = crypto.generateKeyPairSync('ed25519');
+  const kid = 'k1';
+  const passwords = new Map();
+  const stats = { origins: [] };
+  let base;
+  const b64 = (o) => Buffer.from(JSON.stringify(o)).toString('base64url');
+  const jwt = (u) => {
+    const now = Math.floor(Date.now() / 1000);
+    const hp = `${b64({ alg: 'EdDSA', kid, typ: 'JWT' })}.${b64({ sub: u.id, email: u.email, name: u.name, iat: now, exp: now + 900, iss: new URL(base).origin, aud: new URL(base).origin })}`;
+    return `${hp}.${crypto.sign(null, Buffer.from(hp), privateKey).toString('base64url')}`;
+  };
+  const cookieToken = (req) => { const m = /__Secure-neon-auth\.session_token=([^;]+)/.exec(req.headers.cookie || ''); return m ? decodeURIComponent(m[1]).split('.')[0] : null; };
+  async function newSession(res, user) {
+    const token = crypto.randomBytes(24).toString('base64url');
+    await owner.query(`insert into neon_auth.session (id, token, "userId", "expiresAt") values (gen_random_uuid(), $1, $2, now() + interval '7 days')`, [token, user.id]);
+    res.setHeader('Set-Cookie', `__Secure-neon-auth.session_token=${encodeURIComponent(token + '.' + crypto.randomBytes(8).toString('base64url'))}; Max-Age=604800; Path=/; HttpOnly; Secure; SameSite=None; Partitioned`);
+    return token;
+  }
+  const server = http.createServer((req, res) => {
+    const chunks = [];
+    req.on('data', (c) => chunks.push(c));
+    req.on('end', async () => {
+      stats.origins.push(req.headers.origin || null);
+      const body = chunks.length ? JSON.parse(Buffer.concat(chunks).toString()) : {};
+      const route = new URL(req.url, 'http://x').pathname.replace(/^\/neondb\/auth\//, '');
+      const json = (s, o) => { res.writeHead(s, { 'Content-Type': 'application/json' }); res.end(JSON.stringify(o)); };
+      if (route === '.well-known/jwks.json') return json(200, { keys: [Object.assign(publicKey.export({ format: 'jwk' }), { kid, alg: 'EdDSA' })] });
+      if (!req.headers.origin) return json(403, { code: 'MISSING_OR_NULL_ORIGIN', message: 'Missing or null Origin' });
+      if (route === 'sign-up/email') {
+        const exists = (await owner.query('select 1 from neon_auth."user" where email = $1', [body.email])).rows.length;
+        if (exists) return json(422, { code: 'USER_ALREADY_EXISTS', message: 'User already exists' });
+        if (String(body.password).length < 8) return json(400, { code: 'PASSWORD_TOO_SHORT', message: 'Password too short' });
+        const u = (await owner.query('insert into neon_auth."user" (id, email, name) values (gen_random_uuid(), $1, $2) returning id, email, name', [body.email, body.name])).rows[0];
+        passwords.set(body.email, body.password);
+        return json(200, { token: await newSession(res, u), user: u });
+      }
+      if (route === 'sign-in/email') {
+        const u = (await owner.query('select id, email, name from neon_auth."user" where email = $1', [body.email])).rows[0];
+        if (!u || passwords.get(body.email) !== body.password) return json(401, { code: 'INVALID_EMAIL_OR_PASSWORD', message: 'Invalid email or password' });
+        return json(200, { token: await newSession(res, u), user: u });
+      }
+      if (route === 'get-session') {
+        const u = (await owner.query('select u.id, u.email, u.name from neon_auth.session s join neon_auth."user" u on u.id = s."userId" where s.token = $1', [cookieToken(req)])).rows[0];
+        if (u) res.setHeader('set-auth-jwt', jwt(u));
+        return json(200, u ? { user: u, session: { token: cookieToken(req) } } : null);
+      }
+      if (route === 'sign-out') {
+        await owner.query('delete from neon_auth.session where token = $1', [cookieToken(req)]);
+        res.setHeader('Set-Cookie', '__Secure-neon-auth.session_token=; Max-Age=0; Path=/; HttpOnly; Secure; SameSite=None; Partitioned');
+        return json(200, { success: true });
+      }
+      json(404, { code: 'NOT_FOUND' });
+    });
+  });
+  return new Promise((resolve) => server.listen(0, '127.0.0.1', () => {
+    base = `http://127.0.0.1:${server.address().port}/neondb/auth`;
+    resolve({ server, base, stats });
+  }));
 }
 
 function makeCert(dir) {
@@ -153,7 +245,7 @@ function makeCert(dir) {
 function startS3Mock(tls, creds) {
   const r2 = require(path.join(ROOT, 'api/_lib/r2.js'));
   const objects = new Map();
-  const stats = { badSig: 0, puts: 0, gets: 0 };
+  const stats = { badSig: 0, puts: 0 };
   const server = https.createServer(tls, (req, res) => {
     const chunks = [];
     req.on('data', (c) => chunks.push(c));
@@ -161,46 +253,43 @@ function startS3Mock(tls, creds) {
       const body = Buffer.concat(chunks);
       const u = new URL(req.url, `https://${req.headers.host}`);
       const pth = decodeURIComponent(u.pathname);
+      const t = req.headers['x-amz-date'] || u.searchParams.get('X-Amz-Date') || '';
+      const when = new Date(Date.UTC(+t.slice(0, 4), +t.slice(4, 6) - 1, +t.slice(6, 8), +t.slice(9, 11), +t.slice(11, 13), +t.slice(13, 15)));
       let ok = false;
       if (u.searchParams.get('X-Amz-Signature')) {
-        const t = u.searchParams.get('X-Amz-Date');
-        const when = new Date(Date.UTC(+t.slice(0, 4), +t.slice(4, 6) - 1, +t.slice(6, 8), +t.slice(9, 11), +t.slice(11, 13), +t.slice(13, 15)));
-        const extra = {};
-        for (const [k, v] of u.searchParams) if (!/^X-Amz-/.test(k)) extra[k] = v;
-        const expect = r2.presign({ method: req.method, host: req.headers.host, path: pth, accessKeyId: creds.id, secretAccessKey: creds.secret, expires: Number(u.searchParams.get('X-Amz-Expires')), now: when, extraQuery: extra });
-        ok = new URL(expect).searchParams.get('X-Amz-Signature') === u.searchParams.get('X-Amz-Signature') && Date.now() < when.getTime() + 1000 * Number(u.searchParams.get('X-Amz-Expires'));
+        const expect = r2.presign({ method: req.method, host: req.headers.host, path: pth, accessKeyId: creds.id, secretAccessKey: creds.secret, expires: Number(u.searchParams.get('X-Amz-Expires')), now: when });
+        ok = new URL(expect).searchParams.get('X-Amz-Signature') === u.searchParams.get('X-Amz-Signature');
       } else if (req.headers.authorization) {
-        const t = req.headers['x-amz-date'];
-        const when = new Date(Date.UTC(+t.slice(0, 4), +t.slice(4, 6) - 1, +t.slice(6, 8), +t.slice(9, 11), +t.slice(11, 13), +t.slice(13, 15)));
-        const hdrs = {};
-        if (req.headers['content-type']) hdrs['content-type'] = req.headers['content-type'];
+        const hdrs = req.headers['content-type'] ? { 'content-type': req.headers['content-type'] } : {};
         const expect = r2.signHeaders({ method: req.method, host: req.headers.host, path: pth, headers: hdrs, payloadHash: req.headers['x-amz-content-sha256'], accessKeyId: creds.id, secretAccessKey: creds.secret, now: when });
         ok = expect.authorization === req.headers.authorization && (req.method !== 'PUT' || sha256hex(body) === req.headers['x-amz-content-sha256']);
       }
       if (!ok) { stats.badSig++; res.writeHead(403); res.end('SignatureDoesNotMatch'); return; }
       const key = pth.replace(/^\/[^/]+\//, '');
-      if (req.method === 'PUT') { objects.set(key, { body, type: req.headers['content-type'] || 'application/octet-stream' }); stats.puts++; res.writeHead(200, { ETag: '"x"' }); res.end(); return; }
+      if (req.method === 'PUT') { objects.set(key, { body, type: req.headers['content-type'] || 'application/octet-stream' }); stats.puts++; res.writeHead(200); res.end(); return; }
       const o = objects.get(key);
       if (req.method === 'DELETE') { objects.delete(key); res.writeHead(204); res.end(); return; }
       if (!o) { res.writeHead(404); res.end(); return; }
       res.writeHead(200, { 'Content-Type': o.type, 'Content-Length': o.body.length });
-      if (req.method === 'GET') { stats.gets++; res.end(o.body); } else res.end();
+      res.end(req.method === 'GET' ? o.body : undefined);
     });
   });
   return new Promise((resolve) => server.listen(0, '127.0.0.1', () => resolve({ server, objects, stats, port: server.address().port })));
 }
 
-const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'application/javascript; charset=utf-8', '.css': 'text/css', '.json': 'application/json' };
+const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'application/javascript; charset=utf-8', '.css': 'text/css' };
 
 /** Serves the repository like Vercel: static files, /api/source, /api/v1/* rewrite. */
 function startApp() {
   const v1 = require(path.join(ROOT, 'api/v1.js'));
   const source = require(path.join(ROOT, 'api/source.js'));
+  const stats = { sync: [] };
   const server = http.createServer((req, res) => {
     const u = new URL(req.url, 'http://x');
-    if (u.pathname === '/api/v1' || u.pathname.startsWith('/api/v1/')) {
+    if (u.pathname.startsWith('/api/v1/')) {
       req.query = Object.fromEntries(u.searchParams);
-      req.query.__route = u.pathname.replace(/^\/api\/v1\/?/, '');
+      req.query.__route = u.pathname.slice(8);
+      if (req.query.__route === 'sync') { const t0 = Date.now(); res.on('finish', () => stats.sync.push(Date.now() - t0)); }
       return v1(req, res);
     }
     if (u.pathname === '/api/source') {
@@ -215,315 +304,196 @@ function startApp() {
     res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream' });
     fs.createReadStream(file).pipe(res);
   });
-  return new Promise((resolve) => server.listen(0, '127.0.0.1', () => resolve({ server, base: `http://127.0.0.1:${server.address().port}` })));
+  return new Promise((resolve) => server.listen(0, '127.0.0.1', () => resolve({ server, stats, base: `http://127.0.0.1:${server.address().port}` })));
 }
 
-/** Minimal API client with a cookie jar (for the API section). */
-function apiClient(base) {
+/** API client with a cookie jar. */
+function client(base) {
   let cookie = '';
-  async function req(method, p, { json, body, headers = {}, auth = true, raw = false } = {}) {
-    const h = Object.assign({ 'X-DELF50-Client': 'test' }, headers);
-    if (auth && cookie) h.cookie = cookie;
+  async function req(method, p, { json, body, headers = {}, raw = false } = {}) {
+    const h = Object.assign({}, headers);
+    if (cookie) h.cookie = cookie;
     let b = body;
     if (json !== undefined) { h['Content-Type'] = 'application/json'; b = JSON.stringify(json); }
     const r = await fetch(base + '/api/v1' + p, { method, headers: h, body: b });
-    const sc = r.headers.getSetCookie ? r.headers.getSetCookie() : [];
-    for (const c of sc) { const v = c.split(';')[0]; cookie = /Max-Age=0/.test(c) ? '' : v; }
+    for (const c of r.headers.getSetCookie()) cookie = /Max-Age=0/.test(c) ? '' : c.split(';')[0];
     const ct = r.headers.get('content-type') || '';
-    const data = ct.includes('json') && !raw && r.status !== 204 ? await r.json() : Buffer.from(await r.arrayBuffer());
+    const data = ct.includes('json') && !raw ? await r.json() : Buffer.from(await r.arrayBuffer());
     return { status: r.status, data, headers: r.headers };
   }
   return { req, get cookie() { return cookie; }, set cookie(v) { cookie = v; } };
 }
 
-function pushBody(text, gz = true) {
-  const bytes = Buffer.from(text, 'utf8');
-  return { body: gz ? zlib.gzipSync(bytes) : bytes, headers: { 'X-DELF50-Hash': sha256hex(bytes), 'X-DELF50-Encoding': gz ? 'gzip' : 'identity', 'Content-Type': 'application/octet-stream' } };
-}
-
 // ───────────────────────── 2. API ───────────────────────────────────────────
 
-async function apiTests(base, pool, s3) {
+async function apiTests(base, owner, auth, s3) {
   section('API');
-  const A = apiClient(base);
-  const health = await A.req('GET', '/health', { auth: false });
-  check(health.status === 200 && health.data.db === true && health.data.r2 === true, 'health reports database and R2', health.data);
+  const A = client(base);
+  let r = await A.req('GET', '/health?deep=1');
+  check(r.status === 200 && r.data.db && r.data.auth && r.data.r2Reachable === true, 'health reports database, auth and R2', r.data);
+  r = await A.req('GET', '/bootstrap');
+  check(r.status === 401, 'signed out, bootstrap is 401');
 
-  const deep = await A.req('GET', '/health?deep=1', { auth: false });
-  check(deep.data.r2Reachable === true && deep.data.inviteRequired === true, 'deep health proves R2 credentials with a signed request', deep.data);
+  r = await A.req('POST', '/auth/sign-up/email', { json: { email: 'lea@example.com', password: 'correct-horse-9', name: 'Léa' } });
+  check(r.status === 200 && /^__Secure-neon-auth\.session_token=/.test(A.cookie) && auth.stats.origins.slice(-1)[0] === new URL(base).origin,
+    'sign-up goes through the Neon Auth proxy; the session cookie becomes first-party', r.data);
+  r = await client(base).req('POST', '/auth/sign-in/email', { json: { email: 'lea@example.com', password: 'wrong' } });
+  check(r.status === 401 && r.data.code === 'INVALID_EMAIL_OR_PASSWORD', 'wrong password is refused by Neon Auth');
 
-  // Without an invite code, sign-up needs an account cap; never open-ended.
-  const savedInvite = process.env.DELF50_INVITE_CODE;
-  delete process.env.DELF50_INVITE_CODE;
-  let rm = await A.req('POST', '/auth/register', { json: { email: 'open@example.com', password: 'longpassword' } });
-  check(rm.status === 403 && rm.data.error.code === 'registration_closed', 'no invite code and no cap: registration stays closed');
-  process.env.DELF50_MAX_USERS = '2.5';
-  const hbad = await A.req('GET', '/health', { auth: false });
-  check(hbad.data.registration === false, 'a malformed account cap keeps registration closed', hbad.data);
-  process.env.DELF50_MAX_USERS = '100';
-  const hm = await A.req('GET', '/health', { auth: false });
-  rm = await apiClient(base).req('POST', '/auth/register', { json: { email: 'open@example.com', password: 'longpassword' } });
-  check(hm.data.registration === true && hm.data.inviteRequired === false && rm.status === 201, 'no invite code with a cap: registration needs no code', { health: hm.data, status: rm.status });
-  delete process.env.DELF50_MAX_USERS;
-  process.env.DELF50_INVITE_CODE = savedInvite;
-  await pool.query("delete from delf50.users where email_norm = 'open@example.com'");
+  r = await A.req('GET', '/bootstrap');
+  check(r.status === 200 && r.data.state === null && r.data.rev === 0 && r.data.user.email === 'lea@example.com' && r.data.collections.length === SPEC.length, 'a new learner bootstraps empty', r.data);
 
-  let r = await A.req('POST', '/auth/register', { json: { email: 'a@example.com', password: 'longpassword', inviteCode: 'nope' } });
-  check(r.status === 403 && r.data.error.code === 'invalid_invite', 'registration requires the invite code');
-  r = await A.req('POST', '/auth/register', { json: { email: 'a@example.com', password: 'short', inviteCode: 'INVITE-123' } });
-  check(r.status === 400 && r.data.error.code === 'weak_password', 'registration rejects short passwords');
-  r = await A.req('POST', '/auth/register', { json: { email: 'Api@Example.com', password: 'longpassword', displayName: 'Api', inviteCode: 'INVITE-123', client: { platform: 'web', deviceId: 'web-test-device-1' } } });
-  check(r.status === 201 && r.data.user.email === 'Api@Example.com' && r.data.token === null && A.cookie, 'register creates the account and a cookie session', r.data);
-  const pw = await pool.query("select password_hash from delf50.users where email_norm = 'api@example.com'");
-  check(/^scrypt\$32768\$8\$1\$/.test(pw.rows[0].password_hash), 'passwords are stored as scrypt hashes');
-  const tok = await pool.query('select token_hash from delf50.sessions');
-  check(tok.rows.every((x) => x.token_hash.length === 32) && !tok.rows.some((x) => A.cookie.includes(x.token_hash.toString('base64url'))), 'only a SHA-256 of the session token is stored');
-  r = await A.req('POST', '/auth/register', { json: { email: 'api@example.com', password: 'longpassword', inviteCode: 'INVITE-123' } });
-  check(r.status === 409, 'duplicate email (case-insensitive) is rejected');
+  const S = sampleState();
+  const d0 = C.diff({}, {}, S, SPEC);
+  r = await A.req('POST', '/sync', { json: { doc: d0.doc, ops: d0.ops, device: 'test', batch: 'b0' } });
+  check(r.status === 200 && r.data.rev === 1, 'the first batch commits as revision 1', r.data);
+  r = await A.req('GET', '/bootstrap');
+  check(sameData(r.data.state, S), 'bootstrap rebuilds the state exactly from the tables', r.data.state);
+  check(C.equal(r.data.positions, d0.pos), 'list positions come back as written');
 
-  r = await A.req('GET', '/auth/me');
-  check(r.status === 200 && r.data.user.displayName === 'Api', 'me returns the signed-in user');
-  r = await fetch(base + '/api/v1/sync/state', { method: 'PUT', headers: Object.assign({ cookie: A.cookie, 'X-DELF50-Base-Rev': '0' }, pushBody('{"a":1}').headers), body: pushBody('{"a":1}').body });
-  check(r.status === 403, 'cookie writes without X-DELF50-Client are refused (CSRF)');
-  r = await fetch(base + '/api/v1/sync/state', { method: 'PUT', headers: Object.assign({ cookie: A.cookie, 'X-DELF50-Client': 'web', Origin: 'https://evil.example', 'X-DELF50-Base-Rev': '0' }, pushBody('{"a":1}').headers), body: pushBody('{"a":1}').body });
-  check(r.status === 403, 'cookie writes from another origin are refused');
+  const counts = async () => (await owner.query(`select (select count(*) from delf50.grammar_attempts)::int g, (select count(*) from delf50.error_items)::int e,
+    (select count(*) from delf50.writing_submissions)::int w, (select count(*) from delf50.reading_answers)::int ra, (select count(*) from delf50.content_completions)::int cc`)).rows[0];
+  const c1 = await counts();
+  check(c1.g === 2 && c1.e === 4 && c1.w === 2 && c1.ra === 3 && c1.cc === 2, 'each record is its own row', c1);
+  const more = (await owner.query(`select (select count(*) from delf50.grammar_productions where done)::int gp, (select count(*) from delf50.task_checks)::int tc,
+    (select grammar from delf50.daily_progress where day = 3) dg, (select actions from delf50.study_days where day = 3) sd, (select vocab from delf50.practice_counters where day = 3) pv,
+    (select node_id || '#' || prompt_index from delf50.grammar_productions order by prod_key limit 1) gpk, (select task_id from delf50.task_checks where done) tid`)).rows[0];
+  check(more.gp === 2 && more.tc === 2 && more.dg === 4 && more.pv === 35 && more.gpk === 'subj#0' && more.tid === 'grammar',
+    'grammar output practice, checklist, per-day counters and vocabulary practice are rows with parsed columns', more);
+  const typed = (await owner.query(`select body, word_count, created_at, extra from delf50.writing_submissions order by pos`)).rows;
+  check(typed[0].word_count === 120 && typed[0].created_at.toISOString() === '2026-09-27T09:15:00.123Z' && typed[0].extra.connectors[0] === 'cependant', 'writing is stored as typed columns', typed[0]);
 
-  r = await A.req('GET', '/sync/state?have=0');
-  check(r.status === 204 && r.headers.get('x-delf50-rev') === '0', 'a new account has no document (204, rev 0)');
+  r = await A.req('POST', '/sync', { json: { doc: d0.doc, ops: d0.ops, batch: 'b0' } });
+  const c2 = await counts();
+  check(r.status === 200 && r.data.rev === 1 && C.equal(c1, c2) && sameData((await A.req('GET', '/bootstrap')).data.state, S), 'replaying a batch changes nothing, not even the revision', r.data);
 
-  const doc1 = JSON.stringify({ version: '1.9.4', z: 1, a: { y: 2, b: [3, 'é中😀'], esc: '\\u0000' }, lastSavedAt: '2026-09-01T00:00:00.000Z', meta172: { schemaVersion: 2 } });
-  let p = pushBody(doc1);
-  r = await A.req('PUT', '/sync/state', { body: p.body, headers: Object.assign({ 'X-DELF50-Base-Rev': '0', 'X-DELF50-Reason': 'claim' }, p.headers) });
-  check(r.status === 200 && r.data.status === 'ok' && r.data.rev === 1, 'first push claims revision 1', r.data);
-  r = await A.req('PUT', '/sync/state', { body: p.body, headers: Object.assign({ 'X-DELF50-Base-Rev': '0' }, p.headers) });
-  check(r.status === 200 && r.data.status === 'same' && r.data.rev === 1, 'a retried push (lost response) is idempotent', r.data);
-  r = await A.req('GET', '/sync/state', { raw: true });
-  check(r.status === 200 && r.data.toString('utf8') === doc1 && r.headers.get('x-delf50-hash') === sha256hex(doc1), 'the pulled document is byte-identical, key order and escapes included');
+  const S2 = clone(S);
+  S2.grammarReview202['3:GQ-2'] = Object.assign({}, S2.grammarReview202['3:GQ-2'], { selectedIndex: 1, correct: true, answeredAt: '2026-09-28T08:30:00.000Z' });
+  S2.errors.unshift({ skill: 'reading', original: 'a', correct: 'b', why: 'c', at: '2026-09-28T09:00:00.000Z' });
+  S2.speaking.records[1].stored = true;
+  S2.writing.records.splice(0, 1);
+  delete S2.drafts171.writing['d3-w'];
+  S2.selectedDay = 4;
+  const d1 = C.diff(S, d0.pos, S2, SPEC);
+  r = await A.req('POST', '/sync', { json: { doc: d1.doc, ops: d1.ops, batch: 'b1' } });
+  const b2 = (await A.req('GET', '/bootstrap')).data;
+  check(r.data.rev === 2 && sameData(b2.state, S2) && C.equal(b2.positions, d1.pos), 'incremental batches keep the state exact', b2.state);
+  const g = (await owner.query(`select answer_key, selected, correct from delf50.grammar_attempts order by id`)).rows;
+  check(g.length === 3 && g[1].correct === false && g[2].correct === true && g[2].selected === 1, 'a changed grammar answer appends a row; the latest is current', g);
+  const S3 = clone(S2); delete S3.grammarReview202['3:GQ-1'];
+  const d2 = C.diff(S2, d1.pos, S3, SPEC);
+  await A.req('POST', '/sync', { json: { doc: d2.doc, ops: d2.ops } });
+  const b3 = (await A.req('GET', '/bootstrap')).data;
+  const d3 = C.diff(S3, d2.pos, S2, SPEC);
+  await A.req('POST', '/sync', { json: { doc: d3.doc, ops: d3.ops } });
+  const b4 = (await A.req('GET', '/bootstrap')).data;
+  const hist = (await owner.query(`select answer_key, deleted from delf50.grammar_attempts where answer_key = '3:GQ-1' order by id`)).rows;
+  check(sameData(b3.state, S3) && sameData(b4.state, S2) && C.equal(hist.map((x) => x.deleted), [false, true, false]),
+    'removing an answer appends a tombstone, re-adding appends again; nothing is rewritten', hist);
+  const S4 = clone(S2); S4.errors.splice(1, 1);
+  const d4 = C.diff(S2, d3.pos, S4, SPEC);
+  await A.req('POST', '/sync', { json: { doc: d4.doc, ops: d4.ops } });
+  const b5 = (await A.req('GET', '/bootstrap')).data;
+  const er = (await owner.query(`select count(*)::int n, count(resolved_at)::int resolved from delf50.error_items`)).rows[0];
+  check(sameData(b5.state, S4) && er.n === 5 && er.resolved === 1, 'a fixed error leaves the app state but stays in the database as resolved', er);
+  const S5 = clone(S4); S5.errors.splice(1, 0, clone(S2.errors[1]));
+  const d5 = C.diff(S4, d4.pos, S5, SPEC);
+  await A.req('POST', '/sync', { json: { doc: d5.doc, ops: d5.ops } });
+  const er2 = (await owner.query(`select count(*)::int n, count(resolved_at)::int resolved from delf50.error_items`)).rows[0];
+  check(sameData((await A.req('GET', '/bootstrap')).data.state, S5) && er2.n === 5 && er2.resolved === 0, 'the same error made again reopens its row', er2);
+  const rev = await A.req('GET', '/rev');
+  check(rev.data.rev === 6, 'rev reports the latest revision', rev.data);
 
-  const bad = pushBody('{"x":2}');
-  r = await A.req('PUT', '/sync/state', { body: bad.body, headers: Object.assign({}, bad.headers, { 'X-DELF50-Base-Rev': '1', 'X-DELF50-Hash': sha256hex('something else') }) });
-  check(r.status === 422 && r.data.error.code === 'hash_mismatch', 'a body that does not match its hash is refused');
-  const badUtf8 = Buffer.from([0x7b, 0x22, 0x61, 0x22, 0x3a, 0x22, 0xff, 0x22, 0x7d]);
-  r = await A.req('PUT', '/sync/state', { body: badUtf8, headers: { 'Content-Type': 'application/octet-stream', 'X-DELF50-Encoding': 'identity', 'X-DELF50-Hash': sha256hex(badUtf8), 'X-DELF50-Base-Rev': '1' } });
-  check(r.status === 422 && r.data.error.code === 'invalid_utf8', 'a document that is not valid UTF-8 is refused (its hash could never verify)');
-  const notJson = pushBody('{not json');
-  r = await A.req('PUT', '/sync/state', { body: notJson.body, headers: Object.assign({ 'X-DELF50-Base-Rev': '1' }, notJson.headers) });
-  check(r.status === 422, 'a document that is not a JSON object is refused');
-
-  const doc2 = doc1.replace('"z":1', '"z":2');
-  p = pushBody(doc2, false);
-  r = await A.req('PUT', '/sync/state', { body: p.body, headers: Object.assign({ 'X-DELF50-Base-Rev': '1' }, p.headers) });
-  check(r.data.status === 'ok' && r.data.rev === 2, 'push on the current base advances the head (uncompressed body)');
-  const doc3 = doc1.replace('"z":1', '"z":3');
-  p = pushBody(doc3);
-  r = await A.req('PUT', '/sync/state', { body: p.body, headers: Object.assign({ 'X-DELF50-Base-Rev': '1' }, p.headers) });
-  check(r.status === 409 && r.data.status === 'conflict' && r.data.rev === 2, 'push on a stale base is a conflict and writes nothing', r.data);
-  r = await A.req('GET', '/sync/state?have=2');
-  check(r.status === 204, 'pull with the current revision returns 204');
-
-  // Concurrent pushes on the same base: exactly one wins.
-  const racers = await Promise.all([4, 5, 6, 7, 8].map((z) => {
-    const b = pushBody(doc1.replace('"z":1', `"z":${z}`));
-    return A.req('PUT', '/sync/state', { body: b.body, headers: Object.assign({ 'X-DELF50-Base-Rev': '2' }, b.headers) });
-  }));
-  check(racers.filter((x) => x.data.status === 'ok').length === 1 && racers.filter((x) => x.status === 409).length === 4, 'concurrent pushes on one base: exactly one wins', racers.map((x) => x.data.status));
-
-  r = await A.req('GET', '/sync/revisions');
-  check(r.data.revisions.length === 3 && r.data.revisions[0].rev === 3, 'history lists every revision', r.data.revisions.map((x) => x.rev));
-  r = await A.req('GET', '/sync/revisions/1', { raw: true });
-  check(r.data.toString('utf8') === doc1, 'an old revision is returned byte-identical');
-  r = await A.req('POST', '/sync/restore', { json: { rev: 1, baseRev: 3 } });
-  check(r.data.status === 'ok' && r.data.rev === 4, 'restore makes an old revision the new head', r.data);
-  r = await A.req('GET', '/sync/state', { raw: true });
-  check(r.data.toString('utf8') === doc1 && r.headers.get('x-delf50-rev') === '4', 'the restored head equals revision 1');
-
-  p = pushBody('{"archived":true}');
-  r = await A.req('POST', '/sync/archive', { body: p.body, headers: Object.assign({ 'X-DELF50-Reason': 'test' }, p.headers) });
-  await A.req('POST', '/sync/archive', { body: p.body, headers: Object.assign({ 'X-DELF50-Reason': 'test' }, p.headers) });
-  const arch = await A.req('GET', '/sync/archives');
-  check(arch.data.archives.length === 1, 'archives are stored once per distinct document');
-  r = await A.req('GET', '/sync/archives/' + arch.data.archives[0].id, { raw: true });
-  check(r.data.toString('utf8') === '{"archived":true}', 'an archive is returned byte-identical');
-
-  // Projection from a realistic document.
-  const S = {
-    version: '1.9.4', selectedDay: 2, intensity: 'standard', startedAt: '2026-09-01T08:00:00.000Z', lastSavedAt: '2026-09-02T09:00:00.000Z',
-    grammar: { attempts: 4, correct: 3 }, reading: { attempts: 2, correct: 2, answers: { '2:r181-d02-s01:0': 1, '2:r181-d02-s01:1': 2 } },
-    listening: { attempts: 0, correct: 0, answers: {} }, writing: { count: 1, records: [{ day: 2, title: 'Lettre', text: 'Chère Marie\u0000…', words: 2, at: '2026-09-02T08:30:00.000Z', contentId: 'w181-d02-s01' }] },
-    speaking: { count: 1, totalSec: 42, records: [{ id: 'd2-s1', day: 2, title: 'Présentation', sec: 42, stored: true, at: '2026-09-02T08:40:00.000Z' }] },
-    application: { count: 0, records: [] }, daily: { 1: { grammar: 4 }, 2: { reading: 2, writing: 1, speaking: 1 } },
-    grammarReview202: { '1:GQ-a': { day: 1, contentId: 'GQ-a', selectedIndex: 0, correctIndex: 0, correct: true, answeredAt: '2026-09-01T08:10:00.000Z' } },
-    contentProgress172: { completed: { writing: { 'w181-d02-s01': { day: 2, firstCompletedAt: '2026-09-02T08:30:00.000Z', lastCompletedAt: '2026-09-02T08:30:00.000Z' } } } },
-    errors: [{ q: 'Nous ___ prêts.', a: 'avons', good: 'sommes', day: 1, bad: '\ud800' }], meta172: { schemaVersion: 2 }
+  // Row-level security: the API role sees only the caller's rows.
+  const B = client(base);
+  await B.req('POST', '/auth/sign-up/email', { json: { email: 'noah@example.com', password: 'correct-horse-10', name: 'Noah' } });
+  r = await B.req('GET', '/bootstrap');
+  check(r.status === 200 && r.data.state === null, 'another learner sees nothing of the first');
+  const ids = (await owner.query('select id, email from neon_auth."user" order by email')).rows;
+  const api = new (require('pg').Client)({ connectionString: process.env.API_DATABASE_URL });
+  await api.connect();
+  const asUser = async (id, sql, params) => {
+    await api.query('begin');
+    try { await api.query(`select set_config('app.user_id', $1, true)`, [id || '']); return (await api.query(sql, params)).rows; } finally { await api.query('rollback'); }
   };
-  const t1 = JSON.stringify(S);
-  p = pushBody(t1);
-  r = await A.req('PUT', '/sync/state', { body: p.body, headers: Object.assign({ 'X-DELF50-Base-Rev': '4' }, p.headers) });
-  check(r.data.status === 'ok' && r.data.rev === 5, 'a realistic document (with NUL and lone surrogate) is accepted', r.data);
-  const uid = (await pool.query("select id from delf50.users where email_norm='api@example.com'")).rows[0].id;
-  const q = async (sql) => (await pool.query(sql, [uid])).rows;
-  const st = (await q('select * from delf50.learning_stats where user_id=$1'))[0];
-  check(st && st.grammar_attempts === 4 && st.reading_correct === 2 && st.speaking_total_sec === 42 && st.selected_day === 2, 'learning_stats mirrors the document', st);
-  check((await q('select count(*)::int n from delf50.item_answers where user_id=$1'))[0].n === 3, 'item_answers holds reading answers and grammar reviews');
-  const pr = await q('select * from delf50.production_records where user_id=$1 order by module');
-  check(pr.length === 2 && pr.find((x) => x.module === 'writing').body === 'Chère Marie…' && pr.find((x) => x.module === 'speaking').clip_id === 'd2-s1', 'production_records holds writing text and recording references', pr.map((x) => [x.module, x.body, x.clip_id]));
-  check((await q('select count(*)::int n from delf50.daily_progress where user_id=$1'))[0].n === 2, 'daily_progress has one row per day');
-
-  const S2 = JSON.parse(t1);
-  S2.reading.answers['2:r181-d02-s02:0'] = 0; S2.reading.attempts = 3; delete S2.daily['1']; S2.errors = [];
-  p = pushBody(JSON.stringify(S2));
-  r = await A.req('PUT', '/sync/state', { body: p.body, headers: Object.assign({ 'X-DELF50-Base-Rev': '5' }, p.headers) });
-  check(r.data.rev === 6, 'incremental push accepted');
-  check((await q('select count(*)::int n from delf50.item_answers where user_id=$1'))[0].n === 4
-    && (await q('select count(*)::int n from delf50.daily_progress where user_id=$1'))[0].n === 1
-    && (await q('select count(*)::int n from delf50.error_items where user_id=$1'))[0].n === 0, 'projection follows additions and removals');
-  const sum = await A.req('GET', '/progress/summary');
-  check(sum.data.rev === 6 && sum.data.stats.reading_attempts === 3 && sum.data.days.length === 1, 'progress summary endpoint', sum.data);
-  const ans = await A.req('GET', '/progress/answers?module=reading&day=2');
-  check(ans.data.answers.length === 3, 'progress answers endpoint filters by module and day');
-
-  // Events (native clients).
-  const evs = [{ id: 'e1', type: 'answer', occurredAt: '2026-09-02T10:00:00Z', day: 2, module: 'reading', contentId: 'r1', payload: { q: 0, choice: 1 } },
-    { id: 'e2', type: 'answer', occurredAt: '2026-09-02T10:01:00Z', payload: { note: 'x\u0000y' } }];
-  r = await A.req('POST', '/events', { json: { events: evs } });
-  const r2x = await A.req('POST', '/events', { json: { events: evs } });
-  check(r.data.accepted === 2 && r2x.data.accepted === 0 && r2x.data.duplicates.length === 2, 'events are idempotent by client id');
-  const dup = await A.req('POST', '/events', { json: { events: [{ id: 'e3', type: 'x', occurredAt: '2026-09-02T10:02:00Z' }, { id: 'e3', type: 'x', occurredAt: '2026-09-02T10:02:00Z' }] } });
-  check(dup.data.accepted === 1 && dup.data.duplicates.join() === 'e3', 'a repeated id within one batch is reported as a duplicate', dup.data);
-  r = await A.req('GET', '/events?after=0');
-  const cursor = r.data.nextCursor;
-  r = await A.req('GET', '/events?after=' + cursor);
-  check(r.data.events.length === 0, 'event cursor pagination');
-
-  // Media via the S3 mock.
-  const audio = crypto.randomBytes(3000);
-  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-s1', contentType: 'audio/webm;codecs=opus', size: audio.length, day: 2, durationSec: 42 } });
-  check(r.status === 200 && r.data.status === 'pending' && /X-Amz-Signature=/.test(r.data.upload.url), 'upload-url returns a presigned PUT', r.data);
-  let put = await fetch(r.data.upload.url, { method: 'PUT', body: audio, headers: r.data.upload.headers });
-  check(put.ok, 'the presigned PUT is accepted by S3 (signature verified by the mock)');
-  const tampered = r.data.upload.url.replace('d2-s1', 'd2-s2');
-  put = await fetch(tampered, { method: 'PUT', body: audio });
-  check(put.status === 403, 'a presigned URL cannot be reused for another key');
-  r = await A.req('POST', '/media/complete', { json: { clipId: 'd2-s1' } });
-  check(r.data.status === 'stored' && r.data.size === 3000, 'complete verifies the object in storage (HEAD)');
-  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-s1', contentType: 'audio/webm', size: 1 } });
-  check(r.data.status === 'stored', 'a stored clip is not uploaded twice');
-  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-s9', contentType: 'audio/mp4', size: 10 } });
-  r = await A.req('PUT', '/media/raw?clipId=d2-s9', { body: Buffer.from('0123456789'), headers: { 'Content-Type': 'audio/mp4' } });
-  check(r.data.status === 'stored' && s3.objects.has(`u/${uid}/speaking/d2-s9.m4a`), 'proxy upload stores through the function (header-signed)');
-  const big = crypto.randomBytes(8 * 1024 * 1024 + 123);
-  const PART = 3.5 * 1024 * 1024;
-  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-long', contentType: 'audio/webm', size: big.length } });
-  check(r.data.proxy.partBytes === PART, 'upload-url advertises the proxy part size');
-  const nParts = Math.ceil(big.length / PART);
-  const partRes = [];
-  for (let i = 0; i < nParts; i++) {
-    partRes.push(await A.req('PUT', `/media/raw?clipId=d2-long&part=${i}&parts=${nParts}`, { body: big.subarray(i * PART, (i + 1) * PART), headers: { 'Content-Type': 'audio/webm' } }));
+  const noah = ids.find((x) => x.email === 'noah@example.com').id, lea = ids.find((x) => x.email === 'lea@example.com').id;
+  check((await asUser(noah, 'select * from delf50.error_items')).length === 0 && (await asUser(lea, 'select * from delf50.error_items')).length === 5
+    && (await asUser(noah, 'select * from delf50.daily_progress')).length === 0 && (await asUser(lea, 'select * from delf50.daily_progress')).length === 1, 'RLS: rows are visible to their owner only');
+  check((await asUser(null, 'select * from delf50.study_state')).length === 0, 'RLS: without a user, nothing is visible');
+  let denied = false;
+  try { await asUser(noah, `insert into delf50.drafts (user_id, kind, draft_key, body) values ($1, 'writing', 'x', 'y')`, [lea]); } catch (e) { denied = /row-level security/.test(e.message); }
+  check(denied, 'RLS: writing a row for another user is refused');
+  denied = false;
+  try { await asUser(noah, 'select * from neon_auth.session'); } catch (e) { denied = /permission denied/.test(e.message); }
+  check(denied, 'the API role cannot read Neon Auth tables');
+  for (const sql of ['update delf50.grammar_attempts set correct = false', 'delete from delf50.grammar_attempts', 'delete from delf50.vocabulary_reviews']) {
+    denied = false;
+    try { await asUser(lea, sql); } catch (e) { denied = /permission denied/.test(e.message); }
+    check(denied, `history is insert-only for the API role: ${sql.split(' ').slice(0, 3).join(' ')} is refused`);
   }
-  r = await A.req('POST', '/media/complete', { json: { clipId: 'd2-long', parts: nParts } });
-  check(partRes.every((x) => x.status === 200) && r.data.status === 'stored' && r.data.size === big.length, 'a long recording uploads through the API in parts', r.data);
-  r = await A.req('GET', '/media/url?clipId=d2-long');
-  const got3 = [];
-  for (let i = 0; i < r.data.parts; i++) got3.push((await A.req('GET', `/media/raw?clipId=d2-long&part=${i}`)).data);
-  check(r.data.parts === nParts && Buffer.concat(got3).equals(big), 'a parted recording downloads back byte-identical', { parts: r.data.parts });
-  r = await A.req('PUT', '/media/raw?clipId=d2-long&part=0&parts=1', { body: crypto.randomBytes(PART + 1), headers: { 'Content-Type': 'audio/webm' } });
-  check(r.status === 200 && r.data.status === 'stored', 'a stored recording is not overwritten by a late part');
-  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-bad', contentType: 'audio/webm', size: PART * 2 } });
-  await A.req('PUT', '/media/raw?clipId=d2-bad&part=0&parts=2', { body: crypto.randomBytes(1000), headers: { 'Content-Type': 'audio/webm' } });
-  await A.req('PUT', '/media/raw?clipId=d2-bad&part=1&parts=2', { body: crypto.randomBytes(PART), headers: { 'Content-Type': 'audio/webm' } });
-  r = await A.req('POST', '/media/complete', { json: { clipId: 'd2-bad', parts: 2 } });
-  check(r.status === 422 && ![...s3.objects.keys()].some((k) => k.includes('d2-bad')), 'mis-sized parts are refused and deleted');
-  // Delete a parted clip, then upload it again as one object: no stale part count.
-  r = await A.req('DELETE', '/media?clipId=d2-long');
-  check(r.status === 200 && ![...s3.objects.keys()].some((k) => k.includes('d2-long')), 'deleting a parted recording removes every part');
-  const small = crypto.randomBytes(2000);
-  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-long', contentType: 'audio/webm', size: small.length } });
-  await fetch(r.data.upload.url, { method: 'PUT', body: small, headers: r.data.upload.headers });
-  await A.req('POST', '/media/complete', { json: { clipId: 'd2-long' } });
-  r = await A.req('GET', '/media/url?clipId=d2-long');
-  check(r.data.parts === 1 && typeof r.data.url === 'string', 're-uploading a deleted parted clip as one object clears the part count', r.data);
-  // An unfinished parted upload is fully removed on delete.
-  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-half', contentType: 'audio/webm', size: PART * 2 } });
-  await A.req('PUT', '/media/raw?clipId=d2-half&part=0&parts=2', { body: crypto.randomBytes(PART), headers: { 'Content-Type': 'audio/webm' } });
-  check([...s3.objects.keys()].some((k) => k.includes('d2-half.webm.part-0000')), 'a half-finished parted upload has its first part stored');
-  r = await A.req('DELETE', '/media?clipId=d2-half');
-  check(r.status === 200 && ![...s3.objects.keys()].some((k) => k.includes('d2-half')), 'deleting an unfinished parted upload leaves no parts behind');
-
-  await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-over', contentType: 'audio/webm', size: PART * 2 } });
-  r = await A.req('PUT', '/media/raw?clipId=d2-over&part=0&parts=2', { body: crypto.randomBytes(PART + 1), headers: { 'Content-Type': 'audio/webm' } });
-  check(r.status === 413 && ![...s3.objects.keys()].some((k) => k.includes('d2-over')), 'a proxy part above the part size is refused with 413 and not stored', r.status);
-
-  r = await A.req('GET', '/media/url?clipId=d2-s1');
-  const dl = await fetch(r.data.url);
-  check(dl.ok && Buffer.from(await dl.arrayBuffer()).equals(audio), 'presigned GET returns the exact bytes');
-  r = await A.req('GET', '/media/raw?clipId=d2-s9');
-  check(r.data.toString() === '0123456789', 'proxy download returns the exact bytes');
-  r = await A.req('GET', '/media');
-  check(r.data.media.filter((x) => x.status === 'stored').length === 3, 'media list', r.data.media.map((x) => [x.clipId, x.status]));
-  r = await A.req('POST', '/media/upload-url', { json: { clipId: 'd2-big', contentType: 'audio/webm', size: 10 } });
-  put = await fetch(r.data.upload.url, { method: 'PUT', body: crypto.randomBytes(5000), headers: r.data.upload.headers });
-  r = await A.req('POST', '/media/complete', { json: { clipId: 'd2-big' } });
-  check(r.status === 422 && r.data.error.code === 'size_mismatch' && !s3.objects.has(`u/${uid}/speaking/d2-big.webm`), 'an upload larger than declared is refused and deleted', r.data);
-  r = await A.req('POST', '/media/upload-url', { json: { clipId: '../../etc', contentType: 'audio/webm', size: 10 } });
-  check(r.status === 400, 'clip ids cannot escape the user prefix');
-  check(s3.stats.badSig === 1, 'no request from the server failed signature checks', s3.stats);
-
-  // Isolation between accounts.
-  const B = apiClient(base);
-  await B.req('POST', '/auth/register', { json: { email: 'b@example.com', password: 'longpassword', inviteCode: 'INVITE-123' } });
-  r = await B.req('GET', '/sync/state');
-  check(r.status === 204, 'another account does not see the first account’s document');
-  r = await B.req('GET', '/media/url?clipId=d2-s1');
-  check(r.status === 404, 'another account cannot reach the first account’s recordings');
-
-  // Account cap under concurrent registrations.
-  const before = (await pool.query('select count(*)::int n from delf50.users')).rows[0].n;
-  process.env.DELF50_MAX_USERS = String(before + 2);
-  const regs = await Promise.all([1, 2, 3, 4, 5, 6].map((i) => apiClient(base).req('POST', '/auth/register', { json: { email: `cap${i}@example.com`, password: 'longpassword', inviteCode: 'INVITE-123' } })));
-  delete process.env.DELF50_MAX_USERS;
-  const after = (await pool.query('select count(*)::int n from delf50.users')).rows[0].n;
-  check(after === before + 2 && regs.filter((x) => x.status === 201).length === 2 && regs.filter((x) => x.status === 403 && x.data.error.code === 'registration_full').length === 4, 'concurrent registrations never exceed DELF50_MAX_USERS', { before, after, statuses: regs.map((x) => x.status) });
+  await api.end();
 
   // Bearer tokens for apps.
-  const T = apiClient(base);
-  r = await T.req('POST', '/auth/login', { json: { email: 'api@example.com', password: 'longpassword', transport: 'bearer', client: { platform: 'ios', deviceId: 'ios-device-0001', name: 'iPhone' } } });
-  const token = r.data.token;
-  check(r.status === 200 && typeof token === 'string' && token.length >= 40 && !T.cookie, 'bearer login returns a token and no cookie');
-  r = await fetch(base + '/api/v1/sync/state?have=0', { headers: { Authorization: 'Bearer ' + token } });
-  check(r.status === 200 && r.headers.get('x-delf50-rev') === '6', 'bearer token reads the same document (no CSRF header needed)');
-  r = await fetch(base + '/api/v1/auth/me', { headers: { cookie: 'delf50_sid=' + token } });
-  check(r.status === 401, 'a bearer token is not accepted as a cookie');
+  const gs = await A.req('GET', '/auth/get-session');
+  const token = gs.headers.get('set-auth-jwt');
+  const asBearer = (t) => fetch(base + '/api/v1/rev', { headers: { Authorization: 'Bearer ' + t } }).then((x) => x.status);
+  check(token && (await asBearer(token)) === 200, 'a Neon Auth JWT works as a bearer token');
+  const forged = token.split('.').slice(0, 2).join('.') + '.' + crypto.randomBytes(64).toString('base64url');
+  check((await asBearer(forged)) === 401, 'a JWT with a bad signature is refused');
+  const signed = decodeURIComponent(A.cookie.split('=')[1]);
+  check((await asBearer(signed.split('.')[0])) === 200 && (await asBearer(signed)) === 200, 'a session token works as a bearer token, plain or signed');
 
-  // Sessions and password change.
-  r = await A.req('GET', '/auth/sessions');
-  check(r.data.sessions.length === 2 && r.data.sessions.some((s) => s.current), 'session list shows web and app sessions');
-  r = await A.req('POST', '/auth/password', { json: { currentPassword: 'wrong', newPassword: 'newlongpassword' } });
-  check(r.status === 401, 'password change requires the current password');
-  r = await A.req('POST', '/auth/password', { json: { currentPassword: 'longpassword', newPassword: 'newlongpassword' } });
-  check(r.status === 200, 'password change');
-  r = await fetch(base + '/api/v1/auth/me', { headers: { Authorization: 'Bearer ' + token } });
-  check(r.status === 401, 'password change signs out every other session');
-  r = await A.req('GET', '/auth/me');
-  check(r.status === 200, 'the current session survives the password change');
+  // Media in R2.
+  const clip = crypto.randomBytes(300 * 1024);
+  r = await A.req('PUT', `/media/raw?clipId=d3-s1&type=audio%2Fwebm&size=${clip.length}`, { body: clip, headers: { 'Content-Type': 'application/octet-stream' } });
+  check(r.status === 200 && r.data.status === 'stored', 'a recording uploads through the API in one request', r.data);
+  r = await A.req('GET', '/media/raw?clipId=d3-s1', { raw: true });
+  check(r.status === 200 && Buffer.compare(r.data, clip) === 0 && r.headers.get('content-type') === 'audio/webm', 'it downloads byte-identical');
+  const big = crypto.randomBytes(8 * 1024 * 1024 + 123);
+  const PART = 3.5 * 1024 * 1024, n = Math.ceil(big.length / PART);
+  for (let i = 0; i < n; i++) {
+    await A.req('PUT', `/media/raw?clipId=big&type=audio%2Fogg&size=${big.length}&parts=${n}&part=${i}`, { body: big.subarray(i * PART, (i + 1) * PART), headers: { 'Content-Type': 'application/octet-stream' } });
+  }
+  r = await A.req('POST', '/media/complete', { json: { clipId: 'big', parts: n } });
+  const back = [];
+  for (let i = 0; i < n; i++) back.push((await A.req('GET', `/media/raw?clipId=big&part=${i}`, { raw: true })).data);
+  check(r.data.status === 'stored' && Buffer.compare(Buffer.concat(back), big) === 0, `an 8 MB recording round-trips in ${n} parts`);
+  r = await A.req('PUT', `/media/raw?clipId=short&size=999`, { body: Buffer.alloc(10), headers: { 'Content-Type': 'application/octet-stream' } });
+  check(r.status === 422 && ![...s3.objects.keys()].some((k) => k.includes('/short')), 'a size mismatch is refused and nothing is kept');
+  r = await B.req('GET', '/media/raw?clipId=d3-s1', { raw: true });
+  check(r.status === 404, 'another learner cannot fetch the recording');
+  r = await A.req('GET', '/media/url?clipId=d3-s1');
+  const direct = await fetch(r.data.urls[0]);
+  check(Buffer.compare(Buffer.from(await direct.arrayBuffer()), clip) === 0, 'presigned download URLs work (for apps)');
+  check(s3.stats.badSig === 0, 'every R2 request was correctly signed');
 
-  // Rate limiting.
-  const L = apiClient(base);
-  let last;
-  for (let i = 0; i < 9; i++) last = await L.req('POST', '/auth/login', { json: { email: 'api@example.com', password: 'bad-' + i } });
-  check(last.status === 429, 'login locks after repeated failures', last.status);
-  last = await L.req('POST', '/auth/login', { json: { email: 'api@example.com', password: 'newlongpassword' } });
-  check(last.status === 429, 'the lock also holds for the right password until it expires');
-  await pool.query("delete from delf50.auth_attempts where subject = 'api@example.com'");
+  // Vocabulary.
+  r = await A.req('POST', '/vocab', { json: { lemma: 'néanmoins', definition: 'nevertheless', partOfSpeech: 'adv' } });
+  const vid = r.data.item && r.data.item.id;
+  check(r.status === 201 && vid, 'a word is added to the shared dictionary and the deck', r.data);
+  r = await B.req('POST', '/vocab', { json: { lemma: 'néanmoins', partOfSpeech: 'adv' } });
+  check(r.data.item && r.data.item.id === vid, 'the dictionary is shared, decks are per learner', r.data);
+  const iv = [];
+  for (const q of [5, 5, 5]) iv.push((await A.req('POST', '/vocab/review', { json: { vocabularyId: vid, rating: q } })).data.item.interval_days);
+  r = await A.req('POST', '/vocab/review', { json: { vocabularyId: vid, rating: 1 } });
+  check(C.equal(iv, [1, 6, 16]) && r.data.item.interval_days === 1 && r.data.item.lapses === 1, 'reviews follow SM-2', { iv, last: r.data.item });
+  r = await A.req('GET', '/vocab');
+  const nb = (await B.req('GET', '/vocab')).data.items;
+  check(r.data.items.length === 1 && nb.length === 1 && nb[0].repetitions === 0, 'each deck keeps its own schedule');
+  const rv = (await owner.query('select count(*)::int n from delf50.vocabulary_reviews')).rows[0].n;
+  check(rv === 4, 'every review is logged');
+  const act = (await owner.query(`select module, n from delf50.daily_activity where user_id = $1`, [lea])).rows;
+  check(act.some((x) => x.module === 'grammar') && act.some((x) => x.module === 'vocabulary'), 'daily activity is derived from the records', act);
 
-  r = await A.req('POST', '/auth/logout');
-  check(r.status === 200, 'logout');
-  r = await A.req('GET', '/auth/me');
-  check(r.status === 401, 'the session is revoked after logout');
+  const oldCookie = A.cookie;
+  r = await A.req('POST', '/auth/sign-out', { json: {} });
+  const after = await fetch(base + '/api/v1/bootstrap', { headers: { cookie: oldCookie } });
+  check(r.status === 200 && A.cookie === '' && after.status === 401, 'sign-out ends the session');
 }
 
-// ───────────────────────── 3. browser devices ──────────────────────────────
+// ───────────────────────── 3. browser ──────────────────────────────────────
 
-async function browserTests(base, pool, s3) {
+async function browserTests(base, owner, app) {
   section('Browser (index.html + cloud layer + app bundle in jsdom)');
   const { JSDOM, VirtualConsole } = require('jsdom');
   const { IDBFactory, IDBKeyRange } = require('fake-indexeddb');
@@ -531,309 +501,179 @@ async function browserTests(base, pool, s3) {
   const origin = new URL(base).origin;
 
   class Device {
-    constructor(name) {
-      this.name = name; this.ls = {}; this.ss = {}; this.idb = new IDBFactory(); this.cookie = '';
-      this.corsBlocked = false; this.w = null; this.reloads = 0; this.errors = [];
-    }
-    async fetchShim(input, init) {
-      init = init || {};
+    constructor(name) { this.name = name; this.idb = new IDBFactory(); this.cookie = ''; this.w = null; this.errors = []; this.realLs = {}; }
+    async fetch(input, init = {}) {
       const url = new URL(typeof input === 'string' ? input : input.url, base);
-      if (this.corsBlocked && url.origin !== origin) throw new TypeError('Failed to fetch');
       const headers = new Headers(init.headers || {});
       if (url.origin === origin && this.cookie) headers.set('cookie', this.cookie);
       let body = init.body;
-      if (body && typeof body === 'object' && !(body instanceof Uint8Array) && !(body instanceof ArrayBuffer) && typeof body.arrayBuffer === 'function') body = Buffer.from(await body.arrayBuffer());
+      if (body && typeof body.arrayBuffer === 'function') body = Buffer.from(await body.arrayBuffer());
       const r = await fetch(url, { method: init.method || 'GET', headers, body, signal: init.signal });
-      if (url.origin === origin) {
-        for (const c of (r.headers.getSetCookie ? r.headers.getSetCookie() : [])) this.cookie = /Max-Age=0/.test(c) ? '' : c.split(';')[0];
-      }
+      for (const c of r.headers.getSetCookie()) this.cookie = /Max-Age=0/.test(c) ? '' : c.split(';')[0];
       return r;
     }
-    async open() {
+    async open(waitBoot = true) {
       this.reloadRequested = false;
       const vc = new VirtualConsole();
       vc.on('jsdomError', (e) => { if (/navigation/i.test(String(e.message))) this.reloadRequested = true; else this.errors.push(String(e.message)); });
-      vc.on('error', (e) => this.errors.push(String(e)));
       const dev = this;
       const dom = await JSDOM.fromURL(base + '/', {
         runScripts: 'dangerously', resources: 'usable', pretendToBeVisual: true, virtualConsole: vc,
         beforeParse(w) {
-          for (const [k, v] of Object.entries(dev.ls)) w.localStorage.setItem(k, v);
-          for (const [k, v] of Object.entries(dev.ss)) w.sessionStorage.setItem(k, v);
+          for (const [k, v] of Object.entries(dev.realLs)) w.localStorage.setItem(k, v);
           Object.defineProperty(w, 'indexedDB', { value: dev.idb, configurable: true });
           w.IDBKeyRange = IDBKeyRange;
-          Object.defineProperty(w, 'crypto', { value: crypto.webcrypto, configurable: true });
-          w.fetch = (i, o) => dev.fetchShim(i, o);
-          w.TextEncoder = TextEncoder; w.CompressionStream = CompressionStream; w.Response = Response; w.Headers = Headers;
-          w.Blob = Blob; w.AbortController = AbortController;
-          w.alert = () => {}; w.scrollTo = () => {};
-          w.confirm = () => true;
+          w.fetch = (i, o) => dev.fetch(i, o);
+          w.Response = Response; w.Headers = Headers; w.Blob = Blob; w.AbortController = AbortController;
+          w.alert = () => {}; w.scrollTo = () => {}; w.confirm = () => true;
         }
       });
       this.w = dom.window;
-      await until(() => this.w.__DELF50_BOOT && this.w.__DELF50_BOOT.status === 'ready', 60000, `${this.name} boot`);
-      await until(() => this.w.document.querySelector('.dc-chip'), 10000, `${this.name} chip`);
+      await until(() => this.w.__DELF50_CLOUD, 10000, 'cloud layer');
+      if (waitBoot) await this.booted();
       return this;
     }
-    snapshot() {
-      const w = this.w;
-      this.ls = {}; for (let i = 0; i < w.localStorage.length; i++) { const k = w.localStorage.key(i); this.ls[k] = w.localStorage.getItem(k); }
-      this.ss = {}; for (let i = 0; i < w.sessionStorage.length; i++) { const k = w.sessionStorage.key(i); this.ss[k] = w.sessionStorage.getItem(k); }
-    }
-    async reload() { this.snapshot(); this.w.close(); this.reloads++; return this.open(); }
-    close() { if (this.w) { this.snapshot(); this.w.close(); this.w = null; } }
-    /** Waits for a reload the page asked for, then performs it. */
-    async followReload(ms = 20000) { await until(() => this.reloadRequested, ms, `${this.name} reload`); return this.reload(); }
-    state() { return JSON.parse(this.w.localStorage.getItem('delf50_v12_state')); }
+    booted() { return until(() => this.w.__DELF50_BOOT && this.w.__DELF50_BOOT.status === 'ready', 60000, `${this.name} boot`); }
+    close() { if (this.w) { this.w.close(); this.w = null; } }
+    async reload() { this.close(); return this.open(); }
+    cloud() { return this.w.__DELF50_CLOUD.state(); }
     text() { return this.w.localStorage.getItem('delf50_v12_state'); }
-    cloud() { return this.w.__DELF50_CLOUD.status(); }
-    click(sel) { const e = this.w.document.querySelector(sel); if (!e) throw new Error(`${this.name}: no ${sel}`); e.click(); }
-    async signIn(kind, email, password, extra = {}) {
-      const d = this.w.document;
-      if (!d.querySelector('[data-dc="form"]')) { this.click('.dc-chip'); }
-      await until(() => d.querySelector('[data-dc="form"]'), 5000, 'auth form');
-      this.click(kind === 'register' ? '[data-dc="tab-register"]' : '[data-dc="tab-login"]');
-      const form = d.querySelector('[data-dc="form"]');
-      const fields = Object.assign({ email, password }, extra);
-      for (const [k, v] of Object.entries(fields)) { const el = form.querySelector(`[name="${k}"]`); if (el) el.value = v; }
+    state() { return JSON.parse(this.text()); }
+    realKeys() { const ls = this.w.localStorage, out = []; for (let i = 0; i < ls.length; i++) out.push(ls.key(i)); return out; }
+    $(sel) { return this.w.document.querySelector(sel); }
+    click(sel) { const e = this.$(sel); if (!e) throw new Error(`${this.name}: no ${sel}`); e.click(); }
+    async signIn(kind, email, password, name) {
+      await until(() => this.$('.dc-mask form'), 10000, 'sign-in form');
+      if (kind === 'register') { this.click('[data-t="register"]'); await until(() => this.$('.dc-mask [name="name"]'), 2000); }
+      const form = this.$('.dc-mask form');
+      for (const [k, v] of Object.entries({ email, password, name })) { const el = form.querySelector(`[name="${k}"]`); if (el) el.value = v; }
       form.dispatchEvent(new this.w.Event('submit', { cancelable: true, bubbles: true }));
     }
+    saved() { return until(() => { const s = this.cloud(); return s.ready && !s.pending && !s.inflight && !s.uploads && s.status === 'saved'; }, 20000, `${this.name} saved`); }
     async answerGrammar(n) {
       for (let i = 0; i < n; i++) {
         this.click('[data-nav="grammar"]');
-        const opt = this.w.document.querySelector('[data-gopt="0"]');
+        const opt = this.$('[data-gopt="0"]');
         if (!opt) break;
         opt.click();
         const b = this.w.document.getElementById('submitG'); if (b) b.click();
         const next = [...this.w.document.querySelectorAll('button')].find((x) => /下一题|继续/.test(x.textContent) && !x.disabled);
         if (next) next.click();
+        await sleep(30); // a learner's pace: let the page breathe between answers
       }
     }
     answerReading(keys) {
       this.click('[data-nav="input"]'); this.click('[data-inputtab="reading"]');
-      for (const k of keys) { const e = this.w.document.querySelector(`[data-ropt="${k}"]`); if (e) e.click(); }
+      for (const k of keys) { const e = this.$(`[data-ropt="${k}"]`); if (e) e.click(); }
     }
-    write(textValue) {
+    write(text) {
       this.click('[data-nav="output"]');
       const ta = this.w.document.getElementById('writeText');
-      ta.value = textValue; ta.dispatchEvent(new this.w.Event('input'));
+      ta.value = text; ta.dispatchEvent(new this.w.Event('input'));
       [...this.w.document.querySelectorAll('button')].find((b) => /保存本次写作/.test(b.textContent)).click();
     }
   }
 
-  const head = async (email) => (await pool.query(
-    'select s.rev, s.hash, s.state_text from delf50.learning_state s join delf50.users u on u.id=s.user_id where u.email_norm=$1', [email])).rows[0];
-  const Cl = require(path.join(ROOT, 'cloud/delf50-cloud.js'));
-  // Synced = same revision and the same learning (bookkeeping stamps the app
-  // rewrites on every start may differ; they are deliberately not synced alone).
-  const synced = (dev, email) => until(async () => {
-    const h = await head(email);
-    const st = dev.cloud();
-    return h && st.status === 'synced' && st.meta.rev === Number(h.rev) && Cl.semanticText(dev.text()) === Cl.semanticText(h.state_text);
-  }, 25000, `${dev.name} synced`).catch(async (e) => {
-    const h = await head(email);
-    const st = dev.cloud();
-    throw new Error(`${e.message}: status=${st.status} detail=${st.detail} rev=${st.meta.rev} head=${h && h.rev} sameLearning=${h && Cl.semanticText(dev.text()) === Cl.semanticText(h.state_text)}\n      ${st.trace.join('\n      ')}`);
-  });
-  const catchUp = async (dev) => { await dev.w.__DELF50_CLOUD.syncNow(); if (dev.reloadRequested) await dev.followReload(); };
-  /** Waits until the device is in sync, performing any reload it asks for. */
-  const settle = async (dev, email) => {
-    const t0 = Date.now();
-    for (;;) {
-      if (dev.reloadRequested) await dev.followReload();
-      try { await until(async () => dev.reloadRequested || (await synced(dev, email).then(() => true)), 25000); } catch (e) { if (Date.now() - t0 > 40000) throw e; }
-      if (!dev.reloadRequested) return synced(dev, email);
-    }
-  };
+  const server = async (dev) => (await dev.fetch(base + '/api/v1/bootstrap').then((r) => r.json()));
 
-  // ── A: a learner with existing local progress signs up ──
+  // ── first visit: sign-in gate ──
   const A = new Device('A');
-  await A.open();
-  check(A.cloud().status === 'anon' && A.w.document.querySelector('.dc-chip').textContent.includes('登录'), 'signed out, the app runs as before and the chip offers sign-in');
-  await A.answerGrammar(3);
-  A.answerReading(['0:0', '1:1', '2:1']);
-  A.write('Bonjour madame, je vous écris parce que je voudrais des informations sur le cours de français du soir.');
-  const beforeLogin = A.text();
-  const s0 = JSON.parse(beforeLogin);
-  check(s0.grammar.attempts >= 1 && Object.keys(s0.reading.answers).length === 3 && s0.writing.count === 1, 'anonymous learning is recorded locally', { g: s0.grammar.attempts, r: Object.keys(s0.reading.answers).length, w: s0.writing.count });
+  A.realLs = { delf50_v12_state: '{"old":"local copy"}', delf50_cloud_meta_v1: '{}', other_site_key: 'kept' };
+  await A.open(false);
+  await until(() => A.$('.dc-mask form'), 10000, 'login overlay');
   await sleep(1500);
-  if (!A.w.document.querySelector('[data-dc="form"]')) A.click('.dc-chip');
-  await until(() => A.w.document.querySelector('[data-dc="tab-register"]'), 5000, 'auth panel');
-  A.click('[data-dc="tab-register"]');
-  await sleep(600);
-  check(A.w.document.querySelector('[data-dc="form"] [name="displayName"]') && !A.w.document.querySelector('[name="inviteCode"]'), 'the sign-up form asks for no invite code when the server needs none');
-  await A.signIn('register', 'lea@example.com', 'correct-horse-9', { displayName: 'Léa', inviteCode: 'INVITE-123' });
-  await synced(A, 'lea@example.com');
-  let h = await head('lea@example.com');
-  check(Number(h.rev) >= 1 && h.state_text === A.text() && JSON.parse(h.state_text).writing.records[0].text.startsWith('Bonjour madame'), 'sign-up uploads the existing local progress exactly (claim)');
-  check(A.reloads === 0 && !A.reloadRequested, 'claiming does not reload the page');
+  check(A.w.__DELF50_BOOT.status !== 'ready', 'signed out, the app does not start; the sign-in form is shown');
+  check(!A.realKeys().some((k) => k.startsWith('delf50_')) && A.realKeys().includes('other_site_key'), 'old browser copies are removed; other keys are untouched', A.realKeys());
+  A.realLs = {};
+  await A.signIn('register', 'lea@example.com', 'correct-horse-9', 'Léa');
+  await A.booted();
+  await A.saved();
+  check(A.$('.dc-chip').textContent.includes('Léa') && A.$('.dc-chip').textContent.includes('已保存') && !A.$('.dc-mask'), 'after sign-up the app starts and everything is saved', A.$('.dc-chip').textContent);
 
-  A.answerReading([]);
-  const nextBtn = A.w.document.getElementById('nextReading'); if (nextBtn && !nextBtn.disabled) nextBtn.click();
-  await A.answerGrammar(2);
-  await synced(A, 'lea@example.com');
-  h = await head('lea@example.com');
-  check(JSON.parse(h.state_text).grammar.attempts === A.state().grammar.attempts, 'further learning is pushed automatically');
-
-  // ── B: a second, fresh device for the same learner ──
-  const B = new Device('B');
-  await B.open();
-  await sleep(1400);
-  await B.signIn('login', 'lea@example.com', 'correct-horse-9');
-  await B.followReload();
-  await settle(B, 'lea@example.com');
-  await catchUp(A); await settle(A, 'lea@example.com');
-  const sa = A.state(), sb = B.state();
-  check(sb.grammar.attempts === sa.grammar.attempts && C_eq(sb.reading.answers, sa.reading.answers) && sb.writing.records.length === sa.writing.records.length
-    && sb.writing.records[0].text === sa.writing.records[0].text, 'a second device receives the full learning record', { a: sa.grammar.attempts, b: sb.grammar.attempts });
-  check(B.w.document.querySelector('.dc-chip').textContent.includes('Léa'), 'the chip shows the signed-in learner');
-
-  // The app's own migrations may re-route unstarted slots the first time a
-  // document boots on another device; that converges once. After that,
-  // opening the app anywhere must not create revisions or reload other pages.
-  await sleep(3500);
-  await catchUp(A); await settle(A, 'lea@example.com');
-  await catchUp(B); await settle(B, 'lea@example.com');
-  const revStable = Number((await head('lea@example.com')).rev);
-  const reloadsA = A.reloads;
-  await B.reload();
-  await sleep(4000);
-  await catchUp(A);
-  check(Number((await head('lea@example.com')).rev) === revStable, 'reopening the app without learning creates no new revision', { before: revStable, after: Number((await head('lea@example.com')).rev) });
-  check(!A.reloadRequested && A.reloads === reloadsA, 'a device opening the app elsewhere does not reload this page');
-
-  // ── concurrent learning on A and B ──
-  await synced(A, 'lea@example.com');
-  const gA0 = A.state().grammar.attempts;
-  A.w.__DELF50_CLOUD; // A keeps its base
-  await A.answerGrammar(2);
-  await B.answerGrammar(3);
-  B.write('Salut Paul, merci pour ton message. Je peux venir samedi après-midi avec ma sœur si tu veux.');
-  // Both push; one of them conflicts, merges and reloads.
-  await sleep(4000);
-  const reloader = A.reloadRequested ? A : B.reloadRequested ? B : null;
-  check(Boolean(reloader), 'a concurrent edit is detected as a conflict (one device merges)');
-  if (reloader) { check(/pull|reconcile|apply merged/.test(reloader.cloud().trace.join(' ')) && reloader.cloud().trace.some((t) => /apply merged/.test(t)), 'the conflicting device merged (three-way, with its base)', reloader.cloud().trace.slice(-6)); await settle(reloader, 'lea@example.com'); }
-  const other = reloader === A ? B : A;
-  await catchUp(other);
-  await settle(A, 'lea@example.com');
-  await settle(B, 'lea@example.com');
-  const ma = A.state(), mb = B.state();
-  check(ma.grammar.attempts === gA0 + 5 && mb.grammar.attempts === gA0 + 5, 'after merging, both devices count all 5 new grammar answers', { base: gA0, a: ma.grammar.attempts, b: mb.grammar.attempts });
-  check(ma.writing.records.length === 2 && mb.writing.records.length === 2, 'the writing done on B reached A', ma.writing.records.length);
-  check(Cl.semanticText(A.text()) === Cl.semanticText(B.text()), 'both devices end with the same learning record');
+  // ── live saving ──
+  app.stats.sync.length = 0;
+  const from = A.cloud().latency.length;
+  await A.answerGrammar(3); await A.saved();
+  A.answerReading(['0:0', '1:1']); await A.saved();
+  A.write('Bonjour madame, je vous écris parce que je voudrais des informations sur le cours de français du soir.');
+  await A.saved();
+  A.click('[data-nav="grammar"]'); A.click('[data-prod-record]'); await A.saved();
+  A.click('[data-nav="output"]'); A.click('[data-outputtab="speaking"]');
+  [...A.w.document.querySelectorAll('button')].find((b) => /无录音时/.test(b.textContent)).click(); await A.saved();
+  A.click('[data-nav="grammar"]');
+  for (let i = 0; i < 6 && !A.state().errors.length; i++) { // answer until one is wrong
+    const next = [...A.w.document.querySelectorAll('button')].find((x) => /下一题|继续/.test(x.textContent) && !x.disabled);
+    if (next) next.click();
+    const opt = A.$(`[data-gopt="${1 + (i % 2)}"]`); if (opt) opt.click();
+    const sub = A.w.document.getElementById('submitG'); if (sub) sub.click();
+    await sleep(30);
+  }
+  await A.saved();
+  const errBefore = A.state().errors.length;
+  A.click('[data-nav="progress"]'); if (A.$('[data-fixerr]')) A.click('[data-fixerr]'); await A.saved();
+  const lat = A.cloud().latency.slice(from).map((x) => x[0]);
+  check(lat.length >= 3 && Math.max(...lat) < 500, `every change reaches the database within 500 ms (max ${Math.max(...lat)} ms; request times ${app.stats.sync.join('/')} ms)`, lat);
+  const sA = A.state();
+  const srv = await server(A);
+  check(sameData(srv.state, sA), 'the database holds exactly the app state', (function walk(a, b, p) { if (sameData(a, b)) return []; if (a && b && typeof a === 'object' && typeof b === 'object') return [...new Set([...Object.keys(a), ...Object.keys(b)])].flatMap((k) => walk(a[k], b[k], p + '.' + k)); return [[p, a, b]]; })(sA, srv.state, 'S').slice(0, 5));
+  const rows = (await owner.query(`select (select count(*) from delf50.grammar_attempts where not deleted)::int g, (select count(*) from delf50.reading_answers)::int r, (select count(*) from delf50.writing_submissions)::int w`)).rows[0];
+  check(rows.g >= 1 && rows.r === Object.keys(sA.reading.answers).length && rows.w === 1, 'answers and writing are rows in their tables', rows);
+  const real = (await owner.query(`select (select count(*) from delf50.grammar_productions where done)::int gp, (select count(*) from delf50.speaking_attempts where extra->>'manual' = 'true')::int manual,
+    (select count(*) from delf50.error_items where resolved_at is not null)::int fixed, (select count(*) from delf50.study_days)::int days, (select count(*) from delf50.daily_progress)::int daily`)).rows[0];
+  check(real.gp === 1 && real.manual === 1 && real.fixed === (errBefore > 0 ? 1 : 0) && real.days >= 1 && real.daily >= 1 && errBefore > 0,
+    'real app flows land in their tables: grammar output practice, offline speaking, fixed error, study day, daily counters', Object.assign({ errBefore }, real));
+  check(!A.realKeys().some((k) => k.startsWith('delf50_')), 'nothing is written to browser storage');
 
   // ── recordings ──
-  // 8 MB: larger than one proxy part, so the client must split it.
-  const clip = { id: 'd1-s' + Date.now(), blob: new Blob([crypto.randomBytes(8 * 1024 * 1024 + 77)], { type: 'audio/webm' }), at: Date.now() };
-  await new Promise((resolve, reject) => {
-    const rq = A.w.indexedDB.open('delf50_audio_v1', 1);
-    rq.onupgradeneeded = () => rq.result.createObjectStore('clips', { keyPath: 'id' });
-    rq.onsuccess = () => { const tx = rq.result.transaction('clips', 'readwrite'); tx.objectStore('clips').put(clip); tx.oncomplete = () => { rq.result.close(); resolve(); }; tx.onerror = () => reject(tx.error); };
-    rq.onerror = () => reject(rq.error);
-  });
-  const sA = A.state();
-  sA.speaking.records.push({ id: clip.id, day: 1, title: 'Test', sec: 12, stored: true, at: new Date().toISOString() });
-  sA.speaking.count++; sA.speaking.totalSec += 12;
-  A.w.localStorage.setItem('delf50_v12_state', JSON.stringify(sA)); // as the app's save() would
-  A.corsBlocked = true;
-  await synced(A, 'lea@example.com');
-  await A.w.__DELF50_CLOUD.syncMedia();
-  const leaId = (await pool.query("select id from delf50.users where email_norm='lea@example.com'")).rows[0].id;
-  const partKeys = [...s3.objects.keys()].filter((k) => k.startsWith(`u/${leaId}/speaking/${clip.id}.webm.part-`)).sort();
-  const stored = Buffer.concat(partKeys.map((k) => s3.objects.get(k).body));
-  check(partKeys.length === 3 && stored.equals(Buffer.from(await clip.blob.arrayBuffer())), 'an 8 MB recording is uploaded to R2 in parts when direct upload is blocked (no CORS)', { parts: partKeys.length, media: A.cloud().media });
-  await catchUp(B);
-  await settle(B, 'lea@example.com');
-  await B.w.__DELF50_CLOUD.syncMedia();
-  const got = await new Promise((resolve) => {
-    const rq = B.w.indexedDB.open('delf50_audio_v1', 1);
-    rq.onupgradeneeded = () => rq.result.createObjectStore('clips', { keyPath: 'id' });
-    rq.onsuccess = () => { const g = rq.result.transaction('clips').objectStore('clips').get(clip.id); g.onsuccess = () => { rq.result.close(); resolve(g.result); }; };
-  });
-  check(got && got.blob && Buffer.from(await got.blob.arrayBuffer()).equals(Buffer.from(await clip.blob.arrayBuffer())), 'the parted recording is restored byte-identical into the second device’s audio store');
+  const clip = crypto.randomBytes(8 * 1024 * 1024 + 7);
+  const ok = await A.w.storeAudio('d1-s1', new A.w.Blob([clip], { type: 'audio/webm' }));
+  await A.saved();
+  const stored = (await owner.query(`select status, size_bytes, parts from delf50.media_objects where clip_id = 'd1-s1'`)).rows[0];
+  check(ok === true && stored && stored.status === 'stored' && Number(stored.size_bytes) === clip.length && stored.parts === 3, 'a saved recording is uploaded to R2 at once', stored);
+  const dbs = (await A.idb.databases()).map((d) => d.name);
+  check(!dbs.includes('delf50_audio_v1'), 'no recording is stored in the browser', dbs);
 
-  // ── C: independent local history meets an existing account ──
-  const C = new Device('C');
-  await C.open();
-  await C.answerGrammar(4);
-  C.write('Bonsoir, je m’appelle Léa et j’habite à Lyon depuis deux ans avec ma famille et mon chat.');
-  const cLocal = C.state();
-  await sleep(1400);
-  await C.signIn('login', 'lea@example.com', 'correct-horse-9');
-  await until(() => C.cloud().decision, 15000, 'decision');
-  check(Boolean(C.w.document.querySelector('[data-dc="merge"]')), 'conflicting histories ask the learner (merge / cloud / local)');
-  const cloudBefore = JSON.parse((await head('lea@example.com')).state_text);
-  C.click('[data-dc="merge"]');
-  await C.followReload();
-  await settle(C, 'lea@example.com');
-  const merged = C.state();
-  check(merged.grammar.attempts === cloudBefore.grammar.attempts + cLocal.grammar.attempts, 'merge adds the local grammar history to the cloud history', { cloud: cloudBefore.grammar.attempts, local: cLocal.grammar.attempts, merged: merged.grammar.attempts });
-  check(merged.writing.records.length === cloudBefore.writing.records.length + 1, 'merge keeps every writing record from both histories');
-  const archived = await pool.query('select count(*)::int n from delf50.state_archives where user_id=$1', [leaId]);
-  check(archived.rows[0].n >= 1, 'the local document was archived on the server before merging');
+  // ── reload and a second device ──
+  const before = A.state();
+  await A.reload();
+  await A.saved();
+  check(sameData(before.writing, A.state().writing) && sameData(before.reading.answers, A.state().reading.answers), 'a reload restores the learning from the database');
+  const B = new Device('B');
+  await B.open(false);
+  await B.signIn('login', 'lea@example.com', 'correct-horse-9');
+  await B.booted(); await B.saved(); await A.saved();
+  check(B.state().grammar.attempts === A.state().grammar.attempts && sameData(B.state().writing.records, A.state().writing.records), 'a second device continues with the same records');
+  const got = await B.w.getAudio('d1-s1');
+  check(got && Buffer.compare(Buffer.from(await got.blob.arrayBuffer()), clip) === 0, 'the second device plays the recording from R2');
 
-  // ── shared device: another learner signs in on C ──
-  const leaText = C.text();
-  C.click('.dc-chip');
-  await until(() => C.w.document.querySelector('[data-dc="logout"]'), 5000, 'account panel');
-  C.click('[data-dc="logout"]');
-  await until(() => C.cloud().meta.loggedIn === false, 10000, 'logout');
-  check(C.text() === leaText, 'signing out keeps the local record by default');
-  await C.signIn('register', 'tom@example.com', 'another-pass-7', { displayName: 'Tom', inviteCode: 'INVITE-123' });
-  await C.followReload();
-  await until(() => C.cloud().meta.loggedIn && C.cloud().status === 'synced', 20000, 'tom synced');
-  check(C.state().grammar.attempts === 0 && C.cloud().meta.user.displayName === 'Tom', 'a different learner starts from their own (empty) record');
-  const tomHead = await head('tom@example.com');
-  check(!tomHead || JSON.parse(tomHead.state_text).grammar.attempts === 0, 'the first learner’s data never reaches the second account');
-  await C.answerGrammar(1);
-  await synced(C, 'tom@example.com');
-  // A clip left in this browser's audio store by another learner.
-  await new Promise((resolve, reject) => {
-    const rq = C.w.indexedDB.open('delf50_audio_v1', 1);
-    rq.onupgradeneeded = () => rq.result.createObjectStore('clips', { keyPath: 'id' });
-    rq.onsuccess = () => { const tx = rq.result.transaction('clips', 'readwrite'); tx.objectStore('clips').put({ id: 'd1-s-foreign', blob: new Blob([Buffer.alloc(64)], { type: 'audio/webm' }), at: Date.now() }); tx.oncomplete = () => { rq.result.close(); resolve(); }; tx.onerror = () => reject(tx.error); };
-  });
-  await C.w.__DELF50_CLOUD.syncMedia();
-  const tomId = (await pool.query("select id from delf50.users where email_norm='tom@example.com'")).rows[0].id;
-  check(![...s3.objects.keys()].some((k) => k.startsWith(`u/${tomId}/`)), 'recordings in a shared browser are never uploaded to another account', [...s3.objects.keys()]);
-  C.click('.dc-chip');
-  await until(() => C.w.document.querySelector('[data-dc="logout"]'), 5000, 'account panel');
-  C.w.document.querySelector('[data-dc="wipe"]').checked = true;
-  C.click('[data-dc="logout"]');
-  await C.followReload();
-  check(C.text() === null || JSON.parse(C.text()).grammar.attempts === 0, 'sign-out with “remove from this device” clears the local record');
-  await sleep(1400);
-  await C.signIn('login', 'lea@example.com', 'correct-horse-9');
-  await C.followReload();
-  await settle(C, 'lea@example.com');
-  check(C.state().grammar.attempts === JSON.parse((await head('lea@example.com')).state_text).grammar.attempts && C.state().grammar.attempts > 0, 'the first learner signs back in and gets their record back');
+  await B.answerGrammar(1); await B.saved();
+  A.w.document.dispatchEvent(new A.w.Event('visibilitychange'));
+  await until(() => A.reloadRequested, 5000, 'A refresh');
+  check(true, 'a device returning to the foreground reloads when another device saved meanwhile');
+  await A.reload();
+  await A.saved(); await B.saved();
+  check(A.state().grammar.attempts === B.state().grammar.attempts, 'after the refresh both devices agree');
 
-  const third = await apiClient(base).req('POST', '/auth/register', { json: { email: 'third@example.com', password: 'longpassword' } });
-  check(third.status === 403 && third.data.error.code === 'registration_full', 'with two learners registered, a third sign-up is refused', third.data);
+  // ── the session ends mid-study: nothing is lost ──
+  const other = client(base); other.cookie = A.cookie;
+  await other.req('POST', '/auth/sign-out', { json: {} });
+  A.write('Deuxième texte écrit pendant que la session expirait.');
+  await until(() => A.$('.dc-mask form'), 10000, 'login after expiry');
+  check(A.cloud().pending, 'an expired session asks to sign in again and keeps the unsaved change');
+  await A.signIn('login', 'lea@example.com', 'correct-horse-9');
+  await A.saved();
+  check((await server(A)).state.writing.records.length === 2, 'after signing in again the change is saved');
 
-  // ── "use this device" archives the cloud copy before replacing it ──
-  const D = new Device('D');
-  await D.open();
-  await D.answerGrammar(2);
-  await sleep(1400);
-  await D.signIn('login', 'lea@example.com', 'correct-horse-9');
-  await until(() => D.cloud().decision, 15000, 'decision D');
-  const cloudText = (await head('lea@example.com')).state_text;
-  D.click('[data-dc="local"]');
-  await settle(D, 'lea@example.com');
-  const arch = await pool.query("select count(*)::int n from delf50.state_archives where user_id=$1 and hash=$2 and reason='replaced-by-local'", [leaId, sha256hex(cloudText)]);
-  check(arch.rows[0].n === 1, 'choosing this device archives the replaced cloud document first');
-  check(Cl.semanticText((await head('lea@example.com')).state_text) === Cl.semanticText(D.text()), 'choosing this device makes its record the account head');
-  D.close();
-
-  // ── the rest ──
-  const allErrors = [A, B, C, D].flatMap((d) => d.errors.filter((e) => !/Could not load (img|link)|not implemented/i.test(e)));
-  check(allErrors.length === 0, 'no script errors in any device', allErrors.slice(0, 5));
-  for (const d of [A, B, C]) d.close();
+  // ── sign-out ──
+  A.click('.dc-chip');
+  await until(() => A.$('[data-a="out"]'), 3000);
+  A.click('[data-a="out"]');
+  await until(() => A.reloadRequested, 5000, 'reload after sign-out');
+  check(A.cookie === '', 'sign-out clears the session and reloads to the sign-in form');
+  const errs = A.errors.concat(B.errors).filter((e) => !/Not implemented/.test(e));
+  check(errs.length === 0, 'no page errors', errs.slice(0, 3));
+  A.close(); B.close();
 }
-
-function C_eq(a, b) { return JSON.stringify(Object.keys(a).sort().map((k) => [k, a[k]])) === JSON.stringify(Object.keys(b).sort().map((k) => [k, b[k]])); }
 
 // ───────────────────────── main ─────────────────────────────────────────────
 
@@ -843,32 +683,34 @@ async function main() {
   if (!url) {
     results.push('\n  skip API and browser sections: TEST_DATABASE_URL is not set');
   } else {
-    const pool = installPgShim(url);
-    await pool.query('drop schema if exists delf50 cascade');
+    const { Pool } = require('pg');
+    const owner = new Pool({ connectionString: url, max: 4 });
+    await owner.query('drop schema if exists delf50 cascade; drop schema if exists neon_auth cascade');
+    await owner.query(`create schema neon_auth;
+      create table neon_auth."user" (id uuid primary key, email text unique not null, name text);
+      create table neon_auth.session (id uuid primary key, token text unique not null, "userId" uuid references neon_auth."user"(id) on delete cascade, "expiresAt" timestamptz not null);
+      do $$ begin if not exists (select from pg_roles where rolname = 'delf50_api') then create role delf50_api; end if; end $$;
+      alter role delf50_api login password 'api-test-password'`);
     for (const f of fs.readdirSync(path.join(ROOT, 'db/migrations')).filter((x) => x.endsWith('.sql')).sort()) {
-      await pool.query(fs.readFileSync(path.join(ROOT, 'db/migrations', f), 'utf8'));
+      await owner.query(fs.readFileSync(path.join(ROOT, 'db/migrations', f), 'utf8'));
     }
-    process.env.DATABASE_URL = 'postgres://shim';
-    process.env.DELF50_INVITE_CODE = 'INVITE-123';
+    const u = new URL(url); u.username = 'delf50_api'; u.password = 'api-test-password';
+    process.env.API_DATABASE_URL = u.toString();
+    const apiPool = useDatabase(process.env.API_DATABASE_URL);
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-    const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'delf50-cloud-'));
     const creds = { id: 'TESTKEYID', secret: crypto.randomBytes(20).toString('hex') };
-    const s3 = await startS3Mock(makeCert(tmp), creds);
-    Object.assign(process.env, { R2_ENDPOINT: `https://127.0.0.1:${s3.port}`, R2_BUCKET: 'delf50-test', R2_ACCESS_KEY_ID: creds.id, R2_SECRET_ACCESS_KEY: creds.secret });
+    const s3 = await startS3Mock(makeCert(fs.mkdtempSync(path.join(os.tmpdir(), 'delf50-'))), creds);
+    const auth = await startAuthMock(owner);
+    Object.assign(process.env, { NEON_AUTH_BASE_URL: auth.base, R2_ENDPOINT: `https://127.0.0.1:${s3.port}`, R2_BUCKET: 'delf50-test', R2_ACCESS_KEY_ID: creds.id, R2_SECRET_ACCESS_KEY: creds.secret });
     const app = await startApp();
     try {
-      await apiTests(app.base, pool, s3);
-      await pool.query('delete from delf50.users');
-      s3.objects.clear();
-      // The browser section runs the production configuration: no invite
-      // code, two accounts at most.
-      delete process.env.DELF50_INVITE_CODE;
-      process.env.DELF50_MAX_USERS = '2';
-      await browserTests(app.base, pool, s3);
+      await apiTests(app.base, owner, auth, s3);
+      await owner.query('delete from neon_auth."user"; delete from delf50.vocabulary_items');
+      await browserTests(app.base, owner, app);
     } catch (e) {
       check(false, 'suite aborted', e.stack || String(e));
     } finally {
-      app.server.close(); s3.server.close(); await pool.end();
+      app.server.close(); s3.server.close(); auth.server.close(); await apiPool.end(); await owner.end();
     }
   }
   console.log(results.join('\n'));
