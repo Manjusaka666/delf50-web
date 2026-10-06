@@ -78,3 +78,15 @@ export function ring(fraction, size = 44, label = '') {
     `<circle cx="${size / 2}" cy="${size / 2}" r="${r}" class="ring-track"/>` +
     `<circle cx="${size / 2}" cy="${size / 2}" r="${r}" class="ring-fill" stroke-dasharray="${c.toFixed(2)}" stroke-dashoffset="${(c * (1 - f)).toFixed(2)}" transform="rotate(-90 ${size / 2} ${size / 2})"/></svg>`);
 }
+
+/** A static Matisse-style cut-out composition: a sheet of paper, the sun, the sea and a leaf (turned a little each day). */
+export function matisse(seed = 0, label = '') {
+  const tilt = ((seed * 37) % 24) - 12;
+  return raw(`<svg class="matisse" viewBox="0 0 420 380" ${label ? `role="img" aria-label="${esc(label)}"` : 'aria-hidden="true"'}>` +
+    '<rect class="m-paper" x="168" y="18" width="222" height="292"/>' +
+    '<circle class="m-line" cx="140" cy="132" r="104"/>' +
+    '<path class="m-sun" d="M140 40c50 2 92 42 90 94-2 50-44 88-94 86-48-2-86-44-84-92 2-50 40-90 88-88z"/>' +
+    '<path class="m-sea" d="M14 292c38-26 76-26 112 0s74 26 110 0 76-26 112 0 50 20 58 14V366H14z"/>' +
+    `<g transform="rotate(${tilt} 300 300)"><path class="m-leaf" d="M298 334c-6-40 6-78-2-112-28 6-52-8-48-30 22 6 38 4 44-6-20-14-30-38-20-56 16 14 24 30 28 38 4-30-6-60 8-84 14 22 12 54 4 84 12-14 28-28 46-30 2 22-18 40-42 52 22 6 40 16 44 36-24 6-42-6-52-14 6 40-2 82 2 122z"/></g>` +
+    '</svg>');
+}

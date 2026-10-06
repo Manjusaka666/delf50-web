@@ -9,7 +9,7 @@ A1+ → DELF B1 的 50 天网页备考课程。生产地址：<https://delf50-mv
 ```
 index.html          入口（只加载 app/main.js 和 app/app.css）
 app/                前端（原生 ES 模块，无构建步骤）
-  main.js           登录、路由、外壳（桌面侧栏 / 移动端底栏）、事件委托、页面过渡
+  main.js           登录、路由、外壳（桌面侧栏 / 移动端底栏）、事件委托
   views/            今日 · 语法与主动产出 · 阅读/听力 · 写作/应用 · 口语 · 词块 · 间隔复习 · 错题本 · 进度 · 档案 · 路线 · 指南
   state.js          学习者状态的形状与全部修改操作
   progress.js       进度、完成度、正确率——全部由记录推导，不存储
@@ -25,7 +25,7 @@ course/             课程数据（唯一题库）
   grammar.json      语法点：讲解、例句、产出提示（含 B1→B2 衔接）
   questions/        每个语法点一个题库（按需加载）；Day 1–40 依次使用各题库开头的题，补练从其后继续
   days/01–50.json   每天的阅读、听力、写作、口语、应用题目，语法题 ID，45 个词块
-fonts/              自托管字体（Fraunces、Inter，OFL）
+fonts/              自托管字体（Playfair Display、Plus Jakarta Sans，OFL）
 api/v1.js           API（Vercel 函数）：Neon Auth 代理、bootstrap、sync、media、vocab
 api/_lib/           records.js（状态 ↔ 数据表映射）、session、db、r2、media、vocab、courses
 db/migrations/      数据库结构（幂等，按序执行）

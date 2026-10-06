@@ -3,7 +3,7 @@ import { call, errorText } from './api.js';
 import { store, bootstrap, commit, onChange, onStatus, onAuthRequired, flush } from './store.js';
 import { loadCourse } from './course.js';
 import { setDay } from './state.js';
-import { html, raw, icon, esc, fmtDateTime } from './ui.js';
+import { html, raw, icon, esc, fmtDateTime, matisse } from './ui.js';
 import { dayView } from './views/day.js';
 import { grammarView } from './views/grammar.js';
 import { textView } from './views/text.js';
@@ -18,7 +18,6 @@ import { routeView } from './views/route.js';
 import { guideView } from './views/guide.js';
 
 const app = document.getElementById('app');
-const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
 const ROUTES = [
   [/^\/day\/(\d+)$/, (m) => dayView(+m[1])],
@@ -103,13 +102,12 @@ async function route() {
   try { view = await hit[1](hit[0]); } catch (e) { view = errorView(e); }
   if (token !== renderToken) return;
   if (current && current.unmount) current.unmount();
-  const first = currentPath === null, samePage = currentPath === path;
+  const samePage = currentPath === path;
   current = view; currentPath = path;
   document.title = view.title ? `${view.title} · DELF50` : 'DELF50';
   navState(path);
   const swap = () => { paint(view, samePage); if (!samePage) { scrollTo(0, 0); app.querySelector('#view').focus({ preventScroll: true }); } };
-  if (!first && !samePage && document.startViewTransition && !reduceMotion.matches) document.startViewTransition(swap);
-  else swap();
+  swap();
 }
 
 function errorView(e) {
@@ -179,7 +177,7 @@ function authScreen(message, mode = 'login', resume = false) {
       <section class="auth-art" aria-hidden="true">
         <p class="eyebrow light">DELF B1 · 50 jours</p>
         <p class="auth-quote"><em>Cinquante jours</em><br>pour parler, lire,<br>écouter et écrire<br>au niveau B1.</p>
-        <div class="auth-grid">${Array.from({ length: 50 }, (_, i) => raw(`<i style="--i:${i}"></i>`))}</div>
+        ${matisse(50)}
       </section>
       <section class="auth-panel">
         <div class="auth-box">
@@ -226,7 +224,7 @@ function fatal(e) {
 }
 
 async function start() {
-  app.innerHTML = '<div class="splash" aria-busy="true"><span class="brand-mark big pulse">D50</span></div>';
+  app.innerHTML = '<div class="splash" aria-busy="true"><span class="brand-mark big">D50</span></div>';
   try {
     await Promise.all([loadCourse(), bootstrap()]);
   } catch (e) {
