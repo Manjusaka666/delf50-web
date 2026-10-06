@@ -87,6 +87,7 @@ for (const d of days) {
       }
       if (m === 'writing') check(x.minWords >= 60 && x.checklist.length, where, 'no word target or checklist');
       if (m === 'speaking') check(x.targetSeconds >= 30 && x.checklist.length, where, 'no target time or checklist');
+      if (m === 'speaking' && x.doc) check(days.some((o) => o.day <= d.day && o.items.reading.some((r) => r.id === x.doc)), where, `unknown document ${x.doc}`);
       if (m === 'application') check(x.chunks.length, where, 'no chunks');
     });
   }

@@ -1,6 +1,7 @@
 /** Speaking: a task, a timed recording stored in R2 (or a timed offline round), and the rounds done. */
 import { store, commit, refresh } from '../store.js';
 import { itemState } from '../progress.js';
+import { loadDay } from '../course.js';
 import { addSpeaking } from '../state.js';
 import { upload, newClipId } from '../media.js';
 import { html, icon, pad2, frText, fmtDateTime, fmtDuration, MODULE_NAMES, MODULE_FR } from '../ui.js';
@@ -14,6 +15,9 @@ export async function speakView(d, n) {
   const items = ctx.day.items.speaking, due = ctx.plan.speaking.length;
   n = Math.min(Math.max(1, n), items.length);
   const item = items[n - 1];
+  // The point of view (DELF part 3) starts from a short document: a reading of this or an earlier day.
+  const docDay = item.doc ? Number(item.doc.slice(1, 3)) : 0;
+  const doc = item.doc ? (await loadDay(docDay)).items.reading.find((r) => r.id === item.doc) : null;
 
   // recorder: idle → recording|timing → review (recording) → saving → idle
   let mode = 'idle', started = 0, elapsed = 0, tick = 0, rec = null, stream = null, chunks = [], take = null, error = '';
@@ -94,6 +98,7 @@ export async function speakView(d, n) {
           <p class="eyebrow">${MODULE_FR.speaking} · ${item.part}${n > due ? ' · 选做' : ''}</p>
           <h1 class="passage-title" lang="fr">${frText(item.title)}</h1>
           <p class="consigne" lang="fr">${frText(item.prompt)}</p>
+          ${doc ? html`<a class="doc-link" href="#/day/${docDay}/reading/${Number(item.doc.split('-')[1])}">${icon('reading')}<span><small>先读引子文档 · Jour ${docDay}</small><span lang="fr">${frText(doc.title)}</span></span>${icon('right')}</a>` : ''}
           ${item.checklist && item.checklist.length ? html`<div class="checklist"><p class="label">评分要点</p><ul>${item.checklist.map((c) => html`<li lang="fr">${frText(c)}</li>`)}</ul></div>` : ''}
         </section>
         <section class="editor">${recorder()}</section>
