@@ -67,9 +67,13 @@ const COLLECTIONS = {
     ['correction', 'correct', 'text'], ['explanation', 'why', 'text'], ['created_at', 'at', 'ts']], { soft: 'resolved_at' }),
   writingDrafts: draft('writing'),
   applicationDrafts: draft('application'),
-  // Self-reported vocabulary and review practice per day: "<day>" = {vocab, review}.
-  practice: { path: ['practice'], table: 'practice_counters', kind: 'map', keys: ['day_key'], parse: (k) => ({ day: int(k) }), parsed: [['day', 'int']],
-    fields: [['vocab', 'vocab', 'int'], ['review', 'review', 'int']] }
+  // Vocabulary chunks: "<day>:<chunk>" = known | again.
+  lexicon: { path: ['lexicon'], table: 'lexicon_marks', kind: 'map', keys: ['mark_key'], scalar: ['mark', 'text'], touch: 'marked_at',
+    parse: (k) => { const i = k.indexOf(':'); return { day: int(k.slice(0, i)), chunk_id: i < 0 ? null : k.slice(i + 1) }; }, parsed: [['day', 'int'], ['chunk_id', 'text']] },
+  // Spaced review: "<day>:<g|v>:<source day>:<item>" = the item as done on <day>.
+  review: { path: ['review'], table: 'review_answers', kind: 'map', keys: ['answer_key'],
+    fields: [['day', 'day', 'int'], ['kind', 'kind', 'text'], ['source_day', 'src', 'int'], ['content_id', 'contentId', 'text'],
+      ['selected', 'selectedIndex', 'int'], ['correct', 'correct', 'bool'], ['answered_at', 'at', 'ts']] }
 };
 
 const isObj = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);

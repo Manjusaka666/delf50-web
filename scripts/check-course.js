@@ -3,10 +3,10 @@
 /**
  * Validates the course data in course/, day by day (1-50).
  *
- * Every day must be complete for the highest intensity, every question must be
- * answerable (distinct options, a valid key, an explanation where one exists),
- * no development marker may reach a learner, and no material may repeat across
- * the 50 days.
+ * Every day must be complete for the highest intensity (Days 41–50: grammar is
+ * drawn from the question banks at run time), every question in every bank must
+ * be answerable (distinct options, a valid key), no development marker may
+ * reach a learner, and no text or chunk may repeat across the 50 days.
  *
  * Run: node scripts/check-course.js
  */
@@ -38,6 +38,20 @@ for (const n of nodes) {
   check(n.guide && Array.isArray(n.guide.formula) && n.guide.formula.length, `grammar ${n.id}`, 'no guide');
 }
 
+const REMEDIAL_FROM = 41;
+const nodeOf = (id) => id.replace(/-\d+$/, '');
+const bank = new Map(), taught = {};
+for (const n of nodes) {
+  const qs = JSON.parse(fs.readFileSync(path.join(DIR, 'questions', n.id + '.json'), 'utf8'));
+  check(n.bank === qs.length && qs.length >= course.quotas.high.grammar, `grammar ${n.id}`, `bank of ${qs.length} questions, node says ${n.bank}`);
+  qs.forEach((q, i) => {
+    const where = `bank ${n.id} ${i + 1}`;
+    check(q.id === `${n.id}-${String(i + 1).padStart(2, '0')}` && !bank.has(q.id), where, `id ${q.id}`);
+    question(where, q);
+    bank.set(q.id, q);
+  });
+}
+
 function question(where, q) {
   check(q.stem && plain(q.stem).length > 2, where, 'empty stem');
   check(Array.isArray(q.options) && q.options.length >= 3, where, 'fewer than 3 options');
@@ -46,7 +60,7 @@ function question(where, q) {
   check(!LEAK.test([q.stem, ...q.options, q.why].join(' ')), where, 'development marker');
 }
 
-const seen = { body: new Map(), id: new Set(), grammar: new Map() };
+const seen = { body: new Map(), id: new Set(), grammar: new Map(), chunk: new Map() };
 for (const d of days) {
   const at = `Day ${d.day}`;
   check(d.title && d.phase && d.level && d.canDo, at, 'curriculum entry incomplete');
@@ -75,20 +89,40 @@ for (const d of days) {
       if (m === 'application') check(x.chunks.length, where, 'no chunks');
     });
   }
-  check(d.grammar.length === course.quotas.high.grammar, at, `grammar: ${d.grammar.length} questions, need ${course.quotas.high.grammar}`);
-  check(new Set(d.grammar.map((q) => q.id)).size === d.grammar.length, at, 'grammar question repeated within the day');
-  d.grammar.forEach((q, i) => {
-    const where = `${at} grammar ${i + 1} (${q.id})`;
-    check(nodeIds.has(q.node), where, `unknown node ${q.node}`);
-    question(where, q);
-    // The 6.5 h plan never repeats a question before the mock-exam phase (days 41-50 revisit
-    // earlier ones on purpose); the 8 h extras are the next day's first questions by design.
-    if (i >= course.quotas.standard.grammar) return;
-    const first = seen.grammar.get(q.id);
-    if (first === undefined) seen.grammar.set(q.id, d.day);
-    else if (d.day <= 40) fail(where, `also on Day ${first}`);
+  if (d.day >= REMEDIAL_FROM) {
+    // Days 41–50 draw their grammar from the learner's weakest points (app/course.js).
+    check(d.remedial === true && !d.grammar && !d.focus, at, 'a remediation day has no fixed grammar or focus');
+  } else {
+    check(!d.remedial && d.grammar.length === course.quotas.high.grammar, at, `grammar: ${d.grammar && d.grammar.length} questions, need ${course.quotas.high.grammar}`);
+    check(new Set(d.grammar).size === d.grammar.length, at, 'grammar question repeated within the day');
+    d.grammar.forEach((id, i) => {
+      const where = `${at} grammar ${i + 1} (${id})`;
+      check(bank.has(id), where, 'not in the question bank');
+      (taught[nodeOf(id)] = taught[nodeOf(id)] || new Set()).add(id);
+      // The 6.5 h plan never repeats a question; the 8 h extras are the next day's first questions by design.
+      if (i >= course.quotas.standard.grammar) return;
+      const first = seen.grammar.get(id);
+      if (first === undefined) seen.grammar.set(id, d.day); else fail(where, `also on Day ${first}`);
+    });
+    check(d.focus.every((n) => nodeIds.has(n)), at, 'unknown focus node');
+  }
+  check(Array.isArray(d.vocab) && d.vocab.length === course.quotas.high.vocab, at, `vocab: ${d.vocab && d.vocab.length} chunks, need ${course.quotas.high.vocab}`);
+  (d.vocab || []).forEach((c, i) => {
+    const where = `${at} chunk ${i + 1}`;
+    check(c.id === `V${String(d.day).padStart(2, '0')}-${String(i + 1).padStart(2, '0')}`, where, `id ${c.id}`);
+    check(c.fr && c.zh && c.ex && c.exZh, where, 'chunk without fr, zh, ex or exZh');
+    check((String(c.ex).match(/\[\[/g) || []).length === 1 && /\[\[[^\]]+\]\]/.test(c.ex), where, 'example must mark the chunk once with [[ ]]');
+    check(/^([RLWSA]\d{2}-\d|topic)$/.test(c.src || ''), where, `source ${c.src}`);
+    check(!LEAK.test(`${c.fr} ${c.ex}`), where, 'development marker');
+    const k = norm(c.fr);
+    check(!seen.chunk.has(k), where, `"${c.fr}" also on ${seen.chunk.get(k)}`); seen.chunk.set(k, at);
   });
-  check(d.focus.every((n) => nodeIds.has(n)), at, 'unknown focus node');
+}
+
+// Each bank starts with exactly the questions Days 1–40 use (in order); remediation continues from there.
+for (const n of nodes) {
+  const t = taught[n.id] || new Set();
+  check(n.taught === t.size && [...t].every((id) => Number(id.slice(n.id.length + 1)) <= t.size), `grammar ${n.id}`, `taught ${n.taught}, Days 1–40 use ${t.size} (must be the bank's first ones)`);
 }
 
 if (failures.length) {
@@ -96,4 +130,4 @@ if (failures.length) {
   console.error(`\n${failures.length} problem(s) in ${checks} checks.`);
   process.exit(1);
 }
-console.log(`course/ is valid: ${days.length} days, ${seen.id.size} items, ${new Set(days.flatMap((d) => d.grammar.map((q) => q.id))).size} grammar questions — ${checks} checks.`);
+console.log(`course/ is valid: ${days.length} days, ${seen.id.size} items, ${seen.chunk.size} chunks, ${bank.size} grammar questions in ${nodes.length} banks — ${checks} checks.`);

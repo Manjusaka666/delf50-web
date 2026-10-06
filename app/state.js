@@ -10,7 +10,9 @@
  *   speaking              [{clip, day, contentId, title, sec, at}]   clip = recording in R2, null when practised offline
  *   errors                [{skill, original, correct, why, at}]
  *   drafts                {writing: {"<day>:<item>": text}, application: {…}}
- *   practice              "<day>" = {vocab, review}
+ *   lexicon               "<day>:<chunk>" = 'known' | 'again'
+ *   review                "<day>:<g|v>:<source day>:<item>" = {day, kind, src, contentId, selectedIndex?, correct, at}
+ *   remedial              "<day>" = [grammar point ids]   Days 41–50: the weakest points, fixed when the day is opened
  */
 
 export const DAYS = 50;
@@ -21,7 +23,7 @@ export function blank() {
     day: 1, intensity: 'standard', startedAt: null, onboarded: false,
     reading: {}, listening: {}, grammar: {}, production: {},
     writing: [], application: [], speaking: [], errors: [],
-    drafts: { writing: {}, application: {} }, practice: {}
+    drafts: { writing: {}, application: {} }, lexicon: {}, review: {}, remedial: {}
   };
 }
 
@@ -35,7 +37,8 @@ export function normalize(raw) {
   if (INTENSITIES.includes(r.intensity)) s.intensity = r.intensity;
   if (typeof r.startedAt === 'string') s.startedAt = r.startedAt;
   s.onboarded = r.onboarded === true;
-  for (const k of ['reading', 'listening', 'grammar', 'production', 'practice']) s[k] = obj(r[k]);
+  for (const k of ['reading', 'listening', 'grammar', 'production', 'lexicon', 'review']) s[k] = obj(r[k]);
+  for (const [d, ids] of Object.entries(obj(r.remedial))) if (Array.isArray(ids) && ids.every((x) => typeof x === 'string')) s.remedial[d] = ids;
   for (const k of ['writing', 'application', 'speaking', 'errors']) s[k] = list(r[k]);
   s.drafts = { writing: obj(obj(r.drafts).writing), application: obj(obj(r.drafts).application) };
   return s;
@@ -97,12 +100,29 @@ export function addSpeaking(S, day, item, clip, sec) {
 
 export function resolveError(S, index) { S.errors.splice(index, 1); }
 
-export function setPractice(S, day, field, value) {
-  const p = Object.assign({ vocab: 0, review: 0 }, S.practice[String(day)]);
-  p[field] = Math.max(0, Math.round(value));
-  if (p.vocab || p.review) S.practice[String(day)] = p; else delete S.practice[String(day)];
-  if (value > 0) started(S);
+/** A chunk recalled (known) or to see again; the latest self-assessment counts. */
+export function markChunk(S, day, id, mark) {
+  S.lexicon[`${day}:${id}`] = mark === 'known' ? 'known' : 'again';
+  started(S);
 }
+
+/** A spaced-review item done on `day`: a grammar question (final once answered) or a chunk recalled or not. */
+export function answerReview(S, day, item, result, node) {
+  const k = `${day}:${item.key}`;
+  if (S.review[k]) return false;
+  const at = now(), rec = { day, kind: item.kind, src: item.src, contentId: item.id, correct: false, at };
+  if (item.kind === 'g') {
+    const q = item.question;
+    rec.selectedIndex = result; rec.correct = result === q.answer;
+    if (!rec.correct) S.errors.push({ skill: node ? node.name : q.node, original: q.options[result], correct: q.options[q.answer], why: q.why || '', at });
+  } else rec.correct = result === true;
+  S.review[k] = rec;
+  started(S);
+  return true;
+}
+
+/** Fixes a remediation day's grammar points the first time the day is opened. */
+export function setRemedial(S, day, ids) { if (!S.remedial[String(day)]) S.remedial[String(day)] = ids.slice(); }
 
 export function setDay(S, day) { if (Number.isInteger(day) && day >= 1 && day <= DAYS) S.day = day; }
 export function setIntensity(S, v) { if (INTENSITIES.includes(v)) S.intensity = v; }

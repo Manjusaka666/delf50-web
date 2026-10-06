@@ -2,11 +2,9 @@
 import { store, commit } from '../store.js';
 import { getCourse, prefetch, MODULES } from '../course.js';
 import { itemState, grammarAnswer } from '../progress.js';
-import { setIntensity, setPractice, INTENSITIES } from '../state.js';
+import { setIntensity, INTENSITIES } from '../state.js';
 import { html, icon, ring, pad2, frText, MODULE_NAMES, MODULE_FR, UNITS } from '../ui.js';
 import { dayContext } from './common.js';
-
-const STEP = { vocab: [1, 5], review: [1, 5] };
 
 export async function dayView(d) {
   const ctx = await dayContext(d);
@@ -15,6 +13,7 @@ export async function dayView(d) {
 
   function firstOpen(module) {
     if (module === 'production') return `#/day/${d}/grammar/production`;
+    if (module === 'vocab' || module === 'review') return `#/day/${d}/${module}`;
     if (module === 'grammar') {
       const i = ctx.plan.grammar.findIndex((q) => !grammarAnswer(store.S, d, q));
       return `#/day/${d}/grammar${i > 0 ? '/' + (i + 1) : ''}`;
@@ -36,20 +35,6 @@ export async function dayView(d) {
       ${done ? html`<span class="mod-done">${icon('check')}</span>` : ''}
     </a>`;
   };
-
-  const stepper = (field, m) => html`<div class="mod stepper ${m.done >= m.total ? 'done' : m.done ? 'started' : ''}">
-    <span class="mod-icon">${icon(field)}</span>
-    <span class="mod-fr">${MODULE_FR[field]}</span>
-    <span class="mod-name">${MODULE_NAMES[field]}</span>
-    <span class="mod-count"><b>${m.done}</b><span>/ ${m.total} ${UNITS[field]}</span></span>
-    <div class="stepper-ctl">
-      <button class="icon-btn" data-act="practice" data-field="${field}" data-step="${-STEP[field][0]}" aria-label="减 1" ${m.done ? '' : 'disabled'}>${icon('minus')}</button>
-      <button class="icon-btn" data-act="practice" data-field="${field}" data-step="${STEP[field][0]}" aria-label="加 1">${icon('plus')}</button>
-      <button class="chip" data-act="practice" data-field="${field}" data-step="${STEP[field][1]}">+${STEP[field][1]}</button>
-    </div>
-    <span class="mod-bar" style="--f:${Math.min(1, m.done / m.total)}"><i></i></span>
-    ${m.done >= m.total ? html`<span class="mod-done">${icon('check')}</span>` : ''}
-  </div>`;
 
   const render = () => {
     const { day } = ctx, pr = ctx.progress(), m = pr.modules;
@@ -81,8 +66,8 @@ export async function dayView(d) {
         ${card('grammar', m.grammar)}
         ${card('production', m.production)}
         ${MODULES.filter((k) => k !== 'grammar').map((k) => card(k, m[k]))}
-        ${stepper('vocab', m.vocab)}
-        ${stepper('review', m.review)}
+        ${card('vocab', m.vocab)}
+        ${card('review', m.review)}
       </section>
 
       <section class="notes">
@@ -101,11 +86,7 @@ export async function dayView(d) {
     title: `Jour ${d}`,
     render,
     actions: {
-      intensity: (el) => commit((S) => setIntensity(S, el.dataset.v)),
-      practice: (el) => {
-        const f = el.dataset.field, p = store.S.practice[String(d)] || {};
-        commit((S) => setPractice(S, d, f, (p[f] || 0) + Number(el.dataset.step)));
-      }
+      intensity: (el) => commit((S) => setIntensity(S, el.dataset.v))
     }
   };
 }
