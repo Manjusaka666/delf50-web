@@ -16,18 +16,9 @@ function answers(t){return (t==='reading'?S.reading:S.listening)&&((t==='reading
 function assignment(t,d){return S.assignments172&&S.assignments172[String(d)]&&Array.isArray(S.assignments172[String(d)][t])?S.assignments172[String(d)][t]:[]}
 function done(t,d){return Number(S.daily&&S.daily[String(d)]&&S.daily[String(d)][t]||0)}
 function replacement(t,d,s){try{return window.DELF50_NOREPEAT&&window.DELF50_NOREPEAT.replacement?window.DELF50_NOREPEAT.replacement(t,d,s):null}catch(e){return null}}
-function generatedTouched(t,item){
-  const p=parseGenerated(item&&item.id);if(!p)return false;
-  const a=answers(t),prefix=`${p.day}:${item.id}:`;
-  if(Object.keys(a).some(k=>k.startsWith(prefix)))return true;
-  if(assignment(t,p.day)[p.slot]===item.id&&p.slot<done(t,p.day))return true;
-  const r=replacement(t,p.day,p.slot);if(r&&r.newId===item.id&&r.status&&r.status!=='pending')return true;
-  return false;
-}
-function patchGeneratedQuestions(){let patched=0,protectedCount=0;
+function patchGeneratedQuestions(){let patched=0;
   for(const t of['reading','listening'])for(const item of bank(t)){
     const p=parseGenerated(item&&item.id);if(!p||!Array.isArray(item.qs)||item.qs.length<3)continue;
-    if(generatedTouched(t,item)){protectedCount++;continue}
     if(t==='reading'){
       const ref=(String(item.text||'').match(/référence\s+(\d+)/i)||[])[1]||`${p.day}-${p.slot+1}`;
       const place=(String(item.text||'').match(/au\s+([^,]+),\s*(?:lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)/i)||[])[1]||item.title||'lieu indiqué';
@@ -43,7 +34,7 @@ function patchGeneratedQuestions(){let patched=0,protectedCount=0;
     }
     patched++;
   }
-  return{patched,protected:protectedCount};
+  return{patched};
 }
 const patchResult=patchGeneratedQuestions();
 function norm(v){return String(v||'').toLowerCase().replace(/\s+/g,' ').trim()}

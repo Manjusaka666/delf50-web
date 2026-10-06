@@ -60,8 +60,8 @@ curl -s "https://delf50-mvp.vercel.app/api/source?i=12&v=v200-answer-order-rando
 ```
 
 打开网站后，在「进度」页应看到新增的「学习材料校验」卡片，状态为「✓ 全部通过」。
-浏览器控制台执行 `__DELF50_CORPUS_AUDIT` 可看到明细；其中 `protectedItems`
-列出的是**因为你已经做过而被冻结**的条目，属于正常。
+浏览器控制台执行 `__DELF50_CORPUS_AUDIT` 可看到明细。材料内容只由 Content ID 决定，
+已作答的材料与作答时看到的完全相同（1.9.5 起不再有「冻结」条目）。
 
 ## 本次改动
 
@@ -123,7 +123,6 @@ Day 4 听力完成 1 篇」的真实进度做过新旧版本逐字节对比：22
 ```js
 __DELF50_CORPUS_AUDIT.answerBalance
 // { total, positions:{0:…,1:…,2:…}, maxShare≈0.35, maxDeviation<0.20, ok:true }
-__DELF50_CORPUS_AUDIT.balanceSkipped   // 因你已做过而未洗牌的条目数
 ```
 
 「进度」页的「学习材料校验」卡片会直接显示正确答案位置分布。
