@@ -4,8 +4,15 @@
  * 职责
  *   1. 把 content/corpus-v200.js 中逐篇撰写的材料装载到题库对应槽位。
  *   2. 装载前对语料做阻断式校验：不合格的条目直接跳过，不写入题库。
- *   3. 锁定判据只看学习证据的「身份」（content id / 标题 / 草稿键），不看槽位序号。
+ *   3. 一篇材料的内容只由它的 content id 决定，与学习者是否作答无关。
  *   4. 不修改 S 的任何字段；装载前后对学习证据做快照比对，不一致立即回滚并中止。
+ *
+ * 为什么不按作答记录「冻结」
+ *   题库对象每次启动都由各层重新生成，从不持久化。学习者第一次打开一篇材料时，它一定
+ *   还没有作答记录，看到的就是本层装载后的版本，答案下标也是对着这个版本存的。若下一次
+ *   启动时因为「已作答」而跳过装载，题库里留下的是上一层的生成稿——学习者从未见过的旧题，
+ *   已存的下标指向另一组选项。所以装载与洗牌对每个条目无条件执行：同一 id 在任何设备、
+ *   任何一次启动都得到同一份内容，这才是「学过的内容不变」。
  *   5. 承接原 v199 的显示层清洗（开发端编号不得进入学生界面）。
  *
  * 与既有层的关系
@@ -22,7 +29,7 @@ var TYPE = {r:'reading', l:'listening', w:'writing', s:'speaking', a:'applicatio
    on one, the corpus is applied to both twins of a slot. A learner only ever sees
    one of them, so this does not duplicate anything on screen; it does guarantee the
    authored text is reachable whichever generation the routing resolves to. Each
-   twin is lock-checked on its own evidence. */
+   twin carries the same authored text and the same option order. */
 var GENERATIONS = ['177', '181'];
 var LETTER = {reading:'r', listening:'l', writing:'w', speaking:'s', application:'a'};
 var MAX = {reading:4, listening:4, writing:2, speaking:4, application:4};
@@ -44,7 +51,7 @@ function find(t, id){
   return null;
 }
 
-/* ---------- 学习证据：全部按身份判断，不使用槽位序号 ---------- */
+/* 该 id 在这一天是否已有作答（导航用：不把已答完的材料当作待做） */
 function answerEvidence(t, d, id){
   if (t !== 'reading' && t !== 'listening') return false;
   var box = (t === 'reading' ? S.reading : S.listening);
@@ -52,52 +59,6 @@ function answerEvidence(t, d, id){
   for (var k in a) if (Object.prototype.hasOwnProperty.call(a, k) && k.indexOf(p) === 0) return true;
   return false;
 }
-function completedEvidence(t, id){
-  var c = S && S.contentProgress172 && S.contentProgress172.completed && S.contentProgress172.completed[t];
-  return !!(c && c[id]);
-}
-function recordEvidence(t, d, id, title){
-  var box = (t === 'writing' ? S.writing : t === 'speaking' ? S.speaking : t === 'application' ? S.application : null);
-  if (!box || !Array.isArray(box.records)) return false;
-  for (var i = 0; i < box.records.length; i++){
-    var r = box.records[i];
-    if (Number(r.day) !== Number(d)) continue;
-    if (String(r.contentId || '') === String(id)) return true;
-    if (title && String(r.title || '') === String(title)) return true;   /* 旧记录可能没有 contentId */
-  }
-  return false;
-}
-function draftEvidence(t, d, id){
-  var box = S.drafts171 && S.drafts171[t];
-  if (!box) return false;
-  var p = String(d) + ':' + t + ':';
-  for (var k in box){
-    if (!Object.prototype.hasOwnProperty.call(box, k)) continue;
-    if (k.indexOf(p) !== 0) continue;
-    if (String(box[k] || '').trim() && k.indexOf(String(id)) >= 0) return true;
-  }
-  return false;
-}
-function replacementEvidence(t, d, id){
-  var m = S.replacements177 && S.replacements177[t];
-  if (!m) return false;
-  for (var k in m){
-    if (!Object.prototype.hasOwnProperty.call(m, k)) continue;
-    var r = m[k];
-    if (!r || Number(r.day) !== Number(d)) continue;
-    if (String(r.newId || '') === String(id) || String(r.oldId || '') === String(id)) return true;
-  }
-  return false;
-}
-/* 任何一种证据存在 → 该条目已被学习者接触过 → 内容永久冻结 */
-function locked(t, d, id, item){
-  return answerEvidence(t, d, id)
-      || completedEvidence(t, id)
-      || recordEvidence(t, d, id, item && item.title)
-      || draftEvidence(t, d, id)
-      || replacementEvidence(t, d, id);
-}
-
 /* ---------- 学习证据快照：本层不应使其发生任何变化 ---------- */
 function evidenceSnapshot(){
   try {
@@ -225,8 +186,8 @@ function validate(entry, seen){
 var audit = {
   route: ROUTE, app: REL.app, content: REL.content,
   corpusSize: CORPUS.length,
-  applied: [], protectedItems: [], missing: [], rejected: [], similar: [],
-  coverage: {}, keyPositions: {}, answerBalance: null, balanced: 0, balanceSkipped: 0, status: 'pass'
+  applied: [], missing: [], rejected: [], similar: [],
+  coverage: {}, keyPositions: {}, answerBalance: null, balanced: 0, status: 'pass'
 };
 
 var before = evidenceSnapshot();
@@ -275,7 +236,6 @@ applicable.forEach(function(entry){
 function applyTo(entry, t, id){
   var item = find(t, id);
   if (!item) return;
-  if (locked(t, entry.d, id, item)){ audit.protectedItems.push(id); return; }
 
   var patch = {title: entry.title};
   if (t === 'reading')        patch.text   = entry.text;
@@ -332,28 +292,11 @@ if (before !== evidenceSnapshot()){
   return;
 }
 
-/* ---------- 语料未覆盖的日期（Day 1–3 等）同样要打散正确项位置 ----------
- * 语料只覆盖 Day 4–50。Day 1–3 由更早的生成层产出，实测 76% 的正确项落在第一位，
- * 新用户照样能靠「一律点第一个」拿到大部分分数。缺陷是同一个，所以这里对题库里
- * 语料没动过、且学习者没接触过的条目补一次同样的洗牌。
- *
- * 判据必须与日期无关：Day 1–2 的旧条目 id 形如 'r1'，同一条目可能出现在多天，
- * 所以这里扫描全部证据键，只要任何一天出现过就视为已接触，保持原样。
+/* ---------- 语料未覆盖的日期（Day 1–2 等）同样要打散正确项位置 ----------
+ * 语料只覆盖 Day 3–50。更早的生成层产出的条目实测 76% 的正确项落在第一位，
+ * 新用户照样能靠「一律点第一个」拿到大部分分数，所以对语料没动过的条目补一次同样的
+ * 洗牌。与装载一样无条件执行：学习者作答时看到的就是洗牌后的顺序。
  */
-function touchedAnywhere(t, id){
-  var box = (t === 'reading' ? S.reading : S.listening);
-  var a = (box && box.answers) || {}, tail = ':' + String(id) + ':';
-  for (var k in a) if (Object.prototype.hasOwnProperty.call(a, k) && k.indexOf(tail) > 0) return true;
-  if (completedEvidence(t, id)) return true;
-  var m = S.replacements177 && S.replacements177[t];
-  for (var j in (m || {})){
-    if (!Object.prototype.hasOwnProperty.call(m, j)) continue;
-    var r = m[j];
-    if (r && (String(r.newId || '') === String(id) || String(r.oldId || '') === String(id))) return true;
-  }
-  return false;
-}
-
 (function balanceRest(){
   var done = {};
   audit.applied.forEach(function(id){ done[id] = 1; });
@@ -363,7 +306,6 @@ function touchedAnywhere(t, id){
     b.forEach(function(item){
       if (!item || !Array.isArray(item.qs)) return;
       if (done[String(item.id)]) return;                 /* 语料已处理，别洗第二次 */
-      if (touchedAnywhere(t, item.id)) { audit.balanceSkipped++; return; }
       item.qs = item.qs.map(function(q){
         if (!Array.isArray(q) || !Array.isArray(q[1])) return q;
         var mix = shuffled(q[0], q[1], q[2]);
@@ -453,7 +395,6 @@ if (typeof globalThis.progressPage === 'function'){
     var tone = audit.status === 'pass' ? 'good' : 'warn';
     var lines = [
       '已装载逐篇撰写材料：<b>' + audit.applied.length + '</b> 篇（阅读 ' + (audit.coverage.reading || 0) + ' · 听力 ' + (audit.coverage.listening || 0) + '）',
-      '因你已作答而冻结、保持原样：<b>' + audit.protectedItems.length + '</b> 篇',
       '校验未通过而未装载：<b>' + audit.rejected.length + '</b> 篇 · 相似度超阈值：<b>' + audit.similar.length + '</b> 对'
     ];
     if (audit.answerBalance){

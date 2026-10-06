@@ -258,18 +258,10 @@ check(!!corpusAudit, 'corpus layer published its audit');
 if (corpusAudit) {
   check(corpusAudit.status === 'pass', 'corpus audit status is pass',
     `${corpusAudit.status}: rejected ${JSON.stringify(corpusAudit.rejected).slice(0, 200)} similar ${JSON.stringify(corpusAudit.similar).slice(0, 120)} missing ${JSON.stringify(corpusAudit.missing).slice(0, 120)}`);
-  notes.push(`  info corpus: ${corpusAudit.applied.length} documents applied, ${corpusAudit.protectedItems.length} frozen as already studied, coverage ${JSON.stringify(corpusAudit.coverage)}`);
+  notes.push(`  info corpus: ${corpusAudit.applied.length} documents applied, coverage ${JSON.stringify(corpusAudit.coverage)}`);
 }
 
-/**
- * A document the learner has already answered is frozen on the text they saw, by
- * policy — their record must stay valid. Those documents keep whatever the older
- * generator produced, so the content-quality gates below judge what can still be
- * delivered, and the frozen ones are reported separately rather than silently.
- */
-const frozen = new Set((corpusAudit && corpusAudit.protectedItems) || []);
-const deliverable = (r) => inWindow(r) && !frozen.has(r.item.id);
-notes.push(`  info ${frozen.size} document(s) frozen on the text this learner already answered; quality gates below cover the ${R.filter(deliverable).length + L.filter(deliverable).length} still deliverable`);
+const deliverable = inWindow;
 
 function uniqueness(rows, label) {
   const scoped = rows.filter(deliverable);
@@ -372,15 +364,6 @@ for (const r of scopedR.concat(scopedL)) {
 }
 check(broken.length === 0, 'every question has a valid key, distinct options and an explanation', broken.slice(0, 4).join('; '));
 
-/* The documents this learner already studied must be frozen, not rewritten. */
-const studied = ['r181-d04-s01', 'r181-d04-s02', 'r181-d04-s03', 'l181-d04-s01'];
-if (corpusAudit) {
-  const frozen = new Set(corpusAudit.protectedItems || []);
-  const rewritten = studied.filter((id) => !frozen.has(id) && (corpusAudit.applied || []).includes(id));
-  check(rewritten.length === 0, 'documents the learner already answered are frozen, never rewritten', rewritten.join(', '));
-  notes.push(`  info frozen for this learner: ${(corpusAudit.protectedItems || []).join(', ') || 'none'}`);
-}
-
 /* A browser whose assignment map was lost must still get day-appropriate documents. */
 const noMap = priorLearnerState();
 delete noMap.assignments172;
@@ -425,7 +408,7 @@ if (renderProbe && !renderProbe.err) {
 }
 
 /* Coverage of the authored window, reported so the gap is never silent. */
-const authoredIds = new Set((corpusAudit && corpusAudit.applied || []).concat(corpusAudit && corpusAudit.protectedItems || []));
+const authoredIds = new Set((corpusAudit && corpusAudit.applied) || []);
 const gaps = [];
 for (let day = 4; day <= AUTHORED_UNTIL; day++) {
   for (const [prefix, rows] of [['r', R], ['l', L]]) {
@@ -475,7 +458,7 @@ function balanceOf(counts) {
     'the corpus layer reports a balanced answer-key distribution',
     corpusAudit && JSON.stringify(corpusAudit.answerBalance));
   if (corpusAudit) {
-    notes.push(`  info option order: ${corpusAudit.applied.length} authored + ${corpusAudit.balanced || 0} legacy documents shuffled, ${corpusAudit.balanceSkipped || 0} left as studied`);
+    notes.push(`  info option order: ${corpusAudit.applied.length} authored + ${corpusAudit.balanced || 0} legacy documents shuffled`);
   }
 }
 
@@ -505,36 +488,60 @@ function balanceOf(counts) {
 }
 
 /**
- * The learner this project exists for has days 1-3 finished, day 4 reading finished
- * and one day-4 listening answered. Every document behind that evidence must come
- * back byte-for-byte, option order included — otherwise their stored answer indices
- * would point at options that moved.
+ * Every layer rebuilds the question banks on each boot and none of it is stored, so a
+ * document's content must be a function of its id alone. A learner first meets every
+ * document with no answer on it, i.e. exactly as a fresh browser sees it, and their
+ * answer indices are stored against that. If any layer made content depend on learning
+ * evidence (answers, completions, day counters, records, drafts), the next boot would
+ * swap an answered document for an older text and the stored answers would point at
+ * options the learner never saw. So: a fresh learner, the fixture learner and a learner
+ * who has touched everything must all get identical banks, grammar included.
  */
-{
-  const studiedIds = { reading: [], listening: [] };
-  for (const [key] of Object.entries(prior.reading.answers)) studiedIds.reading.push(key.split(':')[1]);
-  for (const [key] of Object.entries(prior.listening.answers)) studiedIds.listening.push(key.split(':')[1]);
-  const el = W.document.createElement('script');
-  el.textContent = `window.__probe=(function(){var ids=${JSON.stringify(studiedIds)},out={};
-    ['reading','listening'].forEach(function(t){var b=(t==='reading'?V13_READINGS:V13_LISTENINGS);
-      ids[t].forEach(function(id){ for(var i=0;i<b.length;i++) if(String(b[i].id)===id){
-        out[t+'|'+id]=JSON.stringify({t:b[i].title,x:String(b[i].text||b[i].script||''),q:b[i].qs}); break; } });});
+function contentOf(win) {
+  const el = win.document.createElement('script');
+  el.textContent = `window.__probe=(function(){var out={};
+    function fp(x){return JSON.stringify([x.title,x.text||x.script||x.prompt||x.task||'',(x.qs||[]).map(function(q){return [q[0],q[1],q[2],q[3]];})]);}
+    [['reading',V13_READINGS],['listening',V13_LISTENINGS],['writing',V13_WRITINGS],['speaking',V13_SPEAKING],['application',V13_APPLICATION]].forEach(function(p){
+      p[1].forEach(function(x){ out[p[0]+'|'+x.id]=fp(x); });});
+    GRAMMAR.forEach(function(g){ grammarQuestions(g).forEach(function(q,i){ out['grammar|'+g.id+'|'+i]=JSON.stringify([q[0],q[1],q[2],q[3]]); }); });
     return out;})();`;
-  W.document.body.appendChild(el); el.remove();
-  const studied = W.__probe || {};
-  /* Days 1-2 of the fixture use synthetic ids that the bank never had, so presence
-     is a property of the fixture, not of this build. What must hold is the reverse:
-     of the answered documents that do exist, none may have been touched. */
-  const resolved = [...new Set([].concat(
-    studiedIds.reading.map((i) => 'reading|' + i), studiedIds.listening.map((i) => 'listening|' + i)))]
-    .filter((k) => studied[k]);
-  check(resolved.length > 0, 'answered documents resolve in the bank so the freeze can be checked',
-    `${resolved.length} resolved`);
-  notes.push(`  info ${resolved.length} of the learner's answered documents exist in this bank and were checked for drift`);
-  const shuffledStudied = Object.entries(studied).filter(([k]) => frozen.has(k.split('|')[1]))
-    .filter(([, v]) => { try { return JSON.parse(v).q.some((q) => q[4] && q[4].route === 'corpus-authored-v1'); } catch (e) { return false; } });
-  check(shuffledStudied.length === 0, 'no document the learner already answered was rewritten or reshuffled',
-    shuffledStudied.map(([k]) => k).slice(0, 3).join(', '));
+  win.document.body.appendChild(el); el.remove();
+  return win.__probe || {};
+}
+function everythingTouched(fresh, content) {
+  const st = JSON.parse(JSON.stringify(fresh));
+  const C = ((st.contentProgress172 = st.contentProgress172 || {}).completed = st.contentProgress172.completed || {});
+  const at = '2026-10-05T12:00:00.000Z';
+  st.daily = st.daily || {};
+  st.drafts171 = st.drafts171 || {};
+  for (let d = 1; d <= 50; d++) st.daily[d] = Object.assign({}, st.daily[d], { grammar: 10, reading: 4, listening: 4, writing: 2, speaking: 4, application: 4 });
+  for (const key of Object.keys(content)) {
+    const [t, id, qi] = key.split('|');
+    const day = Number((/-d(\d+)-s/.exec(id) || [])[1] || 1);
+    C[t] = C[t] || {};
+    if (t === 'grammar') { C.grammar['GQ-' + id + '-' + String(Number(qi) + 1).padStart(2, '0')] = { day, at }; continue; }
+    C[t][id] = { day, at };
+    if (t === 'reading' || t === 'listening') { for (let q = 0; q < 3; q++) st[t].answers[`${day}:${id}:${q}`] = 0; continue; }
+    st[t].records = st[t].records || [];
+    st[t].records.push({ day, contentId: id, title: 'x', text: 'x', at });
+    if (t !== 'speaking') (st.drafts171[t] = st.drafts171[t] || {})[`${day}:${t}:${id}`] = 'brouillon';
+  }
+  return st;
+}
+{
+  const fresh = contentOf(cold.window);
+  const touched = boot(everythingTouched(cold.stored(), fresh));
+  check(touched.errors.length === 0, 'bundle boots for a learner who has answered every document', touched.errors[0]);
+  const keys = Object.keys(fresh);
+  for (const [label, win] of [['the fixture learner', W], ['a learner who answered everything', touched.window]]) {
+    const got = contentOf(win);
+    const drift = keys.filter((k) => got[k] !== fresh[k]);
+    check(keys.length > 3000 && drift.length === 0, `every document and grammar question is identical for a fresh learner and ${label}`,
+      `${drift.length}/${keys.length} differ, e.g. ${drift.slice(0, 4).join(', ')}`);
+  }
+  const answered = Object.keys(prior.reading.answers).map((k) => 'reading|' + k.split(':')[1])
+    .concat(Object.keys(prior.listening.answers).map((k) => 'listening|' + k.split(':')[1])).filter((k) => fresh[k]);
+  notes.push(`  info ${keys.length} documents and grammar questions compared; ${new Set(answered).size} of them carry the fixture learner's answers`);
 }
 
 /* ------------------------------------------------------------- report */

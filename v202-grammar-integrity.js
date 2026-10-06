@@ -13,7 +13,6 @@ function installGrammarIntegrity202(){
   function clone202(x){try{return JSON.parse(JSON.stringify(x))}catch(e){return x}}
   function norm202(x){return String(x==null?'':x).replace(/\s+/g,' ').trim()}
   function qid202(g,q,qi){return q&&q[4]&&q[4].traceId?String(q[4].traceId):`GQ-${g.id}-${String(qi+1).padStart(2,'0')}`}
-  function completed202(id){return !!(S&&S.contentProgress172&&S.contentProgress172.completed&&S.contentProgress172.completed.grammar&&S.contentProgress172.completed.grammar[id])}
   function completion202(day,id){const r=S&&S.contentProgress172&&S.contentProgress172.completed&&S.contentProgress172.completed.grammar&&S.contentProgress172.completed.grammar[id];return r&&Number(r.day)===Number(day)?r:null}
   function isGenericFallback202(q){return !!(q&&(norm202(q[3])===GENERIC_WHY||GENERIC_STEM.test(norm202(q[0]))))}
   function generatedOrdinal202(q,qi){const id=q&&q[4]&&q[4].traceId||'',m=String(id).match(/-(\d+)$/);return m?Math.max(0,Number(m[1])-1):Math.max(0,qi)}
@@ -206,31 +205,27 @@ function installGrammarIntegrity202(){
     return true;
   }
 
+  /* The bank is rebuilt on every boot and never stored, so a repair applies to every
+     question whether or not it was answered: a learner only ever answered the repaired
+     question, and skipping it once answered would bring back the mismatched one. */
   function repairQuestionBank202(){
-    const out={scanned:0,repairedMismatch:0,protectedMismatch:0,repairedStems:0,protectedStems:0,unresolvedMismatch:[],unresolvedIncomplete:[],exactStemDuplicates:[]};
+    const out={scanned:0,repairedMismatch:0,repairedStems:0,unresolvedMismatch:[],unresolvedIncomplete:[],exactStemDuplicates:[]};
     const seen=new Map();
     for(const g of GRAMMAR){
       const qs=grammarQuestions(g);
       for(let qi=0;qi<qs.length;qi++){
         const q=qs[qi];if(!q)continue;out.scanned++;
-        const id=qid202(g,q,qi),prot=completed202(id);
-        if(LATE_IDS.has(g.id)&&isGenericFallback202(q)){
-          if(prot)out.protectedMismatch++;
-          else if(applyCase202(g,q,qi))out.repairedMismatch++;
-        }
+        if(LATE_IDS.has(g.id)&&isGenericFallback202(q)&&applyCase202(g,q,qi))out.repairedMismatch++;
         const full=clarifiedStem202(g.id,q[0]);
-        if(full&&full!==q[0]){
-          if(prot)out.protectedStems++;
-          else{q[0]=full;out.repairedStems++;if(q[4]&&typeof q[4]==='object')q[4].integrityRoute=ROUTE;}
-        }
+        if(full&&full!==q[0]){q[0]=full;out.repairedStems++;if(q[4]&&typeof q[4]==='object')q[4].integrityRoute=ROUTE;}
       }
     }
     for(const g of GRAMMAR){
       const qs=grammarQuestions(g);
       for(let qi=0;qi<qs.length;qi++){
-        const q=qs[qi],id=qid202(g,q,qi),prot=completed202(id),stem=norm202(q&&q[0]),key=stem.toLowerCase();
-        if(!prot&&LATE_IDS.has(g.id)&&isGenericFallback202(q))out.unresolvedMismatch.push({node:g.id,id,stem});
-        if(!prot&&clarifiedStem202(g.id,stem))out.unresolvedIncomplete.push({node:g.id,id,stem});
+        const q=qs[qi],id=qid202(g,q,qi),stem=norm202(q&&q[0]),key=stem.toLowerCase();
+        if(LATE_IDS.has(g.id)&&isGenericFallback202(q))out.unresolvedMismatch.push({node:g.id,id,stem});
+        if(clarifiedStem202(g.id,stem))out.unresolvedIncomplete.push({node:g.id,id,stem});
         if(key){if(seen.has(key))out.exactStemDuplicates.push({stem,first:seen.get(key),again:`${g.id}:${qi+1}`});else seen.set(key,`${g.id}:${qi+1}`)}
       }
     }
