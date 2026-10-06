@@ -41,11 +41,11 @@ export async function spacedView(d) {
       <header class="page-head">
         <p class="eyebrow">Révision espacée</p>
         <h1 class="display-s">间隔复习</h1>
-        <p class="muted">今日 ${m.done} / ${m.total} 项 · 复习 ${sources.map((s) => `Jour ${s}`).join('、')} 的语法与词块（间隔 1、3、7、14、21、30、45 天）。</p>
+        <p class="muted">今日 ${m.done} / ${m.total} 项（圆形为语法题，方形为词块）· 复习 ${sources.map((s) => `Jour ${s}`).join('、')} 的语法与词块（间隔 1、3、7、14、21、30、45 天）。</p>
       </header>
       <nav class="dots" aria-label="复习项">${items.map((it, i) => {
         const v = rec(it);
-        return html`<button class="dot-q ${i === n ? 'on' : ''} ${v ? (v.correct ? 'ok' : 'bad') : ''} ${i >= due() ? 'extra' : ''}" data-act="goto" data-i="${i}" aria-label="第 ${i + 1} 项">${it.kind === 'v' ? '词' : i + 1}</button>`;
+        return html`<button class="dot-q ${it.kind === 'v' ? 'chunk' : ''} ${i === n ? 'on' : ''} ${v ? (v.correct ? 'ok' : 'bad') : ''} ${i >= due() ? 'extra' : ''}" data-act="goto" data-i="${i}" aria-label="第 ${i + 1} 项（${it.kind === 'v' ? '词块' : '语法'}）">${i + 1}</button>`;
       })}</nav>
       ${x.kind === 'g' ? grammarCard(x, r) : html`${recallCard(x.chunk, revealed || Boolean(r), `Jour ${pad2(x.src)} · ${pad2(n + 1)} / ${pad2(items.length)}${n >= due() ? ' · 选做' : ''}`, Boolean(r))}
         ${r ? html`<p class="hint">${r.correct ? '已记住' : '已标记为再练'} · <button class="linkish" data-act="next">下一项</button></p>` : ''}`}

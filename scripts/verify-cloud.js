@@ -527,6 +527,7 @@ async function browserTests(base, owner, s3) {
   if (!pw) { results.push('  skip: Playwright is not installed (NODE_PATH)'); return; }
   const day = (d) => JSON.parse(fs.readFileSync(path.join(ROOT, `course/days/${String(d).padStart(2, '0')}.json`), 'utf8'));
   const D1 = day(1), course = JSON.parse(fs.readFileSync(path.join(ROOT, 'course/course.json'), 'utf8'));
+  const question = (id) => JSON.parse(fs.readFileSync(path.join(ROOT, 'course/questions', id.replace(/-\d+$/, '') + '.json'), 'utf8')).find((q) => q.id === id);
   const browser = await pw.chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'] });
   const errors = [];
   const open = async (opts = {}) => {
@@ -558,7 +559,7 @@ async function browserTests(base, owner, s3) {
   await A.waitForSelector('.qcard');
   const due = course.quotas.standard.grammar, letters = 'abcde';
   for (let i = 0; i < due; i++) {
-    const q = D1.grammar[i], pick = i === 2 ? (q.answer + 1) % q.options.length : q.answer;
+    const q = question(D1.grammar[i]), pick = i === 2 ? (q.answer + 1) % q.options.length : q.answer;
     await A.waitForSelector(`.dot-q.on >> text="${i + 1}"`);
     await A.keyboard.press(letters[pick]);
     await A.waitForSelector('.feedback');
@@ -680,7 +681,7 @@ async function browserTests(base, owner, s3) {
   check(await B.isVisible('.nav') && /今日已完成|今日完成度/.test(await B.textContent('.hero-state')), 'the second device opens the same day');
   await B.goto(base + '/#/day/1/grammar/11');
   await B.waitForSelector('.qcard');
-  await B.click(`.opt >> nth=${D1.grammar[10].answer}`);
+  await B.click(`.opt >> nth=${question(D1.grammar[10]).answer}`);
   await settled(B);
   await A.goto(base + '/#/day/1/grammar/11');
   await A.waitForSelector('.qcard');

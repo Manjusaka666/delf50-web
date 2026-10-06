@@ -40,6 +40,7 @@ for (const n of nodes) {
 
 const REMEDIAL_FROM = 41;
 const nodeOf = (id) => id.replace(/-\d+$/, '');
+const node = (id) => nodes.find((n) => n.id === id);
 const bank = new Map(), taught = {};
 for (const n of nodes) {
   const qs = JSON.parse(fs.readFileSync(path.join(DIR, 'questions', n.id + '.json'), 'utf8'));
@@ -92,6 +93,8 @@ for (const d of days) {
   if (d.day >= REMEDIAL_FROM) {
     // Days 41–50 draw their grammar from the learner's weakest points (app/course.js).
     check(d.remedial === true && !d.grammar && !d.focus, at, 'a remediation day has no fixed grammar or focus');
+    // …and add optional B1→B2 bridge questions.
+    check(Array.isArray(d.bridge) && d.bridge.length >= 3 && d.bridge.every((id) => bank.has(id) && node(nodeOf(id)).firstDay >= REMEDIAL_FROM), at, 'bridge questions missing or unknown');
   } else {
     check(!d.remedial && d.grammar.length === course.quotas.high.grammar, at, `grammar: ${d.grammar && d.grammar.length} questions, need ${course.quotas.high.grammar}`);
     check(new Set(d.grammar).size === d.grammar.length, at, 'grammar question repeated within the day');
