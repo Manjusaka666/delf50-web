@@ -329,8 +329,7 @@ if(top190){
     return '<div class="muted">App '+APP+' · 内容版本 '+CONTENT+'</div>'+h;
   };
 }
-S.version=APP;
-if(S.meta172){S.meta172.appVersion=APP;S.meta172.contentVersion=CONTENT;S.meta172.inputQuality=ROUTE;S.meta172.studentInputMetadata='hidden-v2'}
+
 globalThis.__DELF50_INPUT_QUALITY={version:APP,contentVersion:CONTENT,route:ROUTE,sourceSeedCatalog:SOURCE_SEEDS_RAW.length,sourceSeeds:SOURCE_SEEDS.length,stats};
 if(typeof render==='function')render();
 })();

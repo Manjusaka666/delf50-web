@@ -223,7 +223,7 @@ if(typeof writingView==='function'){const base=writingView;writingView=function(
 if(typeof speakingView==='function'){const base=speakingView;speakingView=function(){return stripDevHtml(base())}}
 if(typeof applicationView==='function'){const base=applicationView;applicationView=function(){return stripDevHtml(base())}}
 if(typeof grammar==='function'){const base=grammar;grammar=function(){return stripDevHtml(base())}}
-S.version=APP;S.contentAudit188={route:ROUTE,at:new Date().toISOString(),...report,historySafe:true};if(S.meta172){S.meta172.appVersion=APP;S.meta172.contentVersion=CONTENT;S.meta172.studentContent=ROUTE;S.meta172.studentUi=UI_ROUTE;S.meta172.historyPolicy='started-completed-content-immutable';S.meta172.readingAlignment='curriculum-day-aware-v2';S.meta172.listeningAlignment='curriculum-day-aware-v1';S.meta172.outputAlignment='curriculum-day-aware-v1'}
+
 try{if(typeof KEY!=='undefined')localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}
 globalThis.__DELF50_V188={appVersion:APP,contentVersion:CONTENT,route:ROUTE,studentUi:UI_ROUTE,curriculumSource:'v17-canonical-v1',audit:report};
 if(typeof render==='function')render();

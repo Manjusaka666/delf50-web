@@ -40,5 +40,5 @@ const v17Top=(title,sub)=>header17(title,sub);if(typeof pageTop!=='undefined')pa
 const _bind17=bind;bind=function(){_bind17();document.querySelectorAll('[data-specialview]').forEach(b=>b.onclick=()=>{view=b.dataset.specialview;render()});document.querySelectorAll('[data-dayjump]').forEach(b=>b.onclick=()=>{setDay(Number(b.dataset.dayjump));if(view==='curriculum')view='curriculum';else view='today';render()});}
 const _render17=render;render=function(){try{if(view==='curriculum'||view==='sources'){const root=document.getElementById('root'),body=view==='curriculum'?curriculumPage17():sourcesPage17();root.innerHTML=`<div class="app">${body}${nav()}</div>`;bind();return}_render17()}catch(err){document.body.innerHTML=`<div class="errorpage"><b>DELF50 页面加载失败</b><p>学习数据不会因此清空。请刷新后重试。</p><pre>${esc(err.message||err)}</pre><button onclick="location.reload()">重新加载</button></div>`}}
 window.__delfV17={version:V17,curriculumCount:CURRICULUM_50.length,curriculumSource:'canonical-v1',sourceCount:Object.keys(SOURCE_CATALOG).length,audit:provenanceAudit()};
-S.version=V17;save();render();
+save();render();
 })();

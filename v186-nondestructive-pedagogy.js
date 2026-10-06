@@ -147,14 +147,6 @@ function audit(){
   return{checked,idMismatch,answerMismatch,forbidden,nonDestructive:idMismatch===0&&answerMismatch===0};
 }
 const report=audit();
-S.contentAudit186={route:ROUTE,at:new Date().toISOString(),...report};
-S.version=APP;
-if(S.meta172){
-  S.meta172.appVersion=APP;
-  S.meta172.contentVersion=CONTENT;
-  S.meta172.studentContent=ROUTE;
-  S.meta172.historyPolicy='started-completed-content-immutable';
-}
 try{if(typeof KEY!=='undefined')localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}
 globalThis.__DELF50_V186={appVersion:APP,contentVersion:CONTENT,route:ROUTE,audit:report,studentCopy};
 if(typeof render==='function')render();

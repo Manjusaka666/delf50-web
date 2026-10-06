@@ -84,18 +84,6 @@ var LEAK_RE = /\b(?:traceId|sourceSeed|contentId|familyId|semanticFingerprint|sl
 function plain(s){ return String(s == null ? '' : s).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(); }
 function norm(s){ return plain(s).toLowerCase().replace(/[^a-zà-ÿ0-9 ]+/gi, ' ').replace(/\s+/g, ' ').trim(); }
 function words(s){ return norm(s).split(' ').filter(Boolean).length; }
-function grams(s){
-  var a = norm(s).split(' '), r = {};
-  for (var i = 0; i + 2 < a.length; i++) r[a[i] + ' ' + a[i+1] + ' ' + a[i+2]] = 1;
-  return r;
-}
-function jaccard(a, b){
-  var n = 0, ka = Object.keys(a), kb = Object.keys(b);
-  if (!ka.length || !kb.length) return 0;
-  for (var i = 0; i < ka.length; i++) if (b[ka[i]]) n++;
-  return n / (ka.length + kb.length - n);
-}
-
 /* ---------- 选项位置随机化 ----------
  * 手写语料里正确项一律写在第一位，方便撰写和校对。若原样装载，学习者只要每题
  * 都点第一个选项就能拿满分，题目变成纯位置匹配，和理解无关。
@@ -186,7 +174,7 @@ function validate(entry, seen){
 var audit = {
   route: ROUTE, app: REL.app, content: REL.content,
   corpusSize: CORPUS.length,
-  applied: [], missing: [], rejected: [], similar: [],
+  applied: [], missing: [], rejected: [],
   coverage: {}, keyPositions: {}, answerBalance: null, balanced: 0, status: 'pass'
 };
 
@@ -207,24 +195,6 @@ CORPUS.forEach(function(entry){
   if (t === 'reading' || t === 'listening') seen.domain[entry.d + '|' + String(entry.domain || '').toLowerCase()] = t;
   applicable.push(entry);
 });
-
-/* 语料内部相似度审计（3-gram Jaccard），阈值 0.55，比生成式题库更严格 */
-(function(){
-  var byType = {};
-  applicable.forEach(function(e){
-    var t = TYPE[e.t];
-    if (t !== 'reading' && t !== 'listening') return;
-    (byType[t] = byType[t] || []).push({tag: 'D' + e.d + 'S' + e.s, g: grams(t === 'listening' ? e.script : e.text)});
-  });
-  Object.keys(byType).forEach(function(t){
-    var arr = byType[t];
-    for (var i = 0; i < arr.length; i++)
-      for (var j = i + 1; j < arr.length; j++){
-        var q = jaccard(arr[i].g, arr[j].g);
-        if (q >= 0.55) audit.similar.push([t, arr[i].tag, arr[j].tag, Number(q.toFixed(3))]);
-      }
-  });
-})();
 
 applicable.forEach(function(entry){
   var t = TYPE[entry.t], ids = itemIds(t, entry.d, entry.s), found = 0;
@@ -340,7 +310,7 @@ if (before !== evidenceSnapshot()){
   };
 })();
 
-audit.status = (audit.rejected.length || audit.similar.length || audit.missing.length
+audit.status = (audit.rejected.length || audit.missing.length
   || (audit.answerBalance && !audit.answerBalance.ok)) ? 'warn' : 'pass';
 
 /* ---------- 显示层清洗（承接原 v199 行为） ---------- */
@@ -387,33 +357,6 @@ if (typeof globalThis.listeningView === 'function'){
     globalThis[n] = function(){ return clean(prev.apply(this, arguments)); };
   }
 });
-
-/* Un audit qui ne s'affiche nulle part ne sert à rien : il passe sur la page progrès. */
-if (typeof globalThis.progressPage === 'function'){
-  var prevProgress200 = globalThis.progressPage;
-  globalThis.progressPage = function(){
-    var tone = audit.status === 'pass' ? 'good' : 'warn';
-    var lines = [
-      '已装载逐篇撰写材料：<b>' + audit.applied.length + '</b> 篇（阅读 ' + (audit.coverage.reading || 0) + ' · 听力 ' + (audit.coverage.listening || 0) + '）',
-      '校验未通过而未装载：<b>' + audit.rejected.length + '</b> 篇 · 相似度超阈值：<b>' + audit.similar.length + '</b> 对'
-    ];
-    if (audit.answerBalance){
-      var b = audit.answerBalance, pos = Object.keys(b.positions).sort();
-      lines.push('正确答案位置分布：' + pos.map(function(k){
-        return '第' + (Number(k) + 1) + '项 ' + b.positions[k] + ' 题（' + (100 * b.positions[k] / b.total).toFixed(1) + '%）';
-      }).join(' · ') + (b.ok ? ' —— 分布均匀，无法靠固定位置作答' : ' —— <b>分布偏斜，请检查</b>'));
-    }
-    if (audit.rejected.length){
-      lines.push('未装载明细：' + audit.rejected.slice(0, 5).map(function(r){
-        return 'D' + r.day + ' ' + r.type + ' s' + r.slot + '（' + r.problems.join('、') + '）';
-      }).join('；'));
-    }
-    return prevProgress200.apply(this, arguments)
-      + '<div class="card"><h2>学习材料校验</h2><div class="callout ' + tone + '">'
-      + '<b>' + (audit.status === 'pass' ? '✓ 全部通过' : '⚠ 有条目未装载，详见下方') + '</b><br>' + lines.join('<br>')
-      + '</div><div class="storage">每篇材料在装载前逐条校验：题干与选项完整、答案下标有效、选项互不相同、正文长度达标、同一天阅读与听力主题不重叠、正文不含开发端编号。不合格的条目不会写入题库。选项顺序由题目内容的哈希一次性打乱，正确项均匀分布在各个位置；同一道题的排列在任何设备与任何一次更新后都保持一致，已保存的答题记录不会错位。</div></div>';
-  };
-}
 
 /* Ne jamais présenter comme « à faire » un document déjà entièrement répondu. */
 if (typeof globalThis.currentReading === 'function' && typeof globalThis.currentListening === 'function'){

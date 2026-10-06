@@ -56,7 +56,7 @@ function previousUsed176(type,day){const box=assignment176(day),list=box[type]||
 function route176(type,day=S.selectedDay){const b=bank176(type),ids=pool176(type,day).map(x=>cid176(x,type,b.indexOf(x)));if(Number(day)<=1)return ids;const avoid=previousUsed176(type,Number(day)-1);return ids.filter(id=>!avoid.has(id)).concat(ids.filter(id=>avoid.has(id)))}
 function lockedPrefix176(type,day=S.selectedDay){const list=assignment176(day)[type],done=dailyCount176(day,type);let locked=Math.min(list.length,done);if(type==='reading'||type==='listening'){for(let i=locked;i<list.length;i++){if(inputTouched176(type,day,find176(type,list[i])))locked=i+1;else break}}else if((type==='writing'||type==='application')&&draftTouched176(type,day))locked=Math.max(locked,Math.min(list.length,done+1));return locked}
 function persist176(){try{if(typeof KEY!=='undefined')localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
-function ensureRoute176(type,day=S.selectedDay){const box=assignment176(day),old=box[type].slice(),locked=lockedPrefix176(type,day),keep=old.slice(0,locked),used=new Set(keep),candidate=route176(type,day),target=Math.max(maxQuota176(type),old.length),next=keep.slice();for(const id of candidate){if(next.length>=target)break;if(!used.has(id)){next.push(id);used.add(id)}}const changed=old.length!==next.length||old.some((x,i)=>x!==next[i]);if(changed){box[type]=next;if(S.meta172){S.meta172.contentRouting=ROUTING_VERSION_176;S.meta172.contentRoutingUpdatedAt=new Date().toISOString()}persist176()}return box[type]}
+function ensureRoute176(type,day=S.selectedDay){const box=assignment176(day),old=box[type].slice(),locked=lockedPrefix176(type,day),keep=old.slice(0,locked),used=new Set(keep),candidate=route176(type,day),target=Math.max(maxQuota176(type),old.length),next=keep.slice();for(const id of candidate){if(next.length>=target)break;if(!used.has(id)){next.push(id);used.add(id)}}const changed=old.length!==next.length||old.some((x,i)=>x!==next[i]);if(changed){box[type]=next;persist176()}return box[type]}
 function ensureRoutes176(day=S.selectedDay){for(const t of TYPES_176)ensureRoute176(t,day);return assignment176(day)}
 function resolve176(type,index,day=S.selectedDay){const b=bank176(type),list=ensureRoute176(type,day),id=list[Math.max(0,Number(index)||0)];if(id){const item=b.find((x,i)=>cid176(x,type,i)===id);if(item)return item}const p=pool176(type,day);return p.length?p[Math.max(0,Number(index)||0)%p.length]:b[0]}
 function browse176(type){const b=UI&&UI.browse174&&UI.browse174[type];return b&&Number.isInteger(b[String(S.selectedDay)])?b[String(S.selectedDay)]:dailyCount176(S.selectedDay,type)}
@@ -83,7 +83,7 @@ function inject176(){if(document.getElementById('v176-style'))return;const st=do
 inject176();
 
 const saveBase176=save;
-save=function(){saveBase176();syncCompletion176(S.selectedDay);S.version=APP_VERSION_176;if(S.meta172){S.meta172.appVersion=APP_VERSION_176;S.meta172.contentVersion=CONTENT_VERSION_176;S.meta172.contentRouting=ROUTING_VERSION_176;S.meta172.lifecycle=LIFECYCLE_VERSION_176;S.meta172.grammarUI=GRAMMAR_UI_VERSION_176}persist176()};
+save=function(){saveBase176();syncCompletion176(S.selectedDay);persist176()};
 const bindBase176=bind;
 bind=function(){bindBase176();const sel=document.getElementById('grammarNode176');if(sel)sel.onchange=()=>{UI.gNode=Number(sel.value)||0;UI.gQ=0;UI.gSel=null;UI.gAnswered=false;render()};const rg=document.getElementById('recommendedG176');if(rg)rg.onclick=()=>{UI.gNode=recommendedGrammarNode();UI.gQ=0;UI.gSel=null;UI.gAnswered=false;render()};const it=document.getElementById('intensity');if(it)it.onchange=()=>{const next=it.value;if(window.DELF50_ARCH&&typeof window.DELF50_ARCH.changeIntensity==='function')window.DELF50_ARCH.changeIntensity(next);else{S.intensity=next;save();render()}}};
 const renderBase176=render;
@@ -91,7 +91,7 @@ function decorateArchive176(){if(view!=='archive')return;const sel=document.getE
 render=function(){const out=renderBase176();setTimeout(decorateArchive176,0);return out};
 
 ensureRoutes176(S.selectedDay);syncCompletion176(S.selectedDay);const advanced176=autoAdvance176();
-S.version=APP_VERSION_176;if(S.meta172){S.meta172.appVersion=APP_VERSION_176;S.meta172.contentVersion=CONTENT_VERSION_176;S.meta172.contentRouting=ROUTING_VERSION_176;S.meta172.lifecycle=LIFECYCLE_VERSION_176;S.meta172.grammarUI=GRAMMAR_UI_VERSION_176}persist176();
+persist176();
 window.DELF50_V176={version:APP_VERSION_176,contentVersion:CONTENT_VERSION_176,routingVersion:ROUTING_VERSION_176,lifecycleVersion:LIFECYCLE_VERSION_176,grammarUI:GRAMMAR_UI_VERSION_176,autoAdvanced:advanced176,isDayComplete:isComplete176,getCompletion:day=>{const p=plan176(day);return{completedAt:p.completedAt176||null,localDate:p.completedLocalDate176||null,intensity:p.completedIntensity176||null}},getAssignments:(day=S.selectedDay)=>JSON.parse(JSON.stringify(ensureRoutes176(day))),route:(type,day=S.selectedDay)=>route176(type,day).slice(),day2Pack:{reading:DAY2_READINGS_176.length,listening:DAY2_LISTENINGS_176.length,writing:DAY2_WRITINGS_176.length,speaking:DAY2_SPEAKING_176.length,application:DAY2_APPLICATIONS_176.length}};
 if(!advanced176){save();render()}
 })();

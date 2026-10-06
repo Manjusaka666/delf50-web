@@ -42,11 +42,11 @@ const setDayBase174=setDay;
 setDay=function(n){setDayBase174(n);const day=String(S.selectedDay);for(const type of['reading','listening']){const box=UI.browse174[type]||(UI.browse174[type]={});delete box[day]}};
 
 const saveBase174=save;
-save=function(){saveBase174();S.version=APP_VERSION_174;if(S.meta172){S.meta172.appVersion=APP_VERSION_174;S.meta172.contentVersion=CONTENT_VERSION_174}try{if(typeof KEY!=='undefined')localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+save=function(){saveBase174();try{if(typeof KEY!=='undefined')localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
 const progressBase174=progressPage;
 progressPage=function(){return progressBase174().replace(/(<span>教学内容版本<\/span><b>)1\.7\.0(<\/b>)/,'$1'+CONTENT_VERSION_174+'$2')};
 if(window.DELF50_ARCH){window.DELF50_ARCH.version=APP_VERSION_174;window.DELF50_ARCH.contentVersion=CONTENT_VERSION_174;if(typeof window.DELF50_ARCH.report==='function'){const r0=window.DELF50_ARCH.report;window.DELF50_ARCH.report=()=>Object.assign(r0(),{appVersion:APP_VERSION_174,contentVersion:CONTENT_VERSION_174})}}
-S.version=APP_VERSION_174;if(S.meta172){S.meta172.appVersion=APP_VERSION_174;S.meta172.contentVersion=CONTENT_VERSION_174}
+
 window.DELF50_NAVIGATION={version:APP_VERSION_174,contentVersion:CONTENT_VERSION_174,getCursor:(type)=>browseIndex174(type),getHighest:(type)=>highestBrowse174(type),deepGrammarNodes:Object.keys(GRAMMAR_DEEP_174).length};
 save();render();
 })();

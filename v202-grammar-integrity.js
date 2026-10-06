@@ -1,5 +1,4 @@
-'use strict';
-function installGrammarIntegrity202(){
+(function(){
   'use strict';
   const APP='1.9.4', CONTENT='1.9.4', ROUTE='grammar-integrity-history-v1';
   const LATE_IDS=new Set(['passeRecent','plusqueparfait','hypothesis','subjonctif','reported','negationB1','passive','gerondif','ppagreement','prepositionalVerbs','doublePronouns','indefinitePronouns','relativesB1','emphasis','nominalisation','logicalB1','superlative','adverbsB1']);
@@ -356,13 +355,7 @@ function installGrammarIntegrity202(){
   const evidenceAfter202=(()=>{try{return JSON.stringify({daily:S.daily,taskDone:S.taskDone,prodDone:S.prodDone,grammar:{attempts:S.grammar&&S.grammar.attempts,correct:S.grammar&&S.grammar.correct,skill:S.grammar&&S.grammar.skill},contentProgress:S.contentProgress172,assignments:S.assignments172,reading:S.reading&&S.reading.answers,listening:S.listening&&S.listening.answers,writing:S.writing&&S.writing.records,application:S.application&&S.application.records,speaking:S.speaking&&S.speaking.records})}catch(e){return null}})();
   report202.learningEvidencePreserved=evidenceBefore202===evidenceAfter202;
   report202.route=ROUTE;report202.appVersion=APP;report202.contentVersion=CONTENT;
-  if(S.meta172){S.meta172.appVersion=APP;S.meta172.contentVersion=CONTENT;S.meta172.grammarIntegrity=ROUTE;S.meta172.grammarHistory='exact-answer-additive-v1';S.meta172.historyPolicy='started-completed-content-immutable'}
+  
   globalThis.DELF50_GRAMMAR_INTEGRITY_202={version:APP,contentVersion:CONTENT,route:ROUTE,report:report202,run:repairQuestionBank202,clarifiedStem:clarifiedStem202};
   if(typeof render==='function')render();
-}
-
-if(typeof module==='object'&&module.exports){
-  module.exports='('+installGrammarIntegrity202.toString()+')();';
-}else{
-  installGrammarIntegrity202();
-}
+})();

@@ -259,5 +259,5 @@
 
   const v16Top=function(title,sub){return `<div class="top"><div><div class="eyebrow">DELF50 · WEB V${V16}</div><h1>${title}</h1><div class="muted">${sub}</div></div><span class="pill">交互已启动</span></div>`};
   if(typeof pageTop!=='undefined') pageTop=v16Top; else top=v16Top;
-  S.version=V16;save();render();
+  ;save();render();
 })();
