@@ -25,7 +25,7 @@ course/             课程数据（唯一题库）
   grammar.json      语法点：讲解、例句、产出提示（含 B1→B2 衔接）
   questions/        每个语法点一个题库（按需加载）；Day 1–40 依次使用各题库开头的题，补练从其后继续
   days/01–50.json   每天的阅读、听力、写作、口语、应用题目，语法题 ID，45 个词块
-fonts/              自托管字体（Playfair Display、Plus Jakarta Sans，OFL）
+fonts/              自托管字体（EB Garamond、Plus Jakarta Sans，OFL）
 api/v1.js           API（Vercel 函数）：Neon Auth 代理、bootstrap、sync、media、vocab
 api/_lib/           records.js（状态 ↔ 数据表映射）、session、db、r2、media、vocab、courses
 db/migrations/      数据库结构（幂等，按序执行）

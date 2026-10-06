@@ -51,7 +51,7 @@ function shell() {
   app.innerHTML = String(html`
     <a class="skip" href="#view">跳到内容</a>
     <header class="topbar">
-      <a class="brand" href="#/day/${store.S.day}" aria-label="DELF50 首页"><span class="brand-mark">D50</span><span class="brand-word">DELF<em>50</em></span></a>
+      <a class="brand" href="#/day/${store.S.day}" aria-label="DELF50 首页"><span class="brand-mark">D50</span><span class="brand-word">DELF<span>50</span></span></a>
       <div class="topbar-end">
         <span class="sync" data-sync aria-live="polite"></span>
         <button class="avatar" type="button" data-act="account" aria-label="账号">${(store.user.name || store.user.email || '?').slice(0, 1).toUpperCase()}</button>
