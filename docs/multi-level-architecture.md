@@ -7,8 +7,8 @@
 ```
 Neon Auth 账号（一人一个，跨所有级别）
  └── 课程 course（一个级别一门课）  delf-b1 · delf-b2 · dalf-c1 · dalf-c2
-      ├── 学习状态 study_state（计划、路由、设置、计数器；rev）
-      ├── 学习记录（答题、语法、写作、应用、口语、错题、草稿、完成度、每日进度……）
+      ├── 学习状态 study_state（当前天、强度等设置；rev）
+      ├── 学习记录（答题、语法、主动产出、写作、应用、口语、错题、草稿、练习计数）
       └── 录音（R2：u/<user>/<course>/speaking/<clip>）
  └── 词汇本（跨课程，一份）            vocabulary_items（带 CEFR 级别）+ user_vocabulary + vocabulary_reviews
 ```
@@ -29,9 +29,7 @@ Neon Auth 账号（一人一个，跨所有级别）
 | `grammar_productions` | (user_id, **course**, prod_key) |
 | `writing_submissions` / `application_submissions` / `speaking_attempts` / `error_items` | (user_id, **course**, item_key) |
 | `drafts` | (user_id, **course**, kind, draft_key) |
-| `content_completions` | (user_id, **course**, module, content_id) |
-| `task_checks` | (user_id, **course**, task_key) |
-| `daily_progress` / `study_days` / `practice_counters` | (user_id, **course**, day_key) |
+| `practice_counters` | (user_id, **course**, day_key) |
 | `media_objects` | (user_id, **course**, clip_id)；R2 键 `u/<user>/<course>/speaking/<clip>.<ext>` |
 | `vocabulary_items` | 共享词典，新增 `cefr_level`（A1–C2） |
 | `user_vocabulary` / `vocabulary_reviews` | 跨课程；新增 `course` 记录来源 |
@@ -39,7 +37,7 @@ Neon Auth 账号（一人一个，跨所有级别）
 
 为什么把 course 放进主键，而不是给内容 ID 加前缀：
 
-1. **内容 ID 可以跨级别重复**（`GQ-present-01`、`r1`、Day 1–50 在 B2 里也会出现），不需要改写任何题库。
+1. **内容 ID 可以跨级别重复**（`present-01`、`R01-1`、Day 1–50 在 B2 里也会出现），不需要改写任何题库。
 2. **现有 B1 内容和代码完全不变**：列有默认值，未带 course 的请求等同于 `delf-b1`。
 3. 按课程查询、统计、导出和删除都只需要一个条件 `course = …`，而且走主键索引。
 
@@ -54,16 +52,15 @@ Neon Auth 账号（一人一个，跨所有级别）
 
 ## 4. 客户端（已上线）
 
-`cloud/delf50-cloud.js` 从 `window.__DELF50_RELEASE.course` 读取当前课程，默认 `delf-b1`，并附加到每个学习请求上（Neon Auth 的请求不附加）。加载、实时保存、多设备刷新、录音上传都按课程进行，内存中的应用状态也只属于当前课程。
+`app/api.js` 把当前课程（`delf-b1`）附加到每个学习请求上（Neon Auth 的请求不附加）。加载、实时保存、多设备刷新、录音上传都按课程进行，内存中的应用状态也只属于当前课程。
 
 ## 5. 新增一个级别的步骤（以 B2 为例）
 
-1. **内容**：B2 的题库、路由和界面层照 B1 的结构编写（可以另起目录，例如 `courses/delf-b2/…`）。内容 ID 在 B2 内部唯一即可，不必避开 B1。
-2. **构建**：`scripts/build-bundle.js` 按课程生成 `build/bundle-delf-b2.js`（同样的 13 段结构）；`api/source.js` 根据 `?course=` 选择对应的 bundle。ETag 按内容计算，各级别的缓存互不干扰。
-3. **发布信息**：该级别页面的 `release-meta` 中加 `course: 'delf-b2'`（可以按路径区分，例如 `/b2/`，也可以做级别切换）。
-4. **注册**：在 `api/_lib/courses.js` 加一行 `'delf-b2': { level: 'B2', exam: 'DELF', days: …, title: … }`。
-5. **新题型**：如果 B2 应用写入了 B1 没有的记录类型（例如 S 中新增的一个字段），在 `api/_lib/records.js` 的 `COLLECTIONS` 里加一项，并新建迁移创建对应的表（同样带 `course`，主键含 course）。已有的 B1 表不受影响。
-6. **验证**：`scripts/verify-cloud.js` 已包含跨课程隔离测试（同一账号、同样的题目 ID、同样的录音 ID 在两门课中互不干扰）；为新课程加上它自己的往返测试，并在 Vercel Sandbox 中对 Neon 测试分支运行。
+1. **内容**：B2 的课程数据照 `course/` 的结构编写（例如 `courses/delf-b2/course.json`、`grammar.json`、`days/NN.json`），用 `scripts/check-course.js` 校验。内容 ID 在 B2 内部唯一即可，不必避开 B1。
+2. **前端**：`app/course.js` 的数据路径和 `app/api.js` 的课程 ID 按所选课程取值（可以按路径区分，例如 `/b2/`，也可以做级别切换）。
+3. **注册**：在 `api/_lib/courses.js` 加一行 `'delf-b2': { level: 'B2', exam: 'DELF', days: …, title: … }`。
+4. **新题型**：如果 B2 应用写入了 B1 没有的记录类型（例如 S 中新增的一个字段），在 `api/_lib/records.js` 的 `COLLECTIONS` 里加一项，并新建迁移创建对应的表（同样带 `course`，主键含 course）。已有的 B1 表不受影响。
+5. **验证**：`scripts/verify-cloud.js` 已包含跨课程隔离测试（同一账号、同样的题目 ID、同样的录音 ID 在两门课中互不干扰）；为新课程加上它自己的往返测试，并在 Vercel Sandbox 中对 Neon 测试分支运行。
 
 **不需要**：修改已有表结构、迁移已有数据、改动 B1 内容，或者新建账号。
 

@@ -3,22 +3,23 @@
  * The learning state as database entities.
  *
  * The web app keeps one state object S. Its learning records live in their
- * own tables (COLLECTIONS below); everything else (plan, routing, counters,
- * settings) is the study_state document. bootstrap() rebuilds S from the
- * tables; sync() applies one batch of fine-grained changes in one
- * transaction, idempotently, so a retried request is harmless.
+ * own tables (COLLECTIONS below); the rest (current day, intensity, start
+ * date) is the study_state document. Progress is never stored: the app
+ * derives it from the records. bootstrap() rebuilds S from the tables;
+ * sync() applies one batch of fine-grained changes in one transaction,
+ * idempotently, so a retried request is harmless.
  *
  * A record's fields go to typed columns when the value has the column's type,
  * anything else to `extra`, so every record reads back exactly as written.
- * The document keeps each collection's empty container (a two-level map
- * keeps its first level, e.g. the module names), so presence round-trips.
+ * The document keeps each collection's empty container, so presence round-trips.
  *
  * Everything is per course (CEFR level; see _lib/courses.js): each statement
  * carries the course, which is part of every record table's primary key.
  *
- * Wire format of a change batch (see cloud/delf50-cloud.js):
+ * Wire format of a change batch (see app/sync-core.js):
  *   doc: [[path, value] | [path]]                     set / delete in the document
- *   ops: {name: {set: [[key, value, pos?]], del: [key]}}  key = [part, …]
+ *   ops: {name: {set: [[key, value, pos?]], del: [key], move?: [[from, to, pos]]}}  key = [part, …]
+ *   move renames a list row (same record, new key and position).
  */
 const crypto = require('crypto');
 const db = require('./db');
@@ -31,53 +32,44 @@ const TYPES = {
   ts: ['timestamptz', (v) => typeof v === 'string' && ISO_MS.test(v) && new Date(v).toISOString() === v]
 };
 
-// Record types, as the app writes them (see the probe in scripts/verify-cloud.js):
-//   map  — S.path[key] = value      list — S.path = [record, …]      map2 — S.path[module][id] = value
+// Record types, as the app writes them (app/state.js):
+//   map  — S.path[key] = value      list — S.path = [record, …]
 // parse/parsed: descriptive columns derived from the key (the key stays authoritative).
 const int = (s) => (/^\d{1,6}$/.test(s) ? Number(s) : null);
 const answerKey = (k) => { const p = k.split(':'); return { day: int(p[0]), content_id: p.slice(1, -1).join(':') || null, q_index: int(p[p.length - 1]) }; };
-const DAY = { parse: (k) => ({ day: int(k) }), parsed: [['day', 'int']] };
 const answers = (path, table) => ({ path, table, kind: 'map', keys: ['answer_key'], scalar: ['selected', 'int'], touch: 'answered_at',
   parse: answerKey, parsed: [['day', 'int'], ['content_id', 'text'], ['q_index', 'int']] });
-const productions = (path, table, fields, extra) => Object.assign({ path, table, kind: 'list', keys: ['item_key'], fields }, extra);
-const perDay = (path, table, fields) => Object.assign({ path, table, kind: 'map', keys: ['day_key'], fields }, DAY);
+const submissions = (path, table, fields, extra) => Object.assign({ path, table, kind: 'list', keys: ['item_key'], fields }, extra);
+const draft = (kind) => ({ path: ['drafts', kind], table: 'drafts', kind: 'map', keys: ['draft_key'], fixed: { kind }, scalar: ['body', 'text'], touch: 'updated_at' });
 
 const COLLECTIONS = {
-  reading: answers(['reading', 'answers'], 'reading_answers'),
-  listening: answers(['listening', 'answers'], 'listening_answers'),
+  // Reading and listening: "<day>:<item>:<question>" = chosen option.
+  reading: answers(['reading'], 'reading_answers'),
+  listening: answers(['listening'], 'listening_answers'),
+  // Grammar: "<day>:<question>" = the answer as given; every change is kept (append-only).
   grammar: {
-    path: ['grammarReview202'], table: 'grammar_attempts', kind: 'map', keys: ['answer_key'], history: true,
+    path: ['grammar'], table: 'grammar_attempts', kind: 'map', keys: ['answer_key'], history: true,
     fields: [['day', 'day', 'int'], ['content_id', 'contentId', 'text'], ['node_id', 'nodeId', 'text'], ['question', 'question', 'text'],
       ['selected', 'selectedIndex', 'int'], ['correct_index', 'correctIndex', 'int'], ['correct', 'correct', 'bool'], ['answered_at', 'answeredAt', 'ts']]
   },
-  writing: productions(['writing', 'records'], 'writing_submissions', [['day', 'day', 'int'], ['content_id', 'contentId', 'text'],
-    ['title', 'title', 'text'], ['body', 'text', 'text'], ['word_count', 'words', 'int'], ['created_at', 'at', 'ts']]),
-  application: productions(['application', 'records'], 'application_submissions', [['day', 'day', 'int'], ['content_id', 'contentId', 'text'],
-    ['title', 'title', 'text'], ['body', 'text', 'text'], ['created_at', 'at', 'ts']]),
-  speaking: productions(['speaking', 'records'], 'speaking_attempts', [['clip_id', 'id', 'text'], ['day', 'day', 'int'],
-    ['content_id', 'contentId', 'text'], ['title', 'title', 'text'], ['duration_sec', 'sec', 'int'], ['created_at', 'at', 'ts']]),
-  // Fixing an error removes it from the app's list; here it is kept as resolved.
-  errors: productions(['errors'], 'error_items', [['skill', 'skill', 'text'], ['original', 'original', 'text'],
-    ['correction', 'correct', 'text'], ['explanation', 'why', 'text'], ['created_at', 'at', 'ts']], { soft: 'resolved_at' }),
-  // Grammar output practice: prodDone["<day>:<node>:<prompt>"] = true.
-  grammarProductions: { path: ['prodDone'], table: 'grammar_productions', kind: 'map', keys: ['prod_key'], scalar: ['done', 'bool'],
+  // Grammar output practice: "<day>:<node>:<prompt>" = done.
+  production: { path: ['production'], table: 'grammar_productions', kind: 'map', keys: ['prod_key'], scalar: ['done', 'bool'],
     parse: (k) => { const p = k.split(':'); return { day: int(p[0]), node_id: p.slice(1, -1).join(':') || null, prompt_index: int(p[p.length - 1]) }; },
     parsed: [['day', 'int'], ['node_id', 'text'], ['prompt_index', 'int']] },
-  // Daily checklist: taskDone["<day>:<task id>"] = bool.
-  tasks: { path: ['taskDone'], table: 'task_checks', kind: 'map', keys: ['task_key'], scalar: ['done', 'bool'], touch: 'updated_at',
-    parse: (k) => { const i = k.indexOf(':'); return { day: int(k.slice(0, i)), task_id: i < 0 ? k : k.slice(i + 1) }; }, parsed: [['day', 'int'], ['task_id', 'text']] },
-  dailyProgress: perDay(['daily'], 'daily_progress', [['grammar', 'grammar', 'int'], ['grammar_prod', 'grammarProd', 'int'], ['reading', 'reading', 'int'],
-    ['listening', 'listening', 'int'], ['writing', 'writing', 'int'], ['speaking', 'speaking', 'int'], ['application', 'application', 'int']]),
-  studyDays: perDay(['dayHistory171'], 'study_days', [['first_activity_at', 'firstActivityAt', 'ts'], ['last_activity_at', 'lastActivityAt', 'ts'],
-    ['actions', 'actions', 'int'], ['last_action', 'lastAction', 'text']]),
-  // Vocabulary (词块) and review practice counts per day.
-  practice: perDay(['practiceCounters172'], 'practice_counters', [['vocab', 'vocab', 'int'], ['review', 'review', 'int'], ['legacy_inferred', 'legacyInferred', 'bool']]),
-  writingDrafts: { path: ['drafts171', 'writing'], table: 'drafts', kind: 'map', keys: ['draft_key'], fixed: { kind: 'writing' }, scalar: ['body', 'text'], touch: 'updated_at' },
-  applicationDrafts: { path: ['drafts171', 'application'], table: 'drafts', kind: 'map', keys: ['draft_key'], fixed: { kind: 'application' }, scalar: ['body', 'text'], touch: 'updated_at' },
-  completions: {
-    path: ['contentProgress172', 'completed'], table: 'content_completions', kind: 'map2', keys: ['module', 'content_id'],
-    fields: [['day', 'day', 'int'], ['correct', 'correct', 'bool'], ['first_completed_at', 'firstCompletedAt', 'ts'], ['last_completed_at', 'lastCompletedAt', 'ts']]
-  }
+  writing: submissions(['writing'], 'writing_submissions', [['day', 'day', 'int'], ['content_id', 'contentId', 'text'],
+    ['title', 'title', 'text'], ['body', 'text', 'text'], ['word_count', 'words', 'int'], ['created_at', 'at', 'ts']]),
+  application: submissions(['application'], 'application_submissions', [['day', 'day', 'int'], ['content_id', 'contentId', 'text'],
+    ['title', 'title', 'text'], ['body', 'text', 'text'], ['created_at', 'at', 'ts']]),
+  speaking: submissions(['speaking'], 'speaking_attempts', [['clip_id', 'clip', 'text'], ['day', 'day', 'int'],
+    ['content_id', 'contentId', 'text'], ['title', 'title', 'text'], ['duration_sec', 'sec', 'int'], ['created_at', 'at', 'ts']]),
+  // Resolving an error removes it from the app's list; here it is kept as resolved.
+  errors: submissions(['errors'], 'error_items', [['skill', 'skill', 'text'], ['original', 'original', 'text'],
+    ['correction', 'correct', 'text'], ['explanation', 'why', 'text'], ['created_at', 'at', 'ts']], { soft: 'resolved_at' }),
+  writingDrafts: draft('writing'),
+  applicationDrafts: draft('application'),
+  // Self-reported vocabulary and review practice per day: "<day>" = {vocab, review}.
+  practice: { path: ['practice'], table: 'practice_counters', kind: 'map', keys: ['day_key'], parse: (k) => ({ day: int(k) }), parsed: [['day', 'int']],
+    fields: [['vocab', 'vocab', 'int'], ['review', 'review', 'int']] }
 };
 
 const isObj = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
@@ -138,6 +130,10 @@ function statements(name, change, course) {
   const c = COLLECTIONS[name];
   if (!c) return [];
   const out = [];
+  if (c.kind === 'list' && Array.isArray(change.move) && change.move.length) {
+    out.push([`update delf50.${c.table} t set ${c.keys[0]} = x->>1, pos = (x->>2)::float8 from jsonb_array_elements($1::jsonb) x
+      where t.course = $2 and t.${c.keys[0]} = x->>0 and jsonb_typeof(x->2) = 'number'`, [JSON.stringify(change.move), course]]);
+  }
   if (Array.isArray(change.del) && change.del.length) {
     const del = JSON.stringify(change.del);
     if (c.history) { // a removal is a tombstone row
@@ -203,7 +199,7 @@ function setPath(obj, path, value) {
   o[path[path.length - 1]] = value;
 }
 
-/** The learner's whole state in one course, rebuilt from the tables, plus list positions. */
+/** The learner's whole state in one course, rebuilt from the tables, plus each list's row positions and keys. */
 async function bootstrap(user, course) {
   const names = Object.keys(COLLECTIONS);
   const res = await db.tx(user.id, [
@@ -213,12 +209,12 @@ async function bootstrap(user, course) {
   const head = res[0][0];
   const has = head || res.slice(1).some((rows) => rows.length);
   const state = head ? head.doc : {};
-  const positions = {};
+  const positions = {}, keys = {};
   names.forEach((n, i) => {
     const c = COLLECTIONS[n];
     const rows = res[i + 1];
-    // The document holds the collection's empty container (a two-level map:
-    // its first level), so a collection's presence round-trips; rows fill it.
+    // The document holds the collection's empty container, so a collection's
+    // presence round-trips; rows fill it.
     let cur = state;
     for (const k of c.path) cur = isObj(cur) ? cur[k] : undefined;
     const list = c.kind === 'list';
@@ -227,19 +223,14 @@ async function bootstrap(user, course) {
     if (list) {
       value = rows.map((r) => fromRow(c, r));
       positions[n] = rows.map((r) => Number(r.pos));
+      keys[n] = rows.map((r) => r[c.keys[0]]);
     } else {
       value = isObj(cur) ? cur : {};
-      for (const r of rows) {
-        if (c.kind === 'map2') {
-          const m = r[c.keys[0]];
-          if (!isObj(value[m])) value[m] = {};
-          value[m][r[c.keys[1]]] = fromRow(c, r);
-        } else value[r[c.keys[0]]] = fromRow(c, r);
-      }
+      for (const r of rows) value[r[c.keys[0]]] = fromRow(c, r);
     }
     setPath(state, c.path, value);
   });
-  return { state: has ? state : null, rev: head ? Number(head.rev) : 0, positions };
+  return { state: has ? state : null, rev: head ? Number(head.rev) : 0, positions, keys };
 }
 
 const collections = () => Object.keys(COLLECTIONS).map((name) => ({ name, path: COLLECTIONS[name].path, kind: COLLECTIONS[name].kind }));

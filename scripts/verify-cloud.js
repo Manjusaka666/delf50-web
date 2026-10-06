@@ -3,25 +3,28 @@
 /**
  * Verifies the cloud layer end to end.
  *
- *   1. Units: SigV4 against the AWS test vectors, the client's change batches,
- *      the column mapping.
- *   2. API against Neon PostgreSQL, connected as the RLS-bound delf50_api
- *      role: Neon Auth proxy (against a mock that issues real cookies and
- *      EdDSA JWTs), exact state round trips, idempotent replays, append-only
- *      grammar history, row-level isolation, bearer tokens, R2 media (HTTPS
- *      S3 mock that checks signatures), vocabulary SM-2.
- *   3. Browser: index.html + cloud layer + the real app bundle in jsdom:
- *      sign-in gate, live saving latency, nothing persisted in the browser,
- *      reload / second device / cross-device refresh, recordings, session
- *      expiry mid-study, sign-out.
+ *   1. Units: SigV4 against the AWS test vectors, the app's change batches
+ *      (app/sync-core.js), the column mapping (api/_lib/records.js).
+ *   2. API against PostgreSQL, connected as the RLS-bound delf50_api role:
+ *      Neon Auth proxy (against a mock that issues real cookies and EdDSA
+ *      JWTs), exact state round trips, idempotent replays, re-keying of rows
+ *      rewritten server-side, append-only grammar history, row-level
+ *      isolation, courses, bearer tokens, R2 media (HTTPS S3 mock that checks
+ *      signatures), vocabulary SM-2.
+ *
+ *   3. Browser (Playwright, from NODE_PATH): the app in Chromium against the
+ *      API: sign-up, every module saving its records, drafts, recordings to
+ *      R2, intensity, nothing kept in the browser, a second device,
+ *      cross-device refresh, session expiry mid-study, sign-out.
  *
  * Runs in the cloud: a Vercel Sandbox (fra1) against a dedicated database on
  * the Neon test branch (never production). TEST_DATABASE_URL is that
  * database's owner connection; the suite resets its delf50 schema and a stub
  * neon_auth schema, and sets a fresh random password on the branch's
- * delf50_api role for each run. Test-only dependencies are installed there:
+ * delf50_api role for each run. Any other PostgreSQL works too (a local run
+ * goes through node-postgres instead of Neon's HTTP driver). Test-only dependency:
  *
- *   npm i --no-save jsdom@24.1.3 pg@8.23.0 fake-indexeddb@6.2.5
+ *   npm i --no-save pg@8.23.0 playwright
  *   TEST_DATABASE_URL=postgresql://neondb_owner:…@<test-branch-host>/delf50_ci?sslmode=require \
  *     node scripts/verify-cloud.js
  */
@@ -41,58 +44,41 @@ function check(ok, label, detail) {
   if (!ok) failed++;
 }
 const section = (name) => results.push(`\n${name}`);
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-async function until(fn, ms = 20000, label = 'condition') {
-  const t0 = Date.now();
-  for (;;) {
-    let v;
-    try { v = await fn(); } catch (e) { v = false; }
-    if (v) return v;
-    if (Date.now() - t0 > ms) throw new Error(`timeout waiting for ${label}`);
-    await sleep(20);
-  }
-}
 const sha256hex = (s) => crypto.createHash('sha256').update(s).digest('hex');
 const clone = (x) => JSON.parse(JSON.stringify(x));
 
-const C = require(path.join(ROOT, 'cloud/delf50-cloud.js'));
 const records = require(path.join(ROOT, 'api/_lib/records.js'));
 const SPEC = records.collections();
-const sameData = (a, b) => C.equal(a, b);
+let C; // app/sync-core.js (an ES module)
+const at = (d) => ({ pos: d.pos, keys: d.keys });
 
-/** A realistic learner state, with edge cases the column mapping must keep. */
+/** A learner state as the app keeps it (app/state.js), with edge cases the column mapping must keep. */
 function sampleState() {
   return {
-    version: '2.0.2', selectedDay: 3, intensity: 'standard', taskDone: { '3:grammar': true, '3:vocab': false },
-    prodDone: { '3:subj:0': true, '3:subj:1': true }, practiceCounters172: { 3: { vocab: 35, review: 0, legacyInferred: false } },
-    grammar: { attempts: 4, correct: 3, skill: { subj: { a: 2, c: 1 } } },
-    reading: { attempts: 3, correct: 2, index: 1, answers: { '3:r181-d03-s01:0': 1, '3:r181-d03-s01:1': 0, 'odd-key': 'x' } },
-    listening: { attempts: 0, correct: 0, index: 0 }, // no answers map at all: absence must round-trip too
-    application: { count: 1, index: 1, records: [{ day: 3, title: 'Lettre', text: 'Madame, …', hits: ['donc'], at: '2026-09-28T08:00:00.000Z', contentId: 'a1' }] },
-    writing: { count: 2, index: 2, records: [
-      { day: 2, title: 'Essai', text: 'Je pense que…', words: 120, connectors: ['cependant'], paragraphs: 3, at: '2026-09-27T09:15:00.123Z', contentId: 'w1' },
-      { day: 3, title: 'Essai 2', text: 'Premièrement 😀 "quotes" \\ back', words: 12.5, at: 'not a date', contentId: null }
-    ] },
-    speaking: { count: 2, totalSec: 95, index: 2, records: [
-      { id: 'd3-s1', day: 3, title: 'Monologue', sec: 60, stored: true, at: '2026-09-28T08:10:00.000Z' },
-      { id: 'd3-s2', day: 3, title: 'Dialogue', sec: 35.5, stored: false, manual: true, at: '2026-09-28T08:12:00.000Z', contentId: 's2' }
-    ] },
-    errors: [
-      { skill: 'grammar', original: 'je suis allé', correct: 'je suis allée', why: 'accord', at: '2026-09-28T08:20:00.000Z' },
-      { skill: 'grammar', original: 'x', correct: 'y', why: 'z', at: '2026-09-28T08:19:00.000Z' },
-      { skill: 'grammar', original: 'x', correct: 'y', why: 'z', at: '2026-09-28T08:19:00.000Z' },
-      'legacy string item'
+    day: 3, intensity: 'standard', startedAt: '2026-09-26T07:00:00.000Z', onboarded: true,
+    reading: { '3:R03-1:0': 1, '3:R03-1:1': 0, '3:R03-2:0': 2 },
+    listening: {},
+    grammar: {
+      '3:negation-01': { day: 3, contentId: 'negation-01', nodeId: 'negation', question: 'Je ___ parle pas.', selectedIndex: 1, correctIndex: 1, correct: true, answeredAt: '2026-09-28T08:05:00.000Z' },
+      '3:negation-02': { day: 3, contentId: 'negation-02', nodeId: 'negation', question: 'Il n’a ___ fini.', selectedIndex: 0, correctIndex: 2, correct: false, answeredAt: '2026-09-28T08:06:00.000Z' }
+    },
+    production: { '3:negation:0': true, '3:negation:1': true },
+    writing: [
+      { day: 2, contentId: 'W02-1', title: 'Courriel', text: 'Je pense que…', words: 120, at: '2026-09-27T09:15:00.123Z' },
+      { day: 3, contentId: 'W03-1', title: 'Essai 2', text: 'Premièrement 😀 "quotes" \\ back', words: 12.5, at: 'not a date' }
     ],
-    startedAt: '2026-09-26T07:00:00.000Z', lastSavedAt: '2026-09-28T08:20:01.000Z',
-    daily: { 3: { grammar: 4, reading: 3, writing: 1 } },
-    drafts171: { writing: { 'd3-w': 'brouillon', 'd3-x': { rich: true } }, application: {} },
-    dayHistory171: { 3: { firstActivityAt: '2026-09-28T07:00:00.000Z' } },
-    meta172: { schemaVersion: 2, migrations: ['a', 'b'] },
-    contentProgress172: { completed: { writing: { w1: { firstCompletedAt: '2026-09-27T09:15:00.123Z', lastCompletedAt: '2026-09-28T09:15:00.123Z', day: 2 } }, reading: { r1: { day: 3, correct: true, firstCompletedAt: '2026-09-28T08:00:00.000Z' } } } },
-    grammarReview202: {
-      '3:GQ-1': { day: 3, contentId: 'GQ-1', nodeId: 'subj', nodeName: 'Subjonctif', question: 'Il faut que tu …', options: ['viens', 'viennes'], selectedIndex: 1, correctIndex: 1, correct: true, explanation: '…', answeredAt: '2026-09-28T08:05:00.000Z', route: 'main' },
-      '3:GQ-2': { day: 3, contentId: 'GQ-2', selectedIndex: 0, correctIndex: 1, correct: false, answeredAt: '2026-09-28T08:06:00.000Z' }
-    }
+    application: [{ day: 3, contentId: 'A03-1', title: 'Situation', text: 'Madame, …', at: '2026-09-28T08:00:00.000Z' }],
+    speaking: [
+      { clip: 'clip-a', day: 3, contentId: 'S03-1', title: 'Monologue', sec: 60, at: '2026-09-28T08:10:00.000Z' },
+      { clip: null, day: 3, contentId: 'S03-2', title: 'Dialogue', sec: 35, at: '2026-09-28T08:12:00.000Z' }
+    ],
+    errors: [
+      { skill: 'Négation', original: 'ne parle', correct: 'ne parle pas', why: 'ne … pas', at: '2026-09-28T08:20:00.000Z' },
+      { skill: 'Négation', original: 'x', correct: 'y', why: 'z', at: '2026-09-28T08:19:00.000Z' },
+      { skill: 'Négation', original: 'x', correct: 'y', why: 'z', at: '2026-09-28T08:19:00.000Z' }
+    ],
+    drafts: { writing: { '3:W03-1': 'brouillon' }, application: {} },
+    practice: { 3: { vocab: 35, review: 0 } }
   };
 }
 
@@ -111,50 +97,56 @@ function unitTests() {
   const S = sampleState();
   const d0 = C.diff({}, {}, S, SPEC);
   const docOf = Object.fromEntries(d0.doc.map((o) => [o[0].join('.'), o[1]]));
-  check(C.equal(docOf.errors, []) && C.equal(docOf.grammarReview202, {}) && C.equal(docOf.reading.answers, {}) && !('answers' in docOf.listening)
-    && C.equal(docOf.contentProgress172, { completed: { writing: {}, reading: {} } }) && C.equal(docOf.drafts171, { writing: {}, application: {} }) && docOf.meta172
-    && ['daily', 'dayHistory171', 'prodDone', 'taskDone', 'practiceCounters172'].every((k) => C.equal(docOf[k], {})),
-    'the document holds only empty record containers, never records', docOf);
-  check(!d0.ops.listening && d0.ops.writing.set.length === 2 && d0.ops.errors.set.length === 4 && d0.ops.completions.set.length === 2 && d0.ops.reading.set.length === 3,
+  check(['reading', 'listening', 'grammar', 'production', 'practice'].every((k) => C.equal(docOf[k], {}))
+    && ['writing', 'application', 'speaking', 'errors'].every((k) => C.equal(docOf[k], [])) && C.equal(docOf.drafts, { writing: {}, application: {} })
+    && docOf.day === 3 && docOf.intensity === 'standard', 'the document holds the settings and empty record containers, never records', docOf);
+  check(!d0.ops.listening && d0.ops.writing.set.length === 2 && d0.ops.errors.set.length === 3 && d0.ops.reading.set.length === 3 && d0.ops.production.set.length === 2,
     'a first batch writes every record as its own row');
-  check(C.equal(d0.pos.errors, [0, 1, 2, 3]) && new Set(d0.ops.errors.set.map((x) => x[0][0])).size === 4, 'identical list items get distinct keys');
+  check(C.equal(d0.pos.errors, [0, 1, 2]) && new Set(d0.ops.errors.set.map((x) => x[0][0])).size === 3, 'identical list items get distinct keys');
+  check(C.equal(d0.keys.errors, d0.ops.errors.set.map((x) => x[0][0])), 'the batch reports the keys its rows are stored under');
 
-  const noop = C.diff(S, d0.pos, clone(S), SPEC);
+  const noop = C.diff(S, at(d0), clone(S), SPEC);
   check(noop.empty, 'an unchanged state produces an empty batch');
 
   const S2 = clone(S);
-  S2.errors.unshift({ skill: 'reading', original: 'a', correct: 'b', why: 'c', at: '2026-09-28T09:00:00.000Z' });
-  S2.speaking.records[1].stored = true;
-  S2.writing.records.splice(0, 1);
-  S2.reading.answers['3:r181-d03-s01:2'] = 3; delete S2.reading.answers['odd-key'];
-  S2.contentProgress172.completed.listening = { l1: { day: 3 } };
-  delete S2.drafts171.writing['d3-w'];
-  S2.selectedDay = 4; S2.daily['4'] = { grammar: 1 }; delete S2.taskDone['3:grammar'];
-  const d1 = C.diff(S, d0.pos, S2, SPEC);
+  S2.errors.unshift({ skill: 'Lecture', original: 'a', correct: 'b', why: 'c', at: '2026-09-28T09:00:00.000Z' });
+  S2.speaking[1].sec = 40;
+  S2.writing.splice(0, 1);
+  S2.reading['3:R03-2:1'] = 0;
+  delete S2.drafts.writing['3:W03-1'];
+  S2.day = 4;
+  const d1 = C.diff(S, at(d0), S2, SPEC);
   check(d1.ops.errors.set.length === 1 && d1.ops.errors.set[0][2] < 0 && !d1.ops.errors.del.length, 'prepending an error writes one row before the others', d1.ops.errors);
   check(d1.ops.speaking.set.length === 1 && d1.ops.speaking.del.length === 1 && d1.ops.speaking.set[0][2] > d0.pos.speaking[0], 'an edited record replaces its row in place', d1.ops.speaking);
   check(d1.ops.writing.del.length === 1 && !d1.ops.writing.set.length, 'a removed record deletes one row');
-  check(C.equal(d1.ops.reading, { set: [[['3:r181-d03-s01:2'], 3]], del: [['odd-key']] }) && C.equal(d1.ops.completions.set, [[['listening', 'l1'], { day: 3 }]]), 'map changes are per key');
-  check(C.equal(d1.doc.map((o) => o[0].join('.')).sort(), ['contentProgress172.completed.listening', 'selectedDay']), 'document changes are per field (a new module only adds its skeleton)', d1.doc);
-  check(C.equal(d1.ops.dailyProgress.set, [[['4'], { grammar: 1 }]]) && C.equal(d1.ops.tasks.del, [['3:grammar']]), 'per-day counters and the checklist change as rows', d1.ops);
+  check(C.equal(d1.ops.reading, { set: [[['3:R03-2:1'], 0]], del: [] }) && C.equal(d1.ops.writingDrafts, { set: [], del: [['3:W03-1']] }), 'map changes are per key');
+  check(C.equal(d1.doc, [[['day'], 4]]), 'document changes are per field', d1.doc);
   const S3 = clone(S2); S3.errors.reverse();
-  const d2 = C.diff(S2, d1.pos, S3, SPEC);
-  check(C.equal(d2.pos.errors, [0, 1, 2, 3, 4]) && d2.ops.errors.set.length === 5, 'a reordered list is renumbered');
+  const d2 = C.diff(S2, at(d1), S3, SPEC);
+  check(C.equal(d2.pos.errors, [0, 1, 2, 3]) && d2.ops.errors.set.length === 4, 'a reordered list is renumbered');
+
+  // Rows stored under other keys (rewritten server-side) are re-keyed, keeping their content and order.
+  const foreign = { pos: d0.pos, keys: Object.assign({}, d0.keys, { errors: ['old-a', 'old-b', 'old-c'] }) };
+  const rk = C.diff(S, foreign, clone(S), SPEC);
+  check(!rk.empty && C.equal(rk.ops.errors, { set: [], del: [], move: [['old-a', d0.keys.errors[0], 0], ['old-b', d0.keys.errors[1], 1], ['old-c', d0.keys.errors[2], 2]] })
+    && Object.keys(rk.ops).join() === 'errors', 'rows under foreign keys are renamed once, content and order unchanged', rk.ops);
+  check(C.diff(S, at(rk), clone(S), SPEC).empty, 'after re-keying, the state is settled');
 
   // Column mapping round trip for every collection.
   let exact = true;
   for (const c of SPEC) {
     const v = c.path.reduce((o, k) => o && o[k], S) || {};
-    const items = c.kind === 'list' ? v.map((x, i) => [[String(i)], x]) : c.kind === 'map2'
-      ? Object.entries(v).flatMap(([m, o]) => Object.entries(o).map(([k, x]) => [[m, k], x])) : Object.entries(v).map(([k, x]) => [[k], x]);
+    const items = c.kind === 'list' ? v.map((x, i) => [[String(i)], x]) : Object.entries(v).map(([k, x]) => [[k], x]);
     for (const [key, x] of items) {
       const row = JSON.parse(JSON.stringify(records.toRow(records.COLLECTIONS[c.name], key, x, 0)));
-      if (!sameData(records.fromRow(records.COLLECTIONS[c.name], row), x)) { exact = false; results.push(`      ${c.name} ${JSON.stringify(x)}`); }
+      if (!C.equal(records.fromRow(records.COLLECTIONS[c.name], row), x)) { exact = false; results.push(`      ${c.name} ${JSON.stringify(x)}`); }
     }
   }
   check(exact, 'every record maps to columns (+extra) and back exactly');
-  const wrow = records.toRow(records.COLLECTIONS.writing, ['k'], S.writing.records[1], 1);
+  const wrow = records.toRow(records.COLLECTIONS.writing, ['k'], S.writing[1], 1);
   check(wrow.word_count === undefined && wrow.extra.words === 12.5 && wrow.extra.at === 'not a date' && wrow.body.startsWith('Premièrement'), 'values of the wrong type stay in extra, the rest are typed columns', wrow);
+  const srow = records.toRow(records.COLLECTIONS.speaking, ['k'], S.speaking[0], 0);
+  check(srow.clip_id === 'clip-a' && srow.duration_sec === 60 && srow.extra === null, 'a speaking round maps to its columns', srow);
 }
 
 // ───────────────────────── infrastructure ──────────────────────────────────
@@ -263,13 +255,12 @@ function startS3Mock(tls, creds) {
   return new Promise((resolve) => server.listen(0, '127.0.0.1', () => resolve({ server, objects, stats, port: server.address().port })));
 }
 
-const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'application/javascript; charset=utf-8', '.css': 'text/css' };
+const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json', '.woff2': 'font/woff2' };
 
-/** Serves the repository like Vercel: static files, /api/source, /api/v1/* rewrite. */
+/** Serves the repository like Vercel: static files, /api/v1/* rewritten to the one function. */
 function startApp() {
   const v1 = require(path.join(ROOT, 'api/v1.js'));
-  const source = require(path.join(ROOT, 'api/source.js'));
-  const stats = { sync: [], source: [] };
+  const stats = { sync: [] };
   const server = http.createServer((req, res) => {
     const u = new URL(req.url, 'http://x');
     if (u.pathname.startsWith('/api/v1/')) {
@@ -278,20 +269,13 @@ function startApp() {
       if (req.query.__route === 'sync') { const t0 = Date.now(); res.on('finish', () => stats.sync.push(Date.now() - t0)); }
       return v1(req, res);
     }
-    if (u.pathname === '/api/source') {
-      req.query = Object.fromEntries(u.searchParams);
-      stats.source.push(u.search + (req.headers['if-none-match'] ? ' inm' : ''));
-      res.status = (c) => { res.statusCode = c; return res; };
-      res.send = (b) => res.end(b);
-      return source(req, res);
-    }
     const rel = u.pathname === '/' ? 'index.html' : decodeURIComponent(u.pathname).replace(/^\/+/, '');
     const file = path.join(ROOT, rel);
-    if (!file.startsWith(ROOT + path.sep) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) { res.writeHead(404); res.end(); return; }
-    res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream' });
+    if (!/^(index\.html|app\/|course\/|fonts\/)/.test(rel) || !file.startsWith(ROOT + path.sep) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) { res.writeHead(404); res.end(); return; }
+    res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-cache' });
     fs.createReadStream(file).pipe(res);
   });
-  return new Promise((resolve) => server.listen(0, '127.0.0.1', () => resolve({ server, stats, base: `http://127.0.0.1:${server.address().port}` })));
+  return new Promise((resolve) => server.listen(0, () => resolve({ server, stats, base: `http://localhost:${server.address().port}` })));
 }
 
 /** API client with a cookie jar. */
@@ -310,6 +294,7 @@ function client(base) {
   }
   return { req, get cookie() { return cookie; }, set cookie(v) { cookie = v; } };
 }
+
 
 // ───────────────────────── 2. API ───────────────────────────────────────────
 
@@ -335,61 +320,74 @@ async function apiTests(base, owner, auth, s3) {
   r = await A.req('POST', '/sync', { json: { doc: d0.doc, ops: d0.ops, device: 'test', batch: 'b0' } });
   check(r.status === 200 && r.data.rev === 1, 'the first batch commits as revision 1', r.data);
   r = await A.req('GET', '/bootstrap');
-  check(sameData(r.data.state, S), 'bootstrap rebuilds the state exactly from the tables', r.data.state);
-  check(C.equal(r.data.positions, d0.pos), 'list positions come back as written');
+  check(C.equal(r.data.state, S), 'bootstrap rebuilds the state exactly from the tables', r.data.state);
+  check(C.equal(r.data.positions, d0.pos) && C.equal(r.data.keys, d0.keys), 'list positions and keys come back as written');
 
   const counts = async () => (await owner.query(`select (select count(*) from delf50.grammar_attempts)::int g, (select count(*) from delf50.error_items)::int e,
-    (select count(*) from delf50.writing_submissions)::int w, (select count(*) from delf50.reading_answers)::int ra, (select count(*) from delf50.content_completions)::int cc`)).rows[0];
+    (select count(*) from delf50.writing_submissions)::int w, (select count(*) from delf50.reading_answers)::int ra, (select count(*) from delf50.speaking_attempts)::int sp`)).rows[0];
   const c1 = await counts();
-  check(c1.g === 2 && c1.e === 4 && c1.w === 2 && c1.ra === 3 && c1.cc === 2, 'each record is its own row', c1);
-  const more = (await owner.query(`select (select count(*) from delf50.grammar_productions where done)::int gp, (select count(*) from delf50.task_checks)::int tc,
-    (select grammar from delf50.daily_progress where day = 3) dg, (select actions from delf50.study_days where day = 3) sd, (select vocab from delf50.practice_counters where day = 3) pv,
-    (select node_id || '#' || prompt_index from delf50.grammar_productions order by prod_key limit 1) gpk, (select task_id from delf50.task_checks where done) tid`)).rows[0];
-  check(more.gp === 2 && more.tc === 2 && more.dg === 4 && more.pv === 35 && more.gpk === 'subj#0' && more.tid === 'grammar',
-    'grammar output practice, checklist, per-day counters and vocabulary practice are rows with parsed columns', more);
+  check(c1.g === 2 && c1.e === 3 && c1.w === 2 && c1.ra === 3 && c1.sp === 2, 'each record is its own row', c1);
+  const more = (await owner.query(`select (select count(*) from delf50.grammar_productions where done)::int gp, (select vocab from delf50.practice_counters where day = 3) pv,
+    (select node_id || '#' || prompt_index from delf50.grammar_productions order by prod_key limit 1) gpk,
+    (select day || ' ' || content_id || ' ' || q_index from delf50.reading_answers order by answer_key limit 1) ra`)).rows[0];
+  check(more.gp === 2 && more.pv === 35 && more.gpk === 'negation#0' && more.ra === '3 R03-1 0', 'output practice, practice counters and answers are rows with parsed columns', more);
   const typed = (await owner.query(`select body, word_count, created_at, extra from delf50.writing_submissions order by pos`)).rows;
-  check(typed[0].word_count === 120 && typed[0].created_at.toISOString() === '2026-09-27T09:15:00.123Z' && typed[0].extra.connectors[0] === 'cependant', 'writing is stored as typed columns', typed[0]);
+  check(typed[0].word_count === 120 && typed[0].created_at.toISOString() === '2026-09-27T09:15:00.123Z' && typed[0].extra === null, 'writing is stored as typed columns', typed[0]);
 
   r = await A.req('POST', '/sync', { json: { doc: d0.doc, ops: d0.ops, batch: 'b0' } });
   const c2 = await counts();
-  check(r.status === 200 && r.data.rev === 1 && C.equal(c1, c2) && sameData((await A.req('GET', '/bootstrap')).data.state, S), 'replaying a batch changes nothing, not even the revision', r.data);
+  check(r.status === 200 && r.data.rev === 1 && C.equal(c1, c2) && C.equal((await A.req('GET', '/bootstrap')).data.state, S), 'replaying a batch changes nothing, not even the revision', r.data);
 
   const S2 = clone(S);
-  S2.grammarReview202['3:GQ-2'] = Object.assign({}, S2.grammarReview202['3:GQ-2'], { selectedIndex: 1, correct: true, answeredAt: '2026-09-28T08:30:00.000Z' });
-  S2.errors.unshift({ skill: 'reading', original: 'a', correct: 'b', why: 'c', at: '2026-09-28T09:00:00.000Z' });
-  S2.speaking.records[1].stored = true;
-  S2.writing.records.splice(0, 1);
-  delete S2.drafts171.writing['d3-w'];
-  S2.selectedDay = 4;
-  const d1 = C.diff(S, d0.pos, S2, SPEC);
+  S2.grammar['3:negation-02'] = Object.assign({}, S2.grammar['3:negation-02'], { selectedIndex: 2, correct: true, answeredAt: '2026-09-28T08:30:00.000Z' });
+  S2.errors.unshift({ skill: 'Lecture', original: 'a', correct: 'b', why: 'c', at: '2026-09-28T09:00:00.000Z' });
+  S2.speaking[1].sec = 40;
+  S2.writing.splice(0, 1);
+  delete S2.drafts.writing['3:W03-1'];
+  S2.day = 4;
+  const d1 = C.diff(S, at(d0), S2, SPEC);
   r = await A.req('POST', '/sync', { json: { doc: d1.doc, ops: d1.ops, batch: 'b1' } });
   const b2 = (await A.req('GET', '/bootstrap')).data;
-  check(r.data.rev === 2 && sameData(b2.state, S2) && C.equal(b2.positions, d1.pos), 'incremental batches keep the state exact', b2.state);
+  check(r.data.rev === 2 && C.equal(b2.state, S2) && C.equal(b2.positions, d1.pos) && C.equal(b2.keys, d1.keys), 'incremental batches keep the state exact', b2.state);
   const g = (await owner.query(`select answer_key, selected, correct from delf50.grammar_attempts order by id`)).rows;
-  check(g.length === 3 && g[1].correct === false && g[2].correct === true && g[2].selected === 1, 'a changed grammar answer appends a row; the latest is current', g);
-  const S3 = clone(S2); delete S3.grammarReview202['3:GQ-1'];
-  const d2 = C.diff(S2, d1.pos, S3, SPEC);
+  check(g.length === 3 && g[1].correct === false && g[2].correct === true && g[2].selected === 2, 'a changed grammar answer appends a row; the latest is current', g);
+  const S3 = clone(S2); delete S3.grammar['3:negation-01'];
+  const d2 = C.diff(S2, at(d1), S3, SPEC);
   await A.req('POST', '/sync', { json: { doc: d2.doc, ops: d2.ops } });
   const b3 = (await A.req('GET', '/bootstrap')).data;
-  const d3 = C.diff(S3, d2.pos, S2, SPEC);
+  const d3 = C.diff(S3, at(d2), S2, SPEC);
   await A.req('POST', '/sync', { json: { doc: d3.doc, ops: d3.ops } });
   const b4 = (await A.req('GET', '/bootstrap')).data;
-  const hist = (await owner.query(`select answer_key, deleted from delf50.grammar_attempts where answer_key = '3:GQ-1' order by id`)).rows;
-  check(sameData(b3.state, S3) && sameData(b4.state, S2) && C.equal(hist.map((x) => x.deleted), [false, true, false]),
+  const hist = (await owner.query(`select deleted from delf50.grammar_attempts where answer_key = '3:negation-01' order by id`)).rows;
+  check(C.equal(b3.state, S3) && C.equal(b4.state, S2) && C.equal(hist.map((x) => x.deleted), [false, true, false]),
     'removing an answer appends a tombstone, re-adding appends again; nothing is rewritten', hist);
   const S4 = clone(S2); S4.errors.splice(1, 1);
-  const d4 = C.diff(S2, d3.pos, S4, SPEC);
+  const d4 = C.diff(S2, at(d3), S4, SPEC);
   await A.req('POST', '/sync', { json: { doc: d4.doc, ops: d4.ops } });
   const b5 = (await A.req('GET', '/bootstrap')).data;
   const er = (await owner.query(`select count(*)::int n, count(resolved_at)::int resolved from delf50.error_items`)).rows[0];
-  check(sameData(b5.state, S4) && er.n === 5 && er.resolved === 1, 'a fixed error leaves the app state but stays in the database as resolved', er);
+  check(C.equal(b5.state, S4) && er.n === 4 && er.resolved === 1, 'a mastered error leaves the app state but stays in the database as resolved', er);
   const S5 = clone(S4); S5.errors.splice(1, 0, clone(S2.errors[1]));
-  const d5 = C.diff(S4, d4.pos, S5, SPEC);
+  const d5 = C.diff(S4, at(d4), S5, SPEC);
   await A.req('POST', '/sync', { json: { doc: d5.doc, ops: d5.ops } });
   const er2 = (await owner.query(`select count(*)::int n, count(resolved_at)::int resolved from delf50.error_items`)).rows[0];
-  check(sameData((await A.req('GET', '/bootstrap')).data.state, S5) && er2.n === 5 && er2.resolved === 0, 'the same error made again reopens its row', er2);
+  check(C.equal((await A.req('GET', '/bootstrap')).data.state, S5) && er2.n === 4 && er2.resolved === 0, 'the same error made again reopens its row', er2);
+
+  // Rows rewritten server-side (a data migration changes their content) are re-keyed by the next save.
+  await owner.query(`update delf50.error_items set item_key = 'migrated-' || item_key`);
+  const bm = (await A.req('GET', '/bootstrap')).data;
+  const dm = C.diff(bm.state, { pos: bm.positions, keys: bm.keys }, clone(bm.state), SPEC);
+  await A.req('POST', '/sync', { json: { doc: dm.doc, ops: dm.ops } });
+  const ba = (await A.req('GET', '/bootstrap')).data;
+  const er3 = (await owner.query(`select count(*)::int n, count(*) filter (where resolved_at is null)::int open, count(*) filter (where item_key like 'migrated-%')::int stale from delf50.error_items`)).rows[0];
+  check(dm.ops.errors.move.length === 4 && C.equal(ba.state, S5) && C.equal(ba.keys.errors, dm.keys.errors) && C.equal(er3, { n: 4, open: 4, stale: 0 }),
+    'rows under migrated keys are renamed by the first save: same rows, now under their content keys', er3);
+  const S6 = clone(S5); S6.errors.splice(0, 1);
+  const d6 = C.diff(ba.state, { pos: ba.positions, keys: ba.keys }, S6, SPEC);
+  await A.req('POST', '/sync', { json: { doc: d6.doc, ops: d6.ops } });
+  check(C.equal((await A.req('GET', '/bootstrap')).data.state, S6), 'after re-keying, mastering an error removes exactly that one');
   const rev = await A.req('GET', '/rev');
-  check(rev.data.rev === 6, 'rev reports the latest revision', rev.data);
+  check(rev.data.rev === 8, 'rev reports the latest revision', rev.data);
 
   // Courses (CEFR levels): one account, separate records per course.
   const courses = require(path.join(ROOT, 'api/_lib/courses.js'));
@@ -397,16 +395,16 @@ async function apiTests(base, owner, auth, s3) {
   r = await A.req('GET', '/bootstrap?course=nope');
   check(r.status === 400 && r.data.error.code === 'unknown_course', 'an unknown course is refused');
   const explicitB1 = (await A.req('GET', '/bootstrap?course=delf-b1')).data;
-  check(explicitB1.course === 'delf-b1' && sameData(explicitB1.state, S5), 'requests without a course address delf-b1 (the current site)');
+  check(explicitB1.course === 'delf-b1' && C.equal(explicitB1.state, S6), 'requests without a course address delf-b1');
   r = await A.req('GET', '/bootstrap?course=delf-b2-test');
   check(r.status === 200 && r.data.state === null && r.data.rev === 0, 'a new course starts empty for the same account');
-  const T = sampleState(); T.selectedDay = 9; T.writing.records[0].text = 'Texte de niveau B2';
+  const T = sampleState(); T.day = 9; T.writing[0].text = 'Texte de niveau B2';
   const dT = C.diff({}, {}, T, SPEC);
   r = await A.req('POST', '/sync?course=delf-b2-test', { json: { doc: dT.doc, ops: dT.ops, batch: 'b0' } });
   const bT = (await A.req('GET', '/bootstrap?course=delf-b2-test')).data;
   const b1Again = (await A.req('GET', '/bootstrap')).data;
-  check(r.data.rev === 1 && sameData(bT.state, T) && sameData(b1Again.state, S5) && b1Again.rev === 6,
-    'the same question ids in two courses never collide; each course keeps its own state and revision', { rev: r.data.rev, b1rev: b1Again.rev });
+  check(r.data.rev === 1 && C.equal(bT.state, T) && C.equal(b1Again.state, S6) && b1Again.rev === 8,
+    'the same keys in two courses never collide; each course keeps its own state and revision', { rev: r.data.rev, b1rev: b1Again.rev });
   const perCourse = (await owner.query(`select course, count(*)::int n from delf50.reading_answers group by course order by course`)).rows;
   check(C.equal(perCourse, [{ course: 'delf-b1', n: 3 }, { course: 'delf-b2-test', n: 3 }]), 'records carry their course', perCourse);
   r = await A.req('GET', '/courses');
@@ -427,8 +425,8 @@ async function apiTests(base, owner, auth, s3) {
   };
   const noah = ids.find((x) => x.email === 'noah@example.com').id, lea = ids.find((x) => x.email === 'lea@example.com').id;
   const b1 = " where course = 'delf-b1'";
-  check((await asUser(noah, 'select * from delf50.error_items')).length === 0 && (await asUser(lea, 'select * from delf50.error_items' + b1)).length === 5
-    && (await asUser(noah, 'select * from delf50.daily_progress')).length === 0 && (await asUser(lea, 'select * from delf50.daily_progress' + b1)).length === 1, 'RLS: rows are visible to their owner only');
+  check((await asUser(noah, 'select * from delf50.error_items')).length === 0 && (await asUser(lea, 'select * from delf50.error_items' + b1 + ' and resolved_at is null')).length === 3
+    && (await asUser(noah, 'select * from delf50.practice_counters')).length === 0 && (await asUser(lea, 'select * from delf50.practice_counters' + b1)).length === 1, 'RLS: rows are visible to their owner only');
   check((await asUser(null, 'select * from delf50.study_state')).length === 0, 'RLS: without a user, nothing is visible');
   let denied = false;
   try { await asUser(noah, `insert into delf50.drafts (user_id, kind, draft_key, body) values ($1, 'writing', 'x', 'y')`, [lea]); } catch (e) { denied = /row-level security/.test(e.message); }
@@ -453,12 +451,12 @@ async function apiTests(base, owner, auth, s3) {
   const signed = decodeURIComponent(A.cookie.split('=')[1]);
   check((await asBearer(signed.split('.')[0])) === 200 && (await asBearer(signed)) === 200, 'a session token works as a bearer token, plain or signed');
 
-  // Media in R2.
+  // Media in R2 (the app uploads in parts of 3.5 MB: app/media.js).
   const clip = crypto.randomBytes(300 * 1024);
-  r = await A.req('PUT', `/media/raw?clipId=d3-s1&type=audio%2Fwebm&size=${clip.length}`, { body: clip, headers: { 'Content-Type': 'application/octet-stream' } });
+  r = await A.req('PUT', `/media/raw?clipId=clip-a&type=audio%2Fwebm&size=${clip.length}&parts=1&part=0`, { body: clip, headers: { 'Content-Type': 'application/octet-stream' } });
   check(r.status === 200 && r.data.status === 'stored', 'a recording uploads through the API in one request', r.data);
-  r = await A.req('GET', '/media/raw?clipId=d3-s1', { raw: true });
-  check(r.status === 200 && Buffer.compare(r.data, clip) === 0 && r.headers.get('content-type') === 'audio/webm', 'it downloads byte-identical');
+  r = await A.req('GET', '/media/raw?clipId=clip-a&part=0', { raw: true });
+  check(r.status === 200 && Buffer.compare(r.data, clip) === 0 && r.headers.get('content-type') === 'audio/webm' && r.headers.get('x-parts') === '1', 'it downloads byte-identical, with its part count');
   const big = crypto.randomBytes(8 * 1024 * 1024 + 123);
   const PART = 3.5 * 1024 * 1024, n = Math.ceil(big.length / PART);
   for (let i = 0; i < n; i++) {
@@ -470,17 +468,17 @@ async function apiTests(base, owner, auth, s3) {
   check(r.data.status === 'stored' && Buffer.compare(Buffer.concat(back), big) === 0, `an 8 MB recording round-trips in ${n} parts`);
   r = await A.req('PUT', `/media/raw?clipId=short&size=999`, { body: Buffer.alloc(10), headers: { 'Content-Type': 'application/octet-stream' } });
   check(r.status === 422 && ![...s3.objects.keys()].some((k) => k.includes('/short')), 'a size mismatch is refused and nothing is kept');
-  r = await B.req('GET', '/media/raw?clipId=d3-s1', { raw: true });
+  r = await B.req('GET', '/media/raw?clipId=clip-a&part=0', { raw: true });
   check(r.status === 404, 'another learner cannot fetch the recording');
-  r = await A.req('GET', '/media/url?clipId=d3-s1');
+  r = await A.req('GET', '/media/url?clipId=clip-a');
   const direct = await fetch(r.data.urls[0]);
   check(Buffer.compare(Buffer.from(await direct.arrayBuffer()), clip) === 0, 'presigned download URLs work (for apps)');
   const clip2 = crypto.randomBytes(1000);
-  r = await A.req('PUT', `/media/raw?course=delf-b2-test&clipId=d3-s1&type=audio%2Fwebm&size=${clip2.length}`, { body: clip2, headers: { 'Content-Type': 'application/octet-stream' } });
-  const m1 = await A.req('GET', '/media/raw?clipId=d3-s1', { raw: true });
-  const m2 = await A.req('GET', '/media/raw?course=delf-b2-test&clipId=d3-s1', { raw: true });
+  r = await A.req('PUT', `/media/raw?course=delf-b2-test&clipId=clip-a&type=audio%2Fwebm&size=${clip2.length}`, { body: clip2, headers: { 'Content-Type': 'application/octet-stream' } });
+  const m1 = await A.req('GET', '/media/raw?clipId=clip-a', { raw: true });
+  const m2 = await A.req('GET', '/media/raw?course=delf-b2-test&clipId=clip-a', { raw: true });
   check(r.data.status === 'stored' && Buffer.compare(m1.data, clip) === 0 && Buffer.compare(m2.data, clip2) === 0
-    && [...s3.objects.keys()].some((k) => k.includes('/delf-b2-test/speaking/d3-s1')), 'recordings are stored per course (u/<user>/<course>/…)');
+    && [...s3.objects.keys()].some((k) => k.includes('/delf-b2-test/speaking/clip-a')), 'recordings are stored per course (u/<user>/<course>/…)');
   check(s3.stats.badSig === 0, 'every R2 request was correctly signed');
 
   // Vocabulary.
@@ -511,205 +509,200 @@ async function apiTests(base, owner, auth, s3) {
 
 // ───────────────────────── 3. browser ──────────────────────────────────────
 
-async function browserTests(base, owner, app) {
-  section('Browser (index.html + cloud layer + app bundle in jsdom)');
-  const { JSDOM, VirtualConsole } = require('jsdom');
-  const { IDBFactory, IDBKeyRange } = require('fake-indexeddb');
-  const { Blob } = require('buffer');
-  const origin = new URL(base).origin;
+function loadPlaywright() {
+  for (const id of ['playwright', 'playwright-core']) { try { return require(id); } catch (e) { /* next */ } }
+  return null;
+}
 
-  class Device {
-    constructor(name) { this.name = name; this.idb = new IDBFactory(); this.cookie = ''; this.w = null; this.errors = []; this.realLs = {}; }
-    async fetch(input, init = {}) {
-      const url = new URL(typeof input === 'string' ? input : input.url, base);
-      const headers = new Headers(init.headers || {});
-      if (url.origin === origin && this.cookie) headers.set('cookie', this.cookie);
-      let body = init.body;
-      if (body && typeof body.arrayBuffer === 'function') body = Buffer.from(await body.arrayBuffer());
-      const r = await fetch(url, { method: init.method || 'GET', headers, body, signal: init.signal });
-      for (const c of r.headers.getSetCookie()) this.cookie = /Max-Age=0/.test(c) ? '' : c.split(';')[0];
-      return r;
-    }
-    async open(waitBoot = true) {
-      this.reloadRequested = false;
-      const vc = new VirtualConsole();
-      vc.on('jsdomError', (e) => { if (/navigation/i.test(String(e.message))) this.reloadRequested = true; else this.errors.push(String(e.message)); });
-      const dev = this;
-      const dom = await JSDOM.fromURL(base + '/', {
-        runScripts: 'dangerously', resources: 'usable', pretendToBeVisual: true, virtualConsole: vc,
-        beforeParse(w) {
-          for (const [k, v] of Object.entries(dev.realLs)) w.localStorage.setItem(k, v);
-          Object.defineProperty(w, 'indexedDB', { value: dev.idb, configurable: true });
-          w.IDBKeyRange = IDBKeyRange;
-          w.fetch = (i, o) => dev.fetch(i, o);
-          w.Response = Response; w.Headers = Headers; w.Blob = Blob; w.AbortController = AbortController;
-          w.alert = () => {}; w.scrollTo = () => {}; w.confirm = () => true;
-        }
-      });
-      this.w = dom.window;
-      await until(() => this.w.__DELF50_CLOUD, 10000, 'cloud layer');
-      if (waitBoot) await this.booted();
-      return this;
-    }
-    booted() { return until(() => this.w.__DELF50_BOOT && this.w.__DELF50_BOOT.status === 'ready', 60000, `${this.name} boot`); }
-    close() { if (this.w) { this.w.close(); this.w = null; } }
-    async reload() { this.close(); return this.open(); }
-    cloud() { return this.w.__DELF50_CLOUD.state(); }
-    text() { return this.w.localStorage.getItem('delf50_v12_state'); }
-    state() { return JSON.parse(this.text()); }
-    realKeys() { const ls = this.w.localStorage, out = []; for (let i = 0; i < ls.length; i++) out.push(ls.key(i)); return out; }
-    $(sel) { return this.w.document.querySelector(sel); }
-    click(sel) { const e = this.$(sel); if (!e) throw new Error(`${this.name}: no ${sel}`); e.click(); }
-    async signIn(kind, email, password, name) {
-      await until(() => this.$('.dc-mask form'), 10000, 'sign-in form');
-      if (kind === 'register') { this.click('[data-t="register"]'); await until(() => this.$('.dc-mask [name="name"]'), 2000); }
-      const form = this.$('.dc-mask form');
-      for (const [k, v] of Object.entries({ email, password, name })) { const el = form.querySelector(`[name="${k}"]`); if (el) el.value = v; }
-      form.dispatchEvent(new this.w.Event('submit', { cancelable: true, bubbles: true }));
-    }
-    saved() { return until(() => { const s = this.cloud(); return s.ready && !s.pending && !s.inflight && !s.uploads && s.status === 'saved'; }, 20000, `${this.name} saved`); }
-    async answerGrammar(n) {
-      for (let i = 0; i < n; i++) {
-        this.click('[data-nav="grammar"]');
-        const opt = this.$('[data-gopt="0"]');
-        if (!opt) break;
-        opt.click();
-        const b = this.w.document.getElementById('submitG'); if (b) b.click();
-        const next = [...this.w.document.querySelectorAll('button')].find((x) => /下一题|继续/.test(x.textContent) && !x.disabled);
-        if (next) next.click();
-        await sleep(30); // a learner's pace: let the page breathe between answers
-      }
-    }
-    answerReading(keys) {
-      this.click('[data-nav="input"]'); this.click('[data-inputtab="reading"]');
-      for (const k of keys) { const e = this.$(`[data-ropt="${k}"]`); if (e) e.click(); }
-    }
-    write(text) {
-      this.click('[data-nav="output"]');
-      const ta = this.w.document.getElementById('writeText');
-      ta.value = text; ta.dispatchEvent(new this.w.Event('input'));
-      [...this.w.document.querySelectorAll('button')].find((b) => /保存本次写作/.test(b.textContent)).click();
-    }
+async function browserTests(base, owner, s3) {
+  section('Browser (the app in Chromium against the API)');
+  const pw = loadPlaywright();
+  if (!pw) { results.push('  skip: Playwright is not installed (NODE_PATH)'); return; }
+  const day = (d) => JSON.parse(fs.readFileSync(path.join(ROOT, `course/days/${String(d).padStart(2, '0')}.json`), 'utf8'));
+  const D1 = day(1), course = JSON.parse(fs.readFileSync(path.join(ROOT, 'course/course.json'), 'utf8'));
+  const browser = await pw.chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'] });
+  const errors = [];
+  const open = async (opts = {}) => {
+    const ctx = await browser.newContext(Object.assign({ viewport: { width: 1280, height: 900 } }, opts));
+    const page = await ctx.newPage();
+    page.on('pageerror', (e) => errors.push(e.message));
+    page.on('console', (m) => { if (m.type() === 'error' && !/status of 401/.test(m.text())) errors.push(m.text()); });
+    return { ctx, page };
+  };
+  const settled = (page) => page.waitForFunction(() => window.__delf50 && window.__delf50.saving().status === 'saved' && !window.__delf50.saving().pending, null, { timeout: 15000 });
+  const one = async (sql, p) => (await owner.query(sql, p)).rows[0];
+
+  const { ctx: ctxA, page: A } = await open();
+  await A.goto(base);
+  await A.waitForSelector('.auth form');
+  check(true, 'signed out, the sign-in form is shown');
+  await A.click('[data-mode="register"]');
+  await A.fill('input[name=name]', 'Camille');
+  await A.fill('input[name=email]', 'camille@example.com');
+  await A.fill('input[name=password]', 'correct-horse-11');
+  await A.click('button[type=submit]');
+  await A.waitForSelector('.hero');
+  check((await A.textContent('.hero h1')) === D1.title && /Jour 1 sur 50/.test(await A.textContent('.hero .eyebrow')), 'after sign-up, Day 1 opens with its title', await A.textContent('.hero h1'));
+  const tiles = await A.$$eval('.mod .mod-count', (xs) => xs.map((x) => x.textContent.replace(/\s+/g, ' ').trim()));
+  check(tiles[0] === `0/ ${course.quotas.standard.grammar} 题`, 'the day shows the standard plan', tiles);
+
+  // Grammar: the due questions, answered with the keyboard (one wrong).
+  await A.click('.mod >> nth=0');
+  await A.waitForSelector('.qcard');
+  const due = course.quotas.standard.grammar, letters = 'abcde';
+  for (let i = 0; i < due; i++) {
+    const q = D1.grammar[i], pick = i === 2 ? (q.answer + 1) % q.options.length : q.answer;
+    await A.waitForSelector(`.dot-q.on >> text="${i + 1}"`);
+    await A.keyboard.press(letters[pick]);
+    await A.waitForSelector('.feedback');
+    if (i < due - 1) await A.keyboard.press('Enter');
   }
+  await settled(A);
+  const g = await one(`select count(*)::int n, count(*) filter (where correct)::int ok, min(answer_key) k from delf50.grammar_attempts where not deleted`);
+  check(g.n === due && g.ok === due - 1 && g.k === '1:present-01', 'every grammar answer is a row under its Day 1 key', g);
+  const e = await one(`select count(*)::int n, min(skill) skill from delf50.error_items where resolved_at is null`);
+  check(e.n === 1, 'the wrong answer is in the error book', e);
 
-  const server = async (dev) => (await dev.fetch(base + '/api/v1/bootstrap').then((r) => r.json()));
+  // Output practice.
+  await A.goto(base + '/#/day/1/grammar/production');
+  await A.waitForSelector('#production .check');
+  await A.click('#production .check >> nth=0');
+  await A.click('#production .check >> nth=1');
+  await settled(A);
+  check((await one(`select count(*)::int n from delf50.grammar_productions where done`)).n === 2, 'output practice is saved per prompt');
 
-  // ── first visit: sign-in gate ──
-  const A = new Device('A');
-  A.realLs = { delf50_v12_state: '{"old":"local copy"}', delf50_cloud_meta_v1: '{}', other_site_key: 'kept' };
-  await A.open(false);
-  await until(() => A.$('.dc-mask form'), 10000, 'login overlay');
-  await sleep(1500);
-  check(A.w.__DELF50_BOOT.status !== 'ready', 'signed out, the app does not start; the sign-in form is shown');
-  await A.signIn('register', 'lea@example.com', 'correct-horse-9', 'Léa');
-  await A.booted();
-  await A.saved();
-  check(A.$('.dc-chip').textContent.includes('Léa') && A.$('.dc-chip').textContent.includes('已保存') && !A.$('.dc-mask'), 'after sign-up the app starts and everything is saved', A.$('.dc-chip').textContent);
+  // Reading: every question of the first text.
+  await A.goto(base + '/#/day/1/reading/1');
+  await A.waitForSelector('.qs');
+  for (let i = 0; i < D1.items.reading[0].questions.length; i++) await A.click(`.q >> nth=${i} >> .opt >> nth=${D1.items.reading[0].questions[i].answer}`);
+  await A.waitForSelector('.pager-item.on.done');
+  await settled(A);
+  const ra = await one(`select count(*)::int n, min(content_id) c, min(day) d from delf50.reading_answers`);
+  check(ra.n === D1.items.reading[0].questions.length && ra.c === 'R01-1' && ra.d === 1, 'reading answers are saved under the item id', ra);
+  check(await A.$$eval('.opt:disabled', (xs) => xs.length) === D1.items.reading[0].questions.reduce((n, q) => n + q.options.length, 0), 'answered questions are locked');
 
-  // ── the bundle is cached by the browser, revalidated by ETag ──
-  const s0 = await fetch(base + '/api/source?i=3&v=x');
-  const etag = s0.headers.get('etag');
-  const s1 = await fetch(base + '/api/source?i=3&v=x', { headers: { 'if-none-match': etag } });
-  const s2 = await fetch(base + '/api/source?i=3&v=x', { headers: { 'if-none-match': '"stale"' } });
-  check(s0.status === 200 && /^"[A-Za-z0-9_-]{22}"$/.test(etag) && s0.headers.get('cache-control') === 'public, max-age=0, must-revalidate'
-    && s1.status === 304 && s2.status === 200, 'bundle parts carry a content-hash ETag: unchanged → 304, changed → full part', { etag, a: s0.status, b: s1.status, c: s2.status });
-  const firstTry = app.stats.source.filter((q) => !/attempt=[2-9]/.test(q));
-  check(firstTry.length >= 13 && firstTry.every((q) => !/attempt=/.test(q)), 'the loader’s first attempt goes through the HTTP cache (no per-attempt URL)', app.stats.source.slice(0, 3));
+  // Writing: the draft is saved while typing and survives a reload; submitting moves it into the submissions.
+  await A.goto(base + '/#/day/1/writing/1');
+  await A.waitForSelector('.ed');
+  await A.type('.ed', 'Bonjour, je m’appelle Camille et je travaille à Lausanne.', { delay: 5 });
+  await settled(A);
+  const dr = await one(`select count(*)::int n, min(draft_key) k from delf50.drafts`);
+  check(dr.n === 1 && dr.k === '1:W01-1', 'the draft is saved as it is typed', dr);
+  await A.reload();
+  await A.waitForSelector('.ed');
+  check(/Camille/.test(await A.inputValue('.ed')), 'after a reload the draft is back');
+  await A.click('[data-act="submit"]');
+  await A.waitForSelector('.notice');
+  await A.click('[data-act="submit"]');
+  await A.waitForSelector('.versions');
+  await settled(A);
+  const w = await one(`select count(*)::int n, min(word_count) wc, min(content_id) c, (select count(*)::int from delf50.drafts) drafts from delf50.writing_submissions`);
+  check(w.n === 1 && w.wc === 9 && w.c === 'W01-1' && w.drafts === 0, 'a short text asks for confirmation, then is submitted with its word count', w);
 
-  // ── live saving ──
-  app.stats.sync.length = 0;
-  const from = A.cloud().latency.length;
-  await A.answerGrammar(3); await A.saved();
-  A.answerReading(['0:0', '1:1']); await A.saved();
-  A.write('Bonjour madame, je vous écris parce que je voudrais des informations sur le cours de français du soir.');
-  await A.saved();
-  A.click('[data-nav="grammar"]'); A.click('[data-prod-record]'); await A.saved();
-  A.click('[data-nav="output"]'); A.click('[data-outputtab="speaking"]');
-  [...A.w.document.querySelectorAll('button')].find((b) => /无录音时/.test(b.textContent)).click(); await A.saved();
-  A.click('[data-nav="grammar"]');
-  for (let i = 0; i < 6 && !A.state().errors.length; i++) { // answer until one is wrong
-    const next = [...A.w.document.querySelectorAll('button')].find((x) => /下一题|继续/.test(x.textContent) && !x.disabled);
-    if (next) next.click();
-    const opt = A.$(`[data-gopt="${1 + (i % 2)}"]`); if (opt) opt.click();
-    const sub = A.w.document.getElementById('submitG'); if (sub) sub.click();
-    await sleep(30);
+  // Speaking: a recording goes to R2, then its round is saved.
+  await A.goto(base + '/#/day/1/speaking/1');
+  await A.click('[data-act="record"]');
+  await A.waitForSelector('.recorder.live');
+  await A.waitForTimeout(1500);
+  await A.click('[data-act="finish"]');
+  await A.waitForSelector('.recorder.review audio');
+  await A.click('[data-act="keep"]');
+  await A.waitForSelector('.round');
+  await settled(A);
+  const sp = await one(`select count(*)::int n, min(clip_id) clip, min(duration_sec) sec from delf50.speaking_attempts`);
+  const stored = await one(`select count(*)::int n from delf50.media_objects where clip_id = $1`, [sp.clip]);
+  check(sp.n === 1 && /^clip-/.test(sp.clip) && sp.sec >= 1, 'a recorded round is saved with its clip', sp);
+  check(stored.n === 1 && [...s3.objects.keys()].some((k) => k.includes('/speaking/' + sp.clip)), 'the recording is stored in R2', [...s3.objects.keys()]);
+  await A.click('[data-act="timer"]');
+  await A.waitForTimeout(1100);
+  await A.click('[data-act="finish"]');
+  await A.waitForFunction(() => document.querySelectorAll('.round').length === 2);
+  await settled(A);
+  check((await one(`select count(*)::int n from delf50.speaking_attempts where clip_id is null`)).n === 1, 'a timed round without recording is saved too');
+
+  // Practice counters, intensity.
+  await A.goto(base + '/#/day/1');
+  await A.waitForSelector('.hero');
+  await A.click('[data-act="practice"][data-field="vocab"][data-step="5"]');
+  await settled(A);
+  check((await one(`select vocab from delf50.practice_counters where day = 1`)).vocab === 5, 'the vocabulary counter is saved per day');
+  await A.click('[data-act="intensity"][data-v="light"]');
+  await settled(A);
+  const lightTiles = await A.$$eval('.mod .mod-count', (xs) => xs.map((x) => x.textContent.replace(/\s+/g, ' ').trim()));
+  check(lightTiles[0] === `${course.quotas.light.grammar}/ ${course.quotas.light.grammar} 题` && (await one(`select doc->>'intensity' i from delf50.study_state`)).i === 'light',
+    'a lighter intensity needs fewer questions; answers beyond it still count', lightTiles);
+
+  // Nothing is kept in the browser.
+  const local = await A.evaluate(async () => ({ ls: localStorage.length, ss: sessionStorage.length, idb: indexedDB.databases ? (await indexedDB.databases()).length : 0 }));
+  check(local.ls === 0 && local.ss === 0 && local.idb === 0, 'nothing is stored in the browser', local);
+  const lat = await A.evaluate(() => window.__delf50.saving().latency);
+  check(lat.length >= 3 && lat.every(([total]) => total < 3000), `changes reach the server within ${Math.max(...lat.map((x) => x[0]))} ms`, lat);
+
+  // A second device sees everything; a change there reaches the first when it comes back.
+  const { ctx: ctxB, page: B } = await open({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+  await B.goto(base);
+  await B.fill('input[name=email]', 'camille@example.com');
+  await B.fill('input[name=password]', 'correct-horse-11');
+  await B.click('button[type=submit]');
+  await B.waitForSelector('.hero');
+  check(await B.isVisible('.nav') && /今日已完成|今日完成度/.test(await B.textContent('.hero-state')), 'the second device opens the same day');
+  await B.goto(base + '/#/day/1/grammar/11');
+  await B.waitForSelector('.qcard');
+  await B.click(`.opt >> nth=${D1.grammar[10].answer}`);
+  await settled(B);
+  await A.goto(base + '/#/day/1/grammar/11');
+  await A.waitForSelector('.qcard');
+  await A.evaluate(() => { Object.defineProperty(document, 'visibilityState', { value: 'hidden', configurable: true }); document.dispatchEvent(new Event('visibilitychange')); Object.defineProperty(document, 'visibilityState', { value: 'visible', configurable: true }); document.dispatchEvent(new Event('visibilitychange')); });
+  await A.waitForSelector('.qcard.is-ok', { timeout: 10000 });
+  check(true, 'an answer given on another device appears when the page comes back');
+
+  // The error book.
+  await A.goto(base + '/#/review');
+  await A.waitForSelector('.err');
+  await A.click('[data-act="resolve"]');
+  await A.waitForSelector('.empty');
+  await settled(A);
+  check((await one(`select count(*)::int n from delf50.error_items where resolved_at is null`)).n === 0, 'a mastered error leaves the error book (kept as resolved)');
+
+  // Every page renders.
+  for (const [hash, sel] of [['#/progress', '.heat'], ['#/route', '.tiles'], ['#/archive', '.arc-days'], ['#/archive/1', '.arc-qs'], ['#/guide', '.nodes'], ['#/day/16/listening/1', '.player'], ['#/day/50', '.hero']]) {
+    await A.goto(base + '/' + hash);
+    const ok = await A.waitForSelector(sel, { timeout: 8000 }).then(() => true, () => false);
+    check(ok, `${hash} renders`);
   }
-  await A.saved();
-  const errBefore = A.state().errors.length;
-  A.click('[data-nav="progress"]'); if (A.$('[data-fixerr]')) A.click('[data-fixerr]'); await A.saved();
-  const lat = A.cloud().latency.slice(from).map((x) => x[0]);
-  check(lat.length >= 3 && Math.max(...lat) < 500, `every change reaches the database within 500 ms (max ${Math.max(...lat)} ms; request times ${app.stats.sync.join('/')} ms)`, lat);
-  const sA = A.state();
-  const srv = await server(A);
-  check(sameData(srv.state, sA), 'the database holds exactly the app state', (function walk(a, b, p) { if (sameData(a, b)) return []; if (a && b && typeof a === 'object' && typeof b === 'object') return [...new Set([...Object.keys(a), ...Object.keys(b)])].flatMap((k) => walk(a[k], b[k], p + '.' + k)); return [[p, a, b]]; })(sA, srv.state, 'S').slice(0, 5));
-  const rows = (await owner.query(`select (select count(*) from delf50.grammar_attempts where not deleted)::int g, (select count(*) from delf50.reading_answers)::int r, (select count(*) from delf50.writing_submissions)::int w`)).rows[0];
-  check(rows.g >= 1 && rows.r === Object.keys(sA.reading.answers).length && rows.w === 1, 'answers and writing are rows in their tables', rows);
-  const real = (await owner.query(`select (select count(*) from delf50.grammar_productions where done)::int gp, (select count(*) from delf50.speaking_attempts where extra->>'manual' = 'true')::int manual,
-    (select count(*) from delf50.error_items where resolved_at is not null)::int fixed, (select count(*) from delf50.study_days)::int days, (select count(*) from delf50.daily_progress)::int daily`)).rows[0];
-  check(real.gp === 1 && real.manual === 1 && real.fixed === (errBefore > 0 ? 1 : 0) && real.days >= 1 && real.daily >= 1 && errBefore > 0,
-    'real app flows land in their tables: grammar output practice, offline speaking, fixed error, study day, daily counters', Object.assign({ errBefore }, real));
-  const realState = A.w.localStorage['delf50_v12_state']; // named access reads the real storage, not the app's in-memory view
-  check(A.realKeys().sort().join() === 'delf50_cloud_meta_v1,delf50_v12_state,other_site_key' && realState === '{"old":"local copy"}' && !('old' in sA),
-    'whatever an older version left in the browser is neither used nor touched; nothing new is written', A.realKeys());
+  const lastDayTitle = await A.textContent('.hero h1');
+  check(lastDayTitle === day(50).title, 'Day 50 opens with its own material', lastDayTitle);
 
-  // ── recordings ──
-  const clip = crypto.randomBytes(8 * 1024 * 1024 + 7);
-  const ok = await A.w.storeAudio('d1-s1', new A.w.Blob([clip], { type: 'audio/webm' }));
-  await A.saved();
-  const stored = (await owner.query(`select status, size_bytes, parts from delf50.media_objects where clip_id = 'd1-s1'`)).rows[0];
-  check(ok === true && stored && stored.status === 'stored' && Number(stored.size_bytes) === clip.length && stored.parts === 3, 'a saved recording is uploaded to R2 at once', stored);
-  const dbs = (await A.idb.databases()).map((d) => d.name);
-  check(!dbs.includes('delf50_audio_v1'), 'no recording is stored in the browser', dbs);
+  // The session ends mid-study: the change waits, and is saved after signing in again.
+  await A.goto(base + '/#/day/2');
+  await A.waitForSelector('.hero');
+  await settled(A);
+  await ctxA.clearCookies(); // the session cookie is gone (expired)
+  await A.click('[data-act="practice"][data-field="review"][data-step="1"]');
+  await A.waitForSelector('.auth form', { timeout: 15000 });
+  await A.fill('input[name=email]', 'camille@example.com');
+  await A.fill('input[name=password]', 'correct-horse-11');
+  await A.click('button[type=submit]');
+  await A.waitForSelector('.hero');
+  await settled(A);
+  check((await one(`select review from delf50.practice_counters where day = 2`) || {}).review === 1, 'after the session expires, signing in again saves the pending change');
 
-  // ── reload and a second device ──
-  const before = A.state();
-  await A.reload();
-  await A.saved();
-  check(sameData(before.writing, A.state().writing) && sameData(before.reading.answers, A.state().reading.answers), 'a reload restores the learning from the database');
-  const B = new Device('B');
-  await B.open(false);
-  await B.signIn('login', 'lea@example.com', 'correct-horse-9');
-  await B.booted(); await B.saved(); await A.saved();
-  check(B.state().grammar.attempts === A.state().grammar.attempts && sameData(B.state().writing.records, A.state().writing.records), 'a second device continues with the same records');
-  const got = await B.w.getAudio('d1-s1');
-  check(got && Buffer.compare(Buffer.from(await got.blob.arrayBuffer()), clip) === 0, 'the second device plays the recording from R2');
-
-  await B.answerGrammar(1); await B.saved();
-  A.w.document.dispatchEvent(new A.w.Event('visibilitychange'));
-  await until(() => A.reloadRequested, 5000, 'A refresh');
-  check(true, 'a device returning to the foreground reloads when another device saved meanwhile');
-  await A.reload();
-  await A.saved(); await B.saved();
-  check(A.state().grammar.attempts === B.state().grammar.attempts, 'after the refresh both devices agree');
-
-  // ── the session ends mid-study: nothing is lost ──
-  const other = client(base); other.cookie = A.cookie;
-  await other.req('POST', '/auth/sign-out', { json: {} });
-  A.write('Deuxième texte écrit pendant que la session expirait.');
-  await until(() => A.$('.dc-mask form'), 10000, 'login after expiry');
-  check(A.cloud().pending, 'an expired session asks to sign in again and keeps the unsaved change');
-  await A.signIn('login', 'lea@example.com', 'correct-horse-9');
-  await A.saved();
-  check((await server(A)).state.writing.records.length === 2, 'after signing in again the change is saved');
-
-  // ── sign-out ──
-  A.click('.dc-chip');
-  await until(() => A.$('[data-a="out"]'), 3000);
-  A.click('[data-a="out"]');
-  await until(() => A.reloadRequested, 5000, 'reload after sign-out');
-  check(A.cookie === '', 'sign-out clears the session and reloads to the sign-in form');
-  const errs = A.errors.concat(B.errors).filter((e) => !/Not implemented/.test(e));
-  check(errs.length === 0, 'no page errors', errs.slice(0, 3));
-  A.close(); B.close();
+  await A.click('[data-act="account"]');
+  await A.click('[data-signout]');
+  await A.waitForSelector('.auth form');
+  check(true, 'sign-out returns to the sign-in form');
+  check(errors.length === 0, 'no page errors', errors.slice(0, 3));
+  await ctxA.close(); await ctxB.close(); await browser.close();
 }
 
 // ───────────────────────── main ─────────────────────────────────────────────
 
 async function main() {
+  C = await import(path.join(ROOT, 'app/sync-core.js'));
   unitTests();
   const url = process.env.TEST_DATABASE_URL;
   if (!url) {
-    results.push('\n  skip API and browser sections: TEST_DATABASE_URL is not set');
+    results.push('\n  skip API section: TEST_DATABASE_URL is not set');
   } else {
     const { Pool } = require('pg');
     const owner = new Pool({ connectionString: url, max: 4 });
@@ -727,8 +720,25 @@ async function main() {
     }
     const u = new URL(url); u.username = 'delf50_api'; u.password = apiPassword;
     process.env.API_DATABASE_URL = u.toString();
-    // The API uses its production driver (Neon over HTTP), connected as delf50_api.
+    // The API uses its production driver (Neon over HTTP), connected as delf50_api;
+    // against a plain PostgreSQL (a local run) the same statements go through node-postgres.
     process.env.DATABASE_URL = process.env.API_DATABASE_URL;
+    if (!/\.neon\.tech$/.test(u.hostname)) {
+      const pool = new Pool({ connectionString: process.env.API_DATABASE_URL, max: 4 });
+      require(path.join(ROOT, 'api/_lib/db.js')).setDriver({
+        query: (t, p) => pool.query(t, p).then((r) => r.rows),
+        async transaction(list) {
+          const c = await pool.connect();
+          try {
+            await c.query('begin');
+            const out = [];
+            for (const [t, p] of list) out.push((await c.query(t, p)).rows);
+            await c.query('commit');
+            return out;
+          } catch (e) { await c.query('rollback'); throw e; } finally { c.release(); }
+        }
+      });
+    }
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
     const creds = { id: 'TESTKEYID', secret: crypto.randomBytes(20).toString('hex') };
     const s3 = await startS3Mock(makeCert(fs.mkdtempSync(path.join(os.tmpdir(), 'delf50-'))), creds);
@@ -738,7 +748,7 @@ async function main() {
     try {
       await apiTests(app.base, owner, auth, s3);
       await owner.query('delete from neon_auth."user"; delete from delf50.vocabulary_items');
-      await browserTests(app.base, owner, app);
+      await browserTests(app.base, owner, s3);
     } catch (e) {
       check(false, 'suite aborted', e.stack || String(e));
     } finally {

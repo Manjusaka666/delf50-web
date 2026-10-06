@@ -11,7 +11,6 @@
  */
 const http = require('http');
 const v1 = require('../api/v1.js');
-const C = require('../cloud/delf50-cloud.js');
 const records = require('../api/_lib/records.js');
 const SPEC = records.collections();
 const out = [];
@@ -35,6 +34,7 @@ function client(base) {
 }
 
 (async () => {
+  const C = await import('../app/sync-core.js');
   const server = http.createServer((req, res) => {
     const u = new URL(req.url, 'http://x');
     req.query = Object.fromEntries(u.searchParams); req.query.__route = u.pathname.slice(8);
@@ -52,21 +52,21 @@ function client(base) {
     r = await A.req('GET', '/bootstrap');
     check(r.status === 200 && r.data.state === null && r.data.user.email === email, 'bootstrap resolves the Neon Auth session to the user', r.data);
     const now = () => new Date().toISOString();
-    const S = { selectedDay: 1, reading: { attempts: 1, answers: { '1:r1:0': 2 } }, writing: { count: 1, records: [{ day: 1, title: 'T', text: 'Bonjour', words: 1, at: now() }] },
-      errors: [{ skill: 'g', original: 'a', correct: 'b', why: 'c', at: now() }], grammarReview202: { '1:G1': { day: 1, contentId: 'G1', selectedIndex: 0, correctIndex: 0, correct: true, answeredAt: now() } },
-      contentProgress172: { completed: { reading: { r1: { day: 1 } }, writing: {} } }, drafts171: { writing: { k: 'draft' } } };
+    const S = { day: 1, intensity: 'standard', startedAt: now(), reading: { '1:R01-1:0': 2 }, listening: {}, writing: [{ day: 1, contentId: 'W01-1', title: 'T', text: 'Bonjour', words: 1, at: now() }],
+      errors: [{ skill: 'g', original: 'a', correct: 'b', why: 'c', at: now() }], grammar: { '1:present-01': { day: 1, contentId: 'present-01', nodeId: 'present', selectedIndex: 0, correctIndex: 0, correct: true, answeredAt: now() } },
+      production: { '1:present:0': true }, drafts: { writing: { '1:W01-2': 'draft' }, application: {} }, practice: { 1: { vocab: 5, review: 0 } } };
     let d = C.diff({}, {}, S, SPEC);
     r = await A.req('POST', '/sync', { doc: d.doc, ops: d.ops });
     check(r.status === 200 && r.data.rev === 1, 'first sync commits', r.data);
     r = await A.req('GET', '/bootstrap');
     check(C.equal(r.data.state, S), 'bootstrap rebuilds the state exactly', r.data.state);
-    let prev = S, pos = d.pos; const ms = [];
+    let prev = S, at = { pos: d.pos, keys: d.keys }; const ms = [];
     for (let i = 0; i < 15; i++) {
       const next = JSON.parse(JSON.stringify(prev));
-      next.reading.answers[`1:r1:${i + 1}`] = i % 4; next.reading.attempts++; next.lastSavedAt = now();
-      d = C.diff(prev, pos, next, SPEC);
+      next.listening[`1:L01-1:${i}`] = i % 3; next.practice[1].review = i + 1;
+      d = C.diff(prev, at, next, SPEC);
       r = await A.req('POST', '/sync', { doc: d.doc, ops: d.ops });
-      ms.push(Math.round(r.ms)); prev = next; pos = d.pos;
+      ms.push(Math.round(r.ms)); prev = next; at = { pos: d.pos, keys: d.keys };
     }
     ms.sort((a, b) => a - b);
     check(ms[ms.length - 1] < 500, `sync round trip p50 ${ms[7]} ms, max ${ms[14]} ms`, ms);
@@ -91,9 +91,9 @@ function client(base) {
 
     if (process.env.R2_BUCKET) { // a real R2 round trip through the API, then removed again
       const clip = require('crypto').randomBytes(200 * 1024);
-      const put = await fetch(`${base}/api/v1/media/raw?clipId=smoke-${Date.now()}&type=audio%2Fwebm&size=${clip.length}`, { method: 'PUT', headers: { cookie: A.cookie, origin: ORIGIN, 'content-type': 'application/octet-stream' }, body: clip });
+      const put = await fetch(`${base}/api/v1/media/raw?clipId=smoke-${Date.now()}&type=audio%2Fwebm&size=${clip.length}&parts=1&part=0`, { method: 'PUT', headers: { cookie: A.cookie, origin: ORIGIN, 'content-type': 'application/octet-stream' }, body: clip });
       const stored = await put.json();
-      const got = Buffer.from(await (await fetch(`${base}/api/v1/media/raw?clipId=${stored.clipId}`, { headers: { cookie: A.cookie } })).arrayBuffer());
+      const got = Buffer.from(await (await fetch(`${base}/api/v1/media/raw?clipId=${stored.clipId}&part=0`, { headers: { cookie: A.cookie } })).arrayBuffer());
       const del = await fetch(`${base}/api/v1/media?clipId=${stored.clipId}`, { method: 'DELETE', headers: { cookie: A.cookie, origin: ORIGIN } });
       check(stored.status === 'stored' && Buffer.compare(got, clip) === 0 && del.status === 200, 'R2: a recording uploads, downloads byte-identical and is deleted', stored);
     }
