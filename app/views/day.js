@@ -3,7 +3,7 @@ import { store, commit } from '../store.js';
 import { getCourse, prefetch, MODULES } from '../course.js';
 import { itemState, grammarAnswer } from '../progress.js';
 import { setIntensity, INTENSITIES } from '../state.js';
-import { html, icon, ring, pad2, frText, MODULE_NAMES, MODULE_FR, UNITS } from '../ui.js';
+import { html, icon, matisse, pad2, frText, MODULE_NAMES, MODULE_FR, UNITS } from '../ui.js';
 import { dayContext } from './common.js';
 
 export async function dayView(d) {
@@ -42,15 +42,17 @@ export async function dayView(d) {
     const notes = [['能做到', day.canDo], ['复习', day.review], ['输入', day.input], ['输出', day.output], ['检查点', day.checkpoint]].filter((x) => x[1]);
     return html`<article class="page day">
       <header class="hero">
-        <div class="hero-num" aria-hidden="true"><span>${pad2(d)}</span></div>
-        <div class="hero-body">
+        <div class="hero-text">
           <p class="eyebrow">Jour ${d} sur ${course.days} · ${day.phase} · ${day.level}</p>
-          <h1 class="display">${day.title}</h1>
+          <p class="hero-num" aria-hidden="true"><em>Jour</em>${pad2(d)}</p>
+          <h1 class="display-s">${day.title}</h1>
           <p class="hero-fr">${frText(day.grammarFocus)}</p>
           <p class="hero-meta"><span class="tag">${day.topic}</span><span class="tag">${day.function}</span></p>
         </div>
-        <div class="hero-ring">${ring(pr.fraction, 132, `今日完成 ${Math.round(pr.fraction * 100)}%`)}<span class="hero-pct"><b>${Math.round(pr.fraction * 100)}</b>%</span>
-          <span class="hero-state">${pr.complete ? '今日已完成' : '今日完成度'}</span></div>
+        <div class="hero-art">${matisse(d)}
+          <div class="hero-progress" role="img" aria-label="今日完成 ${Math.round(pr.fraction * 100)}%"><b>${Math.round(pr.fraction * 100)}<small>%</small></b><span class="hero-state">${pr.complete ? '今日已完成' : '今日完成度'}</span>
+            <span class="line"><i style="--f:${pr.fraction}"></i></span></div>
+        </div>
         <ol class="phases" aria-label="阶段">${course.phases.map((p, i) => html`<li class="${i === phaseIndex ? 'on' : i < phaseIndex ? 'past' : ''}" style="--w:${p.to - p.from + 1}">
           <span>${p.name}</span>${i === phaseIndex ? html`<i style="--at:${(d - p.from + 0.5) / (p.to - p.from + 1)}"></i>` : ''}</li>`)}</ol>
       </header>
