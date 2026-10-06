@@ -5,7 +5,7 @@
  * so levels never share progress, plans or content ids (see
  * docs/multi-level-architecture.md).
  *
- * To open a new level, add its entry here (and its content bundle); no schema
+ * To open a new level, add its entry here (and its course data); no schema
  * change is needed.
  */
 const { HttpError } = require('./http');

@@ -1,23 +1,21 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "regions": [
-    "fra1"
-  ],
+  "regions": ["fra1"],
   "rewrites": [
-    {
-      "source": "/api/v1/:path*",
-      "destination": "/api/v1?__route=:path*"
-    }
+    { "source": "/api/v1/:path*", "destination": "/api/v1?__route=:path*" }
   ],
   "headers": [
     {
-      "source": "/cloud/(.*)",
+      "source": "/(.*)",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "microphone=(self), camera=(), geolocation=()" }
       ]
-    }
+    },
+    { "source": "/", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] },
+    { "source": "/(app|course)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] },
+    { "source": "/fonts/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }
   ]
 }

@@ -13,7 +13,7 @@
  *   GET        health[?deep=1]
  *   *          auth/<neon-auth route>   e.g. sign-up/email, sign-in/email, get-session, sign-out, token
  *   GET        courses                  {courses, enrolled: [{course, rev, updatedAt}]}
- *   GET        bootstrap                {user, course, state, rev, positions, collections}
+ *   GET        bootstrap                {user, course, state, rev, positions, keys, collections}
  *   POST       sync                     {doc, ops, device, batch} → {rev}
  *   GET        rev                      {rev}
  *   GET|DELETE media[?clipId=]
