@@ -44,7 +44,7 @@ export async function dayView(d) {
       <header class="hero">
         <div class="hero-text">
           <p class="eyebrow">Jour ${d} sur ${course.days} · ${day.phase} · ${day.level}</p>
-          <p class="hero-num" aria-hidden="true"><em>Jour</em>${pad2(d)}</p>
+          <p class="hero-num" aria-hidden="true">Jour ${pad2(d)}</p>
           <h1 class="display-s">${day.title}</h1>
           <p class="hero-fr">${frText(day.grammarFocus)}</p>
           <p class="hero-meta"><span class="tag">${day.topic}</span><span class="tag">${day.function}</span></p>
