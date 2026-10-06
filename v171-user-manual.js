@@ -27,18 +27,11 @@ function markDayActivity171(kind){
   const r=S.dayHistory171[k]||(S.dayHistory171[k]={firstActivityAt:now,lastActivityAt:now,actions:0,lastAction:''});
   r.lastActivityAt=now;r.actions=(r.actions||0)+1;r.lastAction=kind||'学习操作';
 }
-function updateSaveBadge171(){
-  const el=document.getElementById('autosaveText171');if(!el)return;
-  if(!S.startedAt){el.textContent='尚未开始 · 第一次答题、输入或录音后自动保存';return;}
-  const t=S.lastSavedAt?new Date(S.lastSavedAt).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'}):'刚刚';
-  el.textContent=`已自动保存 · Day ${S.selectedDay} · ${t} · 本机浏览器`;
-}
 const saveBase171=save;
 save=function(){
   const sig=evidenceSignature171();
   if(sig!==lastEvidence171){markDayActivity171('学习记录更新');lastEvidence171=sig;}
   saveBase171();
-  updateSaveBadge171();
 };
 
 function currentWriting171(){try{return typeof currentWriting==='function'?currentWriting():WRITINGS[S.writing.index%WRITINGS.length]}catch(e){return WRITINGS[S.writing.index%WRITINGS.length]}}
@@ -51,8 +44,7 @@ function queueDraft171(type,key,value){
     S.drafts171[type][key]=value;
     markDayActivity171(type==='writing'?'写作草稿':'应用草稿');
     saveBase171();
-    updateSaveBadge171();
-  },650);
+    },650);
 }
 
 const submitWritingBase171=submitWriting;
@@ -70,7 +62,7 @@ submitApp=function(){
 
 function manual171(){
   const open=S.manualAcknowledged171?'':' open';
-  return `<div class="card manual171"><details${open}><summary><span><b>用户手册 · 建议首次学习前阅读</b><small>了解每一步为什么做、怎么做，以及数据如何保存</small></span><span class="manualchev171">⌄</span></summary><div class="manualbody171">
+  return `<div class="card manual171"><details${open}><summary><span><b>用户手册 · 建议首次学习前阅读</b><small>了解每一步为什么做、怎么做</small></span><span class="manualchev171">⌄</span></summary><div class="manualbody171">
     <div class="manualintro171"><b>学习原则</b><p>本课程不是“做完题=学会”。每天按照 <strong>理解 → 控制练习 → 真实应用 → 听读输入 → 写说输出 → 错题回炉</strong> 推进；5 / 6.5 / 8 小时只改变同阶段训练量，不会提前塞入后续语法。</p></div>
     <div class="manualgrid171">
       <div class="manualstep171"><span>01</span><div><b>选择 Day 与学习时长</b><p><strong>目的：</strong>让学习节奏由你掌控，同时保持推荐顺序。<br><strong>方式：</strong>默认按 Day 1→50；状态好时可提前学下一天。5 / 6.5 / 8 小时会同步改变语法、听力、阅读、写作、口语和应用配额。</p></div></div>
@@ -102,8 +94,7 @@ bind=function(){
   const gp=document.querySelector('[data-goto-progress171]');if(gp)gp.onclick=()=>{view='progress';render()};
   const wt=document.getElementById('writeText');if(wt){const item=currentWriting171(),key=draftKey171('writing',item);if(S.drafts171.writing[key]&&!wt.value)wt.value=S.drafts171.writing[key];wt.addEventListener('input',()=>queueDraft171('writing',key,wt.value));}
   const at=document.getElementById('appText');if(at){const item=currentApplication171(),key=draftKey171('application',item);if(S.drafts171.application[key]&&!at.value)at.value=S.drafts171.application[key];at.addEventListener('input',()=>queueDraft171('application',key,at.value));}
-  updateSaveBadge171();
 };
 
-S.version=V171;saveBase171();render();
+saveBase171();render();
 })();

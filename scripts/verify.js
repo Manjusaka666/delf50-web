@@ -13,7 +13,6 @@ const path = require('path');
 const { JSDOM } = require('jsdom');
 
 const ROOT = path.join(__dirname, '..');
-const RELEASE = require(path.join(ROOT, 'release-meta.js'));
 const BUNDLE = require(path.join(ROOT, 'build', 'bundle-parts.js'));
 const STORAGE_KEY = 'delf50_v12_state';
 
@@ -28,20 +27,6 @@ const notes = [];
 function check(ok, label, detail) {
   if (ok) notes.push(`  ok   ${label}`);
   else failures.push(`  FAIL ${label}${detail ? ' — ' + detail : ''}`);
-}
-
-/** Rebuilds index 12 the same way api/source.js does, without importing Express plumbing. */
-function assembleSources() {
-  const sources = BUNDLE.base.slice();
-  const last = sources.length - 1;
-  const splice = BUNDLE.seedSpliceIndex;
-  const ordered = [`globalThis.__DELF50_RELEASE=${JSON.stringify(RELEASE)};`]
-    .concat(BUNDLE.layers.slice(0, splice))
-    .concat([`globalThis.__DELF50_SOURCE_SEEDS_V181=${JSON.stringify(BUNDLE.seeds)};`])
-    .concat(BUNDLE.layers.slice(splice));
-  const boot = `if(typeof S!=='undefined'){S.version='${RELEASE.app}';if(S.meta172){S.meta172.appVersion='${RELEASE.app}';S.meta172.contentVersion='${RELEASE.content}';}}if(typeof render==='function')render();`;
-  sources[last] = sources[last] + '\n;\n' + ordered.join('\n;\n') + '\n;\n' + boot;
-  return sources;
 }
 
 /**
@@ -114,7 +99,7 @@ function boot(initialState) {
   const errors = [];
   window.addEventListener('error', (e) => errors.push(String(e.message || e.error)));
 
-  const sources = assembleSources();
+  const sources = BUNDLE.parts;
   for (let i = 0; i < sources.length; i++) {
     let thrown = null;
     const onError = (e) => { thrown = String(e.message || e.error || 'unknown'); };
@@ -124,7 +109,7 @@ function boot(initialState) {
     window.document.body.appendChild(el);
     el.remove();
     window.removeEventListener('error', onError);
-    if (thrown) { errors.push(`${BUNDLE.baseFiles[i]}: ${thrown}`); break; }
+    if (thrown) { errors.push(`${BUNDLE.files[i]}: ${thrown}`); break; }
   }
   return { window, errors, stored: () => JSON.parse(window.localStorage.getItem(STORAGE_KEY) || 'null') };
 }
@@ -257,7 +242,7 @@ const corpusAudit = (() => {
 check(!!corpusAudit, 'corpus layer published its audit');
 if (corpusAudit) {
   check(corpusAudit.status === 'pass', 'corpus audit status is pass',
-    `${corpusAudit.status}: rejected ${JSON.stringify(corpusAudit.rejected).slice(0, 200)} similar ${JSON.stringify(corpusAudit.similar).slice(0, 120)} missing ${JSON.stringify(corpusAudit.missing).slice(0, 120)}`);
+    `${corpusAudit.status}: rejected ${JSON.stringify(corpusAudit.rejected).slice(0, 200)} missing ${JSON.stringify(corpusAudit.missing).slice(0, 120)}`);
   notes.push(`  info corpus: ${corpusAudit.applied.length} documents applied, coverage ${JSON.stringify(corpusAudit.coverage)}`);
 }
 
@@ -289,6 +274,24 @@ function uniqueness(rows, label) {
 }
 const scopedR = uniqueness(R, 'reading');
 const scopedL = uniqueness(L, 'listening');
+
+/* The whole authored corpus, all days: no two documents of a kind overlap by 55%+.
+   Run here, once per build, rather than in every learner's browser on every load. */
+{
+  const el = W.document.createElement('script');
+  el.textContent = 'window.__probe=globalThis.__DELF50_CORPUS_V200||[];';
+  W.document.body.appendChild(el); el.remove();
+  const corpus = W.__probe;
+  for (const [t, field, label] of [['r', 'text', 'reading'], ['l', 'script', 'listening']]) {
+    const docs = corpus.filter((e) => e.t === t).map((e) => ({ tag: `D${e.d}S${e.s}`, g: trigrams(e[field]) }));
+    const close = [];
+    for (let i = 0; i < docs.length; i++) for (let j = i + 1; j < docs.length; j++) {
+      const q = jaccard(docs[i].g, docs[j].g);
+      if (q >= 0.55) close.push(`${docs[i].tag}~${docs[j].tag} ${(q * 100).toFixed(0)}%`);
+    }
+    check(docs.length >= 190 && close.length === 0, `${label}: no two of the ${docs.length} authored documents overlap by 55%+`, close.slice(0, 3).join('; '));
+  }
+}
 
 /* Cross-modal: the same day's reading and listening must not restate one another. */
 let crossWorst = { score: 0 };
@@ -403,7 +406,7 @@ check(renderProbe && !renderProbe.err, 'reading, listening and progress pages al
 if (renderProbe && !renderProbe.err) {
   check(/校准参照/.test(renderProbe.reading), 'the reading page shows the cited source to the learner');
   check(/Journal en français facile/.test(renderProbe.listening), 'the listening page points to authentic French audio');
-  check(/学习材料校验/.test(renderProbe.progress), 'the progress page shows the content audit');
+  check(!/学习材料校验|兼容与升级保护|Content ID|Schema \d/.test(renderProbe.progress), 'the progress page carries no developer diagnostics');
   check(!/r177-d\d{2}-s\d{2}|traceId|semanticFingerprint/.test(renderProbe.reading), 'no internal identifier is rendered on the reading page');
 }
 

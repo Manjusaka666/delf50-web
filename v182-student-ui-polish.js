@@ -47,8 +47,7 @@ if(typeof progressPage==='function'){
 const saveBaseUI=save;
 save=function(){
   const out=saveBaseUI();
-  S.version=APP;
-  if(S.meta172){S.meta172.appVersion=APP;S.meta172.contentVersion=CONTENT;S.meta172.studentUi=UI_ROUTE;}
+  
   persistUI();
   return out;
 };
@@ -60,8 +59,7 @@ function injectUI(){
   document.head.appendChild(st);
 }
 injectUI();
-S.version=APP;
-if(S.meta172){S.meta172.appVersion=APP;S.meta172.contentVersion=CONTENT;S.meta172.studentUi=UI_ROUTE;}
+
 persistUI();
 globalThis.__DELF50_STUDENT_UI={appVersion:APP,contentVersion:CONTENT,route:UI_ROUTE};
 render();

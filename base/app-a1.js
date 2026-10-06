@@ -2,7 +2,11 @@
 function fresh(){return{version:VERSION,selectedDay:1,intensity:'standard',taskDone:{},grammar:{attempts:0,correct:0,skill:{}},reading:{attempts:0,correct:0,index:0,answers:{}},listening:{attempts:0,correct:0,index:0,answers:{}},application:{count:0,index:0,records:[]},writing:{count:0,index:0,records:[]},speaking:{count:0,totalSec:0,index:0,records:[]},errors:[],startedAt:null,lastSavedAt:null}};
 function load(){try{const raw=localStorage.getItem(KEY);return raw?Object.assign(fresh(),JSON.parse(raw)):fresh()}catch(e){return fresh()}}
 let S=load(),view='today',UI={gNode:0,gQ:0,gSel:null,gAnswered:false,appMsg:'',writeMsg:'',readMsg:'',listenMsg:'',speakMsg:'',recording:false,recStart:0,recTimer:null,media:null,chunks:[]};
-function save(){S.lastSavedAt=new Date().toISOString();try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){} }
+const loaded={body:bodyOf(S),at:S.lastSavedAt};let savedBody=loaded.body;
+/* The state's content, independent of key order and of lastSavedAt itself. */
+function bodyOf(s){const{lastSavedAt,...rest}=s;return JSON.stringify(rest,(k,v)=>{if(v&&typeof v==='object'&&!Array.isArray(v)){const o={};for(const x of Object.keys(v).sort())o[x]=v[x];return o}return v})}
+/* lastSavedAt is the time of the last change, so a save that changes nothing leaves the state, and the server, untouched. */
+function save(){const body=bodyOf(S);if(body===loaded.body)S.lastSavedAt=loaded.at;else if(body!==savedBody)S.lastSavedAt=new Date().toISOString();savedBody=body;try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){} }
 function esc(s){return String(s??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]))}
 function pct(c,t){return t?Math.round(c/t*100):null}
 function fmtMin(m){const h=Math.floor(m/60),r=m%60;return h?(r?`${h}小时${r}分`:`${h}小时`):`${r}分`}

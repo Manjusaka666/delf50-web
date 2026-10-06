@@ -47,10 +47,10 @@ function isProtected(t,d,s,id){
   if((t==='writing'||t==='application')&&S.drafts171&&S.drafts171[t]){const p=`${d}:${t}:`;if(Object.entries(S.drafts171[t]).some(([k,v])=>k.startsWith(p)&&String(v||'').trim()))return true}
   return false;
 }
+/* Read-only: the audit reports the routing in force and never re-routes (it runs when a page renders). */
 function effectiveId(t,d,s){
   const r=replacement(t,d,s);if(r&&r.newId)return r.newId;
-  const a=window.DELF50_NOREPEAT&&window.DELF50_NOREPEAT.reconcile?window.DELF50_NOREPEAT.reconcile(d):null;
-  return a&&a[t]&&a[t][s]||assignment(t,d)[s]||null;
+  return assignment(t,d)[s]||null;
 }
 function pushDup(map,key,entry,bucket,kind){if(!key)return;if(map.has(key))bucket.push({kind,first:map.get(key),again:entry});else map.set(key,entry)}
 function audit(){
@@ -71,7 +71,7 @@ function audit(){
   report.ok=report.unresolved.length===0&&report.grammar.exactDuplicates.length===0;return report;
 }
 const first=audit();
-S.version=APP;if(S.meta172){S.meta172.appVersion=APP;S.meta172.contentVersion=CONTENT;S.meta172.fullQuestionAudit=AUDIT;S.meta172.noRepeatAudit=first.ok?'pass':'needs-review'}
+
 try{if(typeof KEY!=='undefined')localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}
 window.DELF50_FULL_AUDIT={version:APP,contentVersion:CONTENT,auditVersion:AUDIT,patchResult,run:audit,initial:first};
 if(window.DELF50_NOREPEAT){window.DELF50_NOREPEAT.version=APP;window.DELF50_NOREPEAT.contentVersion=CONTENT;window.DELF50_NOREPEAT.fullAudit=audit}

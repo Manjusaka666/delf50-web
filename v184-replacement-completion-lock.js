@@ -86,8 +86,7 @@ completeListening=function(){
 
 S.repairs184=S.repairs184||{};
 S.repairs184[PATCH]={at:S.repairs184[PATCH]&&S.repairs184[PATCH].at||new Date().toISOString(),status:'active',types:TYPES.slice(),note:'Completed replacement material remains the canonical slot content; old duplicate evidence is retained without incrementing daily completion again.'};
-S.version=APP;
-if(S.meta172){S.meta172.appVersion=APP;S.meta172.replacementRouting=PATCH;}
+
 persist184();
 globalThis.__DELF50_V184={version:APP,patch:PATCH,migrate:migrate184,resolve:resolve184};
 if(typeof render==='function')render();

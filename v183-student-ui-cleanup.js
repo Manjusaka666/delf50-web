@@ -38,7 +38,7 @@ grammar=function(){
   return h;
 };
 
-if(S.meta172){S.meta172.appVersion=APP;S.meta172.contentVersion=CONTENT;S.meta172.studentUi=UI_ROUTE;}
+
 globalThis.__DELF50_STUDENT_UI_V2={appVersion:APP,contentVersion:CONTENT,route:UI_ROUTE};
 render();
 })();

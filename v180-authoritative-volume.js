@@ -36,6 +36,6 @@ const sources=[
 {id:'CEFR-DESC',url:'https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors',role:'level'},
 {id:'DILA-PART',url:'https://www.data.gouv.fr/datasets/fiches-pratiques-et-ressources-de-service-public-gouv-fr-particuliers',role:'open-authoritative-source-pool'},
 {id:'ETALAB-2',url:'https://www.data.gouv.fr/pages/legal/licences/etalab-2.0',role:'reuse-license'}];
-const ga=audit();S.version=APP;if(S.meta172){S.meta172.appVersion=APP;S.meta172.contentVersion=CONTENT;S.meta172.volumeProfile=PROFILE;S.meta172.highIntensityCapacity=ok?'pass':'fail';S.meta172.grammarUniqueAudit=ga.ok?'pass':'fail'}try{if(typeof KEY!=='undefined')localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}
+const ga=audit();try{if(typeof KEY!=='undefined')localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}
 window.DELF50_VOLUME={version:APP,contentVersion:CONTENT,profile:PROFILE,required,capacity,capacityOk:ok,grammarAudit:ga,authoritativeSources:sources};render();
 })();

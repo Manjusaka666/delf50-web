@@ -1,5 +1,5 @@
 'use strict';
-const V15_VERSION='1.5.2';
+const V15_VERSION='1.5.3';
 Object.assign(QUOTAS.light,{grammar:8,application:2,listening:2,reading:2,writing:1,speaking:2,vocab:25,review:10});
 Object.assign(QUOTAS.standard,{grammar:10,application:3,listening:3,reading:3,writing:1,speaking:3,vocab:35,review:15});
 Object.assign(QUOTAS.high,{grammar:12,application:4,listening:4,reading:4,writing:2,speaking:4,vocab:45,review:20});
@@ -31,4 +31,4 @@ grammar=function(){const g=GRAMMAR[UI.gNode],d=daily(),need=prodQuota(),prompts=
 const _bindV15=bind;
 bind=function(){_bindV15();document.querySelectorAll('[data-prod-record]').forEach(b=>b.onclick=()=>{const k=prodKey(b.dataset.prodG,Number(b.dataset.prodRecord));if(S.prodDone[k])return;S.prodDone[k]=true;daily().grammarProd+=2;if(!S.startedAt)S.startedAt=new Date().toISOString();save();render()})};
 top=function(title,sub){return `<div class="top"><div><div class="eyebrow">DELF50 · WEB V${V15_VERSION}</div><h1>${title}</h1><div class="muted">${sub}</div></div><span class="pill">交互已启动</span></div>`};
-S.version=V15_VERSION;save();render();
+save();render();
