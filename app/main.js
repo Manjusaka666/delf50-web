@@ -9,7 +9,9 @@ import { grammarView } from './views/grammar.js';
 import { textView } from './views/text.js';
 import { writeView } from './views/write.js';
 import { speakView } from './views/speak.js';
-import { reviewView } from './views/review.js';
+import { errorsView } from './views/errors.js';
+import { vocabView } from './views/vocab.js';
+import { spacedView } from './views/spaced.js';
 import { progressView } from './views/progress.js';
 import { archiveView } from './views/archive.js';
 import { routeView } from './views/route.js';
@@ -24,7 +26,9 @@ const ROUTES = [
   [/^\/day\/(\d+)\/(reading|listening)\/(\d+)$/, (m) => textView(+m[1], m[2], +m[3])],
   [/^\/day\/(\d+)\/(writing|application)\/(\d+)$/, (m) => writeView(+m[1], m[2], +m[3])],
   [/^\/day\/(\d+)\/speaking\/(\d+)$/, (m) => speakView(+m[1], +m[2])],
-  [/^\/review$/, () => reviewView()],
+  [/^\/day\/(\d+)\/vocab$/, (m) => vocabView(+m[1])],
+  [/^\/day\/(\d+)\/review$/, (m) => spacedView(+m[1])],
+  [/^\/errors$/, () => errorsView()],
   [/^\/progress$/, () => progressView()],
   [/^\/archive(?:\/(\d+))?$/, (m) => archiveView(m[1] ? +m[1] : null)],
   [/^\/route$/, () => routeView()],
@@ -34,7 +38,7 @@ const ROUTES = [
 const NAV = [
   ['today', '今日', () => `#/day/${store.S.day}`, /^\/day\//],
   ['route', '路线', () => '#/route', /^\/route/],
-  ['review', '复习', () => '#/review', /^\/review/],
+  ['review', '错题', () => '#/errors', /^\/errors/],
   ['progress', '进度', () => '#/progress', /^\/progress/],
   ['archive', '档案', () => '#/archive', /^\/archive/],
   ['guide', '指南', () => '#/guide', /^\/guide/]

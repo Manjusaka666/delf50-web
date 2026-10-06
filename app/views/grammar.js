@@ -1,6 +1,6 @@
 /** Grammar: the day's questions one at a time, the guide of each node, and output practice. */
 import { store, commit } from '../store.js';
-import { node } from '../course.js';
+import { node, remedialNodes } from '../course.js';
 import { grammarAnswer } from '../progress.js';
 import { answerGrammar, setProduction, productionKey } from '../state.js';
 import { html, icon, pad2, frText, LETTERS, MODULE_NAMES } from '../ui.js';
@@ -8,11 +8,11 @@ import { dayContext, crumbs } from './common.js';
 
 export async function grammarView(d, n) {
   const ctx = await dayContext(d);
-  const qs = ctx.day.grammar, due = ctx.plan.grammar.length;
+  const qs = ctx.grammar, due = ctx.plan.grammar.length;
   const toProduction = n === 'production';
   if (!n || toProduction) {
-    const open = qs.findIndex((q, i) => i < due && !grammarAnswer(store.S, d, q));
-    const any = qs.findIndex((q) => !grammarAnswer(store.S, d, q));
+    const open = qs.findIndex((q, i) => i < due && !grammarAnswer(store.S, d, q.id));
+    const any = qs.findIndex((q) => !grammarAnswer(store.S, d, q.id));
     n = (open >= 0 ? open : any >= 0 ? any : 0) + 1;
   }
   n = Math.min(Math.max(1, n), qs.length);
@@ -50,24 +50,25 @@ export async function grammarView(d, n) {
   }
 
   const render = () => {
-    const q = qs[n - 1], nd = node(q.node), a = grammarAnswer(store.S, d, q), m = ctx.progress().modules.grammar;
-    const answered = qs.filter((x) => grammarAnswer(store.S, d, x)), right = answered.filter((x) => grammarAnswer(store.S, d, x).correct).length;
+    const q = qs[n - 1], nd = node(q.node), a = grammarAnswer(store.S, d, q.id), m = ctx.progress().modules.grammar;
+    const answered = qs.filter((x) => grammarAnswer(store.S, d, x.id)), right = answered.filter((x) => grammarAnswer(store.S, d, x.id).correct).length;
     return html`<article class="page grammar">
       ${crumbs(d, MODULE_NAMES.grammar)}
       <header class="page-head">
         <p class="eyebrow">Grammaire · ${ctx.day.grammarFocus}</p>
         <h1 class="display-s">${ctx.day.title}</h1>
         <p class="muted">今日 ${m.done} / ${m.total} 题 · 已答 ${answered.length} 题，正确 ${right} 题</p>
+        ${ctx.day.remedial ? html`<p class="notice">今日补练按你 Day 1–30 正确率最低的语法点出题：${remedialNodes(store.S, d).map((id) => node(id).name).join(' · ')}。题目接着各语法点题库中未做过的部分。</p>` : ''}
       </header>
       <nav class="dots" aria-label="题目">
         ${qs.map((x, i) => {
-          const s = grammarAnswer(store.S, d, x);
+          const s = grammarAnswer(store.S, d, x.id);
           return html`<a href="#/day/${d}/grammar/${i + 1}" class="dot-q ${i + 1 === n ? 'on' : ''} ${s ? (s.correct ? 'ok' : 'bad') : ''} ${i >= due ? 'extra' : ''}" aria-label="第 ${i + 1} 题${s ? (s.correct ? '，正确' : '，错误') : ''}${i >= due ? '，选做' : ''}">${i + 1}</a>`;
         })}
       </nav>
       <div class="split">
         <section class="qcard ${a ? (a.correct ? 'is-ok' : 'is-bad') : ''}" aria-live="polite">
-          <p class="qcard-meta"><span>Question ${pad2(n)} / ${pad2(qs.length)}</span><span class="tag">${nd ? nd.name : q.node}</span>${n > due ? html`<span class="tag soft">选做</span>` : ''}</p>
+          <p class="qcard-meta"><span>Question ${pad2(n)} / ${pad2(qs.length)}</span><span class="tag">${nd ? nd.name : q.node}</span>${(ctx.day.bridge || []).includes(q.id) ? html`<span class="tag bridge">B2 衔接 · 选做</span>` : n > due ? html`<span class="tag soft">选做</span>` : ''}</p>
           <p class="stem" lang="fr">${frText(q.stem)}</p>
           <div class="opts" role="group" aria-label="选项">
             ${q.options.map((o, i) => {
@@ -91,7 +92,7 @@ export async function grammarView(d, n) {
 
   const answer = (i) => {
     const q = qs[n - 1];
-    if (grammarAnswer(store.S, d, q) || i < 0 || i >= q.options.length) return;
+    if (grammarAnswer(store.S, d, q.id) || i < 0 || i >= q.options.length) return;
     commit((S) => answerGrammar(S, d, q, node(q.node), i));
   };
 
@@ -114,7 +115,7 @@ export async function grammarView(d, n) {
       const k = e.key.toLowerCase();
       const i = /^[1-5]$/.test(k) ? Number(k) - 1 : LETTERS.map((x) => x.toLowerCase()).indexOf(k);
       if (i >= 0) { e.preventDefault(); answer(i); }
-      else if (k === 'arrowright' || (k === 'enter' && grammarAnswer(store.S, d, qs[n - 1]))) { e.preventDefault(); go(n + 1); }
+      else if (k === 'arrowright' || (k === 'enter' && grammarAnswer(store.S, d, qs[n - 1].id))) { e.preventDefault(); go(n + 1); }
       else if (k === 'arrowleft') { e.preventDefault(); go(n - 1); }
     }
   };

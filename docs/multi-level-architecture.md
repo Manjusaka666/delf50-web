@@ -8,7 +8,7 @@
 Neon Auth 账号（一人一个，跨所有级别）
  └── 课程 course（一个级别一门课）  delf-b1 · delf-b2 · dalf-c1 · dalf-c2
       ├── 学习状态 study_state（当前天、强度等设置；rev）
-      ├── 学习记录（答题、语法、主动产出、写作、应用、口语、错题、草稿、练习计数）
+      ├── 学习记录（答题、语法、主动产出、写作、应用、口语、错题、草稿、词块自评、间隔复习）
       └── 录音（R2：u/<user>/<course>/speaking/<clip>）
  └── 词汇本（跨课程，一份）            vocabulary_items（带 CEFR 级别）+ user_vocabulary + vocabulary_reviews
 ```
@@ -29,7 +29,8 @@ Neon Auth 账号（一人一个，跨所有级别）
 | `grammar_productions` | (user_id, **course**, prod_key) |
 | `writing_submissions` / `application_submissions` / `speaking_attempts` / `error_items` | (user_id, **course**, item_key) |
 | `drafts` | (user_id, **course**, kind, draft_key) |
-| `practice_counters` | (user_id, **course**, day_key) |
+| `lexicon_marks` | (user_id, **course**, mark_key) |
+| `review_answers` | (user_id, **course**, answer_key) |
 | `media_objects` | (user_id, **course**, clip_id)；R2 键 `u/<user>/<course>/speaking/<clip>.<ext>` |
 | `vocabulary_items` | 共享词典，新增 `cefr_level`（A1–C2） |
 | `user_vocabulary` / `vocabulary_reviews` | 跨课程；新增 `course` 记录来源 |

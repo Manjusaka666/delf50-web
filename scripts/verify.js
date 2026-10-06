@@ -36,12 +36,13 @@ async function main() {
   const planErrors = [];
   for (let d = 1; d <= C.days; d++) {
     const day = await course.loadDay(d);
-    const plans = order.map((k) => course.plan(day, k));
+    const plans = order.map((k) => course.plan(day, k, state.blank()));
     order.forEach((k, i) => {
       const q = C.quotas[k], p = plans[i];
       for (const m of course.MODULES) if (p[m].length !== q[m]) planErrors.push(`${d} ${k} ${m}: ${p[m].length} ≠ ${q[m]}`);
       const prompts = p.production.reduce((n, x) => n + x.prompts.length, 0);
-      if (prompts !== day.focus.length * Math.ceil(q.production / 2)) planErrors.push(`${d} ${k} production prompts ${prompts}`);
+      if (prompts !== (day.remedial ? 3 : day.focus.length) * Math.ceil(q.production / 2)) planErrors.push(`${d} ${k} production prompts ${prompts}`);
+      if (p.vocab.length !== q.vocab) planErrors.push(`${d} ${k} vocab ${p.vocab.length}`);
       if (p.production.some((x) => !x.node)) planErrors.push(`${d} ${k}: focus node missing`);
       if (i) for (const m of course.MODULES) if (plans[i - 1][m].some((x, j) => x !== p[m][j])) planErrors.push(`${d} ${k} ${m}: not an extension of ${order[i - 1]}`);
     });
@@ -51,7 +52,8 @@ async function main() {
 
   out.push('\nState and progress');
   const S = state.blank();
-  const d16 = await course.loadDay(16), p16 = course.plan(d16, 'standard');
+  const d16 = await course.loadDay(16), p16 = course.plan(d16, 'standard', S);
+  const Q16 = await course.loadQuestions(course.grammarIds(d16, S)), q16 = p16.grammar.map((id) => Q16.get(id));
   const empty = progress.dayProgress(S, d16, p16);
   check(empty.fraction === 0 && !empty.complete && progress.studyDays(S).length === 0, 'a new learner has no progress');
 
@@ -60,36 +62,67 @@ async function main() {
     && S.reading[state.answerKey(16, r.id, 0)] === r.questions[0].answer, 'a reading answer is final once given');
   check(!progress.itemState(S, 'reading', 16, r).done && progress.dayProgress(S, d16, p16).modules.reading.done === 0, 'a partly answered text is not done');
 
-  const wrong = p16.grammar[0], wi = (wrong.answer + 1) % wrong.options.length;
+  const wrong = q16[0], wi = (wrong.answer + 1) % wrong.options.length;
   state.answerGrammar(S, 16, wrong, course.node(wrong.node), wi);
   check(S.errors.length === 1 && S.errors[0].original === wrong.options[wi] && S.errors[0].correct === wrong.options[wrong.answer]
     && S.grammar[state.grammarKey(16, wrong.id)].correct === false && !state.answerGrammar(S, 16, wrong, null, wrong.answer), 'a wrong grammar answer is recorded once and goes to the error book');
 
   // Do the whole standard plan.
-  for (const q of p16.grammar.slice(1)) state.answerGrammar(S, 16, q, course.node(q.node), q.answer);
+  for (const q of q16.slice(1)) state.answerGrammar(S, 16, q, course.node(q.node), q.answer);
   for (const m of ['reading', 'listening']) for (const it of p16[m]) it.questions.forEach((q, i) => state.answerChoice(S, m, 16, it.id, i, q.answer));
   for (const it of p16.writing) { state.saveDraft(S, 'writing', 16, it.id, 'Un brouillon.'); state.submitText(S, 'writing', 16, it, 'Je pense que l’air de la ville est pollué.'); }
   for (const it of p16.application) state.submitText(S, 'application', 16, it, 'Je voudrais savoir…');
   for (const it of p16.speaking) state.addSpeaking(S, 16, it, null, 95.4);
   const half = p16.production.map((x) => x.prompts.length).reduce((a, b) => a + b, 0);
   p16.production.forEach((x) => x.prompts.forEach((_, i) => state.setProduction(S, 16, x.node.id, i, true)));
-  state.setPractice(S, 16, 'vocab', 40);
-  state.setPractice(S, 16, 'review', 15);
+  for (const c of p16.vocab) state.markChunk(S, 16, c.id, c.id.endsWith('1') ? 'again' : 'known');
+  const items16 = await course.reviewItems(16, S);
+  for (const x of items16.slice(0, p16.targets.review)) state.answerReview(S, 16, x, x.kind === 'g' ? x.question.answer : true);
   const full = progress.dayProgress(S, d16, p16);
   check(full.complete && full.fraction === 1, 'the whole plan completes the day', full.modules);
-  check(full.modules.production.done === p16.targets.production && half * 2 >= p16.targets.production && full.modules.vocab.done === p16.targets.vocab, 'output practice and counters are capped at the target');
+  check(full.modules.production.done === p16.targets.production && half * 2 >= p16.targets.production, 'output practice is capped at the target');
+  check(full.modules.vocab.done === p16.vocab.length && full.modules.review.done === p16.targets.review, 'every chunk self-assessed (known or again) and every review item done counts');
   check(S.writing[0].words === 9 && !Object.keys(S.drafts.writing).length && S.speaking[0].sec === 95 && S.speaking[0].clip === null, 'a submission counts its words and clears its draft; a timed round is rounded');
   const light = progress.dayProgress(S, d16, course.plan(d16, 'light')), high = progress.dayProgress(S, d16, course.plan(d16, 'high'));
   check(light.complete && !high.complete && high.modules.reading.done === p16.reading.length, 'the same records complete a lighter plan, not a higher one');
   state.setProduction(S, 16, p16.production[0].node.id, 0, false);
   check(!(state.productionKey(16, p16.production[0].node.id, 0) in S.production), 'unchecking an output prompt removes it');
-  state.setPractice(S, 16, 'vocab', 0); state.setPractice(S, 16, 'review', 0);
-  check(!('16' in S.practice), 'zeroed counters leave no record');
+  state.markChunk(S, 16, p16.vocab[0].id, 'known');
+  check(S.lexicon[`16:${p16.vocab[0].id}`] === 'known' && !state.answerReview(S, 16, items16[0], 0), 'the latest self-assessment of a chunk counts; a review item is done once');
   const sd = progress.studyDays(S);
   check(sd.length === 1 && sd[0].day === 16 && sd[0].first && sd[0].last, 'study days come from the records', sd);
-  check(progress.grammarAccuracy(S).answered === p16.grammar.length && progress.grammarAccuracy(S).correct === p16.grammar.length - 1, 'grammar accuracy counts every answer');
+  check(progress.grammarAccuracy(S).answered === q16.length && progress.grammarAccuracy(S).correct === q16.length - 1, 'grammar accuracy counts every answer');
+  const errs = S.errors.length;
   state.resolveError(S, 0);
-  check(S.errors.length === 0, 'a mastered error leaves the error book');
+  check(S.errors.length === errs - 1, 'a mastered error leaves the error book');
+
+  out.push('\nSpaced review');
+  const g16 = items16.filter((x) => x.kind === 'g'), v16 = items16.filter((x) => x.kind === 'v');
+  const srcs = [...new Set(items16.map((x) => x.src))];
+  check(items16.length === C.quotas.high.review && g16.length && v16.length && srcs.every((s) => [15, 13, 9, 2].includes(s)) && srcs[0] === 15,
+    'review draws grammar and chunks from Days 15, 13, 9 and 2 (1, 3, 7, 14 days back), nearest first', srcs);
+  check(JSON.stringify((await course.reviewItems(16, S)).map((x) => x.key)) === JSON.stringify(items16.map((x) => x.key)), 'the review sequence is stable');
+  const r1 = await course.reviewItems(1, state.blank());
+  check(r1.length === C.quotas.high.review && r1.every((x) => x.src === 1), 'Day 1 reviews its own material');
+
+  out.push('\nRemediation (Days 41–50)');
+  const R = state.blank();
+  const sub = (await course.loadQuestions(['subjonctif-01', 'subjonctif-02', 'subjonctif-03'])), hyp = await course.loadQuestions(['hypothesis-01']);
+  for (const q of sub.values()) state.answerGrammar(R, 25, q, course.node(q.node), (q.answer + 1) % q.options.length);
+  for (const q of hyp.values()) state.answerGrammar(R, 15, q, course.node(q.node), (q.answer + 1) % q.options.length);
+  const weak = course.weakestNodes(R);
+  check(weak[0] === 'subjonctif' && weak[1] === 'hypothesis' && weak.length === 3, 'the weakest points come first (accuracy, then practice)', weak);
+  const d41 = await course.loadDay(41);
+  state.setRemedial(R, 41, weak);
+  const ids41 = course.grammarIds(d41, R), n41 = course.node('subjonctif');
+  check(ids41.length === 12 && ids41.filter((id) => id.startsWith('subjonctif-')).length === 6 && ids41[0] === `subjonctif-${String(n41.taught + 1).padStart(2, '0')}`,
+    'Day 41: 12 questions, half on the weakest point, starting after what Days 1–40 taught', ids41);
+  const before = course.grammarIds(d41, R).join();
+  state.answerGrammar(R, 41, (await course.loadQuestions([ids41[0]])).get(ids41[0]), n41, 0);
+  check(course.grammarIds(d41, R).join() === before, 'once opened, a remediation day keeps its questions whatever the learner answers');
+  state.setRemedial(R, 42, ['subjonctif', 'pc', 'present']);
+  const ids42 = course.grammarIds(await course.loadDay(42), R);
+  check(ids42[0] === `subjonctif-${String(n41.taught + 7).padStart(2, '0')}` && (await course.loadQuestions(ids42)).size === 12, 'the next remediation day continues each bank where the previous one stopped', ids42.slice(0, 3));
 
   const N = state.normalize({ day: 99, intensity: 'max', startedAt: 5, onboarded: 'yes', reading: [], writing: {}, junk: 1, drafts: { writing: { a: 'b' } } });
   check(N.day === 1 && N.intensity === 'standard' && N.startedAt === null && N.onboarded === false && !('junk' in N)

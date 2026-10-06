@@ -78,7 +78,12 @@ function sampleState() {
       { skill: 'Négation', original: 'x', correct: 'y', why: 'z', at: '2026-09-28T08:19:00.000Z' }
     ],
     drafts: { writing: { '3:W03-1': 'brouillon' }, application: {} },
-    practice: { 3: { vocab: 35, review: 0 } }
+    lexicon: { '3:V03-01': 'known', '3:V03-02': 'again' },
+    review: {
+      '3:g:2:present-03': { day: 3, kind: 'g', src: 2, contentId: 'present-03', selectedIndex: 1, correct: false, at: '2026-09-28T08:30:00.000Z' },
+      '3:v:2:V02-05': { day: 3, kind: 'v', src: 2, contentId: 'V02-05', correct: true, at: '2026-09-28T08:31:00.000Z' }
+    },
+    remedial: { 41: ['subjonctif', 'hypothesis', 'pc'] }
   };
 }
 
@@ -97,7 +102,7 @@ function unitTests() {
   const S = sampleState();
   const d0 = C.diff({}, {}, S, SPEC);
   const docOf = Object.fromEntries(d0.doc.map((o) => [o[0].join('.'), o[1]]));
-  check(['reading', 'listening', 'grammar', 'production', 'practice'].every((k) => C.equal(docOf[k], {}))
+  check(['reading', 'listening', 'grammar', 'production', 'lexicon', 'review'].every((k) => C.equal(docOf[k], {})) && C.equal(docOf.remedial, S.remedial)
     && ['writing', 'application', 'speaking', 'errors'].every((k) => C.equal(docOf[k], [])) && C.equal(docOf.drafts, { writing: {}, application: {} })
     && docOf.day === 3 && docOf.intensity === 'standard', 'the document holds the settings and empty record containers, never records', docOf);
   check(!d0.ops.listening && d0.ops.writing.set.length === 2 && d0.ops.errors.set.length === 3 && d0.ops.reading.set.length === 3 && d0.ops.production.set.length === 2,
@@ -327,10 +332,12 @@ async function apiTests(base, owner, auth, s3) {
     (select count(*) from delf50.writing_submissions)::int w, (select count(*) from delf50.reading_answers)::int ra, (select count(*) from delf50.speaking_attempts)::int sp`)).rows[0];
   const c1 = await counts();
   check(c1.g === 2 && c1.e === 3 && c1.w === 2 && c1.ra === 3 && c1.sp === 2, 'each record is its own row', c1);
-  const more = (await owner.query(`select (select count(*) from delf50.grammar_productions where done)::int gp, (select vocab from delf50.practice_counters where day = 3) pv,
+  const more = (await owner.query(`select (select count(*) from delf50.grammar_productions where done)::int gp, (select chunk_id || ' ' || mark from delf50.lexicon_marks where day = 3 order by mark_key limit 1) lx,
+    (select kind || ' ' || source_day || ' ' || content_id || ' ' || correct from delf50.review_answers order by answer_key limit 1) rv,
     (select node_id || '#' || prompt_index from delf50.grammar_productions order by prod_key limit 1) gpk,
     (select day || ' ' || content_id || ' ' || q_index from delf50.reading_answers order by answer_key limit 1) ra`)).rows[0];
-  check(more.gp === 2 && more.pv === 35 && more.gpk === 'negation#0' && more.ra === '3 R03-1 0', 'output practice, practice counters and answers are rows with parsed columns', more);
+  check(more.gp === 2 && more.lx === 'V03-01 known' && more.rv === 'g 2 present-03 false' && more.gpk === 'negation#0' && more.ra === '3 R03-1 0',
+    'output practice, chunk marks, review items and answers are rows with parsed columns', more);
   const typed = (await owner.query(`select body, word_count, created_at, extra from delf50.writing_submissions order by pos`)).rows;
   check(typed[0].word_count === 120 && typed[0].created_at.toISOString() === '2026-09-27T09:15:00.123Z' && typed[0].extra === null, 'writing is stored as typed columns', typed[0]);
 
@@ -426,7 +433,7 @@ async function apiTests(base, owner, auth, s3) {
   const noah = ids.find((x) => x.email === 'noah@example.com').id, lea = ids.find((x) => x.email === 'lea@example.com').id;
   const b1 = " where course = 'delf-b1'";
   check((await asUser(noah, 'select * from delf50.error_items')).length === 0 && (await asUser(lea, 'select * from delf50.error_items' + b1 + ' and resolved_at is null')).length === 3
-    && (await asUser(noah, 'select * from delf50.practice_counters')).length === 0 && (await asUser(lea, 'select * from delf50.practice_counters' + b1)).length === 1, 'RLS: rows are visible to their owner only');
+    && (await asUser(noah, 'select * from delf50.lexicon_marks')).length === 0 && (await asUser(lea, 'select * from delf50.lexicon_marks' + b1)).length === 2, 'RLS: rows are visible to their owner only');
   check((await asUser(null, 'select * from delf50.study_state')).length === 0, 'RLS: without a user, nothing is visible');
   let denied = false;
   try { await asUser(noah, `insert into delf50.drafts (user_id, kind, draft_key, body) values ($1, 'writing', 'x', 'y')`, [lea]); } catch (e) { denied = /row-level security/.test(e.message); }
@@ -520,6 +527,7 @@ async function browserTests(base, owner, s3) {
   if (!pw) { results.push('  skip: Playwright is not installed (NODE_PATH)'); return; }
   const day = (d) => JSON.parse(fs.readFileSync(path.join(ROOT, `course/days/${String(d).padStart(2, '0')}.json`), 'utf8'));
   const D1 = day(1), course = JSON.parse(fs.readFileSync(path.join(ROOT, 'course/course.json'), 'utf8'));
+  const question = (id) => JSON.parse(fs.readFileSync(path.join(ROOT, 'course/questions', id.replace(/-\d+$/, '') + '.json'), 'utf8')).find((q) => q.id === id);
   const browser = await pw.chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'] });
   const errors = [];
   const open = async (opts = {}) => {
@@ -551,7 +559,7 @@ async function browserTests(base, owner, s3) {
   await A.waitForSelector('.qcard');
   const due = course.quotas.standard.grammar, letters = 'abcde';
   for (let i = 0; i < due; i++) {
-    const q = D1.grammar[i], pick = i === 2 ? (q.answer + 1) % q.options.length : q.answer;
+    const q = question(D1.grammar[i]), pick = i === 2 ? (q.answer + 1) % q.options.length : q.answer;
     await A.waitForSelector(`.dot-q.on >> text="${i + 1}"`);
     await A.keyboard.press(letters[pick]);
     await A.waitForSelector('.feedback');
@@ -620,12 +628,37 @@ async function browserTests(base, owner, s3) {
   await settled(A);
   check((await one(`select count(*)::int n from delf50.speaking_attempts where clip_id is null`)).n === 1, 'a timed round without recording is saved too');
 
-  // Practice counters, intensity.
+  // Chunks: recall from Chinese and a gapped sentence, then self-assess.
+  await A.goto(base + '/#/day/1/vocab');
+  await A.waitForSelector('.recall .gap');
+  check(!(await A.isVisible('.recall-fr')) && (await A.textContent('.recall-zh')) === D1.vocab[0].zh, 'a chunk card first shows the meaning and the gapped sentence');
+  await A.keyboard.press(' ');
+  await A.waitForSelector('.recall-fr');
+  check((await A.textContent('.recall-fr')).includes(D1.vocab[0].fr.slice(0, 4)), 'the answer side shows the chunk');
+  await A.keyboard.press('1');
+  await A.waitForFunction((id) => !document.querySelector('.recall-fr') && document.querySelector('.chunk-row.on') && document.querySelector('.chunk-row.on').dataset.id !== id, D1.vocab[0].id);
+  await A.keyboard.press(' ');
+  await A.keyboard.press('2');
+  await settled(A);
+  const lx = await one(`select string_agg(chunk_id || ':' || mark, ' ' order by chunk_id) m from delf50.lexicon_marks where day = 1`);
+  check(lx.m === `${D1.vocab[0].id}:known ${D1.vocab[1].id}:again`, 'each chunk is saved with the learner’s own assessment', lx);
+
+  // Spaced review (Day 1 reviews its own material): a grammar question, then a chunk.
+  await A.goto(base + '/#/day/1/review');
+  await A.waitForSelector('.spaced .opt');
+  await A.click('.spaced .opt >> nth=0');
+  await A.waitForSelector('.spaced .feedback');
+  await A.keyboard.press('ArrowRight');
+  await A.waitForSelector('.spaced .recall .gap');
+  await A.keyboard.press(' ');
+  await A.keyboard.press('1');
+  await settled(A);
+  const rv = await one(`select string_agg(kind || source_day, ' ' order by answer_key) k, count(*)::int n from delf50.review_answers where day = 1`);
+  check(rv.n === 2 && rv.k === 'g1 v1', 'review items are saved as done on the day, with their source day', rv);
+
+  // Intensity.
   await A.goto(base + '/#/day/1');
   await A.waitForSelector('.hero');
-  await A.click('[data-act="practice"][data-field="vocab"][data-step="5"]');
-  await settled(A);
-  check((await one(`select vocab from delf50.practice_counters where day = 1`)).vocab === 5, 'the vocabulary counter is saved per day');
   await A.click('[data-act="intensity"][data-v="light"]');
   await settled(A);
   const lightTiles = await A.$$eval('.mod .mod-count', (xs) => xs.map((x) => x.textContent.replace(/\s+/g, ' ').trim()));
@@ -648,7 +681,7 @@ async function browserTests(base, owner, s3) {
   check(await B.isVisible('.nav') && /今日已完成|今日完成度/.test(await B.textContent('.hero-state')), 'the second device opens the same day');
   await B.goto(base + '/#/day/1/grammar/11');
   await B.waitForSelector('.qcard');
-  await B.click(`.opt >> nth=${D1.grammar[10].answer}`);
+  await B.click(`.opt >> nth=${question(D1.grammar[10]).answer}`);
   await settled(B);
   await A.goto(base + '/#/day/1/grammar/11');
   await A.waitForSelector('.qcard');
@@ -657,15 +690,16 @@ async function browserTests(base, owner, s3) {
   check(true, 'an answer given on another device appears when the page comes back');
 
   // The error book.
-  await A.goto(base + '/#/review');
+  await A.goto(base + '/#/errors');
   await A.waitForSelector('.err');
   await A.click('[data-act="resolve"]');
   await A.waitForSelector('.empty');
   await settled(A);
-  check((await one(`select count(*)::int n from delf50.error_items where resolved_at is null`)).n === 0, 'a mastered error leaves the error book (kept as resolved)');
+  const openErrors = (await one(`select count(*)::int n from delf50.error_items where resolved_at is null`)).n;
+  check(openErrors === await A.$$eval('.err', (x) => x.length), 'a mastered error leaves the error book (kept as resolved)');
 
   // Every page renders.
-  for (const [hash, sel] of [['#/progress', '.heat'], ['#/route', '.tiles'], ['#/archive', '.arc-days'], ['#/archive/1', '.arc-qs'], ['#/guide', '.nodes'], ['#/day/16/listening/1', '.player'], ['#/day/50', '.hero']]) {
+  for (const [hash, sel] of [['#/progress', '.mastery'], ['#/route', '.tiles'], ['#/archive', '.arc-days'], ['#/archive/1', '.chunks-list'], ['#/guide', '.nodes'], ['#/day/16/listening/1', '.player'], ['#/day/20/review', '.spaced .dots'], ['#/day/45/grammar', '.qcard'], ['#/day/50', '.hero']]) {
     await A.goto(base + '/' + hash);
     const ok = await A.waitForSelector(sel, { timeout: 8000 }).then(() => true, () => false);
     check(ok, `${hash} renders`);
@@ -674,18 +708,19 @@ async function browserTests(base, owner, s3) {
   check(lastDayTitle === day(50).title, 'Day 50 opens with its own material', lastDayTitle);
 
   // The session ends mid-study: the change waits, and is saved after signing in again.
-  await A.goto(base + '/#/day/2');
-  await A.waitForSelector('.hero');
+  await A.goto(base + '/#/day/2/vocab');
+  await A.waitForSelector('.recall .gap');
   await settled(A);
   await ctxA.clearCookies(); // the session cookie is gone (expired)
-  await A.click('[data-act="practice"][data-field="review"][data-step="1"]');
+  await A.keyboard.press(' ');
+  await A.keyboard.press('1');
   await A.waitForSelector('.auth form', { timeout: 15000 });
   await A.fill('input[name=email]', 'camille@example.com');
   await A.fill('input[name=password]', 'correct-horse-11');
   await A.click('button[type=submit]');
-  await A.waitForSelector('.hero');
+  await A.waitForSelector('.recall');
   await settled(A);
-  check((await one(`select review from delf50.practice_counters where day = 2`) || {}).review === 1, 'after the session expires, signing in again saves the pending change');
+  check((await one(`select count(*)::int n from delf50.lexicon_marks where day = 2`)).n === 1, 'after the session expires, signing in again saves the pending change');
 
   await A.click('[data-act="account"]');
   await A.click('[data-signout]');

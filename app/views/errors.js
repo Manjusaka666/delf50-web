@@ -4,7 +4,7 @@ import { resolveError } from '../state.js';
 import { html, icon, frText, fmtDateTime } from '../ui.js';
 import { empty } from './common.js';
 
-export async function reviewView() {
+export async function errorsView() {
   let filter = null;
 
   const render = () => {
