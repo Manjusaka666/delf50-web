@@ -215,7 +215,7 @@
     ]
   },
   "vocab": [
-    {"id": "V31-01", "fr": "les sciences participatives", "zh": "参与式科学（公众参与的科研）", "ex": "Les [[sciences participatives]] associent des bénévoles à la collecte de données.", "exZh": "参与式科学让志愿者参与数据收集。", "src": "R31-1"},
+    {"id": "V31-01", "fr": "mettre en évidence", "zh": "揭示；使显现出来", "ex": "Les relevés des bénévoles ont permis de [[mettre en évidence]] le déclin de plusieurs espèces.", "exZh": "志愿者的观测记录揭示了多个物种的衰退。", "src": "R31-1"},
     {"id": "V31-02", "fr": "la collecte de données", "zh": "数据收集", "ex": "Les volontaires participent surtout à [[la collecte de données]], plus rarement à leur analyse.", "exZh": "志愿者主要参与数据收集，很少参与数据分析。", "src": "R31-1"},
     {"id": "V31-03", "fr": "changer d’échelle", "zh": "扩大规模；上一个量级", "ex": "Grâce aux smartphones, ces projets ont pu [[changer d’échelle]] en quelques années.", "exZh": "多亏了智能手机，这些项目在几年内实现了规模跃升。", "src": "R31-1"},
     {"id": "V31-04", "fr": "dégager des tendances", "zh": "归纳出（总体）趋势", "ex": "Seule l’accumulation de milliers de relevés permet de [[dégager des tendances]] fiables.", "exZh": "只有积累成千上万条记录，才能归纳出可靠的趋势。", "src": "R31-1"},

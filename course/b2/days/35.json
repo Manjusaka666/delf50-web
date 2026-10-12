@@ -1,0 +1,240 @@
+{
+  "day": 35,
+  "phase": "DELF B2 专项",
+  "title": "写作 III：结构与修订",
+  "level": "B2",
+  "grammarFocus": "Production écrite : plan, paragraphes, relecture",
+  "function": "réviser son texte",
+  "topic": "éducation",
+  "canDo": "能在动笔前列出 3 段式提纲（每段一个主题句），写完后按“任务—结构—连接词—配合—标点”的顺序分步自查，独立改正过去分词配合错误和误用的连接词。",
+  "review": "复习过去分词配合（être 与主语配合；avoir 只与前置直接宾语配合；代词式动词 se rendre compte 等不配合的情况）与篇章连接词（en revanche 表对立、en outre 表递进、c’est pourquoi 表结果），衔接第 33–34 天的论坛发言和正式信函：今天把重点放在“写完以后”。",
+  "input": "读：一篇关于“取消分数”争论的分析文章、一位教师主张“教学生自我检查”的专栏、一份“五步检查法”写作指南摘录；听：教育研究者谈作业批改与重写、一则关于过去分词配合规则之争的语言专栏、大学写作辅导中心公告。",
+  "output": "写：一篇 250 词以上的议论文“初中是否应取消分数”，先写提纲，写完后用 R35-3 的五步法自查并标出至少 3 处修改；说：围绕“是否取消家庭作业”做 6 分钟独白，并就“作业中能否使用自动纠错/人工智能”与考官辩论。",
+  "checkpoint": "提纲中每段都有主题句；终稿过去分词配合零错误；至少 6 个不同且用法正确的连接词；能在 A35-1 的段落中找出全部 5 处错误。",
+  "challenge": "今日挑战：在 TV5MONDE 或 RFI《Journal en français facile》找一条教育新闻，用 5 句法语写你的看法，其中至少 2 句含 avoir + 前置直接宾语的过去分词（如 « Les réformes qu’on a annoncées… »）；写完后放 10 分钟，再按“意思—配合—标点”三遍检查，并记录你改了哪几处。",
+  "sources": ["FEI-B2", "FEI-B2-SAMPLES", "FEI-B2-TRAIN", "FEI-INVENTAIRE", "CEFR-CV"],
+  "focus": ["accordPP", "articulateurs"],
+  "items": {
+    "reading": [
+      {
+        "id": "R35-1",
+        "title": "Noter ou ne pas noter ? Le débat qui divise l’école",
+        "meta": {"genre": "Article de presse", "domain": "Éducation", "level": "B2"},
+        "text": [
+          "Chaque trimestre, des millions de bulletins sont envoyés aux familles. Et chaque trimestre, la même question revient : les notes sur vingt aident-elles vraiment les élèves à progresser ? Depuis une quinzaine d’années, de nombreuses écoles, dans plusieurs pays francophones, ont expérimenté d’autres formes d’évaluation. Certaines ont supprimé les notes ; d’autres les ont remplacées par des couleurs ou par des listes de compétences.",
+          "Les partisans de ces expériences avancent plusieurs arguments. D’abord, la note serait souvent vécue comme un jugement sur la personne plutôt que sur le travail : un élève qui a reçu plusieurs mauvaises notes finit par se croire « nul » et cesse de faire des efforts. Ensuite, une moyenne cache plus qu’elle ne révèle, car un 10 sur 20 peut correspondre à des difficultés très différentes. Enfin, les notes encourageraient la compétition entre élèves au lieu de favoriser la coopération : certains refusent d’aider un camarade, de peur que celui-ci n’obtienne une meilleure moyenne qu’eux.",
+          "Les premiers résultats sont plutôt encourageants. Dans les classes qui ont été suivies, les enseignants ont constaté que les élèves s’étaient davantage intéressés aux commentaires et qu’ils se décourageaient moins vite. Les plus fragiles, en particulier, se sont sentis moins stigmatisés, et plusieurs d’entre eux ont recommencé à participer à l’oral, ce qu’ils n’osaient plus faire depuis longtemps. Toutefois, ces effets restent difficiles à mesurer avec précision, car les écoles qui ont tenté l’expérience étaient souvent déjà très engagées dans l’innovation pédagogique.",
+          "Les opposants, eux, ne manquent pas d’arguments. Beaucoup de parents disent ne plus savoir où en est leur enfant. « Les grilles de compétences qu’on nous a envoyées faisaient trois pages ; je ne les ai jamais lues jusqu’au bout », témoigne la mère d’un élève de sixième. De leur côté, certains enseignants regrettent le temps considérable que demandent ces évaluations détaillées, et rappellent que les élèves devront, tôt ou tard, passer des examens notés.",
+          "Entre ces deux positions, une voie médiane semble se dessiner : conserver des notes, mais en moins grand nombre, et les accompagner systématiquement de commentaires précis et de possibilités de rattrapage. Autrement dit, la vraie question n’est peut-être pas de savoir s’il faut noter, mais comment faire de l’évaluation un outil d’apprentissage plutôt qu’un simple verdict."
+        ],
+        "questions": [
+          {"stem": "Quel est l’objectif de cet article ?", "options": ["Présenter un débat sur l’évaluation en exposant les arguments des deux camps.", "Annoncer la suppression officielle des notes dans toutes les écoles.", "Raconter l’histoire de la note sur vingt."], "answer": 0, "why": "文章依次介绍支持者论据、试验结果、反对者论据和折中方案，是一篇平衡的辩论综述。B 文中没有官方决定；C 没有历史回顾。"},
+          {"stem": "Selon les partisans de la suppression des notes, pourquoi une mauvaise note peut-elle être néfaste ?", "options": ["Parce qu’elle est toujours injuste.", "Parce qu’elle est perçue comme un jugement sur l’élève lui-même.", "Parce qu’elle oblige les parents à punir leur enfant."], "answer": 1, "why": "« la note serait souvent vécue comme un jugement sur la personne plutôt que sur le travail »，导致学生自认为“很差”而放弃。A 太绝对；C 文中未提及。"},
+          {"stem": "Que signifie « une moyenne cache plus qu’elle ne révèle » ?", "options": ["Une moyenne est souvent calculée de façon incorrecte.", "Les élèves cachent leurs moyennes à leurs parents.", "Un même chiffre peut masquer des situations très différentes."], "answer": 2, "why": "后半句解释：« un 10 sur 20 peut correspondre à des difficultés très différentes »。A、B 是对 cacher 的字面误读。"},
+          {"stem": "Pourquoi l’auteur reste-t-il prudent sur les résultats observés ?", "options": ["Parce que les écoles de l’expérience étaient déjà très innovantes.", "Parce que les enseignants ont refusé de participer.", "Parce que les résultats ont été négatifs."], "answer": 0, "why": "« ces effets restent difficiles à mesurer… car les écoles qui ont tenté l’expérience étaient souvent déjà très engagées dans l’innovation pédagogique »：样本本身有偏差。C 与 « plutôt encourageants » 矛盾。"},
+          {"stem": "Le témoignage de la mère d’élève sert à illustrer…", "options": ["l’efficacité des grilles de compétences.", "la difficulté des parents à comprendre les nouvelles évaluations.", "le manque de temps des enseignants."], "answer": 1, "why": "它紧跟在 « Beaucoup de parents disent ne plus savoir où en est leur enfant » 之后：三页的能力表格她从没读完。A 正相反；C 是下一句的另一论据。"},
+          {"stem": "Quelle solution semble se dessiner dans la conclusion ?", "options": ["Supprimer définitivement toutes les notes.", "Revenir aux notes sans aucun commentaire.", "Garder moins de notes, accompagnées de commentaires et de rattrapages."], "answer": 2, "why": "« conserver des notes, mais en moins grand nombre, et les accompagner systématiquement de commentaires précis et de possibilités de rattrapage »。A、B 是两个极端，正是 voie médiane 所要避免的。"}
+        ]
+      },
+      {
+        "id": "R35-2",
+        "title": "Se relire, ça s’apprend",
+        "meta": {"genre": "Tribune", "domain": "Éducation", "level": "B2"},
+        "text": [
+          "Lorsque je rends des copies, j’entends toujours la même phrase : « Je savais, madame, c’est juste de l’inattention. » Et c’est souvent vrai. Les fautes que mes élèves ont commises ne viennent pas toujours d’une méconnaissance de la règle : elles viennent du fait qu’ils ne se sont pas relus. Ou plutôt, qu’ils ont relu leur texte comme on relit un message, en diagonale, en voyant ce qu’ils voulaient écrire et non ce qu’ils ont réellement écrit.",
+          "On reproche volontiers aux jeunes leur orthographe. On oublie de se demander qui leur a appris à se relire. Car se relire n’a rien de naturel : c’est une technique, qui s’apprend comme le reste. Elle suppose de relire plusieurs fois, en cherchant à chaque passage un type d’erreur précis : d’abord le sens et l’organisation, ensuite les accords, enfin la ponctuation. Elle suppose aussi de laisser reposer son texte, même dix minutes, pour le lire avec un regard neuf.",
+          "Certes, les correcteurs automatiques ont fait d’immenses progrès, et je ne prétends pas qu’il faille les interdire. Mais ils ne détectent pas tout, loin de là : ils laissent passer des phrases mal construites et n’ont aucun avis sur l’enchaînement des idées. Surtout, l’élève qui se contente de cliquer sur les corrections proposées n’apprend rien : il refera exactement les mêmes erreurs le jour où la machine ne sera pas là.",
+          "Je propose donc une mesure simple : que, dans chaque devoir, les dix dernières minutes soient consacrées à la relecture, et que cette relecture soit évaluée. Ce n’est pas du temps perdu ; c’est peut-être le temps le mieux employé de toute l’épreuve."
+        ],
+        "questions": [
+          {"stem": "Quelle est l’idée principale de cette tribune ?", "options": ["Les élèves d’aujourd’hui ne connaissent plus les règles d’orthographe.", "La relecture est une technique qu’il faut enseigner et évaluer.", "Les correcteurs automatiques doivent être interdits à l’école."], "answer": 1, "why": "« se relire n’a rien de naturel : c’est une technique, qui s’apprend » 以及结尾提议“把检查时间纳入评分”。A 作者恰恰说错误常非因不懂规则；C 被作者明确否定（« je ne prétends pas qu’il faille les interdire »）。"},
+          {"stem": "Dans le premier paragraphe, que signifie « relire en diagonale » ?", "options": ["Relire très attentivement, ligne par ligne.", "Relire à voix haute devant la classe.", "Parcourir rapidement le texte sans vraiment le lire."], "answer": 2, "why": "lire en diagonale = 匆匆浏览；后文 « en voyant ce qu’ils voulaient écrire et non ce qu’ils ont réellement écrit » 进一步说明。A 意思相反；B 无关。"},
+          {"stem": "Quelle méthode l’auteure recommande-t-elle ?", "options": ["Relire plusieurs fois en cherchant à chaque fois un type d’erreur différent.", "Relire une seule fois, très lentement, juste après avoir écrit.", "Faire relire son texte par un camarade."], "answer": 0, "why": "« relire plusieurs fois, en cherchant à chaque passage un type d’erreur précis : d’abord…, ensuite…, enfin… » 且建议先放一放。B 与 « laisser reposer son texte » 矛盾；C 未提及。"},
+          {"stem": "Comment l’auteure présente-t-elle les correcteurs automatiques ?", "options": ["Comme une solution parfaite.", "Comme utiles mais insuffisants pour apprendre.", "Comme la cause principale des fautes."], "answer": 1, "why": "Certes… Mais 让步结构：« ont fait d’immenses progrès » 但 « ne détectent pas tout, loin de là » 且 « l’élève… n’apprend rien »。A、C 均为极端说法。"},
+          {"stem": "Par la dernière phrase, l’auteure veut convaincre que…", "options": ["les épreuves devraient être plus longues.", "les élèves perdent trop de temps à se relire.", "le temps consacré à la relecture est un investissement rentable."], "answer": 2, "why": "« Ce n’est pas du temps perdu ; c’est peut-être le temps le mieux employé de toute l’épreuve »。A 她只建议在现有时间中留出 10 分钟；B 与原意相反。"}
+        ]
+      },
+      {
+        "id": "R35-3",
+        "title": "Réussir sa relecture en cinq étapes",
+        "meta": {"genre": "Extrait de guide méthodologique", "domain": "Éducation", "level": "B2"},
+        "text": [
+          "<b>Étape 1 – Vérifiez la consigne.</b> Avant toute chose, relisez le sujet. Avez-vous respecté le type de texte demandé, le destinataire et le nombre de mots ?",
+          "<b>Étape 2 – Contrôlez le plan.</b> Chaque paragraphe doit développer une seule idée, annoncée dès la première phrase. Si deux paragraphes disent la même chose, fusionnez-les.",
+          "<b>Étape 3 – Observez les liens.</b> Les articulateurs sont-ils variés et justes ? « En revanche » introduit une opposition, pas un ajout ; « donc » ne peut pas relier deux idées sans rapport logique.",
+          "<b>Étape 4 – Traquez les fautes d’accord.</b> Repérez chaque participe passé. Avec <i>être</i>, il s’accorde avec le sujet ; avec <i>avoir</i>, il ne s’accorde qu’avec un complément d’objet direct placé avant le verbe : « les erreurs que j’ai corrigées ».",
+          "<b>Étape 5 – Lisez à voix basse.</b> En articulant chaque mot, vous repérerez plus facilement les phrases trop longues et les mots oubliés.",
+          "Comptez une dizaine de minutes pour l’ensemble : c’est bien peu, comparé aux points que vous éviterez de perdre."
+        ],
+        "questions": [
+          {"stem": "Quelle est la fonction de ce document ?", "options": ["Donner une méthode pratique pour se relire efficacement.", "Présenter les résultats d’une enquête sur l’orthographe.", "Expliquer le barème officiel d’un examen."], "answer": 0, "why": "祈使句列出五个步骤（Vérifiez, Contrôlez, Observez, Traquez, Lisez），属于方法指南。B、C 文中无此内容。"},
+          {"stem": "D’après l’étape 2, que faut-il faire si deux paragraphes expriment la même idée ?", "options": ["Supprimer le plus long.", "Les réunir en un seul.", "Ajouter un articulateur entre eux."], "answer": 1, "why": "« fusionnez-les » = 把它们合并。A 不是“删掉”；C 是第三步的内容，且不能解决重复。"},
+          {"stem": "Selon l’étape 3, quelle utilisation de « en revanche » est correcte ?", "options": ["« Il a beaucoup travaillé ; en revanche, il a aussi fait du sport. »", "« Le texte est clair ; en revanche, il est en outre bien écrit. »", "« Le plan est clair ; en revanche, la conclusion est trop courte. »"], "answer": 2, "why": "en revanche 引出对立：« plan clair » 与 « conclusion trop courte » 形成正反对比。A、B 都是在补充/递进，应使用 en outre 或 de plus。"},
+          {"stem": "D’après l’étape 4, dans quel cas le participe passé employé avec « avoir » s’accorde-t-il ?", "options": ["Toujours avec le sujet.", "Quand le complément d’objet direct est placé avant le verbe.", "Jamais."], "answer": 1, "why": "« avec avoir, il ne s’accorde qu’avec un complément d’objet direct placé avant le verbe »，例：les erreurs que j’ai corrigées。A 是 être 的规则。"},
+          {"stem": "Que veut dire la dernière phrase ?", "options": ["La relecture demande peu de temps mais rapporte beaucoup.", "Il faut consacrer la moitié de l’épreuve à la relecture.", "On perd toujours des points pendant la relecture."], "answer": 0, "why": "« c’est bien peu, comparé aux points que vous éviterez de perdre »：投入少、收益大。B 与“十分钟左右”不符；C 理解反了。"}
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "id": "L35-1",
+        "title": "Des copies couvertes de rouge : à quoi bon ?",
+        "meta": {"genre": "Émission de radio · entretien", "domain": "Éducation", "level": "B2", "plays": 2},
+        "script": [
+          "— Bonjour à tous et bienvenue dans « Questions d’école ». Aujourd’hui, nous parlons de la correction des copies avec Anne Lecomte, chercheuse en sciences de l’éducation. Anne Lecomte, bonjour. On a tous en mémoire des copies couvertes de rouge. Est-ce que ça sert vraiment à quelque chose ?\n— Bonjour. Eh bien, beaucoup moins qu’on ne le croit. Nous avons suivi pendant deux ans plusieurs classes de collège, et nous avons constaté qu’une copie très annotée n’était pratiquement jamais relue par l’élève. Il regarde la note, il range la copie, et c’est fini. Les remarques que l’enseignant a mis des heures à écrire n’ont souvent servi à rien.",
+          "— Comment l’expliquez-vous ?\n— D’abord, il y en a trop. Face à vingt corrections, l’élève ne sait pas par où commencer. Ensuite, la copie arrive trop tard : quand il la récupère, deux semaines ont passé et la classe est déjà sur un autre chapitre. Enfin, et c’est le plus important, on ne lui demande rien en retour.",
+          "— Alors, qu’est-ce que vous recommandez ?\n— Trois choses simples. Premièrement, limiter les commentaires à deux ou trois points prioritaires, par exemple : « tes paragraphes n’ont pas d’idée principale » ou « vérifie les accords des participes passés ». Deuxièmement, donner aux élèves la possibilité de réécrire une partie de leur texte. C’est là que l’apprentissage a lieu : quand l’élève corrige lui-même l’erreur qu’on lui a signalée. C’est ça, au fond, le droit à l’erreur. Troisièmement, leur apprendre à se relire avec une grille, avant de rendre leur travail.",
+          "— Une grille, c’est-à-dire ?\n— Une liste de questions courtes : est-ce que j’ai répondu à la consigne ? Est-ce que chaque paragraphe commence par une idée claire ? Est-ce que j’ai vérifié les accords ? Les élèves qui ont utilisé ce type de grille ont nettement progressé, surtout les plus faibles.",
+          "— Mais tout ça prend du temps, et les programmes sont chargés…\n— C’est vrai, je ne dis pas le contraire. Mais corriger vingt erreurs que personne ne lira, c’est aussi du temps perdu. Mieux vaut corriger moins, et faire travailler davantage l’élève sur ses propres corrections.\n— Merci, Anne Lecomte."
+        ],
+        "questions": [
+          {"stem": "De quoi parle principalement Anne Lecomte ?", "options": ["De la manière de corriger les copies pour qu’elles aident vraiment les élèves.", "De la réforme des programmes de collège.", "Du nombre d’heures de travail des enseignants."], "answer": 0, "why": "整个访谈围绕“满篇红字是否有用”以及她的三条批改建议。B、C 只是作为背景或反驳被提及。"},
+          {"stem": "Qu’a constaté son équipe de recherche ?", "options": ["Les élèves lisent attentivement toutes les annotations.", "Les copies très annotées ne sont presque jamais relues par les élèves.", "Les enseignants annotent de moins en moins les copies."], "answer": 1, "why": "« une copie très annotée n’était pratiquement jamais relue par l’élève. Il regarde la note, il range la copie »。A 相反；C 未提及。"},
+          {"stem": "Parmi les raisons citées, laquelle est présentée comme la plus importante ?", "options": ["Il y a trop de corrections.", "Les copies sont rendues trop tard.", "On ne demande aucun travail à l’élève après la correction."], "answer": 2, "why": "« Enfin, et c’est le plus important, on ne lui demande rien en retour »。A、B 是前两条原因，但未被强调为最重要。"},
+          {"stem": "Selon elle, à quel moment l’apprentissage a-t-il réellement lieu ?", "options": ["Quand l’élève reçoit sa note.", "Quand l’élève corrige lui-même l’erreur qui lui a été signalée.", "Quand l’enseignant explique la règle à toute la classe."], "answer": 1, "why": "« C’est là que l’apprentissage a lieu : quand l’élève corrige lui-même l’erreur qu’on lui a signalée »。A、C 无此说法。"},
+          {"stem": "Qu’apprend-on au sujet des grilles de relecture ?", "options": ["Elles ont surtout aidé les élèves les plus en difficulté.", "Elles sont trop compliquées pour les collégiens.", "Elles remplacent complètement la correction de l’enseignant."], "answer": 0, "why": "« Les élèves qui ont utilisé ce type de grille ont nettement progressé, surtout les plus faibles »。B、C 均无依据。"},
+          {"stem": "Comment répond-elle à l’objection du manque de temps ?", "options": ["Elle la rejette complètement.", "Elle l’admet, mais juge plus coûteux de corriger sans effet.", "Elle propose d’alléger les programmes."], "answer": 1, "why": "« C’est vrai, je ne dis pas le contraire. Mais corriger vingt erreurs que personne ne lira, c’est aussi du temps perdu »：先承认再反驳。A 与“承认”不符；C 未提出。"}
+        ]
+      },
+      {
+        "id": "L35-2",
+        "title": "Le participe passé, ce casse-tête",
+        "meta": {"genre": "Chronique radio", "domain": "Langue française", "level": "B2", "plays": 2},
+        "script": [
+          "— Et voici la chronique « Langue vivante » de Nicolas Perrin. Nicolas, aujourd’hui, vous vous attaquez à un monument…\n— Oui, au participe passé employé avec avoir ! Vous connaissez la règle : « les pommes que j’ai mangées », avec un e et un s, parce que le complément est placé avant le verbe. Mais « j’ai mangé les pommes », sans accord. Avouez que c’est étrange : à l’oral, on n’entend presque jamais la différence.",
+          "Cette règle a une longue histoire. Elle a été fixée il y a plusieurs siècles et, aujourd’hui, elle fait perdre des heures aux élèves comme aux enseignants. C’est pourquoi certains linguistes proposent de rendre le participe invariable avec avoir : on écrirait « les pommes que j’ai mangé », tout simplement.",
+          "Évidemment, la proposition en a fait bondir plus d’un. Pour ces défenseurs de la tradition, toucher à l’orthographe, c’est abîmer la langue. D’autres répondent que la langue a toujours évolué, et que l’orthographe n’est pas la langue, mais seulement une façon de l’écrire.",
+          "Mon avis ? En attendant que le débat soit tranché, la règle s’applique, et elle sera vérifiée le jour de votre examen ! Alors un conseil : quand vous vous relisez, cherchez chaque verbe conjugué avec avoir et posez-vous la question « quoi ? ». Si la réponse est placée avant, on accorde. C’est tout.\n— Merci, Nicolas."
+        ],
+        "questions": [
+          {"stem": "Quel est le sujet de cette chronique ?", "options": ["L’histoire de la langue française au Moyen Âge.", "Le débat autour de l’accord du participe passé avec avoir.", "Les erreurs les plus fréquentes à l’oral."], "answer": 1, "why": "专栏一开始就点明主题：« au participe passé employé avec avoir »，并介绍规则、改革建议与争论。A、C 都不是主题。"},
+          {"stem": "Pourquoi le chroniqueur trouve-t-il la règle « étrange » ?", "options": ["Parce qu’elle a changé récemment.", "Parce qu’elle ne s’applique qu’aux fruits.", "Parce qu’à l’oral, on n’entend presque jamais la différence."], "answer": 2, "why": "« Avouez que c’est étrange : à l’oral, on n’entend presque jamais la différence »。A 与“几个世纪前确立”矛盾；B 是对例句的荒谬理解。"},
+          {"stem": "Que proposent certains linguistes ?", "options": ["Rendre le participe passé invariable avec avoir.", "Supprimer complètement le participe passé.", "Accorder toujours le participe avec le sujet."], "answer": 0, "why": "« proposent de rendre le participe invariable avec avoir »。B、C 是错误的引申。"},
+          {"stem": "Quel argument avancent les défenseurs de la tradition ?", "options": ["L’accord est indispensable pour se comprendre à l’oral.", "Modifier l’orthographe reviendrait à abîmer la langue.", "La règle est trop récente pour être changée."], "answer": 1, "why": "« toucher à l’orthographe, c’est abîmer la langue »。A 与“口语听不出区别”相矛盾；C 规则历史悠久。"},
+          {"stem": "Quel conseil le chroniqueur donne-t-il aux auditeurs ?", "options": ["Ignorer la règle puisqu’elle va disparaître.", "Éviter d’utiliser le passé composé à l’examen.", "Appliquer la règle en repérant le complément placé avant le verbe."], "answer": 2, "why": "« En attendant que le débat soit tranché, la règle s’applique… posez-vous la question « quoi ? ». Si la réponse est placée avant, on accorde »。A 与此相反；B 无此建议。"}
+        ]
+      },
+      {
+        "id": "L35-3",
+        "title": "Le centre d’aide à la rédaction rouvre",
+        "meta": {"genre": "Annonce", "domain": "Vie universitaire", "level": "B2", "plays": 1},
+        "script": [
+          "— Étudiants de l’université de Valmoreau, vos dissertations vous donnent des sueurs froides ? Le centre d’aide à la rédaction rouvre ses portes le lundi 6 octobre. Des tuteurs, eux-mêmes étudiants en master, vous accueillent sans rendez-vous du lundi au jeudi, de midi à quatorze heures, au premier étage de la bibliothèque. Ils ne rédigeront pas vos travaux à votre place, mais ils vous aideront à construire un plan, à organiser vos paragraphes et à repérer vos erreurs les plus fréquentes.",
+          "Des ateliers collectifs sont aussi proposés le mercredi après-midi : le premier, consacré aux connecteurs logiques, aura lieu le 8 octobre. Le service est gratuit pour tous les inscrits. Pensez simplement à apporter votre brouillon et la consigne de votre devoir."
+        ],
+        "questions": [
+          {"stem": "Que feront les tuteurs du centre ?", "options": ["Ils rédigeront les dissertations des étudiants.", "Ils aideront les étudiants à structurer et corriger leurs textes.", "Ils noteront les travaux à la place des professeurs."], "answer": 1, "why": "« Ils ne rédigeront pas vos travaux à votre place, mais ils vous aideront à construire un plan… repérer vos erreurs »。A 被明确否定；C 未提及。"},
+          {"stem": "Sur quoi portera le premier atelier collectif ?", "options": ["Sur les connecteurs logiques.", "Sur l’accord du participe passé.", "Sur la prise de notes."], "answer": 0, "why": "« le premier, consacré aux connecteurs logiques, aura lieu le 8 octobre »。B、C 未提。"},
+          {"stem": "Que faut-il apporter ?", "options": ["Une carte de paiement.", "Une lettre de recommandation.", "Son brouillon et la consigne du devoir."], "answer": 2, "why": "« Pensez simplement à apporter votre brouillon et la consigne de votre devoir »。A 服务免费；B 无关。"}
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "id": "W35-1",
+        "title": "Faut-il supprimer les notes au collège ?",
+        "genre": "Essai argumenté",
+        "prompt": "Le magazine des étudiants de votre université organise un concours d’essais sur le thème : « Faut-il supprimer les notes au collège ? ». Vous rédigez un essai argumenté dans lequel vous examinez les arguments en présence et vous défendez une position nuancée. Avant d’écrire, établissez un plan en trois parties ; après avoir écrit, relisez-vous en suivant les cinq étapes du document R35-3. (250 mots minimum)",
+        "minWords": 250,
+        "checklist": [
+          "Réalisation de la tâche : je pose la question, j’examine les arguments des deux camps et je défends une position nuancée et claire.",
+          "Cohérence et cohésion : plan visible (introduction, deux ou trois parties, conclusion), une idée par paragraphe, annoncée dès la première phrase.",
+          "Articulateurs : au moins six articulateurs différents et utilisés à bon escient (d’abord, en outre, en revanche, c’est pourquoi, autrement dit, en définitive).",
+          "Adéquation sociolinguistique : registre d’essai, impersonnel ou « je » mesuré, pas de familiarités.",
+          "Morphosyntaxe : accords des participes passés vérifiés (être, avoir + COD antéposé, verbes pronominaux).",
+          "Relecture : j’ai relu en trois passages (sens, accords, ponctuation) et vérifié le nombre de mots."
+        ],
+        "model": [
+          "Chaque trimestre, des millions d’élèves découvrent leurs notes avec plaisir ou avec angoisse. Depuis quelques années, certaines écoles les ont pourtant supprimées au profit d’autres formes d’évaluation. Faut-il généraliser cette expérience au collège ? Nous verrons d’abord ce qu’on reproche aux notes, puis ce qu’elles apportent malgré tout, avant de proposer une voie intermédiaire.",
+          "D’abord, les critiques adressées à la note sont sérieuses. Un élève qui a accumulé les mauvais résultats finit souvent par se décourager, comme si le chiffre qu’il a reçu disait quelque chose de lui-même et non de son travail. En outre, une moyenne ne dit presque rien des difficultés réelles : deux élèves qui ont obtenu 10 sur 20 peuvent avoir des besoins totalement différents.",
+          "En revanche, supprimer les notes n’est pas sans risque. Les parents ont besoin de repères simples pour suivre la scolarité de leur enfant ; or les grilles de compétences qu’on leur a proposées sont souvent jugées illisibles. De plus, les élèves passeront tôt ou tard des examens notés : il serait paradoxal de ne jamais les y avoir préparés.",
+          "C’est pourquoi une solution intermédiaire me paraît plus raisonnable. On pourrait conserver des notes, mais en moins grand nombre, et les accompagner de deux ou trois commentaires précis. Surtout, les élèves devraient pouvoir réécrire les devoirs qu’ils ont ratés, de manière à transformer l’erreur en occasion d’apprendre. Autrement dit, ce n’est pas la note qui pose problème, mais l’usage qu’on en fait.",
+          "En définitive, plutôt que de supprimer les notes, il faudrait changer leur fonction : qu’elles cessent d’être un verdict pour devenir une étape dans un apprentissage. Les écoles qui se sont engagées dans cette voie ont montré que c’était possible."
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "id": "S35-1",
+        "title": "Supprimer les devoirs à la maison ?",
+        "part": "Monologue suivi",
+        "trigger": {"title": "Devoirs à la maison : un débat qui revient chaque rentrée", "text": ["À chaque rentrée scolaire, la même polémique refait surface : faut-il supprimer les devoirs à la maison ? Pour leurs opposants, ils creusent les inégalités. Les enfants dont les parents ont fait des études et ont du temps pour les aider sont avantagés ; les autres se retrouvent seuls face à des exercices qu’ils n’ont pas compris en classe. Certaines écoles les ont donc remplacés par des « études » encadrées après les cours.", "Leurs défenseurs, eux, estiment que les devoirs développent l’autonomie et l’habitude du travail personnel, indispensables au lycée et à l’université. « Les supprimer, c’est repousser le problème à plus tard », affirme un professeur interrogé lors d’une enquête menée auprès de 900 enseignants. Beaucoup de parents, enfin, y voient le seul moyen de savoir ce que leur enfant apprend."]},
+        "prompt": "Dégagez le thème du document, formulez une problématique, annoncez votre plan, puis défendez votre point de vue avec des exemples précis (environ 6 minutes).",
+        "targetSeconds": 360,
+        "checklist": [
+          "J’introduis le thème sans lire le document.",
+          "Je formule une problématique précise (ex. : Les devoirs à la maison renforcent-ils l’autonomie ou les inégalités ?).",
+          "J’annonce un plan en deux ou trois parties et j’utilise des articulateurs pour passer de l’une à l’autre.",
+          "Je donne au moins deux exemples concrets (mon expérience scolaire, le système éducatif chinois, une école francophone).",
+          "Je surveille les participes passés à l’oral (les exercices qu’on a faits, ils se sont habitués).",
+          "Je conclus en répondant à la problématique et en ouvrant la réflexion."
+        ]
+      },
+      {
+        "id": "S35-2",
+        "title": "Correcteurs automatiques et intelligence artificielle : autorisés ?",
+        "part": "Exercice en interaction (débat)",
+        "prompt": "Votre établissement se demande s’il faut autoriser les élèves à utiliser des correcteurs automatiques et des outils d’intelligence artificielle pour rédiger leurs devoirs à la maison. Vous êtes favorable à une autorisation encadrée. L’examinateur conteste votre position. Répondez à chaque objection : confirmez, nuancez, concédez, réfutez.",
+        "followUps": [
+          "Si une machine corrige toutes les fautes, l’élève n’apprendra jamais l’orthographe. Vous n’êtes pas d’accord ?",
+          "Comment l’enseignant saura-t-il ce que l’élève a réellement écrit lui-même ?",
+          "Tous les élèves n’ont pas accès aux mêmes outils à la maison. N’est-ce pas injuste ?",
+          "Le jour de l’examen, ils n’auront pas ces outils. Alors à quoi bon les autoriser pendant l’année ?"
+        ],
+        "targetSeconds": 240,
+        "checklist": [
+          "Je reformule l’objection avant d’y répondre.",
+          "Je concède les risques réels (dépendance, triche, inégalités) avant de nuancer.",
+          "Je propose des règles d’encadrement concrètes (indiquer l’outil utilisé, garder le brouillon, travail en classe sans outil).",
+          "J’organise mes réponses avec des articulateurs (d’une part… d’autre part, en revanche, c’est pourquoi).",
+          "Je conserve une position cohérente jusqu’au bout."
+        ]
+      }
+    ],
+    "application": [
+      {
+        "id": "A35-1",
+        "title": "Relire et corriger un paragraphe",
+        "topic": "éducation",
+        "task": "Voici un paragraphe écrit par un étudiant : « Les copies que le professeur nous a rendu étaient couvertes de remarques. Ma voisine s’est rendue compte qu’elle avait oublié sa conclusion. Les fautes qu’elle avait fait étaient surtout des accords. En revanche, elle les a corrigé une par une. » Recopiez ce paragraphe en corrigeant les quatre erreurs d’accord du participe passé et l’articulateur mal employé (60 à 80 mots au total, avec une phrase finale qui explique votre correction de l’articulateur).",
+        "chunks": ["Les copies que le professeur nous a rendues…", "Ma voisine s’est rendu compte que…", "C’est pourquoi…", "J’ai remplacé « en revanche » par… car…"],
+        "keys": ["rendues", "rendu compte", "faites", "corrigées"]
+      },
+      {
+        "id": "A35-2",
+        "title": "Compte rendu pour un collègue",
+        "topic": "éducation",
+        "task": "Un collègue enseignant n’a pas pu écouter l’entretien avec Anne Lecomte (L35-1). Rédigez pour lui un compte rendu de 70 à 90 mots qui présente le constat de la chercheuse et ses trois recommandations, en utilisant des articulateurs d’énumération.",
+        "chunks": ["Selon Anne Lecomte, …", "Elle recommande d’abord de…", "Ensuite, …", "Enfin, …"],
+        "keys": ["commentaires", "réécrire", "grille"]
+      }
+    ]
+  },
+  "vocab": [
+    {"id": "V35-01", "fr": "se décourager", "zh": "灰心；泄气", "ex": "Après trois mauvaises notes, il a commencé à [[se décourager]].", "exZh": "接连三次低分后，他开始灰心了。", "src": "R35-1"},
+    {"id": "V35-02", "fr": "se sentir stigmatisé", "zh": "感觉被贴上（负面）标签", "ex": "Les élèves en difficulté [[se sont sentis stigmatisés]] par le classement.", "exZh": "学习困难的学生觉得排名给他们贴上了负面标签。", "src": "R35-1"},
+    {"id": "V35-03", "fr": "ne pas manquer d’arguments", "zh": "不乏论据", "ex": "Les défenseurs des notes [[ne manquent pas d’arguments]].", "exZh": "支持分数制的人不乏论据。", "src": "R35-1"},
+    {"id": "V35-04", "fr": "savoir où en est", "zh": "了解（某人/某事）进展到哪一步", "ex": "Avec ces grilles, les parents ne savent plus [[où en est]] leur enfant.", "exZh": "有了这些表格，家长反而不清楚孩子学到哪一步了。", "src": "R35-1"},
+    {"id": "V35-05", "fr": "une voie médiane", "zh": "折中之道；中间路线", "ex": "Entre suppression et statu quo, il existe [[une voie médiane]].", "exZh": "在取消与维持现状之间，存在一条折中之道。", "src": "R35-1"},
+    {"id": "V35-06", "fr": "un outil d’apprentissage", "zh": "学习工具；促进学习的手段", "ex": "L’évaluation devrait être [[un outil d’apprentissage]], pas une sanction.", "exZh": "评价应当是促进学习的手段，而非惩罚。", "src": "R35-1"},
+    {"id": "V35-07", "fr": "lire en diagonale", "zh": "粗略浏览；一目十行地看", "ex": "Il a [[lu en diagonale]] sa copie et n’a vu aucune faute.", "exZh": "他把试卷粗略扫了一遍，一个错误也没发现。", "src": "R35-2"},
+    {"id": "V35-08", "fr": "se relire", "zh": "重读（检查）自己写的东西", "ex": "Prenez toujours dix minutes pour [[vous relire]] avant de rendre votre copie.", "exZh": "交卷前一定要花十分钟检查自己写的内容。", "src": "R35-2"},
+    {"id": "V35-09", "fr": "laisser reposer son texte", "zh": "把写好的文章先放一放", "ex": "Avant de corriger, il vaut mieux [[laisser reposer son texte]] quelques minutes.", "exZh": "修改之前，最好先把文章放几分钟。", "src": "R35-2"},
+    {"id": "V35-10", "fr": "un regard neuf", "zh": "全新的眼光", "ex": "Le lendemain, j’ai relu ma lettre avec [[un regard neuf]].", "exZh": "第二天，我用全新的眼光重读了我的信。", "src": "R35-2"},
+    {"id": "V35-11", "fr": "loin de là", "zh": "远非如此；差得远", "ex": "Ces logiciels ne sont pas infaillibles, [[loin de là]].", "exZh": "这些软件绝非万无一失，差得远呢。", "src": "R35-2"},
+    {"id": "V35-12", "fr": "laisser passer", "zh": "漏掉（错误）；放过", "ex": "Le correcteur automatique a [[laissé passer]] plusieurs erreurs d’accord.", "exZh": "自动纠错漏掉了好几处配合错误。", "src": "R35-2"},
+    {"id": "V35-13", "fr": "l’enchaînement des idées", "zh": "思路的衔接", "ex": "Votre texte est correct, mais [[l’enchaînement des idées]] manque de clarté.", "exZh": "你的文章没有语法错误，但思路衔接不够清晰。", "src": "R35-2"},
+    {"id": "V35-14", "fr": "avant toute chose", "zh": "首先（最重要的是）", "ex": "[[Avant toute chose]], relisez attentivement la consigne.", "exZh": "首先，请仔细重读题目要求。", "src": "R35-3"},
+    {"id": "V35-15", "fr": "fusionner", "zh": "合并", "ex": "Ces deux paragraphes disent la même chose : il faut les [[fusionner]].", "exZh": "这两段说的是同一件事：应当把它们合并。", "src": "R35-3"},
+    {"id": "V35-16", "fr": "traquer les fautes", "zh": "揪出错误；仔细查错", "ex": "Pendant la dernière relecture, je [[traque les fautes]] d’accord.", "exZh": "最后一遍检查时，我专门揪配合错误。", "src": "R35-3"},
+    {"id": "V35-17", "fr": "ne pas savoir par où commencer", "zh": "不知从何下手", "ex": "Face à vingt corrections, l’élève [[ne sait pas par où commencer]].", "exZh": "面对二十处修改，学生不知从何下手。", "src": "L35-1"},
+    {"id": "V35-18", "fr": "en retour", "zh": "作为回应；反过来", "ex": "L’enseignant corrige, mais on ne demande rien à l’élève [[en retour]].", "exZh": "老师批改了，却不要求学生反过来做任何事。", "src": "L35-1"},
+    {"id": "V35-19", "fr": "une copie annotée", "zh": "批注过的作业/试卷", "ex": "[[Une copie annotée]] n’est utile que si l’élève la relit.", "exZh": "批注过的试卷只有在学生重读时才有用。", "src": "L35-1"},
+    {"id": "V35-20", "fr": "le droit à l’erreur", "zh": "犯错的权利；允许犯错", "ex": "Pour apprendre, les élèves ont besoin du [[droit à l’erreur]].", "exZh": "为了学习，学生需要被允许犯错。", "src": "L35-1"},
+    {"id": "V35-21", "fr": "faire bondir", "zh": "使人（愤怒地）跳起来；激起强烈反对", "ex": "Cette proposition de réforme a [[fait bondir]] les puristes.", "exZh": "这项改革提议让纯语派人士暴跳如雷。", "src": "L35-2"},
+    {"id": "V35-22", "fr": "toucher à", "zh": "触碰；改动（某物）", "ex": "Pour beaucoup, il ne faut surtout pas [[toucher à]] l’orthographe.", "exZh": "在许多人看来，绝对不能改动拼写规则。", "src": "L35-2"},
+    {"id": "V35-23", "fr": "trancher un débat", "zh": "对争论作出裁决、下定论", "ex": "Aucune étude n’a encore permis de [[trancher le débat]].", "exZh": "还没有哪项研究能为这场争论下定论。", "src": "L35-2"},
+    {"id": "V35-24", "fr": "donner des sueurs froides", "zh": "让人冒冷汗；令人非常紧张", "ex": "L’idée de rédiger une dissertation lui [[donne des sueurs froides]].", "exZh": "一想到要写论文，他就直冒冷汗。", "src": "L35-3"},
+    {"id": "V35-25", "fr": "les connecteurs logiques", "zh": "逻辑连接词", "ex": "Un bon essai utilise des [[connecteurs logiques]] variés.", "exZh": "一篇好的议论文会使用多样的逻辑连接词。", "src": "L35-3"}
+  ]
+}
