@@ -98,6 +98,15 @@ async function main() {
   check(light.complete && !high.complete && high.modules.reading.done === p16.reading.length, 'the same records complete a lighter plan, not a higher one');
   state.setProduction(S, 16, p16.production[0].node.id, 0, false);
   check(!(state.productionKey(16, p16.production[0].node.id, 0) in S.production), 'unchecking an output prompt removes it');
+  const n0 = p16.production[0].node.id, k0 = state.productionKey(16, n0, 0);
+  state.saveProduction(S, 16, n0, 0, 'Je doute qu’il vienne.\nIl faut que tu partes.');
+  check(S.production[k0] === true && S.drafts.production[k0].startsWith('Je doute'), 'typed output sentences are kept and mark the prompt done');
+  state.saveProduction(S, 16, n0, 0, '  ');
+  check(S.production[k0] === true && !(k0 in S.drafts.production), 'clearing the sentences removes the text, not the done mark');
+  const sp0 = p16.speaking[0];
+  state.saveDraft(S, 'speaking', 16, sp0.id, 'Plan : 1. constat 2. causes ');
+  state.addSpeaking(S, 16, sp0, null, 60);
+  check(S.speaking[S.speaking.length - 1].notes === 'Plan : 1. constat 2. causes' && S.drafts.speaking[state.draftKey(16, sp0.id)], 'a speaking round keeps the typed plan, which stays for the next round');
   state.markChunk(S, 16, p16.vocab[0].id, 'known');
   check(S.lexicon[`16:${p16.vocab[0].id}`] === 'known' && !state.answerReview(S, 16, items16[0], 0), 'the latest self-assessment of a chunk counts; a review item is done once');
   const sd = progress.studyDays(S);
@@ -137,7 +146,7 @@ async function main() {
 
   const N = state.normalize({ day: 99, intensity: 'max', startedAt: 5, onboarded: 'yes', reading: [], writing: {}, junk: 1, drafts: { writing: { a: 'b' } } });
   check(N.day === 1 && N.intensity === 'standard' && N.startedAt === null && N.onboarded === false && !('junk' in N)
-    && Array.isArray(N.writing) && !Array.isArray(N.reading) && N.drafts.writing.a === 'b' && typeof N.drafts.application === 'object', 'a stored state is reduced to the known shape', N);
+    && Array.isArray(N.writing) && !Array.isArray(N.reading) && N.drafts.writing.a === 'b' && ['application', 'speaking', 'production'].every((k) => typeof N.drafts[k] === 'object'), 'a stored state is reduced to the known shape', N);
   check(state.countWords('Aujourd’hui, l’air est-il pollué ? 85 % oui.') === 6, 'words are counted like DELF counts them');
   const sp = [['remet  en Cause', 'remet en cause', true], ['remetencause', 'remet en cause', true], ['Je regrette mais', 'Je regrette, mais', true],
     ["s'il vous plaît", 's’il vous plaît', true], ['coeur', 'cœur', true], ["s'il vous plait", 's’il vous plaît', false],

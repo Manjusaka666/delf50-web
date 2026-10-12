@@ -5,17 +5,20 @@
  *   day, intensity, startedAt, onboarded             settings (study_state document)
  *   reading / listening   "<day>:<item>:<q>" = option index
  *   grammar               "<day>:<question>" = {day, contentId, nodeId, question, selectedIndex, correctIndex, correct, answeredAt}
- *   production            "<day>:<node>:<prompt>" = true
+ *   production            "<day>:<node>:<prompt>" = true   (done: written below or said aloud)
  *   writing / application [{day, contentId, title, text, words?, at}]
- *   speaking              [{clip, day, contentId, title, sec, at}]   clip = recording in R2, null when practised offline
+ *   speaking              [{clip, day, contentId, title, sec, at, notes?}]   clip = recording in R2, null when practised offline;
+ *                         notes = the typed outline or script at the time of the round
  *   errors                [{skill, original, correct, why, at}]
- *   drafts                {writing: {"<day>:<item>": text}, application: {…}}
+ *   drafts                {writing: {"<day>:<item>": text}, application: {…}, speaking: {…},
+ *                          production: {"<day>:<node>:<prompt>": sentences}}   typed text, saved as it is typed
  *   lexicon               "<day>:<chunk>" = 'known' | 'again'   (typed right / wrong; earlier: self-assessed)
  *   review                "<day>:<g|v>:<source day>:<item>" = {day, kind, src, contentId, selectedIndex?, correct, at}
  *   remedial              "<day>" = [grammar point ids]   Days 41–50: the weakest points, fixed when the day is opened
  */
 
 export const DAYS = 50;
+const DRAFT_KINDS = ['writing', 'application', 'speaking', 'production'];
 export const INTENSITIES = ['light', 'standard', 'high'];
 
 export function blank() {
@@ -23,7 +26,7 @@ export function blank() {
     day: 1, intensity: 'standard', startedAt: null, onboarded: false,
     reading: {}, listening: {}, grammar: {}, production: {},
     writing: [], application: [], speaking: [], errors: [],
-    drafts: { writing: {}, application: {} }, lexicon: {}, review: {}, remedial: {}
+    drafts: { writing: {}, application: {}, speaking: {}, production: {} }, lexicon: {}, review: {}, remedial: {}
   };
 }
 
@@ -40,7 +43,8 @@ export function normalize(raw) {
   for (const k of ['reading', 'listening', 'grammar', 'production', 'lexicon', 'review']) s[k] = obj(r[k]);
   for (const [d, ids] of Object.entries(obj(r.remedial))) if (Array.isArray(ids) && ids.every((x) => typeof x === 'string')) s.remedial[d] = ids;
   for (const k of ['writing', 'application', 'speaking', 'errors']) s[k] = list(r[k]);
-  s.drafts = { writing: obj(obj(r.drafts).writing), application: obj(obj(r.drafts).application) };
+  s.drafts = {};
+  for (const k of DRAFT_KINDS) s.drafts[k] = obj(obj(r.drafts)[k]);
   return s;
 }
 
@@ -84,6 +88,13 @@ export function saveDraft(S, module, day, itemId, text) {
   if (String(text || '').trim()) S.drafts[module][k] = text; else delete S.drafts[module][k];
 }
 
+/** Output practice typed out: the sentences are kept as typed, and writing them marks the prompt done. */
+export function saveProduction(S, day, node, i, text) {
+  const k = productionKey(day, node, i);
+  if (String(text || '').trim()) { S.drafts.production[k] = text; setProduction(S, day, node, i, true); }
+  else delete S.drafts.production[k];
+}
+
 export function submitText(S, module, day, item, text) {
   const rec = { day, contentId: item.id, title: item.title, text: String(text).trim(), at: now() };
   if (module === 'writing') rec.words = countWords(text);
@@ -94,7 +105,10 @@ export function submitText(S, module, day, item, text) {
 }
 
 export function addSpeaking(S, day, item, clip, sec) {
-  S.speaking.push({ clip: clip || null, day, contentId: item.id, title: item.title, sec: Math.max(0, Math.round(sec || 0)), at: now() });
+  const rec = { clip: clip || null, day, contentId: item.id, title: item.title, sec: Math.max(0, Math.round(sec || 0)), at: now() };
+  const notes = String(S.drafts.speaking[draftKey(day, item.id)] || '').trim();
+  if (notes) rec.notes = notes;
+  S.speaking.push(rec);
   started(S);
 }
 

@@ -77,7 +77,7 @@ function sampleState() {
       { skill: 'Négation', original: 'x', correct: 'y', why: 'z', at: '2026-09-28T08:19:00.000Z' },
       { skill: 'Négation', original: 'x', correct: 'y', why: 'z', at: '2026-09-28T08:19:00.000Z' }
     ],
-    drafts: { writing: { '3:W03-1': 'brouillon' }, application: {} },
+    drafts: { writing: { '3:W03-1': 'brouillon' }, application: {}, speaking: { '3:S03-1': 'Plan : 1. constat' }, production: { '3:negation:0': 'Je ne parle pas.' } },
     lexicon: { '3:V03-01': 'known', '3:V03-02': 'again' },
     review: {
       '3:g:2:present-03': { day: 3, kind: 'g', src: 2, contentId: 'present-03', selectedIndex: 1, correct: false, at: '2026-09-28T08:30:00.000Z' },
@@ -103,7 +103,7 @@ function unitTests() {
   const d0 = C.diff({}, {}, S, SPEC);
   const docOf = Object.fromEntries(d0.doc.map((o) => [o[0].join('.'), o[1]]));
   check(['reading', 'listening', 'grammar', 'production', 'lexicon', 'review'].every((k) => C.equal(docOf[k], {})) && C.equal(docOf.remedial, S.remedial)
-    && ['writing', 'application', 'speaking', 'errors'].every((k) => C.equal(docOf[k], [])) && C.equal(docOf.drafts, { writing: {}, application: {} })
+    && ['writing', 'application', 'speaking', 'errors'].every((k) => C.equal(docOf[k], [])) && C.equal(docOf.drafts, { writing: {}, application: {}, speaking: {}, production: {} })
     && docOf.day === 3 && docOf.intensity === 'standard', 'the document holds the settings and empty record containers, never records', docOf);
   check(!d0.ops.listening && d0.ops.writing.set.length === 2 && d0.ops.errors.set.length === 3 && d0.ops.reading.set.length === 3 && d0.ops.production.set.length === 2,
     'a first batch writes every record as its own row');
@@ -578,6 +578,14 @@ async function browserTests(base, owner, s3) {
   await A.click('#production .check >> nth=1');
   await settled(A);
   check((await one(`select count(*)::int n from delf50.grammar_productions where done`)).n === 2, 'output practice is saved per prompt');
+  await A.type('.prod-ed >> nth=2', 'Je parle français. Nous habitons à Lyon.', { delay: 5 });
+  await A.waitForSelector('#production .check.on >> nth=2');
+  await settled(A);
+  const pt = await one(`select count(*)::int n, min(draft_key) k, min(body) b, (select count(*)::int from delf50.grammar_productions where done) done from delf50.drafts where kind = 'production'`);
+  check(pt.n === 1 && pt.b === 'Je parle français. Nous habitons à Lyon.' && pt.done === 3, 'typed output sentences are saved and mark the prompt done', pt);
+  await A.reload();
+  await A.waitForSelector('.prod-ed');
+  check(/Lyon/.test(await A.inputValue('.prod-ed >> nth=2')), 'after a reload the typed sentences are back');
 
   // Reading: every question of the first text.
   await A.goto(base + '/#/day/1/reading/1');
@@ -594,7 +602,7 @@ async function browserTests(base, owner, s3) {
   await A.waitForSelector('.ed');
   await A.type('.ed', 'Bonjour, je m’appelle Camille et je travaille à Lausanne.', { delay: 5 });
   await settled(A);
-  const dr = await one(`select count(*)::int n, min(draft_key) k from delf50.drafts`);
+  const dr = await one(`select count(*)::int n, min(draft_key) k from delf50.drafts where kind = 'writing'`);
   check(dr.n === 1 && dr.k === '1:W01-1', 'the draft is saved as it is typed', dr);
   await A.reload();
   await A.waitForSelector('.ed');
@@ -604,11 +612,15 @@ async function browserTests(base, owner, s3) {
   await A.click('[data-act="submit"]');
   await A.waitForSelector('.versions');
   await settled(A);
-  const w = await one(`select count(*)::int n, min(word_count) wc, min(content_id) c, (select count(*)::int from delf50.drafts) drafts from delf50.writing_submissions`);
+  const w = await one(`select count(*)::int n, min(word_count) wc, min(content_id) c, (select count(*)::int from delf50.drafts where kind = 'writing') drafts from delf50.writing_submissions`);
   check(w.n === 1 && w.wc === 9 && w.c === 'W01-1' && w.drafts === 0, 'a short text asks for confirmation, then is submitted with its word count', w);
 
-  // Speaking: a recording goes to R2, then its round is saved.
+  // Speaking: the typed plan is saved as it is typed; a recording goes to R2, then its round is saved with the plan.
   await A.goto(base + '/#/day/1/speaking/1');
+  await A.type('.notes-ed', 'Plan : 1. présentation 2. travail', { delay: 5 });
+  await settled(A);
+  const sn = await one(`select count(*)::int n, min(body) b from delf50.drafts where kind = 'speaking'`);
+  check(sn.n === 1 && sn.b === 'Plan : 1. présentation 2. travail', 'the speaking plan is saved as it is typed', sn);
   await A.click('[data-act="record"]');
   await A.waitForSelector('.recorder.live');
   await A.waitForTimeout(1500);
@@ -620,6 +632,7 @@ async function browserTests(base, owner, s3) {
   const sp = await one(`select count(*)::int n, min(clip_id) clip, min(duration_sec) sec from delf50.speaking_attempts`);
   const stored = await one(`select count(*)::int n from delf50.media_objects where clip_id = $1`, [sp.clip]);
   check(sp.n === 1 && /^clip-/.test(sp.clip) && sp.sec >= 1, 'a recorded round is saved with its clip', sp);
+  check((await one(`select extra->>'notes' notes from delf50.speaking_attempts`)).notes === 'Plan : 1. présentation 2. travail' && await A.isVisible('.round-notes'), 'the round keeps the plan typed for it');
   check(stored.n === 1 && [...s3.objects.keys()].some((k) => k.includes('/speaking/' + sp.clip)), 'the recording is stored in R2', [...s3.objects.keys()]);
   await A.click('[data-act="timer"]');
   await A.waitForTimeout(1100);

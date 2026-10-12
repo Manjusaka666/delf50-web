@@ -1,8 +1,8 @@
-/** Speaking: a task, a timed recording stored in R2 (or a timed offline round), and the rounds done. */
+/** Speaking: a task, a typed outline or script, a timed recording stored in R2 (or a timed offline round), and the rounds done. */
 import { store, commit, refresh } from '../store.js';
 import { itemState } from '../progress.js';
 import { loadDay } from '../course.js';
-import { addSpeaking } from '../state.js';
+import { addSpeaking, saveDraft, draftKey, countWords } from '../state.js';
 import { upload, newClipId } from '../media.js';
 import { html, icon, pad2, frText, fmtDateTime, fmtDuration, MODULE_NAMES, MODULE_FR } from '../ui.js';
 import { dayContext, crumbs, pager, nextLink, clip, listenAction, triggerDoc, examNotes } from './common.js';
@@ -86,7 +86,15 @@ export async function speakView(d, n) {
   const roundItem = (r) => html`<li class="round">
     <span class="round-when">${fmtDateTime(r.at)}</span><span class="muted">${fmtDuration(r.sec)}</span>
     ${r.clip ? clip(players, r.clip) : html`<span class="tag soft">计时练习</span>`}
+    ${r.notes ? html`<details class="round-notes"><summary>当时的提纲 / 文字稿</summary><div class="prose small" lang="fr">${r.notes.split(/\n+/).map((p) => html`<p>${p}</p>`)}</div></details>` : ''}
   </li>`;
+
+  const key = draftKey(d, item.id), notes = () => store.S.drafts.speaking[key] || '';
+  const notesBox = () => html`<div class="notes">
+    <label class="label" for="notes">提纲 / 文字稿 · Plan</label>
+    <textarea id="notes" class="ed notes-ed" data-input="notes" lang="fr" spellcheck="true" placeholder="Notez votre plan ou rédigez ce que vous allez dire…">${notes()}</textarea>
+    <div class="ed-foot"><span class="meter plain"><b data-notes-words>${countWords(notes())}</b> 词</span><span class="muted small">随输入实时保存；保存录音或计时练习时会附上这一版</span></div>
+  </div>`;
 
   const render = () => {
     const st = itemState(store.S, 'speaking', d, item);
@@ -104,7 +112,7 @@ export async function speakView(d, n) {
           ${item.checklist && item.checklist.length ? html`<div class="checklist"><p class="label">评分要点</p><ul>${item.checklist.map((c) => html`<li lang="fr">${frText(c)}</li>`)}</ul></div>` : ''}
           ${examNotes('speaking')}
         </section>
-        <section class="editor">${recorder()}</section>
+        <section class="editor">${notesBox()}${recorder()}</section>
       </div>
       ${st.records.length ? html`<section class="versions">
         <h2 class="section-title"><span>Prises</span>已完成 <small>${st.records.length} 轮</small></h2>
@@ -123,6 +131,13 @@ export async function speakView(d, n) {
       stopTracks();
       if (take) URL.revokeObjectURL(take.url);
       players.forEach((u) => u && URL.revokeObjectURL(u));
+    },
+    inputs: {
+      notes: (el) => {
+        commit((S) => saveDraft(S, 'speaking', d, item.id, el.value), { quiet: true });
+        const w = document.querySelector('[data-notes-words]');
+        if (w) w.textContent = countWords(el.value);
+      }
     },
     actions: {
       record,
