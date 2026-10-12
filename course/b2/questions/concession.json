@@ -1,0 +1,332 @@
+[
+ {
+  "id": "concession-01",
+  "stem": "___ la pluie, le marché de Noël a attiré beaucoup de monde.",
+  "options": [
+   "Malgré",
+   "Bien que",
+   "Même si"
+  ],
+  "answer": 0,
+  "why": "la pluie 是名词，用 malgré + 名词。bien que 和 même si 后要接从句。"
+ },
+ {
+  "id": "concession-02",
+  "stem": "Bien qu’il ___ tard, les bureaux sont encore éclairés.",
+  "options": [
+   "est",
+   "sera",
+   "soit"
+  ],
+  "answer": 2,
+  "why": "bien que + 虚拟式：qu’il soit tard。est 和 sera 是直陈式，只能用于 même si。"
+ },
+ {
+  "id": "concession-03",
+  "stem": "Même si le billet ___ cher, je veux absolument voir ce concert.",
+  "options": [
+   "est",
+   "soit",
+   "serait"
+  ],
+  "answer": 0,
+  "why": "même si + 直陈式：le billet est cher。soit 是虚拟式（bien que 才用）；serait 是条件式，même si 后不能用。"
+ },
+ {
+  "id": "concession-04",
+  "stem": "Il ___ beau répéter les consignes, ses enfants ne rangent jamais leur chambre.",
+  "options": [
+   "a",
+   "est",
+   "fait"
+  ],
+  "answer": 0,
+  "why": "固定结构 avoir beau + 不定式（无论怎么……都没用）：il a beau répéter。être beau / faire beau 是其他意思（漂亮、天气好）。"
+ },
+ {
+  "id": "concession-05",
+  "stem": "Mon frère adore la ville, ___ ma sœur préfère la campagne.",
+  "options": [
+   "malgré",
+   "tandis que",
+   "en dépit de"
+  ],
+  "answer": 1,
+  "why": "对比两个人的事实，用 tandis que + 直陈式从句。malgré 和 en dépit de 后只能接名词。"
+ },
+ {
+  "id": "concession-06",
+  "stem": "Ce restaurant n’est pas cher ; ___, la cuisine y est excellente.",
+  "options": [
+   "donc",
+   "parce que",
+   "pourtant"
+  ],
+  "answer": 2,
+  "why": "便宜却很好吃，与预期相反，用 pourtant（然而）。donc 表示结果，parce que 表示原因，都不表达转折。"
+ },
+ {
+  "id": "concession-07",
+  "stem": "___ critiques, le maire maintient son projet de parking.",
+  "options": [
+   "Bien que les",
+   "Même si les",
+   "En dépit des"
+  ],
+  "answer": 2,
+  "why": "后面只有名词短语（critiques），没有动词，用 en dépit de + les = en dépit des。bien que 和 même si 需要带变位动词的从句。"
+ },
+ {
+  "id": "concession-08",
+  "stem": "Quoiqu’elle ___ peu d’expérience, elle a été embauchée.",
+  "options": [
+   "a",
+   "ait",
+   "aura"
+  ],
+  "answer": 1,
+  "why": "quoique（＝ bien que）+ 虚拟式：qu’elle ait。a 和 aura 是直陈式。"
+ },
+ {
+  "id": "concession-09",
+  "stem": "Il fait un temps magnifique ___ la météo avait annoncé de l’orage.",
+  "options": [
+   "malgré",
+   "en dépit de",
+   "alors que"
+  ],
+  "answer": 2,
+  "why": "后面是完整从句（la météo avait annoncé…），用 alors que + 直陈式表示对立。malgré 和 en dépit de 后只能接名词。"
+ },
+ {
+  "id": "concession-10",
+  "stem": "Elle a beau ___ des économies, elle n’arrive pas à acheter un appartement.",
+  "options": [
+   "fait",
+   "faisant",
+   "faire"
+  ],
+  "answer": 2,
+  "why": "avoir beau 后接不定式：elle a beau faire des économies。fait 是变位形式或过去分词；faisant 是现在分词，都不能用在 avoir beau 后。"
+ },
+ {
+  "id": "concession-11",
+  "stem": "___, le télétravail a des avantages, mais il isole certains salariés.",
+  "options": [
+   "Pourtant",
+   "Malgré",
+   "Certes"
+  ],
+  "answer": 2,
+  "why": "certes… mais 是“先承认、再反驳”的固定结构。pourtant 本身表示转折，与后面的 mais 重复；malgré 后要接名词。"
+ },
+ {
+  "id": "concession-12",
+  "stem": "Ce projet coûte cher ; il n’empêche qu’il ___ indispensable.",
+  "options": [
+   "soit",
+   "est",
+   "être"
+  ],
+  "answer": 1,
+  "why": "il n’empêche que（尽管如此）后接直陈式：il est indispensable。soit 是虚拟式；être 是不定式。"
+ },
+ {
+  "id": "concession-13",
+  "stem": "Même si nous ___ plus tôt, nous aurions raté le début du film.",
+  "options": [
+   "étions partis",
+   "serions partis",
+   "soyons partis"
+  ],
+  "answer": 0,
+  "why": "même si + 愈过去时表示与过去事实相反的假设（主句用条件式过去时）。serions partis 是条件式，même si 后不用；soyons partis 是虚拟式。"
+ },
+ {
+  "id": "concession-14",
+  "stem": "Bien qu’ils ___ tout essayé, les médecins n’ont pas pu le sauver.",
+  "options": [
+   "ont",
+   "aient",
+   "auraient"
+  ],
+  "answer": 1,
+  "why": "bien que + 过去虚拟式（动作已完成）：qu’ils aient essayé。ont 是直陈式；auraient 是条件式。"
+ },
+ {
+  "id": "concession-15",
+  "stem": "Le centre-ville est piéton depuis un an. ___, les livreurs peuvent y circuler le matin.",
+  "options": [
+   "Cependant",
+   "Malgré",
+   "Bien que"
+  ],
+  "answer": 0,
+  "why": "句首的 cependant（然而）连接两个独立句，表示限制或转折。malgré 后要接名词；bien que 后要接虚拟式从句，不能单独加逗号。"
+ },
+ {
+  "id": "concession-16",
+  "stem": "___ il ait beaucoup travaillé, il n’a pas obtenu la promotion.",
+  "options": [
+   "Bien qu’",
+   "Malgré",
+   "Même s’"
+  ],
+  "answer": 0,
+  "why": "从句动词是虚拟式 ait，只能用 bien que。malgré 后接名词；même si 后接直陈式（même s’il a beaucoup travaillé）。"
+ },
+ {
+  "id": "concession-17",
+  "stem": "Les femmes sont plus diplômées que les hommes ; ___, elles restent moins bien payées.",
+  "options": [
+   "pourtant",
+   "puisque",
+   "si bien que"
+  ],
+  "answer": 0,
+  "why": "学历更高却收入更低，与预期相反，用 pourtant。puisque 表示原因；si bien que 表示结果，都不合逻辑。"
+ },
+ {
+  "id": "concession-18",
+  "stem": "Même s’il ___ demain, la course aura lieu.",
+  "options": [
+   "pleuve",
+   "pleuvra",
+   "pleut"
+  ],
+  "answer": 2,
+  "why": "même si 后接直陈式现在时，即使指将来也不用将来时：même s’il pleut demain。pleuve 是虚拟式；pleuvra 是将来时，si 后不能用将来时。"
+ },
+ {
+  "id": "concession-19",
+  "stem": "Nous ___ beau chercher partout, nous n’avons pas retrouvé les clés.",
+  "options": [
+   "sommes",
+   "avons eu",
+   "avons été"
+  ],
+  "answer": 1,
+  "why": "avoir beau 的复合过去时：nous avons eu beau chercher。être 不能代替 avoir：sommes beau / avons été beau 都是错误结构。"
+ },
+ {
+  "id": "concession-20",
+  "stem": "Il continue à fumer ___ il connaît parfaitement les risques.",
+  "options": [
+   "malgré",
+   "bien qu’",
+   "alors qu’"
+  ],
+  "answer": 2,
+  "why": "从句用直陈式 connaît，用 alors que（而、却）表示对立。malgré 后接名词；bien que 要求虚拟式（bien qu’il connaisse）。"
+ },
+ {
+  "id": "concession-21",
+  "stem": "___ tu dises, je ne changerai pas d’avis.",
+  "options": [
+   "Quoique",
+   "Quoi que",
+   "Bien que"
+  ],
+  "answer": 1,
+  "why": "quoi que（分开写）＝ 无论什么，作 dises 的宾语。quoique（＝ bien que）和 bien que 表示“尽管”，后面缺少宾语，句子不完整。"
+ },
+ {
+  "id": "concession-22",
+  "stem": "Les chiffres de l’emploi sont bons ; il n’empêche ___ le chômage des jeunes reste élevé.",
+  "options": [
+   "pas que",
+   "que",
+   "qu’à"
+  ],
+  "answer": 1,
+  "why": "固定表达 il n’empêche que + 直陈式，不加 pas。il n’empêche pas que 是常见错误；qu’à 不成结构。"
+ },
+ {
+  "id": "concession-23",
+  "stem": "Certes, la ville a créé des pistes cyclables, ___ elles restent dangereuses.",
+  "options": [
+   "donc",
+   "mais",
+   "car"
+  ],
+  "answer": 1,
+  "why": "certes 引出让步，后半句用 mais 引出反驳：certes…, mais…。donc 表示结果；car 表示原因，都不构成让步结构。"
+ },
+ {
+  "id": "concession-24",
+  "stem": "___ de nombreuses campagnes de prévention, les accidents de la route augmentent.",
+  "options": [
+   "Bien que",
+   "En dépit de",
+   "Alors que"
+  ],
+  "answer": 1,
+  "why": "后面是名词短语，用 en dépit de + 名词（de + de nombreuses → de nombreuses）。bien que 和 alors que 后要接从句。"
+ },
+ {
+  "id": "concession-25",
+  "stem": "Dans un essai : « ___ cette mesure soit impopulaire, elle me semble nécessaire. »",
+  "options": [
+   "Quoique",
+   "Même si",
+   "Alors que"
+  ],
+  "answer": 0,
+  "why": "soit 是虚拟式，需要 quoique / bien que（书面语体）。même si 和 alors que 后接直陈式。"
+ },
+ {
+  "id": "concession-26",
+  "stem": "Même si j’___ le temps, je ne partirais pas en vacances cette année.",
+  "options": [
+   "aurais",
+   "aie",
+   "avais"
+  ],
+  "answer": 2,
+  "why": "même si + 未完成过去时表示与现在事实相反的假设，主句用条件式：Même si j’avais le temps, je ne partirais pas。aurais 是条件式，aie 是虚拟式，même si 后都不能用。"
+ },
+ {
+  "id": "concession-27",
+  "stem": "Elle ___ beau insister, le guichetier refusait de l’écouter.",
+  "options": [
+   "était",
+   "a",
+   "avait"
+  ],
+  "answer": 2,
+  "why": "avoir beau 要与主句时态协调：主句是 imparfait（refusait），所以 elle avait beau insister。était 用错了助动词；a 是现在时，与过去叙事不协调。"
+ },
+ {
+  "id": "concession-28",
+  "stem": "Même si elle ___ toute la nuit, elle n’a pas fini son mémoire.",
+  "options": [
+   "a travaillé",
+   "ait travaillé",
+   "aurait travaillé"
+  ],
+  "answer": 0,
+  "why": "même si + 直陈式（真实的过去事实）：elle a travaillé。ait travaillé 是虚拟式；aurait travaillé 是条件式，même si 后都不能用。"
+ },
+ {
+  "id": "concession-29",
+  "stem": "Il a beau ___ des études de droit, il ne trouve pas de travail.",
+  "options": [
+   "ayant fait",
+   "avoir fait",
+   "qu’il ait fait"
+  ],
+  "answer": 1,
+  "why": "avoir beau 后接不定式，动作已完成时用过去不定式：avoir fait。ayant fait 是复合分词；qu’il ait fait 是从句，都不能接在 avoir beau 后。"
+ },
+ {
+  "id": "concession-30",
+  "stem": "La réforme est nécessaire ; elle doit ___ être mieux expliquée aux citoyens.",
+  "options": [
+   "néanmoins",
+   "malgré",
+   "bien que"
+  ],
+  "answer": 0,
+  "why": "副词 néanmoins（然而、尽管如此）可插在助动词/情态动词与不定式之间。malgré 后要接名词；bien que 要引出从句。"
+ }
+]
