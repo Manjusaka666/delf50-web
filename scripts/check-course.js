@@ -75,7 +75,7 @@ for (const d of days) {
       check(x.id === `${letter}${String(d.day).padStart(2, '0')}-${i + 1}`, where, `id ${x.id}`);
       check(!seen.id.has(x.id), where, `id ${x.id} repeated`); seen.id.add(x.id);
       check(x.title && plain(x.title).length > 2, where, 'no title');
-      const body = m === 'reading' ? x.text.join(' ') : m === 'listening' ? x.script.join(' ') : m === 'application' ? x.task : x.prompt;
+      const body = m === 'reading' ? x.text.join(' ') : m === 'listening' ? x.script.join(' ') : m === 'application' ? x.task : [x.prompt, ...(x.trigger ? x.trigger.text : [])].join(' ');
       check(words(body) >= (m === 'reading' || m === 'listening' ? (d.day <= 2 ? 20 : 45) : 8), where, `body too short (${words(body)} words)`);
       check(!LEAK.test(x.title + ' ' + body), where, 'development marker');
       check(!SCAFFOLD.test(body), where, 'generator scaffolding');

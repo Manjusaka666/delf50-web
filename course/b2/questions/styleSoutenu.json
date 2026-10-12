@@ -5,10 +5,10 @@
   "options": [
    "était-t-il",
    "était-il",
-   "était il"
+   "étais-il"
   ],
   "answer": 1,
-  "why": "à peine 位于句首时，书面语中主谓倒装：À peine était-il arrivé que…。动词已以 -t 结尾，不能再加 -t-（était-t-il 错误）；倒装必须加连字符。"
+  "why": "à peine 位于句首时，书面语中主谓倒装：À peine était-il arrivé que…。动词已以 -t 结尾，不能再加 -t-（était-t-il 错误）；étais 是第一、二人称形式，与 il 不配合。"
  },
  {
   "id": "styleSoutenu-02",

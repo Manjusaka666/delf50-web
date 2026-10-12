@@ -280,10 +280,10 @@
   "options": [
    "doit-je",
    "dois-je",
-   "dois je"
+   "devrais-tu"
   ],
   "answer": 1,
-  "why": "倒装疑问：je 的动词形式 dois + 连字符 + je → dois-je。doit-je 是常见拼写错误（第三人称形式）；dois je 缺连字符。"
+  "why": "倒装疑问：je 的变位 dois + 连字符 + je → dois-je。doit-je 是常见拼写错误（误用第三人称形式）；devrais-tu 与句中的 mon billet（第一人称）不符。"
  },
  {
   "id": "registre-27",

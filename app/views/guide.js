@@ -1,6 +1,6 @@
 /** The guide: how the course works, the exam of its level, how it is graded, every grammar point, resources and sources. */
 import { getCourse, allNodes } from '../course.js';
-import { html, icon, frText, MODULE_NAMES, MODULE_FR } from '../ui.js';
+import { html, icon, frText, MODULE_NAMES, MODULE_FR, UNITS } from '../ui.js';
 
 const METHOD = [
   ['grammar', '每题作答后立即显示解析，答错的题自动进入错题本。Day 41–50 按你正确率最低的三个语法点自适应补练。'],
@@ -30,7 +30,7 @@ export async function guideView() {
         <div class="levels">${Object.entries(course.levels).map(([k, v]) => {
           const q = course.quotas[k];
           return html`<div class="level"><p class="level-name">${v.label}</p>
-            <p class="muted small">语法 ${q.grammar} 题 · 阅读 ${q.reading} 篇 · 听力 ${q.listening} 组 · 写作 ${q.writing} 项 · 口语 ${q.speaking} 轮 · 应用 ${q.application} 项 · 产出 ${q.production} 句 · 词块 ${q.vocab} · 复习 ${q.review}</p></div>`;
+            <p class="muted small">${['grammar', 'reading', 'listening', 'writing', 'speaking', 'application', 'production', 'vocab', 'review'].map((m) => `${MODULE_NAMES[m]} ${q[m]} ${UNITS[m]}`).join(' · ')}</p></div>`;
         })}</div>
       </section>
 

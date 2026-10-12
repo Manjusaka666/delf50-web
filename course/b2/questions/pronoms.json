@@ -201,12 +201,12 @@
   "id": "pronoms-19",
   "stem": "Ces photos de la fête, envoie-___ par mail.",
   "options": [
-   "nous les",
-   "les nous",
-   "les-nous"
+   "nous-les",
+   "les-nous",
+   "les à nous"
   ],
-  "answer": 2,
-  "why": "肯定命令式：直接宾语 les 在间接宾语 nous 之前，并用连字符连接：envoie-les-nous。nous les 是否定命令式的语序；les nous 缺少连字符。"
+  "answer": 1,
+  "why": "肯定命令式：直接宾语 les 在间接宾语 nous 之前，用连字符连接：envoie-les-nous。nous-les 语序颠倒；les à nous 不是命令式中代词的形式。"
  },
  {
   "id": "pronoms-20",

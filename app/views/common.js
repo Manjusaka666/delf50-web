@@ -101,8 +101,8 @@ function chunkExample(ex, reveal, typed) {
     : html`<input class="gap-input" data-input="typed" value="${typed}" style="--w:${Math.min(28, Math.max(6, m[1].length + 2))}ch" lang="fr" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="填写缺少的法语表达">`}${frText(after)}`;
 }
 
-const SRC = { R: '阅读', L: '听力', W: '写作', S: '口语', A: '应用' };
-export const chunkSource = (src) => (src && SRC[src[0]] && /^[RLWSA]\d/.test(src) ? `${SRC[src[0]]} ${src.split('-')[1]}` : '主题词块');
+const SRC = { R: 'reading', L: 'listening', W: 'writing', S: 'speaking', A: 'application' };
+export const chunkSource = (src) => (src && SRC[src[0]] && /^[RLWSA]\d/.test(src) ? `${MODULE_NAMES[SRC[src[0]]]} ${src.split('-')[1]}` : '主题词块');
 
 /** The typed answer against the expected one, the part that differs marked (common start and end left plain). */
 function diffLine(a, b) {
