@@ -1,0 +1,590 @@
+[
+ {
+  "id": "temps",
+  "name": "Expression du temps",
+  "level": "B2",
+  "use": "准确表达动作的先后、同时与持续关系，让叙述和论证的时间线清楚，并选对连接词后的语式",
+  "examples": [
+   "Il faut agir avant que la situation ne devienne incontrôlable.",
+   "Dès que nous aurons reçu votre dossier, nous vous contacterons.",
+   "Au fur et à mesure que la ville s’agrandit, les transports saturent."
+  ],
+  "firstDay": 11,
+  "guide": {
+   "title": "Expression du temps：时间连接词决定语式和时态",
+   "why": "B2 的叙述和论证都要求清楚交代“之前、之后、同时、直到”的关系，仅靠 quand 和 après 会显得单调。考官在 Morphosyntaxe 一项会特别检查连接词后的语式：avant que、jusqu’à ce que、en attendant que 接虚拟式，après que、dès que、depuis que 接直陈式。在 Cohérence 一项，lors de、au fur et à mesure que 等表达能让时间推进更精确、更书面。",
+   "formula": [
+    "avant que + subjonctif（可加虚赘 ne，无否定义）：avant que la situation (ne) s’aggrave；主语相同时用 avant de + infinitif。",
+    "après que + indicatif（规范用法）：Après que le jury a délibéré, les résultats ont été affichés。",
+    "dès que / aussitôt que / une fois que + futur antérieur（将来先完成）：Dès que j’aurai fini, je t’appellerai。",
+    "jusqu’à ce que / en attendant que + subjonctif：Restez ici jusqu’à ce que le médecin vienne；主语相同时用 en attendant de + infinitif。",
+    "depuis que + indicatif（起点持续至今）：Depuis qu’il habite à Lyon, il fait du vélo。",
+    "pendant que + indicatif（同时）；pendant + 名词：pendant la réunion。",
+    "au fur et à mesure que / à mesure que + indicatif（同步渐进）：Au fur et à mesure que les jours passent, …",
+    "lors de / dès / avant + 名词（书面、简洁）：lors de son séjour, dès son arrivée, avant l’ouverture。"
+   ],
+   "contrast": [
+    "Avant qu’il parte ✓ / Avant qu’il ne parte ✓（ne 虚赘）/ Avant qu’il part ✗。",
+    "Après qu’il est parti ✓（规范）/ Après qu’il soit parti（口语常见，考试避免）。",
+    "Dès que tu auras fini, appelle-moi ✓（futur antérieur）/ Dès que tu as fini, appelle-moi（口语）/ Dès que tu aies fini ✗。",
+    "Lors de la réunion ✓（+ 名词）/ Lorsque la réunion a commencé ✓（+ 从句）/ Lors que la réunion ✗。",
+    "J’attends qu’il vienne（等他来）/ J’attends de partir（我等着出发，主语相同）。"
+   ],
+   "errors": [
+    "Avant que + indicatif ✗：avant qu’il arrive 中 arrive 是虚拟式；avant qu’il viendra ✗ → avant qu’il vienne ✓。",
+    "主语相同仍用 avant que：Avant que je parte, je fermerai ✗ → Avant de partir, je fermerai ✓。",
+    "Dès que + futur simple 表示先完成的动作：Dès que je finirai, je t’appelle ✗ → Dès que j’aurai fini, je t’appellerai ✓。",
+    "把虚赘 ne 当成否定：avant qu’il ne pleuve 意思是“下雨之前”，不是“不下雨之前”。",
+    "lors de 后接从句、pendant 后接从句：Pendant il travaille ✗ → Pendant qu’il travaille ✓。"
+   ],
+   "delf": [
+    "Production écrite：叙述经历或说明方案步骤时，用 dès que / une fois que / avant que 交代先后，体现语法范围。",
+    "Production orale：在讨论中提出条件性时间安排（On ne peut rien décider avant que…），显得严谨。",
+    "CE / CO：lors de、au fur et à mesure que、depuis que 常引出事件背景或变化过程，帮助理解时间线。"
+   ],
+   "production": [
+    "写一份“搬家计划”：用 avant de、avant que、dès que、une fois que 各写1句。",
+    "用 depuis que 和 au fur et à mesure que 描述你所在城市近十年的变化（3句）。",
+    "把5个用 quand 的句子改写成更精确的时间连接词（lors de, pendant que, dès que…）。"
+   ]
+  },
+  "prompts": [
+   "【环境】用 avant que 和 jusqu’à ce que 写2句：城市应该在什么之前采取措施减少污染？",
+   "【工作】用 dès que 和 une fois que 写2句：新员工入职后的安排（用 futur antérieur）。",
+   "【数字】用 depuis que 和 au fur et à mesure que 写2句：智能手机普及后人们的阅读习惯如何变化？",
+   "【健康】用 en attendant que 和 pendant que 写2句：在医院急诊室等待时的情况。",
+   "【文化】用 lors de 和 après que 写2句：介绍一次文化节或展览的经历。",
+   "【教育】用 avant de 和 aussitôt que 写2句：给即将参加考试的同学的建议。"
+  ],
+  "bank": 30,
+  "taught": 0
+ },
+ {
+  "id": "discours",
+  "name": "Discours rapporté au passé",
+  "level": "B2",
+  "use": "转述他人在过去说过的话、问过的问题，并通过引述动词表明说话人的态度，是 CO/CE 理解和书面转述的基础",
+  "examples": [
+   "Le maire a affirmé que la piscine rouvrirait l’année suivante.",
+   "La journaliste m’a demandé ce que je pensais de la réforme.",
+   "Il a admis qu’il avait commis une erreur la veille."
+  ],
+  "firstDay": 12,
+  "guide": {
+   "title": "Discours rapporté au passé：时态后移、时间标记转换、间接疑问",
+   "why": "DELF B2 的听力和阅读大量出现“某人表示、承认、否认……”，看懂引述动词就能判断立场。写作中转述专家观点、采访内容时，考官会检查时态配合（concordance des temps）是否准确，这属于 Morphosyntaxe 中的复杂结构。时间标记（le lendemain, la veille）和多样的引述动词也能提升 Cohérence 与词汇分。",
+   "formula": [
+    "主句动词为过去时（a dit, affirmait…）时：présent → imparfait：« Je suis prêt » → Il a dit qu’il était prêt。",
+    "passé composé → plus-que-parfait：« J’ai fini » → Il a dit qu’il avait fini。",
+    "futur → conditionnel présent；futur antérieur → conditionnel passé：« J’aurai fini » → Il a dit qu’il aurait fini。",
+    "imparfait、plus-que-parfait、conditionnel 保持不变；aller + inf → allait + inf。",
+    "时间标记：aujourd’hui → ce jour-là；demain → le lendemain；hier → la veille；dans deux jours → deux jours plus tard；il y a un an → un an plus tôt。",
+    "间接疑问：oui/non → si（s’il）；qu’est-ce que → ce que；qu’est-ce qui → ce qui；où/pourquoi/quand → 保留疑问词，主谓不倒装。",
+    "命令 → dire / conseiller / demander de + infinitif：« Ne signez rien » → Il m’a conseillé de ne rien signer。",
+    "引述动词表态度：affirmer / déclarer（肯定）、admettre / reconnaître（承认）、nier + infinitif passé（否认）、prétendre（声称，暗示怀疑）。"
+   ],
+   "contrast": [
+    "Il m’a demandé si j’étais libre ✓ / Il m’a demandé est-ce que j’étais libre ✗。",
+    "Elle voulait savoir ce qui s’était passé ✓ / … qu’est-ce qui s’était passé ✗。",
+    "Il a promis qu’il viendrait le lendemain ✓ / … qu’il viendra le lendemain ✗（le lendemain 已经把时间放在过去）。",
+    "Il affirme qu’il est innocent（相信）/ Il prétend qu’il est innocent（转述者怀疑）。",
+    "Il nie avoir menti ✓ / Il nie d’avoir menti ✗。"
+   ],
+   "errors": [
+    "保留直接引语的时态：Il a dit qu’il viendra demain ✗ → Il a dit qu’il viendrait le lendemain ✓（在事后转述时）。",
+    "间接疑问中保留倒装：Il m’a demandé où habitais-je ✗ → où j’habitais ✓。",
+    "把 ce que / ce qui 混用：Il m’a demandé qu’est-ce que je voulais ✗ → ce que je voulais ✓。",
+    "命令句转述时用 que：Il m’a dit que venir ✗ → Il m’a dit de venir ✓。",
+    "只会用 dire：整篇转述都是 il a dit que…，词汇显得贫乏；应换用 affirmer, souligner, reconnaître, nier。"
+   ],
+   "delf": [
+    "CO / CE：题目常问“说话人承认/否认/声称了什么”，要区分 admettre、nier、prétendre 的态度。",
+    "Production écrite：引用调查或专家观点（Le rapport affirmait que…），注意时态配合。",
+    "Production orale：转述文件中的观点，或讲述别人的经历时，用间接引语自然过渡。"
+   ],
+   "production": [
+    "把一段5句的采访对话改写成间接引语（过去时转述）。",
+    "用 affirmer, admettre, nier, prétendre 各写1句，转述一位政治人物的发言。",
+    "写3个间接疑问句，转述一次求职面试中的问题（si, ce que, ce qui）。"
+   ]
+  },
+  "prompts": [
+   "【环境】用 affirmer que 和 la veille 写2句：转述一位市长关于空气污染的讲话。",
+   "【工作】用 demander si 和 ce que 写2句：转述招聘面试中面试官的提问。",
+   "【媒体】用 prétendre 和 nier + infinitif passé 写2句：转述一则关于虚假新闻的报道。",
+   "【健康】用 conseiller de 和 futur → conditionnel 写2句：转述医生给你的建议。",
+   "【城市】用 annoncer que 和 le lendemain 写2句：转述交通部门宣布的罢工安排。",
+   "【教育】用 admettre que 和 ce qui 写2句：转述一位校长对教育改革的看法。"
+  ],
+  "bank": 30,
+  "taught": 0
+ },
+ {
+  "id": "passif",
+  "name": "Passif et tournures impersonnelles",
+  "level": "B2",
+  "use": "把焦点放在动作承受者或事件本身，写出新闻、报告式的客观句子，并用无人称结构表达必要性和评价",
+  "examples": [
+   "Les nouvelles mesures ont été adoptées par le conseil municipal.",
+   "Elle s’est fait opérer du genou le mois dernier.",
+   "Il est indispensable que chaque citoyen soit informé de ses droits."
+  ],
+  "firstDay": 13,
+  "guide": {
+   "title": "Passif et tournures impersonnelles：客观、正式的表达方式",
+   "why": "B2 的阅读材料（新闻、报告）大量使用被动态和无人称结构，看懂“谁做了什么”是答题前提。在论证写作中，Il est essentiel que…、Il s’agit de… 等结构能让语气更客观正式，避免句句以 je 开头。被动态各时态的构成和过去分词配合是 Morphosyntaxe 的常见扣分点。",
+   "formula": [
+    "被动态 = être（变位于所需时态）+ 过去分词，分词与主语性数配合：La loi a été votée / sera votée / aurait été votée。",
+    "施动者：动作动词用 par（arrêté par la police）；状态、情感动词常用 de（couvert de neige, connu de tous）。",
+    "se faire + infinitif：主语促成或遭受某事（Il s’est fait voler son sac；Elle s’est fait opérer），fait 不配合。",
+    "se voir + infinitif：主语“被给予/遭受”（Il s’est vu refuser le visa；Elle s’est vu décerner un prix）。",
+    "on + 主动态：口语中替代被动态（On a retrouvé la voiture = La voiture a été retrouvée）。",
+    "il est + adj + de + inf / il est + adj + que + subj：Il est interdit de fumer；Il est essentiel que tout le monde soit informé。",
+    "il s’agit de + 名词/inf（主语只能是 il）；il reste / il manque + 名词（动词单数）：Il reste trois places；Il manque deux documents。"
+   ],
+   "contrast": [
+    "Les mesures ont été adoptées ✓ / Les mesures ont été adopté ✗（被动态分词与主语配合）。",
+    "Elle s’est fait opérer ✓ / Elle s’est faite opérer ✗。",
+    "Il reste trois places ✓ / Il restent trois places ✗（无人称结构，动词永远单数）。",
+    "Dans ce film, il s’agit de… ✓ / Ce film s’agit de… ✗。",
+    "On m’a demandé de patienter ✓ / J’ai été demandé de patienter ✗（间接宾语不能变成被动态主语）→ J’ai été prié de patienter ✓。"
+   ],
+   "errors": [
+    "被动态中漏掉 être 或用错助动词：La maison a construite ✗ → La maison a été construite ✓。",
+    "忘记配合：Les lettres ont été envoyé ✗ → envoyées ✓。",
+    "把 demander, téléphoner 等接间接宾语的动词变成被动态：Il a été téléphoné ✗ → On lui a téléphoné ✓。",
+    "Cet article s’agit de… ✗ → Dans cet article, il s’agit de… ✓。",
+    "滥用被动态：中文“被”字句不多，但法语口语更常用 on；写作中两者交替使用更自然。"
+   ],
+   "delf": [
+    "CE：新闻标题和导语中大量被动态（Un accord a été signé…），要迅速识别施动者。",
+    "Production écrite：用 Il est indispensable que…, Il s’agit de… 写出客观正式的论证句。",
+    "Production orale：介绍文件主题时用 Ce document traite de… / Il s’agit de…，开场自然流畅。"
+   ],
+   "production": [
+    "把一则5句的主动态新闻改写成被动态，再改用 on 口语化表达。",
+    "用 se faire + inf 和 se voir + inf 各写1句，讲述一次不愉快的经历。",
+    "用 il est essentiel que, il reste, il manque 写一段关于学校设施的3句话。"
+   ]
+  },
+  "prompts": [
+   "【环境】用被动态（futur）和 il est indispensable que 写2句：新的垃圾分类规定。",
+   "【城市】用 se faire + inf 和 il manque 写2句：在大城市生活遇到的问题。",
+   "【工作】用 se voir + inf 和被动态（passé composé）写2句：一位员工的职业经历。",
+   "【媒体】用 il s’agit de 和 par 引出施动者 写2句：介绍一篇报道。",
+   "【健康】用 il est conseillé de 和 il reste 写2句：流感季节的预防措施。",
+   "【文化】用被动态（plus-que-parfait）和 on 写2句：一座历史建筑的修复。"
+  ],
+  "bank": 30,
+  "taught": 0
+ },
+ {
+  "id": "nominalisation",
+  "name": "Nominalisation",
+  "level": "B2",
+  "use": "把动词和形容词转成名词，写出紧凑、正式的书面句和标题，是读懂新闻标题、写好概括句的关键",
+  "examples": [
+   "La hausse des loyers inquiète les jeunes actifs.",
+   "La fermeture du musée est prévue pour le mois de mai.",
+   "La solidarité entre voisins s’est renforcée pendant la crise."
+  ],
+  "firstDay": 15,
+  "guide": {
+   "title": "Nominalisation：把句子压缩成名词短语",
+   "why": "B2 的阅读和听力材料（新闻、报告）大量使用名词化结构，如 « Hausse des prix »、« Fermeture d’usines »，读懂它们才能快速抓住主旨。写作中，把 Les prix augmentent, donc… 改写成 L’augmentation des prix entraîne… 能让句子更紧凑、语体更正式，直接体现在 Morphosyntaxe（复杂结构）和词汇范围的评分上。名词化还要求掌握派生名词的性别和补语介词。",
+   "formula": [
+    "动词 → 名词（阴性）：-tion / -sion（réformer → la réforme, décider → la décision, augmenter → l’augmentation）。",
+    "动词 → 名词（阳性）：-ment（licencier → le licenciement）、-age（nettoyer → le nettoyage）；无后缀派生：baisser → la baisse, choisir → le choix。",
+    "动词 → 名词（阴性）：-ure（fermer → la fermeture, signer → la signature）、-ence / -ance（absent → l’absence, dépendre → la dépendance）。",
+    "形容词 → 名词（阴性）：-té（solidaire → la solidarité）、-esse（sage → la sagesse）、-ise（franc → la franchise）、-ude（inquiet → l’inquiétude）。",
+    "名词 + 补语：主语变成 de 补语（les prix augmentent → l’augmentation des prix）；原动词的介词常保留（accéder à → l’accès à；s’intéresser à → l’intérêt pour）。",
+    "新闻标题：省略冠词和动词，形容词放在名词前后：« Forte hausse des loyers », « Démission du ministre »。",
+    "写作改写：Parce que les trains étaient en retard → En raison du retard des trains。"
+   ],
+   "contrast": [
+    "le nettoyage（-age 阳性）/ la fermeture（-ure 阴性）/ le licenciement（-ment 阳性）/ la réforme（-tion、-sion 及多数零后缀阴性）。",
+    "l’accès à la culture ✓ / l’accès de la culture ✗（accéder à → accès à）。",
+    "l’intérêt pour la politique ✓ / l’intérêt à la politique ✗。",
+    "« Forte hausse des loyers » ✓ / « Fortement hausse des loyers » ✗（名词前用形容词，不用副词）。"
+   ],
+   "errors": [
+    "自造名词：augmentement ✗ → augmentation ✓；décidation ✗ → décision ✓（要按词记派生形式）。",
+    "性别错误：la nettoyage ✗ → le nettoyage ✓；le fermeture ✗ → la fermeture ✓，导致后面的形容词、分词配合也出错。",
+    "补语介词错误：la participation des élections ✗ → la participation aux élections ✓。",
+    "名词化后仍保留副词：la rapidement augmentation ✗ → l’augmentation rapide ✓。"
+   ],
+   "delf": [
+    "CE / CO：快速理解标题和导语中的名词化结构（Grève des contrôleurs, Report de la réforme）。",
+    "Production écrite：在引言和总结中用名词化概括问题（La hausse du chômage des jeunes pose la question de…）。",
+    "Production orale：介绍文件时用 Le document porte sur la dégradation de… 等结构，显得专业。"
+   ],
+   "production": [
+    "把5条新闻句子改写成新闻标题（Les loyers augmentent → Hausse des loyers）。",
+    "列出10个动词及其名词形式，按 -tion / -ment / -age / -ure 分类并标出性别。",
+    "用3个名词化结构写一段话的引言：介绍城市交通问题。"
+   ]
+  },
+  "prompts": [
+   "【环境】用 la hausse de 和 la protection de 写2句：全球变暖的影响与应对。",
+   "【工作】用 le licenciement 和 la fermeture 写2句：一家工厂关闭的新闻报道。",
+   "【教育】用 l’échec scolaire 和 l’accès à 写2句：教育不平等问题。",
+   "【数字】用 la dépendance à 和 l’utilisation de 写2句：年轻人与智能手机的关系。",
+   "【城市】写2个新闻标题再各配1句解释：用名词化表达城市交通的变化。",
+   "【社会】用 la solidarité 和 l’inquiétude 写2句：疫情期间邻里关系的变化。"
+  ],
+  "bank": 30,
+  "taught": 0
+ },
+ {
+  "id": "participes",
+  "name": "Participe présent, gérondif, adjectif verbal",
+  "level": "B2",
+  "use": "用现在分词、副动词和动词形容词压缩从句，表达同时、方式、条件与对立，并掌握 fatigant / fatiguant 等易错拼写",
+  "examples": [
+   "Les candidats ayant un bon niveau d’anglais peuvent partir en échange.",
+   "C’est en forgeant qu’on devient forgeron.",
+   "Tout en soutenant le projet, la maire reconnaît ses limites."
+  ],
+  "firstDay": 16,
+  "guide": {
+   "title": "Participe présent, gérondif, adjectif verbal：一个 -ant，三种用法",
+   "why": "B2 书面材料中，现在分词（= qui + 动词）和副动词（en + -ant）随处可见，用它们可以写出简洁、连贯的复杂句，这正是 Morphosyntaxe 评分中“复杂结构”的体现。同时，动词形容词要配合、且部分拼写与现在分词不同（fatigant / fatiguant），是 B2 写作中典型的拼写扣分点。tout en + 副动词还能简洁地表达对立，丰富 Cohérence 中的逻辑连接。",
+   "formula": [
+    "现在分词（不变）= qui + 动词，书面语：Les étudiants ayant un diplôme… = qui ont un diplôme…",
+    "现在分词也可表原因：Étant malade, il n’est pas venu.（= comme il était malade）",
+    "副动词 en + -ant：主语必须与主句相同；表同时（en marchant）、方式（en regardant des séries）、条件（En partant tôt, vous éviterez…）。",
+    "tout en + -ant：强调同时，或表示对立：Tout en travaillant, elle étudie；Tout en critiquant le projet, il l’a voté。",
+    "动词形容词：表示性质，与名词配合：des nouvelles encourageantes, une chaleur suffocante。",
+    "拼写差异：fatiguant / fatigant, convainquant / convaincant, provoquant / provocant, intriguant / intrigant, négligeant / négligent, précédant / précédent, différant / différent, fabriquant / fabricant（名词）。"
+   ],
+   "contrast": [
+    "Ce trajet est fatigant（形容词）/ Fatiguant ses collègues, il s’est isolé（分词）。",
+    "des arguments convaincants（形容词，配合）/ convainquant ses collègues（分词，不变）。",
+    "la semaine précédant l’élection（分词 + 宾语）/ la semaine précédente（形容词）。",
+    "En sortant, j’ai vu Paul（我出来时）/ J’ai vu Paul sortant du bureau（Paul 出来时）。",
+    "En montant dans le bus, j’ai perdu mon ticket ✓ / En montant dans le bus, mon ticket est tombé ✗（副动词主语不一致）。"
+   ],
+   "errors": [
+    "给现在分词配合：les personnes ayants ✗ → ayant ✓。",
+    "动词形容词不配合：des nouvelles encourageant ✗ → encourageantes ✓。",
+    "混淆拼写：un trajet fatiguant ✗ → fatigant ✓；des arguments convainquants ✗ → convaincants ✓。",
+    "副动词主语与主句不一致（中文“在……时”没有这个限制）：En arrivant, la pluie a commencé ✗ → Quand je suis arrivé, il a commencé à pleuvoir ✓。"
+   ],
+   "delf": [
+    "Production écrite：用 tout en + 副动词写让步句（Tout en reconnaissant les avantages…, je pense que…）。",
+    "Production orale：用副动词说明方法（On peut réduire les déchets en achetant en vrac）。",
+    "CE：识别行政、新闻文本中的现在分词（les personnes résidant en France…），等于关系从句。"
+   ],
+   "production": [
+    "用5个副动词描述你学习法语的方法（en écoutant, en lisant…）。",
+    "写一则招聘启事，用3个现在分词描述理想候选人（ayant, parlant, maîtrisant…）。",
+    "用 fatigant / convaincant / négligent 各写一句，再改用对应的现在分词各写一句。"
+   ]
+  },
+  "prompts": [
+   "【环境】用 en + 副动词 和 tout en 写2句：个人如何在不牺牲舒适的情况下减少碳排放。",
+   "【工作】用现在分词（ayant, maîtrisant）写2句：一则招聘启事的要求。",
+   "【教育】用 en + 副动词（方式）和 convaincant 写2句：如何提高学生的学习动力。",
+   "【健康】用 fatigant 和 en + 副动词（条件）写2句：长时间通勤对健康的影响。",
+   "【数字】用 tout en + 副动词 写2句：网络既有用又有风险。",
+   "【城市】用现在分词（表原因）和 encourageant 写2句：城市自行车道的发展。"
+  ],
+  "bank": 30,
+  "taught": 0
+ },
+ {
+  "id": "miseEnRelief",
+  "name": "Mise en relief",
+  "level": "B2",
+  "use": "突出句子中的关键信息（人、时间、原因、观点），让口头和书面论证重点鲜明、富有节奏",
+  "examples": [
+   "C’est la mairie qui a pris cette décision, pas l’État.",
+   "Ce dont les jeunes ont besoin, c’est d’un logement abordable.",
+   "Ce qui me frappe, c’est que personne ne réagit."
+  ],
+  "firstDay": 17,
+  "guide": {
+   "title": "Mise en relief：用 c’est… qui/que 和 ce qui… c’est 突出重点",
+   "why": "B2 的口语表达和写作都要求有清晰的立场，强调句能把论点“推到前台”（Ce qui me paraît essentiel, c’est…），在 Cohérence 和 Compétence sociolinguistique 上都有加分。考官同时会检查结构内部的语法：c’est… que 与 c’est… dont 的选择、ce que / ce dont 的区别，以及 c’est moi qui 后动词的配合，这些都是 Morphosyntaxe 的常见错误点。",
+   "formula": [
+    "强调主语：C’est + 名词/重读代词 + qui + 动词：C’est la mairie qui décide。",
+    "强调宾语或状语：C’est + 成分 + que：C’est ce livre que je recommande；C’est en 1989 que le mur est tombé；C’est à Marie que j’ai écrit。",
+    "强调 de / à 的补语：C’est ce projet dont je parle（dont = de + 名词）；C’est cette collègue à qui j’ai confié le dossier。或保留介词放在前面：C’est de ce projet que… / C’est à elle que…",
+    "Ce qui + 动词…, c’est + 名词/que…：Ce qui me frappe, c’est le silence。",
+    "Ce que + 主语 + 动词…, c’est…：Ce que j’apprécie, c’est le contact humain。",
+    "Ce dont + 主语 + 动词（avoir besoin de, parler de…）…, c’est (de)…：Ce dont ils ont besoin, c’est d’aide；Ce à quoi + 动词（s’intéresser à…）。",
+    "配合：c’est moi qui suis, c’est toi qui dois, c’est nous qui avons, c’est vous et moi qui allons（动词与 qui 前的代词一致）。"
+   ],
+   "contrast": [
+    "C’est moi qui ai raison ✓ / C’est moi qui a raison ✗。",
+    "C’est de ce projet que je parle ✓ / C’est ce projet dont je parle ✓ / C’est de ce projet dont je parle（介词重复，考试中避免）。",
+    "C’est à Lyon qu’elle habite ✓ / C’est à Lyon où elle habite ✗。",
+    "Ce que j’aime, c’est… ✓（aimer qqch）/ Ce dont j’ai envie, c’est… ✓（avoir envie de）/ Ce que j’ai besoin ✗。"
+   ],
+   "errors": [
+    "动词与 qui 不配合：C’est toi qui doit ✗ → C’est toi qui dois ✓。",
+    "忘记动词的介词：Ce que j’ai besoin, c’est… ✗ → Ce dont j’ai besoin ✓；Ce que je m’intéresse ✗ → Ce à quoi je m’intéresse ✓。",
+    "强调地点或时间用 où：C’est en 2020 où… ✗ → C’est en 2020 que… ✓。",
+    "介词重复：C’est à elle à qui j’ai parlé ✗ → C’est à elle que j’ai parlé ✓。",
+    "Ce qui 和 Ce que 混淆：Ce que me frappe ✗ → Ce qui me frappe ✓（从句缺主语用 ce qui）。"
+   ],
+   "delf": [
+    "Production orale：表达观点时用 Ce qui me semble essentiel, c’est que… 引出核心论点，并在反驳时用 Ce n’est pas X qui…, c’est Y。",
+    "Production écrite：在段落开头或结论中使用强调句，突出主题句，提升篇章结构感。",
+    "CO / CE：强调结构常标示说话人真正想强调的信息，往往是答案所在。"
+   ],
+   "production": [
+    "用 Ce qui…, c’est / Ce que…, c’est / Ce dont…, c’est 各写1句，介绍你理想的工作。",
+    "把5个普通陈述句改写为 c’est… qui / c’est… que 强调句，强调不同成分。",
+    "写一段3句的反驳：Ce n’est pas… qui…, c’est…（主题：交通污染的责任）。"
+   ]
+  },
+  "prompts": [
+   "【环境】用 Ce qui m’inquiète, c’est que 和 c’est… qui 写2句：气候变化中谁应该承担责任？",
+   "【工作】用 Ce dont… c’est 和 Ce que… c’est 写2句：年轻人在职场中最需要什么？",
+   "【城市】用 c’est… que（强调地点）和 Ce qui me frappe, c’est 写2句：描述你所在城市的特点。",
+   "【教育】用 c’est moi qui 和 Ce à quoi… c’est 写2句：你选择专业的原因。",
+   "【媒体】用 c’est… dont 和 ce n’est pas… qui 写2句：媒体对社会话题的报道。",
+   "【健康】用 Ce qui compte, c’est que + subj 和 c’est grâce à… que 写2句：健康生活方式。"
+  ],
+  "bank": 30,
+  "taught": 0
+ },
+ {
+  "id": "pronoms",
+  "name": "Pronoms personnels avancés",
+  "level": "B2",
+  "use": "用代词避免重复，掌握双宾代词的顺序、命令式中的位置以及 y / en / 中性代词 le，使口语和书面表达自然流畅",
+  "examples": [
+   "Le dossier ? Je le lui ai rendu hier.",
+   "Des conseils, ne m’en donne plus, s’il te plaît.",
+   "Tu savais qu’il partait ? — Non, je ne le savais pas."
+  ],
+  "firstDay": 18,
+  "guide": {
+   "title": "Pronoms personnels avancés：y、en、双代词和命令式语序",
+   "why": "B2 考官期待考生不再重复名词，而是灵活使用代词，这是 Cohérence et cohésion 的重要指标（代词回指）。双宾代词顺序、命令式中的位置以及 penser à lui / y penser 的区别，是 Morphosyntaxe 中最容易暴露 B1 水平的地方。口语互动中，快速正确地说出 Je le lui ai dit / Donne-le-moi 会让表达显得自然。",
+   "formula": [
+    "y 代替 à + 物/事（penser à, s’habituer à, renoncer à）；en 代替 de + 物/事（avoir besoin de, se souvenir de, parler de）以及数量（du pain → il y en a）。",
+    "à / de + 人：通常用重读代词 penser à elle, se méfier de lui；但简单的间接宾语用 lui / leur（parler à qqn → lui parler）。",
+    "陈述句双代词顺序：me / te / se / nous / vous → le / la / les → lui / leur → y → en：Je te le prête；Je le lui ai rendu；Je lui en ai parlé；Il y en a。",
+    "肯定命令式：动词 + 直接宾语 + 间接宾语，用连字符：Donne-le-moi；Envoie-les-nous；moi + en → m’en：Donne-m’en。",
+    "否定命令式：恢复陈述句顺序：Ne me le donne pas；Ne m’en parle plus。",
+    "以 -er 结尾的命令式（第二人称单数）在 y / en 前加 s：Vas-y；Achètes-en。",
+    "中性代词 le 代替形容词或整句：Elle est compétente ? — Oui, elle l’est；Je le crains；Je ne le savais pas。",
+    "半助动词（aller, vouloir, pouvoir, devoir, falloir）+ 不定式：代词放在不定式前：Je vais le terminer；Il faut les corriger。faire / laisser + inf 时代词在 faire 前：Je vous les ferai envoyer。"
+   ],
+   "contrast": [
+    "J’y pense（想这件事）/ Je pense à elle（想她）。",
+    "Je le lui donne ✓ / Je lui le donne ✗；Je te le donne ✓ / Je le te donne ✗。",
+    "Donne-le-moi ✓ / Ne me le donne pas ✓ / Ne donne-le-moi pas ✗。",
+    "Achète du pain → Achètes-en ✓ / Achète-en ✗。",
+    "Je vais le faire ✓ / Je vais faire le ✗（代词放在不定式前，不放在其后）。"
+   ],
+   "errors": [
+    "双代词顺序颠倒：Je lui le dis ✗ → Je le lui dis ✓。",
+    "用 y / en 指人：Je pense souvent à ma mère → J’y pense ✗ → Je pense souvent à elle ✓。",
+    "否定命令式仍用肯定语序：Ne donne-le-moi pas ✗ → Ne me le donne pas ✓。",
+    "代词放错位置：Je vais faire le ✗ / Il faut corriger les ✗ → Je vais le faire / Il faut les corriger ✓。",
+    "漏掉中性代词：Tu savais ? — Oui, je savais ✗ → Oui, je le savais ✓。"
+   ],
+   "delf": [
+    "Production orale（interaction）：回答问题时用代词避免重复（— Vous avez parlé à votre chef ? — Oui, je lui en ai parlé）。",
+    "Production écrite：用代词回指段落中已出现的观点，提升衔接（Ce problème, il faut s’y attaquer）。",
+    "CO / CE：准确判断 y / en / le / lui 所指代的内容，是理解细节题的关键。"
+   ],
+   "production": [
+    "回答10个问题，每个回答都必须用双代词（Tu as rendu le livre à Paul ? …）。",
+    "给室友写5条命令式留言，肯定和否定各用代词（Rends-le-moi / Ne le lui dis pas）。",
+    "用 y、en、中性 le 各写2句，主题：你的工作或学习习惯。"
+   ]
+  },
+  "prompts": [
+   "【工作】用 je le lui ai… 和 je lui en ai parlé 写2句：你如何向上司汇报一个问题。",
+   "【环境】用 y penser 和 en avoir besoin 写2句：关于节约用水。",
+   "【城市】用命令式 + 双代词（肯定和否定各1个）写2句：给来访朋友的建议。",
+   "【教育】用 s’y habituer 和 s’en souvenir 写2句：你刚出国留学时的经历。",
+   "【健康】用中性代词 le 和 il faut + 代词 + inf 写2句：医生的建议。",
+   "【数字】用 il y en a 和 je vais le… 写2句：你使用的手机应用。"
+  ],
+  "bank": 30,
+  "taught": 0
+ },
+ {
+  "id": "modalisation",
+  "name": "Modalisation",
+  "level": "B2",
+  "use": "表达确定、可能、推测和传闻的不同程度，让论证更谨慎、更有说服力，并读懂新闻中的保留语气",
+  "examples": [
+   "Il se peut que le train ait du retard à cause de la neige.",
+   "Elle n’est pas venue : elle a dû oublier la réunion.",
+   "Selon la presse, le ministre aurait démissionné."
+  ],
+  "firstDay": 19,
+  "guide": {
+   "title": "Modalisation：表达确定与不确定的程度",
+   "why": "B2 论证要求“有分寸”：不是所有观点都说成绝对事实，考官会看考生能否区分 il est certain que / il est probable que / il se peut que 等不同程度，这既属于 Morphosyntaxe（语式选择），也属于 Compétence sociolinguistique（语气得体）。CE 和 CO 中，conditionnel de prudence、à en croire、apparemment 往往标示未经证实的信息，是理解细节和作者态度的关键。",
+   "formula": [
+    "确定 → 直陈式：il est certain / évident / sûr que + ind；il me semble que + ind；il paraît que（听说）+ ind。",
+    "可能、怀疑 → 虚拟式：il se peut que / il est possible que / il est peu probable que / il n’est pas certain que / je doute que + subj；il semble que 通常接 subj。",
+    "il est probable que（很可能）+ ind；il est peu probable que（不太可能）+ subj。",
+    "sans doute = 大概、可能（probablement）；sans aucun doute = 毫无疑问（certainement）。",
+    "devoir 表推测：Il doit être malade（他大概病了）；Il a dû oublier（他大概忘了）。",
+    "conditionnel de prudence（新闻中的未证实信息）：Le séisme aurait fait cent victimes；Le suspect se serait enfui。",
+    "à en croire + 信息来源（如果相信……的话）；apparemment（看起来，表面上）。"
+   ],
+   "contrast": [
+    "Il semble que la crise soit finie（客观推测，常用 subj）/ Il me semble que la crise est finie（个人看法，用 ind）。",
+    "Il est probable qu’il viendra（ind）/ Il est peu probable qu’il vienne（subj）。",
+    "Il viendra sans doute（大概会来）/ Il viendra sans aucun doute（肯定会来）。",
+    "Il a dû partir（推测：他大概走了）/ Il a été obligé de partir（义务：他不得不走）。",
+    "Le ministre a démissionné（确认的事实）/ Le ministre aurait démissionné（未经证实）。"
+   ],
+   "errors": [
+    "把 sans doute 理解为“毫无疑问”：这是中国学习者最常见的误读，sans doute 只表示“大概”。",
+    "il se peut que + ind ✗：Il se peut qu’il a raison ✗ → qu’il ait raison ✓。",
+    "il me semble que + subj ✗（肯定句）：Il me semble qu’il soit fatigué ✗ → qu’il est fatigué ✓。",
+    "把推测的 devoir 当成义务：Il a dû se tromper 是“他大概搞错了”，不是“他必须搞错”。",
+    "条件式过去时构成错误：Il serait été blessé ✗ → Il aurait été blessé ✓。"
+   ],
+   "delf": [
+    "CE / CO：新闻中的 conditionnel de prudence 和 à en croire 表示信息未经证实，常考“信息是否确定”。",
+    "Production écrite：用 il est probable que / il se peut que 让论证更有分寸，避免绝对化表达。",
+    "Production orale：讨论时用 Il me semble que… / Sans doute…, mais… 表达个人立场并保留余地。"
+   ],
+   "production": [
+    "把5个绝对化的句子改写成谨慎表达（il se peut que, il est probable que, sans doute…）。",
+    "用 conditionnel de prudence 写一则3句的短新闻（事故或事件）。",
+    "看到一位朋友迟到，用 devoir 推测3种可能的原因（il a dû…, il doit…）。"
+   ]
+  },
+  "prompts": [
+   "【环境】用 il est probable que 和 il est peu probable que 写2句：2050年城市的样子。",
+   "【媒体】用 conditionnel de prudence 和 à en croire 写2句：转述一则未经证实的新闻。",
+   "【工作】用 il se peut que 和 sans aucun doute 写2句：远程办公的未来。",
+   "【健康】用 il me semble que 和 il semble que 写2句：年轻人的睡眠问题。",
+   "【城市】用 devoir 表推测（il a dû / il doit）写2句：解释街上突然拥堵的原因。",
+   "【数字】用 apparemment 和 il n’est pas certain que 写2句：人工智能对就业的影响。"
+  ],
+  "bank": 30,
+  "taught": 0
+ },
+ {
+  "id": "comparaison",
+  "name": "Comparaison complexe",
+  "level": "B2",
+  "use": "表达比例变化、渐进趋势和强化理由，让描述数据、对比现象和论证观点更精确有力",
+  "examples": [
+   "Plus on lit, plus on enrichit son vocabulaire.",
+   "Les loyers augmentent de plus en plus dans les grandes villes.",
+   "Ce projet est intéressant, d’autant plus qu’il ne coûte presque rien."
+  ],
+  "firstDay": 20,
+  "guide": {
+   "title": "Comparaison complexe：比例、渐进、强化与假设比较",
+   "why": "B1 已经会用 plus… que / aussi… que；B2 则要求表达更复杂的关系：比例变化（plus… plus）、趋势（de plus en plus）、强化理由（d’autant plus que）和假设比较（comme si）。这些结构在描述图表、论证社会现象时非常常见，能体现 Morphosyntaxe 的“复杂结构”和 Cohérence 中的逻辑推进。pire / meilleur / mieux 和 tel que 的配合也是常见扣分点。",
+   "formula": [
+    "比例：Plus / Moins + 句子, plus / moins + 句子（无冠词，可加 et）：Plus on travaille, plus on progresse。",
+    "渐进：de plus en plus / de moins en moins + adj / adv / 动词；de plus en plus de + 名词。",
+    "强化理由：…, d’autant plus / d’autant moins que + ind（更加……因为）：Je suis d’autant plus déçu qu’on m’avait promis…",
+    "对称对比：Autant + 句子, autant + 句子：Autant j’aime la ville, autant je déteste le bruit。",
+    "比较对象：aussi + adj/adv ；autant + 动词；autant de + 名词：Il travaille autant que moi；autant de femmes que d’hommes。",
+    "不规则：bon → meilleur, bien → mieux, mauvais → pire / plus mauvais（不说 plus pire）；le moindre = 最小的（多用于抽象：pas la moindre idée）。",
+    "举例：tel(le)(s) que + 名词，与前面的名词配合：des pays tels que…, des villes telles que…",
+    "假设比较：comme si + imparfait（同时）/ plus-que-parfait（之前）：Il parle comme s’il savait tout；comme s’il n’avait rien entendu。"
+   ],
+   "contrast": [
+    "Plus on lit, plus on apprend ✓ / Le plus on lit, le plus on apprend ✗。",
+    "C’est pire ✓ / C’est plus pire ✗。",
+    "Elle travaille autant que lui ✓ / Elle travaille aussi que lui ✗（动词用 autant）；Elle est aussi motivée que lui ✓（形容词用 aussi）。",
+    "comme s’il était riche ✓ / comme s’il serait riche ✗ / comme s’il soit riche ✗。",
+    "des villes telles que Lyon ✓ / des villes tels que Lyon ✗。"
+   ],
+   "errors": [
+    "在 plus… plus 中加冠词或 que：Le plus il pleut, le plus… ✗ → Plus il pleut, plus… ✓。",
+    "comme si 后用条件式：comme s’il aurait peur ✗ → comme s’il avait peur ✓。",
+    "说 plus pire / plus meilleur / plus bien：→ pire / meilleur / mieux ✓。",
+    "de plus en plus 漏掉 de：plus en plus ✗；数量名词前漏 de：de plus en plus touristes ✗ → de plus en plus de touristes ✓。",
+    "d’autant plus que 与 surtout que 混用：surtout que 偏口语，书面语用 d’autant plus que。"
+   ],
+   "delf": [
+    "Production écrite：描述趋势和图表（de plus en plus de jeunes…），用 d’autant plus que 补充理由。",
+    "Production orale：用 Plus…, plus… 简洁地说明因果比例，用 Autant…, autant… 表达平衡的观点。",
+    "CE / CO：识别 d’autant plus que、comme si 等结构，理解作者的强调和讽刺。"
+   ],
+   "production": [
+    "根据一张关于网络购物的图表写3句（de plus en plus de, de moins en moins, plus… plus）。",
+    "用 Autant…, autant… 写2句，表达你对城市生活的矛盾感受。",
+    "用 comme si 写3句，描述一个人奇怪的行为（imparfait 和 plus-que-parfait 各至少1句）。"
+   ]
+  },
+  "prompts": [
+   "【环境】用 plus… plus 和 de moins en moins 写2句：汽车数量与城市空气质量。",
+   "【数字】用 de plus en plus de 和 d’autant plus que 写2句：年轻人与社交网络。",
+   "【工作】用 autant… autant 和 pire 写2句：远程办公的利与弊。",
+   "【文化】用 tel(le)s que 和 le moindre 写2句：推荐几项文化活动。",
+   "【健康】用 moins… moins 和 meilleur / mieux 写2句：睡眠与工作效率。",
+   "【城市】用 comme si 和 d’autant moins que 写2句：评价一项不受欢迎的城市规划。"
+  ],
+  "bank": 30,
+  "taught": 0
+ },
+ {
+  "id": "anteriorite",
+  "name": "Antériorité : infinitif passé et participe composé",
+  "level": "B2",
+  "use": "用不定式过去时和复合分词简洁地表示“先完成某事，再……”，让叙述和论证中的先后顺序清楚且书面化",
+  "examples": [
+   "Après avoir terminé le rapport, elle l’a envoyé au directeur.",
+   "Ayant perdu son passeport, il n’a pas pu embarquer.",
+   "Une fois le contrat signé, les travaux pourront commencer."
+  ],
+  "firstDay": 21,
+  "guide": {
+   "title": "Antériorité：après avoir fait、ayant fait、une fois fait",
+   "why": "B2 的叙述（经历、事件经过）和论证都需要清楚交代动作先后；与其写两个独立句子（Il a fini. Puis il est parti.），不如用 Après avoir fini, il est parti 压缩成一个复杂句，这是 Morphosyntaxe 评分中“复杂句”的典型体现。这些结构同时考查助动词选择（avoir / être）和过去分词配合，是中国学习者常见的扣分点。",
+   "formula": [
+    "après + 不定式过去时（avoir / être + PP）：Après avoir mangé, nous sommes sortis；Après être partie, elle a appelé。après 后不能接简单不定式。",
+    "用 être 的动词和代词式动词，分词与主句主语配合：Après être rentrées, elles se sont reposées；Après s’être levés tôt, ils…",
+    "ayant + PP（原因或先后，书面）：Ayant terminé ses études, il a voyagé。用 avoir 时分词不与主语配合。",
+    "étant + PP（用 être 的动词）：Étant arrivés en retard, les élèves n’ont pas pu entrer（分词与主语配合）。",
+    "une fois + PP（+ 名词）：Une fois le contrat signé / Une fois signée, la lettre…（分词与相关名词配合）。",
+    "sans avoir + PP / sans être + PP：Il est parti sans avoir dit au revoir。",
+    "主语一致：不定式和分词的逻辑主语必须是主句主语：Après avoir mangé, nous sommes sortis ✓ / Après avoir mangé, le film a commencé ✗。"
+   ],
+   "contrast": [
+    "Après avoir fini ✓ / Après finir ✗ / Après fini ✗。",
+    "Après être arrivée（elle）✓ / Après avoir arrivé ✗（arriver 用 être）。",
+    "Ayant décidé de partir, ils… ✓（不配合）/ Étant partis tôt, ils… ✓（配合）。",
+    "Une fois la décision prise ✓ / Une fois la décision pris ✗。"
+   ],
+   "errors": [
+    "après + 简单不定式：Après manger, je sors（口语常见，考试避免）→ Après avoir mangé ✓。",
+    "助动词选错：Après avoir sorti（离开义）✗ → Après être sorti ✓。",
+    "用 être 时忘记配合：Après être rentré, elles… ✗ → Après être rentrées ✓。",
+    "主语不一致（中文“吃完饭后，电影开始了”在法语中不成立）：Après avoir mangé, le film a commencé ✗ → Après que nous avons mangé, le film a commencé ✓。",
+    "代词位置：Après avoir le lu ✗ → Après l’avoir lu ✓（代词放在助动词前）。"
+   ],
+   "delf": [
+    "Production écrite：讲述经历或说明步骤时用 Après avoir… / Une fois… 连接动作，避免一连串的 puis, et après。",
+    "Production orale：介绍个人经历（Après avoir obtenu mon diplôme, j’ai…）时显得流利、有条理。",
+    "CE：新闻中常见 Ayant été…, le ministre… 等结构，要能迅速识别动作的先后和原因。"
+   ],
+   "production": [
+    "用 après avoir / après être 写一段5句的个人简历式叙述。",
+    "用 ayant / étant + PP 各写2句，说明某个决定的原因。",
+    "用 une fois + PP 写3条操作说明（如：网上报名的步骤）。"
+   ]
+  },
+  "prompts": [
+   "【工作】用 après avoir + PP 和 ayant + PP 写2句：讲述你找到第一份工作的经过。",
+   "【教育】用 une fois + PP 和 sans avoir + PP 写2句：考试前后的经历。",
+   "【环境】用 après être + PP 和 une fois + 名词 + PP 写2句：一次清理海滩的志愿活动。",
+   "【健康】用 après s’être + PP 和 étant + PP 写2句：一次生病或受伤的经历。",
+   "【城市】用 après avoir + PP 和 sans avoir + PP 写2句：搬到一座新城市的感受。",
+   "【文化】用 ayant + PP 和 une fois + PP 写2句：参观一个展览后的感想。"
+  ],
+  "bank": 30,
+  "taught": 0
+ }
+]

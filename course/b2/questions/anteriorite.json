@@ -1,0 +1,332 @@
+[
+ {
+  "id": "anteriorite-01",
+  "stem": "Après ___ le rapport, elle l’a envoyé au directeur.",
+  "options": [
+   "avoir terminer",
+   "avoir terminé",
+   "terminer"
+  ],
+  "answer": 1,
+  "why": "après + 不定式过去时（avoir + 过去分词）表示先完成的动作：après avoir terminé。avoir terminer 用了不定式代替分词；après terminer 缺少助动词，考试中不规范。"
+ },
+ {
+  "id": "anteriorite-02",
+  "stem": "Après ___ à Paris, Léa a cherché un logement.",
+  "options": [
+   "avoir arrivé",
+   "être arrivée",
+   "être arrivé"
+  ],
+  "answer": 1,
+  "why": "arriver 的复合时态用 être，不定式过去时为 être arrivé，并与主语 Léa（阴性）配合：être arrivée。avoir arrivé 助动词错误；arrivé 没有配合。"
+ },
+ {
+  "id": "anteriorite-03",
+  "stem": "Après s’être ___, il est parti travailler.",
+  "options": [
+   "douché",
+   "douchés",
+   "doucher"
+  ],
+  "answer": 0,
+  "why": "代词式动词的不定式过去时：s’être + 过去分词，与主语 il（阳性单数）配合：douché。douchés 是复数；doucher 是不定式。"
+ },
+ {
+  "id": "anteriorite-04",
+  "stem": "___ terminé ses études, il a voyagé pendant un an.",
+  "options": [
+   "Étant",
+   "Avoir",
+   "Ayant"
+  ],
+  "answer": 2,
+  "why": "复合现在分词 ayant + PP 表示先完成的动作：Ayant terminé…。terminer 的复合时态用 avoir，不用 étant；avoir 是不定式，不能这样开头。"
+ },
+ {
+  "id": "anteriorite-05",
+  "stem": "___ arrivés en retard, les élèves n’ont pas pu entrer en classe.",
+  "options": [
+   "Étant",
+   "Ayant",
+   "Été"
+  ],
+  "answer": 0,
+  "why": "arriver 用 être 构成复合时态，复合分词为 étant arrivé(s)，与主语 les élèves 配合。ayant arrivés 助动词错误；été 是过去分词，不能作助动词。"
+ },
+ {
+  "id": "anteriorite-06",
+  "stem": "Une fois le contrat ___, les travaux pourront commencer.",
+  "options": [
+   "signer",
+   "signé",
+   "signant"
+  ],
+  "answer": 1,
+  "why": "une fois + 名词 + 过去分词表示“一旦……完成”：une fois le contrat signé（与 contrat 阳性单数配合）。signer 是不定式；signant 是现在分词，不表示完成。"
+ },
+ {
+  "id": "anteriorite-07",
+  "stem": "Une fois la lettre ___, je l’ai postée.",
+  "options": [
+   "relu",
+   "relue",
+   "relire"
+  ],
+  "answer": 1,
+  "why": "une fois + 名词 + 过去分词，分词与名词配合：la lettre（阴性单数）→ relue。relu 没有配合；relire 是不定式。"
+ },
+ {
+  "id": "anteriorite-08",
+  "stem": "Il est parti sans avoir ___ au revoir à personne.",
+  "options": [
+   "dire",
+   "disant",
+   "dit"
+  ],
+  "answer": 2,
+  "why": "sans + 不定式过去时：sans avoir dit（没说就……）。avoir 后接过去分词，不接不定式 dire 或现在分词 disant。"
+ },
+ {
+  "id": "anteriorite-09",
+  "stem": "Elle a obtenu son diplôme sans ___ une seule fois.",
+  "options": [
+   "être redoublée",
+   "avoir redoublé",
+   "avoir redoubler"
+  ],
+  "answer": 1,
+  "why": "redoubler（留级）用 avoir 构成复合时态：sans avoir redoublé。être redoublée 助动词错误；avoir redoubler 用了不定式代替分词。"
+ },
+ {
+  "id": "anteriorite-10",
+  "stem": "Après être ___ du travail, les infirmières se sont reposées.",
+  "options": [
+   "rentrées",
+   "rentré",
+   "rentrés"
+  ],
+  "answer": 0,
+  "why": "rentrer（回家）用 être，不定式过去时的分词与主句主语 les infirmières（阴性复数）配合：rentrées。rentré 没有配合；rentrés 是阳性。"
+ },
+ {
+  "id": "anteriorite-11",
+  "stem": "Après s’être ___ de bonne heure, elles ont visité le musée.",
+  "options": [
+   "levé",
+   "levés",
+   "levées"
+  ],
+  "answer": 2,
+  "why": "代词式动词 se lever 用 être，分词与主语 elles（阴性复数）配合：s’être levées。levé 没有配合；levés 是阳性复数。"
+ },
+ {
+  "id": "anteriorite-12",
+  "stem": "Après ___, je vous rendrai votre dossier.",
+  "options": [
+   "avoir le lu",
+   "l’avoir lu",
+   "avoir lu le"
+  ],
+  "answer": 1,
+  "why": "不定式过去时中，宾语代词放在助动词 avoir 前：après l’avoir lu。代词不能放在 avoir 和分词之间，也不能放在分词后。"
+ },
+ {
+  "id": "anteriorite-13",
+  "stem": "Après avoir mangé, ___.",
+  "options": [
+   "le film a commencé",
+   "la serveuse nous a apporté l’addition",
+   "nous sommes allés au cinéma"
+  ],
+  "answer": 2,
+  "why": "après + 不定式过去时的逻辑主语必须与主句主语相同：吃饭的是“我们”，主句主语也必须是 nous。另外两项的主语是电影或服务员，等于说“电影吃完饭”或“服务员吃完饭”，与原意不符。"
+ },
+ {
+  "id": "anteriorite-14",
+  "stem": "Ayant ___ trop de travail ce mois-ci, elle a annulé ses vacances.",
+  "options": [
+   "eu",
+   "été",
+   "avoir"
+  ],
+  "answer": 0,
+  "why": "avoir 的过去分词是 eu，复合分词为 ayant eu（因为有太多工作）。été 是 être 的过去分词，意思不对；avoir 是不定式。"
+ },
+ {
+  "id": "anteriorite-15",
+  "stem": "Étant ___ tôt, les invités ont aidé à préparer la salle.",
+  "options": [
+   "venus",
+   "venu",
+   "venir"
+  ],
+  "answer": 0,
+  "why": "venir 用 être，复合分词 étant venu 与主语 les invités（阳性复数）配合：venus。venu 没有配合；venir 是不定式。"
+ },
+ {
+  "id": "anteriorite-16",
+  "stem": "Une fois les invités ___, nous avons rangé la salle.",
+  "options": [
+   "partis",
+   "parti",
+   "partir"
+  ],
+  "answer": 0,
+  "why": "une fois + 名词 + 过去分词，分词与名词 les invités（阳性复数）配合：partis。parti 没有配合；partir 是不定式。"
+ },
+ {
+  "id": "anteriorite-17",
+  "stem": "Après ___ longtemps hésité, il a finalement accepté le poste.",
+  "options": [
+   "être",
+   "ayant",
+   "avoir"
+  ],
+  "answer": 2,
+  "why": "hésiter 用 avoir 构成复合时态：après avoir hésité。être 是错误的助动词；après 后不能接现在分词 ayant。"
+ },
+ {
+  "id": "anteriorite-18",
+  "stem": "Après ___ tombée de vélo, elle a dû se faire soigner.",
+  "options": [
+   "avoir",
+   "être",
+   "s’être"
+  ],
+  "answer": 1,
+  "why": "tomber 用 être 构成复合时态：après être tombée（与 elle 配合）。avoir 是错误的助动词；tomber 不是代词式动词，不用 s’être。"
+ },
+ {
+  "id": "anteriorite-19",
+  "stem": "Ayant ___ de partir, les salariés ont rendu leurs badges.",
+  "options": [
+   "décidés",
+   "décider",
+   "décidé"
+  ],
+  "answer": 2,
+  "why": "ayant + 过去分词：用 avoir 构成时，分词不与主语配合：ayant décidé。décidés 错在与主语配合；décider 是不定式。"
+ },
+ {
+  "id": "anteriorite-20",
+  "stem": "Sans s’être ___ au préalable, ils ont pris la parole en même temps.",
+  "options": [
+   "concerté",
+   "concertés",
+   "concerter"
+  ],
+  "answer": 1,
+  "why": "se concerter（商量）是代词式动词，用 être，分词与主语 ils（阳性复数）配合：s’être concertés。concerté 没有配合；concerter 是不定式。"
+ },
+ {
+  "id": "anteriorite-21",
+  "stem": "Le ministre a démissionné après ___ mis en cause dans un scandale.",
+  "options": [
+   "être été",
+   "avoir été",
+   "avoir"
+  ],
+  "answer": 1,
+  "why": "被动态的不定式过去时 = avoir été + 过去分词：après avoir été mis en cause（在被牵连之后）。être 的复合时态用 avoir，不能说 être été；avoir mis 是主动态，意思变成“他牵连了别人”。"
+ },
+ {
+  "id": "anteriorite-22",
+  "stem": "Une fois ___, la décision ne pourra plus être modifiée.",
+  "options": [
+   "prise",
+   "pris",
+   "prendre"
+  ],
+  "answer": 0,
+  "why": "une fois + 过去分词，分词与主句主语 la décision（阴性单数）配合：prise。pris 没有配合；prendre 是不定式。"
+ },
+ {
+  "id": "anteriorite-23",
+  "stem": "Je vous remercie de m’___ dans mes démarches.",
+  "options": [
+   "avoir aider",
+   "être aidé",
+   "avoir aidé"
+  ],
+  "answer": 2,
+  "why": "remercier qqn de + 不定式过去时（感谢已完成的帮助）：de m’avoir aidé。avoir aider 用了不定式代替分词；être aidé 是被动态，意思变成“感谢我被帮助”。"
+ },
+ {
+  "id": "anteriorite-24",
+  "stem": "Il regrette ___ cette offre d’emploi l’an dernier.",
+  "options": [
+   "avoir refusé",
+   "d’avoir refusé",
+   "de refuser"
+  ],
+  "answer": 1,
+  "why": "regretter de + 不定式过去时，表示对过去已完成之事的后悔（l’an dernier）：d’avoir refusé。avoir refusé 缺少介词 de；de refuser 是简单不定式，与“去年”的过去时间不符。"
+ },
+ {
+  "id": "anteriorite-25",
+  "stem": "Étant ___ seule à la maison, la petite fille a appelé sa voisine.",
+  "options": [
+   "restée",
+   "resté",
+   "rester"
+  ],
+  "answer": 0,
+  "why": "rester 用 être，复合分词 étant resté 与主语 la petite fille（阴性单数）配合：restée。resté 没有配合；rester 是不定式。"
+ },
+ {
+  "id": "anteriorite-26",
+  "stem": "Il regrette de ___ plus tôt.",
+  "options": [
+   "ne pas avoir partir",
+   "ne être pas parti",
+   "ne pas être parti"
+  ],
+  "answer": 2,
+  "why": "不定式过去时的否定：ne pas 通常放在助动词前：de ne pas être parti（partir 用 être）。ne pas avoir partir 助动词和分词都错误；ne être 没有省音，写法错误。"
+ },
+ {
+  "id": "anteriorite-27",
+  "stem": "___ perdu son passeport, il n’a pas pu embarquer.",
+  "options": [
+   "Ayant",
+   "Étant",
+   "Après"
+  ],
+  "answer": 0,
+  "why": "perdre 用 avoir，复合分词 ayant perdu 表示原因（因为丢了护照）。étant 是错误的助动词；après 后要接 avoir perdu，不能直接接分词。"
+ },
+ {
+  "id": "anteriorite-28",
+  "stem": "Après ___ installés à Montréal, ils ont ouvert un restaurant.",
+  "options": [
+   "avoir",
+   "s’avoir",
+   "s’être"
+  ],
+  "answer": 2,
+  "why": "s’installer 是代词式动词，复合时态用 être：après s’être installés。avoir 缺少反身代词且助动词错误；s’avoir 不存在。"
+ },
+ {
+  "id": "anteriorite-29",
+  "stem": "Une fois ___, Lina partira en voyage.",
+  "options": [
+   "ses examens passés",
+   "ses examens passé",
+   "ses examens passer"
+  ],
+  "answer": 0,
+  "why": "une fois + 名词 + 过去分词，分词与名词 ses examens（阳性复数）配合：passés。passé 没有配合；passer 是不定式。"
+ },
+ {
+  "id": "anteriorite-30",
+  "stem": "Il a été licencié sans même avoir été ___.",
+  "options": [
+   "prévenir",
+   "prévenus",
+   "prévenu"
+  ],
+  "answer": 2,
+  "why": "被动态不定式过去时 avoir été + 过去分词，分词与主语 il（阳性单数）配合：prévenu。prévenir 是不定式；prévenus 是复数。"
+ }
+]
