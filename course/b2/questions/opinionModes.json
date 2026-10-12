@@ -1,0 +1,332 @@
+[
+ {
+  "id": "opinionModes-01",
+  "stem": "Je pense que cette réforme ___ nécessaire.",
+  "options": [
+   "est",
+   "soit",
+   "être"
+  ],
+  "answer": 0,
+  "why": "肯定的 je pense que 表示说话人认为是事实，接直陈式：est。soit 是虚拟式，只在否定/疑问时使用；être 是不定式，不能作从句谓语。"
+ },
+ {
+  "id": "opinionModes-02",
+  "stem": "Je crois que le télétravail ___ gagner du temps aux salariés.",
+  "options": [
+   "fasse",
+   "fait",
+   "faire"
+  ],
+  "answer": 1,
+  "why": "肯定的 je crois que + 直陈式：fait。fasse 是虚拟式，肯定观点后不用；faire 是不定式，从句需要变位动词。"
+ },
+ {
+  "id": "opinionModes-03",
+  "stem": "Je trouve que les jeunes ne ___ pas assez de sport.",
+  "options": [
+   "fassent",
+   "font",
+   "faire"
+  ],
+  "answer": 1,
+  "why": "je trouve que（表达观点）+ 直陈式：font。fassent 是虚拟式；faire 是不定式。注意 ne… pas 在从句里，不影响主句的语式选择。"
+ },
+ {
+  "id": "opinionModes-04",
+  "stem": "Il est possible que la réunion ___ annulée à cause de la grève.",
+  "options": [
+   "est",
+   "sera",
+   "soit"
+  ],
+  "answer": 2,
+  "why": "il est possible que 只表示可能性，接虚拟式：soit。est 和 sera 是直陈式，只能用于 il est probable / certain que。"
+ },
+ {
+  "id": "opinionModes-05",
+  "stem": "J’espère que vous ___ me répondre rapidement.",
+  "options": [
+   "puissiez",
+   "pourrez",
+   "pouvoir"
+  ],
+  "answer": 1,
+  "why": "espérer que 接直陈式，表示将来常用将来时：pourrez。puissiez 是虚拟式（受 souhaiter que 影响的典型错误）；pouvoir 是不定式。"
+ },
+ {
+  "id": "opinionModes-06",
+  "stem": "Il paraît que le musée ___ fermé tout le mois d’août.",
+  "options": [
+   "soit",
+   "être",
+   "sera"
+  ],
+  "answer": 2,
+  "why": "il paraît que（听说）转述一个被视为事实的信息，接直陈式：sera。soit 是虚拟式；être 是不定式。"
+ },
+ {
+  "id": "opinionModes-07",
+  "stem": "Il est probable que l’entreprise ___ recruter au printemps.",
+  "options": [
+   "doive",
+   "devra",
+   "devoir"
+  ],
+  "answer": 1,
+  "why": "il est probable que 表示较高的确定性，接直陈式：devra。doive 是虚拟式，用于 il est possible que；devoir 是不定式。"
+ },
+ {
+  "id": "opinionModes-08",
+  "stem": "___ que ce soit la meilleure solution.",
+  "options": [
+   "Je crois",
+   "Je suis sûr",
+   "Je ne crois pas"
+  ],
+  "answer": 2,
+  "why": "从句是虚拟式 soit，只有否定的观点动词 je ne crois pas que 能接虚拟式。je crois que / je suis sûr que 表示确定，要接直陈式 c’est。"
+ },
+ {
+  "id": "opinionModes-09",
+  "stem": "Il est possible que nous ___ obligés de déménager.",
+  "options": [
+   "soyons",
+   "sommes",
+   "serons"
+  ],
+  "answer": 0,
+  "why": "il est possible que + 虚拟式：nous soyons。sommes 是直陈式现在时；serons 是将来时，都不能用在 possible 之后。"
+ },
+ {
+  "id": "opinionModes-10",
+  "stem": "___ qu’il pleuve demain pendant la course.",
+  "options": [
+   "Il est possible",
+   "Il est probable",
+   "Il paraît"
+  ],
+  "answer": 0,
+  "why": "pleuve 是虚拟式，只有 il est possible que 接虚拟式。il est probable que 和 il paraît que 都接直陈式（il pleuvra）。"
+ },
+ {
+  "id": "opinionModes-11",
+  "stem": "___ que le nouveau directeur arrivera en janvier.",
+  "options": [
+   "Il est possible",
+   "Je doute",
+   "Il paraît"
+  ],
+  "answer": 2,
+  "why": "arrivera 是直陈式将来时，只能接在 il paraît que 之后。il est possible que 和 je doute que 都要求虚拟式（qu’il arrive）。"
+ },
+ {
+  "id": "opinionModes-12",
+  "stem": "Je suis certain que vous ___ la bonne décision.",
+  "options": [
+   "preniez",
+   "prendre",
+   "prendrez"
+  ],
+  "answer": 2,
+  "why": "je suis certain que 表示确定，接直陈式：prendrez。preniez 是虚拟式；prendre 是不定式。"
+ },
+ {
+  "id": "opinionModes-13",
+  "stem": "Il est possible que le train ___ du retard à cause de la neige.",
+  "options": [
+   "a",
+   "ait",
+   "aura"
+  ],
+  "answer": 1,
+  "why": "il est possible que + 虚拟式：ait。a 和 aura 是直陈式，用于 il est probable que。"
+ },
+ {
+  "id": "opinionModes-14",
+  "stem": "J’espère que tout ___ bien pour toi dans ton nouveau poste.",
+  "options": [
+   "ira",
+   "aille",
+   "aller"
+  ],
+  "answer": 0,
+  "why": "espérer que + 直陈式（这里是将来时）：tout ira bien。tout aille bien 是常见错误，虚拟式只在 souhaiter que 之后；aller 是不定式。"
+ },
+ {
+  "id": "opinionModes-15",
+  "stem": "Nous espérons que la situation ___ s’améliorer rapidement.",
+  "options": [
+   "aille",
+   "aller",
+   "va"
+  ],
+  "answer": 2,
+  "why": "espérer que + 直陈式，近将来时 va s’améliorer。aille 是虚拟式；aller 是不定式，不能作从句谓语。"
+ },
+ {
+  "id": "opinionModes-16",
+  "stem": "D’après la presse, il paraît que le ministre ___ démissionner.",
+  "options": [
+   "veut",
+   "veuille",
+   "vouloir"
+  ],
+  "answer": 0,
+  "why": "il paraît que + 直陈式：veut。veuille 是虚拟式；vouloir 是不定式。"
+ },
+ {
+  "id": "opinionModes-17",
+  "stem": "Je ne pense pas que cette mesure ___ suffisante.",
+  "options": [
+   "sois",
+   "soit",
+   "être"
+  ],
+  "answer": 1,
+  "why": "否定的 je ne pense pas que 在规范书面语中接虚拟式；主语 cette mesure 为第三人称：soit。sois 是第一/第二人称形式；être 是不定式。"
+ },
+ {
+  "id": "opinionModes-18",
+  "stem": "___ qu’il ait raison sur ce point ?",
+  "options": [
+   "Je sais",
+   "Crois-tu",
+   "Il est clair"
+  ],
+  "answer": 1,
+  "why": "从句是虚拟式 ait，倒装疑问的 crois-tu que 表示不确定，可接虚拟式。je sais que 和 il est clair que 表示确定，只能接直陈式（qu’il a raison）。"
+ },
+ {
+  "id": "opinionModes-19",
+  "stem": "___ que ce soit le bon moment pour investir.",
+  "options": [
+   "Je ne suis pas sûr",
+   "Je suis convaincu",
+   "Il est évident"
+  ],
+  "answer": 0,
+  "why": "soit 是虚拟式，需要表示不确定的主句：je ne suis pas sûr que。je suis convaincu que 和 il est évident que 表示确定，要接直陈式（c’est）。"
+ },
+ {
+  "id": "opinionModes-20",
+  "stem": "___ que les réseaux sociaux sont dangereux pour les adolescents.",
+  "options": [
+   "Beaucoup de parents pensent",
+   "Il est possible",
+   "Il est peu probable"
+  ],
+  "answer": 0,
+  "why": "从句是直陈式 sont，只能接在肯定的观点动词（pensent que）之后。il est possible que 和 il est peu probable que 都要求虚拟式（soient）。"
+ },
+ {
+  "id": "opinionModes-21",
+  "stem": "Je pense que ce ___ une erreur de supprimer cette ligne de bus.",
+  "options": [
+   "soit",
+   "serait",
+   "être"
+  ],
+  "answer": 1,
+  "why": "je pense que 后接直陈式体系，包括条件式（假设性的判断）：ce serait une erreur。soit 是虚拟式；être 是不定式。"
+ },
+ {
+  "id": "opinionModes-22",
+  "stem": "Il est évident que la ville ___ besoin de plus d’espaces verts.",
+  "options": [
+   "ait",
+   "avoir",
+   "a"
+  ],
+  "answer": 2,
+  "why": "il est évident que 表示确定，接直陈式：a。ait 是虚拟式；avoir 是不定式。"
+ },
+ {
+  "id": "opinionModes-23",
+  "stem": "Je crois qu’il ___ déjà parti quand tu as appelé.",
+  "options": [
+   "soit",
+   "était",
+   "fût"
+  ],
+  "answer": 1,
+  "why": "肯定的 je crois que + 直陈式；在过去参照点之前已完成，用愈过去时：était parti。soit / fût 都是虚拟式形式，肯定观点后不用。"
+ },
+ {
+  "id": "opinionModes-24",
+  "stem": "Il paraît qu’il ___ beaucoup neigé dans les Alpes hier.",
+  "options": [
+   "a",
+   "ait",
+   "avoir"
+  ],
+  "answer": 0,
+  "why": "il paraît que + 直陈式；hier 的已完成事件用复合过去时：il a neigé。ait neigé 是过去虚拟式；avoir 是不定式。"
+ },
+ {
+  "id": "opinionModes-25",
+  "stem": "J’espère que vous ___ fait bon voyage.",
+  "options": [
+   "ayez",
+   "avez",
+   "avoir"
+  ],
+  "answer": 1,
+  "why": "espérer que + 直陈式，这里是对已完成事件的希望，用复合过去时：vous avez fait。ayez 是虚拟式；avoir 是不定式。"
+ },
+ {
+  "id": "opinionModes-26",
+  "stem": "Je trouve dommage que la bibliothèque ___ le dimanche.",
+  "options": [
+   "est fermée",
+   "sera fermée",
+   "soit fermée"
+  ],
+  "answer": 2,
+  "why": "trouver + 形容词（dommage）+ que 表示主观评价，接虚拟式：soit fermée。est / sera fermée 是直陈式；只有 je trouve que（观点）才接直陈式。"
+ },
+ {
+  "id": "opinionModes-27",
+  "stem": "Il est possible que je ___ en retard ce soir.",
+  "options": [
+   "sois",
+   "suis",
+   "serai"
+  ],
+  "answer": 0,
+  "why": "il est possible que + 虚拟式，第一人称：que je sois。suis 和 serai 是直陈式。"
+ },
+ {
+  "id": "opinionModes-28",
+  "stem": "Il est probable qu’il ___ trop tard pour obtenir des billets.",
+  "options": [
+   "soit",
+   "être",
+   "est"
+  ],
+  "answer": 2,
+  "why": "il est probable que 表示较大可能性，接直陈式：il est trop tard。soit 是虚拟式（受 possible 影响的错误）；être 是不定式。"
+ },
+ {
+  "id": "opinionModes-29",
+  "stem": "Il est possible que les voisins ne ___ pas encore au courant des travaux.",
+  "options": [
+   "sont",
+   "seront",
+   "soient"
+  ],
+  "answer": 2,
+  "why": "il est possible que + 虚拟式，复数：qu’ils soient。sont / seront 是直陈式。ne… pas 在这里是真正的否定。"
+ },
+ {
+  "id": "opinionModes-30",
+  "stem": "Je ne crois pas que les citoyens ___ prêts à payer plus d’impôts.",
+  "options": [
+   "soient",
+   "soyent",
+   "être"
+  ],
+  "answer": 0,
+  "why": "否定的 je ne crois pas que 在规范语中接虚拟式；être 的虚拟式复数是 soient。soyent 是常见拼写错误；être 是不定式。"
+ }
+]

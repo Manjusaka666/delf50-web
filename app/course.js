@@ -1,13 +1,22 @@
 /**
- * Course data (course/): the 50-day map, the grammar points, one file per day
- * and one question bank per grammar point (course/questions/). A day is fixed
- * material — except Days 41–50, whose grammar is drawn from the learner's
- * weakest points and fixed when the day is first opened. The intensity only
- * decides how much of a day is due.
+ * Course data, one root per course (CEFR level): course/ is DELF B1, course/b2/
+ * DELF B2. Each holds the 50-day map, the grammar points, one file per day and
+ * one question bank per grammar point (questions/). A day is fixed material —
+ * except Days 41–50, whose grammar is drawn from the learner's weakest points
+ * and fixed when the day is first opened. The intensity only decides how much
+ * of a day is due.
  */
 
-let course = null, nodes = null;
-const days = new Map();
+/** The levels a learner can switch between; a level without a root is announced, not open yet. */
+export const LEVELS = [
+  { id: 'delf-b1', level: 'B1', root: '/course' },
+  { id: 'delf-b2', level: 'B2', root: '/course/b2' },
+  { id: 'dalf-c1', level: 'C1', root: null }
+];
+export const levelOf = (id) => LEVELS.find((l) => l.id === id) || null;
+
+let current = null, course = null, nodes = null, days = null, banks = null;
+const loaded = new Map();
 
 async function json(url) {
   const r = await fetch(url);
@@ -15,38 +24,51 @@ async function json(url) {
   return r.json();
 }
 
-export async function loadCourse() {
-  if (!course) [course, nodes] = await Promise.all([json('/course/course.json'), json('/course/grammar.json')]);
+/** Loads a course (once) and makes it the current one. */
+export async function loadCourse(id = 'delf-b1') {
+  const lv = levelOf(id);
+  if (!lv || !lv.root) throw new Error(`Unknown course: ${id}`);
+  if (!loaded.has(id)) {
+    const p = Promise.all([json(`${lv.root}/course.json`), json(`${lv.root}/grammar.json`)])
+      .then(([c, n]) => ({ lv, course: c, nodes: n, days: new Map(), banks: new Map() }));
+    loaded.set(id, p);
+    p.catch(() => loaded.delete(id));
+  }
+  const x = await loaded.get(id);
+  ({ course, nodes, days, banks } = x);
+  current = lv;
   return course;
 }
 
 export const getCourse = () => course;
+export const currentLevel = () => current;
 export const node = (id) => nodes.find((n) => n.id === id) || null;
 export const allNodes = () => nodes;
 
 /** One day's material; the neighbours are fetched in the background. */
 export function loadDay(d) {
-  if (!days.has(d)) {
-    const p = json(`/course/days/${String(d).padStart(2, '0')}.json`);
-    days.set(d, p);
-    p.catch(() => days.delete(d));
+  const m = days;
+  if (!m.has(d)) {
+    const p = json(`${current.root}/days/${String(d).padStart(2, '0')}.json`);
+    m.set(d, p);
+    p.catch(() => m.delete(d));
   }
-  return days.get(d);
+  return m.get(d);
 }
 export function prefetch(d) { for (const n of [d + 1, d - 1]) if (n >= 1 && n <= course.days) loadDay(n).catch(() => {}); }
 
 export const MODULES = ['grammar', 'reading', 'listening', 'writing', 'speaking', 'application'];
 
-// ── grammar questions: one bank per node (course/questions/<node>.json), loaded when needed ──
-const banks = new Map();
+// ── grammar questions: one bank per node (questions/<node>.json), loaded when needed ──
 export const nodeOf = (qid) => qid.replace(/-\d+$/, '');
 function loadBank(id) {
-  if (!banks.has(id)) {
-    const p = json(`/course/questions/${id}.json`).then((qs) => qs.map((q) => Object.assign({ node: id }, q)));
-    banks.set(id, p);
-    p.catch(() => banks.delete(id));
+  const m = banks;
+  if (!m.has(id)) {
+    const p = json(`${current.root}/questions/${id}.json`).then((qs) => qs.map((q) => Object.assign({ node: id }, q)));
+    m.set(id, p);
+    p.catch(() => m.delete(id));
   }
-  return banks.get(id);
+  return m.get(id);
 }
 /** The questions with these ids, as a Map id → question. */
 export async function loadQuestions(ids) {

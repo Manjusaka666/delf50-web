@@ -1,4 +1,4 @@
-/** The 50-day route: four phases, every day with its theme and grammar focus. */
+/** The route of the current level: its phases, every day with its theme and grammar focus. */
 import { store, refresh } from '../store.js';
 import { getCourse } from '../course.js';
 import { studyDays } from '../progress.js';
@@ -15,8 +15,8 @@ export async function routeView() {
     return html`<article class="page route">
       <header class="page-head">
         <p class="eyebrow">Itinéraire · ${course.days} jours</p>
-        <h1 class="display-s">50 天路线</h1>
-        <p class="muted">从句子骨架到模考修复，四个阶段循序推进。每一天的题目都是固定的，可随时回看任一天。</p>
+        <h1 class="display-s">${course.title} 路线</h1>
+        <p class="muted">${course.intro || ''} 每一天的题目都是固定的，可随时回看任一天。</p>
       </header>
       ${course.phases.map((p, i) => html`<section class="phase">
         <header class="phase-head"><span class="phase-num">${pad2(i + 1)}</span><div><h2>${p.name}</h2><p class="muted">Jour ${p.from} – ${p.to}</p></div></header>
@@ -35,5 +35,5 @@ export async function routeView() {
     </article>`;
   };
 
-  return { title: '50 天路线', render };
+  return { title: `${course.title} 路线`, render };
 }

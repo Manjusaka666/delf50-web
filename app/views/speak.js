@@ -5,7 +5,7 @@ import { loadDay } from '../course.js';
 import { addSpeaking } from '../state.js';
 import { upload, newClipId } from '../media.js';
 import { html, icon, pad2, frText, fmtDateTime, fmtDuration, MODULE_NAMES, MODULE_FR } from '../ui.js';
-import { dayContext, crumbs, pager, nextLink, clip, listenAction } from './common.js';
+import { dayContext, crumbs, pager, nextLink, clip, listenAction, triggerDoc, examNotes } from './common.js';
 
 const MIME = ['audio/webm;codecs=opus', 'audio/mp4', 'audio/webm', 'audio/ogg;codecs=opus'];
 const canRecord = typeof MediaRecorder !== 'undefined' && navigator.mediaDevices && navigator.mediaDevices.getUserMedia;
@@ -98,8 +98,11 @@ export async function speakView(d, n) {
           <p class="eyebrow">${MODULE_FR.speaking} · ${item.part}${n > due ? ' · 选做' : ''}</p>
           <h1 class="passage-title" lang="fr">${frText(item.title)}</h1>
           <p class="consigne" lang="fr">${frText(item.prompt)}</p>
+          ${triggerDoc(item.trigger)}
+          ${item.followUps && item.followUps.length ? html`<div class="checklist"><p class="label">考官可能的追问 · Relances</p><ol>${item.followUps.map((q) => html`<li lang="fr">${frText(q)}</li>`)}</ol></div>` : ''}
           ${doc ? html`<a class="doc-link" href="#/day/${docDay}/reading/${Number(item.doc.split('-')[1])}">${icon('reading')}<span><small>先读引子文档 · Jour ${docDay}</small><span lang="fr">${frText(doc.title)}</span></span>${icon('right')}</a>` : ''}
           ${item.checklist && item.checklist.length ? html`<div class="checklist"><p class="label">评分要点</p><ul>${item.checklist.map((c) => html`<li lang="fr">${frText(c)}</li>`)}</ul></div>` : ''}
+          ${examNotes('speaking')}
         </section>
         <section class="editor">${recorder()}</section>
       </div>

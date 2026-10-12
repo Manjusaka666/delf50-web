@@ -1,0 +1,332 @@
+[
+ {
+  "id": "but-01",
+  "stem": "Je prends des cours du soir ___ améliorer mon français.",
+  "options": [
+   "pour",
+   "pour que",
+   "parce que"
+  ],
+  "answer": 0,
+  "why": "后面是不定式，主语相同（je），用 pour + 不定式。pour que 要接不同主语的虚拟式从句；parce que 表示原因，后接从句。"
+ },
+ {
+  "id": "but-02",
+  "stem": "Le professeur parle lentement pour que les élèves le ___.",
+  "options": [
+   "comprendront",
+   "comprennent",
+   "comprendre"
+  ],
+  "answer": 1,
+  "why": "pour que + 虚拟式：qu’ils comprennent。comprendront 是将来时；comprendre 是不定式，从句需要变位动词。"
+ },
+ {
+  "id": "but-03",
+  "stem": "Nous avons installé des panneaux ___ les visiteurs trouvent facilement la salle.",
+  "options": [
+   "pour",
+   "afin de",
+   "pour que"
+  ],
+  "answer": 2,
+  "why": "主语不同（nous / les visiteurs），后面是从句，用 pour que + 虚拟式。pour 和 afin de 只能接不定式。"
+ },
+ {
+  "id": "but-04",
+  "stem": "Afin que tout le monde ___ s’exprimer, chaque intervention est limitée à trois minutes.",
+  "options": [
+   "puisse",
+   "peut",
+   "pourra"
+  ],
+  "answer": 0,
+  "why": "afin que + 虚拟式：que tout le monde puisse。peut 是直陈式；pourra 是将来时。"
+ },
+ {
+  "id": "but-05",
+  "stem": "Elle économise ___ s’acheter une voiture.",
+  "options": [
+   "afin de",
+   "afin que",
+   "de sorte que"
+  ],
+  "answer": 0,
+  "why": "主语相同，后接不定式，用 afin de。afin que 和 de sorte que 后要接从句。"
+ },
+ {
+  "id": "but-06",
+  "stem": "Il a pris un parapluie de peur qu’il ne ___.",
+  "options": [
+   "pleut",
+   "pleuvra",
+   "pleuve"
+  ],
+  "answer": 2,
+  "why": "de peur que + 虚拟式（ne 为赘词，无否定义）：qu’il ne pleuve。pleut 是直陈式；pleuvra 是将来时。"
+ },
+ {
+  "id": "but-07",
+  "stem": "Mets ton réveil ___ ne pas rater le train.",
+  "options": [
+   "pour que",
+   "afin que",
+   "pour"
+  ],
+  "answer": 2,
+  "why": "主语相同，后接否定不定式 ne pas rater，用 pour。pour que 和 afin que 要接变位从句。"
+ },
+ {
+  "id": "but-08",
+  "stem": "Nous avons réservé très tôt ___ avoir de bonnes places.",
+  "options": [
+   "de façon que",
+   "de façon à",
+   "parce que"
+  ],
+  "answer": 1,
+  "why": "后面是不定式，用 de façon à + 不定式。de façon que 后接从句；parce que 表示原因，后接从句。"
+ },
+ {
+  "id": "but-09",
+  "stem": "La mairie a créé une navette gratuite ___ les personnes âgées puissent se déplacer.",
+  "options": [
+   "afin de",
+   "en vue de",
+   "afin que"
+  ],
+  "answer": 2,
+  "why": "主语不同，后面是虚拟式从句（puissent），用 afin que。afin de 和 en vue de 只接不定式或名词。"
+ },
+ {
+  "id": "but-10",
+  "stem": "Il révise tous les week-ends ___ l’examen d’entrée.",
+  "options": [
+   "pour que",
+   "en vue de",
+   "afin que"
+  ],
+  "answer": 1,
+  "why": "后面是名词（l’examen），用 en vue de + 名词（为了……做准备）。pour que 和 afin que 后要接从句。"
+ },
+ {
+  "id": "but-11",
+  "stem": "Elle n’a rien dit de crainte que son chef ne ___ en colère.",
+  "options": [
+   "se mette",
+   "se met",
+   "se mettra"
+  ],
+  "answer": 0,
+  "why": "de crainte que + 虚拟式（ne 为赘词）：qu’il ne se mette。se met 是直陈式；se mettra 是将来时。"
+ },
+ {
+  "id": "but-12",
+  "stem": "Les députés ont modifié le texte ___ le rendre plus clair.",
+  "options": [
+   "pour que",
+   "dans le but de",
+   "afin qu’"
+  ],
+  "answer": 1,
+  "why": "后面是不定式（le rendre），主语相同，用 dans le but de。pour que 和 afin que 后要接带变位动词的从句。"
+ },
+ {
+  "id": "but-13",
+  "stem": "Parlez plus fort ___ tout le monde vous entende.",
+  "options": [
+   "pour que",
+   "pour",
+   "de façon à"
+  ],
+  "answer": 0,
+  "why": "主语不同（vous / tout le monde），后接虚拟式 entende，用 pour que。pour 和 de façon à 只接不定式。"
+ },
+ {
+  "id": "but-14",
+  "stem": "J’ai pris des notes ___ de tout ce qui a été dit.",
+  "options": [
+   "pour me souvenir",
+   "pour que je me souvienne",
+   "pour que je me souviens"
+  ],
+  "answer": 0,
+  "why": "主语相同（je），必须用 pour + 不定式：pour me souvenir。pour que je me souvienne 是同一主语误用从句；pour que je me souviens 还用了直陈式。"
+ },
+ {
+  "id": "but-15",
+  "stem": "Range tes affaires de manière ___ on puisse passer dans le couloir.",
+  "options": [
+   "qu’",
+   "à",
+   "de"
+  ],
+  "answer": 0,
+  "why": "后面是虚拟式从句（on puisse），且主语不同，用 de manière que。de manière à 后只能接不定式；de manière de 不存在。"
+ },
+ {
+  "id": "but-16",
+  "stem": "Il a fermé la fenêtre ___ avoir froid pendant la nuit.",
+  "options": [
+   "de peur d’",
+   "de peur qu’",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "要避免的事（着凉），主语相同，后接不定式：de peur d’avoir froid。de peur que 要接从句；pour avoir froid 意思是“为了着凉”，不合逻辑。"
+ },
+ {
+  "id": "but-17",
+  "stem": "Je te donne mon numéro pour que tu ___ m’appeler en cas de problème.",
+  "options": [
+   "puisses",
+   "peux",
+   "pourras"
+  ],
+  "answer": 0,
+  "why": "pour que + 虚拟式：que tu puisses。peux 是直陈式；pourras 是将来时。"
+ },
+ {
+  "id": "but-18",
+  "stem": "L’entreprise a ouvert une crèche ___ attirer de jeunes parents.",
+  "options": [
+   "afin qu’",
+   "afin d’",
+   "de crainte d’"
+  ],
+  "answer": 1,
+  "why": "主语相同，后接不定式 attirer，用 afin de（元音前 d’）。afin que 要接从句；de crainte de 表示“怕……”，意思相反。"
+ },
+ {
+  "id": "but-19",
+  "stem": "La police a bouclé le quartier de crainte que les manifestants ne ___ des dégâts.",
+  "options": [
+   "font",
+   "feront",
+   "fassent"
+  ],
+  "answer": 2,
+  "why": "de crainte que + 虚拟式（ne 为赘词）：qu’ils ne fassent。font 是直陈式；feront 是将来时。"
+ },
+ {
+  "id": "but-20",
+  "stem": "Le gouvernement a lancé une campagne ___ réduire le gaspillage alimentaire.",
+  "options": [
+   "en vue que",
+   "pour qu’",
+   "en vue de"
+  ],
+  "answer": 2,
+  "why": "en vue de + 不定式或名词：en vue de réduire。en vue que 是错误结构；pour que 后要接从句。"
+ },
+ {
+  "id": "but-21",
+  "stem": "Je vous écris afin de vous ___ un rendez-vous.",
+  "options": [
+   "demande",
+   "demandiez",
+   "demander"
+  ],
+  "answer": 2,
+  "why": "afin de 后接不定式：afin de vous demander。demande 和 demandiez 是变位形式，不能接在 afin de 后。"
+ },
+ {
+  "id": "but-22",
+  "stem": "Il faut agir vite ___ la situation ne s’aggrave.",
+  "options": [
+   "pour que",
+   "de peur que",
+   "afin que"
+  ],
+  "answer": 1,
+  "why": "句中的 ne 是赘词，没有 pas，表示“怕……发生”，只有 de peur que 可以这样用。pour que / afin que 后面若要表示“为了不恶化”必须用 ne… pas，否则意思变成“为了恶化”。"
+ },
+ {
+  "id": "but-23",
+  "stem": "J’ai acheté un ordinateur à mon fils ___ il puisse étudier à la maison.",
+  "options": [
+   "pour",
+   "pour qu’",
+   "afin d’"
+  ],
+  "answer": 1,
+  "why": "主语不同（je / il），后接虚拟式从句，用 pour que。pour 和 afin de 只接不定式。"
+ },
+ {
+  "id": "but-24",
+  "stem": "Nous partirons tôt de manière ___ éviter les embouteillages.",
+  "options": [
+   "que",
+   "à",
+   "de"
+  ],
+  "answer": 1,
+  "why": "后面是不定式（éviter），用 de manière à。de manière que 后接从句；de manière de 不存在。"
+ },
+ {
+  "id": "but-25",
+  "stem": "Je pars maintenant ___ être en retard.",
+  "options": [
+   "pour pas ne",
+   "pour ne pas",
+   "pour que je ne sois pas"
+  ],
+  "answer": 1,
+  "why": "否定不定式时 ne pas 一起放在不定式前：pour ne pas être。pour pas ne 语序错误；pour que je ne sois pas 是同一主语误用从句。"
+ },
+ {
+  "id": "but-26",
+  "stem": "Le maire a organisé une réunion publique afin que les habitants ___ donner leur avis.",
+  "options": [
+   "peuvent",
+   "pourraient",
+   "puissent"
+  ],
+  "answer": 2,
+  "why": "afin que + 虚拟式，即使主句是过去时也用虚拟式现在时：qu’ils puissent。peuvent 是直陈式；pourraient 是条件式。"
+ },
+ {
+  "id": "but-27",
+  "stem": "Je lui ai expliqué le trajet pour qu’il ne se ___ pas.",
+  "options": [
+   "perd",
+   "perdait",
+   "perde"
+  ],
+  "answer": 2,
+  "why": "pour que + 虚拟式；主句是过去时，日常语言仍用虚拟式现在时：qu’il ne se perde pas。perd 和 perdait 是直陈式。"
+ },
+ {
+  "id": "but-28",
+  "stem": "Les associations se sont réunies ___ trouver une solution commune.",
+  "options": [
+   "dans le but de",
+   "dans le but d’",
+   "au but de"
+  ],
+  "answer": 0,
+  "why": "固定表达 dans le but de + 不定式；trouver 以辅音开头，不省音：dans le but de trouver。dans le but d’ 用错省音；au but de 不存在。"
+ },
+ {
+  "id": "but-29",
+  "stem": "Envoyez votre dossier avant lundi afin que nous ___ le temps de l’étudier.",
+  "options": [
+   "avons",
+   "ayons",
+   "aurons"
+  ],
+  "answer": 1,
+  "why": "afin que + 虚拟式：que nous ayons。avons 是直陈式；aurons 是将来时。"
+ },
+ {
+  "id": "but-30",
+  "stem": "J’ai baissé la voix de peur ___ entendu par mes collègues.",
+  "options": [
+   "que je sois",
+   "que je ne sois",
+   "d’être"
+  ],
+  "answer": 2,
+  "why": "主语相同（je），用 de peur de + 不定式（被动）：de peur d’être entendu。que je (ne) sois 是同一主语误用从句。"
+ }
+]

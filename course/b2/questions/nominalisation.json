@@ -1,0 +1,332 @@
+[
+ {
+  "id": "nominalisation-01",
+  "stem": "Les prix augmentent depuis janvier. → ___ des prix inquiète les consommateurs.",
+  "options": [
+   "L’augmentage",
+   "L’augmentation",
+   "L’augmentement"
+  ],
+  "answer": 1,
+  "why": "augmenter 的名词形式是 l’augmentation（阴性，-tion）。augmentage 和 augmentement 都是不存在的自造词。"
+ },
+ {
+  "id": "nominalisation-02",
+  "stem": "Le musée ferme pour travaux. → ___ du musée est prévue en mai.",
+  "options": [
+   "La fermation",
+   "La fermeture",
+   "Le fermement"
+  ],
+  "answer": 1,
+  "why": "fermer → la fermeture（-ure，阴性），与后面的 prévue 配合。fermation 不存在；fermement 是副词（坚定地），不是名词。"
+ },
+ {
+  "id": "nominalisation-03",
+  "stem": "Plusieurs usines ont licencié. → ___ massifs ont choqué la région.",
+  "options": [
+   "Les licenciations",
+   "Les licenciages",
+   "Les licenciements"
+  ],
+  "answer": 2,
+  "why": "licencier → le licenciement（-ment，阳性），所以后面是 massifs（阳性复数）。licenciation 和 licenciage 都不存在。"
+ },
+ {
+  "id": "nominalisation-04",
+  "stem": "Les voisins sont très solidaires. → La ___ entre voisins s’est renforcée.",
+  "options": [
+   "solidaresse",
+   "solidarise",
+   "solidarité"
+  ],
+  "answer": 2,
+  "why": "形容词 solidaire → 名词 la solidarité（-té，阴性）。-esse 和 -ise 不适用于这个词，solidaresse 和 solidarise 都不存在。"
+ },
+ {
+  "id": "nominalisation-05",
+  "stem": "Elle est sage. → On admire sa ___.",
+  "options": [
+   "sagité",
+   "sagesse",
+   "sageté"
+  ],
+  "answer": 1,
+  "why": "sage → la sagesse（-esse，阴性，类似 faible → faiblesse, gentil → gentillesse）。sagité 和 sageté 不存在。"
+ },
+ {
+  "id": "nominalisation-06",
+  "stem": "Il est toujours franc avec ses collègues. → On apprécie sa ___.",
+  "options": [
+   "francesse",
+   "franchise",
+   "franceté"
+  ],
+  "answer": 1,
+  "why": "franc → la franchise（-ise，阴性，坦率）。francesse 和 franceté 都不存在。"
+ },
+ {
+  "id": "nominalisation-07",
+  "stem": "Le nettoyage des plages a été ___ par des bénévoles.",
+  "options": [
+   "organisée",
+   "organisé",
+   "organisés"
+  ],
+  "answer": 1,
+  "why": "以 -age 结尾的派生名词是阳性：le nettoyage，所以分词用阳性单数 organisé。organisée 把它当成阴性；organisés 是复数。"
+ },
+ {
+  "id": "nominalisation-08",
+  "stem": "La signature du contrat a été ___ à la semaine prochaine.",
+  "options": [
+   "reporté",
+   "reportée",
+   "reportés"
+  ],
+  "answer": 1,
+  "why": "以 -ure 结尾的派生名词是阴性：la signature，所以分词写成 reportée。reporté 是阳性；reportés 是阳性复数。"
+ },
+ {
+  "id": "nominalisation-09",
+  "stem": "Le remboursement des frais sera ___ sous quinze jours.",
+  "options": [
+   "effectuée",
+   "effectués",
+   "effectué"
+  ],
+  "answer": 2,
+  "why": "以 -ment 结尾的派生名词是阳性：le remboursement，分词用阳性单数 effectué。effectuée 是阴性；effectués 是复数（主语是 remboursement，不是 frais）。"
+ },
+ {
+  "id": "nominalisation-10",
+  "stem": "L’absence de transports publics reste ___ dans certaines zones rurales.",
+  "options": [
+   "flagrante",
+   "flagrant",
+   "flagrants"
+  ],
+  "answer": 0,
+  "why": "以 -ence 结尾的名词通常是阴性：l’absence，形容词用 flagrante。flagrant 是阳性；flagrants 错与 transports 配合，而主语核心是 absence。"
+ },
+ {
+  "id": "nominalisation-11",
+  "stem": "« Les loyers ont fortement augmenté à Lyon. » → Titre : « ___ des loyers à Lyon »",
+  "options": [
+   "Forte hausse",
+   "Fortement hausse",
+   "Fort hausse"
+  ],
+  "answer": 0,
+  "why": "新闻标题把动词名词化（augmenter → la hausse），原来的副词 fortement 要变成修饰名词的形容词，并与阴性名词配合：forte hausse。副词不能修饰名词；fort 没有配合。"
+ },
+ {
+  "id": "nominalisation-12",
+  "stem": "« Le ministre a démissionné hier. » → Titre : « ___ du ministre »",
+  "options": [
+   "Démission",
+   "Démissionnement",
+   "Démissionnage"
+  ],
+  "answer": 0,
+  "why": "démissionner 的名词是 la démission（标题中省略冠词）。démissionnement 和 démissionnage 都不存在。"
+ },
+ {
+  "id": "nominalisation-13",
+  "stem": "L’État veut faciliter l’accès ___ la culture pour tous.",
+  "options": [
+   "de",
+   "pour",
+   "à"
+  ],
+  "answer": 2,
+  "why": "动词 accéder à 的介词在名词化后保留：l’accès à la culture。l’accès de la culture 意思变成“文化的进入”；pour 不与 accès 搭配。"
+ },
+ {
+  "id": "nominalisation-14",
+  "stem": "Les citoyens participent peu aux élections locales. → La participation des citoyens ___ élections locales reste faible.",
+  "options": [
+   "aux",
+   "des",
+   "pour les"
+  ],
+  "answer": 0,
+  "why": "participer à → la participation à：介词 à 保留，à + les = aux。des 已经用来引出主语（des citoyens），不能再引出宾语；pour les 不是 participation 的搭配。"
+ },
+ {
+  "id": "nominalisation-15",
+  "stem": "Les jeunes s’intéressent de moins en moins à la politique. → L’intérêt des jeunes ___ la politique diminue.",
+  "options": [
+   "à",
+   "pour",
+   "de"
+  ],
+  "answer": 1,
+  "why": "s’intéresser à 名词化后变成 l’intérêt pour（对……的兴趣），介词改变了。l’intérêt à 不用于此义；de 会造成两个 de 补语，意思不清。"
+ },
+ {
+  "id": "nominalisation-16",
+  "stem": "Les entreprises dépendent du pétrole. → La dépendance des entreprises ___ pétrole est un risque.",
+  "options": [
+   "du",
+   "sur le",
+   "au"
+  ],
+  "answer": 2,
+  "why": "名词 la dépendance 的补语用 à：la dépendance au pétrole（对石油的依赖）。du 会被理解为“石油的依赖”；sur le 不是正确搭配。"
+ },
+ {
+  "id": "nominalisation-17",
+  "stem": "La région a réduit ses émissions de CO2. → ___ des émissions de CO2 dépasse les objectifs fixés.",
+  "options": [
+   "La réduisation",
+   "La réduction",
+   "Le réduisement"
+  ],
+  "answer": 1,
+  "why": "réduire → la réduction（-tion，阴性；词根变为 réduc-，类似 produire → production）。réduisation 和 réduisement 都不存在。"
+ },
+ {
+  "id": "nominalisation-18",
+  "stem": "Trop d’élèves échouent au lycée. → ___ scolaire reste un problème majeur.",
+  "options": [
+   "L’échouement",
+   "L’échouage",
+   "L’échec"
+  ],
+  "answer": 2,
+  "why": "échouer（失败）对应的名词是 l’échec（阳性），l’échec scolaire 是固定说法。échouage 指船只搁浅；échouement 不用于学业失败。"
+ },
+ {
+  "id": "nominalisation-19",
+  "stem": "Les températures baissent nettement la nuit. → On observe ___ nette des températures la nuit.",
+  "options": [
+   "un baissement",
+   "une baissure",
+   "une baisse"
+  ],
+  "answer": 2,
+  "why": "baisser 的名词是零后缀派生的 la baisse（阴性），与 nette 配合。baissement 和 baissure 不存在。"
+ },
+ {
+  "id": "nominalisation-20",
+  "stem": "Le conseil a choisi une nouvelle directrice. → ___ d’une nouvelle directrice a surpris l’équipe.",
+  "options": [
+   "Le choix",
+   "La choisition",
+   "Le choisissement"
+  ],
+  "answer": 0,
+  "why": "choisir → le choix（阳性，不规则派生）。choisition 和 choisissement 都不存在。"
+ },
+ {
+  "id": "nominalisation-21",
+  "stem": "Les habitants sont inquiets à cause du projet. → ___ des habitants grandit.",
+  "options": [
+   "L’inquiétude",
+   "L’inquiétance",
+   "L’inquiétesse"
+  ],
+  "answer": 0,
+  "why": "inquiet → l’inquiétude（-ude，阴性）。inquiétance 和 inquiétesse 都不存在。"
+ },
+ {
+  "id": "nominalisation-22",
+  "stem": "Le gouvernement a décidé de baisser les impôts. → ___ du gouvernement surprend les économistes.",
+  "options": [
+   "La décidation",
+   "Le décidement",
+   "La décision"
+  ],
+  "answer": 2,
+  "why": "décider → la décision（-sion，阴性）。décidation 和 décidement 都不存在。"
+ },
+ {
+  "id": "nominalisation-23",
+  "stem": "Les salariés sont fidèles à leur entreprise. → La ___ des salariés est récompensée par une prime.",
+  "options": [
+   "fidélité",
+   "fidélesse",
+   "fidélise"
+  ],
+  "answer": 0,
+  "why": "fidèle → la fidélité（-té，阴性；注意词根变为 fidél-）。fidélesse 不存在；fidélise 是动词 fidéliser 的变位形式。"
+ },
+ {
+  "id": "nominalisation-24",
+  "stem": "Ce document est peu lisible. → ___ du document doit être améliorée.",
+  "options": [
+   "La lisibleté",
+   "La lisiblesse",
+   "La lisibilité"
+  ],
+  "answer": 2,
+  "why": "以 -ble 结尾的形容词变名词用 -bilité：lisible → la lisibilité（类似 possible → possibilité）。lisibleté 和 lisiblesse 都不存在。"
+ },
+ {
+  "id": "nominalisation-25",
+  "stem": "Les clients sont très satisfaits. → ___ des clients est notre priorité.",
+  "options": [
+   "La satisfaitude",
+   "Le satisfaisement",
+   "La satisfaction"
+  ],
+  "answer": 2,
+  "why": "satisfait → la satisfaction（-tion，阴性）。satisfaitude 和 satisfaisement 都不存在。"
+ },
+ {
+  "id": "nominalisation-26",
+  "stem": "Le stationnement est ___ dans cette rue les jours de marché.",
+  "options": [
+   "interdit",
+   "interdite",
+   "interdits"
+  ],
+  "answer": 0,
+  "why": "以 -ment 结尾的派生名词 le stationnement 是阳性单数，所以写 interdit。interdite 是阴性；interdits 是复数。"
+ },
+ {
+  "id": "nominalisation-27",
+  "stem": "L’ouverture des frontières a été ___ par plusieurs pays voisins.",
+  "options": [
+   "critiqué",
+   "critiquée",
+   "critiqués"
+  ],
+  "answer": 1,
+  "why": "以 -ure 结尾的 l’ouverture 是阴性，分词写 critiquée（主语核心是 ouverture，不是 frontières）。critiqué 是阳性；critiqués 是阳性复数。"
+ },
+ {
+  "id": "nominalisation-28",
+  "stem": "Parce que les trains étaient en retard, la réunion a commencé à midi. → ___, la réunion a commencé à midi.",
+  "options": [
+   "En raison du retard des trains",
+   "En raison que les trains étaient en retard",
+   "En raison de retarder les trains"
+  ],
+  "answer": 0,
+  "why": "en raison de 是介词短语，后接名词：en raison du retard des trains（名词化）。en raison que 不存在；de retarder les trains 意思变成“为了推迟火车”，不符原意。"
+ },
+ {
+  "id": "nominalisation-29",
+  "stem": "« La mairie va rénover la gare. » → Titre : « ___ de la gare par la mairie »",
+  "options": [
+   "Rénover",
+   "Rénovation",
+   "Rénové"
+  ],
+  "answer": 1,
+  "why": "新闻标题把动词变为名词并省略冠词：Rénovation de la gare。标题中的不定式 rénover 和分词 rénové 无法接 de 补语和 par 施动者构成名词短语。"
+ },
+ {
+  "id": "nominalisation-30",
+  "stem": "Les médias doivent rester indépendants. → ___ des médias est un pilier de la démocratie.",
+  "options": [
+   "L’indépendance",
+   "L’indépendanté",
+   "L’indépendantise"
+  ],
+  "answer": 0,
+  "why": "indépendant → l’indépendance（-ance，阴性）。indépendanté 和 indépendantise 都不存在。"
+ }
+]

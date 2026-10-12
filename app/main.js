@@ -1,9 +1,9 @@
 /** DELF50 · app shell: sign-in gate, routing, navigation and rendering. */
-import { call, errorText } from './api.js';
-import { store, bootstrap, commit, onChange, onStatus, onAuthRequired, flush } from './store.js';
-import { loadCourse } from './course.js';
+import { call, errorText, useCourse } from './api.js';
+import { store, bootstrap, commit, onChange, onStatus, onAuthRequired, flush, whenSaved } from './store.js';
+import { loadCourse, getCourse, currentLevel, levelOf, LEVELS } from './course.js';
 import { setDay } from './state.js';
-import { html, raw, icon, esc, fmtDateTime, matisse } from './ui.js';
+import { html, raw, icon, esc, fmtDateTime, matisse, setLabels } from './ui.js';
 import { dayView } from './views/day.js';
 import { grammarView } from './views/grammar.js';
 import { textView } from './views/text.js';
@@ -43,7 +43,43 @@ const NAV = [
   ['guide', '指南', () => '#/guide', /^\/guide/]
 ];
 
-let current = null, currentPath = null, renderToken = 0;
+let current = null, currentPath = null, renderToken = 0, switching = null;
+
+// Routes carry the level: #/b2/day/3. A path without one (an in-app link, an old bookmark) stays in the current level.
+const LEVEL_RE = /^\/(b1|b2|c1)(?=\/|$)/;
+const byCode = (code) => LEVELS.find((l) => l.level.toLowerCase() === code);
+const prefix = () => '/' + currentLevel().level.toLowerCase();
+
+/** Opens a course: its material and the learner's records in it. */
+async function openCourse(id) {
+  useCourse(id);
+  await Promise.all([loadCourse(id), bootstrap()]);
+  setLabels(getCourse().labels);
+}
+
+/** The course to open at sign-in: the level in the address, else the one studied last, else B1. */
+async function firstCourse() {
+  const path = (location.hash || '').replace(/^#/, ''), m = LEVEL_RE.exec(path);
+  if (m && byCode(m[1]).root) return byCode(m[1]).id;
+  if (path && path !== '/') return 'delf-b1';
+  const r = await call('GET', '/courses');
+  const last = r.enrolled.find((e) => levelOf(e.course) && levelOf(e.course).root);
+  return last ? last.course : 'delf-b1';
+}
+
+/** Switches level once every change of the current one is saved (while saving fails, the level stays). */
+function switchCourse(id) {
+  if (!switching) switching = (async () => {
+    const root = app.querySelector('#view');
+    await whenSaved();
+    if (root) root.innerHTML = '<div class="splash" aria-busy="true"><span class="brand-mark big">D50</span></div>';
+    if (current && current.unmount) current.unmount();
+    current = null; currentPath = null;
+    await openCourse(id);
+    shell();
+  })().finally(() => { switching = null; });
+  return switching;
+}
 
 const STATUS = { loading: '载入中', saving: '保存中', saved: '已保存', error: '保存失败 · 自动重试' };
 
@@ -51,7 +87,10 @@ function shell() {
   app.innerHTML = String(html`
     <a class="skip" href="#view">跳到内容</a>
     <header class="topbar">
-      <a class="brand" href="#/day/${store.S.day}" aria-label="DELF50 首页"><span class="brand-mark">D50</span><span class="brand-word">DELF<span>50</span></span></a>
+      <a class="brand" href="#${prefix()}/day/${store.S.day}" aria-label="DELF50 首页"><span class="brand-mark">D50</span><span class="brand-word">DELF<span>50</span></span></a>
+      <nav class="lvl-switch" aria-label="级别">${LEVELS.map((l) => (l.root
+        ? html`<a href="#/${l.level.toLowerCase()}" class="${l.id === currentLevel().id ? 'on' : ''}" ${l.id === currentLevel().id ? 'aria-current="true"' : ''}>${l.level}</a>`
+        : html`<span class="soon" title="${l.level} 即将开放" aria-disabled="true">${l.level}<small>即将</small></span>`))}</nav>
       <div class="topbar-end">
         <span class="sync" data-sync aria-live="polite"></span>
         <button class="avatar" type="button" data-act="account" aria-label="账号">${(store.user.name || store.user.email || '?').slice(0, 1).toUpperCase()}</button>
@@ -74,7 +113,7 @@ function navState(path) {
   for (const [id, , href, re] of NAV) {
     const a = app.querySelector(`[data-nav="${id}"]`);
     if (!a) continue;
-    a.href = href();
+    a.href = '#' + prefix() + href().slice(1);
     a.classList.toggle('on', re.test(path));
     if (re.test(path)) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   }
@@ -91,13 +130,28 @@ function paint(view, keepScroll) {
 
 async function route() {
   if (!app.querySelector('#view')) return;
-  const path = (location.hash || '').replace(/^#/, '') || `/day/${store.S.day}`;
-  if (!location.hash) { history.replaceState(null, '', `#${path}`); }
+  let path = (location.hash || '').replace(/^#/, '');
+  const lv = LEVEL_RE.exec(path);
+  if (lv) {
+    path = path.slice(lv[0].length);
+    const target = byCode(lv[1]);
+    if (!target.root) { location.hash = `#${prefix()}/day/${store.S.day}`; return; }
+    if (target.id !== currentLevel().id) {
+      const from = currentLevel();
+      try { await switchCourse(target.id); } catch (e) {
+        // Unsaved work keeps the learner in the current level; a level that fails to load shows the error.
+        if (currentLevel() === from && currentPath) { history.replaceState(null, '', `#${prefix()}${currentPath}`); return; }
+        const v = errorView(e); current = v; currentPath = null; paint(v); return;
+      }
+    }
+  }
+  if (!path || path === '/') path = `/day/${store.S.day}`;
+  if (location.hash !== `#${prefix()}${path}`) history.replaceState(null, '', `#${prefix()}${path}`);
   const hit = ROUTES.map(([re, make]) => [re.exec(path), make]).find(([m]) => m);
-  if (!hit) { location.hash = `#/day/${store.S.day}`; return; }
+  if (!hit) { location.hash = `#${prefix()}/day/${store.S.day}`; return; }
   const token = ++renderToken;
   const dayParam = /^\/day\/(\d+)/.exec(path);
-  if (dayParam && +dayParam[1] !== store.S.day && +dayParam[1] >= 1 && +dayParam[1] <= 50) commit((S) => setDay(S, +dayParam[1]), { quiet: true });
+  if (dayParam && +dayParam[1] !== store.S.day && +dayParam[1] >= 1 && +dayParam[1] <= getCourse().days) commit((S) => setDay(S, +dayParam[1]), { quiet: true });
   let view;
   try { view = await hit[1](hit[0]); } catch (e) { view = errorView(e); }
   if (token !== renderToken) return;
@@ -152,6 +206,7 @@ function accountSheet() {
       <h2 id="acct-title" class="display-xs">${store.user.name || '学习者'}</h2>
       <dl class="kv">
         <dt>邮箱</dt><dd>${store.user.email}</dd>
+        <dt>课程</dt><dd>${getCourse().title}</dd>
         <dt>保存</dt><dd>${STATUS[store.status] || ''}${store.savedAt ? ` · ${fmtDateTime(store.savedAt.toISOString())}` : ''}</dd>
         <dt>开始学习</dt><dd>${store.S.startedAt ? fmtDateTime(store.S.startedAt) : '尚未开始'}</dd>
       </dl>
@@ -175,15 +230,15 @@ function authScreen(message, mode = 'login', resume = false) {
   app.innerHTML = String(html`
     <div class="auth">
       <section class="auth-art" aria-hidden="true">
-        <p class="eyebrow light">DELF B1 · 50 jours</p>
-        <p class="auth-quote"><em>Cinquante jours</em><br>pour parler, lire,<br>écouter et écrire<br>au niveau B1.</p>
+        <p class="eyebrow light">DELF B1 · B2 · 50 jours</p>
+        <p class="auth-quote"><em>Cinquante jours</em><br>pour parler, lire,<br>écouter et écrire<br>au niveau visé.</p>
         ${matisse(50)}
       </section>
       <section class="auth-panel">
         <div class="auth-box">
           <span class="brand-mark big">D50</span>
           <h1 class="display-s">${reg ? '创建账号' : '欢迎回来'}</h1>
-          <p class="lead">${reg ? '注册后即可开始 50 天 B1 冲刺。所有作答、写作和录音都实时保存在你的账号中，换设备登录即可继续。' : '登录后继续你的 50 天 B1 冲刺。'}</p>
+          <p class="lead">${reg ? '注册后即可开始 DELF B1 或 B2 的 50 天课程，可随时切换级别。所有作答、写作和录音都实时保存在你的账号中，换设备登录即可继续。' : '登录后继续你的 50 天课程。'}</p>
           <div class="seg" role="tablist">
             <button type="button" role="tab" aria-selected="${!reg}" class="${reg ? '' : 'on'}" data-mode="login">登录</button>
             <button type="button" role="tab" aria-selected="${reg}" class="${reg ? 'on' : ''}" data-mode="register">注册</button>
@@ -226,7 +281,7 @@ function fatal(e) {
 async function start() {
   app.innerHTML = '<div class="splash" aria-busy="true"><span class="brand-mark big">D50</span></div>';
   try {
-    await Promise.all([loadCourse(), bootstrap()]);
+    await openCourse(await firstCourse());
   } catch (e) {
     if (e.status === 401) return authScreen();
     return fatal(e);

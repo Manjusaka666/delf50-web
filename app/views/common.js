@@ -35,6 +35,17 @@ export async function studiedProgress(extra = []) {
   return { days, progress: out };
 }
 
+/** A task's document déclencheur: a short text the task starts from. */
+export const triggerDoc = (t) => (t ? html`<figure class="trigger" lang="fr"><figcaption>${frText(t.title)}</figcaption>
+  <div class="prose small">${t.text.map((p) => html`<p>${frText(p)}</p>`)}</div></figure>` : '');
+
+/** The course's method (official advice) and evaluation criteria for a skill, folded away. */
+export function examNotes(module) {
+  const c = getCourse(), tips = (c.methods || {})[module], grid = (c.rubrics || {})[module];
+  return html`${tips ? html`<details class="checklist method"><summary class="label">考试方法 · Méthode DELF ${c.exam ? c.exam.name.split(' ')[1] : ''}</summary><ul>${tips.map((t) => html`<li>${t}</li>`)}</ul></details>` : ''}
+    ${grid ? html`<details class="checklist method"><summary class="label">官方评分维度 · Grille</summary><dl class="grid-dl">${grid.map(([k, v]) => html`<dt lang="fr">${frText(k)}</dt><dd>${v}</dd>`)}</dl></details>` : ''}`;
+}
+
 /** Breadcrumb-style header of a page inside a day. */
 export function crumbs(d, label, sub = '') {
   return html`<nav class="crumbs" aria-label="位置">
@@ -77,31 +88,72 @@ export const listenAction = (players) => async (el) => {
   } catch (e) { el.disabled = false; }
 };
 
-/** A chunk's example with the chunk shown, or replaced by a gap of its length. */
-export function chunkExample(ex, reveal) {
+/** What the learner types for a chunk: the marked part of its example. */
+export const chunkGap = (ex) => (/\[\[(.+?)\]\]/.exec(ex) || [])[1] || '';
+export const plainExample = (ex) => ex.replace(/\[\[|\]\]/g, '');
+
+/** A chunk's example with the chunk shown, or with an input in its place. */
+function chunkExample(ex, reveal, typed) {
   const m = /\[\[(.+?)\]\]/.exec(ex);
   if (!m) return frText(ex);
   const before = ex.slice(0, m.index), after = ex.slice(m.index + m[0].length);
-  return html`${frText(before)}${reveal ? html`<mark class="chunk-hit">${frText(m[1])}</mark>` : html`<span class="gap" aria-label="空格">${' '.repeat(Math.min(18, Math.max(6, m[1].length)))}</span>`}${frText(after)}`;
+  return html`${frText(before)}${reveal ? html`<mark class="chunk-hit">${frText(m[1])}</mark>`
+    : html`<input class="gap-input" data-input="typed" value="${typed}" style="--w:${Math.min(28, Math.max(6, m[1].length + 2))}ch" lang="fr" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="填写缺少的法语表达">`}${frText(after)}`;
 }
-export const plainExample = (ex) => ex.replace(/\[\[|\]\]/g, '');
 
-const SRC = { R: '阅读', L: '听力', W: '写作', S: '口语', A: '应用' };
-export const chunkSource = (src) => (src && SRC[src[0]] && /^[RLWSA]\d/.test(src) ? `${SRC[src[0]]} ${src.split('-')[1]}` : '主题词块');
+const SRC = { R: 'reading', L: 'listening', W: 'writing', S: 'speaking', A: 'application' };
+export const chunkSource = (src) => (src && SRC[src[0]] && /^[RLWSA]\d/.test(src) ? `${MODULE_NAMES[SRC[src[0]]]} ${src.split('-')[1]}` : '主题词块');
 
-/** Active recall: Chinese meaning and the gapped sentence first; the chunk, the full sentence and its sound after. */
-export function recallCard(c, revealed, meta = '', done = false) {
-  return html`<section class="qcard recall ${revealed ? 'open' : ''}" aria-live="polite">
-    <p class="qcard-meta"><span>${meta}</span><span class="tag">${chunkSource(c.src)}</span></p>
+/** The typed answer against the expected one, the part that differs marked (common start and end left plain). */
+function diffLine(a, b) {
+  let i = 0, j = 0;
+  const x = a.toLowerCase(), y = b.toLowerCase();
+  while (i < x.length && i < y.length && x[i] === y[i]) i++;
+  while (j < x.length - i && j < y.length - i && x[x.length - 1 - j] === y[y.length - 1 - j]) j++;
+  const part = (s, cls) => html`${s.slice(0, i)}<mark class="${cls}">${s.slice(i, s.length - j)}</mark>${s.slice(s.length - j)}`;
+  return html`<p class="spell-diff" lang="fr"><span class="muted">你写的</span><s>${part(a, 'bad')}</s><span class="muted">正确拼写</span><b>${part(b, 'ok')}</b></p>`;
+}
+
+const ACCENTS = ['é', 'è', 'ê', 'à', 'â', 'ç', 'î', 'ï', 'ô', 'û', 'ù', 'ë', 'œ'];
+
+/**
+ * Active recall by typing: the Chinese meaning and the sentence with an input in place of the chunk.
+ * The learner types the missing words; spelling (accents included) must be exact, spaces and case do not count.
+ * `t` = {meta, typed, result: {ok, typed} | null}; a result shows the chunk, its sound and the translation.
+ */
+export function recallCard(c, t) {
+  const gap = chunkGap(c.ex), r = t.result;
+  return html`<section class="qcard recall ${r ? (r.ok ? 'open is-ok' : 'open is-bad') : ''}" aria-live="polite">
+    <p class="qcard-meta"><span>${t.meta || ''}</span><span class="tag">${chunkSource(c.src)}</span></p>
     <p class="recall-zh">${c.zh}</p>
-    <p class="recall-ex" lang="fr">${chunkExample(c.ex, revealed)}</p>
-    ${revealed ? html`
+    <p class="recall-ex" lang="fr">${chunkExample(c.ex, Boolean(r), t.typed || '')}</p>
+    ${r ? html`
       <div class="recall-back">
+        <p class="feedback-head">${r.ok ? '拼写正确' : r.typed ? '拼写有误 · 已加入再练' : '已显示答案 · 已加入再练'}</p>
+        ${!r.ok && r.typed ? diffLine(r.typed.trim(), gap) : ''}
         <p class="recall-fr" lang="fr">${frText(c.fr)}<button class="icon-btn" data-act="say" aria-label="朗读">${icon('play')}</button></p>
         <p class="muted">${c.exZh}</p>
       </div>
-      ${done ? '' : html`<div class="qnav"><button class="btn ghost" data-act="again">再练一次 <kbd>2</kbd></button><button class="btn" data-act="known">记住了 <kbd>1</kbd></button></div>`}`
-    : html`<p class="hint">先在心里说出（或写下）缺少的法语表达，再翻面核对。</p>
-      <div class="qnav end"><button class="btn" data-act="reveal">显示答案 <kbd>空格</kbd></button></div>`}
+      <div class="qnav end"><button class="btn" data-act="next-chunk">下一个 <kbd>Enter</kbd></button></div>`
+    : html`<p class="hint">首字母 <b lang="fr">${gap.trim()[0] || ''}</b> · ${gap.trim().split(/\s+/).length} 个词。拼写（含重音符号）须准确，空格和大小写不计。</p>
+      <div class="accents" aria-label="插入法语字母">${ACCENTS.map((a) => html`<button type="button" class="chip fr" data-act="accent" data-c="${a}" lang="fr">${a}</button>`)}</div>
+      <div class="qnav"><button class="btn ghost" data-act="give-up">看答案</button><button class="btn" data-act="check">核对 <kbd>Enter</kbd></button></div>`}
   </section>`;
+}
+
+/** Wires the card's input after each paint: focus, and Enter to check. */
+export function mountRecall(root, check) {
+  const i = root.querySelector('.gap-input');
+  if (!i) return;
+  i.onkeydown = (e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); check(); } };
+  if (document.activeElement !== i) { i.focus({ preventScroll: true }); i.setSelectionRange(i.value.length, i.value.length); }
+}
+
+/** Inserts an accented letter at the caret of the card's input. */
+export function insertAccent(el) {
+  const i = document.querySelector('.gap-input');
+  if (!i) return;
+  i.setRangeText(el.dataset.c, i.selectionStart, i.selectionEnd, 'end');
+  i.focus();
+  i.dispatchEvent(new Event('input', { bubbles: true }));
 }

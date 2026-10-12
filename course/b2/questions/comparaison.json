@@ -1,0 +1,332 @@
+[
+ {
+  "id": "comparaison-01",
+  "stem": "___ on lit, plus on enrichit son vocabulaire.",
+  "options": [
+   "Le plus",
+   "Plus",
+   "Autant"
+  ],
+  "answer": 1,
+  "why": "比例结构 Plus…, plus…（越……越……），两个部分都不加冠词。le plus 是最高级；Autant… 要与 autant… 对应，不能与 plus 搭配。"
+ },
+ {
+  "id": "comparaison-02",
+  "stem": "Moins on dort, ___ on est efficace au travail.",
+  "options": [
+   "le moins",
+   "moins",
+   "plus moins"
+  ],
+  "answer": 1,
+  "why": "比例结构 Moins…, moins…（越少……越不……），不加冠词。le moins 是最高级；plus moins 是错误的叠加。"
+ },
+ {
+  "id": "comparaison-03",
+  "stem": "Les loyers augmentent ___ dans les grandes villes.",
+  "options": [
+   "de plus en plus",
+   "plus en plus",
+   "de plus à plus"
+  ],
+  "answer": 0,
+  "why": "渐进表达“越来越……”的固定形式是 de plus en plus。plus en plus 缺少 de；de plus à plus 不存在。"
+ },
+ {
+  "id": "comparaison-04",
+  "stem": "Les jeunes regardent ___ la télévision traditionnelle.",
+  "options": [
+   "moins en moins",
+   "de moins à moins",
+   "de moins en moins"
+  ],
+  "answer": 2,
+  "why": "“越来越少”的固定形式是 de moins en moins，修饰动词 regardent。另外两项形式错误。"
+ },
+ {
+  "id": "comparaison-05",
+  "stem": "Je suis désolé, je n’en ai pas ___ idée.",
+  "options": [
+   "la plus moindre",
+   "le moindre",
+   "la moindre"
+  ],
+  "answer": 2,
+  "why": "moindre 本身就是比较级，前加冠词构成最高级 la moindre（最小的），常用于否定：pas la moindre idée。不能再加 plus；le moindre 与阴性名词 idée 不配合。"
+ },
+ {
+  "id": "comparaison-06",
+  "stem": "Avec la grève, la situation est encore ___ qu’hier.",
+  "options": [
+   "plus pire",
+   "la pire",
+   "pire"
+  ],
+  "answer": 2,
+  "why": "mauvais 的比较级可用 pire（本身就是比较级）：pire qu’hier。plus pire 是重复比较，属于错误；la pire 是最高级，不能接 que 表示与昨天比较。"
+ },
+ {
+  "id": "comparaison-07",
+  "stem": "C’est ___ décision que le conseil ait jamais prise.",
+  "options": [
+   "la pire",
+   "la plus pire",
+   "le pire"
+  ],
+  "answer": 0,
+  "why": "最高级 la pire + 名词（最糟糕的决定），与阴性名词 décision 配合。la plus pire 是错误的叠加；le pire 是阳性。"
+ },
+ {
+  "id": "comparaison-08",
+  "stem": "Ce projet est intéressant, ___ qu’il ne coûte presque rien à la commune.",
+  "options": [
+   "autant plus",
+   "d’autant plus",
+   "de plus en plus"
+  ],
+  "answer": 1,
+  "why": "d’autant plus que + 直陈式表示“更加……，因为……”（强化理由）。autant plus 缺少 d’；de plus en plus 表示渐进，不能与 que 构成理由。"
+ },
+ {
+  "id": "comparaison-09",
+  "stem": "Je suis ___ déçu qu’on m’avait promis une promotion.",
+  "options": [
+   "d’autant plus",
+   "de plus en plus",
+   "autant"
+  ],
+  "answer": 0,
+  "why": "d’autant plus + 形容词 + que + 理由：因为有人许诺过我晋升，所以我更加失望。de plus en plus 不与 que 引出理由；autant 不修饰形容词（形容词用 aussi）。"
+ },
+ {
+  "id": "comparaison-10",
+  "stem": "___ j’aime vivre en ville, autant je déteste les embouteillages.",
+  "options": [
+   "Autant",
+   "Tant",
+   "Plus"
+  ],
+  "answer": 0,
+  "why": "对称对比结构 Autant…, autant…（一方面……另一方面……），前后都用 autant。Tant 和 Plus 与后半句的 autant 不对应。"
+ },
+ {
+  "id": "comparaison-11",
+  "stem": "Il parle ___ il connaissait déjà la réponse.",
+  "options": [
+   "comme qu’",
+   "tel qu’",
+   "comme s’"
+  ],
+  "answer": 2,
+  "why": "comme si（好像）表示假设比较，si 在 il 前省音：comme s’il connaissait。comme que 不存在；tel que 用于举例或“如……这样”，不能引出这种假设。"
+ },
+ {
+  "id": "comparaison-12",
+  "stem": "Elle donne des ordres comme si elle ___ la directrice.",
+  "options": [
+   "serait",
+   "était",
+   "soit"
+  ],
+  "answer": 1,
+  "why": "comme si 后接直陈式未完成过去时，表示与现实相反的同时性假设：comme si elle était。si 后不用条件式 serait，也不用虚拟式 soit。"
+ },
+ {
+  "id": "comparaison-13",
+  "stem": "Il a réagi comme s’il n’___ rien entendu.",
+  "options": [
+   "aurait",
+   "avait",
+   "ait"
+  ],
+  "answer": 1,
+  "why": "comme si + 愈过去时表示假设的动作发生在主句之前：comme s’il n’avait rien entendu。si 后不用条件式 aurait 或虚拟式 ait。"
+ },
+ {
+  "id": "comparaison-14",
+  "stem": "Les résultats sont ___ que nous les avions prévus.",
+  "options": [
+   "telles",
+   "tels",
+   "tel"
+  ],
+  "answer": 1,
+  "why": "tel que 作形容词，与它所指的名词配合：les résultats（阳性复数）→ tels。telles 是阴性；tel 是单数。"
+ },
+ {
+  "id": "comparaison-15",
+  "stem": "Des pays ___ le Canada ou la Suisse ont adopté cette mesure.",
+  "options": [
+   "telles que",
+   "tel que",
+   "tels que"
+  ],
+  "answer": 2,
+  "why": "tel que 用于举例，与前面的名词 des pays（阳性复数）配合：tels que。telles 是阴性；tel 是单数。"
+ },
+ {
+  "id": "comparaison-16",
+  "stem": "Des villes ___ Lyon et Bordeaux développent le vélo en libre-service.",
+  "options": [
+   "telles que",
+   "tels que",
+   "telle que"
+  ],
+  "answer": 0,
+  "why": "tel que 与前面的名词 des villes（阴性复数）配合：telles que。tels 是阳性；telle 是单数。"
+ },
+ {
+  "id": "comparaison-17",
+  "stem": "Plus le prix est bas, ___ les clients achètent.",
+  "options": [
+   "le plus",
+   "plus",
+   "davantage"
+  ],
+  "answer": 1,
+  "why": "比例结构 Plus…, plus…：前后对应，第二部分也用 plus，不加冠词。le plus 是最高级；davantage 不能用在这个结构中引出后半句。"
+ },
+ {
+  "id": "comparaison-18",
+  "stem": "Au ___ problème, n’hésitez pas à m’appeler.",
+  "options": [
+   "moins",
+   "mineur",
+   "moindre"
+  ],
+  "answer": 2,
+  "why": "au moindre + 名词 = “只要有一点点……”（au moindre problème）。moins 是副词，不能直接修饰名词；mineur 是普通形容词（次要的），不用于这个固定结构，且要放在名词后。"
+ },
+ {
+  "id": "comparaison-19",
+  "stem": "Il y a ___ de touristes cette année que l’an dernier.",
+  "options": [
+   "autant",
+   "aussi",
+   "tant"
+  ],
+  "answer": 0,
+  "why": "比较名词数量用 autant de + 名词 + que。aussi 只修饰形容词和副词；tant de 不用于这种 que 比较（只在否定句中可以替代 autant）。"
+ },
+ {
+  "id": "comparaison-20",
+  "stem": "Elle travaille ___ que son frère, mais elle gagne moins.",
+  "options": [
+   "autant",
+   "aussi",
+   "si"
+  ],
+  "answer": 0,
+  "why": "比较动词的程度用 autant que（Elle travaille autant que lui）。aussi 修饰形容词或副词；si 只在否定句中用于形容词比较。"
+ },
+ {
+  "id": "comparaison-21",
+  "stem": "Je suis d’autant plus inquiet ___ les prévisions sont mauvaises.",
+  "options": [
+   "car",
+   "que",
+   "parce que"
+  ],
+  "answer": 1,
+  "why": "d’autant plus 必须与 que 搭配：d’autant plus inquiet que…。car 和 parce que 不能与 d’autant plus 构成这个固定结构。"
+ },
+ {
+  "id": "comparaison-22",
+  "stem": "Plus les villes s’étendent, ___ les trajets quotidiens sont longs.",
+  "options": [
+   "plus",
+   "mieux",
+   "autant"
+  ],
+  "answer": 0,
+  "why": "比例结构 Plus…, plus…：城市越扩张，通勤越长。mieux 是 bien 的比较级，不能修饰形容词 longs；autant 不与 plus 对应。"
+ },
+ {
+  "id": "comparaison-23",
+  "stem": "Pour moi, c’est de loin ___ solution.",
+  "options": [
+   "la meilleure",
+   "la plus bonne",
+   "la mieux"
+  ],
+  "answer": 0,
+  "why": "bon 的最高级是 le meilleur / la meilleure（与 solution 配合）。不说 la plus bonne；mieux 是副词 bien 的比较级，不修饰名词。"
+ },
+ {
+  "id": "comparaison-24",
+  "stem": "Grâce au nouveau produit, les ventes vont ___ que l’an dernier.",
+  "options": [
+   "meilleur",
+   "plus bien",
+   "mieux"
+  ],
+  "answer": 2,
+  "why": "修饰动词 aller 用副词 bien 的比较级 mieux（销售情况比去年好）。meilleur 是形容词；plus bien 是错误形式。"
+ },
+ {
+  "id": "comparaison-25",
+  "stem": "Moins on fait de sport, ___ on a envie d’en faire.",
+  "options": [
+   "le moins",
+   "plus moins",
+   "moins"
+  ],
+  "answer": 2,
+  "why": "比例结构 Moins…, moins…：运动越少，越不想运动。le moins 是最高级；plus moins 不存在。"
+ },
+ {
+  "id": "comparaison-26",
+  "stem": "Il dépense son argent comme s’il ___ millionnaire.",
+  "options": [
+   "serait",
+   "était",
+   "soit"
+  ],
+  "answer": 1,
+  "why": "comme si + 直陈式未完成过去时：好像他是百万富翁一样。条件式 serait 和虚拟式 soit 都不能放在 si 后面。"
+ },
+ {
+  "id": "comparaison-27",
+  "stem": "Évitez de prendre la voiture ___ possible.",
+  "options": [
+   "autant que",
+   "aussi que",
+   "tant que"
+  ],
+  "answer": 0,
+  "why": "固定表达 autant que possible（尽可能）。aussi que 不能单独使用；tant que 在这里不规范。"
+ },
+ {
+  "id": "comparaison-28",
+  "stem": "Malgré nos relances, il n’a pas fait ___ effort.",
+  "options": [
+   "le moins",
+   "la moindre",
+   "le moindre"
+  ],
+  "answer": 2,
+  "why": "pas le moindre + 名词（一点……也没有），与阳性名词 effort 配合：le moindre。le moins 是副词最高级，不能修饰名词；la moindre 是阴性。"
+ },
+ {
+  "id": "comparaison-29",
+  "stem": "Ce téléphone est ___ performant que l’ancien, mais il est deux fois moins cher.",
+  "options": [
+   "autant",
+   "tant",
+   "aussi"
+  ],
+  "answer": 2,
+  "why": "比较形容词（performant）用 aussi… que。autant 修饰动词或接 de + 名词；tant 只在否定句中替代 aussi / autant。"
+ },
+ {
+  "id": "comparaison-30",
+  "stem": "Je comprends ___ sa décision qu’il avait toujours défendu ce projet.",
+  "options": [
+   "de moins en moins",
+   "d’autant moins",
+   "autant moins"
+  ],
+  "answer": 1,
+  "why": "d’autant moins que + 理由：他一直支持这个项目，所以我更加不理解他的决定。de moins en moins 表示渐进，不与 que 引出理由；autant moins 缺少 d’。"
+ }
+]

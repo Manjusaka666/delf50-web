@@ -4,7 +4,7 @@ import { itemState, questionState } from '../progress.js';
 import { answerChoice } from '../state.js';
 import { html, icon, pad2, frText, LETTERS, MODULE_NAMES, MODULE_FR } from '../ui.js';
 import * as speech from '../speech.js';
-import { dayContext, crumbs, pager, nextLink } from './common.js';
+import { dayContext, crumbs, pager, nextLink, examNotes } from './common.js';
 
 export async function textView(d, module, n) {
   const ctx = await dayContext(d);
@@ -55,7 +55,7 @@ export async function textView(d, module, n) {
         <section class="passage">
           <p class="eyebrow">${MODULE_FR[module]}${item.meta ? ` · ${item.meta.genre}` : ''}${n > due ? ' · 选做' : ''}</p>
           <h1 class="passage-title" lang="fr">${frText(item.title)}</h1>
-          ${item.meta ? html`<p class="passage-meta"><span class="tag">${item.meta.domain}</span><span class="tag">${item.meta.level}</span></p>` : ''}
+          ${item.meta ? html`<p class="passage-meta"><span class="tag">${item.meta.domain}</span><span class="tag">${item.meta.level}</span>${item.meta.plays ? html`<span class="tag soft">${item.meta.plays === 1 ? '考试中只听一遍' : '考试中听两遍'}</span>` : ''}</p>` : ''}
           ${listening ? player() : ''}
           ${listening ? html`<button class="btn ghost small" data-act="script">${icon('eye')} ${showScript ? '隐藏原文' : '显示原文'}</button>` : ''}
           ${showScript ? html`<div class="prose" lang="fr">${body.map((p) => html`<p>${frText(p)}</p>`)}</div>` : html`<p class="muted script-hint">先只听不看，作答后再对照原文。</p>`}
@@ -67,6 +67,7 @@ export async function textView(d, module, n) {
             <p class="score ${st.done ? 'done' : ''}">${st.done ? html`<b>${right}</b> / ${item.questions.length} 正确` : `${st.answered} / ${item.questions.length} 已答`}</p>
           </header>
           <ol class="qs">${item.questions.map(question)}</ol>
+          ${examNotes(module)}
           ${st.done ? html`<div class="qnav end">${nextLink(d, module, n, items.length)}</div>` : html`<p class="hint">每题作答后立即显示解析，答案不可更改。</p>`}
         </section>
       </div>

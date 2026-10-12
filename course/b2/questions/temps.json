@@ -1,0 +1,332 @@
+[
+ {
+  "id": "temps-01",
+  "stem": "Il vaut mieux réserver ___ les prix n’augmentent pour l’été.",
+  "options": [
+   "après que",
+   "avant que",
+   "depuis que"
+  ],
+  "answer": 1,
+  "why": "“价格上涨之前”：avant que + subjonctif，后面可加虚赘 ne（无否定意义）。après que 和 depuis que 接直陈式，不能带虚赘 ne，语义也不通。"
+ },
+ {
+  "id": "temps-02",
+  "stem": "Le médecin restera dans le service jusqu’à ce que son collègue ___.",
+  "options": [
+   "vient",
+   "vienne",
+   "viendra"
+  ],
+  "answer": 1,
+  "why": "jusqu’à ce que（直到……）后接虚拟式：qu’il vienne。vient 是直陈现在时，viendra 是简单将来时，都不能用在 jusqu’à ce que 之后。"
+ },
+ {
+  "id": "temps-03",
+  "stem": "Dès que nous ___ le budget, nous lancerons les travaux.",
+  "options": [
+   "aurons voté",
+   "ayons voté",
+   "aurions voté"
+  ],
+  "answer": 0,
+  "why": "主句是将来时，dès que 引出的动作要先完成，用先将来时 aurons voté。dès que 后接直陈式，不用虚拟式 ayons voté，也不用条件式 aurions voté。"
+ },
+ {
+  "id": "temps-04",
+  "stem": "___ je suis à Lyon, je vais au bureau à vélo.",
+  "options": [
+   "Jusqu’à ce que",
+   "Depuis que",
+   "Avant que"
+  ],
+  "answer": 1,
+  "why": "depuis que + 直陈式，表示从某时起一直持续到现在：自从我在里昂以来。jusqu’à ce que 和 avant que 要接虚拟式（que je sois），这里的 suis 是直陈式。"
+ },
+ {
+  "id": "temps-05",
+  "stem": "Relisez attentivement votre lettre ___ l’envoyer.",
+  "options": [
+   "avant que",
+   "avant de",
+   "avant"
+  ],
+  "answer": 1,
+  "why": "主语相同（您读、您寄），用 avant de + 不定式。avant que 后面要接带主语的虚拟式从句，avant 后面只能接名词（avant l’envoi）。"
+ },
+ {
+  "id": "temps-06",
+  "stem": "___ son séjour à Montréal, la ministre a rencontré des chefs d’entreprise.",
+  "options": [
+   "Lors de",
+   "Lorsque",
+   "Pendant que"
+  ],
+  "answer": 0,
+  "why": "son séjour 是名词，用 lors de + 名词（在……期间，书面）。lorsque 和 pendant que 是连词，后面必须接从句。"
+ },
+ {
+  "id": "temps-07",
+  "stem": "Les enfants jouent dans le jardin ___ leurs parents préparent le repas.",
+  "options": [
+   "pendant que",
+   "pendant",
+   "lors de"
+  ],
+  "answer": 0,
+  "why": "后面是完整从句（主语 + 变位动词），表示同时进行，用 pendant que + 直陈式。pendant 和 lors de 后面只能接名词。"
+ },
+ {
+  "id": "temps-08",
+  "stem": "Aussitôt que le colis ___ livré, vous recevrez un SMS de confirmation.",
+  "options": [
+   "ait été",
+   "aura été",
+   "serait"
+  ],
+  "answer": 1,
+  "why": "主句是将来时，aussitôt que 引导的动作先完成，用被动态先将来时 aura été livré。aussitôt que 接直陈式，不能用虚拟式 ait été 或条件式 serait。"
+ },
+ {
+  "id": "temps-09",
+  "stem": "Nous attendrons ici ___ la pluie ait cessé.",
+  "options": [
+   "depuis que",
+   "dès que",
+   "jusqu’à ce que"
+  ],
+  "answer": 2,
+  "why": "ait cessé 是虚拟式过去时，只能接在 jusqu’à ce que 这类要求虚拟式的连词后面：我们等到雨停为止。depuis que 和 dès que 都要接直陈式。"
+ },
+ {
+  "id": "temps-10",
+  "stem": "___ on fait connaissance avec les personnages, l’intrigue devient plus claire.",
+  "options": [
+   "Au fur et à mesure qu’",
+   "Jusqu’à ce qu’",
+   "Avant qu’"
+  ],
+  "answer": 0,
+  "why": "“随着……，情节越来越清楚”：同步渐进用 au fur et à mesure que + 直陈式（fait）。jusqu’à ce que 和 avant que 要接虚拟式 fasse，语义也不对。"
+ },
+ {
+  "id": "temps-11",
+  "stem": "En attendant que le technicien ___, vous pouvez redémarrer l’ordinateur.",
+  "options": [
+   "vienne",
+   "vient",
+   "viendra"
+  ],
+  "answer": 0,
+  "why": "en attendant que（在等……的时候）后接虚拟式：en attendant qu’il vienne。vient 和 viendra 都是直陈式。"
+ },
+ {
+  "id": "temps-12",
+  "stem": "Il a quitté l’entreprise ___ son projet a été validé.",
+  "options": [
+   "avant que",
+   "jusqu’à ce que",
+   "après que"
+  ],
+  "answer": 2,
+  "why": "a été validé 是直陈式复合过去时，只能接在 après que 后面（规范语法中 après que + 直陈式）。avant que 和 jusqu’à ce que 后面要用虚拟式（ait été validé）。"
+ },
+ {
+  "id": "temps-13",
+  "stem": "Après que les résultats ___ publiés, les étudiants ont pu s’inscrire en master.",
+  "options": [
+   "ont été",
+   "seront",
+   "soient"
+  ],
+  "answer": 0,
+  "why": "规范语法：après que + 直陈式，且从句动作先于主句（复合过去时 ont pu），所以用 ont été publiés。seront 是将来时，与过去的主句矛盾；soient 是虚拟式，après que 后不应使用（口语中常见，但考试中要避免）。"
+ },
+ {
+  "id": "temps-14",
+  "stem": "En attendant ___ une réponse de la banque, j’ai mis mon projet en pause.",
+  "options": [
+   "que j’obtienne",
+   "d’obtenir",
+   "obtenir"
+  ],
+  "answer": 1,
+  "why": "主语相同（我等、我得到），用 en attendant de + 不定式。en attendant que 只在主从句主语不同时使用；en attendant 后面不能直接接不定式（缺少 de）。"
+ },
+ {
+  "id": "temps-15",
+  "stem": "Les musiciens accordent leurs instruments avant que le public ___ dans la salle.",
+  "options": [
+   "n’entre",
+   "n’entre pas",
+   "entre pas"
+  ],
+  "answer": 0,
+  "why": "avant que 后可以加虚赘 ne，它没有否定意义：在观众进场之前。n’entre pas 变成了真正的否定（“观众不进场之前”），意思不通；entre pas 缺少 ne，是不规范的口语否定。"
+ },
+ {
+  "id": "temps-16",
+  "stem": "___ elle est arrivée à Paris, elle n’a jamais cessé de travailler.",
+  "options": [
+   "Depuis qu’",
+   "Jusqu’à ce qu’",
+   "Avant qu’"
+  ],
+  "answer": 0,
+  "why": "est arrivée 是直陈式，且表示持续状态的起点（自从她到巴黎以来），用 depuis que。jusqu’à ce que 和 avant que 后面必须接虚拟式（soit arrivée）。"
+ },
+ {
+  "id": "temps-17",
+  "stem": "Le prix des billets augmente ___ la date du départ se rapproche : plus on attend, plus on paie.",
+  "options": [
+   "lors de",
+   "pendant",
+   "au fur et à mesure que"
+  ],
+  "answer": 2,
+  "why": "“随着出发日期临近，票价不断上涨”：同步渐进，后接从句，用 au fur et à mesure que。lors de 和 pendant 是介词，只能接名词，不能接从句。"
+ },
+ {
+  "id": "temps-18",
+  "stem": "___ son arrivée, le nouveau directeur a réorganisé le service.",
+  "options": [
+   "Dès que",
+   "Dès",
+   "Depuis que"
+  ],
+  "answer": 1,
+  "why": "son arrivée 是名词，用介词 dès + 名词（一……就）。dès que 和 depuis que 是连词，后面要接从句（dès qu’il est arrivé）。"
+ },
+ {
+  "id": "temps-19",
+  "stem": "Je ne signerai rien ___ mon avocat n’ait lu le contrat.",
+  "options": [
+   "après que",
+   "dès que",
+   "avant que"
+  ],
+  "answer": 2,
+  "why": "n’ait lu 是虚拟式过去时，并带有虚赘 ne，这是 avant que 的典型结构：在律师读完合同之前我什么都不签。après que 和 dès que 接直陈式，也不带虚赘 ne。"
+ },
+ {
+  "id": "temps-20",
+  "stem": "Une fois que tu ___ ton inscription, tu pourras accéder à la plateforme.",
+  "options": [
+   "aies validé",
+   "auras validé",
+   "avais validé"
+  ],
+  "answer": 1,
+  "why": "une fois que 和 dès que 一样，后接直陈式；主句是将来时，先完成的动作用先将来时 auras validé。aies validé 是虚拟式，avais validé 是愈过去时，与将来的语境不符。"
+ },
+ {
+  "id": "temps-21",
+  "stem": "Pendant que le gouvernement ___ la réforme, les syndicats préparaient une grève.",
+  "options": [
+   "négocie",
+   "négocierait",
+   "négociait"
+  ],
+  "answer": 2,
+  "why": "pendant que + 直陈式，表示两个过去动作同时进行，两边都用未完成过去时：négociait / préparaient。négocie 是现在时，与过去的主句不协调；négocierait 是条件式，不能用在 pendant que 后。"
+ },
+ {
+  "id": "temps-22",
+  "stem": "Il faudra rester mobilisés ___ la loi soit adoptée.",
+  "options": [
+   "depuis que",
+   "pendant que",
+   "jusqu’à ce que"
+  ],
+  "answer": 2,
+  "why": "soit adoptée 是虚拟式：“直到法律通过为止”，用 jusqu’à ce que。depuis que 和 pendant que 后接直陈式（est adoptée），语义也不符。"
+ },
+ {
+  "id": "temps-23",
+  "stem": "Le comité ne délibérera pas ___ tous les candidats aient été entendus.",
+  "options": [
+   "depuis que",
+   "lors de",
+   "avant que"
+  ],
+  "answer": 2,
+  "why": "aient été entendus 是虚拟式过去时：在所有候选人陈述完之前，委员会不会讨论，用 avant que。depuis que 要接直陈式；lors de 是介词，只能接名词。"
+ },
+ {
+  "id": "temps-24",
+  "stem": "Dès que les beaux jours ___, les terrasses se remplissent.",
+  "options": [
+   "reviendront",
+   "soient revenus",
+   "reviennent"
+  ],
+  "answer": 2,
+  "why": "主句是现在时，表示一种习惯性的规律（每当天气转好），dès que 后也用直陈现在时 reviennent。reviendront 是将来时，与现在时主句不协调；soient revenus 是虚拟式，dès que 后不用虚拟式。"
+ },
+ {
+  "id": "temps-25",
+  "stem": "Elle a appris le chinois ___ elle vivait à Shanghai.",
+  "options": [
+   "lors d’",
+   "jusqu’à ce qu’",
+   "pendant qu’"
+  ],
+  "answer": 2,
+  "why": "vivait 是直陈式未完成过去时，表示背景时间段：她住在上海期间学了中文，用 pendant que。lors de 只能接名词；jusqu’à ce que 要接虚拟式。"
+ },
+ {
+  "id": "temps-26",
+  "stem": "___ l’ouverture du festival, la ville a installé des navettes gratuites.",
+  "options": [
+   "Avant",
+   "Avant que",
+   "Avant de"
+  ],
+  "answer": 0,
+  "why": "l’ouverture 是名词，直接用介词 avant + 名词。avant que 后接虚拟式从句，avant de 后接不定式，都不能直接接名词。"
+ },
+ {
+  "id": "temps-27",
+  "stem": "Les températures baisseront ___ nous nous dirigerons vers le nord.",
+  "options": [
+   "jusqu’à ce que",
+   "au fur et à mesure que",
+   "en attendant que"
+  ],
+  "answer": 1,
+  "why": "“随着我们往北走，气温会逐渐下降”：au fur et à mesure que 后接直陈式，这里用将来时 dirigerons。jusqu’à ce que 和 en attendant que 后都必须接虚拟式（dirigions），dirigerons 不符合。"
+ },
+ {
+  "id": "temps-28",
+  "stem": "En attendant que la salle ___ prête, les invités prenaient un verre dans le hall.",
+  "options": [
+   "est",
+   "soit",
+   "sera"
+  ],
+  "answer": 1,
+  "why": "en attendant que 后接虚拟式：que la salle soit prête。est 和 sera 都是直陈式。"
+ },
+ {
+  "id": "temps-29",
+  "stem": "Aussitôt qu’il ___ la nouvelle, il a appelé sa sœur.",
+  "options": [
+   "a appris",
+   "apprenne",
+   "aura appris"
+  ],
+  "answer": 0,
+  "why": "叙述过去发生的事，主句是复合过去时，aussitôt que 后用直陈式复合过去时 a appris（一得知消息就……）。apprenne 是虚拟式，aussitôt que 后不用；aura appris 是先将来时，只用于将来的语境。"
+ },
+ {
+  "id": "temps-30",
+  "stem": "Je resterai à vos côtés ___ vous n’ayez plus besoin de moi.",
+  "options": [
+   "aussi longtemps que",
+   "pendant que",
+   "jusqu’à ce que"
+  ],
+  "answer": 2,
+  "why": "n’ayez 是虚拟式：“直到您不再需要我为止”，用 jusqu’à ce que。aussi longtemps que 和 pendant que 后接直陈式（n’aurez plus besoin），不能接虚拟式。"
+ }
+]

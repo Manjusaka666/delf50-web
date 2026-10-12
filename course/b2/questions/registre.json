@@ -1,0 +1,332 @@
+[
+ {
+  "id": "registre-01",
+  "stem": "Lettre à un service dont vous ne connaissez pas le responsable : « ___, je me permets de vous écrire au sujet de mon abonnement. »",
+  "options": [
+   "Chère Madame",
+   "Salut à tous",
+   "Madame, Monsieur"
+  ],
+  "answer": 2,
+  "why": "不知道收信人是谁时，正式称呼用 Madame, Monsieur,。Chère Madame 只用于认识的人，且排除了男性收信人；Salut à tous 是口语，绝不能用于正式信件。"
+ },
+ {
+  "id": "registre-02",
+  "stem": "Je vous ___ gré de bien vouloir me transmettre une copie du contrat.",
+  "options": [
+   "saurais",
+   "serais",
+   "aurais"
+  ],
+  "answer": 0,
+  "why": "固定表达 savoir gré à qqn de faire qqch，用条件式表示礼貌：je vous saurais gré de…。serais / aurais 是 être / avoir，与 gré 不构成固定搭配。"
+ },
+ {
+  "id": "registre-03",
+  "stem": "___ agréer, Madame, l’expression de mes salutations distinguées.",
+  "options": [
+   "Voulez",
+   "Veuillent",
+   "Veuillez"
+  ],
+  "answer": 2,
+  "why": "vouloir 的命令式礼貌形式是 veuillez + inf，是信件结尾的标准用法。Voulez 是直陈式，不能单独作命令；Veuillent 是虚拟式第三人称复数。"
+ },
+ {
+  "id": "registre-04",
+  "stem": "Nous nous ___ de vous contacter au sujet d’une facture restée impayée.",
+  "options": [
+   "permettons",
+   "permettent",
+   "permettre"
+  ],
+  "answer": 0,
+  "why": "nous nous permettons de + inf（冒昧……）是正式信件常用表达，动词与主语 nous 配合。permettent 人称错误；permettre 是不定式，不能作谓语。"
+ },
+ {
+  "id": "registre-05",
+  "stem": "___ vous demander un rendez-vous la semaine prochaine ?",
+  "options": [
+   "Peux-je",
+   "Puisse-je",
+   "Puis-je"
+  ],
+  "answer": 2,
+  "why": "pouvoir 第一人称单数倒装时用 puis-je（不可说 peux-je）。Puisse-je 是虚拟式（愿望句形式），不能构成疑问请求。"
+ },
+ {
+  "id": "registre-06",
+  "stem": "Je ___ savoir si le poste de chargé de mission est encore disponible.",
+  "options": [
+   "voudrai",
+   "voudrais",
+   "veuille"
+  ],
+  "answer": 1,
+  "why": "礼貌条件式 je voudrais（我想……）。voudrai 是简单将来时，意为“我将想知道”，不表请求；veuille 是虚拟式，不能作主句谓语。"
+ },
+ {
+  "id": "registre-07",
+  "stem": "Je vous prie d’agréer, Madame, l’expression de mes salutations ___.",
+  "options": [
+   "distinguées",
+   "distingués",
+   "distinguée"
+  ],
+  "answer": 0,
+  "why": "形容词与 salutations（阴性复数）配合 → distinguées。distingués 性别错误；distinguée 数错误。"
+ },
+ {
+  "id": "registre-08",
+  "stem": "Nous vous ___ de bien vouloir nous excuser pour ce désagrément.",
+  "options": [
+   "prenons",
+   "prions",
+   "plaisons"
+  ],
+  "answer": 1,
+  "why": "prier qqn de faire qqch（恳请）是正式信件的固定用法：nous vous prions de bien vouloir…。prenons / plaisons 与 de bien vouloir 不构成搭配。"
+ },
+ {
+  "id": "registre-09",
+  "stem": "Je vous serais très reconnaissant ___ me répondre dans les meilleurs délais.",
+  "options": [
+   "à",
+   "pour",
+   "de"
+  ],
+  "answer": 2,
+  "why": "être reconnaissant à qqn de faire qqch：行为用 de。à 用于引出感谢的对象（人）；pour 后只能接名词，不能接这里的不定式。"
+ },
+ {
+  "id": "registre-10",
+  "stem": "Dans l’___ de votre réponse, je vous prie d’agréer mes salutations respectueuses.",
+  "options": [
+   "attente",
+   "attendant",
+   "attendu"
+  ],
+  "answer": 0,
+  "why": "固定结尾套语 Dans l’attente de votre réponse（名词 attente）。attendant 是现在分词（应为 En attendant…）；attendu 是过去分词，不能在 l’ 后作名词。"
+ },
+ {
+  "id": "registre-11",
+  "stem": "Votre entreprise ___ des stages pendant l’été ?",
+  "options": [
+   "propose-elle",
+   "propose-t-elle",
+   "proposent-elle"
+  ],
+  "answer": 1,
+  "why": "名词主语的复合倒装：名词 + 动词-t-代词。动词以元音结尾时须加 -t-：propose-t-elle。propose-elle 缺 -t-；proposent 人称错误。"
+ },
+ {
+  "id": "registre-12",
+  "stem": "Quand la prochaine assemblée générale ___ lieu ?",
+  "options": [
+   "aura-elle",
+   "aurat-elle",
+   "aura-t-elle"
+  ],
+  "answer": 2,
+  "why": "复合倒装：La prochaine assemblée aura-t-elle lieu ? 以元音结尾的动词与 il/elle 倒装时加 -t-，两边各一个连字符。aura-elle 缺 -t-；aurat-elle 拼写错误。"
+ },
+ {
+  "id": "registre-13",
+  "stem": "Je crains que ce retard n’___ des conséquences sur l’ensemble du projet.",
+  "options": [
+   "a",
+   "aura",
+   "ait"
+  ],
+  "answer": 2,
+  "why": "craindre que + subjonctif，常带赘词 ne（ne explétif，没有否定意义，属于书面语体）→ qu’il n’ait。a / aura 是直陈式。"
+ },
+ {
+  "id": "registre-14",
+  "stem": "Je vous prie de bien ___ me faire parvenir votre réponse avant le 15 mars.",
+  "options": [
+   "veuillez",
+   "vouloir",
+   "vouliez"
+  ],
+  "answer": 1,
+  "why": "je vous prie de + 不定式：bien vouloir 中 vouloir 保持不定式。veuillez 是命令式，不能接在 de 之后；vouliez 是变位形式。"
+ },
+ {
+  "id": "registre-15",
+  "stem": "Je vous écris afin ___ des informations sur la formation continue.",
+  "options": [
+   "que solliciter",
+   "de solliciter",
+   "de solliciter à"
+  ],
+  "answer": 1,
+  "why": "afin de + 不定式（主语相同）；solliciter 是正式语体中的“请求”。afin que 后要接从句；solliciter 是直接及物动词，不能加 à。"
+ },
+ {
+  "id": "registre-16",
+  "stem": "Registre soutenu (au lieu de « plein de ») : nous avons reçu ___ réclamations à ce sujet.",
+  "options": [
+   "plein de",
+   "des tas de",
+   "de nombreuses"
+  ],
+  "answer": 2,
+  "why": "题目要求正式语体：de nombreuses + 名词。plein de 和 des tas de 都是口语/通俗表达，不符合题目要求的书面语体。"
+ },
+ {
+  "id": "registre-17",
+  "stem": "Registre soutenu (au lieu de « boulot ») : je suis à la recherche d’un ___ dans le secteur culturel.",
+  "options": [
+   "job",
+   "emploi",
+   "taf"
+  ],
+  "answer": 1,
+  "why": "正式信件中用 emploi（或 poste）。job 是口语中的英语借词，taf 是俚语，都不符合题目要求。"
+ },
+ {
+  "id": "registre-18",
+  "stem": "Registre soutenu : ___ me paraît tout à fait regrettable de la part d’un service public.",
+  "options": [
+   "Cela",
+   "Ça",
+   "Ç’"
+  ],
+  "answer": 0,
+  "why": "书面/正式语体用 cela；ça 是 cela 的口语形式；ç’ 只在 être 前的口语中出现（ç’a été），在此也不符合语法。"
+ },
+ {
+  "id": "registre-19",
+  "stem": "___-vous assez aimable pour me rappeler dès votre retour ?",
+  "options": [
+   "Soyez",
+   "Seriez",
+   "Sauriez"
+  ],
+  "answer": 1,
+  "why": "礼貌条件式倒装：Seriez-vous assez aimable pour… ?（您能否……）。Soyez 是命令式，不能倒装成疑问句；Sauriez 是 savoir，与 aimable 不搭配。"
+ },
+ {
+  "id": "registre-20",
+  "stem": "Nous accusons ___ de votre courrier du 12 mai dernier.",
+  "options": [
+   "réception",
+   "recevoir",
+   "reçu"
+  ],
+  "answer": 0,
+  "why": "商务固定表达 accuser réception de qqch（确认收到）。accuser recevoir / accuser reçu 都不成立（« reçu » 只在 un accusé de réception 等其他结构里出现）。"
+ },
+ {
+  "id": "registre-21",
+  "stem": "Je vous saurais gré de bien vouloir ___ ma demande lors de la prochaine commission.",
+  "options": [
+   "examiner",
+   "examinez",
+   "examiné"
+  ],
+  "answer": 0,
+  "why": "bien vouloir 后接不定式：bien vouloir examiner。examinez 是变位形式；examiné 是过去分词（发音相同，书面中常写错）。"
+ },
+ {
+  "id": "registre-22",
+  "stem": "Je reste à votre ___ pour tout renseignement complémentaire.",
+  "options": [
+   "dispositions",
+   "disposition",
+   "disposé"
+  ],
+  "answer": 1,
+  "why": "固定结尾套语 Je reste à votre disposition（单数名词，与 votre 一致）。dispositions 与单数限定词 votre 不符；disposé 是形容词/过去分词，不能放在 votre 之后。"
+ },
+ {
+  "id": "registre-23",
+  "stem": "En réponse ___ votre courrier du 5 juin, je vous confirme mon inscription.",
+  "options": [
+   "à",
+   "de",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "固定表达 en réponse à qqch（答复……）。en réponse de / pour 都不成立。"
+ },
+ {
+  "id": "registre-24",
+  "stem": "Dans une lettre au maire de votre commune, la formule d’appel est : « ___, »",
+  "options": [
+   "Cher Monsieur Maire",
+   "Monsieur Maire",
+   "Monsieur le Maire"
+  ],
+  "answer": 2,
+  "why": "对担任职务者的正式称呼：Monsieur le Maire / Madame la Ministre（带定冠词）。Cher 过于亲近；Monsieur Maire 缺定冠词，不合用法。"
+ },
+ {
+  "id": "registre-25",
+  "stem": "Merci de me répondre avant que la commission ne ___ le 30 septembre.",
+  "options": [
+   "se réunit",
+   "se réunisse",
+   "se réunira"
+  ],
+  "answer": 1,
+  "why": "avant que + subjonctif，书面语中常带赘词 ne（无否定意义）。se réunit / se réunira 是直陈式。"
+ },
+ {
+  "id": "registre-26",
+  "stem": "Comment ___ procéder pour obtenir le remboursement de mon billet ?",
+  "options": [
+   "doit-je",
+   "dois-je",
+   "devrais-tu"
+  ],
+  "answer": 1,
+  "why": "倒装疑问：je 的变位 dois + 连字符 + je → dois-je。doit-je 是常见拼写错误（误用第三人称形式）；devrais-tu 与句中的 mon billet（第一人称）不符。"
+ },
+ {
+  "id": "registre-27",
+  "stem": "Nous vous ___ obligés de bien vouloir régler cette facture sous huit jours.",
+  "options": [
+   "serions",
+   "saurions",
+   "aurions"
+  ],
+  "answer": 0,
+  "why": "être obligé à qqn de faire qqch（感激某人做）→ 礼貌条件式 nous vous serions obligés。saurions 混淆了 savoir gré；aurions obligés 不合语法。"
+ },
+ {
+  "id": "registre-28",
+  "stem": "Je vous prie de croire, Madame, en l’assurance de mes sentiments ___.",
+  "options": [
+   "respectueux",
+   "respectueuses",
+   "respectueuse"
+  ],
+  "answer": 0,
+  "why": "形容词修饰 sentiments（阳性复数）→ respectueux。respectueuses / respectueuse 误与 l’assurance（阴性）或 Madame 配合。"
+ },
+ {
+  "id": "registre-29",
+  "stem": "Je me permets de vous ___ au sujet du dossier n° 4521, resté sans réponse.",
+  "options": [
+   "relancez",
+   "relancé",
+   "relancer"
+  ],
+  "answer": 2,
+  "why": "se permettre de + 不定式 → relancer。relancez 是变位形式；relancé 是过去分词（与不定式同音，书面常见错误）。"
+ },
+ {
+  "id": "registre-30",
+  "stem": "Mme Leroy termine sa lettre ainsi : « Je vous serais très ___ de bien vouloir me répondre rapidement. »",
+  "options": [
+   "reconnaissant",
+   "reconnaissants",
+   "reconnaissante"
+  ],
+  "answer": 2,
+  "why": "être reconnaissant(e) de…：形容词与写信人（je = Mme Leroy，阴性单数）配合 → reconnaissante。reconnaissant 是阳性；reconnaissants 是复数，误与 vous 配合。"
+ }
+]

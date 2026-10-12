@@ -1,0 +1,332 @@
+[
+ {
+  "id": "indefinis-01",
+  "stem": "___ participant recevra une attestation à la fin de la formation.",
+  "options": [
+   "Chacun",
+   "Tous",
+   "Chaque"
+  ],
+  "answer": 2,
+  "why": "chaque 是限定词，后接单数名词：chaque participant。chacun 是代词，不能直接接名词；tous 后需冠词和复数（tous les participants）。"
+ },
+ {
+  "id": "indefinis-02",
+  "stem": "Les candidats ont présenté ___ leur projet en dix minutes.",
+  "options": [
+   "chaque",
+   "chacune",
+   "chacun"
+  ],
+  "answer": 2,
+  "why": "chacun 是代词，可放在动词后复指复数主语（每个人各自）。chaque 必须接名词；chacune 是阴性，与 les candidats（阳性）不符。"
+ },
+ {
+  "id": "indefinis-03",
+  "stem": "La plupart des salariés ___ favorables au télétravail.",
+  "options": [
+   "sont",
+   "est",
+   "soit"
+  ],
+  "answer": 0,
+  "why": "la plupart des + 复数名词作主语，动词与名词配合用复数：sont。est 误与 la plupart 的单数形式配合；soit 是虚拟式，无理由使用。"
+ },
+ {
+  "id": "indefinis-04",
+  "stem": "Ne signez pas ___ quel contrat sans le lire attentivement.",
+  "options": [
+   "quiconque",
+   "n’importe",
+   "chaque"
+  ],
+  "answer": 1,
+  "why": "n’importe quel + 名词 = 随便哪个。quiconque 是代词，不能接 quel；chaque quel 不存在。"
+ },
+ {
+  "id": "indefinis-05",
+  "stem": "J’ai lu ___ articles sur ce sujet, mais aucun ne m’a convaincu.",
+  "options": [
+   "chaque",
+   "quiconque",
+   "plusieurs"
+  ],
+  "answer": 2,
+  "why": "plusieurs + 复数名词（好几个），不变。chaque 只接单数名词；quiconque 是代词，不能修饰名词。"
+ },
+ {
+  "id": "indefinis-06",
+  "stem": "___ les habitants du quartier ont été invités à la réunion.",
+  "options": [
+   "Tout",
+   "Tous",
+   "Toutes"
+  ],
+  "answer": 1,
+  "why": "tout 作形容词与名词性数配合：les habitants 为阳性复数 → Tous les habitants。Tout 是单数；Toutes 是阴性。"
+ },
+ {
+  "id": "indefinis-07",
+  "stem": "Ce roman ne m’a pas plu ; je vais en emprunter ___ à la bibliothèque.",
+  "options": [
+   "des autres",
+   "d’autres",
+   "autres"
+  ],
+  "answer": 1,
+  "why": "不定复数“别的几本”用 d’autres（un autre 的复数），与 en 搭配。des autres = de + les autres（指特定的其余那些），在此不对；autres 前缺限定词。"
+ },
+ {
+  "id": "indefinis-08",
+  "stem": "___ peut participer au concours, à condition d’avoir dix-huit ans.",
+  "options": [
+   "N’importe quoi",
+   "Quiconque",
+   "Chaque"
+  ],
+  "answer": 1,
+  "why": "quiconque = 任何人（谁都），作主语，动词用单数。N’importe quoi 指事物；Chaque 是限定词，必须接名词。"
+ },
+ {
+  "id": "indefinis-09",
+  "stem": "En apprenant sa promotion, elle était ___ contente.",
+  "options": [
+   "toute",
+   "tout",
+   "toutes"
+  ],
+  "answer": 0,
+  "why": "tout 作副词（= tout à fait）一般不变，但在以辅音或嘘音 h 开头的阴性形容词前要配合：toute contente。tout 违反此规则；toutes 是复数。"
+ },
+ {
+  "id": "indefinis-10",
+  "stem": "Le ministre a répondu à ___ questions des journalistes, mais pas à toutes.",
+  "options": [
+   "quelque",
+   "quelqu’",
+   "quelques"
+  ],
+  "answer": 2,
+  "why": "quelques + 复数名词 = 几个、一些。quelque 单数形式意为“某个”或作副词“大约”；quelqu’ 只用于 quelqu’un。"
+ },
+ {
+  "id": "indefinis-11",
+  "stem": "___ électeurs ont voté blanc ; d’autres se sont abstenus.",
+  "options": [
+   "Certaines",
+   "Certains",
+   "Certain"
+  ],
+  "answer": 1,
+  "why": "certains + 复数名词（某些），与 électeurs（阳性复数）配合 → Certains。Certaines 性别错误；Certain 缺复数。"
+ },
+ {
+  "id": "indefinis-12",
+  "stem": "Une ___ décision mérite une longue réflexion.",
+  "options": [
+   "tel",
+   "tels",
+   "telle"
+  ],
+  "answer": 2,
+  "why": "tel 作形容词与名词性数配合：une décision（阴性单数）→ une telle décision。tel / tels 性数不符。"
+ },
+ {
+  "id": "indefinis-13",
+  "stem": "Je n’ai lu ___ des rapports qu’on m’a envoyés la semaine dernière.",
+  "options": [
+   "aucun",
+   "aucune",
+   "aucuns"
+  ],
+  "answer": 0,
+  "why": "aucun 作代词（aucun des…）与所指名词性别一致，取单数：rapports 阳性 → aucun。aucune 性别错误；aucuns 只用于少数仅有复数的名词。"
+ },
+ {
+  "id": "indefinis-14",
+  "stem": "Elles sont ___ arrivées en retard à cause de la grève.",
+  "options": [
+   "tout",
+   "tous",
+   "toutes"
+  ],
+  "answer": 2,
+  "why": "tout 作代词，复指主语 elles（她们全部）→ toutes。tout 作副词意为“完全”，与 arrivées 意思不通；tous 性别错误。"
+ },
+ {
+  "id": "indefinis-15",
+  "stem": "La plupart ___ pays européens ont adopté une mesure similaire.",
+  "options": [
+   "des autres",
+   "d’autres",
+   "autres"
+  ],
+  "answer": 0,
+  "why": "la plupart 必须接 de + 定冠词：la plupart des（autres）pays。d’autres 是不定限定词，不能放在 la plupart 后；autres 前缺 des。"
+ },
+ {
+  "id": "indefinis-16",
+  "stem": "Les chaises sont installées, les invités sont arrivés : ___ est prêt pour l’inauguration.",
+  "options": [
+   "tous",
+   "tout",
+   "toute"
+  ],
+  "answer": 1,
+  "why": "tout 作中性代词（一切）作主语，单数阳性：tout est prêt。tous 指复数的人或物，动词须用复数；toute 是阴性，需要所指名词。"
+ },
+ {
+  "id": "indefinis-17",
+  "stem": "Les places sont limitées : ___ d’entre vous doit s’inscrire avant lundi.",
+  "options": [
+   "chaque",
+   "chacun",
+   "tous"
+  ],
+  "answer": 1,
+  "why": "chacun d’entre vous + 单数动词 doit。chaque 必须接名词；tous d’entre vous 不成立，且动词应为复数。"
+ },
+ {
+  "id": "indefinis-18",
+  "stem": "La plupart ___ temps, je travaille depuis chez moi.",
+  "options": [
+   "du",
+   "des",
+   "de"
+  ],
+  "answer": 0,
+  "why": "固定表达 la plupart du temps（大部分时间）。des 用于复数名词；de 缺少定冠词。"
+ },
+ {
+  "id": "indefinis-19",
+  "stem": "La plupart des invités sont ___ avant minuit.",
+  "options": [
+   "partis",
+   "parti",
+   "partie"
+  ],
+  "answer": 0,
+  "why": "la plupart des invités 作主语，动词及 être 后的过去分词都与 invités（阳性复数）配合 → partis。parti / partie 都是单数。"
+ },
+ {
+  "id": "indefinis-20",
+  "stem": "Le festival a attiré ___ trente mille visiteurs cette année.",
+  "options": [
+   "quelque",
+   "quelques",
+   "quelqu’un"
+  ],
+  "answer": 0,
+  "why": "quelque 在数词前是副词，意为“大约”（= environ），不变：quelque trente mille。quelques 是限定词“几个”，不能修饰数词；quelqu’un 是代词。"
+ },
+ {
+  "id": "indefinis-21",
+  "stem": "Elle accepterait n’importe ___ poste, pourvu qu’il soit à Lyon.",
+  "options": [
+   "quel",
+   "quoi",
+   "qui"
+  ],
+  "answer": 0,
+  "why": "n’importe quel + 名词，quel 与 poste（阳性单数）配合。n’importe quoi / n’importe qui 是代词，不能接名词。"
+ },
+ {
+  "id": "indefinis-22",
+  "stem": "Ne publie pas ___ : vérifie tes sources avant de partager une information.",
+  "options": [
+   "n’importe quel",
+   "n’importe quoi",
+   "quiconque"
+  ],
+  "answer": 1,
+  "why": "n’importe quoi 是代词，指事物，可作宾语（乱发东西）。n’importe quel 后必须接名词；quiconque 指人。"
+ },
+ {
+  "id": "indefinis-23",
+  "stem": "Il raconte sa vie privée à ___ ; il n’a aucun sens de la discrétion.",
+  "options": [
+   "n’importe quel",
+   "n’importe qui",
+   "n’importe quoi"
+  ],
+  "answer": 1,
+  "why": "对人用 n’importe qui（随便什么人）。n’importe quel 需接名词；n’importe quoi 指事物，« raconter à n’importe quoi » 不通。"
+ },
+ {
+  "id": "indefinis-24",
+  "stem": "Quiconque ___ le règlement sera exclu du concours.",
+  "options": [
+   "enfreignent",
+   "enfreint",
+   "enfreignant"
+  ],
+  "answer": 1,
+  "why": "quiconque 引出的从句，动词用第三人称单数直陈式：quiconque enfreint。enfreignent 是复数；enfreignant 是现在分词，不能作从句谓语。"
+ },
+ {
+  "id": "indefinis-25",
+  "stem": "Je n’avais jamais vu de ___ embouteillages dans le centre-ville.",
+  "options": [
+   "tels",
+   "telles",
+   "tel"
+  ],
+  "answer": 0,
+  "why": "tel 与名词配合：embouteillages 为阳性复数 → de tels embouteillages。telles 性别错误；tel 缺复数。"
+ },
+ {
+  "id": "indefinis-26",
+  "stem": "En recevant le prix, la jeune réalisatrice était ___ émue.",
+  "options": [
+   "toute",
+   "toutes",
+   "tout"
+  ],
+  "answer": 2,
+  "why": "tout 作副词（完全）在以元音开头的阴性形容词前保持不变：tout émue。只有在辅音开头的阴性形容词前才配合（toute contente）；toutes 是复数。"
+ },
+ {
+  "id": "indefinis-27",
+  "stem": "J’ai contacté plusieurs entreprises ; ___ m’ont répondu dès le lendemain.",
+  "options": [
+   "certains",
+   "certaine",
+   "certaines"
+  ],
+  "answer": 2,
+  "why": "certain(e)s 作代词，与所指名词 entreprises（阴性复数）配合 → certaines。certains 性别错误；certaine 缺复数。"
+ },
+ {
+  "id": "indefinis-28",
+  "stem": "Aucune des solutions proposées n’___ satisfaisante par les experts.",
+  "options": [
+   "est jugée",
+   "sont jugées",
+   "est jugé"
+  ],
+  "answer": 0,
+  "why": "aucune des… 作主语，动词用单数，被动态过去分词与 aucune（阴性）配合 → est jugée。sont jugées 用了复数；est jugé 性别错误。"
+ },
+ {
+  "id": "indefinis-29",
+  "stem": "___ la population est concernée par cette réforme des retraites.",
+  "options": [
+   "Tout",
+   "Toutes",
+   "Toute"
+  ],
+  "answer": 2,
+  "why": "tout 作形容词，与 la population（阴性单数）配合 → Toute la population。Tout 性别错误；Toutes 数错误。"
+ },
+ {
+  "id": "indefinis-30",
+  "stem": "Chacun des participants doit apporter ___ ordinateur portable.",
+  "options": [
+   "leur",
+   "ses",
+   "son"
+  ],
+  "answer": 2,
+  "why": "chacun 是单数代词，后面的物主形容词用 son。leur 与复数主语对应；ses 表示多台电脑，与 ordinateur（单数）不符。"
+ }
+]

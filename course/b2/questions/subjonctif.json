@@ -1,0 +1,332 @@
+[
+ {
+  "id": "subjonctif-01",
+  "stem": "Il faut que tu ___ ce formulaire avant vendredi.",
+  "options": [
+   "remplisses",
+   "remplis",
+   "rempliras"
+  ],
+  "answer": 0,
+  "why": "il faut que + subjonctif。remplir 的 ils 词根 remplissent → que tu remplisses。remplis 是直陈式现在时；rempliras 是将来时，都不能用在 il faut que 后。"
+ },
+ {
+  "id": "subjonctif-02",
+  "stem": "Il faut que nous ___ à l’heure demain matin.",
+  "options": [
+   "sommes",
+   "soyons",
+   "serons"
+  ],
+  "answer": 1,
+  "why": "il faut que + subjonctif；être 的虚拟式 nous soyons。sommes 是直陈式；serons 是将来时，即使有 demain 也不能用。"
+ },
+ {
+  "id": "subjonctif-03",
+  "stem": "Le médecin veut que vous ___ ce médicament deux fois par jour.",
+  "options": [
+   "prenez",
+   "prendrez",
+   "preniez"
+  ],
+  "answer": 2,
+  "why": "vouloir que + subjonctif（主语不同）；prendre → que vous preniez。prenez 是直陈式；prendrez 是将来时。"
+ },
+ {
+  "id": "subjonctif-04",
+  "stem": "Mes parents veulent que je ___ médecin.",
+  "options": [
+   "devienne",
+   "deviens",
+   "deviendrai"
+  ],
+  "answer": 0,
+  "why": "vouloir que + subjonctif；devenir 与 venir 同变位 → que je devienne。deviens 是直陈式；deviendrai 是将来时。"
+ },
+ {
+  "id": "subjonctif-05",
+  "stem": "Nous voulons que la mairie ___ quelque chose contre le bruit.",
+  "options": [
+   "fait",
+   "fasse",
+   "fera"
+  ],
+  "answer": 1,
+  "why": "vouloir que + subjonctif；faire 的虚拟式不规则：qu’elle fasse。fait 是直陈式；fera 是将来时。"
+ },
+ {
+  "id": "subjonctif-06",
+  "stem": "Il faut que vous ___ à la préfecture avec tous vos justificatifs.",
+  "options": [
+   "alliez",
+   "allez",
+   "irez"
+  ],
+  "answer": 0,
+  "why": "il faut que + subjonctif；aller 的虚拟式 que vous alliez（nous/vous 用 all-，其他人称用 aill-）。allez 是直陈式；irez 是将来时。"
+ },
+ {
+  "id": "subjonctif-07",
+  "stem": "Il faut qu’elle ___ ses résultats avant de s’inscrire.",
+  "options": [
+   "sache",
+   "sait",
+   "saura"
+  ],
+  "answer": 0,
+  "why": "il faut que + subjonctif；savoir 的虚拟式不规则：qu’elle sache。sait 是直陈式；saura 是将来时。"
+ },
+ {
+  "id": "subjonctif-08",
+  "stem": "J’ai peur qu’il ne ___ trop tard pour réserver.",
+  "options": [
+   "est",
+   "soit",
+   "sera"
+  ],
+  "answer": 1,
+  "why": "avoir peur que + subjonctif，ne 是赘词（ne explétif），没有否定意义；être → qu’il soit。est 和 sera 是直陈式。"
+ },
+ {
+  "id": "subjonctif-09",
+  "stem": "Je voudrais ___ plus de temps à ma famille.",
+  "options": [
+   "consacrer",
+   "que je consacre",
+   "que je consacrerai"
+  ],
+  "answer": 0,
+  "why": "主句和从句主语相同（je）时，不能用 que + 从句，要用不定式：je voudrais consacrer。que je consacre / que je consacrerai 都是同一主语误用从句。"
+ },
+ {
+  "id": "subjonctif-10",
+  "stem": "Le directeur doute que le projet ___ financé cette année.",
+  "options": [
+   "est",
+   "soit",
+   "sera"
+  ],
+  "answer": 1,
+  "why": "douter que 表示怀疑，后接 subjonctif：que le projet soit financé。est / sera 是直陈式，不符合 douter que 的要求。"
+ },
+ {
+  "id": "subjonctif-11",
+  "stem": "Je regrette que vous n’___ pas pu venir à la réunion.",
+  "options": [
+   "ayez",
+   "avez",
+   "aurez"
+  ],
+  "answer": 0,
+  "why": "regretter que + subjonctif；动作已完成，用过去虚拟式：avoir 的虚拟式 que vous ayez + pu。avez pu 是复合过去时（直陈式）；aurez pu 是先将来时。"
+ },
+ {
+  "id": "subjonctif-12",
+  "stem": "Il faut que nous ___ une décision rapidement.",
+  "options": [
+   "prenions",
+   "prenons",
+   "prendrons"
+  ],
+  "answer": 0,
+  "why": "il faut que + subjonctif；prendre：que nous prenions（与 imparfait 同形，但与直陈式现在时 prenons 不同）。prendrons 是将来时。"
+ },
+ {
+  "id": "subjonctif-13",
+  "stem": "Il faut que chaque élève ___ accès à un ordinateur.",
+  "options": [
+   "a",
+   "ait",
+   "aura"
+  ],
+  "answer": 1,
+  "why": "il faut que + subjonctif；avoir 的虚拟式第三人称单数是 ait。a 是直陈式；aura 是将来时。"
+ },
+ {
+  "id": "subjonctif-14",
+  "stem": "Les habitants ont peur que l’usine ne ___ fermer ses portes.",
+  "options": [
+   "doit",
+   "devra",
+   "doive"
+  ],
+  "answer": 2,
+  "why": "avoir peur que + subjonctif（ne 为赘词）；devoir → qu’elle doive。doit 是直陈式；devra 是将来时。"
+ },
+ {
+  "id": "subjonctif-15",
+  "stem": "Il faudrait que l’entreprise ___ réduire ses émissions de CO2.",
+  "options": [
+   "peut",
+   "puisse",
+   "pourra"
+  ],
+  "answer": 1,
+  "why": "il faudrait que（il faut 的条件式，更委婉）后同样接 subjonctif；pouvoir → qu’elle puisse。peut / pourra 是直陈式。"
+ },
+ {
+  "id": "subjonctif-16",
+  "stem": "Je ne veux pas que mes enfants ___ sur les réseaux sociaux avant quinze ans.",
+  "options": [
+   "vont",
+   "iront",
+   "aillent"
+  ],
+  "answer": 2,
+  "why": "vouloir que（否定式亦然）+ subjonctif；aller → qu’ils aillent。vont 是直陈式；iront 是将来时。"
+ },
+ {
+  "id": "subjonctif-17",
+  "stem": "J’ai peur ___ le dernier train.",
+  "options": [
+   "que je rate",
+   "que je ne rate",
+   "de rater"
+  ],
+  "answer": 2,
+  "why": "主语相同（je）时，avoir peur de + 不定式：j’ai peur de rater。que je rate / que je ne rate 是同一主语误用 que 从句。"
+ },
+ {
+  "id": "subjonctif-18",
+  "stem": "Je doute que ce candidat ___ toute la vérité.",
+  "options": [
+   "dise",
+   "dit",
+   "dira"
+  ],
+  "answer": 0,
+  "why": "douter que + subjonctif；dire → qu’il dise。dit 是直陈式；dira 是将来时。"
+ },
+ {
+  "id": "subjonctif-19",
+  "stem": "Il faut que vous ___ chercher votre colis avant samedi.",
+  "options": [
+   "veniez",
+   "venez",
+   "viendrez"
+  ],
+  "answer": 0,
+  "why": "il faut que + subjonctif；venir → que vous veniez。venez 是直陈式；viendrez 是将来时。"
+ },
+ {
+  "id": "subjonctif-20",
+  "stem": "Je voudrais que nous ___ plus souvent de ce problème en réunion.",
+  "options": [
+   "parlions",
+   "parlons",
+   "parlerons"
+  ],
+  "answer": 0,
+  "why": "主语不同（je / nous），用 vouloir que + subjonctif：que nous parlions（-ions 词尾）。parlons 是直陈式；parlerons 是将来时。"
+ },
+ {
+  "id": "subjonctif-21",
+  "stem": "Je regrette ___ mon poste trop tôt.",
+  "options": [
+   "que j’aie quitté",
+   "d’avoir quitté",
+   "que j’ai quitté"
+  ],
+  "answer": 1,
+  "why": "主语相同（je），regretter de + 不定式；动作已完成，用过去不定式：d’avoir quitté。que j’aie quitté 是同一主语误用从句；que j’ai quitté 还用了直陈式。"
+ },
+ {
+  "id": "subjonctif-22",
+  "stem": "Ma collègue regrette que tu ne ___ pas venu à son pot de départ.",
+  "options": [
+   "es",
+   "seras",
+   "sois"
+  ],
+  "answer": 2,
+  "why": "regretter que + 过去虚拟式；venir 用 être：que tu sois venu。es venu 是直陈式复合过去时；seras venu 是先将来时。"
+ },
+ {
+  "id": "subjonctif-23",
+  "stem": "Je doute que les syndicats ___ accepter cette réforme.",
+  "options": [
+   "veulent",
+   "voudront",
+   "veuillent"
+  ],
+  "answer": 2,
+  "why": "douter que + subjonctif；vouloir 的虚拟式 qu’ils veuillent。veulent 是直陈式；voudront 是将来时。"
+ },
+ {
+  "id": "subjonctif-24",
+  "stem": "Tu veux qu’on ___ au cinéma ce soir ?",
+  "options": [
+   "va",
+   "ira",
+   "aille"
+  ],
+  "answer": 2,
+  "why": "vouloir que + subjonctif，口语中 on ＝ nous，但动词按第三人称单数变：qu’on aille。va 是直陈式；ira 是将来时。"
+ },
+ {
+  "id": "subjonctif-25",
+  "stem": "Les scientifiques regrettent que les gouvernements n’___ pas tenu compte de leurs alertes.",
+  "options": [
+   "ont",
+   "aient",
+   "auront"
+  ],
+  "answer": 1,
+  "why": "regretter que + 过去虚拟式：qu’ils aient tenu compte。ont tenu 是直陈式复合过去时；auront tenu 是先将来时。"
+ },
+ {
+  "id": "subjonctif-26",
+  "stem": "Mes amis ont peur que je n’___ pas le temps de les voir pendant mon séjour.",
+  "options": [
+   "ai",
+   "aurai",
+   "aie"
+  ],
+  "answer": 2,
+  "why": "avoir peur que + subjonctif（这里 ne… pas 是真正的否定）；avoir 的虚拟式第一人称是 que j’aie（与 j’ai 发音相同但拼写不同）。ai 是直陈式；aurai 是将来时。"
+ },
+ {
+  "id": "subjonctif-27",
+  "stem": "Il faut que tu ___ ce que tu veux vraiment avant de signer.",
+  "options": [
+   "sais",
+   "saches",
+   "sauras"
+  ],
+  "answer": 1,
+  "why": "il faut que + subjonctif；savoir → que tu saches。sais 是直陈式；sauras 是将来时。"
+ },
+ {
+  "id": "subjonctif-28",
+  "stem": "Il faut que nous ___ attention aux dépenses cette année.",
+  "options": [
+   "faisons",
+   "ferons",
+   "fassions"
+  ],
+  "answer": 2,
+  "why": "il faut que + subjonctif；faire → que nous fassions。faisons 是直陈式（注意发音和拼写都不同）；ferons 是将来时。"
+ },
+ {
+  "id": "subjonctif-29",
+  "stem": "J’aimerais ___ mon diplôme avant de partir à l’étranger.",
+  "options": [
+   "que j’obtienne",
+   "obtenir",
+   "que j’obtiendrai"
+  ],
+  "answer": 1,
+  "why": "主语相同（je），aimer / vouloir 后直接接不定式：j’aimerais obtenir。que j’obtienne 是同一主语误用从句；que j’obtiendrai 还用了将来时。"
+ },
+ {
+  "id": "subjonctif-30",
+  "stem": "Je me doutais bien qu’il ___ en retard : il y avait des bouchons partout.",
+  "options": [
+   "soit",
+   "ait été",
+   "serait"
+  ],
+  "answer": 2,
+  "why": "se douter que ＝ 猜到、料到，表示几乎确定，后接直陈式；主句为过去时，“过去中的将来”用条件式：qu’il serait。soit / ait été 是虚拟式，只用于 douter que（怀疑）。"
+ }
+]

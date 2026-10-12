@@ -1,0 +1,167 @@
+[
+ {
+  "id": "subjonctifPasse-01",
+  "stem": "Je suis vraiment content que tu ___ ton diplôme du premier coup.",
+  "options": [
+   "as obtenu",
+   "aies obtenu",
+   "aie obtenu"
+  ],
+  "answer": 1,
+  "why": "être content que + subjonctif；获得文凭已经完成 → subjonctif passé = avoir 的虚拟式 + 过去分词：que tu aies obtenu。as obtenu 是直陈式；aie 是第一人称形式。"
+ },
+ {
+  "id": "subjonctifPasse-02",
+  "stem": "Il est dommage qu’elle ___ partie avant la fin du concert.",
+  "options": [
+   "ait",
+   "soit",
+   "est"
+  ],
+  "answer": 1,
+  "why": "il est dommage que + subjonctif；partir 用 être 作助动词 → qu’elle soit partie。ait 是 avoir（助动词错误）；est 是直陈式。"
+ },
+ {
+  "id": "subjonctifPasse-03",
+  "stem": "Bien que le ministre ___ des excuses publiques, la polémique continue.",
+  "options": [
+   "a présenté",
+   "aurait présenté",
+   "ait présenté"
+  ],
+  "answer": 2,
+  "why": "bien que + subjonctif；道歉发生在“争议持续”之前 → subjonctif passé：ait présenté。a présenté 是直陈式；aurait présenté 是条件式，都不能用于 bien que 之后。"
+ },
+ {
+  "id": "subjonctifPasse-04",
+  "stem": "Je regrette que nous ne nous ___ pas rencontrés plus tôt.",
+  "options": [
+   "soyons",
+   "ayons",
+   "sommes"
+  ],
+  "answer": 0,
+  "why": "regretter que + subjonctif；代词式动词 se rencontrer 用 être → que nous nous soyons rencontrés。ayons 助动词错误；sommes 是直陈式。"
+ },
+ {
+  "id": "subjonctifPasse-05",
+  "stem": "C’est le seul candidat qui ___ toutes les épreuves sans aucune faute.",
+  "options": [
+   "aie réussi",
+   "ait réussi",
+   "est réussi"
+  ],
+  "answer": 1,
+  "why": "le seul… qui 后常用虚拟式，动作已完成 → qu’il ait réussi（第三人称 ait）。aie 是第一人称形式；réussir 用 avoir，不能说 est réussi。"
+ },
+ {
+  "id": "subjonctifPasse-06",
+  "stem": "Il faut que vous ___ le formulaire avant vendredi midi.",
+  "options": [
+   "avez rempli",
+   "aviez rempli",
+   "ayez rempli"
+  ],
+  "answer": 2,
+  "why": "il faut que + subjonctif；在截止时间之前完成的动作 → subjonctif passé：que vous ayez rempli。avez rempli / aviez rempli 都是直陈式。"
+ },
+ {
+  "id": "subjonctifPasse-07",
+  "stem": "Avec cette grève, je doute qu’ils ___ arrivés à temps à la gare.",
+  "options": [
+   "aient",
+   "soient",
+   "sont"
+  ],
+  "answer": 1,
+  "why": "douter que + subjonctif；arriver 用 être，且主语为复数 → qu’ils soient arrivés。aient 助动词错误；sont 是直陈式。"
+ },
+ {
+  "id": "subjonctifPasse-08",
+  "stem": "Avant que nous ___ fini la réunion, le directeur était déjà parti.",
+  "options": [
+   "avons",
+   "ayions",
+   "ayons"
+  ],
+  "answer": 2,
+  "why": "avant que + subjonctif；avoir 的虚拟式 nous ayons（没有 i）。avons 是直陈式；ayions 是常见拼写错误。"
+ },
+ {
+  "id": "subjonctifPasse-09",
+  "stem": "C’est la première femme qui ___ élue à la tête de cette université.",
+  "options": [
+   "aie été",
+   "ait été",
+   "soit été"
+  ],
+  "answer": 1,
+  "why": "la première… qui 后可用虚拟式；被动态的 subjonctif passé = ait été + 过去分词。aie 是第一人称；être 的复合形式用 avoir 作助动词，soit été 错误。"
+ },
+ {
+  "id": "subjonctifPasse-10",
+  "stem": "L’employé a quitté son poste sans que personne s’en ___.",
+  "options": [
+   "ait aperçu",
+   "est aperçu",
+   "soit aperçu"
+  ],
+  "answer": 2,
+  "why": "sans que + subjonctif；代词式 s’apercevoir 用 être，personne 视作阳性单数 → s’en soit aperçu。ait aperçu 助动词错误；est aperçu 是直陈式。"
+ },
+ {
+  "id": "subjonctifPasse-11",
+  "stem": "Je suis surpris qu’elle ___ ce poste : elle semblait si motivée.",
+  "options": [
+   "ait refusé",
+   "a refusé",
+   "avait refusé"
+  ],
+  "answer": 0,
+  "why": "être surpris que + subjonctif（情感）；拒绝已发生 → qu’elle ait refusé。a refusé / avait refusé 都是直陈式。"
+ },
+ {
+  "id": "subjonctifPasse-12",
+  "stem": "Bien qu’ils se ___ disputés hier, ils travaillent ensemble aujourd’hui.",
+  "options": [
+   "soient",
+   "aient",
+   "sont"
+  ],
+  "answer": 0,
+  "why": "bien que + subjonctif；代词式 se disputer 用 être → qu’ils se soient disputés（过去分词与复数主语配合）。aient 助动词错误；sont 是直陈式。"
+ },
+ {
+  "id": "subjonctifPasse-13",
+  "stem": "Nous attendrons que tous les participants ___ avant de commencer.",
+  "options": [
+   "soient arrivés",
+   "sont arrivés",
+   "aient arrivé"
+  ],
+  "answer": 0,
+  "why": "attendre que + subjonctif；到达须在“开始”之前完成 → subjonctif passé：soient arrivés（être + 配合）。sont arrivés 是直陈式；arriver 不用 avoir。"
+ },
+ {
+  "id": "subjonctifPasse-14",
+  "stem": "Il est possible que le colis ___ perdu pendant le transport.",
+  "options": [
+   "ait été",
+   "a été",
+   "soit été"
+  ],
+  "answer": 0,
+  "why": "il est possible que + subjonctif；被动态的过去：qu’il ait été perdu。a été 是直陈式；soit été 不存在（être 的复合时态用 avoir）。"
+ },
+ {
+  "id": "subjonctifPasse-15",
+  "stem": "Je regrette sincèrement que vous n’___ pas pu assister à la conférence.",
+  "options": [
+   "avez",
+   "soyez",
+   "ayez"
+  ],
+  "answer": 2,
+  "why": "regretter que + subjonctif；pouvoir 用 avoir → que vous n’ayez pas pu。avez 是直陈式；soyez 助动词错误。"
+ }
+]

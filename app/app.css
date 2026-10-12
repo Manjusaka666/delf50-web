@@ -158,7 +158,13 @@ small { font-size: .82em; }
   .view { margin-left: var(--rail); padding-bottom: 96px; max-width: calc(1280px + var(--rail)); margin-right: 0; }
   .view > .page { max-width: 1160px; margin: 0 auto; }
 }
-@media (max-width: 560px) { .sync span { display: none; } .brand-word { display: none; } }
+.lvl-switch { display: inline-flex; gap: 2px; padding: 3px; margin: 0 auto 0 20px; border-radius: calc(var(--r) + 2px); background: var(--paper-2); }
+.lvl-switch a, .lvl-switch .soon { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; padding: 0 14px; border-radius: var(--r); font: 600 13px/1 var(--sans); letter-spacing: .04em; color: var(--ink-2); }
+.lvl-switch a:hover:not(.on) { background: var(--paper-3); }
+.lvl-switch a.on { background: var(--azur); color: var(--on-azur); }
+.lvl-switch .soon { color: var(--muted); cursor: default; }
+.lvl-switch .soon small { font-size: 10px; font-weight: 500; letter-spacing: 0; }
+@media (max-width: 560px) { .sync span { display: none; } .brand-word { display: none; } .lvl-switch { margin-left: 12px; } .lvl-switch a, .lvl-switch .soon { padding: 0 10px; } .lvl-switch .soon small { display: none; } }
 
 .page.narrow { max-width: 640px; }
 .page-head { margin-bottom: clamp(36px, 5vw, 64px); }
@@ -403,6 +409,18 @@ a.mod:hover .mod-name, a.tile:hover .tile-title { color: var(--azur); }
 .checklist ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
 .checklist li { position: relative; padding-left: 20px; font: 400 17px/1.5 var(--serif); color: var(--ink-2); }
 .checklist li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--abricot); }
+.checklist ol { margin: 0; padding-left: 22px; display: grid; gap: 6px; font: 400 17px/1.5 var(--serif); color: var(--ink-2); }
+.method summary { cursor: pointer; list-style: none; }
+.method summary::-webkit-details-marker { display: none; }
+.method summary::after { content: " +"; }
+.method[open] summary::after { content: " −"; }
+.method li { font: 400 14.5px/1.6 var(--sans); }
+.grid-dl { margin: 0; display: grid; gap: 10px; }
+.grid-dl dt { font: 500 17px/1.3 var(--serif); }
+.grid-dl dd { margin: 0; color: var(--ink-2); font-size: 14px; }
+.trigger { margin: -12px 0 32px; padding: 22px 28px; border-left: 3px solid var(--azur); border-radius: 0 var(--r) var(--r) 0; background: var(--card); }
+.trigger figcaption { margin-bottom: 8px; font: 500 19px/1.3 var(--serif); }
+.version.model summary span:first-child { color: var(--azur); }
 .ed { display: block; width: 100%; min-height: 420px; padding: 32px; border: 0; border-radius: var(--r); background: var(--card); font: 400 17px/1.9 var(--sans); resize: vertical; }
 .ed:focus { outline: 1.5px solid var(--azur); outline-offset: 0; }
 .ed::placeholder { color: var(--muted); }
@@ -455,6 +473,17 @@ kbd { display: inline-grid; place-items: center; min-width: 22px; height: 20px; 
 .recall-ex { margin: 0 0 8px; font: 400 clamp(18px, 1.9vw, 21px)/1.75 var(--sans); }
 span.gap { display: inline-block; border-bottom: 2px solid var(--abricot); color: transparent; margin: 0 2px; line-height: 1.1; }
 .chunk-hit { background: none; color: var(--azur); font-weight: 600; }
+.gap-input { width: var(--w); max-width: 100%; margin: 0 4px; padding: 2px 6px; border: 0; border-bottom: 2px solid var(--abricot); border-radius: var(--r-s) var(--r-s) 0 0; background: var(--paper); color: var(--azur); font: 600 1em/1.4 var(--sans); }
+.gap-input:focus { outline: none; background: var(--abricot-soft); }
+.accents { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+.accents .chip { min-height: 32px; min-width: 36px; justify-content: center; padding: 0 10px; background: var(--paper-2); }
+.accents .chip:hover { background: var(--paper-3); }
+.recall .feedback-head { margin-bottom: 12px; }
+.spell-diff { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; align-items: baseline; margin: 0 0 16px; font-size: 16px; }
+.spell-diff .muted { font-size: 12px; }
+.spell-diff mark { background: none; font-weight: 700; text-decoration: underline 2px; text-underline-offset: 3px; }
+.spell-diff mark.bad { color: var(--terre); }
+.spell-diff mark.ok { color: var(--sauge); }
 .recall-back { margin-top: 28px; padding: 24px 26px; border-radius: var(--r); background: var(--paper); }
 .recall-fr { display: flex; align-items: center; gap: 16px; margin: 0 0 8px; font: 500 clamp(28px, 3vw, 38px)/1.2 var(--serif); }
 .recall-fr .icon-btn { flex: none; background: var(--card); }

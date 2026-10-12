@@ -1,0 +1,332 @@
+[
+ {
+  "id": "participes-01",
+  "stem": "C’est en ___ qu’on devient forgeron.",
+  "options": [
+   "forgé",
+   "forgeant",
+   "forger"
+  ],
+  "answer": 1,
+  "why": "en + 现在分词构成副动词，表示方式：通过打铁才能成为铁匠。en 后面不接过去分词，也不接不定式。"
+ },
+ {
+  "id": "participes-02",
+  "stem": "Les étudiants ___ un bon niveau d’anglais peuvent partir en échange.",
+  "options": [
+   "ayants",
+   "ayant",
+   "ont"
+  ],
+  "answer": 1,
+  "why": "现在分词 ayant = qui ont，用来修饰名词，永远不变，不加 s。ayants 错在配合；ont 是变位动词，句中已有谓语 peuvent，不能再直接接一个变位动词。"
+ },
+ {
+  "id": "participes-03",
+  "stem": "Ce trajet quotidien de deux heures est vraiment ___.",
+  "options": [
+   "fatiguant",
+   "fatigué",
+   "fatigant"
+  ],
+  "answer": 2,
+  "why": "表示性质（让人累的）用动词形容词 fatigant（无 u）。fatiguant 是现在分词，只能接宾语使用；fatigué 意思是“疲劳的”，路程本身不会“疲劳”。"
+ },
+ {
+  "id": "participes-04",
+  "stem": "___ ses collègues avec ses plaintes, il a fini par être isolé.",
+  "options": [
+   "Fatiguant",
+   "Fatigant",
+   "Fatigants"
+  ],
+  "answer": 0,
+  "why": "后面有宾语 ses collègues，这是表示动作的现在分词，拼作 fatiguant（保留 u），不变。fatigant 是形容词，不能带宾语；fatigants 是形容词的复数。"
+ },
+ {
+  "id": "participes-05",
+  "stem": "Les arguments de l’avocate étaient très ___.",
+  "options": [
+   "convaincants",
+   "convainquants",
+   "convaincant"
+  ],
+  "answer": 0,
+  "why": "表示性质的动词形容词拼作 convaincant（c），并与 arguments 配合：convaincants。convainquant 是现在分词拼法；convaincant 没有配合。"
+ },
+ {
+  "id": "participes-06",
+  "stem": "___ ses interlocuteurs un par un, la négociatrice a obtenu un accord.",
+  "options": [
+   "Convaincant",
+   "Convaincants",
+   "Convainquant"
+  ],
+  "answer": 2,
+  "why": "后接宾语 ses interlocuteurs，表示动作，用现在分词 convainquant（qu），不变。convaincant(s) 是形容词拼法，不能接宾语。"
+ },
+ {
+  "id": "participes-07",
+  "stem": "On lui reproche d’être ___ dans son travail.",
+  "options": [
+   "négligeant",
+   "négligeante",
+   "négligent"
+  ],
+  "answer": 2,
+  "why": "表示性格特点（粗心的）用形容词 négligent（-ent）。négligeant 是现在分词，要接宾语；négligeante 不存在。"
+ },
+ {
+  "id": "participes-08",
+  "stem": "___ ses devoirs pendant des semaines, il a pris beaucoup de retard.",
+  "options": [
+   "Négligent",
+   "Négligeant",
+   "Négligents"
+  ],
+  "answer": 1,
+  "why": "后接宾语 ses devoirs，表示动作，用现在分词 négligeant（保留 e 以保持 [ʒ] 音），不变。négligent(s) 是形容词，不能带宾语。"
+ },
+ {
+  "id": "participes-09",
+  "stem": "Tout en ___ le projet, la maire reconnaît qu’il coûtera cher.",
+  "options": [
+   "soutenu",
+   "soutenant",
+   "soutenir"
+  ],
+  "answer": 1,
+  "why": "tout en + 现在分词（副动词）表示对立或同时：一边支持，一边承认它很贵。en 后面不能接过去分词或不定式。"
+ },
+ {
+  "id": "participes-10",
+  "stem": "___ plus tôt, vous éviterez les embouteillages.",
+  "options": [
+   "En partant",
+   "En partir",
+   "En parti"
+  ],
+  "answer": 0,
+  "why": "副动词 en + 现在分词可以表示条件：如果早点出发，您就能避开堵车（= si vous partez plus tôt）。en 后不接不定式 partir，也不接过去分词 parti。"
+ },
+ {
+  "id": "participes-11",
+  "stem": "Les derniers chiffres du chômage sont plutôt ___.",
+  "options": [
+   "encourageants",
+   "encourageant",
+   "encourageantes"
+  ],
+  "answer": 0,
+  "why": "动词形容词要与名词配合：les chiffres 是阳性复数，写 encourageants。encourageant 没有配合；encourageantes 是阴性。"
+ },
+ {
+  "id": "participes-12",
+  "stem": "Toute personne ___ le règlement sera exclue de la salle.",
+  "options": [
+   "ne respectante pas",
+   "ne respectant pas",
+   "respectant ne pas"
+  ],
+  "answer": 1,
+  "why": "现在分词 = qui ne respecte pas，否定时 ne… pas 包围分词，分词不变。respectante 错在配合；ne pas 放在分词后是错误的位置。"
+ },
+ {
+  "id": "participes-13",
+  "stem": "En montant dans le métro, ___.",
+  "options": [
+   "j’ai fait tomber mon téléphone",
+   "mon téléphone est tombé",
+   "le téléphone m’a échappé"
+  ],
+  "answer": 0,
+  "why": "副动词的逻辑主语必须与主句主语相同：上地铁的是“我”，所以主句主语也必须是 je。另外两项的主语是手机，等于说“手机上地铁”，是典型的错误。"
+ },
+ {
+  "id": "participes-14",
+  "stem": "Les deux candidats défendent des opinions très ___.",
+  "options": [
+   "différantes",
+   "différentes",
+   "différant"
+  ],
+  "answer": 1,
+  "why": "表示性质（不同的）用形容词 différent，并与 opinions 配合：différentes。différant 是现在分词（différer 的分词），后面一般要接补语，也不配合；différantes 不存在。"
+ },
+ {
+  "id": "participes-15",
+  "stem": "Les avis ___ d’un expert à l’autre, il est difficile de conclure.",
+  "options": [
+   "différents",
+   "différent",
+   "différant"
+  ],
+  "answer": 2,
+  "why": "这里是独立分词结构，表示原因（= comme les avis diffèrent），用现在分词 différant，不变。différents 是形容词，不能这样构成从句；différent 是形容词，不是动词（动词变位应写 diffèrent）。"
+ },
+ {
+  "id": "participes-16",
+  "stem": "La semaine ___ l’élection, les sondages se sont multipliés.",
+  "options": [
+   "précédente",
+   "précédent",
+   "précédant"
+  ],
+  "answer": 2,
+  "why": "后面有宾语 l’élection（在选举之前的那一周），是动词的现在分词 précédant，不变。précédente / précédent 是形容词（上一个），不能带宾语。"
+ },
+ {
+  "id": "participes-17",
+  "stem": "L’année ___, le taux de chômage avait légèrement baissé.",
+  "options": [
+   "précédente",
+   "précédant",
+   "précédent"
+  ],
+  "answer": 0,
+  "why": "没有宾语，表示“前一年”，用形容词 précédent 并与 l’année（阴性）配合：précédente。précédant 是现在分词，需要宾语；précédent 没有配合。"
+ },
+ {
+  "id": "participes-18",
+  "stem": "Il est arrivé au bureau ___, car il avait raté son bus.",
+  "options": [
+   "en courant",
+   "en courir",
+   "couru"
+  ],
+  "answer": 0,
+  "why": "表示方式（跑着到达）用副动词 en courant，主语与主句相同。en courir 不存在；couru 是过去分词，不能表示方式。"
+ },
+ {
+  "id": "participes-19",
+  "stem": "Les personnes ___ en zone rurale dépendent souvent de la voiture.",
+  "options": [
+   "vivantes",
+   "vivent",
+   "vivant"
+  ],
+  "answer": 2,
+  "why": "现在分词 vivant = qui vivent，不变。vivantes 是形容词（活着的），意思不对；vivent 是变位动词，句子已有谓语 dépendent。"
+ },
+ {
+  "id": "participes-20",
+  "stem": "Ce ___ de vélos emploie deux cents personnes en Bretagne.",
+  "options": [
+   "fabriquant",
+   "fabricant",
+   "fabriquants"
+  ],
+  "answer": 1,
+  "why": "名词“制造商”拼作 le fabricant（c）。fabriquant 是动词 fabriquer 的现在分词；fabriquants 是错误拼写。"
+ },
+ {
+  "id": "participes-21",
+  "stem": "C’est un métier très ___ qui demande beaucoup de patience.",
+  "options": [
+   "exigent",
+   "exigeant",
+   "exigeante"
+  ],
+  "answer": 1,
+  "why": "形容词“要求高的”拼作 exigeant，与 métier（阳性单数）配合。exigent 是动词 exiger 的第三人称复数变位；exigeante 是阴性。"
+ },
+ {
+  "id": "participes-22",
+  "stem": "Ses propos, ___ la colère des internautes, ont été rapidement retirés.",
+  "options": [
+   "provocants",
+   "provoquant",
+   "provocant"
+  ],
+  "answer": 1,
+  "why": "后接宾语 la colère，表示动作，用现在分词 provoquant（qu），不变。provocant(s) 是形容词（挑衅的），不能带宾语。"
+ },
+ {
+  "id": "participes-23",
+  "stem": "Le comportement de ce nouveau voisin est assez ___.",
+  "options": [
+   "intriguant",
+   "intrigants",
+   "intrigant"
+  ],
+  "answer": 2,
+  "why": "表示性质（让人好奇的）用形容词 intrigant（无 u），与 comportement（阳性单数）配合。intriguant 是现在分词拼法；intrigants 是复数。"
+ },
+ {
+  "id": "participes-24",
+  "stem": "Elle a beaucoup progressé en français ___ des séries sous-titrées.",
+  "options": [
+   "regardé",
+   "en regardant",
+   "en regarder"
+  ],
+  "answer": 1,
+  "why": "表示方式（通过看剧集）用副动词 en regardant，主语与主句相同。regardé 是过去分词；en 后不接不定式。"
+ },
+ {
+  "id": "participes-25",
+  "stem": "___ travaillant à plein temps, elle a réussi à reprendre ses études.",
+  "options": [
+   "Tout",
+   "En tout",
+   "Tout en"
+  ],
+  "answer": 2,
+  "why": "tout en + 现在分词强调两个动作同时进行，常带对立意味：尽管全职工作，她仍然重新开始读书。单独的 tout 不能引出副动词；en tout 意为“总共”。"
+ },
+ {
+  "id": "participes-26",
+  "stem": "___ trop malade pour venir, il s’est excusé par courriel.",
+  "options": [
+   "Été",
+   "Être",
+   "Étant"
+  ],
+  "answer": 2,
+  "why": "现在分词 étant 引出原因（= comme il était malade），主语与主句相同。été 是过去分词，不能单独使用；不定式 être 不能这样引出原因。"
+ },
+ {
+  "id": "participes-27",
+  "stem": "Dans le métro, il régnait une chaleur ___.",
+  "options": [
+   "suffocante",
+   "suffoquante",
+   "suffocant"
+  ],
+  "answer": 0,
+  "why": "形容词“令人窒息的”拼作 suffocant（c），与 chaleur（阴性）配合：suffocante。suffoquante 混入了现在分词拼法（suffoquant）；suffocant 没有配合。"
+ },
+ {
+  "id": "participes-28",
+  "stem": "Le rapport juge la direction ___ dans la gestion des risques.",
+  "options": [
+   "négligente",
+   "négligeante",
+   "négligent"
+  ],
+  "answer": 0,
+  "why": "表示性质的形容词 négligent，作 la direction 的表语，要配合成阴性：négligente。négligeante 混入了现在分词拼法；négligent 没有配合。"
+ },
+ {
+  "id": "participes-29",
+  "stem": "Il s’est coupé ___ ce matin.",
+  "options": [
+   "en rasant se",
+   "se en rasant",
+   "en se rasant"
+  ],
+  "answer": 2,
+  "why": "代词式动词的副动词：代词放在 en 和现在分词之间：en se rasant。代词放在分词后或 en 前都是错误的语序。"
+ },
+ {
+  "id": "participes-30",
+  "stem": "Tout en ___ des progrès de la science, le philosophe en souligne les dangers.",
+  "options": [
+   "se réjouissant",
+   "réjouissant",
+   "se réjouir"
+  ],
+  "answer": 0,
+  "why": "se réjouir de 是代词式动词，副动词保留反身代词：tout en se réjouissant（与主语 le philosophe 一致）。réjouissant 缺少 se，意思变成“使高兴”；se réjouir 是不定式，不能放在 en 后。"
+ }
+]

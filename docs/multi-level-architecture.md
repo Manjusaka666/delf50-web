@@ -1,6 +1,6 @@
 # 多级别（B1 → B2 / C1 / C2）数据存储架构
 
-当前网站只有 DELF B1 内容，但存储层已经按「多课程」设计并上线（迁移 `0004_courses.sql`）。以后加入 B2、C1、C2 时，**不需要改数据库结构，也不需要搬迁已有数据**。本文说明设计、已落地的部分，以及新增级别时的步骤。
+网站现有 DELF B1（`delf-b1`）和 DELF B2（`delf-b2`）两门课程，DALF C1 在级别切换中预留为“即将开放”。存储层按「多课程」设计（迁移 `0004_courses.sql`），加入 B2 时**没有改数据库结构，也没有搬迁已有数据**；加入 C1、C2 同样如此。本文说明设计、已落地的部分，以及新增级别时的步骤。
 
 ## 1. 核心概念
 
@@ -53,13 +53,20 @@ Neon Auth 账号（一人一个，跨所有级别）
 
 ## 4. 客户端（已上线）
 
-`app/api.js` 把当前课程（`delf-b1`）附加到每个学习请求上（Neon Auth 的请求不附加）。加载、实时保存、多设备刷新、录音上传都按课程进行，内存中的应用状态也只属于当前课程。
+* `app/course.js` 的 `LEVELS` 列出可切换的级别及其数据根目录：`delf-b1` → `course/`，`delf-b2` → `course/b2/`，`dalf-c1` 尚无目录（显示为“即将开放”）。每门课程的数据和题库各自缓存。
+* `app/api.js` 把当前课程附加到每个学习请求上（Neon Auth 的请求不附加）。加载、实时保存、多设备刷新、录音上传都按课程进行，内存中的应用状态也只属于当前课程。
+* 地址带级别：`#/b2/day/3`。应用内的链接不带级别时沿用当前级别，并改写为带级别的地址；不带级别的旧书签打开 B1。登录后打开地址中的级别，否则打开最近保存过的级别（`GET courses` 按更新时间排序）。
+* 切换级别前会等待当前级别的所有改动保存完毕（`whenSaved`），再载入新级别的数据和记录；保存失败时不切换。
+* 课程可以重命名模块（`course.json` 的 `labels`，例如 B2 的 application 模块为“转述 · Médiation”），并各自提供考试结构（`exam`）、评分维度（`rubrics`）、考试方法（`methods`）和拓展资源（`resources`）。
 
 ## 5. 新增一个级别的步骤（以 B2 为例）
 
-1. **内容**：B2 的课程数据照 `course/` 的结构编写（例如 `courses/delf-b2/course.json`、`grammar.json`、`days/NN.json`），用 `scripts/check-course.js` 校验。内容 ID 在 B2 内部唯一即可，不必避开 B1。
-2. **前端**：`app/course.js` 的数据路径和 `app/api.js` 的课程 ID 按所选课程取值（可以按路径区分，例如 `/b2/`，也可以做级别切换）。
-3. **注册**：在 `api/_lib/courses.js` 加一行 `'delf-b2': { level: 'B2', exam: 'DELF', days: …, title: … }`。
+B2 已按以下步骤上线；C1 照做即可：
+
+1. **内容**：照 `course/` 的结构编写（C1：`course/c1/course.json`、`grammar.json`、`questions/`、`days/NN.json`），用 `node scripts/check-course.js course/c1` 校验，并加入 `scripts/verify.js` 的 `ROOTS`。内容 ID 在课程内部唯一即可，不必避开其他级别。
+2. **前端**：在 `app/course.js` 的 `LEVELS` 中给 `dalf-c1` 填上 `root: '/course/c1'`。
+3. **注册**：在 `api/_lib/courses.js` 加一行 `'dalf-c1': { level: 'C1', exam: 'DALF', days: …, title: … }`。
+   B1、B2 都是 50 天；若 C1 的天数不同，把 `app/state.js` 的 `DAYS` 改为取当前课程的 `days`。
 4. **新题型**：如果 B2 应用写入了 B1 没有的记录类型（例如 S 中新增的一个字段），在 `api/_lib/records.js` 的 `COLLECTIONS` 里加一项，并新建迁移创建对应的表（同样带 `course`，主键含 course）。已有的 B1 表不受影响。
 5. **验证**：`scripts/verify-cloud.js` 已包含跨课程隔离测试（同一账号、同样的题目 ID、同样的录音 ID 在两门课中互不干扰）；为新课程加上它自己的往返测试，并在 Vercel Sandbox 中对 Neon 测试分支运行。
 

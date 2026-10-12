@@ -1,0 +1,332 @@
+[
+ {
+  "id": "modalisation-01",
+  "stem": "Il se peut que le train ___ du retard à cause de la neige.",
+  "options": [
+   "a",
+   "aura",
+   "ait"
+  ],
+  "answer": 2,
+  "why": "il se peut que 表示可能性，后接虚拟式：qu’il ait du retard。a 和 aura 都是直陈式。"
+ },
+ {
+  "id": "modalisation-02",
+  "stem": "Après réflexion, il me semble que tu ___ raison.",
+  "options": [
+   "as",
+   "aies",
+   "avoir"
+  ],
+  "answer": 0,
+  "why": "il me semble que（我觉得）在肯定句中表示个人看法，后接直陈式：tu as raison。aies 是虚拟式，用于 il semble que 或否定的 il ne me semble pas que；avoir 是不定式，不能作从句谓语。"
+ },
+ {
+  "id": "modalisation-03",
+  "stem": "Il est certain que les prix ___ encore augmenter cette année.",
+  "options": [
+   "vont",
+   "aillent",
+   "allant"
+  ],
+  "answer": 0,
+  "why": "il est certain que 表示确定，后接直陈式：les prix vont augmenter。aillent 是虚拟式；allant 是现在分词，不能作从句谓语。"
+ },
+ {
+  "id": "modalisation-04",
+  "stem": "Il est peu probable que le chantier ___ avant 2030.",
+  "options": [
+   "sera terminé",
+   "est terminé",
+   "soit terminé"
+  ],
+  "answer": 2,
+  "why": "il est peu probable que 表示怀疑，后接虚拟式：qu’il soit terminé。sera terminé 和 est terminé 都是直陈式（il est probable que 才接直陈式）。"
+ },
+ {
+  "id": "modalisation-05",
+  "stem": "« Il viendra sans doute à la réunion. » Cette phrase signifie : ___",
+  "options": [
+   "Il viendra certainement, c’est sûr.",
+   "Il viendra probablement.",
+   "Il ne viendra pas."
+  ],
+  "answer": 1,
+  "why": "sans doute 在现代法语中意为“大概、可能”（= probablement），不是“毫无疑问”。表示确定要说 sans aucun doute；第三项与原意相反。"
+ },
+ {
+  "id": "modalisation-06",
+  "stem": "« C’est sans aucun doute la meilleure solution. » Le locuteur est ___.",
+  "options": [
+   "plutôt hésitant",
+   "en désaccord",
+   "tout à fait certain"
+  ],
+  "answer": 2,
+  "why": "sans aucun doute = 毫无疑问，表示说话人完全确定。plutôt hésitant 对应 sans doute / peut-être；en désaccord 与原句意思相反。"
+ },
+ {
+  "id": "modalisation-07",
+  "stem": "Paul n’est toujours pas arrivé : il ___ rater son train.",
+  "options": [
+   "devra",
+   "a dû",
+   "aurait dû"
+  ],
+  "answer": 1,
+  "why": "devoir 的复合过去时表示对过去事情的推测：il a dû rater son train（他大概错过了火车）。devra 是将来时，与“还没到”的过去事件不符；aurait dû rater 意为“本应错过”，意思不通。"
+ },
+ {
+  "id": "modalisation-08",
+  "stem": "« Elle a dû oublier le rendez-vous. » Cette phrase signifie : ___",
+  "options": [
+   "Elle a été obligée d’oublier le rendez-vous.",
+   "Elle a probablement oublié le rendez-vous.",
+   "Elle oubliera sûrement le rendez-vous."
+  ],
+  "answer": 1,
+  "why": "这里的 devoir 表示推测（epistémique），不表示义务：她大概忘了约会。第二项把它理解为义务；第三项把时间变成了将来。"
+ },
+ {
+  "id": "modalisation-09",
+  "stem": "D’après des sources non confirmées, l’incendie ___ par un court-circuit.",
+  "options": [
+   "aurait causé",
+   "aurait été causé",
+   "serait été causé"
+  ],
+  "answer": 1,
+  "why": "新闻中未证实的信息用 conditionnel de prudence；火灾是“被引起的”，用被动态条件式过去时：aurait été causé。aurait causé 是主动态（火灾引起了短路），意思颠倒；être 的复合时态用 avoir，不能说 serait été。"
+ },
+ {
+  "id": "modalisation-10",
+  "stem": "___ les experts, la crise sera de courte durée.",
+  "options": [
+   "En croire",
+   "À y croire",
+   "À en croire"
+  ],
+  "answer": 2,
+  "why": "固定表达 à en croire + 信息来源（如果相信……的话），表示说话人对信息有所保留。en croire 缺少 à；à y croire 不是这个固定表达。"
+ },
+ {
+  "id": "modalisation-11",
+  "stem": "___, le magasin est fermé : toutes les lumières sont éteintes.",
+  "options": [
+   "Apparemment",
+   "Apparent",
+   "Apparence"
+  ],
+  "answer": 0,
+  "why": "副词 apparemment（看起来、表面上）修饰整个句子，表示根据迹象作出的推测。apparent 是形容词，apparence 是名词，都不能这样单独作状语。"
+ },
+ {
+  "id": "modalisation-12",
+  "stem": "Il ne me semble pas que ce ___ une bonne idée de partir maintenant.",
+  "options": [
+   "est",
+   "sera",
+   "soit"
+  ],
+  "answer": 2,
+  "why": "il me semble que 在否定句中表示怀疑，后接虚拟式：il ne me semble pas que ce soit…。est 和 sera 是直陈式，只用于肯定的 il me semble que。"
+ },
+ {
+  "id": "modalisation-13",
+  "stem": "Tout le monde est disponible ce jour-là : il est ___ que la réunion soit reportée.",
+  "options": [
+   "probable",
+   "certain",
+   "peu probable"
+  ],
+  "answer": 2,
+  "why": "上下文说明大家都有空，所以“不太可能推迟”，而且从句用的是虚拟式 soit，必须接 il est peu probable que。il est probable que 和 il est certain que 后接直陈式，意思也与上下文矛盾。"
+ },
+ {
+  "id": "modalisation-14",
+  "stem": "Avec ces orages, il n’est pas certain que le festival ___ lieu cette année.",
+  "options": [
+   "a",
+   "aura",
+   "ait"
+  ],
+  "answer": 2,
+  "why": "il est certain que 接直陈式，但否定后 il n’est pas certain que 表示怀疑，接虚拟式：qu’il ait lieu。a 和 aura 都是直陈式。"
+ },
+ {
+  "id": "modalisation-15",
+  "stem": "Si les ventes continuent de baisser, il se peut que nous ___ obligés de fermer.",
+  "options": [
+   "sommes",
+   "soyons",
+   "serons"
+  ],
+  "answer": 1,
+  "why": "il se peut que + 虚拟式：que nous soyons obligés。sommes 和 serons 都是直陈式。"
+ },
+ {
+  "id": "modalisation-16",
+  "stem": "Les volets sont fermés depuis une semaine : nos voisins ___ être partis en vacances.",
+  "options": [
+   "doit",
+   "doivent",
+   "devons"
+  ],
+  "answer": 1,
+  "why": "devoir + 不定式过去时表示对已发生事情的推测（他们大概已经去度假了），动词与主语 nos voisins 配合：doivent。doit 是单数；devons 是第一人称复数。"
+ },
+ {
+  "id": "modalisation-17",
+  "stem": "À en croire la météo, il ___ neiger demain en montagne.",
+  "options": [
+   "doive",
+   "devant",
+   "devrait"
+  ],
+  "answer": 2,
+  "why": "devoir 的条件式 devrait 表示有所保留的预测（应该会下雪），与 à en croire 呼应。doive 是虚拟式，不能用在独立句中；devant 是现在分词。"
+ },
+ {
+  "id": "modalisation-18",
+  "stem": "Selon un bilan provisoire, le séisme ___ fait plus de cent victimes.",
+  "options": [
+   "aurait",
+   "avait",
+   "aurais"
+  ],
+  "answer": 0,
+  "why": "临时、未经核实的数字用 conditionnel de prudence（条件式过去时）：aurait fait。avait fait 是愈过去时，不表示保留；aurais 是第一、二人称单数。"
+ },
+ {
+  "id": "modalisation-19",
+  "stem": "Il me semble que ce restaurant ___ fermé le lundi.",
+  "options": [
+   "est",
+   "soit",
+   "être"
+  ],
+  "answer": 0,
+  "why": "肯定句 il me semble que 表达个人看法，后接直陈式：est。soit 是虚拟式；être 是不定式。"
+ },
+ {
+  "id": "modalisation-20",
+  "stem": "Selon plusieurs témoins, le suspect ___ en direction de la gare.",
+  "options": [
+   "s’aurait enfui",
+   "se serait enfuie",
+   "se serait enfui"
+  ],
+  "answer": 2,
+  "why": "conditionnel de prudence 转述未证实的信息；s’enfuir 是代词式动词，用 être 作助动词：se serait enfui，分词与阳性主语 le suspect 配合。代词式动词不用 avoir；enfuie 是阴性配合。"
+ },
+ {
+  "id": "modalisation-21",
+  "stem": "Face aux critiques, il est possible que la mairie ___ sa décision.",
+  "options": [
+   "revoie",
+   "revoit",
+   "reverra"
+  ],
+  "answer": 0,
+  "why": "il est possible que + 虚拟式：que la mairie revoie。revoit 是直陈现在时；reverra 是将来时，都不能用在 il est possible que 后。"
+ },
+ {
+  "id": "modalisation-22",
+  "stem": "Il est évident que ce modèle économique ne ___ pas durable.",
+  "options": [
+   "soit",
+   "est",
+   "être"
+  ],
+  "answer": 1,
+  "why": "il est évident que 表示确定，后接直陈式：ne… est pas。soit 是虚拟式；être 是不定式。"
+ },
+ {
+  "id": "modalisation-23",
+  "stem": "Il paraît que le nouveau directeur ___ très exigeant.",
+  "options": [
+   "est",
+   "soit",
+   "être"
+  ],
+  "answer": 0,
+  "why": "il paraît que（听说）转述传闻，后接直陈式：il est très exigeant。soit 是虚拟式；être 是不定式。"
+ },
+ {
+  "id": "modalisation-24",
+  "stem": "Je doute que cette mesure ___ suffisante pour réduire la pollution.",
+  "options": [
+   "soit",
+   "est",
+   "sera"
+  ],
+  "answer": 0,
+  "why": "douter que 表示怀疑，后接虚拟式：que cette mesure soit suffisante。est 和 sera 是直陈式。"
+ },
+ {
+  "id": "modalisation-25",
+  "stem": "« Il doit être malade, il ne répond pas au téléphone. » Ici, « doit » exprime ___.",
+  "options": [
+   "une probabilité",
+   "une obligation",
+   "un conseil"
+  ],
+  "answer": 0,
+  "why": "devoir + être 表示推测：他大概生病了（根据不接电话推断）。这里不是义务，也不是建议（建议通常用条件式 tu devrais）。"
+ },
+ {
+  "id": "modalisation-26",
+  "stem": "Il est peu probable qu’il ___ avant minuit avec ces embouteillages.",
+  "options": [
+   "viendra",
+   "venir",
+   "vienne"
+  ],
+  "answer": 2,
+  "why": "il est peu probable que 表示怀疑，后接虚拟式：qu’il vienne。viendra 是直陈式将来时；venir 是不定式。"
+ },
+ {
+  "id": "modalisation-27",
+  "stem": "Je ne le vois nulle part : il ___ notre rendez-vous.",
+  "options": [
+   "apparemment a oublié",
+   "a apparemment oublié",
+   "a oublié apparent"
+  ],
+  "answer": 1,
+  "why": "副词 apparemment 在复合时态中通常放在助动词和过去分词之间：il a apparemment oublié。副词不能放在主语和助动词之间；apparent 是形容词，不能修饰动词。"
+ },
+ {
+  "id": "modalisation-28",
+  "stem": "Les voisins ___ entendre le bruit : ils étaient chez eux ce soir-là.",
+  "options": [
+   "doivent",
+   "ont dû",
+   "devront"
+  ],
+  "answer": 1,
+  "why": "对过去事件的推测用 devoir 的复合过去时：ils ont dû entendre（他们大概听到了），与 ce soir-là 的过去时间一致。doivent 是现在时，devront 是将来时，都与过去的语境不符。"
+ },
+ {
+  "id": "modalisation-29",
+  "stem": "Il ___ que l’économie soit en train de ralentir.",
+  "options": [
+   "semble",
+   "me semble",
+   "paraît"
+  ],
+  "answer": 0,
+  "why": "从句用虚拟式 soit，只有 il semble que（客观推测）可以接虚拟式。肯定句 il me semble que 和 il paraît que 都接直陈式。"
+ },
+ {
+  "id": "modalisation-30",
+  "stem": "Il ___ que vous avez oublié votre parapluie dans la salle.",
+  "options": [
+   "se peut",
+   "me semble",
+   "est peu probable"
+  ],
+  "answer": 1,
+  "why": "从句用直陈式 avez oublié，只有 il me semble que（个人看法）符合。il se peut que 和 il est peu probable que 都必须接虚拟式（ayez oublié）。"
+ }
+]

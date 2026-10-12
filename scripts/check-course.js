@@ -1,19 +1,20 @@
 #!/usr/bin/env node
 'use strict';
 /**
- * Validates the course data in course/, day by day (1-50).
+ * Validates one course's data, day by day: course/ (DELF B1, the default) or
+ * another course root such as course/b2/ (DELF B2).
  *
  * Every day must be complete for the highest intensity (Days 41–50: grammar is
  * drawn from the question banks at run time), every question in every bank must
  * be answerable (distinct options, a valid key), no development marker may
  * reach a learner, and no text or chunk may repeat across the 50 days.
  *
- * Run: node scripts/check-course.js
+ * Run: node scripts/check-course.js [course/b2]
  */
 const fs = require('fs');
 const path = require('path');
 
-const DIR = path.join(__dirname, '..', 'course');
+const DIR = path.join(__dirname, '..', process.argv[2] || 'course');
 const course = JSON.parse(fs.readFileSync(path.join(DIR, 'course.json'), 'utf8'));
 const nodes = JSON.parse(fs.readFileSync(path.join(DIR, 'grammar.json'), 'utf8'));
 const days = Array.from({ length: course.days }, (_, i) => JSON.parse(fs.readFileSync(path.join(DIR, 'days', String(i + 1).padStart(2, '0') + '.json'), 'utf8')));
@@ -74,7 +75,7 @@ for (const d of days) {
       check(x.id === `${letter}${String(d.day).padStart(2, '0')}-${i + 1}`, where, `id ${x.id}`);
       check(!seen.id.has(x.id), where, `id ${x.id} repeated`); seen.id.add(x.id);
       check(x.title && plain(x.title).length > 2, where, 'no title');
-      const body = m === 'reading' ? x.text.join(' ') : m === 'listening' ? x.script.join(' ') : m === 'application' ? x.task : x.prompt;
+      const body = m === 'reading' ? x.text.join(' ') : m === 'listening' ? x.script.join(' ') : m === 'application' ? x.task : [x.prompt, ...(x.trigger ? x.trigger.text : [])].join(' ');
       check(words(body) >= (m === 'reading' || m === 'listening' ? (d.day <= 2 ? 20 : 45) : 8), where, `body too short (${words(body)} words)`);
       check(!LEAK.test(x.title + ' ' + body), where, 'development marker');
       check(!SCAFFOLD.test(body), where, 'generator scaffolding');
@@ -86,6 +87,9 @@ for (const d of days) {
         check(new Set(x.questions.map((q) => norm(q.stem))).size === x.questions.length, where, 'repeated stem');
       }
       if (m === 'writing') check(x.minWords >= 60 && x.checklist.length, where, 'no word target or checklist');
+      if (m === 'writing' && x.model) check(words(x.model.join(' ')) >= x.minWords, where, 'model answer shorter than the word target');
+      if (x.trigger) check(x.trigger.title && Array.isArray(x.trigger.text) && words(x.trigger.text.join(' ')) >= 20, where, 'trigger document without title or text');
+      if (x.followUps) check(Array.isArray(x.followUps) && x.followUps.every((f) => plain(f).length > 8), where, 'empty follow-up question');
       if (m === 'speaking') check(x.targetSeconds >= 30 && x.checklist.length, where, 'no target time or checklist');
       if (m === 'speaking' && x.doc) check(days.some((o) => o.day <= d.day && o.items.reading.some((r) => r.id === x.doc)), where, `unknown document ${x.doc}`);
       if (m === 'application') check(x.chunks.length, where, 'no chunks');
@@ -134,4 +138,4 @@ if (failures.length) {
   console.error(`\n${failures.length} problem(s) in ${checks} checks.`);
   process.exit(1);
 }
-console.log(`course/ is valid: ${days.length} days, ${seen.id.size} items, ${seen.chunk.size} chunks, ${bank.size} grammar questions in ${nodes.length} banks — ${checks} checks.`);
+console.log(`${path.relative(path.join(__dirname, '..'), DIR)}/ (${course.id}) is valid: ${days.length} days, ${seen.id.size} items, ${seen.chunk.size} chunks, ${bank.size} grammar questions in ${nodes.length} banks — ${checks} checks.`);

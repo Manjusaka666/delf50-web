@@ -1,7 +1,10 @@
-/** The DELF50 API (/api/v1). Learning routes address one course. */
+/** The DELF50 API (/api/v1). Learning routes address the current course (CEFR level). */
 
-const COURSE = 'delf-b1';
+let COURSE = 'delf-b1';
 const BASE = '/api/v1';
+
+/** The course every learning request addresses from now on. */
+export const useCourse = (id) => { COURSE = id; };
 
 class ApiError extends Error {
   constructor(message, status, code) { super(message); this.status = status; this.code = code; }

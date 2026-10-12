@@ -1,0 +1,332 @@
+[
+ {
+  "id": "condPasse-01",
+  "stem": "J’___ aimé assister à ce concert, mais il était complet.",
+  "options": [
+   "aurai",
+   "aurais",
+   "avais"
+  ],
+  "answer": 1,
+  "why": "表达遗憾用条件式过去时：j’aurais aimé。aurai aimé 是先将来时（只差一个 s）；avais aimé 是愈过去时，不表示遗憾。"
+ },
+ {
+  "id": "condPasse-02",
+  "stem": "Tu ___ dû me prévenir que tu serais en retard !",
+  "options": [
+   "aurais",
+   "auras",
+   "avais"
+  ],
+  "answer": 0,
+  "why": "责备对方当初该做却没做：tu aurais dû + 不定式。auras dû 是先将来时，表示推测；avais dû 是愈过去时，不表示责备。"
+ },
+ {
+  "id": "condPasse-03",
+  "stem": "Nous ___ partis plus tôt si nous avions su.",
+  "options": [
+   "serions",
+   "aurions",
+   "serons"
+  ],
+  "answer": 0,
+  "why": "条件式过去时；partir 用 être 作助动词：nous serions partis。aurions 助动词错误；serons 构成先将来时，不能与 si + PQP 搭配。"
+ },
+ {
+  "id": "condPasse-04",
+  "stem": "Selon le journal, la ministre ___ démissionné hier soir.",
+  "options": [
+   "aurait",
+   "serait",
+   "aura"
+  ],
+  "answer": 0,
+  "why": "新闻中用条件式过去时报道未经证实的消息：elle aurait démissionné。démissionner 用 avoir，serait 错误；aura démissionné 是先将来时，与 hier soir 矛盾。"
+ },
+ {
+  "id": "condPasse-05",
+  "stem": "Si tu m’avais demandé, je t’___ aidé avec plaisir.",
+  "options": [
+   "aurai",
+   "avais",
+   "aurais"
+  ],
+  "answer": 2,
+  "why": "si + 愈过去时 → 条件式过去时：je t’aurais aidé。aurai 构成先将来时；avais 构成愈过去时，都不能作假设的结果。"
+ },
+ {
+  "id": "condPasse-06",
+  "stem": "Elle ___ voulu devenir médecin, mais elle n’a pas été admise.",
+  "options": [
+   "serait",
+   "aura",
+   "aurait"
+  ],
+  "answer": 2,
+  "why": "表示没有实现的愿望：elle aurait voulu。vouloir 用 avoir，serait 错误；aura voulu 是先将来时。"
+ },
+ {
+  "id": "condPasse-07",
+  "stem": "Vous ___ pu m’appeler avant de venir !",
+  "options": [
+   "aurez",
+   "auriez",
+   "avez"
+  ],
+  "answer": 1,
+  "why": "责备：vous auriez pu + 不定式（当初本可以……却没有）。aurez pu 是先将来时；avez pu 表示“当时能够”，没有责备义。"
+ },
+ {
+  "id": "condPasse-08",
+  "stem": "Sans GPS, ils se ___ perdus dans la montagne.",
+  "options": [
+   "auraient",
+   "seraient",
+   "seront"
+  ],
+  "answer": 1,
+  "why": "sans + 名词 也可引出与过去事实相反的假设，结果用条件式过去时；代词式动词用 être：ils se seraient perdus。auraient 助动词错误；seront 构成先将来时。"
+ },
+ {
+  "id": "condPasse-09",
+  "stem": "La semaine dernière, elle m’a promis qu’elle ___ fini le rapport avant le lundi suivant.",
+  "options": [
+   "aura",
+   "aurait",
+   "avait"
+  ],
+  "answer": 1,
+  "why": "过去中的先将来（从过去看将来某时已完成）用条件式过去时：qu’elle aurait fini。aura fini 以现在为参照，与 le lundi suivant 不协调；avait fini 表示承诺之前已完成，不合逻辑。"
+ },
+ {
+  "id": "condPasse-10",
+  "stem": "Elles ___ arrivées à l’heure si le train n’avait pas été bloqué.",
+  "options": [
+   "seraient",
+   "auraient",
+   "seront"
+  ],
+  "answer": 0,
+  "why": "条件式过去时；arriver 用 être，过去分词与 elles 配合：elles seraient arrivées。auraient 助动词错误；seront 构成先将来时。"
+ },
+ {
+  "id": "condPasse-11",
+  "stem": "J’aurais dû ___ mon CV avant l’entretien.",
+  "options": [
+   "relu",
+   "relis",
+   "relire"
+  ],
+  "answer": 2,
+  "why": "aurais dû 后接不定式：j’aurais dû relire。relu 是过去分词（常见错误：✗ aurais dû relu）；relis 是变位形式。"
+ },
+ {
+  "id": "condPasse-12",
+  "stem": "À ta place, je ___ accepté cette proposition.",
+  "options": [
+   "ne serais pas",
+   "n’aurais pas",
+   "n’aurai pas"
+  ],
+  "answer": 1,
+  "why": "à ta place 引出假设性的建议，用条件式过去时；accepter 用 avoir：je n’aurais pas accepté。ne serais pas 助动词错误；n’aurai pas 是先将来时。"
+ },
+ {
+  "id": "condPasse-13",
+  "stem": "Ces photos, je les aurais ___ si j’avais eu mon appareil.",
+  "options": [
+   "pris",
+   "prises",
+   "prise"
+  ],
+  "answer": 1,
+  "why": "avoir 作助动词时，过去分词与前置直接宾语配合：les ＝ ces photos（阴性复数）→ prises。pris 漏了配合；prise 是单数。"
+ },
+ {
+  "id": "condPasse-14",
+  "stem": "D’après plusieurs témoins, le conducteur ___ brûlé un feu rouge.",
+  "options": [
+   "serait",
+   "aura",
+   "aurait"
+  ],
+  "answer": 2,
+  "why": "d’après + 条件式过去时：报道未经证实的说法，le conducteur aurait brûlé。brûler 用 avoir，serait 错误；aura brûlé 是先将来时。"
+ },
+ {
+  "id": "condPasse-15",
+  "stem": "Il ___ mieux valu prévenir les voisins avant de commencer les travaux.",
+  "options": [
+   "serait",
+   "avait",
+   "aurait"
+  ],
+  "answer": 2,
+  "why": "固定表达 il aurait mieux valu + 不定式（当初最好……）。valoir 用 avoir，serait 错误；avait mieux valu 是愈过去时，不表示事后的评价。"
+ },
+ {
+  "id": "condPasse-16",
+  "stem": "Si elle n’avait pas manqué le bus hier, elle ___ son entretien.",
+  "options": [
+   "aurait passé",
+   "passerait",
+   "aurait passée"
+  ],
+  "answer": 0,
+  "why": "si + 愈过去时，结果也在过去（hier）→ 条件式过去时：elle aurait passé son entretien。passerait 是条件式现在时，与 hier 不符；aurait passée 是错误配合（直接宾语 son entretien 在后面）。"
+ },
+ {
+  "id": "condPasse-17",
+  "stem": "J’aurais voulu que tu ___ là pour mon anniversaire.",
+  "options": [
+   "sois",
+   "es",
+   "serais"
+  ],
+  "answer": 0,
+  "why": "j’aurais voulu que 表示愿望，从句用虚拟式：que tu sois là。es 是直陈式；serais 是条件式，vouloir que 后都不能用。"
+ },
+ {
+  "id": "condPasse-18",
+  "stem": "Il était tout pâle : on ___ dit qu’il avait vu un fantôme !",
+  "options": [
+   "serait",
+   "aura",
+   "aurait"
+  ],
+  "answer": 2,
+  "why": "固定表达 on aurait dit que…（看起来就像……）。dire 用 avoir，serait dit 结构错误；aura dit 是先将来时，表示真正的“说”，不是这个比喻用法。"
+ },
+ {
+  "id": "condPasse-19",
+  "stem": "Beaucoup de spectateurs sont restés debout : les organisateurs ___ dû prévoir plus de places assises.",
+  "options": [
+   "seraient",
+   "avaient",
+   "auraient"
+  ],
+  "answer": 2,
+  "why": "批评他人当初应该做却没做：ils auraient dû + 不定式。devoir 用 avoir，seraient 错误；avaient dû 表示“当时不得不/大概”，没有责备义。"
+ },
+ {
+  "id": "condPasse-20",
+  "stem": "Selon nos informations, le suspect ___ quitté la France la veille de son arrestation.",
+  "options": [
+   "serait",
+   "aura",
+   "aurait"
+  ],
+  "answer": 2,
+  "why": "selon nos informations 引出未经证实的消息，用条件式过去时：il aurait quitté。quitter 及物，用 avoir，serait 错误；aura quitté 是先将来时，与 la veille 不协调。"
+ },
+ {
+  "id": "condPasse-21",
+  "stem": "Sans ton aide, je me ___ découragé.",
+  "options": [
+   "aurais",
+   "serais",
+   "serai"
+  ],
+  "answer": 1,
+  "why": "sans + 名词 引出与过去事实相反的假设；代词式动词用 être：je me serais découragé。aurais 助动词错误；serai 构成先将来时。"
+ },
+ {
+  "id": "condPasse-22",
+  "stem": "Tu ___ au moins me remercier !",
+  "options": [
+   "aurais pu",
+   "aurais pouvoir",
+   "as pu"
+  ],
+  "answer": 0,
+  "why": "责备：tu aurais pu + 不定式（至少本可以……）。aurais pouvoir 结构错误，pouvoir 应为过去分词 pu；as pu 表示“你当时能够”，没有责备义。"
+ },
+ {
+  "id": "condPasse-23",
+  "stem": "Heureusement que tu m’as réveillé, sinon j’___ raté mon train.",
+  "options": [
+   "aurais",
+   "aurai",
+   "avais"
+  ],
+  "answer": 0,
+  "why": "sinon（否则）引出与过去事实相反的结果，用条件式过去时：j’aurais raté。aurai 构成先将来时；avais 构成愈过去时。"
+ },
+ {
+  "id": "condPasse-24",
+  "stem": "Sans cette grève, nous ___ à Lyon un jour de plus.",
+  "options": [
+   "aurions restés",
+   "serions resté",
+   "serions restés"
+  ],
+  "answer": 2,
+  "why": "rester 用 être，过去分词与主语 nous 配合：nous serions restés。aurions restés 助动词错误；serions resté 漏了复数配合。"
+ },
+ {
+  "id": "condPasse-25",
+  "stem": "Le maire avait assuré que les travaux ___ avant l’été, mais ils ont pris du retard.",
+  "options": [
+   "auraient achevés",
+   "auraient été achevés",
+   "auront été achevés"
+  ],
+  "answer": 1,
+  "why": "过去中的先将来，被动态：auraient été achevés（条件式过去时 + été + 过去分词）。auraient achevés 缺少 été 且配合错误；auront été achevés 以现在为参照，与已经过去的“夏天之前”不符。"
+ },
+ {
+  "id": "condPasse-26",
+  "stem": "J’aurais aimé que vous m’___ prévenu plus tôt.",
+  "options": [
+   "ayez",
+   "aviez",
+   "auriez"
+  ],
+  "answer": 0,
+  "why": "j’aurais aimé que + 虚拟式；动作已完成，用过去虚拟式：que vous m’ayez prévenu。aviez 是直陈式；auriez 是条件式，都不能用在 aimer que 之后。"
+ },
+ {
+  "id": "condPasse-27",
+  "stem": "Si j’avais écouté mes parents, je ___ médecin aujourd’hui.",
+  "options": [
+   "aurais été",
+   "serais",
+   "serai"
+  ],
+  "answer": 1,
+  "why": "混合假设：过去的条件 → 现在的结果（aujourd’hui），主句用条件式现在时：je serais médecin。aurais été 指过去，与 aujourd’hui 冲突；serai 是将来时。"
+ },
+ {
+  "id": "condPasse-28",
+  "stem": "Avec le recul, nous ___ accepter ce contrat.",
+  "options": [
+   "n’aurions dû jamais",
+   "ne serions jamais dû",
+   "n’aurions jamais dû"
+  ],
+  "answer": 2,
+  "why": "否定的复合时态：ne + 助动词 + jamais + 过去分词：nous n’aurions jamais dû。n’aurions dû jamais 语序错误；devoir 用 avoir 作助动词，ne serions jamais dû 错误。"
+ },
+ {
+  "id": "condPasse-29",
+  "stem": "Le rapport ___ remis hier, mais l’auteur est tombé malade.",
+  "options": [
+   "aurait été dû",
+   "aurait dû être",
+   "serait dû être"
+  ],
+  "answer": 1,
+  "why": "被动 + 责任：aurait dû être remis（本应在昨天交）。aurait été dû 和 serait dû être 都不是正确的结构，devoir 用 avoir 且后接不定式 être。"
+ },
+ {
+  "id": "condPasse-30",
+  "stem": "Sans le vote des jeunes, ce candidat n’___ jamais été élu.",
+  "options": [
+   "aurait",
+   "serait",
+   "aura"
+  ],
+  "answer": 0,
+  "why": "被动态的条件式过去时：avoir 的条件式 + été + 过去分词：il n’aurait jamais été élu。être 的复合时态助动词是 avoir，serait été 错误；aura été 是先将来时。"
+ }
+]

@@ -1,6 +1,6 @@
 /** Grammar: the day's questions one at a time, the guide of each node, and output practice. */
 import { store, commit } from '../store.js';
-import { node, remedialNodes } from '../course.js';
+import { node, remedialNodes, LEVELS, currentLevel } from '../course.js';
 import { grammarAnswer } from '../progress.js';
 import { answerGrammar, setProduction, productionKey } from '../state.js';
 import { html, icon, pad2, frText, LETTERS, MODULE_NAMES } from '../ui.js';
@@ -17,6 +17,7 @@ export async function grammarView(d, n) {
   }
   n = Math.min(Math.max(1, n), qs.length);
   let scrolled = false;
+  const bridgeTo = (LEVELS[LEVELS.indexOf(currentLevel()) + 1] || currentLevel()).level;
   const go = (i) => { if (i >= 1 && i <= qs.length) location.hash = `#/day/${d}/grammar/${i}`; };
 
   function guide(nd) {
@@ -68,7 +69,7 @@ export async function grammarView(d, n) {
       </nav>
       <div class="split">
         <section class="qcard ${a ? (a.correct ? 'is-ok' : 'is-bad') : ''}" aria-live="polite">
-          <p class="qcard-meta"><span>Question ${pad2(n)} / ${pad2(qs.length)}</span><span class="tag">${nd ? nd.name : q.node}</span>${(ctx.day.bridge || []).includes(q.id) ? html`<span class="tag bridge">B2 衔接 · 选做</span>` : n > due ? html`<span class="tag soft">选做</span>` : ''}</p>
+          <p class="qcard-meta"><span>Question ${pad2(n)} / ${pad2(qs.length)}</span><span class="tag">${nd ? nd.name : q.node}</span>${(ctx.day.bridge || []).includes(q.id) ? html`<span class="tag bridge">${bridgeTo} 衔接 · 选做</span>` : n > due ? html`<span class="tag soft">选做</span>` : ''}</p>
           <p class="stem" lang="fr">${frText(q.stem)}</p>
           <div class="opts" role="group" aria-label="选项">
             ${q.options.map((o, i) => {

@@ -1,0 +1,332 @@
+[
+ {
+  "id": "constructions-01",
+  "stem": "La mairie incite les habitants ___ trier leurs déchets ménagers.",
+  "options": [
+   "à",
+   "de",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "inciter qqn à faire qqch（促使某人做）。de 不能与 inciter 搭配；pour 表目的，不是该动词的补语介词。"
+ },
+ {
+  "id": "constructions-02",
+  "stem": "Le bruit des travaux m’empêche ___ me concentrer sur mon rapport.",
+  "options": [
+   "de",
+   "à",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "empêcher qqn de faire qqch（阻止某人做）。à 是汉语思维“去做”的误用；pour 不是 empêcher 的补语介词。"
+ },
+ {
+  "id": "constructions-03",
+  "stem": "L’entreprise s’est engagée ___ réduire de moitié ses émissions de CO2.",
+  "options": [
+   "de",
+   "à",
+   "pour"
+  ],
+  "answer": 1,
+  "why": "s’engager à faire qqch（承诺做）。s’engager de 错误；pour 不能引出承诺内容。"
+ },
+ {
+  "id": "constructions-04",
+  "stem": "Faute de moyens, l’association a renoncé ___ organiser le festival d’été.",
+  "options": [
+   "à",
+   "de",
+   "sur"
+  ],
+  "answer": 0,
+  "why": "renoncer à + inf / 名词（放弃）。renoncer de 是常见错误；sur 无此搭配。"
+ },
+ {
+  "id": "constructions-05",
+  "stem": "Notre service s’efforce ___ répondre à toutes les demandes sous 48 heures.",
+  "options": [
+   "pour",
+   "de",
+   "sur"
+  ],
+  "answer": 1,
+  "why": "s’efforcer de faire qqch（努力做）。pour 和 sur 都不是该动词的补语介词（汉语“为了”不能直译成 pour）。"
+ },
+ {
+  "id": "constructions-06",
+  "stem": "Ce député se contente ___ critiquer sans proposer de solution.",
+  "options": [
+   "à",
+   "de",
+   "pour"
+  ],
+  "answer": 1,
+  "why": "se contenter de faire qqch（满足于、只做）。se contenter à / pour 都不成立。"
+ },
+ {
+  "id": "constructions-07",
+  "stem": "Cette formation aide les demandeurs d’emploi ___ rédiger un CV efficace.",
+  "options": [
+   "de",
+   "à",
+   "pour"
+  ],
+  "answer": 1,
+  "why": "aider qqn à faire qqch（帮助某人做）。aider de 错误；aider qqn pour 只能接名词且不规范，不能接不定式。"
+ },
+ {
+  "id": "constructions-08",
+  "stem": "Le directeur a demandé aux employés ___ respecter les nouveaux horaires.",
+  "options": [
+   "à",
+   "de",
+   "pour"
+  ],
+  "answer": 1,
+  "why": "demander à qqn de faire qqch：人用 à，所要求的行为用 de。à respecter 混淆了两个补语；pour 无此用法。"
+ },
+ {
+  "id": "constructions-09",
+  "stem": "Le conseil municipal a décidé ___ fermer la piscine pendant tout le mois d’août.",
+  "options": [
+   "à",
+   "de",
+   "pour"
+  ],
+  "answer": 1,
+  "why": "décider de faire qqch（决定做）。décider à 只用于 décider qqn à faire（说服某人）或代词式 se décider à；pour 不成立。"
+ },
+ {
+  "id": "constructions-10",
+  "stem": "Après des mois d’hésitation, il s’est enfin décidé ___ vendre son appartement.",
+  "options": [
+   "à",
+   "de",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "双重结构：décider de faire，但代词式 se décider à faire（经过犹豫终于下定决心）。se décider de 错误；pour 不成立。"
+ },
+ {
+  "id": "constructions-11",
+  "stem": "Je pense souvent ___ mes années d’études à Montréal.",
+  "options": [
+   "de",
+   "sur",
+   "à"
+  ],
+  "answer": 2,
+  "why": "penser à qqch / qqn = 想到、思念。penser de 用于询问/表达看法（Que penses-tu de… ?）；penser sur 是英语式错误。"
+ },
+ {
+  "id": "constructions-12",
+  "stem": "Qu’est-ce que vous pensez ___ la nouvelle réforme des retraites ?",
+  "options": [
+   "à",
+   "sur",
+   "de"
+  ],
+  "answer": 2,
+  "why": "penser qqch de qqch = 对……有什么看法。penser à 意为“想到”，不用于征求意见；penser sur 不规范。"
+ },
+ {
+  "id": "constructions-13",
+  "stem": "Le médecin lui a conseillé ___ arrêter de fumer au plus vite.",
+  "options": [
+   "d’",
+   "à",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "conseiller à qqn de faire qqch：lui 已是间接宾语（à qqn），行为用 de → d’arrêter。à arrêter / pour arrêter 都错误。"
+ },
+ {
+  "id": "constructions-14",
+  "stem": "Les professeurs encouragent les lycéens ___ s’engager dans la vie associative.",
+  "options": [
+   "de",
+   "pour",
+   "à"
+  ],
+  "answer": 2,
+  "why": "encourager qqn à faire qqch（鼓励某人做）。encourager de 错误；pour 不是该动词的补语介词。"
+ },
+ {
+  "id": "constructions-15",
+  "stem": "— Et ton projet de reconversion ? — J’___ pense souvent, mais je n’ai encore rien décidé.",
+  "options": [
+   "y",
+   "en",
+   "le"
+  ],
+  "answer": 0,
+  "why": "penser à qqch → 用 y 代替 à + 事物：j’y pense。en 代替 de + 名词（penser de）；le 代替直接宾语，penser à 没有直接宾语。"
+ },
+ {
+  "id": "constructions-16",
+  "stem": "— Que pensez-vous de ce candidat ? — J’___ pense le plus grand bien.",
+  "options": [
+   "y",
+   "le",
+   "en"
+  ],
+  "answer": 2,
+  "why": "penser du bien de qqn：de + 名词由 en 代替 → j’en pense le plus grand bien。y 代替 à + 事物；le 代替直接宾语，而直接宾语已是 le plus grand bien。"
+ },
+ {
+  "id": "constructions-17",
+  "stem": "La loi oblige désormais les propriétaires ___ isoler leur logement avant de le louer.",
+  "options": [
+   "pour",
+   "sur",
+   "à"
+  ],
+  "answer": 2,
+  "why": "obliger qqn à faire qqch（迫使某人做）；被动态才用 de（être obligé de）。pour / sur 都不成立。"
+ },
+ {
+  "id": "constructions-18",
+  "stem": "Le syndicat a menacé ___ faire grève si les négociations échouaient.",
+  "options": [
+   "à",
+   "pour",
+   "de"
+  ],
+  "answer": 2,
+  "why": "menacer de faire qqch（威胁要做）。menacer à 错误；pour 不能引出威胁的内容。"
+ },
+ {
+  "id": "constructions-19",
+  "stem": "Malgré son trac, la candidate a réussi ___ convaincre le jury.",
+  "options": [
+   "à",
+   "de",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "réussir à faire qqch（成功做到）。réussir de 是常见错误；pour 不成立。"
+ },
+ {
+  "id": "constructions-20",
+  "stem": "Pendant la crise, le gouvernement a interdit aux entreprises ___ licencier.",
+  "options": [
+   "à",
+   "pour",
+   "de"
+  ],
+  "answer": 2,
+  "why": "interdire à qqn de faire qqch：aux entreprises 是间接宾语，禁止的行为用 de。à licencier 混淆两个补语；pour 不成立。"
+ },
+ {
+  "id": "constructions-21",
+  "stem": "Je m’attendais ___ une réponse plus rapide de la part de votre service.",
+  "options": [
+   "de",
+   "pour",
+   "à"
+  ],
+  "answer": 2,
+  "why": "s’attendre à qqch / à faire qqch（预料、期待）。s’attendre de / pour 都不成立。"
+ },
+ {
+  "id": "constructions-22",
+  "stem": "Elle a longtemps hésité ___ accepter ce poste à l’étranger.",
+  "options": [
+   "pour",
+   "à",
+   "sur"
+  ],
+  "answer": 1,
+  "why": "hésiter à faire qqch（犹豫要不要做）。hésiter sur 只接名词（hésiter sur le choix）；pour 不成立。"
+ },
+ {
+  "id": "constructions-23",
+  "stem": "Les manifestants exigent ___ être reçus par le ministre de la Santé.",
+  "options": [
+   "d’",
+   "à",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "exiger de faire qqch（要求做）→ d’être reçus。à / pour 都不是 exiger 的补语介词。"
+ },
+ {
+  "id": "constructions-24",
+  "stem": "Ce dispositif permet aux familles modestes ___ bénéficier d’une aide au logement.",
+  "options": [
+   "de",
+   "à",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "permettre à qqn de faire qqch：aux familles 是间接宾语，被允许的行为用 de。à bénéficier / pour bénéficier 错误。"
+ },
+ {
+  "id": "constructions-25",
+  "stem": "La hausse des loyers pousse les jeunes ___ quitter le centre-ville.",
+  "options": [
+   "de",
+   "à",
+   "pour"
+  ],
+  "answer": 1,
+  "why": "pousser qqn à faire qqch（迫使、促使）。pousser de 错误；pour 不能引出被促使的行为。"
+ },
+ {
+  "id": "constructions-26",
+  "stem": "À quarante ans, elle s’est mise ___ apprendre le mandarin.",
+  "options": [
+   "à",
+   "de",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "se mettre à faire qqch（开始做）。se mettre de / pour 都不成立。"
+ },
+ {
+  "id": "constructions-27",
+  "stem": "Le témoin a refusé ___ répondre aux questions des journalistes.",
+  "options": [
+   "à",
+   "pour",
+   "de"
+  ],
+  "answer": 2,
+  "why": "refuser de faire qqch（拒绝做）。refuser à 只用于 refuser qqch à qqn 或 se refuser à faire；pour 不成立。"
+ },
+ {
+  "id": "constructions-28",
+  "stem": "Faute d’acheteur, il s’est finalement résolu ___ louer la maison familiale.",
+  "options": [
+   "de",
+   "à",
+   "pour"
+  ],
+  "answer": 1,
+  "why": "双重结构：résoudre de faire（决定），代词式 se résoudre à faire（勉强下决心）。se résoudre de 错误；pour 不成立。"
+ },
+ {
+  "id": "constructions-29",
+  "stem": "La présidente tient ___ ce que chaque réunion commence à l’heure.",
+  "options": [
+   "de",
+   "à",
+   "pour"
+  ],
+  "answer": 1,
+  "why": "tenir à + 名词 / inf；接从句时用 tenir à ce que + subjonctif。tenir de 意为“像（某人）”；pour 不成立。"
+ },
+ {
+  "id": "constructions-30",
+  "stem": "Les parents d’élèves ont convaincu le maire ___ rénover l’école du quartier.",
+  "options": [
+   "pour",
+   "sur",
+   "de"
+  ],
+  "answer": 2,
+  "why": "convaincre qqn de faire qqch（说服某人做）。pour 是汉语“为了”式误用；sur 无此用法。"
+ }
+]

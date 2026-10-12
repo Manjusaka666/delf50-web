@@ -10,7 +10,7 @@
  *   speaking              [{clip, day, contentId, title, sec, at}]   clip = recording in R2, null when practised offline
  *   errors                [{skill, original, correct, why, at}]
  *   drafts                {writing: {"<day>:<item>": text}, application: {…}}
- *   lexicon               "<day>:<chunk>" = 'known' | 'again'
+ *   lexicon               "<day>:<chunk>" = 'known' | 'again'   (typed right / wrong; earlier: self-assessed)
  *   review                "<day>:<g|v>:<source day>:<item>" = {day, kind, src, contentId, selectedIndex?, correct, at}
  *   remedial              "<day>" = [grammar point ids]   Days 41–50: the weakest points, fixed when the day is opened
  */
@@ -100,7 +100,15 @@ export function addSpeaking(S, day, item, clip, sec) {
 
 export function resolveError(S, index) { S.errors.splice(index, 1); }
 
-/** A chunk recalled (known) or to see again; the latest self-assessment counts. */
+/**
+ * Spelling as the chunk check compares it: letters, accents, apostrophes and hyphens count;
+ * case, spaces and punctuation do not (’ = ', œ = oe, æ = ae: keyboard variants).
+ */
+export const spelling = (s) => String(s || '').normalize('NFC').toLocaleLowerCase('fr')
+  .replace(/[’‘ʼ`´]/g, "'").replace(/œ/g, 'oe').replace(/æ/g, 'ae').replace(/[\s.,;:!?…«»"()]/g, '');
+export const spelledRight = (typed, expected) => spelling(typed) !== '' && spelling(typed) === spelling(expected);
+
+/** A chunk typed right (known) or wrong (to see again); the latest attempt counts. */
 export function markChunk(S, day, id, mark) {
   S.lexicon[`${day}:${id}`] = mark === 'known' ? 'known' : 'again';
   started(S);
