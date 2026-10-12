@@ -12,14 +12,27 @@
   "output": "写：在城市论坛上回应“周末市中心禁车”的帖子，写≥220词的观点文，至少用 3 种复杂比较结构；说：围绕“远程办公能否解决交通问题”做 4 分钟独白，并在辩论中为“城市全面限速 30 公里”辩护。",
   "checkpoint": "阅读与听力正确率≥80%；能正确使用 plus… plus（无 que、无倒装）、d’autant plus que 与 le moindre / pire；论坛文章≥220词且比较结构正确；能根据数据比较三种出行方式并给出建议。",
   "challenge": "今日挑战：在 RFI《Journal en français facile》或 TV5MONDE 找一条关于交通、出行或城市规划的新闻，比较你所在城市的情况，写 3 句话（至少用到 plus… plus 和 d’autant plus que），或录 1 分钟口头比较你每天的两种出行方式。",
-  "sources": ["FEI-B2", "FEI-B2-SAMPLES", "FEI-INVENTAIRE", "CEFR-CV", "RFI-B2", "TV5-ALL"],
-  "focus": ["comparaison"],
+  "sources": [
+    "FEI-B2",
+    "FEI-B2-SAMPLES",
+    "FEI-INVENTAIRE",
+    "CEFR-CV",
+    "RFI-B2",
+    "TV5-ALL"
+  ],
+  "focus": [
+    "comparaison"
+  ],
   "items": {
     "reading": [
       {
         "id": "R20-1",
         "title": "Vélo, voiture, tram : quel mode de transport pour quelle ville ?",
-        "meta": {"genre": "Article de presse", "domain": "Mobilité urbaine", "level": "B2"},
+        "meta": {
+          "genre": "Article de presse",
+          "domain": "Mobilité urbaine",
+          "level": "B2"
+        },
         "text": [
           "Il y a vingt ans, dans la plupart des villes moyennes, la question ne se posait même pas : on se déplaçait en voiture. Aujourd’hui, le paysage a changé. Les pistes cyclables se multiplient, les trottinettes stationnent à chaque coin de rue, et les habitants comparent de plus en plus leurs options avant de partir. Mais quel mode de transport est vraiment le plus avantageux ? La réponse dépend moins des goûts de chacun que de la distance, de la ville… et de ses aménagements.",
           "Sur les trajets courts, de moins de cinq kilomètres, le vélo l’emporte presque toujours. Il est souvent plus rapide que la voiture aux heures de pointe, dix fois moins cher à l’usage et, à en croire les médecins, excellent pour la santé. Pourtant, une enquête menée auprès de 1 200 habitants d’agglomérations moyennes montre que la moitié de ces trajets se font encore en voiture. La raison invoquée est presque toujours la même : le sentiment d’insécurité. Plus les voitures sont nombreuses et rapides, moins les gens osent pédaler.",
@@ -28,18 +41,76 @@
           "Aucun mode de transport n’est donc le meilleur en toutes circonstances. Les spécialistes misent surtout sur la combinaison : un parking relais en périphérie, un vélo pour les derniers kilomètres, un abonnement unique pour l’ensemble du réseau. Plus les solutions seront faciles à enchaîner, plus les habitants accepteront de laisser leur voiture au garage."
         ],
         "questions": [
-          {"stem": "Quel est l’objectif principal de l’article ?", "options": ["Comparer les modes de transport urbains selon les situations.", "Réclamer la suppression des voitures en ville.", "Présenter le nouveau réseau de tramway de Lorvan."], "answer": 0, "why": "文章提出问题 « quel mode de transport est vraiment le plus avantageux ? »，并根据距离和城市密度逐一比较，结论是 « Aucun mode de transport n’est donc le meilleur en toutes circonstances »。作者承认郊区仍需汽车，所以 B 错。"},
-          {"stem": "Pourquoi beaucoup d’habitants prennent-ils encore la voiture pour les trajets courts ?", "options": ["Parce que le vélo est plus lent aux heures de pointe.", "Parce qu’ils ne se sentent pas en sécurité à vélo.", "Parce que le vélo revient trop cher."], "answer": 1, "why": "« La raison invoquée est presque toujours la même : le sentiment d’insécurité »。文中说自行车高峰时更快、便宜十倍，与 A、C 相反。"},
-          {"stem": "Quel phénomène le troisième paragraphe décrit-il ?", "options": ["Les nouvelles routes font disparaître durablement les embouteillages.", "Les commerçants profitent toujours de la construction de routes.", "La quantité de voies disponibles influence le volume de trafic."], "answer": 2, "why": "« plus on construit de routes, plus le trafic augmente » ，反之亦然（减少车道后车流下降）。A 与“堵车几年后重现”相反。"},
-          {"stem": "Que s’est-il passé à Lorvan ?", "options": ["La circulation automobile a baissé sans nuire aux commerces du centre.", "Les commerces du centre ont perdu une partie de leurs clients.", "Les embouteillages se sont déplacés vers les quartiers voisins."], "answer": 0, "why": "« la circulation automobile a baissé d’un quart sans que les embouteillages se soient reportés […] la fréquentation des commerces du centre est restée stable »。"},
-          {"stem": "Selon le quatrième paragraphe, les transports en commun…", "options": ["sont efficaces partout de la même manière.", "sont d’autant plus efficaces que la ville est dense.", "devraient remplacer la voiture dans les zones périurbaines."], "answer": 1, "why": "原句 « d’autant plus efficaces que la ville est dense »；在住宅分散的郊区，公交 « n’est guère une alternative crédible »（A、C 错）。"},
-          {"stem": "Que signifie l’expression « la moins mauvaise solution » ?", "options": ["La solution la plus économique.", "La solution idéale.", "Une solution imperfaite mais préférable aux autres."], "answer": 2, "why": "« la moins mauvaise » = 并不好，但比其他选择好一些（两害相权取其轻），并非理想方案（B）。"}
+          {
+            "stem": "Quel est l’objectif principal de l’article ?",
+            "options": [
+              "Comparer les modes de transport urbains selon les situations.",
+              "Réclamer la suppression des voitures en ville.",
+              "Présenter le nouveau réseau de tramway de Lorvan."
+            ],
+            "answer": 0,
+            "why": "文章提出问题 « quel mode de transport est vraiment le plus avantageux ? »，并根据距离和城市密度逐一比较，结论是 « Aucun mode de transport n’est donc le meilleur en toutes circonstances »。作者承认郊区仍需汽车，所以 B 错。"
+          },
+          {
+            "stem": "Pourquoi beaucoup d’habitants prennent-ils encore la voiture pour les trajets courts ?",
+            "options": [
+              "Parce que le vélo est plus lent aux heures de pointe.",
+              "Parce qu’ils ne se sentent pas en sécurité à vélo.",
+              "Parce que le vélo revient trop cher."
+            ],
+            "answer": 1,
+            "why": "« La raison invoquée est presque toujours la même : le sentiment d’insécurité »。文中说自行车高峰时更快、便宜十倍，与 A、C 相反。"
+          },
+          {
+            "stem": "Quel phénomène le troisième paragraphe décrit-il ?",
+            "options": [
+              "Les nouvelles routes font disparaître durablement les embouteillages.",
+              "Les commerçants profitent toujours de la construction de routes.",
+              "La quantité de voies disponibles influence le volume de trafic."
+            ],
+            "answer": 2,
+            "why": "« plus on construit de routes, plus le trafic augmente » ，反之亦然（减少车道后车流下降）。A 与“堵车几年后重现”相反。"
+          },
+          {
+            "stem": "Que s’est-il passé à Lorvan ?",
+            "options": [
+              "La circulation automobile a baissé sans nuire aux commerces du centre.",
+              "Les commerces du centre ont perdu une partie de leurs clients.",
+              "Les embouteillages se sont déplacés vers les quartiers voisins."
+            ],
+            "answer": 0,
+            "why": "« la circulation automobile a baissé d’un quart sans que les embouteillages se soient reportés […] la fréquentation des commerces du centre est restée stable »。"
+          },
+          {
+            "stem": "Selon le quatrième paragraphe, les transports en commun…",
+            "options": [
+              "sont efficaces partout de la même manière.",
+              "sont d’autant plus efficaces que la ville est dense.",
+              "devraient remplacer la voiture dans les zones périurbaines."
+            ],
+            "answer": 1,
+            "why": "原句 « d’autant plus efficaces que la ville est dense »；在住宅分散的郊区，公交 « n’est guère une alternative crédible »（A、C 错）。"
+          },
+          {
+            "stem": "Que signifie l’expression « la moins mauvaise solution » ?",
+            "options": [
+              "La solution la plus économique.",
+              "La solution idéale.",
+              "Une solution imparfaite mais préférable aux autres."
+            ],
+            "answer": 2,
+            "why": "« la moins mauvaise » = 并不好，但比其他选择好一些（两害相权取其轻），并非理想方案（B）。"
+          }
         ]
       },
       {
         "id": "R20-2",
         "title": "Le train plus cher que l’avion : jusqu’à quand ?",
-        "meta": {"genre": "Tribune", "domain": "Transport & climat", "level": "B2"},
+        "meta": {
+          "genre": "Tribune",
+          "domain": "Transport & climat",
+          "level": "B2"
+        },
         "text": [
           "Le mois dernier, j’ai voulu me rendre à un mariage à huit cents kilomètres de chez moi. En avion, le billet coûtait 39 euros. En train, 127 euros, pour un trajet à peine plus long si l’on compte le temps passé à rejoindre l’aéroport et à y attendre. J’ai pris le train. Mais combien de voyageurs, à ma place, auraient fait le même choix ?",
           "Cette situation est d’autant plus absurde que chacun connaît le bilan des deux modes de transport. Par passager, l’avion émet, selon les trajets, des dizaines de fois plus de gaz à effet de serre qu’un train électrique. On nous demande des efforts pour le climat, mais l’option la plus polluante est deux, trois, parfois quatre fois moins chère que la plus sobre. C’est comme si l’on vendait les cigarettes moins cher que les fruits.",
@@ -48,17 +119,66 @@
           "<i>Mathilde Aubry, enseignante et voyageuse ferroviaire convaincue</i>"
         ],
         "questions": [
-          {"stem": "Quel est le but de cette tribune ?", "options": ["Dénoncer l’écart de prix entre le train et l’avion et appeler à le corriger.", "Raconter un voyage particulièrement agréable.", "Demander l’interdiction de tous les vols."], "answer": 0, "why": "作者从亲身经历出发，批评“污染更大的飞机反而更便宜”，结尾呼吁价格 « refléter le coût réel »。她明确不主张禁飞（C 错）。"},
-          {"stem": "Pourquoi l’auteure trouve-t-elle la situation « d’autant plus absurde » ?", "options": ["Parce que le train est beaucoup plus lent que l’avion.", "Parce que l’option la plus polluante est aussi la moins chère.", "Parce que les billets d’avion sont difficiles à obtenir."], "answer": 1, "why": "« d’autant plus absurde que chacun connaît le bilan […] l’option la plus polluante est […] moins chère que la plus sobre »。她说火车 « à peine plus long »，排除 A。"},
-          {"stem": "Que veut montrer la comparaison avec les cigarettes et les fruits ?", "options": ["Que les voyageurs se nourrissent mal.", "Que l’avion est dangereux pour la santé.", "Que les prix encouragent le choix le plus nuisible."], "answer": 2, "why": "comme si + 未完成过去时构成的类比：把有害的东西卖得比有益的东西便宜，等于鼓励人们选择有害的一方。"},
-          {"stem": "Selon le troisième paragraphe, comment s’expliquent les prix bas de l’avion ?", "options": ["Par une fiscalité plus favorable et le modèle économique de certaines compagnies.", "Par des aides versées directement aux passagers.", "Par une baisse récente du prix du kérosène."], "answer": 0, "why": "« Le kérosène […] n’est pas taxé comme l’essence » + 廉价航空 « compensent leurs tarifs dérisoires par […] services payants »。"},
-          {"stem": "Quelle nuance l’auteure apporte-t-elle à sa position ?", "options": ["Le train ne pourra jamais concurrencer l’avion.", "L’avion reste indispensable pour certaines distances.", "Les compagnies à bas prix sont un modèle à suivre."], "answer": 1, "why": "« pour traverser un océan, il n’existe pas la moindre alternative raisonnable »。"}
+          {
+            "stem": "Quel est le but de cette tribune ?",
+            "options": [
+              "Dénoncer l’écart de prix entre le train et l’avion et appeler à le corriger.",
+              "Raconter un voyage particulièrement agréable.",
+              "Demander l’interdiction de tous les vols."
+            ],
+            "answer": 0,
+            "why": "作者从亲身经历出发，批评“污染更大的飞机反而更便宜”，结尾呼吁价格 « refléter le coût réel »。她明确不主张禁飞（C 错）。"
+          },
+          {
+            "stem": "Pourquoi l’auteure trouve-t-elle la situation « d’autant plus absurde » ?",
+            "options": [
+              "Parce que le train est beaucoup plus lent que l’avion.",
+              "Parce que l’option la plus polluante est aussi la moins chère.",
+              "Parce que les billets d’avion sont difficiles à obtenir."
+            ],
+            "answer": 1,
+            "why": "« d’autant plus absurde que chacun connaît le bilan […] l’option la plus polluante est […] moins chère que la plus sobre »。她说火车 « à peine plus long »，排除 A。"
+          },
+          {
+            "stem": "Que veut montrer la comparaison avec les cigarettes et les fruits ?",
+            "options": [
+              "Que les voyageurs se nourrissent mal.",
+              "Que l’avion est dangereux pour la santé.",
+              "Que les prix encouragent le choix le plus nuisible."
+            ],
+            "answer": 2,
+            "why": "comme si + 未完成过去时构成的类比：把有害的东西卖得比有益的东西便宜，等于鼓励人们选择有害的一方。"
+          },
+          {
+            "stem": "Selon le troisième paragraphe, comment s’expliquent les prix bas de l’avion ?",
+            "options": [
+              "Par une fiscalité plus favorable et le modèle économique de certaines compagnies.",
+              "Par des aides versées directement aux passagers.",
+              "Par une baisse récente du prix du kérosène."
+            ],
+            "answer": 0,
+            "why": "« Le kérosène […] n’est pas taxé comme l’essence » + 廉价航空 « compensent leurs tarifs dérisoires par […] services payants »。"
+          },
+          {
+            "stem": "Quelle nuance l’auteure apporte-t-elle à sa position ?",
+            "options": [
+              "Le train ne pourra jamais concurrencer l’avion.",
+              "L’avion reste indispensable pour certaines distances.",
+              "Les compagnies à bas prix sont un modèle à suivre."
+            ],
+            "answer": 1,
+            "why": "« pour traverser un océan, il n’existe pas la moindre alternative raisonnable »。"
+          }
         ]
       },
       {
         "id": "R20-3",
         "title": "Lorvan Mobilités : nouveaux tarifs au 1er janvier",
-        "meta": {"genre": "Communiqué", "domain": "Transports en commun", "level": "B2"},
+        "meta": {
+          "genre": "Communiqué",
+          "domain": "Transports en commun",
+          "level": "B2"
+        },
         "text": [
           "<b>Lorvan Mobilités – Nouveaux tarifs au 1er janvier</b>",
           "À partir du 1er janvier, Lorvan Mobilités simplifie ses tarifs. Désormais, un seul titre de transport donnera accès à l’ensemble du réseau : bus, tramway et vélos en libre-service.",
@@ -67,11 +187,56 @@
           "Ces nouveaux tarifs sont d’autant plus avantageux que la fréquence des tramways sera renforcée : un passage toutes les cinq minutes aux heures de pointe, contre huit aujourd’hui. Retrouvez toutes les informations dans nos agences ou sur l’application Lorvan Mobilités."
         ],
         "questions": [
-          {"stem": "Quel est l’objectif de ce document ?", "options": ["Présenter les nouveaux tarifs et services d’un réseau de transport.", "Annoncer la fermeture d’une ligne de tramway.", "Recruter des conducteurs de bus."], "answer": 0, "why": "标题与首段：« Lorvan Mobilités simplifie ses tarifs »，全文介绍新票价与新服务。"},
-          {"stem": "Que signifie « plus vous voyagez, moins vous payez » ?", "options": ["Les tickets à l’unité deviennent moins chers.", "Le coût moyen d’un trajet baisse quand on voyage souvent.", "Les longs trajets deviennent gratuits."], "answer": 1, "why": "单程票反而涨价（1,60 → 1,80 €），月票降价（42 → 35 €）：经常乘车的人每次出行的平均成本更低。"},
-          {"stem": "Combien coûtera l’abonnement mensuel pour un étudiant de 22 ans ?", "options": ["35 €.", "1,80 €.", "20 €."], "answer": 2, "why": "« Pour les moins de 26 ans et les plus de 65 ans, il ne coûtera que 20 € »。"},
-          {"stem": "Qui pourra voyager gratuitement ?", "options": ["Les demandeurs d’emploi, sur justificatif.", "Toutes les familles le week-end.", "Les personnes de plus de 65 ans."], "answer": 0, "why": "« Les demandeurs d’emploi bénéficieront […] de la gratuité totale, sur simple présentation d’un justificatif »；家庭周末票需 6 €，65 岁以上为 20 €。"},
-          {"stem": "Qu’est-ce qui rend ces tarifs « d’autant plus avantageux » ?", "options": ["La création d’un parking gratuit.", "Des tramways plus fréquents aux heures de pointe.", "La suppression de plusieurs lignes de bus."], "answer": 1, "why": "« d’autant plus avantageux que la fréquence des tramways sera renforcée : un passage toutes les cinq minutes »。"}
+          {
+            "stem": "Quel est l’objectif de ce document ?",
+            "options": [
+              "Présenter les nouveaux tarifs et services d’un réseau de transport.",
+              "Annoncer la fermeture d’une ligne de tramway.",
+              "Recruter des conducteurs de bus."
+            ],
+            "answer": 0,
+            "why": "标题与首段：« Lorvan Mobilités simplifie ses tarifs »，全文介绍新票价与新服务。"
+          },
+          {
+            "stem": "Que signifie « plus vous voyagez, moins vous payez » ?",
+            "options": [
+              "Les tickets à l’unité deviennent moins chers.",
+              "Le coût moyen d’un trajet baisse quand on voyage souvent.",
+              "Les longs trajets deviennent gratuits."
+            ],
+            "answer": 1,
+            "why": "单程票反而涨价（1,60 → 1,80 €），月票降价（42 → 35 €）：经常乘车的人每次出行的平均成本更低。"
+          },
+          {
+            "stem": "Combien coûtera l’abonnement mensuel pour un étudiant de 22 ans ?",
+            "options": [
+              "35 €.",
+              "1,80 €.",
+              "20 €."
+            ],
+            "answer": 2,
+            "why": "« Pour les moins de 26 ans et les plus de 65 ans, il ne coûtera que 20 € »。"
+          },
+          {
+            "stem": "Qui pourra voyager gratuitement ?",
+            "options": [
+              "Les demandeurs d’emploi, sur justificatif.",
+              "Toutes les familles le week-end.",
+              "Les personnes de plus de 65 ans."
+            ],
+            "answer": 0,
+            "why": "« Les demandeurs d’emploi bénéficieront […] de la gratuité totale, sur simple présentation d’un justificatif »；家庭周末票需 6 €，65 岁以上为 20 €。"
+          },
+          {
+            "stem": "Qu’est-ce qui rend ces tarifs « d’autant plus avantageux » ?",
+            "options": [
+              "La création d’un parking gratuit.",
+              "Des tramways plus fréquents aux heures de pointe.",
+              "La suppression de plusieurs lignes de bus."
+            ],
+            "answer": 1,
+            "why": "« d’autant plus avantageux que la fréquence des tramways sera renforcée : un passage toutes les cinq minutes »。"
+          }
         ]
       }
     ],
@@ -79,7 +244,12 @@
       {
         "id": "L20-1",
         "title": "Transports gratuits : bonne ou fausse idée ?",
-        "meta": {"genre": "Émission de radio · débat", "domain": "Mobilité urbaine", "level": "B2", "plays": 2},
+        "meta": {
+          "genre": "Émission de radio · débat",
+          "domain": "Mobilité urbaine",
+          "level": "B2",
+          "plays": 2
+        },
         "script": [
           "— Bonjour à tous et bienvenue dans « Le grand débat ». Aujourd’hui, une question qui agite de nombreuses villes : faut-il rendre les transports en commun gratuits ? Pour en parler, deux invités. Sylvie Marin, vous êtes adjointe au maire de Vauclair, une ville qui a instauré la gratuité il y a trois ans. Et face à vous, Olivier Dumas, économiste spécialiste des transports. Bonjour à tous les deux.\n— Bonjour.\n— Bonjour.",
           "— Sylvie Marin, trois ans après, quel bilan tirez-vous ?\n— Un bilan très positif. La fréquentation des bus a augmenté de 60 %. Et ce qui nous réjouit le plus, c’est que ce sont souvent des personnes qui se déplaçaient de moins en moins, faute de moyens : des retraités, des jeunes sans emploi. Pour eux, la gratuité, c’est la liberté de sortir de chez soi. Et plus le réseau est utilisé, plus la ville est vivante.",
@@ -88,41 +258,168 @@
           "— Pour conclure, chacun en une phrase. Olivier Dumas ?\n— Un service de qualité vaut mieux qu’un service gratuit : mieux vaut investir dans la fréquence que dans la gratuité.\n— Sylvie Marin ?\n— Je pense, au contraire, que l’un n’empêche pas l’autre, et que la gratuité est la meilleure publicité pour les transports en commun.\n— Merci à tous les deux."
         ],
         "questions": [
-          {"stem": "Quel est le sujet du débat ?", "options": ["La gratuité des transports en commun.", "La construction d’une nouvelle ligne de tramway.", "La hausse du prix de l’essence."], "answer": 0, "why": "主持人：« faut-il rendre les transports en commun gratuits ? »。"},
-          {"stem": "Selon Sylvie Marin, qui a le plus profité de la gratuité ?", "options": ["Les automobilistes.", "Des personnes aux revenus modestes qui sortaient peu.", "Les touristes de passage."], "answer": 1, "why": "« des personnes qui se déplaçaient de moins en moins, faute de moyens : des retraités, des jeunes sans emploi »。"},
-          {"stem": "Quelle est la première objection de l’économiste ?", "options": ["La fréquentation n’a pas vraiment augmenté.", "Les bus sont devenus moins sûrs.", "Les nouveaux voyageurs ne sont pas surtout d’anciens automobilistes."], "answer": 2, "why": "« une bonne partie d’entre eux marchaient ou prenaient leur vélo auparavant »；他明确说 « Je ne conteste pas ces chiffres »，排除 A。"},
-          {"stem": "D’après lui, à quoi les automobilistes tiennent-ils surtout ?", "options": ["Au temps de trajet et au confort.", "Au prix du ticket.", "À la propreté des véhicules."], "answer": 0, "why": "« ils tiennent surtout au temps de trajet et au confort, pas au prix du ticket »。"},
-          {"stem": "Quel risque l’économiste évoque-t-il dans sa deuxième objection ?", "options": ["Une forte hausse du prix des tickets.", "Une dégradation du service faute de financement.", "Une baisse brutale de la fréquentation."], "answer": 1, "why": "« qui paie ? […] le pire, ce serait d’avoir des bus gratuits, mais de moins en moins nombreux et de plus en plus bondés »。"},
-          {"stem": "Sur quoi les deux invités restent-ils en désaccord à la fin ?", "options": ["Sur l’utilité des transports en commun.", "Sur les chiffres de fréquentation de Vauclair.", "Sur la priorité à donner à la gratuité ou à la qualité du service."], "answer": 2, "why": "Dumas：« mieux vaut investir dans la fréquence que dans la gratuité »；Marin：« l’un n’empêche pas l’autre »。双方都认可公共交通的价值，也未争论数据。"}
+          {
+            "stem": "Quel est le sujet du débat ?",
+            "options": [
+              "La gratuité des transports en commun.",
+              "La construction d’une nouvelle ligne de tramway.",
+              "La hausse du prix de l’essence."
+            ],
+            "answer": 0,
+            "why": "主持人：« faut-il rendre les transports en commun gratuits ? »。"
+          },
+          {
+            "stem": "Selon Sylvie Marin, qui a le plus profité de la gratuité ?",
+            "options": [
+              "Les automobilistes.",
+              "Des personnes aux revenus modestes qui sortaient peu.",
+              "Les touristes de passage."
+            ],
+            "answer": 1,
+            "why": "« des personnes qui se déplaçaient de moins en moins, faute de moyens : des retraités, des jeunes sans emploi »。"
+          },
+          {
+            "stem": "Quelle est la première objection de l’économiste ?",
+            "options": [
+              "La fréquentation n’a pas vraiment augmenté.",
+              "Les bus sont devenus moins sûrs.",
+              "Les nouveaux voyageurs ne sont pas surtout d’anciens automobilistes."
+            ],
+            "answer": 2,
+            "why": "« une bonne partie d’entre eux marchaient ou prenaient leur vélo auparavant »；他明确说 « Je ne conteste pas ces chiffres »，排除 A。"
+          },
+          {
+            "stem": "D’après lui, à quoi les automobilistes tiennent-ils surtout ?",
+            "options": [
+              "Au temps de trajet et au confort.",
+              "Au prix du ticket.",
+              "À la propreté des véhicules."
+            ],
+            "answer": 0,
+            "why": "« ils tiennent surtout au temps de trajet et au confort, pas au prix du ticket »。"
+          },
+          {
+            "stem": "Quel risque l’économiste évoque-t-il dans sa deuxième objection ?",
+            "options": [
+              "Une forte hausse du prix des tickets.",
+              "Une dégradation du service faute de financement.",
+              "Une baisse brutale de la fréquentation."
+            ],
+            "answer": 1,
+            "why": "« qui paie ? […] le pire, ce serait d’avoir des bus gratuits, mais de moins en moins nombreux et de plus en plus bondés »。"
+          },
+          {
+            "stem": "Sur quoi les deux invités restent-ils en désaccord à la fin ?",
+            "options": [
+              "Sur l’utilité des transports en commun.",
+              "Sur les chiffres de fréquentation de Vauclair.",
+              "Sur la priorité à donner à la gratuité ou à la qualité du service."
+            ],
+            "answer": 2,
+            "why": "Dumas：« mieux vaut investir dans la fréquence que dans la gratuité »；Marin：« l’un n’empêche pas l’autre »。双方都认可公共交通的价值，也未争论数据。"
+          }
         ]
       },
       {
         "id": "L20-2",
         "title": "Électrique ou essence : laquelle coûte le moins ?",
-        "meta": {"genre": "Chronique radio", "domain": "Consommation & mobilité", "level": "B2", "plays": 2},
+        "meta": {
+          "genre": "Chronique radio",
+          "domain": "Consommation & mobilité",
+          "level": "B2",
+          "plays": 2
+        },
         "script": [
           "— Place à la chronique « Votre argent » avec Hugo Lemaire. Hugo, beaucoup d’auditeurs hésitent entre une voiture électrique et une voiture à essence.\n— Oui, et c’est normal : à l’achat, l’électrique reste nettement plus chère, souvent de plusieurs milliers d’euros, même avec les aides. Mais le prix d’achat n’est qu’une partie de l’histoire.\n— C’est-à-dire ?",
           "— À l’usage, l’électrique coûte beaucoup moins cher. Si vous la rechargez chez vous, cent kilomètres vous reviennent environ trois fois moins cher qu’avec de l’essence. L’entretien aussi est plus léger : pas de vidange, moins de pièces qui s’usent. Donc, plus vous roulez, plus l’électrique devient avantageuse.\n— Et pour quelqu’un qui roule peu ?\n— Là, c’est différent. Si vous faites cinq mille kilomètres par an, vous mettrez des années à rattraper la différence de prix. Pour ces conducteurs-là, une petite voiture d’occasion, voire pas de voiture du tout, reste souvent la solution la plus raisonnable.",
           "— Et l’autonomie ? C’est la grande crainte.\n— Elle a beaucoup progressé. Pour les trajets quotidiens, elle est largement suffisante. Pour les longs voyages, il faut s’organiser un peu plus, prévoir des pauses. Mais on ne vit pas comme si l’on partait en vacances tous les week-ends !\n— Le conseil final ?\n— Calculez le coût total sur cinq ans, pas le prix affiché. C’est le seul chiffre qui compte."
         ],
         "questions": [
-          {"stem": "Quel est le sujet de la chronique ?", "options": ["Le coût réel d’une voiture électrique comparé à celui d’une voiture à essence.", "Le lancement d’un nouveau modèle de voiture.", "Les démarches pour obtenir une aide à l’achat."], "answer": 0, "why": "开场即点出听众在电动车和汽油车之间犹豫，专栏比较购买价、使用成本和续航。"},
-          {"stem": "Selon le chroniqueur, la voiture électrique devient plus avantageuse…", "options": ["dès le jour de l’achat.", "quand on roule beaucoup.", "uniquement pour les longs voyages."], "answer": 1, "why": "« plus vous roulez, plus l’électrique devient avantageuse »；购买时它 « nettement plus chère »（A 错）。"},
-          {"stem": "Que conseille-t-il aux personnes qui roulent peu ?", "options": ["D’acheter une voiture électrique neuve.", "De louer une voiture chaque week-end.", "D’envisager une petite voiture d’occasion, voire de s’en passer."], "answer": 2, "why": "« une petite voiture d’occasion, voire pas de voiture du tout, reste souvent la solution la plus raisonnable »。"},
-          {"stem": "Quel est son conseil final ?", "options": ["Calculer le coût total sur plusieurs années.", "Attendre une baisse des prix.", "Choisir le modèle qui a la plus grande autonomie."], "answer": 0, "why": "« Calculez le coût total sur cinq ans, pas le prix affiché »。"}
+          {
+            "stem": "Quel est le sujet de la chronique ?",
+            "options": [
+              "Le coût réel d’une voiture électrique comparé à celui d’une voiture à essence.",
+              "Le lancement d’un nouveau modèle de voiture.",
+              "Les démarches pour obtenir une aide à l’achat."
+            ],
+            "answer": 0,
+            "why": "开场即点出听众在电动车和汽油车之间犹豫，专栏比较购买价、使用成本和续航。"
+          },
+          {
+            "stem": "Selon le chroniqueur, la voiture électrique devient plus avantageuse…",
+            "options": [
+              "dès le jour de l’achat.",
+              "quand on roule beaucoup.",
+              "uniquement pour les longs voyages."
+            ],
+            "answer": 1,
+            "why": "« plus vous roulez, plus l’électrique devient avantageuse »；购买时它 « nettement plus chère »（A 错）。"
+          },
+          {
+            "stem": "Que conseille-t-il aux personnes qui roulent peu ?",
+            "options": [
+              "D’acheter une voiture électrique neuve.",
+              "De louer une voiture chaque week-end.",
+              "D’envisager une petite voiture d’occasion, voire de s’en passer."
+            ],
+            "answer": 2,
+            "why": "« une petite voiture d’occasion, voire pas de voiture du tout, reste souvent la solution la plus raisonnable »。"
+          },
+          {
+            "stem": "Quel est son conseil final ?",
+            "options": [
+              "Calculer le coût total sur plusieurs années.",
+              "Attendre une baisse des prix.",
+              "Choisir le modèle qui a la plus grande autonomie."
+            ],
+            "answer": 0,
+            "why": "« Calculez le coût total sur cinq ans, pas le prix affiché »。"
+          }
         ]
       },
       {
         "id": "L20-3",
         "title": "Information voyageurs : travaux ce week-end",
-        "meta": {"genre": "Annonce en gare", "domain": "Transport ferroviaire", "level": "B2", "plays": 1},
+        "meta": {
+          "genre": "Annonce en gare",
+          "domain": "Transport ferroviaire",
+          "level": "B2",
+          "plays": 1
+        },
         "script": [
           "— Mesdames et messieurs, votre attention, s’il vous plaît. En raison de travaux sur la voie entre Lorvan et Saint-Fiacre, la circulation des trains est interrompue ce week-end. Deux solutions vous sont proposées. Des cars de substitution partiront toutes les heures devant la gare routière : le trajet durera environ une heure dix, soit vingt-cinq minutes de plus qu’en train. Vous pouvez également emprunter la ligne qui passe par Mirande, avec une correspondance : c’est plus long encore, mais les places y sont moins limitées. Attention : les vélos ne sont pas acceptés dans les cars. Les titres de transport restent valables pour l’ensemble de ces solutions. Nous vous remercions de votre compréhension."
         ],
         "questions": [
-          {"stem": "Pourquoi la circulation des trains est-elle interrompue ?", "options": ["À cause d’une grève.", "À cause de travaux sur la voie.", "À cause des intempéries."], "answer": 1, "why": "« En raison de travaux sur la voie entre Lorvan et Saint-Fiacre »。"},
-          {"stem": "Combien de temps dure le trajet en car ?", "options": ["Environ une heure dix.", "Vingt-cinq minutes.", "Quarante-cinq minutes."], "answer": 0, "why": "« le trajet durera environ une heure dix, soit vingt-cinq minutes de plus qu’en train »；25 分钟是比火车多出的时间。"},
-          {"stem": "Quel voyageur ne pourra pas prendre le car ?", "options": ["Celui qui a acheté un billet de train.", "Celui qui part le dimanche.", "Celui qui voyage avec son vélo."], "answer": 2, "why": "« les vélos ne sont pas acceptés dans les cars »；火车票在所有替代方案中依然有效。"}
+          {
+            "stem": "Pourquoi la circulation des trains est-elle interrompue ?",
+            "options": [
+              "À cause d’une grève.",
+              "À cause de travaux sur la voie.",
+              "À cause des intempéries."
+            ],
+            "answer": 1,
+            "why": "« En raison de travaux sur la voie entre Lorvan et Saint-Fiacre »。"
+          },
+          {
+            "stem": "Combien de temps dure le trajet en car ?",
+            "options": [
+              "Environ une heure dix.",
+              "Vingt-cinq minutes.",
+              "Quarante-cinq minutes."
+            ],
+            "answer": 0,
+            "why": "« le trajet durera environ une heure dix, soit vingt-cinq minutes de plus qu’en train »；25 分钟是比火车多出的时间。"
+          },
+          {
+            "stem": "Quel voyageur ne pourra pas prendre le car ?",
+            "options": [
+              "Celui qui a acheté un billet de train.",
+              "Celui qui part le dimanche.",
+              "Celui qui voyage avec son vélo."
+            ],
+            "answer": 2,
+            "why": "« les vélos ne sont pas acceptés dans les cars »；火车票在所有替代方案中依然有效。"
+          }
         ]
       }
     ],
@@ -134,7 +431,9 @@
         "prompt": "Sur le forum de votre ville, une habitante réagit au projet de la mairie de fermer le centre-ville aux voitures le samedi et le dimanche. Vous lui répondez dans une contribution argumentée : vous comparez les avantages et les inconvénients de la mesure et vous défendez votre position en vous appuyant sur des exemples précis. (220 mots minimum)",
         "trigger": {
           "title": "Message de Nadine_L",
-          "text": ["La mairie veut fermer tout le centre-ville aux voitures le samedi et le dimanche. Très bien pour ceux qui habitent à côté et circulent à vélo, mais moi, j’habite à quinze kilomètres, il n’y a qu’un bus toutes les heures, et je viens faire mes courses avec mes deux enfants. On va encore mourir à petit feu, et nos commerces avec nous ! Qu’en pensez-vous ?"]
+          "text": [
+            "La mairie veut fermer tout le centre-ville aux voitures le samedi et le dimanche. Très bien pour ceux qui habitent à côté et circulent à vélo, mais moi, j’habite à quinze kilomètres, il n’y a qu’un bus toutes les heures, et je viens faire mes courses avec mes deux enfants. On va encore mourir à petit feu, et nos commerces avec nous ! Qu’en pensez-vous ?"
+          ]
         },
         "minWords": 220,
         "checklist": [
@@ -205,44 +504,237 @@
         "title": "Conseiller un collègue à partir de chiffres",
         "topic": "mobilité & transport",
         "task": "Un collègue qui vient d’emménager à 12 km du bureau vous demande conseil. Comparez ces trois options et recommandez-en une, en 60 à 80 mots (registre amical, tutoiement) : voiture – 25 min, 9 € par jour (essence + parking) ; bus + tram – 40 min, 1,20 € par jour avec l’abonnement ; vélo électrique – 35 min, 0,50 € par jour. Utilisez au moins deux structures de comparaison complexe.",
-        "chunks": ["Le vélo électrique est presque aussi rapide que…", "La voiture coûte près de vingt fois plus cher que…", "d’autant plus que…", "Tout bien considéré, je te conseille…"],
-        "keys": ["vélo", "voiture", "moins"]
+        "chunks": [
+          "Le vélo électrique est presque aussi rapide que…",
+          "La voiture coûte près de vingt fois plus cher que…",
+          "d’autant plus que…",
+          "Tout bien considéré, je te conseille…"
+        ],
+        "keys": [
+          "vélo",
+          "voiture",
+          "moins"
+        ]
       },
       {
         "id": "A20-2",
         "title": "Compte rendu du débat",
         "topic": "mobilité & transport",
         "task": "Pour le journal de votre école de langue, rédigez un compte rendu objectif de 70 à 90 mots du débat L20-1 : présentez la position de chaque invité, un argument de chacun, puis le point sur lequel ils divergent.",
-        "chunks": ["Selon Sylvie Marin, …", "Olivier Dumas, quant à lui, estime que…", "Les deux invités reconnaissent que…", "En revanche, ils divergent sur…"],
-        "keys": ["gratuité", "selon", "en revanche"]
+        "chunks": [
+          "Selon Sylvie Marin, …",
+          "Olivier Dumas, quant à lui, estime que…",
+          "Les deux invités reconnaissent que…",
+          "En revanche, ils divergent sur…"
+        ],
+        "keys": [
+          "gratuité",
+          "selon",
+          "en revanche"
+        ]
       }
     ]
   },
   "vocab": [
-    {"id": "V20-01", "fr": "l’emporter sur", "zh": "胜过；占上风", "ex": "Sur les trajets de moins de cinq kilomètres, le vélo [[l’emporte sur]] la voiture.", "exZh": "在五公里以内的路程上，自行车胜过汽车。", "src": "R20-1"},
-    {"id": "V20-02", "fr": "la raison invoquée", "zh": "所给出的理由", "ex": "[[La raison invoquée]] par la mairie est le coût des travaux.", "exZh": "市政府给出的理由是工程费用。", "src": "R20-1"},
-    {"id": "V20-03", "fr": "craindre le pire", "zh": "担心出现最坏的结果", "ex": "Les commerçants [[craignaient le pire]], mais leurs ventes ont augmenté.", "exZh": "商户们原本担心最坏的结果，但销量反而上升了。", "src": "R20-1"},
-    {"id": "V20-04", "fr": "se reporter sur", "zh": "（车流等）转移到", "ex": "Après la fermeture du pont, la circulation [[s’est reportée sur]] la rocade.", "exZh": "大桥封闭后，车流转移到了环城公路上。", "src": "R20-1"},
-    {"id": "V20-05", "fr": "être d’autant plus efficace que", "zh": "越……就越有效", "ex": "Une piste cyclable est [[d’autant plus efficace]] qu’elle est protégée des voitures.", "exZh": "自行车道与汽车隔离得越好，就越有效。", "src": "R20-1"},
-    {"id": "V20-06", "fr": "une alternative crédible", "zh": "可靠（可行）的替代方案", "ex": "Pour beaucoup de ruraux, le car n’est pas [[une alternative crédible]] à la voiture.", "exZh": "对许多农村居民来说，长途汽车并不是可行的汽车替代方案。", "src": "R20-1"},
-    {"id": "V20-07", "fr": "la moins mauvaise solution", "zh": "两害相权取其轻的办法", "ex": "Faute de mieux, la voiture reste [[la moins mauvaise solution]].", "exZh": "由于没有更好的选择，汽车仍是两害相权取其轻的办法。", "src": "R20-1"},
-    {"id": "V20-08", "fr": "un parking relais", "zh": "换乘停车场（P+R）", "ex": "Laissez votre véhicule au [[parking relais]] et prenez le tram.", "exZh": "把车停在换乘停车场，然后乘坐有轨电车。", "src": "R20-1"},
-    {"id": "V20-09", "fr": "laisser sa voiture au garage", "zh": "不开车（把车留在家里）", "ex": "Avec ce nouvel abonnement, de nombreux habitants [[laissent leur voiture au garage]].", "exZh": "有了这种新月票，很多居民不再开车出门。", "src": "R20-1"},
-    {"id": "V20-10", "fr": "un tarif dérisoire", "zh": "低得离谱的价格", "ex": "Ces billets d’avion sont vendus à [[des tarifs dérisoires]].", "exZh": "这些机票以低得离谱的价格出售。", "src": "R20-2"},
-    {"id": "V20-11", "fr": "refléter le coût réel", "zh": "反映真实成本", "ex": "Le prix du billet devrait [[refléter le coût réel]] du voyage.", "exZh": "票价应当反映出行的真实成本。", "src": "R20-2"},
-    {"id": "V20-12", "fr": "pas la moindre", "zh": "一点……也没有", "ex": "Il n’y a [[pas la moindre]] piste cyclable dans ce quartier.", "exZh": "这个街区连一条自行车道都没有。", "src": "R20-2"},
-    {"id": "V20-13", "fr": "comme s’il était", "zh": "就好像他是（处于）……", "ex": "Il conduit [[comme s’il était]] seul sur la route.", "exZh": "他开车就好像路上只有他一个人。", "src": "topic"},
-    {"id": "V20-14", "fr": "la gratuité totale", "zh": "完全免费", "ex": "La ville a instauré [[la gratuité totale]] des bus le samedi.", "exZh": "该市实行周六公交完全免费。", "src": "R20-3"},
-    {"id": "V20-15", "fr": "sur simple présentation de", "zh": "只需出示……", "ex": "L’entrée est gratuite [[sur simple présentation]] de votre carte d’étudiant.", "exZh": "只需出示学生证即可免费入场。", "src": "R20-3"},
-    {"id": "V20-16", "fr": "de manière illimitée", "zh": "不限次数地", "ex": "Avec ce forfait, vous pouvez voyager [[de manière illimitée]] pendant un mois.", "exZh": "有了这个套票，您可以一个月内不限次数乘车。", "src": "R20-3"},
-    {"id": "V20-17", "fr": "tirer un bilan", "zh": "总结（成效）", "ex": "Trois ans après, la mairie [[tire un bilan]] très positif de la réforme.", "exZh": "三年后，市政府对这项改革做出了非常积极的总结。", "src": "L20-1"},
-    {"id": "V20-18", "fr": "être de plus en plus bondé", "zh": "越来越拥挤", "ex": "Aux heures de pointe, les rames [[sont de plus en plus bondées]].", "exZh": "高峰时段，车厢越来越拥挤。", "src": "L20-1"},
-    {"id": "V20-19", "fr": "l’un n’empêche pas l’autre", "zh": "两者并不矛盾", "ex": "On peut aimer conduire et prendre le train : [[l’un n’empêche pas l’autre]].", "exZh": "人可以既喜欢开车又乘火车，两者并不矛盾。", "src": "L20-1"},
-    {"id": "V20-20", "fr": "revenir moins cher", "zh": "（算下来）花费更少", "ex": "Pour ce trajet, le train nous [[revient moins cher]] que la voiture.", "exZh": "就这段路程而言，坐火车比开车更省钱。", "src": "L20-2"},
-    {"id": "V20-21", "fr": "rattraper la différence", "zh": "弥补（价格）差额", "ex": "Il faut rouler plusieurs années pour [[rattraper la différence]] de prix.", "exZh": "要开好几年车才能弥补价格差额。", "src": "L20-2"},
-    {"id": "V20-22", "fr": "un car de substitution", "zh": "替代大巴（代替停运列车）", "ex": "Pendant les travaux, [[des cars de substitution]] remplacent les trains.", "exZh": "施工期间，由替代大巴代替火车运行。", "src": "L20-3"},
-    {"id": "V20-23", "fr": "rejeter en bloc", "zh": "全盘否定", "ex": "Les riverains ont [[rejeté en bloc]] le projet de nouvelle route.", "exZh": "沿线居民全盘否定了新建道路的方案。", "src": "W20-1"},
-    {"id": "V20-24", "fr": "relativiser les bénéfices", "zh": "对益处持保留看法；淡化好处", "ex": "Cette étude [[relativise les bénéfices]] du télétravail pour le climat.", "exZh": "这项研究对远程办公的气候益处持保留看法。", "src": "S20-1"},
-    {"id": "V20-25", "fr": "perdre un temps fou", "zh": "浪费大量时间", "ex": "Avec ces travaux, on [[perd un temps fou]] chaque matin.", "exZh": "因为这些施工，我们每天早上都要浪费大量时间。", "src": "S20-2"}
+    {
+      "id": "V20-01",
+      "fr": "l’emporter sur",
+      "zh": "胜过；占上风",
+      "ex": "Sur les trajets de moins de cinq kilomètres, le vélo [[l’emporte sur]] la voiture.",
+      "exZh": "在五公里以内的路程上，自行车胜过汽车。",
+      "src": "R20-1"
+    },
+    {
+      "id": "V20-02",
+      "fr": "la raison invoquée",
+      "zh": "所给出的理由",
+      "ex": "[[La raison invoquée]] par la mairie est le coût des travaux.",
+      "exZh": "市政府给出的理由是工程费用。",
+      "src": "R20-1"
+    },
+    {
+      "id": "V20-03",
+      "fr": "craindre le pire",
+      "zh": "担心出现最坏的结果",
+      "ex": "Les commerçants [[craignaient le pire]], mais leurs ventes ont augmenté.",
+      "exZh": "商户们原本担心最坏的结果，但销量反而上升了。",
+      "src": "R20-1"
+    },
+    {
+      "id": "V20-04",
+      "fr": "se reporter sur",
+      "zh": "（车流等）转移到",
+      "ex": "Après la fermeture du pont, la circulation [[s’est reportée sur]] la rocade.",
+      "exZh": "大桥封闭后，车流转移到了环城公路上。",
+      "src": "R20-1"
+    },
+    {
+      "id": "V20-05",
+      "fr": "être d’autant plus efficace que",
+      "zh": "越……就越有效",
+      "ex": "Une piste cyclable est [[d’autant plus efficace]] qu’elle est protégée des voitures.",
+      "exZh": "自行车道与汽车隔离得越好，就越有效。",
+      "src": "R20-1"
+    },
+    {
+      "id": "V20-06",
+      "fr": "une alternative crédible",
+      "zh": "可靠（可行）的替代方案",
+      "ex": "Pour beaucoup de ruraux, le car n’est pas [[une alternative crédible]] à la voiture.",
+      "exZh": "对许多农村居民来说，长途汽车并不是可行的汽车替代方案。",
+      "src": "R20-1"
+    },
+    {
+      "id": "V20-07",
+      "fr": "la moins mauvaise solution",
+      "zh": "两害相权取其轻的办法",
+      "ex": "Faute de mieux, la voiture reste [[la moins mauvaise solution]].",
+      "exZh": "由于没有更好的选择，汽车仍是两害相权取其轻的办法。",
+      "src": "R20-1"
+    },
+    {
+      "id": "V20-08",
+      "fr": "un parking relais",
+      "zh": "换乘停车场（P+R）",
+      "ex": "Laissez votre véhicule au [[parking relais]] et prenez le tram.",
+      "exZh": "把车停在换乘停车场，然后乘坐有轨电车。",
+      "src": "R20-1"
+    },
+    {
+      "id": "V20-09",
+      "fr": "miser sur",
+      "zh": "寄希望于；押注于",
+      "ex": "Pour désengorger le centre, la ville [[mise sur]] le tramway.",
+      "exZh": "为了缓解市中心拥堵，该市把希望寄托在有轨电车上。",
+      "src": "R20-1"
+    },
+    {
+      "id": "V20-10",
+      "fr": "un tarif dérisoire",
+      "zh": "低得离谱的价格",
+      "ex": "Ces billets d’avion sont vendus à [[des tarifs dérisoires]].",
+      "exZh": "这些机票以低得离谱的价格出售。",
+      "src": "R20-2"
+    },
+    {
+      "id": "V20-11",
+      "fr": "refléter le coût réel",
+      "zh": "反映真实成本",
+      "ex": "Le prix du billet devrait [[refléter le coût réel]] du voyage.",
+      "exZh": "票价应当反映出行的真实成本。",
+      "src": "R20-2"
+    },
+    {
+      "id": "V20-12",
+      "fr": "pas la moindre",
+      "zh": "一点……也没有",
+      "ex": "Il n’y a [[pas la moindre]] piste cyclable dans ce quartier.",
+      "exZh": "这个街区连一条自行车道都没有。",
+      "src": "R20-2"
+    },
+    {
+      "id": "V20-13",
+      "fr": "comme s’il était",
+      "zh": "就好像他是（处于）……",
+      "ex": "Il conduit [[comme s’il était]] seul sur la route.",
+      "exZh": "他开车就好像路上只有他一个人。",
+      "src": "topic"
+    },
+    {
+      "id": "V20-14",
+      "fr": "la gratuité totale",
+      "zh": "完全免费",
+      "ex": "La ville a instauré [[la gratuité totale]] des bus le samedi.",
+      "exZh": "该市实行周六公交完全免费。",
+      "src": "R20-3"
+    },
+    {
+      "id": "V20-15",
+      "fr": "sur simple présentation de",
+      "zh": "只需出示……",
+      "ex": "L’entrée est gratuite [[sur simple présentation]] de votre carte d’étudiant.",
+      "exZh": "只需出示学生证即可免费入场。",
+      "src": "R20-3"
+    },
+    {
+      "id": "V20-16",
+      "fr": "de manière illimitée",
+      "zh": "不限次数地",
+      "ex": "Avec ce forfait, vous pouvez voyager [[de manière illimitée]] pendant un mois.",
+      "exZh": "有了这个套票，您可以一个月内不限次数乘车。",
+      "src": "R20-3"
+    },
+    {
+      "id": "V20-17",
+      "fr": "tirer un bilan",
+      "zh": "总结（成效）",
+      "ex": "Trois ans après, la mairie [[tire un bilan]] très positif de la réforme.",
+      "exZh": "三年后，市政府对这项改革做出了非常积极的总结。",
+      "src": "L20-1"
+    },
+    {
+      "id": "V20-18",
+      "fr": "être de plus en plus bondé",
+      "zh": "越来越拥挤",
+      "ex": "Aux heures de pointe, les rames [[sont de plus en plus bondées]].",
+      "exZh": "高峰时段，车厢越来越拥挤。",
+      "src": "L20-1"
+    },
+    {
+      "id": "V20-19",
+      "fr": "l’un n’empêche pas l’autre",
+      "zh": "两者并不矛盾",
+      "ex": "On peut aimer conduire et prendre le train : [[l’un n’empêche pas l’autre]].",
+      "exZh": "人可以既喜欢开车又乘火车，两者并不矛盾。",
+      "src": "L20-1"
+    },
+    {
+      "id": "V20-20",
+      "fr": "revenir moins cher",
+      "zh": "（算下来）花费更少",
+      "ex": "Pour ce trajet, le train nous [[revient moins cher]] que la voiture.",
+      "exZh": "就这段路程而言，坐火车比开车更省钱。",
+      "src": "L20-2"
+    },
+    {
+      "id": "V20-21",
+      "fr": "rattraper la différence",
+      "zh": "弥补（价格）差额",
+      "ex": "Il faut rouler plusieurs années pour [[rattraper la différence]] de prix.",
+      "exZh": "要开好几年车才能弥补价格差额。",
+      "src": "L20-2"
+    },
+    {
+      "id": "V20-22",
+      "fr": "un car de substitution",
+      "zh": "替代大巴（代替停运列车）",
+      "ex": "Pendant les travaux, [[des cars de substitution]] remplacent les trains.",
+      "exZh": "施工期间，由替代大巴代替火车运行。",
+      "src": "L20-3"
+    },
+    {
+      "id": "V20-23",
+      "fr": "mourir à petit feu",
+      "zh": "慢慢走向衰亡；苟延残喘",
+      "ex": "Privé de clients, ce petit commerce [[meurt à petit feu]].",
+      "exZh": "失去顾客后，这家小店正慢慢走向衰亡。",
+      "src": "W20-1"
+    },
+    {
+      "id": "V20-24",
+      "fr": "relativiser les bénéfices",
+      "zh": "对益处持保留看法；淡化好处",
+      "ex": "Cette étude [[relativise les bénéfices]] du télétravail pour le climat.",
+      "exZh": "这项研究对远程办公的气候益处持保留看法。",
+      "src": "S20-1"
+    },
+    {
+      "id": "V20-25",
+      "fr": "perdre un temps fou",
+      "zh": "浪费大量时间",
+      "ex": "Avec ces travaux, on [[perd un temps fou]] chaque matin.",
+      "exZh": "因为这些施工，我们每天早上都要浪费大量时间。",
+      "src": "S20-2"
+    }
   ]
 }

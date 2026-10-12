@@ -226,7 +226,7 @@
     {"id": "V23-14", "fr": "une charte numérique", "zh": "数字使用章程", "ex": "Chaque élève devra signer [[la charte numérique]] du lycée.", "exZh": "每个学生都必须签署高中的数字使用章程。", "src": "R23-3"},
     {"id": "V23-15", "fr": "l’espace numérique de travail", "zh": "（学校）数字工作平台，ENT", "ex": "Les devoirs sont déposés sur [[l’espace numérique de travail]].", "exZh": "作业提交在学校的数字工作平台上。", "src": "R23-3"},
     {"id": "V23-16", "fr": "décomposer un problème", "zh": "把问题分解成若干步骤", "ex": "Pour programmer le robot, l’enfant doit [[décomposer le problème]] en étapes.", "exZh": "为了给机器人编程，孩子必须把问题分解成几个步骤。", "src": "L23-1"},
-    {"id": "V23-17", "fr": "l’un n’empêche pas l’autre", "zh": "两者并不矛盾；可以兼得", "ex": "Apprendre à lire et apprendre à coder ? [[L’un n’empêche pas l’autre]].", "exZh": "学阅读和学编程？两者并不矛盾。", "src": "L23-1"},
+    {"id": "V23-17", "fr": "le temps scolaire", "zh": "（学校的）教学时间", "ex": "[[Le temps scolaire]] n’est pas extensible : on ne peut pas tout y faire entrer.", "exZh": "教学时间是有限的：不可能把所有内容都塞进去。", "src": "L23-1"},
     {"id": "V23-18", "fr": "signer des deux mains", "zh": "完全赞同；举双手赞成", "ex": "Une formation obligatoire pour tous les enseignants ? Je [[signe des deux mains]].", "exZh": "所有老师都必须参加培训？我举双手赞成。", "src": "L23-1"},
     {"id": "V23-19", "fr": "les fondamentaux", "zh": "基础知识（读、写、算）", "ex": "L’école primaire doit d’abord consolider [[les fondamentaux]].", "exZh": "小学首先要巩固读写算等基础知识。", "src": "L23-1"},
     {"id": "V23-20", "fr": "l’informatique débranchée", "zh": "不插电的计算机教学（不用电脑的编程活动）", "ex": "Avec [[l’informatique débranchée]], les élèves apprennent à coder sans écran.", "exZh": "通过不插电的计算机教学，学生不用屏幕也能学编程。", "src": "L23-1"},
