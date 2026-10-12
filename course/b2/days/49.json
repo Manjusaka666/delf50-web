@@ -1,0 +1,741 @@
+{
+  "day": 49,
+  "phase": "模考修复与 C1 衔接",
+  "title": "Final mock",
+  "level": "B2",
+  "grammarFocus": "Simulation finale",
+  "function": "valider le niveau B2",
+  "topic": "mixte",
+  "canDo": "能在完整的 DELF B2 模拟考中四项各得 ≥ 15/25（总分 ≥ 60/100）：听懂长篇访谈的细节与观点，读懂信息文与评论文的言外之意，写出 ≥ 250 词的论坛发言，并完成 6 分钟独白和 4–5 分钟辩论。",
+  "review": "综合复习：原因与结果（第 5–6 天）、让步（第 7 天）、假设与条件式（第 9–10 天）、转述与推测（第 12、19 天）；对照第 41、43、45、47 天模考的错因记录，把最常错的两类题放在最后复查。",
+  "input": "读：R49-1 物品维修（信息文）、R49-2 “无聊颂”（专栏）、R49-3 音乐节新闻稿，一次性限时 60 分钟；听：L49-1 地理学家访谈听两遍，L49-2 户外课堂访谈、L49-3 青少年睡眠快讯各一遍，总时长控制在 30 分钟。",
+  "output": "写：W49-1 论坛发言（义务公民服务），60 分钟 ≥ 250 词；说：S49-1 独白 6 分钟（博物馆免费），S49-2 辩论 4–5 分钟。",
+  "checkpoint": "按官方评分表自评：每项 ≥ 15/25、总分 ≥ 60/100（及格线 50，每项不得低于 5 分）；所有题目都有作答；写作有引言、展开、结论；独白不读稿。",
+  "challenge": "今日挑战：找一位朋友或语伴扮演考官，用 S49-2 的追问完成 5 分钟辩论并录音；回听时只记下 3 处可以更精确的表达，在 TV5MONDE 或 RFI 的同主题节目里找到更地道的说法替换。",
+  "sources": [
+    "FEI-B2",
+    "FEI-B2-SAMPLES",
+    "FEI-B2-TRAIN",
+    "CEFR-CV"
+  ],
+  "remedial": true,
+  "items": {
+    "reading": [
+      {
+        "id": "R49-1",
+        "title": "Réparer plutôt que jeter : la seconde vie des objets",
+        "meta": {
+          "genre": "Article de presse",
+          "domain": "Consommation",
+          "level": "B2"
+        },
+        "text": [
+          "Un grille-pain qui ne chauffe plus, un aspirateur qui s’essouffle, un téléphone dont l’écran s’est fissuré : il y a quelques années encore, la plupart de ces objets finissaient à la poubelle. Aujourd’hui, la réparation suscite un intérêt nouveau, porté à la fois par des préoccupations écologiques et par la hausse du coût de la vie.",
+          "Les cafés de la réparation en sont le symbole le plus visible. Le principe : une fois par mois, dans une salle municipale ou un local associatif, des bénévoles bricoleurs aident les habitants à diagnostiquer et à réparer eux-mêmes leurs appareils. Dans certains quartiers, ces rendez-vous affichent complet plusieurs semaines à l’avance, et l’on y croise aussi bien des étudiants que des retraités. « On ne répare pas à la place des gens, on répare avec eux, insiste Gérard Lemoine, électricien retraité et animateur d’un de ces ateliers. Le but, c’est qu’ils repartent avec un objet qui fonctionne, mais aussi avec la conviction qu’ils en sont capables. »",
+          "Cet engouement se heurte pourtant à des obstacles de taille. De nombreux appareils sont conçus de manière qu’on ne puisse pas les ouvrir sans les abîmer : pièces collées plutôt que vissées, vis aux formes inhabituelles, batteries soudées. Les pièces de rechange, quand elles existent, sont parfois vendues à un prix si élevé que l’achat d’un appareil neuf paraît plus raisonnable. Quant aux réparateurs professionnels, ils se font rares dans les petites villes, faute de rentabilité.",
+          "Les pouvoirs publics commencent à réagir. Plusieurs pays européens imposent désormais aux fabricants d’afficher un indice de réparabilité sur certains produits, ou de garantir la disponibilité des pièces pendant un nombre minimal d’années. D’autres ont instauré des aides financières qui réduisent la facture du consommateur lorsqu’il fait réparer un appareil chez un professionnel agréé.",
+          "Reste à convaincre les consommateurs eux-mêmes. Selon une enquête menée auprès de 1 500 ménages, près de la moitié des personnes interrogées déclarent n’avoir jamais tenté de faire réparer un appareil en panne, le plus souvent parce qu’elles pensent que ce serait trop cher ou trop compliqué. Changer cette perception prendra du temps : pendant des décennies, le neuf a été associé au progrès, et le réparé, à la gêne. C’est peut-être cet imaginaire, plus encore que les obstacles techniques, qu’il faudra réparer."
+        ],
+        "questions": [
+          {
+            "stem": "Cet article traite principalement…",
+            "options": [
+              "des techniques permettant de réparer soi-même un téléphone.",
+              "du nouvel intérêt pour la réparation et des freins qu’il rencontre.",
+              "de la responsabilité des fabricants dans la hausse des prix."
+            ],
+            "answer": 1,
+            "why": "第 1–2 段讲维修重新受到关注，第 3 段讲障碍，第 4 段讲政策，第 5 段讲消费者观念。A 太窄，文中没有具体技术；C 只是第 3 段的一个细节。"
+          },
+          {
+            "stem": "Selon Gérard Lemoine, les cafés de la réparation visent surtout à…",
+            "options": [
+              "réparer gratuitement les appareils à la place des habitants.",
+              "former de futurs réparateurs professionnels.",
+              "rendre les habitants capables de réparer par eux-mêmes."
+            ],
+            "answer": 2,
+            "why": "« On ne répare pas à la place des gens, on répare avec eux… la conviction qu’ils en sont capables »。A 与他的原话相反；B 文中未提。"
+          },
+          {
+            "stem": "Parmi les obstacles cités, lequel relève de la conception des appareils ?",
+            "options": [
+              "Des pièces collées ou soudées qui empêchent de les ouvrir.",
+              "Le manque de réparateurs dans les petites villes.",
+              "Le prix élevé des pièces de rechange."
+            ],
+            "answer": 0,
+            "why": "« conçus de manière qu’on ne puisse pas les ouvrir sans les abîmer : pièces collées… batteries soudées »。B 是市场/盈利问题，C 是价格问题，都不属于“设计”。"
+          },
+          {
+            "stem": "Que signifie « faute de rentabilité » dans ce contexte ?",
+            "options": [
+              "Parce qu’ils commettent trop d’erreurs.",
+              "Parce que leur activité ne rapporte pas assez.",
+              "Parce qu’ils manquent de formation."
+            ],
+            "answer": 1,
+            "why": "faute de = 由于缺少；rentabilité = 盈利能力。小城市维修生意不赚钱，所以维修师傅越来越少。A 把 faute 误解为“错误”；C 与 rentabilité 无关。"
+          },
+          {
+            "stem": "D’après l’enquête citée, pourquoi beaucoup de ménages n’ont-ils jamais fait réparer un appareil ?",
+            "options": [
+              "Parce qu’ils ne connaissent aucun café de la réparation.",
+              "Parce que les fabricants le leur interdisent.",
+              "Parce qu’ils imaginent que ce serait trop coûteux ou trop difficile."
+            ],
+            "answer": 2,
+            "why": "« le plus souvent parce qu’elles pensent que ce serait trop cher ou trop compliqué »。A、B 都没有出现在调查结果中。"
+          },
+          {
+            "stem": "Que suggère la dernière phrase de l’article ?",
+            "options": [
+              "Qu’il faut surtout faire évoluer les mentalités.",
+              "Que les obstacles techniques sont désormais résolus.",
+              "Que les objets réparés sont de moins bonne qualité."
+            ],
+            "answer": 0,
+            "why": "作者用 réparer 的双关：“需要修复的”是人们把“修过的东西”与“窘迫”联系起来的观念（cet imaginaire）。B 错：« plus encore que » 只是比较，并没说技术障碍已解决；C 与全文立场相反。"
+          }
+        ]
+      },
+      {
+        "id": "R49-2",
+        "title": "Éloge de l’ennui",
+        "meta": {
+          "genre": "Chronique",
+          "domain": "Éducation & famille",
+          "level": "B2"
+        },
+        "text": [
+          "Lundi, judo. Mardi, conservatoire. Mercredi, anglais puis natation. Jeudi, soutien scolaire. Samedi, match. L’agenda de nombreux enfants de dix ans ferait pâlir un ministre. Et quand, par miracle, un après-midi reste libre, les parents s’inquiètent : « Il va s’ennuyer. »",
+          "Eh bien, tant mieux. Car l’ennui, que nous traquons comme une maladie, est peut-être l’une des expériences les plus fécondes de l’enfance. C’est dans ces moments creux, où il ne se passe rien, que l’enfant invente un jeu, construit une cabane, griffonne une histoire. Autrement dit, qu’il apprend à tirer de lui-même ce que personne ne lui fournit.",
+          "Je ne condamne pas pour autant les activités extrascolaires. Elles ouvrent des horizons, permettent de découvrir un talent, de se faire des amis hors de l’école. Mais à force de vouloir remplir chaque heure, nous privons les enfants d’un apprentissage essentiel : celui de supporter le vide sans se précipiter sur un écran.",
+          "Car c’est bien là que tout se joue. Un enfant qui ne s’ennuie jamais parce qu’il est occupé en permanence risque fort de devenir un adolescent incapable de rester dix minutes sans stimulation. Les écrans ne remplacent pas l’ennui ; ils l’empêchent, ce qui est tout différent. Or savoir s’occuper seul, sans stimulation extérieure, est une compétence précieuse : c’est elle qui permet plus tard de lire un livre jusqu’au bout, de mener un projet personnel ou simplement de réfléchir.",
+          "Je ne plaide donc pas pour l’oisiveté totale, mais pour un droit au temps libre véritable, non programmé, non évalué. Un après-midi par semaine sans rien de prévu : ce n’est pas une négligence, c’est un cadeau."
+        ],
+        "questions": [
+          {
+            "stem": "Dans cette chronique, l’auteur cherche à…",
+            "options": [
+              "dénoncer le coût trop élevé des activités extrascolaires.",
+              "conseiller aux parents des activités adaptées à l’âge de leurs enfants.",
+              "montrer que l’ennui peut être bénéfique pour les enfants."
+            ],
+            "answer": 2,
+            "why": "标题 « Éloge de l’ennui » 及 « l’ennui… est peut-être l’une des expériences les plus fécondes de l’enfance »。A 文中未谈费用；B 作者反而主张少安排活动。"
+          },
+          {
+            "stem": "L’expression « l’agenda… ferait pâlir un ministre » signifie que cet agenda est…",
+            "options": [
+              "extrêmement chargé.",
+              "mal organisé.",
+              "décidé par les autorités."
+            ],
+            "answer": 0,
+            "why": "faire pâlir qqn = 让某人相形见绌；连部长都会自叹不如，说明日程排得极满，与前文一连串活动呼应。B、C 都是字面误读。"
+          },
+          {
+            "stem": "Selon l’auteur, que se passe-t-il pendant les « moments creux » ?",
+            "options": [
+              "L’enfant se repose pour mieux travailler ensuite.",
+              "L’enfant développe son imagination et son autonomie.",
+              "L’enfant se tourne naturellement vers les écrans."
+            ],
+            "answer": 1,
+            "why": "« l’enfant invente un jeu, construit une cabane… apprend à tirer de lui-même ce que personne ne lui fournit »。A 文中未提；C 正是作者担心的反面情况。"
+          },
+          {
+            "stem": "Quelle est la position de l’auteur sur les activités extrascolaires ?",
+            "options": [
+              "Il reconnaît leurs atouts mais critique leur excès.",
+              "Il souhaite les voir supprimer.",
+              "Il les juge plus utiles que l’école."
+            ],
+            "answer": 0,
+            "why": "« Je ne condamne pas pour autant… Elles ouvrent des horizons… Mais à force de vouloir remplir chaque heure… »：先肯定后批评过度。B 与 « Je ne condamne pas » 矛盾；C 无依据。"
+          },
+          {
+            "stem": "Que veut dire l’auteur par « Les écrans ne remplacent pas l’ennui ; ils l’empêchent » ?",
+            "options": [
+              "Les écrans sont un bon moyen de lutter contre l’ennui.",
+              "Les écrans sont aussi ennuyeux que l’absence d’activité.",
+              "Les écrans privent l’enfant de l’expérience même de l’ennui."
+            ],
+            "answer": 2,
+            "why": "屏幕让孩子永远无法真正“无聊”，因此失去从无聊中学会自处的机会，« ce qui est tout différent »。A 正是作者批驳的看法；B 曲解了 remplacer。"
+          }
+        ]
+      },
+      {
+        "id": "R49-3",
+        "title": "Festival Les Rives : une 12e édition plus responsable",
+        "meta": {
+          "genre": "Communiqué de presse",
+          "domain": "Culture & environnement",
+          "level": "B2"
+        },
+        "text": [
+          "<b>Communiqué de presse — Festival Les Rives, 12e édition</b>",
+          "Le festival de musique Les Rives, qui aura lieu du 4 au 7 juillet à Saint-Aubin-les-Rives, franchit cette année un nouveau cap dans sa démarche responsable.",
+          "Les bouteilles en plastique seront totalement bannies du site : chaque festivalier recevra à l’entrée un gobelet consigné et pourra remplir gratuitement sa gourde aux douze fontaines installées. Les food-trucks devront proposer au moins un plat végétarien et privilégier les produits issus de fermes situées à moins de cinquante kilomètres.",
+          "Afin que le festival reste accessible au plus grand nombre, 10 % des billets seront proposés à tarif solidaire, sur simple justificatif, aux étudiants, aux demandeurs d’emploi et aux bénéficiaires des minima sociaux. Des navettes gratuites relieront par ailleurs la gare au site toutes les vingt minutes jusqu’à deux heures du matin.",
+          "Les organisateurs rappellent que le camping sera limité à 800 places cette année, à la demande de la commune, et invitent les festivaliers à réserver rapidement."
+        ],
+        "questions": [
+          {
+            "stem": "Quel est l’objectif de ce communiqué ?",
+            "options": [
+              "Annoncer la programmation musicale du festival.",
+              "Présenter les mesures environnementales et sociales de la nouvelle édition.",
+              "Justifier une hausse du prix des billets."
+            ],
+            "answer": 1,
+            "why": "« franchit cette année un nouveau cap dans sa démarche responsable »，随后介绍禁塑、本地食材、优惠票和免费接驳车。A 没有提到任何演出；C 文中无涨价信息。"
+          },
+          {
+            "stem": "Que prévoit le festival concernant les boissons ?",
+            "options": [
+              "Un gobelet consigné et de l’eau gratuite aux fontaines.",
+              "La vente de bouteilles recyclables à l’entrée.",
+              "L’interdiction d’apporter sa propre gourde."
+            ],
+            "answer": 0,
+            "why": "« un gobelet consigné et pourra remplir gratuitement sa gourde aux douze fontaines »。B 与 « bouteilles en plastique seront totalement bannies » 矛盾；C 与“可以给自己的水壶灌水”矛盾。"
+          },
+          {
+            "stem": "Le tarif solidaire est…",
+            "options": [
+              "accordé automatiquement à tous les habitants de la commune.",
+              "réservé aux personnes qui viennent en navette.",
+              "proposé à certains publics qui présentent un justificatif."
+            ],
+            "answer": 2,
+            "why": "« sur simple justificatif, aux étudiants, aux demandeurs d’emploi et aux bénéficiaires des minima sociaux »。A、B 都不是文中的条件。"
+          },
+          {
+            "stem": "Pourquoi le camping est-il limité cette année ?",
+            "options": [
+              "Parce que les festivaliers sont moins nombreux.",
+              "Parce que la commune l’a demandé.",
+              "Parce que les navettes rendent le camping inutile."
+            ],
+            "answer": 1,
+            "why": "« limité à 800 places cette année, à la demande de la commune »。A、C 都是文中没有的推测。"
+          }
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "id": "L49-1",
+        "title": "Quitter la ville : mythe ou réalité ?",
+        "meta": {
+          "genre": "Émission de radio · entretien",
+          "domain": "Territoires",
+          "level": "B2",
+          "plays": 2
+        },
+        "script": [
+          "— Bonjour à tous. Depuis quelques années, on entend parler d’un exode urbain : des citadins qui quittent les grandes villes pour s’installer à la campagne. Phénomène réel ou effet de mode ? Nous posons la question à Yannick Morel, géographe, spécialiste des territoires ruraux. Bonjour.",
+          "— Bonjour.",
+          "— Alors, ce fameux exode urbain, il existe ?",
+          "— Il faut être précis. Il n’y a pas eu de départ massif des grandes villes vers les villages, contrairement à ce qu’on a pu lire. Ce qu’on observe, c’est plutôt un renforcement de tendances anciennes : les petites villes et les bourgs situés à une heure ou deux d’une métropole gagnent des habitants, tandis que les zones les plus isolées continuent, pour beaucoup, à en perdre.",
+          "— Qui sont ces nouveaux arrivants ?",
+          "— Des profils assez variés. Il y a des cadres qui peuvent télétravailler deux ou trois jours par semaine, des familles qui cherchent un logement plus grand à un prix abordable, et aussi des retraités. Et puis une catégorie dont on parle moins : des jeunes qui se lancent dans l’agriculture ou l’artisanat sans être issus du milieu.",
+          "— Comment sont-ils accueillis ?",
+          "— Dans l’ensemble, plutôt bien. Les maires sont souvent ravis de voir rouvrir une classe ou revivre un commerce. Mais il peut y avoir des frictions. Certains nouveaux venus arrivent avec une image idéalisée de la campagne et découvrent que le coq chante tôt, que les tracteurs passent sur la route, que les cloches sonnent. Et dans les zones touristiques, l’arrivée de citadins plus aisés fait grimper les prix de l’immobilier, au détriment des jeunes du coin.",
+          "— Les services publics suivent-ils ?",
+          "— C’est tout le problème. On peut télétravailler à la campagne à condition d’avoir une bonne connexion internet, et ce n’est pas encore le cas partout. Il faut aussi des médecins, des écoles, des transports. Sans eux, beaucoup de nouveaux habitants repartent au bout de quelques années, découragés.",
+          "— Que conseilleriez-vous à quelqu’un qui hésite à s’installer ?",
+          "— De louer avant d’acheter, et d’y passer au moins un hiver. La campagne en juillet et la campagne en janvier, ce n’est pas tout à fait la même chose !",
+          "— Merci beaucoup, Yannick Morel."
+        ],
+        "questions": [
+          {
+            "stem": "Quel est le thème de l’entretien ?",
+            "options": [
+              "L’installation de citadins à la campagne, sa réalité et ses limites.",
+              "La crise de l’agriculture dans les zones isolées.",
+              "Le développement du télétravail dans les grandes entreprises."
+            ],
+            "answer": 0,
+            "why": "开场问 « Phénomène réel ou effet de mode ? »，随后谈规模、新居民类型、接纳情况、公共服务与建议。B、C 只是访谈中顺带提到的点。"
+          },
+          {
+            "stem": "Selon le géographe, le prétendu « exode urbain »…",
+            "options": [
+              "a vidé les grandes villes de leurs habitants.",
+              "profite surtout aux zones les plus isolées.",
+              "bénéficie surtout aux bourgs proches des métropoles."
+            ],
+            "answer": 2,
+            "why": "« les petites villes et les bourgs situés à une heure ou deux d’une métropole gagnent des habitants, tandis que les zones les plus isolées continuent… à en perdre »。A 与 « pas eu de départ massif » 矛盾；B 正好相反。"
+          },
+          {
+            "stem": "Quelle catégorie de nouveaux arrivants est, selon lui, moins connue ?",
+            "options": [
+              "Les retraités en quête de calme.",
+              "Des jeunes qui deviennent agriculteurs ou artisans sans venir de ce milieu.",
+              "Les cadres en télétravail partiel."
+            ],
+            "answer": 1,
+            "why": "« une catégorie dont on parle moins : des jeunes qui se lancent dans l’agriculture ou l’artisanat sans être issus du milieu »。A、C 是他先列出的常见群体。"
+          },
+          {
+            "stem": "Quelles sources de tension évoque-t-il ?",
+            "options": [
+              "Une vision idéalisée de la campagne et la hausse des prix immobiliers.",
+              "Le refus des maires d’accueillir de nouveaux habitants.",
+              "La concurrence entre nouveaux commerces et commerces anciens."
+            ],
+            "answer": 0,
+            "why": "« une image idéalisée de la campagne »（鸡鸣、拖拉机、钟声）以及 « fait grimper les prix de l’immobilier, au détriment des jeunes du coin »。B 与 « Les maires sont souvent ravis » 矛盾；C 未提。"
+          },
+          {
+            "stem": "Selon lui, qu’est-ce qui conditionne le maintien des nouveaux habitants ?",
+            "options": [
+              "Le prix des maisons à l’achat.",
+              "L’accueil réservé par les voisins.",
+              "La présence de services comme internet, médecins, écoles et transports."
+            ],
+            "answer": 2,
+            "why": "« Sans eux, beaucoup de nouveaux habitants repartent au bout de quelques années »，eux 指网络、医生、学校、交通。A、B 不是他回答这个问题时强调的因素。"
+          },
+          {
+            "stem": "Quel conseil donne-t-il à ceux qui hésitent ?",
+            "options": [
+              "Acheter rapidement avant la hausse des prix.",
+              "Louer d’abord et tester la vie sur place en hiver.",
+              "S’installer de préférence dans une zone touristique."
+            ],
+            "answer": 1,
+            "why": "« De louer avant d’acheter, et d’y passer au moins un hiver »。A 与“先租”相反；C 他提到旅游区恰恰有房价问题。"
+          }
+        ]
+      },
+      {
+        "id": "L49-2",
+        "title": "La classe au fond des bois",
+        "meta": {
+          "genre": "Émission de radio · interview",
+          "domain": "Éducation",
+          "level": "B2",
+          "plays": 2
+        },
+        "script": [
+          "— Dans notre série sur l’école de demain, nous sommes à Namur, en Belgique, avec Élise Dumont, institutrice, qui fait cours dehors une demi-journée par semaine. Élise, concrètement, ça se passe comment ?",
+          "— Tous les jeudis matin, qu’il pleuve ou qu’il vente, je pars avec mes élèves de huit ans dans un petit bois à dix minutes de l’école. Et on fait cours : des mathématiques, du français, des sciences. On mesure la circonférence des arbres, on écrit des poèmes sur ce qu’on entend, on observe les insectes.",
+          "— Ce n’est pas une récréation déguisée ?",
+          "— Non, et c’est justement ce que je voulais éviter. Chaque sortie a des objectifs précis, liés au programme. La différence, c’est que les enfants apprennent avec leur corps, en manipulant. Certains élèves qui sont en difficulté en classe se révèlent dehors : ils posent des questions, ils prennent des initiatives.",
+          "— Et les parents, comment ont-ils réagi ?",
+          "— Au début, quelques-uns s’inquiétaient : la pluie, le froid, les tiques… On a organisé une réunion, on a fait une liste d’équipement, et je les ai invités à nous accompagner. Depuis, ce sont souvent eux qui me demandent d’en faire plus.",
+          "— Vous conseilleriez à vos collègues de se lancer ?",
+          "— Oui, mais progressivement, et pas seuls. Il faut l’accord de la direction, des adultes pour encadrer, et accepter que tout ne se passe pas comme prévu.",
+          "— Merci Élise Dumont."
+        ],
+        "questions": [
+          {
+            "stem": "Quel est le sujet de cette interview ?",
+            "options": [
+              "Une école construite au milieu d’une forêt.",
+              "Une pratique d’enseignement en plein air, une fois par semaine.",
+              "Un programme de sorties scolaires réservé aux sciences."
+            ],
+            "answer": 1,
+            "why": "« qui fait cours dehors une demi-journée par semaine »。A 错：学校并不在林中，步行十分钟才到；C 错：户外课也上数学和法语。"
+          },
+          {
+            "stem": "Sur quoi l’institutrice insiste-t-elle à propos de ces sorties ?",
+            "options": [
+              "Elles permettent surtout aux enfants de se détendre.",
+              "Elles remplacent les cours d’éducation physique.",
+              "Elles poursuivent des objectifs pédagogiques précis."
+            ],
+            "answer": 2,
+            "why": "« Chaque sortie a des objectifs précis, liés au programme »，她明确否认这是 « une récréation déguisée »（排除 A）。B 未提。"
+          },
+          {
+            "stem": "Quel effet observe-t-elle chez certains élèves ?",
+            "options": [
+              "Des élèves en difficulté en classe deviennent plus actifs dehors.",
+              "Les meilleurs élèves perdent leur concentration.",
+              "Les enfants timides refusent de participer."
+            ],
+            "answer": 0,
+            "why": "« Certains élèves qui sont en difficulté en classe se révèlent dehors : ils posent des questions, ils prennent des initiatives »。B、C 都没有提到。"
+          },
+          {
+            "stem": "Comment l’attitude des parents a-t-elle évolué ?",
+            "options": [
+              "Ils sont restés opposés au projet.",
+              "D’abord inquiets, ils sont devenus demandeurs.",
+              "Ils ont exigé que les sorties soient supprimées l’hiver."
+            ],
+            "answer": 1,
+            "why": "« Au début, quelques-uns s’inquiétaient… Depuis, ce sont souvent eux qui me demandent d’en faire plus »。A、C 与此矛盾。"
+          }
+        ]
+      },
+      {
+        "id": "L49-3",
+        "title": "Les adolescents manquent de sommeil",
+        "meta": {
+          "genre": "Flash info",
+          "domain": "Santé",
+          "level": "B2",
+          "plays": 1
+        },
+        "script": [
+          "— Les adolescents dorment de moins en moins. C’est la conclusion d’une enquête menée auprès de 3 000 collégiens et lycéens par une association de prévention. En semaine, ils dormiraient en moyenne sept heures par nuit, alors que les spécialistes en recommandent entre huit et dix à cet âge. Principal accusé : le téléphone. Près de sept jeunes sur dix déclarent le consulter après l’extinction des lumières, et un sur quatre reconnaît être réveillé la nuit par des notifications. Les conséquences se font sentir en classe : difficultés de concentration, irritabilité, somnolence en début de matinée. L’association recommande aux familles de laisser les téléphones hors de la chambre la nuit et appelle les établissements à sensibiliser les élèves dès l’entrée au collège."
+        ],
+        "questions": [
+          {
+            "stem": "Quel est le sujet de ce flash ?",
+            "options": [
+              "Les horaires des cours au collège.",
+              "Les dangers des réseaux sociaux pour les enfants.",
+              "Le manque de sommeil des adolescents."
+            ],
+            "answer": 2,
+            "why": "« Les adolescents dorment de moins en moins »，后面的数据都围绕睡眠。A 未提；B 只是睡眠不足的原因之一（手机）。"
+          },
+          {
+            "stem": "Quelle proportion de jeunes déclare consulter son téléphone après l’extinction des lumières ?",
+            "options": [
+              "Près de sept sur dix.",
+              "Un sur quatre.",
+              "Environ la moitié."
+            ],
+            "answer": 0,
+            "why": "« Près de sept jeunes sur dix déclarent le consulter après l’extinction des lumières »。B 是“夜里被通知吵醒”的比例，注意区分两组数据。"
+          },
+          {
+            "stem": "Que recommande l’association aux familles ?",
+            "options": [
+              "Interdire le téléphone avant quinze ans.",
+              "Laisser les téléphones hors de la chambre la nuit.",
+              "Avancer l’heure du coucher le week-end."
+            ],
+            "answer": 1,
+            "why": "« L’association recommande aux familles de laisser les téléphones hors de la chambre la nuit »。A、C 都不是报道中的建议。"
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "id": "W49-1",
+        "title": "Un service civique obligatoire ?",
+        "genre": "Contribution à un forum",
+        "prompt": "Vous lisez le message ci-dessous sur le forum d’un site d’information destiné aux jeunes. Vous décidez de participer au débat : vous rédigez une contribution argumentée dans laquelle vous donnez votre opinion sur la proposition d’un service civique obligatoire, en vous appuyant sur des exemples précis tirés de votre expérience ou de votre pays (250 mots minimum).",
+        "trigger": {
+          "title": "Six mois au service des autres, obligatoire pour tous ?",
+          "text": [
+            "Un candidat aux élections propose d’imposer à tous les jeunes de 18 à 25 ans un service civique de six mois : aide aux personnes âgées, protection de l’environnement, soutien scolaire… Selon lui, cela renforcerait la cohésion sociale et ferait se rencontrer des jeunes de milieux différents. Ses opposants dénoncent une mesure coûteuse qui retarderait l’entrée dans les études ou dans l’emploi. Et vous, qu’en pensez-vous ?"
+          ]
+        },
+        "minWords": 250,
+        "checklist": [
+          "Réalisation de la tâche : opinion claire sur la proposition, au moins trois arguments développés avec des exemples précis ; 250 mots minimum.",
+          "Cohérence et cohésion : introduction qui reprend la question, paragraphes distincts, connecteurs variés (d’abord, cependant, par ailleurs, enfin, donc).",
+          "Adéquation sociolinguistique : registre adapté à un forum (salutation, signature), courtois même en désaccord.",
+          "Lexique : vocabulaire de l’engagement et de la société (cohésion, bénévolat, indemnité, s’investir) sans répétitions.",
+          "Morphosyntaxe : conditionnel pour l’hypothèse et la proposition, subjonctif après les expressions de doute, concession (sans pour autant, certes).",
+          "Je nuance ma position et je termine par une proposition ou une ouverture."
+        ],
+        "model": [
+          "Bonjour à tous,",
+          "La proposition de rendre le service civique obligatoire me semble partir d’une bonne intention, mais je doute qu’elle atteigne son objectif sous cette forme. Je voudrais expliquer pourquoi, sans pour autant rejeter l’idée en bloc.",
+          "D’abord, je reconnais volontiers les vertus de l’engagement. J’ai moi-même passé huit mois comme volontaire dans une association d’aide aux devoirs, et cette expérience m’a fait rencontrer des jeunes que je n’aurais jamais croisés dans mon lycée. Elle m’a aussi permis de découvrir le métier d’éducateur, auquel je me prépare aujourd’hui. Il est donc indéniable qu’un tel service peut créer du lien et ouvrir des perspectives.",
+          "Cependant, ce qui a fait la valeur de mon expérience, c’est précisément que je l’avais choisie. Un engagement imposé risque de se transformer en corvée, effectuée à contrecœur, et les associations se retrouveraient à encadrer des jeunes démotivés au lieu de volontaires investis. Par ailleurs, la mesure coûterait cher : il faudrait former des tuteurs, indemniser des centaines de milliers de jeunes, organiser leur hébergement. Cet argent ne serait-il pas mieux employé à développer le service volontaire qui existe déjà ?",
+          "Enfin, six mois représentent beaucoup pour un étudiant boursier ou pour un jeune qui doit gagner sa vie. Sans compensation suffisante, ce sont les plus modestes qui seraient pénalisés, ce qui irait à l’encontre de l’objectif de cohésion affiché.",
+          "Plutôt qu’une obligation, je proposerais donc de rendre ce service réellement attractif : une indemnité correcte, une reconnaissance dans les études supérieures et une meilleure information dès le lycée. C’est en donnant envie de s’engager, et non en contraignant, qu’on fera vraiment se rencontrer les jeunesses.",
+          "Lucas, 22 ans"
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "id": "S49-1",
+        "title": "Des musées gratuits pour tous ?",
+        "part": "Monologue suivi",
+        "trigger": {
+          "title": "Musées gratuits : un succès en trompe-l’œil ?",
+          "text": [
+            "Dans la ville de Valbreuse, les musées municipaux sont gratuits pour tous depuis deux ans. La fréquentation a augmenté de 40 %, mais une étude montre que les nouveaux visiteurs sont en majorité des habitués des lieux culturels, déjà diplômés, qui viennent simplement plus souvent. Les publics éloignés de la culture, eux, ne se sont guère déplacés davantage.",
+            "Pour certains élus, la gratuité prive les musées de recettes qui pourraient financer des actions de médiation dans les quartiers et les écoles. Pour d’autres, elle envoie un message essentiel : la culture appartient à tous, et personne ne devrait renoncer à une exposition pour des raisons financières."
+          ]
+        },
+        "prompt": "Dégagez le thème du document, formulez une problématique, annoncez votre plan, puis défendez votre point de vue avec des exemples précis (environ 6 minutes). Conditions d’examen : 30 minutes de préparation, notes sous forme de mots-clés.",
+        "targetSeconds": 360,
+        "checklist": [
+          "Le thème est présenté avec mes propres mots, sans lire le document.",
+          "La problématique dépasse le document (la gratuité suffit-elle à démocratiser la culture ?).",
+          "Le plan est annoncé et suivi ; chaque partie commence par une phrase d’annonce.",
+          "Chaque argument est appuyé par un exemple précis (un musée que je connais, une expérience dans mon pays).",
+          "J’utilise des connecteurs variés et au moins une concession (certes…, il n’en reste pas moins que…).",
+          "Conclusion qui répond à la problématique ; durée d’environ 6 minutes."
+        ]
+      },
+      {
+        "id": "S49-2",
+        "title": "Gratuité de la culture : défendez votre position",
+        "part": "Exercice en interaction (débat)",
+        "prompt": "Dans le prolongement de votre monologue, l’examinateur conteste votre position sur la gratuité des musées. Répondez à chaque objection : confirmez, nuancez, concédez ou réfutez, en restant précis et courtois.",
+        "followUps": [
+          "L’étude montre que la gratuité profite surtout à ceux qui allaient déjà au musée. N’est-ce pas un échec ?",
+          "Pourquoi les contribuables devraient-ils payer les visites des touristes étrangers ?",
+          "Les jeunes préfèrent les visites virtuelles. Les musées ne sont-ils pas dépassés ?",
+          "Si vous deviez choisir entre la gratuité et des ateliers dans les écoles, que choisiriez-vous, et pourquoi ?"
+        ],
+        "targetSeconds": 270,
+        "checklist": [
+          "Je réponds directement à chaque objection, sans répéter mon monologue.",
+          "J’utilise au moins une concession suivie d’une réfutation.",
+          "J’apporte un exemple ou un chiffre pour appuyer chaque réponse.",
+          "Je justifie un choix clair pour la dernière question, au conditionnel.",
+          "Je reformule si je n’ai pas bien compris et je reste courtois."
+        ]
+      }
+    ],
+    "application": [
+      {
+        "id": "A49-1",
+        "title": "Expliquer des chiffres aux parents",
+        "topic": "sommeil des adolescents",
+        "task": "Vous êtes délégué(e) des parents d’élèves. Pour la lettre d’information du collège, expliquez en 60 à 80 mots les principaux chiffres de l’enquête présentée dans L49-3 (durée de sommeil, usage du téléphone) et ce qu’ils impliquent pour les familles. Les chiffres doivent être exacts et reformulés simplement.",
+        "chunks": [
+          "D’après une enquête menée auprès de …",
+          "En moyenne, …",
+          "alors que les spécialistes recommandent …",
+          "Il en ressort que …"
+        ],
+        "keys": [
+          "heures",
+          "sur dix",
+          "téléphone"
+        ]
+      },
+      {
+        "id": "A49-2",
+        "title": "Répondre à un ami festivalier",
+        "topic": "festival responsable",
+        "task": "Un ami étudiant vous écrit : « Tu vas aux Rives cette année ? C’est pas trop cher ? Et comment on y va depuis la gare ? » Répondez-lui en 80 à 100 mots, en registre amical, en reprenant avec précision les informations utiles du communiqué R49-3 (tarif, transport, camping, eau).",
+        "chunks": [
+          "Bonne nouvelle : …",
+          "Comme tu es étudiant, …",
+          "Pour venir depuis la gare, …",
+          "Par contre, pense à …"
+        ],
+        "keys": [
+          "tarif solidaire",
+          "navette",
+          "camping"
+        ]
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "id": "V49-01",
+      "fr": "s’essouffler",
+      "zh": "（机器、势头）乏力、减弱",
+      "ex": "Mon vieil aspirateur [[s’essouffle]] après dix minutes.",
+      "exZh": "我的旧吸尘器用十分钟就没劲了。",
+      "src": "R49-1"
+    },
+    {
+      "id": "V49-02",
+      "fr": "(un obstacle) de taille",
+      "zh": "重大的；不小的",
+      "ex": "Le projet se heurte à des obstacles [[de taille]].",
+      "exZh": "这个项目遇到了重大的障碍。",
+      "src": "R49-1"
+    },
+    {
+      "id": "V49-03",
+      "fr": "se faire rare",
+      "zh": "变得稀少",
+      "ex": "Dans les petites villes, les réparateurs [[se font rares]].",
+      "exZh": "在小城市里，维修师傅越来越少了。",
+      "src": "R49-1"
+    },
+    {
+      "id": "V49-04",
+      "fr": "un indice de réparabilité",
+      "zh": "可维修性指数",
+      "ex": "Les fabricants doivent afficher [[un indice de réparabilité]] sur certains produits.",
+      "exZh": "厂商必须在某些产品上标注可维修性指数。",
+      "src": "R49-1"
+    },
+    {
+      "id": "V49-05",
+      "fr": "faute de rentabilité",
+      "zh": "因为不赚钱",
+      "ex": "Le dernier cordonnier du village a fermé [[faute de rentabilité]].",
+      "exZh": "村里最后一家修鞋铺因为不赚钱关门了。",
+      "src": "R49-1"
+    },
+    {
+      "id": "V49-06",
+      "fr": "faire pâlir quelqu’un",
+      "zh": "让某人相形见绌（自叹不如）",
+      "ex": "Son emploi du temps [[ferait pâlir]] un ministre.",
+      "exZh": "他的日程表连部长都会自叹不如。",
+      "src": "R49-2"
+    },
+    {
+      "id": "V49-07",
+      "fr": "par miracle",
+      "zh": "奇迹般地；难得地",
+      "ex": "Quand, [[par miracle]], un après-midi reste libre, les parents s’inquiètent.",
+      "exZh": "难得有一个下午空出来时，父母反倒担心了。",
+      "src": "R49-2"
+    },
+    {
+      "id": "V49-08",
+      "fr": "traquer",
+      "zh": "追捕；竭力消灭",
+      "ex": "Nous [[traquons]] l’ennui comme s’il s’agissait d’une maladie.",
+      "exZh": "我们像对付疾病一样竭力消灭无聊。",
+      "src": "R49-2"
+    },
+    {
+      "id": "V49-09",
+      "fr": "les moments creux",
+      "zh": "空闲时段；无所事事的时刻",
+      "ex": "C’est dans [[les moments creux]] que l’enfant invente ses jeux.",
+      "exZh": "正是在无所事事的时刻，孩子会发明自己的游戏。",
+      "src": "R49-2"
+    },
+    {
+      "id": "V49-10",
+      "fr": "ouvrir des horizons",
+      "zh": "开阔眼界",
+      "ex": "Les activités extrascolaires [[ouvrent des horizons]] aux enfants.",
+      "exZh": "课外活动能开阔孩子们的眼界。",
+      "src": "R49-2"
+    },
+    {
+      "id": "V49-11",
+      "fr": "à force de + infinitif",
+      "zh": "由于不断……；……多了就",
+      "ex": "[[À force de]] vouloir tout remplir, on prive les enfants de temps libre.",
+      "exZh": "由于总想把时间填满，我们剥夺了孩子的空闲时间。",
+      "src": "R49-2"
+    },
+    {
+      "id": "V49-12",
+      "fr": "risquer fort de",
+      "zh": "很可能会（导致不好的结果）",
+      "ex": "Un enfant toujours occupé [[risque fort de]] devenir dépendant des écrans.",
+      "exZh": "一个总被安排满的孩子很可能会依赖屏幕。",
+      "src": "R49-2"
+    },
+    {
+      "id": "V49-13",
+      "fr": "l’oisiveté",
+      "zh": "无所事事；闲散",
+      "ex": "L’auteur ne plaide pas pour [[l’oisiveté]] totale.",
+      "exZh": "作者并不主张完全无所事事。",
+      "src": "R49-2"
+    },
+    {
+      "id": "V49-14",
+      "fr": "une démarche responsable",
+      "zh": "负责任（环保、社会）的做法",
+      "ex": "Le festival poursuit [[une démarche responsable]] depuis trois ans.",
+      "exZh": "这个音乐节三年来一直践行负责任的做法。",
+      "src": "R49-3"
+    },
+    {
+      "id": "V49-15",
+      "fr": "sur simple justificatif",
+      "zh": "只需出示证明",
+      "ex": "Le tarif réduit est accordé [[sur simple justificatif]].",
+      "exZh": "只需出示证明即可享受优惠价。",
+      "src": "R49-3"
+    },
+    {
+      "id": "V49-16",
+      "fr": "les minima sociaux",
+      "zh": "最低社会保障金（低保类补助）",
+      "ex": "Les bénéficiaires [[des minima sociaux]] paient moitié prix.",
+      "exZh": "领取最低社会保障金的人付半价。",
+      "src": "R49-3"
+    },
+    {
+      "id": "V49-17",
+      "fr": "un effet de mode",
+      "zh": "一时的潮流",
+      "ex": "Cet exode urbain est-il réel ou n’est-ce qu’[[un effet de mode]] ?",
+      "exZh": "这种逃离城市现象是真实的，还是只是一时的潮流？",
+      "src": "L49-1"
+    },
+    {
+      "id": "V49-18",
+      "fr": "être issu du milieu",
+      "zh": "出身于该行业（圈子）",
+      "ex": "Elle est devenue éleveuse sans [[être issue du milieu]] agricole.",
+      "exZh": "她并非农家出身，却成了养殖户。",
+      "src": "L49-1"
+    },
+    {
+      "id": "V49-19",
+      "fr": "faire grimper les prix",
+      "zh": "推高价格",
+      "ex": "L’arrivée de citadins aisés [[fait grimper les prix]] des maisons.",
+      "exZh": "富裕城里人的到来推高了房价。",
+      "src": "L49-1"
+    },
+    {
+      "id": "V49-20",
+      "fr": "au détriment de",
+      "zh": "以损害……为代价；对……不利",
+      "ex": "La hausse des loyers se fait [[au détriment des]] jeunes du village.",
+      "exZh": "租金上涨损害了村里年轻人的利益。",
+      "src": "L49-1"
+    },
+    {
+      "id": "V49-21",
+      "fr": "qu’il pleuve ou qu’il vente",
+      "zh": "不论刮风下雨",
+      "ex": "[[Qu’il pleuve ou qu’il vente]], la classe sort tous les jeudis.",
+      "exZh": "不论刮风下雨，这个班每周四都去户外。",
+      "src": "L49-2"
+    },
+    {
+      "id": "V49-22",
+      "fr": "l’extinction des lumières",
+      "zh": "熄灯",
+      "ex": "Beaucoup d’ados consultent leur téléphone après [[l’extinction des lumières]].",
+      "exZh": "很多青少年熄灯后还在看手机。",
+      "src": "L49-3"
+    },
+    {
+      "id": "V49-23",
+      "fr": "à contrecœur",
+      "zh": "不情愿地；勉强地",
+      "ex": "Un engagement imposé est souvent vécu [[à contrecœur]].",
+      "exZh": "被强加的义务往往是不情愿地去完成的。",
+      "src": "W49-1"
+    },
+    {
+      "id": "V49-24",
+      "fr": "rejeter en bloc",
+      "zh": "全盘否定",
+      "ex": "Je ne veux pas [[rejeter en bloc]] cette proposition.",
+      "exZh": "我并不想全盘否定这个提议。",
+      "src": "W49-1"
+    },
+    {
+      "id": "V49-25",
+      "fr": "aller à l’encontre de",
+      "zh": "违背；与……背道而驰",
+      "ex": "Cette mesure [[irait à l’encontre de]] l’objectif de cohésion.",
+      "exZh": "这项措施将与凝聚社会的目标背道而驰。",
+      "src": "W49-1"
+    }
+  ]
+}
