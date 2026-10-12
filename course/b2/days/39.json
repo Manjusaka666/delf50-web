@@ -1,0 +1,258 @@
+{
+  "day": 39,
+  "phase": "DELF B2 专项",
+  "title": "Mini-mock B2",
+  "level": "B2",
+  "grammarFocus": "4 compétences en temps limité",
+  "function": "tenir le format complet",
+  "topic": "mixte",
+  "canDo": "能在限时条件下完成一套迷你 B2 模考：听力 30 分钟、阅读 60 分钟、写作 60 分钟、口语准备 30 分钟+表达 20 分钟，各部分不超时且保持语言准确。",
+  "review": "复习第 2 天的虚拟式（vouloir que, regretter que, douter que, il faut que, craindre que… ne）和第 6 天的结果表达（si bien que, de sorte que, au point que, tellement… que, d’où），并调用第 29–38 天的听读策略与写说框架。",
+  "input": "读（限时 60 分钟）：一篇关于睡眠不足的长文、一篇反对小学家庭作业的社论、一则瑞士洛桑“维修咖啡馆”的论坛帖；听（限时 30 分钟）：志愿服务形式变化的访谈（两遍）、城市热岛效应访谈（两遍）和一条公交免费的地方快讯（一遍）。按真实考试顺序先听后读。",
+  "output": "写（限时 60 分钟）：在论坛就“是否应强制 18 岁青年服务半年”发表意见（≥250 词）；说（准备 30 分钟）：基于“现金消失”材料做 6 分钟独白，再与考官就“立法禁止三岁以下儿童使用屏幕”辩论 5 分钟。",
+  "checkpoint": "听力+阅读总正确率≥75%（相当于 50 分中≥37 分）；作文在 60 分钟内完成且≥250 词并留出 5 分钟检查；独白不少于 5 分钟；全程每部分不超时。记录各部分用时和失分点，供第 40 天复盘。",
+  "challenge": "今日挑战：在 RFI《Journal en français facile》上任选一条社会新闻，计时 10 分钟：听一遍，写出 3 个要点，再用 « si bien que » 和 « il faut que » 各写一句你的评论；与今天模考的计时表一起保存。",
+  "sources": ["FEI-B2", "FEI-B2-SAMPLES", "FEI-B2-TRAIN", "CEFR-CV", "RFI-B2"],
+  "focus": ["subjonctif", "consequence"],
+  "items": {
+    "reading": [
+      {
+        "id": "R39-1",
+        "title": "Dormir moins : un mal de notre époque ?",
+        "meta": {"genre": "Article de presse", "domain": "Santé", "level": "B2"},
+        "text": [
+          "Écrans allumés tard, horaires décalés, stress au travail : le sommeil est devenu une variable d’ajustement. Selon une enquête menée auprès de 4 000 adultes, près d’un sur trois dort moins de six heures par nuit en semaine, alors que la plupart des spécialistes recommandent entre sept et neuf heures pour un adulte. Ce déficit, longtemps considéré comme un simple désagrément, inquiète désormais les médecins.",
+          "Les effets d’un manque de sommeil chronique sont multiples. À court terme, la concentration baisse et l’humeur se dégrade, si bien que les erreurs se multiplient, au travail comme au volant. À plus long terme, de nombreuses études ont établi un lien entre le manque de sommeil et un risque accru de surpoids, de diabète ou de maladies cardiovasculaires. « Le corps a besoin de la nuit pour se réparer, rappelle Sophie Marchal, médecin dans un centre du sommeil à Rennes. Quand on la raccourcit, on prive l’organisme d’un temps de récupération essentiel. »",
+          "Les écrans sont souvent désignés comme les principaux coupables. La lumière qu’ils émettent retarde l’endormissement, et les contenus — vidéos, messages, séries — sont conçus pour retenir l’attention, de sorte qu’on repousse sans cesse le moment d’aller se coucher. Mais la docteure Marchal refuse qu’on en fasse le seul bouc émissaire : « Il faut que l’on regarde aussi l’organisation du travail : horaires tardifs, trajets interminables, messages professionnels le soir… Beaucoup de gens se couchent tard parce que la soirée est le seul moment qui leur appartient. »",
+          "Que faire, alors ? Les conseils classiques restent valables : se coucher à heures régulières, éviter la caféine en fin de journée, garder la chambre fraîche et sombre. Certaines entreprises vont plus loin et autorisent de courtes siestes sur le lieu de travail, au point que des salles de repos font leur apparition dans les bureaux. D’autres limitent l’envoi de courriels après 20 heures.",
+          "Reste que le sommeil souffre d’un problème d’image. Dans une société qui valorise la performance, dormir peu passe encore pour une preuve d’énergie, voire de réussite. Tant que cette idée persistera, il est peu probable que les comportements changent en profondeur."
+        ],
+        "questions": [
+          {"stem": "Quel est l’objectif principal de cet article ?", "options": ["Présenter un nouveau traitement contre l’insomnie.", "Alerter sur le manque de sommeil et en analyser les causes.", "Comparer les habitudes de sommeil de plusieurs pays."], "answer": 1, "why": "文章先给出睡眠不足的数据（第1段），再讲后果（第2段）、原因（第3段）、对策（第4段）和阻力（第5段）。A、C 文中均未涉及。"},
+          {"stem": "D’après le deuxième paragraphe, quelle est une conséquence à court terme du manque de sommeil ?", "options": ["Une augmentation des erreurs liée à la baisse de concentration.", "L’apparition immédiate d’un diabète.", "Une nette amélioration de l’humeur."], "answer": 0, "why": "« À court terme, la concentration baisse… si bien que les erreurs se multiplient »。B 是“长期”风险；C 与 « l’humeur se dégrade » 相反。"},
+          {"stem": "Quelle est la position de la docteure Marchal sur les écrans ?", "options": ["Elle pense qu’ils sont l’unique cause du problème.", "Elle affirme qu’ils n’ont aucun effet sur le sommeil.", "Elle estime qu’ils ne doivent pas faire oublier d’autres causes."], "answer": 2, "why": "« refuse qu’on en fasse le seul bouc émissaire : « Il faut que l’on regarde aussi l’organisation du travail » »。A 正是她反对的；B 她并未否认屏幕的影响。"},
+          {"stem": "Que signifie « la soirée est le seul moment qui leur appartient » ?", "options": ["Ces personnes travaillent aussi le soir.", "C’est le seul temps libre dont elles disposent vraiment.", "Ces personnes possèdent leur logement."], "answer": 1, "why": "白天被工作和通勤占满，晚上才是“属于自己的时间”，所以不愿早睡。A 与语境相反；C 是对 appartenir 的字面误读。"},
+          {"stem": "Quelle initiative de certaines entreprises est mentionnée ?", "options": ["L’aménagement de salles pour faire la sieste.", "La distribution de médicaments pour dormir.", "L’allongement des horaires de travail."], "answer": 0, "why": "« autorisent de courtes siestes… au point que des salles de repos font leur apparition dans les bureaux »。B、C 未提及，C 还与文意相反。"},
+          {"stem": "Selon la conclusion, qu’est-ce qui freine un changement durable ?", "options": ["Le manque d’informations médicales.", "Le coût élevé des consultations.", "L’image valorisante associée au fait de peu dormir."], "answer": 2, "why": "« dormir peu passe encore pour une preuve d’énergie, voire de réussite. Tant que cette idée persistera, il est peu probable que les comportements changent »。A、B 文中未提及。"}
+        ]
+      },
+      {
+        "id": "R39-2",
+        "title": "Devoirs à la maison : il est temps d’en finir",
+        "meta": {"genre": "Éditorial", "domain": "Éducation", "level": "B2"},
+        "text": [
+          "Chaque soir, dans des milliers de foyers, le même scénario se répète : un enfant fatigué, un cahier ouvert sur la table de la cuisine, un parent qui tente de se souvenir de la règle des fractions. Les devoirs à la maison font tellement partie de notre culture scolaire qu’on ose à peine les remettre en question. Il le faut pourtant.",
+          "Leur principal défaut est connu : ils creusent les inégalités. L’enfant dont les parents ont fait des études, qui dispose d’une chambre calme et d’un ordinateur, sera aidé efficacement. Celui dont les parents rentrent tard du travail, ou maîtrisent mal le français, se retrouvera seul devant ses exercices. De sorte que l’école, censée réduire les écarts, les aggrave à la maison.",
+          "On me répondra que les devoirs apprennent l’autonomie et la régularité. Je ne doute pas que ce soit vrai pour certains élèves. Mais je doute fort qu’un enfant de huit ans devienne autonome en pleurant devant une page qu’il ne comprend pas. L’autonomie s’apprend en classe, avec un enseignant qui accompagne, et non seul, à 19 heures, après une longue journée.",
+          "Je ne demande pas qu’on supprime tout travail personnel. Lire un livre, apprendre une poésie, observer la nature : ces activités ont toute leur place à la maison. Je souhaite simplement que les exercices nouveaux et difficiles soient faits à l’école, là où chaque enfant peut être aidé.",
+          "Il est temps que l’on cesse de confondre quantité de travail et qualité des apprentissages. Un enfant reposé, qui a eu le temps de jouer, apprendra mieux le lendemain. Les familles y gagneront des soirées plus sereines, et l’école, une plus grande justice."
+        ],
+        "questions": [
+          {"stem": "Quelle est la thèse défendue par l’auteur ?", "options": ["Les enfants devraient recevoir davantage de devoirs.", "Les exercices nouveaux et difficiles devraient être faits en classe.", "Les parents devraient être formés pour aider leurs enfants."], "answer": 1, "why": "« Je souhaite simplement que les exercices nouveaux et difficiles soient faits à l’école »。A 与全文相反；C 作者没有提出培训家长。"},
+          {"stem": "Selon l’auteur, pourquoi les devoirs creusent-ils les inégalités ?", "options": ["Parce que tous les enfants ne bénéficient pas de la même aide à la maison.", "Parce que les enseignants donnent plus de devoirs aux bons élèves.", "Parce que les devoirs coûtent cher aux familles."], "answer": 0, "why": "第2段对比两类家庭：有条件的孩子被高效辅导，另一类孩子 « se retrouvera seul devant ses exercices »。B、C 未提及。"},
+          {"stem": "Dans le troisième paragraphe, l’auteur…", "options": ["accepte entièrement l’argument de l’autonomie.", "ignore les arguments de ses adversaires.", "admet en partie un argument adverse avant de le contester."], "answer": 2, "why": "« Je ne doute pas que ce soit vrai pour certains élèves. Mais je doute fort qu’un enfant de huit ans devienne autonome… »：部分让步再反驳。A 他并未完全接受；B 他明确引用了对方论点。"},
+          {"stem": "Quelles activités l’auteur juge-t-il adaptées à la maison ?", "options": ["Des exercices de mathématiques nouveaux.", "Des activités comme la lecture ou la poésie.", "De longues recherches sur ordinateur."], "answer": 1, "why": "« Lire un livre, apprendre une poésie, observer la nature : ces activités ont toute leur place à la maison »。A 正是他希望在学校完成的；C 未提及。"},
+          {"stem": "Quel est le ton de la conclusion ?", "options": ["Résigné.", "Ironique.", "Revendicatif."], "answer": 2, "why": "« Il est temps que l’on cesse de… » 是明确的呼吁，并描绘改革后的好处，语气是主张变革的。没有无奈（A），也没有反讽（B）。"}
+        ]
+      },
+      {
+        "id": "R39-3",
+        "title": "Forum « Consommer autrement » : mon premier café-réparation",
+        "meta": {"genre": "Post de forum", "domain": "Consommation", "level": "B2"},
+        "text": [
+          "Bonjour à tous,",
+          "Je voulais partager une belle découverte. Le mois dernier, mon grille-pain est tombé en panne. Au lieu d’en racheter un, j’ai essayé le café-réparation qui se tient chaque premier samedi du mois à la maison de quartier, à Lausanne. Le principe est simple : des bénévoles bricoleurs vous aident à réparer vous-même vos objets, gratuitement.",
+          "J’avais peur qu’on me prenne pour une incapable, car je n’avais jamais tenu un tournevis de ma vie ! En fait, l’ambiance était tellement chaleureuse que je suis restée tout l’après-midi. Un retraité, ancien électricien, m’a montré comment ouvrir l’appareil et remplacer une petite pièce. Coût total : deux francs pour la pièce.",
+          "Je ne prétends pas que tout puisse être réparé : certains appareils récents sont conçus de telle façon qu’on ne peut même pas les ouvrir. Mais je regrette qu’il n’existe pas davantage d’initiatives comme celle-ci. Si vous avez un objet cassé qui dort dans un placard, allez-y : vous économiserez de l’argent, et vous passerez un bon moment.",
+          "Noémie"
+        ],
+        "questions": [
+          {"stem": "Quel est le but de ce message ?", "options": ["Recommander une initiative de réparation collective.", "Se plaindre de la mauvaise qualité des grille-pain.", "Chercher un électricien pour une réparation."], "answer": 0, "why": "« Je voulais partager une belle découverte » 并以 « allez-y » 结尾：推荐维修咖啡馆。B、C 都不是写作目的。"},
+          {"stem": "Que craignait Noémie avant d’y aller ?", "options": ["Devoir payer une somme importante.", "Être jugée pour son manque de compétences.", "Attendre trop longtemps son tour."], "answer": 1, "why": "« J’avais peur qu’on me prenne pour une incapable, car je n’avais jamais tenu un tournevis »。A 服务是免费的；C 未提及。"},
+          {"stem": "Quelle limite des cafés-réparation mentionne-t-elle ?", "options": ["Les bénévoles manquent d’expérience.", "Les horaires sont peu pratiques.", "Certains appareils ne peuvent même pas être ouverts."], "answer": 2, "why": "« certains appareils récents sont conçus de telle façon qu’on ne peut même pas les ouvrir »。A 与“前电工”帮忙矛盾；B 未提及。"},
+          {"stem": "Que regrette Noémie ?", "options": ["Que de telles initiatives soient trop rares.", "D’avoir racheté un grille-pain neuf.", "Que la réparation lui ait coûté cher."], "answer": 0, "why": "« je regrette qu’il n’existe pas davantage d’initiatives comme celle-ci »。B 她没有买新的；C 只花了两法郎。"}
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "id": "L39-1",
+        "title": "Le bénévolat change de visage",
+        "meta": {"genre": "Émission de radio · entretien", "domain": "Société", "level": "B2", "plays": 2},
+        "script": [
+          "— Bonjour à tous. Les associations manquent-elles de bénévoles ? C’est ce qu’on entend souvent. Pour en parler, nous recevons Karim Benali, qui coordonne un réseau d’une centaine d’associations dans l’agglomération grenobloise. Karim Benali, la crise du bénévolat, elle est réelle ?",
+          "— Bonjour. Je dirais que le bénévolat ne disparaît pas, il change de visage. Le nombre de bénévoles reste à peu près stable, mais leur façon de s’engager a profondément évolué. Autrefois, on entrait dans une association et on y restait vingt ans, souvent au bureau, comme trésorier ou secrétaire. Aujourd’hui, les gens veulent s’engager sur des projets précis, limités dans le temps.",
+          "— Et pourquoi ce changement ?",
+          "— Il y a plusieurs raisons. Les gens ont des emplois du temps plus morcelés, ils déménagent plus souvent, si bien qu’il leur est difficile de promettre une présence régulière pendant des années. Et puis il y a une attente nouvelle : ils veulent que leur engagement ait un effet visible, rapide. Distribuer des repas un samedi, rénover une école pendant une semaine, ça leur parle davantage qu’une réunion mensuelle.",
+          "— Et ça pose des problèmes aux associations ?",
+          "— Oui, clairement. Les associations ont besoin de responsables qui s’engagent dans la durée : quelqu’un doit tenir les comptes, remplir les demandes de subventions, gérer les assurances. Or ces postes sont de moins en moins attractifs, au point que certaines petites associations ont dû fermer, faute de président. Je crains que ce phénomène ne s’accentue dans les années à venir.",
+          "— Quelles solutions voyez-vous ?",
+          "— D’abord, il faut que les associations acceptent ce nouveau type d’engagement au lieu de le regretter. Proposer des missions courtes, c’est aussi une porte d’entrée : un jeune qui vient aider une fois peut revenir, et peut-être prendre des responsabilités plus tard. Ensuite, il faudrait alléger les tâches administratives. Nous avons créé un service commun qui s’occupe de la comptabilité de vingt associations, de sorte que leurs bénévoles peuvent se consacrer à l’essentiel.",
+          "— Un dernier mot pour nos auditeurs qui hésitent ?",
+          "— Oui : n’attendez pas d’avoir beaucoup de temps libre. Une heure par semaine, c’est déjà précieux.",
+          "— Merci, Karim Benali."
+        ],
+        "questions": [
+          {"stem": "Quel est le thème principal de l’entretien ?", "options": ["La disparition des associations sportives.", "L’évolution des formes d’engagement bénévole.", "Le financement public des associations."], "answer": 1, "why": "« le bénévolat ne disparaît pas, il change de visage »，全篇谈参与方式的变化。A 未提；C 只顺带提到补贴申请。"},
+          {"stem": "Selon Karim Benali, comment le nombre de bénévoles a-t-il évolué ?", "options": ["Il est resté globalement stable.", "Il a fortement baissé.", "Il a doublé en dix ans."], "answer": 0, "why": "« Le nombre de bénévoles reste à peu près stable »。B 是开场提到的流行说法，被他修正；C 无依据。"},
+          {"stem": "Pourquoi les bénévoles s’engagent-ils moins sur le long terme ?", "options": ["Parce qu’ils sont moins généreux qu’autrefois.", "Parce que les associations refusent les jeunes.", "Parce que leur vie est plus mobile et leur temps plus fragmenté."], "answer": 2, "why": "« des emplois du temps plus morcelés, ils déménagent plus souvent, si bien qu’il leur est difficile de promettre une présence régulière »。A、B 均无依据。"},
+          {"stem": "Quelle évolution Karim Benali redoute-t-il ?", "options": ["La fermeture d’associations faute de responsables.", "La multiplication des missions courtes.", "La hausse des subventions publiques."], "answer": 0, "why": "« certaines petites associations ont dû fermer, faute de président. Je crains que ce phénomène ne s’accentue »。B 他认为是机会；C 未提及。"},
+          {"stem": "Que pense-t-il des missions courtes ?", "options": ["Elles menacent l’existence des associations.", "Elles peuvent mener à un engagement plus durable.", "Elles devraient être réservées aux retraités."], "answer": 1, "why": "« c’est aussi une porte d’entrée : un jeune qui vient aider une fois peut revenir, et peut-être prendre des responsabilités plus tard »。A 与他的观点相反；C 未提及。"},
+          {"stem": "À quoi sert le service commun créé par son réseau ?", "options": ["À recruter de nouveaux bénévoles.", "À organiser des distributions de repas.", "À décharger les bénévoles de la comptabilité."], "answer": 2, "why": "« un service commun qui s’occupe de la comptabilité de vingt associations, de sorte que leurs bénévoles peuvent se consacrer à l’essentiel »。A、B 不是该服务的功能。"}
+        ]
+      },
+      {
+        "id": "L39-2",
+        "title": "Villes : comment lutter contre les îlots de chaleur ?",
+        "meta": {"genre": "Interview radio", "domain": "Environnement urbain", "level": "B2", "plays": 2},
+        "script": [
+          "— Les étés sont de plus en plus chauds, et dans les villes, la chaleur devient parfois insupportable. Pour comprendre pourquoi, nous avons joint Élise Fournier, urbaniste. Élise Fournier, pourquoi fait-il plus chaud en ville qu’à la campagne ?",
+          "— Bonjour. C’est ce qu’on appelle les îlots de chaleur urbains. Le béton, le bitume, les toits sombres absorbent la chaleur pendant la journée et la restituent la nuit, si bien que la ville ne se refroidit presque plus. La nuit, l’écart de température avec la campagne voisine peut atteindre plusieurs degrés.",
+          "— Et quelles en sont les conséquences ?",
+          "— Elles sont d’abord sanitaires. Les personnes âgées, les jeunes enfants, les malades supportent mal ces nuits chaudes, et pendant les canicules, on observe une hausse des hospitalisations. Et puis il y a une dimension sociale : ce sont souvent les quartiers les plus denses et les plus pauvres qui souffrent le plus, parce qu’ils ont peu d’arbres et des logements mal isolés.",
+          "— Que peuvent faire les villes ?",
+          "— Beaucoup de choses, et pas forcément très coûteuses. Planter des arbres, bien sûr, mais aussi remplacer le bitume des cours d’école par de la terre et de la végétation, peindre les toits en clair, rouvrir des rivières qui avaient été recouvertes. Ce que je souhaite, c’est que ces aménagements soient pensés dès maintenant, parce qu’un arbre met vingt ans à donner de l’ombre. Il ne faut pas qu’on attende la prochaine canicule pour agir."
+        ],
+        "questions": [
+          {"stem": "D’après l’urbaniste, qu’est-ce qu’un îlot de chaleur urbain ?", "options": ["Une zone où les matériaux retiennent la chaleur, qui ne baisse plus la nuit.", "Une zone de campagne plus chaude que la ville voisine.", "Un espace climatisé ouvert au public en été."], "answer": 0, "why": "« absorbent la chaleur pendant la journée et la restituent la nuit, si bien que la ville ne se refroidit presque plus »。B 方向相反；C 与概念无关。"},
+          {"stem": "Quelle dimension sociale du problème est évoquée ?", "options": ["Les quartiers aisés sont les plus touchés.", "Les quartiers denses et défavorisés souffrent davantage.", "Les habitants refusent qu’on plante des arbres."], "answer": 1, "why": "« ce sont souvent les quartiers les plus denses et les plus pauvres qui souffrent le plus »。A 相反；C 未提及。"},
+          {"stem": "Parmi les solutions citées, laquelle concerne les écoles ?", "options": ["Installer la climatisation dans les classes.", "Fermer les écoles pendant les canicules.", "Remplacer le bitume des cours par de la végétation."], "answer": 2, "why": "« remplacer le bitume des cours d’école par de la terre et de la végétation »。A、B 未提及。"},
+          {"stem": "Pourquoi faut-il agir dès maintenant, selon elle ?", "options": ["Parce que les arbres mettent longtemps à être efficaces.", "Parce que ces aménagements seront bientôt interdits.", "Parce que le prix du bitume augmente rapidement."], "answer": 0, "why": "« parce qu’un arbre met vingt ans à donner de l’ombre »。B、C 均无依据。"}
+        ]
+      },
+      {
+        "id": "L39-3",
+        "title": "Flash régional : bus gratuits le week-end à Montval",
+        "meta": {"genre": "Flash info", "domain": "Transports", "level": "B2", "plays": 1},
+        "script": [
+          "— Voici les informations régionales. Le conseil municipal de Montval a voté hier soir la gratuité des bus et des tramways le samedi et le dimanche, pour une période d’essai de six mois. Le centre-ville est en effet tellement encombré le week-end que les commerçants se plaignent de perdre des clients, découragés par les embouteillages et le manque de places de stationnement. Le maire espère ainsi désengorger le centre et convaincre les automobilistes de prendre les transports en commun. Le coût de la mesure est estimé à 400 000 euros. L’opposition, elle, doute que la gratuité suffise à changer les habitudes : elle aurait préféré que cet argent serve à augmenter la fréquence des bus en semaine. Un premier bilan sera présenté en septembre."
+        ],
+        "questions": [
+          {"stem": "Quelle décision le conseil municipal a-t-il prise ?", "options": ["Interdire les voitures dans le centre-ville.", "Rendre les transports publics gratuits le week-end.", "Construire de nouveaux parkings en centre-ville."], "answer": 1, "why": "« a voté hier soir la gratuité des bus et des tramways le samedi et le dimanche »。A、C 未提及。"},
+          {"stem": "Quel problème cette mesure cherche-t-elle à résoudre ?", "options": ["L’encombrement du centre-ville le week-end.", "Le manque de chauffeurs de bus.", "La pollution des zones industrielles."], "answer": 0, "why": "« Le centre-ville est en effet tellement encombré le week-end que les commerçants se plaignent de perdre des clients »。B、C 未提及。"},
+          {"stem": "Qu’aurait préféré l’opposition ?", "options": ["Prolonger l’essai pendant un an.", "Supprimer certaines lignes de tramway.", "Utiliser l’argent pour augmenter la fréquence des bus en semaine."], "answer": 2, "why": "« elle aurait préféré que cet argent serve à augmenter la fréquence des bus en semaine »。A、B 未提及。"}
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "id": "W39-1",
+        "title": "Un engagement obligatoire pour tous les jeunes ?",
+        "genre": "Contribution à un forum",
+        "prompt": "Sur le forum d’un journal en ligne, un lecteur propose que tous les jeunes de 18 ans effectuent obligatoirement six mois d’engagement au service de la collectivité (associations, hôpitaux, protection de l’environnement). Vous rédigez une contribution dans laquelle vous prenez position de façon nuancée, en examinant les avantages et les risques d’une telle mesure, et en illustrant vos arguments par des exemples précis. (250 mots minimum, 60 minutes)",
+        "trigger": {
+          "title": "Message de Paul_R",
+          "text": ["Nos jeunes vivent chacun dans leur bulle et ne connaissent rien de la vie des autres. Je propose qu’à 18 ans, chacun consacre obligatoirement six mois à la collectivité : aider dans un hôpital, une association, un parc naturel. Tout le monde y gagnerait : les jeunes deviendraient plus responsables, et la société plus solidaire. Qu’en pensez-vous ?"]
+        },
+        "minWords": 250,
+        "checklist": [
+          "Réalisation de la tâche : je réagis au message de Paul_R, je prends une position claire et nuancée, et j’atteins 250 mots en moins de 55 minutes (5 minutes de relecture).",
+          "Cohérence et cohésion : introduction avec position, deux paragraphes d’arguments (avantages / risques), proposition, conclusion avec une question au forum.",
+          "Adéquation sociolinguistique : je respecte les codes du forum (salutation, adresse aux participants, signature) dans un registre standard.",
+          "Lexique : j’utilise un vocabulaire précis de l’engagement (bénévolat, collectivité, encadrement, cohésion sociale…).",
+          "Morphosyntaxe : j’emploie au moins trois subjonctifs justifiés (je doute que, il faut que, bien que, sans que) et trois expressions de conséquence (si bien que, de sorte que, tellement… que, au point que).",
+          "Je réserve 5 minutes pour vérifier les modes après les verbes de doute, de volonté et de sentiment."
+        ],
+        "model": [
+          "Bonjour à tous,",
+          "Le débat sur un engagement obligatoire revient régulièrement, et je voudrais y apporter ma contribution. À mon avis, l’idée de Paul est généreuse, mais l’obligation risque de produire le contraire de ce qu’on recherche.",
+          "Je comprends bien sûr que l’on veuille renforcer la cohésion de la société. Il est vrai que beaucoup de jeunes grandissent dans des milieux séparés et ne se rencontrent jamais. Un engagement commun pourrait leur faire découvrir d’autres réalités : une maison de retraite, une association d’aide aux migrants, un chantier de rénovation. J’ai moi-même passé un mois dans une banque alimentaire, et cette expérience m’a tellement marqué que j’y retourne chaque hiver.",
+          "Cependant, je doute qu’un engagement imposé ait la même valeur. Le bénévolat repose sur le choix : c’est parce qu’on a décidé de donner de son temps qu’on s’y investit vraiment. Si l’on oblige des centaines de milliers de jeunes à s’engager, beaucoup le vivront comme une contrainte, de sorte que les associations se retrouveront avec des participants démotivés qu’elles devront encadrer. Par ailleurs, il faut que l’on pense au coût d’un tel dispositif : logement, encadrement, assurances… Cet argent ne serait-il pas mieux utilisé pour soutenir les associations existantes ?",
+          "Je propose donc une autre voie : que l’engagement reste volontaire, mais qu’il soit mieux reconnu, par exemple dans les études ou la recherche d’emploi. Ainsi, chacun pourrait apporter sa pierre à l’édifice sans que quiconque y soit forcé.",
+          "Bref, encourageons plutôt qu’obliger. Et vous, qu’en pensez-vous ?",
+          "Thomas"
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "id": "S39-1",
+        "title": "Vers la fin de l’argent liquide ?",
+        "part": "Monologue suivi",
+        "trigger": {
+          "title": "« Paiement par carte uniquement » : les espèces en recul",
+          "text": [
+            "De plus en plus de commerces affichent sur leur porte : « Paiement par carte uniquement ». Boulangeries, cafés, parkings : l’argent liquide recule partout, au point que certains jeunes n’ont presque jamais de pièces sur eux. Pour les commerçants, l’avantage est évident : moins de risques de vol, pas de monnaie à rendre, une comptabilité simplifiée.",
+            "Mais cette évolution inquiète plusieurs associations de consommateurs. Elles rappellent que de nombreuses personnes, notamment âgées ou en situation de précarité, utilisent encore les espèces pour gérer leur budget au jour le jour. Elles craignent aussi que la disparition du liquide permette de suivre chacun de nos achats, de sorte que notre vie privée serait de moins en moins protégée.",
+            "Faut-il renforcer l’obligation pour les commerces d’accepter les espèces ? Ou doit-on laisser la société évoluer librement vers le tout-numérique ?"
+          ]
+        },
+        "prompt": "Dégagez le thème du document, formulez une problématique, annoncez votre plan, puis défendez votre point de vue avec des exemples précis (environ 6 minutes). Conditions d’examen : 30 minutes de préparation, sans dictionnaire.",
+        "targetSeconds": 360,
+        "checklist": [
+          "Je présente le document et son thème en moins d’une minute.",
+          "Je formule une problématique claire (par exemple : « La disparition des espèces est-elle un progrès pour tous ? »).",
+          "J’annonce mon plan et je le respecte, en indiquant le passage d’une partie à l’autre.",
+          "J’illustre mes arguments par des exemples concrets (personnes âgées, petits commerces, sécurité, vie privée).",
+          "J’utilise des subjonctifs (il faut que, je crains que, bien que) et des expressions de conséquence (si bien que, de sorte que).",
+          "Je tiens au moins cinq minutes et je conclus en répondant à la problématique."
+        ]
+      },
+      {
+        "id": "S39-2",
+        "title": "Interdire les écrans aux tout-petits ?",
+        "part": "Exercice en interaction (débat)",
+        "prompt": "Vous êtes favorable à une loi interdisant l’exposition des enfants de moins de trois ans aux écrans dans les crèches et les lieux d’accueil. L’examinateur conteste votre position. Répondez à chaque objection : confirmez, nuancez, concédez ou réfutez, en restant précis et courtois.",
+        "followUps": [
+          "L’État n’a pas à décider à la place des parents de ce qui est bon pour leurs enfants, vous ne croyez pas ?",
+          "Certaines applications éducatives aident les enfants à apprendre. Pourquoi les en priver ?",
+          "Dans les crèches qui manquent de personnel, un dessin animé permet parfois de calmer un groupe. Que proposez-vous à la place ?",
+          "Si la loi n’est pas contrôlée, à quoi servira-t-elle ? Ce ne serait pas plutôt une question d’information ?"
+        ],
+        "targetSeconds": 300,
+        "checklist": [
+          "Je réponds à chaque objection sans répéter mot pour mot ma position de départ.",
+          "J’utilise des structures de doute et de volonté au subjonctif (je ne pense pas que, je souhaite que, il faudrait que).",
+          "J’explique les conséquences de mes propositions (si bien que, de sorte que, par conséquent).",
+          "Je concède au moins un point à l’examinateur et je propose un compromis réaliste.",
+          "Je gère mon temps : environ une minute par réponse, sans silence prolongé."
+        ]
+      }
+    ],
+    "application": [
+      {
+        "id": "A39-1",
+        "title": "Répondre au courriel d’un collègue",
+        "topic": "santé",
+        "task": "Un collègue vous écrit : « Tu as lu l’article sur le sommeil ? Je dors très mal en ce moment… Qu’est-ce qu’il conseille ? » Répondez-lui en 60 à 80 mots, sur un ton amical mais correct, en reprenant les principales recommandations de l’article R39-1 et en ajoutant un conseil personnel.",
+        "chunks": ["D’après l’article, il faut que tu…", "Évite de…", "si bien que…", "À ta place, je…"],
+        "keys": ["il faut que", "éviter", "écran"]
+      },
+      {
+        "id": "A39-2",
+        "title": "Expliquer des données chiffrées",
+        "topic": "société",
+        "task": "Votre association prépare une réunion sur le recrutement des bénévoles. Expliquez en 70 à 90 mots les résultats suivants d’une enquête fictive menée auprès de 1 000 bénévoles, puis tirez-en une conséquence pour l’association : il y a quinze ans, 60 % des bénévoles restaient plus de cinq ans dans la même association ; aujourd’hui, ils ne sont plus que 35 %. Dans le même temps, la part des missions ponctuelles est passée de 15 % à 40 %.",
+        "chunks": ["Les chiffres montrent que…", "alors que…", "si bien que…", "Il faut donc que notre association…"],
+        "keys": ["%", "alors que", "il faut que"]
+      }
+    ]
+  },
+  "vocab": [
+    {"id": "V39-01", "fr": "une variable d’ajustement", "zh": "（被牺牲的）可调节变量；首先被压缩的东西", "ex": "Quand on manque de temps, le sommeil devient souvent [[une variable d’ajustement]].", "exZh": "时间不够时，睡眠常常成为首先被压缩的部分。", "src": "R39-1"},
+    {"id": "V39-02", "fr": "le bouc émissaire", "zh": "替罪羊", "ex": "Les écrans sont devenus [[le bouc émissaire]] de tous nos problèmes de sommeil.", "exZh": "屏幕成了我们所有睡眠问题的替罪羊。", "src": "R39-1"},
+    {"id": "V39-03", "fr": "un problème d’image", "zh": "形象问题；（社会）认知问题", "ex": "La sieste souffre encore d’[[un problème d’image]] dans le monde du travail.", "exZh": "午睡在职场中仍然存在形象问题。", "src": "R39-1"},
+    {"id": "V39-04", "fr": "en profondeur", "zh": "深层次地；彻底地", "ex": "Une simple campagne d’information ne suffira pas à changer les habitudes [[en profondeur]].", "exZh": "一次简单的宣传活动不足以深层次地改变习惯。", "src": "R39-1"},
+    {"id": "V39-05", "fr": "il est peu probable que + subj.", "zh": "……不太可能（后接虚拟式）", "ex": "[[Il est peu probable que]] les comportements changent sans une prise de conscience collective.", "exZh": "没有集体意识的觉醒，行为不太可能改变。", "src": "R39-1"},
+    {"id": "V39-06", "fr": "oser à peine", "zh": "几乎不敢", "ex": "Cette habitude est si ancrée qu’on [[ose à peine]] la critiquer.", "exZh": "这种习惯根深蒂固，人们几乎不敢批评它。", "src": "R39-2"},
+    {"id": "V39-07", "fr": "il est temps que + subj.", "zh": "是时候……了（后接虚拟式）", "ex": "[[Il est temps que]] l’école prenne en compte la fatigue des enfants.", "exZh": "是时候让学校考虑孩子们的疲劳了。", "src": "R39-2"},
+    {"id": "V39-08", "fr": "prendre qqn pour un(e) incapable", "zh": "把某人当成无能之辈", "ex": "J’avais peur qu’on [[me prenne pour une incapable]] devant tous ces bricoleurs.", "exZh": "我担心在这些手工达人面前被当成什么都不会的人。", "src": "R39-3"},
+    {"id": "V39-09", "fr": "dormir dans un placard", "zh": "（物品）闲置在柜子里", "ex": "Ma vieille machine à coudre [[dort dans un placard]] depuis des années.", "exZh": "我的旧缝纫机已在柜子里闲置多年。", "src": "R39-3"},
+    {"id": "V39-10", "fr": "conçu de telle façon que", "zh": "被设计成以至于……", "ex": "Ces téléphones sont [[conçus de telle façon que]] la batterie est impossible à changer.", "exZh": "这些手机被设计得根本无法更换电池。", "src": "R39-3"},
+    {"id": "V39-11", "fr": "changer de visage", "zh": "改变面貌；呈现新形态", "ex": "Avec les missions courtes, le bénévolat [[change de visage]].", "exZh": "随着短期任务的出现，志愿服务的面貌正在改变。", "src": "L39-1"},
+    {"id": "V39-12", "fr": "s’engager dans la durée", "zh": "长期投入；持久参与", "ex": "Les associations cherchent des bénévoles prêts à [[s’engager dans la durée]].", "exZh": "协会在寻找愿意长期投入的志愿者。", "src": "L39-1"},
+    {"id": "V39-13", "fr": "un emploi du temps morcelé", "zh": "零碎的时间安排", "ex": "Avec [[un emploi du temps morcelé]], difficile de promettre une présence chaque semaine.", "exZh": "时间安排零零碎碎，很难承诺每周都到场。", "src": "L39-1"},
+    {"id": "V39-14", "fr": "parler à qqn", "zh": "（某事）能打动某人、引起共鸣", "ex": "Une action concrète comme rénover une école [[leur parle]] davantage qu’une réunion.", "exZh": "像翻修学校这样具体的行动比开会更能打动他们。", "src": "L39-1"},
+    {"id": "V39-15", "fr": "une porte d’entrée", "zh": "入门途径；切入口", "ex": "Une mission d’un week-end peut être [[une porte d’entrée]] vers un engagement plus durable.", "exZh": "一个周末的任务可以成为通向长期参与的入口。", "src": "L39-1"},
+    {"id": "V39-16", "fr": "alléger les tâches administratives", "zh": "减轻行政事务负担", "ex": "Pour attirer des responsables, il faut [[alléger les tâches administratives]].", "exZh": "要吸引负责人，就必须减轻行政事务负担。", "src": "L39-1"},
+    {"id": "V39-17", "fr": "se consacrer à l’essentiel", "zh": "专注于最重要的事", "ex": "Libérés de la comptabilité, les bénévoles peuvent [[se consacrer à l’essentiel]].", "exZh": "摆脱了记账工作，志愿者们可以专注于最重要的事。", "src": "L39-1"},
+    {"id": "V39-18", "fr": "craindre que… ne + subj.", "zh": "担心……（后接虚拟式，可带赘词 ne）", "ex": "Je [[crains que ce phénomène ne]] s’accentue dans les années à venir.", "exZh": "我担心这种现象在未来几年会加剧。", "src": "L39-1"},
+    {"id": "V39-19", "fr": "donner de l’ombre", "zh": "遮阴；提供阴凉", "ex": "Un jeune arbre met des années à [[donner de l’ombre]].", "exZh": "一棵小树要好多年才能遮阴。", "src": "L39-2"},
+    {"id": "V39-20", "fr": "mal supporter qqch", "zh": "难以忍受某事", "ex": "Les personnes âgées [[supportent mal]] les nuits de canicule.", "exZh": "老年人难以忍受酷暑的夜晚。", "src": "L39-2"},
+    {"id": "V39-21", "fr": "désengorger", "zh": "疏解（拥堵）；缓解拥挤", "ex": "La gratuité des bus devrait [[désengorger]] le centre-ville le samedi.", "exZh": "公交免费应能缓解周六市中心的拥堵。", "src": "L39-3"},
+    {"id": "V39-22", "fr": "en situation de précarité", "zh": "处于生活不稳定/贫困状态", "ex": "Les personnes [[en situation de précarité]] utilisent souvent les espèces pour gérer leur budget.", "exZh": "生活困难的人常用现金来管理预算。", "src": "S39-1"},
+    {"id": "V39-23", "fr": "rendre la monnaie", "zh": "找零", "ex": "Avec la carte, le commerçant n’a plus besoin de [[rendre la monnaie]].", "exZh": "用卡支付后，商家不再需要找零。", "src": "S39-1"},
+    {"id": "V39-24", "fr": "le tout-numérique", "zh": "全面数字化", "ex": "Tout le monde n’est pas prêt à passer au [[tout-numérique]].", "exZh": "并不是所有人都准备好全面数字化。", "src": "S39-1"},
+    {"id": "V39-25", "fr": "apporter sa pierre à l’édifice", "zh": "为共同事业贡献一份力量", "ex": "Chacun peut [[apporter sa pierre à l’édifice]], même avec une heure par semaine.", "exZh": "每个人都可以贡献一份力量，哪怕每周只有一小时。", "src": "W39-1"}
+  ]
+}
