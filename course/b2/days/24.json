@@ -230,7 +230,7 @@
     {"id": "V24-17", "fr": "être valorisé", "zh": "受到重视、得到认可", "ex": "Les seniors ne sont ni formés ni [[valorisés]] dans beaucoup d’entreprises.", "exZh": "在许多公司，老员工既得不到培训，也得不到重视。", "src": "L24-1"},
     {"id": "V24-18", "fr": "le manque de main-d’œuvre", "zh": "劳动力短缺", "ex": "[[Le manque de main-d’œuvre]] oblige les entreprises à recruter des seniors.", "exZh": "劳动力短缺迫使企业招聘年长员工。", "src": "L24-1"},
     {"id": "V24-19", "fr": "la réunionite", "zh": "开会成瘾；会议泛滥", "ex": "Notre service souffre de [[réunionite]] : trois réunions par jour !", "exZh": "我们部门患上了“开会病”：一天开三个会！", "src": "L24-2"},
-    {"id": "V24-20", "fr": "s’attaquer à", "zh": "着手解决；向……开刀", "ex": "Cette semaine, le chroniqueur [[s’attaque à]] la réunionite.", "exZh": "这周，专栏作者向“开会病”开刀。", "src": "L24-2"},
+    {"id": "V24-20", "fr": "s’agacer que + subj.", "zh": "对……感到恼火（后接虚拟式）", "ex": "Les organisateurs [[s’agacent que]] rien n’avance, mais ils recommencent la semaine suivante.", "exZh": "组织者对毫无进展感到恼火，但下周还是照开不误。", "src": "L24-2"},
     {"id": "V24-21", "fr": "sans avoir à se justifier", "zh": "无需说明理由", "ex": "Ceux qui n’ont rien à dire peuvent partir [[sans avoir à se justifier]].", "exZh": "没什么要说的人可以离开，无需说明理由。", "src": "L24-2"},
     {"id": "V24-22", "fr": "les jeunes recrues", "zh": "新招聘的员工；新人", "ex": "En télétravail, [[les jeunes recrues]] n’ont personne à qui poser leurs questions.", "exZh": "远程办公时，新员工找不到人问问题。", "src": "L24-3"},
     {"id": "V24-23", "fr": "ne pas démériter", "zh": "并无失职；表现并不差", "ex": "Ces collaborateurs [[n’ont pas démérité]] : leurs résultats sont excellents.", "exZh": "这些同事并无失职：他们的成绩非常出色。", "src": "W24-1"},
