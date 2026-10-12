@@ -1,0 +1,242 @@
+{
+  "day": 32,
+  "phase": "DELF B2 专项",
+  "title": "阅读 II：观点与言外之意",
+  "level": "B2",
+  "grammarFocus": "Compréhension des écrits : texte argumentatif, implicite",
+  "function": "identifier la position de l’auteur",
+  "topic": "société",
+  "canDo": "能在议论文、讽刺性专栏和读者来信中识别作者的真实立场与语气，读出反语、让步和推测语气背后的言外之意，并用原文依据为答案辩护。",
+  "review": "复习让步表达（certes… mais, avoir beau, bien que + 虚拟式, même si）与推测/弱化表达（il semble que, il se peut que, sans doute, 推测性条件式），它们正是判断作者态度的关键信号；衔接第 31 天的“定位—核对”阅读法。",
+  "input": "读：一篇分析城市孤独现象的文章（注意条件式表示的“未证实”）、一篇讽刺市政“强制友好”的专栏（反语）、一封读者来信（支持中带保留）；听：关于代际同住的电台辩论、乡村协会咖啡馆的现场报道、“你认识邻居吗”街头采访。",
+  "output": "写：给报纸写一封 250 词以上的读者来信，对一篇文章表达有保留的立场（至少 2 个让步结构、2 个推测/弱化表达）；说：围绕“高中生邻里服务”做 6 分钟独白，并在辩论中以让步—反驳回应考官。",
+  "checkpoint": "R32-2 中能指出至少 3 处反语或言外之意并说明真实含义；全天选择题正确率≥80%；读者来信中让步与弱化表达使用正确且不少于 4 处。",
+  "challenge": "今日挑战：在 RFI《Journal en français facile》或 TV5MONDE 找一篇社会类评论或报道，找出一句带条件式（如 « il y aurait… »）或让步结构的句子，抄下来，并用中文写一句说明作者借此表达了什么态度；再用 « Certes…, mais… » 写一句你的回应。",
+  "sources": ["FEI-B2", "FEI-B2-SAMPLES", "FEI-B2-TRAIN", "CEFR-CV"],
+  "focus": ["concession", "modalisation"],
+  "items": {
+    "reading": [
+      {
+        "id": "R32-1",
+        "title": "Solitude : un mal plus répandu qu’on ne le croit",
+        "meta": {"genre": "Article de presse", "domain": "Société", "level": "B2"},
+        "text": [
+          "Elle ne fait pas de bruit, ne se voit pas dans la rue et n’apparaît dans presque aucune statistique de santé. Pourtant, la solitude toucherait aujourd’hui une part croissante de la population. Selon une enquête menée auprès de 4 000 personnes, près d’un adulte sur cinq déclare n’avoir eu, au cours de l’année écoulée, aucune conversation approfondie avec un proche.",
+          "Contrairement à une idée répandue, les personnes âgées ne sont pas les seules concernées. Certes, le veuvage, la perte d’autonomie ou l’éloignement des enfants exposent particulièrement les plus de 75 ans. Mais l’enquête montre que les 18–30 ans se disent presque aussi souvent seuls, alors même qu’ils sont les plus connectés. Il semble donc que la multiplication des contacts numériques ne suffise pas à créer un sentiment d’appartenance.",
+          "Comment expliquer ce phénomène ? Les chercheurs avancent plusieurs hypothèses, sans qu’aucune ne s’impose clairement. La mobilité professionnelle éloignerait les individus de leurs réseaux familiaux ; la disparition des commerces et des services de proximité aurait réduit les occasions de rencontres informelles ; le télétravail, enfin, pourrait priver certains salariés des échanges quotidiens qui structuraient leur journée. « Il est probable que ces facteurs se combinent, explique la sociologue Hélène Marchal. Mais il serait imprudent de désigner un coupable unique. »",
+          "Les conséquences, elles, sont mieux connues. Un isolement prolongé favorise la dépression, les troubles du sommeil et le repli sur soi. Certaines études suggèrent même que ses effets sur la santé seraient comparables à ceux du tabac, même si cette comparaison, très reprise par les médias, reste discutée. Il a aussi un coût collectif : les personnes isolées consultent plus tard un médecin, renoncent plus souvent à leurs droits et participent moins à la vie de leur quartier.",
+          "Face à ce constat, les initiatives se multiplient : cafés associatifs, visites de bénévoles, logements partagés entre étudiants et retraités. Dans quelques villes, un « référent solitude » a même été désigné à la mairie. Elles ont beau être appréciées de ceux qui y participent, leur portée reste limitée, faute de moyens et de coordination. Pour Hélène Marchal, la solitude ne sera vraiment prise au sérieux que lorsqu’elle sera considérée comme une question de santé publique, et non comme une simple affaire individuelle."
+        ],
+        "questions": [
+          {"stem": "Quel est l’objectif principal de cet article ?", "options": ["Raconter le témoignage d’une personne âgée isolée.", "Analyser un phénomène social : son ampleur, ses causes possibles et les réponses apportées.", "Présenter les activités d’une association de lutte contre la solitude."], "answer": 1, "why": "文章依次讲规模（调查数据）、受影响人群、可能原因、后果、应对措施，是分析型报道。A 文中没有个人见证；C 各种倡议只在最后一段被概括提及。"},
+          {"stem": "Qu’apprend-on au sujet des jeunes adultes ?", "options": ["Ils se sentent presque aussi seuls que les plus âgés, malgré leurs nombreux contacts en ligne.", "Ils sont moins touchés que les autres parce qu’ils sont plus connectés.", "Ils sont les principaux responsables de l’isolement de leurs parents."], "answer": 0, "why": "« les 18–30 ans se disent presque aussi souvent seuls, alors même qu’ils sont les plus connectés »。alors même que 表示对立：尽管联系多仍感孤独。B 与原文相反；C 无依据。"},
+          {"stem": "Comment les causes de la solitude sont-elles présentées dans le troisième paragraphe ?", "options": ["Comme des faits démontrés par l’enquête.", "Comme le résultat d’un choix personnel des individus.", "Comme des hypothèses encore incertaines."], "answer": 2, "why": "« avancent plusieurs hypothèses, sans qu’aucune ne s’impose clairement »，并连用条件式 éloignerait / aurait réduit / pourrait priver 表示未经证实。A 忽视了推测语气；B 文中未提“个人选择”。"},
+          {"stem": "Que pense Hélène Marchal des causes du phénomène ?", "options": ["Le télétravail en est la cause principale.", "Plusieurs facteurs agissent probablement ensemble.", "Il est impossible d’en trouver la moindre explication."], "answer": 1, "why": "« Il est probable que ces facteurs se combinent… il serait imprudent de désigner un coupable unique »。A 正是她拒绝的“单一罪魁”；C 过于绝对，她说的是“可能”而非“无法解释”。"},
+          {"stem": "Dans le dernier paragraphe, « Elles ont beau être appréciées » signifie :", "options": ["Puisqu’elles sont appréciées.", "Bien qu’elles soient appréciées.", "Pour qu’elles soient appréciées."], "answer": 1, "why": "avoir beau + 不定式 = 尽管……（也无济于事），相当于 bien que + 虚拟式，后接 « leur portée reste limitée »。A 表原因，C 表目的，逻辑关系均不对。"},
+          {"stem": "Selon la sociologue, à quelle condition la solitude sera-t-elle vraiment prise au sérieux ?", "options": ["Si elle est traitée comme un enjeu de santé publique.", "Si chaque citoyen fait davantage d’efforts personnels.", "Si les associations reçoivent davantage de bénévoles."], "answer": 0, "why": "« ne sera vraiment prise au sérieux que lorsqu’elle sera considérée comme une question de santé publique, et non comme une simple affaire individuelle »。B 恰好是被否定的“个人问题”视角；C 文中只说缺乏资金和协调，并未提志愿者人数。"}
+        ]
+      },
+      {
+        "id": "R32-2",
+        "title": "Soyez conviviaux, c’est obligatoire !",
+        "meta": {"genre": "Chronique", "domain": "Vie locale", "level": "B2"},
+        "text": [
+          "Ma ville a décidé que nous serions heureux ensemble. Le message, imprimé en lettres orange sur une affiche géante, ne laisse aucune place au doute : « Le 14 juin, tous voisins, tous amis ! » Le programme est soigneusement minuté : apéritif à 18 h 30, jeux collectifs à 19 h, « temps d’échange libre » à 20 h. Une buvette sera tenue par les services municipaux, et chaque participant recevra un badge à son prénom, pour faciliter les présentations. On appréciera la précision : même la liberté a désormais un horaire.",
+          "Loin de moi l’idée de critiquer une initiative aussi généreuse. Il se peut d’ailleurs que, ce soir-là, quelques voisins se découvrent des passions communes. Mais je ne peux m’empêcher de remarquer que la même municipalité a fermé l’an dernier le bureau de poste du quartier, puis la bibliothèque, deux lieux où, sans affiche ni animateur, des inconnus se parlaient tous les jours.",
+          "Car le lien social, s’il se décrète volontiers, se fabrique rarement sur commande. Il naît de la répétition : croiser chaque matin la même personne à l’arrêt de bus, échanger trois mots avec le pharmacien, attendre ensemble que la pluie cesse sous l’auvent du marché. Rien de spectaculaire, rien de photographiable pour le bulletin municipal. C’est sans doute là tout le problème.",
+          "J’irai quand même à la fête, bien sûr. J’apporterai une tarte, je jouerai à la pétanque et je sourirai sur la photo. Et le lendemain, je passerai devant la bibliothèque fermée en me demandant combien de fêtes il faudra pour remplacer un lieu ouvert toute l’année."
+        ],
+        "questions": [
+          {"stem": "Quelle est la position de l’auteur sur la fête organisée par la mairie ?", "options": ["Il l’approuve sans réserve et invite les lecteurs à y participer.", "Il la juge inutile et annonce qu’il ne s’y rendra pas.", "Il s’en moque gentiment et lui reproche de masquer la fermeture de vrais lieux de rencontre."], "answer": 2, "why": "全文以反语嘲讽“定时的友好”，并对比邮局与图书馆的关闭。A 忽略了讽刺；B 与最后一段 « J’irai quand même à la fête » 矛盾。"},
+          {"stem": "Avec la phrase « même la liberté a désormais un horaire », l’auteur…", "options": ["souligne avec ironie le caractère artificiel de l’organisation.", "félicite la mairie pour son sens de l’organisation.", "regrette que la soirée se termine trop tôt."], "answer": 0, "why": "« temps d’échange libre » 竟被排在 20 点：“自由也有时间表”是反语，讽刺活动的刻意与人为。B 是字面理解，忽视了语气；C 文中无此内容。"},
+          {"stem": "« Loin de moi l’idée de critiquer une initiative aussi généreuse » : en réalité, l’auteur…", "options": ["s’excuse d’avoir critiqué la mairie dans un précédent article.", "s’apprête justement à formuler une critique.", "reconnaît qu’il n’a aucune raison de se plaindre."], "answer": 1, "why": "这是典型的“先撇清再批评”的修辞，紧接着就是 « Mais je ne peux m’empêcher de remarquer que… » 指出邮局和图书馆被关。A 文中未提此前文章；C 与全文立场相反。"},
+          {"stem": "D’après l’auteur, comment naît le lien social ?", "options": ["Grâce à de grands événements bien organisés.", "Grâce aux activités proposées par des animateurs.", "Grâce à des rencontres ordinaires qui se répètent."], "answer": 2, "why": "« Il naît de la répétition : croiser chaque matin la même personne… échanger trois mots avec le pharmacien »。A、B 正是作者所怀疑的“按指令制造”的方式（« sans affiche ni animateur »）。"},
+          {"stem": "Que sous-entend la phrase « C’est sans doute là tout le problème » ?", "options": ["Que les habitants refusent de se parler au quotidien.", "Que les élus préfèrent les actions visibles aux lieux de rencontre discrets mais durables.", "Que le bulletin municipal ne publie pas assez de photos."], "answer": 1, "why": "前一句 « Rien de spectaculaire, rien de photographiable pour le bulletin municipal »：日常联系“上不了宣传照”，暗示市政更看重能被展示的活动。A 与文中“陌生人每天交谈”相反；C 是字面误读。"}
+        ]
+      },
+      {
+        "id": "R32-3",
+        "title": "Cohabiter, oui, mais sans naïveté",
+        "meta": {"genre": "Courrier des lecteurs", "domain": "Société", "level": "B2"},
+        "text": [
+          "Votre article sur la cohabitation entre étudiants et retraités m’a fait sourire, puis réfléchir. J’héberge depuis deux ans une étudiante en pharmacie, et je ne le regrette pas un instant. Je ne voudrais pas pour autant que vos lecteurs imaginent un conte de fées.",
+          "Votre journaliste semble croire que tout repose sur la bonne volonté. Or la cohabitation exige des règles claires : horaires, partage de la cuisine, visites. Les premières semaines, nous avons connu quelques tensions, ce qui est sans doute inévitable lorsque deux personnes nées à cinquante ans d’écart partagent un appartement.",
+          "Par ailleurs, il est inexact d’écrire que ces jeunes « remplacent les aides à domicile ». Mon étudiante n’est ni infirmière ni femme de ménage : elle est là, tout simplement, et c’est déjà beaucoup. Si l’on commence à exiger davantage, on risque de transformer une belle rencontre en emploi déguisé.",
+          "Bref, oui à la cohabitation, mais sans naïveté.",
+          "<i>Jacqueline F., retraitée</i>"
+        ],
+        "questions": [
+          {"stem": "Dans quel but cette lectrice écrit-elle au journal ?", "options": ["Pour nuancer un article tout en soutenant l’idée qu’il défend.", "Pour se plaindre de l’étudiante qu’elle héberge.", "Pour demander des informations sur la cohabitation."], "answer": 0, "why": "她说 « je ne le regrette pas un instant » 并以 « oui à la cohabitation, mais sans naïveté » 收尾：支持但修正。B 与她的满意相悖；C 她已有两年经验，不是来咨询的。"},
+          {"stem": "Que veut-elle dire par « Je ne voudrais pas… que vos lecteurs imaginent un conte de fées » ?", "options": ["Que la cohabitation est une expérience malheureuse.", "Que l’article était trop long et peu sérieux.", "Que la cohabitation n’est pas une situation idéale sans difficultés."], "answer": 2, "why": "conte de fées 在此比喻“完美无瑕的故事”；她随后谈到需要规则、初期有摩擦。A 太负面，与她的满意矛盾；B 无依据。"},
+          {"stem": "Que reproche-t-elle au journaliste ?", "options": ["D’avoir exagéré les tensions entre générations.", "De sous-estimer la nécessité de règles précises.", "D’avoir oublié de citer des témoignages de retraités."], "answer": 1, "why": "« Votre journaliste semble croire que tout repose sur la bonne volonté. Or la cohabitation exige des règles claires »。semble croire 是委婉的批评。A 正相反——记者把事情说得太美好；C 未提及。"},
+          {"stem": "Pourquoi refuse-t-elle l’idée que les étudiants « remplacent les aides à domicile » ?", "options": ["Parce que les étudiants n’ont pas le temps de s’en occuper.", "Parce que cela risquerait de transformer la relation en travail non reconnu.", "Parce que les aides à domicile sont mieux formées et moins chères."], "answer": 1, "why": "« Si l’on commence à exiger davantage, on risque de transformer une belle rencontre en emploi déguisé »。A 文中未提时间问题；C 中“更便宜”无依据。"}
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "id": "L32-1",
+        "title": "Jeunes et seniors sous le même toit : la bonne solution ?",
+        "meta": {"genre": "Émission de radio · débat", "domain": "Société", "level": "B2", "plays": 2},
+        "script": [
+          "— Bonsoir à tous. Ce soir, une question : la cohabitation entre jeunes et seniors est-elle une vraie réponse à la solitude et au manque de logements ? Pour en parler, Marc Delorme, qui a fondé l’association Toit Partagé, et Nadia Sow, sociologue spécialiste du vieillissement. Marc Delorme, d’abord, comment ça marche ?\n— Le principe est simple : une personne âgée qui a une chambre libre accueille un étudiant. En échange d’un loyer très modeste, parfois même sans loyer, le jeune s’engage à être présent certains soirs et à rendre de petits services. L’an dernier, nous avons formé environ trois cents binômes, et la grande majorité se sont très bien passés.",
+          "— Nadia Sow, vous semblez plus réservée.\n— Disons que je partage l’objectif, mais je me méfie un peu de l’enthousiasme. D’abord, ces dispositifs restent marginaux : quelques centaines de binômes, face à des centaines de milliers de personnes âgées qui vivent seules. Ensuite, ils ne concernent qu’un certain profil : des seniors plutôt autonomes, qui ont un grand logement en ville. Les plus isolés, à la campagne ou en perte d’autonomie, n’en bénéficient pas.",
+          "— Marc Delorme, que répondez-vous ?\n— Sur l’ampleur, elle a raison, je le reconnais volontiers. Mais on ne peut pas juger une solution sur ce qu’elle ne fait pas. Pour ceux qui y participent, le changement est réel : une dame de quatre-vingt-sept ans m’a dit récemment qu’elle avait recommencé à cuisiner, parce qu’elle avait de nouveau quelqu’un avec qui parler pendant le repas.",
+          "— Nadia Sow ?\n— Je ne doute pas de ce genre de témoignage, il est même très touchant. Mais justement, le risque, c’est que les pouvoirs publics se contentent de ces belles histoires. Il serait tellement facile de dire : regardez, la société civile s’en occupe ! Alors que la solitude des personnes âgées demande aussi des transports, des services de proximité, des aides à domicile correctement payées.",
+          "— Donc, pour vous, c’est une fausse bonne idée ?\n— Non, c’est une bonne idée… à condition de ne pas lui demander plus qu’elle ne peut donner.",
+          "— Marc Delorme, un mot pour conclure ?\n— Je suis tout à fait d’accord avec cette dernière phrase. Nous ne prétendons pas résoudre le problème de la solitude. Nous créons des rencontres, une par une. Et je crois que c’est déjà beaucoup."
+        ],
+        "questions": [
+          {"stem": "Quel est le thème de ce débat ?", "options": ["La cohabitation entre générations comme réponse à l’isolement.", "Le coût des logements étudiants dans les grandes villes.", "La formation des aides à domicile."], "answer": 0, "why": "主持人开场即提出：« la cohabitation entre jeunes et seniors est-elle une vraie réponse à la solitude… ? »。B 只是背景之一；C 只在 Nadia Sow 的论据中顺带提到。"},
+          {"stem": "En quoi consiste le dispositif proposé par l’association ?", "options": ["Des étudiants rendent visite chaque semaine à des personnes âgées.", "Un étudiant est logé à petit prix en échange d’une présence et de petits services.", "Des retraités donnent des cours particuliers à des étudiants."], "answer": 1, "why": "« En échange d’un loyer très modeste… le jeune s’engage à être présent certains soirs et à rendre de petits services »。A 不是同住；C 方向搞反了。"},
+          {"stem": "Quelle est la première réserve de Nadia Sow ?", "options": ["Les étudiants ne sont pas assez sérieux.", "Le dispositif coûte trop cher aux personnes âgées.", "Le dispositif touche peu de monde et pas les plus isolés."], "answer": 2, "why": "« ces dispositifs restent marginaux… Les plus isolés, à la campagne ou en perte d’autonomie, n’en bénéficient pas »。A、B 均未被提及。"},
+          {"stem": "Comment Marc Delorme réagit-il à cette critique ?", "options": ["Il concède le point mais rappelle les effets réels sur les participants.", "Il conteste les chiffres avancés par la sociologue.", "Il reconnaît que son association devrait s’arrêter."], "answer": 0, "why": "« Sur l’ampleur, elle a raison, je le reconnais volontiers. Mais… le changement est réel »：典型的“让步 + 反驳”。B 他并未质疑数据；C 与其结论相反。"},
+          {"stem": "Quel risque Nadia Sow souligne-t-elle ensuite ?", "options": ["Que les familles cessent de rendre visite à leurs parents.", "Que les pouvoirs publics se reposent sur ces initiatives et se désengagent.", "Que les témoignages soient inventés par les associations."], "answer": 1, "why": "« le risque, c’est que les pouvoirs publics se contentent de ces belles histoires… regardez, la société civile s’en occupe »。C 与 « Je ne doute pas de ce genre de témoignage » 矛盾；A 未提及。"},
+          {"stem": "Quelle est finalement la position de Nadia Sow ?", "options": ["C’est une fausse bonne idée qu’il faut abandonner.", "C’est la meilleure solution contre la solitude.", "C’est une bonne idée, à condition d’en connaître les limites."], "answer": 2, "why": "« Non, c’est une bonne idée… à condition de ne pas lui demander plus qu’elle ne peut donner »。A 是主持人的猜测，被她否定；B 夸大。"}
+        ]
+      },
+      {
+        "id": "L32-2",
+        "title": "Le café qui a rendu la parole à un village",
+        "meta": {"genre": "Reportage radio", "domain": "Vie locale", "level": "B2", "plays": 2},
+        "script": [
+          "— Dans notre série « Ces lieux qui nous relient », direction Saint-Julien-des-Prés, un village de six cents habitants. Notre reporter Lucas Ferrand y a passé la matinée. Lucas ?\n— Oui, bonjour. Alors ici, le dernier café avait fermé il y a huit ans. Depuis, il n’y avait plus vraiment d’endroit où se retrouver, à part la sortie de l’école, et encore, seulement pour les parents. Il y a deux ans, une quinzaine d’habitants ont décidé de racheter les murs pour y ouvrir un café associatif. Ce sont des bénévoles qui tiennent le comptoir, à tour de rôle.",
+          "On aurait pu croire que ce serait un lieu réservé aux anciens. Eh bien, pas du tout. Ce matin, il y avait des retraités qui jouaient aux cartes, bien sûr, mais aussi deux jeunes télétravailleurs installés avec leur ordinateur, et une maman qui attendait la fin de l’atelier couture. Le café sert même de dépôt de pain le lundi, quand la boulangerie du bourg voisin est fermée.",
+          "Tout n’est pas rose, évidemment. Les bénévoles s’épuisent un peu, et les recettes suffisent tout juste à payer le chauffage. La présidente de l’association, Martine Lagarde, m’expliquait qu’ils cherchaient de nouvelles bonnes volontés, notamment parmi les familles arrivées récemment. Mais, je la cite : « Même si on devait fermer demain, on aurait prouvé qu’un village n’est pas condamné au silence. »\n— Merci, Lucas."
+        ],
+        "questions": [
+          {"stem": "De quoi parle ce reportage ?", "options": ["De l’ouverture d’une boulangerie dans un petit village.", "D’un café géré par des habitants bénévoles pour recréer du lien.", "De la fermeture de l’école d’un village."], "answer": 1, "why": "核心是 « une quinzaine d’habitants… ouvrir un café associatif… des bénévoles qui tiennent le comptoir »。A：面包只是咖啡馆的附加功能；C 学校只作为以前唯一的碰面处被提到。"},
+          {"stem": "Qu’est-ce qui a surpris le reporter ?", "options": ["La diversité du public, qui ne se limite pas aux personnes âgées.", "Le nombre très élevé de clients.", "L’absence totale de retraités."], "answer": 0, "why": "« On aurait pu croire que ce serait un lieu réservé aux anciens. Eh bien, pas du tout » 后列举退休者、远程办公的年轻人、母亲。C 过度——退休者也在（« bien sûr »）。"},
+          {"stem": "Quelles difficultés le café rencontre-t-il ?", "options": ["Des conflits entre jeunes et anciens.", "Une interdiction de la mairie.", "La fatigue des bénévoles et des finances très justes."], "answer": 2, "why": "« Les bénévoles s’épuisent un peu, et les recettes suffisent tout juste à payer le chauffage »。A、B 均未提及。"},
+          {"stem": "Que veut dire Martine Lagarde dans la citation finale ?", "options": ["Que le café va probablement fermer très bientôt.", "Que l’expérience a déjà démontré qu’on peut faire revivre un village.", "Que les habitants préfèrent le calme et le silence."], "answer": 1, "why": "même si + 未完成过去时 + 条件式过去时：“即便明天关门，我们也已经证明了……”，强调已取得的意义。A 是对假设句的误读；C 把 silence 理解成了字面上的“安静”。"}
+        ]
+      },
+      {
+        "id": "L32-3",
+        "title": "Micro-trottoir : connaissez-vous vos voisins ?",
+        "meta": {"genre": "Micro-trottoir", "domain": "Vie quotidienne", "level": "B2", "plays": 1},
+        "script": [
+          "— Pour notre micro-trottoir, une question simple : connaissez-vous vos voisins ? Monsieur, vous d’abord ?\n— Ben, de vue, oui. On se dit bonjour dans l’escalier, mais je ne connais même pas leurs prénoms. C’est un peu dommage, je l’admets, mais bon, tout le monde court.",
+          "— Et vous, madame ?\n— Moi, très bien ! On a créé un groupe de messagerie dans l’immeuble. Au début, c’était juste pour les colis, et maintenant on se prête des outils, on garde les chats pendant les vacances…",
+          "— Et vous, jeune homme ?\n— Franchement, non, et ça me convient. J’ai déménagé trois fois en quatre ans, alors je ne m’attache pas. Cela dit, si quelqu’un avait besoin d’aide, j’irais frapper à sa porte, évidemment."
+        ],
+        "questions": [
+          {"stem": "Que dit le premier homme interrogé ?", "options": ["Il connaît bien ses voisins et les invite souvent.", "Il connaît ses voisins de vue et le regrette un peu.", "Il évite volontairement ses voisins."], "answer": 1, "why": "« de vue, oui… je ne connais même pas leurs prénoms. C’est un peu dommage, je l’admets »。A 过度；C 他每天打招呼，并非刻意回避。"},
+          {"stem": "À l’origine, à quoi servait le groupe de messagerie de la femme ?", "options": ["À organiser des fêtes entre voisins.", "À garder les animaux pendant les vacances.", "À gérer la réception des colis."], "answer": 2, "why": "« Au début, c’était juste pour les colis »；借工具、照看猫是后来的发展（« maintenant »）。"},
+          {"stem": "Quelle est l’attitude du jeune homme ?", "options": ["Il ne cherche pas à créer de liens, mais il aiderait en cas de besoin.", "Il aimerait mieux connaître ses voisins mais n’ose pas.", "Il refuse d’aider les personnes qu’il ne connaît pas."], "answer": 0, "why": "« je ne m’attache pas. Cela dit, si quelqu’un avait besoin d’aide, j’irais frapper à sa porte »：cela dit 引出让步。B 与 « ça me convient » 矛盾；C 与结尾相反。"}
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "id": "W32-1",
+        "title": "Réagir à un article sur la solitude",
+        "genre": "Lettre formelle",
+        "prompt": "Vous avez lu dans un quotidien régional l’éditorial ci-dessous. Vous écrivez au rédacteur en chef du journal pour réagir : vous reconnaissez ce qui vous semble juste dans ce texte, mais vous contestez son idée principale en vous appuyant sur des arguments et des exemples précis. Votre lettre pourra être publiée dans le courrier des lecteurs. (250 mots minimum)",
+        "trigger": {"title": "Éditorial : « La solitude n’est pas l’affaire de l’État »", "text": ["On parle beaucoup de la solitude, et certains voudraient en faire une grande cause nationale. Soyons sérieux : se faire des amis, appeler ses parents, dire bonjour à ses voisins, cela relève de la responsabilité de chacun. Aucune loi, aucun budget ne remplacera la bonne volonté individuelle. Plutôt que d’attendre tout des pouvoirs publics, commençons par frapper à la porte d’à côté."]},
+        "minWords": 250,
+        "checklist": [
+          "Réalisation de la tâche : je réagis précisément à l’éditorial, je concède un point et je défends une position argumentée avec des exemples.",
+          "Cohérence et cohésion : introduction (objet de la lettre), deux ou trois paragraphes argumentatifs, conclusion ; articulateurs variés.",
+          "Adéquation sociolinguistique : formule d’appel (Monsieur le Rédacteur en chef), registre soutenu, formule de politesse finale complète.",
+          "Lexique : vocabulaire du lien social (isolement, services de proximité, perte d’autonomie, repli sur soi).",
+          "Morphosyntaxe : au moins deux structures concessives (certes… mais, bien que + subjonctif, avoir beau) et deux modalisateurs (il semble que, sans doute, il se peut que).",
+          "Longueur : 250 mots minimum ; relecture des accords et des modes."
+        ],
+        "model": [
+          "Monsieur le Rédacteur en chef,",
+          "Lecteur fidèle de votre journal, je me permets de réagir à l’éditorial intitulé « La solitude n’est pas l’affaire de l’État », paru dans votre édition de samedi.",
+          "Certes, je partage une partie de votre constat. Aucune loi n’obligera jamais quelqu’un à frapper à la porte de son voisin, et il est sans doute utile de rappeler que chacun peut agir à son échelle. Pour ma part, je rends régulièrement visite à une voisine âgée, et je sais combien ces petits gestes comptent.",
+          "Toutefois, votre conclusion me paraît bien trop rapide. Bien que la bonne volonté soit indispensable, elle ne suffit pas lorsque les lieux de rencontre disparaissent. Dans mon quartier, la fermeture du bureau de poste et de la bibliothèque a privé de nombreux habitants des seules occasions qu’ils avaient de parler à quelqu’un. Ces décisions ont été prises par des pouvoirs publics, et il me semble difficile de demander aux citoyens de compenser seuls leurs effets.",
+          "Par ailleurs, la solitude ne touche pas tout le monde de la même manière. Une personne en perte d’autonomie a beau être entourée de voisins bienveillants, elle a d’abord besoin de transports adaptés, d’aides à domicile et de services de proximité. Or tout cela suppose des moyens que seule la collectivité peut mobiliser.",
+          "Il se peut que l’on abuse parfois de l’expression « grande cause nationale ». Mais refuser toute responsabilité collective reviendrait, selon moi, à laisser les plus fragiles se débrouiller seuls. La solution réside sans doute dans un équilibre entre engagement individuel et action publique.",
+          "En espérant que ces quelques remarques enrichiront le débat, je vous prie d’agréer, Monsieur le Rédacteur en chef, l’expression de mes salutations distinguées.",
+          "Thomas Berger"
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "id": "S32-1",
+        "title": "Un service de voisinage pour les lycéens ?",
+        "part": "Monologue suivi",
+        "trigger": {"title": "Vingt heures pour les autres", "text": ["Dans la commune de Valmoreau, le conseil municipal étudie une proposition originale : demander à chaque lycéen de consacrer vingt heures par an à des personnes âgées isolées du quartier. Visites, courses, aide pour utiliser un téléphone ou remplir un formulaire : les missions seraient variées et encadrées par une association locale.", "Les partisans du projet y voient un moyen de lutter contre la solitude tout en apprenant aux jeunes la solidarité. Les opposants, eux, dénoncent une obligation déguisée : selon eux, l’engagement perd tout son sens lorsqu’il est imposé, et les lycéens ont déjà des emplois du temps chargés. « Il serait plus juste de valoriser ceux qui s’engagent volontairement », estime une représentante des parents d’élèves. Le vote doit avoir lieu à l’automne."]},
+        "prompt": "Dégagez le thème du document, formulez une problématique, annoncez votre plan, puis défendez votre point de vue avec des exemples précis (environ 6 minutes).",
+        "targetSeconds": 360,
+        "checklist": [
+          "Je présente brièvement le document (source, situation, enjeu) sans le lire.",
+          "Je pose une problématique claire (ex. : Peut-on rendre la solidarité obligatoire ?).",
+          "J’annonce et je suis un plan en deux ou trois parties.",
+          "Je concède au moins un argument du camp adverse avant de le dépasser (certes…, il est vrai que…, mais…).",
+          "J’illustre chaque idée par un exemple concret (expérience personnelle, situation en Chine ou dans un pays francophone).",
+          "Je conclus en répondant à la problématique et en ouvrant sur une proposition."
+        ]
+      },
+      {
+        "id": "S32-2",
+        "title": "Une grande fête ou un lieu ouvert toute l’année ?",
+        "part": "Exercice en interaction (débat)",
+        "prompt": "Votre mairie dispose d’un budget limité pour « renforcer le lien social ». Vous défendez l’idée qu’il vaut mieux financer un lieu ouvert toute l’année (café associatif, bibliothèque de quartier) plutôt qu’une grande fête annuelle. L’examinateur conteste votre position. Répondez à chaque objection : confirmez, nuancez, concédez, réfutez.",
+        "followUps": [
+          "Une fête attire des milliers de personnes en une soirée. Votre café, combien de personnes touchera-t-il ?",
+          "Un lieu permanent coûte cher en personnel et en chauffage. Qui va payer, année après année ?",
+          "Ces lieux ne sont fréquentés que par des habitués. N’est-ce pas plutôt la fête qui permet de rencontrer de nouvelles personnes ?",
+          "Et si l’on vous disait que la population préfère la fête, d’après un sondage, vous imposeriez quand même votre choix ?"
+        ],
+        "targetSeconds": 240,
+        "checklist": [
+          "Je réponds directement à chaque objection, sans l’éviter.",
+          "J’utilise des formules de concession (je vous l’accorde, il est vrai que…, mais…).",
+          "Je nuance avec des modalisateurs (il se peut que…, sans doute, il me semble que…).",
+          "Je propose au moins un compromis concret (fête organisée par le café, horaires partagés…).",
+          "Je garde un ton courtois et je relance le débat par une question."
+        ]
+      }
+    ],
+    "application": [
+      {
+        "id": "A32-1",
+        "title": "Rendre l’implicite explicite",
+        "topic": "vie locale",
+        "task": "Un ami qui apprend le français a lu la chronique R32-2 « Soyez conviviaux, c’est obligatoire ! » et croit que l’auteur est enthousiaste. Expliquez-lui en 60 à 80 mots la véritable position de l’auteur : relevez au moins deux passages ironiques et dites ce qu’ils signifient réellement.",
+        "chunks": ["En réalité, l’auteur…", "Quand il écrit « … », il veut dire que…", "Le ton est ironique :", "Ce qu’il reproche à la mairie, c’est…"],
+        "keys": ["ironi", "bibliothèque", "en réalité"]
+      },
+      {
+        "id": "A32-2",
+        "title": "Compte rendu d’un débat",
+        "topic": "société",
+        "task": "Vous êtes bénévole dans une association de quartier. À partir de l’émission L32-1, rédigez pour la lettre d’information de l’association un compte rendu de 80 à 100 mots présentant objectivement les positions de Marc Delorme et de Nadia Sow, ainsi que le point sur lequel ils finissent par s’accorder.",
+        "chunks": ["Selon Marc Delorme, …", "Nadia Sow, quant à elle, …", "Il reconnaît toutefois que…", "Tous deux s’accordent à dire que…"],
+        "keys": ["selon", "reconnaît", "solitude"]
+      }
+    ]
+  },
+  "vocab": [
+    {"id": "V32-01", "fr": "une part croissante de", "zh": "越来越大的一部分……", "ex": "La solitude touche [[une part croissante de]] la population urbaine.", "exZh": "孤独影响着越来越多的城市人口。", "src": "R32-1"},
+    {"id": "V32-02", "fr": "prendre au sérieux", "zh": "认真对待；重视", "ex": "Les élus commencent enfin à [[prendre au sérieux]] la solitude des jeunes.", "exZh": "民选官员终于开始重视年轻人的孤独问题。", "src": "R32-1"},
+    {"id": "V32-03", "fr": "la perte d’autonomie", "zh": "失能；丧失生活自理能力", "ex": "Avec [[la perte d’autonomie]], sortir faire ses courses devient une épreuve.", "exZh": "失去自理能力后，出门买东西都成了难事。", "src": "R32-1"},
+    {"id": "V32-04", "fr": "un sentiment d’appartenance", "zh": "归属感", "ex": "Les contacts en ligne ne créent pas toujours [[un sentiment d’appartenance]].", "exZh": "网上的联系并不总能带来归属感。", "src": "R32-1"},
+    {"id": "V32-05", "fr": "avancer une hypothèse", "zh": "提出一个假设", "ex": "La sociologue [[avance une hypothèse]] prudente pour expliquer ces chiffres.", "exZh": "这位社会学家提出了一个谨慎的假设来解释这些数字。", "src": "R32-1"},
+    {"id": "V32-06", "fr": "désigner un coupable", "zh": "指认罪魁祸首；找替罪羊", "ex": "Face à un phénomène aussi complexe, il est vain de [[désigner un coupable]] unique.", "exZh": "面对如此复杂的现象，指认单一的罪魁祸首是徒劳的。", "src": "R32-1"},
+    {"id": "V32-07", "fr": "il serait imprudent de", "zh": "（贸然）……是不明智的", "ex": "[[Il serait imprudent de]] tirer des conclusions à partir d’un seul sondage.", "exZh": "仅凭一次民调就下结论是不明智的。", "src": "R32-1"},
+    {"id": "V32-08", "fr": "le repli sur soi", "zh": "自我封闭；退缩", "ex": "L’isolement prolongé conduit souvent au [[repli sur soi]].", "exZh": "长期孤立常常导致自我封闭。", "src": "R32-1"},
+    {"id": "V32-09", "fr": "renoncer à ses droits", "zh": "放弃自身应得的权利", "ex": "Faute d’information, beaucoup de personnes isolées [[renoncent à leurs droits]].", "exZh": "由于缺乏信息，许多孤立的人放弃了应得的权利。", "src": "R32-1"},
+    {"id": "V32-10", "fr": "avoir beau", "zh": "尽管……（也无济于事）", "ex": "J’[[ai beau]] lui expliquer les règles, il ne les respecte jamais.", "exZh": "尽管我一再向他解释规则，他还是从不遵守。", "src": "R32-1"},
+    {"id": "V32-11", "fr": "faute de moyens", "zh": "由于缺乏资金/手段", "ex": "Le projet a été abandonné [[faute de moyens]].", "exZh": "由于缺乏资金，项目被放弃了。", "src": "R32-1"},
+    {"id": "V32-12", "fr": "loin de moi l’idée de", "zh": "我绝无……之意", "ex": "[[Loin de moi l’idée de]] critiquer les bénévoles, mais l’organisation laisse à désirer.", "exZh": "我绝无批评志愿者之意，但组织工作还有待改进。", "src": "R32-2"},
+    {"id": "V32-13", "fr": "ne pas pouvoir s’empêcher de", "zh": "忍不住……", "ex": "Je [[ne peux m’empêcher de]] sourire quand je lis ce genre d’affiche.", "exZh": "看到这种海报，我忍不住笑了。", "src": "R32-2"},
+    {"id": "V32-14", "fr": "sur commande", "zh": "按指令地；刻意地（非自发）", "ex": "L’amitié ne se fabrique pas [[sur commande]].", "exZh": "友谊不是按指令就能制造出来的。", "src": "R32-2"},
+    {"id": "V32-15", "fr": "se décréter", "zh": "（靠命令）规定出来", "ex": "La confiance entre voisins ne [[se décrète]] pas, elle se construit.", "exZh": "邻里间的信任不是靠命令规定出来的，而是逐步建立的。", "src": "R32-2"},
+    {"id": "V32-16", "fr": "un conte de fées", "zh": "童话；美好得不真实的故事", "ex": "La vie en colocation n’a rien d’[[un conte de fées]].", "exZh": "合租生活一点也不像童话。", "src": "R32-3"},
+    {"id": "V32-17", "fr": "de nouvelles bonnes volontés", "zh": "新的热心志愿者", "ex": "Pour continuer, l’association cherche [[de nouvelles bonnes volontés]].", "exZh": "为了继续下去，协会正在寻找新的热心志愿者。", "src": "L32-2"},
+    {"id": "V32-18", "fr": "rendre de petits services", "zh": "帮些小忙", "ex": "L’étudiant s’engage à [[rendre de petits services]] : courses, réparations simples.", "exZh": "学生承诺帮些小忙：买东西、简单维修。", "src": "L32-1"},
+    {"id": "V32-19", "fr": "je le reconnais volontiers", "zh": "我坦然承认这一点", "ex": "Notre dispositif reste modeste, [[je le reconnais volontiers]].", "exZh": "我坦然承认，我们的项目规模仍然有限。", "src": "L32-1"},
+    {"id": "V32-20", "fr": "s’épuiser", "zh": "精疲力竭；（力量）耗尽", "ex": "Sans relève, les bénévoles finissent par [[s’épuiser]].", "exZh": "没有人接替，志愿者们最终会精疲力竭。", "src": "L32-2"},
+    {"id": "V32-21", "fr": "une fausse bonne idée", "zh": "看似好实则不然的主意", "ex": "Supprimer les loyers peut sembler généreux, mais c’est [[une fausse bonne idée]].", "exZh": "免除房租看似慷慨，实则是个馊主意。", "src": "L32-1"},
+    {"id": "V32-22", "fr": "faire revivre", "zh": "使重获生机；使复苏", "ex": "Ce petit café a contribué à [[faire revivre]] tout le village.", "exZh": "这家小咖啡馆帮助整个村子重获生机。", "src": "topic"},
+    {"id": "V32-23", "fr": "suffire tout juste à", "zh": "刚好够……", "ex": "Les recettes [[suffisent tout juste à]] payer le chauffage.", "exZh": "收入刚好够付暖气费。", "src": "L32-2"},
+    {"id": "V32-24", "fr": "les services de proximité", "zh": "社区便民服务", "ex": "La disparition des [[services de proximité]] isole les habitants des villages.", "exZh": "社区便民服务的消失使村民陷入孤立。", "src": "R32-1"},
+    {"id": "V32-25", "fr": "connaître de vue", "zh": "面熟；见过但不认识", "ex": "Je [[connais de vue]] la plupart de mes voisins, sans plus.", "exZh": "我的大多数邻居我只是面熟，仅此而已。", "src": "L32-3"}
+  ]
+}

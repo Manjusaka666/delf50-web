@@ -628,20 +628,23 @@ async function browserTests(base, owner, s3) {
   await settled(A);
   check((await one(`select count(*)::int n from delf50.speaking_attempts where clip_id is null`)).n === 1, 'a timed round without recording is saved too');
 
-  // Chunks: recall from Chinese and a gapped sentence, then self-assess.
+  // Chunks: typed from the Chinese meaning and the gapped sentence; the spelling is checked.
+  const gap = (c) => /\[\[(.+?)\]\]/.exec(c.ex)[1];
   await A.goto(base + '/#/day/1/vocab');
-  await A.waitForSelector('.recall .gap');
-  check(!(await A.isVisible('.recall-fr')) && (await A.textContent('.recall-zh')) === D1.vocab[0].zh, 'a chunk card first shows the meaning and the gapped sentence');
-  await A.keyboard.press(' ');
-  await A.waitForSelector('.recall-fr');
-  check((await A.textContent('.recall-fr')).includes(D1.vocab[0].fr.slice(0, 4)), 'the answer side shows the chunk');
-  await A.keyboard.press('1');
-  await A.waitForFunction((id) => !document.querySelector('.recall-fr') && document.querySelector('.chunk-row.on') && document.querySelector('.chunk-row.on').dataset.id !== id, D1.vocab[0].id);
-  await A.keyboard.press(' ');
-  await A.keyboard.press('2');
+  await A.waitForSelector('.recall .gap-input');
+  check(!(await A.isVisible('.recall-fr')) && (await A.textContent('.recall-zh')) === D1.vocab[0].zh, 'a chunk card first shows the meaning and the sentence with a gap to fill');
+  await A.fill('.gap-input', gap(D1.vocab[0]).toUpperCase().replace(/ /g, '   '));
+  await A.keyboard.press('Enter');
+  await A.waitForSelector('.recall.is-ok .recall-fr');
+  check((await A.textContent('.recall-fr')).includes(D1.vocab[0].fr.slice(0, 4)), 'the right spelling is accepted whatever the spaces and case, and the chunk is shown');
+  await A.keyboard.press('Enter');
+  await A.waitForFunction((id) => document.querySelector('.gap-input') && document.querySelector('.chunk-row.on').dataset.id !== id, D1.vocab[0].id);
+  await A.fill('.gap-input', gap(D1.vocab[1]) + 'x');
+  await A.keyboard.press('Enter');
+  await A.waitForSelector('.recall.is-bad .spell-diff');
   await settled(A);
   const lx = await one(`select string_agg(chunk_id || ':' || mark, ' ' order by chunk_id) m from delf50.lexicon_marks where day = 1`);
-  check(lx.m === `${D1.vocab[0].id}:known ${D1.vocab[1].id}:again`, 'each chunk is saved with the learner’s own assessment', lx);
+  check(lx.m === `${D1.vocab[0].id}:known ${D1.vocab[1].id}:again`, 'each chunk is saved as spelled right (known) or wrong (again)', lx);
 
   // Spaced review (Day 1 reviews its own material): a grammar question, then a chunk.
   await A.goto(base + '/#/day/1/review');
@@ -649,9 +652,9 @@ async function browserTests(base, owner, s3) {
   await A.click('.spaced .opt >> nth=0');
   await A.waitForSelector('.spaced .feedback');
   await A.keyboard.press('ArrowRight');
-  await A.waitForSelector('.spaced .recall .gap');
-  await A.keyboard.press(' ');
-  await A.keyboard.press('1');
+  await A.waitForSelector('.spaced .recall .gap-input');
+  await A.click('.spaced [data-act="give-up"]');
+  await A.waitForSelector('.spaced .recall.is-bad .recall-fr');
   await settled(A);
   const rv = await one(`select string_agg(kind || source_day, ' ' order by answer_key) k, count(*)::int n from delf50.review_answers where day = 1`);
   check(rv.n === 2 && rv.k === 'g1 v1', 'review items are saved as done on the day, with their source day', rv);
@@ -698,8 +701,30 @@ async function browserTests(base, owner, s3) {
   const openErrors = (await one(`select count(*)::int n from delf50.error_items where resolved_at is null`)).n;
   check(openErrors === await A.$$eval('.err', (x) => x.length), 'a mastered error leaves the error book (kept as resolved)');
 
+  // Levels: B2 is its own course for the same account; switching keeps each level's records apart.
+  const B2D1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'course/b2/days/01.json'), 'utf8'));
+  const b2q = JSON.parse(fs.readFileSync(path.join(ROOT, 'course/b2/questions', B2D1.grammar[0].replace(/-\d+$/, '') + '.json'), 'utf8')).find((q) => q.id === B2D1.grammar[0]);
+  await A.click('.lvl-switch a >> text=B2');
+  await A.waitForFunction((t) => document.querySelector('.hero h1') && document.querySelector('.hero h1').textContent === t, B2D1.title);
+  check(/^#\/b2\/day\/1$/.test(await A.evaluate(() => location.hash)) && /2小时|3小时|4小时/.test(await A.textContent('.bar .seg')), 'the B2 level opens on its own Day 1 with its own intensities', await A.evaluate(() => location.hash));
+  await A.click('.mod >> nth=0');
+  await A.waitForSelector('.qcard');
+  await A.click(`.opt >> nth=${b2q.answer}`);
+  await A.waitForSelector('.feedback');
+  await settled(A);
+  const b2g = await one(`select count(*)::int n, min(answer_key) k from delf50.grammar_attempts where course = 'delf-b2' and not deleted`);
+  check(b2g.n === 1 && b2g.k === `1:${b2q.id}`, 'a B2 answer is saved in the B2 course', b2g);
+  await A.goto(base + '/#/b2/day/1/writing/1');
+  await A.waitForSelector('.trigger, .consigne');
+  await A.goto(base + '/#/b2/day/1/speaking/1');
+  check(await A.waitForSelector('.trigger', { timeout: 8000 }).then(() => true, () => false), 'a B2 monologue shows its document déclencheur');
+  await A.click('.lvl-switch a >> text=B1');
+  await A.waitForSelector('.hero');
+  check(/^#\/b1\/day\//.test(await A.evaluate(() => location.hash)) && (await one(`select count(*)::int n from delf50.grammar_attempts where course = 'delf-b1' and day = 1 and not deleted`)).n >= due,
+    'switching back to B1 finds its records untouched');
+
   // Every page renders.
-  for (const [hash, sel] of [['#/progress', '.mastery'], ['#/route', '.tiles'], ['#/archive', '.arc-days'], ['#/archive/1', '.chunks-list'], ['#/guide', '.nodes'], ['#/day/16/listening/1', '.player'], ['#/day/20/review', '.spaced .dots'], ['#/day/45/grammar', '.qcard'], ['#/day/50', '.hero']]) {
+  for (const [hash, sel] of [['#/progress', '.mastery'], ['#/route', '.tiles'], ['#/archive', '.arc-days'], ['#/archive/1', '.chunks-list'], ['#/guide', '.nodes'], ['#/day/16/listening/1', '.player'], ['#/day/20/review', '.spaced .dots'], ['#/day/45/grammar', '.qcard'], ['#/b2/guide', '.nodes'], ['#/b2/day/30/listening/1', '.player'], ['#/b2/day/46/grammar', '.qcard'], ['#/b1/day/50', '.hero']]) {
     await A.goto(base + '/' + hash);
     const ok = await A.waitForSelector(sel, { timeout: 8000 }).then(() => true, () => false);
     check(ok, `${hash} renders`);
@@ -709,11 +734,10 @@ async function browserTests(base, owner, s3) {
 
   // The session ends mid-study: the change waits, and is saved after signing in again.
   await A.goto(base + '/#/day/2/vocab');
-  await A.waitForSelector('.recall .gap');
+  await A.waitForSelector('.recall .gap-input');
   await settled(A);
   await ctxA.clearCookies(); // the session cookie is gone (expired)
-  await A.keyboard.press(' ');
-  await A.keyboard.press('1');
+  await A.click('[data-act="give-up"]');
   await A.waitForSelector('.auth form', { timeout: 15000 });
   await A.fill('input[name=email]', 'camille@example.com');
   await A.fill('input[name=password]', 'correct-horse-11');

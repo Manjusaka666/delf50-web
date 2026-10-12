@@ -1,0 +1,332 @@
+[
+ {
+  "id": "miseEnRelief-01",
+  "stem": "C’est le directeur ___ a pris la décision, pas son adjoint.",
+  "options": [
+   "que",
+   "qui",
+   "dont"
+  ],
+  "answer": 1,
+  "why": "强调主语用 c’est… qui：从句缺少主语（谁做了决定）。que 用于强调宾语或状语；dont 用于 de 引出的补语。"
+ },
+ {
+  "id": "miseEnRelief-02",
+  "stem": "C’est ce roman ___ je te recommande pour les vacances.",
+  "options": [
+   "que",
+   "qui",
+   "dont"
+  ],
+  "answer": 0,
+  "why": "被强调的 ce roman 是 recommander 的直接宾语，用 c’est… que。qui 用于强调主语；dont 用于 de + 补语（recommander 不接 de）。"
+ },
+ {
+  "id": "miseEnRelief-03",
+  "stem": "C’est de ce projet ___ je voulais vous parler.",
+  "options": [
+   "qui",
+   "que",
+   "lequel"
+  ],
+  "answer": 1,
+  "why": "介词 de 已经放在被强调成分前（de ce projet），后面只用 que：C’est de ce projet que…。qui 用于强调主语；lequel 不能这样使用。"
+ },
+ {
+  "id": "miseEnRelief-04",
+  "stem": "C’est ce projet ___ je voulais vous parler.",
+  "options": [
+   "que",
+   "dont",
+   "qui"
+  ],
+  "answer": 1,
+  "why": "parler de qqch：被强调成分前没有 de 时，用 dont 包含 de：C’est ce projet dont je voulais parler。que 缺少介词 de；qui 用于强调主语。"
+ },
+ {
+  "id": "miseEnRelief-05",
+  "stem": "Ne discute pas : c’est moi qui ___ raison.",
+  "options": [
+   "ai",
+   "a",
+   "avons"
+  ],
+  "answer": 0,
+  "why": "c’est moi qui 后的动词与 moi（第一人称单数）配合：c’est moi qui ai raison。a 是第三人称，是常见错误；avons 是复数。"
+ },
+ {
+  "id": "miseEnRelief-06",
+  "stem": "C’est nous qui ___ organisé la fête de quartier cette année.",
+  "options": [
+   "ont",
+   "a",
+   "avons"
+  ],
+  "answer": 2,
+  "why": "c’est nous qui 后的动词用第一人称复数：nous avons organisé。ont 和 a 都是第三人称，没有与 nous 配合。"
+ },
+ {
+  "id": "miseEnRelief-07",
+  "stem": "C’est vous qui ___ le plus d’expérience dans l’équipe.",
+  "options": [
+   "a",
+   "avez",
+   "ont"
+  ],
+  "answer": 1,
+  "why": "动词与 qui 的先行词 vous 配合：c’est vous qui avez。a 和 ont 是第三人称。"
+ },
+ {
+  "id": "miseEnRelief-08",
+  "stem": "___ me frappe, c’est le silence des habitants face au problème.",
+  "options": [
+   "Ce que",
+   "Ce dont",
+   "Ce qui"
+  ],
+  "answer": 2,
+  "why": "从句缺少主语（让我震惊的东西），用 ce qui。ce que 作宾语；ce dont 用于 de 引出的补语（frapper 不接 de）。"
+ },
+ {
+  "id": "miseEnRelief-09",
+  "stem": "___ j’apprécie dans ce métier, c’est le contact humain.",
+  "options": [
+   "Ce qui",
+   "Ce que",
+   "Ce dont"
+  ],
+  "answer": 1,
+  "why": "apprécier qqch 是及物动词，从句缺少直接宾语，用 ce que。ce qui 作主语（从句已有主语 je）；ce dont 用于 de 引出的补语。"
+ },
+ {
+  "id": "miseEnRelief-10",
+  "stem": "___ les jeunes ont besoin, c’est d’un logement abordable.",
+  "options": [
+   "Ce dont",
+   "Ce que",
+   "Ce qui"
+  ],
+  "answer": 0,
+  "why": "avoir besoin de qqch：从句缺少 de 引出的补语，用 ce dont，后面的强调部分保留 de（c’est d’un logement）。ce que 缺少 de；ce qui 作主语。"
+ },
+ {
+  "id": "miseEnRelief-11",
+  "stem": "C’est à cette collègue ___ j’ai confié le dossier.",
+  "options": [
+   "à qui",
+   "que",
+   "qui"
+  ],
+  "answer": 1,
+  "why": "介词 à 已经放在被强调成分前（à cette collègue），后面用 que：C’est à cette collègue que…。à qui 造成介词重复，属于不规范用法；qui 用于强调主语。"
+ },
+ {
+  "id": "miseEnRelief-12",
+  "stem": "C’est cette collègue ___ j’ai confié le dossier.",
+  "options": [
+   "que",
+   "à qui",
+   "dont"
+  ],
+  "answer": 1,
+  "why": "confier qqch à qqn：被强调成分前没有 à，从句要用 à qui 引出间接宾语。que 缺少介词 à；dont 对应 de，不对应 à。"
+ },
+ {
+  "id": "miseEnRelief-13",
+  "stem": "Ce qui me frappe, ___ que personne ne réagit.",
+  "options": [
+   "c’est",
+   "ce sont",
+   "il est"
+  ],
+  "answer": 0,
+  "why": "ce qui…, c’est que + 从句：后面是 que 从句，用单数 c’est。ce sont 只用于引出复数名词；il est 不能用于这种强调结构。"
+ },
+ {
+  "id": "miseEnRelief-14",
+  "stem": "C’est toi qui ___ partir le premier, pas moi.",
+  "options": [
+   "doit",
+   "devez",
+   "dois"
+  ],
+  "answer": 2,
+  "why": "c’est toi qui 后的动词与 toi（第二人称单数）配合：tu dois → c’est toi qui dois。doit 是第三人称，是常见错误；devez 是 vous 的变位。"
+ },
+ {
+  "id": "miseEnRelief-15",
+  "stem": "C’est en 1989 ___ le mur de Berlin est tombé.",
+  "options": [
+   "où",
+   "qui",
+   "que"
+  ],
+  "answer": 2,
+  "why": "强调时间状语用 c’est… que：C’est en 1989 que…。用 où 是常见错误；qui 用于强调主语。"
+ },
+ {
+  "id": "miseEnRelief-16",
+  "stem": "C’est à Dakar ___ elle a grandi, pas à Paris.",
+  "options": [
+   "qu’",
+   "où",
+   "dont"
+  ],
+  "answer": 0,
+  "why": "强调带介词的地点状语（à Dakar），用 que：C’est à Dakar qu’elle a grandi。où 会与介词 à 重复；dont 对应 de。"
+ },
+ {
+  "id": "miseEnRelief-17",
+  "stem": "Ce dont je me souviens, ___ le parfum de la cuisine de ma grand-mère.",
+  "options": [
+   "que c’est",
+   "ce que",
+   "c’est"
+  ],
+  "answer": 2,
+  "why": "Ce dont…, c’est + 名词：后半句用 c’est 引出被强调的内容。que c’est 和 ce que 都不能构成这个结构的第二部分。"
+ },
+ {
+  "id": "miseEnRelief-18",
+  "stem": "___ je pense, c’est que la réforme arrive trop tard.",
+  "options": [
+   "Ce à quoi",
+   "Ce dont",
+   "Ce que"
+  ],
+  "answer": 2,
+  "why": "penser que（认为）+ 观点，从句缺直接宾语，用 ce que：我的看法是……。ce à quoi 对应 penser à（想到某事），不能引出观点；ce dont 对应 de。"
+ },
+ {
+  "id": "miseEnRelief-19",
+  "stem": "___ je m’intéresse surtout, c’est l’histoire des migrations.",
+  "options": [
+   "Ce que",
+   "Ce dont",
+   "Ce à quoi"
+  ],
+  "answer": 2,
+  "why": "s’intéresser à qqch：从句缺 à 引出的补语，用 ce à quoi。ce que 缺少介词；ce dont 对应 de，而不是 à。"
+ },
+ {
+  "id": "miseEnRelief-20",
+  "stem": "C’est grâce à ses parents ___ elle a pu faire des études.",
+  "options": [
+   "qu’",
+   "dont",
+   "à qui"
+  ],
+  "answer": 0,
+  "why": "强调带介词的状语（grâce à ses parents）用 que：C’est grâce à… qu’elle a pu…。dont 和 à qui 会与已有的介词结构重复，不正确。"
+ },
+ {
+  "id": "miseEnRelief-21",
+  "stem": "Ce sont les infirmières ___ ont le plus souffert de la crise.",
+  "options": [
+   "qui",
+   "qu’",
+   "dont"
+  ],
+  "answer": 0,
+  "why": "强调主语用 c’est / ce sont… qui：从句缺少主语。que 用于强调宾语；dont 用于 de 引出的补语。"
+ },
+ {
+  "id": "miseEnRelief-22",
+  "stem": "C’est lui ___ on parle dans tous les journaux.",
+  "options": [
+   "que",
+   "dont",
+   "qui"
+  ],
+  "answer": 1,
+  "why": "parler de qqn：被强调成分 lui 前没有 de，用 dont。que 缺少介词 de；qui 用于强调主语，而从句已有主语 on。"
+ },
+ {
+  "id": "miseEnRelief-23",
+  "stem": "C’est sur ce point ___ je ne suis pas d’accord avec vous.",
+  "options": [
+   "où",
+   "sur lequel",
+   "que"
+  ],
+  "answer": 2,
+  "why": "介词 sur 已经放在被强调成分前，后面用 que。où 不规范；sur lequel 造成介词重复。"
+ },
+ {
+  "id": "miseEnRelief-24",
+  "stem": "Ce qui compte, c’est ___ chacun puisse s’exprimer librement.",
+  "options": [
+   "qui",
+   "que",
+   "ce que"
+  ],
+  "answer": 1,
+  "why": "Ce qui compte, c’est que + 从句（这里用虚拟式 puisse，表示愿望/必要）。qui 和 ce que 都不能引出这个完整的从句。"
+ },
+ {
+  "id": "miseEnRelief-25",
+  "stem": "C’est vous et moi qui ___ représenter l’équipe au congrès.",
+  "options": [
+   "allons",
+   "allez",
+   "vont"
+  ],
+  "answer": 0,
+  "why": "vous et moi 合起来等于 nous，动词用第一人称复数：c’est vous et moi qui allons。allez 只对应 vous；vont 是第三人称。"
+ },
+ {
+  "id": "miseEnRelief-26",
+  "stem": "C’est elle et son frère qui ___ fondé l’association.",
+  "options": [
+   "a",
+   "avons",
+   "ont"
+  ],
+  "answer": 2,
+  "why": "elle et son frère 等于 ils（第三人称复数），动词用 ont。a 是单数；avons 是第一人称。"
+ },
+ {
+  "id": "miseEnRelief-27",
+  "stem": "Ce n’est pas moi qui ___ fait, c’est mon collègue.",
+  "options": [
+   "l’ai",
+   "l’a",
+   "l’as"
+  ],
+  "answer": 0,
+  "why": "否定强调句同样要配合：ce n’est pas moi qui l’ai fait（第一人称单数 ai）。l’a 是第三人称；l’as 是第二人称。"
+ },
+ {
+  "id": "miseEnRelief-28",
+  "stem": "Ce que je trouve injuste, c’est ___ les loyers augmentent sans cesse.",
+  "options": [
+   "qui",
+   "que",
+   "dont"
+  ],
+  "answer": 1,
+  "why": "c’est que + 完整从句（主语 les loyers + 动词），引出被强调的事实。qui 和 dont 是关系代词，这里没有先行词，不能引出这个从句。"
+ },
+ {
+  "id": "miseEnRelief-29",
+  "stem": "C’est pour cette raison ___ nous avons déménagé à la campagne.",
+  "options": [
+   "que",
+   "pour laquelle",
+   "dont"
+  ],
+  "answer": 0,
+  "why": "强调带介词的原因状语（pour cette raison），后面用 que。pour laquelle 与前面的 pour 重复；dont 对应 de。"
+ },
+ {
+  "id": "miseEnRelief-30",
+  "stem": "Le problème est clair : c’est de cela ___ il s’agit aujourd’hui.",
+  "options": [
+   "qui",
+   "quoi",
+   "qu’"
+  ],
+  "answer": 2,
+  "why": "介词 de 已经放在被强调成分前（de cela），后面用 que：C’est de cela qu’il s’agit。qui 用于强调主语；quoi 不能这样使用。"
+ }
+]

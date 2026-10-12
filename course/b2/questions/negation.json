@@ -1,0 +1,332 @@
+[
+ {
+  "id": "negation-01",
+  "stem": "Je n’ai ni voiture ___ vélo : je me déplace à pied ou en tram.",
+  "options": [
+   "et",
+   "ni",
+   "ou"
+  ],
+  "answer": 1,
+  "why": "ne… ni… ni… 否定两个并列成分（既没有……也没有……），第二个也必须用 ni。et / ou 不能与前面的 ni 搭配。"
+ },
+ {
+  "id": "negation-02",
+  "stem": "Ce candidat n’a ___ expérience dans le secteur public.",
+  "options": [
+   "aucune",
+   "aucun",
+   "pas"
+  ],
+  "answer": 0,
+  "why": "ne… aucun(e) + 名词，aucun 与名词性数配合：expérience 为阴性 → aucune。aucun 性别错误；n’a pas expérience 缺少 d’（应为 pas d’expérience）。"
+ },
+ {
+  "id": "negation-03",
+  "stem": "___ n’est venu à la réunion d’information de mardi.",
+  "options": [
+   "Quelqu’un",
+   "Personne",
+   "Rien"
+  ],
+  "answer": 1,
+  "why": "Personne 作主语 + ne（不加 pas）：没有人来。Quelqu’un 是肯定代词，不能与 ne 单独构成否定；Rien 指“事物”，不能“venir à la réunion”。"
+ },
+ {
+  "id": "negation-04",
+  "stem": "Elle a quitté l’entreprise ___ dire au revoir à ses collègues.",
+  "options": [
+   "sans que",
+   "sans de",
+   "sans"
+  ],
+  "answer": 2,
+  "why": "主语相同时用 sans + infinitif。sans que 后需接主语不同的从句（+ subjonctif）；sans de 不存在。"
+ },
+ {
+  "id": "negation-05",
+  "stem": "___ ne s’est passé comme prévu pendant le déménagement.",
+  "options": [
+   "Personne",
+   "Aucun",
+   "Rien"
+  ],
+  "answer": 2,
+  "why": "Rien 作主语 + ne：没有任何事情按计划进行。Personne 指人，与“发生”不符；Aucun 作代词需要所指名词（aucun des…），不能这样单独使用。"
+ },
+ {
+  "id": "negation-06",
+  "stem": "— Je n’aime pas les films d’horreur. — Moi ___.",
+  "options": [
+   "aussi",
+   "pas plus",
+   "non plus"
+  ],
+  "answer": 2,
+  "why": "对否定句表示“我也不”用 moi non plus。moi aussi 只回应肯定句；moi pas plus 不是固定表达。"
+ },
+ {
+  "id": "negation-07",
+  "stem": "Ce musée n’ouvre ___ le week-end : en semaine, il reste fermé.",
+  "options": [
+   "pas",
+   "que",
+   "plus"
+  ],
+  "answer": 1,
+  "why": "ne… que 表示限制（只在周末开放），与后半句“工作日关闭”一致。ne… pas / ne… plus 意为“周末不开 / 不再开”，与后半句矛盾。"
+ },
+ {
+  "id": "negation-08",
+  "stem": "Ce jeune homme est très discret ; il ne parle de ___ à personne.",
+  "options": [
+   "rien",
+   "aucun",
+   "nul"
+  ],
+  "answer": 0,
+  "why": "ne… rien 作介词宾语：parler de rien；同句可再接 à personne（双重否定词并用合法）。aucun 需接名词或 en；nul 作代词只作主语（nul ne…）。"
+ },
+ {
+  "id": "negation-09",
+  "stem": "Ce n’était ___ facile : nous avons mis trois ans à obtenir l’autorisation.",
+  "options": [
+   "pas tout",
+   "pas du tout",
+   "du tout pas"
+  ],
+  "answer": 1,
+  "why": "pas du tout 加强否定（一点也不）。pas tout 意为“不全是”，结构不通；du tout pas 语序错误。"
+ },
+ {
+  "id": "negation-10",
+  "stem": "Les jeunes ne lisent ___ la presse quotidienne : à peine 5 % d’entre eux l’achètent.",
+  "options": [
+   "aucun",
+   "guère",
+   "nul"
+  ],
+  "answer": 1,
+  "why": "ne… guère（书面）= 几乎不、很少，与 à peine 5 % 相符。aucun 需接名词；nul 不能与 ne 构成副词性否定修饰动词。"
+ },
+ {
+  "id": "negation-11",
+  "stem": "Contrairement aux rumeurs, le directeur n’a ___ l’intention de démissionner.",
+  "options": [
+   "nulle",
+   "aucune",
+   "nullement"
+  ],
+  "answer": 2,
+  "why": "ne… nullement（书面）= 完全不，是副词，可接带冠词的名词。nulle / aucune 是限定词，不能与冠词 l’ 同时出现（应为 aucune intention / nulle intention）。"
+ },
+ {
+  "id": "negation-12",
+  "stem": "Je ne connais ___ dans cette ville : je viens d’arriver.",
+  "options": [
+   "personne",
+   "aucun",
+   "quelqu’un"
+  ],
+  "answer": 0,
+  "why": "ne… personne 作宾语（不认识任何人）。aucun 作代词需有所指（aucun de mes voisins）或 en；quelqu’un 是肯定代词，不能与 ne 单独否定。"
+ },
+ {
+  "id": "negation-13",
+  "stem": "___ projet n’a été retenu par le jury cette année.",
+  "options": [
+   "Aucun",
+   "Aucune",
+   "Personne"
+  ],
+  "answer": 0,
+  "why": "Aucun + 名词作主语 + ne（不加 pas），projet 为阳性 → Aucun。Aucune 性别错误；Personne 是代词，不能直接修饰名词。"
+ },
+ {
+  "id": "negation-14",
+  "stem": "Personne ___ m’a prévenu du changement d’horaire.",
+  "options": [
+   "ne",
+   "ne pas",
+   "pas"
+  ],
+  "answer": 0,
+  "why": "personne 作主语时只用 ne，不能再加 pas：Personne ne m’a prévenu。ne pas 造成双重否定错误；只用 pas 而无 ne 在书面语中错误。"
+ },
+ {
+  "id": "negation-15",
+  "stem": "Je crains que le projet ne ___ abandonné faute de budget.",
+  "options": [
+   "est",
+   "sera",
+   "soit"
+  ],
+  "answer": 2,
+  "why": "craindre que + subjonctif；这里的 ne 是赘词 ne（ne explétif），没有否定意义：意思是“担心项目被放弃”。est / sera 是直陈式，不符合 craindre que 的语式。"
+ },
+ {
+  "id": "negation-16",
+  "stem": "Il est sorti de la salle sans que ses collègues le ___.",
+  "options": [
+   "voyaient",
+   "verront",
+   "voient"
+  ],
+  "answer": 2,
+  "why": "sans que + subjonctif（主语不同）→ voient。voyaient（未完成过去时）和 verront（简单将来时）都是直陈式。"
+ },
+ {
+  "id": "negation-17",
+  "stem": "Cette carte de transport n’est valable ___ en Île-de-France, pas dans le reste du pays.",
+  "options": [
+   "pas",
+   "que",
+   "plus"
+  ],
+  "answer": 1,
+  "why": "ne… que 表示“只在……有效”，que 放在被限制的成分前。« n’est valable pas / plus » 语序错误（应为 n’est pas valable），且语义与后半句冲突。"
+ },
+ {
+  "id": "negation-18",
+  "stem": "La réunion a duré plus longtemps que nous ne l’___ prévu.",
+  "options": [
+   "ayons",
+   "avions",
+   "aurions"
+  ],
+  "answer": 1,
+  "why": "比较句 plus… que 后可出现赘词 ne（ne explétif，无否定意义），从句用直陈式，且“预计”先于“持续” → plus-que-parfait：avions prévu。ayons 是虚拟式；aurions 是条件式，不表达已发生的预计。"
+ },
+ {
+  "id": "negation-19",
+  "stem": "Il a écouté toutes les critiques sans ___ dire.",
+  "options": [
+   "ne rien",
+   "rien",
+   "pas rien"
+  ],
+  "answer": 1,
+  "why": "sans 本身已含否定，后面直接用 rien：sans rien dire。« sans ne rien dire » 是常见错误（多加 ne）；pas rien 不成立。"
+ },
+ {
+  "id": "negation-20",
+  "stem": "Malgré nos relances, nous n’avons reçu ___ réponse de l’administration.",
+  "options": [
+   "aucun",
+   "aucune",
+   "aucunes"
+  ],
+  "answer": 1,
+  "why": "aucun(e) 与名词配合：réponse 为阴性单数 → aucune。aucun 性别错误；aucunes 只用于只有复数形式的名词（aucuns frais）。"
+ },
+ {
+  "id": "negation-21",
+  "stem": "Il ne veut ___ partir ni rester : il hésite depuis des semaines.",
+  "options": [
+   "et",
+   "ou",
+   "ni"
+  ],
+  "answer": 2,
+  "why": "ne… ni + inf… ni + inf：否定两个并列的不定式。et / ou 不能与后面的 ni 构成对称结构。"
+ },
+ {
+  "id": "negation-22",
+  "stem": "Rien ___ n’a été dit pendant ce débat télévisé.",
+  "options": [
+   "d’intéressant",
+   "intéressant",
+   "d’intéressante"
+  ],
+  "answer": 0,
+  "why": "rien / personne + de + 形容词（阳性单数不变）：rien d’intéressant。缺少 de 错误；rien 是中性代词，形容词不用阴性。"
+ },
+ {
+  "id": "negation-23",
+  "stem": "La loi n’interdit ___ ce type de contrat entre particuliers.",
+  "options": [
+   "aucun",
+   "nul",
+   "aucunement"
+  ],
+  "answer": 2,
+  "why": "ne… aucunement（书面）= 完全不，是副词，修饰动词，后面可接 ce type。aucun / nul 是限定词，不能放在指示词 ce 之前。"
+ },
+ {
+  "id": "negation-24",
+  "stem": "Après examen du dossier, je ne vois ___ raison de refuser cette proposition.",
+  "options": [
+   "aucune",
+   "nulle part",
+   "rien"
+  ],
+  "answer": 0,
+  "why": "ne… aucune + 名词：没有任何理由。nulle part 是地点副词（哪里都不）；rien 是代词，不能直接修饰名词 raison。"
+ },
+ {
+  "id": "negation-25",
+  "stem": "Elle n’a ___ d’amis dans le quartier ; elle se sent un peu seule.",
+  "options": [
+   "aucun",
+   "que",
+   "guère"
+  ],
+  "answer": 2,
+  "why": "ne… guère de + 名词 = 几乎没有（朋友）。aucun 直接接名词，不能接 d’amis；ne… que 后要用 des amis（ne… que 不是否定，不变成 de）。"
+ },
+ {
+  "id": "negation-26",
+  "stem": "Il a réussi le concours sans que ses parents l’___ aidé.",
+  "options": [
+   "aient",
+   "ont",
+   "auraient"
+  ],
+  "answer": 0,
+  "why": "sans que + subjonctif；帮助先于成功 → subjonctif passé：qu’ils l’aient aidé。ont 是直陈式；auraient 是条件式。"
+ },
+ {
+  "id": "negation-27",
+  "stem": "Le maire a accepté la proposition sans ___ hésitation.",
+  "options": [
+   "pas d’",
+   "aucune",
+   "nulle part"
+  ],
+  "answer": 1,
+  "why": "sans + aucun(e) + 名词：毫无犹豫（也可说 sans hésitation）。sans pas d’ 是双重否定错误；nulle part 是地点副词。"
+ },
+ {
+  "id": "negation-28",
+  "stem": "Dépêchez-vous : il ne reste ___ trois places pour le concert de ce soir.",
+  "options": [
+   "que",
+   "aucune",
+   "guère"
+  ],
+  "answer": 0,
+  "why": "ne… que = seulement（只剩三个座位）。aucune 不能与数词连用；« ne reste guère trois places » 不合语法（guère 接 de + 名词）。"
+ },
+ {
+  "id": "negation-29",
+  "stem": "Elle n’a pas voté aux dernières élections, et son mari ne l’a pas fait ___.",
+  "options": [
+   "non plus",
+   "aussi",
+   "pas plus"
+  ],
+  "answer": 0,
+  "why": "在否定句中表示“也不”用 non plus。aussi 只用于肯定句；pas plus 后需接比较成分（pas plus que…），不能单独结句。"
+ },
+ {
+  "id": "negation-30",
+  "stem": "Nous partirons à huit heures, à moins qu’il ne ___ trop mauvais temps.",
+  "options": [
+   "fait",
+   "fera",
+   "fasse"
+  ],
+  "answer": 2,
+  "why": "à moins que + subjonctif，常带赘词 ne（ne explétif，无否定意义：除非天气太坏）。fait / fera 是直陈式，不符合 à moins que 的语式。"
+ }
+]

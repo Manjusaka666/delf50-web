@@ -1,0 +1,332 @@
+[
+ {
+  "id": "consequence-01",
+  "stem": "Il a beaucoup neigé cette nuit ; ___, les écoles sont fermées.",
+  "options": [
+   "parce que",
+   "grâce à",
+   "par conséquent"
+  ],
+  "answer": 2,
+  "why": "par conséquent 连接两个独立句，引出结果。parce que 引出原因，因果颠倒；grâce à 后要接名词。"
+ },
+ {
+  "id": "consequence-02",
+  "stem": "Il était ___ fatigué qu’il s’est endormi dans le train.",
+  "options": [
+   "tant",
+   "tant de",
+   "si"
+  ],
+  "answer": 2,
+  "why": "形容词（fatigué）前用 si 或 tellement + que 表示结果。tant 用于动词；tant de 用于名词。"
+ },
+ {
+  "id": "consequence-03",
+  "stem": "Il y avait ___ monde que nous ne sommes pas entrés dans la salle.",
+  "options": [
+   "si",
+   "tellement de",
+   "tellement"
+  ],
+  "answer": 1,
+  "why": "名词（monde）前要用 tellement de / tant de。si 只用于形容词和副词；tellement 后少了 de。"
+ },
+ {
+  "id": "consequence-04",
+  "stem": "Elle a ___ travaillé qu’elle a fini par tomber malade.",
+  "options": [
+   "si",
+   "tellement de",
+   "tellement"
+  ],
+  "answer": 2,
+  "why": "修饰动词用 tellement 或 tant（放在助动词和过去分词之间）。si 不能修饰动词；tellement de 后要接名词。"
+ },
+ {
+  "id": "consequence-05",
+  "stem": "Le loyer a encore augmenté, ___ nous avons dû déménager.",
+  "options": [
+   "si bien que",
+   "parce que",
+   "puisque"
+  ],
+  "answer": 0,
+  "why": "si bien que + 直陈式引出结果（不得不搬家）。parce que 和 puisque 引出原因，因果关系颠倒。"
+ },
+ {
+  "id": "consequence-06",
+  "stem": "Les transports étaient en grève, ___ beaucoup de salariés ont télétravaillé.",
+  "options": [
+   "afin que",
+   "pour que",
+   "de sorte que"
+  ],
+  "answer": 2,
+  "why": "de sorte que + 直陈式表示实际产生的结果（ont télétravaillé）。afin que 和 pour que 表示目的，且后面要接虚拟式。"
+ },
+ {
+  "id": "consequence-07",
+  "stem": "La route était bloquée par un accident, ___ notre retard.",
+  "options": [
+   "donc",
+   "si bien que",
+   "d’où"
+  ],
+  "answer": 2,
+  "why": "后面只有名词短语（notre retard），用 d’où + 名词。donc 和 si bien que 后面需要完整的句子。"
+ },
+ {
+  "id": "consequence-08",
+  "stem": "Les prix ont trop augmenté, ___ les clients se font rares.",
+  "options": [
+   "d’où",
+   "c’est pourquoi",
+   "faute de"
+  ],
+  "answer": 1,
+  "why": "c’est pourquoi + 完整句子引出结果。d’où 后只能接名词；faute de 表示原因（缺少），后接名词。"
+ },
+ {
+  "id": "consequence-09",
+  "stem": "Ce conférencier parle ___ vite qu’on ne le comprend pas.",
+  "options": [
+   "tant",
+   "tant de",
+   "si"
+  ],
+  "answer": 2,
+  "why": "副词（vite）前用 si 或 tellement。tant 修饰动词；tant de 修饰名词。"
+ },
+ {
+  "id": "consequence-10",
+  "stem": "Il a ___ de dettes qu’il doit vendre sa maison.",
+  "options": [
+   "si",
+   "trop",
+   "tant"
+  ],
+  "answer": 2,
+  "why": "名词前的强度结构：tant de + 名词 + que。si de 不存在；trop de… que 不能构成结果结构（trop 要与 pour 搭配）。"
+ },
+ {
+  "id": "consequence-11",
+  "stem": "Il pleuvait ___ que le match a été interrompu.",
+  "options": [
+   "si",
+   "tellement de",
+   "tellement"
+  ],
+  "answer": 2,
+  "why": "修饰动词（pleuvait）用 tellement 或 tant，放在动词后。si 只修饰形容词/副词；tellement de 要接名词。"
+ },
+ {
+  "id": "consequence-12",
+  "stem": "Le bruit était insupportable, ___ point que les voisins ont appelé la police.",
+  "options": [
+   "à",
+   "au",
+   "du"
+  ],
+  "answer": 1,
+  "why": "固定结构 au point que + 直陈式（以至于）。à point 和 du point 都不能构成这个结果表达。"
+ },
+ {
+  "id": "consequence-13",
+  "stem": "Il s’est entraîné ___ se blesser au genou.",
+  "options": [
+   "au point que",
+   "au point de",
+   "si bien que"
+  ],
+  "answer": 1,
+  "why": "后面是不定式（se blesser），主语相同，用 au point de + 不定式。au point que 和 si bien que 后要接从句。"
+ },
+ {
+  "id": "consequence-14",
+  "stem": "La demande a explosé ; ___ l’entreprise a-t-elle embauché vingt personnes.",
+  "options": [
+   "alors",
+   "ainsi",
+   "donc"
+  ],
+  "answer": 1,
+  "why": "书面语中句首的 ainsi（或 aussi）可引起主谓倒装：ainsi l’entreprise a-t-elle… alors 和 donc 放句首时不引起倒装，这里的倒装结构与它们不符。"
+ },
+ {
+  "id": "consequence-15",
+  "stem": "Les élèves ont été ___ nombreux à réussir que le lycée a organisé une fête.",
+  "options": [
+   "si",
+   "tant",
+   "tant de"
+  ],
+  "answer": 0,
+  "why": "形容词 nombreux 前用 si（或 tellement）。tant 修饰动词；tant de 修饰名词。"
+ },
+ {
+  "id": "consequence-16",
+  "stem": "Nous n’avions plus de batterie ; ___ nous n’avons pas pu appeler les secours.",
+  "options": [
+   "c’est pour cela que",
+   "d’où",
+   "grâce à quoi"
+  ],
+  "answer": 0,
+  "why": "c’est pour cela que + 完整句子引出结果。d’où 后接名词；grâce à quoi 表示积极结果，与“无法求救”矛盾。"
+ },
+ {
+  "id": "consequence-17",
+  "stem": "Il a échoué à l’examen, ___ il n’avait pas assez révisé.",
+  "options": [
+   "d’où",
+   "car",
+   "au point qu’"
+  ],
+  "answer": 1,
+  "why": "后半句（没复习够）是原因，用 car。d’où 后只能接名词，不能接从句；au point que 引出结果（以至于），会把因果颠倒。"
+ },
+ {
+  "id": "consequence-18",
+  "stem": "Il n’avait pas assez révisé, ___ il a échoué à l’examen.",
+  "options": [
+   "si bien qu’",
+   "car",
+   "d’où"
+  ],
+  "answer": 0,
+  "why": "后半句（考试失败）是结果，用 si bien que + 直陈式。car 引出原因，因果颠倒；d’où 后只能接名词（d’où son échec），不能接从句。"
+ },
+ {
+  "id": "consequence-19",
+  "stem": "La population vieillit, ___ la nécessité de créer des maisons de retraite.",
+  "options": [
+   "d’où",
+   "de sorte que",
+   "c’est pourquoi"
+  ],
+  "answer": 0,
+  "why": "后面是名词短语（la nécessité de…），没有变位动词，只能用 d’où。de sorte que 和 c’est pourquoi 后要接完整句子。"
+ },
+ {
+  "id": "consequence-20",
+  "stem": "Le film a eu ___ succès qu’une suite est déjà prévue.",
+  "options": [
+   "tant de",
+   "tant",
+   "si"
+  ],
+  "answer": 0,
+  "why": "名词 succès 前用 tant de（或 tellement de）。tant 单独修饰动词；si 修饰形容词/副词。"
+ },
+ {
+  "id": "consequence-21",
+  "stem": "Elle était ___ émue qu’elle n’a pas pu prononcer un mot.",
+  "options": [
+   "tant",
+   "tellement",
+   "tant d’"
+  ],
+  "answer": 1,
+  "why": "形容词 émue 前用 tellement（或 si）。现代法语中 tant 不修饰形容词；tant de 修饰名词。"
+ },
+ {
+  "id": "consequence-22",
+  "stem": "Il a raté son bus, si bien qu’il ___ en retard à l’entretien.",
+  "options": [
+   "est arrivé",
+   "soit arrivé",
+   "arriver"
+  ],
+  "answer": 0,
+  "why": "si bien que 表示实际结果，后接直陈式：il est arrivé。soit arrivé 是虚拟式；arriver 是不定式，不能作从句谓语。"
+ },
+ {
+  "id": "consequence-23",
+  "stem": "Le gouvernement a baissé la TVA, de sorte que les prix ___ légèrement diminué.",
+  "options": [
+   "aient",
+   "ont",
+   "avoir"
+  ],
+  "answer": 1,
+  "why": "这里 de sorte que 表示已经发生的结果，接直陈式：les prix ont diminué。aient 是虚拟式（de sorte que 表目的时才用）；avoir 是不定式。"
+ },
+ {
+  "id": "consequence-24",
+  "stem": "Le chômage augmente ; ___, le gouvernement prépare un plan d’urgence.",
+  "options": [
+   "en conséquence de",
+   "à la suite",
+   "par conséquent"
+  ],
+  "answer": 2,
+  "why": "par conséquent 单独使用，后跟逗号和完整句子。en conséquence de 后必须接名词；à la suite 后缺少 de + 名词。"
+ },
+ {
+  "id": "consequence-25",
+  "stem": "La crise a duré si longtemps que de nombreux commerces ___.",
+  "options": [
+   "ont fermé",
+   "aient fermé",
+   "fermer"
+  ],
+  "answer": 0,
+  "why": "si… que 表示结果，后接直陈式：ont fermé。aient fermé 是虚拟式；fermer 是不定式。"
+ },
+ {
+  "id": "consequence-26",
+  "stem": "Il y avait tant de candidats ___ le recrutement a pris trois mois.",
+  "options": [
+   "si bien",
+   "que",
+   "de sorte"
+  ],
+  "answer": 1,
+  "why": "tant de… que 是关联结构，第二部分只用 que。si bien 和 de sorte 缺少 que，而且不能与 tant de 搭配。"
+ },
+ {
+  "id": "consequence-27",
+  "stem": "Ce quartier est ___ bruyant que je ne pourrais pas y vivre.",
+  "options": [
+   "si",
+   "trop",
+   "tant"
+  ],
+  "answer": 0,
+  "why": "si + 形容词 + que 表示结果。trop 要与 pour (que) 搭配（trop bruyant pour que…）；tant 不修饰形容词。"
+ },
+ {
+  "id": "consequence-28",
+  "stem": "Le train était annulé, ___ on a pris la voiture.",
+  "options": [
+   "car",
+   "puisque",
+   "alors"
+  ],
+  "answer": 2,
+  "why": "口语中 alors 引出结果（于是）。car 和 puisque 引出原因，因果颠倒。"
+ },
+ {
+  "id": "consequence-29",
+  "stem": "Le restaurant était complet ; nous sommes ___ allés ailleurs.",
+  "options": [
+   "donc",
+   "d’où",
+   "si bien"
+  ],
+  "answer": 0,
+  "why": "donc 可放在助动词和过去分词之间：nous sommes donc allés。d’où 后接名词；si bien 缺少 que，不能放在这个位置。"
+ },
+ {
+  "id": "consequence-30",
+  "stem": "Les conditions de sécurité n’étaient pas réunies ; ___, l’événement a été annulé.",
+  "options": [
+   "en conséquence de",
+   "en conséquence",
+   "par conséquence"
+  ],
+  "answer": 1,
+  "why": "en conséquence 单独使用，意为“因此”（正式）。en conséquence de 后需要名词；par conséquence 是常见错误，应为 par conséquent。"
+ }
+]

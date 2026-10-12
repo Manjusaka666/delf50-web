@@ -3,7 +3,7 @@ import { store, commit, refresh } from '../store.js';
 import { itemState } from '../progress.js';
 import { saveDraft, submitText, draftKey, countWords } from '../state.js';
 import { html, icon, pad2, frText, fmtDateTime, MODULE_NAMES, MODULE_FR } from '../ui.js';
-import { dayContext, crumbs, pager, nextLink } from './common.js';
+import { dayContext, crumbs, pager, nextLink, triggerDoc, examNotes } from './common.js';
 
 export async function writeView(d, module, n) {
   const ctx = await dayContext(d);
@@ -30,11 +30,13 @@ export async function writeView(d, module, n) {
       ${pager(d, module, items, n, due, (it) => ({ done: itemState(store.S, module, d, it).done, started: Boolean(store.S.drafts[module][draftKey(d, it.id)]) }))}
       <div class="task">
         <section class="brief">
-          <p class="eyebrow">${MODULE_FR[module]}${n > due ? ' · 选做' : ''}</p>
+          <p class="eyebrow">${MODULE_FR[module]}${item.genre ? ` · ${item.genre}` : ''}${n > due ? ' · 选做' : ''}</p>
           <h1 class="passage-title" lang="fr">${frText(item.title)}</h1>
           <p class="consigne" lang="fr">${frText(writing ? item.prompt : item.task)}</p>
+          ${triggerDoc(item.trigger)}
           ${item.chunks && item.chunks.length ? html`<div class="chunks"><p class="label">可用表达 · 点击插入</p>${item.chunks.map((c) => html`<button class="chip fr" data-act="insert" data-t="${c}" lang="fr">${frText(c)}</button>`)}</div>` : ''}
           ${item.checklist && item.checklist.length ? html`<div class="checklist"><p class="label">提交前自查</p><ul>${item.checklist.map((c) => html`<li lang="fr">${frText(c)}</li>`)}</ul></div>` : ''}
+          ${writing ? examNotes('writing') : ''}
         </section>
         <section class="editor">
           <label class="label" for="ed">${st.done ? '再写一版' : '你的回答'}</label>
@@ -56,6 +58,8 @@ export async function writeView(d, module, n) {
           <summary><span>${fmtDateTime(r.at)}</span>${r.words != null ? html`<span class="muted">${r.words} 词</span>` : ''}</summary>
           <div class="prose small" lang="fr">${r.text.split(/\n+/).map((p) => html`<p>${p}</p>`)}</div>
         </details>`)}
+        ${item.model ? html`<details class="version model"><summary><span>参考范文 · Proposition de corrigé</span><span class="muted">提交后对照：结构、连接词、语式</span></summary>
+          <div class="prose small" lang="fr">${item.model.map((p) => html`<p>${frText(p)}</p>`)}</div></details>` : ''}
         <div class="qnav end">${nextLink(d, module, n, items.length)}</div>
       </section>` : ''}
     </article>`;

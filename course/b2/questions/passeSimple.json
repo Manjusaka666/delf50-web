@@ -1,0 +1,167 @@
+[
+ {
+  "id": "passeSimple-01",
+  "stem": "Le 25 août 1944, le général de Gaulle ___ dans Paris sous les acclamations de la foule.",
+  "options": [
+   "entra",
+   "entrit",
+   "entrut"
+  ],
+  "answer": 0,
+  "why": "第一组动词（-er）简单过去时第三人称单数词尾为 -a：il entra。-it 属于第二组和部分第三组动词；-ut 属于 avoir / être / -oir 等动词，entrer 不用。"
+ },
+ {
+  "id": "passeSimple-02",
+  "stem": "Ce jour-là, les ouvriers ___ grève pour la première fois de leur histoire.",
+  "options": [
+   "faisèrent",
+   "firent",
+   "fîtes"
+  ],
+  "answer": 1,
+  "why": "faire 的简单过去时：il fit, ils firent。faisèrent 是按第一组规则臆造的形式；fîtes 是第二人称复数（vous fîtes），主语 les ouvriers 是第三人称。"
+ },
+ {
+  "id": "passeSimple-03",
+  "stem": "Sans un mot, elle ___ son manteau et quitta la pièce.",
+  "options": [
+   "prenit",
+   "prenut",
+   "prit"
+  ],
+  "answer": 2,
+  "why": "prendre 的简单过去时：elle prit, ils prirent（词干变为 pr-）。prenit / prenut 都是臆造形式。"
+ },
+ {
+  "id": "passeSimple-04",
+  "stem": "Dans le brouillard, les randonneurs ___ beaucoup de mal à retrouver le sentier.",
+  "options": [
+   "avèrent",
+   "eurent",
+   "eûmes"
+  ],
+  "answer": 1,
+  "why": "avoir 的简单过去时：il eut, ils eurent。avèrent 是臆造形式；eûmes 是第一人称复数（nous eûmes）。"
+ },
+ {
+  "id": "passeSimple-05",
+  "stem": "Dans « Ils vinrent à pied depuis le village voisin », vinrent est le passé simple du verbe ___.",
+  "options": [
+   "vaincre",
+   "vendre",
+   "venir"
+  ],
+  "answer": 2,
+  "why": "venir 的简单过去时：il vint, ils vinrent（特殊的 -in- 词干）。vaincre → ils vainquirent；vendre → ils vendirent。识别这些形式是 CE 阅读文学/历史文本的关键。"
+ },
+ {
+  "id": "passeSimple-06",
+  "stem": "Dans « Il fut nommé ministre en 1981 », fut est le passé simple du verbe ___.",
+  "options": [
+   "faire",
+   "falloir",
+   "être"
+  ],
+  "answer": 2,
+  "why": "être 的简单过去时：il fut, ils furent；il fut nommé = il a été nommé（被动态）。faire → il fit；falloir → il fallut。"
+ },
+ {
+  "id": "passeSimple-07",
+  "stem": "Soudain, au milieu de la nuit, le téléphone ___.",
+  "options": [
+   "sonnait",
+   "sonnit",
+   "sonna"
+  ],
+  "answer": 2,
+  "why": "soudain 引出突然发生的、一次性的动作 → 简单过去时 sonna（叙事主线）。sonnait 是未完成过去时，用于背景描写，与 soudain 冲突；sonnit 是错误形式。"
+ },
+ {
+  "id": "passeSimple-08",
+  "stem": "Il ___ minuit passé quand l’alarme de l’usine se déclencha.",
+  "options": [
+   "était",
+   "fut",
+   "été"
+  ],
+  "answer": 0,
+  "why": "时间、背景描写用未完成过去时：il était minuit passé；主线事件（se déclencha）用简单过去时。fut 用于背景时间不自然；été 是过去分词，不能单独作谓语。"
+ },
+ {
+  "id": "passeSimple-09",
+  "stem": "Chaque matin, la vieille dame ___ à manger aux pigeons, jusqu’au jour où elle disparut.",
+  "options": [
+   "donnait",
+   "donna",
+   "donne"
+  ],
+  "answer": 0,
+  "why": "chaque matin 表示过去的习惯性动作 → 未完成过去时 donnait；jusqu’au jour où elle disparut 是一次性事件，用简单过去时。donna 表示一次性动作；donne 是现在时，与过去叙事不符。"
+ },
+ {
+  "id": "passeSimple-10",
+  "stem": "Dans « Ils crurent d’abord à une plaisanterie », crurent est le passé simple du verbe ___.",
+  "options": [
+   "croire",
+   "croître",
+   "courir"
+  ],
+  "answer": 0,
+  "why": "croire 的简单过去时：il crut, ils crurent。croître → ils crûrent（带长音符）；courir → ils coururent。"
+ },
+ {
+  "id": "passeSimple-11",
+  "stem": "Après de longues négociations, les deux pays ___ un accord le 3 mars.",
+  "options": [
+   "concluèrent",
+   "conclurent",
+   "conclûmes"
+  ],
+  "answer": 1,
+  "why": "conclure 的简单过去时：il conclut, ils conclurent。concluèrent 是按第一组规则臆造的；conclûmes 是第一人称复数。"
+ },
+ {
+  "id": "passeSimple-12",
+  "stem": "Le lendemain du scandale, le ministre ___ sa démission au président.",
+  "options": [
+   "remettit",
+   "remit",
+   "remettut"
+  ],
+  "answer": 1,
+  "why": "mettre / remettre 的简单过去时：il mit / il remit, ils remirent。remettit / remettut 是臆造形式。"
+ },
+ {
+  "id": "passeSimple-13",
+  "stem": "Dans un article de presse, « La décision fut annoncée à 20 heures » signifie : la décision ___ annoncée à 20 heures.",
+  "options": [
+   "a été",
+   "était",
+   "sera"
+  ],
+  "answer": 0,
+  "why": "新闻和历史叙述中的简单过去时相当于口语的复合过去时：fut annoncée = a été annoncée（已完成的一次性事件）。était annoncée 是未完成过去时，表示背景或持续；sera 是将来时。"
+ },
+ {
+  "id": "passeSimple-14",
+  "stem": "Après dix heures de marche, les alpinistes ___ enfin le sommet.",
+  "options": [
+   "atteindirent",
+   "atteignèrent",
+   "atteignirent"
+  ],
+  "answer": 2,
+  "why": "atteindre（及 peindre, craindre 等 -indre 动词）的简单过去时：il atteignit, ils atteignirent。atteindirent / atteignèrent 是错误形式。"
+ },
+ {
+  "id": "passeSimple-15",
+  "stem": "Au milieu du lac, nous ___ surpris par une violente tempête.",
+  "options": [
+   "fumes",
+   "fûmes",
+   "fûtes"
+  ],
+  "answer": 1,
+  "why": "être 的简单过去时第一人称复数：nous fûmes（带长音符）。fumes 无长音符，是 fumer 的现在时（tu fumes）；fûtes 是第二人称复数（vous fûtes）。"
+ }
+]

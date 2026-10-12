@@ -39,7 +39,7 @@ export async function dayView(d) {
   const render = () => {
     const { day } = ctx, pr = ctx.progress(), m = pr.modules;
     const phaseIndex = course.phases.findIndex((p) => d >= p.from && d <= p.to);
-    const notes = [['能做到', day.canDo], ['复习', day.review], ['输入', day.input], ['输出', day.output], ['检查点', day.checkpoint]].filter((x) => x[1]);
+    const notes = [['能做到', day.canDo], ['复习', day.review], ['输入', day.input], ['输出', day.output], ['检查点', day.checkpoint], ['挑战', day.challenge]].filter((x) => x[1]);
     return html`<article class="page day">
       <header class="hero">
         <div class="hero-text">

@@ -1,0 +1,332 @@
+[
+ {
+  "id": "articulateurs-01",
+  "stem": "Pour réussir l’épreuve, lisez ___ les consignes, puis rédigez un plan détaillé.",
+  "options": [
+   "enfin",
+   "d’abord",
+   "bref"
+  ],
+  "answer": 1,
+  "why": "d’abord 引出第一步，与后面的 puis 构成顺序。enfin 表示最后一步，不能放在 puis 之前；bref 是总结，不表示步骤。"
+ },
+ {
+  "id": "articulateurs-02",
+  "stem": "Le projet a deux avantages : ___, il est peu coûteux ; d’autre part, il crée des emplois.",
+  "options": [
+   "d’une part",
+   "en revanche",
+   "bref"
+  ],
+  "answer": 0,
+  "why": "d’une part… d’autre part 是固定对应结构，并列两个论据。en revanche 表示对立，bref 表示总结，都与 d’autre part 不搭配。"
+ },
+ {
+  "id": "articulateurs-03",
+  "stem": "Le télétravail réduit les trajets. ___, il permet de mieux concilier vie familiale et vie professionnelle.",
+  "options": [
+   "De plus",
+   "En revanche",
+   "Autrement dit"
+  ],
+  "answer": 0,
+  "why": "两句都是优点，第二句补充论据 → De plus（此外）。En revanche 引出相反情况；Autrement dit 是换句话说，但第二句不是对第一句的改写。"
+ },
+ {
+  "id": "articulateurs-04",
+  "stem": "Les ventes en ligne progressent ; ___, celles des petits commerces reculent.",
+  "options": [
+   "en effet",
+   "en revanche",
+   "de plus"
+  ],
+  "answer": 1,
+  "why": "两个相反的趋势对比 → en revanche（相反）。en effet 用于解释或证实前句；de plus 用于追加同方向论据。"
+ },
+ {
+  "id": "articulateurs-05",
+  "stem": "Il faut agir vite. ___, selon les experts, les températures pourraient augmenter de trois degrés d’ici 2100.",
+  "options": [
+   "En effet",
+   "En revanche",
+   "Bref"
+  ],
+  "answer": 0,
+  "why": "第二句为“必须尽快行动”提供理由 → En effet（确实/因为）。En revanche 表示对立；Bref 用于总结，不能引出论据。"
+ },
+ {
+  "id": "articulateurs-06",
+  "stem": "Les étudiants approuvent la réforme ; ___ enseignants, ils restent sceptiques.",
+  "options": [
+   "quant à",
+   "quant des",
+   "quant aux"
+  ],
+  "answer": 2,
+  "why": "quant à + 名词，à 与 les 缩合为 aux → quant aux enseignants。quant à les 必须缩合；quant des 不存在。"
+ },
+ {
+  "id": "articulateurs-07",
+  "stem": "___, la voiture électrique pollue moins en ville, mais sa batterie pose d’autres problèmes.",
+  "options": [
+   "En effet",
+   "Bref",
+   "Certes"
+  ],
+  "answer": 2,
+  "why": "Certes…, mais… 是让步结构：先承认一个事实，再提出反面。En effet 需要承接前文且不与 mais 构成让步；Bref 是总结。"
+ },
+ {
+  "id": "articulateurs-08",
+  "stem": "Le loyer est trop élevé, le quartier est bruyant et les transports sont rares. ___, cet appartement ne nous convient pas.",
+  "options": [
+   "En effet",
+   "D’une part",
+   "Bref"
+  ],
+  "answer": 2,
+  "why": "前面列举多个缺点，最后一句简短总结 → Bref（总之）。En effet 用于解释，而这里是归纳结论；D’une part 引出第一个论点，需要 d’autre part 呼应。"
+ },
+ {
+  "id": "articulateurs-09",
+  "stem": "Le taux de chômage des jeunes atteint 12,5 % ; ___, un jeune actif sur huit est sans emploi.",
+  "options": [
+   "en revanche",
+   "autrement dit",
+   "par ailleurs"
+  ],
+  "answer": 1,
+  "why": "12,5 % 即八分之一，后句是对前句的改写 → autrement dit（换句话说）。en revanche 表示对立；par ailleurs 引入另一个新话题。"
+ },
+ {
+  "id": "articulateurs-10",
+  "stem": "Ce rapport porte surtout sur la pollution de l’air. ___, il aborde brièvement la question du bruit.",
+  "options": [
+   "Autrement dit",
+   "En effet",
+   "Par ailleurs"
+  ],
+  "answer": 2,
+  "why": "Par ailleurs（另外）引入另一个相关方面。Autrement dit 用于改写同一内容；En effet 用于解释前句，而噪音问题不是对空气污染的解释。"
+ },
+ {
+  "id": "articulateurs-11",
+  "stem": "La procédure comporte trois étapes : d’abord l’inscription en ligne, ensuite l’entretien, ___ la visite médicale.",
+  "options": [
+   "bref",
+   "enfin",
+   "en définitive"
+  ],
+  "answer": 1,
+  "why": "d’abord… ensuite… enfin 表示顺序的最后一步。bref 和 en définitive 都是总结性/结论性连接词，不用于列举步骤。"
+ },
+ {
+  "id": "articulateurs-12",
+  "stem": "Certes, les éoliennes modifient le paysage, ___ elles fournissent une énergie renouvelable.",
+  "options": [
+   "en effet",
+   "de plus",
+   "mais"
+  ],
+  "answer": 2,
+  "why": "certes 引出让步，后半句需用 mais 提出主要论点。en effet 表示解释；de plus 表示追加，两者都不能完成“certes… mais”的让步结构。"
+ },
+ {
+  "id": "articulateurs-13",
+  "stem": "___ la question du financement, elle sera abordée lors de la prochaine réunion.",
+  "options": [
+   "Quant à",
+   "En effet",
+   "Autrement dit"
+  ],
+  "answer": 0,
+  "why": "Quant à + 名词，用于引出（转换）话题，后面常用代词 elle 复指。En effet 和 Autrement dit 是副词性连接词，后面不能直接接名词短语。"
+ },
+ {
+  "id": "articulateurs-14",
+  "stem": "Le festival a attiré moins de public que prévu. ___, deux concerts ont été annulés à cause de la pluie.",
+  "options": [
+   "En outre",
+   "En revanche",
+   "Autrement dit"
+  ],
+  "answer": 0,
+  "why": "两句都是负面事实，第二句追加 → En outre（此外，书面）。En revanche 需要相反方向的信息；Autrement dit 用于改写，而第二句是新信息。"
+ },
+ {
+  "id": "articulateurs-15",
+  "stem": "___, je dirais que cette mesure est nécessaire mais insuffisante.",
+  "options": [
+   "En effet",
+   "D’autre part",
+   "Pour conclure"
+  ],
+  "answer": 2,
+  "why": "总结全文观点 → Pour conclure。En effet 用于解释前句，不能用来下结论；D’autre part 引出第二个论点，需与 d’une part 呼应。"
+ },
+ {
+  "id": "articulateurs-16",
+  "stem": "D’une part, cette mesure coûte cher ; ___, son efficacité n’est pas prouvée.",
+  "options": [
+   "en effet",
+   "d’autre part",
+   "autrement dit"
+  ],
+  "answer": 1,
+  "why": "d’une part 必须与 d’autre part 呼应，并列两个论据。en effet 表示解释；autrement dit 表示改写，两者都不符合并列关系。"
+ },
+ {
+  "id": "articulateurs-17",
+  "stem": "Les jeunes lisent moins la presse papier. ___, ils s’informent beaucoup plus sur les réseaux sociaux.",
+  "options": [
+   "Autrement dit",
+   "En revanche",
+   "Bref"
+  ],
+  "answer": 1,
+  "why": "两种相反的行为对比（读得少 / 用得多）→ En revanche。Autrement dit 是改写同一内容，而这里是两种不同事实；Bref 用于总结。"
+ },
+ {
+  "id": "articulateurs-18",
+  "stem": "Après des mois de débats, la mairie a, ___, renoncé au projet de parking souterrain.",
+  "options": [
+   "d’une part",
+   "quant à",
+   "en définitive"
+  ],
+  "answer": 2,
+  "why": "en définitive（最终、归根结底）表示经过讨论后的最终结果，可插入助动词与过去分词之间。d’une part 需要 d’autre part 呼应；quant à 是介词短语，后面必须接名词。"
+ },
+ {
+  "id": "articulateurs-19",
+  "stem": "___ son salaire, elle touche une prime annuelle liée aux résultats.",
+  "options": [
+   "En outre",
+   "Outre",
+   "De plus"
+  ],
+  "answer": 1,
+  "why": "outre 是介词，后面直接接名词：outre son salaire（除了工资之外）。En outre 和 De plus 是副词性连接词，后面不能接名词，需要单独成分并加逗号。"
+ },
+ {
+  "id": "articulateurs-20",
+  "stem": "Cette application est gratuite ; ___, elle ne collecte aucune donnée personnelle.",
+  "options": [
+   "en revanche",
+   "de plus",
+   "autrement dit"
+  ],
+  "answer": 1,
+  "why": "两个优点叠加 → de plus。en revanche 引出与前句相反的信息；autrement dit 意为“换句话说”，但“不收集数据”并不是“免费”的改写。"
+ },
+ {
+  "id": "articulateurs-21",
+  "stem": "Quant ___ moi, je pense que cette réforme arrive beaucoup trop tard.",
+  "options": [
+   "à",
+   "de",
+   "pour"
+  ],
+  "answer": 0,
+  "why": "固定结构 quant à + 重读人称代词/名词：quant à moi（至于我）。quant de、quant pour 都不存在。"
+ },
+ {
+  "id": "articulateurs-22",
+  "stem": "Il a refusé le poste à Lyon ; ___, il ne voulait pas quitter sa famille.",
+  "options": [
+   "en effet",
+   "en revanche",
+   "d’une part"
+  ],
+  "answer": 0,
+  "why": "后句解释拒绝的原因 → en effet。en revanche 表示对立，而两句并不相反；d’une part 后面必须有 d’autre part 呼应。"
+ },
+ {
+  "id": "articulateurs-23",
+  "stem": "Le contrat est à durée déterminée ; ___, il prendra fin dans six mois.",
+  "options": [
+   "en revanche",
+   "quant à",
+   "autrement dit"
+  ],
+  "answer": 2,
+  "why": "“定期合同”即“六个月后结束”，后句是对前句的具体改写 → autrement dit。en revanche 表示对立；quant à 后面必须接名词。"
+ },
+ {
+  "id": "articulateurs-24",
+  "stem": "___, je voudrais remercier les organisateurs de ce colloque.",
+  "options": [
+   "Tout d’abord",
+   "Bref",
+   "En définitive"
+  ],
+  "answer": 0,
+  "why": "发言开头的第一项 → Tout d’abord。Bref 和 En définitive 都用于收尾总结，放在开场致谢处不合逻辑。"
+ },
+ {
+  "id": "articulateurs-25",
+  "stem": "___, je présenterai le contexte ; ensuite, j’analyserai les causes du problème.",
+  "options": [
+   "Au début de",
+   "D’abord",
+   "Enfin"
+  ],
+  "answer": 1,
+  "why": "D’abord… ensuite… 组织论述顺序。Au début de 是介词短语，后面必须接名词；Enfin 表示最后一步，不能出现在 ensuite 之前。"
+ },
+ {
+  "id": "articulateurs-26",
+  "stem": "Les températures augmentent ; ___, les glaciers alpins ont perdu un tiers de leur volume en vingt ans.",
+  "options": [
+   "en effet",
+   "en revanche",
+   "autrement dit"
+  ],
+  "answer": 0,
+  "why": "后句用具体事实证实前句 → en effet。en revanche 表示相反；autrement dit 只用于对同一内容的改写，冰川的数据不是“气温升高”的同义表达。"
+ },
+ {
+  "id": "articulateurs-27",
+  "stem": "La première partie du film est lente ; la seconde, ___, est pleine de rebondissements.",
+  "options": [
+   "en outre",
+   "en revanche",
+   "en effet"
+  ],
+  "answer": 1,
+  "why": "前后两部分形成对比（慢 / 精彩）→ en revanche，可插在主语之后。en outre 表示追加同向信息；en effet 表示解释。"
+ },
+ {
+  "id": "articulateurs-28",
+  "stem": "D’un côté, les habitants veulent plus de commerces ; ___, ils refusent l’augmentation du trafic.",
+  "options": [
+   "de l’autre",
+   "en outre",
+   "de plus"
+  ],
+  "answer": 0,
+  "why": "d’un côté… de l’autre（côté）是对应结构，表示同一问题的两个对立方面。en outre / de plus 只表示追加，无法表达这里的矛盾。"
+ },
+ {
+  "id": "articulateurs-29",
+  "stem": "Les experts ne s’accordent pas sur les causes du phénomène ; ___, tous reconnaissent l’urgence de la situation.",
+  "options": [
+   "en effet",
+   "autrement dit",
+   "en revanche"
+  ],
+  "answer": 2,
+  "why": "前句“意见分歧”与后句“一致承认”对立 → en revanche。en effet 表示解释；autrement dit 表示改写，两者都与语义矛盾。"
+ },
+ {
+  "id": "articulateurs-30",
+  "stem": "Madame, le produit commandé est arrivé avec dix jours de retard ; ___, il était endommagé.",
+  "options": [
+   "en plus de",
+   "outre",
+   "en outre"
+  ],
+  "answer": 2,
+  "why": "正式信件中追加另一个问题 → en outre（副词，后加逗号）。en plus de 和 outre 都是介词，后面必须接名词或不定式，不能单独引出句子。"
+ }
+]

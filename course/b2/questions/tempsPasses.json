@@ -1,0 +1,332 @@
+[
+ {
+  "id": "tempsPasses-01",
+  "stem": "Autrefois, ma grand-mère ___ son pain elle-même chaque matin.",
+  "options": [
+   "faisait",
+   "a fait",
+   "avait fait"
+  ],
+  "answer": 0,
+  "why": "autrefois + chaque matin 表示过去的习惯，用 imparfait：faisait。a fait 是一次性完成的事件；avait fait 表示先于另一个过去动作，这里没有参照点。"
+ },
+ {
+  "id": "tempsPasses-02",
+  "stem": "Je ___ sous la douche quand le livreur a sonné.",
+  "options": [
+   "étais",
+   "ai été",
+   "avais été"
+  ],
+  "answer": 0,
+  "why": "被打断的进行状态用 imparfait：j’étais sous la douche，事件 a sonné 用 PC。ai été 把状态变成完成的事件；avais été 表示铃响时已经结束，不合逻辑。"
+ },
+ {
+  "id": "tempsPasses-03",
+  "stem": "Nous dînions sur la terrasse quand, soudain, un orage ___.",
+  "options": [
+   "éclatait",
+   "avait éclaté",
+   "a éclaté"
+  ],
+  "answer": 2,
+  "why": "soudain 引出打断背景的突发事件，用 PC：a éclaté。éclatait 是背景/进行，不能表示突发；avait éclaté 表示暴雨在吃饭前就已发生，与 soudain 矛盾。"
+ },
+ {
+  "id": "tempsPasses-04",
+  "stem": "Chaque fois qu’il y avait une grève, nous ___ au bureau à vélo.",
+  "options": [
+   "sommes allés",
+   "allions",
+   "étions allés"
+  ],
+  "answer": 1,
+  "why": "chaque fois que 表示过去反复发生的习惯，主句用 imparfait：allions。sommes allés 表示一次性事件；étions allés 表示更早完成，都不符合习惯义。"
+ },
+ {
+  "id": "tempsPasses-05",
+  "stem": "L’an dernier, Clara ___ trois fois à Lyon pour son travail.",
+  "options": [
+   "est allée",
+   "allait",
+   "était allée"
+  ],
+  "answer": 0,
+  "why": "有明确次数（trois fois）且时间段已结束，用 PC；aller 用 être，与 Clara 阴性配合：est allée。allait 不能与确定次数连用；était allée 没有更晚的参照点。"
+ },
+ {
+  "id": "tempsPasses-06",
+  "stem": "Les candidates ___ en retard à l’entretien : leur train avait été supprimé.",
+  "options": [
+   "sont arrivées",
+   "sont arrivés",
+   "ont arrivé"
+  ],
+  "answer": 0,
+  "why": "arriver 用 être 作助动词，过去分词与主语 les candidates（阴性复数）配合：sont arrivées。sont arrivés 配合错误；ont arrivé 助动词错误。"
+ },
+ {
+  "id": "tempsPasses-07",
+  "stem": "Ce jour-là, le directeur est entré dans la salle, ___ sa démission, puis il est reparti sans un mot.",
+  "options": [
+   "annonçait",
+   "a annoncé",
+   "avait annoncé"
+  ],
+  "answer": 1,
+  "why": "一连串先后发生的事件（est entré… puis est reparti）都用 PC：a annoncé。annonçait 是背景，不能推进情节；avait annoncé 表示在进门之前，打乱了顺序。"
+ },
+ {
+  "id": "tempsPasses-08",
+  "stem": "Notre maison ___ au bout d’un chemin de terre et n’avait pas l’électricité.",
+  "options": [
+   "s’est trouvée",
+   "s’était trouvée",
+   "se trouvait"
+  ],
+  "answer": 2,
+  "why": "描写地点和状态用 imparfait：se trouvait（与 n’avait pas 并列）。s’est trouvée 把描写变成事件；s’était trouvée 表示更早，句中没有参照点。"
+ },
+ {
+  "id": "tempsPasses-09",
+  "stem": "Alors que nous ___ le pont, la voiture est tombée en panne.",
+  "options": [
+   "avons traversé",
+   "avions traversé",
+   "traversions"
+  ],
+  "answer": 2,
+  "why": "alors que（＝ 正当……时）+ imparfait 表示进行中的背景动作，被 PC 事件打断。avons traversé 表示过桥已完成；avions traversé 表示抛锚前已经过完桥，与“正在过桥”矛盾。"
+ },
+ {
+  "id": "tempsPasses-10",
+  "stem": "Quand nous sommes arrivés au cinéma, le film ___ depuis dix minutes.",
+  "options": [
+   "a commencé",
+   "commençait",
+   "avait commencé"
+  ],
+  "answer": 2,
+  "why": "到达时电影已经开始了十分钟：先于过去参照点的已完成动作用 PQP：avait commencé。a commencé 不能与 depuis 连用；commençait 表示“正要开始”，与 depuis dix minutes 矛盾。"
+ },
+ {
+  "id": "tempsPasses-11",
+  "stem": "Elle a enfin retrouvé le dossier qu’elle ___ la veille.",
+  "options": [
+   "a perdu",
+   "avait perdu",
+   "perdait"
+  ],
+  "answer": 1,
+  "why": "丢失发生在“找到”之前，且 la veille 是以过去为参照的时间标记，用 PQP：avait perdu。a perdu 不能与 la veille 搭配；perdait 表示进行/习惯，不合语义。"
+ },
+ {
+  "id": "tempsPasses-12",
+  "stem": "Quand Paul est arrivé, ses sœurs ___ déjà parties.",
+  "options": [
+   "avaient",
+   "sont",
+   "étaient"
+  ],
+  "answer": 2,
+  "why": "partir 用 être 作助动词，PQP 为 être 的 imparfait + 过去分词：étaient parties（先于 Paul 到达）。avaient 助动词错误；sont 构成 PC，与过去参照点不协调。"
+ },
+ {
+  "id": "tempsPasses-13",
+  "stem": "Je ne suis pas allé à la fête parce que je n’y ___ personne.",
+  "options": [
+   "connaissais",
+   "ai connu",
+   "avais connu"
+  ],
+  "answer": 0,
+  "why": "说明原因的状态用 imparfait：je n’y connaissais personne（我在那里谁都不认识）。ai connu / avais connu 表示“结识”这一事件，语义不对，且没去聚会就谈不上在那里结识。"
+ },
+ {
+  "id": "tempsPasses-14",
+  "stem": "Quand tu m’as appelé, je ___ de rentrer du bureau.",
+  "options": [
+   "venais",
+   "suis venu",
+   "étais venu"
+  ],
+  "answer": 0,
+  "why": "venir de 的过去时形式是 imparfait：je venais de rentrer（刚刚回来）。suis venu / étais venu de… 表示“从……来”，不再是“刚刚”的近过去结构。"
+ },
+ {
+  "id": "tempsPasses-15",
+  "stem": "Le témoin a déclaré qu’au moment de l’accident, le conducteur ___ au téléphone.",
+  "options": [
+   "a parlé",
+   "parlait",
+   "avait parlé"
+  ],
+  "answer": 1,
+  "why": "au moment de l’accident 描述事故发生时正在进行的动作，用 imparfait：parlait。avait parlé 表示事故前已经打完电话；a parlé 在 a déclaré que 之后时态不协调，也失去了“正在”的意思。"
+ },
+ {
+  "id": "tempsPasses-16",
+  "stem": "Quand elle est arrivée à Paris, Aminata ___ déjà vécu cinq ans à Dakar.",
+  "options": [
+   "a",
+   "avait",
+   "était"
+  ],
+  "answer": 1,
+  "why": "到巴黎之前就已在达喀尔生活了五年：PQP = avoir 的 imparfait + vécu：avait vécu。a vécu 是 PC，不能表示先于过去参照点；vivre 的助动词是 avoir，était 错误。"
+ },
+ {
+  "id": "tempsPasses-17",
+  "stem": "Elle a vendu sa voiture en mars ; elle l’___ trois mois auparavant.",
+  "options": [
+   "a achetée",
+   "achetait",
+   "avait achetée"
+  ],
+  "answer": 2,
+  "why": "auparavant 以过去时刻（三月）为参照，用 PQP；直接宾语 l’（＝ la voiture）在前，过去分词阴性配合：avait achetée。a achetée 时态错误；achetait 是背景/习惯，不表示一次购买。"
+ },
+ {
+  "id": "tempsPasses-18",
+  "stem": "Un soir, alors qu’elle rentrait du travail, elle ___ une ancienne collègue dans le métro.",
+  "options": [
+   "croisait",
+   "avait croisé",
+   "a croisé"
+  ],
+  "answer": 2,
+  "why": "un soir 引出一次性事件，背景 alors qu’elle rentrait 已用 imparfait，事件用 PC：a croisé。croisait 会变成另一层背景；avait croisé 表示在回家之前，顺序不对。"
+ },
+ {
+  "id": "tempsPasses-19",
+  "stem": "Elles se ___ à la sortie du concert, puis elles sont allées dîner.",
+  "options": [
+   "sont retrouvé",
+   "sont retrouvées",
+   "retrouvaient"
+  ],
+  "answer": 1,
+  "why": "puis 连接先后事件，用 PC；代词式动词用 être，se 是直接宾语，过去分词配合：se sont retrouvées。sont retrouvé 漏了配合；retrouvaient 是背景，不能与 puis 引出的事件链并列。"
+ },
+ {
+  "id": "tempsPasses-20",
+  "stem": "Le musée était fermé : la mairie y ___ des travaux la semaine précédente.",
+  "options": [
+   "a lancé",
+   "avait lancé",
+   "lançait"
+  ],
+  "answer": 1,
+  "why": "博物馆关门的原因发生在更早，且 la semaine précédente 是相对时间标记，用 PQP：avait lancé。a lancé 应配 la semaine dernière；lançait 表示进行/习惯，不是一次性决定。"
+ },
+ {
+  "id": "tempsPasses-21",
+  "stem": "Il était épuisé parce qu’il ___ toute la nuit précédente sur son rapport.",
+  "options": [
+   "avait travaillé",
+   "a travaillé",
+   "travaillait"
+  ],
+  "answer": 0,
+  "why": "原因先于“疲惫”这一过去状态，且有 la nuit précédente，用 PQP：avait travaillé。a travaillé 与 précédente 不协调；travaillait 不能表示一段已结束的确定时长（toute la nuit précédente）。"
+ },
+ {
+  "id": "tempsPasses-22",
+  "stem": "Lors de son premier emploi, mon père ___ à peine vingt ans.",
+  "options": [
+   "a eu",
+   "avait",
+   "avait eu"
+  ],
+  "answer": 1,
+  "why": "年龄属于状态描写，用 imparfait：il avait à peine vingt ans。a eu 表示“满……岁”这一事件；avait eu 表示更早满岁，均不合语义。"
+ },
+ {
+  "id": "tempsPasses-23",
+  "stem": "Dans un courriel poli : « Je ___ vous demander un délai supplémentaire pour le rapport. »",
+  "options": [
+   "voulais",
+   "ai voulu",
+   "avais voulu"
+  ],
+  "answer": 0,
+  "why": "imparfait de politesse：je voulais vous demander 用来委婉提出请求。ai voulu 表示“曾经想要/试图”，变成过去事件；avais voulu 表示更早的意愿，均不是礼貌请求。"
+ },
+ {
+  "id": "tempsPasses-24",
+  "stem": "Il y avait deux heures que nous ___ quand le guide a enfin retrouvé le sentier.",
+  "options": [
+   "avons marché",
+   "marchions",
+   "avions marché"
+  ],
+  "answer": 1,
+  "why": "il y avait + 时长 + que 表示到某个过去时刻为止仍在持续的动作，用 imparfait：marchions。avons marché / avions marché 表示已结束，与“仍在走”矛盾。"
+ },
+ {
+  "id": "tempsPasses-25",
+  "stem": "Les enquêteurs ont découvert que le suspect ___ le pays la veille de l’attaque.",
+  "options": [
+   "a quitté",
+   "quittait",
+   "avait quitté"
+  ],
+  "answer": 2,
+  "why": "离境先于 ont découvert，且 la veille 是相对时间标记，用 PQP：avait quitté。a quitté 时态不协调；quittait 表示进行/习惯，不是一次性离开。"
+ },
+ {
+  "id": "tempsPasses-26",
+  "stem": "Mes grands-parents se sont mariés en 1960 ; ils se ___ deux ans plus tôt lors d’un bal.",
+  "options": [
+   "étaient rencontrés",
+   "sont rencontrés",
+   "rencontraient"
+  ],
+  "answer": 0,
+  "why": "deux ans plus tôt 以 1960 年为参照，表示更早的事件，用 PQP：s’étaient rencontrés（代词式动词用 être，se 为直接宾语，配合 -s）。sont rencontrés 是 PC，与 plus tôt 不协调；rencontraient 是习惯/背景。"
+ },
+ {
+  "id": "tempsPasses-27",
+  "stem": "Quand il a ouvert la lettre, il a compris que sa candidature ___.",
+  "options": [
+   "avait été refusé",
+   "avait été refusée",
+   "avait refusée"
+  ],
+  "answer": 1,
+  "why": "被动态的 PQP：avait été + 过去分词，过去分词与主语 sa candidature（阴性）配合：avait été refusée。avait été refusé 漏了配合；avait refusée 缺少 été，变成主动态且配合错误。"
+ },
+ {
+  "id": "tempsPasses-28",
+  "stem": "Lorsque les secours sont arrivés, les habitants, qui ___ la nuit sur leur toit, étaient épuisés.",
+  "options": [
+   "avaient passé",
+   "passaient",
+   "ont passé"
+  ],
+  "answer": 0,
+  "why": "在屋顶过夜发生在救援到达之前，且时长已结束，用 PQP：avaient passé。passaient 不能表示一段已完成的整夜；ont passé 与过去参照点（sont arrivés）不协调。"
+ },
+ {
+  "id": "tempsPasses-29",
+  "stem": "Les lettres que ma grand-mère ___ pendant la guerre ont été retrouvées dans un grenier.",
+  "options": [
+   "avait écrit",
+   "avait écrits",
+   "avait écrites"
+  ],
+  "answer": 2,
+  "why": "助动词 avoir 时，过去分词与前置直接宾语配合：que 指代 les lettres（阴性复数）→ avait écrites。avait écrit 漏配合；avait écrits 阴阳性错误。"
+ },
+ {
+  "id": "tempsPasses-30",
+  "stem": "Pendant le confinement, elles se sont ___ des messages tous les soirs.",
+  "options": [
+   "envoyées",
+   "envoyés",
+   "envoyé"
+  ],
+  "answer": 2,
+  "why": "s’envoyer des messages 中 se 是间接宾语（envoyer à quelqu’un），直接宾语 des messages 在后面，过去分词不配合：se sont envoyé。envoyées / envoyés 都是错误配合。"
+ }
+]

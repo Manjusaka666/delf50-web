@@ -1,0 +1,332 @@
+[
+ {
+  "id": "passif-01",
+  "stem": "Le nouveau pont ___ par le Premier ministre la semaine dernière.",
+  "options": [
+   "a inauguré",
+   "a été inauguré",
+   "était inauguré"
+  ],
+  "answer": 1,
+  "why": "桥是被开通的，用被动态；过去某个确定时间点的完成动作用复合过去时：a été inauguré。a inauguré 是主动态（桥开通了总理），意思不通；était inauguré 是未完成过去时，不能表示一次性完成的事件。"
+ },
+ {
+  "id": "passif-02",
+  "stem": "Les nouvelles mesures ont été ___ par le conseil municipal.",
+  "options": [
+   "adopté",
+   "adoptés",
+   "adoptées"
+  ],
+  "answer": 2,
+  "why": "被动态中过去分词与主语性数配合：les mesures 是阴性复数，所以写 adoptées。adopté 没有配合；adoptés 是阳性复数。"
+ },
+ {
+  "id": "passif-03",
+  "stem": "Après la tempête, toute la place était couverte ___ neige.",
+  "options": [
+   "de",
+   "par",
+   "avec"
+  ],
+  "answer": 0,
+  "why": "表示状态的被动态常用 de 引出“施动者”：couvert de neige（被雪覆盖）。par 用于动作施动者，且 par neige 缺少冠词；avec 不能引出被动态的施动者。"
+ },
+ {
+  "id": "passif-04",
+  "stem": "Les résultats du concours ___ publiés en ligne la semaine prochaine.",
+  "options": [
+   "seront",
+   "ont été",
+   "étaient"
+  ],
+  "answer": 0,
+  "why": "la semaine prochaine 表示将来，被动态将来时 = être 的将来时 + 过去分词：seront publiés。ont été 和 étaient 都是过去时，与时间状语矛盾。"
+ },
+ {
+  "id": "passif-05",
+  "stem": "En traversant le parc, il ___ voler son portefeuille.",
+  "options": [
+   "a été",
+   "s’est fait",
+   "est fait"
+  ],
+  "answer": 1,
+  "why": "se faire + 不定式表示主语遭受某事：il s’est fait voler son portefeuille（他的钱包被偷了）。a été 后面不能接不定式；est fait 缺少反身代词 se，结构错误。"
+ },
+ {
+  "id": "passif-06",
+  "stem": "Faute de diplôme, Paul ___ refuser le poste qu’il convoitait.",
+  "options": [
+   "s’est vu",
+   "a été",
+   "s’est"
+  ],
+  "answer": 0,
+  "why": "se voir + 不定式表示主语“遭受、被……”：il s’est vu refuser le poste（他被拒绝了这个职位）。être 后面不能接不定式；s’est refuser 缺少 voir，不成句。"
+ },
+ {
+  "id": "passif-07",
+  "stem": "Cette église ___ au XIIe siècle.",
+  "options": [
+   "a été construite",
+   "a été construit",
+   "a construit"
+  ],
+  "answer": 0,
+  "why": "教堂是被建造的，用被动态，分词与阴性单数主语 cette église 配合：construite。construit 没有配合；a construit 是主动态，意思变成“教堂建造了……”。"
+ },
+ {
+  "id": "passif-08",
+  "stem": "Il est indispensable ___ réserver à l’avance pendant la haute saison.",
+  "options": [
+   "de",
+   "à",
+   "que"
+  ],
+  "answer": 0,
+  "why": "无人称结构 il est + 形容词 + de + 不定式：Il est indispensable de réserver。à 不用于这个结构；que 后面要接带主语的从句。"
+ },
+ {
+  "id": "passif-09",
+  "stem": "Il est essentiel que chaque citoyen ___ informé de ses droits.",
+  "options": [
+   "est",
+   "sera",
+   "soit"
+  ],
+  "answer": 2,
+  "why": "il est essentiel que 表示必要性，后接虚拟式：qu’il soit informé（被动态虚拟式）。est 和 sera 是直陈式。"
+ },
+ {
+  "id": "passif-10",
+  "stem": "Dans ce documentaire, ___ la vie des pêcheurs bretons.",
+  "options": [
+   "ce documentaire s’agit de",
+   "il agit de",
+   "il s’agit de"
+  ],
+  "answer": 2,
+  "why": "s’agir de 只能用无人称主语 il：Dans ce documentaire, il s’agit de…（讲的是……）。不能说 ce documentaire s’agit de；il agit de 漏掉了反身代词 s’。"
+ },
+ {
+  "id": "passif-11",
+  "stem": "Dépêchez-vous : il ___ encore trois places pour le concert de samedi.",
+  "options": [
+   "restent",
+   "en reste",
+   "reste"
+  ],
+  "answer": 2,
+  "why": "无人称结构 il reste + 名词，动词始终是第三人称单数，即使后面的名词是复数：il reste trois places。restent 错在配合了 places；il en reste trois places 中 en 与 places 重复。"
+ },
+ {
+  "id": "passif-12",
+  "stem": "Il ___ deux documents dans votre dossier d’inscription.",
+  "options": [
+   "manquent",
+   "manque",
+   "est manqué"
+  ],
+  "answer": 1,
+  "why": "无人称结构 il manque + 名词，动词用单数：il manque deux documents。manquent 错把动词与 documents 配合；manquer 在这里不能用被动态。"
+ },
+ {
+  "id": "passif-13",
+  "stem": "Le voleur a été arrêté ___ deux policiers en civil.",
+  "options": [
+   "de",
+   "par",
+   "avec"
+  ],
+  "answer": 1,
+  "why": "具体动作（arrêter）的施动者用 par 引出。de 用于状态或情感动词；avec 表示工具或伴随，不能引出施动者。"
+ },
+ {
+  "id": "passif-14",
+  "stem": "Ce problème doit ___ réglé avant la fin du mois.",
+  "options": [
+   "avoir",
+   "être",
+   "été"
+  ],
+  "answer": 1,
+  "why": "情态动词 devoir + 被动态不定式 être + 过去分词：doit être réglé。avoir réglé 是主动态；单独的 été 不能接在 devoir 后面。"
+ },
+ {
+  "id": "passif-15",
+  "stem": "Il faut que le rapport ___ remis à la direction avant vendredi.",
+  "options": [
+   "est",
+   "ait",
+   "soit"
+  ],
+  "answer": 2,
+  "why": "il faut que + 虚拟式；被动态的虚拟式 = que + être 的虚拟式 + 分词：qu’il soit remis。est 是直陈式；ait remis 是主动态的助动词，结构不对。"
+ },
+ {
+  "id": "passif-16",
+  "stem": "Quand les pompiers sont arrivés, les habitants avaient déjà été ___.",
+  "options": [
+   "évacués",
+   "évacué",
+   "évacuer"
+  ],
+  "answer": 0,
+  "why": "被动态愈过去时 avaient été + 过去分词，分词与主语 les habitants（阳性复数）配合：évacués。évacué 没有配合；évacuer 是不定式。"
+ },
+ {
+  "id": "passif-17",
+  "stem": "À cette époque, les ouvriers du textile ___ très mal payés.",
+  "options": [
+   "avaient",
+   "étaient",
+   "ont"
+  ],
+  "answer": 1,
+  "why": "描写过去的状态用被动态未完成过去时：étaient payés。avaient payés 和 ont payés 是用 avoir 构成的主动态复合时态，不能表达“被付工资”。"
+ },
+ {
+  "id": "passif-18",
+  "stem": "Elle ___ opérer du genou le mois dernier.",
+  "options": [
+   "s’est fait",
+   "s’est faite",
+   "a été"
+  ],
+  "answer": 0,
+  "why": "se faire + 不定式：过去分词 fait 后接不定式时永远不配合，所以写 elle s’est fait opérer。s’est faite 配合是错误的；a été 后不能接不定式。"
+ },
+ {
+  "id": "passif-19",
+  "stem": "« Les inscriptions seront clôturées vendredi. » → À l’oral, on dirait : « ___ clôturera les inscriptions vendredi. »",
+  "options": [
+   "On",
+   "Il",
+   "Ça"
+  ],
+  "answer": 0,
+  "why": "口语中常用不定代词 on + 主动态代替被动态：On clôturera les inscriptions。il 会被理解为某个特定的“他”；ça 不能作这种施动主语。"
+ },
+ {
+  "id": "passif-20",
+  "stem": "Il est interdit ___ fumer dans les lieux publics fermés.",
+  "options": [
+   "à",
+   "de",
+   "pour"
+  ],
+  "answer": 1,
+  "why": "il est interdit de + 不定式（禁止做……）。à 和 pour 都不能用在这个无人称结构中。"
+ },
+ {
+  "id": "passif-21",
+  "stem": "Le projet est validé ; il ne reste plus qu’___ trouver un financement.",
+  "options": [
+   "de",
+   "pour",
+   "à"
+  ],
+  "answer": 2,
+  "why": "il reste à + 不定式表示“还剩下要做的事”，ne… plus que 表示“只剩……”：il ne reste plus qu’à trouver。不说 il reste de 或 il reste pour。"
+ },
+ {
+  "id": "passif-22",
+  "stem": "Ces tableaux ont été peints ___ Claude Monet à Giverny.",
+  "options": [
+   "de",
+   "à",
+   "par"
+  ],
+  "answer": 2,
+  "why": "具体动作（peindre）的施动者用 par：peints par Monet。de 用于状态或情感动词（connu de tous）；à 不能引出施动者。"
+ },
+ {
+  "id": "passif-23",
+  "stem": "Sans l’intervention des secours, plusieurs randonneurs ___ emportés par l’avalanche.",
+  "options": [
+   "seraient été",
+   "auraient été",
+   "auraient"
+  ],
+  "answer": 1,
+  "why": "与过去事实相反的假设，用被动态条件式过去时：auraient été + 分词。être 的复合时态用 avoir 作助动词，不能说 seraient été；auraient emportés 是主动态，且缺少 été。"
+ },
+ {
+  "id": "passif-24",
+  "stem": "Grâce à ses travaux, la jeune chercheuse ___ décerner un prix international.",
+  "options": [
+   "a été",
+   "s’est faite",
+   "s’est vu"
+  ],
+  "answer": 2,
+  "why": "se voir + 不定式表示主语获得某物：elle s’est vu décerner un prix。vu 后面的不定式（décerner）的动作不是由主语完成的，所以 vu 不配合。a été 后不能接不定式；s’est faite décerner 用错了动词且错误配合。"
+ },
+ {
+  "id": "passif-25",
+  "stem": "Mme Diallo et M. Martin ont été ___ à l’Élysée ce matin.",
+  "options": [
+   "reçus",
+   "reçues",
+   "reçu"
+  ],
+  "answer": 0,
+  "why": "被动态分词与主语配合；主语是一男一女，按规则用阳性复数：reçus。reçues 是阴性复数；reçu 是单数，没有配合。"
+ },
+ {
+  "id": "passif-26",
+  "stem": "Il nous ___ deux joueurs pour former une équipe complète.",
+  "options": [
+   "manquent",
+   "manque",
+   "manquons"
+  ],
+  "answer": 1,
+  "why": "无人称结构 il (nous) manque + 名词：动词与 il 一致，用单数 manque。manquent 错把动词与 joueurs 配合；manquons 错把动词与 nous 配合。"
+ },
+ {
+  "id": "passif-27",
+  "stem": "Pour réussir cette transition énergétique, ___ convaincre les habitants.",
+  "options": [
+   "il s’agit de",
+   "il s’agit",
+   "on s’agit de"
+  ],
+  "answer": 0,
+  "why": "il s’agit de + 不定式表示“关键是要……”，必须有介词 de，主语只能是 il。il s’agit 后缺少 de；on s’agit de 主语错误。"
+ },
+ {
+  "id": "passif-28",
+  "stem": "« On a demandé aux candidats de patienter. » → Les candidats ___ de patienter.",
+  "options": [
+   "ont été demandés",
+   "se sont demandés",
+   "ont été priés"
+  ],
+  "answer": 2,
+  "why": "demander à qqn de… 中的 candidats 是间接宾语，不能变成被动态主语；要换用及物动词 prier qqn de：ils ont été priés de patienter。ont été demandés 是典型错误；se sont demandés 意为“自问”，意思完全不同。"
+ },
+ {
+  "id": "passif-29",
+  "stem": "Hier soir, il ___ arrivé un grave accident sur l’autoroute A7.",
+  "options": [
+   "a",
+   "est",
+   "sont"
+  ],
+  "answer": 1,
+  "why": "无人称结构 il est arrivé + 名词（发生了……）：arriver 用 être 作助动词，动词与形式主语 il 一致，用单数 est。a arrivé 用错了助动词；sont 错把动词与名词配合。"
+ },
+ {
+  "id": "passif-30",
+  "stem": "Ces logements sociaux ___ dès l’année prochaine par la mairie.",
+  "options": [
+   "se rénoveront",
+   "rénoveront",
+   "seront rénovés"
+  ],
+  "answer": 2,
+  "why": "有 par la mairie 引出施动者，必须用 être + 分词的被动态：seront rénovés。代词式被动（se rénoveront）不能带 par 引出的施动者；rénoveront 是主动态，意思变成“住房会翻新……”。"
+ }
+]

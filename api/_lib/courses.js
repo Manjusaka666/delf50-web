@@ -11,8 +11,8 @@
 const { HttpError } = require('./http');
 
 const COURSES = {
-  'delf-b1': { level: 'B1', exam: 'DELF', days: 50, title: 'DELF B1 · 50 天冲刺' }
-  // 'delf-b2': { level: 'B2', exam: 'DELF', days: …, title: … },
+  'delf-b1': { level: 'B1', exam: 'DELF', days: 50, title: 'DELF B1 · 50 天冲刺' },
+  'delf-b2': { level: 'B2', exam: 'DELF', days: 50, title: 'DELF B2 · 50 天' }
   // 'dalf-c1': { level: 'C1', exam: 'DALF', days: …, title: … },
   // 'dalf-c2': { level: 'C2', exam: 'DALF', days: …, title: … },
 };

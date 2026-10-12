@@ -1,0 +1,736 @@
+{
+  "day": 7,
+  "phase": "结构升级与精确表达",
+  "title": "对立与让步",
+  "level": "B2-",
+  "grammarFocus": "Opposition et concession : bien que, même si, alors que, malgré",
+  "function": "nuancer et objecter",
+  "topic": "numérique",
+  "canDo": "能用 bien que + 虚拟式、même si + 直陈式、alors que、malgré / en dépit de、avoir beau、il n’empêche que 等结构，在讨论数字化话题时先承认对方观点再提出异议，表达有分寸的立场。",
+  "review": "复习第 2 天的虚拟式变位（bien que 后要用 soit、ait、puisse 等）和第 6 天的后果表达：先让步（certes…, mais…），再用 si bien que / d’où 推出后果，使论证更完整。",
+  "input": "读：关于行政手续数字化与“数字鸿沟”的分析文章、为屏幕“正名”的评论专栏、一则戒断社交网络一个月的论坛帖（把每个让步结构标出来，区分“承认的事实”与“作者真正的立场”）；听：关于“离线权”的电台访谈、现金支付是否会消失的专栏、关于社交网络的街头采访。",
+  "output": "写：以居民集体名义给市长写 180 词以上的正式信，反对取消市政接待窗口，同时承认线上服务的好处；说：3 分钟独白（是否应禁止 15 岁以下青少年使用社交网络）+ 关于用人工智能写作的辩论，每次回应考官时至少用一次“让步 + 反驳”。",
+  "checkpoint": "阅读与听力正确率 ≥ 80%；正式信中正确使用 bien que + 虚拟式、même si + 直陈式、malgré / en dépit de + 名词至少各一次；辩论中能对 4 个反驳逐一做出让步或反驳，不出现 bien que + 直陈式的错误。",
+  "challenge": "今日挑战：在 TV5MONDE 或 RFI《Journal en français facile》找一条关于社交网络、人工智能或网络安全的新闻，写 3 句话表达有分寸的观点：分别用 bien que、avoir beau 和 il n’empêche que；然后录 1 分钟语音，先承认这一技术的一个优点，再提出一个保留意见。",
+  "sources": [
+    "FEI-B2",
+    "FEI-B2-TRAIN",
+    "CEFR-CV",
+    "TV5-ALL"
+  ],
+  "focus": [
+    "concession"
+  ],
+  "items": {
+    "reading": [
+      {
+        "id": "R07-1",
+        "title": "Tout en ligne : quand la simplification exclut",
+        "meta": {
+          "genre": "Article de presse",
+          "domain": "Numérique et société",
+          "level": "B2"
+        },
+        "text": [
+          "En quelques années, la plupart des démarches administratives ont été dématérialisées : déclarer ses revenus, demander une aide au logement ou inscrire son enfant à la cantine se fait désormais sur Internet. Pour une majorité d’usagers, le progrès est réel : plus besoin de faire la queue à un guichet ni de respecter des horaires d’ouverture. <b>Pourtant</b>, cette transformation laisse une partie de la population au bord du chemin.",
+          "Selon une étude menée auprès de 3 000 adultes, près d’une personne sur six déclare ne pas réussir à effectuer seule une démarche en ligne. On pourrait croire que cette « fracture numérique » ne concerne que les personnes âgées. <b>Bien que</b> les plus de 70 ans <b>soient</b> effectivement les plus touchés, le phénomène est loin de s’y limiter : des jeunes adultes, <b>alors qu’</b>ils passent des heures sur leur téléphone, se retrouvent démunis face à un formulaire administratif, un mot de passe oublié ou une pièce justificative à numériser.",
+          "Car savoir utiliser les réseaux sociaux ne signifie pas maîtriser l’ensemble des outils numériques. « On <b>a beau</b> avoir un smartphone dans la poche, remplir un dossier de vingt pages sur un petit écran reste un parcours du combattant », observe Nadia Benali, médiatrice numérique dans une maison de services publics. Chaque semaine, elle accompagne des dizaines d’usagers : des retraités, mais aussi des travailleurs précaires, des personnes qui maîtrisent mal le français ou simplement des gens qui n’ont pas d’ordinateur chez eux.",
+          "Les conséquences peuvent être lourdes. <b>En dépit de</b> droits bien réels, certaines personnes renoncent à demander une aide parce que la démarche leur paraît trop compliquée. D’autres dépendent d’un proche, ce qui pose des questions de confidentialité : faut-il confier ses codes bancaires à son neveu pour obtenir un remboursement ?",
+          "Les pouvoirs publics ne restent pas inactifs. Des conseillers numériques ont été recrutés, des points d’accès gratuits ouverts dans les mairies et les bibliothèques. <b>Il n’empêche que</b> ces dispositifs restent insuffisants dans de nombreuses zones rurales, où la connexion elle-même est parfois instable. Pour les associations d’usagers, la solution ne consiste pas à revenir au tout-papier, mais à garantir le choix : <b>même si</b> le numérique devient la règle, chacun devrait pouvoir, s’il le souhaite, parler à une personne en chair et en os.",
+          "Simplifier, oui ; <b>toutefois</b>, une simplification qui exclut une partie des citoyens n’en est pas vraiment une."
+        ],
+        "questions": [
+          {
+            "stem": "Quel est le thème principal de cet article ?",
+            "options": [
+              "Les avantages des démarches en ligne pour les administrations.",
+              "Les difficultés d’une partie de la population face à la dématérialisation.",
+              "Le manque de formation des jeunes aux réseaux sociaux."
+            ],
+            "answer": 1,
+            "why": "文章开头承认进步，随即指出 « cette transformation laisse une partie de la population au bord du chemin »，全文围绕被排斥人群展开。A 只是开头的让步部分；C 与原文相反——年轻人会用社交网络，但不会办行政手续。"
+          },
+          {
+            "stem": "Que nous apprend le deuxième paragraphe sur la « fracture numérique » ?",
+            "options": [
+              "Elle concerne uniquement les personnes de plus de 70 ans.",
+              "Elle disparaîtra avec le renouvellement des générations.",
+              "Elle touche aussi des jeunes adultes pourtant très connectés."
+            ],
+            "answer": 2,
+            "why": "« le phénomène est loin de s’y limiter : des jeunes adultes, alors qu’ils passent des heures sur leur téléphone, se retrouvent démunis »。A 与 « loin de s’y limiter » 矛盾；B 文中没有这种预测。"
+          },
+          {
+            "stem": "Que veut dire Nadia Benali lorsqu’elle déclare : « On a beau avoir un smartphone dans la poche, remplir un dossier… reste un parcours du combattant » ?",
+            "options": [
+              "Posséder un smartphone ne suffit pas à rendre les démarches faciles.",
+              "Les smartphones ne permettent pas encore de remplir des dossiers.",
+              "Il faut absolument un ordinateur pour toute démarche administrative."
+            ],
+            "answer": 0,
+            "why": "avoir beau + 不定式 = “尽管……也没用”，parcours du combattant = “困难重重”。意思是即使有手机，办手续依然很难。B、C 都把“困难”曲解为“不可能”，过于绝对。"
+          },
+          {
+            "stem": "Selon l’article, pourquoi certaines personnes ne demandent-elles pas les aides auxquelles elles ont droit ?",
+            "options": [
+              "Parce qu’elles ignorent l’existence de ces aides.",
+              "Parce que la démarche leur semble trop compliquée.",
+              "Parce qu’elles refusent de confier leurs codes à un proche."
+            ],
+            "answer": 1,
+            "why": "« certaines personnes renoncent à demander une aide parce que la démarche leur paraît trop compliquée »。A 文中没有提到；C 中托付密码给亲属是另一类人遇到的隐私问题，而不是放弃申请的原因。"
+          },
+          {
+            "stem": "Quel est le rôle du cinquième paragraphe par rapport au quatrième ?",
+            "options": [
+              "Il présente les réponses des pouvoirs publics, tout en soulignant leurs limites.",
+              "Il contredit les conséquences décrites au paragraphe précédent.",
+              "Il donne de nouveaux exemples de personnes exclues."
+            ],
+            "answer": 0,
+            "why": "第四段讲后果，第五段讲公共部门的应对（« Des conseillers numériques ont été recrutés »），并用 « Il n’empêche que ces dispositifs restent insuffisants » 指出局限。B 并未否定后果；C 第五段没有新增被排斥人群的例子。"
+          },
+          {
+            "stem": "Que demandent les associations d’usagers ?",
+            "options": [
+              "Le retour à des démarches exclusivement sur papier.",
+              "La suppression des démarches en ligne dans les zones rurales.",
+              "La possibilité de choisir un contact humain plutôt que le numérique."
+            ],
+            "answer": 2,
+            "why": "« la solution ne consiste pas à revenir au tout-papier, mais à garantir le choix : … parler à une personne en chair et en os »。A 被原文明确否定；B 文中没有提出。"
+          }
+        ]
+      },
+      {
+        "id": "R07-2",
+        "title": "Arrêtons de diaboliser les écrans",
+        "meta": {
+          "genre": "Tribune",
+          "domain": "Numérique et société",
+          "level": "B2"
+        },
+        "text": [
+          "Il est devenu presque impossible d’ouvrir un magazine sans tomber sur un article alarmant consacré aux écrans : ils rendraient nos enfants distraits, nos adolescents anxieux et nos couples silencieux. <b>Certes</b>, ces inquiétudes ne sont pas sans fondement. <b>Mais</b> à force de diaboliser la technologie, on finit par oublier ce qu’elle nous apporte.",
+          "Prenons l’exemple de ma grand-mère. À 84 ans, elle vit seule, à quatre cents kilomètres de sa famille. <b>Bien qu’</b>elle <b>ait</b> longtemps refusé d’avoir une tablette, elle ne pourrait plus aujourd’hui s’en passer : chaque dimanche, elle voit grandir son arrière-petite-fille en vidéo. Pour elle, l’écran n’isole pas ; il relie.",
+          "On m’objectera que les adolescents, eux, en font un usage excessif. C’est parfois vrai. <b>Il n’empêche que</b> c’est aussi en ligne que beaucoup d’entre eux apprennent une langue, découvrent un instrument ou trouvent du soutien lorsqu’ils se sentent différents. Interdire, culpabiliser, confisquer : ces réponses ont l’avantage de la simplicité, mais elles n’apprennent rien à personne.",
+          "Le problème n’est donc pas l’écran en lui-même, mais l’usage qu’on en fait, ainsi que le modèle économique de certaines applications, conçues pour nous retenir le plus longtemps possible, <b>au détriment de</b> notre sommeil et de notre concentration. C’est là que doit porter l’effort : apprendre aux jeunes à repérer ces mécanismes, couper les notifications inutiles, instaurer des moments sans téléphone en famille.",
+          "<b>Malgré</b> leurs défauts, les outils numériques font désormais partie de nos vies. Plutôt que de céder à la panique, faisons preuve de bon sens : ni diabolisation, ni naïveté. Entre les deux, il existe une place pour un usage raisonné.",
+          "<i>Inès Garnier, professeure de lettres</i>"
+        ],
+        "questions": [
+          {
+            "stem": "Quelle est la thèse défendue par l’auteure ?",
+            "options": [
+              "Les écrans sont dangereux et devraient être interdits aux adolescents.",
+              "Il faut éviter à la fois la panique et la naïveté face aux écrans.",
+              "Les inquiétudes concernant les écrans sont totalement infondées."
+            ],
+            "answer": 1,
+            "why": "结论：« ni diabolisation, ni naïveté… il existe une place pour un usage raisonné »。A 与标题立场相反；C 与 « ces inquiétudes ne sont pas sans fondement »（这些担忧并非毫无根据）矛盾。"
+          },
+          {
+            "stem": "À quoi sert l’exemple de la grand-mère dans le deuxième paragraphe ?",
+            "options": [
+              "À montrer que les écrans peuvent créer du lien.",
+              "À prouver que les personnes âgées maîtrisent mal la technologie.",
+              "À critiquer les familles qui vivent loin de leurs aînés."
+            ],
+            "answer": 0,
+            "why": "« Pour elle, l’écran n’isole pas ; il relie »。B 与例子要说明的相反；C 作者并没有批评家庭。"
+          },
+          {
+            "stem": "Comment l’auteure répond-elle à l’objection sur l’usage excessif des adolescents ?",
+            "options": [
+              "Elle la rejette en affirmant que les adolescents ne passent pas trop de temps en ligne.",
+              "Elle propose de confisquer les téléphones pendant la semaine.",
+              "Elle la reconnaît en partie, puis rappelle les usages positifs d’Internet."
+            ],
+            "answer": 2,
+            "why": "« C’est parfois vrai. Il n’empêche que c’est aussi en ligne que beaucoup d’entre eux apprennent… »——先部分承认，再反驳。A 忽略了让步；B 她恰恰认为 « confisquer… n’apprennent rien à personne »。"
+          },
+          {
+            "stem": "Selon l’auteure, où se situe le véritable problème ?",
+            "options": [
+              "Dans le prix trop élevé des appareils numériques.",
+              "Dans l’usage qu’on fait des écrans et dans certaines applications conçues pour nous retenir.",
+              "Dans le manque de contrôle exercé par les écoles."
+            ],
+            "answer": 1,
+            "why": "« Le problème n’est donc pas l’écran en lui-même, mais l’usage qu’on en fait, ainsi que le modèle économique de certaines applications »。A、C 文中均未提及。"
+          },
+          {
+            "stem": "Dans le dernier paragraphe, que signifie l’expression « céder à la panique » ?",
+            "options": [
+              "Organiser une campagne d’information sur les dangers des écrans.",
+              "Se laisser dominer par une peur excessive.",
+              "Abandonner complètement l’usage des outils numériques."
+            ],
+            "answer": 1,
+            "why": "céder à = “屈服于、任由”，céder à la panique 即“被恐慌支配”。A、C 是可能的行为后果，不是该表达的含义。"
+          }
+        ]
+      },
+      {
+        "id": "R07-3",
+        "title": "Forum « Vie connectée » : un mois sans réseaux sociaux",
+        "meta": {
+          "genre": "Post de forum",
+          "domain": "Numérique et société",
+          "level": "B2"
+        },
+        "text": [
+          "Il y a un mois, j’ai supprimé toutes les applications de réseaux sociaux de mon téléphone. Je m’attendais à vivre une vraie libération… et j’ai été surpris.",
+          "Les premiers jours ont été plus difficiles que prévu. J’<b>avais beau</b> savoir que les applications n’étaient plus là, je prenais mon téléphone toutes les dix minutes, par pur réflexe. Puis, peu à peu, j’ai retrouvé du temps : j’ai terminé deux romans, <b>alors que</b> je n’arrivais plus à lire un chapitre entier depuis des mois.",
+          "Tout n’a pas été positif, <b>toutefois</b>. Mon club de foot organise tout sur un groupe en ligne, si bien que j’ai raté deux entraînements. Et <b>même si</b> mes vrais amis m’ont appelé, je me suis senti un peu à l’écart des conversations.",
+          "Alors, est-ce que je recommencerais ? Oui, mais autrement. Je ne crois plus à la déconnexion totale : <b>bien qu’</b>elle m’<b>ait</b> fait du bien, elle n’est pas tenable sur le long terme. Désormais, je garde une seule application, sans notifications, et je la consulte une fois par jour. Et vous, vous avez déjà tenté l’expérience ?",
+          "<i>Hugo_T, 27 ans</i>"
+        ],
+        "questions": [
+          {
+            "stem": "Quel est l’objectif de ce message ?",
+            "options": [
+              "Partager le bilan nuancé d’une expérience personnelle.",
+              "Convaincre les lecteurs de supprimer leurs réseaux sociaux.",
+              "Se plaindre de l’organisation de son club de football."
+            ],
+            "answer": 0,
+            "why": "作者讲述自己一个月不用社交网络的经历，有好处也有坏处，最后向读者提问，属于分享经验。B 他自己也不再相信 « la déconnexion totale »；C 足球俱乐部只是一个例子。"
+          },
+          {
+            "stem": "Que signifie « J’avais beau savoir que les applications n’étaient plus là » ?",
+            "options": [
+              "Il avait oublié qu’il avait supprimé les applications.",
+              "Il était content de savoir que les applications avaient disparu.",
+              "Même s’il le savait, il ne pouvait pas s’empêcher de prendre son téléphone."
+            ],
+            "answer": 2,
+            "why": "avoir beau + inf. 表示“尽管……也无济于事”：他明知应用已删，仍 « je prenais mon téléphone toutes les dix minutes, par pur réflexe »。A、B 都没有体现这种让步关系。"
+          },
+          {
+            "stem": "Quel inconvénient l’auteur a-t-il rencontré ?",
+            "options": [
+              "Il a perdu plusieurs de ses amis proches.",
+              "Il a manqué des informations pratiques diffusées en ligne.",
+              "Il a eu du mal à se concentrer sur ses lectures."
+            ],
+            "answer": 1,
+            "why": "« Mon club de foot organise tout sur un groupe en ligne, si bien que j’ai raté deux entraînements »。A 与 « mes vrais amis m’ont appelé » 矛盾；C 与 « j’ai terminé deux romans » 矛盾。"
+          },
+          {
+            "stem": "Quelle décision l’auteur a-t-il prise à la fin de son expérience ?",
+            "options": [
+              "Il a réinstallé toutes ses applications comme avant.",
+              "Il a choisi de rester totalement déconnecté.",
+              "Il a adopté un usage limité et contrôlé."
+            ],
+            "answer": 2,
+            "why": "« je garde une seule application, sans notifications, et je la consulte une fois par jour »。A 与“只保留一个”矛盾；B 他认为完全断网 « n’est pas tenable sur le long terme »。"
+          }
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "id": "L07-1",
+        "title": "Droit à la déconnexion : la loi ne suffit pas",
+        "meta": {
+          "genre": "Émission de radio · entretien",
+          "domain": "Travail et numérique",
+          "level": "B2",
+          "plays": 2
+        },
+        "script": [
+          "— Bonsoir et bienvenue dans « Le monde du travail ». Courriels le soir, messages le week-end, appels pendant les vacances : sommes-nous encore capables de décrocher ? Pour en parler, j’accueille Mathieu Roussel, avocat spécialisé en droit du travail. Bonsoir.\n— Bonsoir.",
+          "— Mathieu Roussel, on parle beaucoup du droit à la déconnexion. De quoi s’agit-il, concrètement ?\n— L’idée est simple : en dehors de ses horaires de travail, un salarié n’est pas obligé de lire ses messages professionnels ni d’y répondre. Bien que ce principe paraisse évident, il est très difficile à appliquer. Car le téléphone professionnel, on l’a dans la poche du matin au soir.",
+          "— Beaucoup d’entreprises ont pourtant signé des accords sur ce sujet. Ça ne fonctionne pas ?\n— Disons que ça fonctionne de manière inégale. Certaines entreprises ont pris des mesures fortes : la messagerie est coupée après vingt heures, par exemple. D’autres se limitent à une charte, c’est-à-dire à un texte de bonnes intentions. Et les salariés ont beau avoir le droit de ne pas répondre, s’ils voient que leur chef envoie des messages à vingt-trois heures, ils se sentent obligés de rester joignables.",
+          "— Donc le problème, c’est la culture de l’entreprise plus que la loi ?\n— En grande partie, oui. Alors que la règle protège tout le monde, c’est l’exemple donné par les managers qui change tout. Un responsable qui écrit le dimanche, même s’il précise « pas d’urgence », envoie un signal.",
+          "— Mais certains salariés disent qu’ils apprécient cette souplesse. Ils répondent le soir pour pouvoir partir plus tôt l’après-midi…\n— C’est vrai, et il ne s’agit pas d’interdire toute flexibilité. Certains parents, par exemple, aiment pouvoir terminer un dossier une fois les enfants couchés. Il n’empêche que cette liberté doit rester un choix, pas une obligation déguisée. Et il faut surveiller les effets sur la santé : malgré les apparences, la fatigue liée au fait d’être toujours disponible s’accumule.",
+          "— Quel conseil donneriez-vous à nos auditeurs ?\n— D’abord, connaître les règles de leur entreprise : il existe souvent un accord ou une charte, même si peu de salariés l’ont lu. Ensuite, aborder la question collectivement plutôt que seul face à son chef. Enfin, se fixer des limites personnelles : couper les notifications le soir, par exemple. Ce n’est pas un manque d’engagement, c’est une condition pour tenir sur la durée.\n— Merci, Mathieu Roussel."
+        ],
+        "questions": [
+          {
+            "stem": "Quel est le sujet principal de l’entretien ?",
+            "options": [
+              "La difficulté d’appliquer réellement le droit à la déconnexion.",
+              "Les nouvelles sanctions contre les entreprises qui ne respectent pas la loi.",
+              "Les avantages du télétravail pour les parents."
+            ],
+            "answer": 0,
+            "why": "嘉宾一开始就说 « Bien que ce principe paraisse évident, il est très difficile à appliquer »，全篇围绕执行难展开。B 没有提到处罚；C 父母只是灵活性的一个例子。"
+          },
+          {
+            "stem": "Comment l’avocat définit-il le droit à la déconnexion ?",
+            "options": [
+              "L’interdiction pour les entreprises d’envoyer des messages le soir.",
+              "La possibilité de ne pas lire ni répondre aux messages hors des horaires de travail.",
+              "L’obligation de couper son téléphone professionnel pendant les vacances."
+            ],
+            "answer": 1,
+            "why": "« en dehors de ses horaires de travail, un salarié n’est pas obligé de lire ses messages professionnels ni d’y répondre »。A、C 把“权利”说成了“禁令/义务”，与原文不符。"
+          },
+          {
+            "stem": "Selon lui, quelle différence existe-t-il entre les entreprises ?",
+            "options": [
+              "Les grandes entreprises respectent mieux la loi que les petites.",
+              "Certaines n’ont signé aucun accord sur le sujet.",
+              "Certaines prennent des mesures concrètes, d’autres se contentent de déclarations."
+            ],
+            "answer": 2,
+            "why": "« Certaines… la messagerie est coupée après vingt heures… D’autres se limitent à une charte, c’est-à-dire à un texte de bonnes intentions »。A 没有比较企业规模；B 不是他提到的差别。"
+          },
+          {
+            "stem": "D’après Mathieu Roussel, qu’est-ce qui « change tout » ?",
+            "options": [
+              "Le comportement des managers.",
+              "Le texte de la loi.",
+              "Le nombre de messages reçus."
+            ],
+            "answer": 0,
+            "why": "« Alors que la règle protège tout le monde, c’est l’exemple donné par les managers qui change tout »。B 正是被 alors que 对比、认为不够的部分；C 未提及。"
+          },
+          {
+            "stem": "Quelle est sa position sur la souplesse appréciée par certains salariés ?",
+            "options": [
+              "Il la juge dangereuse et souhaite l’interdire.",
+              "Il l’accepte, à condition qu’elle reste un véritable choix.",
+              "Il pense qu’elle devrait devenir obligatoire."
+            ],
+            "answer": 1,
+            "why": "« il ne s’agit pas d’interdire toute flexibilité… Il n’empêche que cette liberté doit rester un choix, pas une obligation déguisée »。A 与“不禁止”矛盾；C 与“应是选择”矛盾。"
+          },
+          {
+            "stem": "Parmi ses conseils, l’avocat recommande de…",
+            "options": [
+              "changer d’emploi si le chef écrit le soir.",
+              "répondre rapidement pour montrer son engagement.",
+              "traiter la question avec ses collègues plutôt que seul."
+            ],
+            "answer": 2,
+            "why": "« aborder la question collectivement plutôt que seul face à son chef »。A 没有提到；B 与 « Ce n’est pas un manque d’engagement » 的逻辑相反。"
+          }
+        ]
+      },
+      {
+        "id": "L07-2",
+        "title": "La chronique conso : l’argent liquide va-t-il disparaître ?",
+        "meta": {
+          "genre": "Chronique radio",
+          "domain": "Numérique et société",
+          "level": "B2",
+          "plays": 2
+        },
+        "script": [
+          "— Clara Mendès, vous nous parlez aujourd’hui d’un objet qui se fait rare dans nos portefeuilles…\n— Oui, les pièces et les billets ! On paie aujourd’hui presque tout par carte ou avec son téléphone, même une baguette. Dans certaines boutiques, on voit même des panneaux « Paiement par carte uniquement ».",
+          "— C’est plus pratique, non ?\n— Pour beaucoup de gens, sans aucun doute. C’est rapide, on n’a plus besoin de chercher de la monnaie, et pour les commerçants, il y a moins de risques de vol. Mais bien que le paiement électronique progresse partout, l’argent liquide reste indispensable pour une partie de la population.",
+          "— Pour qui, par exemple ?\n— Pour les personnes qui n’ont pas de compte bancaire, ou qui sont mal à l’aise avec les outils numériques. Mais aussi pour ceux qui veulent garder le contrôle de leur budget : quand on paie en billets, on voit l’argent partir. Avec la carte, on a tendance à dépenser davantage. Et puis il y a la question de la vie privée : chaque paiement électronique laisse une trace.",
+          "— Et en cas de panne ?\n— C’est l’autre argument. Le mois dernier, une panne informatique a bloqué pendant plusieurs heures les terminaux de paiement d’une chaîne de supermarchés. Les clients qui avaient des billets ont pu faire leurs courses ; les autres sont repartis les mains vides.",
+          "— Alors, faut-il protéger l’argent liquide ?\n— Je le crois. Même si le numérique est l’avenir, garder la possibilité de payer en billets, c’est garder une liberté de choix."
+        ],
+        "questions": [
+          {
+            "stem": "Quelle est la position générale de la chroniqueuse ?",
+            "options": [
+              "Le paiement électronique devrait être rendu obligatoire.",
+              "L’argent liquide doit rester possible, même si le numérique progresse.",
+              "Les commerçants ont raison de refuser les billets."
+            ],
+            "answer": 1,
+            "why": "结尾：« Même si le numérique est l’avenir, garder la possibilité de payer en billets, c’est garder une liberté de choix »。A、C 都与她的立场相反。"
+          },
+          {
+            "stem": "Quel avantage du paiement électronique reconnaît-elle ?",
+            "options": [
+              "Il réduit les risques de vol pour les commerçants.",
+              "Il aide les clients à mieux contrôler leurs dépenses.",
+              "Il protège mieux la vie privée."
+            ],
+            "answer": 0,
+            "why": "« pour les commerçants, il y a moins de risques de vol »。B、C 恰恰是她用来支持现金的理由：刷卡 « on a tendance à dépenser davantage »，电子支付 « laisse une trace »。"
+          },
+          {
+            "stem": "Selon elle, pourquoi payer en billets aide-t-il à gérer son budget ?",
+            "options": [
+              "Parce que les billets limitent le montant des achats.",
+              "Parce que les commerçants accordent des réductions en liquide.",
+              "Parce qu’on voit concrètement l’argent qu’on dépense."
+            ],
+            "answer": 2,
+            "why": "« quand on paie en billets, on voit l’argent partir »。A、B 均为文中没有的信息。"
+          },
+          {
+            "stem": "Que s’est-il passé lors de la panne évoquée ?",
+            "options": [
+              "Les supermarchés ont dû fermer toute la journée.",
+              "Seuls les clients munis de billets ont pu payer leurs achats.",
+              "Les terminaux ont accepté uniquement les paiements par téléphone."
+            ],
+            "answer": 1,
+            "why": "« Les clients qui avaient des billets ont pu faire leurs courses ; les autres sont repartis les mains vides »。A 原文是 « pendant plusieurs heures »，不是全天关门；C 与“终端被阻断”矛盾。"
+          }
+        ]
+      },
+      {
+        "id": "L07-3",
+        "title": "Micro-trottoir : pourriez-vous vous passer des réseaux sociaux ?",
+        "meta": {
+          "genre": "Micro-trottoir",
+          "domain": "Numérique et société",
+          "level": "B2",
+          "plays": 1
+        },
+        "script": [
+          "— Nous avons demandé aux passants s’ils pourraient se passer des réseaux sociaux. Madame, d’abord ?\n— Moi, sans hésiter. Je les utilise, bien sûr, mais je pourrais tout arrêter demain. Ce qui me manquerait, ce sont les photos de mes petits-enfants, c’est tout.",
+          "— Et vous, monsieur ?\n— Franchement, non. Je suis graphiste indépendant, et c’est grâce aux réseaux que je trouve la moitié de mes clients. Même si ça me prend énormément de temps, je ne peux pas m’en passer.",
+          "— Et toi, tu as quel âge ?\n— Seize ans. Ben… j’aimerais bien dire oui, mais tous mes amis communiquent comme ça. J’ai essayé une semaine, et j’avais l’impression de vivre sur une autre planète. Pourtant, je sais très bien que je passe trop de temps dessus."
+        ],
+        "questions": [
+          {
+            "stem": "Que répond la première personne interrogée ?",
+            "options": [
+              "Elle n’utilise jamais les réseaux sociaux.",
+              "Elle pourrait arrêter facilement, même si certaines photos lui manqueraient.",
+              "Elle a déjà arrêté pour se consacrer à ses petits-enfants."
+            ],
+            "answer": 1,
+            "why": "« je pourrais tout arrêter demain. Ce qui me manquerait, ce sont les photos de mes petits-enfants »。A 与 « Je les utilise, bien sûr » 矛盾；C 她并未停止使用。"
+          },
+          {
+            "stem": "Pourquoi le graphiste ne peut-il pas se passer des réseaux sociaux ?",
+            "options": [
+              "Parce qu’ils sont essentiels pour trouver des clients.",
+              "Parce qu’il y passe tout son temps libre.",
+              "Parce que ses amis ne communiquent que par ce moyen."
+            ],
+            "answer": 0,
+            "why": "« c’est grâce aux réseaux que je trouve la moitié de mes clients »。B 他只说花很多时间，不是原因；C 是第三位受访者的理由。"
+          },
+          {
+            "stem": "Quelle est l’attitude de l’adolescent ?",
+            "options": [
+              "Il estime ne pas passer assez de temps en ligne.",
+              "Il ne voit aucun problème dans son usage des réseaux.",
+              "Il reconnaît un usage excessif mais se sent incapable d’arrêter."
+            ],
+            "answer": 2,
+            "why": "« j’avais l’impression de vivre sur une autre planète. Pourtant, je sais très bien que je passe trop de temps dessus »。A、B 都与 « trop de temps » 矛盾。"
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "id": "W07-1",
+        "title": "Fermeture du guichet de la mairie",
+        "genre": "Lettre formelle",
+        "prompt": "La mairie de Valmont, votre commune, annonce la fermeture de son guichet d’accueil : toutes les démarches devront désormais se faire en ligne. Au nom d’un collectif d’habitants, vous écrivez au maire. Vous reconnaissez les avantages des services en ligne, mais vous exposez les difficultés que cette décision posera à certains habitants et vous proposez des solutions concrètes. (180 mots minimum)",
+        "trigger": {
+          "title": "Valmont passe au 100 % numérique",
+          "text": [
+            "À compter du 1er mars, le guichet d’accueil de la mairie fermera définitivement ses portes. Toutes les démarches (état civil, inscriptions scolaires, demandes de logement) seront accessibles sur le portail en ligne de la commune, 24 heures sur 24. Cette modernisation permettra de réduire les délais de traitement et de réaliser des économies de fonctionnement. — Extrait du bulletin municipal"
+          ]
+        },
+        "minWords": 180,
+        "checklist": [
+          "Réalisation de la tâche : je présente le collectif, je reconnais les avantages du numérique, j’expose les difficultés et je propose au moins deux solutions.",
+          "Cohérence et cohésion : la lettre suit un plan clair (objet, concession, objections, propositions, formule finale).",
+          "Adéquation sociolinguistique : formules de la lettre formelle (Monsieur le Maire, Nous vous prions d’agréer…), vouvoiement, ton respectueux mais ferme.",
+          "Lexique : vocabulaire précis du numérique et de l’administration (démarche en ligne, fracture numérique, guichet, usager…).",
+          "Morphosyntaxe : bien que + subjonctif, même si + indicatif, malgré / en dépit de + nom, avoir beau + infinitif sont employés correctement.",
+          "Je nuance ma position au lieu de rejeter entièrement la décision."
+        ],
+        "model": [
+          "Monsieur le Maire,",
+          "Au nom du collectif « Valmont pour tous », qui réunit une soixantaine d’habitants, nous souhaitons réagir à l’annonce de la fermeture du guichet d’accueil de la mairie.",
+          "Nous ne contestons pas l’intérêt des démarches en ligne. Bien qu’elles soient parfois complexes, elles permettent à beaucoup d’entre nous de gagner du temps, et nous comprenons que la commune cherche à réduire ses dépenses.",
+          "Cependant, malgré ces avantages, la fermeture complète du guichet pénaliserait une partie importante de la population. Plusieurs de nos membres âgés n’ont pas d’ordinateur ; d’autres ont beau posséder un smartphone, ils ne parviennent pas à télécharger un justificatif ou à créer un compte. Par ailleurs, dans certains hameaux, la connexion reste très instable. Même si des proches peuvent les aider, ces personnes perdraient leur autonomie et devraient parfois confier des informations confidentielles.",
+          "Nous vous proposons donc de maintenir un accueil physique deux demi-journées par semaine et d’organiser, en lien avec la médiathèque, des ateliers d’accompagnement aux démarches en ligne.",
+          "Nous restons à votre disposition pour en discuter et vous prions d’agréer, Monsieur le Maire, l’expression de nos salutations respectueuses.",
+          "Pour le collectif, Anne Duval"
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "id": "S07-1",
+        "title": "Réseaux sociaux : faut-il attendre 15 ans ?",
+        "part": "Monologue suivi",
+        "trigger": {
+          "title": "Une « majorité numérique » pour protéger les plus jeunes ?",
+          "text": [
+            "Bien que la plupart des réseaux sociaux soient officiellement interdits aux moins de 13 ans, de nombreux enfants s’y inscrivent dès 10 ou 11 ans, souvent en mentant sur leur âge. Face aux risques de harcèlement, d’exposition à des contenus violents ou de dépendance, plusieurs pays ont adopté ou envisagent des règles plus strictes : une « majorité numérique » fixée à 15 ans, avec une vérification de l’âge obligatoire.",
+            "Les défenseurs de cette mesure estiment qu’elle protégerait les enfants à un âge où ils sont particulièrement vulnérables. Ses détracteurs rappellent que la vérification de l’âge pose des problèmes de protection des données et que les adolescents trouveront toujours un moyen de contourner l’interdiction. Selon eux, mieux vaudrait éduquer les jeunes plutôt que leur interdire l’accès."
+          ]
+        },
+        "prompt": "Dégagez le thème du document, formulez une problématique, annoncez votre plan, puis défendez votre point de vue avec des exemples précis (environ 3 minutes).",
+        "targetSeconds": 180,
+        "checklist": [
+          "J’ai présenté le thème du document (l’âge minimum pour accéder aux réseaux sociaux).",
+          "J’ai formulé une problématique (ex. : Faut-il interdire ou plutôt éduquer ?).",
+          "J’ai annoncé un plan clair, par exemple : avantages de la mesure / limites / ma position.",
+          "J’ai nuancé mon point de vue avec au moins trois structures de concession (bien que, même si, certes… mais, malgré…).",
+          "J’ai donné au moins deux exemples précis (situation dans mon pays, expérience d’un proche…).",
+          "J’ai conclu en rappelant ma position et en proposant une piste concrète."
+        ]
+      },
+      {
+        "id": "S07-2",
+        "title": "Rédiger avec l’intelligence artificielle : progrès ou danger ?",
+        "part": "Exercice en interaction (débat)",
+        "prompt": "De plus en plus de personnes utilisent des outils d’intelligence artificielle pour rédiger leurs courriels, leurs lettres de motivation ou leurs devoirs. Vous pensez que ces outils représentent un progrès, à condition d’être utilisés de manière réfléchie. L’examinateur conteste votre position. Répondez à chaque objection : confirmez, nuancez, concédez, réfutez.",
+        "followUps": [
+          "Si tout le monde fait écrire ses textes par une machine, plus personne ne saura écrire, non ?",
+          "Une lettre de motivation rédigée par une IA, c’est une forme de mensonge envers l’employeur. Vous ne trouvez pas ?",
+          "Les élèves qui utilisent ces outils pour leurs devoirs n’apprennent plus rien. Comment pouvez-vous défendre ça ?",
+          "Admettons que ce soit un progrès : qui va contrôler les erreurs et les informations fausses que ces outils produisent ?"
+        ],
+        "targetSeconds": 240,
+        "checklist": [
+          "J’ai exposé clairement ma position au début de l’échange.",
+          "J’ai commencé certaines réponses par une concession (Je vous accorde que…, Certes…, Même si…) avant d’objecter.",
+          "J’ai employé bien que + subjonctif et même si + indicatif sans erreur de mode.",
+          "J’ai illustré mes réponses par des exemples concrets (études, travail, vie quotidienne).",
+          "Je suis resté(e) poli(e) et j’ai relancé l’échange avec une question à l’examinateur."
+        ]
+      }
+    ],
+    "application": [
+      {
+        "id": "A07-1",
+        "title": "Du message familier au courriel formel",
+        "topic": "numérique",
+        "task": "Un collègue vous envoie ce message : « Franchement, la nouvelle plateforme pour les notes de frais, c’est n’importe quoi. Ça bugue tout le temps, personne sait s’en servir, on perd un temps fou. Faut qu’ils la virent ! » Reformulez ce message en un courriel formel de 60 à 80 mots adressé à la direction : restez poli(e), reconnaissez un avantage de l’outil (concession), puis présentez les difficultés et une demande précise.",
+        "chunks": [
+          "Bien que cette plateforme soit…",
+          "Toutefois, plusieurs collègues rencontrent…",
+          "Nous souhaiterions donc…",
+          "Je vous remercie par avance de votre attention."
+        ],
+        "keys": [
+          "plateforme",
+          "bien que",
+          "toutefois"
+        ]
+      },
+      {
+        "id": "A07-2",
+        "title": "Restituer un entretien radio",
+        "topic": "numérique",
+        "task": "Une collègue, déléguée du personnel, n’a pas pu écouter l’entretien L07-1 avec Mathieu Roussel. À partir de vos notes, écrivez-lui un message de 60 à 80 mots : définissez le droit à la déconnexion, expliquez pourquoi il est difficile à appliquer et rapportez deux conseils de l’avocat.",
+        "chunks": [
+          "Selon l’avocat, …",
+          "Bien que la loi…",
+          "c’est surtout l’exemple des managers qui…",
+          "Il conseille notamment de…"
+        ],
+        "keys": [
+          "déconnexion",
+          "managers",
+          "notifications"
+        ]
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "id": "V07-01",
+      "fr": "la fracture numérique",
+      "zh": "数字鸿沟",
+      "ex": "Les ateliers de la médiathèque visent à réduire [[la fracture numérique]].",
+      "exZh": "媒体图书馆的工作坊旨在缩小数字鸿沟。",
+      "src": "R07-1"
+    },
+    {
+      "id": "V07-02",
+      "fr": "effectuer une démarche en ligne",
+      "zh": "在网上办理手续",
+      "ex": "Une personne sur six ne parvient pas à [[effectuer une démarche en ligne]] sans aide.",
+      "exZh": "每六个人中就有一人无法在没有帮助的情况下在网上办理手续。",
+      "src": "R07-1"
+    },
+    {
+      "id": "V07-03",
+      "fr": "laisser qqn au bord du chemin",
+      "zh": "把某人抛在一边，使掉队",
+      "ex": "Cette réforme risque de [[laisser au bord du chemin]] les personnes les plus fragiles.",
+      "exZh": "这项改革可能会让最弱势的人群掉队。",
+      "src": "R07-1"
+    },
+    {
+      "id": "V07-04",
+      "fr": "un parcours du combattant",
+      "zh": "困难重重的过程，“闯关”",
+      "ex": "Obtenir un rendez-vous à la préfecture est devenu [[un parcours du combattant]].",
+      "exZh": "在省政府拿到一个预约已经变得困难重重。",
+      "src": "R07-1"
+    },
+    {
+      "id": "V07-05",
+      "fr": "se retrouver démuni face à qqch",
+      "zh": "面对……束手无策",
+      "ex": "Beaucoup de jeunes [[se retrouvent démunis face à]] un formulaire administratif.",
+      "exZh": "许多年轻人面对行政表格时束手无策。",
+      "src": "R07-1"
+    },
+    {
+      "id": "V07-06",
+      "fr": "en chair et en os",
+      "zh": "活生生的，真人",
+      "ex": "Les usagers veulent parler à un conseiller [[en chair et en os]].",
+      "exZh": "用户希望和一位真人顾问交谈。",
+      "src": "R07-1"
+    },
+    {
+      "id": "V07-07",
+      "fr": "être loin de + inf.",
+      "zh": "远没有……，根本不……",
+      "ex": "Le problème [[est loin de]] concerner uniquement les personnes âgées.",
+      "exZh": "这个问题远不只涉及老年人。",
+      "src": "R07-1"
+    },
+    {
+      "id": "V07-08",
+      "fr": "avoir beau + inf.",
+      "zh": "尽管……也没用，再怎么……也",
+      "ex": "J’[[avais beau]] couper mon téléphone, je pensais sans cesse à mes messages.",
+      "exZh": "我尽管关了手机，却还是不停地想着我的消息。",
+      "src": "R07-3"
+    },
+    {
+      "id": "V07-09",
+      "fr": "en dépit de qqch",
+      "zh": "尽管有……（书面，比 malgré 更正式）",
+      "ex": "[[En dépit des]] efforts de la mairie, la connexion reste instable dans les villages.",
+      "exZh": "尽管市政府做出了努力，村子里的网络连接仍然不稳定。",
+      "src": "R07-1"
+    },
+    {
+      "id": "V07-10",
+      "fr": "il n’empêche que",
+      "zh": "尽管如此，……仍然是事实",
+      "ex": "L’outil est pratique ; [[il n’empêche que]] beaucoup d’usagers s’y perdent.",
+      "exZh": "这个工具很方便；尽管如此，许多用户还是会在里面迷失方向。",
+      "src": "R07-2"
+    },
+    {
+      "id": "V07-11",
+      "fr": "ne pas être sans fondement",
+      "zh": "并非毫无根据",
+      "ex": "Les craintes des parents [[ne sont pas sans fondement]].",
+      "exZh": "父母们的担忧并非毫无根据。",
+      "src": "R07-2"
+    },
+    {
+      "id": "V07-12",
+      "fr": "à force de + inf.",
+      "zh": "由于不断地……，……多了就",
+      "ex": "[[À force de]] critiquer la technologie, on oublie ce qu’elle nous apporte.",
+      "exZh": "一味批评技术，人们就忘了它给我们带来的好处。",
+      "src": "R07-2"
+    },
+    {
+      "id": "V07-13",
+      "fr": "diaboliser qqch",
+      "zh": "把……妖魔化",
+      "ex": "Il ne sert à rien de [[diaboliser]] les jeux vidéo.",
+      "exZh": "把电子游戏妖魔化毫无用处。",
+      "src": "R07-2"
+    },
+    {
+      "id": "V07-14",
+      "fr": "se passer de qqch",
+      "zh": "离开……也行，不用……",
+      "ex": "Ma grand-mère ne pourrait plus [[se passer de]] sa tablette.",
+      "exZh": "我奶奶现在已经离不开她的平板电脑了。",
+      "src": "R07-2"
+    },
+    {
+      "id": "V07-15",
+      "fr": "au détriment de qqch",
+      "zh": "以损害……为代价",
+      "ex": "Ces applications nous retiennent [[au détriment de]] notre sommeil.",
+      "exZh": "这些应用以牺牲我们的睡眠为代价把我们留住。",
+      "src": "R07-2"
+    },
+    {
+      "id": "V07-16",
+      "fr": "céder à la panique",
+      "zh": "陷入恐慌",
+      "ex": "Face aux nouvelles technologies, il ne faut pas [[céder à la panique]].",
+      "exZh": "面对新技术，不应陷入恐慌。",
+      "src": "R07-2"
+    },
+    {
+      "id": "V07-17",
+      "fr": "faire preuve de bon sens",
+      "zh": "表现出常识/理智",
+      "ex": "Pour encadrer le temps d’écran, il suffit souvent de [[faire preuve de bon sens]].",
+      "exZh": "要管理屏幕时间，往往只需要理智行事。",
+      "src": "R07-2"
+    },
+    {
+      "id": "V07-18",
+      "fr": "un usage raisonné",
+      "zh": "理性、有节制的使用",
+      "ex": "L’école encourage [[un usage raisonné]] des outils numériques.",
+      "exZh": "学校鼓励理性地使用数字工具。",
+      "src": "R07-2"
+    },
+    {
+      "id": "V07-19",
+      "fr": "se sentir à l’écart",
+      "zh": "感到被冷落、被排斥在外",
+      "ex": "Sans téléphone, il [[se sentait à l’écart]] des conversations du groupe.",
+      "exZh": "没有手机，他觉得自己被排除在群里的聊天之外。",
+      "src": "R07-3"
+    },
+    {
+      "id": "V07-20",
+      "fr": "ne pas être tenable",
+      "zh": "难以持续，站不住脚",
+      "ex": "Une déconnexion totale [[n’est pas tenable]] sur le long terme.",
+      "exZh": "完全断网从长远来看是难以坚持的。",
+      "src": "R07-3"
+    },
+    {
+      "id": "V07-21",
+      "fr": "décrocher",
+      "zh": "（从工作中）抽身，断开联系",
+      "ex": "Avec les messages du soir, beaucoup de salariés n’arrivent plus à [[décrocher]].",
+      "exZh": "因为晚上的工作消息，很多员工再也无法真正从工作中抽身。",
+      "src": "L07-1"
+    },
+    {
+      "id": "V07-22",
+      "fr": "rester joignable",
+      "zh": "保持可联系状态",
+      "ex": "Son chef exige qu’elle [[reste joignable]] même le week-end.",
+      "exZh": "她的上司要求她连周末都要保持可联系。",
+      "src": "L07-1"
+    },
+    {
+      "id": "V07-23",
+      "fr": "une obligation déguisée",
+      "zh": "变相的义务",
+      "ex": "Répondre le soir ne doit pas devenir [[une obligation déguisée]].",
+      "exZh": "晚上回复消息不应变成一种变相的义务。",
+      "src": "L07-1"
+    },
+    {
+      "id": "V07-24",
+      "fr": "laisser une trace",
+      "zh": "留下痕迹/记录",
+      "ex": "Chaque paiement électronique [[laisse une trace]].",
+      "exZh": "每一笔电子支付都会留下记录。",
+      "src": "L07-2"
+    },
+    {
+      "id": "V07-25",
+      "fr": "repartir les mains vides",
+      "zh": "空手而归",
+      "ex": "Pendant la panne, les clients sans espèces sont [[repartis les mains vides]].",
+      "exZh": "停机期间，没带现金的顾客只能空手而归。",
+      "src": "L07-2"
+    }
+  ]
+}

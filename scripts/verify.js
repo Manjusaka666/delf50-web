@@ -22,33 +22,44 @@ const readJson = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 
 async function main() {
   out.push('Course data');
-  const cc = spawnSync(process.execPath, [path.join(__dirname, 'check-course.js')], { encoding: 'utf8' });
-  check(cc.status === 0, (cc.stdout || '').trim() || 'check-course', cc.stderr || cc.stdout);
+  const ROOTS = { 'delf-b1': 'course', 'delf-b2': 'course/b2' };
+  for (const dir of Object.values(ROOTS)) {
+    const cc = spawnSync(process.execPath, [path.join(__dirname, 'check-course.js'), dir], { encoding: 'utf8' });
+    check(cc.status === 0, (cc.stdout || '').trim() || `check-course ${dir}`, cc.stderr || cc.stdout);
+  }
 
   // The app's modules, loaded as the browser loads them (fetch serves course/ from disk).
   globalThis.fetch = async (url) => ({ ok: true, status: 200, json: async () => readJson(String(url).replace(/^\//, '')) });
   const imp = (p) => import(path.join(ROOT, 'app', p));
   const [course, state, progress, ui] = await Promise.all([imp('course.js'), imp('state.js'), imp('progress.js'), imp('ui.js')]);
-  const C = await course.loadCourse();
 
-  out.push('\nPlans (50 days × 3 intensities)');
   const order = ['light', 'standard', 'high'];
-  const planErrors = [];
-  for (let d = 1; d <= C.days; d++) {
-    const day = await course.loadDay(d);
-    const plans = order.map((k) => course.plan(day, k, state.blank()));
-    order.forEach((k, i) => {
-      const q = C.quotas[k], p = plans[i];
-      for (const m of course.MODULES) if (p[m].length !== q[m]) planErrors.push(`${d} ${k} ${m}: ${p[m].length} ≠ ${q[m]}`);
-      const prompts = p.production.reduce((n, x) => n + x.prompts.length, 0);
-      if (prompts !== (day.remedial ? 3 : day.focus.length) * Math.ceil(q.production / 2)) planErrors.push(`${d} ${k} production prompts ${prompts}`);
-      if (p.vocab.length !== q.vocab) planErrors.push(`${d} ${k} vocab ${p.vocab.length}`);
-      if (p.production.some((x) => !x.node)) planErrors.push(`${d} ${k}: focus node missing`);
-      if (i) for (const m of course.MODULES) if (plans[i - 1][m].some((x, j) => x !== p[m][j])) planErrors.push(`${d} ${k} ${m}: not an extension of ${order[i - 1]}`);
-    });
-    if (C.map[d - 1].title !== day.title) planErrors.push(`${d}: map title differs`);
+  for (const id of Object.keys(ROOTS)) {
+    const K = await course.loadCourse(id);
+    out.push(`\nPlans · ${id} (${K.days} days × 3 intensities)`);
+    const planErrors = [];
+    for (let d = 1; d <= K.days; d++) {
+      const day = await course.loadDay(d);
+      const plans = order.map((k) => course.plan(day, k, state.blank()));
+      order.forEach((k, i) => {
+        const q = K.quotas[k], p = plans[i];
+        for (const m of course.MODULES) if (p[m].length !== q[m]) planErrors.push(`${d} ${k} ${m}: ${p[m].length} ≠ ${q[m]}`);
+        const prompts = p.production.reduce((n, x) => n + x.prompts.length, 0);
+        if (prompts !== (day.remedial ? 3 : day.focus.length) * Math.ceil(q.production / 2)) planErrors.push(`${d} ${k} production prompts ${prompts}`);
+        if (p.vocab.length !== q.vocab) planErrors.push(`${d} ${k} vocab ${p.vocab.length}`);
+        if (p.production.some((x) => !x.node)) planErrors.push(`${d} ${k}: focus node missing`);
+        if (i) for (const m of course.MODULES) if (plans[i - 1][m].some((x, j) => x !== p[m][j])) planErrors.push(`${d} ${k} ${m}: not an extension of ${order[i - 1]}`);
+      });
+      if (K.map[d - 1].title !== day.title) planErrors.push(`${d}: map title differs`);
+    }
+    check(!planErrors.length, 'every day has its full plan at every intensity; a higher intensity extends the lower one', planErrors.slice(0, 5));
+    const R = state.blank(), last = await course.loadDay(K.days);
+    state.setRemedial(R, K.days, course.weakestNodes(R));
+    const ids = course.grammarIds(last, R);
+    check(ids.length === K.quotas.high.grammar && (await course.loadQuestions(ids)).size === ids.length, `Day ${K.days}: remediation questions exist in the banks`, ids);
   }
-  check(!planErrors.length, 'every day has its full plan at every intensity; a higher intensity extends the lower one', planErrors.slice(0, 5));
+  check(course.LEVELS.every((l) => (l.root ? ROOTS[l.id] === l.root.slice(1) : !ROOTS[l.id])), 'every open level of the switcher is a checked course root');
+  const C = await course.loadCourse('delf-b1');
 
   out.push('\nState and progress');
   const S = state.blank();
@@ -128,6 +139,11 @@ async function main() {
   check(N.day === 1 && N.intensity === 'standard' && N.startedAt === null && N.onboarded === false && !('junk' in N)
     && Array.isArray(N.writing) && !Array.isArray(N.reading) && N.drafts.writing.a === 'b' && typeof N.drafts.application === 'object', 'a stored state is reduced to the known shape', N);
   check(state.countWords('Aujourd’hui, l’air est-il pollué ? 85 % oui.') === 6, 'words are counted like DELF counts them');
+  const sp = [['remet  en Cause', 'remet en cause', true], ['remetencause', 'remet en cause', true], ['Je regrette mais', 'Je regrette, mais', true],
+    ["s'il vous plaît", 's’il vous plaît', true], ['coeur', 'cœur', true], ["s'il vous plait", 's’il vous plaît', false],
+    ['peut être', 'peut-être', false], ['remettre en cause', 'remet en cause', false], ['  ', '', false]];
+  const spBad = sp.filter(([a, b, ok]) => state.spelledRight(a, b) !== ok);
+  check(!spBad.length, 'a typed chunk must be spelled exactly (accents, apostrophes, hyphens); spaces, case and punctuation do not count', spBad);
 
   out.push('\nFrench typography');
   const NN = ' ';

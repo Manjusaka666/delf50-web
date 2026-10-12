@@ -1,0 +1,748 @@
+{
+  "day": 37,
+  "phase": "DELF B2 专项",
+  "title": "口语 II：辩论",
+  "level": "B2",
+  "grammarFocus": "Production orale : débat, défendre, nuancer, concéder",
+  "function": "débattre avec l’examinateur",
+  "topic": "environnement",
+  "canDo": "能在 4–5 分钟的辩论中面对考官的连续反驳守住立场：先让步再反驳，用假设句推演后果，并能在必要时有分寸地调整观点。",
+  "review": "复习第 7 天的对立与让步（bien que, même si, avoir beau, certes… mais, il n’empêche que）和第 9 天的假设与条件（si + 未完成过去时/条件式，à condition que, à moins que… ne, au cas où），衔接第 36 天独白的提纲结构。",
+  "input": "读：一篇关于“乘飞机的两难”的分析文章、一篇主张“少旅行、好好旅行”的专栏和一封来自留尼汪读者的来信——标出每一处让步结构及其后的真正论点；听：一场关于机票税的电台辩论（两遍）、一位山区镇长的访谈和布鲁塞尔街头采访——记录每位发言者的让步与反驳。",
+  "output": "写：以用户协会名义致大区议会主席的正式信函，请求恢复夜间火车（≥250 词），须预判并回应反对意见；说：基于“个人航班配额”材料做 6 分钟独白，再与考官就“禁止低价机票广告”辩论 4–5 分钟。",
+  "checkpoint": "阅读+听力正确率≥80%；辩论中对 4 个反驳各至少使用一种不同策略（让步、细化、反驳、确认），至少 3 次使用让步结构、2 次使用 si 假设句，且不重复开场立场原话。",
+  "challenge": "今日挑战：在 TV5MONDE 或 RFI《Journal en français facile》上找一条关于交通与气候（火车、飞机、机票税等）的新闻，录一段 90 秒的回应：先用 « Certes… mais… » 承认一个对立观点，再用 « Si l’on… , on… » 推演一个后果。",
+  "sources": [
+    "FEI-B2",
+    "FEI-B2-SAMPLES",
+    "FEI-B2-TRAIN",
+    "CEFR-CV",
+    "TV5-ALL"
+  ],
+  "focus": [
+    "concession",
+    "hypothese"
+  ],
+  "items": {
+    "reading": [
+      {
+        "id": "R37-1",
+        "title": "Prendre l’avion : le nouveau dilemme des vacanciers",
+        "meta": {
+          "genre": "Article de presse",
+          "domain": "Environnement",
+          "level": "B2"
+        },
+        "text": [
+          "Il y a encore quinze ans, prendre l’avion pour passer un week-end à Lisbonne ou à Prague ne posait guère de questions. Aujourd’hui, le même geste suscite débats familiaux et cas de conscience. Selon une enquête menée auprès de 3 000 voyageurs européens, quatre sur dix affirment avoir déjà renoncé à un vol pour des raisons environnementales. Ce chiffre, bien qu’il repose sur de simples déclarations, traduit un changement de regard sur un mode de transport longtemps associé à la liberté.",
+          "Il faut dire que les données sont parlantes. Sur un trajet court, un passager en avion émet plusieurs dizaines de fois plus de CO2 que s’il voyageait dans un train à grande vitesse alimenté par une électricité peu carbonée. Et même si le transport aérien ne représente qu’une part limitée des émissions mondiales, il pèse lourd dans le bilan individuel de ceux qui voyagent souvent : un seul aller-retour entre l’Europe et l’Amérique du Nord peut équivaloir à plusieurs mois de trajets quotidiens en voiture.",
+          "Pourtant, le passage à l’acte reste difficile. Les voyageurs ont beau se dire préoccupés par le climat, beaucoup continuent de prendre l’avion. Le prix est souvent invoqué : un billet à bas coût revient parfois moins cher qu’un trajet en train sur la même distance. La durée et la complexité du voyage jouent aussi. « Si les trains de nuit étaient plus nombreux et les correspondances mieux coordonnées entre pays, beaucoup de gens franchiraient le pas », affirme Hélène Morvan, présidente d’une association d’usagers du rail.",
+          "Certaines mesures montrent que le changement est possible. En France, la loi interdit désormais certains vols intérieurs lorsqu’il existe une alternative en train de moins de deux heures et demie. Il n’empêche que la portée de cette décision reste limitée : seules quelques lignes sont concernées. De leur côté, des entreprises encadrent les déplacements professionnels : leurs salariés ne prennent l’avion qu’à condition qu’aucune solution en train ou en visioconférence ne soit envisageable.",
+          "Reste une question décisive : faut-il compter sur la bonne volonté de chacun ? Hélène Morvan en doute. « À moins que les pouvoirs publics ne rendent le train réellement compétitif, on ne changera pas les comportements à grande échelle. » Autrement dit, si l’on veut que les voyageurs choisissent le rail, il faudra leur en donner les moyens."
+        ],
+        "questions": [
+          {
+            "stem": "De quoi traite principalement cet article ?",
+            "options": [
+              "Des progrès techniques réalisés par les compagnies aériennes.",
+              "De l’écart entre la prise de conscience écologique et les pratiques de voyage.",
+              "De l’augmentation du prix des billets de train en Europe."
+            ],
+            "answer": 1,
+            "why": "文章从“越来越多人有负罪感”（第1段）写到“行动仍然困难”（第3段：« le passage à l’acte reste difficile »），核心是意识与行为的落差。A 未涉及；C 文中反而说机票有时比火车便宜。"
+          },
+          {
+            "stem": "Que suggère la précision « bien qu’il repose sur de simples déclarations » ?",
+            "options": [
+              "Le chiffre doit être interprété avec prudence.",
+              "Le chiffre a été confirmé par des observations.",
+              "Le chiffre est contesté par les voyageurs eux-mêmes."
+            ],
+            "answer": 0,
+            "why": "bien que 引出让步：数据只是受访者“自述”，未必反映真实行为，因此要谨慎解读。B 与 « simples déclarations » 相反；C 文中没有人质疑该数据。"
+          },
+          {
+            "stem": "D’après le deuxième paragraphe, pourquoi l’avion pèse-t-il lourd pour certains individus ?",
+            "options": [
+              "Parce que l’aviation est la première source d’émissions mondiales.",
+              "Parce que la voiture émet moins de CO2 que le train.",
+              "Parce qu’un seul long trajet peut représenter une grande part de leurs émissions."
+            ],
+            "answer": 2,
+            "why": "« un seul aller-retour entre l’Europe et l’Amérique du Nord peut équivaloir à plusieurs mois de trajets quotidiens en voiture »。A 与 « ne représente qu’une part limitée des émissions mondiales » 矛盾；B 文中未作此比较。"
+          },
+          {
+            "stem": "Dans ce contexte, « franchir le pas » signifie…",
+            "options": [
+              "traverser une frontière à pied.",
+              "se décider à changer de comportement.",
+              "renoncer définitivement à voyager."
+            ],
+            "answer": 1,
+            "why": "引语假设：如果夜车更多，很多人就会“下定决心”改乘火车。A 是字面理解；C 过度，改乘火车并不等于不旅行。"
+          },
+          {
+            "stem": "Comment l’auteur juge-t-il la loi sur les vols intérieurs ?",
+            "options": [
+              "Comme une mesure utile mais de portée restreinte.",
+              "Comme une décision inefficace et injuste.",
+              "Comme la solution définitive au problème."
+            ],
+            "answer": 0,
+            "why": "先肯定 « le changement est possible »，再用 « Il n’empêche que la portée de cette décision reste limitée : seules quelques lignes sont concernées » 加以限定。B 说“不公平”无依据；C 与 « limitée » 矛盾。"
+          },
+          {
+            "stem": "Quelle idée Hélène Morvan défend-elle à la fin de l’article ?",
+            "options": [
+              "La culpabilité suffit à transformer les habitudes.",
+              "Il faudrait interdire tous les vols en Europe.",
+              "Le changement dépend surtout de l’action publique en faveur du train."
+            ],
+            "answer": 2,
+            "why": "« À moins que les pouvoirs publics ne rendent le train réellement compétitif, on ne changera pas les comportements à grande échelle »。A 与她对 « bonne volonté » 的怀疑相反；B 文中无此主张。"
+          }
+        ]
+      },
+      {
+        "id": "R37-2",
+        "title": "Voyager moins, mais voyager mieux",
+        "meta": {
+          "genre": "Chronique",
+          "domain": "Environnement",
+          "level": "B2"
+        },
+        "text": [
+          "Chaque été, le même rituel : des aéroports saturés, des files d’attente interminables et, sur les réseaux sociaux, des photos de plages lointaines. Je ne jette la pierre à personne : moi aussi, j’ai longtemps collectionné les destinations comme d’autres collectionnent les timbres. Mais je suis désormais convaincu qu’il faut avoir le courage de voyager moins.",
+          "On m’objectera que le voyage ouvre l’esprit, qu’il rapproche les peuples. Certes. Mais quel rapprochement y a-t-il dans un séjour de quatre jours passé dans un hôtel-club, entre une piscine et un buffet ? Ce n’est pas le voyage que je remets en cause, c’est sa transformation en produit de consommation rapide.",
+          "On me dira aussi que l’effort individuel est dérisoire face aux émissions de l’industrie. C’est en partie vrai. Il n’empêche que nos choix envoient des signaux : si la demande de trains de nuit augmentait, les opérateurs finiraient par en proposer davantage. Les comportements individuels et les politiques publiques ne s’opposent pas ; ils se nourrissent mutuellement.",
+          "Voyager moins ne veut pas dire renoncer au dépaysement. Quoique moins spectaculaire, une semaine à vélo le long de la Loire ou dans le Jura peut réserver autant de surprises qu’un circuit express en Asie. Et si l’on part loin, pourquoi ne pas partir plus longtemps et moins souvent, en prenant le temps de rencontrer vraiment les habitants ?",
+          "Je ne demande à personne de rester chez soi. Je propose simplement de remplacer la quantité par la qualité. Ce n’est pas une privation : c’est peut-être la meilleure façon de redonner au voyage sa saveur."
+        ],
+        "questions": [
+          {
+            "stem": "Quelle est l’intention principale de l’auteur ?",
+            "options": [
+              "Demander l’interdiction des voyages en avion pendant l’été.",
+              "Faire la promotion des séjours en hôtel-club.",
+              "Inviter à voyager moins souvent pour voyager mieux."
+            ],
+            "answer": 2,
+            "why": "标题与末段 « remplacer la quantité par la qualité » 概括全文。A 作者明确说 « Je ne demande à personne de rester chez soi »；B 他恰恰批评度假村式旅行。"
+          },
+          {
+            "stem": "Que fait l’auteur au début du deuxième paragraphe ?",
+            "options": [
+              "Il rejette une objection sans l’examiner.",
+              "Il concède un argument adverse avant de le relativiser.",
+              "Il reconnaît qu’il s’est trompé sur toute la ligne."
+            ],
+            "answer": 1,
+            "why": "« On m’objectera que… Certes. Mais… »：典型的“让步+反驳”结构。A 他承认了对方观点（« Certes »）；C 他并未放弃立场。"
+          },
+          {
+            "stem": "Selon l’auteur, quel lien existe-t-il entre choix individuels et politiques publiques ?",
+            "options": [
+              "Ils n’ont aucun rapport entre eux.",
+              "Les choix individuels sont totalement inutiles.",
+              "Ils s’influencent réciproquement."
+            ],
+            "answer": 2,
+            "why": "« ils se nourrissent mutuellement »，并用假设句举例：« si la demande de trains de nuit augmentait, les opérateurs finiraient par en proposer davantage »。B 是他部分承认后又反驳的观点。"
+          },
+          {
+            "stem": "Que critique précisément l’auteur ?",
+            "options": [
+              "Le voyage réduit à un produit de consommation rapide.",
+              "Les vacances à vélo en France.",
+              "La découverte d’autres cultures."
+            ],
+            "answer": 0,
+            "why": "« Ce n’est pas le voyage que je remets en cause, c’est sa transformation en produit de consommation rapide »（强调句）。B 是他推荐的；C 他认为深度旅行才能真正认识当地人。"
+          },
+          {
+            "stem": "Quel est le ton de la conclusion ?",
+            "options": [
+              "Moralisateur et menaçant.",
+              "Conciliant et constructif.",
+              "Pessimiste et résigné."
+            ],
+            "answer": 1,
+            "why": "« Je ne demande à personne… Je propose simplement… »：语气温和，提出建设性方案。没有威胁（A），也没有悲观（C）——反而认为能“重拾旅行的滋味”。"
+          }
+        ]
+      },
+      {
+        "id": "R37-3",
+        "title": "Courrier des lecteurs : « Pour nous, l’avion n’est pas un luxe »",
+        "meta": {
+          "genre": "Courrier des lecteurs",
+          "domain": "Environnement",
+          "level": "B2"
+        },
+        "text": [
+          "Je lis avec intérêt vos articles sur la « honte de prendre l’avion », mais permettez-moi de rappeler une réalité souvent oubliée. J’habite à Saint-Denis de La Réunion. Pour rendre visite à ma mère, installée à Lyon, je n’ai pas le choix : aucun train, aucun bateau régulier ne permet de parcourir les quelque 9 000 kilomètres qui nous séparent.",
+          "Bien que je sois sensible aux questions climatiques — je n’ai pas de voiture et je fais attention à ma consommation —, je refuse qu’on me culpabilise pour un voyage par an. Pour des centaines de milliers de Réunionnais, d’Antillais ou de Guyanais, l’avion n’est pas un caprice : c’est le seul lien avec leur famille, leurs études ou leurs soins.",
+          "Je ne dis pas qu’il ne faut rien changer. Si l’on taxait davantage les vols de loisir répétés, je n’y verrais aucun inconvénient, à condition que les liaisons avec l’outre-mer soient traitées à part. Sinon, ce sont toujours les mêmes qui paieront.",
+          "Marie-Josée Payet, Saint-Denis (La Réunion)"
+        ],
+        "questions": [
+          {
+            "stem": "Pourquoi Marie-Josée Payet écrit-elle au journal ?",
+            "options": [
+              "Pour nuancer le débat en rappelant une situation particulière.",
+              "Pour réclamer la création d’une ligne de bateau.",
+              "Pour dénoncer l’inaction climatique du gouvernement."
+            ],
+            "answer": 0,
+            "why": "« permettez-moi de rappeler une réalité souvent oubliée »：她以海外省居民身份补充一个被忽视的视角。B、C 信中都没有提出。"
+          },
+          {
+            "stem": "Quelle est la fonction de la phrase placée entre tirets ?",
+            "options": [
+              "Montrer qu’elle n’accorde aucune importance à l’écologie.",
+              "Prouver qu’elle a déjà adopté des gestes écologiques.",
+              "Indiquer qu’elle travaille dans le secteur de l’environnement."
+            ],
+            "answer": 1,
+            "why": "破折号中的 « je n’ai pas de voiture et je fais attention à ma consommation » 用来证明她 « sensible aux questions climatiques »，增强让步句的可信度。A 相反；C 无依据。"
+          },
+          {
+            "stem": "Que pense-t-elle d’une taxe sur les vols de loisir répétés ?",
+            "options": [
+              "Elle y est totalement opposée.",
+              "Elle la juge inutile et symbolique.",
+              "Elle l’accepterait sous certaines conditions."
+            ],
+            "answer": 2,
+            "why": "« je n’y verrais aucun inconvénient, à condition que les liaisons avec l’outre-mer soient traitées à part »。A、B 与“没有异议”矛盾。"
+          },
+          {
+            "stem": "Que signifie « ce sont toujours les mêmes qui paieront » ?",
+            "options": [
+              "Les habitants d’outre-mer seraient une nouvelle fois pénalisés.",
+              "Les compagnies aériennes augmenteront toujours leurs prix.",
+              "Les touristes aisés paieront de plus en plus."
+            ],
+            "answer": 0,
+            "why": "若不对海外航线区别对待，承担代价的将又是那些别无选择的海外居民。B、C 曲解了 « les mêmes » 的指代。"
+          }
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "id": "L37-1",
+        "title": "Le grand débat : faut-il taxer lourdement les billets d’avion ?",
+        "meta": {
+          "genre": "Émission de radio · débat",
+          "domain": "Environnement",
+          "level": "B2",
+          "plays": 2
+        },
+        "script": [
+          "— Bonsoir et bienvenue dans « Le grand débat ». Ce soir, une question qui divise : faut-il taxer beaucoup plus lourdement les billets d’avion ? Pour en discuter, Sophie Garnier, porte-parole d’une association pour un tourisme durable, et Pierre Delaunay, directeur d’un réseau d’agences de voyages. Sophie Garnier, vous êtes favorable à une taxe forte ?",
+          "— Oui, très clairement. Aujourd’hui, le prix d’un billet ne reflète pas du tout le coût réel du vol pour l’environnement. Le kérosène est très peu taxé, contrairement au carburant que paient les automobilistes. Si les billets coûtaient leur vrai prix, les gens réfléchiraient à deux fois avant de partir trois jours à l’autre bout de l’Europe.",
+          "— Pierre Delaunay, vous n’êtes pas d’accord ?",
+          "— Je partage l’objectif, bien sûr. Personne ne nie qu’il faut réduire les émissions. Mais une taxe forte, ce serait d’abord une mesure injuste. Ceux qui ont les moyens continueraient de voler comme avant, tandis que les familles modestes, elles, renonceraient à leurs seules vacances à l’étranger. Voyager redeviendrait un privilège de riches.",
+          "— Que répondez-vous à cela, Sophie Garnier ?",
+          "— Je reconnais que le risque existe. C’est pourquoi nous proposons une taxe progressive : le premier vol de l’année serait peu taxé, et la taxe augmenterait à chaque vol supplémentaire. Ainsi, une famille qui part une fois par an ne serait pas pénalisée, alors que le voyageur qui prend l’avion tous les mois paierait beaucoup plus.",
+          "— Sur le papier, c’est séduisant, je l’admets. Mais comment la contrôler ? Il faudrait tenir un registre de tous les vols de chaque citoyen. Je ne suis pas sûr que les gens accepteraient d’être surveillés de cette manière. Et puis, à moins qu’elle ne soit adoptée par tous les pays européens, une telle taxe pousserait les voyageurs à partir des aéroports voisins.",
+          "— C’est un vrai argument, mais il plaide pour une décision européenne, pas pour l’immobilisme. Et l’argent récolté pourrait financer des trains de nuit, ce qui offrirait enfin une alternative concrète.",
+          "— Là-dessus, nous pouvons nous rejoindre : si le train était plus rapide et moins cher, mes clients seraient les premiers à le choisir. Encore faut-il que l’offre existe.",
+          "— Merci à tous les deux pour ce débat."
+        ],
+        "questions": [
+          {
+            "stem": "Quelle question est au centre de ce débat ?",
+            "options": [
+              "Faut-il supprimer progressivement les trains de nuit ?",
+              "Faut-il augmenter fortement les taxes sur les billets d’avion ?",
+              "Faut-il interdire les vols vers l’étranger ?"
+            ],
+            "answer": 1,
+            "why": "主持人开场：« faut-il taxer beaucoup plus lourdement les billets d’avion ? »。A 相反，夜车是双方都支持的替代方案；C 没有人提出。"
+          },
+          {
+            "stem": "Quel est le premier argument de Sophie Garnier ?",
+            "options": [
+              "Le prix des billets ne reflète pas leur coût environnemental.",
+              "Les compagnies aériennes réalisent trop de bénéfices.",
+              "Les automobilistes paient trop de taxes."
+            ],
+            "answer": 0,
+            "why": "« le prix d’un billet ne reflète pas du tout le coût réel du vol pour l’environnement »。B 未提；C 她提汽车燃油税只是作对比，并非认为太高。"
+          },
+          {
+            "stem": "Pourquoi Pierre Delaunay juge-t-il une taxe forte injuste ?",
+            "options": [
+              "Elle pénaliserait surtout les compagnies à bas coût.",
+              "Elle toucherait davantage les ménages modestes que les plus aisés.",
+              "Elle ferait augmenter le prix des trains."
+            ],
+            "answer": 1,
+            "why": "« Ceux qui ont les moyens continueraient de voler… tandis que les familles modestes… renonceraient »。A、C 他没有提到。"
+          },
+          {
+            "stem": "Comment Sophie Garnier répond-elle à cette objection ?",
+            "options": [
+              "Elle nie l’existence du problème.",
+              "Elle abandonne complètement sa proposition.",
+              "Elle admet le risque et propose une taxe progressive."
+            ],
+            "answer": 2,
+            "why": "« Je reconnais que le risque existe. C’est pourquoi nous proposons une taxe progressive »：先让步再调整方案。A 与“承认”矛盾；B 她只是修正，没有放弃。"
+          },
+          {
+            "stem": "Quelles difficultés Pierre Delaunay soulève-t-il ensuite ?",
+            "options": [
+              "Le contrôle des vols de chacun et le risque de contournement par les pays voisins.",
+              "Le manque de personnel dans les aéroports.",
+              "Le coût de construction de nouvelles lignes ferroviaires."
+            ],
+            "answer": 0,
+            "why": "« comment la contrôler ? … un registre de tous les vols » 以及 « pousserait les voyageurs à partir des aéroports voisins »。B、C 均未提及。"
+          },
+          {
+            "stem": "Sur quel point les deux invités finissent-ils par s’accorder ?",
+            "options": [
+              "Il faut taxer tous les vols au même taux.",
+              "Un train plus performant serait une vraie alternative.",
+              "Les vacances à l’étranger doivent être limitées."
+            ],
+            "answer": 1,
+            "why": "Delaunay：« Là-dessus, nous pouvons nous rejoindre : si le train était plus rapide et moins cher… »。A 与累进税相反；C 两人都没有这样主张。"
+          }
+        ]
+      },
+      {
+        "id": "L37-2",
+        "title": "Valcroze : la station qui a renoncé au ski",
+        "meta": {
+          "genre": "Interview radio",
+          "domain": "Environnement",
+          "level": "B2",
+          "plays": 2
+        },
+        "script": [
+          "— Nous sommes en ligne avec Anne Rouvière, maire de Valcroze, une petite station de moyenne montagne qui a pris une décision radicale : fermer ses remontées mécaniques. Madame la maire, pourquoi ce choix ?",
+          "— Bonjour. Vous savez, ce n’est pas une décision prise de gaieté de cœur. Mais les chiffres sont là : depuis dix ans, nous avons à peine six semaines d’enneigement par hiver, contre trois mois autrefois. Même avec des canons à neige, l’exploitation perdait de l’argent chaque année. Si nous avions continué, la commune se serait endettée pour des décennies.",
+          "— Les habitants ont dû être inquiets…",
+          "— Évidemment. Beaucoup vivaient du ski : les moniteurs, les loueurs de matériel, les restaurateurs. Il y a eu des réunions publiques très tendues. Je comprends leur colère, même si je reste convaincue que nous n’avions pas le choix.",
+          "— Et aujourd’hui, que proposez-vous aux visiteurs ?",
+          "— Nous misons sur un tourisme des quatre saisons : randonnée, VTT, observation de la faune et, en hiver, raquettes et ski de fond quand la neige le permet. La plupart des anciens moniteurs se sont formés comme accompagnateurs en montagne. Bien que la fréquentation hivernale ait baissé, l’été attire désormais deux fois plus de monde qu’avant.",
+          "— Un conseil pour les communes dans votre situation ?",
+          "— Anticiper. Au cas où la neige continuerait de reculer, il vaut mieux préparer la transition pendant qu’on a encore des ressources, plutôt que d’attendre d’être au pied du mur."
+        ],
+        "questions": [
+          {
+            "stem": "Quelle décision la commune de Valcroze a-t-elle prise ?",
+            "options": [
+              "Installer de nouveaux canons à neige.",
+              "Agrandir son domaine skiable.",
+              "Arrêter l’exploitation de ses remontées mécaniques."
+            ],
+            "answer": 2,
+            "why": "主持人介绍：« fermer ses remontées mécaniques »。A 镇长说即使有造雪机也亏损；B 与关闭相反。"
+          },
+          {
+            "stem": "Pourquoi la maire a-t-elle fait ce choix ?",
+            "options": [
+              "Pour éviter un endettement durable de la commune.",
+              "Pour répondre à une demande des moniteurs.",
+              "Pour attirer une clientèle plus aisée."
+            ],
+            "answer": 0,
+            "why": "« Si nous avions continué, la commune se serait endettée pour des décennies »（过去假设句）。B 恰恰相反，滑雪从业者很愤怒；C 未提及。"
+          },
+          {
+            "stem": "Comment la maire réagit-elle à la colère des habitants ?",
+            "options": [
+              "Elle la juge totalement injustifiée.",
+              "Elle la comprend tout en maintenant sa décision.",
+              "Elle a fini par revenir sur sa décision."
+            ],
+            "answer": 1,
+            "why": "« Je comprends leur colère, même si je reste convaincue que nous n’avions pas le choix »：理解但坚持。A、C 与原文不符。"
+          },
+          {
+            "stem": "Quel est le bilan actuel de cette transition ?",
+            "options": [
+              "L’activité estivale a fortement progressé.",
+              "La fréquentation a augmenté en hiver.",
+              "Les anciens moniteurs ont quitté la région."
+            ],
+            "answer": 0,
+            "why": "« Bien que la fréquentation hivernale ait baissé, l’été attire désormais deux fois plus de monde »。B 与之矛盾；C 他们大多转型为山地向导。"
+          },
+          {
+            "stem": "Que signifie « attendre d’être au pied du mur » dans le conseil final ?",
+            "options": [
+              "Attendre le printemps au bas de la montagne.",
+              "Attendre de ne plus avoir d’autre choix que d’agir.",
+              "Attendre la construction de protections contre la neige."
+            ],
+            "answer": 1,
+            "why": "être au pied du mur 是习语“被逼到墙角、别无选择”。她建议趁还有资源时提前转型。A、C 是字面误读。"
+          }
+        ]
+      },
+      {
+        "id": "L37-3",
+        "title": "Micro-trottoir : des vacances sans avion ?",
+        "meta": {
+          "genre": "Micro-trottoir",
+          "domain": "Environnement",
+          "level": "B2",
+          "plays": 1
+        },
+        "script": [
+          "— Des vacances sans avion : est-ce que vous seriez prêts ? Nous avons posé la question à des passants, à Bruxelles.",
+          "— Moi, je le fais déjà. Cet été, on est partis en Italie en train de nuit avec les enfants. C’était plus long, c’est sûr, mais ils ont adoré dormir dans le train. Pour nous, ça fait partie du voyage.",
+          "— Franchement, non. Je travaille dans la restauration, j’ai deux semaines de congé par an. Si je passe deux jours dans les transports, il ne me reste presque rien. Bien que je sois conscient du problème, je ne peux pas me le permettre.",
+          "— Ça dépend de la destination. Pour aller à Paris ou à Amsterdam, l’avion n’a aucun sens, le train est plus rapide. Mais si ma fille s’installait au Canada, je n’hésiterais pas une seconde à prendre l’avion pour aller la voir."
+        ],
+        "questions": [
+          {
+            "stem": "Que pense la première personne du voyage en train de nuit ?",
+            "options": [
+              "C’est trop fatigant pour de jeunes enfants.",
+              "C’est surtout moins cher que l’avion.",
+              "C’est une expérience agréable qui fait partie des vacances."
+            ],
+            "answer": 2,
+            "why": "« ils ont adoré dormir dans le train. Pour nous, ça fait partie du voyage »。A 与孩子“很喜欢”矛盾；B 她没有提价格。"
+          },
+          {
+            "stem": "Pourquoi le deuxième passant ne renonce-t-il pas à l’avion ?",
+            "options": [
+              "Il n’est pas sensible au problème écologique.",
+              "Ses congés sont trop courts pour de longs trajets.",
+              "Il a peur de voyager en train."
+            ],
+            "answer": 1,
+            "why": "« j’ai deux semaines de congé par an. Si je passe deux jours dans les transports, il ne me reste presque rien »。A 与 « Bien que je sois conscient du problème » 矛盾；C 未提及。"
+          },
+          {
+            "stem": "Quelle est la position de la troisième personne ?",
+            "options": [
+              "Elle adapte son choix en fonction de la destination.",
+              "Elle refuse catégoriquement de prendre l’avion.",
+              "Elle préfère ne plus voyager du tout."
+            ],
+            "answer": 0,
+            "why": "« Ça dépend de la destination »：近途坐火车，远赴加拿大则会坐飞机。B、C 都与 « je n’hésiterais pas une seconde à prendre l’avion » 矛盾。"
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "id": "W37-1",
+        "title": "Pour le retour du train de nuit",
+        "genre": "Lettre formelle",
+        "prompt": "Vous êtes membre d’une association d’usagers du train de votre région. Le train de nuit qui reliait votre ville à la côte méditerranéenne vient d’être supprimé. Vous écrivez au président du conseil régional pour demander son rétablissement : vous exposez la situation, vous répondez par avance aux objections possibles (coût, fréquentation) et vous formulez des propositions concrètes. (250 mots minimum)",
+        "minWords": 250,
+        "checklist": [
+          "Réalisation de la tâche : j’expose le problème, je réponds à au moins deux objections et je fais des propositions concrètes ; mon texte compte au moins 250 mots.",
+          "Cohérence et cohésion : chaque paragraphe a une fonction claire (situation, arguments, concession/réfutation, propositions, formule finale).",
+          "Adéquation sociolinguistique : je respecte les codes de la lettre formelle (formule d’appel, « je me permets de », formule de politesse complète, signature au nom de l’association).",
+          "Lexique : j’emploie un vocabulaire précis du transport et de l’environnement (desserte, fréquentation, alternative, émissions…).",
+          "Morphosyntaxe : j’utilise au moins deux structures de concession (bien que + subjonctif, certes… mais, il n’empêche que) et deux hypothèses (si + plus-que-parfait / conditionnel passé, au cas où + conditionnel).",
+          "Je relis les accords et les modes après bien que, à condition que et au cas où."
+        ],
+        "model": [
+          "Monsieur le Président,",
+          "Au nom de l’association « Rails d’avenir », qui regroupe plus de 800 usagers du train dans notre région, je me permets d’attirer votre attention sur la suppression, depuis le mois de janvier, du train de nuit qui reliait notre ville à Perpignan.",
+          "Ce train répondait à un besoin réel. Il permettait à des familles, à des étudiants et à des personnes âgées de rejoindre la côte méditerranéenne sans voiture ni avion, à un prix raisonnable. Bien que sa fréquentation ait baissé ces dernières années, cette baisse s’explique moins par un manque d’intérêt que par la dégradation du service : horaires peu pratiques, voitures vétustes, réservation compliquée. Si le confort et la ponctualité avaient été au rendez-vous, nous sommes convaincus que les voyageurs auraient été bien plus nombreux.",
+          "Certes, nous n’ignorons pas le coût d’exploitation d’une telle ligne. Il n’empêche que les trains de nuit constituent l’une des rares alternatives crédibles à l’avion pour des trajets de plusieurs centaines de kilomètres. Alors que la région s’est engagée à réduire ses émissions de gaz à effet de serre, renoncer à cette liaison nous paraît contradictoire.",
+          "C’est pourquoi nous vous soumettons trois propositions : rétablir la ligne au moins pendant les vacances scolaires, à titre expérimental ; moderniser le matériel en partenariat avec les régions voisines ; enfin, mieux faire connaître ce service grâce à une campagne d’information. Au cas où une étude de faisabilité serait lancée, notre association serait heureuse d’y contribuer en partageant les témoignages de ses adhérents.",
+          "Dans l’attente de votre réponse, nous vous prions d’agréer, Monsieur le Président, l’expression de notre haute considération.",
+          "Pour l’association « Rails d’avenir », Claire Dumont, présidente"
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "id": "S37-1",
+        "title": "Un quota de vols par personne ?",
+        "part": "Monologue suivi",
+        "trigger": {
+          "title": "Et si chacun avait droit à un nombre limité de vols ?",
+          "text": [
+            "Limiter le nombre de vols auxquels chaque citoyen aurait droit : l’idée, longtemps jugée provocatrice, s’invite aujourd’hui dans le débat public. Plusieurs collectifs proposent d’attribuer à chacun un « crédit carbone » annuel, qui couvrirait par exemple un aller-retour en Europe. Au-delà, il faudrait racheter des droits à ceux qui ne voyagent pas.",
+            "Pour ses partisans, ce système aurait le mérite de la justice : une petite minorité de grands voyageurs effectue une part importante des vols. Un quota ferait donc peser l’effort sur ceux qui polluent le plus, tout en préservant le voyage occasionnel des familles.",
+            "Ses détracteurs, eux, dénoncent une atteinte inacceptable à la liberté de circuler. Ils rappellent que la technologie, avec des avions moins gourmands en carburant, pourrait réduire les émissions sans restreindre les déplacements. Et ils s’interrogent : qui contrôlerait les quotas, et comment éviter qu’un marché parallèle ne se développe ?"
+          ]
+        },
+        "prompt": "Dégagez le thème du document, formulez une problématique, annoncez votre plan, puis défendez votre point de vue avec des exemples précis (environ 6 minutes).",
+        "targetSeconds": 360,
+        "checklist": [
+          "Je présente le document et l’idée de quota en une ou deux phrases.",
+          "Je formule une problématique ouverte (par exemple : « Faut-il limiter la liberté de voyager pour protéger le climat ? »).",
+          "J’annonce un plan clair et je le suis (avantages / limites / position personnelle, par exemple).",
+          "Je concède au moins un argument adverse avant de le nuancer (« Certes…, il n’empêche que… »).",
+          "J’utilise des hypothèses pour imaginer les effets du système (« Si un tel quota était appliqué, … »).",
+          "Je conclus en répondant à ma problématique et j’ouvre sur une autre piste (technologie, train, tourisme local)."
+        ]
+      },
+      {
+        "id": "S37-2",
+        "title": "Interdire la publicité pour les vols à bas prix ?",
+        "part": "Exercice en interaction (débat)",
+        "prompt": "Vous êtes favorable à l’interdiction de la publicité pour les voyages en avion à bas prix. L’examinateur conteste votre position. Répondez à chaque objection : confirmez, nuancez, concédez ou réfutez, sans vous contenter de répéter votre position de départ.",
+        "followUps": [
+          "Interdire une publicité pour un produit légal, ce n’est pas une forme de censure ?",
+          "Les vols à bas prix ont permis à des milliers de jeunes et de familles modestes de découvrir l’Europe. Vous voulez les en priver ?",
+          "Si la publicité disparaît, les gens continueront à réserver sur Internet. À quoi servirait votre mesure ?",
+          "Et si les compagnies s’engageaient plutôt à financer des projets écologiques, vous accepteriez de renoncer à l’interdiction ?"
+        ],
+        "targetSeconds": 270,
+        "checklist": [
+          "Je reformule l’objection avant de répondre (« Vous voulez dire que… ? »).",
+          "Je concède au moins deux fois un point de l’examinateur (« Je vous accorde que…, mais… »).",
+          "J’utilise des hypothèses pour montrer les conséquences (« Si l’on interdisait…, on… »).",
+          "Je nuance ma position si un argument est fort, au lieu de m’enfermer dans un refus.",
+          "Je garde un ton courtois et des phrases complètes jusqu’à la fin de l’échange."
+        ]
+      }
+    ],
+    "application": [
+      {
+        "id": "A37-1",
+        "title": "Expliquer des chiffres à un ami",
+        "topic": "environnement",
+        "task": "Un ami hésite entre le train et l’avion pour aller de Paris à Marseille. Voici des estimations indicatives : train, 3 h 20 de trajet, environ 2 kg de CO2 par passager ; avion, 1 h 20 de vol mais environ 2 h d’accès à l’aéroport et d’attente, environ 80 kg de CO2 par passager. Expliquez-lui ces données en 60 à 80 mots, en registre familier mais correct, et donnez-lui votre conseil.",
+        "chunks": [
+          "Même si l’avion paraît plus rapide, …",
+          "alors que le train…",
+          "Si tu comptes le temps à l’aéroport, …",
+          "À ta place, je…"
+        ],
+        "keys": [
+          "même si",
+          "alors que",
+          "si "
+        ]
+      },
+      {
+        "id": "A37-2",
+        "title": "Compte rendu neutre d’un débat",
+        "topic": "environnement",
+        "task": "Vous rédigez la lettre d’information de votre association. Restituez de façon neutre, en 80 à 100 mots, les positions des deux invités du débat radio (L37-1) et le point sur lequel ils se rejoignent, sans donner votre avis.",
+        "chunks": [
+          "Selon Sophie Garnier, …",
+          "Pierre Delaunay, quant à lui, …",
+          "tandis que…",
+          "Les deux invités s’accordent toutefois sur…"
+        ],
+        "keys": [
+          "selon",
+          "taxe",
+          "train"
+        ]
+      }
+    ]
+  },
+  "vocab": [
+    {
+      "id": "V37-01",
+      "fr": "un cas de conscience",
+      "zh": "良心上的两难；道德抉择",
+      "ex": "Pour beaucoup de familles, réserver un vol long-courrier est devenu [[un cas de conscience]].",
+      "exZh": "对许多家庭来说，预订远程航班已成为一个良心上的两难。",
+      "src": "R37-1"
+    },
+    {
+      "id": "V37-02",
+      "fr": "compter sur la bonne volonté de qqn",
+      "zh": "指望某人的自觉",
+      "ex": "On ne peut pas seulement [[compter sur la bonne volonté]] des voyageurs pour réduire les émissions.",
+      "exZh": "不能仅仅指望旅客的自觉来减少排放。",
+      "src": "R37-1"
+    },
+    {
+      "id": "V37-03",
+      "fr": "les données sont parlantes",
+      "zh": "数据很说明问题",
+      "ex": "Inutile de faire de longs discours : [[les données sont parlantes]].",
+      "exZh": "无需长篇大论：数据本身就很说明问题。",
+      "src": "R37-1"
+    },
+    {
+      "id": "V37-04",
+      "fr": "une portée limitée",
+      "zh": "影响范围有限；作用有限",
+      "ex": "Cette loi n’a qu’[[une portée limitée]], puisqu’elle ne concerne que trois lignes.",
+      "exZh": "这项法律作用有限，因为它只涉及三条航线。",
+      "src": "R37-1"
+    },
+    {
+      "id": "V37-05",
+      "fr": "à grande échelle",
+      "zh": "大规模地",
+      "ex": "Sans un train compétitif, on ne changera pas les comportements [[à grande échelle]].",
+      "exZh": "没有具竞争力的火车，就无法大规模改变人们的行为。",
+      "src": "R37-1"
+    },
+    {
+      "id": "V37-06",
+      "fr": "en donner les moyens (à qqn)",
+      "zh": "给（某人）提供做到这一点的条件",
+      "ex": "Si l’on veut que les gens prennent le train, il faut leur [[en donner les moyens]].",
+      "exZh": "如果希望人们坐火车，就得为他们提供条件。",
+      "src": "R37-1"
+    },
+    {
+      "id": "V37-07",
+      "fr": "jeter la pierre à qqn",
+      "zh": "指责某人（常用于否定）",
+      "ex": "Je ne [[jette la pierre à]] personne : j’ai fait les mêmes erreurs.",
+      "exZh": "我不指责任何人：我也犯过同样的错误。",
+      "src": "R37-2"
+    },
+    {
+      "id": "V37-08",
+      "fr": "se nourrir mutuellement",
+      "zh": "相互促进；相辅相成",
+      "ex": "Les choix individuels et les politiques publiques [[se nourrissent mutuellement]].",
+      "exZh": "个人选择与公共政策相辅相成。",
+      "src": "R37-2"
+    },
+    {
+      "id": "V37-09",
+      "fr": "réserver des surprises",
+      "zh": "带来（意想不到的）惊喜",
+      "ex": "Une randonnée près de chez soi peut [[réserver des surprises]] inattendues.",
+      "exZh": "在家附近徒步也可能带来意想不到的惊喜。",
+      "src": "R37-2"
+    },
+    {
+      "id": "V37-10",
+      "fr": "le dépaysement",
+      "zh": "异乡感；换个环境的新鲜感",
+      "ex": "Pas besoin de partir au bout du monde pour trouver [[le dépaysement]].",
+      "exZh": "不必远赴天涯海角也能找到换个环境的新鲜感。",
+      "src": "R37-2"
+    },
+    {
+      "id": "V37-11",
+      "fr": "redonner sa saveur à",
+      "zh": "让……重拾滋味/魅力",
+      "ex": "Partir moins souvent permettrait de [[redonner sa saveur au]] voyage.",
+      "exZh": "减少出行次数能让旅行重拾它的滋味。",
+      "src": "R37-2"
+    },
+    {
+      "id": "V37-12",
+      "fr": "ce n’est pas un caprice",
+      "zh": "这不是任性/一时兴起",
+      "ex": "Pour les familles d’outre-mer, l’avion, [[ce n’est pas un caprice]] : c’est une nécessité.",
+      "exZh": "对海外省的家庭来说，坐飞机不是任性，而是必需。",
+      "src": "R37-3"
+    },
+    {
+      "id": "V37-13",
+      "fr": "culpabiliser qqn",
+      "zh": "让某人产生负罪感",
+      "ex": "Je refuse qu’on me [[culpabilise]] pour un seul voyage par an.",
+      "exZh": "我拒绝因为一年一次的旅行而被扣上负罪感。",
+      "src": "R37-3"
+    },
+    {
+      "id": "V37-14",
+      "fr": "traiter à part",
+      "zh": "区别对待；单独处理",
+      "ex": "Les liaisons avec l’outre-mer devraient être [[traitées à part]].",
+      "exZh": "与海外领地之间的航线应当区别对待。",
+      "src": "R37-3"
+    },
+    {
+      "id": "V37-15",
+      "fr": "réfléchir à deux fois",
+      "zh": "三思而后行",
+      "ex": "Si les billets étaient plus chers, les gens [[réfléchiraient à deux fois]] avant de partir.",
+      "exZh": "如果机票更贵，人们出发前会三思。",
+      "src": "L37-1"
+    },
+    {
+      "id": "V37-16",
+      "fr": "refléter le coût réel",
+      "zh": "反映真实成本",
+      "ex": "Aujourd’hui, le prix du billet ne [[reflète pas le coût réel]] du vol.",
+      "exZh": "如今机票价格并不反映航班的真实成本。",
+      "src": "L37-1"
+    },
+    {
+      "id": "V37-17",
+      "fr": "un privilège de riches",
+      "zh": "富人的特权",
+      "ex": "Avec une taxe trop lourde, voyager redeviendrait [[un privilège de riches]].",
+      "exZh": "如果税太重，旅行将重新变成富人的特权。",
+      "src": "L37-1"
+    },
+    {
+      "id": "V37-18",
+      "fr": "se rejoindre (sur un point)",
+      "zh": "（在某一点上）达成一致",
+      "ex": "Malgré leurs désaccords, les deux invités ont fini par [[se rejoindre]] sur la question du train.",
+      "exZh": "尽管存在分歧，两位嘉宾最终在火车问题上达成一致。",
+      "src": "L37-1"
+    },
+    {
+      "id": "V37-19",
+      "fr": "l’immobilisme",
+      "zh": "停滞不前；无所作为",
+      "ex": "Cet argument plaide pour une décision européenne, pas pour [[l’immobilisme]].",
+      "exZh": "这个论据支持的是欧洲层面的决定，而不是无所作为。",
+      "src": "L37-1"
+    },
+    {
+      "id": "V37-20",
+      "fr": "de gaieté de cœur",
+      "zh": "心甘情愿地（常用于否定：并非情愿）",
+      "ex": "Ce n’est pas [[de gaieté de cœur]] que nous avons fermé les pistes.",
+      "exZh": "关闭雪道并非我们心甘情愿。",
+      "src": "L37-2"
+    },
+    {
+      "id": "V37-21",
+      "fr": "être au pied du mur",
+      "zh": "被逼到墙角；别无选择",
+      "ex": "Il vaut mieux préparer la transition que d’attendre d’[[être au pied du mur]].",
+      "exZh": "与其等到别无选择，不如提前准备转型。",
+      "src": "L37-2"
+    },
+    {
+      "id": "V37-22",
+      "fr": "l’enneigement",
+      "zh": "积雪状况；降雪覆盖",
+      "ex": "Depuis dix ans, [[l’enneigement]] de la station ne dure plus que six semaines.",
+      "exZh": "十年来，这个滑雪站的积雪期只剩六周。",
+      "src": "L37-2"
+    },
+    {
+      "id": "V37-23",
+      "fr": "à titre expérimental",
+      "zh": "试行地；作为试点",
+      "ex": "Nous proposons de rétablir la ligne [[à titre expérimental]] pendant l’été.",
+      "exZh": "我们建议夏季试行恢复这条线路。",
+      "src": "W37-1"
+    },
+    {
+      "id": "V37-24",
+      "fr": "s’inviter dans le débat",
+      "zh": "（话题）进入公众讨论",
+      "ex": "La question des quotas de vols [[s’invite dans le débat]] public.",
+      "exZh": "航班配额的问题进入了公共讨论。",
+      "src": "S37-1"
+    },
+    {
+      "id": "V37-25",
+      "fr": "gourmand en carburant",
+      "zh": "耗油的；油耗高的",
+      "ex": "Les nouveaux avions sont moins [[gourmands en carburant]] que les anciens.",
+      "exZh": "新飞机比旧飞机油耗更低。",
+      "src": "S37-1"
+    }
+  ]
+}

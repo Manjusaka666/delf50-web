@@ -1,0 +1,332 @@
+[
+ {
+  "id": "relatifs-01",
+  "stem": "C’est le livre ___ je t’ai parlé hier.",
+  "options": [
+   "que",
+   "où",
+   "dont"
+  ],
+  "answer": 2,
+  "why": "parler de quelque chose → 关系代词用 dont（＝ de + 先行词）。que 只用于直接宾语；où 表示地点或时间。"
+ },
+ {
+  "id": "relatifs-02",
+  "stem": "La ville ___ j’ai grandi a beaucoup changé.",
+  "options": [
+   "où",
+   "dont",
+   "que"
+  ],
+  "answer": 0,
+  "why": "grandir dans une ville：表示地点用 où。dont 对应 de；que 对应直接宾语，grandir 不及物。"
+ },
+ {
+  "id": "relatifs-03",
+  "stem": "Je me souviens très bien du jour ___ nous nous sommes rencontrés.",
+  "options": [
+   "lequel",
+   "dont",
+   "où"
+  ],
+  "answer": 2,
+  "why": "表示时间的先行词（le jour, l’année, le moment）后用 où。lequel 不能单独引出从句；dont 对应介词 de，不表示时间。"
+ },
+ {
+  "id": "relatifs-04",
+  "stem": "Ce ___ m’inquiète, c’est le prix des loyers.",
+  "options": [
+   "que",
+   "dont",
+   "qui"
+  ],
+  "answer": 2,
+  "why": "ce qui 在从句中作主语（qui m’inquiète：什么让我担心）。ce que 作直接宾语；ce dont 对应介词 de。"
+ },
+ {
+  "id": "relatifs-05",
+  "stem": "Ce ___ j’ai besoin, c’est d’un peu de calme.",
+  "options": [
+   "dont",
+   "que",
+   "qui"
+  ],
+  "answer": 0,
+  "why": "avoir besoin de → ce dont。ce que 作直接宾语，ce qui 作主语，都与 avoir besoin de 不符。"
+ },
+ {
+  "id": "relatifs-06",
+  "stem": "La réunion ___ j’ai assisté était très utile.",
+  "options": [
+   "à laquelle",
+   "auquel",
+   "dont"
+  ],
+  "answer": 0,
+  "why": "assister à + la réunion（阴性单数）→ à laquelle。auquel 是阳性单数；dont 对应介词 de。"
+ },
+ {
+  "id": "relatifs-07",
+  "stem": "Voici l’outil ___ je ne peux pas travailler.",
+  "options": [
+   "sans qui",
+   "sans quoi",
+   "sans lequel"
+  ],
+  "answer": 2,
+  "why": "介词 + 指物的先行词（l’outil，阳性单数）→ sans lequel。sans qui 用于人；sans quoi 用于没有明确名词的中性先行词（ce, rien, cela）。"
+ },
+ {
+  "id": "relatifs-08",
+  "stem": "Le projet ___ nous travaillons depuis un an sera présenté demain.",
+  "options": [
+   "sur laquelle",
+   "sur lequel",
+   "dont"
+  ],
+  "answer": 1,
+  "why": "travailler sur un projet → sur lequel（le projet 阳性）。sur laquelle 阴阳性错误；dont 对应 de，而不是 sur。"
+ },
+ {
+  "id": "relatifs-09",
+  "stem": "Les problèmes ___ nous sommes confrontés sont nombreux.",
+  "options": [
+   "auxquels",
+   "auxquelles",
+   "dont"
+  ],
+  "answer": 0,
+  "why": "être confronté à → à + lesquels = auxquels（les problèmes 阳性复数）。auxquelles 是阴性复数；dont 对应 de。"
+ },
+ {
+  "id": "relatifs-10",
+  "stem": "Je ne comprends pas ce ___ tu fais allusion.",
+  "options": [
+   "auquel",
+   "à quoi",
+   "dont"
+  ],
+  "answer": 1,
+  "why": "faire allusion à + 中性先行词 ce → ce à quoi。auquel 需要具体名词作先行词；dont 对应 de。"
+ },
+ {
+  "id": "relatifs-11",
+  "stem": "L’entreprise ___ il travaille est en pleine expansion.",
+  "options": [
+   "pour lequel",
+   "dont",
+   "pour laquelle"
+  ],
+  "answer": 2,
+  "why": "travailler pour une entreprise → pour laquelle（阴性单数）。pour lequel 阴阳性错误；dont 对应 de。"
+ },
+ {
+  "id": "relatifs-12",
+  "stem": "L’époque ___ on écrivait encore des lettres semble bien lointaine.",
+  "options": [
+   "où",
+   "dont",
+   "laquelle"
+  ],
+  "answer": 0,
+  "why": "表示时间的先行词 l’époque 后用 où。dont 对应 de；laquelle 前面需要介词，不能单独使用。"
+ },
+ {
+  "id": "relatifs-13",
+  "stem": "La maison près ___ se trouve l’école est à vendre.",
+  "options": [
+   "dont",
+   "de laquelle",
+   "duquel"
+  ],
+  "answer": 1,
+  "why": "près de 是介词短语，先行词 la maison 为阴性：près de laquelle。介词短语中的 de 不能用 dont；duquel 是阳性。"
+ },
+ {
+  "id": "relatifs-14",
+  "stem": "Le parc au milieu ___ se dresse une statue a été rénové.",
+  "options": [
+   "dont",
+   "duquel",
+   "de lequel"
+  ],
+  "answer": 1,
+  "why": "au milieu de + le parc → au milieu duquel（de + lequel 必须缩合）。介词短语中的 de 不能用 dont；de lequel 没有缩合，是错误形式。"
+ },
+ {
+  "id": "relatifs-15",
+  "stem": "C’est une collègue ___ j’apprécie beaucoup le travail.",
+  "options": [
+   "dont",
+   "que",
+   "de qui"
+  ],
+  "answer": 0,
+  "why": "le travail de cette collègue → dont 作名词补语。que 是直接宾语，但宾语已是 le travail；de qui 不能作直接宾语名词的补语。"
+ },
+ {
+  "id": "relatifs-16",
+  "stem": "Les associations ___ la mairie verse des subventions doivent présenter un bilan.",
+  "options": [
+   "auxquelles",
+   "auxquels",
+   "dont"
+  ],
+  "answer": 0,
+  "why": "verser des subventions à des associations → auxquelles（阴性复数）。auxquels 是阳性；dont 对应 de。"
+ },
+ {
+  "id": "relatifs-17",
+  "stem": "Ce ___ les habitants se plaignent surtout, c’est le bruit.",
+  "options": [
+   "que",
+   "dont",
+   "à quoi"
+  ],
+  "answer": 1,
+  "why": "se plaindre de → ce dont。ce que 作直接宾语；ce à quoi 对应介词 à。"
+ },
+ {
+  "id": "relatifs-18",
+  "stem": "Ce ___ je m’intéresse, c’est l’histoire du cinéma.",
+  "options": [
+   "dont",
+   "à quoi",
+   "que"
+  ],
+  "answer": 1,
+  "why": "s’intéresser à → ce à quoi。ce dont 对应 de；ce que 作直接宾语，s’intéresser 没有直接宾语。"
+ },
+ {
+  "id": "relatifs-19",
+  "stem": "Les raisons pour ___ elle a démissionné restent floues.",
+  "options": [
+   "lesquelles",
+   "laquelle",
+   "quoi"
+  ],
+  "answer": 0,
+  "why": "pour + 先行词 les raisons（阴性复数）→ pour lesquelles。laquelle 数不一致；quoi 只用于中性先行词。"
+ },
+ {
+  "id": "relatifs-20",
+  "stem": "Le pays ___ elle rêve depuis l’enfance, c’est le Canada.",
+  "options": [
+   "où",
+   "dont",
+   "auquel"
+  ],
+  "answer": 1,
+  "why": "rêver de quelque chose → dont。où 表示“在那里”（rêver 不是在该国做梦）；auquel 对应 à。"
+ },
+ {
+  "id": "relatifs-21",
+  "stem": "La conférence à la fin ___ nous avons posé des questions était passionnante.",
+  "options": [
+   "dont",
+   "duquel",
+   "de laquelle"
+  ],
+  "answer": 2,
+  "why": "à la fin de 是介词短语，先行词 la conférence 阴性 → à la fin de laquelle。介词短语中不能用 dont；duquel 是阳性。"
+ },
+ {
+  "id": "relatifs-22",
+  "stem": "L’association ___ je fais partie organise une collecte samedi.",
+  "options": [
+   "à laquelle",
+   "dont",
+   "que"
+  ],
+  "answer": 1,
+  "why": "faire partie de → dont。à laquelle 对应 à；que 是直接宾语，而 faire 的宾语已是 partie。"
+ },
+ {
+  "id": "relatifs-23",
+  "stem": "Le collègue ___ j’ai prêté mon ordinateur ne me l’a toujours pas rendu.",
+  "options": [
+   "à qui",
+   "dont",
+   "que"
+  ],
+  "answer": 0,
+  "why": "prêter quelque chose à quelqu’un → 指人用 à qui（也可用 auquel）。dont 对应 de；que 是直接宾语，而直接宾语已是 mon ordinateur。"
+ },
+ {
+  "id": "relatifs-24",
+  "stem": "Le stage ___ elle a postulé est très demandé.",
+  "options": [
+   "dont",
+   "duquel",
+   "auquel"
+  ],
+  "answer": 2,
+  "why": "postuler à un stage → à + lequel = auquel。dont 和 duquel 都对应介词 de。"
+ },
+ {
+  "id": "relatifs-25",
+  "stem": "Tout ___ il a besoin tient dans un petit sac.",
+  "options": [
+   "ce que",
+   "ce dont",
+   "ce qui"
+  ],
+  "answer": 1,
+  "why": "tout ce + 关系代词；avoir besoin de → tout ce dont。ce que 作直接宾语；ce qui 作主语。"
+ },
+ {
+  "id": "relatifs-26",
+  "stem": "Il est arrivé en retard à l’entretien, ___ a agacé le jury.",
+  "options": [
+   "ce que",
+   "qui",
+   "ce qui"
+  ],
+  "answer": 2,
+  "why": "先行词是前面整句话，必须用 ce；在从句中作 a agacé 的主语 → ce qui。ce que 作宾语；单独的 qui 会被理解为指代 l’entretien。"
+ },
+ {
+  "id": "relatifs-27",
+  "stem": "Il a obtenu le poste, ___ personne ne s’attendait.",
+  "options": [
+   "ce dont",
+   "ce que",
+   "ce à quoi"
+  ],
+  "answer": 2,
+  "why": "先行词是整句话，s’attendre à → ce à quoi。ce dont 对应 de；ce que 作直接宾语，s’attendre 没有直接宾语。"
+ },
+ {
+  "id": "relatifs-28",
+  "stem": "Les montagnes ___ on aperçoit les sommets sont enneigées toute l’année.",
+  "options": [
+   "dont",
+   "que",
+   "desquelles"
+  ],
+  "answer": 0,
+  "why": "les sommets des montagnes → dont 作名词补语。que 是直接宾语，但宾语已是 les sommets；desquelles 只在介词短语后使用（près desquelles）。"
+ },
+ {
+  "id": "relatifs-29",
+  "stem": "C’est une question à ___ je n’ai pas encore réfléchi.",
+  "options": [
+   "quoi",
+   "qui",
+   "laquelle"
+  ],
+  "answer": 2,
+  "why": "réfléchir à + 具体名词 une question（阴性单数）→ à laquelle。à quoi 只用于中性先行词（ce, rien）；à qui 用于人。"
+ },
+ {
+  "id": "relatifs-30",
+  "stem": "La façon ___ il nous a parlé pendant la réunion m’a choqué.",
+  "options": [
+   "que",
+   "dont",
+   "où"
+  ],
+  "answer": 1,
+  "why": "la façon / la manière de faire quelque chose → la façon dont。que 和 où 都不能与 façon 搭配。"
+ }
+]

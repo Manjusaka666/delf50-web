@@ -1,0 +1,332 @@
+[
+ {
+  "id": "discours-01",
+  "stem": "Hier soir, Léa m’a dit qu’elle ___ trop fatiguée pour sortir ce soir-là.",
+  "options": [
+   "était",
+   "est",
+   "a été"
+  ],
+  "answer": 0,
+  "why": "主句是过去时（a dit），原话的现在时（je suis）要后移为未完成过去时 était。est 没有做时态配合；a été 表示已完成的事件，不能描写当时的状态。"
+ },
+ {
+  "id": "discours-02",
+  "stem": "Le maire a annoncé que la piscine ___ en septembre de l’année suivante.",
+  "options": [
+   "rouvrirait",
+   "rouvrira",
+   "aurait rouvert"
+  ],
+  "answer": 0,
+  "why": "原话为将来时（rouvrira），在过去时主句后变成条件式现在时 rouvrirait（过去中的将来）。« l’année suivante » 说明时间以过去为参照，所以 rouvrira 不对；aurait rouvert 是条件式过去时，对应原话的先将来时。"
+ },
+ {
+  "id": "discours-03",
+  "stem": "Il m’a expliqué qu’il ___ son train la veille à cause d’une grève.",
+  "options": [
+   "avait raté",
+   "a raté",
+   "rate"
+  ],
+  "answer": 0,
+  "why": "原话的复合过去时（j’ai raté）在过去时主句后变成愈过去时 avait raté；la veille 也表明是“前一天”。a raté 和 rate 都没有做时态配合。"
+ },
+ {
+  "id": "discours-04",
+  "stem": "La semaine dernière, le technicien a promis qu’il me rappellerait ___, mais il ne l’a jamais fait.",
+  "options": [
+   "demain",
+   "le lendemain",
+   "la veille"
+  ],
+  "answer": 1,
+  "why": "事后转述时，原话的 demain 要变成 le lendemain（第二天）。demain 以现在为参照，与“上周”的承诺不符；la veille 是“前一天”，方向相反。"
+ },
+ {
+  "id": "discours-05",
+  "stem": "« Vous avez reçu mon courriel ? » → Elle m’a demandé ___ j’avais reçu son courriel.",
+  "options": [
+   "que",
+   "ce que",
+   "si"
+  ],
+  "answer": 2,
+  "why": "是非疑问句转为间接疑问用 si（是否）。demander que 意为“要求”，后接虚拟式；ce que 用于转述 qu’est-ce que 开头的问题。"
+ },
+ {
+  "id": "discours-06",
+  "stem": "« Qu’est-ce que vous pensez du projet ? » → Le journaliste m’a demandé ___ je pensais du projet.",
+  "options": [
+   "ce que",
+   "qu’est-ce que",
+   "que"
+  ],
+  "answer": 0,
+  "why": "qu’est-ce que 在间接疑问中变为 ce que。qu’est-ce que 只用于直接疑问句；单独的 que 不能引导这个间接疑问。"
+ },
+ {
+  "id": "discours-07",
+  "stem": "« Qu’est-ce qui vous a motivé ? » → Le recruteur voulait savoir ___ m’avait motivé.",
+  "options": [
+   "ce que",
+   "qu’est-ce qui",
+   "ce qui"
+  ],
+  "answer": 2,
+  "why": "从句中缺的是主语（什么激励了我），qu’est-ce qui 在间接疑问中变为 ce qui。ce que 作宾语，这里缺主语所以不对；qu’est-ce qui 只用于直接疑问句。"
+ },
+ {
+  "id": "discours-08",
+  "stem": "« J’aurai fini le rapport avant vendredi. » → Il a affirmé qu’il ___ le rapport avant le vendredi suivant.",
+  "options": [
+   "aura fini",
+   "avait fini",
+   "aurait fini"
+  ],
+  "answer": 2,
+  "why": "先将来时（j’aurai fini）在过去时主句后变为条件式过去时 aurait fini。aura fini 没有后移；avait fini 是愈过去时，表示在说话之前就已完成，与“下一个星期五之前”矛盾。"
+ },
+ {
+  "id": "discours-09",
+  "stem": "Malgré les images de vidéosurveillance, le suspect ___ avoir été sur les lieux du vol.",
+  "options": [
+   "a admis",
+   "a nié",
+   "a reconnu"
+  ],
+  "answer": 1,
+  "why": "malgré 表示让步：尽管有监控录像，嫌疑人仍然否认在场，所以用 nier + 不定式过去时。admettre 和 reconnaître 表示承认，与 malgré 的转折逻辑矛盾。"
+ },
+ {
+  "id": "discours-10",
+  "stem": "Le vendeur ___ que ce téléphone était étanche, mais il est tombé en panne après la première pluie.",
+  "options": [
+   "prétendait",
+   "admettait",
+   "niait"
+  ],
+  "answer": 0,
+  "why": "prétendre que 表示“声称”，暗示转述者不相信，后面的 mais 证实说法是假的。admettre（承认）不符合推销的语境；niait 表示否认手机防水，与后文的转折不符。"
+ },
+ {
+  "id": "discours-11",
+  "stem": "« Où avez-vous garé la voiture ? » → L’agent m’a demandé ___.",
+  "options": [
+   "où avais-je garé la voiture",
+   "où est-ce que j’avais garé la voiture",
+   "où j’avais garé la voiture"
+  ],
+  "answer": 2,
+  "why": "间接疑问保留疑问词 où，但主谓不倒装，也不用 est-ce que；时态后移为愈过去时：où j’avais garé。另外两项保留了直接疑问的形式。"
+ },
+ {
+  "id": "discours-12",
+  "stem": "« Venez demain à 9 heures. » → Le médecin m’a dit ___ le lendemain à 9 heures.",
+  "options": [
+   "que venir",
+   "venir",
+   "de venir"
+  ],
+  "answer": 2,
+  "why": "命令式转述为间接引语时用 dire / demander à qqn de + 不定式。que 后面要接变位动词；dire 后不能直接接不定式表示命令。"
+ },
+ {
+  "id": "discours-13",
+  "stem": "Dans un communiqué publié le 3 mars, les syndicats ont déclaré qu’ils avaient signé l’accord ___.",
+  "options": [
+   "hier",
+   "le lendemain",
+   "la veille"
+  ],
+  "answer": 2,
+  "why": "以过去某天（3月3日）为参照，原话的 hier 要变成 la veille（前一天，即3月2日）。hier 以现在为参照；le lendemain 是“第二天”，方向相反，且与愈过去时 avaient signé 矛盾。"
+ },
+ {
+  "id": "discours-14",
+  "stem": "« Quand j’étais jeune, je vivais à Dakar. » → Il a raconté que, quand il était jeune, il ___ à Dakar.",
+  "options": [
+   "vivait",
+   "vivrait",
+   "vive"
+  ],
+  "answer": 0,
+  "why": "原话已是未完成过去时，转述时保持不变：vivait。vivrait 是条件式，表示过去中的将来，意思不对；vive 是虚拟式，raconter que 后接直陈式。"
+ },
+ {
+  "id": "discours-15",
+  "stem": "« Aujourd’hui, je suis libre. » → Le 12 mai, il m’a dit qu’il était libre ___.",
+  "options": [
+   "aujourd’hui",
+   "ce jour-là",
+   "le lendemain"
+  ],
+  "answer": 1,
+  "why": "以过去的5月12日为参照，aujourd’hui 变为 ce jour-là（那一天）。aujourd’hui 指说话的今天；le lendemain 是第二天，改变了原意。"
+ },
+ {
+  "id": "discours-16",
+  "stem": "« Est-ce qu’il va pleuvoir ? » → Elle m’a demandé ___ allait pleuvoir.",
+  "options": [
+   "s’il",
+   "si il",
+   "qu’il"
+  ],
+  "answer": 0,
+  "why": "是非疑问用 si，si 遇到 il / ils 必须省音为 s’il。« si il » 是拼写错误；demander qu’il… 意为“要求”，不能转述疑问。"
+ },
+ {
+  "id": "discours-17",
+  "stem": "« Qu’est-ce qui se passe ? » → Les voisins se demandaient ___.",
+  "options": [
+   "qu’est-ce qui se passait",
+   "ce qui se passait",
+   "ce qui se passe"
+  ],
+  "answer": 1,
+  "why": "qu’est-ce qui → ce qui，而且主句是过去时，现在时要后移为未完成过去时：ce qui se passait。第二项保留了直接疑问形式；第三项没有做时态配合。"
+ },
+ {
+  "id": "discours-18",
+  "stem": "Le ministre a admis que le gouvernement ___ des erreurs dans la gestion de la crise.",
+  "options": [
+   "commettrait",
+   "avait commis",
+   "commettra"
+  ],
+  "answer": 1,
+  "why": "admettre que（承认）+ 直陈式；承认的是之前已经发生的错误，用愈过去时 avait commis。commettrait 表示过去中的将来，commettra 是将来时，都与“承认过去的错误”不符。"
+ },
+ {
+  "id": "discours-19",
+  "stem": "L’ancien maire nie ___ des cadeaux de la part d’entreprises.",
+  "options": [
+   "avoir reçu",
+   "d’avoir reçu",
+   "à avoir reçu"
+  ],
+  "answer": 0,
+  "why": "nier + 不定式（过去时），不加介词：nier avoir reçu。nier 不与 de 或 à 搭配。"
+ },
+ {
+  "id": "discours-20",
+  "stem": "Ce site ___ offrir les meilleurs prix du marché, ce qui reste à prouver.",
+  "options": [
+   "prétend d’",
+   "prétend à",
+   "prétend"
+  ],
+  "answer": 2,
+  "why": "prétendre + 不定式（不加介词）表示“自称”，后半句表明转述者的怀疑。prétendre de 不存在；prétendre à + 名词意为“追求、谋求”（prétendre à un poste），不能接这个不定式。"
+ },
+ {
+  "id": "discours-21",
+  "stem": "« On va fermer l’usine. » → Le PDG a annoncé qu’on ___ fermer l’usine.",
+  "options": [
+   "va",
+   "irait",
+   "allait"
+  ],
+  "answer": 2,
+  "why": "近将来 aller + inf 在过去时主句后变成 allait + inf。va 没有做时态配合；irait fermer 意为“会去关闭”，改变了近将来的意义。"
+ },
+ {
+  "id": "discours-22",
+  "stem": "« Nous partirons dans deux jours. » → Ils avaient dit qu’ils partiraient ___.",
+  "options": [
+   "dans deux jours",
+   "deux jours plus tard",
+   "il y a deux jours"
+  ],
+  "answer": 1,
+  "why": "以过去为参照，dans deux jours 变为 deux jours plus tard（两天之后）。dans deux jours 以现在为参照；il y a deux jours 是“两天前”，与条件式 partiraient 矛盾。"
+ },
+ {
+  "id": "discours-23",
+  "stem": "« Il y a un an, j’ai créé mon entreprise. » → En 2020, elle a raconté qu’elle avait créé son entreprise ___.",
+  "options": [
+   "il y a un an",
+   "un an plus tôt",
+   "un an plus tard"
+  ],
+  "answer": 1,
+  "why": "以2020年为参照，il y a un an 变为 un an plus tôt（一年之前）。il y a un an 以今天为参照；un an plus tard 方向相反，与愈过去时矛盾。"
+ },
+ {
+  "id": "discours-24",
+  "stem": "« Pourquoi refusez-vous ce poste ? » → La DRH m’a demandé ___ ce poste.",
+  "options": [
+   "pourquoi refusais-je",
+   "pourquoi je refusais",
+   "pourquoi est-ce que je refusais"
+  ],
+  "answer": 1,
+  "why": "间接疑问：保留 pourquoi，主语在动词前，不用倒装或 est-ce que，并把现在时后移为未完成过去时。另外两项保留了直接疑问的结构。"
+ },
+ {
+  "id": "discours-25",
+  "stem": "Après plusieurs semaines, l’entreprise a fini par reconnaître que les données de ses clients ___ piratées.",
+  "options": [
+   "aient été",
+   "seront",
+   "avaient été"
+  ],
+  "answer": 2,
+  "why": "reconnaître que（承认事实）+ 直陈式；数据被盗发生在承认之前，用愈过去时被动态 avaient été piratées。aient été 是虚拟式；seront 是将来时，与过去的主句和事实不符。"
+ },
+ {
+  "id": "discours-26",
+  "stem": "« Quelle formation avez-vous suivie ? » → On m’a demandé ___ formation j’avais suivie.",
+  "options": [
+   "quelle",
+   "laquelle",
+   "ce que"
+  ],
+  "answer": 0,
+  "why": "疑问形容词 quel 在间接疑问中保持不变，并与 formation 配合：quelle formation。laquelle 是代词，不能放在名词前；ce que 不能接名词。"
+ },
+ {
+  "id": "discours-27",
+  "stem": "« Ne signez rien ! » → L’avocat m’a conseillé ___.",
+  "options": [
+   "de ne signer rien",
+   "ne rien signer",
+   "de ne rien signer"
+  ],
+  "answer": 2,
+  "why": "否定命令转述为 conseiller de + 否定不定式；不定式的否定 ne rien 两部分都放在动词前：de ne rien signer。第二项否定词位置错误；第三项缺少介词 de。"
+ },
+ {
+  "id": "discours-28",
+  "stem": "Le témoin affirme qu’il ___ l’accusé dans le bar ce soir-là.",
+  "options": [
+   "ait vu",
+   "a vu",
+   "voie"
+  ],
+  "answer": 1,
+  "why": "affirmer que 表示肯定，后接直陈式；主句是现在时，不需要时态后移，过去的动作用复合过去时 a vu。ait vu 和 voie 是虚拟式，不能用在 affirmer 后。"
+ },
+ {
+  "id": "discours-29",
+  "stem": "« Je ne sais pas si je pourrai venir. » → Il a dit qu’il ne savait pas s’il ___ venir.",
+  "options": [
+   "pourra",
+   "pourrait",
+   "puisse"
+  ],
+  "answer": 1,
+  "why": "原话 si je pourrai 是将来时，在过去时主句后变为条件式 pourrait。pourra 没有后移；puisse 是虚拟式，si 引导的间接疑问后接直陈式或条件式。"
+ },
+ {
+  "id": "discours-30",
+  "stem": "« Quand vous aurez lu le rapport, vous comprendrez. » → Il m’a dit que, quand j’___ le rapport, je comprendrais.",
+  "options": [
+   "aurais lu",
+   "aurai lu",
+   "avais lu"
+  ],
+  "answer": 0,
+  "why": "原话的先将来时（aurez lu）在过去时转述中变为条件式过去时 aurais lu，与主句的 comprendrais（将来 → 条件式）对应。aurai lu 没有后移；avais lu 是愈过去时，与 comprendrais 的时间关系不符。"
+ }
+]

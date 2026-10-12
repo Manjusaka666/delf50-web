@@ -1,15 +1,15 @@
-/** Chunks (词块): the day's lexical chunks, recalled from Chinese and a gapped sentence, then self-assessed. */
+/** Chunks (词块): the day's lexical chunks, typed from the Chinese meaning and a gapped sentence, checked for spelling. */
 import { store, commit, refresh } from '../store.js';
 import { chunkMark } from '../progress.js';
-import { markChunk } from '../state.js';
+import { markChunk, spelledRight } from '../state.js';
 import { html, icon, pad2, frText, MODULE_NAMES } from '../ui.js';
 import * as speech from '../speech.js';
-import { dayContext, crumbs, recallCard, plainExample } from './common.js';
+import { dayContext, crumbs, recallCard, mountRecall, insertAccent, chunkGap, plainExample } from './common.js';
 
 export async function vocabView(d) {
   const ctx = await dayContext(d);
   const all = ctx.day.vocab;
-  let revealed = false, cur = null;
+  let cur = null, typed = '', result = null;
 
   // Unseen chunks of the plan first, then those to see again, then the optional ones.
   const due = () => ctx.plan.vocab.length;
@@ -29,48 +29,50 @@ export async function vocabView(d) {
       <header class="page-head">
         <p class="eyebrow">Lexique · ${ctx.day.topic}</p>
         <h1 class="display-s">${ctx.day.title}</h1>
-        <p class="muted">今日 ${m.done} / ${m.total} 个 · 记住 ${known} · 再练 ${again}。词块来自当天的阅读、听力和写作口语任务，按"看中文和例句 → 说出法语 → 翻面核对"练习。</p>
+        <p class="muted">今日 ${m.done} / ${m.total} 个 · 拼对 ${known} · 再练 ${again}。词块来自当天的阅读、听力和写作口语任务：看中文和例句，在空格处写出缺少的法语，系统核对拼写。</p>
       </header>
       <div class="split">
-        <div>${c ? recallCard(c, revealed, `${c.id.slice(-2)} / ${pad2(all.length)}${all.indexOf(c) >= due() ? ' · 选做' : ''}`)
-          : html`<section class="qcard done-card"><p class="display-xs">今天的词块都练过了</p><p class="muted">可以点右侧任意词块再看一遍，或回到今日继续其他模块。</p>
+        <div>${c ? recallCard(c, { meta: `${c.id.slice(-2)} / ${pad2(all.length)}${all.indexOf(c) >= due() ? ' · 选做' : ''}`, typed, result })
+          : html`<section class="qcard done-card"><p class="display-xs">今天的词块都拼对了</p><p class="muted">可以点右侧任意词块再写一遍，或回到今日继续其他模块。</p>
             <div class="qnav end"><a class="btn" href="#/day/${d}">回到今日 ${icon('right')}</a></div></section>`}</div>
         <aside class="side">
           <ol class="chunks-list">${all.map((x, i) => {
             const mk = marks[i];
             return html`<li><button class="chunk-row ${x.id === (c && c.id) ? 'on' : ''} ${mk || ''} ${i >= due() ? 'extra' : ''}" data-act="open" data-id="${x.id}">
-              <span class="chunk-dot" aria-hidden="true"></span><span class="chunk-fr" lang="fr">${frText(x.fr)}</span><span class="chunk-zh">${x.zh}</span></button></li>`;
+              <span class="chunk-dot" aria-hidden="true"></span><span class="chunk-fr" lang="fr">${mk ? frText(x.fr) : '· · ·'}</span><span class="chunk-zh">${x.zh}</span></button></li>`;
           })}</ol>
         </aside>
       </div>
     </article>`;
   };
 
-  const mark = (v) => {
-    const c = current();
-    if (!c || !revealed) return;
-    revealed = false; cur = null;
-    commit((S) => markChunk(S, d, c.id, v));
-  };
   const say = () => { const c = current(); if (c) speech.play(`chunk:${c.id}`, [c.fr + '.', plainExample(c.ex)]); };
+  const settle = (ok) => {
+    const c = current();
+    if (!c || result) return;
+    cur = c.id; result = { ok, typed };
+    commit((S) => markChunk(S, d, c.id, ok ? 'known' : 'again'));
+    say();
+  };
+  const check = () => { const c = current(); if (c && typed.trim()) settle(spelledRight(typed, chunkGap(c.ex))); };
+  const reset = (id = null) => { cur = id; typed = ''; result = null; speech.stop(); refresh(); };
 
   return {
     title: `词块 · Jour ${d}`,
     render,
+    mount: (root) => mountRecall(root, check),
     unmount: () => speech.stop(),
+    inputs: { typed: (el) => { typed = el.value; } },
     actions: {
-      reveal: () => { revealed = true; refresh(); say(); },
-      known: () => mark('known'),
-      again: () => mark('again'),
+      check,
+      'give-up': () => settle(false),
+      'next-chunk': () => reset(),
+      accent: insertAccent,
       say,
-      open: (el) => { cur = el.dataset.id; revealed = Boolean(chunkMark(store.S, d, cur)); refresh(); scrollTo({ top: 0, behavior: 'smooth' }); }
+      open: (el) => { reset(el.dataset.id); scrollTo({ top: 0, behavior: 'smooth' }); }
     },
     keys: (e) => {
-      if (e.metaKey || e.ctrlKey || e.altKey) return;
-      if ((e.key === ' ' || e.key === 'Enter') && !revealed) { e.preventDefault(); revealed = true; refresh(); say(); }
-      else if (e.key === '1' && revealed) { e.preventDefault(); mark('known'); }
-      else if (e.key === '2' && revealed) { e.preventDefault(); mark('again'); }
+      if (e.key === 'Enter' && result && !e.metaKey && !e.ctrlKey && !e.altKey) { e.preventDefault(); reset(); }
     }
   };
 }
-

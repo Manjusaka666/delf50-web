@@ -1,0 +1,239 @@
+{
+  "day": 21,
+  "phase": "论证、媒介与转述",
+  "title": "先后关系",
+  "level": "B2",
+  "grammarFocus": "Antériorité : infinitif passé, participe composé (après avoir…, ayant…)",
+  "function": "relater des étapes",
+  "topic": "parcours professionnel",
+  "canDo": "能用 après avoir/être + 过去分词、ayant/étant + 过去分词、une fois + 过去分词清楚地讲述一段职业经历的先后步骤，并说明前一步如何促成后一步。",
+  "review": "复习第 1 天的过去时三层次（复合过去时/未完成过去时/愈过去时）和第 11 天的时间表达（après que + 直陈式、avant que + 虚拟式），今天把“先发生的动作”压缩成不定式过去时和复合分词。",
+  "input": "读：转行报道、关于简历“空档期”的专栏、VAE 论坛经验帖——先圈出所有表示“先于”的结构，再按时间轴重排事件；听：职业教练访谈、“斜杠青年”专栏、转行论坛广告——边听边记“步骤 1 → 步骤 2”，注意 ayant/après avoir 引出的前因。",
+  "output": "写：给地区转行项目评审委员会的正式申请信（≥220 词），按时间顺序陈述经历，至少用 4 处先后结构；说：围绕“一生多份职业”做 4 分钟独白，并就“带薪转行假”进行辩论。",
+  "checkpoint": "阅读+听力正确率 ≥ 80%；申请信中 après avoir/être + PP 的配合全部正确（如 après être partie）；独白 4 分钟内至少用 3 种先后结构且不中断。",
+  "challenge": "今日挑战：在 TV5MONDE 或 RFI《Journal en français facile》中找一则关于转行或职业培训的报道，用 après avoir…、ayant…、une fois… 各写一句话复述其中人物的经历步骤，再录 1 分钟音频讲你自己（或家人）的职业路线。",
+  "sources": ["FEI-B2", "FEI-B2-TRAIN", "FEI-INVENTAIRE", "CEFR-CV", "RFI-B2"],
+  "focus": ["anteriorite"],
+  "items": {
+    "reading": [
+      {
+        "id": "R21-1",
+        "title": "Changer de métier à quarante ans : un parcours en plusieurs étapes",
+        "meta": {"genre": "Article de presse", "domain": "Travail", "level": "B2"},
+        "text": [
+          "Il y a encore une vingtaine d’années, on entrait dans une entreprise après avoir terminé ses études et l’on y faisait souvent toute sa carrière. Ce modèle linéaire appartient désormais au passé. Selon une enquête menée auprès de 2 000 actifs, près d’un salarié sur trois envisage de changer de métier dans les cinq prochaines années, et un sur dix affirme avoir déjà franchi le pas. Mais entre l’envie et la réalisation, le chemin est long, et il passe par des étapes que les conseillers en évolution professionnelle connaissent bien.",
+          "La première est presque toujours une phase de doute. Nadia Ferrand, 43 ans, a travaillé quinze ans comme comptable dans une PME de la région lyonnaise. « Après avoir passé des années à remplir les mêmes tableaux, j’ai eu l’impression de ne plus rien apprendre », raconte-t-elle. N’ayant jamais osé en parler à ses collègues, elle a d’abord cru que cette lassitude passerait. Ce n’est qu’au bout de deux ans qu’elle a pris rendez-vous avec une conseillère.",
+          "Vient ensuite le bilan de compétences, une étape que beaucoup sous-estiment. Il ne s’agit pas seulement de dresser la liste de ce que l’on sait faire, mais d’identifier ce que l’on aime faire, et dans quelles conditions. Une fois ce diagnostic posé, le candidat à la reconversion peut confronter son projet à la réalité : rencontrer des professionnels, effectuer un stage d’observation, se renseigner sur les débouchés. « Trop de gens se lancent sans avoir vérifié que le métier dont ils rêvent existe vraiment sous la forme qu’ils imaginent », observe Bertrand Lemoine, conseiller dans un cabinet d’accompagnement.",
+          "La formation constitue souvent l’étape la plus lourde, financièrement comme psychologiquement. Ayant obtenu un financement partiel, Nadia a suivi pendant dix mois une formation d’ébéniste, en alternant cours théoriques et travail en atelier. « Me retrouver sur les bancs de l’école avec des jeunes de dix-huit ans, ça a été une vraie leçon d’humilité », sourit-elle.",
+          "Reste enfin l’installation, qui ne marque pas toujours la fin du parcours. Une fois diplômés, certains reconvertis découvrent que leur nouveau métier rapporte moins que l’ancien ; d’autres doivent créer leur propre activité, faute de postes salariés. Nadia, elle, a ouvert son atelier il y a deux ans, après avoir longuement hésité. Partie d’un projet flou, elle est arrivée à un métier choisi. Elle ne regrette rien, mais elle insiste : « Une reconversion, ça ne se décide pas sur un coup de tête. Ça se construit, étape par étape. »"
+        ],
+        "questions": [
+          {"stem": "Quel est l’objectif principal de cet article ?", "options": ["Dénoncer la difficulté de retrouver un emploi stable après quarante ans.", "Décrire les étapes successives d’un changement de métier.", "Présenter les nouvelles aides publiques à la formation des adultes."], "answer": 1, "why": "文章以 Nadia 为例，依次介绍 « La première… Vient ensuite… La formation… Reste enfin l’installation »，即转行的各个阶段。A 未提及求职难；C 只顺带提到 « financement partiel »，并非主旨。"},
+          {"stem": "Que révèle l’enquête citée dans le premier paragraphe ?", "options": ["Que la majorité des salariés a déjà changé de métier.", "Qu’une part importante des actifs songe à se reconvertir.", "Que les reconversions échouent souvent faute d’argent."], "answer": 1, "why": "« près d’un salarié sur trois envisage de changer de métier »——约三分之一在考虑转行。A 错：已转行的只有 « un sur dix »；C 原文未提。"},
+          {"stem": "Pourquoi Nadia a-t-elle attendu deux ans avant de consulter une conseillère ?", "options": ["Elle pensait que son malaise serait passager.", "Son employeur refusait de la laisser partir.", "Elle n’avait pas les moyens de payer un bilan."], "answer": 0, "why": "« elle a d’abord cru que cette lassitude passerait »——她以为倦怠会过去。B、C 原文均无依据。"},
+          {"stem": "Selon Bertrand Lemoine, quelle erreur commettent de nombreux candidats à la reconversion ?", "options": ["Ils choisissent un métier trop éloigné de leurs compétences.", "Ils abandonnent leur formation avant la fin.", "Ils ne vérifient pas la réalité du métier qu’ils visent."], "answer": 2, "why": "« Trop de gens se lancent sans avoir vérifié que le métier dont ils rêvent existe vraiment… »，sans avoir vérifié 即“没有事先核实”。A、B 文中未说。"},
+          {"stem": "Que signifie l’expression « une vraie leçon d’humilité » dans ce contexte ?", "options": ["Une expérience qui l’a obligée à relativiser son statut d’adulte expérimentée.", "Un cours pendant lequel elle a appris des techniques très difficiles.", "Une humiliation publique qu’elle n’a jamais réussi à surmonter."], "answer": 0, "why": "四十多岁的她和十八岁的年轻人一起坐在课堂里（« sur les bancs de l’école avec des jeunes de dix-huit ans »），这让她放下资历、学会谦逊；她是笑着说的（« sourit-elle »），所以不是 C 的“羞辱”；B 只理解了字面“课”。"},
+          {"stem": "Quelle idée l’auteur souligne-t-il dans le dernier paragraphe ?", "options": ["L’installation garantit la réussite financière du projet.", "L’installation peut réserver des difficultés inattendues.", "La plupart des reconvertis regrettent leur ancien métier."], "answer": 1, "why": "« qui ne marque pas toujours la fin du parcours » + 新职业收入更低、只能自己创业等，说明安顿阶段仍有意外困难。A 与原文相反；C 错：Nadia « ne regrette rien »，文中也没说大多数人后悔。"}
+        ]
+      },
+      {
+        "id": "R21-2",
+        "title": "Tribune : cessons de traquer les « trous » dans les CV",
+        "meta": {"genre": "Tribune", "domain": "Emploi et recrutement", "level": "B2"},
+        "text": [
+          "Combien de fois ai-je vu un recruteur froncer les sourcils devant un « trou » dans un CV ? Après avoir passé vingt ans dans les ressources humaines, je suis convaincue que cette méfiance nous prive de candidats remarquables.",
+          "Prenons un exemple réel, dont j’ai simplement changé le prénom. Julien, ingénieur, avait quitté son poste pour s’occuper de son père gravement malade. Ayant recommencé à chercher du travail dix-huit mois plus tard, il s’est vu interroger, entretien après entretien, sur cette « période d’inactivité ». Inactivité ? Pendant ces mois, il avait géré un budget, coordonné des soignants, négocié avec des administrations. Bref, il avait développé des compétences que bien des managers n’ont jamais acquises.",
+          "On m’objectera que l’entreprise a besoin de profils opérationnels immédiatement. Certes. Mais un candidat qui revient après une interruption n’a pas oublié son métier pour autant ; il a souvent pris du recul sur ses choix. Et ceux qui ont enchaîné les postes sans s’être jamais arrêtés ne sont pas forcément les plus lucides sur ce qu’ils veulent.",
+          "Le vrai problème, c’est que nos grilles d’évaluation récompensent la continuité plutôt que la cohérence. Or un parcours peut être sinueux et parfaitement cohérent. Une fois cette évidence admise, il devient possible de poser les bonnes questions en entretien : non plus « Pourquoi avez-vous arrêté ? », mais « Qu’avez-vous appris pendant cette période ? ».",
+          "Je ne plaide pas pour l’indulgence, mais pour la curiosité. Les recruteurs qui auront eu le courage de lire un CV autrement découvriront des talents que leurs concurrents, eux, auront écartés sans même les avoir rencontrés.",
+          "Claire Vasseur, directrice des ressources humaines"
+        ],
+        "questions": [
+          {"stem": "Quel est le but principal de l’auteure ?", "options": ["Expliquer aux candidats comment dissimuler une période sans emploi.", "Critiquer les salariés qui quittent leur poste pour des raisons familiales.", "Inciter les recruteurs à porter un autre regard sur les interruptions de carrière."], "answer": 2, "why": "全文呼吁招聘者改变看待简历空档的方式：« lire un CV autrement »、« poser les bonnes questions »。A 与“不要隐瞒”的立场相反；B 作者反而为 Julien 辩护。"},
+          {"stem": "Pourquoi l’auteure conteste-t-elle le mot « inactivité » à propos de Julien ?", "options": ["Parce que Julien avait continué à travailler à temps partiel.", "Parce que Julien avait exercé de nombreuses responsabilités pendant cette période.", "Parce que Julien avait profité de cette période pour reprendre ses études."], "answer": 1, "why": "« il avait géré un budget, coordonné des soignants, négocié avec des administrations »——他承担了很多责任。A、C 原文未提。"},
+          {"stem": "Dans le troisième paragraphe, quelle stratégie argumentative l’auteure adopte-t-elle ?", "options": ["Elle concède un point à ses contradicteurs avant de le nuancer.", "Elle reconnaît que son raisonnement comporte une faille.", "Elle s’appuie sur une étude chiffrée pour prouver sa thèse."], "answer": 0, "why": "« On m’objectera que… Certes. Mais… » 是典型的“让步—反驳”结构。B 她并不承认自己有漏洞；C 文中没有数据。"},
+          {"stem": "Que reproche-t-elle aux grilles d’évaluation des recruteurs ?", "options": ["Elles sont trop complexes à utiliser pendant un entretien.", "Elles valorisent la continuité au détriment de la cohérence.", "Elles favorisent systématiquement les candidats les plus jeunes."], "answer": 1, "why": "« nos grilles d’évaluation récompensent la continuité plutôt que la cohérence »。A、C 无依据。"},
+          {"stem": "Quel est le ton de la conclusion ?", "options": ["Résigné et pessimiste.", "Ironique et méprisant.", "Convaincu et incitatif."], "answer": 2, "why": "« Je ne plaide pas pour l’indulgence, mais pour la curiosité » 以及“敢于换个角度看简历的招聘者将发现人才”，语气坚定并鼓励行动。没有放弃（A），也没有嘲讽（B）。"}
+        ]
+      },
+      {
+        "id": "R21-3",
+        "title": "Forum « Reconversion & formation » : ma VAE, étape par étape",
+        "meta": {"genre": "Post de forum", "domain": "Formation professionnelle", "level": "B2"},
+        "text": [
+          "Bonjour à tous. Après avoir lu beaucoup de témoignages ici, je voudrais à mon tour raconter ma VAE, puisque plusieurs d’entre vous m’ont posé la question en message privé.",
+          "Je travaille depuis onze ans dans la vente, dont cinq comme responsable de rayon, mais je n’avais aucun diplôme au-delà du bac. Ayant appris qu’on pouvait faire reconnaître son expérience grâce à la validation des acquis, je me suis lancée l’an dernier. Une fois mon dossier de recevabilité accepté, j’ai dû rédiger un long livret décrivant précisément mes activités : c’est l’étape la plus longue, comptez plusieurs mois de soirées et de week-ends. Je suis ensuite passée devant un jury. Arrivée tremblante, je suis ressortie soulagée : après m’avoir posé des questions très concrètes sur la gestion d’une équipe, le jury m’a accordé la totalité du diplôme.",
+          "Mes conseils : ne commencez pas sans avoir rassemblé vos fiches de poste et vos évaluations annuelles, et faites-vous accompagner. Seule, je n’aurais jamais tenu jusqu’au bout.",
+          "Sabrina, 38 ans"
+        ],
+        "questions": [
+          {"stem": "Quel est l’objectif de ce message ?", "options": ["Demander des conseils avant de commencer une démarche.", "Partager une expérience personnelle pour aider d’autres membres.", "Se plaindre de la lenteur d’une procédure administrative."], "answer": 1, "why": "« je voudrais à mon tour raconter ma VAE, puisque plusieurs d’entre vous m’ont posé la question »——分享经验以帮助他人。她已经完成了程序（A 错），也没有抱怨（C 错）。"},
+          {"stem": "Pourquoi Sabrina a-t-elle entrepris cette démarche ?", "options": ["Son employeur l’y avait obligée.", "Elle avait échoué à un examen classique.", "Elle voulait faire reconnaître une expérience non diplômée."], "answer": 2, "why": "« je n’avais aucun diplôme au-delà du bac » + « faire reconnaître son expérience »。A、B 原文未提。"},
+          {"stem": "Selon elle, quelle étape demande le plus de temps ?", "options": ["L’entretien avec le jury.", "La rédaction du livret décrivant ses activités.", "L’examen du dossier de recevabilité."], "answer": 1, "why": "« rédiger un long livret… : c’est l’étape la plus longue »。"},
+          {"stem": "Que signifie « je n’aurais jamais tenu jusqu’au bout » ?", "options": ["Je n’aurais pas terminé la démarche.", "Je n’aurais pas osé la commencer.", "Je n’aurais pas obtenu le diplôme entier."], "answer": 0, "why": "tenir jusqu’au bout = 坚持到最后，即完成整个程序。B 说的是“开始”；C 混淆了“完成程序”和“获得全部文凭”。"}
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "id": "L21-1",
+        "title": "« Présentez-vous » : raconter son parcours en entretien",
+        "meta": {"genre": "Émission de radio · entretien", "domain": "Emploi", "level": "B2", "plays": 2},
+        "script": [
+          "— Bonjour et bienvenue dans « Cap Emploi », l’émission qui parle de travail et de carrière. Mon invitée aujourd’hui est Hélène Morvan, coach en recrutement depuis une quinzaine d’années. Hélène Morvan, bonjour.\n— Bonjour, et merci de m’accueillir.\n— Vous dites que la question la plus redoutée en entretien, c’est « Présentez-vous ». Pourquoi ?\n— Parce que les candidats la prennent pour une formalité. Ils récitent leur CV, poste après poste, sans fil conducteur. Or, ce que le recruteur attend, c’est un récit : comment vous êtes passé d’une étape à l’autre, et pourquoi.",
+          "— Concrètement, comment construit-on ce récit ?\n— Alors, je conseille toujours de partir de la fin, c’est-à-dire du poste visé, puis de remonter le temps. Une fois l’objectif clairement posé, on sélectionne les expériences qui y mènent. Tout le reste, on le résume ou on le laisse de côté. Vous voyez, un parcours, ce n’est pas un inventaire.\n— Et sur la forme ?\n— Sur la forme, il faut des liens logiques et temporels. Prenez un candidat qui dit : « J’ai été vendeur, puis j’ai été chef de rayon, puis j’ai été acheteur. » C’est exact, mais c’est plat. Comparez avec : « Après avoir passé trois ans en magasin, j’ai été promu chef de rayon ; ayant découvert à ce poste les négociations avec les fournisseurs, j’ai demandé à rejoindre le service achats. » Là, on comprend une logique, une progression.\n— La grammaire au service de la carrière, en quelque sorte !\n— Exactement. Des tournures comme « après avoir », « une fois » ou « ayant » montrent qu’une étape en a préparé une autre. C’est très efficace.",
+          "— Que faire quand le parcours comporte un échec, un licenciement par exemple ?\n— Surtout ne pas le cacher, mais ne pas s’y attarder non plus. On l’évoque en une phrase, puis on montre les leçons qu’on en a tirées. Par exemple : « Mon poste ayant été supprimé lors d’une restructuration, j’en ai profité pour me former à la gestion de projet. » Le recruteur retient surtout la deuxième partie de la phrase.\n— Et combien de temps doit durer cette présentation ?\n— Deux minutes, trois au maximum. Au-delà, on perd son interlocuteur. Et entraînez-vous à voix haute, pas seulement dans votre tête : beaucoup de candidats découvrent le jour de l’entretien qu’ils ne savent pas comment terminer.\n— Justement, un dernier conseil ?\n— Oui : terminez toujours par l’avenir. Après avoir parlé de ce que vous avez fait, dites ce que vous voulez faire, et pourquoi dans cette entreprise-là.\n— Merci beaucoup, Hélène Morvan."
+        ],
+        "questions": [
+          {"stem": "Quel est le sujet principal de cet entretien ?", "options": ["Les erreurs que commettent les recruteurs pendant les entretiens.", "La manière de présenter son parcours lors d’un entretien d’embauche.", "Les règles à respecter pour rédiger un CV efficace."], "answer": 1, "why": "整个访谈围绕 « Présentez-vous » 这一问题，讲如何讲述自己的职业经历。A 主角是候选人而非招聘者；C 讲的是口头叙述，不是写简历。"},
+          {"stem": "Selon Hélène Morvan, quelle erreur commettent souvent les candidats ?", "options": ["Ils parlent trop longuement de leurs projets d’avenir.", "Ils exagèrent l’importance de leurs expériences passées.", "Ils énumèrent leurs postes sans fil conducteur."], "answer": 2, "why": "« Ils récitent leur CV, poste après poste, sans fil conducteur. » A、B 未提及。"},
+          {"stem": "Que conseille-t-elle pour construire ce récit ?", "options": ["Commencer par sa toute première expérience professionnelle.", "Partir du poste visé et sélectionner les expériences qui y mènent.", "Mentionner toutes ses expériences pour paraître complet."], "answer": 1, "why": "« partir de la fin, c’est-à-dire du poste visé… on sélectionne les expériences qui y mènent »。C 与 « ce n’est pas un inventaire » 相反。"},
+          {"stem": "Quel est, selon elle, l’intérêt des tournures « après avoir » ou « ayant » ?", "options": ["Elles montrent l’enchaînement logique des étapes.", "Elles donnent au discours un style plus littéraire.", "Elles permettent de raccourcir la présentation."], "answer": 0, "why": "« montrent qu’une étape en a préparé une autre »。B、C 她并没有这么说。"},
+          {"stem": "Comment faut-il évoquer un échec professionnel ?", "options": ["Il vaut mieux le passer sous silence.", "Il faut en expliquer longuement les causes.", "Brièvement, en insistant sur ce qu’on en a appris."], "answer": 2, "why": "« ne pas le cacher, mais ne pas s’y attarder… On l’évoque en une phrase, puis on montre les leçons qu’on en a tirées »。"},
+          {"stem": "Par quoi faut-il conclure sa présentation ?", "options": ["Par ses projets et sa motivation pour l’entreprise.", "Par un rappel de son diplôme le plus élevé.", "Par une question sur le salaire proposé."], "answer": 0, "why": "« terminez toujours par l’avenir… dites ce que vous voulez faire, et pourquoi dans cette entreprise-là »。"}
+        ]
+      },
+      {
+        "id": "L21-2",
+        "title": "Chronique « Vies de travail » : les slasheurs",
+        "meta": {"genre": "Chronique radio", "domain": "Travail", "level": "B2", "plays": 2},
+        "script": [
+          "— Et c’est l’heure de notre chronique « Vies de travail ». Thomas, aujourd’hui, vous nous parlez des « slasheurs ».\n— Oui. Ce mot vient de la barre oblique, le « slash » en anglais, qu’on place entre deux métiers : graphiste slash professeur de yoga, comptable slash photographe. Prenons l’exemple de Léa, que j’ai rencontrée à Bordeaux. Après avoir travaillé cinq ans dans une agence de communication, elle a négocié un temps partiel avec son employeur. Ayant toujours rêvé d’enseigner la danse, elle donne désormais des cours trois soirs par semaine. Elle m’a dit : « Je n’ai pas quitté mon premier métier, je lui ai ajouté une deuxième vie. »",
+          "— C’est donc un choix ?\n— Pour Léa, oui. Mais attention, ce n’est pas le cas de tout le monde. Une partie des slasheurs cumulent les activités par nécessité, faute d’un salaire suffisant. Et là, l’image change : on n’est plus dans l’épanouissement, mais dans la débrouille. Une fois cette distinction faite, on comprend mieux pourquoi le phénomène divise autant.\n— Et quelles sont les difficultés pratiques ?\n— Elles sont nombreuses : il faut jongler entre deux emplois du temps, deux statuts, parfois deux régimes de cotisation. Léa reconnaît qu’elle a mis presque un an à trouver son équilibre. Et beaucoup de gens, n’ayant pas anticipé cette charge administrative, se découragent au bout de quelques mois.\n— Merci, Thomas."
+        ],
+        "questions": [
+          {"stem": "De quoi parle cette chronique ?", "options": ["Des jeunes qui cherchent leur premier emploi.", "Des salariés qui changent souvent d’entreprise.", "Des personnes qui exercent plusieurs activités professionnelles."], "answer": 2, "why": "slasheur = 用斜杠连接两种职业的人，如 « graphiste slash professeur de yoga »。"},
+          {"stem": "Comment Léa a-t-elle organisé sa double activité ?", "options": ["Elle a démissionné de son agence de communication.", "Elle a obtenu un temps partiel dans son agence.", "Elle a ouvert sa propre école de danse."], "answer": 1, "why": "« elle a négocié un temps partiel avec son employeur »，并且 « Je n’ai pas quitté mon premier métier »，所以 A 错；C 她只是上课，没说开学校。"},
+          {"stem": "Quelle nuance le chroniqueur apporte-t-il ?", "options": ["Certains cumulent les emplois par nécessité financière.", "Les slasheurs gagnent mieux leur vie que les autres salariés.", "Le phénomène concerne surtout les métiers artistiques."], "answer": 0, "why": "« Une partie des slasheurs cumulent les activités par nécessité, faute d’un salaire suffisant »。B、C 没有提到。"},
+          {"stem": "Que dit-il des difficultés pratiques ?", "options": ["Elles disparaissent au bout de quelques semaines.", "Elles concernent uniquement l’emploi du temps.", "Elles découragent ceux qui ne les ont pas anticipées."], "answer": 2, "why": "« n’ayant pas anticipé cette charge administrative, se découragent »。A 与“近一年才找到平衡”相反；B 还涉及身份和缴费制度。"}
+        ]
+      },
+      {
+        "id": "L21-3",
+        "title": "Annonce : forum de la reconversion à Saint-Aubin",
+        "meta": {"genre": "Annonce radio", "domain": "Formation professionnelle", "level": "B2", "plays": 1},
+        "script": [
+          "— Vous pensez à changer de voie ? La ville de Saint-Aubin-sur-Loire organise samedi 14 mars la troisième édition de son forum de la reconversion professionnelle, à la salle des fêtes, de 9 heures à 17 heures. L’entrée est libre. Une quarantaine d’exposants seront présents : organismes de formation, conseillers en évolution professionnelle, mais aussi artisans et chefs d’entreprise prêts à partager leur expérience. Nouveauté cette année : des « témoins » ayant eux-mêmes changé de métier animeront une table ronde toutes les heures. Les visiteurs qui souhaitent un entretien individuel avec un conseiller doivent s’inscrire en ligne, après avoir rempli un court questionnaire sur leur projet. Attention, les places sont limitées à soixante. Une fois inscrits, ils recevront leur horaire de rendez-vous par courriel. Le forum de la reconversion, c’est samedi 14 mars, à la salle des fêtes de Saint-Aubin."
+        ],
+        "questions": [
+          {"stem": "Quel est l’objet de cette annonce ?", "options": ["Une session de recrutement organisée par une entreprise locale.", "Un salon d’information sur le changement de métier.", "Une formation gratuite pour les demandeurs d’emploi."], "answer": 1, "why": "« forum de la reconversion professionnelle »，有培训机构、顾问、工匠等参展。"},
+          {"stem": "Quelle est la nouveauté de cette édition ?", "options": ["L’entrée du forum devient gratuite.", "Des personnes reconverties animeront des tables rondes.", "Le forum restera ouvert toute la journée."], "answer": 1, "why": "« Nouveauté cette année : des « témoins » ayant eux-mêmes changé de métier animeront une table ronde »。免费入场和开放时间并未被说成新变化。"},
+          {"stem": "Que faut-il faire pour obtenir un entretien individuel ?", "options": ["Se présenter à l’accueil le jour même.", "Envoyer son CV à la mairie avant le forum.", "S’inscrire en ligne après avoir rempli un questionnaire."], "answer": 2, "why": "« doivent s’inscrire en ligne, après avoir rempli un court questionnaire »。"}
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "id": "W21-1",
+        "title": "Candidature au programme régional « Nouveau Cap »",
+        "genre": "Lettre formelle",
+        "prompt": "Votre région lance « Nouveau Cap », un programme qui finance chaque année vingt formations pour des adultes en reconversion. Vous écrivez au comité de sélection pour présenter votre candidature : retracez les étapes de votre parcours, expliquez comment votre projet est né et a mûri, et montrez en quoi vous méritez ce financement. (220 mots minimum)",
+        "trigger": {"title": "Programme « Nouveau Cap » — extrait de l’appel à candidatures", "text": ["Vous avez au moins huit ans d’expérience professionnelle et un projet de reconversion solide ? Le programme « Nouveau Cap » prend en charge jusqu’à 80 % du coût de votre formation. Les candidatures prennent la forme d’une lettre adressée au comité de sélection, qui évaluera la maturité du projet, la cohérence du parcours et la motivation du candidat."]},
+        "minWords": 220,
+        "checklist": [
+          "Réalisation de la tâche : je présente mon parcours, la naissance du projet, les vérifications faites et je justifie ma demande de financement.",
+          "Cohérence et cohésion : les étapes s’enchaînent dans l’ordre chronologique grâce à après avoir…, une fois…, ayant…, à l’issue de…",
+          "Adéquation sociolinguistique : formule d’appel, registre soutenu, conditionnel de politesse et formule finale adaptée.",
+          "Lexique : vocabulaire précis du parcours professionnel (reconversion, compétences, stage, débouchés, formation).",
+          "Morphosyntaxe : infinitif passé et participe composé correctement formés, accord avec être (après être partie, une fois arrivée).",
+          "Présentation : au moins quatre paragraphes et 220 mots minimum."
+        ],
+        "model": [
+          "Madame, Monsieur,",
+          "Je me permets de vous adresser ma candidature au programme « Nouveau Cap », dont j’ai pris connaissance sur le site de la Région. Je souhaiterais en effet suivre la formation de technicien en énergies renouvelables que vous financez à partir de septembre.",
+          "Après avoir obtenu un BTS commercial, j’ai travaillé huit ans comme conseiller clientèle chez un fournisseur d’électricité. Ce poste m’a appris à écouter des clients parfois mécontents et à expliquer des notions techniques avec des mots simples. Ayant souvent répondu à des questions sur les panneaux solaires ou les pompes à chaleur, je me suis peu à peu passionné pour ces équipements, au point de suivre des cours en ligne le soir.",
+          "L’an dernier, une fois mon projet mûri, j’ai effectué un stage d’observation de deux semaines dans une entreprise d’installation. Cette expérience a été décisive : à l’issue de ce stage, après avoir accompagné les techniciens sur une dizaine de chantiers, j’ai acquis la conviction que ce métier me correspondait. Je ne voulais pas me lancer sans avoir vérifié la réalité du terrain ; c’est désormais chose faite. Je me suis également renseigné sur les débouchés, qui sont nombreux dans notre région.",
+          "Je suis conscient que cette reconversion représente un effort important. Toutefois, mon expérience de la relation client constituerait un atout réel dans un secteur où les installateurs doivent aussi conseiller les particuliers. Ma motivation repose sur une démarche réfléchie, et non sur un coup de tête.",
+          "Je me tiens à votre disposition pour un entretien et vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.",
+          "Karim Benali"
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "id": "S21-1",
+        "title": "Plusieurs carrières dans une vie : chance ou fardeau ?",
+        "part": "Monologue suivi",
+        "trigger": {"title": "La carrière à plusieurs vies", "text": [
+          "Autrefois, on choisissait un métier à vingt ans et on le gardait jusqu’à la retraite. Aujourd’hui, les trajectoires se fragmentent : après avoir exercé un premier métier pendant une dizaine d’années, de nombreux actifs en changent, parfois deux ou trois fois.",
+          "Pour certains spécialistes, c’est une chance : la mobilité permettrait de rester motivé, d’apprendre sans cesse et de s’adapter à un marché du travail en pleine mutation. D’autres s’inquiètent : ayant perdu la sécurité d’une carrière linéaire, les salariés devraient se former en permanence, souvent à leurs frais, et ceux qui n’en ont pas les moyens risqueraient de rester au bord du chemin. Entre liberté et précarité, la « carrière à plusieurs vies » fait débat."
+        ]},
+        "prompt": "Dégagez le thème du document, formulez une problématique, annoncez votre plan, puis défendez votre point de vue avec des exemples précis (environ 4 minutes). Illustrez au moins un argument en racontant les étapes d’un parcours que vous connaissez.",
+        "targetSeconds": 240,
+        "checklist": [
+          "Je présente le thème du document en une ou deux phrases, sans le lire.",
+          "Je formule une problématique claire (par exemple : changer plusieurs fois de métier, est-ce une liberté ou une contrainte ?).",
+          "J’annonce un plan en deux ou trois parties et je le respecte.",
+          "Chaque argument est illustré par un exemple ; un exemple raconte des étapes avec après avoir…, ayant…, une fois…",
+          "Je prends en compte l’opinion opposée avant de conclure.",
+          "Ma conclusion répond à la problématique et ouvre sur une question plus large."
+        ]
+      },
+      {
+        "id": "S21-2",
+        "title": "Débat : un congé de reconversion pour tous ?",
+        "part": "Exercice en interaction (débat)",
+        "prompt": "Vous défendez l’idée suivante : après dix ans de carrière, chaque salarié devrait avoir droit à un « congé de reconversion » d’un an, rémunéré, pour se former à un nouveau métier. L’examinateur conteste votre position. Répondez à chaque objection : confirmez, nuancez, concédez, réfutez, en vous appuyant sur des exemples de parcours concrets.",
+        "followUps": [
+          "Un an sans travailler, c’est long : vous ne pensez pas que les salariés perdraient leurs compétences ?",
+          "Qui va payer ? Les entreprises ou les contribuables n’ont pas à financer les envies de changement de chacun.",
+          "Beaucoup de gens, une fois formés, découvrent que le nouveau métier ne leur plaît pas. N’est-ce pas du gaspillage ?",
+          "Et les petites entreprises ? Comment remplaceraient-elles un salarié absent pendant toute une année ?"
+        ],
+        "targetSeconds": 240,
+        "checklist": [
+          "Je reformule l’objection avant d’y répondre.",
+          "J’utilise au moins une concession (certes…, je vous accorde que…) suivie d’un contre-argument.",
+          "Je donne un exemple concret de parcours en enchaînant les étapes (après avoir…, ayant…).",
+          "Je propose un compromis ou une condition réaliste (étude préalable du projet, bilan de compétences obligatoire…).",
+          "Je garde un ton courtois et je relance l’échange."
+        ]
+      }
+    ],
+    "application": [
+      {
+        "id": "A21-1",
+        "title": "Résumer l’article pour un collègue",
+        "topic": "parcours professionnel",
+        "task": "Un collègue de 40 ans vous confie qu’il pense changer de métier. Résumez-lui l’article R21-1 dans un message de 70 à 90 mots : présentez les étapes d’une reconversion dans l’ordre, en reliant au moins deux étapes par une structure d’antériorité (après avoir…, une fois…).",
+        "chunks": ["L’article décrit les étapes d’une reconversion.", "Après avoir fait un bilan de compétences, …", "Une fois le projet vérifié sur le terrain, …", "En somme, …"],
+        "keys": ["bilan", "formation", "une fois", "après avoir"]
+      },
+      {
+        "id": "A21-2",
+        "title": "Transmettre des conseils entendus à la radio",
+        "topic": "parcours professionnel",
+        "task": "Votre amie passe demain un entretien d’embauche. Écrivez-lui un message amical de 80 à 100 mots pour lui transmettre trois conseils d’Hélène Morvan (L21-1) : comment organiser son récit, comment parler d’un échec et comment conclure.",
+        "chunks": ["J’ai entendu une coach à la radio qui conseille de…", "Selon elle, il vaut mieux…", "Pour l’échec, elle recommande de…", "Et surtout, termine par…"],
+        "keys": ["conseille", "échec", "termine"]
+      }
+    ]
+  },
+  "vocab": [
+    {"id": "V21-01", "fr": "sur les bancs de l’école", "zh": "（坐在）学校课堂里；在校读书", "ex": "À quarante ans passés, Nadia s’est retrouvée [[sur les bancs de l’école]].", "exZh": "四十多岁时，Nadia 又坐回了学校的课堂。", "src": "R21-1"},
+    {"id": "V21-02", "fr": "un bilan de compétences", "zh": "职业能力评估", "ex": "Avant de changer de métier, il est conseillé de faire [[un bilan de compétences]].", "exZh": "在转行之前，建议先做一次职业能力评估。", "src": "R21-1"},
+    {"id": "V21-03", "fr": "dresser la liste de", "zh": "列出……的清单", "ex": "La conseillère lui a demandé de [[dresser la liste]] de ses réussites professionnelles.", "exZh": "顾问让她列出自己在职业上的成功经历。", "src": "R21-1"},
+    {"id": "V21-04", "fr": "se renseigner sur les débouchés", "zh": "了解（某专业或职业的）就业出路", "ex": "Avant de t’inscrire à cette formation, [[renseigne-toi sur les débouchés]] dans ta région.", "exZh": "在报名这个培训之前，先了解一下你所在地区的就业出路。", "src": "R21-1"},
+    {"id": "V21-05", "fr": "une leçon d’humilité", "zh": "让人学会谦逊的一课", "ex": "Repartir de zéro dans un nouveau métier a été pour lui [[une leçon d’humilité]].", "exZh": "在新行业里从零开始，对他来说是学会谦逊的一课。", "src": "R21-1"},
+    {"id": "V21-06", "fr": "confronter son projet à la réalité", "zh": "用现实检验自己的计划", "ex": "Un stage d’observation permet de [[confronter son projet à la réalité]].", "exZh": "观察实习能让人用现实检验自己的计划。", "src": "R21-1"},
+    {"id": "V21-07", "fr": "froncer les sourcils", "zh": "皱眉（表示怀疑或不满）", "ex": "Le recruteur a [[froncé les sourcils]] en découvrant un trou de deux ans dans mon CV.", "exZh": "招聘人员发现我简历上有两年空白时皱起了眉头。", "src": "R21-2"},
+    {"id": "V21-08", "fr": "un parcours sinueux", "zh": "曲折的经历；不走直线的职业道路", "ex": "Malgré [[un parcours sinueux]], elle a toujours suivi la même passion.", "exZh": "尽管经历曲折，她始终追随着同一份热爱。", "src": "R21-2"},
+    {"id": "V21-09", "fr": "être opérationnel", "zh": "能马上上手工作", "ex": "L’entreprise cherche un technicien capable d’[[être opérationnel]] dès le premier jour.", "exZh": "公司在找一位第一天就能上手的技术员。", "src": "R21-2"},
+    {"id": "V21-10", "fr": "prendre du recul", "zh": "退一步冷静审视；拉开距离看问题", "ex": "Cette année sabbatique m’a permis de [[prendre du recul]] sur mes choix de carrière.", "exZh": "这一年的休假让我能够冷静审视自己的职业选择。", "src": "R21-2"},
+    {"id": "V21-11", "fr": "écarter un candidat", "zh": "淘汰（候选人）；把……排除在外", "ex": "Trop de recruteurs [[écartent les candidats]] sans même les avoir rencontrés.", "exZh": "太多招聘者连面都没见就把候选人淘汰了。", "src": "R21-2"},
+    {"id": "V21-12", "fr": "faire reconnaître son expérience", "zh": "使自己的经验得到（官方）认可", "ex": "Grâce à la VAE, Sabrina a pu [[faire reconnaître son expérience]] de responsable de rayon.", "exZh": "借助 VAE，Sabrina 让自己做柜组主管的经验得到了认可。", "src": "R21-3"},
+    {"id": "V21-13", "fr": "la validation des acquis", "zh": "（经验）成果认证，VAE", "ex": "[[La validation des acquis]] permet d’obtenir un diplôme sans repasser par l’école.", "exZh": "经验成果认证可以让人不必重返学校就获得文凭。", "src": "R21-3"},
+    {"id": "V21-14", "fr": "le fil conducteur", "zh": "主线；贯穿始终的线索", "ex": "Votre présentation manque d’[[un fil conducteur]] : on ne comprend pas vos choix.", "exZh": "你的自我介绍缺少一条主线：别人看不懂你的选择。", "src": "L21-1"},
+    {"id": "V21-15", "fr": "remonter le temps", "zh": "追溯过去；（按时间）往回倒推", "ex": "Partez du poste visé, puis [[remontez le temps]] jusqu’à votre premier emploi.", "exZh": "从目标职位出发，然后往回倒推，一直讲到你的第一份工作。", "src": "L21-1"},
+    {"id": "V21-16", "fr": "tirer les leçons de", "zh": "从……中吸取教训", "ex": "Il a su [[tirer les leçons de]] son licenciement pour rebondir.", "exZh": "他懂得从被裁员中吸取教训，从而东山再起。", "src": "L21-1"},
+    {"id": "V21-17", "fr": "être promu", "zh": "被提拔；获得晋升", "ex": "Après trois ans en magasin, elle [[a été promue]] cheffe de rayon.", "exZh": "在门店工作三年后，她被提拔为柜组主管。", "src": "L21-1"},
+    {"id": "V21-18", "fr": "cumuler les activités", "zh": "同时从事多项工作；身兼数职", "ex": "Faute d’un salaire suffisant, beaucoup de jeunes [[cumulent les activités]].", "exZh": "由于工资不够，很多年轻人身兼数职。", "src": "L21-2"},
+    {"id": "V21-19", "fr": "jongler entre", "zh": "在……之间来回应付、兼顾", "ex": "Léa doit [[jongler entre]] son agence et ses cours de danse.", "exZh": "Léa 必须在公司工作和舞蹈课之间来回兼顾。", "src": "L21-2"},
+    {"id": "V21-20", "fr": "trouver son équilibre", "zh": "找到（生活/工作的）平衡", "ex": "Il lui a fallu presque un an pour [[trouver son équilibre]] entre ses deux métiers.", "exZh": "她花了将近一年才在两份职业之间找到平衡。", "src": "L21-2"},
+    {"id": "V21-21", "fr": "animer une table ronde", "zh": "主持圆桌讨论", "ex": "Une ancienne avocate devenue boulangère [[animera la table ronde]] de 15 heures.", "exZh": "一位由律师转行做面包师的女士将主持下午 3 点的圆桌讨论。", "src": "L21-3"},
+    {"id": "V21-22", "fr": "mûrir un projet", "zh": "让计划逐渐成熟；深思熟虑一个计划", "ex": "Elle a pris deux ans pour [[mûrir son projet]] avant de démissionner.", "exZh": "她花了两年时间让自己的计划成熟，然后才辞职。", "src": "W21-1"},
+    {"id": "V21-23", "fr": "à l’issue de", "zh": "在……结束时；……之后", "ex": "[[À l’issue de]] son stage, il a reçu une proposition d’embauche.", "exZh": "实习结束时，他收到了一份录用通知。", "src": "W21-1"},
+    {"id": "V21-24", "fr": "rester au bord du chemin", "zh": "被落下；被（发展）抛在后面", "ex": "Sans formation continue, certains salariés risquent de [[rester au bord du chemin]].", "exZh": "没有继续教育，一些员工可能会被落下。", "src": "S21-1"},
+    {"id": "V21-25", "fr": "faire ses preuves", "zh": "证明自己的能力", "ex": "Dans son nouveau métier, elle a dû [[faire ses preuves]] pendant la période d’essai.", "exZh": "在新的职业里，她得在试用期内证明自己的能力。", "src": "topic"}
+  ]
+}

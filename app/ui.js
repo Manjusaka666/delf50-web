@@ -71,6 +71,17 @@ export const MODULE_FR = {
 };
 export const UNITS = { grammar: '题', production: '句', reading: '篇', listening: '组', writing: '项', speaking: '轮', application: '项', vocab: '个', review: '项' };
 
+const DEFAULT_LABELS = [MODULE_NAMES, MODULE_FR, UNITS].map((o) => Object.assign({}, o));
+/** A course may rename a module (e.g. B2 practises médiation in the application module): {module: {name, fr, unit}}. */
+export function setLabels(labels = {}) {
+  [MODULE_NAMES, MODULE_FR, UNITS].forEach((o, i) => Object.assign(o, DEFAULT_LABELS[i]));
+  for (const [k, v] of Object.entries(labels)) {
+    if (v.name) MODULE_NAMES[k] = v.name;
+    if (v.fr) MODULE_FR[k] = v.fr;
+    if (v.unit) UNITS[k] = v.unit;
+  }
+}
+
 /** A circular progress mark. */
 export function ring(fraction, size = 44, label = '') {
   const r = (size - 6) / 2, c = 2 * Math.PI * r, f = Math.max(0, Math.min(1, fraction));

@@ -1,0 +1,332 @@
+[
+ {
+  "id": "cause-01",
+  "stem": "Le match a été annulé ___ la pluie.",
+  "options": [
+   "parce que",
+   "grâce à",
+   "à cause de"
+  ],
+  "answer": 2,
+  "why": "la pluie 是名词，需要介词短语；结果是消极的，用 à cause de。parce que 后要接从句；grâce à 只用于积极结果。"
+ },
+ {
+  "id": "cause-02",
+  "stem": "___ son aide, j’ai pu finir mon dossier à temps.",
+  "options": [
+   "Grâce à",
+   "À cause de",
+   "Parce que"
+  ],
+  "answer": 0,
+  "why": "son aide 是名词，结果积极（按时完成）→ grâce à。à cause de 用于消极原因；parce que 后要接从句。"
+ },
+ {
+  "id": "cause-03",
+  "stem": "Je suis en retard ___ mon train a été supprimé.",
+  "options": [
+   "parce que",
+   "à cause de",
+   "grâce à"
+  ],
+  "answer": 0,
+  "why": "后面是完整从句（mon train a été supprimé），用 parce que。à cause de 和 grâce à 后只能接名词。"
+ },
+ {
+  "id": "cause-04",
+  "stem": "— Pourquoi est-ce que tu pars si tôt ? — ___ j’ai un rendez-vous chez le médecin.",
+  "options": [
+   "Puisque",
+   "Comme",
+   "Parce que"
+  ],
+  "answer": 2,
+  "why": "回答 pourquoi 只能用 parce que。puisque 表示双方已知的原因，不能回答问题；comme 引出的原因必须放在主句之前，不能单独作答。"
+ },
+ {
+  "id": "cause-05",
+  "stem": "___ il pleuvait, nous sommes restés à la maison.",
+  "options": [
+   "Comme",
+   "Car",
+   "Grâce à"
+  ],
+  "answer": 0,
+  "why": "comme 表原因时放在句首，后接直陈式。car 不能放在句首；grâce à 后要接名词，且用于积极原因。"
+ },
+ {
+  "id": "cause-06",
+  "stem": "___ tu connais bien la ville, c’est toi qui nous guides !",
+  "options": [
+   "À cause de",
+   "Faute de",
+   "Puisque"
+  ],
+  "answer": 2,
+  "why": "puisque 引出对方也知道的原因，后接从句：puisque tu connais bien la ville。à cause de 和 faute de 后要接名词。"
+ },
+ {
+  "id": "cause-07",
+  "stem": "___ temps, je n’ai pas pu terminer mon rapport.",
+  "options": [
+   "À cause",
+   "Faute de",
+   "Grâce au"
+  ],
+  "answer": 1,
+  "why": "faute de + 无冠词名词，表示“由于缺少”：faute de temps。à cause 后缺少 de；grâce au temps 意思相反（积极原因），也不合逻辑。"
+ },
+ {
+  "id": "cause-08",
+  "stem": "Le magasin est fermé ___ travaux jusqu’à lundi.",
+  "options": [
+   "parce que",
+   "vu que",
+   "en raison de"
+  ],
+  "answer": 2,
+  "why": "travaux 是名词，用介词短语 en raison de（正式、中性，常见于通知）。parce que 和 vu que 后要接从句。"
+ },
+ {
+  "id": "cause-09",
+  "stem": "Les vols sont retardés ___ une grève des contrôleurs aériens.",
+  "options": [
+   "parce qu’",
+   "en raison d’",
+   "puisqu’"
+  ],
+  "answer": 1,
+  "why": "une grève 是名词短语，用 en raison de（元音前省音为 d’）。parce que 和 puisque 后要接带动词的从句。"
+ },
+ {
+  "id": "cause-10",
+  "stem": "Les ventes ont augmenté ___ une campagne publicitaire réussie.",
+  "options": [
+   "grâce à",
+   "à cause d’",
+   "faute d’"
+  ],
+  "answer": 0,
+  "why": "结果是积极的（销量上升），用 grâce à + 名词。à cause de 带消极色彩；faute de 表示“缺少”，意思相反。"
+ },
+ {
+  "id": "cause-11",
+  "stem": "C’est ___ toi que nous avons gagné ce match !",
+  "options": [
+   "grâce à",
+   "à cause de",
+   "faute de"
+  ],
+  "answer": 0,
+  "why": "赢得比赛是积极结果，用 grâce à + 重读人称代词 toi。à cause de 用于消极结果；faute de 表示缺少，后接无冠词名词。"
+ },
+ {
+  "id": "cause-12",
+  "stem": "Nous avons annulé la sortie ___ il faisait trop froid.",
+  "options": [
+   "parce qu’",
+   "comme",
+   "faute d’"
+  ],
+  "answer": 0,
+  "why": "原因从句放在主句之后，用 parce que。comme 表原因时必须位于句首；faute de 后接名词或不定式。"
+ },
+ {
+  "id": "cause-13",
+  "stem": "___ le nombre de candidats, chaque entretien durera quinze minutes au maximum.",
+  "options": [
+   "Étant donné que",
+   "Parce que",
+   "Étant donné"
+  ],
+  "answer": 2,
+  "why": "后面是名词短语（le nombre de candidats），用 étant donné + 名词。étant donné que 和 parce que 后要接从句。"
+ },
+ {
+  "id": "cause-14",
+  "stem": "___ la situation économique, l’entreprise a gelé les embauches.",
+  "options": [
+   "Vu que",
+   "Vu",
+   "Puisque"
+  ],
+  "answer": 1,
+  "why": "vu + 名词（＝ 鉴于）：vu la situation。vu que 和 puisque 后必须接从句。"
+ },
+ {
+  "id": "cause-15",
+  "stem": "___ la crise est durable, il faut repenser notre modèle.",
+  "options": [
+   "Étant donné",
+   "Étant donné que",
+   "Faute de"
+  ],
+  "answer": 1,
+  "why": "后面是完整从句（la crise est durable），用 étant donné que。étant donné 只接名词；faute de 接名词或不定式，且表示缺少。"
+ },
+ {
+  "id": "cause-16",
+  "stem": "___ tout le monde est là, nous pouvons commencer la réunion.",
+  "options": [
+   "Puisque",
+   "D’autant que",
+   "Faute de"
+  ],
+  "answer": 0,
+  "why": "puisque 引出在场者都明白的原因，可置于句首。d’autant que 只能跟在主句之后补充理由；faute de 后接名词。"
+ },
+ {
+  "id": "cause-17",
+  "stem": "___ moyens, l’association a dû annuler son festival.",
+  "options": [
+   "Faute de",
+   "À cause des",
+   "Grâce aux"
+  ],
+  "answer": 0,
+  "why": "faute de + 无冠词名词：faute de moyens（因为缺钱）。à cause des moyens 意思变成“因为有钱”；grâce aux moyens 是积极原因，都不合逻辑。"
+ },
+ {
+  "id": "cause-18",
+  "stem": "___ nombreux départs à la retraite, l’hôpital manque d’infirmiers.",
+  "options": [
+   "Du fait de",
+   "Du fait que",
+   "Puisque"
+  ],
+  "answer": 0,
+  "why": "后面是名词短语，用 du fait de（de + 不定冠词复数 des 在形容词前变为 de）。du fait que 和 puisque 后要接从句。"
+ },
+ {
+  "id": "cause-19",
+  "stem": "Le projet a pris du retard ___ les fournisseurs n’ont pas respecté les délais.",
+  "options": [
+   "du fait de",
+   "du fait que",
+   "faute de"
+  ],
+  "answer": 1,
+  "why": "后面是完整从句，用 du fait que。du fait de 和 faute de 只接名词（或不定式）。"
+ },
+ {
+  "id": "cause-20",
+  "stem": "Il faut réserver tôt, ___ les places sont limitées cette année.",
+  "options": [
+   "faute de",
+   "d’autant que",
+   "grâce à"
+  ],
+  "answer": 1,
+  "why": "d’autant que + 从句，补充一个加强前面建议的理由。faute de 和 grâce à 后只能接名词。"
+ },
+ {
+  "id": "cause-21",
+  "stem": "Il n’est pas venu au bureau ___ il était malade, mais personne ne l’a cru.",
+  "options": [
+   "puisqu’",
+   "étant donné qu’",
+   "sous prétexte qu’"
+  ],
+  "answer": 2,
+  "why": "后半句 personne ne l’a cru 说明这个理由不可信，用 sous prétexte que。puisque 和 étant donné que 表示被认可的真实原因，与后文矛盾。"
+ },
+ {
+  "id": "cause-22",
+  "stem": "___ preuves, le suspect a été relâché.",
+  "options": [
+   "Par manque",
+   "À cause des",
+   "Faute de"
+  ],
+  "answer": 2,
+  "why": "faute de + 无冠词名词：faute de preuves。par manque 后缺少 de；à cause des preuves 意思是“因为有证据”，与释放矛盾。"
+ },
+ {
+  "id": "cause-23",
+  "stem": "___ l’heure tardive, il vaut mieux prendre un taxi.",
+  "options": [
+   "Puisque",
+   "Étant donné",
+   "Comme"
+  ],
+  "answer": 1,
+  "why": "l’heure tardive 是名词短语，用 étant donné + 名词。puisque 和 comme 后要接从句（puisqu’il est tard）。"
+ },
+ {
+  "id": "cause-24",
+  "stem": "___ ses retards répétés, il a été licencié.",
+  "options": [
+   "Parce que",
+   "Comme",
+   "En raison de"
+  ],
+  "answer": 2,
+  "why": "ses retards répétés 是名词短语，用 en raison de（正式）。parce que 和 comme 后要接从句。"
+ },
+ {
+  "id": "cause-25",
+  "stem": "Dans un avis officiel : « Le magasin est exceptionnellement fermé ___ inventaire. »",
+  "options": [
+   "pour cause d’",
+   "parce qu’",
+   "puisqu’"
+  ],
+  "answer": 0,
+  "why": "pour cause de + 无冠词名词是通知中的固定正式表达：pour cause d’inventaire。parce que / puisque 后要接从句。"
+ },
+ {
+  "id": "cause-26",
+  "stem": "Il refuse de venir aux réunions ___ manquer de temps.",
+  "options": [
+   "sous prétexte que",
+   "sous prétexte de",
+   "à cause de"
+  ],
+  "answer": 1,
+  "why": "后面是不定式（manquer），用 sous prétexte de + 不定式（主语相同）。sous prétexte que 要接从句；à cause de 后接名词，不接不定式。"
+ },
+ {
+  "id": "cause-27",
+  "stem": "C’est ___ elle parle chinois qu’elle a obtenu ce poste.",
+  "options": [
+   "puisqu’",
+   "parce qu’",
+   "comme"
+  ],
+  "answer": 1,
+  "why": "强调原因的 c’est… que 句型中只能用 parce que：C’est parce qu’elle parle chinois que… puisque 和 comme 不能被强调。"
+ },
+ {
+  "id": "cause-28",
+  "stem": "Il était d’autant plus fatigué ___ il avait travaillé tout le week-end.",
+  "options": [
+   "parce qu’",
+   "car",
+   "qu’"
+  ],
+  "answer": 2,
+  "why": "d’autant plus… que 是固定结构（越发……因为）：d’autant plus fatigué qu’il avait travaillé。parce que 和 car 不能与 d’autant plus 搭配。"
+ },
+ {
+  "id": "cause-29",
+  "stem": "Je prends un parapluie, ___ le ciel est tout gris.",
+  "options": [
+   "vu",
+   "faute de",
+   "vu que"
+  ],
+  "answer": 2,
+  "why": "后面是从句（le ciel est tout gris），用 vu que（口语中常用）。vu 只接名词；faute de 接名词且表示缺少。"
+ },
+ {
+  "id": "cause-30",
+  "stem": "___ avoir réservé à temps, nous n’avons trouvé aucun hôtel.",
+  "options": [
+   "À cause d’",
+   "Faute d’",
+   "Grâce à"
+  ],
+  "answer": 1,
+  "why": "faute de + 过去不定式：由于没有及时预订。à cause de 和 grâce à 后不接不定式，而且 grâce à 表示积极结果，与没找到酒店矛盾。"
+ }
+]

@@ -1,0 +1,167 @@
+[
+ {
+  "id": "concessionSoutenue-01",
+  "stem": "___ il soit très compétent, ce candidat manque d’expérience sur le terrain.",
+  "options": [
+   "Quoi qu’",
+   "Pourtant qu’",
+   "Quoiqu’"
+  ],
+  "answer": 2,
+  "why": "quoique（连写）= bien que，接 subjonctif，书面语体。quoi qu’（分写）意为“无论什么”，后需接动词宾语从句（quoi qu’il dise）；pourtant 是副词，不能接 que。"
+ },
+ {
+  "id": "concessionSoutenue-02",
+  "stem": "___ soient les difficultés, nous terminerons le chantier avant l’hiver.",
+  "options": [
+   "Quelles que",
+   "Quelque",
+   "Quels que"
+  ],
+  "answer": 0,
+  "why": "quel que soit + 名词：quel 与名词（主语）性数配合，les difficultés 为阴性复数 → Quelles que soient。Quelque 只放在名词或形容词前；Quels que 性别错误。"
+ },
+ {
+  "id": "concessionSoutenue-03",
+  "stem": "Si brillant qu’il ___, ce projet reste beaucoup trop coûteux.",
+  "options": [
+   "soit",
+   "est",
+   "serait"
+  ],
+  "answer": 0,
+  "why": "si + 形容词 + que + subjonctif（无论多么……）：si brillant qu’il soit。est 是直陈式；serait 是条件式，都不符合该结构。"
+ },
+ {
+  "id": "concessionSoutenue-04",
+  "stem": "Quand bien même il ___ des excuses, je ne lui pardonnerais pas.",
+  "options": [
+   "présente",
+   "présenterait",
+   "ait présenté"
+  ],
+  "answer": 1,
+  "why": "quand bien même（即使）+ conditionnel，主句也用条件式：quand bien même il présenterait…, je ne pardonnerais pas。présente 是直陈式现在时；ait présenté 是虚拟式，都不符合该连词。"
+ },
+ {
+  "id": "concessionSoutenue-05",
+  "stem": "J’ai beau ___ le contrat, je ne comprends pas cette clause.",
+  "options": [
+   "relis",
+   "relu",
+   "relire"
+  ],
+  "answer": 2,
+  "why": "avoir beau + infinitif（无论怎么……也）：j’ai beau relire。relis 是变位形式；relu 是过去分词（j’ai beau 不是复合过去时）。"
+ },
+ {
+  "id": "concessionSoutenue-06",
+  "stem": "Tout fatigué qu’il ___, il a terminé le marathon en moins de quatre heures.",
+  "options": [
+   "serait",
+   "être",
+   "était"
+  ],
+  "answer": 2,
+  "why": "tout + 形容词 + que 强调真实事实，传统上接直陈式：tout fatigué qu’il était（虽然他很累）。serait 是条件式；être 是不定式，不能作从句谓语。"
+ },
+ {
+  "id": "concessionSoutenue-07",
+  "stem": "___ solides que soient vos arguments, ils ne convaincront pas le jury.",
+  "options": [
+   "Quelque",
+   "Quelques",
+   "Quels que"
+  ],
+  "answer": 0,
+  "why": "quelque + 形容词 + que + subjonctif 中，quelque 是副词（= si），不变：quelque solides que soient。Quelques 只在 quelque 修饰名词时配合；Quels que 后应直接接 soit + 名词。"
+ },
+ {
+  "id": "concessionSoutenue-08",
+  "stem": "___ efforts qu’il fasse, il n’obtient aucun résultat.",
+  "options": [
+   "Quelque",
+   "Quelques",
+   "Quels que"
+  ],
+  "answer": 1,
+  "why": "quelque + 名词 + que + subjonctif 中，quelque 是限定词，与名词配合：quelques efforts qu’il fasse。Quelque 不配合（副词用法只用于形容词前）；Quels que 后应接 soient。"
+ },
+ {
+  "id": "concessionSoutenue-09",
+  "stem": "Pour intéressant que ___ ce documentaire, il est beaucoup trop long.",
+  "options": [
+   "soit",
+   "est",
+   "serait"
+  ],
+  "answer": 0,
+  "why": "pour + 形容词 + que + subjonctif（书面，= si… que）：pour intéressant que soit ce documentaire。est / serait 都不符合该结构的语式。"
+ },
+ {
+  "id": "concessionSoutenue-10",
+  "stem": "Le bilan est positif, encore qu’il ___ nuancer certains chiffres.",
+  "options": [
+   "faut",
+   "falloir",
+   "faille"
+  ],
+  "answer": 2,
+  "why": "encore que（不过、尽管，书面）+ subjonctif：encore qu’il faille。faut 是直陈式，不符合规范；falloir 是不定式，不能作谓语。"
+ },
+ {
+  "id": "concessionSoutenue-11",
+  "stem": "Quel que ___ le résultat du vote, nous publierons tous les chiffres.",
+  "options": [
+   "sera",
+   "soit",
+   "est"
+  ],
+  "answer": 1,
+  "why": "quel que soit + 名词（无论……是什么），固定接 subjonctif soit。sera / est 是直陈式。"
+ },
+ {
+  "id": "concessionSoutenue-12",
+  "stem": "___ que soit son expérience, elle devra passer un entretien comme les autres.",
+  "options": [
+   "Quel",
+   "Quelle",
+   "Quelque"
+  ],
+  "answer": 1,
+  "why": "quel que soit 中 quel 与主语名词配合：son expérience 为阴性单数 → Quelle que soit。Quel 性别错误；Quelque 不能放在 que soit 之前（那是 quelque + 名词/形容词 + que 结构）。"
+ },
+ {
+  "id": "concessionSoutenue-13",
+  "stem": "___ vous disiez, il ne changera pas d’avis.",
+  "options": [
+   "Quoique",
+   "Quoi que",
+   "Quel que"
+  ],
+  "answer": 1,
+  "why": "quoi que（分写）= 无论什么，是 dire 的宾语：quoi que vous disiez。quoique（连写）= bien que，需要完整从句（quoique vous disiez la vérité）；quel que 只能接 soit + 名词。"
+ },
+ {
+  "id": "concessionSoutenue-14",
+  "stem": "Elle aura beau ___, personne ne croira à sa version des faits.",
+  "options": [
+   "protester",
+   "protestera",
+   "protesté"
+  ],
+  "answer": 0,
+  "why": "avoir beau 可变位于各时态（elle aura beau），但后面始终接 infinitif：protester。protestera 是变位形式；protesté 是过去分词。"
+ },
+ {
+  "id": "concessionSoutenue-15",
+  "stem": "___ jeune qu’elle est, elle dirige déjà une équipe de vingt personnes.",
+  "options": [
+   "Tout",
+   "Toutes",
+   "Toute"
+  ],
+  "answer": 2,
+  "why": "tout… que 结构中 tout 是副词，在以辅音开头的阴性形容词前要配合：toute jeune qu’elle est。Tout 违反此规则；Toutes 是复数，与 elle 不符。"
+ }
+]

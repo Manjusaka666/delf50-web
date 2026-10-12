@@ -104,6 +104,15 @@ export function trackUpload(promise) {
 
 const hasUnsaved = () => dirty || inflight || uploads > 0;
 
+/** Resolves once everything is saved (e.g. before switching course); rejects while saving fails. */
+export function whenSaved() {
+  flush();
+  return new Promise((resolve, reject) => {
+    const wait = () => (failures ? reject(store.error) : hasUnsaved() ? setTimeout(wait, 100) : resolve());
+    wait();
+  });
+}
+
 // Last chance when the page goes away: the same batch, with keepalive (idempotent).
 addEventListener('pagehide', () => {
   if (!store.S || !(dirty || inflight)) return;

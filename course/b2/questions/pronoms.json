@@ -1,0 +1,332 @@
+[
+ {
+  "id": "pronoms-01",
+  "stem": "Tu penses à ton entretien de demain ? — Oui, j’___ pense tout le temps.",
+  "options": [
+   "en",
+   "le",
+   "y"
+  ],
+  "answer": 2,
+  "why": "penser à + 事物，用 y 代替 à + 名词：j’y pense。en 代替 de + 名词；le 代替直接宾语，penser à 不是直接宾语结构。"
+ },
+ {
+  "id": "pronoms-02",
+  "stem": "Tu as besoin de ce dossier ? — Oui, j’___ ai besoin pour la réunion.",
+  "options": [
+   "y",
+   "en",
+   "le"
+  ],
+  "answer": 1,
+  "why": "avoir besoin de + 事物，用 en 代替 de + 名词：j’en ai besoin。y 对应 à；le 对应直接宾语。"
+ },
+ {
+  "id": "pronoms-03",
+  "stem": "Tu as rendu le livre à Claire ? — Oui, je ___ ai rendu hier.",
+  "options": [
+   "le lui",
+   "lui le",
+   "la lui"
+  ],
+  "answer": 0,
+  "why": "双代词顺序：直接宾语 le（le livre，阳性）在间接宾语 lui 之前：je le lui ai rendu。lui le 顺序颠倒；la 的性别与 livre 不符。"
+ },
+ {
+  "id": "pronoms-04",
+  "stem": "Tu me prêtes ta voiture ce week-end ? — D’accord, je ___ prête.",
+  "options": [
+   "la te",
+   "te la",
+   "te le"
+  ],
+  "answer": 1,
+  "why": "me / te / nous / vous 放在 le / la / les 之前：je te la prête。la te 顺序错误；le 的性别与 voiture（阴性）不符。"
+ },
+ {
+  "id": "pronoms-05",
+  "stem": "Ce dossier, donne-___ dès que possible, s’il te plaît.",
+  "options": [
+   "moi-le",
+   "me-le",
+   "le-moi"
+  ],
+  "answer": 2,
+  "why": "肯定命令式：动词 + 直接宾语 + 间接宾语，并用连字符，me 变为 moi：donne-le-moi。moi-le 顺序颠倒；肯定命令式句末不用 me。"
+ },
+ {
+  "id": "pronoms-06",
+  "stem": "Ces clés sont à moi : ne ___ prends pas !",
+  "options": [
+   "les moi",
+   "me les",
+   "moi les"
+  ],
+  "answer": 1,
+  "why": "否定命令式恢复陈述句语序，代词放在动词前：ne me les prends pas。les moi 和 moi les 是肯定命令式的形式，不能用于否定句。"
+ },
+ {
+  "id": "pronoms-07",
+  "stem": "Tu as parlé du problème à ton chef ? — Oui, je ___ ai parlé ce matin.",
+  "options": [
+   "lui en",
+   "en lui",
+   "y en"
+  ],
+  "answer": 0,
+  "why": "parler de qqch à qqn：à ton chef → lui，du problème → en；顺序为 lui 在 en 之前：je lui en ai parlé。en lui 顺序错误；y 不能代替人。"
+ },
+ {
+  "id": "pronoms-08",
+  "stem": "Il reste du pain pour ce soir ? — Oui, il ___ a encore.",
+  "options": [
+   "en y",
+   "y le",
+   "y en"
+  ],
+  "answer": 2,
+  "why": "il y a + 部分冠词名词，du pain 用 en 代替，y 在 en 之前：il y en a。en y 顺序错误；le 不能代替部分冠词的名词。"
+ },
+ {
+  "id": "pronoms-09",
+  "stem": "Ta nouvelle collègue est compétente ? — Oui, elle ___ est vraiment.",
+  "options": [
+   "la",
+   "l’",
+   "en"
+  ],
+  "answer": 1,
+  "why": "代替形容词表语（compétente）用中性代词 le，不随主语变性：elle l’est。la 是错误的配合；en 不能代替形容词。"
+ },
+ {
+  "id": "pronoms-10",
+  "stem": "Tu savais qu’il quittait l’entreprise ? — Non, je ne ___ savais pas.",
+  "options": [
+   "le",
+   "en",
+   "y"
+  ],
+  "answer": 0,
+  "why": "中性代词 le 代替整个从句（qu’il quittait l’entreprise）：je ne le savais pas。savoir 不接 de 或 à，所以不用 en 或 y。"
+ },
+ {
+  "id": "pronoms-11",
+  "stem": "Ce rapport, ___ ce soir.",
+  "options": [
+   "je vais terminer le",
+   "je vais le terminer",
+   "je vais lui terminer"
+  ],
+  "answer": 1,
+  "why": "半助动词 aller + 不定式：代词放在不定式前：je vais le terminer。代词不能放在不定式后；lui 是间接宾语，而 terminer qqch 需要直接宾语。"
+ },
+ {
+  "id": "pronoms-12",
+  "stem": "Ces documents, je ___ ferai envoyer par courrier demain.",
+  "options": [
+   "vous les",
+   "les vous",
+   "leur les"
+  ],
+  "answer": 0,
+  "why": "faire + 不定式时，代词放在 faire 前，顺序为 vous 在 les 之前：je vous les ferai envoyer。les vous 顺序错误；leur les 顺序也错误（应为 les leur）。"
+ },
+ {
+  "id": "pronoms-13",
+  "stem": "Tu te souviens de cette chanson ? — Oui, je m’___ souviens très bien.",
+  "options": [
+   "y",
+   "le",
+   "en"
+  ],
+  "answer": 2,
+  "why": "se souvenir de qqch：用 en 代替 de + 名词：je m’en souviens。y 对应 à；le 对应直接宾语。"
+ },
+ {
+  "id": "pronoms-14",
+  "stem": "Tu t’habitues à ton nouveau travail ? — Oui, je m’___ habitue peu à peu.",
+  "options": [
+   "y",
+   "en",
+   "lui"
+  ],
+  "answer": 0,
+  "why": "s’habituer à + 事物，用 y：je m’y habitue。en 对应 de；lui 用来代替人，而且 s’habituer à qqn 应说 je m’habitue à lui。"
+ },
+ {
+  "id": "pronoms-15",
+  "stem": "Tu penses souvent à ta grand-mère ? — Oui, je pense souvent ___.",
+  "options": [
+   "lui",
+   "à elle",
+   "la"
+  ],
+  "answer": 1,
+  "why": "penser à + 人：用 à + 重读代词：je pense à elle。penser 不接 lui 这种间接宾语代词（不能说 je lui pense）；la 是直接宾语。"
+ },
+ {
+  "id": "pronoms-16",
+  "stem": "Tu te méfies de ce nouveau collègue ? — Oui, je me méfie ___.",
+  "options": [
+   "de lui",
+   "lui",
+   "le"
+  ],
+  "answer": 0,
+  "why": "se méfier de + 人：用 de + 重读代词：je me méfie de lui。lui 和 le 都没有表达介词 de。"
+ },
+ {
+  "id": "pronoms-17",
+  "stem": "Il n’y a plus de fruits ? ___ au marché en rentrant !",
+  "options": [
+   "Achète-en",
+   "Achète-z-en",
+   "Achètes-en"
+  ],
+  "answer": 2,
+  "why": "以 -er 结尾的动词，第二人称单数命令式在 en / y 前加 s 以便连读：achètes-en。achète-en 缺少这个 s；achète-z-en 是不规范的口语写法。"
+ },
+ {
+  "id": "pronoms-18",
+  "stem": "Le concert commence dans dix minutes : ___ maintenant !",
+  "options": [
+   "vas-y",
+   "va-y",
+   "vas-en"
+  ],
+  "answer": 0,
+  "why": "aller 的命令式 va 在 y 前加 s：vas-y。va-y 缺少 s；vas-en 的代词错误（s’en aller 的命令式是 va-t’en）。"
+ },
+ {
+  "id": "pronoms-19",
+  "stem": "Ces photos de la fête, envoie-___ par mail.",
+  "options": [
+   "nous les",
+   "les nous",
+   "les-nous"
+  ],
+  "answer": 2,
+  "why": "肯定命令式：直接宾语 les 在间接宾语 nous 之前，并用连字符连接：envoie-les-nous。nous les 是否定命令式的语序；les nous 缺少连字符。"
+ },
+ {
+  "id": "pronoms-20",
+  "stem": "Cette histoire m’agace : ne ___ parle plus jamais !",
+  "options": [
+   "en me",
+   "m’en",
+   "me-en"
+  ],
+  "answer": 1,
+  "why": "否定命令式用陈述句语序：me 在 en 前，省音为 m’en：ne m’en parle plus。en me 顺序错误；me-en 没有省音且多了连字符。"
+ },
+ {
+  "id": "pronoms-21",
+  "stem": "Ce gâteau est délicieux, donne-___ encore un morceau !",
+  "options": [
+   "moi-en",
+   "m’en",
+   "en-moi"
+  ],
+  "answer": 1,
+  "why": "肯定命令式中 moi + en 变为 m’en：donne-m’en。moi-en 没有省音；en-moi 顺序错误。"
+ },
+ {
+  "id": "pronoms-22",
+  "stem": "Ces erreurs, ___ avant lundi.",
+  "options": [
+   "il faut les corriger",
+   "il faut leur corriger",
+   "il faut corriger les"
+  ],
+  "answer": 0,
+  "why": "falloir + 不定式：直接宾语代词放在不定式前：il faut les corriger。leur 是间接宾语，但 corriger qqch 接直接宾语；代词不能放在不定式后。"
+ },
+ {
+  "id": "pronoms-23",
+  "stem": "Le projet risque d’être retardé ; je ___ crains.",
+  "options": [
+   "le",
+   "en",
+   "y"
+  ],
+  "answer": 0,
+  "why": "中性代词 le 代替前面的整句：je le crains（我担心会这样）。craindre 是及物动词，不用 en 或 y。"
+ },
+ {
+  "id": "pronoms-24",
+  "stem": "Vous êtes satisfaits de l’accueil ? — Oui, nous ___ sommes.",
+  "options": [
+   "les",
+   "en",
+   "le"
+  ],
+  "answer": 2,
+  "why": "中性代词 le 代替形容词表语 satisfaits，不变：nous le sommes。les 是错误的配合；nous en sommes 缺少形容词，不成句。"
+ },
+ {
+  "id": "pronoms-25",
+  "stem": "Tu as donné des conseils à Paul ? — Oui, je ___ ai donné quelques-uns.",
+  "options": [
+   "en lui",
+   "le lui",
+   "lui en"
+  ],
+  "answer": 2,
+  "why": "des conseils（不定数量）用 en，à Paul 用 lui，顺序 lui 在 en 前：je lui en ai donné quelques-uns。en lui 顺序错误；le 不能代替带不定冠词的名词。"
+ },
+ {
+  "id": "pronoms-26",
+  "stem": "Tu as présenté ton projet aux clients ? — Oui, je ___ ai présenté ce matin.",
+  "options": [
+   "leur le",
+   "les leur",
+   "le leur"
+  ],
+  "answer": 2,
+  "why": "ton projet（单数）→ le，aux clients → leur；顺序 le 在 leur 前：je le leur ai présenté。leur le 顺序颠倒；les 与单数的 projet 不符。"
+ },
+ {
+  "id": "pronoms-27",
+  "stem": "Ce film violent, ___.",
+  "options": [
+   "je ne veux pas voir le",
+   "je ne veux le pas voir",
+   "je ne veux pas le voir"
+  ],
+  "answer": 2,
+  "why": "情态动词 vouloir + 不定式：否定词 ne… pas 围绕 veux，代词 le 放在不定式 voir 前。代词不能放在不定式后；pas 不能插在 le 和 voir 之间。"
+ },
+ {
+  "id": "pronoms-28",
+  "stem": "Le projet a réussi grâce à vous : nous vous ___ sommes très reconnaissants.",
+  "options": [
+   "y",
+   "en",
+   "le"
+  ],
+  "answer": 1,
+  "why": "être reconnaissant de qqch：用 en 代替 de + 事物：nous vous en sommes reconnaissants。y 对应 à；le 不能和形容词 reconnaissants 同时作表语。"
+ },
+ {
+  "id": "pronoms-29",
+  "stem": "Faut-il renoncer à ce voyage ? — Oui, il faut malheureusement ___ renoncer.",
+  "options": [
+   "y",
+   "en",
+   "lui"
+  ],
+  "answer": 0,
+  "why": "renoncer à + 事物，用 y，放在不定式前：il faut y renoncer。en 对应 de；lui 代替人，不代替事物。"
+ },
+ {
+  "id": "pronoms-30",
+  "stem": "Ces lettres de candidature, je les ai ___ hier soir.",
+  "options": [
+   "envoyé",
+   "envoyées",
+   "envoyés"
+  ],
+  "answer": 1,
+  "why": "avoir 构成的复合时态中，直接宾语代词 les 放在动词前，过去分词与它（ces lettres，阴性复数）配合：envoyées。envoyé 没有配合；envoyés 是阳性复数。"
+ }
+]

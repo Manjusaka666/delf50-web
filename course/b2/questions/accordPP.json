@@ -1,0 +1,332 @@
+[
+ {
+  "id": "accordPP-01",
+  "stem": "Les nouvelles stagiaires sont ___ hier matin au siège de l’entreprise.",
+  "options": [
+   "arrivés",
+   "arrivées",
+   "arrivé"
+  ],
+  "answer": 1,
+  "why": "助动词 être：过去分词与主语性数配合。主语 les nouvelles stagiaires 为阴性复数 → arrivées；arrivés 是阳性复数，arrivé 没有配合。"
+ },
+ {
+  "id": "accordPP-02",
+  "stem": "Les rapports que la direction a ___ ont été transmis aux syndicats.",
+  "options": [
+   "publié",
+   "publiées",
+   "publiés"
+  ],
+  "answer": 2,
+  "why": "助动词 avoir：直接宾语 que（= les rapports，阳性复数）在动词前 → publiés。publié 忽略了前置 COD；publiées 误与 la direction（主语）配合。"
+ },
+ {
+  "id": "accordPP-03",
+  "stem": "Cette décision, le maire l’a ___ sans consulter le conseil municipal.",
+  "options": [
+   "prise",
+   "pris",
+   "prises"
+  ],
+  "answer": 0,
+  "why": "l’ = cette décision（阴性单数），是前置直接宾语 → prise。pris 未配合；prises 是复数，错误。"
+ },
+ {
+  "id": "accordPP-04",
+  "stem": "Avez-vous lu les propositions du comité ? Oui, je les ai ___ attentivement.",
+  "options": [
+   "lu",
+   "lus",
+   "lues"
+  ],
+  "answer": 2,
+  "why": "les = les propositions（阴性复数），前置 COD → lues。lu 未配合；lus 性别错误。"
+ },
+ {
+  "id": "accordPP-05",
+  "stem": "Cet hiver, les bénévoles ont ___ des centaines de repas aux sans-abri.",
+  "options": [
+   "distribué",
+   "distribués",
+   "distribuées"
+  ],
+  "answer": 0,
+  "why": "avoir + COD 在动词之后（des centaines de repas）→ 不配合：distribué。distribués 误与主语配合；distribuées 无任何依据。"
+ },
+ {
+  "id": "accordPP-06",
+  "stem": "Des légumes bio ? Nous en avons ___ beaucoup cette saison au marché.",
+  "options": [
+   "achetés",
+   "achetées",
+   "acheté"
+  ],
+  "answer": 2,
+  "why": "代词 en 作宾语时，过去分词通常不配合 → acheté。achetés / achetées 把 en 当成普通前置 COD，是中国学习者常见的过度配合。"
+ },
+ {
+  "id": "accordPP-07",
+  "stem": "Après la réunion, la directrice s’est ___ dans son bureau pour réfléchir.",
+  "options": [
+   "enfermée",
+   "enfermé",
+   "enfermés"
+  ],
+  "answer": 0,
+  "why": "代词式动词 s’enfermer：s’ 是直接宾语（她把自己关起来），且在动词前 → 与 la directrice 配合：enfermée。enfermé 未配合，enfermés 数错误。"
+ },
+ {
+  "id": "accordPP-08",
+  "stem": "L’infirmière s’est ___ les mains avant d’entrer dans la chambre.",
+  "options": [
+   "lavée",
+   "lavés",
+   "lavé"
+  ],
+  "answer": 2,
+  "why": "COD 是 les mains（在动词后），s’ 只是间接宾语（为自己洗）→ 不配合：lavé。对比 Elle s’est lavée（s’ 为 COD）。lavés 误与 mains 配合，但 mains 在后面。"
+ },
+ {
+  "id": "accordPP-09",
+  "stem": "Les deux ministres se sont ___ longuement au téléphone avant le sommet.",
+  "options": [
+   "parlés",
+   "parlé",
+   "parlées"
+  ],
+  "answer": 1,
+  "why": "parler à qqn：se 是间接宾语（l’un a parlé à l’autre）→ 过去分词不变：parlé。parlés / parlées 都把 se 误当作 COD。"
+ },
+ {
+  "id": "accordPP-10",
+  "stem": "Cette salle de sport, c’est l’entreprise qui l’a ___ construire pour ses salariés.",
+  "options": [
+   "fait",
+   "faite",
+   "faits"
+  ],
+  "answer": 0,
+  "why": "fait + infinitif 结构中，fait 永远不变，即使前面有 COD（l’ = la salle）→ fait。faite / faits 都是错误配合。"
+ },
+ {
+  "id": "accordPP-11",
+  "stem": "Les difficultés qu’ils ont ___ pour obtenir un visa sont malheureusement fréquentes.",
+  "options": [
+   "rencontrées",
+   "rencontré",
+   "rencontrés"
+  ],
+  "answer": 0,
+  "why": "que = les difficultés（阴性复数），前置 COD → rencontrées。rencontré 未配合；rencontrés 误与主语 ils 配合。"
+ },
+ {
+  "id": "accordPP-12",
+  "stem": "Dès sept heures, les manifestants se sont ___ devant la préfecture.",
+  "options": [
+   "rassemblés",
+   "rassemblé",
+   "rassemblée"
+  ],
+  "answer": 0,
+  "why": "se rassembler：se 是直接宾语 → 与主语 les manifestants（阳性复数）配合：rassemblés。rassemblé 未配合；rassemblée 是阴性单数。"
+ },
+ {
+  "id": "accordPP-13",
+  "stem": "Les deux villes se sont ___ l’organisation du festival pendant des mois.",
+  "options": [
+   "disputées",
+   "disputés",
+   "disputé"
+  ],
+  "answer": 2,
+  "why": "se disputer qqch：直接宾语是后置的 l’organisation，se 为间接宾语 → 不变：disputé。disputées 只用于没有宾语的 « elles se sont disputées »（吵架）；disputés 性别也不对。"
+ },
+ {
+  "id": "accordPP-14",
+  "stem": "Depuis leur dispute, les deux sœurs ne se sont plus ___.",
+  "options": [
+   "téléphonées",
+   "téléphoné",
+   "téléphonés"
+  ],
+  "answer": 1,
+  "why": "téléphoner à qqn：se 是间接宾语 → 过去分词不变：téléphoné。téléphonées / téléphonés 都是错误配合（同类：se parler, se sourire, se succéder）。"
+ },
+ {
+  "id": "accordPP-15",
+  "stem": "Ma collègue s’est ___ couper les cheveux très court pour l’été.",
+  "options": [
+   "faite",
+   "fait",
+   "faits"
+  ],
+  "answer": 1,
+  "why": "se faire + infinitif：fait 不变 → s’est fait couper。faite 是常见错误（受 s’est 和阴性主语影响）；faits 更无依据。"
+ },
+ {
+  "id": "accordPP-16",
+  "stem": "Les mesures que le gouvernement a ___ voter ont suscité de vifs débats.",
+  "options": [
+   "faites",
+   "faits",
+   "fait"
+  ],
+  "answer": 2,
+  "why": "faire + infinitif 中 fait 不变，即便前置 que = les mesures → a fait voter。faites / faits 都错。"
+ },
+ {
+  "id": "accordPP-17",
+  "stem": "Combien de candidatures avez-vous ___ pour ce poste ?",
+  "options": [
+   "reçu",
+   "reçues",
+   "reçus"
+  ],
+  "answer": 1,
+  "why": "combien de candidatures 是前置的直接宾语（阴性复数）→ reçues。reçu 未配合；reçus 性别错误。"
+ },
+ {
+  "id": "accordPP-18",
+  "stem": "Finalement, quelle solution les experts ont-ils ___ ?",
+  "options": [
+   "retenu",
+   "retenues",
+   "retenue"
+  ],
+  "answer": 2,
+  "why": "疑问句中 quelle solution（阴性单数）是前置 COD → retenue。retenu 未配合；retenues 数错误。"
+ },
+ {
+  "id": "accordPP-19",
+  "stem": "Les voyageuses se sont ___ compte trop tard qu’elles avaient raté la correspondance.",
+  "options": [
+   "rendues",
+   "rendus",
+   "rendu"
+  ],
+  "answer": 2,
+  "why": "se rendre compte 是固定搭配，compte 是直接宾语且在后 → rendu 不变。rendues / rendus 都是错误配合。"
+ },
+ {
+  "id": "accordPP-20",
+  "stem": "Les infirmières se sont ___ de la surcharge de travail auprès de la direction.",
+  "options": [
+   "plaintes",
+   "plaint",
+   "plaints"
+  ],
+  "answer": 0,
+  "why": "se plaindre 是纯代词式动词（本质代词式），过去分词与主语配合 → plaintes（阴性复数）。plaint 未配合；plaints 性别错误。"
+ },
+ {
+  "id": "accordPP-21",
+  "stem": "La ville a construit plus de logements qu’elle ne l’avait ___.",
+  "options": [
+   "prévus",
+   "prévu",
+   "prévue"
+  ],
+  "answer": 1,
+  "why": "这里 l’ 是中性代词，代替整句“她原先预计的那样”，不代表 logements 或 la ville → 不配合：prévu。prévus / prévue 误把 l’ 当作具体名词。"
+ },
+ {
+  "id": "accordPP-22",
+  "stem": "Les données que le prestataire nous a ___ étaient incomplètes.",
+  "options": [
+   "fourni",
+   "fournis",
+   "fournies"
+  ],
+  "answer": 2,
+  "why": "que = les données（阴性复数），前置 COD → fournies。nous 是间接宾语（fournir qqch à qqn），不影响配合。fourni 未配合；fournis 性别错误。"
+ },
+ {
+  "id": "accordPP-23",
+  "stem": "Une fois la décision ___, les élus ont quitté la salle du conseil.",
+  "options": [
+   "pris",
+   "prise",
+   "prises"
+  ],
+  "answer": 1,
+  "why": "单独使用的过去分词（无助动词）相当于形容词，与所修饰名词配合：la décision → prise。pris / prises 性数不符。"
+ },
+ {
+  "id": "accordPP-24",
+  "stem": "Interrogée par la presse, la porte-parole s’est ___ de tout commentaire.",
+  "options": [
+   "abstenu",
+   "abstenue",
+   "abstenues"
+  ],
+  "answer": 1,
+  "why": "s’abstenir 是纯代词式动词 → 与主语配合：la porte-parole（阴性单数）→ abstenue。abstenu 未配合；abstenues 数错误。"
+ },
+ {
+  "id": "accordPP-25",
+  "stem": "Malgré la foule, les fêtes de fin d’année se sont ___ sans incident.",
+  "options": [
+   "passées",
+   "passé",
+   "passés"
+  ],
+  "answer": 0,
+  "why": "se passer（发生）中 se 无法分析为宾语，按代词式动词规则与主语配合：les fêtes → passées。passé 未配合；passés 性别错误。"
+ },
+ {
+  "id": "accordPP-26",
+  "stem": "Les deux directeurs se sont ___ à respecter le budget prévu.",
+  "options": [
+   "engagé",
+   "engagés",
+   "engagée"
+  ],
+  "answer": 1,
+  "why": "s’engager à：se 是直接宾语 → 与主语 les deux directeurs（阳性复数）配合：engagés。engagé 未配合；engagée 为阴性单数。"
+ },
+ {
+  "id": "accordPP-27",
+  "stem": "Après le salon, ils se sont ___ quelques jours de repos bien mérités.",
+  "options": [
+   "accordés",
+   "accordé",
+   "accordées"
+  ],
+  "answer": 1,
+  "why": "s’accorder qqch：se 是间接宾语（accorder à soi），COD quelques jours 在后 → 不变：accordé。accordés 误与主语配合；accordées 无依据。"
+ },
+ {
+  "id": "accordPP-28",
+  "stem": "Les photos qu’il a ___ prendre pour la brochure sont superbes.",
+  "options": [
+   "faites",
+   "faits",
+   "fait"
+  ],
+  "answer": 2,
+  "why": "fait + infinitif 永远不变：qu’il a fait prendre。faites 误与 les photos 配合；faits 更无依据。"
+ },
+ {
+  "id": "accordPP-29",
+  "stem": "Ces erreurs de calcul, c’est la stagiaire qui les a ___, pas le chef de projet.",
+  "options": [
+   "commises",
+   "commis",
+   "commise"
+  ],
+  "answer": 0,
+  "why": "les = ces erreurs（阴性复数），前置 COD → commises。commis 未配合（也是阳性形式）；commise 误与 la stagiaire 配合，忽略了真正的宾语。"
+ },
+ {
+  "id": "accordPP-30",
+  "stem": "La comédienne s’est ___ remettre le prix par le président du jury.",
+  "options": [
+   "vu",
+   "vue",
+   "vus"
+  ],
+  "answer": 0,
+  "why": "se voir + infinitif：主语不是不定式动作（remettre）的执行者（她是被颁奖者）→ vu 不变。对比 Elle s’est vue mourir（她自己执行 mourir）才配合。vue / vus 在这里错误。"
+ }
+]
