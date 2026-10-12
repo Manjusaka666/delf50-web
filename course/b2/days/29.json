@@ -714,10 +714,10 @@
     },
     {
       "id": "V29-24",
-      "fr": "démentir (une information)",
-      "zh": "否认、辟谣",
-      "ex": "La présidente n’a ni confirmé ni [[démenti]] l’information.",
-      "exZh": "主席对这一消息既未证实也未否认。",
+      "fr": "cesser d’émettre",
+      "zh": "停止播出",
+      "ex": "La station pourrait [[cesser d’émettre]] à la fin de l’année.",
+      "exZh": "这家电台可能在年底停播。",
       "src": "L29-3"
     },
     {

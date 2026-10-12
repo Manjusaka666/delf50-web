@@ -666,10 +666,10 @@
     },
     {
       "id": "V37-16",
-      "fr": "refléter le coût réel",
-      "zh": "反映真实成本",
-      "ex": "Aujourd’hui, le prix du billet ne [[reflète pas le coût réel]] du vol.",
-      "exZh": "如今机票价格并不反映航班的真实成本。",
+      "fr": "une taxe progressive",
+      "zh": "累进税（随次数/数额递增的税）",
+      "ex": "Avec [[une taxe progressive]], le premier vol de l’année serait peu taxé.",
+      "exZh": "如果实行累进税，每年的第一次航班税负会很低。",
       "src": "L37-1"
     },
     {
