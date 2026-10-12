@@ -1,0 +1,332 @@
+[
+ {
+  "id": "hypothese-01",
+  "stem": "S’il fait beau demain, nous ___ un pique-nique au bord du lac.",
+  "options": [
+   "ferions",
+   "aurions fait",
+   "ferons"
+  ],
+  "answer": 2,
+  "why": "si + 现在时 → 主句用将来时（可能实现的条件）：nous ferons。ferions 要求 si + imparfait；aurions fait 要求 si + plus-que-parfait。"
+ },
+ {
+  "id": "hypothese-02",
+  "stem": "Si j’___ plus de temps, j’apprendrais le piano.",
+  "options": [
+   "aurais",
+   "avais",
+   "ai eu"
+  ],
+  "answer": 1,
+  "why": "主句是条件式现在时（j’apprendrais），si 后用未完成过去时：si j’avais。si 后绝不用条件式（aurais）；ai eu 是复合过去时，与条件式主句不搭配。"
+ },
+ {
+  "id": "hypothese-03",
+  "stem": "Si tu ___ ton billet à l’avance, il coûtera moins cher.",
+  "options": [
+   "achètes",
+   "achèterais",
+   "achèteras"
+  ],
+  "answer": 0,
+  "why": "主句是将来时，si 后用现在时：si tu achètes。si 后不能用条件式（achèterais）或将来时（achèteras）。"
+ },
+ {
+  "id": "hypothese-04",
+  "stem": "Si nous étions partis plus tôt, nous ___ le dernier train.",
+  "options": [
+   "aurions pris",
+   "prendrions",
+   "avions pris"
+  ],
+  "answer": 0,
+  "why": "si + 愈过去时表示与过去事实相反的假设，主句用条件式过去时：nous aurions pris。prendrions 表示现在的结果，与“末班车”这一过去事件不符；avions pris 是直陈式。"
+ },
+ {
+  "id": "hypothese-05",
+  "stem": "Je viendrai à la fête à condition que tu ___ là.",
+  "options": [
+   "sois",
+   "es",
+   "seras"
+  ],
+  "answer": 0,
+  "why": "à condition que + 虚拟式：que tu sois。es 是直陈式；seras 是将来时。"
+ },
+ {
+  "id": "hypothese-06",
+  "stem": "Prends ton parapluie au cas où il ___.",
+  "options": [
+   "pleuve",
+   "pleuvra",
+   "pleuvrait"
+  ],
+  "answer": 2,
+  "why": "au cas où + 条件式：au cas où il pleuvrait。pleuve 是虚拟式；pleuvra 是将来时，都不符合 au cas où 的要求。"
+ },
+ {
+  "id": "hypothese-07",
+  "stem": "___ d’incendie, n’utilisez pas l’ascenseur.",
+  "options": [
+   "En cas",
+   "Au cas",
+   "À condition"
+  ],
+  "answer": 0,
+  "why": "en cas de + 无冠词名词：en cas d’incendie。au cas où 后接条件式从句，不接 de + 名词；à condition de 后接不定式。"
+ },
+ {
+  "id": "hypothese-08",
+  "stem": "Dépêche-toi, ___ nous allons rater le début du spectacle.",
+  "options": [
+   "à moins que",
+   "au cas où",
+   "sinon"
+  ],
+  "answer": 2,
+  "why": "sinon（否则）引出不满足条件时的后果，后接直陈式独立句。à moins que 要接虚拟式；au cas où 要接条件式，且意思不对。"
+ },
+ {
+  "id": "hypothese-09",
+  "stem": "Nous irons à la plage, à moins qu’il ne ___.",
+  "options": [
+   "pleut",
+   "pleuvrait",
+   "pleuve"
+  ],
+  "answer": 2,
+  "why": "à moins que（除非）+ 虚拟式，常带赘词 ne：à moins qu’il ne pleuve。pleut 是直陈式；pleuvrait 是条件式。"
+ },
+ {
+  "id": "hypothese-10",
+  "stem": "Si elle avait accepté ce poste, elle ___ aujourd’hui à Montréal.",
+  "options": [
+   "aurait vécu",
+   "vivrait",
+   "vivait"
+  ],
+  "answer": 1,
+  "why": "混合假设：过去的条件（si + PQP）→ 现在的结果（aujourd’hui），主句用条件式现在时：elle vivrait。aurait vécu 指过去，与 aujourd’hui 冲突；vivait 是直陈式。"
+ },
+ {
+  "id": "hypothese-11",
+  "stem": "Si tu ___ mieux dormi, tu serais moins fatigué aujourd’hui.",
+  "options": [
+   "avais",
+   "aurais",
+   "as"
+  ],
+  "answer": 0,
+  "why": "混合假设：昨晚没睡好（过去）→ 今天累（现在）。si 后用愈过去时：si tu avais mieux dormi。si 后不能用条件式（aurais）；as dormi 是复合过去时，不能与条件式主句搭配。"
+ },
+ {
+  "id": "hypothese-12",
+  "stem": "Je te prête ma voiture, pourvu que tu me la ___ demain.",
+  "options": [
+   "rends",
+   "rendras",
+   "rendes"
+  ],
+  "answer": 2,
+  "why": "pourvu que（只要）+ 虚拟式：que tu me la rendes。rends 是直陈式；rendras 是将来时。"
+ },
+ {
+  "id": "hypothese-13",
+  "stem": "S’il ___ moins cher, j’achèterais ce vélo électrique.",
+  "options": [
+   "serait",
+   "était",
+   "soit"
+  ],
+  "answer": 1,
+  "why": "主句是条件式现在时，si 后用未完成过去时：s’il était。serait 是条件式；soit 是虚拟式，si 后都不能用。"
+ },
+ {
+  "id": "hypothese-14",
+  "stem": "Si vous ___ le dossier avant vendredi, nous pourrons le traiter.",
+  "options": [
+   "enverriez",
+   "enverrez",
+   "envoyez"
+  ],
+  "answer": 2,
+  "why": "主句是将来时（nous pourrons），si 后用现在时：si vous envoyez。enverriez 是条件式；enverrez 是将来时，si 后都不能用。"
+ },
+ {
+  "id": "hypothese-15",
+  "stem": "Au cas où vous ___ empêché, merci de prévenir le secrétariat.",
+  "options": [
+   "seriez",
+   "êtes",
+   "soyez"
+  ],
+  "answer": 0,
+  "why": "au cas où + 条件式（正式书面中常见）：au cas où vous seriez empêché。êtes 是直陈式；soyez 是虚拟式。"
+ },
+ {
+  "id": "hypothese-16",
+  "stem": "Si j’avais su, je ne ___ pas venu.",
+  "options": [
+   "serai",
+   "serais",
+   "étais"
+  ],
+  "answer": 1,
+  "why": "si + 愈过去时 → 条件式过去时；venir 用 être：je ne serais pas venu。serai 是将来时；étais venu 是愈过去时（直陈式）。"
+ },
+ {
+  "id": "hypothese-17",
+  "stem": "Il aurait réussi l’examen s’il ___ davantage.",
+  "options": [
+   "aurait travaillé",
+   "travaillerait",
+   "avait travaillé"
+  ],
+  "answer": 2,
+  "why": "主句是条件式过去时，si 后用愈过去时：s’il avait travaillé。aurait travaillé 和 travaillerait 都是条件式，si 后不能用。"
+ },
+ {
+  "id": "hypothese-18",
+  "stem": "Nous accepterons votre proposition à condition ___ les délais soient respectés.",
+  "options": [
+   "de",
+   "que",
+   "où"
+  ],
+  "answer": 1,
+  "why": "后面是虚拟式从句（soient），用 à condition que。à condition de 后接不定式；à condition où 不存在。"
+ },
+ {
+  "id": "hypothese-19",
+  "stem": "Vous pouvez entrer ___ présenter votre billet à l’accueil.",
+  "options": [
+   "à condition de",
+   "à condition que",
+   "au cas où"
+  ],
+  "answer": 0,
+  "why": "后面是不定式（présenter），用 à condition de + 不定式。à condition que 要接虚拟式从句；au cas où 要接条件式从句。"
+ },
+ {
+  "id": "hypothese-20",
+  "stem": "Appelle-moi ___ tu aurais un problème pendant le voyage.",
+  "options": [
+   "au cas où",
+   "si",
+   "à condition que"
+  ],
+  "answer": 0,
+  "why": "从句动词是条件式（aurais），只有 au cas où 接条件式。si 后不能用条件式；à condition que 后要用虚拟式。"
+ },
+ {
+  "id": "hypothese-21",
+  "stem": "Si on ___ le budget, on pourrait embaucher deux personnes.",
+  "options": [
+   "augmenterait",
+   "augmentera",
+   "augmentait"
+  ],
+  "answer": 2,
+  "why": "主句是条件式现在时（on pourrait），si 后用未完成过去时：si on augmentait。augmenterait 是条件式；augmentera 是将来时，si 后都不能用。"
+ },
+ {
+  "id": "hypothese-22",
+  "stem": "Si les gouvernements avaient agi plus tôt, le climat ne ___ pas aussi menacé aujourd’hui.",
+  "options": [
+   "aurait été",
+   "serait",
+   "était"
+  ],
+  "answer": 1,
+  "why": "混合假设：过去没有行动 → 现在的状况（aujourd’hui），主句用条件式现在时：ne serait pas。aurait été 指过去，与 aujourd’hui 冲突；était 是直陈式。"
+ },
+ {
+  "id": "hypothese-23",
+  "stem": "Il ne sortira pas de l’hôpital ___ son médecin ne l’y autorise.",
+  "options": [
+   "pourvu que",
+   "à moins que",
+   "au cas où"
+  ],
+  "answer": 1,
+  "why": "à moins que（除非）+ 虚拟式，可带赘词 ne：à moins que son médecin ne l’y autorise。pourvu que 意为“只要”，与主句的否定矛盾，也不带赘词 ne；au cas où 要接条件式。"
+ },
+ {
+  "id": "hypothese-24",
+  "stem": "___ vous perdriez votre carte, appelez immédiatement la banque.",
+  "options": [
+   "En cas de",
+   "Au cas où",
+   "Si"
+  ],
+  "answer": 1,
+  "why": "从句动词是条件式（perdriez），只能用 au cas où。en cas de 后接名词；si 后不能用条件式。"
+ },
+ {
+  "id": "hypothese-25",
+  "stem": "Si vous ___ des questions, n’hésitez pas à me contacter.",
+  "options": [
+   "auriez",
+   "avez",
+   "aurez"
+  ],
+  "answer": 1,
+  "why": "主句是命令式，si 后用现在时：si vous avez des questions。auriez 是条件式；aurez 是将来时，si 后都不能用。"
+ },
+ {
+  "id": "hypothese-26",
+  "stem": "Si j’étais toi, je ___ cette offre sans hésiter.",
+  "options": [
+   "accepterais",
+   "accepterai",
+   "accepte"
+  ],
+  "answer": 0,
+  "why": "si + imparfait（si j’étais toi 是给建议的固定说法）→ 主句用条件式现在时：j’accepterais。accepterai 是将来时（拼写只差一个 s）；accepte 是现在时。"
+ },
+ {
+  "id": "hypothese-27",
+  "stem": "Si elle n’avait pas raté son avion, elle ___ déjà arrivée à Dakar.",
+  "options": [
+   "serait",
+   "aurait",
+   "était"
+  ],
+  "answer": 0,
+  "why": "si + 愈过去时 → 条件式过去时；arriver 用 être：elle serait déjà arrivée。aurait 是错误的助动词；était arrivée 是直陈式愈过去时。"
+ },
+ {
+  "id": "hypothese-28",
+  "stem": "Nous annulerons la sortie en cas ___ mauvais temps.",
+  "options": [
+   "du",
+   "où",
+   "de"
+  ],
+  "answer": 2,
+  "why": "en cas de + 无冠词名词：en cas de mauvais temps。en cas du 加了冠词；en cas où 是错误结构（应为 au cas où + 条件式）。"
+ },
+ {
+  "id": "hypothese-29",
+  "stem": "Je veux bien t’aider, à condition que tu ___ ta part du travail.",
+  "options": [
+   "fais",
+   "feras",
+   "fasses"
+  ],
+  "answer": 2,
+  "why": "à condition que + 虚拟式：que tu fasses。fais 是直陈式；feras 是将来时。"
+ },
+ {
+  "id": "hypothese-30",
+  "stem": "S’il ___ moins de voitures en ville, l’air serait plus pur.",
+  "options": [
+   "y aurait",
+   "y avait",
+   "y a"
+  ],
+  "answer": 1,
+  "why": "主句是条件式现在时（serait），si 后用未完成过去时：s’il y avait。y aurait 是条件式，si 后不能用；y a 是现在时，与条件式主句不搭配。"
+ }
+]

@@ -15,11 +15,11 @@
   "stem": "Les candidats ont présenté ___ leur projet en dix minutes.",
   "options": [
    "chaque",
-   "tout",
+   "chacune",
    "chacun"
   ],
   "answer": 2,
-  "why": "chacun 是代词，可放在动词后复指复数主语（每个人各自）。chaque 必须接名词；tout 在此无法修饰 leur projet 表达“各自”。"
+  "why": "chacun 是代词，可放在动词后复指复数主语（每个人各自）。chaque 必须接名词；chacune 是阴性，与 les candidats（阳性）不符。"
  },
  {
   "id": "indefinis-03",

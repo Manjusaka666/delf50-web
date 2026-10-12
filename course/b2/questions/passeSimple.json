@@ -81,11 +81,11 @@
   "stem": "Il ___ minuit passé quand l’alarme de l’usine se déclencha.",
   "options": [
    "était",
-   "fut",
+   "fût",
    "été"
   ],
   "answer": 0,
-  "why": "时间、背景描写用未完成过去时：il était minuit passé；主线事件（se déclencha）用简单过去时。fut 用于背景时间不自然；été 是过去分词，不能单独作谓语。"
+  "why": "时间、背景描写用未完成过去时：il était minuit passé；主线事件（se déclencha）用简单过去时。fût 是虚拟式未完成过去时，不能用在独立的陈述句中；été 是过去分词，不能单独作谓语。"
  },
  {
   "id": "passeSimple-09",
