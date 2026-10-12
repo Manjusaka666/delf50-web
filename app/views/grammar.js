@@ -2,7 +2,7 @@
 import { store, commit } from '../store.js';
 import { node, remedialNodes, LEVELS, currentLevel } from '../course.js';
 import { grammarAnswer } from '../progress.js';
-import { answerGrammar, setProduction, productionKey } from '../state.js';
+import { answerGrammar, setProduction, saveProduction, productionKey } from '../state.js';
 import { html, icon, pad2, frText, LETTERS, MODULE_NAMES } from '../ui.js';
 import { dayContext, crumbs } from './common.js';
 
@@ -37,14 +37,15 @@ export async function grammarView(d, n) {
   function production() {
     const target = ctx.plan.targets.production, m = ctx.progress().modules.production;
     return html`<section class="prod" id="production">
-      <h2 class="section-title"><span>Production</span>主动产出 <small>${m.done} / ${target} 句</small></h2>
-      <p class="muted">每条提示完成 2 个句子（写下或说出），完成后打勾。</p>
+      <h2 class="section-title"><span>Production</span>主动产出 <small data-prod-count>${m.done} / ${target} 句</small></h2>
+      <p class="muted">每条提示完成 2 个句子：在下方输入框写下（随输入自动保存，并自动打勾），或说出后手动打勾。</p>
       ${ctx.plan.production.map((p) => html`<div class="prod-node">
         <h3>${p.node.name} <small>${p.node.use || ''}</small></h3>
         <ul>${p.prompts.map((t, i) => {
-          const on = Boolean(store.S.production[productionKey(d, p.node.id, i)]);
-          return html`<li><button class="check ${on ? 'on' : ''}" role="checkbox" aria-checked="${on}" data-act="prod" data-node="${p.node.id}" data-i="${i}">
-            <span class="box">${icon('check')}</span><span>${frText(t)}</span></button></li>`;
+          const k = productionKey(d, p.node.id, i), on = Boolean(store.S.production[k]);
+          return html`<li><button class="check ${on ? 'on' : ''}" role="checkbox" aria-checked="${on}" data-act="prod" data-node="${p.node.id}" data-i="${i}" data-k="${k}">
+            <span class="box">${icon('check')}</span><span>${frText(t)}</span></button>
+            <textarea class="prod-ed" data-input="prodtext" data-node="${p.node.id}" data-i="${i}" rows="2" lang="fr" spellcheck="true" aria-label="写下你的句子" placeholder="Écrivez vos deux phrases ici…">${store.S.drafts.production[k] || ''}</textarea></li>`;
         })}</ul>
       </div>`)}
     </section>`;
@@ -97,9 +98,19 @@ export async function grammarView(d, n) {
     commit((S) => answerGrammar(S, d, q, node(q.node), i));
   };
 
+  // Typing keeps the focus: the prompt's box and the count are updated in place.
+  const prodText = (el) => {
+    const node = el.dataset.node, i = Number(el.dataset.i), k = productionKey(d, node, i);
+    commit((S) => saveProduction(S, d, node, i, el.value), { quiet: true });
+    const on = Boolean(store.S.production[k]), b = document.querySelector(`[data-k="${k}"]`), c = document.querySelector('[data-prod-count]');
+    if (b) { b.classList.toggle('on', on); b.setAttribute('aria-checked', String(on)); }
+    if (c) c.textContent = `${ctx.progress().modules.production.done} / ${ctx.plan.targets.production} 句`;
+  };
+
   return {
     title: `语法 · Jour ${d}`,
     render,
+    inputs: { prodtext: prodText },
     mount: () => { if (toProduction && !scrolled) { scrolled = true; requestAnimationFrame(() => document.getElementById('production').scrollIntoView({ block: 'start' })); } },
     actions: {
       answer: (el) => answer(Number(el.dataset.i)),

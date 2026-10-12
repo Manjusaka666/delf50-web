@@ -67,6 +67,9 @@ const COLLECTIONS = {
     ['correction', 'correct', 'text'], ['explanation', 'why', 'text'], ['created_at', 'at', 'ts']], { soft: 'resolved_at' }),
   writingDrafts: draft('writing'),
   applicationDrafts: draft('application'),
+  speakingDrafts: draft('speaking'),
+  // Output practice typed out: "<day>:<node>:<prompt>" = the sentences.
+  productionDrafts: draft('production'),
   // Vocabulary chunks: "<day>:<chunk>" = known | again.
   lexicon: { path: ['lexicon'], table: 'lexicon_marks', kind: 'map', keys: ['mark_key'], scalar: ['mark', 'text'], touch: 'marked_at',
     parse: (k) => { const i = k.indexOf(':'); return { day: int(k.slice(0, i)), chunk_id: i < 0 ? null : k.slice(i + 1) }; }, parsed: [['day', 'int'], ['chunk_id', 'text']] },

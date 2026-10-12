@@ -466,6 +466,13 @@ a.mod:hover .mod-name, a.tile:hover .tile-title { color: var(--azur); }
 .round-when { font-weight: 600; }
 .round audio { height: 38px; margin-left: auto; max-width: 100%; }
 .round .chip, .round .tag { margin-left: auto; }
+.round-notes { flex-basis: 100%; }
+.round-notes summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+.notes { margin-bottom: 20px; }
+.notes-ed { min-height: 180px; }
+.prod-ed { display: block; width: 100%; margin: 6px 0 4px; padding: 12px 18px 12px 56px; border: 0; border-radius: var(--r); background: var(--card); font: 400 16px/1.7 var(--sans); resize: vertical; }
+.prod-ed:focus { outline: 1.5px solid var(--azur); outline-offset: 0; }
+.prod-ed::placeholder { color: var(--muted); }
 
 /* ── chunks & spaced review ── */
 kbd { display: inline-grid; place-items: center; min-width: 22px; height: 20px; padding: 0 5px; margin-left: 6px; border-radius: var(--r-s); background: rgba(26, 47, 37, .1); font: 600 10.5px var(--sans); }
@@ -635,6 +642,8 @@ span.gap { display: inline-block; border-bottom: 2px solid var(--abricot); color
   .qcard { padding: 26px 20px; }
   .q { padding: 22px 18px 18px; }
   .ed { min-height: 300px; padding: 20px; }
+  .notes-ed { min-height: 160px; }
+  .prod-ed { padding-left: 18px; }
   .prose { font-size: 16.5px; }
   .stat.big b { font-size: 72px; }
   .seg button { padding: 0 14px; }
