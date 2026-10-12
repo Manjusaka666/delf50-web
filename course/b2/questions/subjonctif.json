@@ -221,14 +221,14 @@
  },
  {
   "id": "subjonctif-21",
-  "stem": "Elle regrette ___ son poste trop tôt.",
+  "stem": "Je regrette ___ mon poste trop tôt.",
   "options": [
-   "qu’elle ait quitté",
+   "que j’aie quitté",
    "d’avoir quitté",
-   "qu’elle a quitté"
+   "que j’ai quitté"
   ],
   "answer": 1,
-  "why": "主语相同（elle），regretter de + 不定式；动作已完成，用过去不定式：d’avoir quitté。qu’elle ait quitté 是同一主语误用从句（qu’elle 只能指另一个女性）；qu’elle a quitté 还用了直陈式。"
+  "why": "主语相同（je），regretter de + 不定式；动作已完成，用过去不定式：d’avoir quitté。que j’aie quitté 是同一主语误用从句；que j’ai quitté 还用了直陈式。"
  },
  {
   "id": "subjonctif-22",
@@ -309,14 +309,14 @@
  },
  {
   "id": "subjonctif-29",
-  "stem": "Elle aimerait ___ son diplôme avant de partir à l’étranger.",
+  "stem": "J’aimerais ___ mon diplôme avant de partir à l’étranger.",
   "options": [
-   "qu’elle obtienne",
+   "que j’obtienne",
    "obtenir",
-   "qu’elle obtiendra"
+   "que j’obtiendrai"
   ],
   "answer": 1,
-  "why": "主语相同（elle），aimer / vouloir 后直接接不定式：elle aimerait obtenir。qu’elle obtienne 只能指另一个人；qu’elle obtiendra 还用了将来时。"
+  "why": "主语相同（je），aimer / vouloir 后直接接不定式：j’aimerais obtenir。que j’obtienne 是同一主语误用从句；que j’obtiendrai 还用了将来时。"
  },
  {
   "id": "subjonctif-30",

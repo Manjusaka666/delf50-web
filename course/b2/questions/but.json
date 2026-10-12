@@ -320,13 +320,13 @@
  },
  {
   "id": "but-30",
-  "stem": "Elle a baissé la voix de peur ___ entendue par ses collègues.",
+  "stem": "J’ai baissé la voix de peur ___ entendu par mes collègues.",
   "options": [
-   "qu’elle soit",
-   "qu’elle ne soit",
+   "que je sois",
+   "que je ne sois",
    "d’être"
   ],
   "answer": 2,
-  "why": "主语相同（elle），用 de peur de + 不定式（被动）：de peur d’être entendue。qu’elle (ne) soit 只能指另一个人，同一主语时不能用从句。"
+  "why": "主语相同（je），用 de peur de + 不定式（被动）：de peur d’être entendu。que je (ne) sois 是同一主语误用从句。"
  }
 ]
