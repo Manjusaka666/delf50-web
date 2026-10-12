@@ -1,0 +1,167 @@
+[
+ {
+  "id": "styleSoutenu-01",
+  "stem": "À peine ___ arrivé que la réunion commença.",
+  "options": [
+   "était-t-il",
+   "était-il",
+   "était il"
+  ],
+  "answer": 1,
+  "why": "à peine 位于句首时，书面语中主谓倒装：À peine était-il arrivé que…。动词已以 -t 结尾，不能再加 -t-（était-t-il 错误）；倒装必须加连字符。"
+ },
+ {
+  "id": "styleSoutenu-02",
+  "stem": "Peut-être ___ raison, mais je reste sceptique.",
+  "options": [
+   "a-t-il",
+   "il a-t-il",
+   "a-il"
+  ],
+  "answer": 0,
+  "why": "peut-être 位于句首时倒装：Peut-être a-t-il raison（也可说 Peut-être qu’il a raison）。动词以元音结尾，需加 -t-；il a-t-il 主语重复，错误。"
+ },
+ {
+  "id": "styleSoutenu-03",
+  "stem": "Sans doute ___ trop optimistes au début du projet.",
+  "options": [
+   "nous étions-nous",
+   "étaient-nous",
+   "étions-nous"
+  ],
+  "answer": 2,
+  "why": "sans doute（大概）位于句首时，书面语常倒装：Sans doute étions-nous trop optimistes。nous étions-nous 主语重复；étaient 与 nous 人称不一致。"
+ },
+ {
+  "id": "styleSoutenu-04",
+  "stem": "Le budget a été réduit de moitié ; aussi ___ reporter une partie des travaux.",
+  "options": [
+   "a-il fallu",
+   "a-t-il fallu",
+   "il a-t-il fallu"
+  ],
+  "answer": 1,
+  "why": "aussi 位于句首、意为 donc（因此）时，书面语倒装：aussi a-t-il fallu…。a-il 缺 -t-；il a-t-il 主语重复。注意：aussi 在句首几乎总是“因此”，不是“也”。"
+ },
+ {
+  "id": "styleSoutenu-05",
+  "stem": "Partons maintenant, avant qu’il ne ___ trop tard.",
+  "options": [
+   "soit",
+   "est",
+   "sera"
+  ],
+  "answer": 0,
+  "why": "avant que + subjonctif，书面中常带赘词 ne（ne explétif），没有否定意义：在太晚之前。est / sera 是直陈式。"
+ },
+ {
+  "id": "styleSoutenu-06",
+  "stem": "Nous ferons la randonnée demain, à moins qu’il ne ___.",
+  "options": [
+   "pleut",
+   "pleuvra",
+   "pleuve"
+  ],
+  "answer": 2,
+  "why": "à moins que（除非）+ subjonctif，常带赘词 ne：à moins qu’il ne pleuve = 除非下雨（不是“除非不下雨”）。pleut / pleuvra 是直陈式。"
+ },
+ {
+  "id": "styleSoutenu-07",
+  "stem": "Les élus craignent que cette décision ne ___ fuir les investisseurs.",
+  "options": [
+   "fait",
+   "fasse",
+   "fera"
+  ],
+  "answer": 1,
+  "why": "craindre que + subjonctif，ne 为赘词，意思是“担心这一决定会吓跑投资者”。fait / fera 是直陈式。"
+ },
+ {
+  "id": "styleSoutenu-08",
+  "stem": "Le résultat a été bien meilleur que nous ne l’___.",
+  "options": [
+   "espérions",
+   "espérer",
+   "ayons espéré"
+  ],
+  "answer": 0,
+  "why": "比较句 plus / meilleur… que 后可用赘词 ne，从句用直陈式：que nous ne l’espérions（我们原先所希望的）。espérer 是不定式，不能作谓语；ayons espéré 是虚拟式，不用于比较从句。"
+ },
+ {
+  "id": "styleSoutenu-09",
+  "stem": "C’est la seule solution qui ___ acceptable pour toutes les parties.",
+  "options": [
+   "soient",
+   "sois",
+   "soit"
+  ],
+  "answer": 2,
+  "why": "la seule… qui 后常用 subjonctif，主语 qui = la solution（第三人称单数）→ soit。soient 是复数；sois 是第二人称。"
+ },
+ {
+  "id": "styleSoutenu-10",
+  "stem": "Ainsi ___ une tradition vieille de trois siècles.",
+  "options": [
+   "s’acheva-t-elle",
+   "elle s’acheva",
+   "s’acheva"
+  ],
+  "answer": 2,
+  "why": "ainsi 位于句首时，名词主语后置，用简单倒装：Ainsi s’acheva une tradition…。s’acheva-t-elle 与后置名词主语重复；elle s’acheva + 名词也重复了主语。"
+ },
+ {
+  "id": "styleSoutenu-11",
+  "stem": "De toute l’équipe, il est le seul qui ___ compris l’enjeu de la réunion.",
+  "options": [
+   "aie",
+   "ait",
+   "est"
+  ],
+  "answer": 1,
+  "why": "le seul qui + subjonctif；动作已完成 → subjonctif passé：qui ait compris（第三人称 ait）。aie 是第一人称；comprendre 用 avoir，est compris 在此不成立。"
+ },
+ {
+  "id": "styleSoutenu-12",
+  "stem": "À peine le ministre ___ terminé son discours que les huées commencèrent.",
+  "options": [
+   "avait-t-il",
+   "avait-elle",
+   "avait-il"
+  ],
+  "answer": 2,
+  "why": "名词主语时用复合倒装：le ministre + 动词-il → À peine le ministre avait-il terminé…。avait 已以 -t 结尾，不能再加 -t-；avait-elle 与 le ministre（阳性）不符。"
+ },
+ {
+  "id": "styleSoutenu-13",
+  "stem": "La situation sanitaire est plus grave qu’on ne le ___.",
+  "options": [
+   "croit",
+   "croie",
+   "croyant"
+  ],
+  "answer": 0,
+  "why": "比较句 plus… que ne 中的 ne 是赘词，从句用直陈式：qu’on ne le croit。croie 是虚拟式，不用于比较从句；croyant 是现在分词。"
+ },
+ {
+  "id": "styleSoutenu-14",
+  "stem": "Sans doute le gouvernement ___ cette mesure impopulaire.",
+  "options": [
+   "retirera-t-il",
+   "retirera-il",
+   "il retirera"
+  ],
+  "answer": 0,
+  "why": "名词主语 + sans doute 句首 → 复合倒装：le gouvernement retirera-t-il。retirera 以元音结尾，需加 -t-；il retirera 与名词主语重复。"
+ },
+ {
+  "id": "styleSoutenu-15",
+  "stem": "Les trains étaient en grève ; aussi ___ avec deux heures de retard.",
+  "options": [
+   "nous sommes-nous arrivés",
+   "sommes-nous arrivés",
+   "avons-nous arrivés"
+  ],
+  "answer": 1,
+  "why": "aussi（= donc）句首倒装：sommes-nous arrivés（arriver 用 être，过去分词与 nous 配合）。nous sommes-nous 主语重复；arriver 不用 avoir。"
+ }
+]
