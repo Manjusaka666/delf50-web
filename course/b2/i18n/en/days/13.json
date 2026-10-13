@@ -1,4 +1,226 @@
 {
+ "canDo": "Can present the principle, advantages and limits of a technological innovation objectively, using the passive in various tenses, se faire + infinitive and impersonal structures (il s’agit de, il est + adj. + de/que, il reste, il manque).",
+ "review": "Review day 12’s indirect speech (the researcher a expliqué que…) and day 9’s hypotheses; watch the agreement of the past participle with the subject in the passive (les images sont analysées, la piste a été inaugurée).",
+ "input": "Read: a popular-science report on self-healing concrete, an opinion piece against “technological solutionism” and a press release on a citizen science project (mark être + past participle and the agent introduced by par); listen: an interview on AI-assisted diagnosis in a hospital, a segment on how science news gets distorted and a news flash on a heated cycle lane (note “who did what / what was done”).",
+ "output": "Write: a press article (≥220 words) objectively presenting an everyday innovation and assessing its prospects; speak: a 3-minute monologue on companion robots in care homes, then a debate on “drone deliveries in cities”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; at least 6 passive or impersonal structures in the article with correct participle agreement, distinguishing statements of fact from personal opinion; a 3-minute monologue without breaking off.",
+ "challenge": "Today’s challenge: find a science or medical news item on RFI’s « Journal en français facile » or TV5MONDE, rewrite 3 of its active sentences as passive or impersonal ones (« Un nouveau traitement a été mis au point… », « Il s’agit de… »), then record 1 minute presenting the innovation objectively and naming one limitation.",
+ "items": {
+  "reading": {
+   "R13-1": {
+    "questions": [
+     {
+      "why": "The headline and first paragraph: « un prototype de béton « autoréparant » a été testé ». B: the bacteria in the text are beneficial; C: the footbridge is just the test site."
+     },
+     {
+      "why": "« Des bactéries… sont mélangées au béton au moment de sa fabrication… Lorsqu’une fissure apparaît et que l’eau s’y infiltre, elles sont réveillées et se mettent à produire du calcaire ». A: no manual injection is needed; C: the cracks are filled afterwards, not prevented by a coating."
+     },
+     {
+      "why": "cicatrisation = wound healing, and en quelque sorte = in a way — it’s an analogy: the concrete “heals” like skin. A is a literal misreading; B: the text doesn’t say the technique comes from medicine."
+     },
+     {
+      "why": "« seules les fissures fines, de moins d’un millimètre, peuvent être réparées de cette façon ». A: water is actually needed to wake the bacteria; C contradicts « en moins de trois mois »."
+     },
+     {
+      "why": "« Il ne faut pas comparer le prix à l’achat, mais le coût sur toute la durée de vie de l’ouvrage ». A isn’t her view; B contradicts “twice as expensive”."
+     },
+     {
+      "why": "« Certains experts restent prudents… n’a pas encore été vérifiée… il manque des études ». B is too absolute; C is the opposite of “there is still a lot of work to do”."
+     }
+    ]
+   },
+   "R13-2": {
+    "questions": [
+     {
+      "why": "The author signs the piece and takes a position: « une invention n’est pas une solution tant qu’elle n’a pas été produite… ». A: the innovations listed are what he criticises; C: the author explicitly supports research funding."
+     },
+     {
+      "why": "The quotation marks around « révolution » and « Il suffirait donc d’attendre : la science s’occupera de tout » (the conditional signalling disagreement) show irony. Neither B nor C fits."
+     },
+     {
+      "why": "« Je ne peux donc pas être soupçonné d’hostilité envers l’innovation. » A and B have no basis in the text."
+     },
+     {
+      "why": "« des choix plus modestes, mais immédiatement disponibles, sont négligés ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« C’est en partie vrai : des maladies ont été vaincues, des famines ont été évitées ». B contradicts « La technique seule n’a jamais suffi »; C is the opposite of the concession."
+     }
+    ]
+   },
+   "R13-3": {
+    "questions": [
+     {
+      "why": "The headline is « appel à volontaires », the text says « 300 volontaires mesureront la qualité de l’air », and it ends with the registration deadline. A: the sensors are provided free; C: this is recruitment for the second phase."
+     },
+     {
+      "why": "« Il est simplement demandé aux volontaires de laisser l’appareil branché en permanence et de signaler toute panne. » A: it is provided free; B: there is only online training, and installation takes about ten minutes."
+     },
+     {
+      "why": "« seront analysées par une équipe de chercheurs bénévoles, puis rendues publiques sous la forme d’une carte interactive ». B and C contradict “made public”."
+     },
+     {
+      "why": "« repérer plusieurs rues où la pollution était nettement plus élevée que ne l’indiquaient les estimations officielles ». A: it was only a finding, not a reduction in pollution; C isn’t mentioned."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L13-1": {
+    "questions": [
+     {
+      "why": "« un logiciel d’aide au diagnostic est utilisé depuis deux ans », and the whole interview discusses its role, advantages and limits. B is a colleague’s worry she doesn’t share; C isn’t mentioned."
+     },
+     {
+      "why": "« Les radios… sont d’abord analysées par le logiciel, qui signale les zones suspectes. Ensuite, chaque image est examinée par un radiologue, qui garde le dernier mot. » A and C contradict “the doctor keeps the final say”."
+     },
+     {
+      "why": "« Les examens urgents sont repérés plus vite… Le logiciel, lui, ne se fatigue pas. » A isn’t mentioned; B: she says the software makes mistakes too."
+     },
+     {
+      "why": "« Le logiciel se trompe… si un cas est très rare, il peut tout simplement ne pas le reconnaître. » B: no law is mentioned; C: most patients don’t know."
+     },
+     {
+      "why": "« les images sont rendues anonymes avant d’être traitées, et elles ne quittent pas l’hôpital ». A is the opposite of the recording; C: she answers very clearly."
+     },
+     {
+      "why": "« Le métier va changer… moins de temps sur les cas simples et plus de temps sur les cas compliqués, et aussi avec les patients ». A: she is « Pas vraiment » worried; B contradicts « va changer »."
+     }
+    ]
+   },
+   "L13-2": {
+    "questions": [
+     {
+      "why": "« on parle aujourd’hui d’un phénomène bien connu des chercheurs : la déformation des résultats scientifiques ». A is the example of distortion; C isn’t the point."
+     },
+     {
+      "why": "« les souris avaient disparu, et la substance était devenue une tablette de chocolat ». B isn’t mentioned; C: the memory aspect was kept and exaggerated."
+     },
+     {
+      "why": "« l’étude elle-même n’a pas été lue… ce communiqué est résumé, puis le résumé est résumé à son tour ». A and C aren’t said in the recording."
+     },
+     {
+      "why": "« Trois : vérifier si les résultats ont été confirmés par d’autres équipes. » A is too absolute; B is precisely where the problem comes from."
+     }
+    ]
+   },
+   "L13-3": {
+    "questions": [
+     {
+      "why": "« la première piste cyclable chauffante… des câbles alimentés par des panneaux solaires ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "« Ses performances seront évaluées pendant deux hivers avant qu’une éventuelle extension ne soit décidée. » A: 500 metres is its current length, and extending it hasn’t been decided; C isn’t mentioned."
+     },
+     {
+      "why": "« Les usagers sont invités à donner leur avis sur une plateforme en ligne ». A: the region pays for it; B isn’t mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V13-01": {
+   "zh": "to reach a milestone",
+   "exZh": "With this first successful test, the team has just reached a decisive milestone."
+  },
+  "V13-02": {
+   "zh": "to lie dormant",
+   "exZh": "As long as no crack appears, the bacteria lie dormant."
+  },
+  "V13-03": {
+   "zh": "to seep into …",
+   "exZh": "As soon as water seeps into the crack, the process starts."
+  },
+  "V13-04": {
+   "zh": "it is generally accepted that …",
+   "exZh": "It is generally accepted that prevention costs less than repair."
+  },
+  "V13-05": {
+   "zh": "over its whole lifespan",
+   "exZh": "A building’s cost should be calculated over its whole lifespan."
+  },
+  "V13-06": {
+   "zh": "to bring in (someone) to help",
+   "exZh": "The researchers brought in an independent design firm to help."
+  },
+  "V13-07": {
+   "zh": "to estimate (the savings)",
+   "exZh": "A report will estimate the savings made with the new material."
+  },
+  "V13-08": {
+   "zh": "a lot of work remains to be done",
+   "exZh": "The first results are promising, but a lot of work remains to be done."
+  },
+  "V13-09": {
+   "zh": "to be worth it",
+   "exZh": "The investment is large, but in the engineer’s view it is worth it."
+  },
+  "V13-10": {
+   "zh": "to be brought into service",
+   "exZh": "The new tram line will be brought into service at the start of the school year in September."
+  },
+  "V13-11": {
+   "zh": "to be suspected of …",
+   "exZh": "The researcher is suspected of fraud by several colleagues."
+  },
+  "V13-12": {
+   "zh": "it is tempting to …",
+   "exZh": "It is tempting to think a single invention will solve all our problems."
+  },
+  "V13-13": {
+   "zh": "to defeat a disease",
+   "exZh": "Research has defeated a disease that used to be fatal."
+  },
+  "V13-14": {
+   "zh": "to prove someone right",
+   "exZh": "The facts ended up proving the optimists right."
+  },
+  "V13-15": {
+   "zh": "citizen science",
+   "exZh": "Thanks to citizen science, thousands of residents are helping researchers."
+  },
+  "V13-16": {
+   "zh": "to collect data",
+   "exZh": "The sensors collect data every ten minutes."
+  },
+  "V13-17": {
+   "zh": "to be made public",
+   "exZh": "The results will be made public next month."
+  },
+  "V13-18": {
+   "zh": "diagnostic support software",
+   "exZh": "The hospital uses diagnostic support software to read X-rays."
+  },
+  "V13-19": {
+   "zh": "to have the final say",
+   "exZh": "Whatever the machine says, the doctor has the final say."
+  },
+  "V13-20": {
+   "zh": "to anonymise data",
+   "exZh": "The hospital must anonymise the data before any processing."
+  },
+  "V13-21": {
+   "zh": "to pick up (a story)",
+   "exZh": "Within hours, the story had been picked up by dozens of websites."
+  },
+  "V13-22": {
+   "zh": "to be taken in, to fall for it",
+   "exZh": "So as not to be taken in, always check where a study comes from."
+  },
+  "V13-23": {
+   "zh": "to be bound to …",
+   "exZh": "This technology is bound to spread in the coming years."
+  },
+  "V13-24": {
+   "zh": "light pollution",
+   "exZh": "Light pollution disrupts the rhythms of birds and insects."
+  },
+  "V13-25": {
+   "zh": "to take ownership of (a project)",
+   "exZh": "For it to succeed, residents must take ownership of the project."
+  }
+ },
  "title": "Passive and impersonal structures",
  "phase": "Upgrading structures and precise expression"
 }

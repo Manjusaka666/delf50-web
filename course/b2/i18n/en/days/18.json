@@ -1,4 +1,192 @@
 {
+ "canDo": "Can use y, en, double object pronouns and pronouns in the imperative fluently in consumer and customer-service situations, avoiding repetition, and negotiate firmly but politely for compensation or a solution by phone or in writing.",
+ "review": "Review day 17’s emphatic structures (C’est ce remboursement que je vous demande) and day 16’s gérondif (en le déballant); look back at B1 direct/indirect object pronouns as the basis for the order of double pronouns.",
+ "input": "Read: an investigation into subscriptions that are “hard to cancel”, an editorial calling for human customer service to be kept and a product recall notice — find the noun each pronoun refers to; listen: an interview about a “repair café” in Liège, a phone negotiation with an internet provider’s customer service and a vox pop on returning online purchases — notice spoken linking in je vous le donne, j’en ai renvoyé un, etc.",
+ "output": "Write: a ≥220-word formal complaint email to an online shop (late delivery + damaged goods), asking for a replacement or refund and compensation; speak: a 4-minute monologue on “self-checkouts in supermarkets”, then defend “ending free returns for online purchases” in the debate.",
+ "checkpoint": "Reading and listening accuracy ≥80%; double pronouns all in the right order (me le / le lui / lui en / m’en), affirmative imperatives written donnez-le-moi and negative ones ne me le donnez pas; complaint email ≥220 words with at least 5 pronoun replacements.",
+ "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about consumption, prices or customer service, and retell it in 3 sentences using at least y, en and one double pronoun; or record a 1-minute mock phone call asking customer service for a refund.",
+ "items": {
+  "reading": {
+   "R18-1": {
+    "questions": [
+     {
+      "why": "The headline and the end of the first paragraph, « jusqu’au jour où ils veulent en sortir », give the topic: how hard it is to cancel. Price rises aren’t mentioned; the “convenience” of subscriptions is only the set-up."
+     },
+     {
+      "why": "« D’abord parce qu’on les oublie […] Mais aussi parce que certaines entreprises font tout pour qu’on n’y parvienne pas » (y = managing to cancel). A and C aren’t mentioned."
+     },
+     {
+      "why": "The text explains straight after: « des interfaces conçues pour décourager le client sans jamais le lui dire » (le lui = telling him so). It is deliberate design, not a technical error (B)."
+     },
+     {
+      "why": "« Un progrès réel, reconnaissent les associations, qui en attendent toutefois les effets concrets »: positive, but cautious."
+     },
+     {
+      "why": "« noter quelque part la date de fin de chaque période d’essai gratuite ». It doesn’t advise refusing trials (A)."
+     }
+    ]
+   },
+   "R18-2": {
+    "questions": [
+     {
+      "why": "The ending: « Exigeons qu’un interlocuteur humain soit joignable ». The author grants that automated tools are useful and doesn’t call for a ban (A is wrong)."
+     },
+     {
+      "why": "« Le service client, autrefois argument commercial, est devenu […] un coût à réduire ». The music is just a detail; the “FAQ” is exactly what is criticised (C is the opposite)."
+     },
+     {
+      "why": "« Je ne conteste pas l’utilité des outils automatiques. Pour suivre un colis ou modifier une adresse… », and he says many customers « s’en contentent », ruling out A and B."
+     }
+    ]
+   },
+   "R18-3": {
+    "questions": [
+     {
+      "why": "« procède au rappel » + a series of instructions (ne l’utilisez plus, rapportez-la…): it is a recall notice."
+     },
+     {
+      "why": "« Si vous en possédez une, ne l’utilisez plus et débranchez-la » (pronoun position in negative and affirmative imperatives)."
+     },
+     null,
+     {
+      "why": "The masculine singular noun in the previous sentence is « le numéro de série »; the pronoun le refers to it."
+     },
+     {
+      "why": "« un bon de retour gratuit vous sera envoyé par courriel, et le remboursement vous parviendra sous quinze jours », so the refund isn’t immediate (C)."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L18-1": {
+    "questions": [
+     {
+      "why": "The presenter asks the guest to explain what a repair café is and what it does; repair prices are just one of the arguments."
+     },
+     {
+      "why": "« on ne le répare pas à votre place : on le fait avec vous », and it’s free (« Gratuitement »)."
+     },
+     null,
+     null,
+     {
+      "why": "« il ne regarde plus les objets de la même façon. Avant d’acheter, il se demande… »; he says the repair café alone can’t change everything, and doesn’t talk about forcing manufacturers (C)."
+     }
+    ]
+   },
+   "L18-2": {
+    "questions": [
+     {
+      "why": "« ma connexion internet a été coupée pendant neuf jours […] Je pense avoir droit à un dédommagement ». He only mentions a competitor and doesn’t ask to cancel (B)."
+     },
+     {
+      "why": "« je travaille à domicile »; afterwards he had to work from a café."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V18-01": {
+   "zh": "to become established in …",
+   "exZh": "In just a few years, contactless payment has become established in shops."
+  },
+  "V18-02": {
+   "zh": "direct debit",
+   "exZh": "I pay my electricity bill by direct debit."
+  },
+  "V18-03": {
+   "zh": "to draw up a list",
+   "exZh": "The association has drawn up a list of unfair commercial practices."
+  },
+  "V18-04": {
+   "zh": "a registered letter",
+   "exZh": "Notice of cancellation must be sent by registered letter with acknowledgement of receipt."
+  },
+  "V18-05": {
+   "zh": "to take out (a contract, insurance)",
+   "exZh": "Before taking out a contract, read the general terms carefully."
+  },
+  "V18-06": {
+   "zh": "to face a fine",
+   "exZh": "Businesses that don’t comply with the rules face a fine."
+  },
+  "V18-07": {
+   "zh": "a free trial period",
+   "exZh": "Don’t forget to cancel before the free trial period ends."
+  },
+  "V18-08": {
+   "zh": "a selling point",
+   "exZh": "Free delivery has become an essential selling point."
+  },
+  "V18-09": {
+   "zh": "a human contact (a real person)",
+   "exZh": "In a dispute, customers want to reach a real person."
+  },
+  "V18-10": {
+   "zh": "to hit a wall, to have nowhere to turn",
+   "exZh": "Without the internet, these people hit a wall."
+  },
+  "V18-11": {
+   "zh": "to be reachable",
+   "exZh": "Customer service can be reached Monday to Saturday."
+  },
+  "V18-12": {
+   "zh": "that isn’t asking too much",
+   "exZh": "Being refunded on time — that isn’t asking too much!"
+  },
+  "V18-13": {
+   "zh": "in rare cases",
+   "exZh": "In rare cases, this medicine can cause dizziness."
+  },
+  "V18-14": {
+   "zh": "a returns label",
+   "exZh": "Print the returns label and stick it on the parcel."
+  },
+  "V18-15": {
+   "zh": "to get … working again",
+   "exZh": "The volunteers managed to get the old toaster working again."
+  },
+  "V18-16": {
+   "zh": "not to believe one’s ears",
+   "exZh": "When they heard the repair price, they couldn’t believe their ears."
+  },
+  "V18-17": {
+   "zh": "to make things easier",
+   "exZh": "The new rules should make things easier for independent repairers."
+  },
+  "V18-18": {
+   "zh": "to be far from the mark",
+   "exZh": "Despite some progress, manufacturers are still far from the mark."
+  },
+  "V18-19": {
+   "zh": "to put … back in control",
+   "exZh": "The app aims to put consumers back in control."
+  },
+  "V18-20": {
+   "zh": "spare parts",
+   "exZh": "For lack of spare parts, the machine couldn’t be repaired."
+  },
+  "V18-21": {
+   "zh": "to do everything one can so that … (+ subjunctive)",
+   "exZh": "The organisers are doing everything they can to make the evening a success."
+  },
+  "V18-22": {
+   "zh": "to go beyond (a limit)",
+   "exZh": "I’m sorry, I can’t go beyond the general terms."
+  },
+  "V18-23": {
+   "zh": "to deprive oneself of (a benefit)",
+   "exZh": "Free returns? Why deprive yourself?"
+  },
+  "V18-24": {
+   "zh": "to refrain from",
+   "exZh": "If you’re not sure about the size, better refrain from buying."
+  },
+  "V18-25": {
+   "zh": "speaking (on the phone)",
+   "exZh": "Hello, Hélène Martin speaking — I’m calling about my order."
+  }
+ },
  "title": "Advanced pronouns",
  "phase": "Argument, mediation and reporting"
 }

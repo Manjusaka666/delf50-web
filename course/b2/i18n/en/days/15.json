@@ -1,4 +1,226 @@
 {
+ "canDo": "Can turn verbal and adjectival sentences into noun structures (fermer → la fermeture, baisser → la baisse, rapide → la rapidité), read and write nominalised news headlines and leads, and sum up a piece of news in concise journalistic style.",
+ "review": "Review day 13’s passive and impersonal structures (presenting facts objectively) and day 12’s indirect speech (reporting sources); look back at day 10’s “conditional for unconfirmed information” (la diffusion aurait reculé).",
+ "input": "Read: a report on the local press going digital, an editorial against “clickbait” and a notice of a newspaper relaunch (circle every nominalised structure and turn it back into a verbal sentence); listen: an interview with a sub-editor on headlines and leads, a radio press review and news-flash headlines (note the nominalised headlines and how they are expanded).",
+ "output": "Write: a formal letter (≥220 words) to a newspaper’s director on behalf of a group of readers, expressing concern about dropping the print edition and making suggestions; speak: a 4-minute monologue on whether the state should fund local newspapers, then a debate on “closing comment sections on news sites”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; can rewrite 10 verbal sentences as nominalised headlines with the right noun genders; at least 6 nominalised structures in the letter; a 4-minute monologue without breaking off.",
+ "challenge": "Today’s challenge: open the news pages of RFI’s « Journal en français facile » or TV5MONDE, copy down 5 nominalised headlines (e.g. « Hausse des prix de l’énergie ») and turn each back into a full sentence; then pick one of the day’s stories, write your own nominalised headline and a 2-line lead, and record a 1-minute spoken bulletin.",
+ "items": {
+  "reading": {
+   "R15-1": {
+    "questions": [
+     {
+      "why": "The text covers the local press’s difficulties (causes), its transformation (newsrooms, readers) and the way forward. B: the newspaper is just an example; C: national media only come up as a comparison at the end."
+     },
+     {
+      "why": "The second paragraph has three nominalised structures: « La baisse continue des ventes…, la hausse du prix du papier et la chute des recettes publicitaires ». A and C aren’t mentioned."
+     },
+     {
+      "why": "« Selon une étude… aurait reculé » is the journalistic “cautious conditional”, showing the information comes from someone else and the journalist doesn’t vouch for it (see day 10). Neither A nor B is this use."
+     },
+     {
+      "why": "« Le risque… est la course à la rapidité au détriment de la vérification. » B isn’t mentioned; C: he says there is no longer any such thing as a deadline."
+     },
+     {
+      "why": "« les plus âgés regrettent la disparition d’un rituel : l’achat du journal au café… ». A is what young readers welcome; C isn’t mentioned."
+     },
+     {
+      "why": "« moins dans le choix du support que dans sa capacité à rester indispensable à la vie de son territoire ». A is explicitly ruled out by « moins… que »; B isn’t mentioned."
+     }
+    ]
+   },
+   "R15-2": {
+    "questions": [
+     {
+      "why": "« Leur objectif n’est pas d’informer, mais de provoquer le clic. » B is only the background cause; C isn’t covered."
+     },
+     {
+      "why": "« les revenus de nombreux sites dépendent du nombre de visites. Plus un article est consulté, plus il rapporte. » A and C have no basis."
+     },
+     {
+      "why": "tenir ses promesses = to deliver on its promises; the article doesn’t live up to what the headline promised, which disappoints. A and C misread it."
+     },
+     {
+      "why": "« il entretient la méfiance du public… retiennent donc une version fausse ou incomplète des faits ». A and B are the opposite of the text."
+     },
+     {
+      "why": "« L’argument est compréhensible, mais il mène à une impasse. » B: he grants that it is “understandable”; C: he clearly rebuts it."
+     }
+    ]
+   },
+   "R15-3": {
+    "questions": [
+     {
+      "why": "« Le Courrier de la Vallée adoptera une nouvelle formule. Les principaux changements sont les suivants ». A: the paper continues to appear; C: it only says there will be no redundancies, not that it is hiring."
+     },
+     {
+      "why": "« Parution papier les mercredis, vendredis et samedis » — three days. It is the website that is updated daily."
+     },
+     {
+      "why": "« nos journalistes répondront chaque semaine aux interrogations des lecteurs ». A and B don’t fit."
+     },
+     {
+      "why": "« Pour les lecteurs qui ne disposent pas d’Internet, une permanence téléphonique sera assurée du lundi au vendredi ». A is for subscribers who choose the digital edition; C: the newsletter is digital."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L15-1": {
+    "questions": [
+     {
+      "why": "« nous allons parler d’un métier peu connu… secrétaire de rédaction », focusing on how headlines and leads are written. B is just an example; C isn’t covered."
+     },
+     {
+      "why": "« je suis un peu le dernier filet de sécurité avant l’impression ». A and C don’t come up."
+     },
+     {
+      "why": "« il doit répondre aux questions essentielles : qui, quoi, où, quand ». A and B don’t fit."
+     },
+     {
+      "why": "« On gagne de la place, et l’information saute aux yeux. » B isn’t a grammatical requirement; C (“hiding the agent”) is a side effect, not the purpose."
+     },
+     {
+      "why": "« il efface celui qui agit… qui a décidé ? Pourquoi ? On ne sait pas. » A contradicts “short”; C isn’t mentioned."
+     },
+     {
+      "why": "« la règle est claire : le titre doit correspondre exactement au contenu de l’article ». A is exactly the temptation she resists; B isn’t mentioned."
+     }
+    ]
+   },
+   "L15-2": {
+    "questions": [
+     {
+      "why": "« À la une de la plupart des quotidiens régionaux ce matin : la hausse du prix des transports scolaires. » A and C are other news items."
+     },
+     {
+      "why": "« Les familles rurales en première ligne », with an interview with a rural mother. B is the angle of the paper in the east; C isn’t mentioned."
+     },
+     {
+      "why": "« cette hausse intervient après deux années de gel des prix ». A and B don’t match the recording."
+     },
+     {
+      "why": "« avec ce titre plein de nostalgie ». Neither A nor C fits."
+     }
+    ]
+   },
+   "L15-3": {
+    "questions": [
+     {
+      "why": "« pour protester contre la suppression de leur émission du soir ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« La direction… justifie la suppression de l’émission par la baisse de l’audience en soirée. » B and C aren’t mentioned."
+     },
+     {
+      "why": "« Les négociations doivent reprendre demain matin. » A and B haven’t been decided yet."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V15-01": {
+   "zh": "staff cuts",
+   "exZh": "The savings plan includes staff cuts in the newsroom."
+  },
+  "V15-02": {
+   "zh": "going fully digital",
+   "exZh": "The management announced the Monday edition would go fully digital."
+  },
+  "V15-03": {
+   "zh": "to undermine the (financial) balance of …",
+   "exZh": "The rising price of paper has undermined the newspaper’s finances."
+  },
+  "V15-04": {
+   "zh": "print circulation",
+   "exZh": "In ten years, print circulation has fallen by a third."
+  },
+  "V15-05": {
+   "zh": "the deadline (for copy)",
+   "exZh": "By the deadline, all the articles must have been checked."
+  },
+  "V15-06": {
+   "zh": "the race for speed",
+   "exZh": "The race for speed pushes some media to publish without checking."
+  },
+  "V15-07": {
+   "zh": "to be pleased about …",
+   "exZh": "Young readers are pleased that online content is free."
+  },
+  "V15-08": {
+   "zh": "to pass from hand to hand",
+   "exZh": "In the café, the newspaper passes from hand to hand all morning."
+  },
+  "V15-09": {
+   "zh": "local news, news close to home",
+   "exZh": "Readers remain attached to news close to home."
+  },
+  "V15-10": {
+   "zh": "a sensational headline, clickbait",
+   "exZh": "Every morning, this website draws visitors with sensational headlines."
+  },
+  "V15-11": {
+   "zh": "to lead to a dead end",
+   "exZh": "Copying the competition only leads to a dead end."
+  },
+  "V15-12": {
+   "zh": "that’s the price of …",
+   "exZh": "Some clicks will have to be given up, but that’s the price of regaining trust."
+  },
+  "V15-13": {
+   "zh": "to get a makeover",
+   "exZh": "After twenty years without change, the magazine is getting a makeover."
+  },
+  "V15-14": {
+   "zh": "our newsletter",
+   "exZh": "Subscribe to our newsletter to get the headlines every morning."
+  },
+  "V15-15": {
+   "zh": "a telephone helpline",
+   "exZh": "A telephone helpline is available Monday to Friday."
+  },
+  "V15-16": {
+   "zh": "the sub-editor",
+   "exZh": "Before printing, every page is reread by the sub-editor."
+  },
+  "V15-17": {
+   "zh": "a safety net, the last line of defence",
+   "exZh": "Proofreading is the last line of defence against mistakes."
+  },
+  "V15-18": {
+   "zh": "the lead (of an article)",
+   "exZh": "The lead sums up the essentials in three lines."
+  },
+  "V15-19": {
+   "zh": "to jump out at you",
+   "exZh": "With a short headline, the information jumps out at you."
+  },
+  "V15-20": {
+   "zh": "to make the front page",
+   "exZh": "The transport strike made the front page of every daily this morning."
+  },
+  "V15-21": {
+   "zh": "the bill gets heavier",
+   "exZh": "With rising prices, the bill gets heavier for families."
+  },
+  "V15-22": {
+   "zh": "to be in the front line, to bear the brunt",
+   "exZh": "Rural families bear the brunt of this price rise."
+  },
+  "V15-23": {
+   "zh": "on a completely different note",
+   "exZh": "On a completely different note: the film festival opened last night."
+  },
+  "V15-24": {
+   "zh": "without consultation",
+   "exZh": "Staff condemn a decision taken without consultation."
+  },
+  "V15-25": {
+   "zh": "to remain unpopular",
+   "exZh": "Despite its advantages, paying to read online remains unpopular with many readers."
+  }
+ },
  "title": "Nominalisation and journalistic style",
  "phase": "Argument, mediation and reporting"
 }

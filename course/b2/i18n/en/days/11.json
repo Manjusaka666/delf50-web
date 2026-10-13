@@ -1,4 +1,226 @@
 {
+ "canDo": "Can narrate a career episode or set out a work process in a clear time order, using time conjunctions such as avant que / après que / dès que / jusqu’à ce que.",
+ "review": "Review day 1’s layers of past tenses (passé composé / imparfait / plus-que-parfait) and day 2’s subjunctive: avant que, jusqu’à ce que and en attendant que take the subjunctive, while après que, dès que and depuis que take the indicative.",
+ "input": "Read: a report on the stages of a career change, an opinion piece on “gaps in your CV” and a forum post asking for help (first pick out the time markers and draw a timeline of events); listen: a radio interview on annual appraisal meetings, a segment on onboarding new employees and a job-fair notice (take notes in three columns: “before / during / after”).",
+ "output": "Write: a forum reply (≥220 words) telling a career episode in time order and taking a position; speak: a 3-minute monologue on training for experienced employees, then a debate on “promotion by seniority”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; at least 4 different time conjunctions used correctly in the essay, with the subjunctive throughout after avant que / jusqu’à ce que and the indicative after après que; a 3-minute monologue without breaking off.",
+ "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about employment, recruitment or career change, and write one sentence each with avant que, dès que and après que summarising the order of events; then record a 1-minute spoken response: what advice would you give the person in the story?",
+ "items": {
+  "reading": {
+   "R11-1": {
+    "questions": [
+     {
+      "why": "The text presents the stages of a career change in time order: malaise → exploration → formation → installation, « il obéit à une chronologie que les spécialistes connaissent bien ». B is the opposite of the article’s advice not to resign in haste; C is just one detail in the fourth paragraph."
+     },
+     {
+      "why": "The text says: « Ce sentiment ne suffit pourtant pas à déclencher un départ : la plupart des salariés attendent d’avoir une idée précise ». A is the opposite of the text; C isn’t mentioned."
+     },
+     {
+      "why": "au fur et à mesure que = as … gradually, two processes progressing in step. A (“all at once”) is the opposite of “gradually”; C wrongly places it at the end of the training."
+     },
+     {
+      "why": "The text says: « il faut encore compter plusieurs mois, voire deux ans… Pendant ce temps, les revenus baissent ». A isn’t mentioned; B contradicts « en attendant que leur financement soit accepté » (funding can be approved)."
+     },
+     {
+      "why": "The text says: « Ceux qui ont démissionné dès qu’ils ont eu une idée, sans étape intermédiaire, sont aussi ceux qui renoncent le plus souvent. » B and C are the safe approaches the article recommends, not traits of those who give up."
+     },
+     {
+      "why": "Just before, she says « Tant que vous n’aurez pas testé le métier concrètement, gardez votre emploi » — test it on the ground before resigning. A twists this into giving up on dreams; C: age isn’t discussed in the text."
+     }
+    ]
+   },
+   "R11-2": {
+    "questions": [
+     {
+      "why": "The author says « Je travaille dans le recrutement depuis quinze ans » and proposes « Je propose donc une règle simple » — an opinion piece (tribune). A: the author isn’t a job seeker; C: there is no practical advice on writing a CV."
+     },
+     {
+      "why": "« un moment redouté » and « comme s’il devait s’excuser d’avoir vécu » show the candidate is treated as if on trial. A is the opposite of the author’s position; B contradicts « redouté »."
+     },
+     {
+      "why": "A concession: « L’argument n’est pas absurde dans les métiers techniques, où les outils évoluent vite. » B isn’t said in the text; C contradicts « quelques semaines de mise à niveau »."
+     },
+     {
+      "why": "tant que + indicative = as long as, while (both a condition and a duration). A means “before”; C means “once obtained in future” — both change the meaning."
+     },
+     {
+      "why": "« regarder ceux qu’elles écartent avant même de les avoir écoutés » implies companies are shutting out talent themselves. Neither A nor C is mentioned."
+     }
+    ]
+   },
+   "R11-3": {
+    "questions": [
+     {
+      "why": "The title and the post both ask « dans quel ordre faire les choses », ending with « vos conseils sont les bienvenus ». B: he gets on very well with his manager; C: he hasn’t announced his resignation yet."
+     },
+     {
+      "why": "« Mon futur employeur souhaite que je commence le 1er mars. Or… je dois effectuer un préavis de deux mois. » « Or » introduces the conflict. A: he has already received a promesse d’embauche; C: the two months are his notice period, not the new employer’s requirement."
+     },
+     {
+      "why": "« attendre jusqu’à ce que tout soit écrit noir sur blanc ». A: nobody suggests this; B is an inference from another colleague’s view, not this colleague’s advice."
+     },
+     {
+      "why": "« je ne veux pas qu’il l’apprenne par quelqu’un d’autre ». B isn’t mentioned; C is exactly what he fears might happen, not what he wants."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L11-1": {
+    "questions": [
+     {
+      "why": "The interview covers in turn what to do before, during and after the meeting. B: a pay rise is just one of the questions; C: conflict isn’t discussed."
+     },
+     {
+      "why": "« Il commence deux ou trois semaines avant, dès que vous recevez la convocation. » Neither A nor C fits."
+     },
+     {
+      "why": "« en janvier, on a oublié ce qu’on a fait en mars ! » A and B aren’t mentioned in the recording."
+     },
+     {
+      "why": "« ne pas attendre que le manager aborde la question… dites-le clairement, avant que l’entretien ne se termine ». A and C are exactly the “traps” she describes."
+     },
+     {
+      "why": "« on ne demande pas une augmentation parce qu’on est là depuis longtemps, mais parce qu’on a pris de nouvelles responsabilités ». B is explicitly rejected; C isn’t mentioned."
+     },
+     {
+      "why": "« Lisez-le attentivement avant de le signer… relancez gentiment votre manager jusqu’à ce qu’une date soit fixée. » A is the opposite of “read it carefully before signing”; B is the opposite of « Surtout pas ! »."
+     }
+    ]
+   },
+   "L11-2": {
+    "questions": [
+     {
+      "why": "It opens with « le premier jour dans un nouveau travail » and ends with « Accueillir, c’est mieux ». A is only the hook; C: the legal duration isn’t discussed."
+     },
+     {
+      "why": "« dépensent des sommes considérables pour recruter… une fois le contrat signé, plus rien ». A is the opposite of the recording; B isn’t mentioned."
+     },
+     {
+      "why": "« environ un sur cinq a pensé à partir avant même que sa période d’essai ne soit terminée ». B exaggerates it into “most, on the first day”; C changes the content."
+     },
+     {
+      "why": "« Le salarié se sent attendu, et il arrive beaucoup moins stressé. » A and C aren’t said in the recording."
+     }
+    ]
+   },
+   "L11-3": {
+    "questions": [
+     {
+      "why": "« Le forum… se tiendra le samedi 14 novembre », with the time, place and practical points — an event notice. B and C are the wrong genres."
+     },
+     {
+      "why": "« s’inscrire en ligne avant que toutes les places ne soient prises, et au plus tard le 10 novembre ». A and C aren’t required."
+     },
+     {
+      "why": "« Dès que vous serez arrivé, passez à l’accueil pour retirer votre badge et le plan du forum. » B contradicts « Entrée libre et gratuite »; A: CVs are for the employers, not handed in at the entrance."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V11-01": {
+   "zh": "to take the plunge",
+   "exZh": "Many people dream of changing careers, but few dare to take the plunge."
+  },
+  "V11-02": {
+   "zh": "a linear (unchanging) career path",
+   "exZh": "Today, a linear career path is the exception on the job market."
+  },
+  "V11-03": {
+   "zh": "not to rush things",
+   "exZh": "Advisers recommend not rushing things before leaving a stable job."
+  },
+  "V11-04": {
+   "zh": "a vague feeling of unease",
+   "exZh": "For months, he felt a vague unease without being able to explain why."
+  },
+  "V11-05": {
+   "zh": "as … (gradually)",
+   "exZh": "As the months went by, his plan became clearer and clearer."
+  },
+  "V11-06": {
+   "zh": "to follow a chronology",
+   "exZh": "Career changes follow a chronology that specialists know well."
+  },
+  "V11-07": {
+   "zh": "to build up a client base",
+   "exZh": "For a craftsman just starting out, it takes two or three years to build up a client base."
+  },
+  "V11-08": {
+   "zh": "over a long period, in the long term",
+   "exZh": "A successful career change is prepared over a long period, not in a few weeks."
+  },
+  "V11-09": {
+   "zh": "while waiting for … (+ subjunctive)",
+   "exZh": "While waiting for his training funding to be approved, he worked part-time."
+  },
+  "V11-10": {
+   "zh": "a gap in one’s CV",
+   "exZh": "A gap in your CV is no longer necessarily a handicap."
+  },
+  "V11-11": {
+   "zh": "to put one’s finger on …",
+   "exZh": "The recruiter put her finger on the main weakness in my application."
+  },
+  "V11-12": {
+   "zh": "a refresher, an update (of skills)",
+   "exZh": "A few weeks’ refresher is usually enough to get back up to speed."
+  },
+  "V11-13": {
+   "zh": "to be fully operational again",
+   "exZh": "After a month’s refresher, she was fully operational again."
+  },
+  "V11-14": {
+   "zh": "a written job offer",
+   "exZh": "Last week I received a written job offer from a firm in Nantes."
+  },
+  "V11-15": {
+   "zh": "to work one’s notice",
+   "exZh": "He has to work two months’ notice before joining the new company."
+  },
+  "V11-16": {
+   "zh": "to hand in one’s resignation",
+   "exZh": "She handed in her resignation as soon as she received the new contract."
+  },
+  "V11-17": {
+   "zh": "to be binding on the employer",
+   "exZh": "Once signed, this document is binding on the employer, who must hire you."
+  },
+  "V11-18": {
+   "zh": "a payslip",
+   "exZh": "For two whole years, she didn’t receive a single payslip."
+  },
+  "V11-19": {
+   "zh": "to turn the page, to move on",
+   "exZh": "The meeting is over, but don’t move on too quickly."
+  },
+  "V11-20": {
+   "zh": "nothing stops you from …",
+   "exZh": "Nothing stops you from stating your salary expectations at the interview."
+  },
+  "V11-21": {
+   "zh": "to take on new responsibilities",
+   "exZh": "She got a pay rise because she had taken on new responsibilities."
+  },
+  "V11-22": {
+   "zh": "to follow through on a commitment",
+   "exZh": "Signing the agreement isn’t enough; you then have to follow through day to day."
+  },
+  "V11-23": {
+   "zh": "a buddy (assigned colleague)",
+   "exZh": "Every new employee is assigned a buddy for their first weeks."
+  },
+  "V11-24": {
+   "zh": "to seem trivial",
+   "exZh": "A welcome message may seem trivial, but it changes everything."
+  },
+  "V11-25": {
+   "zh": "to weigh in the decision",
+   "exZh": "His age did not weigh in the panel’s decision."
+  }
+ },
  "title": "Time relations",
  "phase": "Upgrading structures and precise expression"
 }
