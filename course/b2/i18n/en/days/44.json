@@ -1,4 +1,226 @@
 {
+ "canDo": "Can recognise the three question types that cost the most marks in B2 reading and listening (implied meaning, author’s tone/position, paraphrase) and give answers backed by the text using a three-step method: “locate the passage → find the paraphrase → eliminate distractors”.",
+ "review": "Review your wrong answers in reading and listening from Mock 1 and Mock 2: which were “didn’t hear it / didn’t find it”, which were misunderstandings and which were caused by distractors; go back over the markers of concession, irony and reservation (certes, pourtant, je ne prétends pas que, sans tomber dans).",
+ "input": "Read: a long article on functional illiteracy in adults, an ironic column “in defence of boredom” and a restaurant owner’s reply to a bad review; write down the evidence in the text for each question. Listen: a debate on “parking charges based on vehicle weight”, a linguist on English loanwords at work and a pollen alert news flash; on the first listen focus only on structure and positions, on the second check details and paraphrases.",
+ "output": "Write: an article for a community newspaper on adults’ reading and writing difficulties (250+ words), with a headline, a description of the situation, an analysis of the consequences and concrete proposals; speak: a 5-minute monologue on “should daylight saving time be abolished?”, then a debate with the examiner on “parking charges based on vehicle weight”.",
+ "checkpoint": "Reading + listening accuracy ≥85%, with every tone/implied-meaning question correct; for each question, can say in one sentence of your own language where the evidence is and why the distractors are wrong; can summarise both sides’ arguments in L44-1 and one concession.",
+ "challenge": "Today’s challenge: find a debate or interview with two points of view on TV5MONDE or RFI (3 minutes or less), listen only once, then write in French “A pense que… / B réplique que… / Les deux s’accordent sur…”; check against the transcript and count the paraphrases you missed.",
+ "items": {
+  "reading": {
+   "R44-1": {
+    "questions": [
+     {
+      "why": "The article defines illettrisme, then explains how hidden it is (paragraph 2), its effects (paragraph 3), remedies and obstacles (paragraph 4), and ends by calling for a change of attitude (« que l’on peut surmonter à tout âge »). B: the text doesn’t discuss primary school teaching; C: the author attributes it to shame and doesn’t criticise those affected."
+     },
+     {
+      "why": "« Ces personnes ont pourtant été scolarisées… à ne pas confondre avec l’analphabétisme, qui concerne ceux qui n’ont jamais appris à lire ». A has no basis; C contradicts « la lecture et l’écriture »."
+     },
+     {
+      "why": "« d’autant plus difficile à mesurer qu’il se cache », followed by a list of cover-up strategies (claiming to have forgotten their glasses, asking relatives to fill in forms, etc.). Neither A nor B is mentioned."
+     },
+     {
+      "why": "The first half, « Ils ne sont pas moins intelligents que les autres », shows that all their intelligence goes into hiding the problem. A takes it literally; C: the text talks about “hiding”, not “teaching themselves”."
+     },
+     {
+      "why": "« là où l’on pouvait autrefois se faire aider au guichet, il faut désormais lire et écrire seul devant un écran ». Neither B nor C is in the text."
+     },
+     {
+      "why": "« Tant que l’illettrisme sera perçu comme un échec individuel… ceux qui en souffrent continueront de se taire »: society’s view must change first before those affected dare to speak up. A is exactly the view the author criticises; B contradicts the praise for workshops in paragraph 4."
+     }
+    ]
+   },
+   "R44-2": {
+    "questions": [
+     {
+      "why": "« Pauvre ennui ! », « un seau percé » and « sans doute plus fort » are humorous and exaggerated, but paragraph 3 makes a serious point drawing on psychology. A: the tone isn’t alarmed; C: the author takes a clear position."
+     },
+     {
+      "why": "Pouring water into a leaky bucket never fills it: endless scrolling never fills the empty time either; it’s futile. B is a literal misreading; C is irrelevant."
+     },
+     {
+      "why": "Before this: « Je ne prétends pas qu’ils étaient plus heureux »: the author heads off any “nostalgia filter” and only stresses that they were able to be “bored”. A is exactly the conclusion he rejects; B: he isn’t criticising anyone."
+     },
+     {
+      "why": "« l’esprit vagabonde, établit des liens inattendus, invente… les meilleures idées ». Neither B nor C is in the text."
+     },
+     {
+      "why": "« très sérieusement » is self-mocking, but the suggestion fits the text’s argument (idle time sparks creativity). A is the author’s idea, not reality; C ties in with the logic of the whole text."
+     }
+    ]
+   },
+   "R44-3": {
+    "questions": [
+     {
+      "why": "It is the owner’s public reply to a one-star review (« Réponse du propriétaire »). Neither B nor C is in the text."
+     },
+     {
+      "why": "The bad review was posted at 20:12, but the main course only arrived at 20:15: the customer wrote the review before finishing the meal, and the owner uses this to imply it was hasty. A and C draw the wrong conclusions from the numbers."
+     },
+     {
+      "why": "« Nous aurions sans doute dû vous en informer dès votre arrivée ; c’est une erreur ». B: he defends the waiter; A isn’t covered."
+     },
+     {
+      "why": "Polite on the surface (« Merci », « Nous serions heureux »), but « Nous sommes toujours ravis… surtout lorsqu’ils sont rédigés à chaud » is clearly ironic. B: there is no insulting language; C: his reply is very detailed."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L44-1": {
+    "questions": [
+     {
+      "why": "The host opens with « Faut-il faire payer plus cher le stationnement aux voitures les plus lourdes ? ». B isn’t mentioned; C is too broad: the measure only concerns parking charges, and residents aren’t affected."
+     },
+     {
+      "why": "« Ces voitures prennent plus de place, abîment davantage la chaussée et… elles sont plus dangereuses pour les piétons et les cyclistes ». A isn’t mentioned; C: although it only targets visitors from outside, she doesn’t give that as a reason."
+     },
+     {
+      "why": "« Pensez aux familles nombreuses, aux artisans, aux personnes handicapées… cette mesure est une punition ». He explicitly denies A; B: he only says “weight doesn’t tell the whole story”, not that heavy cars pollute less."
+     },
+     {
+      "why": "« Nous avons étudié les véhicules concernés… ceux-là bénéficient d’ailleurs d’une exemption ». B and C are the opposite of her position."
+     },
+     {
+      "why": "« on n’a pas vraiment consulté les automobilistes… C’est surtout ça que je reproche à la mairie » (a cleft sentence). A: what he doubts is the aim of “raising revenue”, not overspending; C isn’t criticised."
+     },
+     {
+      "why": "« je reconnais que la concertation aurait pu être meilleure ». A and B: she sticks to her views throughout."
+     }
+    ]
+   },
+   "L44-2": {
+    "questions": [
+     {
+      "why": "The host’s question and her answer are both about English loanwords at work (« Faire un call », « envoyer un mail »). B isn’t covered; C: she only mentions in passing that languages borrow from each other."
+     },
+     {
+      "why": "« c’est une question d’image : on a l’impression que l’anglais fait plus moderne, plus international ». A contradicts « quand un mot français existe »; C isn’t mentioned."
+     },
+     {
+      "why": "« ne comprend pas tout, mais n’ose pas le dire… à la longue, certains finissent par se taire et par se sentir à l’écart ». A and B are exaggerated or not mentioned."
+     },
+     {
+      "why": "« apprenez les deux… il faut les comprendre. Mais à l’écrit… préférez le mot français ». A is too absolute; C is exactly the attitude she criticises."
+     }
+    ]
+   },
+   "L44-3": {
+    "questions": [
+     {
+      "why": "« jusqu’à dimanche au moins ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "« les écoles sont invitées à limiter les activités sportives en extérieur ». A isn’t mentioned; C is the opposite of the advice to air rooms only early in the morning or in the evening."
+     },
+     {
+      "why": "« peuvent recevoir chaque matin, par SMS, le niveau de risque de leur commune en s’inscrivant »; chaque matin paraphrases chaque jour. Neither A nor B is mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V44-01": {
+   "zh": "(two things) to go hand in hand",
+   "exZh": "In big cities, air pollution and traffic noise go hand in hand."
+  },
+  "V44-02": {
+   "zh": "to take a toll on health",
+   "exZh": "Lack of sleep eventually takes a toll on health."
+  },
+  "V44-03": {
+   "zh": "in its own right, fully fledged",
+   "exZh": "Functional illiteracy should be seen as a difficulty in its own right."
+  },
+  "V44-04": {
+   "zh": "to walk through the door of; (figuratively) to pluck up the courage to go somewhere",
+   "exZh": "Many adults don’t dare walk through the door of a literacy workshop."
+  },
+  "V44-05": {
+   "zh": "the poor relation, the forgotten one",
+   "exZh": "In this budget, culture remains the poor relation."
+  },
+  "V44-06": {
+   "zh": "to take the side of, to stand up for",
+   "exZh": "In his column, the author stands up for boredom."
+  },
+  "V44-07": {
+   "zh": "a leaky bucket; (figuratively) a bottomless pit",
+   "exZh": "Filling every minute is like pouring water into a leaky bucket."
+  },
+  "V44-08": {
+   "zh": "(emotions) to be a bad counsellor, not to be trusted",
+   "exZh": "Don’t decide anything tonight: anger is a bad counsellor."
+  },
+  "V44-09": {
+   "zh": "a gap, downtime (time with nothing to do)",
+   "exZh": "He uses every gap to revise his vocabulary."
+  },
+  "V44-10": {
+   "zh": "(the mind) to wander",
+   "exZh": "During the meeting, his mind began to wander."
+  },
+  "V44-11": {
+   "zh": "aimlessly",
+   "exZh": "I love wandering aimlessly through the alleys of the old town."
+  },
+  "V44-12": {
+   "zh": "to be swamped, rushed off one’s feet",
+   "exZh": "That evening, the waiter was swamped with orders."
+  },
+  "V44-13": {
+   "zh": "to damage the road surface",
+   "exZh": "Heavy vehicles damage the road surface faster than others."
+  },
+  "V44-14": {
+   "zh": "to take up (more) public space",
+   "exZh": "Heavy cars take up more public space than other vehicles."
+  },
+  "V44-15": {
+   "zh": "not to tell the whole story",
+   "exZh": "A car’s weight doesn’t tell the whole story about how much it pollutes."
+  },
+  "V44-16": {
+   "zh": "an exemption",
+   "exZh": "Vehicles adapted for disabled people are exempt."
+  },
+  "V44-17": {
+   "zh": "to fill the coffers (of a government, an institution)",
+   "exZh": "Is this charge just a way to fill the town hall’s coffers?"
+  },
+  "V44-18": {
+   "zh": "let’s grant that, even supposing so",
+   "exZh": "Let’s grant that the measure is useful: who will bear the cost?"
+  },
+  "V44-19": {
+   "zh": "a stubborn prejudice",
+   "exZh": "The idea that girls are less gifted at maths is a stubborn prejudice."
+  },
+  "V44-20": {
+   "zh": "in the long run, over time",
+   "exZh": "These little remarks wear you down over time."
+  },
+  "V44-21": {
+   "zh": "to air one’s home",
+   "exZh": "In pollen season, it’s best to air your home early in the morning."
+  },
+  "V44-22": {
+   "zh": "to cope on one’s own",
+   "exZh": "Without help, it’s hard to cope with online procedures on your own."
+  },
+  "V44-23": {
+   "zh": "a (regular) drop-in service, a help desk",
+   "exZh": "The town could open a drop-in service to help people fill in forms."
+  },
+  "V44-24": {
+   "zh": "to be at a standstill, to stall",
+   "exZh": "The EU plan to abolish daylight saving time has stalled."
+  },
+  "V44-25": {
+   "zh": "a non-issue",
+   "exZh": "For some, the clock change is a non-issue."
+  }
+ },
  "title": "Repair day II: listening and reading",
  "phase": "Mock exams, repair and the bridge to C1"
 }

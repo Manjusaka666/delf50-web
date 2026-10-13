@@ -1,4 +1,226 @@
 {
+ "canDo": "Can complete all four skills under full mock-exam conditions and classify your own errors as “comprehension / grammar / vocabulary / structure and task” errors, identifying the 3 weaknesses most in need of fixing.",
+ "review": "Review the exam format from days 29–40: three reading texts (long article, argumentative text, short text), three listening recordings, formal letter structure and the monologue’s three steps “theme → problem → outline”; also review high-frequency structures such as bien que + subjunctive, étant donné que, si bien que and à condition que, and check in the mock exam whether you have really mastered them.",
+ "input": "Read: three texts on consumption (second-hand clothes), education (the debate over abolishing marks) and the city (a tram and local residents) in 50 minutes; read the questions before the texts and mark the evidence for each answer. Listen: an interview on a company’s “four-day week”, a column on teenagers’ sleep and a local news flash, only as many times as the exam allows: structure on the first listen, details on the second.",
+ "output": "Write: a formal letter to the mayor on behalf of a parents’ association (250+ words) in 60 minutes; speak: a 5-minute monologue on “free public transport” (30 minutes’ preparation), then a debate with the examiner on “should the four-day week become widespread?”. Afterwards, classify every lost point question by question in an error log.",
+ "checkpoint": "Combined reading + listening accuracy ≥70%; a complete letter structure (form of address, purpose, argument, proposal, closing formula) of ≥250 words; a monologue with a clear problem and outline; an error log with at least 10 errors and a fix-it rule written for each type of error.",
+ "challenge": "Today’s challenge: find a news item about consumption or transport on RFI’s « Journal en français facile » or TV5MONDE, write a summary of about 60 words in 3 minutes, then compare it with the original to find 2 grammar errors and 1 misunderstanding of your own, and add them to your error log.",
+ "items": {
+  "reading": {
+   "R41-1": {
+    "questions": [
+     {
+      "why": "The article first explains the rise of second-hand clothing (paragraphs 1–2), then uses « Rien n’est moins sûr » to introduce its limits (paragraphs 3–5): it is an analytical article. A is too absolute: the author doesn’t urge buying only second-hand; C: platforms are just one cause, not the target of criticism."
+     },
+     {
+      "why": "The text: « les plateformes de revente entre particuliers ont rendu la démarche aussi facile qu’un achat en ligne classique ». A: the text doesn’t say new clothes got cheaper; B: ecology is a motive, not the reason it became “easier”."
+     },
+     {
+      "why": "She says second-hand « sert parfois à financer une consommation encore plus rapide », i.e. it can fuel overconsumption. B is the opposite of « ne remplace pas toujours le neuf »; C: paragraph 1 says the proportion is higher among young people."
+     },
+     {
+      "why": "« piètre » means “poor, shoddy”; paired with « usés », it refers to poor-quality clothes that are hard to reuse. A, “uneven”, isn’t negative enough; B has nothing to do with the text."
+     },
+     {
+      "why": "The text: « Les pièces de qualité partent directement sur les applications de revente »: good clothes are resold online, leaving charities with the rejects. A: the text talks about falling quality, not quantity; C: exports continue, and there is no ban."
+     },
+     {
+      "why": "Last paragraph: it is « ces habitudes, bien plus que le simple changement de canal d’achat » that reduce our footprint; the key is “buying less”. A contradicts « n’a de sens que si… »; C contradicts « Reste à savoir si les consommateurs sont prêts »."
+     }
+    ]
+   },
+   "R41-2": {
+    "questions": [
+     {
+      "why": "The core of the text is at the end: « Plutôt que de le supprimer, apprenons à mieux le parler ». A is the opposite of the author’s position; C: there is no international comparison."
+     },
+     {
+      "why": "« Je comprends cette critique, et je la partage en partie » is a concession, admitting part of the criticism is valid. B ignores « en partie »; C: with twenty years of teaching, he has clearly thought about it."
+     },
+     {
+      "why": "Paragraph 2 contrasts an 8 with specific comments, which is a « point d’appui », with an unexplained 8 compared publicly, which is a « sanction humiliante ». A’s “always” is too absolute; C: paragraph 3 actually criticises replacing marks with colours."
+     },
+     {
+      "why": "Before this: « n’ont pas fait disparaître le classement »; parents convert the colours back into marks, so the ranking logic remains, just with a different “label”. A means the opposite; B: parents don’t reject it, they “translate” it."
+     },
+     {
+      "why": "« former sérieusement les enseignants à l’évaluation… voilà le véritable chantier ». B: the author thinks high-profile reforms achieve less; C: publicly comparing averages is exactly what he criticises."
+     }
+    ]
+   },
+   "R41-3": {
+    "questions": [
+     {
+      "why": "The key sentence: « Je ne demande pas qu’on renonce au tramway, mais qu’on nous associe réellement aux décisions ». A: she clearly doesn’t oppose the project; B: she actually implies the coverage was too one-sided."
+     },
+     {
+      "why": "« Je ne conteste pas l’intérêt du projet : moins de voitures, un air plus respirable… ». B: costs aren’t discussed; C: she accepts the air will be better."
+     },
+     {
+      "why": "A 20-minute presentation + « un échange expédié en un quart d’heure »: too little time for discussion. A: the timing of the meeting isn’t mentioned; C: there is no such restriction in the text."
+     },
+     {
+      "why": "expédier une discussion = to rush through a discussion, to get it over with. A is the literal meaning of expédier (to send), which doesn’t apply here; C has nothing to do with the context."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L41-1": {
+    "questions": [
+     {
+      "why": "The host explains at the start that the company switched to a four-day week two years ago, and the whole interview covers motives, difficulties, results and advice. A is only the trigger; C: staff still work 35 hours, and no reform of legal working hours is discussed."
+     },
+     {
+      "why": "« On avait un vrai problème de recrutement… »: the aim was to attract job seekers. B: she says it was « pas du tout une démarche militante »; C: unions aren’t mentioned."
+     },
+     {
+      "why": "« Les journées sont donc plus longues… Certains l’ont d’ailleurs mal vécu ». A: hours weren’t cut and pay isn’t mentioned; B: the workshop still runs « cinq jours sur cinq »."
+     },
+     {
+      "why": "« La productivité, elle, est restée à peu près stable ». She also specifically says « je me méfie des chiffres miracles », which rules out A."
+     },
+     {
+      "why": "« la coordination avec nos clients, qui, eux, travaillent cinq jours », hence the need for a duty rota. Neither B nor C is mentioned."
+     },
+     {
+      "why": "« si on prend le temps de construire le projet avec eux, oui ». A is exactly what she warns against (« uniquement pour l’image »); C: the law isn’t mentioned."
+     }
+    ]
+   },
+   "L41-2": {
+    "questions": [
+     {
+      "why": "The opening question is « ils ne dorment pas assez ; c’est vraiment le cas ? », followed by analysis of both biological and screen-related causes. B: mental health isn’t discussed; C only comes up as advice at the end."
+     },
+     {
+      "why": "« il faut nuancer… l’horloge interne se décale »: even without phones, going to sleep early is hard. A contradicts « En partie »; C: homework isn’t mentioned."
+     },
+     {
+      "why": "« Le problème, ce n’est pas tant l’écran que l’absence de limite ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "« ils souhaitent que les cours commencent un peu plus tard le matin ». A: the doctor actually opposes an « interdiction brutale »; C isn’t mentioned."
+     }
+    ]
+   },
+   "L41-3": {
+    "questions": [
+     {
+      "why": "« En cause : d’importants travaux de rénovation énergétique ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "The club will train at the pool in Saint-Rémy; school lessons « devront suspendre », ruling out B; ordinary members simply have their membership extended, ruling out C."
+     },
+     {
+      "why": "« Les abonnements en cours seront prolongés de la durée de la fermeture ». A and B are distractors."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V41-01": {
+   "zh": "to put a severe strain on",
+   "exZh": "Inflation is putting a severe strain on the budgets of low-income households."
+  },
+  "V41-02": {
+   "zh": "to be singled out (for criticism)",
+   "exZh": "The aviation industry is often singled out for its CO2 emissions."
+  },
+  "V41-03": {
+   "zh": "nothing could be less certain",
+   "exZh": "Will this reform really reduce inequality? Nothing could be less certain."
+  },
+  "V41-04": {
+   "zh": "to boast about it; (often negative) not to make a fuss about it",
+   "exZh": "She won the competition but never boasts about it."
+  },
+  "V41-05": {
+   "zh": "to extend the lifespan of",
+   "exZh": "Getting your computer repaired extends the device’s lifespan."
+  },
+  "V41-06": {
+   "zh": "to give value to (used items), to repurpose",
+   "exZh": "The recycling centre is looking for new ways to repurpose broken furniture."
+  },
+  "V41-07": {
+   "zh": "to take the plunge",
+   "exZh": "After years of hesitation, he finally took the plunge and left Paris for the countryside."
+  },
+  "V41-08": {
+   "zh": "to hunt for bargains",
+   "exZh": "During the sales, people start hunting for bargains as soon as the shops open."
+  },
+  "V41-09": {
+   "zh": "a debate resurfaces",
+   "exZh": "Every heatwave, the debate over air conditioning in schools resurfaces."
+  },
+  "V41-10": {
+   "zh": "unhealthy competition",
+   "exZh": "Rankings pinned to the board create unhealthy competition between students."
+  },
+  "V41-11": {
+   "zh": "a marking scheme, assessment criteria",
+   "exZh": "The teacher handed out the marking scheme before the test."
+  },
+  "V41-12": {
+   "zh": "a foothold, a basis to build on",
+   "exZh": "A specific comment can be a foothold for progress."
+  },
+  "V41-13": {
+   "zh": "to rush to (do something)",
+   "exZh": "As soon as the results came out, parents rushed to compare averages."
+  },
+  "V41-14": {
+   "zh": "with great fanfare",
+   "exZh": "The plan announced with great fanfare in January has still not been implemented."
+  },
+  "V41-15": {
+   "zh": "residents along (a road, a construction route)",
+   "exZh": "Residents along the route complain that the works are noisy from six in the morning."
+  },
+  "V41-16": {
+   "zh": "to rush through (a discussion, a meeting)",
+   "exZh": "The discussion with the public was rushed through in ten minutes."
+  },
+  "V41-17": {
+   "zh": "can’t be improvised, needs careful preparation",
+   "exZh": "A career change can’t be improvised; it has to be prepared in advance."
+  },
+  "V41-18": {
+   "zh": "to provide cover, to keep a duty rota",
+   "exZh": "During the holidays, two employees provide cover in customer service."
+  },
+  "V41-19": {
+   "zh": "(to a newspaper) in your columns",
+   "exZh": "I read with great interest the investigation published in your columns last week."
+  },
+  "V41-20": {
+   "zh": "to delay falling asleep",
+   "exZh": "Blue light from phones delays teenagers falling asleep."
+  },
+  "V41-21": {
+   "zh": "energy-efficiency renovation",
+   "exZh": "The town has launched energy-efficiency renovations of all its school buildings."
+  },
+  "V41-22": {
+   "zh": "an ageing facility",
+   "exZh": "The municipal stadium is an ageing facility that is expensive to maintain."
+  },
+  "V41-23": {
+   "zh": "even if only",
+   "exZh": "The library should reopen, even if only on Saturday mornings."
+  },
+  "V41-24": {
+   "zh": "ticket revenue",
+   "exZh": "Without ticket revenue, the festival depends entirely on subsidies."
+  },
+  "V41-25": {
+   "zh": "to leave the car at home",
+   "exZh": "Thanks to the new tram, many residents now leave their car at home."
+  }
+ },
  "title": "Mock 1 + error analysis",
  "phase": "Mock exams, repair and the bridge to C1"
 }

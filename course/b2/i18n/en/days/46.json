@@ -1,4 +1,224 @@
 {
+ "canDo": "Can read two articles on the same topic (an analysis + an opinion piece), draw out the problem they share, and write a synthèse of about 220 words organised by theme rather than by document, with no personal opinion.",
+ "review": "Review nominalisation (day 15), reporting verbs and indirect speech (day 12), and contrast and concession (day 7), and preview C1’s elegant concessive structures: si… que + subjunctive, quand bien même, toujours est-il que.",
+ "input": "Read: the analysis R46-1 and the opinion piece R46-2 on “living alone”; build a two-column comparison table (common ground / differences) as you read, with R46-3 as supplementary material. Listen: in the sociologist interview L46-1, first grasp the definitions of “isolation vs loneliness”; in L46-2 and L46-3, note the concrete measures.",
+ "output": "Write: W46-1, a synthèse of the two articles, 200+ words, with a title, a problem statement and two or three parts, no copied sentences and no personal opinion; speak: S46-1, a 6-minute monologue citing at least two of today’s documents; in the S46-2 debate, answer the examiner with elegant concessive structures.",
+ "checkpoint": "Every paragraph of the synthèse refers to both documents; not a single sentence copied from the originals and no “je pense”; reading and listening accuracy ≥ 80%.",
+ "challenge": "Today’s challenge: find two news items on RFI’s « Journal en français facile » or TV5MONDE dealing with the same social issue (loneliness, housing, ageing, etc.), write 4 comparative sentences using today’s connectors (alors que, tous deux, de même), then record a 1-minute oral mini-synthèse.",
+ "items": {
+  "reading": {
+   "R46-1": {
+    "questions": [
+     {
+      "why": "The text covers, in turn, the causes (paragraph 2), the effects on cities and budgets (paragraph 3), the difference from isolation (paragraph 4) and responses (paragraph 5): it is an analytical article. The author doesn’t accuse people who live alone of being “selfish” (A), and the shared housing in C is just one of the examples at the end."
+     },
+     {
+      "why": "The text: « ne forme pourtant pas un bloc homogène : derrière ce chiffre se cachent des trajectoires très différentes ». B is only one of the causes; C is the opposite of « la tendance n’est pas près de s’inverser » (the trend won’t reverse any time soon)."
+     },
+     {
+      "why": "The text: « l’indépendance est perçue comme une étape de la construction de soi ». A isn’t mentioned; B is a separate cause (couples splitting up), not the point about young professionals choosing to live alone."
+     },
+     {
+      "why": "The text first says studios cost more per square metre, then that energy, appliances and other costs can’t be shared, so the “invisible tax” is a metaphor for the extra burden of living alone, not a real tax (B), and has nothing to do with state subsidies (C)."
+     },
+     {
+      "why": "The text: « la majorité d’entre elles entretiennent des relations régulières avec leurs proches et se déclarent satisfaites ». A is the opposite; B uses « seuls », but the text lists three groups at risk of isolation, not just young people."
+     },
+     {
+      "why": "« Reste à savoir si ces initiatives… pourront changer d’échelle » expresses reservation and doubt: the tone is cautious. A contradicts “it’s unclear whether they can be scaled up”; C exaggerates: the author only says collective living needs to be “rethought”."
+     }
+    ]
+   },
+   "R46-2": {
+    "questions": [
+     {
+      "why": "The title, « Cessons de plaindre… », and paragraph 2’s « Vivre seul n’est pas une maladie » state the position. B is wrong: the author admits « l’isolement existe, et il fait des ravages »; C is the opposite of her positive examples of living alone."
+     },
+     {
+      "why": "« si + adjective + que + subjunctive » is concessive: “however well-meaning”, followed by « repose sur une confusion » as the rebuttal. She grants the other side’s good intentions (ruling out A) but disagrees with their conclusion (ruling out C)."
+     },
+     {
+      "why": "Both examples show that living alone can be a happy choice, followed straight away by the conclusion « leur prêter une détresse qu’ils n’éprouvent pas ». A: the text doesn’t compare ages; B is just a detail of the examples, not the purpose of the argument."
+     },
+     {
+      "why": "The text: « on fait fausse route et l’on disperse des moyens déjà limités », i.e. resources go to the wrong place. A is the opposite; C is a separate argument about urban design in paragraph 4, with no causal link to “confusing the concepts”."
+     },
+     {
+      "why": "Paragraph 4 points to the “real scandal”: cities are designed only for families, and people living alone are penalised; paragraph 5’s « les pouvoirs publics feraient mieux d’adapter l’offre » offers the remedy. There is no concession (B), and it isn’t another example (C)."
+     }
+    ]
+   },
+   "R46-3": {
+    "questions": [
+     {
+      "why": "Paragraph 1 sets out the scheme’s principles, and the last paragraph, « Les personnes intéressées peuvent s’inscrire », invites people to sign up. There are no financial figures (A), and the text clearly says « Il ne s’agit en aucun cas d’une aide à domicile » (ruling out B)."
+     },
+     {
+      "why": "The text: « assurer une présence le soir au moins quatre jours par semaine ». B is wrong: rent is « plafonné à 250 euros », so it is capped; C is wrong: care « restent exclus de la convention »."
+     },
+     {
+      "why": "« en aucun cas » is an absolute negative, and the text goes on to explain that care and heavy housework aren’t part of the agreement: the young people aren’t professional carers. A isn’t mentioned; C doesn’t fit « tâches ménagères lourdes restent exclus »."
+     },
+     {
+      "why": "« 42 binômes ont été formés ; seuls trois ont été interrompus avant le terme prévu »: 39/42 lasted the full term. A is the opposite; B: the text doesn’t mention an “expected number”."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L46-1": {
+    "questions": [
+     {
+      "why": "The interview covers, in turn, loneliness at different ages, the difference between isolation and loneliness, the role of social media, effective measures and the role of public authorities. A isn’t covered; C is only one of the questions, and the guest says « il faut nuancer »."
+     },
+     {
+      "why": "« presque aussi fréquent chez les 18-30 ans que chez les plus de 75 ans ». B is exactly the “stereotype” he wants to overturn; C: he doesn’t say it decreases with age."
+     },
+     {
+      "why": "« un décalage entre les relations qu’on a et celles qu’on voudrait avoir ». A and B are the reasons he gives for loneliness in older people (« on perd un conjoint… la possibilité de se déplacer »)."
+     },
+     {
+      "why": "« L’isolement, c’est un fait objectif : on peut le mesurer… La solitude, elle, est un ressenti ». A reverses the two; C contradicts the distinction he calls « essentiel »."
+     },
+     {
+      "why": "« Le problème apparaît quand l’écran remplace les rencontres au lieu de les prolonger ». A and B are precisely the positive examples he gives (« c’est un vrai soutien »)."
+     },
+     {
+      "why": "« les dispositifs qui donnent un rôle aux gens ». B is wrong: he says presenting them as “treating loneliness” « peut être stigmatisant »; C is wrong: the town’s role is « repérage » (identifying people), not running schemes directly."
+     }
+    ]
+   },
+   "L46-2": {
+    "questions": [
+     {
+      "why": "« un habitat participatif… ce sont les futurs habitants eux-mêmes qui ont conçu le projet », with decisions that « se prennent en assemblée ». B is wrong: residents include families and young people; C belongs to R46-3; here each household has its own flat."
+     },
+     {
+      "why": "« des familles avec enfants, mais aussi six personnes qui vivent seules, dont une veuve… et un jeune infirmier ». A is wrong: there are families too; C is wrong: « Chaque foyer a son appartement », and only some spaces are shared."
+     },
+     {
+      "why": "« elle peut fermer sa porte quand elle veut, mais… il y aura toujours quelqu’un si elle a un problème ». A is her joke (“never had so many grandchildren”), not real grandchildren; B isn’t mentioned."
+     },
+     {
+      "why": "« le montage du projet a pris presque sept ans… un capital de départ, ce qui exclut encore beaucoup de ménages modestes ». A exaggerates: it only says discussions can take a long time; C: rents aren’t compared."
+     }
+    ]
+   },
+   "L46-3": {
+    "questions": [
+     {
+      "why": "« recevront chaque semaine l’appel d’un bénévole formé et… une visite à domicile ». Neither A nor C is mentioned, and the deputy mayor makes clear it doesn’t replace social services."
+     },
+     null,
+     {
+      "why": "« détecter plus tôt les situations de fragilité ». B isn’t said; C is the opposite of « l’objectif n’est pas de remplacer les services sociaux »."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V46-01": {
+   "zh": "not a uniform bloc, very diverse internally",
+   "exZh": "Young voters are not a uniform bloc."
+  },
+  "V46-02": {
+   "zh": "longer life expectancy",
+   "exZh": "Longer life expectancy has increased the number of widows living alone."
+  },
+  "V46-03": {
+   "zh": "(a couple) to move in together",
+   "exZh": "Young people are moving in together later and later."
+  },
+  "V46-04": {
+   "zh": "to push up rents",
+   "exZh": "Strong demand for studios is pushing up rents."
+  },
+  "V46-05": {
+   "zh": "to equate A with B, to lump together",
+   "exZh": "Living alone shouldn’t be equated with isolation."
+  },
+  "V46-06": {
+   "zh": "to offload (responsibility, etc.) onto someone",
+   "exZh": "The town shouldn’t offload onto volunteers what is the job of social services."
+  },
+  "V46-07": {
+   "zh": "to stop giving any sign of life, to go silent",
+   "exZh": "If a resident stops giving any sign of life, the building contact alerts the town hall."
+  },
+  "V46-08": {
+   "zh": "however well-meaning (it may be)",
+   "exZh": "However well-meaning it may be, this argument rests on a confusion."
+  },
+  "V46-09": {
+   "zh": "on no account, under no circumstances",
+   "exZh": "She would on no account swap her flat for a flatshare."
+  },
+  "V46-10": {
+   "zh": "the fact remains that …",
+   "exZh": "Opinions differ; the fact remains that single-person households are increasing."
+  },
+  "V46-11": {
+   "zh": "to wreak havoc",
+   "exZh": "Isolation wreaks havoc among dependent elderly people."
+  },
+  "V46-12": {
+   "zh": "to be on the wrong track",
+   "exZh": "By confusing loneliness and isolation, elected officials are on the wrong track."
+  },
+  "V46-13": {
+   "zh": "even if (+ conditional)",
+   "exZh": "Even if he earns a good living, he spends a large part of his salary on rent."
+  },
+  "V46-14": {
+   "zh": "(someone) would do better to …",
+   "exZh": "Rather than lecturing people, the authorities would do better to build small homes."
+  },
+  "V46-15": {
+   "zh": "to do small favours",
+   "exZh": "The young person hosted agrees to do small favours for the homeowner."
+  },
+  "V46-16": {
+   "zh": "withdrawal into oneself",
+   "exZh": "Living alone is not the same as withdrawing into oneself."
+  },
+  "V46-17": {
+   "zh": "before the agreed end date",
+   "exZh": "Only three pairs stopped before the agreed end date."
+  },
+  "V46-18": {
+   "zh": "(ties, organisations) to fray, to unravel",
+   "exZh": "For lack of contact, ties in the neighbourhood have frayed."
+  },
+  "V46-19": {
+   "zh": "to clear up a confusion",
+   "exZh": "This example helps clear up a common confusion."
+  },
+  "V46-20": {
+   "zh": "to break out of isolation",
+   "exZh": "The community café helps retirees break out of isolation."
+  },
+  "V46-21": {
+   "zh": "(a person’s) vulnerable situation",
+   "exZh": "The scheme aims to detect vulnerable situations earlier."
+  },
+  "V46-22": {
+   "zh": "to lay the foundation stone",
+   "exZh": "The mayor laid the foundation stone of the new building in March."
+  },
+  "V46-23": {
+   "zh": "putting a project together (funding, legal setup, etc.)",
+   "exZh": "Putting the project together took almost seven years."
+  },
+  "V46-24": {
+   "zh": "start-up capital",
+   "exZh": "Joining a participatory housing project requires some start-up capital."
+  },
+  "V46-25": {
+   "zh": "to draw out the central question (problématique)",
+   "exZh": "When writing a synthèse, first draw out the central question the documents share."
+  }
+ },
  "title": "Bridge to C1: synthesis and reporting",
  "phase": "Mock exams, repair and the bridge to C1"
 }

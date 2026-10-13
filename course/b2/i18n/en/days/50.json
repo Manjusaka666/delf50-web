@@ -1,4 +1,226 @@
 {
+ "canDo": "Can keep all four skills steady during a light review: read articles about language learning and exams, follow a psychologist’s advice on handling pre-exam stress, write a magazine article of ≥ 250 words summing up your own learning methods, and draw up a personal plan for moving from B2 to C1.",
+ "review": "Light review of key points throughout: concession and restriction (quitte à, certes… mais), speculation and hedging (il semble que, ce serait aller trop vite) and formal connectors; look back at the synthèse and exposé techniques from days 46 and 48 as a starting point for C1.",
+ "input": "Read: R50-1 on multilingualism and the brain (informative), R50-2 on daring to make mistakes (column) and R50-3, exam-day instructions; answer the questions without a time limit, focusing on how the texts are structured. Listen: L50-1, a psychologist on exam stress (twice), L50-2, a Chinese student’s experience going from B2 to C1, and L50-3, a vox pop from around the French-speaking world.",
+ "output": "Write: W50-1, a magazine article, “Learning a language as an adult”, ≥ 250 words, with a headline and a lead paragraph; speak: S50-1, a 5-minute monologue (should foreign languages be taught from nursery school?), and S50-2, a 4-minute debate; mediation: compile an exam-day checklist and summarise L50-2 for a classmate.",
+ "checkpoint": "No new difficulties today: listening and reading accuracy ≥ 80%, clearly structured writing with no careless mistakes; a fluent 5-minute monologue without breaking off; write one page with an “exam-day checklist + C1 plan” (concrete weekly arrangements for reading, listening and synthèse practice).",
+ "challenge": "Today’s challenge: pick a long programme you’re interested in (10+ minutes) on TV5MONDE or RFI and, afterwards, write an 80-word mini-synthèse with no personal opinion, as your first exercise towards DALF C1; then write a 3-sentence message in French to yourself a year from now.",
+ "items": {
+  "reading": {
+   "R50-1": {
+    "questions": [
+     {
+      "why": "It opens with the question « Mais qu’en dit réellement la recherche ? », then reviews the early studies, later doubts and the current consensus. A isn’t the main aim (the author is cautious about “cognitive benefits”); C: the text gives no learning methods."
+     },
+     {
+      "why": "« un bilingue doit sans cesse sélectionner une langue et inhiber l’autre, ce qui entraînerait en permanence ses fonctions de contrôle ». B is a confounding factor raised by later researchers, not the early explanation; C isn’t mentioned."
+     },
+     {
+      "why": "The text goes on to say that larger studies « n’ont pas retrouvé ces différences, ou seulement de manière très faible », i.e. the conclusions are no longer so clear-cut. A is wrong: research is ongoing; B is the opposite."
+     },
+     {
+      "why": "« les études concluant à un avantage auraient plus de chances d’être publiées que celles qui ne trouvent rien ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« certaines observations suggèrent… un peu plus tard… même si ce résultat reste débattu ». B exaggerates (« un peu plus tard », not “prevents entirely”); C contradicts « certaines observations suggèrent »."
+     },
+     {
+      "why": "« on oublierait presque l’essentiel : une langue est d’abord une porte ouverte sur d’autres manières de penser… ». A has no basis; B contradicts the text’s cautious conclusion."
+     }
+    ]
+   },
+   "R50-2": {
+    "questions": [
+     {
+      "why": "« la peur de l’erreur fait plus de dégâts que l’erreur elle-même »: the whole text develops this idea. B goes against « une faute… coûte rarement cher »; C distorts the opening example."
+     },
+     {
+      "why": "« chaque conversation évitée est une occasion d’apprendre qui ne reviendra pas ». A isn’t mentioned; B is the opposite of “spoken mistakes cost little”."
+     },
+     {
+      "why": "« Certaines erreurs méritent qu’on s’y attarde… Mais il faut les distinguer des petites imperfections ». A is the opposite of “distinguishing”; C is wrong: she only notes in passing that native speakers make small mistakes too (soit dit en passant), without criticising them."
+     },
+     {
+      "why": "« notez vos erreurs récurrentes dans un carnet, travaillez-les à tête reposée, et, le reste du temps, parlez ». A and B are the opposite."
+     },
+     {
+      "why": "« Il évalue votre capacité à vous faire comprendre, à argumenter, à vous corriger »; B contradicts « n’attend pas de vous un français parfait »; C isn’t mentioned."
+     }
+    ]
+   },
+   "R50-3": {
+    "questions": [
+     {
+      "why": "The document explains how admission slips are sent, arrival times, ID, banned items, publication of results and procedures for absence: it is all about organisation and rules. A only names the exam papers without describing them; B isn’t mentioned."
+     },
+     {
+      "why": "« l’épreuve orale individuelle, qui peut avoir lieu à une date différente ». B isn’t mentioned; C contradicts « individuelle »."
+     },
+     {
+      "why": "« Aucun candidat ne sera admis dans la salle après le début de l’épreuve de compréhension de l’oral ». Neither A nor C is a rule."
+     },
+     {
+      "why": "« doivent transmettre un certificat dans les cinq jours suivant l’examen ». Neither A nor B is mentioned."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L50-1": {
+    "questions": [
+     {
+      "why": "The psychologist gives concrete advice for “the days before → exam day → during the exam → mindset”. A: the role of stress is only touched on at the start; C isn’t covered."
+     },
+     {
+      "why": "« Un certain niveau de stress est utile… Le problème, c’est quand il dépasse un seuil et qu’il paralyse ». B and C contradict this."
+     },
+     {
+      "why": "« garder un rythme régulier… faire une ou deux simulations dans les conditions réelles, chronomètre en main ». A is exactly what he advises against (« ne pas chercher à tout réviser à la dernière minute »); B: he doesn’t say to stop completely."
+     },
+     {
+      "why": "« attendre une heure devant la salle en écoutant les autres comparer leurs révisions, c’est le meilleur moyen de se déstabiliser ». Neither A nor C is the reason he gives."
+     },
+     {
+      "why": "« On la laisse de côté et on y revient plus tard », and he criticises « s’acharner sur une difficulté » (ruling out B). C isn’t mentioned."
+     },
+     {
+      "why": "« Se parler avec bienveillance… Remplacer ce discours par “j’ai travaillé, je vais faire de mon mieux” ». Neither A nor B is mentioned."
+     }
+    ]
+   },
+   "L50-2": {
+    "questions": [
+     {
+      "why": "The host asks « Qu’est-ce qui a changé entre les deux ? », and she talks about what is different at C1, how she prepared for reading and speaking, and her advice. Neither A nor B is mentioned."
+     },
+     {
+      "why": "« Au C1, il faut d’abord comprendre plusieurs documents… puis les synthétiser sans donner son avis, et seulement ensuite argumenter ». B was her initial misconception (« Je me trompais »); C contradicts what she later says about preparing for the oral."
+     },
+     {
+      "why": "The previous sentence says her first syntheses « faisaient deux pages », so couper means cutting down, writing more concisely. A is a literal misreading; C contradicts her practice of reading whole dossiers."
+     },
+     {
+      "why": "« Ne pas s’arrêter !… Continuer à lire, à écouter la radio, même un peu chaque jour ». She says neither A nor C."
+     }
+    ]
+   },
+   "L50-3": {
+    "questions": [
+     {
+      "why": "« nous avons demandé… ce que le français leur avait apporté » (the pluperfect in reported speech). B and C aren’t the interview question."
+     },
+     {
+      "why": "« c’est grâce au français que j’ai obtenu un poste à Genève… ça m’a ouvert à une autre façon de débattre ». A relates to the second interviewee, B to the third."
+     },
+     {
+      "why": "« Des amis partout : au Québec, en Belgique, au Cameroun. C’est une langue qui voyage ». A contradicts « depuis l’enfance »; C isn’t mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V50-01": {
+   "zh": "an appealing idea, an attractive notion",
+   "exZh": "For twenty years, an appealing idea has been going round: being bilingual makes you smarter."
+  },
+  "V50-02": {
+   "zh": "distracting information",
+   "exZh": "To stay focused, you have to learn to ignore distracting information."
+  },
+  "V50-03": {
+   "zh": "publication bias",
+   "exZh": "Researchers suspect a publication bias in favour of positive results."
+  },
+  "V50-04": {
+   "zh": "to isolate the effect of",
+   "exZh": "It is hard to isolate the effect of language from that of the social environment."
+  },
+  "V50-05": {
+   "zh": "that would be jumping to conclusions",
+   "exZh": "Concluding from this that learning languages is useless would be jumping to conclusions."
+  },
+  "V50-06": {
+   "zh": "to feed the idea of",
+   "exZh": "These studies fed the idea of a “bilingual advantage”."
+  },
+  "V50-07": {
+   "zh": "to agree on one point",
+   "exZh": "All the experts agree on one point: learning is beneficial."
+  },
+  "V50-08": {
+   "zh": "a door opening onto",
+   "exZh": "A language is above all a door opening onto other cultures."
+  },
+  "V50-09": {
+   "zh": "to do more damage than",
+   "exZh": "Fear of making mistakes does more damage than the mistakes themselves."
+  },
+  "V50-10": {
+   "zh": "(a cost) to be paid, to take its toll eventually",
+   "exZh": "Silence can’t be heard, but it takes its toll eventually."
+  },
+  "V50-11": {
+   "zh": "in passing",
+   "exZh": "The other person corrected me in passing, without stopping."
+  },
+  "V50-12": {
+   "zh": "laxity, letting things slide",
+   "exZh": "Accepting mistakes doesn’t mean advocating letting things slide."
+  },
+  "V50-13": {
+   "zh": "to dwell on, to look closely at",
+   "exZh": "Some mistakes deserve to be looked at closely."
+  },
+  "V50-14": {
+   "zh": "incidentally, by the way",
+   "exZh": "Incidentally, native speakers make mistakes too."
+  },
+  "V50-15": {
+   "zh": "calmly, with a clear head",
+   "exZh": "Go over your mistakes in the evening, with a clear head."
+  },
+  "V50-16": {
+   "zh": "to be admitted (to an exam room, etc.)",
+   "exZh": "Once the exam has started, no candidate will be admitted to the room."
+  },
+  "V50-17": {
+   "zh": "for health reasons, due to illness",
+   "exZh": "Candidates absent due to illness must send a medical certificate."
+  },
+  "V50-18": {
+   "zh": "to cross a threshold",
+   "exZh": "Stress becomes harmful once it crosses a threshold."
+  },
+  "V50-19": {
+   "zh": "sweaty palms",
+   "exZh": "Before the oral exam, his palms were sweating."
+  },
+  "V50-20": {
+   "zh": "stopwatch in hand, strictly timed",
+   "exZh": "Do a full mock exam, strictly timed."
+  },
+  "V50-21": {
+   "zh": "to throw oneself off balance, to get rattled",
+   "exZh": "Listening to others compare their revision is the best way to get rattled."
+  },
+  "V50-22": {
+   "zh": "to keep hammering away at, to fixate on",
+   "exZh": "Don’t waste time hammering away at one difficulty."
+  },
+  "V50-23": {
+   "zh": "kindly, with goodwill",
+   "exZh": "Learn to speak to yourself kindly."
+  },
+  "V50-24": {
+   "zh": "to freeze up, to lose one’s composure (from nerves)",
+   "exZh": "Faced with a hard question, I often freeze up."
+  },
+  "V50-25": {
+   "zh": "early exposure (especially to a language)",
+   "exZh": "Early exposure is said to help pronunciation."
+  }
+ },
  "title": "Steady before the exam, and transfer",
  "phase": "Mock exams, repair and the bridge to C1"
 }
