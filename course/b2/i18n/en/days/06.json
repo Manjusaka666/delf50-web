@@ -1,4 +1,226 @@
 {
+ "canDo": "Can clearly analyse the direct and indirect consequences of a consumer trend using structures such as si bien que, de sorte que, tellement/si… que, d’où, au point que, distinguishing short-term effects from long-term impacts.",
+ "review": "Review day 5’s cause expressions (puisque, étant donné que, faute de, en raison de): first state the cause, then use today’s consequence connectors to draw the result, forming a complete “cause → phenomenon → consequence” chain.",
+ "input": "Read: an analysis of the second-hand boom, an opinion column on Black Friday and a reader’s letter (circle every connector of consequence and mark the “cause” and “result” it links); listen: a radio interview on “free delivery”, a segment on the subscription economy and a local news item (note the “phenomenon → consequence” pairs as you listen).",
+ "output": "Write: a 180+-word opinion post on a consumer forum analysing the positive and negative consequences of second-hand buying; speak: a 3-minute monologue (should fast fashion be taxed?) + a debate with the examiner on “buy now, pay later”, using at least one consequence structure per argument.",
+ "checkpoint": "Reading and listening accuracy ≥80%; at least 4 different consequence expressions used correctly in the forum post (including de sorte que + indicative, tellement/si… que, d’où + noun); a 3-minute monologue without breaking off, with a clear conclusion.",
+ "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about consumption, prices or shopping habits, and write 1 sentence each with si bien que, d’où and au point que on the consequences of the trend; then record a 1-minute voice message on how it might affect your own shopping habits.",
+ "items": {
+  "reading": {
+   "R06-1": {
+    "questions": [
+     {
+      "why": "The article first describes the rise of second-hand buying (« la seconde main est devenue un réflexe »), then analyses its causes, its impact on traditional retail and its limits (« Les spécialistes restent prudents ») — an analytical article. A: it doesn’t urge readers to resell; C: shops are mentioned only to show the impact, not to condemn them."
+     },
+     {
+      "why": "The text first says « Le premier facteur est économique », then « Mais l’argument écologique pèse lui aussi » — both economic and environmental reasons. In B, uniquement contradicts « lui aussi »; in A, second-hand shops moving into town centres is a description of the trend, not a reason given in the second paragraph."
+     },
+     {
+      "why": "« changer la donne » means “to change the game”, and the text explains: « la valeur d’un produit ne se mesure plus seulement à son prix de départ » — the market logic has fundamentally changed. B and C are specific consequences not mentioned in the text."
+     },
+     {
+      "why": "The text says: « revendre est devenu tellement simple que certains utilisateurs achètent davantage, en se disant qu’ils pourront toujours se débarrasser de l’article plus tard. Ce phénomène… “effet rebond” ». Neither A nor C appears in the text."
+     },
+     {
+      "why": "She says « La seconde main est une excellente nouvelle si elle remplace un achat neuf. Si elle s’y ajoute, on ne fait que déplacer le problème » — what matters is how much is bought, not the channel. B: she doesn’t predict second-hand buying will disappear; C: she doesn’t propose restricting online resale."
+     },
+     {
+      "why": "« Une chose est sûre : la seconde main n’est plus marginale. Reste à savoir si… ou si… » — the author confirms the change but uses « Reste à savoir » to leave the outcome open, a cautious tone. A is too optimistic and B too pessimistic; neither matches the text."
+     }
+    ]
+   },
+   "R06-2": {
+    "questions": [
+     {
+      "why": "The author criticises sales tactics and finally calls for « que nous reprenions la main », i.e. staying rational and critical. C directly contradicts « Je ne plaide pas pour l’interdiction »; A is the opposite of the whole text’s position."
+     },
+     {
+      "why": "« L’argument mérite d’être entendu » (concession), « Mais il résiste mal à l’examen » (rebuttal) — a typical concede-and-rebut structure. B ignores the concession; C is the opposite of the author’s critical stance."
+     },
+     {
+      "why": "« tellement vite que nous n’avons plus le temps de nous demander si l’achat est utile. D’où ces placards remplis de gadgets jamais utilisés ». A isn’t mentioned; B is the opposite — small shops are « incapables de suivre les rabais »."
+     },
+     {
+      "why": "The examples that follow are all personal actions (« Noter ce dont on a réellement besoin… comparer les prix… accepter de ne rien acheter »), showing that « reprendre la main » means “taking back control of your own spending decisions”. Neither B nor C is what the author proposes."
+     },
+     {
+      "why": "« la meilleure affaire, finalement, c’est souvent celle qu’on ne fait pas » uses irony: not buying what you don’t need is the real “bargain”. A and C aren’t in the text."
+     }
+    ]
+   },
+   "R06-3": {
+    "questions": [
+     {
+      "why": "He first agrees with the article (« je partage entièrement votre constat »), then points out « Votre article laisse pourtant de côté un obstacle majeur » — his aim is to add something. A: he isn’t complaining about a personal experience; B: the repair café is only background on who he is."
+     },
+     {
+      "why": "« elles sont si chères que la réparation coûte presque autant qu’un modèle neuf ». A: the repair café is run by volunteers, and the text doesn’t mention price rises; C reverses the text’s logic."
+     },
+     {
+      "why": "« jeter l’éponge » is a set phrase meaning “to give up, to throw in the towel”, followed by « et racheter », showing people give up on repairing and buy again. B and C are literal misreadings."
+     },
+     {
+      "why": "« Le problème ne vient donc pas seulement de la bonne volonté des consommateurs, sur laquelle votre dossier insiste beaucoup », and he asks for an article specifically on « la responsabilité des fabricants ». A and C don’t match the reader’s view."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L06-1": {
+    "questions": [
+     {
+      "why": "The whole interview is about the hidden consequences of « la livraison gratuite », and it ends: « Le coût est simplement caché ». B: returns are only one aspect, and no “new rule” is mentioned; C: the websites’ finances aren’t discussed."
+     },
+     {
+      "why": "« il se répercute ailleurs, en général sur le prix des produits. Si bien que… tout le monde paie la livraison, y compris ceux qui viennent chercher leur commande en magasin ». A contradicts « tout le monde »; C confuses this with the later point about pressure on couriers."
+     },
+     {
+      "why": "« on commande plus souvent, et en plus petites quantités ». A is in fact the improvement she suggests later, not the current situation; B isn’t mentioned."
+     },
+     {
+      "why": "« d’autres coûtent si peu cher à produire qu’il est plus rentable… de les écouler en lots à bas prix que de les vérifier un par un ». B: no law is mentioned; in C, toujours is too absolute — the recording only says « Certains sont abîmés »."
+     },
+     {
+      "why": "« des indépendants payés au colis. Plus ils livrent vite, plus ils gagnent », which leads to problems with working conditions and road safety. A is the opposite of the recording; C isn’t mentioned."
+     },
+     {
+      "why": "« afficher clairement le coût réel de la livraison, ou encourager le regroupement des commandes ». A is something she explicitly rejects (« Pas forcément de manière brutale »); B isn’t one of her suggestions."
+     }
+    ]
+   },
+   "L06-2": {
+    "questions": [
+     {
+      "why": "« on s’abonne. Et c’est tellement facile qu’on finit par ne plus savoir combien on dépense » — the topic is subscriptions piling up until you lose track. A and C are only examples from the list, not the topic."
+     },
+     {
+      "why": "« pris séparément, aucun montant ne paraît inquiétant », yet added together they come to more than 80 euros a month. Neither A nor B is mentioned."
+     },
+     {
+      "why": "« près d’un tiers des personnes interrogées reconnaissent payer au moins un service qu’elles n’utilisent plus ». C confuses this with the figure of “7 subscriptions on average”."
+     },
+     {
+      "why": "« les entreprises rendent souvent la résiliation plus compliquée que l’inscription ». Neither A nor C comes up in the programme."
+     }
+    ]
+   },
+   "L06-3": {
+    "questions": [
+     {
+      "why": "« l’expérimentation “Oui Pub” est prolongée d’un an ». A is too absolute: residents who want ads can still receive them; C isn’t mentioned."
+     },
+     {
+      "why": "« seuls 12 % des foyers ont fait cette démarche, si bien que la quantité de papier distribuée a baissé de près de 80 % ». C contradicts « Les commerçants… sont partagés »."
+     },
+     {
+      "why": "« Certains disent avoir perdu des clients ; d’autres ont reporté leur budget… au point de ne plus vouloir revenir en arrière ». A doesn’t fit “divided opinions”; B: the review in June is the town hall’s plan, not the shopkeepers’ attitude."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V06-01": {
+   "zh": "to spread to, to take over (a place)",
+   "exZh": "Second-hand clothes shops have taken over the town centre."
+  },
+  "V06-02": {
+   "zh": "the craze for …",
+   "exZh": "Students’ craze for vintage shops shows no sign of slowing."
+  },
+  "V06-03": {
+   "zh": "to be felt (of effects)",
+   "exZh": "The effects of the price rises are already being felt in supermarkets."
+  },
+  "V06-04": {
+   "zh": "to change the game",
+   "exZh": "Resale apps have changed the game for retailers."
+  },
+  "V06-05": {
+   "zh": "the rebound effect",
+   "exZh": "More fuel-efficient cars lead people to drive more: that’s the rebound effect."
+  },
+  "V06-06": {
+   "zh": "to get rid of",
+   "exZh": "He buys a lot because he knows he can get rid of the clothes later."
+  },
+  "V06-07": {
+   "zh": "in three stages",
+   "exZh": "The association proposes a three-stage approach."
+  },
+  "V06-08": {
+   "zh": "to the point that …",
+   "exZh": "Sales fell to the point that the shop had to close."
+  },
+  "V06-09": {
+   "zh": "so that, with the result that (an actual result)",
+   "exZh": "Deliveries are more and more frequent, so that the streets are clogged with vans."
+  },
+  "V06-10": {
+   "zh": "to have absolutely no need of",
+   "exZh": "She had absolutely no need of a third coat, but the discount tempted her."
+  },
+  "V06-11": {
+   "zh": "to deserve a hearing",
+   "exZh": "Small shopkeepers’ arguments deserve a hearing."
+  },
+  "V06-12": {
+   "zh": "in the run-up to the holidays",
+   "exZh": "Small shops make most of their turnover in the run-up to the holidays."
+  },
+  "V06-13": {
+   "zh": "a countdown",
+   "exZh": "The website shows a countdown to hurry buyers along."
+  },
+  "V06-14": {
+   "zh": "a sense of urgency",
+   "exZh": "The countdown creates a sense of urgency in buyers."
+  },
+  "V06-15": {
+   "zh": "to run at full capacity",
+   "exZh": "During the sales, warehouses run at full capacity."
+  },
+  "V06-16": {
+   "zh": "to desert, to stop going to",
+   "exZh": "Young customers are increasingly deserting department stores."
+  },
+  "V06-17": {
+   "zh": "mountains of waste",
+   "exZh": "Every festival leaves behind mountains of waste."
+  },
+  "V06-18": {
+   "zh": "to take back control",
+   "exZh": "After months of impulse buying, she decided to take back control of her budget."
+  },
+  "V06-19": {
+   "zh": "to use, to call on (someone / an organisation)",
+   "exZh": "To cut costs, the platforms use independent couriers."
+  },
+  "V06-20": {
+   "zh": "to throw in the towel",
+   "exZh": "After three attempts at repairing it, he finally threw in the towel."
+  },
+  "V06-21": {
+   "zh": "to be passed on to, to have a knock-on effect on",
+   "exZh": "Delivery costs are passed on to product prices."
+  },
+  "V06-22": {
+   "zh": "to play along, to cooperate",
+   "exZh": "Once the stakes are explained to them, customers play along."
+  },
+  "V06-23": {
+   "zh": "to go unnoticed",
+   "exZh": "Direct debits make this spending go unnoticed."
+  },
+  "V06-24": {
+   "zh": "to put off",
+   "exZh": "Many subscribers keep putting off cancelling, then forget."
+  },
+  "V06-25": {
+   "zh": "to encourage spending",
+   "exZh": "Paying in instalments encourages spending."
+  }
+ },
  "title": "Analysing consequences",
  "phase": "Upgrading structures and precise expression"
 }

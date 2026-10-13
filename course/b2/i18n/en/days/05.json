@@ -1,4 +1,226 @@
 {
+ "canDo": "Can explain the causes of an environmental phenomenon with a range of cause expressions (parce que, puisque, comme at the start of a sentence, étant donné que, vu que, du fait de, en raison de, faute de, grâce à / à cause de, sous prétexte que, d’autant que), telling neutral, positive, negative and doubtful causes apart.",
+ "review": "Following on from day 4’s relative pronouns: describe a phenomenon precisely with relative clauses (les zones dans lesquelles…, les insectes dont…), then explain its causes with cause connectors; review the B1 parce que / car / à cause de.",
+ "input": "Read: a report explaining why the tiger mosquito is spreading, an editorial against looking for scapegoats in a drought and a notice banning swimming in a lake; listen: an ecologist on the decline of insects, a segment on coastal erosion and an ozone pollution news flash. Strategy: sort each cause expression (introduces a noun / a clause; neutral / positive / negative / doubtful).",
+ "output": "Write: a forum post explaining “why so many people drive even for short trips”, with suggestions (180+ words); speak: a 3-minute monologue on “switching off street lights at night”, then a debate on “do individual green actions make a difference?”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; at least 5 different cause expressions in the essay, correctly structured (faute de + noun/infinitive, étant donné que + indicative, comme at the start); a 3-minute monologue clearly stating at least three causes.",
+ "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about drought, a heatwave, pollution or biodiversity, and write 1 sentence each with étant donné que, faute de, grâce à and comme (at the start) explaining the causes; then record 1 minute of audio explaining the phenomenon to a friend.",
+ "items": {
+  "reading": {
+   "R05-1": {
+    "questions": [
+     {
+      "why": "The first paragraph asks « Comment expliquer qu’il ait gagné autant de terrain… ? », and the rest analyses three main causes in turn: trade, climate and human behaviour. B: dengue is only mentioned in passing; C: the text says the health authorities « suivent la situation de près », with no criticism."
+     },
+     {
+      "why": "The text says: « a voyagé à travers le monde grâce au commerce des pneus usagés, dans lesquels l’eau de pluie stagne ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "The text says: « il lui arrive de monter dans un véhicule et d’en descendre des centaines de kilomètres plus loin », hence « ce n’est donc pas un hasard si… ». A and B are invented causes."
+     },
+     {
+      "why": "The text says: « Le réchauffement ne l’a pas fait venir, mais il lui a permis de s’installer durablement plus au nord ». B contradicts the first half; C contradicts the second half."
+     },
+     {
+      "why": "The text says: « Puisque ces gîtes larvaires se trouvent surtout dans les jardins et sur les balcons, les traitements à grande échelle sont peu efficaces ». A and C have no basis in the text."
+     },
+     {
+      "why": "The text goes on to explain that plant-pot saucers, forgotten watering cans and blocked gutters all become breeding sites — i.e. humans help it without meaning to. A is wrong in saying “deliberately”; B has nothing to do with the “ally” metaphor."
+     }
+    ]
+   },
+   "R05-2": {
+    "questions": [
+     {
+      "why": "The author criticises « Cette recherche d’un bouc émissaire… est pourtant stérile » and argues that « c’est collectivement qu’il faut décider ». A is one of the accusations the author criticises; C: the author only says watering golf courses can be questioned, not that it should be banned."
+     },
+     {
+      "why": "The text says: « puisqu’il est toujours plus confortable de penser que la solution dépend des autres » (puisque introduces a cause the reader can also accept). B and C aren’t said in the text."
+     },
+     {
+      "why": "The text says: « c’est d’abord parce que les pluies d’hiver sont devenues plus irrégulières et que des sols imperméabilisés laissent l’eau ruisseler ». A and B are about “water use”, which the author says only « ne font qu’aggraver »."
+     },
+     {
+      "why": "« Certes, tous les usages ne se valent pas… Mais opposer les agriculteurs aux citadins ne fera pas tomber une goutte de pluie »: concede first, then return to the argument. B: he doesn’t change position; C contradicts « tous les usages ne se valent pas »."
+     },
+     {
+      "why": "This is a vivid way of saying that blaming each other won’t solve the root problem of water shortage. A and C are literal misreadings."
+     }
+    ]
+   },
+   "R05-3": {
+    "questions": [
+     {
+      "why": "The first sentence says it: « En raison de la présence de cyanobactéries, la baignade est interdite », and the rest explains the causes and the measures. A only mentions that pedalos are still allowed; C isn’t mentioned."
+     },
+     {
+      "why": "The text says: « du fait des fortes chaleurs et du faible niveau de l’eau. Comme le lac reçoit également… des eaux chargées en engrais ». B and C aren’t listed as causes."
+     },
+     {
+      "why": "The text says: « Les activités nautiques sans contact avec l’eau, comme le pédalo, sont maintenues ». A is banned; B: « il est vivement déconseillé de consommer les poissons »."
+     },
+     {
+      "why": "The text says: « Faute d’amélioration rapide, la mairie étudiera avec les agriculteurs voisins des solutions » (faute de = failing, in the absence of). A and C aren’t in the text."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L05-1": {
+    "questions": [
+     {
+      "why": "The presenter starts with insects on windscreens, « Pour comprendre pourquoi », and the interview covers the causes of insect decline and what to do about it. B and C are only elements of the topic."
+     },
+     {
+      "why": "The recording says: « C’est une observation anecdotique, mais elle va dans le même sens que de nombreuses études scientifiques ». A goes too far in denying it; C: he says explicitly it is only an “anecdotal observation”."
+     },
+     {
+      "why": "The recording says: « les insectes ont perdu les endroits où ils se nourrissaient et se reproduisaient ». The recording doesn’t establish the causal links in A or B."
+     },
+     {
+      "why": "The recording says: « ils touchent aussi des espèces utiles, comme les pollinisateurs ». Neither B nor C is what he says."
+     },
+     {
+      "why": "The recording says: « s’orientent la nuit grâce à la lune. Attirés par les lampadaires, ils tournent autour jusqu’à l’épuisement, ou ils deviennent des proies faciles ». A and C aren’t mentioned."
+     },
+     {
+      "why": "The recording says: « on observe parfois le retour de certaines espèces en deux ou trois ans seulement. Et chacun peut agir ». A contradicts « c’est la bonne nouvelle »; B contradicts « chacun peut agir »."
+     }
+    ]
+   },
+   "L05-2": {
+    "questions": [
+     {
+      "why": "The recording says: « certaines plages reculent parfois de plusieurs mètres par an. Pourquoi ? ». A: the recording talks about winter storms; C isn’t mentioned."
+     },
+     {
+      "why": "The recording says: « Les barrages construits sur les fleuves retiennent une partie du sable ». B and C aren’t mentioned."
+     },
+     {
+      "why": "The recording says: « elles déplacent souvent l’érosion un peu plus loin ». A and B aren’t said in the recording."
+     },
+     {
+      "why": "The recording says: « puisqu’il s’agit parfois de maisons où des familles vivent depuis des générations ». B and C have no basis."
+     }
+    ]
+   },
+   "L05-3": {
+    "questions": [
+     {
+      "why": "The recording says: « la combinaison de trois facteurs : de fortes chaleurs, un ensoleillement intense et l’absence de vent ». A and C aren’t mentioned."
+     },
+     {
+      "why": "The recording says: « a abaissé de 20 km/h la vitesse maximale autorisée ». B and C aren’t mentioned."
+     },
+     {
+      "why": "The recording says: « sont invitées à éviter les efforts physiques en plein air ». A is exaggerated; B is the opposite — public transport is free."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V05-01": {
+   "zh": "to gain ground, to spread",
+   "exZh": "Every summer, the tiger mosquito gains ground further north."
+  },
+  "V05-02": {
+   "zh": "to reinforce each other",
+   "exZh": "These different causes reinforce each other."
+  },
+  "V05-03": {
+   "zh": "it’s no coincidence that …",
+   "exZh": "It’s no coincidence that the first cases appeared near the motorway."
+  },
+  "V05-04": {
+   "zh": "to settle permanently, to become established",
+   "exZh": "Thanks to milder winters, the insect has become permanently established in the region."
+  },
+  "V05-05": {
+   "zh": "a (mosquito) breeding site",
+   "exZh": "A plant-pot saucer full of water is one of the commonest breeding sites."
+  },
+  "V05-06": {
+   "zh": "mosquito control",
+   "exZh": "The town carried out a mosquito control operation in the wetlands."
+  },
+  "V05-07": {
+   "zh": "of little use",
+   "exZh": "Without residents’ involvement, these treatments are of little use."
+  },
+  "V05-08": {
+   "zh": "a scapegoat",
+   "exZh": "In times of drought, farmers often become the scapegoat."
+  },
+  "V05-09": {
+   "zh": "to point the finger at, to go after (someone)",
+   "exZh": "On social media, some people went after owners of private pools."
+  },
+  "V05-10": {
+   "zh": "groundwater, aquifers",
+   "exZh": "After a dry winter, groundwater levels are very low."
+  },
+  "V05-11": {
+   "zh": "sealed (impermeable) ground",
+   "exZh": "On sealed ground, rainwater can’t soak into the soil."
+  },
+  "V05-12": {
+   "zh": "to run off (of water)",
+   "exZh": "In a storm, rainwater runs off concrete instead of soaking into the soil."
+  },
+  "V05-13": {
+   "zh": "to be supplied by water tanker",
+   "exZh": "This summer, three villages had to be supplied by water tanker."
+  },
+  "V05-14": {
+   "zh": "until further notice",
+   "exZh": "Access to the lake is prohibited until further notice."
+  },
+  "V05-15": {
+   "zh": "health safety threshold",
+   "exZh": "The concentration of bacteria exceeded the health safety threshold."
+  },
+  "V05-16": {
+   "zh": "a proliferation, a boom (of organisms)",
+   "exZh": "The heat led to a proliferation of algae in the lake."
+  },
+  "V05-17": {
+   "zh": "to be strongly advised against",
+   "exZh": "Eating fish caught in the lake is strongly advised against."
+  },
+  "V05-18": {
+   "zh": "pollinators",
+   "exZh": "Without pollinators, many fruit trees would no longer bear fruit."
+  },
+  "V05-19": {
+   "zh": "easy prey",
+   "exZh": "Moths exhausted by the lights become easy prey for bats."
+  },
+  "V05-20": {
+   "zh": "until exhausted",
+   "exZh": "Drawn to the light, insects circle until they are exhausted."
+  },
+  "V05-21": {
+   "zh": "to reverse the trend",
+   "exZh": "By replanting hedges, farmers can reverse the trend."
+  },
+  "V05-22": {
+   "zh": "managed retreat (moving buildings inland)",
+   "exZh": "Faced with coastal erosion, the town chose managed retreat."
+  },
+  "V05-23": {
+   "zh": "inland",
+   "exZh": "The campsite was moved inland."
+  },
+  "V05-24": {
+   "zh": "a pollution episode",
+   "exZh": "The ozone pollution episode is expected to last until Friday."
+  },
+  "V05-25": {
+   "zh": "switching off (street lights) at night",
+   "exZh": "Switching off street lighting at night cuts the electricity bill."
+  }
+ },
  "title": "Explaining causes",
  "phase": "Upgrading structures and precise expression"
 }

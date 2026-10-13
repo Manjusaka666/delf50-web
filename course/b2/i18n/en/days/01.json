@@ -1,4 +1,235 @@
 {
+ "canDo": "Can tell the story of a move or study abroad that changed them, in layers, using the passé composé, imparfait and plus-que-parfait, making clear the background, the events and what had happened before.",
+ "review": "Review the B1 use of past tenses (how the passé composé and imparfait divide the work), then add the plus-que-parfait to express “what had already happened before something else in the past”.",
+ "input": "Read: a report on young people going abroad and coming back, an opinion column defending “those who stayed”, and a reader’s letter; listen: a profile interview, an interview about “leaving Paris” and a vox pop. Strategy: mark the three past tenses as you read and tell apart “event – background – what came earlier”.",
+ "output": "Write: tell the story of a move or study abroad that changed you, in a forum post (180+ words); speak: a 3-minute monologue on the “gap year”, then a debate on “should exchanges abroad be compulsory?”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; at least 3 correct uses of the plus-que-parfait in the essay; a 3-minute monologue without breaking off, organising the narrative with auparavant, ce jour-là, alors que.",
+ "challenge": "Today’s challenge: find a profile story on RFI’s « Journal en français facile » or TV5MONDE about migration, study abroad or a career change. Retell the person’s experience in 1 sentence each with the passé composé, imparfait and plus-que-parfait, then record 1 minute of audio on whether you would make the same choice.",
+ "items": {
+  "reading": {
+   "R01-1": {
+    "questions": [
+     {
+      "why": "The whole article follows Clara’s experience, covering both how going abroad changed her (« m’ont appris à douter de mes certitudes ») and, above all, how hard coming back was (« Le retour, pourtant, se révèle souvent plus délicat que le départ »). B: the text never encourages “settling for good”; C is only the background to Clara’s departure, not the main idea."
+     },
+     {
+      "why": "The text says: « Je m’étais dit que je partirais six mois, le temps de réfléchir ». A contradicts « elle n’avait jamais vécu plus de trois semaines loin de sa famille »; C is wrong because the “three years” was the outcome (« Elle est finalement restée trois ans »), not a contract signed in advance."
+     },
+     {
+      "why": "The text contrasts the past, « on partait surtout pour apprendre une langue ou pour enrichir son CV », with today, « le besoin de se tester » — more personal motives. A describes exactly the situation twenty years ago; B: the text doesn’t compare lengths of stay."
+     },
+     {
+      "why": "gravir les échelons means climbing the career ladder rung by rung, contrasted here with Clara’s job-hunting setbacks. Neither B nor C matches the “climbing the ladder” metaphor."
+     },
+     {
+      "why": "The text says: « son entourage, lui, s’attend à retrouver la même personne… ce décalage est rarement anticipé ». A and C aren’t mentioned at all — they are invented."
+     },
+     {
+      "why": "The third paragraph describes Clara’s repeated failures (« elle a enchaîné les candidatures sans succès »), and the last the turning point (« le déclic est venu d’une rencontre »). B overgeneralises: only one project manager understood her; A: the text doesn’t say she was poorly prepared."
+     }
+    ]
+   },
+   "R01-2": {
+    "questions": [
+     {
+      "why": "The author states his position clearly: « Je voudrais ici prendre la défense de ceux qui sont restés ». A is wrong: the author is precisely someone who didn’t go abroad; C is wrong: « je ne prétends pas que partir soit inutile » — he isn’t against going abroad."
+     },
+     {
+      "why": "The text says: « parce que ma mère était malade et que l’entreprise familiale avait besoin de bras ». B isn’t mentioned; C doesn’t match the text, which says his classmates left as soon as they had the baccalauréat."
+     },
+     {
+      "why": "pitié means “pity”, and polie shows it was courteous on the surface and left unsaid, echoing « comme si j’avais raté un train » later. A is the opposite of pity; B contradicts polie (polite, reserved)."
+     },
+     {
+      "why": "The text says: « ériger la mobilité en modèle unique revient à mépriser ceux qui n’ont ni les moyens ni la possibilité de s’en aller », backed by a survey: nearly half of rural young people feel “left behind”. A isn’t in the text; C contradicts the survey."
+     },
+     {
+      "why": "« L’aventure n’est pas une affaire de kilomètres » denies that distance matters, and « un choix difficile… où l’on s’y tient » stresses the courage to stick to a choice. A and B both contradict the denial in the first sentence."
+     }
+    ]
+   },
+   "R01-3": {
+    "questions": [
+     {
+      "why": "She is responding to the paper’s feature (« Votre dossier… m’a rappelé ma propre expérience ») and points out that it left out one side: learning to be alone. B is wrong: she has already been; C: the letter doesn’t complain about working conditions."
+     },
+     {
+      "why": "The plus-que-parfait describes what happened before she left: « J’avais économisé pendant un an et j’avais tout organisé ». A says the opposite; C has no basis — she was clearly not used to the extreme cold."
+     },
+     {
+      "why": "faillir + infinitive = to nearly do something (but not actually do it). A is wrong in saying she “had already bought” it; B means wanting to buy but being unable to, which has nothing to do with faillir."
+     },
+     {
+      "why": "The text says: « m’a convaincue de rester… Donne-toi jusqu’au printemps. », i.e. persuaded her to hold on a little longer. B: her job had been arranged before she left; C isn’t in the text."
+     },
+     {
+      "why": "The text says: « votre dossier ne parlait que de réussites professionnelles ». A isn’t mentioned; C has no basis either."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L01-1": {
+    "questions": [
+     {
+      "why": "The presenter opens by introducing him: an engineer in Grenoble seven years ago, now running a solar cooperative in Senegal; the programme title « Trajectoires » also shows it is about life paths. A and C are only details from the interview."
+     },
+     {
+      "why": "The recording says: « J’avais travaillé huit ans… et j’étais épuisé. Un ami… m’a proposé de venir l’aider pendant trois mois ». A isn’t mentioned; B: only later did he regret not learning Wolof sooner."
+     },
+     {
+      "why": "The recording says: « les élèves révisaient à la lampe torche. C’est là que j’ai compris que mon métier pouvait avoir un sens très concret ». Neither B nor C appears in the recording."
+     },
+     {
+      "why": "The recording says: « Il a fallu que j’apprenne à écouter, à accepter que les décisions se prennent collectivement ». A is exactly the initial idea he admits was “completely wrong”; C was his former working environment."
+     },
+     {
+      "why": "The recording says: « elle est venue me voir, elle a rencontré l’équipe, et à partir de là, elle a cessé de poser la question ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "The recording says: « Je regrette de ne pas avoir appris le wolof plus tôt ». He doesn’t regret A or B; on the contrary, he encourages listeners not to wait until they are 100% sure before acting."
+     }
+    ]
+   },
+   "L01-2": {
+    "questions": [
+     {
+      "why": "The introduction says: « a quitté Paris il y a deux ans pour s’installer à Aurillac », and later we learn she is a graphic designer. B and C are details or topics not covered."
+     },
+     {
+      "why": "The recording says: « je me suis rendu compte que je n’étais pas sortie de chez moi depuis quatre jours. Ça m’a fait peur. ». A is wrong: she kept her Paris clients; C: the recording doesn’t mention her grandmother dying."
+     },
+     {
+      "why": "The recording says: « J’y allais tous les étés quand j’étais petite, donc ce n’était pas complètement l’inconnu ». A isn’t mentioned; B: local businesses only contacted her later."
+     },
+     {
+      "why": "The recording says: « Le premier hiver a été long. Je ne connaissais personne de mon âge, et sans voiture, on est vite isolé ». B contradicts « ce n’était pas idyllique »; C has no basis."
+     },
+     {
+      "why": "The recording says: « j’avais un lien avec la région et un métier que je pouvais exercer n’importe où. Sans ça… ». A is the exact opposite of « il ne faut pas partir pour fuir quelque chose »; C: she only took her driving test after arriving."
+     }
+    ]
+   },
+   "L01-3": {
+    "questions": [
+     {
+      "why": "The recording says: « de nous raconter un voyage qui les a changés ». Neither A nor C is the journalist’s question."
+     },
+     {
+      "why": "The recording says: « J’ai appris à me débrouiller, et surtout à demander de l’aide ». C contradicts « J’étais partie seule »; B isn’t mentioned."
+     },
+     {
+      "why": "The recording says: « j’ai déménagé de Genève à Zurich pour mon travail, et j’ai dû apprendre l’allemand ». A contradicts « ce n’est pas un voyage lointain »; B: Geneva is where he started from."
+     },
+     {
+      "why": "After missing the flight (the mishap), two days of car-sharing turned out to be « c’était le meilleur moment des vacances ». Neither A nor C is mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V01-01": {
+   "zh": "to climb the (career) ladder",
+   "exZh": "In ten years, she climbed the ladder at her company all the way into management."
+  },
+  "V01-02": {
+   "zh": "to send out one job application after another",
+   "exZh": "For six months, he sent out one application after another without getting a single reply."
+  },
+  "V01-03": {
+   "zh": "hands-on experience, field experience",
+   "exZh": "Recruiters value hands-on experience gained abroad."
+  },
+  "V01-04": {
+   "zh": "reverse culture shock (on coming home)",
+   "exZh": "After coming back from Shanghai, she went through real reverse culture shock."
+  },
+  "V01-05": {
+   "zh": "to build character",
+   "exZh": "In his view, setbacks build character more than success does."
+  },
+  "V01-06": {
+   "zh": "to be out of step with …",
+   "exZh": "After three years in Asia, he felt out of step with his old friends."
+  },
+  "V01-07": {
+   "zh": "the trigger, the turning point",
+   "exZh": "The turning point came from a conversation with a former colleague."
+  },
+  "V01-08": {
+   "zh": "with hindsight, looking back",
+   "exZh": "Looking back, I think leaving was the best decision of my life."
+  },
+  "V01-09": {
+   "zh": "on the other side of the world",
+   "exZh": "She went to the other side of the world, to teach in New Caledonia."
+  },
+  "V01-10": {
+   "zh": "to be full of, to abound in",
+   "exZh": "The school’s brochures are full of testimonials from alumni who went abroad."
+  },
+  "V01-11": {
+   "zh": "(just) holding the baccalauréat",
+   "exZh": "As soon as she had her baccalauréat, she left her home town for Brussels."
+  },
+  "V01-12": {
+   "zh": "don’t get me wrong",
+   "exZh": "Don’t get me wrong: I’m not blaming those who left."
+  },
+  "V01-13": {
+   "zh": "to set … up as a model",
+   "exZh": "It is dangerous to set up a single life path as the model."
+  },
+  "V01-14": {
+   "zh": "to defend, to stand up for",
+   "exZh": "In the column, the author stands up for those who never left."
+  },
+  "V01-15": {
+   "zh": "to give oneself until …",
+   "exZh": "Before deciding whether to go home, she gave herself until the spring."
+  },
+  "V01-16": {
+   "zh": "to set foot in (a place)",
+   "exZh": "Before this placement, he had never set foot on a farm."
+  },
+  "V01-17": {
+   "zh": "for good, permanently",
+   "exZh": "After ten years in Dakar, he came back to France for good."
+  },
+  "V01-18": {
+   "zh": "to work flat out, non-stop",
+   "exZh": "For months, she worked flat out without a break."
+  },
+  "V01-19": {
+   "zh": "to step out of one’s comfort zone",
+   "exZh": "This placement in Abidjan forced her out of her comfort zone."
+  },
+  "V01-20": {
+   "zh": "to need (extra) hands",
+   "exZh": "The family business needed hands at the time, so I stayed."
+  },
+  "V01-21": {
+   "zh": "a gap year",
+   "exZh": "After her degree, she took a gap year to volunteer in Benin."
+  },
+  "V01-22": {
+   "zh": "a working holiday visa",
+   "exZh": "He spent a year in Australia on a working holiday visa."
+  },
+  "V01-23": {
+   "zh": "to get back into the rhythm (of study/work)",
+   "exZh": "After a year of travelling, he found it hard to get back into the rhythm of classes."
+  },
+  "V01-24": {
+   "zh": "to mature, to grow up",
+   "exZh": "A year abroad often helps people mature."
+  },
+  "V01-25": {
+   "zh": "to be homesick",
+   "exZh": "In the first few weeks she was very homesick and called her mother every evening."
+  }
+ },
  "title": "Layers of time in narrative",
  "phase": "Upgrading structures and precise expression"
 }

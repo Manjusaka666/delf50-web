@@ -1,4 +1,226 @@
 {
+ "canDo": "Can talk about work and well-being, using the subjunctive accurately to express wishes, worries, regrets and doubts (vouloir que, avoir peur que, regretter que, douter que), and switch to an infinitive when the subject is the same.",
+ "review": "Following on from day 1’s past narratives: tell a work experience in the past, then use the subjunctive to express feelings then and now; review the il faut que + subjunctive learnt at B1.",
+ "input": "Read: a report on companies’ “well-being measures”, an opinion piece against “compulsory happiness” and a forum post from someone with burnout asking for help; listen: an interview with an occupational doctor, a segment on hot-desking and a local news item. Strategy: circle every verb and phrase that triggers the subjunctive and decide whether it expresses a wish, a feeling or a doubt.",
+ "output": "Write: a formal letter to management as an employee representative, setting out colleagues’ feelings and demands (180+ words); speak: a 3-minute monologue on the “right to disconnect”, then a debate on “who is responsible for happiness at work?”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; at least 5 correct subjunctives in the formal letter, including at least 1 switch to the infinitive with the same subject; a 3-minute monologue using je souhaite que / je crains que / je doute que to shade your position.",
+ "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about working conditions, remote work or burnout, and write 1 sentence of your opinion each with je souhaite que, je regrette que and je doute que; then record a 1-minute voice message telling a friend what your ideal working environment would be like.",
+ "items": {
+  "reading": {
+   "R02-1": {
+    "questions": [
+     {
+      "why": "The first paragraph makes it clear: employees want « que leur charge de travail soit mieux répartie et que leurs efforts soient reconnus »; the Altéa example and the psychologist’s distinction between confort and bien-être later support this. A: the text doesn’t discuss cost; C contradicts « la salle est restée vide »."
+     },
+     {
+      "why": "The text says: « près de six sur dix doutent que ces mesures aient un effet réel », i.e. most doubt they work. A confuses this with the workshops Altéa organised later; B contradicts the survey’s finding."
+     },
+     {
+      "why": "The HR director explains: « s’ils avaient peur que leurs dossiers prennent du retard ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "The text says: « beaucoup regrettaient que les réunions soient trop nombreuses et que les messages arrivent à toute heure ». A contradicts what came before; C is the opposite — messages at weekends were exactly what they complained about."
+     },
+     {
+      "why": "The text says: « Le bien-être, c’est avoir le sentiment que son travail a du sens et qu’on dispose des moyens de le faire correctement ». A and B are views not found in the text."
+     },
+     {
+      "why": "« Nous sommes heureux que les choses s’améliorent » (satisfied), « mais rien n’est jamais acquis » (cautious), and the journalist writes reste pourtant prudente. B ignores the caution; C ignores the satisfaction."
+     }
+    ]
+   },
+   "R02-2": {
+    "questions": [
+     {
+      "why": "The author fears « cette injonction au bonheur ne produise l’effet inverse » and ends by calling for employees to have « le droit d’être de mauvaise humeur ». A: the author only grants that the intention is louable, but is critical; B is the opposite of the whole text."
+     },
+     {
+      "why": "The text says: « c’est lui demander de jouer un rôle en plus de faire son métier ». B isn’t mentioned; C is the opposite — the author says employees become « doublement coupables »."
+     },
+     {
+      "why": "The text says: « Je regrette aussi que l’on fasse peser sur chacun la responsabilité de son propre épuisement », and points out that companies rarely consider « réorganisation du service ». Neither A nor C is the author’s argument."
+     },
+     {
+      "why": "« Je ne demande pas que les entreprises renoncent à prendre soin de leurs équipes. Je souhaite simplement qu’elles le fassent avec plus d’humilité » softens the criticism and states a concrete expectation. B: the author hasn’t changed position; C contradicts « Je ne demande pas que… renoncent »."
+     },
+     {
+      "why": "This is a concrete, vivid way of saying that employees should be allowed negative feelings. A twists it into literal working hours; B is the opposite of the author’s position."
+     }
+    ]
+   },
+   "R02-3": {
+    "questions": [
+     {
+      "why": "The closing questions « Est-ce que certains d’entre vous sont passés par là ? Comment avez-vous abordé la question… ? » show she is looking for experiences and advice. A: she wants to go back to work, not resign; C: on the contrary, she wants the doctor to be right (« j’ai envie qu’il ait raison »)."
+     },
+     {
+      "why": "The text says: « plus la date approche, plus j’appréhende » — the closer it gets, the more anxious she feels. A and B don’t fit the text."
+     },
+     {
+      "why": "The text says: « elle me propose déjà de reprendre deux nouveaux dossiers dès mon retour ». B contradicts « m’a écrit un message très gentil »; C isn’t in the text."
+     },
+     {
+      "why": "The text says: « de peur de passer pour quelqu’un de fragile ». A and C have no basis in the text."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L02-1": {
+    "questions": [
+     {
+      "why": "The presenter opens: « nous parlons de fatigue au travail », and the interview covers the signs of burnout and how to prevent it. Neither A nor C is discussed."
+     },
+     {
+      "why": "The recording says: « ce qui me frappe surtout, c’est que les gens viennent de plus en plus tard ». B: back pain is just one example; C isn’t said in the recording."
+     },
+     {
+      "why": "The recording says: « Il y a beaucoup de culpabilité. Les salariés ont peur qu’on les juge moins compétents ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "The recording says: « ce sentiment de ne plus arriver à décrocher, même le week-end… il vérifie ses mails en pleine nuit ». B and C aren’t mentioned."
+     },
+     {
+      "why": "The recording says: « je ne veux pas qu’on caricature : beaucoup de managers sont eux-mêmes débordés ». A contradicts this; C contradicts « Évidemment » (employers obviously bear responsibility)."
+     },
+     {
+      "why": "The recording says: « Il a fallu que la directrice reconnaisse elle-même qu’elle était parfois dépassée pour que la parole se libère ». A and B aren’t in the recording."
+     }
+    ]
+   },
+   "L02-2": {
+    "questions": [
+     {
+      "why": "The recording says: « ces grands espaces ouverts où personne n’a plus de place attitrée ». A and B aren’t covered."
+     },
+     {
+      "why": "The recording says: « Les entreprises veulent que les équipes se croisent davantage… cela permet aussi d’économiser des mètres carrés ». B is the opposite — employees weren’t consulted; C isn’t mentioned."
+     },
+     {
+      "why": "Karim regrets having nowhere to put his children’s photos, and the presenter sums up: « ces petits repères comptent énormément dans le sentiment d’appartenance ». C is what Martine says; A isn’t mentioned."
+     },
+     {
+      "why": "The recording says: « Je ne pense pas que ce soit la solution. En revanche, il est essentiel que les salariés soient consultés… et qu’on leur laisse des espaces calmes ». A doesn’t fit her rejection of going back to individual offices; B isn’t mentioned."
+     }
+    ]
+   },
+   "L02-3": {
+    "questions": [
+     {
+      "why": "The recording says: « va tester la semaine de quatre jours pour ses quatre-vingts agents ». A contradicts « les horaires d’ouverture au public ne changeront pas »; C mixes up the numbers."
+     },
+     {
+      "why": "The recording says: « Le maire souhaite que l’expérience dure au moins un an ». B is wrong: « le temps de travail total restera le même »; C isn’t mentioned."
+     },
+     {
+      "why": "The recording says: « doutent qu’elle soit réalisable sans embauches supplémentaires ». A contradicts « saluent l’initiative »; B is something the town hall denied, not the union’s reservation."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V02-01": {
+   "zh": "can’t be imposed by decree",
+   "exZh": "Trust between colleagues can’t be imposed by decree; it is built over time."
+  },
+  "V02-02": {
+   "zh": "for fear of …-ing",
+   "exZh": "He said nothing in the meeting for fear of looking incompetent."
+  },
+  "V02-03": {
+   "zh": "to spot the signs of …",
+   "exZh": "Managers must learn to spot signs of fatigue in their staff."
+  },
+  "V02-04": {
+   "zh": "to roll out one initiative after another",
+   "exZh": "For ten years, companies have rolled out one well-being initiative after another."
+  },
+  "V02-05": {
+   "zh": "nothing is ever won for good",
+   "exZh": "The results are good, but nothing is ever won for good."
+  },
+  "V02-06": {
+   "zh": "the injunction to be happy",
+   "exZh": "Some employees struggle with the company’s injunction to be happy."
+  },
+  "V02-07": {
+   "zh": "to go through a hard time",
+   "exZh": "When someone is going through a hard time, they don’t want to put on a smile in meetings."
+  },
+  "V02-08": {
+   "zh": "to place (a burden) on …",
+   "exZh": "Responsibility for stress can’t be placed entirely on employees."
+  },
+  "V02-09": {
+   "zh": "to very much doubt that …",
+   "exZh": "I very much doubt that this app is enough to reduce stress."
+  },
+  "V02-10": {
+   "zh": "to dread (something coming)",
+   "exZh": "The closer the date of going back to work, the more she dreads it."
+  },
+  "V02-11": {
+   "zh": "therapeutic part-time work (after illness)",
+   "exZh": "After his sick leave, he went back on a therapeutic part-time basis."
+  },
+  "V02-12": {
+   "zh": "to crack, to break down",
+   "exZh": "After months of pressure, she broke down in a meeting."
+  },
+  "V02-13": {
+   "zh": "to have been through the same thing",
+   "exZh": "I understand you; I went through the same thing two years ago."
+  },
+  "V02-14": {
+   "zh": "in the middle of the night",
+   "exZh": "He sometimes checks his emails in the middle of the night."
+  },
+  "V02-15": {
+   "zh": "people start to speak up",
+   "exZh": "It took several meetings before people started to speak up."
+  },
+  "V02-16": {
+   "zh": "to be at the end of one’s tether",
+   "exZh": "Don’t wait until you’re at the end of your tether to ask for help."
+  },
+  "V02-17": {
+   "zh": "to hold on, to keep going",
+   "exZh": "For months she kept going without telling anyone."
+  },
+  "V02-18": {
+   "zh": "an assigned desk",
+   "exZh": "In the new offices, nobody has an assigned desk any more."
+  },
+  "V02-19": {
+   "zh": "to be honest",
+   "exZh": "To be honest, this reorganisation was also about saving money."
+  },
+  "V02-20": {
+   "zh": "a sense of belonging",
+   "exZh": "These small rituals strengthen the sense of belonging to the team."
+  },
+  "V02-21": {
+   "zh": "to take stock, to assess the results",
+   "exZh": "The town hall will take stock of the experiment in September."
+  },
+  "V02-22": {
+   "zh": "the year-end closing of accounts",
+   "exZh": "During the year-end closing, the accounts department is swamped."
+  },
+  "V02-23": {
+   "zh": "at any hour",
+   "exZh": "Work emails arrive at any hour, even on Sundays."
+  },
+  "V02-24": {
+   "zh": "to be obliged to …",
+   "exZh": "When absent, employees are obliged to inform their employer."
+  },
+  "V02-25": {
+   "zh": "to be glad that …",
+   "exZh": "We are glad that management has agreed to listen to us."
+  }
+ },
  "title": "Wishes, feelings and doubt",
  "phase": "Upgrading structures and precise expression"
 }
