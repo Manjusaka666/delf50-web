@@ -1,1 +1,250 @@
-{}
+{
+ "canDo": "Can complete real multi-step tasks while controlling past participle agreement, double pronouns and the main B1 logical relations in combined output.",
+ "review": "Consolidate D19–D29; pin down participle agreement with être/a preceding COD and the order of double pronouns.",
+ "input": "3 sets each of combined listening and reading material.",
+ "output": "Write a 150–160-word multi-step task; a 4-minute spoken interaction.",
+ "checkpoint": "Grammar errors in the combined task sorted into tense/agreement/pronoun/logic; a retest of high-frequency structures reaches a steady level.",
+ "challenge": "Today’s challenge: take 15 minutes for a small real task: write a message to a friend about 3 things you did yesterday (watch past participle agreement, e.g. les photos que j’ai prises), use 1 double pronoun (je te les envoie), then suggest a plan for the weekend and ask them to reply.",
+ "items": {
+  "reading": {
+   "R30-1": {
+    "questions": [
+     {
+      "why": "68% claim they changed their shopping habits, but the flow of money shows most people still spend it in shops they already went to."
+     },
+     null,
+     null,
+     {
+      "why": "Some shopkeepers see their benefit as indirect and hard to measure, so they oppose paying a contribution."
+     }
+    ]
+   },
+   "R30-2": {
+    "questions": [
+     null,
+     {
+      "why": "61% is the share of vehicles with visual announcements, not the share of journeys that are possible."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L30-1": {
+    "questions": [
+     null,
+     {
+      "why": "1 200 built − 800 withdrawn = 400."
+     }
+    ]
+   },
+   "L30-2": {
+    "questions": [
+     {
+      "why": "Both attempts are described explicitly as « Effet nul »."
+     }
+    ]
+   },
+   "L30-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "« j'avais consulté huit responsables et zéro utilisateur », so now he always spends half a day on site."
+     }
+    ]
+   },
+   "L30-4": {
+    "questions": [
+     {
+      "why": "The other two only quoted over the phone without seeing the flat, so they didn’t allow for a furniture lift."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V30-01": {
+   "zh": "I’ll tell you frankly",
+   "exZh": "Your quote is the most expensive, I’ll tell you frankly."
+  },
+  "V30-02": {
+   "zh": "a (temporary) parking permit",
+   "exZh": "The furniture lift needs a parking permit, to be requested fifteen days before."
+  },
+  "V30-03": {
+   "zh": "in that case",
+   "exZh": "The town hall refuses the date? In that case, we move everything back a week."
+  },
+  "V30-04": {
+   "zh": "to sum up",
+   "exZh": "To sum up: the stop moves to Rue Gambetta until the end of the works."
+  },
+  "V30-05": {
+   "zh": "to start by …-ing",
+   "exZh": "Let’s start by checking access to the flat; then we’ll set the date."
+  },
+  "V30-06": {
+   "zh": "shall we do that?",
+   "exZh": "The 18th, with the 25th as a fallback: shall we do that?"
+  },
+  "V30-07": {
+   "zh": "to ask for a quote",
+   "exZh": "Before moving, I asked for three quotes."
+  },
+  "V30-08": {
+   "zh": "I expected as much",
+   "exZh": "My quote is the most expensive? I expected as much."
+  },
+  "V30-09": {
+   "zh": "to move (reschedule) a date / an appointment",
+   "exZh": "If the town hall says no, the moving date will have to be changed."
+  },
+  "V30-10": {
+   "zh": "D-day (the day itself)",
+   "exZh": "They’ll only tell you about the furniture lift on the day itself."
+  },
+  "V30-11": {
+   "zh": "it’s included",
+   "exZh": "Applying for the permit? Yes, it’s included in the price."
+  },
+  "V30-12": {
+   "zh": "to pay a supplement",
+   "exZh": "With the furniture lift, you’ll have to pay a supplement of 320 euros."
+  },
+  "V30-13": {
+   "zh": "urgently, in a rush",
+   "exZh": "Better to plan a fallback date than to look for one in a rush."
+  },
+  "V30-14": {
+   "zh": "that’s where it’s decided",
+   "exZh": "The others haven’t seen the flat: that’s where it’s decided."
+  },
+  "V30-15": {
+   "zh": "to reach a goal",
+   "exZh": "The association hasn’t yet reached its main goal."
+  },
+  "V30-16": {
+   "zh": "to conduct a survey",
+   "exZh": "The association conducted a survey among its users."
+  },
+  "V30-17": {
+   "zh": "frankly, without beating about the bush",
+   "exZh": "The association frankly admits its limits."
+  },
+  "V30-18": {
+   "zh": "to start …-ing",
+   "exZh": "The shopkeepers have started ordering together."
+  },
+  "V30-19": {
+   "zh": "to rest on, to depend on …",
+   "exZh": "It depends on two employees paid for by grants."
+  },
+  "V30-20": {
+   "zh": "to argue for …",
+   "exZh": "The founders argue for a contribution from member shops."
+  },
+  "V30-21": {
+   "zh": "some of them",
+   "exZh": "Some of them refuse to pay a contribution."
+  },
+  "V30-22": {
+   "zh": "to apply to (an authority)",
+   "exZh": "The shopkeepers applied to the town hall about parking."
+  },
+  "V30-23": {
+   "zh": "in real time",
+   "exZh": "Passengers weren’t informed in real time about lift breakdowns."
+  },
+  "V30-24": {
+   "zh": "in x cases out of y",
+   "exZh": "In two cases out of three, no information was displayed."
+  },
+  "V30-25": {
+   "zh": "to fall to …",
+   "exZh": "Calculated per journey, the rate falls to 46%."
+  },
+  "V30-26": {
+   "zh": "to give a misleading picture",
+   "exZh": "This figure gives a misleading picture of what passengers actually experience."
+  },
+  "V30-27": {
+   "zh": "in the light of, with regard to …",
+   "exZh": "The figure is accurate with regard to the regulatory definition."
+  },
+  "V30-28": {
+   "zh": "to have something in common",
+   "exZh": "The towns that succeeded have one thing in common."
+  },
+  "V30-29": {
+   "zh": "to deserve a closer look",
+   "exZh": "The question of opening hours deserves a closer look."
+  },
+  "V30-30": {
+   "zh": "it isn’t (just) a matter of …",
+   "exZh": "It isn’t just a matter of money, even if money counts."
+  },
+  "V30-31": {
+   "zh": "once …",
+   "exZh": "Once the young person has been coming for two months, they agree to fill in a form."
+  },
+  "V30-32": {
+   "zh": "a medical certificate",
+   "exZh": "To join the club, you must provide a medical certificate."
+  },
+  "V30-33": {
+   "zh": "an administrative barrier",
+   "exZh": "For many young people, joining the club is an administrative barrier."
+  },
+  "V30-34": {
+   "zh": "in any case, at any rate",
+   "exZh": "It isn’t thanks to the leaflets, at any rate."
+  },
+  "V30-35": {
+   "zh": "that’s something",
+   "exZh": "It stops the situation getting worse, and that’s something."
+  },
+  "V30-36": {
+   "zh": "to bring prices down",
+   "exZh": "Regulation alone isn’t enough to bring prices down."
+  },
+  "V30-37": {
+   "zh": "supply and demand",
+   "exZh": "Rents depend on supply and demand."
+  },
+  "V30-38": {
+   "zh": "food waste",
+   "exZh": "The canteen has cut food waste by two thirds."
+  },
+  "V30-39": {
+   "zh": "to end up in the bin",
+   "exZh": "Forty kilos of food ended up in the bin at every service."
+  },
+  "V30-40": {
+   "zh": "to be the problem, to be at fault",
+   "exZh": "The chef thought the recipes were at fault."
+  },
+  "V30-41": {
+   "zh": "to lead a project",
+   "exZh": "I led a roll-out project in eight branches."
+  },
+  "V30-42": {
+   "zh": "in parallel",
+   "exZh": "The branch kept using the old system in parallel."
+  },
+  "V30-43": {
+   "zh": "in the field, on the ground",
+   "exZh": "I spend half a day in the field before approving a project."
+  },
+  "V30-44": {
+   "zh": "resistance to change",
+   "exZh": "At first I thought it was resistance to change."
+  },
+  "V30-45": {
+   "zh": "the rental market",
+   "exZh": "In five years, eight hundred homes have left the traditional rental market."
+  }
+ },
+ "title": "Transfer checkpoint",
+ "phase": "Transfer to real tasks"
+}

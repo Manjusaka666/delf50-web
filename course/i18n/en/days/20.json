@@ -1,1 +1,264 @@
-{}
+{
+ "canDo": "Can explain a problem, make a request, respond to a refusal, and use double pronouns to avoid repetition in common service situations.",
+ "review": "Review conditionnel, COD/COI and questions; add the order of double pronouns such as le/la/les + lui/leur.",
+ "input": "Listening: reception/customer-service conversations; reading: terms of service and short emails.",
+ "output": "Write a complaint message; a 3-minute hotel role-play.",
+ "checkpoint": "The exchange goes at least “problem → request → response → alternative → close”.",
+ "challenge": "Today’s challenge: imagine the hotel room you booked doesn’t match its description; write a polite 5-sentence request (Pourriez-vous… / J’aimerais…) with at least 2 double pronouns (je vous le renvoie, pouvez-vous me la changer); then practise a phone version aloud once and prepare a reply to a refusal.",
+ "items": {
+  "reading": {
+   "R20-1": {
+    "questions": [
+     {
+      "why": "She accepts that the hotel was full on the first night; the problem is that rooms were free the next day and no solution was offered."
+     },
+     {
+      "why": "« Je ne demande pas l'annulation du séjour »; she only asks for the difference of 96 euros."
+     },
+     {
+      "why": "« je serais disposée à examiner un avoir d'un montant équivalent » — the conditional expresses a concession."
+     }
+    ]
+   },
+   "R20-2": {
+    "questions": [
+     {
+      "why": "The only thing allowed is a deduction for use beyond what a trial covers."
+     }
+    ]
+   },
+   "R20-3": {
+    "questions": [
+     {
+      "why": "Humidity is normal in the other rooms and the residents air them daily, which rules out poor ventilation."
+     },
+     null,
+     {
+      "why": "« comme nous l'avons fait pour la chaudière l'an dernier » — while keeping the conciliation committee as an option."
+     }
+    ]
+   },
+   "R20-4": {
+    "questions": [
+     null,
+     {
+      "why": "The other side has to answer yes, no or with a counter-offer — « la contre-proposition, c'est déjà une négociation »."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L20-1": {
+    "questions": [
+     {
+      "why": "His reason is work, not medical, so « la seconde option ne s'applique pas »."
+     },
+     {
+      "why": "She looks up a 6 h 40 ticket for 62 euros herself, cheaper than the same-day fare of 94 euros."
+     }
+    ]
+   },
+   "L20-2": {
+    "questions": [
+     {
+      "why": "« C'est le poste où je ne peux pas bouger » — three days, two people."
+     }
+    ]
+   },
+   "L20-4": {
+    "questions": [
+     {
+      "why": "Client meetings are on Monday and Thursday, so there’s no fixed meeting on Wednesday."
+     },
+     {
+      "why": "Sophie proposes a swap: she takes Wednesday and he takes her Friday morning; the two of them have already agreed."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V20-01": {
+   "zh": "This solution doesn’t quite suit me.",
+   "exZh": "Thank you, but this solution doesn’t quite suit me."
+  },
+  "V20-02": {
+   "zh": "I understand your constraints.",
+   "exZh": "I understand your constraints, but I can’t come during my working hours."
+  },
+  "V20-03": {
+   "zh": "I suggest (we) …",
+   "exZh": "I suggest moving the appointment to 18:00."
+  },
+  "V20-04": {
+   "zh": "to agree on …",
+   "exZh": "Can we agree on a date?"
+  },
+  "V20-05": {
+   "zh": "Would it be possible to …? (polite)",
+   "exZh": "Would it be possible to change rooms tonight?"
+  },
+  "V20-06": {
+   "zh": "I’m sorry, but … (refusal)",
+   "exZh": "I’m sorry, but your fare can’t be exchanged."
+  },
+  "V20-07": {
+   "zh": "Would you be so kind as to …? (formal)",
+   "exZh": "Would you be so kind as to confirm the booking in writing?"
+  },
+  "V20-08": {
+   "zh": "I would like to point out that …",
+   "exZh": "I would like to point out that the room doesn’t match my booking."
+  },
+  "V20-09": {
+   "zh": "there’s a misunderstanding",
+   "exZh": "I think there’s a misunderstanding: I’d asked for a room overlooking the courtyard."
+  },
+  "V20-10": {
+   "zh": "in return, as compensation",
+   "exZh": "I accept this room, but in return I’m asking for a discount."
+  },
+  "V20-11": {
+   "zh": "that’s debatable",
+   "exZh": "For a home you plan to sell in ten years, that’s debatable."
+  },
+  "V20-12": {
+   "zh": "I am writing to you again about …",
+   "exZh": "I am writing to you again about the damp in the bedroom."
+  },
+  "V20-13": {
+   "zh": "I look forward to your reply (letter closing)",
+   "exZh": "I look forward to your reply. Yours faithfully."
+  },
+  "V20-14": {
+   "zh": "to be willing to …",
+   "exZh": "I would be willing to consider a credit note for the same amount."
+  },
+  "V20-15": {
+   "zh": "to refund something to someone",
+   "exZh": "The difference in price? Could you refund it to me?"
+  },
+  "V20-16": {
+   "zh": "to report a problem to someone",
+   "exZh": "I reported the problem to reception that same evening."
+  },
+  "V20-17": {
+   "zh": "to overlook, to look out onto …",
+   "exZh": "I was given a room overlooking the boulevard."
+  },
+  "V20-18": {
+   "zh": "a room with a view of …",
+   "exZh": "I had booked a double room overlooking the courtyard."
+  },
+  "V20-19": {
+   "zh": "to stay at a hotel",
+   "exZh": "I stayed at your hotel from 3 to 6 April."
+  },
+  "V20-20": {
+   "zh": "to have a booking in the name of …",
+   "exZh": "Good evening, I have a booking in the name of Meunier."
+  },
+  "V20-21": {
+   "zh": "to check out (vacate the room)",
+   "exZh": "You must check out before eleven."
+  },
+  "V20-22": {
+   "zh": "to accept a credit note",
+   "exZh": "If a refund is impossible, I would accept a credit note."
+  },
+  "V20-23": {
+   "zh": "a goodwill gesture",
+   "exZh": "“I would like a goodwill gesture” commits them to nothing."
+  },
+  "V20-24": {
+   "zh": "to get what one asked for, to win one’s case",
+   "exZh": "You can often get what you want without a confrontation."
+  },
+  "V20-25": {
+   "zh": "to make a counter-offer",
+   "exZh": "The seller can accept, refuse or make a counter-offer."
+  },
+  "V20-26": {
+   "zh": "a fallback solution",
+   "exZh": "Always keep a fallback solution: an exchange or a repair."
+  },
+  "V20-27": {
+   "zh": "without having to …",
+   "exZh": "The buyer can withdraw without having to give a reason."
+  },
+  "V20-28": {
+   "zh": "the right of withdrawal (consumers)",
+   "exZh": "Buying in a shop gives no right of withdrawal."
+  },
+  "V20-29": {
+   "zh": "to get worse",
+   "exZh": "The situation has got worse since November."
+  },
+  "V20-30": {
+   "zh": "to set a date",
+   "exZh": "Could you set a date for the work before the end of the month?"
+  },
+  "V20-31": {
+   "zh": "until then, in the meantime",
+   "exZh": "I’m asking you for a written schedule before the end of the month; in the meantime, we’ll keep airing the rooms."
+  },
+  "V20-32": {
+   "zh": "to find oneself forced to …",
+   "exZh": "Without a reply, I would find myself forced to refer it to the committee."
+  },
+  "V20-33": {
+   "zh": "to move something to + date",
+   "exZh": "I have a ticket for the 18th and I’d like to move it to the 21st."
+  },
+  "V20-34": {
+   "zh": "a non-exchangeable ticket",
+   "exZh": "Your fare is a non-exchangeable ticket."
+  },
+  "V20-35": {
+   "zh": "either …, or …",
+   "exZh": "Either you buy a new ticket, or you ask for an exception."
+  },
+  "V20-36": {
+   "zh": "to be over one’s budget",
+   "exZh": "Your quote is over my budget."
+  },
+  "V20-37": {
+   "zh": "to redo a quote",
+   "exZh": "Could you redo the quote with this option?"
+  },
+  "V20-38": {
+   "zh": "to give someone a good price",
+   "exZh": "If I take both options, can you give me a better price?"
+  },
+  "V20-39": {
+   "zh": "I’ll send it to you",
+   "exZh": "The new quote? I’ll send it to you tomorrow."
+  },
+  "V20-40": {
+   "zh": "to deactivate an option (service)",
+   "exZh": "This option shouldn’t have been activated: I’ll deactivate it for you right away."
+  },
+  "V20-41": {
+   "zh": "to pass something on to someone",
+   "exZh": "I’ll pass your request on to my manager."
+  },
+  "V20-42": {
+   "zh": "to think of … (y penser)",
+   "exZh": "— And the Wednesday duty? — I’ve thought of that."
+  },
+  "V20-43": {
+   "zh": "in writing",
+   "exZh": "Send me your proposal in writing."
+  },
+  "V20-44": {
+   "zh": "breakfast included",
+   "exZh": "The room costs 95 euros, breakfast included."
+  },
+  "V20-45": {
+   "zh": "to settle the bill (hotel)",
+   "exZh": "I’d like to settle the bill before leaving."
+  }
+ },
+ "title": "Transfer: requests and negotiation",
+ "phase": "Transfer to real tasks"
+}

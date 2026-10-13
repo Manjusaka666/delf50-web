@@ -1,1 +1,212 @@
-{}
+{
+ "canDo": "Can locate conditions, limits and actions in 150–250-word practical texts, and understand the gérondif, dont/compound relative pronouns and relative time markers.",
+ "review": "Learn the gérondif, dont/compound relative pronouns and B1 markers such as la veille/le lendemain/d’ici; practise scanning strategies at the same time.",
+ "input": "Read 3–4 service notices/instructions.",
+ "output": "Write a 2-sentence summary in French; restate the key actions aloud.",
+ "checkpoint": "Objective questions + main idea done; can explain what at least 4 long sentences/time markers do.",
+ "challenge": "Today’s challenge: on the website or notice board of your town (or any French town) — library opening hours, how to get an ID document — find a French text of about 150 words; mark 3 conditions, 2 limits and 1 required action, and sum it up with 1 sentence using the gérondif and 1 using dont.",
+ "items": {
+  "reading": {
+   "R28-1": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "The text states this replacement explicitly."
+     }
+    ]
+   },
+   "R28-2": {
+    "questions": [
+     {
+      "why": "The first 4 hours cost 5 €, then 3 € for each further 4 hours or part of 4 hours: 9 hours = 4 + 4 + 1, so 5 + 3 + 3 = 11 €."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V28-01": {
+   "zh": "the documents to provide",
+   "exZh": "The list of documents to provide is on the back of the form."
+  },
+  "V28-02": {
+   "zh": "to submit one’s (online) return",
+   "exZh": "If you have already submitted your return and notice a mistake, don’t call us."
+  },
+  "V28-03": {
+   "zh": "the time limit starts to run",
+   "exZh": "For an incomplete file, the time limit only starts to run once the last document is received."
+  },
+  "V28-04": {
+   "zh": "after this deadline",
+   "exZh": "After this deadline, no correction is possible."
+  },
+  "V28-05": {
+   "zh": "the deadline",
+   "exZh": "The deadline for filing online depends on your département."
+  },
+  "V28-06": {
+   "zh": "all you need to do is …",
+   "exZh": "All you need to do is show the voucher you received by post."
+  },
+  "V28-07": {
+   "zh": "to meet the conditions",
+   "exZh": "You meet the conditions if the job is more than 60 km from your home."
+  },
+  "V28-08": {
+   "zh": "except for … (an exception)",
+   "exZh": "No refunds are given, except if the theatre cancels."
+  },
+  "V28-09": {
+   "zh": "on presentation of …",
+   "exZh": "The vaccine is free on presentation of the voucher received by post."
+  },
+  "V28-10": {
+   "zh": "to notice a mistake",
+   "exZh": "If you notice a mistake after submitting, use the online correction service."
+  },
+  "V28-11": {
+   "zh": "to go to the counter",
+   "exZh": "Go to the counter with a description of what is in the locker."
+  },
+  "V28-12": {
+   "zh": "to go through (administrative) procedures",
+   "exZh": "I have to go through the procedures at the town hall for my ID card."
+  },
+  "V28-13": {
+   "zh": "to be affected (by …)",
+   "exZh": "Only the 400-gram jars are affected by the recall."
+  },
+  "V28-14": {
+   "zh": "on receipt of …",
+   "exZh": "The time limit only starts to run on receipt of the last document."
+  },
+  "V28-15": {
+   "zh": "within a period of …",
+   "exZh": "The grant is paid within six to eight weeks."
+  },
+  "V28-16": {
+   "zh": "an incomplete file",
+   "exZh": "An incomplete application isn’t rejected: it’s put on hold."
+  },
+  "V28-17": {
+   "zh": "to be (fully) covered (costs)",
+   "exZh": "From the age of 65, the vaccine is covered at 100%."
+  },
+  "V28-18": {
+   "zh": "without paying upfront",
+   "exZh": "Priority groups are vaccinated without paying upfront."
+  },
+  "V28-19": {
+   "zh": "a long-term illness (ALD)",
+   "exZh": "People with a long-term illness have priority, whatever their age."
+  },
+  "V28-20": {
+   "zh": "to take something back to the customer desk",
+   "exZh": "Do not eat this product; take it back to the shop’s customer desk."
+  },
+  "V28-21": {
+   "zh": "to get vaccinated",
+   "exZh": "Since this year, you can get vaccinated at the chemist’s."
+  },
+  "V28-22": {
+   "zh": "the reduced rate / the full price",
+   "exZh": "With the card, you get the reduced rate for all shows."
+  },
+  "V28-23": {
+   "zh": "to be full (sold out)",
+   "exZh": "Very popular shows may sell out during priority booking."
+  },
+  "V28-24": {
+   "zh": "to be valid",
+   "exZh": "The card is valid from September to June."
+  },
+  "V28-25": {
+   "zh": "to take care of …",
+   "exZh": "It isn’t up to you to contact the neighbour: we’ll take care of it."
+  },
+  "V28-26": {
+   "zh": "to be compensated",
+   "exZh": "Work done before the assessor’s visit would not be compensated."
+  },
+  "V28-27": {
+   "zh": "repair work (restoring to its former state)",
+   "exZh": "Don’t start repair work before the assessor has been."
+  },
+  "V28-28": {
+   "zh": "as a precaution",
+   "exZh": "The recall is a precaution, following an internal check."
+  },
+  "V28-29": {
+   "zh": "thank you for your understanding",
+   "exZh": "No cases have been reported. Thank you for your understanding."
+  },
+  "V28-30": {
+   "zh": "to date",
+   "exZh": "To date, no cases have been reported."
+  },
+  "V28-31": {
+   "zh": "to recall a product",
+   "exZh": "The shop is recalling a batch of apple compote."
+  },
+  "V28-32": {
+   "zh": "please hold the line",
+   "exZh": "For any other question, please hold the line."
+  },
+  "V28-33": {
+   "zh": "regardless of …, without distinction of …",
+   "exZh": "The paper return is due on 20 May, regardless of zone."
+  },
+  "V28-34": {
+   "zh": "to be registered as a jobseeker",
+   "exZh": "You must be registered as a jobseeker to receive the grant."
+  },
+  "V28-35": {
+   "zh": "not to be combinable",
+   "exZh": "The moving grant and the dual-residence grant can’t be combined."
+  },
+  "V28-36": {
+   "zh": "a letter confirming one is being housed by someone",
+   "exZh": "If you’re staying with a friend, provide a letter confirming they’re housing you."
+  },
+  "V28-37": {
+   "zh": "per period (of …) or part thereof",
+   "exZh": "The small locker then costs €3 per 4-hour period, any part of 4 hours counting as 4 hours."
+  },
+  "V28-38": {
+   "zh": "payment is made + when/where",
+   "exZh": "Payment is made on collection, not on drop-off."
+  },
+  "V28-39": {
+   "zh": "the lost property office",
+   "exZh": "After 72 hours, the contents are transferred to the lost property office."
+  },
+  "V28-40": {
+   "zh": "to be personal (non-transferable)",
+   "exZh": "The card is personal: you can’t lend it."
+  },
+  "V28-41": {
+   "zh": "of one’s choice",
+   "exZh": "The card includes a free ticket for a show of your choice."
+  },
+  "V28-42": {
+   "zh": "the assembly point",
+   "exZh": "When the alarm sounds, leave the building and go to the assembly point."
+  },
+  "V28-43": {
+   "zh": "people with reduced mobility",
+   "exZh": "People with reduced mobility wait at the refuge landings on the stairs."
+  },
+  "V28-44": {
+   "zh": "to join the media library",
+   "exZh": "To join the media library, I need a proof of address."
+  },
+  "V28-45": {
+   "zh": "a RIB (bank account details form)",
+   "exZh": "For the grant to be paid, attach a RIB to your application."
+  }
+ },
+ "title": "Reading in practice: finding information",
+ "phase": "Transfer to real tasks"
+}

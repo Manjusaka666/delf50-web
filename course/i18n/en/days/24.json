@@ -1,1 +1,246 @@
-{}
+{
+ "canDo": "Can compare two options, avoid repetition with certains/d’autres/plusieurs and the like, and admit one drawback of the option chosen.",
+ "review": "Review comparison and contrast; add common pronoms indéfinis.",
+ "input": "Listening and reading about making choices.",
+ "output": "Write a 150-word comparison of options; make a recommendation aloud in 3 minutes.",
+ "checkpoint": "At least 3 criteria compared + 1 concession + a clear choice.",
+ "challenge": "Today’s challenge: compare two neighbourhoods you know (or two commuting routes) in 6 sentences, using at least 3 of certains, d’autres, plusieurs, chacun; mark the contrast with alors que / en revanche, and admit one drawback of the option you choose.",
+ "items": {
+  "reading": {
+   "R24-1": {
+    "questions": [
+     null,
+     {
+      "why": "« Son inconvénient est ailleurs » — explicitly ruling out installation cost and radiator compatibility."
+     }
+    ]
+   },
+   "R24-3": {
+    "questions": [
+     null,
+     {
+      "why": "The regional grant only applies to new-build, so the real difference is about 3.4 million, not 5.6 million."
+     },
+     {
+      "why": "Building new takes 26 months, but the old building can partly stay open during the work; with a renovation it can’t."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L24-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "After three or four years it loses about a third of its capacity, and replacing it costs about a quarter of the price of the bike."
+     }
+    ]
+   },
+   "L24-2": {
+    "questions": [
+     {
+      "why": "The first speaker’s reason is that many children have never been to Paris."
+     },
+     {
+      "why": "Last year, six families couldn’t afford the Lyon trip, and six pupils stayed at school."
+     }
+    ]
+   },
+   "L24-4": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "The last two options are precisely what characterises digital lending."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V24-01": {
+   "zh": "the real question is …",
+   "exZh": "The real question is: are you willing to arrive having worked up a sweat?"
+  },
+  "V24-02": {
+   "zh": "the advantage / the drawback is that …",
+   "exZh": "The drawback is that the battery loses a third of its capacity in four years."
+  },
+  "V24-03": {
+   "zh": "on the other hand (spoken)",
+   "exZh": "An ordinary bike costs a third as much; on the other hand, the hill will be hard."
+  },
+  "V24-04": {
+   "zh": "compared with …",
+   "exZh": "Compared with new, this refurbished one costs 40% less."
+  },
+  "V24-05": {
+   "zh": "to remain relevant",
+   "exZh": "A condensing gas boiler remains relevant in old buildings connected to the network."
+  },
+  "V24-06": {
+   "zh": "whereas, while (contrast)",
+   "exZh": "Paper dominates for children’s books, while digital is used mainly for new releases."
+  },
+  "V24-07": {
+   "zh": "the strong point / the weak point",
+   "exZh": "Its weak point is the weight: twenty-five kilos."
+  },
+  "V24-08": {
+   "zh": "not to be comparable",
+   "exZh": "You shouldn’t compare the two gross amounts, which aren’t comparable."
+  },
+  "V24-09": {
+   "zh": "at the cost of …",
+   "exZh": "The nursery buys security at the cost of flexibility."
+  },
+  "V24-10": {
+   "zh": "a price difference",
+   "exZh": "With the grant, the price difference is no longer 5.6 million but about 3.4."
+  },
+  "V24-11": {
+   "zh": "to amount to …-ing",
+   "exZh": "Doing the opposite amounts to buying a solution before defining the problem."
+  },
+  "V24-12": {
+   "zh": "to cost half / a third as much (as)",
+   "exZh": "An ordinary bike costs a third as much as an electric one."
+  },
+  "V24-13": {
+   "zh": "more than double",
+   "exZh": "Building new costs 9.8 million — more than double."
+  },
+  "V24-14": {
+   "zh": "more and more …",
+   "exZh": "More and more things are rented by the month instead of being bought."
+  },
+  "V24-15": {
+   "zh": "a bargain, a good deal",
+   "exZh": "A refurbished item only 15% cheaper than new is rarely a good deal."
+  },
+  "V24-16": {
+   "zh": "the deciding criterion",
+   "exZh": "The deciding criterion isn’t the label, it’s the guarantee."
+  },
+  "V24-17": {
+   "zh": "the cheapest to run",
+   "exZh": "Wood is the cheapest to run where supply is local."
+  },
+  "V24-18": {
+   "zh": "to be suited to …",
+   "exZh": "There’s no best heating, only a system suited to each home."
+  },
+  "V24-19": {
+   "zh": "in absolute terms, in the abstract",
+   "exZh": "There’s no best heating in absolute terms."
+  },
+  "V24-20": {
+   "zh": "to be more than enough",
+   "exZh": "For seven flat kilometres, an ordinary bike is more than enough."
+  },
+  "V24-21": {
+   "zh": "not to be a luxury",
+   "exZh": "Without a shower at work, an electric bike isn’t a luxury."
+  },
+  "V24-22": {
+   "zh": "(not) to be a deal-breaker",
+   "exZh": "It isn’t a deal-breaker, but you need to know before you buy."
+  },
+  "V24-23": {
+   "zh": "I understand the argument, but …",
+   "exZh": "I understand the argument, but we need to look at who actually goes."
+  },
+  "V24-24": {
+   "zh": "to take out a subscription",
+   "exZh": "When taking out a subscription, almost everyone underestimates how long they’ll use it."
+  },
+  "V24-25": {
+   "zh": "to be well served (by transport)",
+   "exZh": "The neighbourhood is well served: two tram lines and a station."
+  },
+  "V24-26": {
+   "zh": "a well-insulated home",
+   "exZh": "A heat pump is only efficient in a well-insulated home."
+  },
+  "V24-27": {
+   "zh": "a badly insulated home (“energy sieve”)",
+   "exZh": "Installed in a badly insulated home, a heat pump uses a lot of power."
+  },
+  "V24-28": {
+   "zh": "to make do with, to work with …",
+   "exZh": "A gas boiler works with the existing radiators."
+  },
+  "V24-29": {
+   "zh": "to be justified only …",
+   "exZh": "Electric convector heaters are only justified in a very small home."
+  },
+  "V24-30": {
+   "zh": "to settle for, to make do with …",
+   "exZh": "Some sellers settle for a clean and a quick test."
+  },
+  "V24-31": {
+   "zh": "to benefit from …",
+   "exZh": "A new product benefits from the legal guarantee for two years."
+  },
+  "V24-32": {
+   "zh": "a hidden defect",
+   "exZh": "Unless a hidden defect is proven, the buyer bears the risk."
+  },
+  "V24-33": {
+   "zh": "to undertake to …",
+   "exZh": "The seller undertakes to repair the appliance for a year."
+  },
+  "V24-34": {
+   "zh": "to decide between … and …",
+   "exZh": "The council must decide between renovation and new-build before December."
+  },
+  "V24-35": {
+   "zh": "to deserve to be …",
+   "exZh": "Three factors deserve to be weighed up before deciding."
+  },
+  "V24-36": {
+   "zh": "to take the place of …",
+   "exZh": "Digital lending hasn’t taken the place of paper lending: it has created a different use."
+  },
+  "V24-37": {
+   "zh": "to get on with someone",
+   "exZh": "A nanny share means getting on well with another family."
+  },
+  "V24-38": {
+   "zh": "to book time off",
+   "exZh": "We booked time off that we wouldn’t otherwise have taken."
+  },
+  "V24-39": {
+   "zh": "to be paid by someone (cost borne by)",
+   "exZh": "With three day trips, families don’t have to pay anything."
+  },
+  "V24-40": {
+   "zh": "below / above a certain threshold",
+   "exZh": "Below a certain threshold, subscribing is better value than buying."
+  },
+  "V24-41": {
+   "zh": "to miss (the point of) …",
+   "exZh": "The idea of replacement misses what we actually observe."
+  },
+  "V24-42": {
+   "zh": "in terms of …",
+   "exZh": "And in terms of the budget, what difference does it make?"
+  },
+  "V24-43": {
+   "zh": "to car-share",
+   "exZh": "To get to work, I car-share with two colleagues."
+  },
+  "V24-44": {
+   "zh": "the commute (home to work)",
+   "exZh": "My commute is seven kilometres, including a steep hill."
+  },
+  "V24-45": {
+   "zh": "to be cancelled (train, bus)",
+   "exZh": "My 18:12 train was cancelled without notice."
+  }
+ },
+ "title": "Comparing options and weighing them up",
+ "phase": "Transfer to real tasks"
+}
