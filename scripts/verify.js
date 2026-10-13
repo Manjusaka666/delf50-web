@@ -28,15 +28,19 @@ async function main() {
     check(cc.status === 0, (cc.stdout || '').trim() || `check-course ${dir}`, cc.stderr || cc.stdout);
   }
 
+  const ci = spawnSync(process.execPath, [path.join(__dirname, 'check-i18n.js')], { encoding: 'utf8' });
+  check(ci.status === 0, (ci.stdout || '').trim().split('\n').pop() || 'check-i18n', (ci.stderr || ci.stdout || '').slice(0, 600));
+
   // The app's modules, loaded as the browser loads them (fetch serves course/ from disk).
   globalThis.fetch = async (url) => ({ ok: true, status: 200, json: async () => readJson(String(url).replace(/^\//, '')) });
   const imp = (p) => import(path.join(ROOT, 'app', p));
   const [course, state, progress, ui] = await Promise.all([imp('course.js'), imp('state.js'), imp('progress.js'), imp('ui.js')]);
 
   const order = ['light', 'standard', 'high'];
-  for (const id of Object.keys(ROOTS)) {
-    const K = await course.loadCourse(id);
-    out.push(`\nPlans · ${id} (${K.days} days × 3 intensities)`);
+  // Plans in every interface language: a translation may relabel a day, never reshape it.
+  for (const [id, locale] of Object.keys(ROOTS).flatMap((id) => ['zh-CN', 'en'].map((l) => [id, l]))) {
+    const K = await course.loadCourse(id, locale);
+    out.push(`\nPlans · ${id} · ${locale} (${K.days} days × 3 intensities)`);
     const planErrors = [];
     for (let d = 1; d <= K.days; d++) {
       const day = await course.loadDay(d);
@@ -59,7 +63,7 @@ async function main() {
     check(ids.length === K.quotas.high.grammar && (await course.loadQuestions(ids)).size === ids.length, `Day ${K.days}: remediation questions exist in the banks`, ids);
   }
   check(course.LEVELS.every((l) => (l.root ? ROOTS[l.id] === l.root.slice(1) : !ROOTS[l.id])), 'every open level of the switcher is a checked course root');
-  const C = await course.loadCourse('delf-b1');
+  const C = await course.loadCourse('delf-b1', 'zh-CN');
 
   out.push('\nState and progress');
   const S = state.blank();
