@@ -1,1 +1,282 @@
-{}
+{
+ "canDo": "Can use y/en naturally in common à/de/quantity structures and recognise what common verbs take.",
+ "review": "Review COD/COI; learn common verbes + à/de and connect them with y/en.",
+ "input": "Listening: shopping/city life; reading: menus, services and everyday texts.",
+ "output": "Write 110 words on the city or food with at least 4 uses of y/en; quick spoken replacements.",
+ "checkpoint": "Complete 12 replacements; be able to explain the difference between y/en, lui/leur and the verb’s preposition.",
+ "challenge": "Today’s challenge: list in French the food you bought this week and the places you went to; write 6 sentences, at least 4 with y or en (J’en ai acheté deux kilos. / J’y vais le samedi.); then find a short TV5MONDE video about a market or food and note 3 expressions of quantity.",
+ "items": {
+  "reading": {
+   "R12-1": {
+    "questions": [
+     {
+      "why": "« des producteurs installés à moins de quatre-vingts kilomètres ». Cash only applies to two stalls, and pre-ordering only to meat and cheese."
+     },
+     null,
+     {
+      "why": "« Apportez-en : les producteurs n'en fournissent plus depuis l'an dernier » — en refers to des contenants."
+     }
+    ]
+   },
+   "R12-2": {
+    "questions": [
+     {
+      "why": "Two out of five subscribers throw some vegetables away. A is the cheapest, collected from a pickup point."
+     },
+     {
+      "why": "C’s contents are fixed too; the difference is that it comes with recipes. Choosing is B’s feature."
+     }
+    ]
+   },
+   "R12-3": {
+    "questions": [
+     {
+      "why": "About thirty kilos in total, of which a third (about ten kilos) is unopened."
+     },
+     {
+      "why": "After « À consommer jusqu'au » you can’t eat it (safety); « de préférence avant le » only means the quality declines."
+     },
+     {
+      "why": "« en jettent près de moitié moins » — it’s about the amount thrown away, not the budget."
+     }
+    ]
+   },
+   "R12-4": {
+    "questions": [
+     {
+      "why": "« Aujourd'hui, on pouvait encore le faire la veille ; ce ne sera plus possible ». The vegetarian dish is new, and the office can still handle bookings."
+     },
+     null,
+     {
+      "why": "The first six bands stay the same; the last two go up by 15 centimes."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L12-1": {
+    "questions": [
+     {
+      "why": "He says he could get some in (« Je pourrais en faire venir »); his reason for refusing is that they have no taste and travel for three days."
+     },
+     {
+      "why": "The Landes is where the kiwis come from; the advice about the fridge is about the kiwis too."
+     }
+    ]
+   },
+   "L12-2": {
+    "questions": [
+     null,
+     {
+      "why": "The reason is that it contains almost no fibre; three glasses counting as only one portion is the consequence, not the reason."
+     }
+    ]
+   },
+   "L12-3": {
+    "questions": [
+     {
+      "why": "Saturday evening is full; the options are Saturday lunchtime or Friday evening. 19 h 30 is when Friday evening starts."
+     },
+     {
+      "why": "« il faut en choisir un seul pour tout le monde », and they must be told two days in advance."
+     }
+    ]
+   },
+   "L12-4": {
+    "questions": [
+     {
+      "why": "« montée sans clou ». The rails are on the ground and have nothing to do with the roof frame."
+     },
+     null,
+     {
+      "why": "The directions are: turn left on leaving, walk to the little square, stop in front of the fountain. The river comes later."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V12-01": {
+   "zh": "to take place",
+   "exZh": "The market takes place on Fridays from 16:00 to 20:00."
+  },
+  "V12-02": {
+   "zh": "to need it/some",
+   "exZh": "— Would you like a bag? — No thanks, I don’t need one."
+  },
+  "V12-03": {
+   "zh": "I’d like (a quantity of it)",
+   "exZh": "Tomatoes? I’d like a kilo, please."
+  },
+  "V12-04": {
+   "zh": "How many/much would you like?",
+   "exZh": "— I’d like some pears. — How many would you like?"
+  },
+  "V12-05": {
+   "zh": "Anything else? (shopkeeper)",
+   "exZh": "— Two kilos of apples. — Here you are. Anything else? — That’s all, thanks."
+  },
+  "V12-06": {
+   "zh": "to make a meal for + number",
+   "exZh": "This weekend, I have to make meals for six people."
+  },
+  "V12-07": {
+   "zh": "a dozen …",
+   "exZh": "I also need a dozen eggs."
+  },
+  "V12-08": {
+   "zh": "a slice of …",
+   "exZh": "Four slices of ham, please."
+  },
+  "V12-09": {
+   "zh": "for lack of …",
+   "exZh": "Some subscribers throw vegetables away for lack of knowing what to do with them."
+  },
+  "V12-10": {
+   "zh": "to fight food waste",
+   "exZh": "The recipes included with the box help fight food waste."
+  },
+  "V12-11": {
+   "zh": "to have a lot to do with it",
+   "exZh": "A lot of products are thrown away, and the dates have a lot to do with it."
+  },
+  "V12-12": {
+   "zh": "to take … into account",
+   "exZh": "Thank you for taking this into account from the first week."
+  },
+  "V12-13": {
+   "zh": "at the latest",
+   "exZh": "Meals must be booked by Thursday at the latest."
+  },
+  "V12-14": {
+   "zh": "to sign up for …",
+   "exZh": "For the meat-free dish, you don’t need to sign up in advance."
+  },
+  "V12-15": {
+   "zh": "to remain unchanged",
+   "exZh": "The price of a meal remains unchanged for the first six bands."
+  },
+  "V12-16": {
+   "zh": "to manage (it)",
+   "exZh": "Families who can’t manage online can book at the office."
+  },
+  "V12-17": {
+   "zh": "to insist on, to care about …",
+   "exZh": "Only local producers are accepted: that’s the association’s rule, and it insists on it."
+  },
+  "V12-18": {
+   "zh": "to pay in cash",
+   "exZh": "Two stalls don’t take cards: you have to pay in cash."
+  },
+  "V12-19": {
+   "zh": "to take cards",
+   "exZh": "Most stalls take cards, but two of them are cash only."
+  },
+  "V12-20": {
+   "zh": "to walk there",
+   "exZh": "The market? I walk there — it’s ten minutes away."
+  },
+  "V12-21": {
+   "zh": "to confuse A and B",
+   "exZh": "Many consumers confuse these two labels."
+  },
+  "V12-22": {
+   "zh": "use by … (food)",
+   "exZh": "After the “use by” date, you don’t eat the product any more."
+  },
+  "V12-23": {
+   "zh": "best before …",
+   "exZh": "Rice is still fine months after the “best before” date."
+  },
+  "V12-24": {
+   "zh": "to make a shopping list",
+   "exZh": "Households that make a shopping list throw away almost half as much."
+  },
+  "V12-25": {
+   "zh": "to get something in from …",
+   "exZh": "I could get some in from Spain, but they have no taste at all."
+  },
+  "V12-26": {
+   "zh": "What would you recommend?",
+   "exZh": "No strawberries? So what would you recommend?"
+  },
+  "V12-27": {
+   "zh": "seasonal fruit and vegetables",
+   "exZh": "This greengrocer only sells seasonal fruit and vegetables."
+  },
+  "V12-28": {
+   "zh": "at room temperature",
+   "exZh": "Keep the kiwis at room temperature if they’re still hard."
+  },
+  "V12-29": {
+   "zh": "… combined, … taken together",
+   "exZh": "You need five portions a day, fruit and vegetables combined."
+  },
+  "V12-30": {
+   "zh": "a handful of …",
+   "exZh": "A portion is a tomato or a handful of green beans."
+  },
+  "V12-31": {
+   "zh": "in terms of …, from a … point of view",
+   "exZh": "Frozen vegetables are as good as fresh ones in nutritional terms."
+  },
+  "V12-32": {
+   "zh": "don’t hesitate to …, feel free to …",
+   "exZh": "If fresh vegetables are too expensive, feel free to buy frozen ones."
+  },
+  "V12-33": {
+   "zh": "to book a table for + number",
+   "exZh": "I’d like to book a table for twelve people on Saturday evening."
+  },
+  "V12-34": {
+   "zh": "to be full (fully booked)",
+   "exZh": "On Saturday evening, we’re fully booked."
+  },
+  "V12-35": {
+   "zh": "there are/were (a number of them)",
+   "exZh": "Tanners? There used to be more than forty of them in this neighbourhood."
+  },
+  "V12-36": {
+   "zh": "to end up …-ing",
+   "exZh": "Because of the smell, the town ended up pushing the tanners out."
+  },
+  "V12-37": {
+   "zh": "a supporting document",
+   "exZh": "To join the media library, you need a supporting document."
+  },
+  "V12-38": {
+   "zh": "to eat a balanced diet",
+   "exZh": "To eat a balanced diet, you need vegetables at every meal."
+  },
+  "V12-39": {
+   "zh": "to borrow items (books, media)",
+   "exZh": "With this card, you can borrow items for three weeks."
+  },
+  "V12-40": {
+   "zh": "to do one’s shopping at the market",
+   "exZh": "On Saturday mornings, I do my shopping at the local market."
+  },
+  "V12-41": {
+   "zh": "to favour local produce",
+   "exZh": "The canteen favours local, seasonal produce."
+  },
+  "V12-42": {
+   "zh": "local shops",
+   "exZh": "In my neighbourhood, the local shops are closing one after another."
+  },
+  "V12-43": {
+   "zh": "a well-connected neighbourhood",
+   "exZh": "I live in a well-connected neighbourhood: the tram goes right past my door."
+  },
+  "V12-44": {
+   "zh": "to skip a meal",
+   "exZh": "When I’m in a hurry, I sometimes skip lunch."
+  },
+  "V12-45": {
+   "zh": "to live in the suburbs",
+   "exZh": "I live in the suburbs, but I do my shopping in town."
+  }
+ },
+ "title": "Pronouns II: y/en",
+ "phase": "Foundations and grammar on autopilot"
+}

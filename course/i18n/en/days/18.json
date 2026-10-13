@@ -1,1 +1,283 @@
-{}
+{
+ "canDo": "Can actively draw on the grammar learnt in unfamiliar but everyday tasks, not just recognise correct answers.",
+ "review": "No new systematic grammar; review according to your error map.",
+ "input": "3 sets each of listening and reading, mixing time, services and opinions.",
+ "output": "Write a 140-word combined task; speak for 3 minutes: yourself + an experience + a plan.",
+ "checkpoint": "As a guide for moving on to the transfer phase: ≥85% recognition, ≥80% controlled production, ≥75% free sentences.",
+ "challenge": "Today’s challenge: give yourself a 15-minute mini-test: record 3 minutes of speaking (who I am + an experience + a plan), then write a 5-sentence written summary; going through the grammar points of the first 17 days, circle 3 structures you used actively and 3 you haven’t used yet.",
+ "items": {
+  "reading": {
+   "R18-1": {
+    "questions": [
+     {
+      "why": "Half versus a third is the share in work/training; 61% is the share who got their licence, a different indicator."
+     },
+     {
+      "why": "People living more than twenty kilometres from a driving school give up most often — « ce qui est précisément le problème que l'aide devait résoudre »."
+     }
+    ]
+   },
+   "R18-2": {
+    "questions": [
+     null,
+     {
+      "why": "« Ce que nous contestons, c'est la méthode »: proposed on 12 May, voted on the 24th, with no meeting for families."
+     },
+     {
+      "why": "« Si le calendrier devait être maintenu, nous souhaiterions au minimum qu'une réunion publique se tienne avant le vote » — a fallback request."
+     }
+    ]
+   },
+   "R18-3": {
+    "questions": [
+     {
+      "why": "46% say they buy newspapers and magazines, but these make up less than 9% of turnover."
+     },
+     {
+      "why": "« L'explication tenterait de passer par la mauvaise foi ; elle est plus simple » — the reason is that decisions and memory work differently."
+     }
+    ]
+   },
+   "R18-4": {
+    "questions": [
+     null,
+     {
+      "why": "The gain from zero to fifteen minutes is greater than from thirty to forty-five."
+     },
+     {
+      "why": "The ending explicitly excludes strength training and says the official recommendation still stands."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L18-1": {
+    "questions": [
+     {
+      "why": "He says attracting young doctors is a ten-year job; « Dans l'immédiat, ce qui m'aiderait le plus, c'est un assistant médical »."
+     },
+     {
+      "why": "Five minutes saved per patient × forty patients ≈ three hours; it isn’t about longer consultations."
+     }
+    ]
+   },
+   "L18-2": {
+    "questions": [
+     {
+      "why": "She says clearly that she gets the gist; the problem is that she’s too slow putting sentences together. Reading was never a problem."
+     }
+    ]
+   },
+   "L18-3": {
+    "questions": [
+     {
+      "why": "« le bail n'est pas renouvelable », so they must move out by 1 March; the address hasn’t been decided."
+     },
+     {
+      "why": "Fifteen and forty minutes are very different, « c'est précisément pour ça que je ne veux pas annoncer une adresse avant d'être sûr »."
+     },
+     {
+      "why": "« il n'y aura pas de réduction d'effectif liée à ce déménagement », and it is in the document sent out that evening."
+     }
+    ]
+   },
+   "L18-4": {
+    "questions": [
+     {
+      "why": "« C'est un motif d'entrée »; ten minutes later the talk is often about conflicts, exams or family."
+     },
+     {
+      "why": "Part-time: two days a week there is nobody there."
+     },
+     {
+      "why": "« un local où l'on ne s'entende pas depuis le couloir » — afraid of being overheard, pupils don’t talk."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V18-01": {
+   "zh": "Can you confirm that …?",
+   "exZh": "Can you confirm that the replacement bus really leaves at 18:00?"
+  },
+  "V18-02": {
+   "zh": "I intend to …",
+   "exZh": "I intend to take my driving test next year."
+  },
+  "V18-03": {
+   "zh": "I plan to …",
+   "exZh": "This summer, I plan to take a conversation class."
+  },
+  "V18-04": {
+   "zh": "What struck me most was …",
+   "exZh": "What struck me most was what my colleague said."
+  },
+  "V18-05": {
+   "zh": "to be acting in bad faith",
+   "exZh": "You might think passengers are acting in bad faith, but the explanation is simpler."
+  },
+  "V18-06": {
+   "zh": "I sometimes … (it happens that I …)",
+   "exZh": "I sometimes take the bus when it’s pouring."
+  },
+  "V18-07": {
+   "zh": "to take (someone’s) blood pressure",
+   "exZh": "A medical assistant could take blood pressure and prepare the consultation."
+  },
+  "V18-08": {
+   "zh": "to take the time to …",
+   "exZh": "The nurse takes the time to listen to the pupils."
+  },
+  "V18-09": {
+   "zh": "to take one’s driving test",
+   "exZh": "The scheme helps young people take their driving test."
+  },
+  "V18-10": {
+   "zh": "the waiting time is getting longer",
+   "exZh": "The waiting time to sit the driving test has got longer."
+  },
+  "V18-11": {
+   "zh": "a jobseeker",
+   "exZh": "The grant is only for jobseekers under thirty."
+  },
+  "V18-12": {
+   "zh": "to go to (a place)",
+   "exZh": "They live far from the driving school and can’t go there regularly."
+  },
+  "V18-13": {
+   "zh": "so much so that",
+   "exZh": "The waiting time got longer, so much so that some candidates couldn’t sit the test."
+  },
+  "V18-14": {
+   "zh": "to be still under consideration",
+   "exZh": "Two options are still under consideration: one fifteen minutes from here, the other forty."
+  },
+  "V18-15": {
+   "zh": "to be honest",
+   "exZh": "— How are you holding up? — Badly, to be honest."
+  },
+  "V18-16": {
+   "zh": "to remain at someone’s disposal",
+   "exZh": "We remain at your disposal to discuss it."
+  },
+  "V18-17": {
+   "zh": "to be in favour of …",
+   "exZh": "Concentrating lessons in the morning? We’re in favour of it."
+  },
+  "V18-18": {
+   "zh": "to come back to, to revisit …",
+   "exZh": "We would like to come back to the plan for new timetables."
+  },
+  "V18-19": {
+   "zh": "to dispute, to challenge …",
+   "exZh": "We don’t dispute the goal; what we dispute is the method."
+  },
+  "V18-20": {
+   "zh": "without … (+ subjunctive)",
+   "exZh": "The plan was to be voted on without the families being consulted."
+  },
+  "V18-21": {
+   "zh": "not …, but …",
+   "exZh": "We are asking not for the plan to be dropped, but for it to be postponed."
+  },
+  "V18-22": {
+   "zh": "in practice, in reality",
+   "exZh": "In reality, newspapers and magazines make up less than 9% of sales."
+  },
+  "V18-23": {
+   "zh": "to be pointless",
+   "exZh": "Many people think ten minutes’ walking is pointless. That’s wrong."
+  },
+  "V18-24": {
+   "zh": "in terms of",
+   "exZh": "A quarter of an hour’s walk brings a lot in terms of health."
+  },
+  "V18-25": {
+   "zh": "to call into question",
+   "exZh": "That doesn’t call the official recommendation into question."
+  },
+  "V18-26": {
+   "zh": "to apply to …",
+   "exZh": "This logic doesn’t apply to strength training."
+  },
+  "V18-27": {
+   "zh": "by the time …",
+   "exZh": "By the time I’d built my sentence, the conversation had already moved on."
+  },
+  "V18-28": {
+   "zh": "to make mistakes (language)",
+   "exZh": "For six months, I made lots of mistakes, but I took part."
+  },
+  "V18-29": {
+   "zh": "to regret having …",
+   "exZh": "I regret having waited three years to understand."
+  },
+  "V18-30": {
+   "zh": "for now, in the short term",
+   "exZh": "For now, what would help me most is a medical assistant."
+  },
+  "V18-31": {
+   "zh": "to save someone time",
+   "exZh": "An assistant would save me five minutes per patient."
+  },
+  "V18-32": {
+   "zh": "in black and white",
+   "exZh": "It’s written in black and white in the document."
+  },
+  "V18-33": {
+   "zh": "to put a stop to …",
+   "exZh": "This message should put a stop to the rumours."
+  },
+  "V18-34": {
+   "zh": "to consist in …-ing",
+   "exZh": "My job consists in listening to the pupils."
+  },
+  "V18-35": {
+   "zh": "to work part-time (half-time)",
+   "exZh": "The nurse works half-time: two days a week, there’s nobody there."
+  },
+  "V18-36": {
+   "zh": "to move on",
+   "exZh": "After this mistake, you have to move on."
+  },
+  "V18-37": {
+   "zh": "to sit an exam",
+   "exZh": "Some candidates who were ready couldn’t sit the exam."
+  },
+  "V18-38": {
+   "zh": "not to hide …",
+   "exZh": "The review doesn’t hide the scheme’s limits."
+  },
+  "V18-39": {
+   "zh": "to get up early",
+   "exZh": "On weekdays, I get up early to avoid the traffic jams."
+  },
+  "V18-40": {
+   "zh": "to come home from work",
+   "exZh": "When I come home from work, I make dinner."
+  },
+  "V18-41": {
+   "zh": "to queue",
+   "exZh": "At the post office, I queued for twenty minutes."
+  },
+  "V18-42": {
+   "zh": "to exercise",
+   "exZh": "I exercise for a quarter of an hour a day."
+  },
+  "V18-43": {
+   "zh": "to balance work and private life",
+   "exZh": "With two children, I find it hard to balance work and private life."
+  },
+  "V18-44": {
+   "zh": "household chores",
+   "exZh": "In our home, we share the household chores."
+  },
+  "V18-45": {
+   "zh": "a busy schedule",
+   "exZh": "This week, I have a busy schedule."
+  }
+ },
+ "title": "Foundations checkpoint",
+ "phase": "Foundations and grammar on autopilot"
+}

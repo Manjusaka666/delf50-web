@@ -1,1 +1,266 @@
-{}
+{
+ "canDo": "Can state causes, results and purposes clearly, forming a 2–3-step chain of reasoning.",
+ "review": "Review parce que; extend to puisque/donc/c’est pourquoi, and add afin de / pour que.",
+ "input": "Listening: cause and effect in the environment/daily life; reading: a short explanatory text.",
+ "output": "Write 130 words: problem – cause – result; explain a choice aloud in 2 minutes.",
+ "checkpoint": "At least 2 kinds of cause/effect link in the same paragraph; logically correct relations.",
+ "challenge": "Today’s challenge: in RFI’s Journal en français facile, find a news item about the environment and write it up in 3 sentences as “cause → result → purpose” (parce que / donc / pour que or pour + infinitive); then add one sentence about something green you can do in your own life.",
+ "items": {
+  "reading": {
+   "R16-1": {
+    "questions": [
+     {
+      "why": "The reason given is that we spend about 85% of our time indoors. The sources are many; the text doesn’t say they are necessarily more toxic."
+     },
+     null,
+     {
+      "why": "The ending is explicit: ten minutes of airing won’t cool the walls."
+     }
+    ]
+   },
+   "R16-3": {
+    "questions": [
+     {
+      "why": "« quand les plantes sont au repos » is the reason given; saturated soil actually prevents water from soaking in."
+     }
+    ]
+   },
+   "R16-4": {
+    "questions": [
+     {
+      "why": "« contrairement à ce que supposaient de nombreux riverains » — the culprit is uneven wheels caused by old brakes."
+     },
+     {
+      "why": "« un quart du trafic mais l'essentiel des plaintes » — note that the two proportions refer to different things."
+     },
+     {
+      "why": "« Leur coût, en revanche, dépasse le budget disponible », so sections with homes within fifty metres come first."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L16-1": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "The ending says the priority is the places minérales, not along the avenues."
+     }
+    ]
+   },
+   "L16-2": {
+    "questions": [
+     {
+      "why": "« Ce qui tue, c'est le cumul »; each factor on its own is often bearable."
+     },
+     {
+      "why": "It refers to the two months, June to August, when there are no flowers to forage once the rapeseed has finished flowering."
+     }
+    ]
+   },
+   "L16-3": {
+    "questions": [
+     {
+      "why": "He sets out the cost of doing nothing: rising heating bills, a ban on letting from 2028, a lower resale value."
+     },
+     {
+      "why": "8 of the 22 flats are let, and class F can’t be let from 2028."
+     }
+    ]
+   },
+   "L16-4": {
+    "questions": [
+     null,
+     {
+      "why": "Braking distance at fifty km/h is almost twice that at thirty."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V16-01": {
+   "zh": "owing to, because of (formal)",
+   "exZh": "Collection is suspended owing to the works."
+  },
+  "V16-02": {
+   "zh": "that’s why, which is why",
+   "exZh": "That’s why a single closed bag can spoil a whole bin."
+  },
+  "V16-03": {
+   "zh": "consequently",
+   "exZh": "The bin contained glass; consequently, it was rejected."
+  },
+  "V16-04": {
+   "zh": "because of (usually a bad cause)",
+   "exZh": "Groundwater levels remain low because of last summer’s drought."
+  },
+  "V16-05": {
+   "zh": "thanks to (a good cause)",
+   "exZh": "Thanks to hedges and strips of flowers, bees find food."
+  },
+  "V16-06": {
+   "zh": "in order to …",
+   "exZh": "You air the room in order to renew the air without cooling the walls."
+  },
+  "V16-07": {
+   "zh": "with the aim of …",
+   "exZh": "The city switched to 30 km/h with the aim of protecting pedestrians."
+  },
+  "V16-08": {
+   "zh": "so that …",
+   "exZh": "The city is planting trees so that the squares are cooler at night."
+  },
+  "V16-09": {
+   "zh": "given that",
+   "exZh": "Given that the grants may go down, it’s better to vote tonight."
+  },
+  "V16-10": {
+   "zh": "to be due to …",
+   "exZh": "The noise is due to the brakes of the old wagons."
+  },
+  "V16-11": {
+   "zh": "to lead to, to cause …",
+   "exZh": "A closed bag leads to the whole bin being rejected."
+  },
+  "V16-12": {
+   "zh": "which explains …",
+   "exZh": "Concrete gives off heat at night, which explains the difference in temperature."
+  },
+  "V16-13": {
+   "zh": "to be the cause of …",
+   "exZh": "Tarmac and concrete are the cause of the urban heat island."
+  },
+  "V16-14": {
+   "zh": "to result in …",
+   "exZh": "Indoor pollution results in headaches and irritation."
+  },
+  "V16-15": {
+   "zh": "to follow (from it)",
+   "exZh": "Two consequences follow from this."
+  },
+  "V16-16": {
+   "zh": "contrary to what …",
+   "exZh": "The noise doesn’t come from speed, contrary to what residents thought."
+  },
+  "V16-17": {
+   "zh": "to cause, to provoke …",
+   "exZh": "It is this surface defect that causes the noise."
+  },
+  "V16-18": {
+   "zh": "not only …, but (also) …",
+   "exZh": "Not only can glass not be recycled in this stream, but it injures the staff."
+  },
+  "V16-19": {
+   "zh": "the explanation lies in …",
+   "exZh": "The explanation lies in the way water reaches the water table."
+  },
+  "V16-20": {
+   "zh": "it’s not so much … as …",
+   "exZh": "What affects health is not so much the heat of the day as the lack of cool at night."
+  },
+  "V16-21": {
+   "zh": "what counts is …",
+   "exZh": "What counts is not the total rainfall but how it is spread out."
+  },
+  "V16-22": {
+   "zh": "to air the room",
+   "exZh": "You should air the room for ten minutes morning and evening."
+  },
+  "V16-23": {
+   "zh": "in the short term / in the long term",
+   "exZh": "Indoor pollution causes headaches in the short term."
+  },
+  "V16-24": {
+   "zh": "to worry about …",
+   "exZh": "People worry a lot about outdoor pollution, less about indoor pollution."
+  },
+  "V16-25": {
+   "zh": "the fact that …",
+   "exZh": "The fact that a product smells of lemon doesn’t mean it cleans the air."
+  },
+  "V16-26": {
+   "zh": "fine particles",
+   "exZh": "Frying in a pan releases fine particles."
+  },
+  "V16-27": {
+   "zh": "loose (not bagged)",
+   "exZh": "Put your packaging loose in the yellow bin."
+  },
+  "V16-28": {
+   "zh": "essentially, for the most part",
+   "exZh": "Groundwater is recharged, for the most part, between November and March."
+  },
+  "V16-29": {
+   "zh": "to contribute to …",
+   "exZh": "Summer rain contributes very little to recharging groundwater."
+  },
+  "V16-30": {
+   "zh": "water restrictions",
+   "exZh": "Despite a rainy winter, water restrictions remain in place."
+  },
+  "V16-31": {
+   "zh": "noise pollution",
+   "exZh": "The survey is about noise pollution from the freight line."
+  },
+  "V16-32": {
+   "zh": "to reduce something by + amount",
+   "exZh": "Noise barriers would reduce the noise by about 8 decibels."
+  },
+  "V16-33": {
+   "zh": "the urban heat island",
+   "exZh": "This difference in temperature is called the urban heat island."
+  },
+  "V16-34": {
+   "zh": "as a priority",
+   "exZh": "Cities plant trees as a priority in paved squares."
+  },
+  "V16-35": {
+   "zh": "that is to say, meaning",
+   "exZh": "— A lack of food, meaning what? — There are no more flowers in summer."
+  },
+  "V16-36": {
+   "zh": "there is no guarantee that …",
+   "exZh": "There’s no guarantee the grants will be at the same level in three years."
+  },
+  "V16-37": {
+   "zh": "in the order of, about",
+   "exZh": "Journey time goes up by about a minute on a twenty-minute trip."
+  },
+  "V16-38": {
+   "zh": "to sort one’s rubbish",
+   "exZh": "Since the rules changed, I sort my rubbish better."
+  },
+  "V16-39": {
+   "zh": "to cut one’s energy use",
+   "exZh": "The building wants to cut its energy use by 20%."
+  },
+  "V16-40": {
+   "zh": "air quality",
+   "exZh": "Airing every day improves indoor air quality."
+  },
+  "V16-41": {
+   "zh": "to save energy",
+   "exZh": "By turning the heating down one degree, you save energy."
+  },
+  "V16-42": {
+   "zh": "global warming",
+   "exZh": "Heatwaves are more frequent with global warming."
+  },
+  "V16-43": {
+   "zh": "renewable energy",
+   "exZh": "The town is investing in renewable energy."
+  },
+  "V16-44": {
+   "zh": "to raise someone’s awareness of …",
+   "exZh": "The association raises residents’ awareness of recycling."
+  },
+  "V16-45": {
+   "zh": "to make compost",
+   "exZh": "In our building, we make compost from peelings."
+  }
+ },
+ "title": "Cause, consequence and explanation",
+ "phase": "Foundations and grammar on autopilot"
+}

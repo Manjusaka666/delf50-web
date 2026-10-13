@@ -1,1 +1,286 @@
-{}
+{
+ "canDo": "Can compare two or more options with comparatives and superlatives, explaining choices and trade-offs.",
+ "review": "Review adjectives/quantities; add plus/moins/aussi/autant.",
+ "input": "Listening: consumer choices; reading: two options compared.",
+ "output": "Write a 120-word comparison; speak for 2 minutes on “A or B?”.",
+ "checkpoint": "Compare on at least 3 criteria and reach a conclusion; use plus/moins/aussi/autant and common superlatif forms correctly.",
+ "challenge": "Today’s challenge: compare two means of transport or two housing options in your city in 6 sentences, using plus…que, moins…que, aussi…que and le plus at least once each; end with one sentence giving your choice and your reason, and talk about it for 2 minutes.",
+ "items": {
+  "reading": {
+   "R14-1": {
+    "questions": [
+     {
+      "why": "The flight is shorter, but getting to and from the airport and security add about two hours. The text doesn’t say the train is never late."
+     },
+     {
+      "why": "« le prix bouge peu selon la date » — that is exactly what sets it apart from the other two."
+     },
+     {
+      "why": "« aussi souple que l'avion sur le prix, mais nettement plus régulier sur la durée ». aussi … que means equal."
+     }
+    ]
+   },
+   "R14-2": {
+    "questions": [
+     {
+      "why": "The costs the text lists as specific to owners are the taxe foncière, major repairs and service charges that can’t be passed on."
+     },
+     {
+      "why": "One to two years’ rent is the scale of the owner’s extra costs over twenty years, not the notary’s fees."
+     },
+     {
+      "why": "« plus votre horizon est incertain, moins l'achat est intéressant » — the double comparison plus…moins."
+     }
+    ]
+   },
+   "R14-3": {
+    "questions": [
+     {
+      "why": "« moins de deux euros de différence » — differences in speed hardly affect annual energy use."
+     },
+     null,
+     {
+      "why": "« le seul à obtenir une bonne note sur les quatre critères à la fois »; the fastest is D, and the text doesn’t say B is the cheapest."
+     }
+    ]
+   },
+   "R14-4": {
+    "questions": [
+     {
+      "why": "« elle dépend surtout du logement ». Rural areas are where the gap widens, not the main factor."
+     },
+     null,
+     {
+      "why": "The lowest-earning 20% spend almost twice the share on housing and energy that the highest-earning 20% do."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L14-1": {
+    "questions": [
+     {
+      "why": "« il est mieux isolé : les charges sont deux fois moins élevées ». The second flat is smaller and on the first floor."
+     },
+     {
+      "why": "« C'est là que l'écart est le plus net » comes straight after the travel distance (ten minutes versus three)."
+     }
+    ]
+   },
+   "L14-2": {
+    "questions": [
+     {
+      "why": "The low first-year price is real, but it doubles after twelve months: you only save if you switch again in time."
+     },
+     {
+      "why": "Poor coverage → using mobile data at home too → more expensive in practice."
+     }
+    ]
+   },
+   "L14-3": {
+    "questions": [
+     {
+      "why": "20 minutes by car + 10–15 minutes to find a space ≈ 25 minutes by bike."
+     },
+     {
+      "why": "« Si, l'entretien, à peu près cent euros par an. Beaucoup moins, donc » — a hundred euros a year versus forty euros a month for parking."
+     },
+     {
+      "why": "« je vais essayer trois jours par semaine, pas tous les jours ». The bus is the plan for rainy days."
+     }
+    ]
+   },
+   "L14-4": {
+    "questions": [
+     {
+      "why": "The price is in the graphics card, which a law student has no use for."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V14-01": {
+   "zh": "The first option is more … than the second",
+   "exZh": "The first option is cheaper than the second, but it takes time."
+  },
+  "V14-02": {
+   "zh": "the gap is (more/less) marked",
+   "exZh": "The gap is even more marked in rural areas, where houses are bigger."
+  },
+  "V14-03": {
+   "zh": "I’d rather choose … because …",
+   "exZh": "I’d rather choose the train because it’s more reliable."
+  },
+  "V14-04": {
+   "zh": "the advantage of … is that …",
+   "exZh": "The advantage of cycling is that it costs almost nothing."
+  },
+  "V14-05": {
+   "zh": "the drawback is that …",
+   "exZh": "The drawback is that car-sharing depends on the driver."
+  },
+  "V14-06": {
+   "zh": "the most / the least + adjective (of …)",
+   "exZh": "Car-sharing is the cheapest of the three modes of transport."
+  },
+  "V14-07": {
+   "zh": "as … as",
+   "exZh": "Model B turned out to be as sturdy as the most expensive model."
+  },
+  "V14-08": {
+   "zh": "as much as",
+   "exZh": "The price of flying varies as much as that of the train."
+  },
+  "V14-09": {
+   "zh": "the more …, the less …",
+   "exZh": "The less certain your situation, the less worthwhile buying is."
+  },
+  "V14-10": {
+   "zh": "twice as much / half as much (as)",
+   "exZh": "A household in an old house spends twice as much as one in a recent home."
+  },
+  "V14-11": {
+   "zh": "in other words",
+   "exZh": "In other words, the train is more reliable than the plane in terms of journey time."
+  },
+  "V14-12": {
+   "zh": "What makes the difference is …",
+   "exZh": "Between the two flats, what makes the difference is the insulation."
+  },
+  "V14-13": {
+   "zh": "you need to allow + time/sum",
+   "exZh": "For the plane, you need to allow two more hours for getting there and the checks."
+  },
+  "V14-14": {
+   "zh": "to take (an amount of time)",
+   "exZh": "How long does it take you by bike?"
+  },
+  "V14-15": {
+   "zh": "clearly more …",
+   "exZh": "The train is clearly more reliable than the car."
+  },
+  "V14-16": {
+   "zh": "to work out more/less expensive",
+   "exZh": "Old electric heating works out more expensive than gas."
+  },
+  "V14-17": {
+   "zh": "to pay service charges",
+   "exZh": "The owner pays charges that the tenant doesn’t."
+  },
+  "V14-18": {
+   "zh": "notary’s fees (when buying property)",
+   "exZh": "Notary’s fees come to about 7% of the price."
+  },
+  "V14-19": {
+   "zh": "to recoup the costs",
+   "exZh": "You need to stay at least five years to recoup the costs of buying."
+  },
+  "V14-20": {
+   "zh": "to depend on …",
+   "exZh": "Heating costs depend mainly on the home itself."
+  },
+  "V14-21": {
+   "zh": "to be well insulated",
+   "exZh": "The second flat is better insulated: the charges are lower."
+  },
+  "V14-22": {
+   "zh": "ten minutes’ walk from …",
+   "exZh": "The first flat is ten minutes’ walk from the tram."
+  },
+  "V14-23": {
+   "zh": "to be offset",
+   "exZh": "Over the year, the difference in rent is almost offset."
+  },
+  "V14-24": {
+   "zh": "it’s partly true",
+   "exZh": "Switch provider to pay less? That’s partly true, but less than people say."
+  },
+  "V14-25": {
+   "zh": "to change provider (phone/internet)",
+   "exZh": "Do you really need to change provider every year?"
+  },
+  "V14-26": {
+   "zh": "less than people say",
+   "exZh": "It’s partly true, but less than people say."
+  },
+  "V14-27": {
+   "zh": "to waste time …-ing",
+   "exZh": "By car, you waste ten minutes parking."
+  },
+  "V14-28": {
+   "zh": "that’s what holds me back",
+   "exZh": "The rain — that’s what holds me back."
+  },
+  "V14-29": {
+   "zh": "to be designed for …",
+   "exZh": "This model is designed for video editing."
+  },
+  "V14-30": {
+   "zh": "for a comparable floor area",
+   "exZh": "For a comparable floor area, a heat pump works out much cheaper."
+  },
+  "V14-31": {
+   "zh": "to devote something to …",
+   "exZh": "Low-income households devote a large share of their budget to housing."
+  },
+  "V14-32": {
+   "zh": "to book a month in advance",
+   "exZh": "Booked a month in advance, the ticket cost 49 euros."
+  },
+  "V14-33": {
+   "zh": "at the same time, both",
+   "exZh": "Model B is the only one that is good on all four criteria at the same time."
+  },
+  "V14-34": {
+   "zh": "to be looking for somewhere to live",
+   "exZh": "I’m looking for somewhere to live near my work."
+  },
+  "V14-35": {
+   "zh": "the best value for money",
+   "exZh": "Model B offers the best value for money in the test."
+  },
+  "V14-36": {
+   "zh": "to pay property tax (owners)",
+   "exZh": "The owner pays property tax, which the tenant doesn’t."
+  },
+  "V14-37": {
+   "zh": "to weigh up the pros and cons",
+   "exZh": "Before choosing somewhere to live, you have to weigh up the pros and cons."
+  },
+  "V14-38": {
+   "zh": "a bright flat",
+   "exZh": "I prefer a bright flat, even if it’s smaller."
+  },
+  "V14-39": {
+   "zh": "to sign a lease",
+   "exZh": "We signed the lease for three years."
+  },
+  "V14-40": {
+   "zh": "to make the journey (from A to B)",
+   "exZh": "We compared three ways of making the Paris–Marseille journey."
+  },
+  "V14-41": {
+   "zh": "rush hour",
+   "exZh": "At rush hour, the tram is packed."
+  },
+  "V14-42": {
+   "zh": "to be temporarily moved",
+   "exZh": "Because of the works, the stop has been temporarily moved to Rue Victor-Hugo."
+  },
+  "V14-43": {
+   "zh": "to turn out (to be) …",
+   "exZh": "Model B turned out to be as sturdy as the most expensive model."
+  },
+  "V14-44": {
+   "zh": "to buy an older property / a new-build",
+   "exZh": "When you buy an older property, notary’s fees come to 7 to 8% of the price."
+  },
+  "V14-45": {
+   "zh": "an area with poor coverage",
+   "exZh": "A cheaper plan in an area with poor coverage works out more expensive in practice."
+  }
+ },
+ "title": "Comparing and choosing",
+ "phase": "Foundations and grammar on autopilot"
+}

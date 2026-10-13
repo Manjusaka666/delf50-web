@@ -1,1 +1,264 @@
-{}
+{
+ "canDo": "Can give an opinion with examples and add limits or the other side with opposition / concession.",
+ "review": "Review cause and effect; add contrast and concession with cependant/pourtant/en revanche/malgré/bien que.",
+ "input": "Listening: simple opinions; reading: a short text on both sides of a question.",
+ "output": "Write a 130–140-word opinion; speak for 2.5 minutes with examples and a turn.",
+ "checkpoint": "Your output follows opinion → reason → example → turn → conclusion.",
+ "challenge": "Today’s challenge: on “Do smartphones make us lonelier?”, write a 5-sentence opinion: take a position, give an example from your own life, bring in the opposite view with mais / pourtant / même si, and end with a balanced conclusion; then record yourself for 2 minutes.",
+ "items": {
+  "reading": {
+   "R17-1": {
+    "questions": [
+     {
+      "why": "« il tourne toujours autour de la même question : combien d'heures ? C'est précisément là qu'il se trompe ». The author doesn’t deny the effect on sleep."
+     },
+     {
+      "why": "The example illustrates « les compter ensemble n'a pas de sens »."
+     },
+     {
+      "why": "« Cela ne signifie pas qu'il ne faut aucune règle » — what he opposes is rules based only on time."
+     }
+    ]
+   },
+   "R17-2": {
+    "questions": [
+     null,
+     {
+      "why": "The example is four people living in forty square metres: the real conditions for télétravail are unequal."
+     }
+    ]
+   },
+   "R17-3": {
+    "questions": [
+     {
+      "why": "The number of jobs is falling, but the main point is that the work has changed: more technical, more mentally tiring."
+     }
+    ]
+   },
+   "R17-4": {
+    "questions": [
+     {
+      "why": "« elle est même supérieure à ses concurrentes »; it still works normally after location is refused."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L17-1": {
+    "questions": [
+     {
+      "why": "« Non, je suis contre leur application uniforme »; what he proposes is phased deadlines, not a permanent exemption."
+     }
+    ]
+   },
+   "L17-2": {
+    "questions": [
+     {
+      "why": "« je retiens moins bien. Je ne saurais pas dire pourquoi » — yet she still reads mainly on screen."
+     }
+    ]
+   },
+   "L17-3": {
+    "questions": [
+     {
+      "why": "Hours have fallen, but the number of people taking part hasn’t; what has changed is the form."
+     },
+     {
+      "why": "He gives the example of the trésorier: « ces fonctions-là ne trouvent plus preneur »."
+     }
+    ]
+   },
+   "L17-4": {
+    "questions": [
+     {
+      "why": "An eighty-kilometre round trip twice a week, « ni en temps ni en argent ». House prices are actually a point in its favour."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V17-01": {
+   "zh": "admittedly …, but …",
+   "exZh": "Admittedly, heavy use is linked to less sleep, but time spent tells you nothing about what is done."
+  },
+  "V17-02": {
+   "zh": "it is true that …, but …",
+   "exZh": "It is true that remote working saves time, but it reduces informal exchanges."
+  },
+  "V17-03": {
+   "zh": "that said",
+   "exZh": "An e-reader is practical. That said, I notice I remember less well."
+  },
+  "V17-04": {
+   "zh": "conversely",
+   "exZh": "Conversely, several people point to a difficulty that is rarely mentioned."
+  },
+  "V17-05": {
+   "zh": "even if",
+   "exZh": "Even if I read on paper, I spend a lot of time on my phone."
+  },
+  "V17-06": {
+   "zh": "although (+ subjunctive)",
+   "exZh": "Although the app is very effective, it collects too much data."
+  },
+  "V17-07": {
+   "zh": "despite (+ noun)",
+   "exZh": "Despite its qualities, I don’t recommend this app."
+  },
+  "V17-08": {
+   "zh": "nevertheless",
+   "exZh": "An e-reader is practical; nevertheless, I remember less of what I read."
+  },
+  "V17-09": {
+   "zh": "I admit that …",
+   "exZh": "I admit this rule is simple, but it misses the point."
+  },
+  "V17-10": {
+   "zh": "I grant you that",
+   "exZh": "That’s the real risk, I grant you."
+  },
+  "V17-11": {
+   "zh": "that doesn’t mean that …",
+   "exZh": "That doesn’t mean there should be no rules at all."
+  },
+  "V17-12": {
+   "zh": "as … shows",
+   "exZh": "As this test shows, an app can be effective and still not respect privacy."
+  },
+  "V17-13": {
+   "zh": "Take the example of …",
+   "exZh": "Take the example of self-checkout tills."
+  },
+  "V17-14": {
+   "zh": "that is the case with …",
+   "exZh": "Some jobs are changing a lot; that is the case with cashiers."
+  },
+  "V17-15": {
+   "zh": "on one side …, on the other …",
+   "exZh": "On one side, remote working saves time; on the other, it isolates people."
+  },
+  "V17-16": {
+   "zh": "whether … or … (+ subjunctive)",
+   "exZh": "Whether I read on paper or on a tablet, the result is the same."
+  },
+  "V17-17": {
+   "zh": "on the contrary",
+   "exZh": "For a festival, it isn’t a problem — on the contrary."
+  },
+  "V17-18": {
+   "zh": "that’s putting it strongly",
+   "exZh": "Are associations under threat? That’s putting it strongly: forced to change, certainly."
+  },
+  "V17-19": {
+   "zh": "on paper, in theory",
+   "exZh": "On paper, it’s obvious: a house with a garden for the price of a two-room flat."
+  },
+  "V17-20": {
+   "zh": "to make sense",
+   "exZh": "Counting these two kinds of use together makes no sense."
+  },
+  "V17-21": {
+   "zh": "to put forward, to highlight …",
+   "exZh": "Supporters of remote working highlight the commuting time saved."
+  },
+  "V17-22": {
+   "zh": "to stress, to insist on …",
+   "exZh": "A third group stresses the inequality between employees."
+  },
+  "V17-23": {
+   "zh": "to command a consensus",
+   "exZh": "No pattern of remote working commands a consensus."
+  },
+  "V17-24": {
+   "zh": "to be for / against …",
+   "exZh": "I’m not against restrictions, but against applying them uniformly."
+  },
+  "V17-25": {
+   "zh": "to be right to …",
+   "exZh": "They’re right to be wary of a timetable that’s too vague."
+  },
+  "V17-26": {
+   "zh": "to be wary of …",
+   "exZh": "It’s tempting, but I’m wary of things that seem obvious."
+  },
+  "V17-27": {
+   "zh": "the problem lies elsewhere",
+   "exZh": "The app works well. The problem lies elsewhere."
+  },
+  "V17-28": {
+   "zh": "by default",
+   "exZh": "The data-sharing box is ticked by default."
+  },
+  "V17-29": {
+   "zh": "personal data",
+   "exZh": "This app shares your personal data with partners."
+  },
+  "V17-30": {
+   "zh": "the terms of use",
+   "exZh": "Read the terms of use before installing the app."
+  },
+  "V17-31": {
+   "zh": "to have mixed feelings, to be divided",
+   "exZh": "Our view is mixed: a very good tool, a bad practice."
+  },
+  "V17-32": {
+   "zh": "to deliver on its promises",
+   "exZh": "For sleep tracking, the app delivers on its promises."
+  },
+  "V17-33": {
+   "zh": "to be associated with …",
+   "exZh": "Heavy screen use is associated with poorer results at school."
+  },
+  "V17-34": {
+   "zh": "based on …",
+   "exZh": "A rule based only on time will miss the point."
+  },
+  "V17-35": {
+   "zh": "to call for caution",
+   "exZh": "Recent history calls for more caution."
+  },
+  "V17-36": {
+   "zh": "to set A against B",
+   "exZh": "People always set paper against screens, but the real change lies elsewhere."
+  },
+  "V17-37": {
+   "zh": "it depends (on …)",
+   "exZh": "— Is it a decline? — It depends for whom."
+  },
+  "V17-38": {
+   "zh": "it’s no small thing",
+   "exZh": "Two eighty-kilometre round trips a week is no small thing."
+  },
+  "V17-39": {
+   "zh": "in my view",
+   "exZh": "In my view, the problem isn’t the screen but the interruptions."
+  },
+  "V17-40": {
+   "zh": "to work from home",
+   "exZh": "I work from home two days a week."
+  },
+  "V17-41": {
+   "zh": "an unstable connection",
+   "exZh": "In the evening my connection is unstable and the video cuts out."
+  },
+  "V17-42": {
+   "zh": "to take a course remotely",
+   "exZh": "I’m taking a course remotely on an online platform."
+  },
+  "V17-43": {
+   "zh": "screen time",
+   "exZh": "Limiting screen time isn’t enough: you have to look at the content."
+  },
+  "V17-44": {
+   "zh": "to download an app",
+   "exZh": "Before downloading an app, check the permissions it asks for."
+  },
+  "V17-45": {
+   "zh": "social networks",
+   "exZh": "Teenagers often meet up with their friends on social networks."
+  }
+ },
+ "title": "Contrast, examples and concession",
+ "phase": "Foundations and grammar on autopilot"
+}

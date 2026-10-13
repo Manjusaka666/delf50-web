@@ -1,1 +1,259 @@
-{}
+{
+ "canDo": "Can tell apart something just finished, background, completed events and “the past before the past”, turning an experience into a clear timeline.",
+ "review": "Review passé composé / imparfait; learn the passé récent and plus-que-parfait to build a four-layer past timeline.",
+ "input": "Listening and reading about travel experiences, paying attention to the order of the story.",
+ "output": "Write 140 words about a trip; retell it aloud in 3 minutes and answer follow-up questions.",
+ "checkpoint": "Correctly distinguish passé composé / imparfait in a story, and understand or actively use the passé récent and plus-que-parfait.",
+ "challenge": "Today’s challenge: in RFI’s Journal en français facile, find a news item about travel or a transport breakdown and retell it in 4 sentences, including one with venir de + infinitive and one in the plus-que-parfait (Les voyageurs avaient déjà…); then write one sentence comparing it with a trip of your own.",
+ "items": {
+  "reading": {
+   "R19-1": {
+    "questions": [
+     {
+      "why": "The forecast deterioration was for the next evening, and they set off on time. The mistake was adding a secondary summit on the spot “because there was time”."
+     },
+     {
+      "why": "« plutôt que de continuer vers le refuge, pourtant plus proche » — which is why it seemed absurd at the time."
+     },
+     {
+      "why": "« La leçon n'est pas « il faut avoir un guide ». Elle est plus simple… » The author explicitly rules out “you need a guide”."
+     }
+    ]
+   },
+   "R19-2": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "« ce n'est pas le train qui crée ces moments : c'est l'absence d'alternative », and he says plainly that he doesn’t wish for breakdowns."
+     }
+    ]
+   },
+   "R19-3": {
+    "questions": [
+     {
+      "why": "She shared with two French people and spoke English to customers at the café. The breakthrough only came after she changed flatshare in January."
+     }
+    ]
+   },
+   "R19-4": {
+    "questions": [
+     {
+      "why": "« Ils s'étaient renseignés … mais sur l'horaire de la marée d'un port situé à trente kilomètres », about an hour and a half different locally."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L19-1": {
+    "questions": [
+     {
+      "why": "« La ville en compte deux qui portent presque le même nom ». All the pupils were there."
+     },
+     {
+      "why": "« les élèves étaient tous là, on a marché » — one kilometre, twenty minutes."
+     }
+    ]
+   },
+   "L19-2": {
+    "questions": [
+     {
+      "why": "On the second day they couldn’t set off at all, because Marion’s knee hurt."
+     }
+    ]
+   },
+   "L19-4": {
+    "questions": [
+     null,
+     {
+      "why": "« Montrez-nous d'abord ce que votre outil fait de plus » — polite but firm."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V19-01": {
+   "zh": "after having …",
+   "exZh": "After waiting twenty minutes, I called the driver."
+  },
+  "V19-02": {
+   "zh": "everything went well",
+   "exZh": "Everything went well up to the pass."
+  },
+  "V19-03": {
+   "zh": "to be about to …",
+   "exZh": "We were about to set off again when the fog came up."
+  },
+  "V19-04": {
+   "zh": "hardly … when …, no sooner … than …",
+   "exZh": "No sooner had we reached the pass than the fog came up."
+  },
+  "V19-05": {
+   "zh": "the meeting point",
+   "exZh": "I’m sending a photo of the meeting point to all the accompanying adults."
+  },
+  "V19-06": {
+   "zh": "it was the first time that …",
+   "exZh": "It was the first time I’d taken a night train."
+  },
+  "V19-07": {
+   "zh": "the day (when) …",
+   "exZh": "I remember very well the day we lost the coach."
+  },
+  "V19-08": {
+   "zh": "that evening",
+   "exZh": "That evening I understood it isn’t the train that creates these moments."
+  },
+  "V19-09": {
+   "zh": "to turn back",
+   "exZh": "The fog came up and we turned back."
+  },
+  "V19-10": {
+   "zh": "to be on the programme, to be planned",
+   "exZh": "We added a summit, even though it wasn’t on the programme."
+  },
+  "V19-11": {
+   "zh": "to change plans",
+   "exZh": "We changed plans because we were ahead of time."
+  },
+  "V19-12": {
+   "zh": "at the time, in the moment",
+   "exZh": "At the time, it seemed absurd to us."
+  },
+  "V19-13": {
+   "zh": "to expect …",
+   "exZh": "I expected to sleep badly on the night train."
+  },
+  "V19-14": {
+   "zh": "two days later",
+   "exZh": "Two days later, we heard a group had spent the night outdoors."
+  },
+  "V19-15": {
+   "zh": "out of curiosity",
+   "exZh": "I’d chosen the night train on principle, and partly out of curiosity."
+  },
+  "V19-16": {
+   "zh": "what changed everything was …",
+   "exZh": "What changed everything was a breakdown around midnight."
+  },
+  "V19-17": {
+   "zh": "a power failure",
+   "exZh": "There was a power failure somewhere before the border."
+  },
+  "V19-18": {
+   "zh": "to warn someone about …",
+   "exZh": "I’d been warned about everything except the most important thing."
+  },
+  "V19-19": {
+   "zh": "from then on",
+   "exZh": "I changed flatshare in January, and from then on, everything fell into place."
+  },
+  "V19-20": {
+   "zh": "to make friends",
+   "exZh": "I’d been told I would make friends for life."
+  },
+  "V19-21": {
+   "zh": "how (much), to what extent",
+   "exZh": "Nobody had told me how hard coming back would be."
+  },
+  "V19-22": {
+   "zh": "it took me + time to …",
+   "exZh": "It took me almost six months to get used to things again."
+  },
+  "V19-23": {
+   "zh": "to adapt to …",
+   "exZh": "At first, I found it hard to adapt to the Spanish pace of life."
+  },
+  "V19-24": {
+   "zh": "instead of …-ing",
+   "exZh": "Instead of trying to cross, they climbed to high ground."
+  },
+  "V19-25": {
+   "zh": "to be stranded",
+   "exZh": "Three walkers were stranded for four hours by the tide."
+  },
+  "V19-26": {
+   "zh": "to find out about …",
+   "exZh": "They had found out the tide times — but for another port."
+  },
+  "V19-27": {
+   "zh": "to be rescued",
+   "exZh": "On Sunday, three walkers were rescued on the coast."
+  },
+  "V19-28": {
+   "zh": "to have an appointment with someone",
+   "exZh": "We were due to meet the coach at two p.m."
+  },
+  "V19-29": {
+   "zh": "to teach someone a lesson",
+   "exZh": "Everything worked out, but it taught me a lesson."
+  },
+  "V19-30": {
+   "zh": "the evening before",
+   "exZh": "I send a photo of the meeting point the evening before."
+  },
+  "V19-31": {
+   "zh": "to be right to …",
+   "exZh": "We were right not to book anything in advance."
+  },
+  "V19-32": {
+   "zh": "to spend one’s time …-ing",
+   "exZh": "In August, I spent my time booking."
+  },
+  "V19-33": {
+   "zh": "to stay one more day",
+   "exZh": "In September, you can decide to stay one more day."
+  },
+  "V19-34": {
+   "zh": "to take the trouble to …",
+   "exZh": "Nobody before me had taken the trouble to look at their system."
+  },
+  "V19-35": {
+   "zh": "immediately, at once",
+   "exZh": "The path was under water: they immediately climbed to high ground."
+  },
+  "V19-36": {
+   "zh": "on my arrival",
+   "exZh": "On my arrival, I discovered the team already had a system."
+  },
+  "V19-37": {
+   "zh": "a cancelled train",
+   "exZh": "I arrived late because of a train cancelled at the end of the day."
+  },
+  "V19-38": {
+   "zh": "to miss one’s connection",
+   "exZh": "With this delay, I missed my connection."
+  },
+  "V19-39": {
+   "zh": "to pitch the tent",
+   "exZh": "A farmer let us pitch the tent behind his barn."
+  },
+  "V19-40": {
+   "zh": "to get used to … again",
+   "exZh": "It took me a while to get used to my old life again."
+  },
+  "V19-41": {
+   "zh": "to book accommodation",
+   "exZh": "In August, you have to book accommodation well in advance."
+  },
+  "V19-42": {
+   "zh": "to backpack, to travel with a rucksack",
+   "exZh": "At twenty, I went backpacking for three months."
+  },
+  "V19-43": {
+   "zh": "to tour, to go round …",
+   "exZh": "We toured Croatia in two weeks."
+  },
+  "V19-44": {
+   "zh": "jet lag",
+   "exZh": "For the first two days, I suffered from jet lag."
+  },
+  "V19-45": {
+   "zh": "a stay abroad",
+   "exZh": "A stay abroad isn’t always enough to improve your Spanish."
+  }
+ },
+ "title": "Transfer: telling a story",
+ "phase": "Transfer to real tasks"
+}

@@ -1,1 +1,260 @@
-{}
+{
+ "canDo": "Can make polite requests, give advice and express simple hypotheses with si + imparfait / conditionnel.",
+ "review": "Review future stems; master voudrais/pourriez/devriez/serait.",
+ "input": "Listening: complaints and advice; reading: emails asking for help/giving advice.",
+ "output": "Write a 120-word email of advice; give 4 pieces of advice aloud in 2 minutes, with explanations.",
+ "checkpoint": "At least 4 conditional forms; avoid errors such as si je serais.",
+ "challenge": "Today’s challenge: imagine a friend has been sleeping badly lately; write them 4 pieces of advice in French (Tu devrais…, À ta place, je…, Si j’étais toi, je…), each with a reason; you can first look up a health expression to review on TV5MONDE or Le Point du FLE.",
+ "items": {
+  "reading": {
+   "R15-1": {
+    "questions": [
+     {
+      "why": "The fault is an automatic shutdown below zero. Three rooms relying on temporary heaters is a consequence, not a description of the boiler’s fault."
+     },
+     {
+      "why": "The first demand is a repair visit as soon as possible; replacing the appliance is the fallback « Si une réparation n'était pas possible »."
+     },
+     {
+      "why": "« je saisirais le médiateur … Je préférerais évidemment éviter cette démarche » — the conditional leaves room for manoeuvre."
+     }
+    ]
+   },
+   "R15-2": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "« Il pourrait chercher une cause précise plutôt que prescrire d'emblée un somnifère »; the threshold for seeing a doctor is one month."
+     }
+    ]
+   },
+   "R15-4": {
+    "questions": [
+     {
+      "why": "Footfall does eventually rise, but with a lag of 12–18 months, and « peu de commerces peuvent absorber une année difficile »."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L15-1": {
+    "questions": [
+     {
+      "why": "The first step is a registered letter stating the precise facts; mediation is the next step « si ça ne suffit pas »."
+     },
+     null,
+     {
+      "why": "« Ce n'est pas un tribunal : personne n'est obligé d'accepter le résultat », and it’s free."
+     }
+    ]
+   },
+   "L15-3": {
+    "questions": [
+     {
+      "why": "« si on cloisonnait, on perdrait la lumière du fond », so glass partitions are needed, which are expensive."
+     },
+     null,
+     {
+      "why": "The ending gives the order clearly: glass partitions come last, depending on the budget."
+     }
+    ]
+   },
+   "L15-4": {
+    "questions": [
+     null,
+     {
+      "why": "« Sans ces éléments, l'attente serait beaucoup plus longue » — a longer wait, not being turned away."
+     },
+     {
+      "why": "One of the three red-flag symptoms is weakness on one side of the body: call 15 immediately."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V15-01": {
+   "zh": "it would be better to …",
+   "exZh": "If you’re not asleep after twenty minutes, it would be better to get up."
+  },
+  "V15-02": {
+   "zh": "I would advise you to … (tactful)",
+   "exZh": "Before any legal step, I would advise you to send a registered letter."
+  },
+  "V15-03": {
+   "zh": "I would like … to … (polite)",
+   "exZh": "I would like you to come before the end of the month."
+  },
+  "V15-04": {
+   "zh": "all you would need to do is …",
+   "exZh": "If an item needed more time, all you’d need to do is say so in advance."
+  },
+  "V15-05": {
+   "zh": "If I were you, I would …",
+   "exZh": "If I were you, I’d start by writing to the neighbour."
+  },
+  "V15-06": {
+   "zh": "What if we …? (suggestion)",
+   "exZh": "What if we started with two small rooms for phone calls?"
+  },
+  "V15-07": {
+   "zh": "Why not …?",
+   "exZh": "Why not try mediation before going any further?"
+  },
+  "V15-08": {
+   "zh": "It would be useful to …",
+   "exZh": "It would be useful to note down your spending for a month."
+  },
+  "V15-09": {
+   "zh": "You should … (advice)",
+   "exZh": "You should see a doctor if the cough continues."
+  },
+  "V15-10": {
+   "zh": "Could you … instead?",
+   "exZh": "On Tuesday I’m working. Could you offer me an evening appointment instead?"
+  },
+  "V15-11": {
+   "zh": "Could you …? (polite request)",
+   "exZh": "Could you explain how to take this medicine?"
+  },
+  "V15-12": {
+   "zh": "It’s worth …-ing",
+   "exZh": "It’s worth asking the pharmacist’s advice."
+  },
+  "V15-13": {
+   "zh": "Would you mind …-ing?",
+   "exZh": "Would you mind turning the music down a little after 10 p.m.?"
+  },
+  "V15-14": {
+   "zh": "What would happen if …?",
+   "exZh": "What would happen if there were no more cars in the square?"
+  },
+  "V15-15": {
+   "zh": "Let’s imagine that …",
+   "exZh": "Let’s imagine the square is closed to traffic."
+  },
+  "V15-16": {
+   "zh": "provided that …, on condition of …",
+   "exZh": "This delivery slot works, provided it is actually enforced."
+  },
+  "V15-17": {
+   "zh": "to follow up on … (a letter)",
+   "exZh": "I am writing further to my letter of 4 February."
+  },
+  "V15-18": {
+   "zh": "as a reminder",
+   "exZh": "As a reminder, the boiler stops as soon as it freezes."
+  },
+  "V15-19": {
+   "zh": "failing …, in the absence of …",
+   "exZh": "Failing a reply within fifteen days, I would refer the matter to the ombudsman."
+  },
+  "V15-20": {
+   "zh": "to refer a matter to the ombudsman",
+   "exZh": "If nothing changes, we will refer the matter to the consumer ombudsman."
+  },
+  "V15-21": {
+   "zh": "to consider, to envisage …",
+   "exZh": "If repair is impossible, replacing the appliance should be considered."
+  },
+  "V15-22": {
+   "zh": "Yours faithfully (formal letter closing)",
+   "exZh": "Yours faithfully. (formal letter closing)"
+  },
+  "V15-23": {
+   "zh": "to talk to someone about it",
+   "exZh": "If the problems last more than a month, talk to your doctor about it."
+  },
+  "V15-24": {
+   "zh": "including",
+   "exZh": "Get up at the same time every day, including at the weekend."
+  },
+  "V15-25": {
+   "zh": "straight away, from the outset",
+   "exZh": "The doctor won’t prescribe you a sleeping pill straight away."
+  },
+  "V15-26": {
+   "zh": "to set up, to put in place",
+   "exZh": "Here is what we could put in place from September."
+  },
+  "V15-27": {
+   "zh": "following …, as a result of …",
+   "exZh": "Following the internal survey, we are making three proposals."
+  },
+  "V15-28": {
+   "zh": "an agenda (for a meeting)",
+   "exZh": "Without an agenda sent the day before, the meeting would be cancelled."
+  },
+  "V15-29": {
+   "zh": "by recorded delivery (with acknowledgement of receipt)",
+   "exZh": "Send your letter by recorded delivery with acknowledgement of receipt."
+  },
+  "V15-30": {
+   "zh": "to hang up on someone",
+   "exZh": "The second time, my neighbour hung up on me."
+  },
+  "V15-31": {
+   "zh": "to be overdrawn",
+   "exZh": "I’m overdrawn almost every month, from the 20th."
+  },
+  "V15-32": {
+   "zh": "direct debits",
+   "exZh": "Schedule your direct debits for the start of the month, just after payday."
+  },
+  "V15-33": {
+   "zh": "if the budget allows",
+   "exZh": "The glass partitions will come last, if the budget allows."
+  },
+  "V15-34": {
+   "zh": "one’s GP (registered doctor)",
+   "exZh": "Before going to A&E, call your GP."
+  },
+  "V15-35": {
+   "zh": "the carte Vitale (French health insurance card)",
+   "exZh": "Don’t forget to bring your carte Vitale."
+  },
+  "V15-36": {
+   "zh": "to dial 15 (emergency medical service)",
+   "exZh": "If you have chest pain, dial 15 immediately."
+  },
+  "V15-37": {
+   "zh": "to have a temperature",
+   "exZh": "My son has had a temperature since last night."
+  },
+  "V15-38": {
+   "zh": "to catch a cold",
+   "exZh": "I caught a cold last week."
+  },
+  "V15-39": {
+   "zh": "all the same, anyway",
+   "exZh": "If you come anyway, bring your test results."
+  },
+  "V15-40": {
+   "zh": "to have a pain in …, …ache",
+   "exZh": "I’ve had a sore throat for three days."
+  },
+  "V15-41": {
+   "zh": "it has been going on for …",
+   "exZh": "It’s not serious, but it’s been going on for a week."
+  },
+  "V15-42": {
+   "zh": "to follow the dosage",
+   "exZh": "It’s important to follow the dosage on the prescription."
+  },
+  "V15-43": {
+   "zh": "side effects",
+   "exZh": "This medicine can have side effects, such as dizziness."
+  },
+  "V15-44": {
+   "zh": "over the counter (without a prescription)",
+   "exZh": "This syrup is sold over the counter."
+  },
+  "V15-45": {
+   "zh": "to be reimbursed by the Sécurité sociale",
+   "exZh": "This consultation is reimbursed by the Sécurité sociale."
+  }
+ },
+ "title": "Politeness, advice and hypotheses",
+ "phase": "Foundations and grammar on autopilot"
+}
