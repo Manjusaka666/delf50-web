@@ -1,4 +1,229 @@
 {
+ "canDo": "Can write a fully structured letter of complaint or request in a formal register (inverted questions, the polite conditional, je vous saurais gré de, veuillez + infinitive, set forms of address and closing formulas), and turn a colloquial complaint into appropriate written French.",
+ "review": "Review day 26’s verb structures (prier qqn de, inciter à, s’engager à), day 24’s negation (ne… guère) and day 9’s conditional; look back at the basic B1 formal letter layout (objet, formule d’appel, formule de politesse).",
+ "input": "Read: an article on “how to complain effectively”, a column defending polite formulas and a letter of complaint from a residents’ association to the mayor; listen: a radio interview with a mediator on disputes between neighbours, a transport company’s customer-service manager on compensation for delays and a town-hall helpline’s recorded message. Strategy: mark inversions, conditionals and set formulas, and notice what they do to the tone.",
+ "output": "Write: a letter (≥220 words) to the mayor on behalf of a residents’ association, opposing moving the market to the outskirts, with at least one inverted question, two polite conditionals and complete letter formulas; speak: a 4-minute monologue on “apps for citizens to report problems”, then a debate on “higher fines for antisocial behaviour”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; all five letter elements present (sender, recipient, objet, form of address, closing formula), with no tu or colloquial words; can rewrite a spoken complaint as a formal email within 10 minutes.",
+ "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about local life or public services and, imagining you are a resident, write a short 5-sentence formal letter using je vous saurais gré de, Pourriez-vous… ? and a closing formula.",
+ "items": {
+  "reading": {
+   "R27-1": {
+    "questions": [
+     {
+      "why": "It opens by asking « Qu’est-ce qui fait la différence ? », then covers clarity, tone, going digital and why complaints matter. Neither B nor C is the topic."
+     },
+     {
+      "why": "« une lettre qui expose les faits avec précision… et qui se termine par une demande claire ». A is the opposite of « se limiter à une page »; C isn’t mentioned."
+     },
+     {
+      "why": "« L’agent… n’est généralement pas responsable du problème. Si vous l’insultez, il fera son travail, mais sans zèle ». A is wrong: the letter will still be dealt with; B has no basis."
+     },
+     {
+      "why": "« ne relèvent pas de la flatterie : elles signalent que l’on connaît les usages et que l’on entend faire valoir ses droits sérieusement ». A is directly contradicted; C has no basis."
+     },
+     {
+      "why": "« Les services reçoivent davantage de messages, souvent brefs et peu documentés ». B is the opposite of “complaining has never been easier”; C is wrong: you still need to « compléter par téléphone »."
+     },
+     {
+      "why": "« qu’il ne s’attende pas à ce que tout soit réglé avant même que sa lettre ne soit arrivée » is an exaggeration: don’t expect the problem to be solved at once. A and B are literal misreadings."
+     }
+    ]
+   },
+   "R27-2": {
+    "questions": [
+     {
+      "why": "The headline is « Éloge », and the author argues that set formulas mean « c’est poser un cadre », and that « la politesse… c’est souvent elle qui en fait gagner ». A is the view the author rebuts (« L’ironie est facile »); C is only the hook."
+     },
+     {
+      "why": "« il n’avait indiqué ni son numéro de dossier ni le motif de sa demande ». A is the opposite (the email was very short); B isn’t mentioned."
+     },
+     {
+      "why": "« ces formules ne disent pas ce que l’on ressent ; elles disent la manière dont on entend se comporter… j’attends de vous la même chose ». A is contradicted in the text; C has no basis."
+     },
+     {
+      "why": "au risque de = at the risk of, even if it means being seen as…. The author expects to be seen as a “grumpy old fogey” but sticks to his view. B misreads the concession as a cause; C means the opposite."
+     },
+     {
+      "why": "The whole text argues that politeness works, so the closing “probably a coincidence” is ironic, implying it was the politeness that did it. A takes it literally, contradicting the whole text; B has no basis."
+     }
+    ]
+   },
+   "R27-3": {
+    "questions": [
+     {
+      "why": "« Nous nous permettons d’attirer votre attention sur une situation… », asking the mayor to « prendre les dispositions nécessaires ». A goes too far; C doesn’t match the content."
+     },
+     {
+      "why": "« Nous avons signalé ces nuisances à la direction du magasin à deux reprises… Ces démarches sont restées lettre morte ». B and C aren’t mentioned."
+     },
+     {
+      "why": "rester lettre morte = to go unheeded, to have no effect. A is a literal misunderstanding; B has no basis."
+     },
+     {
+      "why": "They ask to « rappeler… les horaires de livraison fixés par l’arrêté municipal » and to organise a three-way meeting. A is wrong: it’s about enforcing the existing rules, not changing them; C isn’t mentioned."
+     },
+     {
+      "why": "« Aussi vous saurions-nous gré » (initial aussi triggering inversion), « Serait-il envisageable » (inversion + conditional), « nous vous prions d’agréer… ». Neither A nor B fits."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L27-1": {
+    "questions": [
+     {
+      "why": "The mediator’s role is to « aider deux personnes en désaccord à trouver une solution à l’amiable ». B: no new rule is mentioned; C is wrong: « Je ne suis pas juge »."
+     },
+     {
+      "why": "« Et c’est gratuit, ce que beaucoup de gens ignorent ». A isn’t mentioned; C doesn’t fit « je n’impose rien »."
+     },
+     {
+      "why": "« D’abord, d’aller lui parler, tout simplement ». A and B are later steps."
+     },
+     {
+      "why": "« C’est important, parce que ça laisse une trace écrite ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "« même si vous obtenez satisfaction… Les relations, elles, ne seront guère meilleures ». A is the opposite of « coûte du temps »; C has no basis."
+     },
+     {
+      "why": "« Restez factuel. Indiquez des dates, des heures, et évitez les jugements sur la personne ». A and B go against this."
+     }
+    ]
+   },
+   "L27-2": {
+    "questions": [
+     {
+      "why": "It opens with « Sachez que vous pouvez être indemnisé » and goes on to the conditions for compensation. A and C aren’t covered."
+     },
+     {
+      "why": "« Tous les abonnés mensuels ou annuels, dès lors qu’ils ont subi… au moins cinq retards de plus de quinze minutes ». A is wrong: occasional travellers are only compensated for cancellations; C leaves out monthly pass holders."
+     },
+     {
+      "why": "« dans les deux mois qui suivent les faits, sous peine d’être rejetée ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "« ils ne traitent pas moins vite les messages agressifs, mais un message clair et poli leur fait gagner un temps précieux ». A is directly contradicted; C has no basis."
+     }
+    ]
+   },
+   "L27-3": {
+    "questions": [
+     {
+      "why": "« le service de signalement de la ville », for reporting road problems or asking about rubbish collection. B and C aren’t mentioned."
+     },
+     {
+      "why": "« nous vous invitons à remplir le formulaire disponible sur le site de la ville ». Pressing 1 is for reporting road problems."
+     },
+     {
+      "why": "« veuillez composer le numéro d’astreinte indiqué sur le site ». Neither A nor C is mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V27-01": {
+   "zh": "the maze of administrative procedures",
+   "exZh": "My file got lost in the maze of administrative procedures."
+  },
+  "V27-02": {
+   "zh": "we take the liberty of",
+   "exZh": "We take the liberty of bringing a worrying situation to your attention."
+  },
+  "V27-03": {
+   "zh": "to make a complaint",
+   "exZh": "Making a complaint to the town hall has never been easier."
+  },
+  "V27-04": {
+   "zh": "to assert one’s rights",
+   "exZh": "A well-written letter helps you assert your rights with the authorities."
+  },
+  "V27-05": {
+   "zh": "to make (us) aware of",
+   "exZh": "Many letters have made us aware of problems we didn’t know about."
+  },
+  "V27-06": {
+   "zh": "in the heat of anger",
+   "exZh": "Never send an email written in the heat of anger."
+  },
+  "V27-07": {
+   "zh": "to get satisfaction",
+   "exZh": "After three reminders, she finally got satisfaction."
+  },
+  "V27-08": {
+   "zh": "to go unheeded",
+   "exZh": "Both our letters to the management went unheeded."
+  },
+  "V27-09": {
+   "zh": "supporting documents",
+   "exZh": "Enclose supporting documents with your request: invoices, photos and the contract."
+  },
+  "V27-10": {
+   "zh": "to take the necessary steps",
+   "exZh": "Please take the necessary steps to ensure the hours are respected."
+  },
+  "V27-11": {
+   "zh": "to act on, to respond to",
+   "exZh": "We hope you will act on our request."
+  },
+  "V27-12": {
+   "zh": "would you be so kind as to … (polite request)",
+   "exZh": "Would you be so kind as to give me the file number?"
+  },
+  "V27-13": {
+   "zh": "it goes without saying that …",
+   "exZh": "It goes without saying that politeness doesn’t guarantee a favourable answer."
+  },
+  "V27-14": {
+   "zh": "for the simple reason that …",
+   "exZh": "I can’t come, for the simple reason that the meeting has been cancelled."
+  },
+  "V27-15": {
+   "zh": "the bare minimum",
+   "exZh": "Replying to residents’ letters is the bare minimum."
+  },
+  "V27-16": {
+   "zh": "at the risk of …",
+   "exZh": "At the risk of disappointing you, I stand by my position."
+  },
+  "V27-17": {
+   "zh": "to get people talking again",
+   "exZh": "The mediator managed to get the two neighbours talking again."
+  },
+  "V27-18": {
+   "zh": "to suffer the same fate",
+   "exZh": "The old station has been demolished, and the cinema could suffer the same fate."
+  },
+  "V27-19": {
+   "zh": "to turn a deaf ear",
+   "exZh": "Despite our many letters, the landlord turns a deaf ear."
+  },
+  "V27-20": {
+   "zh": "by far",
+   "exZh": "Noise is still by far the main reason for complaints."
+  },
+  "V27-21": {
+   "zh": "a formal notice, a final demand",
+   "exZh": "If mediation fails, a formal notice can be sent."
+  },
+  "V27-22": {
+   "zh": "as a last resort",
+   "exZh": "The courts should only step in as a last resort."
+  },
+  "V27-23": {
+   "zh": "to leave it too late",
+   "exZh": "He didn’t get a seat because he left it too late."
+  },
+  "V27-24": {
+   "zh": "or else, on pain of …",
+   "exZh": "The request must be made within two months, or it will be rejected."
+  },
+  "V27-25": {
+   "zh": "further to (a contact)",
+   "exZh": "Further to our phone conversation, please find the documents you requested."
+  }
+ },
  "title": "Register and formal letters",
  "phase": "Argument, mediation and reporting"
 }

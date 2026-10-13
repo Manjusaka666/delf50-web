@@ -1,4 +1,226 @@
 {
+ "canDo": "After a single listen, can quickly identify each speaker’s position in short recordings (vox pops, opinion columns, news flashes): for, against or with reservations; can use mood cues (je pense que + indicative / je ne pense pas que + subjunctive) and concessive structures (bien que, même si, certes… mais) to tell how strong or nuanced a view is.",
+ "review": "Review J3’s indicative/subjunctive in opinions and J7’s concession and contrast (bien que, même si, il n’en reste pas moins que); build on J29’s long-listening strategy (read the questions first, keyword notes).",
+ "input": "Read: an analysis of “news fatigue”, a column by a journalist who turned off news notifications and three readers’ views on TV news from a forum; listen: a vox pop at a market (five people), an opinion column on “the right not to have an opinion yet” and a short vox pop on free weekend public transport. Strategy: on a single listen, mark each speaker “+ / − / ±” with one keyword for their reason.",
+ "output": "Write: a formal letter (≥250 words) to the editor of a local daily, giving your view and suggestions on the flood of crime stories and excessive notifications, with at least two concessive structures and a pair of “je pense que / je ne pense pas que”; speak: a 5-minute monologue on “a good-news section in newspapers”, then a debate on “should TV news stop showing violent images before 10 p.m.?”.",
+ "checkpoint": "DELF-format self-test: ≥80% accuracy on position questions after a single listen to short recordings; can sum up each speaker’s view in one sentence within 30 seconds; no subjunctive errors after je ne pense pas que in the letter.",
+ "challenge": "Today’s challenge: find a vox pop or short commentary on RFI’s « Journal en français facile » or TV5MONDE, listen once only, label each speaker “for / against / with reservations”, then write 2 sentences giving your own view with bien que or même si.",
+ "items": {
+  "reading": {
+   "R30-1": {
+    "questions": [
+     {
+      "why": "The article covers, in turn, the phenomenon (fatigue informationnelle), its causes, the risks and experts’ advice. Neither A nor B is discussed."
+     },
+     {
+      "why": "« Je ne pense pas que ces personnes se désintéressent du monde… elles s’en soucient tellement… Éviter les nouvelles devient alors une manière de se protéger ». She rejects A (note je ne pense pas que + subjunctive); C isn’t mentioned."
+     },
+     {
+      "why": "« il est probable qu’il deviendra plus vulnérable aux rumeurs qui circulent sur les réseaux ». B and C aren’t mentioned."
+     },
+     {
+      "why": "remède refers to “avoiding the news”, mal to “the anxiety the news causes”. Avoidance may make people more vulnerable to rumours, which is worse. A is a literal misreading; B isn’t what the sentence means."
+     },
+     {
+      "why": "« consommer l’actualité à petites doses… s’en tenir à des sources fiables ». A and C go against this advice."
+     },
+     {
+      "why": "« Il est possible que… réconcilie… à condition qu’il ne se transforme pas en simple collection de bonnes nouvelles »: il est possible que + subjunctive expresses possibility, with a condition attached. B is too definite; C doesn’t match the tone."
+     }
+    ]
+   },
+   "R30-2": {
+    "questions": [
+     {
+      "why": "« Bien que je lise moins de nouvelles, j’ai le sentiment d’en comprendre davantage ». A over-extends it; C is the “be first” logic he rejects: « l’information n’est pas une course »."
+     },
+     {
+      "why": "« je lis le soir deux ou trois articles de fond ». B goes too far; C isn’t mentioned."
+     },
+     {
+      "why": "« Certes, je ne prétends pas que ma méthode convienne à tout le monde… Il y a du vrai dans les critiques »: a concession. A is the opposite; B is wrong: the next paragraph’s « Il n’en reste pas moins que… » restates his position."
+     },
+     {
+      "why": "à double tranchant = double-edged, with both advantages and drawbacks: it makes you feel well informed but gets in the way of thinking. A and C aren’t what the expression means."
+     },
+     {
+      "why": "« c’est peut-être d’abord accepter de ne pas tout savoir tout de suite ». Both A and B are the opposite."
+     }
+    ]
+   },
+   "R30-3": {
+    "questions": [
+     {
+      "why": "The title is « Le journal télévisé a-t-il encore un sens ? », and three users each give their view of TV news. B and C aren’t the topic of the discussion."
+     },
+     {
+      "why": "« je ne compte pas arrêter. Bien qu’il soit parfois superficiel… »: bien que introduces a concession, but the position is still supportive. A and C contradict the text."
+     },
+     {
+      "why": "« Cela dit, je reconnais… que certains reportages sont de grande qualité ». A is the opposite of what he says; B isn’t stated."
+     },
+     {
+      "why": "Sophie says « Je suis partagée » and adds a condition: « à condition de miser davantage sur l’enquête ». Mireille is clearly in favour; Karim is broadly against."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L30-1": {
+    "questions": [
+     {
+      "why": "At the market, the reporter asks passers-by « comment ils s’informent ». A and C are only background."
+     },
+     {
+      "why": "« on ne peut pas trafiquer une voix aussi facilement qu’une photo… enfin, je crois » (je crois shows she isn’t entirely sure). B and C aren’t mentioned."
+     },
+     {
+      "why": "« quand une nouvelle me paraît bizarre, je vérifie ailleurs ». A and B aren’t mentioned."
+     },
+     {
+      "why": "« Les grandes nouvelles internationales, on les entend déjà partout ». Neither A nor C has any basis."
+     },
+     {
+      "why": "« Même si je sais que ce n’est pas très responsable, je me sens mieux »: même si introduces a concession (she knows it isn’t very responsible); the main clause gives her feeling. A is the opposite; B: she only says « Il paraît que beaucoup de gens font comme moi », without urging others to do it."
+     },
+     {
+      "why": "He first criticises (« ils ont tendance à tous parler de la même chose… »), then concedes: « Cela dit, sans les journalistes, on ne saurait pas grand-chose ». A and B are both too absolute."
+     }
+    ]
+   },
+   "L30-2": {
+    "questions": [
+     {
+      "why": "« je voudrais défendre un droit menacé : celui de ne pas avoir d’avis ». A is exactly what she criticises; C over-extends it."
+     },
+     {
+      "why": "« Il faut lire, écouter des points de vue différents, laisser passer un peu de temps ». B and C aren’t mentioned."
+     },
+     {
+      "why": "« Bien sûr, je ne dis pas qu’il faut rester indifférent à tout. Mais… »: Bien sûr… Mais is a typical concessive structure. B and C aren’t mentioned."
+     },
+     {
+      "why": "« Ce n’est pas de la lâcheté. C’est, à mon sens, la forme la plus honnête de l’esprit critique ». A is directly rejected; B isn’t mentioned."
+     }
+    ]
+   },
+   "L30-3": {
+    "questions": [
+     {
+      "why": "« je trouve ça très bien… je pourrai aller voir ma fille plus souvent »; she says « Je n’ai pas de voiture », so B is wrong."
+     },
+     {
+      "why": "« Ce sont nos impôts qui vont payer. Je ne suis pas sûr que ce soit la priorité, alors que certains quartiers n’ont même pas de bus après 20 heures » (je ne suis pas sûr que + subjunctive). A and B aren’t mentioned."
+     },
+     {
+      "why": "« C’est une bonne idée, même si ça ne suffira pas… Mais bon, c’est un début »: in favour, with reservations."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V30-01": {
+   "zh": "(news) headlines",
+   "exZh": "Many readers just scroll through the headlines."
+  },
+  "V30-02": {
+   "zh": "news fatigue",
+   "exZh": "This phenomenon has a name: news fatigue."
+  },
+  "V30-03": {
+   "zh": "a continuous stream, a flood",
+   "exZh": "We are swamped by a continuous stream of news."
+  },
+  "V30-04": {
+   "zh": "to feel gloomy, to be down",
+   "exZh": "Following the news constantly, some people end up feeling gloomy."
+  },
+  "V30-05": {
+   "zh": "in small doses",
+   "exZh": "Experts recommend taking in the news in small doses."
+  },
+  "V30-06": {
+   "zh": "to stick to, to limit oneself to",
+   "exZh": "It’s best to stick to two or three reliable sources."
+  },
+  "V30-07": {
+   "zh": "a reliable source of information",
+   "exZh": "For me, the local pages remain a reliable source of information."
+  },
+  "V30-08": {
+   "zh": "to get sucked into",
+   "exZh": "Don’t get sucked into the constant stream of notifications."
+  },
+  "V30-09": {
+   "zh": "all in all, ultimately",
+   "exZh": "Ultimately, the question is how to get informed."
+  },
+  "V30-10": {
+   "zh": "to take note of, to acknowledge (a fact)",
+   "exZh": "Management has taken note of the staff’s demands and promised a reply."
+  },
+  "V30-11": {
+   "zh": "whatever people say",
+   "exZh": "Whatever people say, news is not a race."
+  },
+  "V30-12": {
+   "zh": "there is some truth in …",
+   "exZh": "There is some truth in my colleagues’ criticism."
+  },
+  "V30-13": {
+   "zh": "double-edged",
+   "exZh": "Constant notifications are a double-edged sword."
+  },
+  "V30-14": {
+   "zh": "to keep a cool head",
+   "exZh": "In a controversy, you need to know how to keep a cool head."
+  },
+  "V30-15": {
+   "zh": "to keep informed, to get the news",
+   "exZh": "Madam, how do you usually keep up with the news?"
+  },
+  "V30-16": {
+   "zh": "cut off from the world",
+   "exZh": "A week without a phone or internet, and he felt cut off from the world."
+  },
+  "V30-17": {
+   "zh": "to tell things apart, to keep perspective",
+   "exZh": "You need to tell facts apart from opinions."
+  },
+  "V30-18": {
+   "zh": "to take at face value",
+   "exZh": "Don’t take everything at face value."
+  },
+  "V30-19": {
+   "zh": "woe betide …",
+   "exZh": "Woe betide anyone who answers “I don’t know”!"
+  },
+  "V30-20": {
+   "zh": "to form (one’s own) opinion",
+   "exZh": "You can’t form a serious opinion in ten minutes."
+  },
+  "V30-21": {
+   "zh": "(unthinking) knee-jerk reaction",
+   "exZh": "On social media, many people react on the spot without thinking."
+  },
+  "V30-22": {
+   "zh": "to add fuel to the fire",
+   "exZh": "These comments only add fuel to the fire."
+  },
+  "V30-23": {
+   "zh": "in my view",
+   "exZh": "In my view, it’s the most honest form of critical thinking."
+  },
+  "V30-24": {
+   "zh": "not to be sure that … (+ subjunctive)",
+   "exZh": "I’m not sure it’s the top priority."
+  },
+  "V30-25": {
+   "zh": "to have no say over, to be powerless over",
+   "exZh": "Small producers have no say over the prices set by big chains."
+  }
+ },
  "title": "Listening II: short documents and opinions",
  "phase": "DELF B2 task training"
 }

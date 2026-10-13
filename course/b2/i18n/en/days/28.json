@@ -1,4 +1,222 @@
 {
+ "canDo": "Can combine nominalisation (l’essor, la reconnaissance), modalisation (il semblerait que, à en croire, sans doute) and discourse connectors (d’une part… d’autre part, quant à, certes… mais) to report different positions objectively and put forward a well-supported view of your own.",
+ "review": "Integrated review of J15–J27: J15 nominalisation, J19 modalisation, J23 discourse connectors, plus J21 sequencing, J24 negation, J26 verb structures and J27 formal register; the theme links to J25 citizenship (language and identity).",
+ "input": "Read: a long article on the shift in French’s centre of gravity and the debate over the norm, a column against “accent discrimination” and a Belgian’s forum post asking for advice; listen: a sociolinguist on French in African cities, a column on “travelling words” across the French-speaking world and an announcement for a French Language Day writing competition. Strategy: tell “the author’s view” apart from “reported views” and mark modalisation markers.",
+ "output": "Write: an article for a language school magazine that presents the “single norm vs regional varieties” debate objectively and takes a stance (≥220 words), with at least 3 nominalisations, 3 modalising expressions and paired connectors; speak: a 4-minute monologue on “accent discrimination”, then a debate on “quotas for French songs on the radio”.",
+ "checkpoint": "Stage check: reading and listening accuracy ≥80%; the reported parts of your essay are clearly separated from your own view; can summarise a long article orally as 5 nominalised headlines within 90 seconds.",
+ "challenge": "Today’s challenge: find a French-language news item from Africa, Belgium, Switzerland or Quebec on TV5MONDE or RFI, note 1 regional word or expression you don’t know, write a news headline using nominalisation, then write 2 reporting sentences with il semblerait que / à en croire.",
+ "items": {
+  "reading": {
+   "R28-1": {
+    "questions": [
+     {
+      "why": "The article moves from the “shift in centre of gravity” to lexical innovation, education and then the question of the norm (« Faut-il pour autant renoncer à toute norme commune ? »). A is the opposite of « Son essor »; B is the opposite of « signe de sa vitalité »."
+     },
+     {
+      "why": "« Les académies… fixaient la norme, et l’on considérait volontiers les usages d’ailleurs comme des écarts, voire comme des fautes ». A is the opposite; C has no basis."
+     },
+     {
+      "why": "« ces mots répondent à des besoins précis : nommer une réalité locale, éviter un anglicisme… ». B contradicts « figurent… au même titre que les mots de l’Hexagone »; C has no basis."
+     },
+     {
+      "why": "« le français reste avant tout la langue de l’école… Son essor dépendra donc largement de la qualité des systèmes éducatifs ». A contradicts the second paragraph (already in dictionaries); C isn’t stated."
+     },
+     {
+      "why": "« Il s’agirait moins de choisir entre unité et diversité que d’accepter leur coexistence ». A is rejected by « Rien n’est moins sûr »; B goes against the whole text’s position."
+     },
+     {
+      "why": "tirer les conséquences de qch = to adjust accordingly to a fact. basculement refers to the fundamental shift in French’s centre of gravity. B and C aren’t what the phrase means."
+     }
+    ]
+   },
+   "R28-2": {
+    "questions": [
+     {
+      "why": "The author criticises the hierarchy of “authentic French vs copies” and, in the last paragraph, proposes what schools should do. A is just the opening hook; C is rejected by « je ne plaide pas pour que chacun écrive à sa guise »."
+     },
+     {
+      "why": "« j’ai compris que, pour certains, il existait un français authentique et des copies plus ou moins réussies ». A and B are only the surface tone; the author reads an implicit hierarchy into it."
+     },
+     {
+      "why": "« les moqueries… peuvent fermer des portes, à l’embauche comme à l’université ». B is rejected by « Il serait naïf d’y voir une simple question de susceptibilité »; C contradicts the several regions listed."
+     },
+     {
+      "why": "It first concedes that a common language needs rules (concession), then uses Mais to stress that an accent is not a grammar mistake. Neither A nor C matches the function of this structure."
+     },
+     {
+      "why": "« les enseignants pourraient leur faire découvrir la diversité des usages francophones ». A is exactly what she opposes; B has no basis."
+     }
+    ]
+   },
+   "R28-3": {
+    "questions": [
+     {
+      "why": "It ends with « Dois-je m’adapter… ? … Vos avis m’intéressent »: after describing his experience, he asks for opinions. B: etymology isn’t covered; C: he says himself « Rien de méchant »."
+     },
+     {
+      "why": "« Ce qui m’agace, ce n’est pas la remarque en elle-même, c’est l’idée qu’il y aurait une bonne et une mauvaise façon de compter ». A contradicts « Rien de méchant »; C has no basis."
+     },
+     {
+      "why": "« il figure dans les dictionnaires, et il est d’ailleurs bien plus logique », with quarante and cinquante as the analogy. Neither A nor B has any basis."
+     },
+     {
+      "why": "renier = to disown, to turn one’s back on; d’où je viens = where I come from. Giving up his home expressions would feel like turning his back on his roots. B and C are literal misreadings."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L28-1": {
+    "questions": [
+     {
+      "why": "The interview covers the future of French in Africa, street usage, literature and education. B isn’t covered; C is only mentioned in passing."
+     },
+     {
+      "why": "« Il ne suffit pas qu’une population augmente… Tout dépendra de la scolarisation ». A is exactly the “shortcut” (raccourci) she warns against; C has no basis."
+     },
+     {
+      "why": "« Certains y voient un appauvrissement. Moi, j’y vois plutôt une compétence ». A is others’ view, which she reports; B contradicts what follows (these young people can speak standard French at school)."
+     },
+     {
+      "why": "« C’est exactement ce que font les jeunes Parisiens… quand ils changent de registre. Chacun dispose de plusieurs façons de parler ». B and C aren’t her point."
+     },
+     {
+      "why": "« Ils montrent qu’on peut être un écrivain de langue française à part entière sans imiter Paris ». A is the opposite; C contradicts « lus bien au-delà de l’Afrique »."
+     },
+     {
+      "why": "« cesser de considérer les langues africaines comme des obstacles… Ce n’est pas une concurrence, c’est une complémentarité ». A distorts it into “replacing”; B is the opposite of what she argues."
+     }
+    ]
+   },
+   "L28-2": {
+    "questions": [
+     {
+      "why": "The column presents regional words: Belgian drache, Swiss natel, and Quebec’s magasiner / dépanneur. A is only the angle of approach; C isn’t covered."
+     },
+     null,
+     {
+      "why": "« vous filez au dépanneur, la petite épicerie du coin ». A is the usual meaning of dépanneur in France, used here as a distractor."
+     },
+     {
+      "why": "« Il semblerait que les Français empruntent plus volontiers à l’anglais qu’à leurs voisins francophones »; il semblerait que is a cautious modalising expression. B and C aren’t mentioned."
+     }
+    ]
+   },
+   "L28-3": {
+    "questions": [
+     {
+      "why": "« ouvert à tous à partir de quinze ans ». A and C are wrong restrictions."
+     },
+     null,
+     {
+      "why": "« seront lues en public lors d’une soirée festive le 20 mars ». The deadline is 28 February; the rules are already on the website."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V28-01": {
+   "zh": "centre of gravity",
+   "exZh": "The centre of gravity of French is shifting towards Africa."
+  },
+  "V28-02": {
+   "zh": "to enter, to be included in",
+   "exZh": "Several Quebec words have been included in the dictionary."
+  },
+  "V28-03": {
+   "zh": "it would seem that … (cautious inference)",
+   "exZh": "It would seem that the French borrow more readily from English."
+  },
+  "V28-04": {
+   "zh": "to have a (specific) name",
+   "exZh": "This fear of saying the wrong thing has a name: linguistic insecurity."
+  },
+  "V28-05": {
+   "zh": "in the medium term, over the coming years",
+   "exZh": "Over the coming years, the town will have to build a new school."
+  },
+  "V28-06": {
+   "zh": "a reference norm, a standard",
+   "exZh": "Formal writing needs a reference norm."
+  },
+  "V28-07": {
+   "zh": "to adjust accordingly to …",
+   "exZh": "Institutions must adjust accordingly to this shift."
+  },
+  "V28-08": {
+   "zh": "linguistic insecurity",
+   "exZh": "Linguistic insecurity keeps some people silent in meetings."
+  },
+  "V28-09": {
+   "zh": "to erase (one’s) accent",
+   "exZh": "For years, she tried hard to erase her accent."
+  },
+  "V28-10": {
+   "zh": "full, complete",
+   "exZh": "Associations are calling for full recognition of regional languages."
+  },
+  "V28-11": {
+   "zh": "to close doors, to cost someone opportunities",
+   "exZh": "Mockery of an accent can cost people job opportunities."
+  },
+  "V28-12": {
+   "zh": "as one pleases",
+   "exZh": "I’m not arguing that everyone should write as they please."
+  },
+  "V28-13": {
+   "zh": "to belong to no one",
+   "exZh": "These words remind us that French belongs to no one."
+  },
+  "V28-14": {
+   "zh": "at the same time, in passing",
+   "exZh": "Discovering other usages is, at the same time, learning to respect them."
+  },
+  "V28-15": {
+   "zh": "to correct (someone’s wording)",
+   "exZh": "A colleague corrected me in front of the whole team."
+  },
+  "V28-16": {
+   "zh": "I grant (that)",
+   "exZh": "It wasn’t meant unkindly, I grant you, but it was still awkward."
+  },
+  "V28-17": {
+   "zh": "for the sake of peace and quiet",
+   "exZh": "Should I change the way I speak for the sake of peace and quiet?"
+  },
+  "V28-18": {
+   "zh": "to take offence at trifles",
+   "exZh": "I don’t want to come across as someone who takes offence at trifles."
+  },
+  "V28-19": {
+   "zh": "to turn one’s back on one’s roots",
+   "exZh": "Giving up these words feels a bit like turning my back on my roots."
+  },
+  "V28-20": {
+   "zh": "beware of shortcuts, don’t oversimplify",
+   "exZh": "Looking at population alone isn’t enough: don’t oversimplify!"
+  },
+  "V28-21": {
+   "zh": "a fundamental shift, a turning point",
+   "exZh": "The pandemic brought about a fundamental shift in our working habits."
+  },
+  "V28-22": {
+   "zh": "to switch register",
+   "exZh": "Teenagers know how to switch register depending on who they’re talking to."
+  },
+  "V28-23": {
+   "zh": "far beyond …",
+   "exZh": "Their novels are read far beyond Africa."
+  },
+  "V28-24": {
+   "zh": "to tend to show",
+   "exZh": "Studies tend to show that the mother tongue helps learning."
+  },
+  "V28-25": {
+   "zh": "to do one’s bit for …",
+   "exZh": "By saying magasiner, you’re doing your bit for the French-speaking world."
+  }
+ },
  "title": "Checkpoint II: reporting and argument",
  "phase": "Argument, mediation and reporting"
 }

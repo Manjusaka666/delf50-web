@@ -1,4 +1,204 @@
 {
+ "canDo": "Can generalise and qualify precisely with quiconque, n’importe qui/quel, la plupart (de), certain(e)s, plusieurs, chacun/chaque, tel(le), quelques, aucun, tout/tous/toute(s), d’autres, avoiding sweeping “everyone…” statements, and point out overgeneralisations in other people’s arguments.",
+ "review": "Review day 24’s negation (aucun is both a negative and an indefinite pronoun), day 23’s text connectors and day 20’s comparisons; today’s focus is precision when saying “how many people, and which ones”.",
+ "input": "Read: a report on a participatory budget, a column against compulsory voting and a call for applications to a neighbourhood citizens’ council — circle every indefinite word and decide whether it means “all, most, some or any”; listen: a radio debate on online voting, an interview with a volunteer and a notice of a public council meeting — note that la plupart takes a plural verb and chacun a singular one.",
+ "output": "Write: a reply (≥220 words) on a civic discussion forum to someone opposing “votes at 16”, pointing out their overgeneralisations; speak: a 4-minute monologue on “punish or educate to reduce antisocial behaviour?”, then a debate on “compulsory civic service at 18”.",
+ "checkpoint": "Reading + listening accuracy ≥80%; at least 6 different indefinites with correct agreement in the forum reply (la plupart des jeunes pensent, chacun a, toute personne, tous les citoyens); in the debate, call out the other side’s overgeneralisation at least once (« Tous ? Certains, peut-être… »).",
+ "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about elections, civic participation or community life, pick out a sweeping statement and rewrite it more precisely with la plupart, certains, quiconque and chacun; then record 1 minute of audio on how residents of your town could take part in public decisions.",
+ "items": {
+  "reading": {
+   "R25-1": {
+    "questions": [
+     {
+      "why": "The article presents how Villebrune’s participatory budget works, its results and its problems. B and C aren’t covered."
+     },
+     {
+      "why": "« Quiconque habite Villebrune depuis plus de six mois peut… proposer un projet »; quiconque = anyone who…."
+     },
+     {
+      "why": "« Les services techniques étudient ensuite la faisabilité de chaque proposition »; only « projets retenus » go to a vote, so A is wrong."
+     },
+     null,
+     {
+      "why": "« seuls certains participent… risque de renforcer les inégalités », after the text has shown that retired people and families from detached-house areas are over-represented."
+     },
+     {
+      "why": "pour autant = even so: although young people’s participation has doubled, success isn’t yet assured. A is too negative; C misreads gagner."
+     }
+    ]
+   },
+   "R25-2": {
+    "questions": [
+     {
+      "why": "« Elle me paraît pourtant dangereuse », because it treats the symptom rather than the cause (ineffective) and because « un droit qu’on impose cesse d’être tout à fait un droit » (against freedom)."
+     },
+     null,
+     {
+      "why": "The next sentence, « Chacun doit rester libre de ne pas choisir », explains it: compulsion removes the freedom to choose."
+     },
+     {
+      "why": "« pourquoi ne pas mieux reconnaître le vote blanc ». C is the opposite of his opposition to penalties."
+     },
+     {
+      "why": "The ending uses the image of “treatment”, clearly opposing compulsion and proposing the positive alternative of “giving everyone a reason”."
+     }
+    ]
+   },
+   "R25-3": {
+    "questions": [
+     {
+      "why": "The headline is « Appel à candidatures », recruiting members for a neighbourhood citizens’ council that « donne son avis » (an advisory role)."
+     },
+     {
+      "why": "« N’importe quel habitant du quartier âgé d’au moins seize ans, quelle que soit sa nationalité »; « Aucune expérience particulière n’est demandée », so B is wrong."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L25-1": {
+    "questions": [
+     {
+      "why": "The presenter opens by asking « faut-il permettre de voter par internet ? », and the two guests debate the pros and cons of online voting. A is just one of Claire Dufour’s arguments; C is only a detail used for contrast."
+     },
+     {
+      "why": "« n’importe qui pourrait voter depuis son canapé, en deux minutes » (n’importe qui = anyone). She doesn’t propose B or C."
+     },
+     {
+      "why": "« aucun citoyen ordinaire ne peut vérifier que sa voix a bien été comptée : il faut faire confiance à quelques techniciens », contrasting with the polling station where « chacun peut assister au dépouillement ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "« une expérimentation, limitée à quelques communes volontaires, lors d’une élection locale ». A contradicts « ne proposons donc pas de tout changer d’un coup »; C is existing practice, not a new proposal."
+     },
+     {
+      "why": "« Chez soi, quiconque se trouve dans la pièce peut faire pression » (quiconque = whoever), i.e. voting at home can’t guarantee a secret ballot. B and C aren’t mentioned."
+     },
+     {
+      "why": "« qu’on ne nous présente pas le vote en ligne comme la solution miracle contre l’abstention ». A is the opposite; B contradicts « c’est aux citoyens et à leurs représentants de délibérer »."
+     }
+    ]
+   },
+   "L25-2": {
+    "questions": [
+     null,
+     {
+      "why": "« La plupart n’ont aucun problème avec la langue française, mais avec le vocabulaire administratif »; B is explicitly ruled out."
+     }
+    ]
+   },
+   "L25-3": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "« tous prévoient davantage d’arbres et de places pour les vélos »; B is wrong: only « certains » reduce some parking spaces."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V25-01": {
+   "zh": "a participatory budget",
+   "exZh": "Thanks to the participatory budget, residents paid for an orchard."
+  },
+  "V25-02": {
+   "zh": "instructive, offering lessons",
+   "exZh": "This local experiment offers lessons for other cities."
+  },
+  "V25-03": {
+   "zh": "to study the feasibility of …",
+   "exZh": "The technical departments study the feasibility of each proposal."
+  },
+  "V25-04": {
+   "zh": "to be over-represented",
+   "exZh": "Retired people are over-represented among voters."
+  },
+  "V25-05": {
+   "zh": "to go knocking on doors",
+   "exZh": "The organisers went knocking on doors to present the project."
+  },
+  "V25-06": {
+   "zh": "participatory democracy",
+   "exZh": "Participatory democracy is built one neighbourhood at a time."
+  },
+  "V25-07": {
+   "zh": "a deputy mayor",
+   "exZh": "The deputy mayor for local democracy presented the results."
+  },
+  "V25-08": {
+   "zh": "to go to the polls",
+   "exZh": "Fewer than half of voters went to the polls on Sunday."
+  },
+  "V25-09": {
+   "zh": "to have the merit of …",
+   "exZh": "The proposal at least has the merit of being clear."
+  },
+  "V25-10": {
+   "zh": "to confuse the symptom with the cause",
+   "exZh": "Punishing non-voters means confusing the symptom with the cause."
+  },
+  "V25-11": {
+   "zh": "to cast a blank vote",
+   "exZh": "Many voters would like blank votes to be better recognised."
+  },
+  "V25-12": {
+   "zh": "to silence",
+   "exZh": "Those who express their discontent shouldn’t be silenced."
+  },
+  "V25-13": {
+   "zh": "childcare costs",
+   "exZh": "The town hall reimburses childcare costs for parents who sit on the council."
+  },
+  "V25-14": {
+   "zh": "to swear by …",
+   "exZh": "My neighbour swears by electric cars."
+  },
+  "V25-15": {
+   "zh": "to hear experts, to hold hearings",
+   "exZh": "Before voting, the assembly heard experts and users."
+  },
+  "V25-16": {
+   "zh": "to deliberate on …",
+   "exZh": "Ordinary citizens can deliberate on complex questions."
+  },
+  "V25-17": {
+   "zh": "to shelve, to put in a drawer",
+   "exZh": "The councillors shelved all the citizens’ proposals."
+  },
+  "V25-18": {
+   "zh": "better than nothing",
+   "exZh": "A written reply to every proposal? It’s better than nothing."
+  },
+  "V25-19": {
+   "zh": "to promise oneself to …",
+   "exZh": "I promised myself I would one day give back the help I received."
+  },
+  "V25-20": {
+   "zh": "to claim one’s rights",
+   "exZh": "For lack of information, many families don’t dare claim their rights."
+  },
+  "V25-21": {
+   "zh": "a hasty generalisation",
+   "exZh": "Saying all young people are uninterested in politics is a hasty generalisation."
+  },
+  "V25-22": {
+   "zh": "caught red-handed",
+   "exZh": "Any offender caught red-handed must pay a fine."
+  },
+  "V25-23": {
+   "zh": "to think one can get away with anything",
+   "exZh": "Without penalties, some people end up thinking they can get away with anything."
+  },
+  "V25-24": {
+   "zh": "antisocial behaviour",
+   "exZh": "The town has launched a campaign against antisocial behaviour on public transport."
+  },
+  "V25-25": {
+   "zh": "to take a firm line",
+   "exZh": "Faced with litter, the town hall has taken a firm line."
+  }
+ },
  "title": "Indefinites and quantity",
  "phase": "Argument, mediation and reporting"
 }

@@ -1,4 +1,187 @@
 {
+ "canDo": "Can build a clearly structured argumentative essay with d’abord/ensuite/enfin, d’une part… d’autre part, en outre/par ailleurs, quant à, certes… mais, en revanche, autrement dit, bref/en définitive, and use connectors to predict where an argument is going when reading and listening.",
+ "review": "Review day 7’s concessions (bien que, même si, pourtant), day 6’s consequence expressions and day 5’s cause expressions; today, fit them into a “text skeleton”: introduction – argument – concession – rebuttal – conclusion.",
+ "input": "Read: an article assessing digital tools in schools, a column against a “blanket” phone ban and a notice of a school’s digital charter — mark the connectors in each paragraph and write an outline of the whole text; listen: a debate on coding in primary school, a segment defending handwriting and a news flash about handing out refurbished computers — when you hear certes, en revanche or quant à, predict where the next sentence is going.",
+ "output": "Write: an argumentative article for a school magazine, “AI in schools: threat or ally?” (≥220 words), with at least one text connector per paragraph; speak: a 4-minute structured monologue on “parents seeing grades in real time”, then a debate on “replacing paper textbooks entirely with digital ones”.",
+ "checkpoint": "Reading + listening accuracy ≥80%; at least 6 different connectors used correctly in the article (certes must be followed by mais/toutefois); in the first 30 seconds of the monologue, clearly announce a two- or three-part outline.",
+ "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about schools, screens or AI, and write 3 sentences of comment with « Certes…, mais… », « D’une part…, d’autre part… » and « Quant à… »; then record 1 minute of audio, starting by announcing your two-point outline.",
+ "items": {
+  "reading": {
+   "R23-1": {
+    "questions": [
+     {
+      "why": "« La réalité est plus nuancée, et elle mérite d’être examinée point par point », and the whole text assesses each point in turn with d’abord / ensuite / quant à / en définitive. B is too absolute — the author is against “throwing it all out”; C isn’t mentioned."
+     },
+     {
+      "why": "« Sur le second point [individualiser], les résultats sont plutôt encourageants »; as for motivation, « en revanche, l’effet s’est vite dissipé » (A is wrong)."
+     },
+     {
+      "why": "Certes first concedes that “it’s hard to blame school screens for everything”, then Mais argues that schools may still have reinforced fragmented reading — a classic concessive structure."
+     },
+     null,
+     {
+      "why": "ne… que par = only depends on: a tool’s value depends entirely on how it is used in teaching. B takes valoir to mean price; C over-negates."
+     }
+    ]
+   },
+   "R23-2": {
+    "questions": [
+     {
+      "why": "« Plutôt qu’une interdiction, une éducation. » C is wrong: he grants that notifications disrupt lessons and that social media fuel bullying."
+     },
+     {
+      "why": "Certes introduces the ban supporters’ reasons (disrupted lessons, bullying), which Mais then rebuts."
+     },
+     null,
+     {
+      "why": "« ils n’ont pas vocation à jouer les policiers » — it isn’t their job."
+     },
+     {
+      "why": "This is a rhetorical question; the previous sentence, « les adultes devraient être cohérents », shows adults can’t manage it themselves."
+     }
+    ]
+   },
+   "R23-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "« Quant aux élèves qui ne disposent pas d’un ordinateur… ils pourront en emprunter un » — a measure addressing unequal access to devices at home."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L23-1": {
+    "questions": [
+     null,
+     {
+      "why": "« décomposer le problème en étapes, anticiper, corriger ses erreurs… il fait des mathématiques et de la logique ». B is exactly the argument Nadia rebuts."
+     },
+     {
+      "why": "« je conteste l’argument… selon lequel il faudrait coder tôt pour trouver un emploi plus tard »; B is something she actually « reconnais volontiers »."
+     }
+    ]
+   },
+   "L23-2": {
+    "questions": [
+     {
+      "why": "« renoncer à l’écriture manuscrite serait une erreur ». B is the opposite; C isn’t mentioned."
+     },
+     {
+      "why": "« on ne peut pas tout recopier : on est obligé de reformuler, de choisir l’essentiel »; B is the opposite."
+     },
+     null,
+     {
+      "why": "« apprenons les deux, mais dans le bon ordre : le stylo d’abord, le clavier ensuite »; A is rejected with « Pas du tout ! »."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V23-01": {
+   "zh": "to backtrack, to reverse (a policy)",
+   "exZh": "After ten years of tablets, some schools are backtracking and going back to paper textbooks."
+  },
+  "V23-02": {
+   "zh": "point by point",
+   "exZh": "The report examines the promises of digital technology point by point."
+  },
+  "V23-03": {
+   "zh": "to wear off, to fade",
+   "exZh": "Once the novelty wore off, the pupils’ enthusiasm faded."
+  },
+  "V23-04": {
+   "zh": "to great fanfare",
+   "exZh": "Ten years ago, tablets arrived in classrooms to great fanfare."
+  },
+  "V23-05": {
+   "zh": "fragmented reading",
+   "exZh": "Social media encourage fragmented reading, at the expense of long texts."
+  },
+  "V23-06": {
+   "zh": "under the guidance of …",
+   "exZh": "These online exercises only work under a teacher’s guidance."
+  },
+  "V23-07": {
+   "zh": "educational use",
+   "exZh": "A tool’s value depends entirely on its educational use."
+  },
+  "V23-08": {
+   "zh": "an outright ban",
+   "exZh": "The author is against an outright ban on phones in secondary schools."
+  },
+  "V23-09": {
+   "zh": "to enforce a rule",
+   "exZh": "A rule is useless if nobody can enforce it."
+  },
+  "V23-10": {
+   "zh": "to be overwhelmed",
+   "exZh": "The supervisors are overwhelmed and can’t check every pupil."
+  },
+  "V23-11": {
+   "zh": "it isn’t one’s role to …",
+   "exZh": "It isn’t a teacher’s role to act as a police officer."
+  },
+  "V23-12": {
+   "zh": "to play the police officer",
+   "exZh": "I refuse to play the police officer at the start of every lesson."
+  },
+  "V23-13": {
+   "zh": "a working group",
+   "exZh": "The charter was drawn up by a working group of parents and pupils."
+  },
+  "V23-14": {
+   "zh": "a digital charter",
+   "exZh": "Every pupil must sign the school’s digital charter."
+  },
+  "V23-15": {
+   "zh": "the school’s digital platform (ENT)",
+   "exZh": "Homework is handed in on the school’s digital platform."
+  },
+  "V23-16": {
+   "zh": "to break a problem down into steps",
+   "exZh": "To program the robot, children have to break the problem down into steps."
+  },
+  "V23-17": {
+   "zh": "teaching time",
+   "exZh": "Teaching time is limited: you can’t fit everything in."
+  },
+  "V23-18": {
+   "zh": "to be all for it",
+   "exZh": "Compulsory training for all teachers? I’m all for it."
+  },
+  "V23-19": {
+   "zh": "the basics (reading, writing, arithmetic)",
+   "exZh": "Primary school must first secure the basics of reading, writing and arithmetic."
+  },
+  "V23-20": {
+   "zh": "unplugged computing (coding without a computer)",
+   "exZh": "With unplugged computing, pupils learn to code without screens."
+  },
+  "V23-21": {
+   "zh": "and I’m not ashamed of it",
+   "exZh": "I prefer a pen to a keyboard, and I’m not ashamed of it!"
+  },
+  "V23-22": {
+   "zh": "sentimental value",
+   "exZh": "A handwritten letter has a special sentimental value."
+  },
+  "V23-23": {
+   "zh": "a glaring mistake",
+   "exZh": "The AI assistant made a glaring mistake, and the pupil didn’t notice."
+  },
+  "V23-24": {
+   "zh": "a miracle cure, a cure-all",
+   "exZh": "Digital technology is no cure-all for school failure."
+  },
+  "V23-25": {
+   "zh": "to stay in control",
+   "exZh": "Faced with AI, teachers must stay in control."
+  }
+ },
  "title": "Organising a text",
  "phase": "Argument, mediation and reporting"
 }
