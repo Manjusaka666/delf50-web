@@ -1,1 +1,92 @@
-{}
+{
+ "opinionModes-01": {
+  "why": "An affirmative je pense que means the speaker takes it as fact, so the indicative: est. soit is subjunctive, used only in the negative or in questions; être is the infinitive and can’t be the verb of a clause."
+ },
+ "opinionModes-02": {
+  "why": "An affirmative je crois que + indicative: fait. fasse is subjunctive, not used after an affirmative opinion; faire is the infinitive, and the clause needs a conjugated verb."
+ },
+ "opinionModes-03": {
+  "why": "je trouve que (stating an opinion) + indicative: font. fassent is subjunctive; faire is the infinitive. Note the ne… pas is inside the clause and doesn’t affect the choice of mood in the main clause."
+ },
+ "opinionModes-04": {
+  "why": "il est possible que only expresses possibility, so the subjunctive: soit. est and sera are indicative, only for il est probable / certain que."
+ },
+ "opinionModes-05": {
+  "why": "espérer que takes the indicative, often the future when it points ahead: pourrez. puissiez is subjunctive (the classic error by analogy with souhaiter que); pouvoir is the infinitive."
+ },
+ "opinionModes-06": {
+  "why": "il paraît que (I hear) reports information treated as fact, so the indicative: sera. soit is subjunctive; être is the infinitive."
+ },
+ "opinionModes-07": {
+  "why": "il est probable que expresses fairly high certainty, so the indicative: devra. doive is subjunctive, for il est possible que; devoir is the infinitive."
+ },
+ "opinionModes-08": {
+  "why": "The clause has the subjunctive soit, and only the negative opinion verb je ne crois pas que can take the subjunctive. je crois que / je suis sûr que express certainty and need the indicative c’est."
+ },
+ "opinionModes-09": {
+  "why": "il est possible que + subjunctive: nous soyons. sommes is the present indicative and serons the future; neither can follow possible."
+ },
+ "opinionModes-10": {
+  "why": "pleuve is subjunctive, and only il est possible que takes the subjunctive. il est probable que and il paraît que both take the indicative (il pleuvra)."
+ },
+ "opinionModes-11": {
+  "why": "arrivera is the indicative future and can only follow il paraît que. il est possible que and je doute que both require the subjunctive (qu’il arrive)."
+ },
+ "opinionModes-12": {
+  "why": "je suis certain que expresses certainty, so the indicative: prendrez. preniez is subjunctive; prendre is the infinitive."
+ },
+ "opinionModes-13": {
+  "why": "il est possible que + subjunctive: ait. a and aura are indicative, used with il est probable que."
+ },
+ "opinionModes-14": {
+  "why": "espérer que + indicative (here the future): tout ira bien. tout aille bien is a common error — the subjunctive only follows souhaiter que; aller is the infinitive."
+ },
+ "opinionModes-15": {
+  "why": "espérer que + indicative, the near future va s’améliorer. aille is subjunctive; aller is the infinitive and can’t be the verb of a clause."
+ },
+ "opinionModes-16": {
+  "why": "il paraît que + indicative: veut. veuille is subjunctive; vouloir is the infinitive."
+ },
+ "opinionModes-17": {
+  "why": "A negative je ne pense pas que takes the subjunctive in standard written French; the subject cette mesure is third person: soit. sois is the first/second person form; être is the infinitive."
+ },
+ "opinionModes-18": {
+  "why": "The clause has the subjunctive ait; an inverted question crois-tu que expresses uncertainty and can take the subjunctive. je sais que and il est clair que express certainty and only take the indicative (qu’il a raison)."
+ },
+ "opinionModes-19": {
+  "why": "soit is subjunctive, so it needs a main clause expressing uncertainty: je ne suis pas sûr que. je suis convaincu que and il est évident que express certainty and need the indicative (c’est)."
+ },
+ "opinionModes-20": {
+  "why": "The clause has the indicative sont, which can only follow an affirmative opinion verb (pensent que). il est possible que and il est peu probable que both require the subjunctive (soient)."
+ },
+ "opinionModes-21": {
+  "why": "je pense que is followed by the indicative system, including the conditional (a hypothetical judgement): ce serait une erreur. soit is subjunctive; être is the infinitive."
+ },
+ "opinionModes-22": {
+  "why": "il est évident que expresses certainty, so the indicative: a. ait is subjunctive; avoir is the infinitive."
+ },
+ "opinionModes-23": {
+  "why": "An affirmative je crois que + indicative; completed before a past reference point, so the plus-que-parfait: était parti. soit / fût are both subjunctive forms, not used after an affirmative opinion."
+ },
+ "opinionModes-24": {
+  "why": "il paraît que + indicative; a completed event hier takes the passé composé: il a neigé. ait neigé is the past subjunctive; avoir is the infinitive."
+ },
+ "opinionModes-25": {
+  "why": "espérer que + indicative; here it is a hope about a completed event, so the passé composé: vous avez fait. ayez is subjunctive; avoir is the infinitive."
+ },
+ "opinionModes-26": {
+  "why": "trouver + adjective (dommage) + que expresses a subjective evaluation, so the subjunctive: soit fermée. est / sera fermée are indicative; only je trouve que (an opinion) takes the indicative."
+ },
+ "opinionModes-27": {
+  "why": "il est possible que + subjunctive, first person: que je sois. suis and serai are indicative."
+ },
+ "opinionModes-28": {
+  "why": "il est probable que expresses strong likelihood, so the indicative: il est trop tard. soit is subjunctive (an error by analogy with possible); être is the infinitive."
+ },
+ "opinionModes-29": {
+  "why": "il est possible que + subjunctive, plural: qu’ils soient. sont / seront are indicative. Here ne… pas is a real negation."
+ },
+ "opinionModes-30": {
+  "why": "A negative je ne crois pas que takes the subjunctive in standard French; the plural subjunctive of être is soient. soyent is a common misspelling; être is the infinitive."
+ }
+}

@@ -1,1 +1,92 @@
-{}
+{
+ "temps-01": {
+  "why": "“Before prices go up”: avant que + subjonctif, optionally followed by an expletive ne (no negative meaning). après que and depuis que take the indicative, can’t have an expletive ne, and don’t make sense here."
+ },
+ "temps-02": {
+  "why": "jusqu’à ce que (until…) takes the subjunctive: qu’il vienne. vient is the present indicative and viendra the simple future; neither can follow jusqu’à ce que."
+ },
+ "temps-03": {
+  "why": "The main clause is in the future and the action introduced by dès que must be completed first, so the future perfect aurons voté. dès que takes the indicative — not the subjunctive ayons voté, nor the conditional aurions voté."
+ },
+ "temps-04": {
+  "why": "depuis que + indicative expresses something continuing from a point up to now: since I’ve been in Lyon. jusqu’à ce que and avant que need the subjunctive (que je sois), but suis here is indicative."
+ },
+ "temps-05": {
+  "why": "Same subject (you read, you send), so avant de + infinitive. avant que must be followed by a subjunctive clause with a subject; avant can only take a noun (avant l’envoi)."
+ },
+ "temps-06": {
+  "why": "son séjour is a noun, so lors de + noun (during, written). lorsque and pendant que are conjunctions and must be followed by a clause."
+ },
+ "temps-07": {
+  "why": "A full clause follows (subject + conjugated verb) expressing simultaneity, so pendant que + indicative. pendant and lors de can only take a noun."
+ },
+ "temps-08": {
+  "why": "The main clause is in the future and the action introduced by aussitôt que comes first, so the passive future perfect aura été livré. aussitôt que takes the indicative, not the subjunctive ait été or the conditional serait."
+ },
+ "temps-09": {
+  "why": "ait cessé is the past subjunctive and can only follow a conjunction requiring the subjunctive such as jusqu’à ce que: we waited until the rain stopped. depuis que and dès que both take the indicative."
+ },
+ "temps-10": {
+  "why": "“As…, the plot becomes clearer”: progressing in step takes au fur et à mesure que + indicative (fait). jusqu’à ce que and avant que need the subjunctive fasse, and the meaning is wrong."
+ },
+ "temps-11": {
+  "why": "en attendant que (while waiting for…) takes the subjunctive: en attendant qu’il vienne. vient and viendra are both indicative."
+ },
+ "temps-12": {
+  "why": "a été validé is the indicative passé composé and can only follow après que (après que + indicative in standard grammar). avant que and jusqu’à ce que need the subjunctive (ait été validé)."
+ },
+ "temps-13": {
+  "why": "Standard grammar: après que + indicative, and the clause comes before the main clause (passé composé ont pu), so ont été publiés. seront is the future and contradicts the past main clause; soient is subjunctive, which shouldn’t follow après que (common in speech, but avoid it in the exam)."
+ },
+ "temps-14": {
+  "why": "Same subject (I wait, I get), so en attendant de + infinitive. en attendant que is only for different subjects; en attendant can’t be followed directly by an infinitive (de is missing)."
+ },
+ "temps-15": {
+  "why": "avant que can take an expletive ne with no negative meaning: before the audience comes in. n’entre pas becomes a real negation (“before the audience doesn’t come in”), which makes no sense; entre pas lacks ne and is non-standard spoken negation."
+ },
+ "temps-16": {
+  "why": "est arrivée is indicative and marks the start of an ongoing state (since she arrived in Paris), so depuis que. jusqu’à ce que and avant que must take the subjunctive (soit arrivée)."
+ },
+ "temps-17": {
+  "why": "“As the departure date approaches, fares keep rising”: progressing in step, followed by a clause, so au fur et à mesure que. lors de and pendant are prepositions and can only take a noun, not a clause."
+ },
+ "temps-18": {
+  "why": "son arrivée is a noun, so the preposition dès + noun (as soon as…). dès que and depuis que are conjunctions and need a clause (dès qu’il est arrivé)."
+ },
+ "temps-19": {
+  "why": "n’ait lu is the past subjunctive with an expletive ne, the typical structure with avant que: I won’t sign anything before my lawyer has read the contract. après que and dès que take the indicative and no expletive ne."
+ },
+ "temps-20": {
+  "why": "une fois que, like dès que, takes the indicative; the main clause is in the future, so the action completed first takes the future perfect auras validé. aies validé is subjunctive and avais validé the plus-que-parfait; neither fits a future context."
+ },
+ "temps-21": {
+  "why": "pendant que + indicative for two simultaneous past actions, both in the imparfait: négociait / préparaient. négocie is the present and doesn’t fit the past main clause; négocierait is conditional and can’t follow pendant que."
+ },
+ "temps-22": {
+  "why": "soit adoptée is subjunctive: “until the law is passed”, so jusqu’à ce que. depuis que and pendant que take the indicative (est adoptée), and the meaning doesn’t fit."
+ },
+ "temps-23": {
+  "why": "aient été entendus is the past subjunctive: the committee won’t deliberate before all candidates have been heard, so avant que. depuis que needs the indicative; lors de is a preposition and only takes a noun."
+ },
+ "temps-24": {
+  "why": "The main clause is in the present and expresses a regular pattern (whenever the weather improves), so dès que also takes the present indicative reviennent. reviendront is the future and doesn’t fit the present main clause; soient revenus is subjunctive, not used after dès que."
+ },
+ "temps-25": {
+  "why": "vivait is the indicative imparfait, a background period: she learnt Chinese while she was living in Shanghai, so pendant que. lors de only takes a noun; jusqu’à ce que needs the subjunctive."
+ },
+ "temps-26": {
+  "why": "l’ouverture is a noun, so the preposition avant + noun directly. avant que takes a subjunctive clause and avant de an infinitive; neither can take a noun directly."
+ },
+ "temps-27": {
+  "why": "“As we head north, the temperature will gradually drop”: au fur et à mesure que takes the indicative, here the future dirigerons. jusqu’à ce que and en attendant que must both take the subjunctive (dirigions), so dirigerons doesn’t fit."
+ },
+ "temps-28": {
+  "why": "en attendant que takes the subjunctive: que la salle soit prête. est and sera are both indicative."
+ },
+ "temps-29": {
+  "why": "Narrating a past event with a passé composé main clause, aussitôt que takes the indicative passé composé a appris (as soon as he heard the news…). apprenne is subjunctive, not used after aussitôt que; aura appris is the future perfect, only for future contexts."
+ },
+ "temps-30": {
+  "why": "n’ayez is subjunctive: “until you no longer need me”, so jusqu’à ce que. aussi longtemps que and pendant que take the indicative (n’aurez plus besoin) and can’t take the subjunctive."
+ }
+}

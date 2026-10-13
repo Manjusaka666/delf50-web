@@ -1,1 +1,92 @@
-{}
+{
+ "nominalisation-01": {
+  "why": "The noun from augmenter is l’augmentation (feminine, -tion). augmentage and augmentement are invented words that don’t exist."
+ },
+ "nominalisation-02": {
+  "why": "fermer → la fermeture (-ure, feminine), agreeing with prévue after it. fermation doesn’t exist; fermement is an adverb (firmly), not a noun."
+ },
+ "nominalisation-03": {
+  "why": "licencier → le licenciement (-ment, masculine), hence massifs (masculine plural) after it. licenciation and licenciage don’t exist."
+ },
+ "nominalisation-04": {
+  "why": "The adjective solidaire → the noun la solidarité (-té, feminine). -esse and -ise don’t apply here; solidaresse and solidarise don’t exist."
+ },
+ "nominalisation-05": {
+  "why": "sage → la sagesse (-esse, feminine, like faible → faiblesse, gentil → gentillesse). sagité and sageté don’t exist."
+ },
+ "nominalisation-06": {
+  "why": "franc → la franchise (-ise, feminine, frankness). francesse and franceté don’t exist."
+ },
+ "nominalisation-07": {
+  "why": "Derived nouns ending in -age are masculine: le nettoyage, so the participle is masculine singular organisé. organisée treats it as feminine; organisés is plural."
+ },
+ "nominalisation-08": {
+  "why": "Derived nouns ending in -ure are feminine: la signature, so the participle is reportée. reporté is masculine; reportés is masculine plural."
+ },
+ "nominalisation-09": {
+  "why": "Derived nouns ending in -ment are masculine: le remboursement, so the participle is masculine singular effectué. effectuée is feminine; effectués is plural (the subject is remboursement, not frais)."
+ },
+ "nominalisation-10": {
+  "why": "Nouns ending in -ence are usually feminine: l’absence, so the adjective is flagrante. flagrant is masculine; flagrants wrongly agrees with transports, while the head of the subject is absence."
+ },
+ "nominalisation-11": {
+  "why": "A news headline turns the verb into a noun (augmenter → la hausse), so the adverb fortement becomes an adjective modifying the noun, agreeing with the feminine noun: forte hausse. An adverb can’t modify a noun; fort lacks agreement."
+ },
+ "nominalisation-12": {
+  "why": "The noun from démissionner is la démission (article dropped in a headline). démissionnement and démissionnage don’t exist."
+ },
+ "nominalisation-13": {
+  "why": "The preposition of accéder à is kept after nominalisation: l’accès à la culture. l’accès de la culture would mean “culture’s access”; pour doesn’t go with accès."
+ },
+ "nominalisation-14": {
+  "why": "participer à → la participation à: the preposition à is kept, and à + les = aux. des is already used for the subject (des citoyens) and can’t introduce the object too; pour les isn’t a collocation of participation."
+ },
+ "nominalisation-15": {
+  "why": "s’intéresser à becomes l’intérêt pour (interest in) when nominalised — the preposition changes. l’intérêt à isn’t used in this sense; de would create two de complements and blur the meaning."
+ },
+ "nominalisation-16": {
+  "why": "The complement of the noun la dépendance takes à: la dépendance au pétrole (dependence on oil). du would read as “oil’s dependence”; sur le isn’t the right collocation."
+ },
+ "nominalisation-17": {
+  "why": "réduire → la réduction (-tion, feminine; the stem becomes réduc-, like produire → production). réduisation and réduisement don’t exist."
+ },
+ "nominalisation-18": {
+  "why": "The noun for échouer (to fail) is l’échec (masculine), and l’échec scolaire is a set phrase. échouage means a ship running aground; échouement isn’t used for academic failure."
+ },
+ "nominalisation-19": {
+  "why": "The noun from baisser is la baisse (feminine), formed with no suffix, agreeing with nette. baissement and baissure don’t exist."
+ },
+ "nominalisation-20": {
+  "why": "choisir → le choix (masculine, an irregular derivation). choisition and choisissement don’t exist."
+ },
+ "nominalisation-21": {
+  "why": "inquiet → l’inquiétude (-ude, feminine). inquiétance and inquiétesse don’t exist."
+ },
+ "nominalisation-22": {
+  "why": "décider → la décision (-sion, feminine). décidation and décidement don’t exist."
+ },
+ "nominalisation-23": {
+  "why": "fidèle → la fidélité (-té, feminine; note the stem becomes fidél-). fidélesse doesn’t exist; fidélise is a conjugated form of the verb fidéliser."
+ },
+ "nominalisation-24": {
+  "why": "Adjectives ending in -ble form nouns in -bilité: lisible → la lisibilité (like possible → possibilité). lisibleté and lisiblesse don’t exist."
+ },
+ "nominalisation-25": {
+  "why": "satisfait → la satisfaction (-tion, feminine). satisfaitude and satisfaisement don’t exist."
+ },
+ "nominalisation-26": {
+  "why": "The derived noun le stationnement, ending in -ment, is masculine singular, so interdit. interdite is feminine; interdits is plural."
+ },
+ "nominalisation-27": {
+  "why": "l’ouverture, ending in -ure, is feminine, so the participle is critiquée (the head of the subject is ouverture, not frontières). critiqué is masculine; critiqués is masculine plural."
+ },
+ "nominalisation-28": {
+  "why": "en raison de is a prepositional phrase followed by a noun: en raison du retard des trains (nominalised). en raison que doesn’t exist; de retarder les trains would mean “in order to delay the trains”, not the intended meaning."
+ },
+ "nominalisation-29": {
+  "why": "A news headline turns the verb into a noun and drops the article: Rénovation de la gare. The infinitive rénover and the participle rénové can’t take a de complement and a par agent to form a noun phrase in a headline."
+ },
+ "nominalisation-30": {
+  "why": "indépendant → l’indépendance (-ance, feminine). indépendanté and indépendantise don’t exist."
+ }
+}

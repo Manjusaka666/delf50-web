@@ -1,1 +1,92 @@
-{}
+{
+ "relatifs-01": {
+  "why": "parler de quelque chose → the relative pronoun is dont (= de + antecedent). que is only for direct objects; où is for place or time."
+ },
+ "relatifs-02": {
+  "why": "grandir dans une ville: place takes où. dont corresponds to de; que to a direct object, and grandir is intransitive."
+ },
+ "relatifs-03": {
+  "why": "After an antecedent of time (le jour, l’année, le moment) use où. lequel can’t introduce a clause on its own; dont corresponds to the preposition de, not to time."
+ },
+ "relatifs-04": {
+  "why": "ce qui is the subject in its clause (qui m’inquiète: what worries me). ce que is a direct object; ce dont corresponds to the preposition de."
+ },
+ "relatifs-05": {
+  "why": "avoir besoin de → ce dont. ce que is a direct object and ce qui a subject; neither fits avoir besoin de."
+ },
+ "relatifs-06": {
+  "why": "assister à + la réunion (feminine singular) → à laquelle. auquel is masculine singular; dont corresponds to the preposition de."
+ },
+ "relatifs-07": {
+  "why": "Preposition + an antecedent that is a thing (l’outil, masculine singular) → sans lequel. sans qui is for people; sans quoi is for a neutral antecedent with no specific noun (ce, rien, cela)."
+ },
+ "relatifs-08": {
+  "why": "travailler sur un projet → sur lequel (le projet is masculine). sur laquelle has the wrong gender; dont corresponds to de, not sur."
+ },
+ "relatifs-09": {
+  "why": "être confronté à → à + lesquels = auxquels (les problèmes, masculine plural). auxquelles is feminine plural; dont corresponds to de."
+ },
+ "relatifs-10": {
+  "why": "faire allusion à + the neutral antecedent ce → ce à quoi. auquel needs a specific noun as antecedent; dont corresponds to de."
+ },
+ "relatifs-11": {
+  "why": "travailler pour une entreprise → pour laquelle (feminine singular). pour lequel has the wrong gender; dont corresponds to de."
+ },
+ "relatifs-12": {
+  "why": "After the time antecedent l’époque use où. dont corresponds to de; laquelle needs a preposition before it and can’t stand alone."
+ },
+ "relatifs-13": {
+  "why": "près de is a prepositional phrase, and the antecedent la maison is feminine: près de laquelle. The de in a prepositional phrase can’t become dont; duquel is masculine."
+ },
+ "relatifs-14": {
+  "why": "au milieu de + le parc → au milieu duquel (de + lequel must contract). The de in a prepositional phrase can’t become dont; de lequel is uncontracted and wrong."
+ },
+ "relatifs-15": {
+  "why": "le travail de cette collègue → dont as a noun complement. que is a direct object, but the object is already le travail; de qui can’t complement a direct-object noun."
+ },
+ "relatifs-16": {
+  "why": "verser des subventions à des associations → auxquelles (feminine plural). auxquels is masculine; dont corresponds to de."
+ },
+ "relatifs-17": {
+  "why": "se plaindre de → ce dont. ce que is a direct object; ce à quoi corresponds to the preposition à."
+ },
+ "relatifs-18": {
+  "why": "s’intéresser à → ce à quoi. ce dont corresponds to de; ce que is a direct object, and s’intéresser has no direct object."
+ },
+ "relatifs-19": {
+  "why": "pour + the antecedent les raisons (feminine plural) → pour lesquelles. laquelle doesn’t agree in number; quoi is only for neutral antecedents."
+ },
+ "relatifs-20": {
+  "why": "rêver de quelque chose → dont. où means “there” (the rêver doesn’t take place in that country); auquel corresponds to à."
+ },
+ "relatifs-21": {
+  "why": "à la fin de is a prepositional phrase and the antecedent la conférence is feminine → à la fin de laquelle. dont can’t be used inside a prepositional phrase; duquel is masculine."
+ },
+ "relatifs-22": {
+  "why": "faire partie de → dont. à laquelle corresponds to à; que is a direct object, but faire already has the object partie."
+ },
+ "relatifs-23": {
+  "why": "prêter quelque chose à quelqu’un → for a person, à qui (auquel is also possible). dont corresponds to de; que is a direct object, and the direct object is already mon ordinateur."
+ },
+ "relatifs-24": {
+  "why": "postuler à un stage → à + lequel = auquel. dont and duquel both correspond to the preposition de."
+ },
+ "relatifs-25": {
+  "why": "tout ce + relative pronoun; avoir besoin de → tout ce dont. ce que is a direct object; ce qui is a subject."
+ },
+ "relatifs-26": {
+  "why": "The antecedent is the whole preceding sentence, so ce is required; it is the subject of a agacé in the clause → ce qui. ce que is an object; qui on its own would be read as referring to l’entretien."
+ },
+ "relatifs-27": {
+  "why": "The antecedent is a whole sentence, and s’attendre à → ce à quoi. ce dont corresponds to de; ce que is a direct object, and s’attendre has no direct object."
+ },
+ "relatifs-28": {
+  "why": "les sommets des montagnes → dont as a noun complement. que is a direct object, but the object is already les sommets; desquelles is only used after a prepositional phrase (près desquelles)."
+ },
+ "relatifs-29": {
+  "why": "réfléchir à + the specific noun une question (feminine singular) → à laquelle. à quoi is only for neutral antecedents (ce, rien); à qui is for people."
+ },
+ "relatifs-30": {
+  "why": "la façon / la manière de faire quelque chose → la façon dont. Neither que nor où can go with façon."
+ }
+}

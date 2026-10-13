@@ -1,1 +1,92 @@
-{}
+{
+ "but-01": {
+  "why": "An infinitive follows and the subject is the same (je), so pour + infinitive. pour que needs a subjunctive clause with a different subject; parce que expresses a cause and takes a clause."
+ },
+ "but-02": {
+  "why": "pour que + subjunctive: qu’ils comprennent. comprendront is the future; comprendre is the infinitive, and the clause needs a conjugated verb."
+ },
+ "but-03": {
+  "why": "Different subjects (nous / les visiteurs) and a clause follows, so pour que + subjunctive. pour and afin de can only take an infinitive."
+ },
+ "but-04": {
+  "why": "afin que + subjunctive: que tout le monde puisse. peut is indicative; pourra is the future."
+ },
+ "but-05": {
+  "why": "Same subject and an infinitive follows, so afin de. afin que and de sorte que need a clause."
+ },
+ "but-06": {
+  "why": "de peur que + subjunctive (the ne is expletive, with no negative meaning): qu’il ne pleuve. pleut is indicative; pleuvra is the future."
+ },
+ "but-07": {
+  "why": "Same subject, followed by the negative infinitive ne pas rater, so pour. pour que and afin que need a conjugated clause."
+ },
+ "but-08": {
+  "why": "An infinitive follows, so de façon à + infinitive. de façon que takes a clause; parce que expresses a cause and takes a clause."
+ },
+ "but-09": {
+  "why": "Different subjects and a subjunctive clause follows (puissent), so afin que. afin de and en vue de only take an infinitive or noun."
+ },
+ "but-10": {
+  "why": "A noun follows (l’examen), so en vue de + noun (preparing for…). pour que and afin que need a clause."
+ },
+ "but-11": {
+  "why": "de crainte que + subjunctive (expletive ne): qu’il ne se mette. se met is indicative; se mettra is the future."
+ },
+ "but-12": {
+  "why": "An infinitive follows (le rendre) and the subject is the same, so dans le but de. pour que and afin que need a clause with a conjugated verb."
+ },
+ "but-13": {
+  "why": "Different subjects (vous / tout le monde), followed by the subjunctive entende, so pour que. pour and de façon à only take an infinitive."
+ },
+ "but-14": {
+  "why": "Same subject (je), so you must use pour + infinitive: pour me souvenir. pour que je me souvienne wrongly uses a clause with the same subject; pour que je me souviens also uses the indicative."
+ },
+ "but-15": {
+  "why": "A subjunctive clause follows (on puisse) with a different subject, so de manière que. de manière à can only take an infinitive; de manière de doesn’t exist."
+ },
+ "but-16": {
+  "why": "Something to avoid (catching cold), same subject, followed by an infinitive: de peur d’avoir froid. de peur que needs a clause; pour avoir froid would mean “in order to be cold”, which makes no sense."
+ },
+ "but-17": {
+  "why": "pour que + subjunctive: que tu puisses. peux is indicative; pourras is the future."
+ },
+ "but-18": {
+  "why": "Same subject, followed by the infinitive attirer, so afin de (d’ before a vowel). afin que needs a clause; de crainte de means “for fear of”, the opposite meaning."
+ },
+ "but-19": {
+  "why": "de crainte que + subjunctive (expletive ne): qu’ils ne fassent. font is indicative; feront is the future."
+ },
+ "but-20": {
+  "why": "en vue de + infinitive or noun: en vue de réduire. en vue que is an incorrect structure; pour que needs a clause."
+ },
+ "but-21": {
+  "why": "afin de takes an infinitive: afin de vous demander. demande and demandiez are conjugated forms and can’t follow afin de."
+ },
+ "but-22": {
+  "why": "The ne in the sentence is expletive, with no pas, meaning “for fear that… happens”; only de peur que can be used like this. To mean “so that it doesn’t get worse”, pour que / afin que would need ne… pas — otherwise the meaning becomes “so that it gets worse”."
+ },
+ "but-23": {
+  "why": "Different subjects (je / il), followed by a subjunctive clause, so pour que. pour and afin de only take an infinitive."
+ },
+ "but-24": {
+  "why": "An infinitive follows (éviter), so de manière à. de manière que takes a clause; de manière de doesn’t exist."
+ },
+ "but-25": {
+  "why": "With a negative infinitive, ne pas go together before the infinitive: pour ne pas être. pour pas ne is the wrong order; pour que je ne sois pas wrongly uses a clause with the same subject."
+ },
+ "but-26": {
+  "why": "afin que + subjunctive; even when the main clause is in the past, use the present subjunctive: qu’ils puissent. peuvent is indicative; pourraient is conditional."
+ },
+ "but-27": {
+  "why": "pour que + subjunctive; with a past main clause, everyday French still uses the present subjunctive: qu’il ne se perde pas. perd and perdait are indicative."
+ },
+ "but-28": {
+  "why": "The fixed expression dans le but de + infinitive; trouver starts with a consonant, so no elision: dans le but de trouver. dans le but d’ elides wrongly; au but de doesn’t exist."
+ },
+ "but-29": {
+  "why": "afin que + subjunctive: que nous ayons. avons is indicative; aurons is the future."
+ },
+ "but-30": {
+  "why": "Same subject (je), so de peur de + infinitive (passive): de peur d’être entendu. que je (ne) sois wrongly uses a clause with the same subject."
+ }
+}

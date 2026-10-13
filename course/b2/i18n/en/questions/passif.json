@@ -1,1 +1,92 @@
-{}
+{
+ "passif-01": {
+  "why": "The bridge was opened (by someone), so the passive; a completed action at a definite past moment takes the passé composé: a été inauguré. a inauguré is active (the bridge opened the Prime Minister), which makes no sense; était inauguré is the imparfait and can’t express a one-off completed event."
+ },
+ "passif-02": {
+  "why": "In the passive, the past participle agrees in gender and number with the subject: les mesures is feminine plural, so adoptées. adopté lacks agreement; adoptés is masculine plural."
+ },
+ "passif-03": {
+  "why": "A passive expressing a state often introduces the “agent” with de: couvert de neige (covered with snow). par is for agents of actions, and par neige lacks an article; avec can’t introduce the agent of a passive."
+ },
+ "passif-04": {
+  "why": "la semaine prochaine refers to the future; the future passive = future of être + past participle: seront publiés. ont été and étaient are past tenses and contradict the time expression."
+ },
+ "passif-05": {
+  "why": "se faire + infinitive means the subject undergoes something: il s’est fait voler son portefeuille (he had his wallet stolen). a été can’t be followed by an infinitive; est fait lacks the reflexive se, a wrong structure."
+ },
+ "passif-06": {
+  "why": "se voir + infinitive means the subject is subjected to something: il s’est vu refuser le poste (he was refused the job). être can’t be followed by an infinitive; s’est refuser lacks voir and isn’t a sentence."
+ },
+ "passif-07": {
+  "why": "The church was built, so the passive, with the participle agreeing with the feminine singular subject cette église: construite. construit lacks agreement; a construit is active, meaning “the church built…”."
+ },
+ "passif-08": {
+  "why": "The impersonal structure il est + adjective + de + infinitive: Il est indispensable de réserver. à isn’t used in this structure; que must be followed by a clause with a subject."
+ },
+ "passif-09": {
+  "why": "il est essentiel que expresses necessity and takes the subjunctive: qu’il soit informé (passive subjunctive). est and sera are indicative."
+ },
+ "passif-10": {
+  "why": "s’agir de can only have the impersonal subject il: Dans ce documentaire, il s’agit de… (it’s about…). You can’t say ce documentaire s’agit de; il agit de lacks the reflexive s’."
+ },
+ "passif-11": {
+  "why": "In the impersonal structure il reste + noun, the verb is always third person singular, even with a plural noun after it: il reste trois places. restent wrongly agrees with places; in il en reste trois places, en duplicates places."
+ },
+ "passif-12": {
+  "why": "In the impersonal structure il manque + noun, the verb is singular: il manque deux documents. manquent wrongly agrees with documents; manquer can’t be put in the passive here."
+ },
+ "passif-13": {
+  "why": "The agent of a concrete action (arrêter) is introduced by par. de is for verbs of state or feeling; avec expresses an instrument or accompaniment and can’t introduce the agent."
+ },
+ "passif-14": {
+  "why": "The modal devoir + passive infinitive être + past participle: doit être réglé. avoir réglé is active; été alone can’t follow devoir."
+ },
+ "passif-15": {
+  "why": "il faut que + subjunctive; the passive subjunctive = que + subjunctive of être + participle: qu’il soit remis. est is indicative; ait remis uses the active auxiliary, the wrong structure."
+ },
+ "passif-16": {
+  "why": "The passive plus-que-parfait avaient été + past participle, agreeing with the subject les habitants (masculine plural): évacués. évacué lacks agreement; évacuer is the infinitive."
+ },
+ "passif-17": {
+  "why": "A past state is described with the passive imparfait: étaient payés. avaient payés and ont payés are active compound tenses with avoir and can’t mean “were paid”."
+ },
+ "passif-18": {
+  "why": "se faire + infinitive: the past participle fait never agrees when followed by an infinitive, so elle s’est fait opérer. s’est faite is a wrong agreement; a été can’t be followed by an infinitive."
+ },
+ "passif-19": {
+  "why": "Speech often replaces the passive with the indefinite pronoun on + active: On clôturera les inscriptions. il would be read as a specific “he”; ça can’t be the subject in this way."
+ },
+ "passif-20": {
+  "why": "il est interdit de + infinitive (it is forbidden to…). Neither à nor pour can be used in this impersonal structure."
+ },
+ "passif-21": {
+  "why": "il reste à + infinitive means “what remains to be done”, and ne… plus que means “only… left”: il ne reste plus qu’à trouver. You don’t say il reste de or il reste pour."
+ },
+ "passif-22": {
+  "why": "The agent of a concrete action (peindre) takes par: peints par Monet. de is for verbs of state or feeling (connu de tous); à can’t introduce the agent."
+ },
+ "passif-23": {
+  "why": "A hypothesis contrary to past fact takes the passive past conditional: auraient été + participle. The compound tenses of être use avoir, so seraient été is impossible; auraient emportés is active and lacks été."
+ },
+ "passif-24": {
+  "why": "se voir + infinitive means the subject receives something: elle s’est vu décerner un prix. The action of the infinitive after vu (décerner) isn’t performed by the subject, so vu doesn’t agree. a été can’t be followed by an infinitive; s’est faite décerner uses the wrong verb and agrees wrongly."
+ },
+ "passif-25": {
+  "why": "The passive participle agrees with the subject; with one man and one woman, the rule is masculine plural: reçus. reçues is feminine plural; reçu is singular, with no agreement."
+ },
+ "passif-26": {
+  "why": "The impersonal structure il (nous) manque + noun: the verb agrees with il, so the singular manque. manquent wrongly agrees with joueurs; manquons wrongly agrees with nous."
+ },
+ "passif-27": {
+  "why": "il s’agit de + infinitive means “what matters is to…”; the preposition de is required and the subject can only be il. il s’agit lacks de; on s’agit de has the wrong subject."
+ },
+ "passif-28": {
+  "why": "In demander à qqn de…, the candidats are an indirect object and can’t become the subject of a passive; use the transitive verb prier qqn de instead: ils ont été priés de patienter. ont été demandés is the classic error; se sont demandés means “wondered”, a completely different meaning."
+ },
+ "passif-29": {
+  "why": "The impersonal structure il est arrivé + noun (… happened): arriver takes être, and the verb agrees with the dummy subject il, so the singular est. a arrivé uses the wrong auxiliary; sont wrongly agrees with the noun."
+ },
+ "passif-30": {
+  "why": "With an agent introduced by par la mairie, you need the passive with être + participle: seront rénovés. The pronominal passive (se rénoveront) can’t take an agent introduced by par; rénoveront is active, meaning “the homes will renovate…”."
+ }
+}

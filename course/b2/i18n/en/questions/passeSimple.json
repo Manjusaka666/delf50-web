@@ -1,1 +1,47 @@
-{}
+{
+ "passeSimple-01": {
+  "why": "First-group verbs (-er) take -a in the third person singular passé simple: il entra. -it belongs to second-group and some third-group verbs; -ut to avoir / être / -oir verbs and the like, not entrer."
+ },
+ "passeSimple-02": {
+  "why": "The passé simple of faire: il fit, ils firent. faisèrent is invented by applying first-group rules; fîtes is the second person plural (vous fîtes), while the subject les ouvriers is third person."
+ },
+ "passeSimple-03": {
+  "why": "The passé simple of prendre: elle prit, ils prirent (the stem becomes pr-). prenit / prenut are both invented forms."
+ },
+ "passeSimple-04": {
+  "why": "The passé simple of avoir: il eut, ils eurent. avèrent is an invented form; eûmes is the first person plural (nous eûmes)."
+ },
+ "passeSimple-05": {
+  "why": "The passé simple of venir: il vint, ils vinrent (a special -in- stem). vaincre → ils vainquirent; vendre → ils vendirent. Recognising these forms is key to reading literary/historical texts in CE."
+ },
+ "passeSimple-06": {
+  "why": "The passé simple of être: il fut, ils furent; il fut nommé = il a été nommé (passive). faire → il fit; falloir → il fallut."
+ },
+ "passeSimple-07": {
+  "why": "soudain introduces a sudden, one-off action → the passé simple sonna (the main narrative line). sonnait is the imparfait, used for background description, which clashes with soudain; sonnit is a wrong form."
+ },
+ "passeSimple-08": {
+  "why": "Time and background description take the imparfait: il était minuit passé; the main-line event (se déclencha) takes the passé simple. fût is the imperfect subjunctive and can’t be used in an independent statement; été is a past participle and can’t be a verb on its own."
+ },
+ "passeSimple-09": {
+  "why": "chaque matin expresses a habitual past action → the imparfait donnait; jusqu’au jour où elle disparut is a one-off event, in the passé simple. donna expresses a single action; donne is the present and doesn’t fit a past narrative."
+ },
+ "passeSimple-10": {
+  "why": "The passé simple of croire: il crut, ils crurent. croître → ils crûrent (with a circumflex); courir → ils coururent."
+ },
+ "passeSimple-11": {
+  "why": "The passé simple of conclure: il conclut, ils conclurent. concluèrent is invented from first-group rules; conclûmes is the first person plural."
+ },
+ "passeSimple-12": {
+  "why": "The passé simple of mettre / remettre: il mit / il remit, ils remirent. remettit / remettut are invented forms."
+ },
+ "passeSimple-13": {
+  "why": "In news and history, the passé simple corresponds to the spoken passé composé: fut annoncée = a été annoncée (a completed one-off event). était annoncée is the imparfait, for background or duration; sera is the future."
+ },
+ "passeSimple-14": {
+  "why": "The passé simple of atteindre (and peindre, craindre and other -indre verbs): il atteignit, ils atteignirent. atteindirent / atteignèrent are wrong forms."
+ },
+ "passeSimple-15": {
+  "why": "The first person plural passé simple of être: nous fûmes (with a circumflex). fumes, without the circumflex, is the present of fumer (tu fumes); fûtes is the second person plural (vous fûtes)."
+ }
+}

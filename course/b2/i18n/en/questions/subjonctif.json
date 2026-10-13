@@ -1,1 +1,92 @@
-{}
+{
+ "subjonctif-01": {
+  "why": "il faut que + subjonctif. The ils stem of remplir is remplissent → que tu remplisses. remplis is the present indicative and rempliras the future; neither can follow il faut que."
+ },
+ "subjonctif-02": {
+  "why": "il faut que + subjonctif; the subjunctive of être is nous soyons. sommes is indicative; serons is the future and can’t be used even with demain."
+ },
+ "subjonctif-03": {
+  "why": "vouloir que + subjonctif (different subjects); prendre → que vous preniez. prenez is indicative; prendrez is the future."
+ },
+ "subjonctif-04": {
+  "why": "vouloir que + subjonctif; devenir conjugates like venir → que je devienne. deviens is indicative; deviendrai is the future."
+ },
+ "subjonctif-05": {
+  "why": "vouloir que + subjonctif; the subjunctive of faire is irregular: qu’elle fasse. fait is indicative; fera is the future."
+ },
+ "subjonctif-06": {
+  "why": "il faut que + subjonctif; the subjunctive of aller is que vous alliez (all- for nous/vous, aill- for the other persons). allez is indicative; irez is the future."
+ },
+ "subjonctif-07": {
+  "why": "il faut que + subjonctif; the subjunctive of savoir is irregular: qu’elle sache. sait is indicative; saura is the future."
+ },
+ "subjonctif-08": {
+  "why": "avoir peur que + subjonctif; the ne is expletive (ne explétif) with no negative meaning; être → qu’il soit. est and sera are indicative."
+ },
+ "subjonctif-09": {
+  "why": "When the main and subordinate clauses share the same subject (je), you can’t use que + clause; use an infinitive: je voudrais consacrer. que je consacre / que je consacrerai both wrongly use a clause with the same subject."
+ },
+ "subjonctif-10": {
+  "why": "douter que expresses doubt and takes the subjonctif: que le projet soit financé. est / sera are indicative, which douter que doesn’t allow."
+ },
+ "subjonctif-11": {
+  "why": "regretter que + subjonctif; the action is complete, so the past subjunctive: subjunctive of avoir que vous ayez + pu. avez pu is the passé composé (indicative); aurez pu is the future perfect."
+ },
+ "subjonctif-12": {
+  "why": "il faut que + subjonctif; prendre: que nous prenions (same form as the imparfait, but different from the present indicative prenons). prendrons is the future."
+ },
+ "subjonctif-13": {
+  "why": "il faut que + subjonctif; the third person singular subjunctive of avoir is ait. a is indicative; aura is the future."
+ },
+ "subjonctif-14": {
+  "why": "avoir peur que + subjonctif (expletive ne); devoir → qu’elle doive. doit is indicative; devra is the future."
+ },
+ "subjonctif-15": {
+  "why": "il faudrait que (the conditional of il faut, more tactful) also takes the subjonctif; pouvoir → qu’elle puisse. peut / pourra are indicative."
+ },
+ "subjonctif-16": {
+  "why": "vouloir que (in the negative too) + subjonctif; aller → qu’ils aillent. vont is indicative; iront is the future."
+ },
+ "subjonctif-17": {
+  "why": "With the same subject (je), avoir peur de + infinitive: j’ai peur de rater. que je rate / que je ne rate wrongly use a que clause with the same subject."
+ },
+ "subjonctif-18": {
+  "why": "douter que + subjonctif; dire → qu’il dise. dit is indicative; dira is the future."
+ },
+ "subjonctif-19": {
+  "why": "il faut que + subjonctif; venir → que vous veniez. venez is indicative; viendrez is the future."
+ },
+ "subjonctif-20": {
+  "why": "Different subjects (je / nous), so vouloir que + subjonctif: que nous parlions (-ions ending). parlons is indicative; parlerons is the future."
+ },
+ "subjonctif-21": {
+  "why": "Same subject (je), so regretter de + infinitive; the action is complete, so the past infinitive: d’avoir quitté. que j’aie quitté wrongly uses a clause with the same subject; que j’ai quitté also uses the indicative."
+ },
+ "subjonctif-22": {
+  "why": "regretter que + past subjunctive; venir takes être: que tu sois venu. es venu is the indicative passé composé; seras venu is the future perfect."
+ },
+ "subjonctif-23": {
+  "why": "douter que + subjonctif; the subjunctive of vouloir is qu’ils veuillent. veulent is indicative; voudront is the future."
+ },
+ "subjonctif-24": {
+  "why": "vouloir que + subjonctif; in speech on = nous, but the verb is conjugated in the third person singular: qu’on aille. va is indicative; ira is the future."
+ },
+ "subjonctif-25": {
+  "why": "regretter que + past subjunctive: qu’ils aient tenu compte. ont tenu is the indicative passé composé; auront tenu is the future perfect."
+ },
+ "subjonctif-26": {
+  "why": "avoir peur que + subjonctif (here ne… pas is a real negation); the first person subjunctive of avoir is que j’aie (pronounced like j’ai but spelt differently). ai is indicative; aurai is the future."
+ },
+ "subjonctif-27": {
+  "why": "il faut que + subjonctif; savoir → que tu saches. sais is indicative; sauras is the future."
+ },
+ "subjonctif-28": {
+  "why": "il faut que + subjonctif; faire → que nous fassions. faisons is indicative (note that both pronunciation and spelling differ); ferons is the future."
+ },
+ "subjonctif-29": {
+  "why": "Same subject (je), so aimer / vouloir is followed directly by an infinitive: j’aimerais obtenir. que j’obtienne wrongly uses a clause with the same subject; que j’obtiendrai also uses the future."
+ },
+ "subjonctif-30": {
+  "why": "se douter que = to suspect, to guess, expressing near certainty, so it takes the indicative; the main clause is in the past, so the “future in the past” is the conditional: qu’il serait. soit / ait été are subjunctive, used only with douter que (doubt)."
+ }
+}

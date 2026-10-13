@@ -1,1 +1,92 @@
-{}
+{
+ "concession-01": {
+  "why": "la pluie is a noun, so malgré + noun. bien que and même si need a clause."
+ },
+ "concession-02": {
+  "why": "bien que + subjunctive: qu’il soit tard. est and sera are indicative, only for même si."
+ },
+ "concession-03": {
+  "why": "même si + indicative: le billet est cher. soit is subjunctive (for bien que); serait is conditional, which can’t follow même si."
+ },
+ "concession-04": {
+  "why": "The fixed structure avoir beau + infinitive (however much…, it’s no use): il a beau répéter. être beau / faire beau mean something else (to be handsome, to be fine weather)."
+ },
+ "concession-05": {
+  "why": "Contrasting facts about two people takes tandis que + an indicative clause. malgré and en dépit de can only take a noun."
+ },
+ "concession-06": {
+  "why": "Cheap yet very tasty, contrary to expectation, so pourtant (yet). donc expresses a result and parce que a cause; neither expresses contrast."
+ },
+ "concession-07": {
+  "why": "Only a noun phrase follows (critiques), with no verb, so en dépit de + les = en dépit des. bien que and même si need a clause with a conjugated verb."
+ },
+ "concession-08": {
+  "why": "quoique (= bien que) + subjunctive: qu’elle ait. a and aura are indicative."
+ },
+ "concession-09": {
+  "why": "A full clause follows (la météo avait annoncé…), so alors que + indicative for contrast. malgré and en dépit de can only take a noun."
+ },
+ "concession-10": {
+  "why": "avoir beau takes an infinitive: elle a beau faire des économies. fait is a conjugated form or past participle and faisant a present participle; neither can follow avoir beau."
+ },
+ "concession-11": {
+  "why": "certes… mais is the fixed “concede, then rebut” structure. pourtant already expresses contrast and would double up with the mais that follows; malgré needs a noun."
+ },
+ "concession-12": {
+  "why": "il n’empêche que (nevertheless) takes the indicative: il est indispensable. soit is subjunctive; être is the infinitive."
+ },
+ "concession-13": {
+  "why": "même si + plus-que-parfait expresses a hypothesis contrary to past fact (the main clause is in the past conditional). serions partis is conditional, not used after même si; soyons partis is subjunctive."
+ },
+ "concession-14": {
+  "why": "bien que + past subjunctive (the action is complete): qu’ils aient essayé. ont is indicative; auraient is conditional."
+ },
+ "concession-15": {
+  "why": "cependant (however) at the start links two independent sentences, expressing a limitation or contrast. malgré needs a noun; bien que needs a subjunctive clause and can’t just be followed by a comma."
+ },
+ "concession-16": {
+  "why": "The verb in the clause is the subjunctive ait, so only bien que works. malgré takes a noun; même si takes the indicative (même s’il a beaucoup travaillé)."
+ },
+ "concession-17": {
+  "why": "Better qualified yet earning less, contrary to expectation, so pourtant. puisque expresses a cause and si bien que a result; neither is logical."
+ },
+ "concession-18": {
+  "why": "même si takes the present indicative, even when referring to the future: même s’il pleut demain. pleuve is subjunctive; pleuvra is the future, which can’t follow si."
+ },
+ "concession-19": {
+  "why": "avoir beau in the passé composé: nous avons eu beau chercher. être can’t replace avoir: sommes beau / avons été beau are both wrong."
+ },
+ "concession-20": {
+  "why": "The clause uses the indicative connaît, so alors que (whereas, yet) for contrast. malgré takes a noun; bien que requires the subjunctive (bien qu’il connaisse)."
+ },
+ "concession-21": {
+  "why": "quoi que (two words) = whatever, the object of dises. quoique (= bien que) and bien que mean “although” and would leave the sentence without an object, incomplete."
+ },
+ "concession-22": {
+  "why": "The fixed expression il n’empêche que + indicative, with no pas. il n’empêche pas que is a common error; qu’à isn’t a structure."
+ },
+ "concession-23": {
+  "why": "certes introduces the concession and mais introduces the rebuttal in the second half: certes…, mais…. donc expresses a result and car a cause; neither forms a concessive structure."
+ },
+ "concession-24": {
+  "why": "A noun phrase follows, so en dépit de + noun (de + de nombreuses → de nombreuses). bien que and alors que need a clause."
+ },
+ "concession-25": {
+  "why": "soit is subjunctive, so it needs quoique / bien que (written register). même si and alors que take the indicative."
+ },
+ "concession-26": {
+  "why": "même si + imparfait expresses a hypothesis contrary to present fact, with the conditional in the main clause: Même si j’avais le temps, je ne partirais pas. aurais is conditional and aie subjunctive; neither can follow même si."
+ },
+ "concession-27": {
+  "why": "avoir beau must match the tense of the main clause: the main clause is in the imparfait (refusait), so elle avait beau insister. était uses the wrong auxiliary; a is present and doesn’t fit a past narrative."
+ },
+ "concession-28": {
+  "why": "même si + indicative (a real past fact): elle a travaillé. ait travaillé is subjunctive and aurait travaillé conditional; neither can follow même si."
+ },
+ "concession-29": {
+  "why": "avoir beau takes an infinitive, the past infinitive for a completed action: avoir fait. ayant fait is a compound participle and qu’il ait fait a clause; neither can follow avoir beau."
+ },
+ "concession-30": {
+  "why": "The adverb néanmoins (nevertheless) can go between the auxiliary/modal and the infinitive. malgré needs a noun; bien que must introduce a clause."
+ }
+}

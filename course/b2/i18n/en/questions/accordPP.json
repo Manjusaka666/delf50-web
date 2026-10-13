@@ -1,1 +1,92 @@
-{}
+{
+ "accordPP-01": {
+  "why": "With être, the past participle agrees with the subject in gender and number. The subject les nouvelles stagiaires is feminine plural → arrivées; arrivés is masculine plural, and arrivé lacks agreement."
+ },
+ "accordPP-02": {
+  "why": "With avoir, the direct object que (= les rapports, masculine plural) comes before the verb → publiés. publié ignores the preceding COD; publiées wrongly agrees with la direction (the subject)."
+ },
+ "accordPP-03": {
+  "why": "l’ = cette décision (feminine singular), a preceding direct object → prise. pris lacks agreement; prises is plural, which is wrong."
+ },
+ "accordPP-04": {
+  "why": "les = les propositions (feminine plural), a preceding COD → lues. lu lacks agreement; lus has the wrong gender."
+ },
+ "accordPP-05": {
+  "why": "avoir with the COD after the verb (des centaines de repas) → no agreement: distribué. distribués wrongly agrees with the subject; distribuées has no basis at all."
+ },
+ "accordPP-06": {
+  "why": "When the pronoun en is the object, the past participle usually doesn’t agree → acheté. achetés / achetées treat en as an ordinary preceding COD — a common over-agreement among learners."
+ },
+ "accordPP-07": {
+  "why": "In the pronominal verb s’enfermer, s’ is the direct object (she shut herself in) and comes before the verb → agreement with la directrice: enfermée. enfermé lacks agreement; enfermés has the wrong number."
+ },
+ "accordPP-08": {
+  "why": "The COD is les mains (after the verb) and s’ is only an indirect object (washed for herself) → no agreement: lavé. Compare Elle s’est lavée (s’ is the COD). lavés wrongly agrees with mains, but mains comes after."
+ },
+ "accordPP-09": {
+  "why": "parler à qqn: se is an indirect object (l’un a parlé à l’autre) → the past participle doesn’t change: parlé. parlés / parlées both wrongly treat se as a COD."
+ },
+ "accordPP-10": {
+  "why": "In fait + infinitif, fait never changes, even with a preceding COD (l’ = la salle) → fait. faite / faits are both wrong agreements."
+ },
+ "accordPP-11": {
+  "why": "que = les difficultés (feminine plural), a preceding COD → rencontrées. rencontré lacks agreement; rencontrés wrongly agrees with the subject ils."
+ },
+ "accordPP-12": {
+  "why": "se rassembler: se is the direct object → agreement with the subject les manifestants (masculine plural): rassemblés. rassemblé lacks agreement; rassemblée is feminine singular."
+ },
+ "accordPP-13": {
+  "why": "se disputer qqch: the direct object is l’organisation, after the verb, and se is an indirect object → no change: disputé. disputées is only for « elles se sont disputées » (they quarrelled) with no object; disputés has the wrong gender too."
+ },
+ "accordPP-14": {
+  "why": "téléphoner à qqn: se is an indirect object → the past participle doesn’t change: téléphoné. téléphonées / téléphonés are both wrong agreements (same for se parler, se sourire, se succéder)."
+ },
+ "accordPP-15": {
+  "why": "se faire + infinitif: fait doesn’t change → s’est fait couper. faite is a common error (influenced by s’est and the feminine subject); faits has even less basis."
+ },
+ "accordPP-16": {
+  "why": "In faire + infinitif, fait doesn’t change, even with the preceding que = les mesures → a fait voter. faites / faits are both wrong."
+ },
+ "accordPP-17": {
+  "why": "combien de candidatures is a preceding direct object (feminine plural) → reçues. reçu lacks agreement; reçus has the wrong gender."
+ },
+ "accordPP-18": {
+  "why": "In the question, quelle solution (feminine singular) is a preceding COD → retenue. retenu lacks agreement; retenues has the wrong number."
+ },
+ "accordPP-19": {
+  "why": "se rendre compte is a fixed expression in which compte is the direct object and comes after → rendu doesn’t change. rendues / rendus are both wrong agreements."
+ },
+ "accordPP-20": {
+  "why": "se plaindre is an inherently pronominal verb, so the past participle agrees with the subject → plaintes (feminine plural). plaint lacks agreement; plaints has the wrong gender."
+ },
+ "accordPP-21": {
+  "why": "Here l’ is the neutral pronoun standing for the whole idea “as she had expected”, not for logements or la ville → no agreement: prévu. prévus / prévue wrongly treat l’ as a specific noun."
+ },
+ "accordPP-22": {
+  "why": "que = les données (feminine plural), a preceding COD → fournies. nous is an indirect object (fournir qqch à qqn) and doesn’t affect agreement. fourni lacks agreement; fournis has the wrong gender."
+ },
+ "accordPP-23": {
+  "why": "A past participle used alone (no auxiliary) acts like an adjective and agrees with the noun it qualifies: la décision → prise. pris / prises don’t match in gender and number."
+ },
+ "accordPP-24": {
+  "why": "s’abstenir is inherently pronominal → agreement with the subject la porte-parole (feminine singular) → abstenue. abstenu lacks agreement; abstenues has the wrong number."
+ },
+ "accordPP-25": {
+  "why": "In se passer (to take place), se can’t be analysed as an object, so by the rule for pronominal verbs the participle agrees with the subject: les fêtes → passées. passé lacks agreement; passés has the wrong gender."
+ },
+ "accordPP-26": {
+  "why": "s’engager à: se is the direct object → agreement with the subject les deux directeurs (masculine plural): engagés. engagé lacks agreement; engagée is feminine singular."
+ },
+ "accordPP-27": {
+  "why": "s’accorder qqch: se is an indirect object (accorder à soi) and the COD quelques jours comes after → no change: accordé. accordés wrongly agrees with the subject; accordées has no basis."
+ },
+ "accordPP-28": {
+  "why": "fait + infinitif never changes: qu’il a fait prendre. faites wrongly agrees with les photos; faits has even less basis."
+ },
+ "accordPP-29": {
+  "why": "les = ces erreurs (feminine plural), a preceding COD → commises. commis lacks agreement (and is the masculine form); commise wrongly agrees with la stagiaire, ignoring the real object."
+ },
+ "accordPP-30": {
+  "why": "se voir + infinitif: the subject isn’t the one performing the infinitive’s action (remettre) — she is the one receiving the award → vu doesn’t change. Compare Elle s’est vue mourir, where she herself performs mourir, so it agrees. vue / vus are wrong here."
+ }
+}

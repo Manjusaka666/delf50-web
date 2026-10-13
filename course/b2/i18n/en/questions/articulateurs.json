@@ -1,1 +1,92 @@
-{}
+{
+ "articulateurs-01": {
+  "why": "d’abord introduces the first step and forms a sequence with the puis that follows. enfin marks the last step and can’t come before puis; bref sums up and doesn’t mark a step."
+ },
+ "articulateurs-02": {
+  "why": "d’une part… d’autre part is a fixed matching pair setting two arguments side by side. en revanche expresses contrast and bref sums up; neither pairs with d’autre part."
+ },
+ "articulateurs-03": {
+  "why": "Both sentences are advantages, and the second adds an argument → De plus (moreover). En revanche introduces the opposite; Autrement dit means “in other words”, but the second sentence doesn’t rephrase the first."
+ },
+ "articulateurs-04": {
+  "why": "Two opposite trends are contrasted → en revanche (on the other hand). en effet explains or confirms the previous sentence; de plus adds an argument in the same direction."
+ },
+ "articulateurs-05": {
+  "why": "The second sentence gives a reason for “we must act quickly” → En effet (indeed / because). En revanche expresses contrast; Bref sums up and can’t introduce an argument."
+ },
+ "articulateurs-06": {
+  "why": "quant à + noun, with à and les contracting to aux → quant aux enseignants. quant à les must contract; quant des doesn’t exist."
+ },
+ "articulateurs-07": {
+  "why": "Certes…, mais… is a concessive structure: first acknowledge a fact, then put the other side. En effet must follow on from what came before and doesn’t form a concession with mais; Bref sums up."
+ },
+ "articulateurs-08": {
+  "why": "Several drawbacks are listed, and the last sentence briefly sums up → Bref (in short). En effet explains, but this is a concluding generalisation; D’une part introduces a first point and needs d’autre part to match it."
+ },
+ "articulateurs-09": {
+  "why": "12,5 % is one in eight, so the second sentence rephrases the first → autrement dit (in other words). en revanche expresses contrast; par ailleurs introduces another new topic."
+ },
+ "articulateurs-10": {
+  "why": "Par ailleurs (besides, also) introduces another related aspect. Autrement dit rephrases the same content; En effet explains the previous sentence, and noise doesn’t explain air pollution."
+ },
+ "articulateurs-11": {
+  "why": "d’abord… ensuite… enfin marks the last step in a sequence. bref and en définitive are summarising/concluding connectors, not used to list steps."
+ },
+ "articulateurs-12": {
+  "why": "certes introduces a concession, so the second half needs mais to state the main point. en effet explains and de plus adds; neither completes the “certes… mais” concession."
+ },
+ "articulateurs-13": {
+  "why": "Quant à + noun introduces (or switches to) a topic, often picked up by the pronoun elle. En effet and Autrement dit are adverbial connectors and can’t take a noun phrase directly."
+ },
+ "articulateurs-14": {
+  "why": "Both sentences are negative facts, and the second adds to the first → En outre (moreover, written). En revanche needs information in the opposite direction; Autrement dit rephrases, but the second sentence is new information."
+ },
+ "articulateurs-15": {
+  "why": "Summing up the whole text → Pour conclure. En effet explains the previous sentence and can’t conclude; D’autre part introduces a second point and must match d’une part."
+ },
+ "articulateurs-16": {
+  "why": "d’une part must be matched by d’autre part to set two arguments side by side. en effet explains and autrement dit rephrases; neither fits a parallel structure."
+ },
+ "articulateurs-17": {
+  "why": "Two opposite behaviours are contrasted (reading less / using more) → En revanche. Autrement dit rephrases the same content, but these are two different facts; Bref sums up."
+ },
+ "articulateurs-18": {
+  "why": "en définitive (ultimately, in the end) gives the final result after discussion and can go between the auxiliary and the past participle. d’une part needs d’autre part to match it; quant à is a prepositional phrase and must be followed by a noun."
+ },
+ "articulateurs-19": {
+  "why": "outre is a preposition followed directly by a noun: outre son salaire (besides his salary). En outre and De plus are adverbial connectors and can’t take a noun; they stand alone, followed by a comma."
+ },
+ "articulateurs-20": {
+  "why": "Two advantages are added together → de plus. en revanche introduces information opposite to the previous sentence; autrement dit means “in other words”, but “collecting no data” isn’t a rephrasing of “free”."
+ },
+ "articulateurs-21": {
+  "why": "The fixed structure quant à + stressed pronoun/noun: quant à moi (as for me). quant de and quant pour don’t exist."
+ },
+ "articulateurs-22": {
+  "why": "The second sentence explains the reason for the refusal → en effet. en revanche expresses contrast, but the two sentences aren’t opposed; d’une part must be followed by d’autre part."
+ },
+ "articulateurs-23": {
+  "why": "A “fixed-term contract” means “ending after six months”, so the second sentence rephrases the first concretely → autrement dit. en revanche expresses contrast; quant à must be followed by a noun."
+ },
+ "articulateurs-24": {
+  "why": "The first item at the start of a talk → Tout d’abord. Bref and En définitive both close and sum up, which makes no sense where the speaker is thanking people at the start."
+ },
+ "articulateurs-25": {
+  "why": "D’abord… ensuite… organise the order of the argument. Au début de is a prepositional phrase and must be followed by a noun; Enfin marks the last step and can’t come before ensuite."
+ },
+ "articulateurs-26": {
+  "why": "The second sentence confirms the first with a concrete fact → en effet. en revanche introduces the opposite; autrement dit only rephrases the same content, and glacier data aren’t a synonym for “rising temperatures”."
+ },
+ "articulateurs-27": {
+  "why": "The two parts form a contrast (slow / gripping) → en revanche, which can go after the subject. en outre adds information in the same direction; en effet explains."
+ },
+ "articulateurs-28": {
+  "why": "d’un côté… de l’autre (côté) is a matching pair presenting two opposing sides of the same issue. en outre / de plus only add and can’t express the tension here."
+ },
+ "articulateurs-29": {
+  "why": "The first sentence (“opinions differ”) is opposed to the second (“all agree”) → en revanche. en effet explains and autrement dit rephrases; both contradict the meaning."
+ },
+ "articulateurs-30": {
+  "why": "Adding another issue in a formal letter → en outre (an adverb, followed by a comma). en plus de and outre are prepositions and must be followed by a noun or infinitive; they can’t introduce a sentence on their own."
+ }
+}

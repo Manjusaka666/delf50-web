@@ -1,1 +1,92 @@
-{}
+{
+ "participes-01": {
+  "why": "en + present participle forms the gérondif, expressing manner: you become a blacksmith by working iron. en isn’t followed by a past participle or an infinitive."
+ },
+ "participes-02": {
+  "why": "The present participle ayant = qui ont, used to modify a noun, never changes and takes no s. ayants wrongly agrees; ont is a conjugated verb, and the sentence already has the verb peuvent, so another conjugated verb can’t follow directly."
+ },
+ "participes-03": {
+  "why": "A quality (tiring) takes the verbal adjective fatigant (no u). fatiguant is the present participle, used only with an object; fatigué means “tired”, and a journey can’t be tired."
+ },
+ "participes-04": {
+  "why": "There is an object, ses collègues, so this is the present participle of an action, spelt fatiguant (keeping the u), invariable. fatigant is an adjective and can’t take an object; fatigants is the adjective’s plural."
+ },
+ "participes-05": {
+  "why": "The verbal adjective expressing a quality is spelt convaincant (c) and agrees with arguments: convaincants. convainquant is the participle spelling; convaincant lacks agreement."
+ },
+ "participes-06": {
+  "why": "It takes the object ses interlocuteurs, expressing an action, so the present participle convainquant (qu), invariable. convaincant(s) is the adjective spelling and can’t take an object."
+ },
+ "participes-07": {
+  "why": "A character trait (careless) takes the adjective négligent (-ent). négligeant is the present participle and needs an object; négligeante doesn’t exist."
+ },
+ "participes-08": {
+  "why": "It takes the object ses devoirs, expressing an action, so the present participle négligeant (keeping the e for the [ʒ] sound), invariable. négligent(s) is an adjective and can’t take an object."
+ },
+ "participes-09": {
+  "why": "tout en + present participle (gérondif) expresses contrast or simultaneity: supporting it while admitting it is expensive. en can’t be followed by a past participle or an infinitive."
+ },
+ "participes-10": {
+  "why": "The gérondif en + present participle can express a condition: if you leave earlier, you’ll avoid the traffic (= si vous partez plus tôt). en doesn’t take the infinitive partir or the past participle parti."
+ },
+ "participes-11": {
+  "why": "The verbal adjective agrees with the noun: les chiffres is masculine plural, so encourageants. encourageant lacks agreement; encourageantes is feminine."
+ },
+ "participes-12": {
+  "why": "Present participle = qui ne respecte pas; in the negative, ne… pas surround the participle, which doesn’t change. respectante wrongly agrees; ne pas after the participle is in the wrong place."
+ },
+ "participes-13": {
+  "why": "The logical subject of the gérondif must be the subject of the main clause: “I” got on the metro, so the main clause subject must also be je. In the other two options the subject is the phone, as if “the phone got on the metro” — a classic error."
+ },
+ "participes-14": {
+  "why": "A quality (different) takes the adjective différent, agreeing with opinions: différentes. différant is the present participle of différer, usually followed by a complement and invariable; différantes doesn’t exist."
+ },
+ "participes-15": {
+  "why": "This is an absolute participle construction expressing cause (= comme les avis diffèrent), so the present participle différant, invariable. différents is an adjective and can’t form a clause like this; différent is the adjective, not the verb (the conjugated verb is spelt diffèrent)."
+ },
+ "participes-16": {
+  "why": "There is an object, l’élection (the week before the election), so it is the verb’s present participle précédant, invariable. précédente / précédent are adjectives (previous) and can’t take an object."
+ },
+ "participes-17": {
+  "why": "There is no object, meaning “the previous year”, so the adjective précédent, agreeing with l’année (feminine): précédente. précédant is the present participle and needs an object; précédent lacks agreement."
+ },
+ "participes-18": {
+  "why": "Manner (arriving at a run) takes the gérondif en courant, with the same subject as the main clause. en courir doesn’t exist; couru is the past participle and can’t express manner."
+ },
+ "participes-19": {
+  "why": "The present participle vivant = qui vivent, invariable. vivantes is an adjective (alive), the wrong meaning; vivent is a conjugated verb, and the sentence already has the verb dépendent."
+ },
+ "participes-20": {
+  "why": "The noun “manufacturer” is spelt le fabricant (c). fabriquant is the present participle of fabriquer; fabriquants is a misspelling."
+ },
+ "participes-21": {
+  "why": "The adjective “demanding” is spelt exigeant and agrees with métier (masculine singular). exigent is the third person plural of the verb exiger; exigeante is feminine."
+ },
+ "participes-22": {
+  "why": "It takes the object la colère, expressing an action, so the present participle provoquant (qu), invariable. provocant(s) is an adjective (provocative) and can’t take an object."
+ },
+ "participes-23": {
+  "why": "A quality (intriguing) takes the adjective intrigant (no u), agreeing with comportement (masculine singular). intriguant is the participle spelling; intrigants is plural."
+ },
+ "participes-24": {
+  "why": "Manner (by watching series) takes the gérondif en regardant, with the same subject as the main clause. regardé is the past participle; en doesn’t take an infinitive."
+ },
+ "participes-25": {
+  "why": "tout en + present participle stresses two simultaneous actions, often with a sense of contrast: although she works full-time, she has gone back to studying. tout on its own can’t introduce a gérondif; en tout means “in total”."
+ },
+ "participes-26": {
+  "why": "The present participle étant introduces a cause (= comme il était malade), with the same subject as the main clause. été is a past participle and can’t stand alone; the infinitive être can’t introduce a cause like this."
+ },
+ "participes-27": {
+  "why": "The adjective “stifling” is spelt suffocant (c) and agrees with chaleur (feminine): suffocante. suffoquante mixes in the participle spelling (suffoquant); suffocant lacks agreement."
+ },
+ "participes-28": {
+  "why": "The adjective négligent, as the complement of la direction, must agree in the feminine: négligente. négligeante mixes in the participle spelling; négligent lacks agreement."
+ },
+ "participes-29": {
+  "why": "The gérondif of a pronominal verb: the pronoun goes between en and the present participle: en se rasant. Putting the pronoun after the participle or before en is the wrong word order."
+ },
+ "participes-30": {
+  "why": "se réjouir de is pronominal, so its gérondif keeps the reflexive pronoun: tout en se réjouissant (agreeing with the subject le philosophe). réjouissant lacks se and would mean “delighting (someone)”; se réjouir is the infinitive and can’t follow en."
+ }
+}

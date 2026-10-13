@@ -1,1 +1,92 @@
-{}
+{
+ "pronoms-01": {
+  "why": "penser à + thing: y replaces à + noun: j’y pense. en replaces de + noun; le replaces a direct object, and penser à doesn’t take a direct object."
+ },
+ "pronoms-02": {
+  "why": "avoir besoin de + thing: en replaces de + noun: j’en ai besoin. y corresponds to à; le to a direct object."
+ },
+ "pronoms-03": {
+  "why": "Order of double pronouns: the direct object le (le livre, masculine) comes before the indirect object lui: je le lui ai rendu. lui le is the wrong order; la doesn’t match the gender of livre."
+ },
+ "pronoms-04": {
+  "why": "me / te / nous / vous come before le / la / les: je te la prête. la te is the wrong order; le doesn’t match the gender of voiture (feminine)."
+ },
+ "pronoms-05": {
+  "why": "Affirmative imperative: verb + direct object + indirect object, with hyphens, and me becomes moi: donne-le-moi. moi-le is the wrong order; me isn’t used at the end of an affirmative imperative."
+ },
+ "pronoms-06": {
+  "why": "The negative imperative goes back to statement word order, with pronouns before the verb: ne me les prends pas. les moi and moi les are affirmative imperative forms and can’t be used in the negative."
+ },
+ "pronoms-07": {
+  "why": "parler de qqch à qqn: à ton chef → lui, du problème → en; lui comes before en: je lui en ai parlé. en lui is the wrong order; y can’t replace a person."
+ },
+ "pronoms-08": {
+  "why": "il y a + a noun with a partitive article: du pain is replaced by en, and y comes before en: il y en a. en y is the wrong order; le can’t replace a noun with a partitive article."
+ },
+ "pronoms-09": {
+  "why": "A predicative adjective (compétente) is replaced by the neutral pronoun le, which doesn’t change with the subject: elle l’est. la is a wrong agreement; en can’t replace an adjective."
+ },
+ "pronoms-10": {
+  "why": "The neutral pronoun le replaces a whole clause (qu’il quittait l’entreprise): je ne le savais pas. savoir doesn’t take de or à, so en and y are not used."
+ },
+ "pronoms-11": {
+  "why": "The semi-auxiliary aller + infinitive: the pronoun goes before the infinitive: je vais le terminer. The pronoun can’t go after the infinitive; lui is an indirect object, but terminer qqch needs a direct object."
+ },
+ "pronoms-12": {
+  "why": "With faire + infinitive, the pronouns go before faire, with vous before les: je vous les ferai envoyer. les vous is the wrong order; leur les is also wrong (it should be les leur)."
+ },
+ "pronoms-13": {
+  "why": "se souvenir de qqch: en replaces de + noun: je m’en souviens. y corresponds to à; le to a direct object."
+ },
+ "pronoms-14": {
+  "why": "s’habituer à + thing takes y: je m’y habitue. en corresponds to de; lui replaces a person, and for s’habituer à qqn you say je m’habitue à lui."
+ },
+ "pronoms-15": {
+  "why": "penser à + person: à + stressed pronoun: je pense à elle. penser doesn’t take an indirect object pronoun like lui (you can’t say je lui pense); la is a direct object."
+ },
+ "pronoms-16": {
+  "why": "se méfier de + person: de + stressed pronoun: je me méfie de lui. Neither lui nor le expresses the preposition de."
+ },
+ "pronoms-17": {
+  "why": "For -er verbs, the second person singular imperative adds s before en / y for liaison: achètes-en. achète-en lacks the s; achète-z-en is a non-standard colloquial spelling."
+ },
+ "pronoms-18": {
+  "why": "The imperative va of aller adds s before y: vas-y. va-y lacks the s; vas-en has the wrong pronoun (the imperative of s’en aller is va-t’en)."
+ },
+ "pronoms-19": {
+  "why": "Affirmative imperative: the direct object les comes before the indirect object nous, joined with hyphens: envoie-les-nous. nous-les is the wrong order; les à nous isn’t a pronoun form used in the imperative."
+ },
+ "pronoms-20": {
+  "why": "The negative imperative uses statement order: me before en, elided to m’en: ne m’en parle plus. en me is the wrong order; me-en isn’t elided and adds a hyphen."
+ },
+ "pronoms-21": {
+  "why": "In the affirmative imperative, moi + en becomes m’en: donne-m’en. moi-en isn’t elided; en-moi is the wrong order."
+ },
+ "pronoms-22": {
+  "why": "falloir + infinitive: the direct object pronoun goes before the infinitive: il faut les corriger. leur is an indirect object, but corriger qqch takes a direct object; the pronoun can’t go after the infinitive."
+ },
+ "pronoms-23": {
+  "why": "The neutral pronoun le replaces the whole preceding sentence: je le crains (I’m afraid so). craindre is transitive and takes neither en nor y."
+ },
+ "pronoms-24": {
+  "why": "The neutral pronoun le replaces the predicative adjective satisfaits and doesn’t change: nous le sommes. les is a wrong agreement; nous en sommes lacks the adjective and isn’t a sentence."
+ },
+ "pronoms-25": {
+  "why": "des conseils (an indefinite quantity) takes en and à Paul takes lui, with lui before en: je lui en ai donné quelques-uns. en lui is the wrong order; le can’t replace a noun with an indefinite article."
+ },
+ "pronoms-26": {
+  "why": "ton projet (singular) → le, aux clients → leur; le comes before leur: je le leur ai présenté. leur le is the wrong order; les doesn’t match the singular projet."
+ },
+ "pronoms-27": {
+  "why": "The modal vouloir + infinitive: ne… pas surround veux, and the pronoun le goes before the infinitive voir. The pronoun can’t go after the infinitive; pas can’t come between le and voir."
+ },
+ "pronoms-28": {
+  "why": "être reconnaissant de qqch: en replaces de + thing: nous vous en sommes reconnaissants. y corresponds to à; le can’t be a predicate alongside the adjective reconnaissants."
+ },
+ "pronoms-29": {
+  "why": "renoncer à + thing takes y, before the infinitive: il faut y renoncer. en corresponds to de; lui replaces people, not things."
+ },
+ "pronoms-30": {
+  "why": "In a compound tense with avoir, the direct object pronoun les goes before the verb, and the past participle agrees with it (ces lettres, feminine plural): envoyées. envoyé lacks agreement; envoyés is masculine plural."
+ }
+}

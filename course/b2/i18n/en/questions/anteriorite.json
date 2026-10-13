@@ -1,1 +1,92 @@
-{}
+{
+ "anteriorite-01": {
+  "why": "après + past infinitive (avoir + past participle) expresses an action completed first: après avoir terminé. avoir terminer uses the infinitive instead of the participle; après terminer lacks the auxiliary and isn’t standard in the exam."
+ },
+ "anteriorite-02": {
+  "why": "arriver takes être in compound tenses, so the past infinitive is être arrivé, agreeing with the subject Léa (feminine): être arrivée. avoir arrivé has the wrong auxiliary; arrivé lacks agreement."
+ },
+ "anteriorite-03": {
+  "why": "The past infinitive of a pronominal verb: s’être + past participle, agreeing with the subject il (masculine singular): douché. douchés is plural; doucher is the infinitive."
+ },
+ "anteriorite-04": {
+  "why": "The compound present participle ayant + PP expresses an action completed first: Ayant terminé…. terminer takes avoir in compound tenses, not étant; avoir is the infinitive and can’t start the sentence like this."
+ },
+ "anteriorite-05": {
+  "why": "arriver takes être in compound tenses, so the compound participle is étant arrivé(s), agreeing with the subject les élèves. ayant arrivés has the wrong auxiliary; été is a past participle and can’t be an auxiliary."
+ },
+ "anteriorite-06": {
+  "why": "une fois + noun + past participle means “once… is done”: une fois le contrat signé (agreeing with contrat, masculine singular). signer is the infinitive; signant is the present participle and doesn’t express completion."
+ },
+ "anteriorite-07": {
+  "why": "une fois + noun + past participle, with the participle agreeing with the noun: la lettre (feminine singular) → relue. relu lacks agreement; relire is the infinitive."
+ },
+ "anteriorite-08": {
+  "why": "sans + past infinitive: sans avoir dit (without having said). avoir is followed by a past participle, not the infinitive dire or the present participle disant."
+ },
+ "anteriorite-09": {
+  "why": "redoubler (to repeat a year) takes avoir in compound tenses: sans avoir redoublé. être redoublée has the wrong auxiliary; avoir redoubler uses the infinitive instead of the participle."
+ },
+ "anteriorite-10": {
+  "why": "rentrer (to go home) takes être, and the participle in the past infinitive agrees with the subject of the main clause, les infirmières (feminine plural): rentrées. rentré lacks agreement; rentrés is masculine."
+ },
+ "anteriorite-11": {
+  "why": "The pronominal verb se lever takes être, and the participle agrees with the subject elles (feminine plural): s’être levées. levé lacks agreement; levés is masculine plural."
+ },
+ "anteriorite-12": {
+  "why": "In the past infinitive, the object pronoun goes before the auxiliary avoir: après l’avoir lu. The pronoun can’t go between avoir and the participle, or after the participle."
+ },
+ "anteriorite-13": {
+  "why": "The logical subject of après + past infinitive must be the subject of the main clause: “we” ate, so the main clause subject must also be nous. In the other two options the subject is the film or the waiter, as if “the film had eaten” or “the waiter had eaten” — not the intended meaning."
+ },
+ "anteriorite-14": {
+  "why": "The past participle of avoir is eu, so the compound participle is ayant eu (having had too much work). été is the past participle of être, the wrong meaning; avoir is the infinitive."
+ },
+ "anteriorite-15": {
+  "why": "venir takes être, and the compound participle étant venu agrees with the subject les invités (masculine plural): venus. venu lacks agreement; venir is the infinitive."
+ },
+ "anteriorite-16": {
+  "why": "une fois + noun + past participle, with the participle agreeing with les invités (masculine plural): partis. parti lacks agreement; partir is the infinitive."
+ },
+ "anteriorite-17": {
+  "why": "hésiter takes avoir in compound tenses: après avoir hésité. être is the wrong auxiliary; après can’t be followed by the present participle ayant."
+ },
+ "anteriorite-18": {
+  "why": "tomber takes être in compound tenses: après être tombée (agreeing with elle). avoir is the wrong auxiliary; tomber isn’t pronominal, so not s’être."
+ },
+ "anteriorite-19": {
+  "why": "ayant + past participle: with avoir, the participle doesn’t agree with the subject: ayant décidé. décidés wrongly agrees with the subject; décider is the infinitive."
+ },
+ "anteriorite-20": {
+  "why": "se concerter (to confer) is pronominal and takes être, with the participle agreeing with the subject ils (masculine plural): s’être concertés. concerté lacks agreement; concerter is the infinitive."
+ },
+ "anteriorite-21": {
+  "why": "The passive past infinitive = avoir été + past participle: après avoir été mis en cause (after being implicated). The compound tenses of être use avoir, so être été is impossible; avoir mis is active, meaning “he implicated someone”."
+ },
+ "anteriorite-22": {
+  "why": "une fois + past participle, with the participle agreeing with the main clause subject la décision (feminine singular): prise. pris lacks agreement; prendre is the infinitive."
+ },
+ "anteriorite-23": {
+  "why": "remercier qqn de + past infinitive (thanking for help already given): de m’avoir aidé. avoir aider uses the infinitive instead of the participle; être aidé is passive, meaning “thanks for my being helped”."
+ },
+ "anteriorite-24": {
+  "why": "regretter de + past infinitive expresses regret about something already done in the past (l’an dernier): d’avoir refusé. avoir refusé lacks the preposition de; de refuser is a simple infinitive and doesn’t fit the past time of “last year”."
+ },
+ "anteriorite-25": {
+  "why": "rester takes être, and the compound participle étant resté agrees with the subject la petite fille (feminine singular): restée. resté lacks agreement; rester is the infinitive."
+ },
+ "anteriorite-26": {
+  "why": "Negating a past infinitive: ne pas usually go before the auxiliary: de ne pas être parti (partir takes être). ne pas avoir partir has both the wrong auxiliary and the wrong participle; ne être isn’t elided and is misspelt."
+ },
+ "anteriorite-27": {
+  "why": "perdre takes avoir, and the compound participle ayant perdu expresses cause (having lost his passport). étant is the wrong auxiliary; après must be followed by avoir perdu, not directly by a participle."
+ },
+ "anteriorite-28": {
+  "why": "s’installer is pronominal and takes être in compound tenses: après s’être installés. avoir lacks the reflexive pronoun and is the wrong auxiliary; s’avoir doesn’t exist."
+ },
+ "anteriorite-29": {
+  "why": "une fois + noun + past participle, with the participle agreeing with ses examens (masculine plural): passés. passé lacks agreement; passer is the infinitive."
+ },
+ "anteriorite-30": {
+  "why": "The passive past infinitive avoir été + past participle, with the participle agreeing with the subject il (masculine singular): prévenu. prévenir is the infinitive; prévenus is plural."
+ }
+}

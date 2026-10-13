@@ -1,1 +1,92 @@
-{}
+{
+ "modalisation-01": {
+  "why": "il se peut que expresses possibility and takes the subjunctive: qu’il ait du retard. a and aura are both indicative."
+ },
+ "modalisation-02": {
+  "why": "il me semble que (I think) in the affirmative expresses a personal view and takes the indicative: tu as raison. aies is subjunctive, used after il semble que or the negative il ne me semble pas que; avoir is the infinitive and can’t be the verb of a clause."
+ },
+ "modalisation-03": {
+  "why": "il est certain que expresses certainty and takes the indicative: les prix vont augmenter. aillent is subjunctive; allant is the present participle and can’t be the verb of a clause."
+ },
+ "modalisation-04": {
+  "why": "il est peu probable que expresses doubt and takes the subjunctive: qu’il soit terminé. sera terminé and est terminé are both indicative (only il est probable que takes the indicative)."
+ },
+ "modalisation-05": {
+  "why": "In modern French, sans doute means “probably” (= probablement), not “without doubt”. Certainty is sans aucun doute; the third option says the opposite."
+ },
+ "modalisation-06": {
+  "why": "sans aucun doute = without any doubt; the speaker is completely sure. plutôt hésitant corresponds to sans doute / peut-être; en désaccord is the opposite of the original meaning."
+ },
+ "modalisation-07": {
+  "why": "devoir in the passé composé expresses a conjecture about the past: il a dû rater son train (he must have missed his train). devra is the future and doesn’t fit a past event (“hasn’t arrived yet”); aurait dû rater means “should have missed”, which makes no sense."
+ },
+ "modalisation-08": {
+  "why": "Here devoir expresses conjecture (epistémique), not obligation: she must have forgotten the appointment. The second option reads it as obligation; the third moves the time into the future."
+ },
+ "modalisation-09": {
+  "why": "Unconfirmed information in the news takes the conditionnel de prudence; the fire “was caused”, so the passive past conditional: aurait été causé. aurait causé is active (the fire caused a short circuit), reversing the meaning; the compound tenses of être use avoir, so serait été is impossible."
+ },
+ "modalisation-10": {
+  "why": "The fixed expression à en croire + source (if we are to believe…) shows the speaker’s reservation about the information. en croire lacks à; à y croire isn’t this fixed expression."
+ },
+ "modalisation-11": {
+  "why": "The adverb apparemment (apparently, on the face of it) modifies the whole sentence, giving a conjecture based on signs. apparent is an adjective and apparence a noun; neither can stand alone as an adverbial like this."
+ },
+ "modalisation-12": {
+  "why": "il me semble que in the negative expresses doubt and takes the subjunctive: il ne me semble pas que ce soit…. est and sera are indicative, only for the affirmative il me semble que."
+ },
+ "modalisation-13": {
+  "why": "The context says everyone is free, so “a postponement is unlikely”, and the clause uses the subjunctive soit, which requires il est peu probable que. il est probable que and il est certain que take the indicative and contradict the context."
+ },
+ "modalisation-14": {
+  "why": "il est certain que takes the indicative, but the negative il n’est pas certain que expresses doubt and takes the subjunctive: qu’il ait lieu. a and aura are both indicative."
+ },
+ "modalisation-15": {
+  "why": "il se peut que + subjunctive: que nous soyons obligés. sommes and serons are both indicative."
+ },
+ "modalisation-16": {
+  "why": "devoir + past infinitive expresses a conjecture about something that has happened (they must have gone on holiday), with the verb agreeing with the subject nos voisins: doivent. doit is singular; devons is first person plural."
+ },
+ "modalisation-17": {
+  "why": "The conditional of devoir, devrait, gives a hedged prediction (it should snow), matching à en croire. doive is subjunctive and can’t be used in an independent clause; devant is the present participle."
+ },
+ "modalisation-18": {
+  "why": "A provisional, unverified figure takes the conditionnel de prudence (past conditional): aurait fait. avait fait is the plus-que-parfait and expresses no reservation; aurais is first/second person singular."
+ },
+ "modalisation-19": {
+  "why": "An affirmative il me semble que expresses a personal view and takes the indicative: est. soit is subjunctive; être is the infinitive."
+ },
+ "modalisation-20": {
+  "why": "The conditionnel de prudence reports unconfirmed information; s’enfuir is pronominal and takes être: se serait enfui, with the participle agreeing with the masculine subject le suspect. Pronominal verbs don’t take avoir; enfuie is a feminine agreement."
+ },
+ "modalisation-21": {
+  "why": "il est possible que + subjunctive: que la mairie revoie. revoit is the present indicative and reverra the future; neither can follow il est possible que."
+ },
+ "modalisation-22": {
+  "why": "il est évident que expresses certainty and takes the indicative: ne… est pas. soit is subjunctive; être is the infinitive."
+ },
+ "modalisation-23": {
+  "why": "il paraît que (I hear) reports hearsay and takes the indicative: il est très exigeant. soit is subjunctive; être is the infinitive."
+ },
+ "modalisation-24": {
+  "why": "douter que expresses doubt and takes the subjunctive: que cette mesure soit suffisante. est and sera are indicative."
+ },
+ "modalisation-25": {
+  "why": "devoir + être expresses a conjecture: he must be ill (inferred from his not answering the phone). It isn’t obligation, nor advice (advice usually takes the conditional tu devrais)."
+ },
+ "modalisation-26": {
+  "why": "il est peu probable que expresses doubt and takes the subjunctive: qu’il vienne. viendra is the indicative future; venir is the infinitive."
+ },
+ "modalisation-27": {
+  "why": "In compound tenses, the adverb apparemment usually goes between the auxiliary and the past participle: il a apparemment oublié. The adverb can’t go between the subject and the auxiliary; apparent is an adjective and can’t modify a verb."
+ },
+ "modalisation-28": {
+  "why": "A conjecture about a past event takes devoir in the passé composé: ils ont dû entendre (they must have heard), matching the past time of ce soir-là. doivent is the present and devront the future; neither fits the past context."
+ },
+ "modalisation-29": {
+  "why": "The clause uses the subjunctive soit, and only il semble que (an objective conjecture) can take the subjunctive. The affirmative il me semble que and il paraît que both take the indicative."
+ },
+ "modalisation-30": {
+  "why": "The clause uses the indicative avez oublié, which only il me semble que (a personal view) fits. il se peut que and il est peu probable que must both take the subjunctive (ayez oublié)."
+ }
+}

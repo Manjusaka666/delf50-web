@@ -1,1 +1,47 @@
-{}
+{
+ "styleSoutenu-01": {
+  "why": "With à peine at the start of the sentence, written French inverts subject and verb: À peine était-il arrivé que…. The verb already ends in -t, so no -t- is added (était-t-il is wrong); étais is the first/second person form and doesn’t agree with il."
+ },
+ "styleSoutenu-02": {
+  "why": "With peut-être at the start, invert: Peut-être a-t-il raison (or Peut-être qu’il a raison). The verb ends in a vowel, so -t- is needed; il a-t-il repeats the subject, which is wrong."
+ },
+ "styleSoutenu-03": {
+  "why": "With sans doute (probably) at the start, written French often inverts: Sans doute étions-nous trop optimistes. nous étions-nous repeats the subject; étaient doesn’t agree with nous."
+ },
+ "styleSoutenu-04": {
+  "why": "With aussi at the start meaning donc (therefore), written French inverts: aussi a-t-il fallu…. a-il lacks -t-; il a-t-il repeats the subject. Note: aussi at the start of a sentence almost always means “therefore”, not “also”."
+ },
+ "styleSoutenu-05": {
+  "why": "avant que + subjonctif, in writing often with an expletive ne (ne explétif), not negative: before it’s too late. est / sera are indicative."
+ },
+ "styleSoutenu-06": {
+  "why": "à moins que (unless) + subjonctif, often with an expletive ne: à moins qu’il ne pleuve = unless it rains (not “unless it doesn’t rain”). pleut / pleuvra are indicative."
+ },
+ "styleSoutenu-07": {
+  "why": "craindre que + subjonctif, with an expletive ne: “afraid this decision will scare investors away”. fait / fera are indicative."
+ },
+ "styleSoutenu-08": {
+  "why": "After a comparison plus / meilleur… que an expletive ne can appear, and the clause takes the indicative: que nous ne l’espérions (than we had hoped). espérer is the infinitive and can’t be the verb; ayons espéré is subjunctive, not used in a comparative clause."
+ },
+ "styleSoutenu-09": {
+  "why": "la seule… qui is often followed by the subjonctif, and qui = la solution (third person singular) → soit. soient is plural; sois is second person."
+ },
+ "styleSoutenu-10": {
+  "why": "With ainsi at the start, a noun subject moves after the verb in simple inversion: Ainsi s’acheva une tradition…. s’acheva-t-elle duplicates the postponed noun subject; elle s’acheva + noun also repeats the subject."
+ },
+ "styleSoutenu-11": {
+  "why": "le seul qui + subjonctif; the action is complete → subjonctif passé: qui ait compris (third person ait). aie is first person; comprendre takes avoir, so est compris doesn’t work here."
+ },
+ "styleSoutenu-12": {
+  "why": "A noun subject takes complex inversion: le ministre + verb-il → À peine le ministre avait-il terminé…. avait already ends in -t, so no -t- is added; avait-elle doesn’t match le ministre (masculine)."
+ },
+ "styleSoutenu-13": {
+  "why": "The ne in a comparison plus… que ne is expletive, and the clause takes the indicative: qu’on ne le croit. croie is subjunctive, not used in a comparative clause; croyant is a present participle."
+ },
+ "styleSoutenu-14": {
+  "why": "Noun subject + sans doute at the start → complex inversion: le gouvernement retirera-t-il. retirera ends in a vowel, so -t- is needed; il retirera duplicates the noun subject."
+ },
+ "styleSoutenu-15": {
+  "why": "aussi (= donc) at the start triggers inversion: sommes-nous arrivés (arriver takes être, and the past participle agrees with nous). nous sommes-nous repeats the subject; arriver doesn’t take avoir."
+ }
+}

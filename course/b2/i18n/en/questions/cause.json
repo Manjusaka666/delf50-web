@@ -1,1 +1,92 @@
-{}
+{
+ "cause-01": {
+  "why": "la pluie is a noun, so a prepositional phrase is needed; the result is negative, so à cause de. parce que needs a clause; grâce à is only for positive outcomes."
+ },
+ "cause-02": {
+  "why": "son aide is a noun and the result is positive (finishing on time) → grâce à. à cause de is for negative causes; parce que needs a clause."
+ },
+ "cause-03": {
+  "why": "A full clause follows (mon train a été supprimé), so parce que. à cause de and grâce à can only take a noun."
+ },
+ "cause-04": {
+  "why": "Only parce que can answer pourquoi. puisque gives a cause both sides already know and can’t answer a question; a cause introduced by comme must come before the main clause and can’t stand alone as an answer."
+ },
+ "cause-05": {
+  "why": "comme expressing cause goes at the start of the sentence, with the indicative. car can’t start a sentence; grâce à needs a noun and is for positive causes."
+ },
+ "cause-06": {
+  "why": "puisque introduces a cause the other person knows too, followed by a clause: puisque tu connais bien la ville. à cause de and faute de need a noun."
+ },
+ "cause-07": {
+  "why": "faute de + noun without article means “for lack of”: faute de temps. à cause lacks de; grâce au temps means the opposite (a positive cause) and makes no sense."
+ },
+ "cause-08": {
+  "why": "travaux is a noun, so the prepositional phrase en raison de (formal, neutral, common in notices). parce que and vu que need a clause."
+ },
+ "cause-09": {
+  "why": "une grève is a noun phrase, so en raison de (elided to d’ before a vowel). parce que and puisque need a clause with a verb."
+ },
+ "cause-10": {
+  "why": "The outcome is positive (sales rising), so grâce à + noun. à cause de has a negative colouring; faute de means “for lack of”, the opposite meaning."
+ },
+ "cause-11": {
+  "why": "Winning the match is a positive outcome, so grâce à + the stressed pronoun toi. à cause de is for negative outcomes; faute de means lack and takes a noun without article."
+ },
+ "cause-12": {
+  "why": "The cause clause comes after the main clause, so parce que. comme expressing cause must come first; faute de takes a noun or infinitive."
+ },
+ "cause-13": {
+  "why": "A noun phrase follows (le nombre de candidats), so étant donné + noun. étant donné que and parce que need a clause."
+ },
+ "cause-14": {
+  "why": "vu + noun (= given): vu la situation. vu que and puisque must take a clause."
+ },
+ "cause-15": {
+  "why": "A full clause follows (la crise est durable), so étant donné que. étant donné only takes a noun; faute de takes a noun or infinitive and means lack."
+ },
+ "cause-16": {
+  "why": "puisque introduces a cause everyone present understands and can start the sentence. d’autant que can only follow the main clause to add a reason; faute de takes a noun."
+ },
+ "cause-17": {
+  "why": "faute de + noun without article: faute de moyens (for lack of money). à cause des moyens would mean “because they had money”; grâce aux moyens is a positive cause — neither makes sense."
+ },
+ "cause-18": {
+  "why": "A noun phrase follows, so du fait de (de + the plural indefinite des becomes de before an adjective). du fait que and puisque need a clause."
+ },
+ "cause-19": {
+  "why": "A full clause follows, so du fait que. du fait de and faute de only take a noun (or infinitive)."
+ },
+ "cause-20": {
+  "why": "d’autant que + clause adds a reason that reinforces the preceding advice. faute de and grâce à can only take a noun."
+ },
+ "cause-21": {
+  "why": "The second half, personne ne l’a cru, shows the reason isn’t believable, so sous prétexte que. puisque and étant donné que present a real, accepted cause, which contradicts what follows."
+ },
+ "cause-22": {
+  "why": "faute de + noun without article: faute de preuves. par manque lacks de; à cause des preuves would mean “because there was evidence”, contradicting the release."
+ },
+ "cause-23": {
+  "why": "l’heure tardive is a noun phrase, so étant donné + noun. puisque and comme need a clause (puisqu’il est tard)."
+ },
+ "cause-24": {
+  "why": "ses retards répétés is a noun phrase, so en raison de (formal). parce que and comme need a clause."
+ },
+ "cause-25": {
+  "why": "pour cause de + noun without article is a fixed formal expression in notices: pour cause d’inventaire. parce que / puisque need a clause."
+ },
+ "cause-26": {
+  "why": "An infinitive follows (manquer), so sous prétexte de + infinitive (same subject). sous prétexte que needs a clause; à cause de takes a noun, not an infinitive."
+ },
+ "cause-27": {
+  "why": "In the emphatic c’est… que structure for a cause, only parce que is possible: C’est parce qu’elle parle chinois que… puisque and comme can’t be highlighted."
+ },
+ "cause-28": {
+  "why": "d’autant plus… que is a fixed structure (all the more… because): d’autant plus fatigué qu’il avait travaillé. parce que and car can’t pair with d’autant plus."
+ },
+ "cause-29": {
+  "why": "A clause follows (le ciel est tout gris), so vu que (common in speech). vu only takes a noun; faute de takes a noun and means lack."
+ },
+ "cause-30": {
+  "why": "faute de + past infinitive: for not having booked in time. à cause de and grâce à don’t take an infinitive, and grâce à signals a positive outcome, contradicting not finding a hotel."
+ }
+}

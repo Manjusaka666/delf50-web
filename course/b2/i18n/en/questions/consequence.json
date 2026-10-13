@@ -1,1 +1,92 @@
-{}
+{
+ "consequence-01": {
+  "why": "par conséquent links two independent sentences and introduces a result. parce que introduces a cause, reversing cause and effect; grâce à needs a noun."
+ },
+ "consequence-02": {
+  "why": "Before an adjective (fatigué), si or tellement + que expresses a result. tant is for verbs; tant de is for nouns."
+ },
+ "consequence-03": {
+  "why": "Before a noun (monde) you need tellement de / tant de. si is only for adjectives and adverbs; tellement is missing de."
+ },
+ "consequence-04": {
+  "why": "To modify a verb, use tellement or tant (between the auxiliary and the past participle). si can’t modify a verb; tellement de needs a noun."
+ },
+ "consequence-05": {
+  "why": "si bien que + indicative introduces a result (having to move house). parce que and puisque introduce causes, reversing cause and effect."
+ },
+ "consequence-06": {
+  "why": "de sorte que + indicative expresses a result that actually happened (ont télétravaillé). afin que and pour que express purpose and take the subjunctive."
+ },
+ "consequence-07": {
+  "why": "Only a noun phrase follows (notre retard), so d’où + noun. donc and si bien que need a full sentence."
+ },
+ "consequence-08": {
+  "why": "c’est pourquoi + full sentence introduces a result. d’où only takes a noun; faute de expresses a cause (lack) and takes a noun."
+ },
+ "consequence-09": {
+  "why": "Before an adverb (vite) use si or tellement. tant modifies verbs; tant de modifies nouns."
+ },
+ "consequence-10": {
+  "why": "The intensity structure before a noun: tant de + noun + que. si de doesn’t exist; trop de… que can’t form a result structure (trop goes with pour)."
+ },
+ "consequence-11": {
+  "why": "To modify a verb (pleuvait), use tellement or tant after the verb. si only modifies adjectives/adverbs; tellement de needs a noun."
+ },
+ "consequence-12": {
+  "why": "The fixed structure au point que + indicative (to the point that). à point and du point can’t form this expression of result."
+ },
+ "consequence-13": {
+  "why": "An infinitive follows (se blesser) and the subject is the same, so au point de + infinitive. au point que and si bien que need a clause."
+ },
+ "consequence-14": {
+  "why": "In writing, ainsi (or aussi) at the start of a sentence can trigger subject–verb inversion: ainsi l’entreprise a-t-elle… alors and donc don’t trigger inversion at the start of a sentence, so the inverted structure doesn’t fit them."
+ },
+ "consequence-15": {
+  "why": "Before the adjective nombreux use si (or tellement). tant modifies verbs; tant de modifies nouns."
+ },
+ "consequence-16": {
+  "why": "c’est pour cela que + full sentence introduces a result. d’où takes a noun; grâce à quoi signals a positive result, contradicting “unable to call for help”."
+ },
+ "consequence-17": {
+  "why": "The second half (not having revised enough) is the cause, so car. d’où only takes a noun, not a clause; au point que introduces a result (to the point that), reversing cause and effect."
+ },
+ "consequence-18": {
+  "why": "The second half (failing the exam) is the result, so si bien que + indicative. car introduces a cause, reversing cause and effect; d’où only takes a noun (d’où son échec), not a clause."
+ },
+ "consequence-19": {
+  "why": "A noun phrase follows (la nécessité de…) with no conjugated verb, so only d’où works. de sorte que and c’est pourquoi need a full sentence."
+ },
+ "consequence-20": {
+  "why": "Before the noun succès use tant de (or tellement de). tant alone modifies verbs; si modifies adjectives/adverbs."
+ },
+ "consequence-21": {
+  "why": "Before the adjective émue use tellement (or si). In modern French tant doesn’t modify adjectives; tant de modifies nouns."
+ },
+ "consequence-22": {
+  "why": "si bien que expresses an actual result and takes the indicative: il est arrivé. soit arrivé is subjunctive; arriver is the infinitive and can’t be the verb of a clause."
+ },
+ "consequence-23": {
+  "why": "Here de sorte que expresses a result that has happened, so the indicative: les prix ont diminué. aient is subjunctive (used only when de sorte que expresses purpose); avoir is the infinitive."
+ },
+ "consequence-24": {
+  "why": "par conséquent stands alone, followed by a comma and a full sentence. en conséquence de must be followed by a noun; à la suite is missing de + noun."
+ },
+ "consequence-25": {
+  "why": "si… que expresses a result and takes the indicative: ont fermé. aient fermé is subjunctive; fermer is the infinitive."
+ },
+ "consequence-26": {
+  "why": "tant de… que is a correlative structure; the second part is just que. si bien and de sorte lack que and can’t pair with tant de."
+ },
+ "consequence-27": {
+  "why": "si + adjective + que expresses a result. trop goes with pour (que) (trop bruyant pour que…); tant doesn’t modify adjectives."
+ },
+ "consequence-28": {
+  "why": "In speech, alors introduces a result (so). car and puisque introduce causes, reversing cause and effect."
+ },
+ "consequence-29": {
+  "why": "donc can go between the auxiliary and the past participle: nous sommes donc allés. d’où takes a noun; si bien lacks que and can’t go in this position."
+ },
+ "consequence-30": {
+  "why": "en conséquence on its own means “consequently” (formal). en conséquence de needs a noun; par conséquence is a common error for par conséquent."
+ }
+}

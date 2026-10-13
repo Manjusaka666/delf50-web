@@ -1,1 +1,92 @@
-{}
+{
+ "hypothese-01": {
+  "why": "si + present → future in the main clause (a likely condition): nous ferons. ferions requires si + imparfait; aurions fait requires si + plus-que-parfait."
+ },
+ "hypothese-02": {
+  "why": "The main clause is in the present conditional (j’apprendrais), so si takes the imparfait: si j’avais. Never a conditional after si (aurais); ai eu is the passé composé and doesn’t go with a conditional main clause."
+ },
+ "hypothese-03": {
+  "why": "The main clause is in the future, so si takes the present: si tu achètes. si can’t take the conditional (achèterais) or the future (achèteras)."
+ },
+ "hypothese-04": {
+  "why": "si + plus-que-parfait expresses a hypothesis contrary to past fact, so the main clause takes the past conditional: nous aurions pris. prendrions expresses a present result and doesn’t fit the past event of the “last train”; avions pris is indicative."
+ },
+ "hypothese-05": {
+  "why": "à condition que + subjunctive: que tu sois. es is indicative; seras is the future."
+ },
+ "hypothese-06": {
+  "why": "au cas où + conditional: au cas où il pleuvrait. pleuve is subjunctive and pleuvra the future; neither meets the requirement of au cas où."
+ },
+ "hypothese-07": {
+  "why": "en cas de + noun without article: en cas d’incendie. au cas où takes a conditional clause, not de + noun; à condition de takes an infinitive."
+ },
+ "hypothese-08": {
+  "why": "sinon (otherwise) introduces the consequence if the condition isn’t met, followed by an independent clause in the indicative. à moins que needs the subjunctive; au cas où needs the conditional, and the meaning is wrong."
+ },
+ "hypothese-09": {
+  "why": "à moins que (unless) + subjunctive, often with the expletive ne: à moins qu’il ne pleuve. pleut is indicative; pleuvrait is conditional."
+ },
+ "hypothese-10": {
+  "why": "Mixed hypothesis: a past condition (si + PQP) → a present result (aujourd’hui), so the main clause takes the present conditional: elle vivrait. aurait vécu refers to the past and clashes with aujourd’hui; vivait is indicative."
+ },
+ "hypothese-11": {
+  "why": "Mixed hypothesis: didn’t sleep well last night (past) → tired today (present). si takes the plus-que-parfait: si tu avais mieux dormi. si can’t take the conditional (aurais); as dormi is the passé composé and can’t go with a conditional main clause."
+ },
+ "hypothese-12": {
+  "why": "pourvu que (as long as) + subjunctive: que tu me la rendes. rends is indicative; rendras is the future."
+ },
+ "hypothese-13": {
+  "why": "The main clause is in the present conditional, so si takes the imparfait: s’il était. serait is conditional and soit subjunctive; neither can follow si."
+ },
+ "hypothese-14": {
+  "why": "The main clause is in the future (nous pourrons), so si takes the present: si vous envoyez. enverriez is conditional and enverrez the future; neither can follow si."
+ },
+ "hypothese-15": {
+  "why": "au cas où + conditional (common in formal writing): au cas où vous seriez empêché. êtes is indicative; soyez is subjunctive."
+ },
+ "hypothese-16": {
+  "why": "si + plus-que-parfait → past conditional; venir takes être: je ne serais pas venu. serai is the future; étais venu is the plus-que-parfait (indicative)."
+ },
+ "hypothese-17": {
+  "why": "The main clause is in the past conditional, so si takes the plus-que-parfait: s’il avait travaillé. aurait travaillé and travaillerait are both conditional and can’t follow si."
+ },
+ "hypothese-18": {
+  "why": "A subjunctive clause follows (soient), so à condition que. à condition de takes an infinitive; à condition où doesn’t exist."
+ },
+ "hypothese-19": {
+  "why": "An infinitive follows (présenter), so à condition de + infinitive. à condition que needs a subjunctive clause; au cas où needs a conditional clause."
+ },
+ "hypothese-20": {
+  "why": "The verb in the clause is conditional (aurais), and only au cas où takes the conditional. si can’t take the conditional; à condition que needs the subjunctive."
+ },
+ "hypothese-21": {
+  "why": "The main clause is in the present conditional (on pourrait), so si takes the imparfait: si on augmentait. augmenterait is conditional and augmentera the future; neither can follow si."
+ },
+ "hypothese-22": {
+  "why": "Mixed hypothesis: no action in the past → the situation now (aujourd’hui), so the main clause takes the present conditional: ne serait pas. aurait été refers to the past and clashes with aujourd’hui; était is indicative."
+ },
+ "hypothese-23": {
+  "why": "à moins que (unless) + subjunctive, optionally with the expletive ne: à moins que son médecin ne l’y autorise. pourvu que means “as long as”, contradicts the negative main clause and doesn’t take the expletive ne; au cas où needs the conditional."
+ },
+ "hypothese-24": {
+  "why": "The verb in the clause is conditional (perdriez), so only au cas où works. en cas de takes a noun; si can’t take the conditional."
+ },
+ "hypothese-25": {
+  "why": "The main clause is an imperative, so si takes the present: si vous avez des questions. auriez is conditional and aurez the future; neither can follow si."
+ },
+ "hypothese-26": {
+  "why": "si + imparfait (si j’étais toi is the set way to give advice) → present conditional in the main clause: j’accepterais. accepterai is the future (one letter s apart); accepte is the present."
+ },
+ "hypothese-27": {
+  "why": "si + plus-que-parfait → past conditional; arriver takes être: elle serait déjà arrivée. aurait is the wrong auxiliary; était arrivée is the indicative plus-que-parfait."
+ },
+ "hypothese-28": {
+  "why": "en cas de + noun without article: en cas de mauvais temps. en cas du adds an article; en cas où is an incorrect structure (it should be au cas où + conditional)."
+ },
+ "hypothese-29": {
+  "why": "à condition que + subjunctive: que tu fasses. fais is indicative; feras is the future."
+ },
+ "hypothese-30": {
+  "why": "The main clause is in the present conditional (serait), so si takes the imparfait: s’il y avait. y aurait is conditional and can’t follow si; y a is present and doesn’t go with a conditional main clause."
+ }
+}

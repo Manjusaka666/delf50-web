@@ -1,1 +1,92 @@
-{}
+{
+ "registre-01": {
+  "why": "When you don’t know who the recipient is, the formal address is Madame, Monsieur,. Chère Madame is only for someone you know and excludes a male recipient; Salut à tous is colloquial and never used in a formal letter."
+ },
+ "registre-02": {
+  "why": "The fixed expression savoir gré à qqn de faire qqch, in the conditional for politeness: je vous saurais gré de…. serais / aurais are être / avoir and don’t form a set phrase with gré."
+ },
+ "registre-03": {
+  "why": "The polite imperative of vouloir is veuillez + inf, the standard form in letter closings. Voulez is indicative and can’t stand alone as an imperative; Veuillent is the third person plural subjunctive."
+ },
+ "registre-04": {
+  "why": "nous nous permettons de + inf (we take the liberty of…) is common in formal letters, with the verb agreeing with nous. permettent is the wrong person; permettre is the infinitive and can’t be the main verb."
+ },
+ "registre-05": {
+  "why": "The inverted first person singular of pouvoir is puis-je (never peux-je). Puisse-je is subjunctive (a wish form) and can’t form a polite question."
+ },
+ "registre-06": {
+  "why": "The polite conditional je voudrais (I would like…). voudrai is the simple future, “I will want to know”, which isn’t a request; veuille is subjunctive and can’t be the verb of a main clause."
+ },
+ "registre-07": {
+  "why": "The adjective agrees with salutations (feminine plural) → distinguées. distingués has the wrong gender; distinguée the wrong number."
+ },
+ "registre-08": {
+  "why": "prier qqn de faire qqch (to request kindly) is a set phrase in formal letters: nous vous prions de bien vouloir…. prenons / plaisons don’t combine with de bien vouloir."
+ },
+ "registre-09": {
+  "why": "être reconnaissant à qqn de faire qqch: the action takes de. à introduces the person thanked; pour only takes a noun, not the infinitive here."
+ },
+ "registre-10": {
+  "why": "The fixed closing formula Dans l’attente de votre réponse (with the noun attente). attendant is the present participle (it would be En attendant…); attendu is the past participle and can’t act as a noun after l’."
+ },
+ "registre-11": {
+  "why": "Complex inversion with a noun subject: noun + verb-t-pronoun. A verb ending in a vowel needs -t-: propose-t-elle. propose-elle lacks -t-; proposent is the wrong person."
+ },
+ "registre-12": {
+  "why": "Complex inversion: La prochaine assemblée aura-t-elle lieu ? A verb ending in a vowel inverted with il/elle takes -t-, with a hyphen on each side. aura-elle lacks -t-; aurat-elle is misspelt."
+ },
+ "registre-13": {
+  "why": "craindre que + subjonctif, often with an expletive ne (ne explétif, not negative, part of the written register) → qu’il n’ait. a / aura are indicative."
+ },
+ "registre-14": {
+  "why": "je vous prie de + infinitive: in bien vouloir, vouloir stays in the infinitive. veuillez is the imperative and can’t follow de; vouliez is a conjugated form."
+ },
+ "registre-15": {
+  "why": "afin de + infinitive (same subject); solliciter is the formal-register “to request”. afin que needs a clause; solliciter is directly transitive and doesn’t take à."
+ },
+ "registre-16": {
+  "why": "The task requires a formal register: de nombreuses + noun. plein de and des tas de are colloquial and don’t meet the required written register."
+ },
+ "registre-17": {
+  "why": "A formal letter uses emploi (or poste). job is a colloquial English borrowing and taf is slang; neither meets the requirement."
+ },
+ "registre-18": {
+  "why": "Written/formal register uses cela; ça is the spoken form of cela; ç’ only appears in speech before être (ç’a été) and is ungrammatical here anyway."
+ },
+ "registre-19": {
+  "why": "Polite inverted conditional: Seriez-vous assez aimable pour… ? (Would you be so kind as to…?). Soyez is the imperative and can’t be inverted into a question; Sauriez is savoir and doesn’t go with aimable."
+ },
+ "registre-20": {
+  "why": "The fixed business expression accuser réception de qqch (to acknowledge receipt). accuser recevoir / accuser reçu don’t exist (« reçu » only appears in other structures such as un accusé de réception)."
+ },
+ "registre-21": {
+  "why": "bien vouloir takes an infinitive: bien vouloir examiner. examinez is a conjugated form; examiné is the past participle (pronounced the same and often misspelt in writing)."
+ },
+ "registre-22": {
+  "why": "The fixed closing formula Je reste à votre disposition (a singular noun, matching votre). dispositions doesn’t match the singular determiner votre; disposé is an adjective/past participle and can’t follow votre."
+ },
+ "registre-23": {
+  "why": "The fixed expression en réponse à qqch (in reply to…). en réponse de / pour don’t exist."
+ },
+ "registre-24": {
+  "why": "The formal address for someone holding office: Monsieur le Maire / Madame la Ministre (with the definite article). Cher is too familiar; Monsieur Maire lacks the article and isn’t correct usage."
+ },
+ "registre-25": {
+  "why": "avant que + subjonctif, in writing often with an expletive ne (not negative). se réunit / se réunira are indicative."
+ },
+ "registre-26": {
+  "why": "Inverted question: the je form dois + hyphen + je → dois-je. doit-je is a common misspelling (using the third person form); devrais-tu doesn’t match mon billet (first person) in the sentence."
+ },
+ "registre-27": {
+  "why": "être obligé à qqn de faire qqch (to be obliged to someone for doing) → polite conditional nous vous serions obligés. saurions confuses it with savoir gré; aurions obligés is ungrammatical."
+ },
+ "registre-28": {
+  "why": "The adjective modifies sentiments (masculine plural) → respectueux. respectueuses / respectueuse wrongly agree with l’assurance (feminine) or Madame."
+ },
+ "registre-29": {
+  "why": "se permettre de + infinitive → relancer. relancez is a conjugated form; relancé is the past participle (pronounced like the infinitive, a common written error)."
+ },
+ "registre-30": {
+  "why": "être reconnaissant(e) de…: the adjective agrees with the writer (je = Mme Leroy, feminine singular) → reconnaissante. reconnaissant is masculine; reconnaissants is plural, wrongly agreeing with vous."
+ }
+}

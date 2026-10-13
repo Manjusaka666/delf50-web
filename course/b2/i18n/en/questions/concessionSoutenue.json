@@ -1,1 +1,47 @@
-{}
+{
+ "concessionSoutenue-01": {
+  "why": "quoique (one word) = bien que, with the subjonctif, in a written register. quoi qu’ (two words) means “whatever” and must be followed by a clause in which it is the object (quoi qu’il dise); pourtant is an adverb and can’t take que."
+ },
+ "concessionSoutenue-02": {
+  "why": "quel que soit + noun: quel agrees with the noun (the subject); les difficultés is feminine plural → Quelles que soient. Quelque only goes before a noun or adjective; Quels que has the wrong gender."
+ },
+ "concessionSoutenue-03": {
+  "why": "si + adjective + que + subjonctif (however… may be): si brillant qu’il soit. est is indicative and serait conditional; neither fits this structure."
+ },
+ "concessionSoutenue-04": {
+  "why": "quand bien même (even if) + conditionnel, with the main clause also conditional: quand bien même il présenterait…, je ne pardonnerais pas. présente is the present indicative and ait présenté subjunctive; neither fits this conjunction."
+ },
+ "concessionSoutenue-05": {
+  "why": "avoir beau + infinitif (however much…, still): j’ai beau relire. relis is a conjugated form; relu is the past participle (j’ai beau isn’t a passé composé)."
+ },
+ "concessionSoutenue-06": {
+  "why": "tout + adjective + que stresses a real fact and traditionally takes the indicative: tout fatigué qu’il était (tired as he was). serait is conditional; être is the infinitive and can’t be the verb of a clause."
+ },
+ "concessionSoutenue-07": {
+  "why": "In quelque + adjective + que + subjonctif, quelque is an adverb (= si) and invariable: quelque solides que soient. Quelques only agrees when quelque modifies a noun; Quels que should be followed directly by soit + noun."
+ },
+ "concessionSoutenue-08": {
+  "why": "In quelque + noun + que + subjonctif, quelque is a determiner and agrees with the noun: quelques efforts qu’il fasse. Quelque doesn’t agree (the adverbial use is only before adjectives); Quels que should be followed by soient."
+ },
+ "concessionSoutenue-09": {
+  "why": "pour + adjective + que + subjonctif (written, = si… que): pour intéressant que soit ce documentaire. est / serait don’t have the mood this structure requires."
+ },
+ "concessionSoutenue-10": {
+  "why": "encore que (although, written) + subjonctif: encore qu’il faille. faut is indicative and not standard here; falloir is the infinitive and can’t be the verb."
+ },
+ "concessionSoutenue-11": {
+  "why": "quel que soit + noun (whatever… may be) always takes the subjonctif soit. sera / est are indicative."
+ },
+ "concessionSoutenue-12": {
+  "why": "In quel que soit, quel agrees with the subject noun: son expérience is feminine singular → Quelle que soit. Quel has the wrong gender; Quelque can’t go before que soit (that belongs to the quelque + noun/adjective + que structure)."
+ },
+ "concessionSoutenue-13": {
+  "why": "quoi que (two words) = whatever, the object of dire: quoi que vous disiez. quoique (one word) = bien que and needs a complete clause (quoique vous disiez la vérité); quel que can only take soit + noun."
+ },
+ "concessionSoutenue-14": {
+  "why": "avoir beau can be conjugated in any tense (elle aura beau) but is always followed by an infinitif: protester. protestera is a conjugated form; protesté is the past participle."
+ },
+ "concessionSoutenue-15": {
+  "why": "In the tout… que structure, tout is an adverb and agrees before a feminine adjective starting with a consonant: toute jeune qu’elle est. Tout breaks this rule; Toutes is plural and doesn’t match elle."
+ }
+}
