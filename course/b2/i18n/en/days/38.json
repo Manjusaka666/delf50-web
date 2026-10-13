@@ -1,4 +1,226 @@
 {
+ "canDo": "Can allocate time across the parts of a monologue (introduction ≤1 minute, body 4 minutes, conclusion 30 seconds), and respond quickly to the examiner in a debate with rephrasing and complex comparatives, using pronouns flexibly instead of repeating nouns.",
+ "review": "Review day 18’s advanced personal pronouns (y, en, double object pronouns, neuter le) and day 20’s complex comparisons (plus… plus, d’autant plus que, de plus en plus, autant… autant, comme si), keeping the monologue and debate framework from days 36–37.",
+ "input": "Read: an article on cinemas holding out against streaming, a column against the prejudice that “series are inferior to films” and an announcement from a village cinema; underline every pronoun and find what it refers to. Listen: an interview with the manager of a village cinema in the Belgian Ardennes (twice), a short cultural commentary on video games and an ad for a short film festival; rephrase each answer in one sentence as you listen.",
+ "output": "Write: an article for a city culture magazine comparing “cultural entertainment at home” with “going out for culture” (≥250 words); speak: a timed 6-minute monologue on a document about “a culture voucher for young people”, then a 4–5-minute debate with the examiner on “should phones be banned during performances?”, starting each reply by rephrasing the examiner’s point.",
+ "checkpoint": "Reading and listening accuracy ≥80%; each part of the monologue within 30 seconds of its target time; all 4 debate replies start with a rephrasing (« Si je vous comprends bien… »), with at least 3 complex comparatives and 4 uses of the pronouns y/en/le, and no mechanical repetition of nouns.",
+ "challenge": "Today’s challenge: find a cultural report about a film, exhibition or music festival on TV5MONDE or RFI; first recap it in 30 seconds (« Autrement dit… »), then spend 1 minute comparing it with a cultural event in your own city, using « plus…, plus… » and « en » at least once each.",
+ "items": {
+  "reading": {
+   "R38-1": {
+    "questions": [
+     {
+      "why": "The title, « n’a pas dit son dernier mot », and paragraph 1’s « Pourtant, les salles résistent » state the topic. A is the prediction rejected at the start of the article; C isn’t covered."
+     },
+     {
+      "why": "« Ce qui attire ces spectateurs… c’est l’expérience collective », confirmed by Léa’s words, « Rire avec deux cents inconnus ». A contradicts the rising ticket prices in paragraph 4; B isn’t mentioned."
+     },
+     {
+      "why": "plus… plus expresses proportional change: the richer the online offer, the more going to the cinema feels like a special occasion. B and C misread the subject and the logical link."
+     },
+     {
+      "why": "« misent sur ce qui les distingue : rencontres avec des réalisateurs, ciné-débats… » and « on ne la trouve qu’ici ». A isn’t mentioned; C is exactly what multiplexes do."
+     },
+     {
+      "why": "« Le tableau n’est pas pour autant idyllique » introduces ticket prices, village cinema closures and art films being pulled quickly: it adds to and qualifies what came before. B is the opposite; C: the author states facts without blaming anyone."
+     },
+     {
+      "why": "« Autant…, autant… » contrasts the strengths of both, concluding that cinemas have an advantage that can’t be taken away, « celui de nous rassembler ». A and B are the opposite."
+     }
+    ]
+   },
+   "R38-2": {
+    "questions": [
+     {
+      "why": "The title, « Arrêtons d’opposer », and the ending, « les deux », show the author refuses to rank one above the other. A goes too far: he says « aussi ambitieuses », not superior across the board; B is the prejudice the author attacks."
+     },
+     {
+      "why": "« Leur longueur leur offre un luxe que le cinéma n’a pas : le temps ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "« Je ne prétends pas que tout se vaille » is a concession admitting that assembly-line series exist; he then defends his argument with « Mais le cinéma a, lui aussi, ses produits formatés ». A is the opposite; C: the text says « personne n’en conclut que le septième art est mort »."
+     },
+     {
+      "why": "« Le vrai danger… c’est la façon dont on la regarde. Enchaîner six épisodes en une soirée… Plus on consomme vite, moins on se souvient ». A and C aren’t what the author calls the “real danger”."
+     },
+     {
+      "why": "avoir la vie dure means “to be deeply rooted, hard to get rid of”. B is a literal misreading; C is the opposite of the persistence implied by « la scène se répète »."
+     }
+    ]
+   },
+   "R38-3": {
+    "questions": [
+     {
+      "why": "Low-price screenings, a free shuttle, extra family screenings and audience-chosen films are all part of « Cinéma pour tous ». Neither B nor C is in the announcement."
+     },
+     {
+      "why": "« de plus en plus d’habitants renoncent à venir en salle, que ce soit pour des raisons financières ou faute de moyens de transport ». A and C aren’t mentioned."
+     },
+     {
+      "why": "« il suffira de la réserver la veille par téléphone » (la = la navette). A: the shuttle is free; B gets both the timing and the method wrong."
+     },
+     {
+      "why": "en stands for « de suggestions »: the three films with the most suggestions. B: viewers are the ones making suggestions, not what is received; C makes no sense."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L38-1": {
+    "questions": [
+     {
+      "why": "The host introduces Valérie Lambert as running the village’s only cinema, and the whole conversation is about how it runs, its audience, its programming and its projects. A and C are just examples from the interview."
+     },
+     {
+      "why": "« Le cinéma fonctionne grâce à une trentaine de bénévoles. Sans eux, je n’y arriverais pas ». B and C aren’t mentioned."
+     },
+     {
+      "why": "« ils viennent rarement seuls. Pour eux, aller au cinéma, c’est une sortie ». B contradicts « rarement seuls »; A isn’t mentioned."
+     },
+     {
+      "why": "« Il faut des films grand public pour remplir la salle, sinon on ne tiendrait pas ». A contradicts « je tiens aussi à montrer des films d’auteur »; C isn’t mentioned."
+     },
+     {
+      "why": "« je ne la vois pas comme une menace mortelle… plus les gens passent de temps seuls devant leur écran, plus ils ont besoin de lieux où se retrouver ». She rejects A; B: she admits she “of course feels it”."
+     },
+     {
+      "why": "y refers back to « le cinéma en salle »: children who have seen a film at the cinema usually come back. B and C get the referent of y wrong."
+     }
+    ]
+   },
+   "L38-2": {
+    "questions": [
+     {
+      "why": "The host asks « est-ce que c’est vraiment de la culture ? », and the whole commentary discusses whether video games count as culture. B is only an analogy; C isn’t mentioned."
+     },
+     {
+      "why": "« j’ai souvent droit au même regard un peu inquiet, comme si j’avouais une mauvaise habitude ». A and C don’t fit."
+     },
+     {
+      "why": "« La différence, c’est que le joueur n’est pas spectateur : il agit, il fait des choix ». A: she says game music « n’ont rien à envier au cinéma », i.e. it is comparable, not different; B isn’t mentioned."
+     },
+     {
+      "why": "« Évidemment, je ne le nie pas… Le problème, ce n’est pas le média, c’est l’usage qu’on en fait ». A is the opposite of « je ne le nie pas »; B: she only advises « jouez moins, mais jouez mieux »."
+     }
+    ]
+   },
+   "L38-3": {
+    "questions": [
+     {
+      "why": "« Nouveauté cette année : le prix du public sera décerné par les spectateurs eux-mêmes ». The ad doesn’t present A or C as new."
+     },
+     {
+      "why": "« il est gratuit pour les moins de dix-huit ans ». €4 is the price of a single screening, and €20 is the adult festival pass."
+     },
+     {
+      "why": "« les séances du week-end affichent souvent complet : pensez à réserver vos places à l’avance ». Neither A nor B is mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V38-01": {
+   "zh": "not to have said one’s last word, to have plenty of fight left",
+   "exZh": "Despite competition from streaming, cinemas haven’t said their last word."
+  },
+  "V38-02": {
+   "zh": "the cinema (literary)",
+   "exZh": "After two years away, audiences are back in the cinemas."
+  },
+  "V38-03": {
+   "zh": "a renewed interest, a revival",
+   "exZh": "Small cinemas are enjoying renewed interest among young adults."
+  },
+  "V38-04": {
+   "zh": "all of equal worth, nothing better than anything else",
+   "exZh": "I’m not saying all works are of equal worth: some series really are mediocre."
+  },
+  "V38-05": {
+   "zh": "the picture isn’t all rosy",
+   "exZh": "Cinemas are certainly holding out, but the picture isn’t all rosy."
+  },
+  "V38-06": {
+   "zh": "(a film) to stay on screen",
+   "exZh": "Art films stay on screen for less and less time."
+  },
+  "V38-07": {
+   "zh": "to make way for, to be replaced by",
+   "exZh": "After a week, the low-budget film had to make way for a blockbuster."
+  },
+  "V38-08": {
+   "zh": "to find one’s audience",
+   "exZh": "An art film has very little time to find its audience."
+  },
+  "V38-09": {
+   "zh": "a community hub, a place where people meet",
+   "exZh": "To survive, cinemas must become hubs for the whole neighbourhood."
+  },
+  "V38-10": {
+   "zh": "to die hard, to be deeply rooted",
+   "exZh": "The idea that series are a minor art form dies hard."
+  },
+  "V38-11": {
+   "zh": "to roll one’s eyes (impatience or disdain)",
+   "exZh": "As soon as I mention video games, my father rolls his eyes."
+  },
+  "V38-12": {
+   "zh": "assembly-line, mass-produced",
+   "exZh": "Many series are mass-produced to keep subscribers hooked."
+  },
+  "V38-13": {
+   "zh": "padding (to stretch a plot)",
+   "exZh": "The writers padded out the plot for three more seasons."
+  },
+  "V38-14": {
+   "zh": "the seventh art (cinema)",
+   "exZh": "The festival pays tribute to the great names of the seventh art."
+  },
+  "V38-15": {
+   "zh": "to miss out on the pleasure of",
+   "exZh": "Watching it all in one go, you miss out on the pleasure of waiting."
+  },
+  "V38-16": {
+   "zh": "to run the till, to take the money",
+   "exZh": "On Saturday evenings, a volunteer runs the cinema’s till."
+  },
+  "V38-17": {
+   "zh": "to fill the auditorium",
+   "exZh": "You need some mainstream films to fill the auditorium."
+  },
+  "V38-18": {
+   "zh": "a mortal threat",
+   "exZh": "She doesn’t see streaming platforms as a mortal threat to her cinema."
+  },
+  "V38-19": {
+   "zh": "to be every bit as good as",
+   "exZh": "This game’s music is every bit as good as the best film soundtracks."
+  },
+  "V38-20": {
+   "zh": "to be (only) for …, the business of …",
+   "exZh": "Video games are no longer just for teenagers."
+  },
+  "V38-21": {
+   "zh": "across all age groups",
+   "exZh": "Across all age groups, reading remains a very widespread pastime."
+  },
+  "V38-22": {
+   "zh": "(screenings) to be sold out",
+   "exZh": "The weekend screenings were sold out by Thursday."
+  },
+  "V38-23": {
+   "zh": "to award a prize",
+   "exZh": "This year, the jury awarded the prize to a young Senegalese director."
+  },
+  "V38-24": {
+   "zh": "a flat rate of …",
+   "exZh": "On Sundays, all screenings are at a flat rate of €3."
+  },
+  "V38-25": {
+   "zh": "a helping hand, a little boost",
+   "exZh": "The culture voucher is a little boost for young people on low incomes."
+  }
+ },
  "title": "Speaking III: pace and adaptability",
  "phase": "DELF B2 task training"
 }

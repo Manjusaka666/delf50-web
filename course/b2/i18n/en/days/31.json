@@ -1,4 +1,229 @@
 {
+ "canDo": "Can read 350–500-word informative articles on science or society using the method “title → paragraph gist → locate the question → check the text”, and rule out plausible-looking distractors in pick-1-of-3 questions.",
+ "review": "Review the passive (être + past participle, se faire / se voir + infinitive) and nominalisation (-tion, -ment, -age, -ure), the most common written features of informative articles and news headlines; also look back at the listening location strategies from days 29–30.",
+ "input": "Read: a long report on “participatory science”, a column on science and public opinion and an announcement for a volunteer river-monitoring project; read the questions first, then read closely, underlining passive sentences and nominalisations. Listen: an interview with an astrophysicist and science communicator, a column on “how to read health statistics” and a news flash on trust in science.",
+ "output": "Write: an article of 250+ words for a university newspaper presenting the advantages and limits of participatory science, with at least 3 passive sentences and 3 nominalisations; speak: a 6-minute monologue on “should scientists take part in public debate?”, then handle 4 counter-arguments from the examiner in the debate.",
+ "checkpoint": "At least 5/6 correct on R31-1, pointing to the evidence in the text for each; can rewrite 5 verb phrases as nominalised headlines; a 6-minute monologue with a clear problem statement and an announced two-part structure.",
+ "challenge": "Today’s challenge: find a news item about scientific research on RFI’s « Journal en français facile » or TV5MONDE, copy out 3 passive sentences or nominalised headlines, then write 3 sentences giving your own view with today’s expressions (e.g. « Cette découverte a été rendue possible grâce à… »).",
+ "items": {
+  "reading": {
+   "R31-1": {
+    "questions": [
+     {
+      "why": "The article covers, in turn, the definition, history, advantages (scale of data), reliability issues and potential biases of participatory science: it is a comprehensive overview. A picks up only the “reliability” paragraph and is too strong; C: the app is just an example, and the article doesn’t aim to call readers to action."
+     },
+     {
+      "why": "The text says « Le phénomène n’est pas nouveau… Mais la diffusion des smartphones a permis de changer d’échelle »: what is new is the scale. B and C are exactly what the text says is “not new” (« Depuis longtemps, des relevés… sont effectués par des observateurs bénévoles »)."
+     },
+     {
+      "why": "The quote « Aucun laboratoire ne pourrait financer la surveillance de milliers de sites pendant dix ans » points directly to scale and cost. A contradicts the fourth paragraph (beginners often misidentify species); B isn’t mentioned."
+     },
+     {
+      "why": "The text: « les observations douteuses sont systématiquement vérifiées par des spécialistes » and « c’est l’accumulation de milliers de relevés qui permet de dégager des tendances ». A: the text sets no entry restrictions; C exaggerates: only “doubtful” observations are checked, not “every one”."
+     },
+     {
+      "why": "dégager here means “to bring out, to reveal”, and tendances means “overall trends”. B misreads dégager as “to clear away”; C is the opposite of the context: a single observation is worth little; it takes large amounts of data."
+     },
+     {
+      "why": "« les volontaires ne doivent pas être considérés comme une main-d’œuvre gratuite destinée à compenser la baisse des financements publics ». A and C don’t appear in the text; they are common-sense guesses used as distractors."
+     }
+    ]
+   },
+   "R31-2": {
+    "questions": [
+     {
+      "why": "The core argument is in paragraphs four and five: « C’est donc à l’école que tout se joue… en enseignant comment une connaissance est produite ». B is the position the author explicitly rejects (« je ne réclame pas la soumission aveugle aux experts »); A isn’t argued in the text."
+     },
+     {
+      "why": "« l’avis d’une chercheuse… est mis sur le même plan que celui d’un polémiste », i.e. giving equal weight to opinions of unequal value and thereby “manufacturing false debates”. B and C aren’t mentioned."
+     },
+     {
+      "why": "« ce doute obéit à des règles : il s’appuie sur des données… il accepte d’être contredit. Le soupçon généralisé, lui, ne repose sur rien ». A is a wrong inference; C: the text compares no age groups."
+     },
+     {
+      "why": "se nourrir de = to feed on; ouverture = openness (open access, public discussion). The author calls it a paradoxe: the more transparent science is, the more the public sees its “hesitations”, and the less it trusts it. B is the exact opposite; A gets the subject wrong."
+     },
+     {
+      "why": "« L’exigence est plus haute, mais c’est la seule qui protège… »: it admits the bar is higher but offers a way forward, so the tone is demanding yet positive. B doesn’t fit: the author isn’t disillusioned or sarcastic; C doesn’t fit: the ending takes a clear stance."
+     }
+    ]
+   },
+   "R31-3": {
+    "questions": [
+     {
+      "why": "« Communiqué » and « annonce le lancement des… » show it is the association’s project announcement. A: the text reports no specific pollution incident; C: participants « ne percevront aucune rémunération », so it isn’t a job ad."
+     },
+     {
+      "why": "« chaque binôme relèvera la température et le niveau de l’eau, photographiera les berges et signalera toute anomalie ». A is wrong: the passive « Leur analyse sera assurée par l’équipe universitaire » shows the university team does the analysis; B isn’t mentioned."
+     },
+     {
+      "why": "« seuls les services de l’État sont habilités à intervenir. Le rôle des volontaires est de donner l’alerte, non de mener l’enquête ». B contradicts “only state services are authorised to intervene”; C isn’t mentioned."
+     },
+     {
+      "why": "« Priorité sera donnée aux habitants des communes riveraines et aux personnes pouvant s’engager pour une année complète ». Neither A nor C is a condition in the announcement (equipment and training are provided by the project)."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L31-1": {
+    "questions": [
+     {
+      "why": "The whole interview is about why she makes science videos, whether institutions recognise this work and how far to simplify. A is only the topic of her first school talk; C: the lab’s financial difficulties aren’t discussed."
+     },
+     {
+      "why": "« j’ai été frappée par la curiosité des élèves… ils n’avaient aucun endroit où trouver des réponses à la fois fiables et accessibles ». She says « sans grande ambition », which rules out B; A contradicts the fact that her lab doesn’t recognise the work."
+     },
+     {
+      "why": "« une carrière de chercheur est évaluée presque uniquement sur les publications. Les heures passées à préparer une vidéo ne sont prises en compte nulle part ». B goes too far: officially, sharing knowledge is even part of their mission; C isn’t mentioned."
+     },
+     {
+      "why": "« je découvre souvent des points que je n’avais pas vraiment compris moi-même ». A mixes in the “public money” argument; C: she doesn’t say her colleagues were convinced."
+     },
+     {
+      "why": "« on a le droit de simplifier, mais pas de dire quelque chose de faux ». A is too absolute: she can discuss hypotheses, as long as she doesn’t present them as a fait établi; B isn’t mentioned."
+     },
+     {
+      "why": "« ils créent des attentes qui seront forcément déçues. À long terme, c’est la confiance du public qui en souffre ». B and C are unfounded guesses."
+     }
+    ]
+   },
+   "L31-2": {
+    "questions": [
+     {
+      "why": "The column explains two “traps” (relative risk; correlation ≠ causation) and suggests two questions to ask yourself, helping listeners treat the numbers in news reports with care. A is only the example in the title; C: he criticises how numbers are presented, not researchers."
+     },
+     {
+      "why": "The set phrase y perdre son latin = to be baffled, not to know what to make of it: one study says one thing today, another seems to say the opposite tomorrow. B and C are literal misreadings."
+     },
+     {
+      "why": "A 50% increase on “2 in 10,000” only makes “3 in 10,000”: « L’augmentation est réelle, mais elle est très loin de ce que le titre laisse imaginer ». A confuses relative and absolute risk; B: he doesn’t dismiss the study itself."
+     },
+     {
+      "why": "It comes right after « confondre corrélation et causalité »: dog owners see the doctor less, perhaps because they were healthier to begin with or walk more. B is exactly the conclusion he wants to avoid; C: the example is about dog owners, not animal experiments."
+     },
+     {
+      "why": "« posez-vous deux questions : combien de personnes sont réellement concernées, et le lien est-il prouvé ou seulement observé ? ». A is too extreme; B isn’t what he suggests."
+     }
+    ]
+   },
+   "L31-3": {
+    "questions": [
+     {
+      "why": "« cette confiance varie fortement selon les domaines »: high in medicine and astronomy, low for food and artificial intelligence. A is the opposite; C: AI is precisely an area of low trust."
+     },
+     {
+      "why": "« seuls 20 % d’entre eux disent vérifier la source… avant de la partager ». B isn’t mentioned; C is the opposite of « s’informent d’abord sur les réseaux sociaux »."
+     },
+     {
+      "why": "« les laboratoires de l’université seront exceptionnellement ouverts au public vendredi soir, jusqu’à minuit ». A and B attach details from the earlier news items to this one."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V31-01": {
+   "zh": "to bring to light, to reveal",
+   "exZh": "Volunteers’ records have revealed the decline of several species."
+  },
+  "V31-02": {
+   "zh": "data collection",
+   "exZh": "Volunteers mostly take part in data collection, rarely in data analysis."
+  },
+  "V31-03": {
+   "zh": "to scale up, to change scale",
+   "exZh": "Thanks to smartphones, these projects scaled up within a few years."
+  },
+  "V31-04": {
+   "zh": "to identify (overall) trends",
+   "exZh": "Only thousands of accumulated records make it possible to identify reliable trends."
+  },
+  "V31-05": {
+   "zh": "to remedy, to correct (a problem)",
+   "exZh": "To correct identification errors, the protocols were simplified."
+  },
+  "V31-06": {
+   "zh": "to warn (someone) against …",
+   "exZh": "Several researchers warn against exploiting volunteers."
+  },
+  "V31-07": {
+   "zh": "free labour",
+   "exZh": "Volunteers should not become free labour for laboratories."
+  },
+  "V31-08": {
+   "zh": "the scientific method, the scientific process",
+   "exZh": "Taking part in an observation helps you understand the scientific process: question, protocol, interpretation."
+  },
+  "V31-09": {
+   "zh": "to put on the same level",
+   "exZh": "You can’t put expert opinion on the same level as rumours."
+  },
+  "V31-10": {
+   "zh": "peer review",
+   "exZh": "Before publication, every paper goes through peer review."
+  },
+  "V31-11": {
+   "zh": "to feed on",
+   "exZh": "Public distrust feeds on contradictions between experts."
+  },
+  "V31-12": {
+   "zh": "open-access, freely available",
+   "exZh": "More and more studies are published open-access online."
+  },
+  "V31-13": {
+   "zh": "to confuse correlation with causation",
+   "exZh": "Concluding that “dogs cure their owners” confuses correlation with causation."
+  },
+  "V31-14": {
+   "zh": "to enter the fray, to join public debate",
+   "exZh": "After long keeping a low profile, many climate scientists eventually entered the fray."
+  },
+  "V31-15": {
+   "zh": "in the name of, under the banner of",
+   "exZh": "In the name of “balance”, some media manufacture controversy."
+  },
+  "V31-16": {
+   "zh": "the sharing of knowledge",
+   "exZh": "Officially, sharing knowledge is part of researchers’ mission."
+  },
+  "V31-17": {
+   "zh": "oversimplification",
+   "exZh": "A good science communicator explains without oversimplifying."
+  },
+  "V31-18": {
+   "zh": "an established fact",
+   "exZh": "This hypothesis is interesting, but it isn’t an established fact yet."
+  },
+  "V31-19": {
+   "zh": "to raise (excessive) expectations",
+   "exZh": "Sensational headlines raise expectations that are bound to be disappointed."
+  },
+  "V31-20": {
+   "zh": "to be baffled, not to know what to make of it",
+   "exZh": "One study says yes, another says no: people end up baffled."
+  },
+  "V31-21": {
+   "zh": "a single (isolated) study",
+   "exZh": "A single study is never enough to establish a scientific conclusion."
+  },
+  "V31-22": {
+   "zh": "the strengthening of",
+   "exZh": "The author recommends strengthening media literacy education from secondary school onwards."
+  },
+  "V31-23": {
+   "zh": "to be set up, to be located",
+   "exZh": "No monitoring station has been set up in this neighbourhood."
+  },
+  "V31-24": {
+   "zh": "priority will be given to …",
+   "exZh": "Priority will be given to residents living near the school."
+  },
+  "V31-25": {
+   "zh": "to replicate (an experimental result)",
+   "exZh": "An independent team failed to replicate this result."
+  }
+ },
  "title": "Reading I: informative articles",
  "phase": "DELF B2 task training"
 }

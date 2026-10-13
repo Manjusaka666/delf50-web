@@ -1,4 +1,226 @@
 {
+ "canDo": "Can complete a combined test of all four skills on your own and use the results to identify your weak areas on the B2 marking grid (task completion, coherence and cohesion, vocabulary, grammar), drawing up a personal remedial plan for the full mock exams on days 41–50.",
+ "review": "Review day 11’s time expressions (avant que… ne + subjunctive, après que + indicative, jusqu’à ce que, depuis que, au fur et à mesure que, dès que + future perfect) and day 25’s indefinites and quantifiers (quiconque, n’importe quel, la plupart, chacun, tel ou tel, aucun, tout), and look back at the points lost in day 39’s mini mock exam.",
+ "input": "Read: a long article on “is it still worth learning languages in the age of machine translation?”, a column calling for empty office blocks to be converted into student housing and a media library announcement; listen: an interview with a doctor at a rural group practice (twice), an interview with a women’s football coach in Liège, Belgium, and a public transport announcement on a bus network overhaul. After each text or recording, write one sentence giving “topic + the author’s/speaker’s position”.",
+ "output": "Write: a formal letter to the mayor as a parents’ representative, asking for training slots at the municipal pitch to be shared fairly (≥250 words); speak: a 6-minute monologue on a document about “is esports a sport?”, then a 5-minute debate with the examiner on “should foreign languages remain compulsory at secondary school?”. Afterwards, assess yourself item by item against the official marking grid.",
+ "checkpoint": "Reading and listening accuracy ≥80%; essay ≥250 words with at least 3 time expressions and 3 indefinites in the correct mood; monologue ≥5 minutes and replies to 4 objections in the debate; give yourself a score on each of the grid’s five criteria, list the 3 points most in need of work and put them in your day 41 plan.",
+ "challenge": "Today’s challenge: look back at the goals you wrote on day 1, pick a B2-level video on TV5MONDE, listen twice without subtitles and write a 5-line summary (using at least « au fur et à mesure que » and « la plupart »); compare it with your level on day 1, and write down your biggest progress and one concrete goal for the next stage.",
+ "items": {
+  "reading": {
+   "R40-1": {
+    "questions": [
+     {
+      "why": "Paragraph 1 asks « à quoi bon passer des années à apprendre une langue étrangère ? », and the whole text is about the relationship between machine translation and language learning. A and C are just related details."
+     },
+     {
+      "why": "« près d’un quart déclarent avoir renoncé à un cours de langue optionnel ». B contradicts « la plupart utilisent ces outils plusieurs fois par semaine »; C is the opposite of documents now being handled by software."
+     },
+     {
+      "why": "The text goes on to explain that learning a language also means understanding humour and implied meaning, and how to disagree without offending. A over-interprets; B isn’t mentioned."
+     },
+     {
+      "why": "« Ils restent fragiles dès que le texte devient ambigu, ironique ou très technique ». The text says neither B nor C."
+     },
+     {
+      "why": "« au fur et à mesure que les logiciels progressent, leur métier se transforme et se tourne vers la relecture, l’adaptation et le contrôle de qualité ». A is ruled out by « ne disparaissent pas »; C isn’t mentioned."
+     },
+     {
+      "why": "« pourrait devenir non pas une concurrente, mais une alliée. À condition… que quelqu’un sache encore la corriger ». A and B don’t fit this conciliatory position."
+     }
+    ]
+   },
+   "R40-2": {
+    "questions": [
+     {
+      "why": "The title, « une piste qu’on aurait tort d’ignorer », and the concrete proposals in paragraph 4 show the author is defending the idea. B is only the opening background; C: remote working is mentioned only as the reason offices are empty, without criticism."
+     },
+     {
+      "why": "« livrés en moins de deux ans, bien plus vite qu’une construction neuve, et sans consommer un mètre carré de terres agricoles ». A contradicts paragraph 3’s « Il arrive que le coût des travaux dépasse… »; C isn’t mentioned."
+     },
+     {
+      "why": "« Certes, la transformation n’est pas toujours simple… C’est pourquoi chaque bâtiment doit être étudié avant que le projet ne soit lancé »: it admits the limits, then proposes a remedy. A goes against the whole text’s position; B: there is no personal experience."
+     },
+     {
+      "why": "« ces conversions restent confidentielles, faute d’incitations et de volonté politique ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "rester confidentiel here means “to remain small-scale, little known”, in contrast with the following « pour qu’elles se multiplient ». A misreads confidentiel literally as “secret”; C distorts the meaning."
+     }
+    ]
+   },
+   "R40-3": {
+    "questions": [
+     {
+      "why": "The announcement covers Sunday opening, longer Thursday hours and a self-service loans system. A is the opposite of “longer opening”; C isn’t mentioned."
+     },
+     {
+      "why": "« Cette décision fait suite à une consultation… la plupart des personnes interrogées… regrettaient de ne pas pouvoir venir ». B isn’t mentioned; C: the building work only affects where the children’s section is."
+     },
+     {
+      "why": "« Le personnel, ainsi libéré de certaines tâches répétitives, sera davantage disponible pour conseiller le public » (dès que + future perfect). Neither A nor B is mentioned."
+     },
+     {
+      "why": "« Toute personne extérieure peut s’inscrire moyennant une cotisation annuelle de 15 euros »; residents of the town register free. A and C contradict « gratuite pour tous les habitants »."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L40-1": {
+    "questions": [
+     {
+      "why": "The host introduces it: finding a doctor in rural areas is hard, but « certaines ont trouvé des solutions », followed by the interview with a group practice doctor. Neither A nor C is covered."
+     },
+     {
+      "why": "« les habitants devaient faire quarante minutes de route pour la moindre consultation ». B contradicts “the last doctor retired with no successor”; C: the elderly couldn’t get to a doctor, rather than being turned away."
+     },
+     {
+      "why": "« Justement, le fait de ne pas être seul… Chacun peut demander l’avis des autres ». A isn’t mentioned; B: his wife moved with him, rather than him coming because family lived there."
+     },
+     {
+      "why": "« C’est elle qui a rénové le bâtiment et qui nous le loue… Elle a aussi aidé mon épouse à trouver un emploi ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "It is used for « certains suivis simples », but « la téléconsultation ne remplace pas tout. Rien ne vaut un examen clinique ». A is rejected; C goes too far."
+     },
+     {
+      "why": "« arrivent avec des préjugés, et repartent en me demandant s’il reste de la place ! ». A: they did come for placements; B contradicts their wanting to stay."
+     }
+    ]
+   },
+   "L40-2": {
+    "questions": [
+     {
+      "why": "From « à peine douze joueuses » to « trois équipes ». A and C contradict this."
+     },
+     {
+      "why": "« Depuis que les grandes compétitions féminines sont retransmises à la télévision, les petites filles ont des modèles ». B and C aren’t mentioned, and C also contradicts the lack of pitches."
+     },
+     {
+      "why": "« Le principal problème, ce sont les installations. Nous n’avons accès au terrain que deux soirs par semaine ». B contradicts « les parents hésitent beaucoup moins »; A isn’t mentioned."
+     },
+     {
+      "why": "« surtout la confiance en soi. Une fille qui ose prendre la parole dans un vestiaire osera aussi la prendre en classe ». Neither A nor C is mentioned."
+     }
+    ]
+   },
+   "L40-3": {
+    "questions": [
+     {
+      "why": "« le réseau de bus… sera entièrement réorganisé… trois lignes à haute fréquence, avec un passage toutes les huit minutes ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« certains arrêts peu fréquentés seront supprimés, et la ligne de nuit ne circulera plus que le vendredi et le samedi ». B isn’t mentioned; C contradicts « du lundi au samedi »."
+     },
+     {
+      "why": "« Les abonnements en cours restent valables, sans aucune démarche de votre part ». A and B both contradict “no action needed”."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V40-01": {
+   "zh": "implied meaning, subtext",
+   "exZh": "To really understand a language, you have to grasp the speaker’s implied meaning."
+  },
+  "V40-02": {
+   "zh": "to get inside a culture",
+   "exZh": "An app can translate words, but it can’t take you inside a culture."
+  },
+  "V40-03": {
+   "zh": "some … or other, this or that",
+   "exZh": "A single mistranslated word can change the meaning of a contract."
+  },
+  "V40-04": {
+   "zh": "most … (verb in the plural)",
+   "exZh": "Most students use machine translation every week."
+  },
+  "V40-05": {
+   "zh": "to remain unreliable, fragile",
+   "exZh": "As soon as a text is ironic, the software remains unreliable."
+  },
+  "V40-06": {
+   "zh": "to search desperately",
+   "exZh": "Every September, thousands of students search desperately for somewhere to live."
+  },
+  "V40-07": {
+   "zh": "anyone who, whoever",
+   "exZh": "Anyone who has visited these buildings knows they aren’t well suited to housing."
+  },
+  "V40-08": {
+   "zh": "it sometimes happens that … (+ subjunctive)",
+   "exZh": "It sometimes happens that conversion costs more than new construction."
+  },
+  "V40-09": {
+   "zh": "before … (+ subjunctive, may take expletive ne)",
+   "exZh": "The building must be assessed before the project is launched."
+  },
+  "V40-10": {
+   "zh": "(a problem, a shortage) to be glaring, acute",
+   "exZh": "In big cities, the shortage of student housing is acute."
+  },
+  "V40-11": {
+   "zh": "little known, small-scale",
+   "exZh": "For lack of subsidies, these conversions remain little known."
+  },
+  "V40-12": {
+   "zh": "decent housing",
+   "exZh": "Too many students still lack decent housing."
+  },
+  "V40-13": {
+   "zh": "to consult (the public)",
+   "exZh": "The town consulted residents before changing the opening hours."
+  },
+  "V40-14": {
+   "zh": "in return for, on payment of",
+   "exZh": "Non-residents can register on payment of a €15 fee."
+  },
+  "V40-15": {
+   "zh": "to find a successor",
+   "exZh": "The village doctor retired without finding a successor."
+  },
+  "V40-16": {
+   "zh": "that’s no small thing",
+   "exZh": "The town helped his wife find a job, and that’s no small thing."
+  },
+  "V40-17": {
+   "zh": "to renew a prescription",
+   "exZh": "Prescriptions can be renewed by teleconsultation."
+  },
+  "V40-18": {
+   "zh": "nothing beats …",
+   "exZh": "For a stomach ache, nothing beats a physical examination."
+  },
+  "V40-19": {
+   "zh": "to form an opinion, to see for oneself",
+   "exZh": "Before you decide, come and spend a week with us to see for yourself."
+  },
+  "V40-20": {
+   "zh": "to be broadcast on television",
+   "exZh": "Since women’s matches started being broadcast on TV, registrations have soared."
+  },
+  "V40-21": {
+   "zh": "to allocate (pitch, time) slots",
+   "exZh": "The club should allocate training slots more fairly between teams."
+  },
+  "V40-22": {
+   "zh": "to keep priority",
+   "exZh": "On this pitch, the men’s team still keeps priority in the evenings."
+  },
+  "V40-23": {
+   "zh": "what upsets me most is",
+   "exZh": "What upsets me most is having to turn children away."
+  },
+  "V40-24": {
+   "zh": "to plan one’s journeys ahead",
+   "exZh": "Once the new network is running, please plan your journeys ahead."
+  },
+  "V40-25": {
+   "zh": "high-frequency (short intervals between services)",
+   "exZh": "Three high-frequency lines will replace the existing bus routes."
+  }
+ },
  "title": "B2 overall checkpoint",
  "phase": "DELF B2 task training"
 }

@@ -1,4 +1,226 @@
 {
+ "canDo": "Can identify an author’s real position and tone in argumentative essays, satirical columns and letters to the editor, read the implied meaning behind irony, concession and speculative phrasing, and defend answers with evidence from the text.",
+ "review": "Review concession (certes… mais, avoir beau, bien que + subjunctive, même si) and hedging/speculation (il semble que, il se peut que, sans doute, the speculative conditional): these are the key signals for judging an author’s attitude; build on day 31’s “locate → check” reading method.",
+ "input": "Read: an analysis of “boomerang kids” (note the conditional marking “unconfirmed”), a satirical column on a town’s “compulsory friendliness” (irony) and a letter to the editor (supportive, with reservations); listen: a radio debate on “an allowance for 18–25-year-olds”, an on-the-spot report from a village community café and a vox pop, “Do you still live with your parents?”.",
+ "output": "Write: a letter of 250+ words to a newspaper giving a qualified view on an article (at least 2 concessive structures and 2 hedging expressions); speak: a 6-minute monologue on “until what age should parents support their adult children?”, then answer the examiner in the debate with concession + rebuttal.",
+ "checkpoint": "Can point out at least 3 instances of irony or implied meaning in R32-2 and explain what is really meant; ≥80% accuracy on the day’s multiple-choice questions; at least 4 correct uses of concession and hedging in the letter.",
+ "challenge": "Today’s challenge: find a social commentary or report on RFI’s « Journal en français facile » or TV5MONDE, copy out a sentence with a conditional (e.g. « il y aurait… ») or a concessive structure, and write one sentence in your own language explaining the attitude the author conveys with it; then write a reply of your own with « Certes…, mais… ».",
+ "items": {
+  "reading": {
+   "R32-1": {
+    "questions": [
+     {
+      "why": "The article covers, in turn, the scale (survey data), who is affected, possible causes, consequences and responses: it is an analytical report. A: there are no personal testimonies; C: the author gives no advice to parents."
+     },
+     {
+      "why": "« de nombreux jeunes diplômés, pourtant en poste, reviennent eux aussi, le temps d’économiser… » (pourtant marks an unexpected contrast). B contradicts « ne concernent pas seulement des jeunes en difficulté »; C has no basis."
+     },
+     {
+      "why": "« avancent plusieurs hypothèses, sans qu’aucune ne s’impose clairement », followed by the conditionals rendrait / aurait retardé / pourrait rendre, marking them as unconfirmed. A ignores the speculative tone; B isn’t mentioned."
+     },
+     {
+      "why": "« Il est probable que ces facteurs se combinent… il serait imprudent de désigner un coupable unique ». A is exactly the “single culprit” she rejects; C is too absolute."
+     },
+     {
+      "why": "avoir beau + infinitive = however much…, (to no avail), equivalent to bien que + subjunctive, followed by « leur portée reste limitée ». A expresses cause and C purpose, so both get the logical link wrong."
+     },
+     {
+      "why": "« ne sera vraiment compris que lorsqu’on cessera d’y voir une affaire privée… pour le considérer comme une question de politique du logement ». B is precisely the “private family matter” view being rejected; C isn’t mentioned."
+     }
+    ]
+   },
+   "R32-2": {
+    "questions": [
+     {
+      "why": "The whole column mocks “scheduled friendliness” ironically and contrasts it with the closure of the post office and the library. A ignores the satire; B contradicts the last paragraph, « J’irai quand même à la fête »."
+     },
+     {
+      "why": "The « temps d’échange libre » is actually scheduled for 20:00: “free time on a timetable” is ironic, mocking how contrived and artificial the event is. B takes it literally and misses the tone; C isn’t in the text."
+     },
+     {
+      "why": "This is the classic rhetorical move of “disclaim first, then criticise”, followed straight away by « Mais je ne peux m’empêcher de remarquer que… », pointing out that the post office and library were closed. A: no earlier article is mentioned; C goes against the text’s whole position."
+     },
+     {
+      "why": "« Il naît de la répétition : croiser chaque matin la même personne… échanger trois mots avec le pharmacien ». A and B are exactly the “made-to-order” methods the author doubts (« sans affiche ni animateur »)."
+     },
+     {
+      "why": "The previous sentence, « Rien de spectaculaire, rien de photographiable pour le bulletin municipal »: everyday ties “don’t make good publicity photos”, implying the town cares more about events it can show off. A contradicts the strangers talking every day in the text; C is a literal misreading."
+     }
+    ]
+   },
+   "R32-3": {
+    "questions": [
+     {
+      "why": "She says « je ne le regrette pas un instant » and ends with « oui à l’entraide entre générations, mais sans naïveté »: supportive, but adding a correction. B contradicts her satisfaction; C: she already has a year’s experience and isn’t asking for advice."
+     },
+     {
+      "why": "conte de fées here is a metaphor for a “flawless story”; she then mentions the need for rules and early friction. A is too negative and contradicts her satisfaction; B has no basis."
+     },
+     {
+      "why": "« Votre journaliste semble croire que tout repose sur la bonne entente. Or la cohabitation entre adultes exige des règles claires ». semble croire is a tactful criticism. A is the opposite; C isn’t mentioned."
+     },
+     {
+      "why": "« Mon fils paie une partie des courses, cherche activement un logement et vit ce retour comme une étape, non comme un refuge ». A contradicts the facts; B isn’t mentioned."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L32-1": {
+    "questions": [
+     {
+      "why": "The host opens with: « faut-il verser une aide financière à tous les jeunes de 18 à 25 ans qui n’ont pas de revenus ? ». B is only part of the background; C isn’t covered."
+     },
+     {
+      "why": "« les 18-25 ans sont aujourd’hui la tranche d’âge la plus touchée par la pauvreté… la plupart n’ont droit à aucun revenu minimum ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« une aide versée à tous coûterait très cher… il se peut qu’une partie des jeunes… n’en aient pas vraiment besoin » (il se peut que + subjunctive expresses a hypothesis). Neither A nor B is mentioned."
+     },
+     {
+      "why": "« Sur le coût, elle a raison, je le reconnais volontiers. Mais les aides ciblées ont un défaut… »: classic “concession + rebuttal”. B: he doesn’t question the data; C is the opposite of his conclusion."
+     },
+     {
+      "why": "« la solution serait peut-être de simplifier les démarches… ces jeunes ont aussi besoin de logements abordables, d’accompagnement, de formations ». Neither A nor C is what she proposes."
+     },
+     {
+      "why": "« Non, c’est une idée qui mérite d’être étudiée… à condition de ne pas lui demander plus qu’elle ne peut donner ». A is the host’s guess, which she rejects; B exaggerates."
+     }
+    ]
+   },
+   "L32-2": {
+    "questions": [
+     {
+      "why": "The core is « une quinzaine d’habitants… ouvrir un café associatif… des bénévoles qui tiennent le comptoir ». A: bread is only an extra service of the café; C: the school is mentioned only as the one place people used to meet."
+     },
+     {
+      "why": "« On aurait pu croire que ce serait un lieu réservé aux anciens. Eh bien, pas du tout », followed by a list: retirees, young remote workers, mothers. C goes too far: retirees are there too (« bien sûr »)."
+     },
+     {
+      "why": "« Les bénévoles s’épuisent un peu, et les recettes suffisent tout juste à payer le chauffage ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "même si + imperfect + past conditional: “even if it closed tomorrow, we would have shown that…”, stressing what has already been achieved. A misreads the hypothetical; C takes silence literally as “quiet”."
+     }
+    ]
+   },
+   "L32-3": {
+    "questions": [
+     {
+      "why": "« je suis revenue l’an dernier… avec des loyers à neuf cents euros, je n’ai pas vraiment le choix ». A contradicts the facts; C: she says « Ce n’est pas l’idéal », not that she refuses to leave."
+     },
+     {
+      "why": "« Au début, c’était juste pour mes études »; sharing a flat with friends came later (« maintenant »)."
+     },
+     {
+      "why": "« ça me convient… Cela dit, si je trouvais un studio pas trop cher près de mon travail, je partirais demain »: cela dit introduces a concession. B has no basis; C contradicts the ending."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V32-01": {
+   "zh": "a growing share of …",
+   "exZh": "The phenomenon reportedly affects a growing share of young adults."
+  },
+  "V32-02": {
+   "zh": "to leave no room for doubt",
+   "exZh": "The results of the analysis leave no room for doubt."
+  },
+  "V32-03": {
+   "zh": "to admit defeat",
+   "exZh": "Moving back in with your parents doesn’t necessarily mean admitting defeat."
+  },
+  "V32-04": {
+   "zh": "an age group",
+   "exZh": "18-to-25-year-olds are the age group hardest hit by poverty."
+  },
+  "V32-05": {
+   "zh": "to put forward a hypothesis",
+   "exZh": "The sociologist put forward a cautious hypothesis to explain the figures."
+  },
+  "V32-06": {
+   "zh": "to point to a culprit, to find a scapegoat",
+   "exZh": "With such a complex phenomenon, pointing to a single culprit is pointless."
+  },
+  "V32-07": {
+   "zh": "it would be unwise to …",
+   "exZh": "It would be unwise to draw conclusions from a single poll."
+  },
+  "V32-08": {
+   "zh": "(a phenomenon) to spread, to grow",
+   "exZh": "The “boomerang generation” phenomenon is reportedly growing."
+  },
+  "V32-09": {
+   "zh": "to move back in with one’s parents",
+   "exZh": "When his contract ended, he had to move back in with his parents."
+  },
+  "V32-10": {
+   "zh": "to come at a cost",
+   "exZh": "Every hour lost in traffic jams comes at a cost to the economy."
+  },
+  "V32-11": {
+   "zh": "to introduce (people) to each other",
+   "exZh": "Before the meeting starts, let me introduce you all to each other."
+  },
+  "V32-12": {
+   "zh": "far be it from me to …",
+   "exZh": "Far be it from me to criticise the volunteers, but the organisation could be improved."
+  },
+  "V32-13": {
+   "zh": "can’t help …",
+   "exZh": "Seeing a poster like that, I couldn’t help laughing."
+  },
+  "V32-14": {
+   "zh": "on command, deliberately (not spontaneously)",
+   "exZh": "Friendship can’t be made to order."
+  },
+  "V32-15": {
+   "zh": "(a schedule) timed to the minute",
+   "exZh": "The visit was scheduled to the minute."
+  },
+  "V32-16": {
+   "zh": "a fairy tale, a story too good to be true",
+   "exZh": "Flatsharing is nothing like a fairy tale."
+  },
+  "V32-17": {
+   "zh": "fresh volunteers, new willing helpers",
+   "exZh": "To keep going, the association is looking for fresh volunteers."
+  },
+  "V32-18": {
+   "zh": "a targeted allowance (only for specific groups)",
+   "exZh": "The economist prefers targeted support to an allowance for everyone."
+  },
+  "V32-19": {
+   "zh": "to remain marginal, to have limited reach",
+   "exZh": "Despite the media hype, the phenomenon remains marginal."
+  },
+  "V32-20": {
+   "zh": "to wear oneself out, to run out of steam",
+   "exZh": "With no one to take over, the volunteers will end up wearing themselves out."
+  },
+  "V32-21": {
+   "zh": "an idea that seems good but isn’t",
+   "exZh": "Waiving the rent seems generous, but it’s a bad idea in disguise."
+  },
+  "V32-22": {
+   "zh": "to breathe new life into",
+   "exZh": "This little café has helped breathe new life into the whole village."
+  },
+  "V32-23": {
+   "zh": "just about enough to …",
+   "exZh": "The takings are just about enough to pay for the heating."
+  },
+  "V32-24": {
+   "zh": "the last line of defence",
+   "exZh": "For many young people, the family remains the last line of defence against poverty."
+  },
+  "V32-25": {
+   "zh": "to know someone inside out",
+   "exZh": "After twenty-five years under the same roof, I know my parents inside out."
+  }
+ },
  "title": "Reading II: opinions and implicit meaning",
  "phase": "DELF B2 task training"
 }
