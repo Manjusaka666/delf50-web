@@ -1,0 +1,38 @@
+{
+ "concordance-01": {
+  "why": "The main verb is past (m’a dit), so the présent shifts to the imparfait; aujourd’hui il va mieux shows that “being ill” was only true then."
+ },
+ "concordance-02": {
+  "why": "With a past main verb, the passé composé of the original shifts to the plus-que-parfait (elle avait envoyé), and ce matin becomes le matin même."
+ },
+ "concordance-03": {
+  "why": "In past reported speech the futur simple becomes the conditionnel présent (rappellerait); il ne l’a jamais fait shows it is all in the past."
+ },
+ "concordance-04": {
+  "why": "A reported yes/no question takes si, not ce que or qu’est-ce que."
+ },
+ "concordance-05": {
+  "why": "« Qu’est-ce qui s’est passé ? » is reported with ce qui (subject); qu’est-ce qui cannot be used in an indirect question."
+ },
+ "concordance-06": {
+  "why": "Reporting an order: impératif → demander à qqn de + infinitif: Elle m’a demandé de la rappeler."
+ },
+ "concordance-07": {
+  "why": "The time of speaking has changed, so in past reported speech demain becomes le lendemain (hier → la veille)."
+ },
+ "concordance-08": {
+  "why": "In past reported speech the futur proche becomes aller in the imparfait + infinitif: elle allait fermer."
+ },
+ "concordance-09": {
+  "why": "An indirect question uses statement order — no est-ce que, no inversion: quand je pouvais visiter."
+ },
+ "concordance-10": {
+  "why": "An imparfait in the original stays the same in past reported speech."
+ },
+ "concordance-11": {
+  "why": "Reporting a past question: passé composé → plus-que-parfait; vouloir savoir si + statement order."
+ },
+ "concordance-12": {
+  "why": "« Qu’est-ce que » becomes ce que in an indirect question (ce can’t be dropped), and the futur shifts to the conditionnel: ce que je ferais."
+ }
+}

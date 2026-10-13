@@ -31,7 +31,8 @@ const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
 
 // French words with an accent (they are quoted material: a translation keeps them as they are).
 const FRENCH = /[A-Za-zÀ-ÿœŒæÆ’'-]*[À-ÿœŒæÆ][A-Za-zÀ-ÿœŒæÆ-]*/g;
-const NUM = /\d+(?:[.,]\d+)?/g;
+// Numbers, except a Chinese month number (3月 → “March”), which English writes as a word.
+const NUM = /\d+(?:[.,]\d+)?(?![\d月])/g;
 const TAGS = /<\/?(?:b|i)>|<br\s*\/?>/g;
 const bag = (s, re) => (String(s).match(re) || []).reduce((m, x) => m.set(x, (m.get(x) || 0) + 1), new Map());
 const missing = (a, b) => [...a].filter(([k, n]) => (b.get(k) || 0) < n).map(([k]) => k);

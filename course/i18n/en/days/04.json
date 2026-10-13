@@ -1,0 +1,302 @@
+{
+ "canDo": "Can say when, where and for how long, and arrange a simple schedule.",
+ "review": "Review the present/questions; learn à/en/au/de/depuis/pendant.",
+ "input": "Listening: travel times, changes of place; reading: timetables/appointment notices.",
+ "output": "Write an 80-word schedule; explain aloud your route and travel time from home to a destination.",
+ "checkpoint": "≥80% correct on prepositions of time and place; can tell apart the core uses of depuis and pendant.",
+ "challenge": "Today’s challenge: write out your real schedule for tomorrow in French (at least 5 times of day), using à, en, depuis, pendant and a frequency word (souvent / tous les jours); then spend 1 minute explaining aloud your route from home to school or work and how long it takes.",
+ "items": {
+  "reading": {
+   "R04-1": {
+    "questions": [
+     {
+      "why": "On Wednesdays the bassin sportif closes early at 19 h (« le mercredi, il ferme à 19 h »). 20 h is the time on other weekdays; handing the pool over to clubs explains why it closes early — it is not a condition for individual entry."
+     },
+     {
+      "why": "« n'ouvre que l'après-midi, sauf le samedi » — sauf introduces the only exception. 7 h–9 h is the slot of the bassin sportif, not the leisure pool."
+     },
+     {
+      "why": "The end of the text says clearly « et non par téléphone ». mardi/jeudi soir are class times, not a way of signing up."
+     }
+    ]
+   },
+   "R04-2": {
+    "questions": [
+     {
+      "why": "libre depuis le 1er juillet → about two months by September. depuis marks the starting point; you have to work out the length yourself."
+     },
+     {
+      "why": "Ten minutes is the distance to the university; the third floor is the floor — other numbers in the same passage."
+     },
+     {
+      "why": "« je travaille tous les samedis pendant les vacances ». The Saturday-morning clean is a house rule, not her reason for saying no; 18–20 h is the Thursday slot."
+     }
+    ]
+   },
+   "R04-3": {
+    "questions": [
+     {
+      "why": "« à trois cents mètres de la salle des fêtes » gets the direction of the distance the wrong way round: three hundred metres is measured from the square to the car park. The square itself is under construction."
+     },
+     {
+      "why": "« le marché du mercredi et du samedi » — two days."
+     },
+     {
+      "why": "Tuesday is not a market day, so « limité à deux heures le reste de la semaine » applies. Free unlimited parking is only on market days; 13 h 30 is when the stalls pack up."
+     }
+    ]
+   },
+   "R04-4": {
+    "questions": [
+     {
+      "why": "pendant dix semaines is the length of the whole session. Fifteen days is how early you must register; two evenings is the weekly frequency."
+     },
+     {
+      "why": "Monday and Thursday are class times; fifteen days before refers to the registration deadline."
+     },
+     {
+      "why": "The end of the text says that the third unannounced absence ends your registration. liste d'attente is the consequence of registering too late; emailing the day before is what should have been done and wasn’t."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L04-1": {
+    "questions": [
+     {
+      "why": "The reason is that the doctor is away all week. The carte Vitale is only a reminder at the end; the opening hours are extra information, not the reason for the call."
+     },
+     {
+      "why": "Two slots are offered: Thursday morning and late Friday afternoon. Saturday morning is only mentioned as opening hours, not as an option for rebooking."
+     },
+     {
+      "why": "avant vendredi midi. Tuesday at 11 was the original, cancelled appointment; 19 is when the practice closes."
+     }
+    ]
+   },
+   "L04-2": {
+    "questions": [
+     {
+      "why": "The announcement first gives the delay, then the platform change. Saint-Brieuc is where people change trains, not the destination."
+     },
+     {
+      "why": "environ vingt minutes is the only length of time given; 14 h 20 was the scheduled departure."
+     },
+     {
+      "why": "19 heures is when the ticket office closes, not a requirement to wait."
+     }
+    ]
+   },
+   "L04-3": {
+    "questions": [
+     {
+      "why": "sauf le dimanche is the key restriction; 20 août is the deadline for collecting the book, not for the opening period."
+     },
+     {
+      "why": "Note the difference between depuis (starting point) and pendant (length): 3 mars is when the library card became valid."
+     },
+     {
+      "why": "The message gives one clear solution: rappelez-nous."
+     }
+    ]
+   },
+   "L04-4": {
+    "questions": [
+     {
+      "why": "The agent deliberately distinguishes première utilisation from achat; septembre is when the address started."
+     },
+     {
+      "why": "complément 1,80 € is the only solution mentioned."
+     },
+     {
+      "why": "This question tests depuis + a point in time directly; trente jours belongs to the pendant structure."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V04-01": {
+   "zh": "twice a week",
+   "exZh": "Aqua-aerobics classes take place twice a week, on Tuesdays and Thursdays."
+  },
+  "V04-02": {
+   "zh": "to have been under construction since + date",
+   "exZh": "The square has been under construction since the end of August."
+  },
+  "V04-03": {
+   "zh": "for the whole duration of …",
+   "exZh": "For the whole duration of the works, the market moves to the car park."
+  },
+  "V04-04": {
+   "zh": "in case of …, if there is …",
+   "exZh": "If you are absent, let the office know by email."
+  },
+  "V04-05": {
+   "zh": "to change (trains), to make a connection",
+   "exZh": "Passengers who need to change at Saint-Brieuc are asked to come to the ticket office."
+  },
+  "V04-06": {
+   "zh": "bound for …",
+   "exZh": "The regional train to Rennes will leave from platform 3."
+  },
+  "V04-07": {
+   "zh": "to leave … late",
+   "exZh": "The train will leave about twenty minutes late."
+  },
+  "V04-08": {
+   "zh": "to take (time) to do …",
+   "exZh": "It takes me forty minutes to get to work."
+  },
+  "V04-09": {
+   "zh": "it takes about …, allow …",
+   "exZh": "From my place to the station, allow twenty minutes by bus."
+  },
+  "V04-10": {
+   "zh": "a monthly pass/subscription",
+   "exZh": "The monthly pass costs 38 euros for zones 1 and 2."
+  },
+  "V04-11": {
+   "zh": "to be valid for …",
+   "exZh": "The pass is valid for thirty days."
+  },
+  "V04-12": {
+   "zh": "only (ne … que)",
+   "exZh": "The leisure pool only opens in the afternoon."
+  },
+  "V04-13": {
+   "zh": "from (as early as) + time/date",
+   "exZh": "On Saturdays, the pool welcomes families from 10 a.m."
+  },
+  "V04-14": {
+   "zh": "during opening hours",
+   "exZh": "You sign up at reception, during opening hours."
+  },
+  "V04-15": {
+   "zh": "Could you confirm … for me?",
+   "exZh": "Could you confirm how long the guarantee lasts?"
+  },
+  "V04-16": {
+   "zh": "at rush hour",
+   "exZh": "At rush hour, the tram is always full."
+  },
+  "V04-17": {
+   "zh": "bills included",
+   "exZh": "The room costs €380 a month, bills included."
+  },
+  "V04-18": {
+   "zh": "to do the cleaning",
+   "exZh": "We do the cleaning once a week, on Saturday morning."
+  },
+  "V04-19": {
+   "zh": "at least the day before",
+   "exZh": "Let the office know at least the day before."
+  },
+  "V04-20": {
+   "zh": "before … -ing",
+   "exZh": "Buy a supplement from the machine before getting on."
+  },
+  "V04-21": {
+   "zh": "late in the afternoon",
+   "exZh": "We can offer you Friday, late in the afternoon."
+  },
+  "V04-22": {
+   "zh": "the delivery time",
+   "exZh": "The delivery time is five working days."
+  },
+  "V04-23": {
+   "zh": "to be on probation (trial period)",
+   "exZh": "My trial period runs until the end of the month."
+  },
+  "V04-24": {
+   "zh": "not to match …, not to comply with …",
+   "exZh": "The product doesn’t match the description on the website."
+  },
+  "V04-25": {
+   "zh": "to keep evidence",
+   "exZh": "You should keep evidence, for example photos of the parcel."
+  },
+  "V04-26": {
+   "zh": "to show someone round …",
+   "exZh": "I can show you round the flat on Thursday between 18:00 and 20:00."
+  },
+  "V04-27": {
+   "zh": "to share …",
+   "exZh": "In the flat, we share the shopping."
+  },
+  "V04-28": {
+   "zh": "to be limited to + duration",
+   "exZh": "On weekdays, parking is limited to two hours."
+  },
+  "V04-29": {
+   "zh": "… metres away",
+   "exZh": "The market moves to the car park, three hundred metres away."
+  },
+  "V04-30": {
+   "zh": "to last …",
+   "exZh": "Each session lasts ten weeks."
+  },
+  "V04-31": {
+   "zh": "to be put on a waiting list",
+   "exZh": "Applications that arrive too late are put on a waiting list."
+  },
+  "V04-32": {
+   "zh": "the first + day + of every month",
+   "exZh": "An information meeting takes place on the first Tuesday of every month."
+  },
+  "V04-33": {
+   "zh": "Don’t forget …",
+   "exZh": "Don’t forget your carte Vitale (health insurance card)."
+  },
+  "V04-34": {
+   "zh": "to be asked to … (announcements)",
+   "exZh": "Passengers are asked to go to the information desk."
+  },
+  "V04-35": {
+   "zh": "to extend a reservation",
+   "exZh": "Call us back and we’ll extend the reservation."
+  },
+  "V04-36": {
+   "zh": "to buy a ticket from the machine",
+   "exZh": "You can buy a ticket from the machine at the stop."
+  },
+  "V04-37": {
+   "zh": "to make way for …",
+   "exZh": "On Wednesdays, the pool closes at 19:00 to make way for the clubs."
+  },
+  "V04-38": {
+   "zh": "the safety instructions",
+   "exZh": "Could you send me the safety instructions for my job?"
+  },
+  "V04-39": {
+   "zh": "to take stock of …",
+   "exZh": "I’d like to take stock of my skills with you."
+  },
+  "V04-40": {
+   "zh": "to change jobs (within a company)",
+   "exZh": "I’d like to change jobs next year."
+  },
+  "V04-41": {
+   "zh": "to exercise one’s right of withdrawal",
+   "exZh": "You have fourteen days to exercise your right of withdrawal."
+  },
+  "V04-42": {
+   "zh": "to contact the seller",
+   "exZh": "The parcel is damaged: I have to contact the seller."
+  },
+  "V04-43": {
+   "zh": "to be early",
+   "exZh": "I prefer to be early at the station."
+  },
+  "V04-44": {
+   "zh": "to miss one’s train",
+   "exZh": "If I leave too late, I miss my train."
+  },
+  "V04-45": {
+   "zh": "a return ticket",
+   "exZh": "I’d like a return ticket to Rennes, please."
+  }
+ },
+ "title": "Time, place and arrangements",
+ "phase": "Foundations and grammar on autopilot"
+}

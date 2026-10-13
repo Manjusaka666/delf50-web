@@ -1,0 +1,302 @@
+{
+ "canDo": "Can relate 5–7 completed events in order, in the past.",
+ "review": "Review the present; learn avoir + participe passé and common past participles.",
+ "input": "Listening: looking back on a weekend/event; reading: a short diary.",
+ "output": "Write 80–90 words about “last weekend”; retell it aloud in time order in 90 seconds.",
+ "checkpoint": "At least 5 sentences of past events; don’t leave verbs in the present.",
+ "challenge": "Today’s challenge: pick 3 photos from last weekend on your phone, say what you did in each with 2 sentences in the passé composé (with avoir), then tell it aloud in the order d’abord → ensuite → enfin, in under 90 seconds.",
+ "items": {
+  "reading": {
+   "R05-1": {
+    "questions": [
+     {
+      "why": "The opening « Je n'ai pas répondu plus tôt » gives the purpose of the letter; the book has been kept safe, not lost."
+     },
+     {
+      "why": "The text gives a single reason: problème de portière; starting at eight is not late."
+     },
+     {
+      "why": "Compare « J'ai déjà rangé la cuisine » with « je n'ai pas encore ouvert la moitié des cartons »."
+     }
+    ]
+   },
+   "R05-2": {
+    "questions": [
+     {
+      "why": "4 000 versus 3 200 is the only year-on-year figure; the number of exposants isn’t compared with anything."
+     },
+     {
+      "why": "septembre is the date of the next edition, not how the money is used."
+     },
+     {
+      "why": "The text says l'après-midi a été très animé, and the total number went up."
+     }
+    ]
+   },
+   "R05-3": {
+    "questions": [
+     {
+      "why": "Four stars, prix correct, the next one already booked — all point to a positive review; the only negative is the wait."
+     },
+     {
+      "why": "lentement is praised as a strength, not the cause of a delay."
+     },
+     {
+      "why": "réservé l'atelier « sauces » is a booking for herself; the text doesn’t mention giving it as a gift again."
+     }
+    ]
+   },
+   "R05-4": {
+    "questions": [
+     {
+      "why": "22 minus « trois de plus » gives 19; 22 is this season’s figure and 41 is the number of new members."
+     },
+     {
+      "why": "The lack of volunteers is a Sunday-morning problem, unrelated to these two cancellations; the trailer has been repaired."
+     },
+     {
+      "why": "The only decision in the text is une formation courte en octobre."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L05-1": {
+    "questions": [
+     {
+      "why": "The message does two things: tells a story + passes on Inès’s message."
+     },
+     {
+      "why": "« préviens-la vite » is a clear instruction; rappels here means encores, not calling back."
+     },
+     {
+      "why": "He says clearly « je les ai toutes ratées »."
+     }
+    ]
+   },
+   "L05-2": {
+    "questions": [
+     {
+      "why": "He explicitly rejects the third option: « plutôt que baisser la qualité »."
+     },
+     {
+      "why": "The customers are a consequence, not a cause, and he only learnt how they reacted afterwards."
+     },
+     {
+      "why": "« mieux que je ne l'avais imaginé » states it clearly."
+     }
+    ]
+   },
+   "L05-3": {
+    "questions": [
+     {
+      "why": "The compte rendu has been reread and salle 2 is booked."
+     },
+     {
+      "why": "« seulement la première partie » is the fallback plan proposed."
+     },
+     {
+      "why": "« La dernière fois, on a oublié » points straight to the coffee."
+     }
+    ]
+   },
+   "L05-4": {
+    "questions": [
+     {
+      "why": "The last sentence states the main point clearly; sending out thirty applications is exactly what didn’t work."
+     },
+     {
+      "why": "boulangère → sa cousine: the chain is clear."
+     },
+     {
+      "why": "une trentaine is the number of applications sent; six is the number of weeks."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V05-01": {
+   "zh": "last weekend",
+   "exZh": "Last weekend, I visited Marseille with friends."
+  },
+  "V05-02": {
+   "zh": "later than planned",
+   "exZh": "We finished much later than planned."
+  },
+  "V05-03": {
+   "zh": "not … yet (+ participle)",
+   "exZh": "I haven’t opened half the boxes yet."
+  },
+  "V05-04": {
+   "zh": "to lose (time)",
+   "exZh": "The van broke down, so we lost almost two hours."
+  },
+  "V05-05": {
+   "zh": "to have a problem with …",
+   "exZh": "The van had a problem with a door."
+  },
+  "V05-06": {
+   "zh": "to decide to …",
+   "exZh": "The committee decided to offer a short training course in October."
+  },
+  "V05-07": {
+   "zh": "because of … (usually a bad cause)",
+   "exZh": "Two outings didn’t take place because of the wind."
+  },
+  "V05-08": {
+   "zh": "thanks to …",
+   "exZh": "I found my place to live thanks to a conversation."
+  },
+  "V05-09": {
+   "zh": "instead of …",
+   "exZh": "I decided to open at six thirty instead of five."
+  },
+  "V05-10": {
+   "zh": "it’s worth it (to …)",
+   "exZh": "I waited almost an hour, but it was worth it."
+  },
+  "V05-11": {
+   "zh": "to find a solution",
+   "exZh": "We found a solution: going back by regional train."
+  },
+  "V05-12": {
+   "zh": "after (a length of time)",
+   "exZh": "After an hour, we finally found a taxi."
+  },
+  "V05-13": {
+   "zh": "the next day",
+   "exZh": "The next day, I tidied the whole flat."
+  },
+  "V05-14": {
+   "zh": "Don’t worry.",
+   "exZh": "I’ve kept your book, don’t worry."
+  },
+  "V05-15": {
+   "zh": "to take photos",
+   "exZh": "I took photos, but they all came out badly."
+  },
+  "V05-16": {
+   "zh": "to bump into someone",
+   "exZh": "I bumped into Inès at the entrance."
+  },
+  "V05-17": {
+   "zh": "not a single …, no …",
+   "exZh": "I didn’t find a single replacement."
+  },
+  "V05-18": {
+   "zh": "to prefer doing … rather than …",
+   "exZh": "I preferred to cut the opening hours rather than lower the quality."
+  },
+  "V05-19": {
+   "zh": "hardly anyone …",
+   "exZh": "I explained the situation and hardly anyone complained."
+  },
+  "V05-20": {
+   "zh": "to look for somewhere to live",
+   "exZh": "I looked for somewhere to live for six weeks."
+  },
+  "V05-21": {
+   "zh": "about thirty …",
+   "exZh": "I sent out about thirty applications."
+  },
+  "V05-22": {
+   "zh": "… days later",
+   "exZh": "Two days later, her cousin let me her studio."
+  },
+  "V05-23": {
+   "zh": "to tell the people around you about it",
+   "exZh": "If you’re looking for a studio, tell the people around you."
+  },
+  "V05-24": {
+   "zh": "just one downside",
+   "exZh": "Just one downside: we waited twenty minutes at the start."
+  },
+  "V05-25": {
+   "zh": "to go on an excursion",
+   "exZh": "On Saturday, we went on an excursion to the calanques."
+  },
+  "V05-26": {
+   "zh": "to give someone … for their birthday",
+   "exZh": "I gave this workshop to my sister for her birthday."
+  },
+  "V05-27": {
+   "zh": "to attend a workshop",
+   "exZh": "We attended the workshop together on Saturday morning."
+  },
+  "V05-28": {
+   "zh": "to find the price reasonable",
+   "exZh": "Otherwise, I found the price reasonable."
+  },
+  "V05-29": {
+   "zh": "to be lively",
+   "exZh": "The rain slowed down the morning, but the afternoon was very lively."
+  },
+  "V05-30": {
+   "zh": "a second-hand book",
+   "exZh": "The stallholders mostly sold clothes and second-hand books."
+  },
+  "V05-31": {
+   "zh": "compared with … last year",
+   "exZh": "The organisers counted 4000 visitors, compared with 3200 last year."
+  },
+  "V05-32": {
+   "zh": "the next edition",
+   "exZh": "The next edition will take place on the first Sunday in September."
+  },
+  "V05-33": {
+   "zh": "… more than last year",
+   "exZh": "We organised 22 outings, three more than last year."
+  },
+  "V05-34": {
+   "zh": "to send a reminder",
+   "exZh": "I sent a reminder to the technical department last night."
+  },
+  "V05-35": {
+   "zh": "to change its timetable",
+   "exZh": "The last bus has changed its timetable."
+  },
+  "V05-36": {
+   "zh": "to go back by train",
+   "exZh": "We decided to go back by train."
+  },
+  "V05-37": {
+   "zh": "at the last minute",
+   "exZh": "I only heard about the change at the last minute."
+  },
+  "V05-38": {
+   "zh": "before nightfall",
+   "exZh": "We managed to get back before nightfall."
+  },
+  "V05-39": {
+   "zh": "What happened was that …",
+   "exZh": "What happened was that the bus didn’t come."
+  },
+  "V05-40": {
+   "zh": "as planned",
+   "exZh": "We took the 18:00 train, as planned."
+  },
+  "V05-41": {
+   "zh": "to finish, finally",
+   "exZh": "To finish, we had dinner at the harbour."
+  },
+  "V05-42": {
+   "zh": "to have a lie-in",
+   "exZh": "On Sunday, I had a lie-in."
+  },
+  "V05-43": {
+   "zh": "to go hiking",
+   "exZh": "On Saturday, we went hiking in the mountains."
+  },
+  "V05-44": {
+   "zh": "to have a good weekend",
+   "exZh": "We had a really good weekend."
+  },
+  "V05-45": {
+   "zh": "to invite friends to dinner",
+   "exZh": "On Saturday evening, I invited friends to dinner."
+  }
+ },
+ "title": "Past events: avoir",
+ "phase": "Foundations and grammar on autopilot"
+}

@@ -1,0 +1,38 @@
+{
+ "conditionnelPasse-01": {
+  "why": "Regret about the past: the conditionnel passé of devoir, « j’aurais dû » + infinitif; je devrais only gives present or future advice."
+ },
+ "conditionnelPasse-02": {
+  "why": "An unreal past hypothesis: si + plus-que-parfait (étions partis), with the conditionnel passé in the main clause (n’aurions pas raté)."
+ },
+ "conditionnelPasse-03": {
+  "why": "A reproach about the past: « tu aurais pu + infinitif » (you could have… but didn’t); tu as pu means “you managed to” — the opposite."
+ },
+ "conditionnelPasse-04": {
+  "why": "sans + a noun can replace a si clause for an unfulfilled past condition; arriver takes être: ils seraient arrivés."
+ },
+ "conditionnelPasse-05": {
+  "why": "An unfulfilled past wish: j’aurais aimé + infinitif; j’aimerais is a present wish and doesn’t fit quand j’étais étudiant."
+ },
+ "conditionnelPasse-06": {
+  "why": "In news style the conditionnel passé marks unconfirmed past information (reportedly); fera is a future and avait fait lacks a past reference point."
+ },
+ "conditionnelPasse-07": {
+  "why": "Mixed hypothesis: a past condition (si + plus-que-parfait) with a present result, so the conditionnel présent in the main clause; aujourd’hui is the key signal."
+ },
+ "conditionnelPasse-08": {
+  "why": "For an unreal past condition, the si clause takes the plus-que-parfait; never a conditionnel after si."
+ },
+ "conditionnelPasse-09": {
+  "why": "A present polite request takes the conditionnel présent (tu pourrais); tu aurais pu is a reproach about the past and doesn’t fit “it must be sent before tonight”."
+ },
+ "conditionnelPasse-10": {
+  "why": "Compound tenses of pronominal verbs take être: nous nous serions perdus; nous serons perdus is a futur antérieur and isn’t unreal."
+ },
+ "conditionnelPasse-11": {
+  "why": "« vous auriez pu + infinitif » is a reproach about the past; the first sentence is a present polite request and the third only arranges the future."
+ },
+ "conditionnelPasse-12": {
+  "why": "« aurait pu + infinitif » means something was possible in the past but didn’t happen; a pu means it really did go, contradicting what follows mais; pourrait refers to the present."
+ }
+}

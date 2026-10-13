@@ -1,0 +1,302 @@
+{
+ "canDo": "Can say what you don’t need, can’t do or never do, and make polite requests.",
+ "review": "Review questions; add ne…pas/jamais/plus and pouvoir/vouloir.",
+ "input": "Listening: requests in service situations; reading: rules/notices.",
+ "output": "Write a 70–80-word request for information; speaking: complete the exchange “didn’t understand → ask them to repeat → confirm”.",
+ "checkpoint": "Can turn 5 affirmative sentences into different negatives; can say 3 kinds of polite request.",
+ "challenge": "Today’s challenge: imagine you’re in a French café or bakery and write a 6-line mini-dialogue: order politely with pouvoir / vouloir, use two negatives (ne…pas, ne…jamais) to say what you don’t want or don’t eat, then read it aloud twice.",
+ "items": {
+  "reading": {
+   "R03-1": {
+    "questions": [
+     {
+      "why": "« Vous devez arriver dix minutes avant et apporter votre carte Vitale » is the only requirement for turning up. The lab is only for blood tests, and cheques are explicitly not accepted."
+     },
+     {
+      "why": "« ne fait plus » corresponds directly to the service that has stopped; Thursday at 15 h 40 is precisely the time of this appointment."
+     },
+     {
+      "why": "la veille means the day before the appointment: the appointment is on jeudi, so the day before is mercredi. This question tests working out veille."
+     }
+    ]
+   },
+   "R03-2": {
+    "questions": [
+     {
+      "why": "The only thing the text excludes is the facture de téléphone portable; the other two meet the requirement of “proof of address less than three months old”."
+     },
+     {
+      "why": "« mais elles doivent payer » is the only extra condition for non-residents."
+     },
+     {
+      "why": "« La carte est remise tout de suite » and « vous ne devez pas revenir un autre jour » confirm each other; trois mois is about how long the proof documents are valid."
+     }
+    ]
+   },
+   "R03-3": {
+    "questions": [
+     {
+      "why": "« nous n'ouvrons plus le lundi matin » — Monday afternoon 14 h–19 h is still open, and Saturday is as usual."
+     },
+     {
+      "why": "« Nous ne gardons pas les vêtements plus longtemps »; the ID is required if you lose your collection slip, which has nothing to do with the time limit."
+     },
+     {
+      "why": "« nous ne rendons rien sans vérification » is an explicit negative, ruling out the third option."
+     }
+    ]
+   },
+   "R03-4": {
+    "questions": [
+     {
+      "why": "« le formulaire n'est pas signé » is the only reason given in the letter."
+     },
+     {
+      "why": "The text gives two methods; courriel is explicitly ruled out; « obligatoirement » contradicts “or by post”."
+     },
+     {
+      "why": "« Vous ne devez pas refaire toute la demande » — note that ne pas devoir means “you don’t have to”, not “you mustn’t”."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L03-1": {
+    "questions": [
+     {
+      "why": "« il manque le nom de l'autre conducteur » is the only reason given."
+     },
+     {
+      "why": "« N'envoyez pas … par courriel » is the only prohibition; the other two are exactly what she recommends."
+     },
+     {
+      "why": "« Je ne travaille pas le mercredi ; ce jour-là, demandez monsieur Fabre » gives the alternative contact."
+     }
+    ]
+   },
+   "L03-2": {
+    "questions": [
+     {
+      "why": "« joindre votre avis d'imposition » is the only attachment required."
+     },
+     {
+      "why": "« sans ce document, nous ne pouvons pas calculer le tarif » explains what it’s for."
+     },
+     {
+      "why": "« le changement ne prend effet que le mois suivant » — ne … que means “only”, not a refusal."
+     }
+    ]
+   },
+   "L03-3": {
+    "questions": [
+     {
+      "why": "« le bassin ne sera pas accessible », whereas the gym and group classes « ne sont pas concernés »."
+     },
+     {
+      "why": "« Nous ne prolongeons pas automatiquement » explicitly rules out anything automatic."
+     },
+     {
+      "why": "« ils ont lieu normalement » says so directly."
+     }
+    ]
+   },
+   "L03-4": {
+    "questions": [
+     {
+      "why": "The technician’s visit is the second step, after « si le voyant reste rouge », not the first."
+     },
+     {
+      "why": "« Si le voyant reste rouge, nous devons envoyer un technicien » is the only condition."
+     },
+     {
+      "why": "He isn’t in during the day (ne peux pas être là en journée), and « nous ne pouvons pas venir le soir » rules out the evening."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V03-01": {
+   "zh": "to fill in a form",
+   "exZh": "You need to fill in this form and sign it."
+  },
+  "V03-02": {
+   "zh": "… is missing",
+   "exZh": "We can’t open the file: the other driver’s name is missing."
+  },
+  "V03-03": {
+   "zh": "not to work any more (a device)",
+   "exZh": "My internet hasn’t been working since last night."
+  },
+  "V03-04": {
+   "zh": "I’m sorry, but …",
+   "exZh": "I’m sorry, but I can’t come on Tuesday."
+  },
+  "V03-05": {
+   "zh": "If I understand correctly, …",
+   "exZh": "If I understand correctly, I have to come back with a photo?"
+  },
+  "V03-06": {
+   "zh": "I’d like to check …",
+   "exZh": "I’d like to check whether my driving licence is still valid."
+  },
+  "V03-07": {
+   "zh": "I suggest … instead",
+   "exZh": "Tuesday is impossible. I suggest Thursday morning instead."
+  },
+  "V03-08": {
+   "zh": "an appointment is set for …",
+   "exZh": "Your appointment is set for Thursday 12 March at 15:40."
+  },
+  "V03-09": {
+   "zh": "a proof of address",
+   "exZh": "You must show a proof of address less than three months old."
+  },
+  "V03-10": {
+   "zh": "not to be accepted",
+   "exZh": "A mobile phone bill is not accepted."
+  },
+  "V03-11": {
+   "zh": "from + date (on)",
+   "exZh": "From 2 April, we will no longer open on Monday mornings."
+  },
+  "V03-12": {
+   "zh": "nothing (ne … rien)",
+   "exZh": "We return nothing without checking."
+  },
+  "V03-13": {
+   "zh": "to have received … (acknowledgement)",
+   "exZh": "We have received your application of 8 January."
+  },
+  "V03-14": {
+   "zh": "to process an application",
+   "exZh": "We can’t process your application: the form isn’t signed."
+  },
+  "V03-15": {
+   "zh": "by post",
+   "exZh": "You can send it to us by post."
+  },
+  "V03-16": {
+   "zh": "to attach a document",
+   "exZh": "You must attach your tax notice to the file."
+  },
+  "V03-17": {
+   "zh": "not to have something on you",
+   "exZh": "I don’t have it on me. Can I send it later?"
+  },
+  "V03-18": {
+   "zh": "due to building work",
+   "exZh": "Due to building work, the pool will be closed from 10 to 14 March."
+  },
+  "V03-19": {
+   "zh": "Thank you for your understanding.",
+   "exZh": "The pool is closed this week. Thank you for your understanding."
+  },
+  "V03-20": {
+   "zh": "That’s not a problem.",
+   "exZh": "That’s not a problem: we come on Saturday mornings too."
+  },
+  "V03-21": {
+   "zh": "Which documents do I need to provide?",
+   "exZh": "For a passport, which documents do I need to provide?"
+  },
+  "V03-22": {
+   "zh": "to apply for …",
+   "exZh": "I’d like to apply for a passport."
+  },
+  "V03-23": {
+   "zh": "to report the loss of …",
+   "exZh": "I have to report the loss of my ID card."
+  },
+  "V03-24": {
+   "zh": "not to need …",
+   "exZh": "You don’t need an appointment in the morning."
+  },
+  "V03-25": {
+   "zh": "the next step",
+   "exZh": "Could you tell me what the next step is?"
+  },
+  "V03-26": {
+   "zh": "to have a blood test",
+   "exZh": "For a blood test, you have to go to the lab."
+  },
+  "V03-27": {
+   "zh": "on site, on the spot",
+   "exZh": "The practice no longer does tests on site."
+  },
+  "V03-28": {
+   "zh": "straight away",
+   "exZh": "The card is issued straight away."
+  },
+  "V03-29": {
+   "zh": "to come back another day",
+   "exZh": "You don’t have to come back another day."
+  },
+  "V03-30": {
+   "zh": "to collect an order",
+   "exZh": "You must collect your order within thirty days."
+  },
+  "V03-31": {
+   "zh": "to send back a signed document",
+   "exZh": "You need to send us back the signed form."
+  },
+  "V03-32": {
+   "zh": "to leave something at reception",
+   "exZh": "You can also leave the form at reception."
+  },
+  "V03-33": {
+   "zh": "the processing time",
+   "exZh": "The processing time is five days."
+  },
+  "V03-34": {
+   "zh": "… working days",
+   "exZh": "You’ll receive a reply within five working days."
+  },
+  "V03-35": {
+   "zh": "to open a file",
+   "exZh": "Without this name, we can’t open the file."
+  },
+  "V03-36": {
+   "zh": "to call someone back",
+   "exZh": "You can call me back on 02 40 55 18 07."
+  },
+  "V03-37": {
+   "zh": "to give notice before + date",
+   "exZh": "To change days, you must let us know before the 20th of the month."
+  },
+  "V03-38": {
+   "zh": "to take effect",
+   "exZh": "After that date, the change takes effect the following month."
+  },
+  "V03-39": {
+   "zh": "to take place as usual",
+   "exZh": "Group classes take place as usual."
+  },
+  "V03-40": {
+   "zh": "to suspend one’s membership",
+   "exZh": "Members can suspend their membership for that week."
+  },
+  "V03-41": {
+   "zh": "to send a technician",
+   "exZh": "If the light stays red, we have to send a technician."
+  },
+  "V03-42": {
+   "zh": "to renew one’s ID card",
+   "exZh": "I have to renew my ID card before the summer."
+  },
+  "V03-43": {
+   "zh": "to report a change of address",
+   "exZh": "I have to report my change of address to the bank."
+  },
+  "V03-44": {
+   "zh": "never (ne … jamais)",
+   "exZh": "The town hall never opens on Sundays."
+  },
+  "V03-45": {
+   "zh": "to book an appointment online",
+   "exZh": "You can book an appointment online on the town hall website."
+  }
+ },
+ "title": "Negation and polite requests",
+ "phase": "Foundations and grammar on autopilot"
+}

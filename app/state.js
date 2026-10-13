@@ -76,7 +76,7 @@ export function answerGrammar(S, day, q, node, selected) {
   const k = grammarKey(day, q.id);
   if (S.grammar[k]) return false;
   const correct = selected === q.answer, at = now();
-  S.grammar[k] = { day, contentId: q.id, nodeId: q.node, question: q.stem, selectedIndex: selected, correctIndex: q.answer, correct, answeredAt: at };
+  S.grammar[k] = { day, contentId: q.id, nodeId: q.node, question: canonical(q, 'stem'), selectedIndex: selected, correctIndex: q.answer, correct, answeredAt: at };
   if (!correct) S.errors.push({ skill: node ? node.name : q.node, original: q.options[selected], correct: q.options[q.answer], why: canonical(q, 'why') || '', at });
   started(S);
   return true;

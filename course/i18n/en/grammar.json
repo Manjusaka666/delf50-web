@@ -1,0 +1,1448 @@
+{
+ "present": {
+  "use": "The basis for introducing yourself, habits, facts and opinions",
+  "guide": {
+   "title": "The present: make sentences “stand up” automatically",
+   "why": "B1 narration, opinions and interaction all rest on solid present-tense sentences. At A1+, what matters most is not learning more tenses but no longer translating subject, conjugation and complement word by word.",
+   "formula": [
+    "Basic sentence: Sujet + verbe conjugué + complément"
+   ],
+   "contrast": [
+    "Je travaille à Paris. → a fact/habit",
+    "Aujourd’hui, je travaille à la maison. → current arrangements can use the present too"
+   ],
+   "errors": [
+    "Putting an infinitif straight after the subject: je faire ✗",
+    "Conjugating on like nous: on allons ✗ → on va ✓",
+    "The -ent of ils is usually silent — don’t leave it out just because you can’t hear it."
+   ],
+   "delf": [
+    "Entretien dirigé: introducing yourself, your work, your habits",
+    "Interaction: explaining a current problem",
+    "Point de vue: stating general facts and your own position"
+   ],
+   "production": [
+    "Say 2 sentences each with être/avoir/aller/faire",
+    "Change 3 je sentences to nous, then to ils/elles",
+    "Talk about “my day” for 60 seconds without notes"
+   ]
+  },
+  "prompts": [
+   "Write one sentence each with être / avoir to introduce yourself.",
+   "Write one sentence each with aller / faire about a daily habit.",
+   "Rewrite a je sentence with nous and with ils/elles.",
+   "Say 4 sentences aloud about today’s activities."
+  ]
+ },
+ "negation": {
+  "use": "Refusing, complaining, explaining limits",
+  "guide": {
+   "title": "Negation: from ne…pas to “none, never, no longer”",
+   "why": "Negation is a high-frequency function in service exchanges, complaints and explaining limits. What you’re training is “the negative frame wraps the conjugated verb”, not just remembering pas.",
+   "formula": [
+    null,
+    "ne…jamais = never",
+    "ne…plus = no longer",
+    "ne…rien = nothing",
+    "ne…personne = nobody",
+    "After a negative, du/de la/des usually become de/d’: Je ne bois pas de café."
+   ],
+   "errors": [
+    "You often hear ne dropped in speech, but don’t drop it in exam writing.",
+    "Adding pas after ne…jamais: je ne viens pas jamais ✗",
+    "Keeping du after a negative: je ne bois pas du café ✗ (in general)"
+   ],
+   "delf": [
+    "Complaining: Le chauffage ne fonctionne plus.",
+    "Explaining a limit: Je ne peux pas venir.",
+    "Opinion: Je ne pense pas que… (more complex structures come later)"
+   ],
+   "production": [
+    "Turn 5 affirmative sentences into pas/jamais/plus/rien/personne",
+    "Say 3 things you never do",
+    "Explain aloud that you can’t make an appointment on time"
+   ]
+  },
+  "prompts": [
+   "Turn 2 affirmative sentences into ne…pas.",
+   "Make one sentence each with ne…jamais / ne…plus.",
+   "Say 3 things you are not doing today."
+  ]
+ },
+ "questions": {
+  "use": "Exam interaction, getting information",
+  "guide": {
+   "title": "Questions: first make them usable, then aim for formality",
+   "why": "DELF speaking (interaction) requires you to seek information actively. The safest route is to automate question words and est-ce que first, then add inversion gradually.",
+   "formula": [
+    "Intonation: Vous partez demain ?",
+    null,
+    "Question words: où, quand, comment, pourquoi, combien de, quel/quelle",
+    "Formal inversion: Partez-vous demain ?"
+   ],
+   "contrast": [
+    "Où est la gare ? → question word directly",
+    "Où est-ce que vous habitez ? → safe and natural in speech",
+    "Où habitez-vous ? → shorter and more formal"
+   ],
+   "delf": [
+    "Asking about prices, times, conditions",
+    "Following up on someone’s suggestion",
+    "Checking information: Si j’ai bien compris… ?"
+   ],
+   "production": [
+    "Write 6 questions with different question words about “signing up for a French course”",
+    "Turn 3 statements into est-ce que questions and into inversion",
+    "Do a 90-second role-play asking for information"
+   ]
+  },
+  "prompts": [
+   "Ask one question each with où / quand / pourquoi / combien.",
+   "Turn 2 statements into est-ce que questions.",
+   "At a station, ask 3 questions in a row."
+  ]
+ },
+ "modals": {
+  "use": "Requests, advice, obligation and negotiation",
+  "guide": {
+   "title": "pouvoir / devoir / vouloir: linking requests, ability and obligation to an infinitif",
+   "why": "These three verbs are the bridge from describing facts to getting things done. Requests, advice, obligations and wishes in B1 interaction all depend on them.",
+   "formula": [
+    null,
+    null,
+    null,
+    "Polite: Je voudrais… / Pourriez-vous…"
+   ],
+   "contrast": [
+    "Je veux changer de chambre. → direct",
+    "Je voudrais changer de chambre. → more polite",
+    "Vous devez partir. → obligation / Vous devriez partir. → advice"
+   ],
+   "errors": [
+    null,
+    null,
+    "Taking voudrais as a past tense; here it is mainly the polite conditional."
+   ],
+   "delf": [
+    "Requests at reception, negotiating with customer service",
+    "Giving advice",
+    "Explaining rules and obligations"
+   ],
+   "production": [
+    "Turn 5 direct requests into polite ones",
+    "Write 4 sentences contrasting devez / devriez",
+    "Role-play at a hotel reception: raise a problem and ask for a fix"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Pouvoir / devoir / vouloir.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Pouvoir / devoir / vouloir."
+  ]
+ },
+ "articles": {
+  "use": "Shopping, food, describing quantities",
+  "guide": {
+   "title": "Articles and quantity: first decide “specific / one / part of something uncountable”",
+   "why": "Article errors rarely make you impossible to understand, but they drag down writing accuracy for a long time. Sort by meaning rather than memorising what goes in front of each noun.",
+   "formula": [
+    "le/la/les: something specific, or a whole category",
+    "un/une/des: countable, not specific",
+    "du/de la/de l’: uncountable, or a part of something",
+    "After quantities: beaucoup de, trois kilos de",
+    "After a simple negative: pas de/d’"
+   ],
+   "contrast": [
+    "J’aime le café. → coffee in general",
+    "Je prends un café. → a cup of coffee",
+    "Je bois du café. → some coffee"
+   ],
+   "errors": [
+    null,
+    "Je ne bois pas du lait ✗ → pas de lait ✓ (in general)",
+    "Using a partitive for something you like in general: j’aime du sport ✗ → j’aime le sport ✓"
+   ],
+   "delf": [
+    "Describing shopping/food",
+    "Accurate noun phrases in writing",
+    "Quantities in listening and reading"
+   ],
+   "production": [
+    "Sort 10 nouns into le/un/du contexts",
+    "Write a breakfast list with quantities",
+    "Make 5 affirmative food sentences negative"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Articles & quantité.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Articles & quantité."
+  ]
+ },
+ "adjectives": {
+  "use": "Describing people, cities, experiences",
+  "guide": {
+   "title": "Adjective agreement: first “the noun decides gender and number”, then the exceptions of position",
+   "why": "B1 description and comparison need lots of adjectives. At this stage, make agreement reliable first, then gradually learn the common adjectives that go before the noun.",
+   "formula": [
+    "Feminine usually adds -e: petit → petite",
+    "Plural usually adds -s: intéressant → intéressants",
+    "Common ones before the noun: beau, bon, grand, petit, jeune, vieux, nouveau",
+    "Most descriptive adjectives go after the noun"
+   ],
+   "errors": [
+    null,
+    null,
+    "Mechanically putting every adjective before the noun (as in English)."
+   ],
+   "delf": [
+    "Describing cities, housing, people",
+    "Comparing options",
+    "Giving your assessment"
+   ],
+   "production": [
+    "Change 8 masculine phrases to feminine/plural",
+    "Describe your room with 6 adjectives",
+    "Speak for 1 minute comparing two cities"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Adjectifs & accords.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Adjectifs & accords."
+  ]
+ },
+ "prepositions": {
+  "use": "Time, place and journeys",
+  "guide": {
+   "title": "Prepositions of place and time: sort by kind of place / time relation",
+   "why": "Travel, appointments and daily arrangements are dense with prepositions. Don’t treat à/en/de/depuis/pendant as loose words — learn them by the relation they express.",
+   "formula": [
+    "Cities: à Paris / de Paris",
+    "Feminine countries: en France / de France",
+    "Masculine countries: au Canada / du Canada",
+    "Lasting up to now: depuis trois ans",
+    "A complete length of time: pendant trois ans",
+    "How long ago: il y a trois ans; how long from now: dans trois jours"
+   ],
+   "contrast": [
+    "J’habite ici depuis 2024. → still living here",
+    "J’ai habité ici pendant deux ans. → over",
+    "Je pars dans trois jours. → three days from now"
+   ],
+   "errors": [
+    null,
+    "Using depuis trois ans when the action is already over",
+    "Translating pendant, pour and depuis all as “for” and then mixing them up."
+   ],
+   "delf": [
+    "Journeys, appointments, the timeline of an experience",
+    "Dates and durations in listening and reading",
+    "Setting the scene in a story"
+   ],
+   "production": [
+    "Draw a timeline and write 2 sentences each with depuis/pendant/il y a/dans",
+    "Talk about a trip: from where, to where, for how long",
+    "Say how long you have been learning French"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Prépositions & temps.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Prépositions & temps."
+  ]
+ },
+ "pc": {
+  "use": "Relating completed events and experiences",
+  "guide": {
+   "title": "Passé composé: turning completed events into a chain you control",
+   "why": "B1 narration first needs a clear account of what happened. Passé composé is the skeleton of events; later you combine it with the imparfait.",
+   "formula": [
+    null,
+    "-er → -é; some -ir → -i; common: fait, eu, été, pris, vu, reçu",
+    "Common être verbs: aller, venir, partir, arriver, entrer, sortir, rentrer, retourner, tomber, rester, naître, mourir",
+    "With être as the auxiliary, the participle basically agrees with the subject: Elle est arrivée."
+   ],
+   "contrast": [
+    "Hier, j’ai travaillé. → a completed event",
+    "Quand j’étais étudiant… → background in the imparfait",
+    "Elle est partie / Elle a quitté la maison. → the auxiliary depends on the verb"
+   ],
+   "errors": [
+    null,
+    null,
+    "Negation position: je n’ai pas compris, not je ai compris pas."
+   ],
+   "delf": [
+    "Recounting experiences and incidents",
+    "Stating what has happened in a complaint",
+    "Past experiences when introducing yourself"
+   ],
+   "production": [
+    "Say 8 things you did yesterday, in order",
+    "Tell the story of a trip using 4 être verbs",
+    "Rewrite a short present-tense diary entry in the passé composé"
+   ]
+  },
+  "prompts": [
+   "Write 3 sentences about things you did yesterday.",
+   "Make one past sentence with avoir and one with être.",
+   "Talk for 30 seconds about last night."
+  ]
+ },
+ "imparfait": {
+  "use": "Past background, habits and states",
+  "guide": {
+   "title": "Imparfait: building the stage for a story",
+   "why": "With only the passé composé, a story reads like a list of events. The imparfait carries background, states, habits and actions in progress.",
+   "formula": [
+    "Take the nous present form, drop -ons, add ais, ais, ait, ions, iez, aient",
+    null,
+    null,
+    "The one key irregular: être → ét-: j’étais"
+   ],
+   "contrast": [
+    "Il pleuvait. → background",
+    "Il a commencé à pleuvoir. → a change/an event",
+    "Chaque été, nous allions à la mer. → a past habit"
+   ],
+   "errors": [
+    "Using the passé composé for everything just because it says “yesterday”.",
+    "Writing être as je suisais ✗ → j’étais ✓",
+    "Using the imparfait for a completed event with clear limits."
+   ],
+   "delf": [
+    "Background in a story",
+    "Describing childhood/old habits",
+    "Explaining the circumstances when an incident happened"
+   ],
+   "production": [
+    "Describe your childhood in 6 sentences",
+    "Describe the weather/place/people before something happened",
+    "Rewrite 5 “past habits” from the present tense"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about childhood habits.",
+   "Write 2 sentences setting a past scene (weather/setting).",
+   "Describe your childhood aloud for 30 seconds."
+  ]
+ },
+ "pcimp": {
+  "use": "The core of B1 narration",
+  "guide": {
+   "title": "Passé composé vs imparfait: decide by “background / event”, not by guessing from keywords",
+   "why": "This is the heart of moving from A2 to B1 narration. The goal is not getting single questions right but switching steadily between the two time perspectives within one story.",
+   "formula": [
+    "Imparfait: states, background, habits, processes under way",
+    "Passé composé: completed events, changes, what moves the story forward",
+    "The classic frame: Je faisais X quand Y est arrivé."
+   ],
+   "errors": [
+    "Locking in one tense whenever you see quand.",
+    "Writing every action in a sequence in the imparfait.",
+    "A story with no background at all, only a fait / a fait / a fait."
+   ],
+   "delf": [
+    "Relating an experience",
+    "A mishap while travelling",
+    "Telling a past experience in the speaking entretien"
+   ],
+   "production": [
+    "Write 5 pairs of “background + sudden event”",
+    "Record yourself telling a small mishap for 2 minutes",
+    "Listen back and note why you chose each past tense"
+   ]
+  },
+  "prompts": [
+   "Write 2 pairs of “background + sudden event”.",
+   "Tell a 30-second mishap using both past tenses."
+  ]
+ },
+ "future": {
+  "use": "Plans, predictions and projects",
+  "guide": {
+   "title": "The future: futur proche for near plans, futur simple for predictions and promises",
+   "why": "B1 means talking about plans, projects and predictions. Both futures are common; don’t chase an absolute boundary — master their typical uses first.",
+   "formula": [
+    null,
+    "futur simple: infinitif/stem + ai, as, a, ons, ez, ont",
+    "Common stems: ser-, aur-, ir-, fer-, pourr-, voudr-, devr-, viendr-"
+   ],
+   "contrast": [
+    "Ce soir, je vais travailler. → already planned, soon",
+    "Dans dix ans, je travaillerai peut-être… → a more distant prediction"
+   ],
+   "errors": [
+    null,
+    "Keeping the whole -re verb in the futur simple: prendreai ✗ → prendrai ✓",
+    "Mixing up the conditional -rais and the future -rai."
+   ],
+   "delf": [
+    "Talking about study/career plans",
+    "Proposing next steps in an interaction",
+    "Predicting effects in an opinion task"
+   ],
+   "production": [
+    "Say 5 things you’re doing tonight with the futur proche",
+    "Give 5 plans/predictions for next year with the futur simple",
+    "Write 4 sentences contrasting je ferai / je ferais"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Futur proche & futur simple.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Futur proche & futur simple."
+  ]
+ },
+ "codcoi": {
+  "use": "Cutting repetition, sounding more natural",
+  "guide": {
+   "title": "COD / COI: first ask “is there à + a person after the verb?”",
+   "why": "Pronouns cut repetition sharply and make speech more natural. At this stage, make the choice and position of le/la/les versus lui/leur reliable.",
+   "formula": [
+    "Direct object → le/la/les: Je vois Marie → Je la vois.",
+    "à + a person → lui/leur: Je parle à Paul → Je lui parle.",
+    "The pronoun usually goes before the conjugated verb: Je le connais.",
+    "Compound tenses: Je l’ai vu."
+   ],
+   "errors": [
+    null,
+    null,
+    "Confusing leur and leurs: the pronoun leur never changes."
+   ],
+   "delf": [
+    "Less repetition in writing",
+    "Referring to people/things in interaction",
+    "Speaking more naturally at length"
+   ],
+   "production": [
+    "Label 10 common verbs COD / COI",
+    "Do 8 noun → pronoun replacements",
+    "Act out a service conversation using a pronoun at least 5 times"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using COD / COI.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use COD / COI."
+  ]
+ },
+ "yen": {
+  "use": "Places, quantities and de/à structures",
+  "guide": {
+   "title": "y / en: shrinking “à + thing/place” and “de + thing/quantity” into a pronoun",
+   "why": "y/en are a key step towards natural B1 speech. Sort them by the preposition they replace; don’t try to force them onto English “there/some”.",
+   "formula": [
+    "y ← à + chose / place: J’y vais. J’y pense.",
+    "en ← de + chose / quantity: J’en parle. J’en veux deux.",
+    "Usually before the conjugated verb: J’en ai besoin."
+   ],
+   "contrast": [
+    null,
+    null,
+    "Je parle à Paul → Je lui parle (not y)"
+   ],
+   "errors": [
+    "Using y for à + a person.",
+    "Dropping the number when en replaces a quantity: j’en veux deux.",
+    "Never using en for de + a place: revenir de Paris → en revenir works."
+   ],
+   "delf": [
+    "City/transport topics",
+    "Quantities when shopping",
+    "Avoiding repeating the same noun phrase in an opinion"
+   ],
+   "production": [
+    "Do 10 à/de → y/en replacements",
+    "Read out a shopping list with en + a quantity",
+    "Retell a passage about city life using y/en"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Y / En.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Y / En."
+  ]
+ },
+ "relatives": {
+  "use": "Linking short sentences, more coherent expression",
+  "guide": {
+   "title": "qui / que / où: merging two short sentences into one block of information",
+   "why": "B1 writing and speaking need coherence — you can’t keep saying “This is X. X is good. X is in…”; relative pronouns are the cheapest way to extend a sentence.",
+   "formula": [
+    "qui is the subject in its clause: un livre qui m’intéresse",
+    "que is the direct object in its clause: le livre que j’ai lu",
+    "où for a place/time: la ville où j’habite / le jour où…"
+   ],
+   "errors": [
+    "Choosing qui/que by whether the antecedent is a person or thing, rather than by its role in the clause.",
+    "No subject after que: le film que est intéressant ✗",
+    "Using où for every place, even when the clause actually needs que."
+   ],
+   "delf": [
+    "Describing people/places",
+    "Less repetition in writing",
+    "Defining ideas and giving examples in an opinion"
+   ],
+   "production": [
+    "Merge 8 pairs of short sentences",
+    "Describe a city you like, using qui/que/où 2 times each",
+    "Introduce someone aloud with at least 3 relative clauses"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Qui / que / où.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Qui / que / où."
+  ]
+ },
+ "conditionnel": {
+  "use": "Polite requests, advice and hypotheses",
+  "guide": {
+   "title": "Conditionnel présent: a high-yield structure for politeness and advice",
+   "why": "B1 interaction is more than “I want”. The conditional puts requests, negotiation and advice in the right register, and it pays off very well in the exam.",
+   "formula": [
+    "Future stem + imparfait endings: -ais, -ais, -ait, -ions, -iez, -aient",
+    null,
+    "Politeness: Je voudrais… / Pourriez-vous… ?",
+    "Advice: À ta place, je… / Vous devriez…"
+   ],
+   "errors": [
+    "Writing je voudrais as je voudrai (future).",
+    "Adding de after the conditional: je pourrais de venir ✗",
+    "Blurring advice and strict obligation."
+   ],
+   "delf": [
+    "Complaints and negotiation",
+    "Giving advice",
+    "Pushing for an alternative in spoken interaction"
+   ],
+   "production": [
+    "Make 5 direct requests more polite",
+    "Give a friend 4 pieces of advice, each with a reason",
+    "Do a 3-minute negotiation with customer service using at least 4 conditionals"
+   ]
+  },
+  "prompts": [
+   "Write 2 requests each with je voudrais / pourriez-vous.",
+   "Give 2 pieces of advice with à ta place + conditionnel."
+  ]
+ },
+ "connectors": {
+  "use": "Structuring writing and speaking",
+  "guide": {
+   "title": "Connectors: every connector must do a logical job",
+   "why": "B1 “coherence” doesn’t mean piling up d’abord/ensuite. The listener must be able to tell whether this is a cause, a result, a contrast, an example or a conclusion.",
+   "formula": [
+    "Sequence: d’abord, ensuite, enfin",
+    "Cause: parce que, puisque, en effet",
+    "Result: donc, c’est pourquoi, par conséquent",
+    "Contrast: mais, cependant, pourtant, en revanche",
+    "Example: par exemple, prenons le cas de…",
+    "Conclusion: en résumé, pour conclure"
+   ],
+   "contrast": [
+    "Il pleut, donc je reste chez moi. → result",
+    "Je reste chez moi parce qu’il pleut. → cause",
+    "C’est pratique. Cependant, c’est cher. → contrast"
+   ],
+   "errors": [
+    "Starting every sentence with ensuite.",
+    "Mechanically stacking parce que and donc on the same relation.",
+    "What follows cependant isn’t actually a contrast."
+   ],
+   "delf": [
+    "Organising paragraphs in writing",
+    "Keeping a spoken opinion linear",
+    "Time order in a story"
+   ],
+   "production": [
+    "Sort 10 sentences into cause/result/opposition/example",
+    "Give a 90-second opinion using 5 connectors with different functions",
+    "Go through an old essay and replace “et” with a more precise relation"
+   ]
+  },
+  "prompts": [
+   "Write 2 cause–effect pairs with parce que / donc.",
+   "Write 2 contrasts with cependant / pourtant.",
+   "Give a 45-second opinion aloud with at least 3 connectors."
+  ]
+ },
+ "comparison": {
+  "use": "Comparing options, pros and cons, choosing",
+  "guide": {
+   "title": "Comparison: don’t mix the adjective, verb and noun structures",
+   "why": "Housing, transport, ways of learning — the frequent B1 topics all ask you to compare and choose. When your comparisons are formally reliable, your opinions become noticeably more concrete.",
+   "formula": [
+    "Adjective: plus/moins/aussi + adj + que",
+    "Verb: verbe + plus/moins/autant que",
+    "Noun: plus/moins/autant de + nom + que",
+    "Better/worse: meilleur(e), pire / mieux"
+   ],
+   "errors": [
+    null,
+    null,
+    "Mixing the adjective and noun structures: moins de cher ✗ → moins cher ✓"
+   ],
+   "delf": [
+    "Comparing two options",
+    "Making a recommendation",
+    "Weighing pros and cons in an opinion"
+   ],
+   "production": [
+    "Compare city and country life in 6 sentences",
+    "Use each of the adj/verbe/nom comparison structures",
+    "Give a 2-minute recommendation: train or car?"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Comparer.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Comparer."
+  ]
+ },
+ "opinion": {
+  "use": "Giving opinions, reasons, examples and conclusions",
+  "guide": {
+   "title": "Arguing a view: B1 isn’t about “advanced vocabulary” but about being linear, understandable and reasoned",
+   "why": "What matters most in the DELF B1 opinion tasks is organising position, reasons, examples, concession and conclusion clearly. The language can be fairly simple; the logic can’t be scattered.",
+   "formula": [
+    "Position: À mon avis… / Je pense que…",
+    "Reason: D’abord… parce que…",
+    "Example: Par exemple…",
+    "Concession: Je comprends que…, cependant…",
+    "Conclusion: Pour conclure, je dirais que…"
+   ],
+   "contrast": [
+    "“C’est bien.” → a conclusion only",
+    "“Je pense que c’est utile parce que… Par exemple…” → developed",
+    "“Cependant…” → acknowledging a limit, not contradicting yourself"
+   ],
+   "errors": [
+    "Two “reasons” that are really the same sentence repeated.",
+    "An example unrelated to the point.",
+    "A conclusion that brings in a brand-new reason.",
+    "Using complex sentences you’re unsure of to sound advanced, so you become harder to understand."
+   ],
+   "delf": [
+    "Production écrite ≥160 words",
+    "Spoken point de vue",
+    "Explaining in an interaction why you insist on an option"
+   ],
+   "production": [
+    "Write a 5-line outline: “position → reason 1 → example → concession → conclusion”",
+    "Speak for 3 minutes on an everyday topic",
+    "Listen back and check that every reason has an explanation/example"
+   ]
+  },
+  "prompts": [
+   "Write a 5-sentence mini-argument: opinion → reason → example → contrast → conclusion.",
+   "Give a 1-minute opinion aloud and end with a conclusion."
+  ]
+ },
+ "passeRecent": {
+  "use": "Saying something has just happened, and telling it apart from other past tenses",
+  "guide": {
+   "title": "Passé récent: something that has just happened",
+   "why": "The DELF B1 writing criteria explicitly list the passé récent among the past tenses to choose from. It separates “just finished” from ordinary past events.",
+   "formula": [
+    null,
+    "From a past viewpoint: venir à l’imparfait + de + infinitif: Il venait de partir."
+   ],
+   "contrast": [
+    "Je viens de finir. → just finished",
+    "J’ai fini à 15 h. → simply reporting a past event",
+    "Je finissais quand… → past background/process"
+   ],
+   "errors": [
+    null,
+    "Don’t confuse it with the futur proche, aller + infinitif."
+   ],
+   "delf": [
+    "Relating a change that has just happened",
+    "Explaining something you’ve just received/finished/discovered"
+   ],
+   "production": [
+    "Write 6 sentences with venir de",
+    "Turn 3 passé composé sentences into “it has just happened” contexts"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Passé récent.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Passé récent."
+  ]
+ },
+ "plusqueparfait": {
+  "use": "Expressing “the past before the past” to build a clear timeline",
+  "guide": {
+   "title": "Plus-que-parfait: the past before the past",
+   "why": "The official DELF B1 writing criteria explicitly list the plus-que-parfait. The goal is to make the order of past events clear.",
+   "formula": [
+    null,
+    null,
+    "Often used with déjà, avant, quand, parce que"
+   ],
+   "contrast": [
+    "Quand je suis arrivé, il est parti. → events in sequence",
+    "Quand je suis arrivé, il était déjà parti. → an earlier past",
+    "Il pleuvait quand je suis sorti. → background, not completed earlier"
+   ],
+   "errors": [
+    "j’ai déjà réservé is not a plus-que-parfait",
+    "With être verbs, watch the basic agreement",
+    "Don’t use it mechanically just because you see avant."
+   ],
+   "delf": [
+    "Relating what led up to an incident",
+    "Explaining what had “already…” happened",
+    "Making the timeline clearer"
+   ],
+   "production": [
+    "Draw a three-point timeline and write 6 sentences",
+    "Tell an experience with plus-que-parfait + passé composé"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Plus-que-parfait.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Plus-que-parfait."
+  ]
+ },
+ "hypothesis": {
+  "use": "Real conditions, hypotheses, advice and outcomes",
+  "guide": {
+   "title": "Si clauses: real conditions and hypotheses",
+   "why": "B1 requires you to make hypotheses, suggestions and state possible outcomes; the conditionnel has to be mastered together with si clauses.",
+   "formula": [
+    null,
+    null,
+    "In the standard structure, no conditionnel after si."
+   ],
+   "contrast": [
+    "Si tu viens, on commencera. → may well happen",
+    "Si tu venais, on commencerait. → hypothetical/less certain",
+    "Et si on sortait ? → a suggestion"
+   ],
+   "errors": [
+    null,
+    "Mixing up the futur and conditionnel endings."
+   ],
+   "delf": [
+    "Negotiating an alternative",
+    "Giving advice",
+    "Discussing conditions and consequences in an opinion"
+   ],
+   "production": [
+    "Write 5 real-condition sentences",
+    "Write 5 hypothetical sentences",
+    "Speak for 2 minutes: “if… I would…”"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Hypothèse avec si.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Hypothèse avec si."
+  ]
+ },
+ "subjonctif": {
+  "use": "Expressing necessity, wishes, purpose; the high-frequency triggers",
+  "guide": {
+   "title": "Subjonctif essentials: decide by the meaning that triggers it, then conjugate",
+   "why": "At B1, the point is not to put every que clause in the subjunctive, but to recognise the frequent triggering meanings — necessity, wishes/feelings, purpose, concession — and tell them apart from the indicative of facts, judgements and expectations.",
+   "formula": [
+    "Order of decisions: first the meaning of the main clause (necessity/wish/feeling/purpose/concession), then whether que is there, and only then conjugate in the subjonctif.",
+    "Regular formation: usually the ils présent stem minus -ent, plus -e, -es, -e, -ions, -iez, -ent: ils parlent → que je parle / que nous parlions.",
+    "Common two-stem verbs: ils viennent / nous venons → que je vienne, que nous venions; ils prennent / nous prenons → que je prenne, que nous prenions.",
+    "High-frequency irregulars — être: sois, sois, soit, soyons, soyez, soient; avoir: aie, aies, ait, ayons, ayez, aient.",
+    "High-frequency irregulars — faire: fasse…fassions; pouvoir: puisse…puissions; savoir: sache…sachions; aller: aille…allions.",
+    "Necessity/judgement: il faut que, il est important/nécessaire que + subjonctif.",
+    "Wishes/attitudes/feelings: vouloir, souhaiter, préférer, être content/triste que + subjonctif.",
+    "Purpose: pour que / afin que + subjonctif; with the same subject, pour/afin de + infinitif is usually more natural.",
+    "Concession: bien que + subjonctif; a very useful structure in B1 opinions for “acknowledging the other side”.",
+    "Negative opinion/uncertainty: je ne pense pas que / je ne crois pas que often bring the subjonctif; affirmative je pense que / je crois que usually take the indicatif."
+   ],
+   "contrast": [
+    "J’espère que vous viendrez. → espérer treats the coming as an expected fact, so usually indicatif/futur.",
+    "Je veux que vous veniez. → vouloir expresses a subjective wish, so subjonctif.",
+    "Il faut partir. → the same doer, so infinitif; Il faut que vous partiez. → a specific subject is introduced, so subjonctif.",
+    "Je travaille pour réussir. → same subject; Je répète pour que vous compreniez. → two different subjects.",
+    "Je pense que cette solution est utile. / Je ne pense pas que cette solution soit suffisante. → a factual judgement versus a negative one."
+   ],
+   "errors": [
+    null,
+    null,
+    null,
+    "Treating every que as a subjunctive trigger: que itself decides nothing — the meaning of the main clause does.",
+    "Confusing same and different subjects: Je viens pour vous aider (infinitif) / Je viens pour que vous puissiez travailler (subjonctif).",
+    "Learning only the je/tu/il forms and forgetting the nous/vous -ions/-iez, a frequent error in speech and writing."
+   ],
+   "delf": [
+    "Production écrite: Il est important que… / Je souhaite que… for advice, demands and formal requests.",
+    "Point de vue: Bien que…, je pense que… to acknowledge the other side and hold your position.",
+    "Interaction: Je préférerais que… / Il faudrait que… to negotiate a better solution.",
+    "Expressing purpose: Je vous écris pour que vous puissiez…, especially good for emails and complaints."
+   ],
+   "production": [
+    "Make 3 sentences each with il faut que / il est important que, covering je/nous/vous.",
+    "Rewrite 4 “same subject pour + infinitif” sentences as “different subject pour que + subjonctif”.",
+    "Write 6 contrasting pairs: espérer que + indicatif/futur / vouloir que + subjonctif.",
+    "Write 3 B1 opinion sentences with bien que: “admit a drawback → state your position”."
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Subjonctif essentiel.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Subjonctif essentiel."
+  ]
+ },
+ "reported": {
+  "use": "Reporting what others say, ask and request",
+  "guide": {
+   "title": "Discours rapporté au présent: reporting accurately",
+   "why": "The official B1 language content includes reported speech in the present with que/si; it is very useful in listening notes, emails and spoken interaction.",
+   "formula": [
+    "dire/expliquer que + a statement",
+    "demander si + a yes/no question",
+    "Question words stay: Il demande où vous habitez.",
+    "Word order goes back to that of a statement."
+   ],
+   "errors": [
+    "Keeping the inversion: il demande où allez-vous ✗",
+    "Yes/no questions don’t take que."
+   ],
+   "delf": [
+    "Restating information you heard",
+    "Reporting what customer service/a colleague said",
+    "Explaining in an email what someone asked for"
+   ],
+   "production": [
+    "Turn 8 sentences of direct speech into indirect speech",
+    "After a short dialogue, report it in 3 sentences"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Discours rapporté au présent.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Discours rapporté au présent."
+  ]
+ },
+ "negationB1": {
+  "use": "ne…que / aucun / ni…ni for limits, complaints and arguments",
+  "guide": {
+   "title": "Négation B1: restriction, total negation and paired negation",
+   "why": "The B1 language content explicitly lists ne…que / aucun / ni…ni.",
+   "errors": [
+    "Treating ne…que as an ordinary negative",
+    "The noun after aucun is usually singular",
+    "No extra pas with ni…ni."
+   ],
+   "delf": [
+    "Explaining limits in a complaint",
+    "Spotting the scope of a negative when reading",
+    "Precise limits in an opinion"
+   ],
+   "production": [
+    "Turn 6 sentences with seulement into ne…que",
+    "Write 4 sentences with aucun/ni…ni"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Négation B1.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Négation B1."
+  ]
+ },
+ "passive": {
+  "use": "Highlighting results, procedures and who is affected; understanding formal notices",
+  "guide": {
+   "title": "Voix passive: highlighting results and procedures",
+   "why": "The B1 language content includes the passive, common in notices, service procedures and formal texts.",
+   "contrast": [
+    "Le service envoie le document. → active",
+    "Le document est envoyé par le service. → passive"
+   ],
+   "errors": [
+    "An infinitif after être ✗",
+    "Forgetting agreement with the passive subject."
+   ],
+   "delf": [
+    "Reading notices and rules",
+    "Describing outcomes in formal writing",
+    "Explaining a procedure aloud"
+   ],
+   "production": [
+    "Turn 5 active sentences into the passive",
+    "Describe an application procedure in the passive"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Voix passive.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Voix passive."
+  ]
+ },
+ "gerondif": {
+  "use": "Expressing simultaneity, manner or condition; compressing two related actions",
+  "guide": {
+   "title": "Gérondif: at the same time, by doing, if you do",
+   "why": "The official B1 language content includes the gérondif; it makes sentences tighter and relations more natural.",
+   "formula": [
+    null,
+    null,
+    null,
+    "The basic rule: the same subject."
+   ],
+   "contrast": [
+    "Il écoute la radio en cuisinant. → at the same time",
+    "On apprend en pratiquant. → manner",
+    "En partant tôt, vous éviterez le trafic. → condition"
+   ],
+   "errors": [
+    null,
+    "Muddled subjects."
+   ],
+   "delf": [
+    "Explaining a method aloud",
+    "Compressing two related actions in writing",
+    "Spotting condition/manner when reading"
+   ],
+   "production": [
+    "Write 6 gérondif sentences",
+    "Merge 3 pairs of short sentences"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Gérondif.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Gérondif."
+  ]
+ },
+ "ppagreement": {
+  "use": "Past participle agreement with être and with a preceding COD/relative pronoun",
+  "guide": {
+   "title": "Accord du participe passé: agreement you must control at B1",
+   "why": "The B1 language content includes past participle agreement, especially with être and with a preceding COD/relative pronoun.",
+   "formula": [
+    "être: agrees with the subject",
+    "avoir: generally no agreement; agrees with a preceding COD",
+    "que can stand for a preceding COD: les lettres que j’ai écrites",
+    "With a preceding le/la/l’, check the gender and number of what it refers to."
+   ],
+   "errors": [
+    "Agreeing with every avoir ✗",
+    "Ignoring the antecedent que refers to."
+   ],
+   "delf": [
+    "Writing about experiences",
+    "Relative clauses",
+    "Checking your own forms"
+   ],
+   "production": [
+    "Do 8 être agreements",
+    "Do 6 preceding-COD agreements"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Accord du participe passé.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Accord du participe passé."
+  ]
+ },
+ "prepositionalVerbs": {
+  "use": "Mastering what common verbs take: penser à / parler de / arrêter de…",
+  "guide": {
+   "title": "Verbes + à/de: learn what the verb takes first, then y/en",
+   "why": "The official B1 content includes verbes prépositionnels. Many pronoun errors actually come from not remembering whether the verb takes à or de.",
+   "errors": [
+    "Choosing the preposition by translating literally from your own language",
+    "Learning y/en without the original verb pattern."
+   ],
+   "delf": [
+    "Service interactions",
+    "Less repetition in writing",
+    "Spotting verb patterns in listening and reading"
+   ],
+   "production": [
+    "Sort 15 common verbs into à/de",
+    "Restate 8 of them with y/en"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Verbes + à / de.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Verbes + à / de."
+  ]
+ },
+ "doublePronouns": {
+  "use": "Combining COD/COI/y/en for more natural speech and writing",
+  "guide": {
+   "title": "Double pronominalisation: two pronouns, one fixed order",
+   "why": "The official B1 content includes the position of double COD/COI pronouns. They cut repetition considerably.",
+   "errors": [
+    null,
+    "Putting en/y in the wrong place."
+   ],
+   "delf": [
+    "Quick reference in interaction",
+    "Avoiding repetition in emails",
+    "Keeping speech fluent"
+   ],
+   "production": [
+    "Do 10 double-pronoun replacements",
+    "Use them at least 5 times in a role-play"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Double pronominalisation.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Double pronominalisation."
+  ]
+ },
+ "indefinitePronouns": {
+  "use": "Talking about some, several, all/none without being specific",
+  "guide": {
+   "title": "Pronoms indéfinis: talking about “some people / several / others”",
+   "why": "The B1 language content includes indefinite pronouns/determiners such as plusieurs, quelques, certains.",
+   "errors": [
+    null,
+    "Using chaque on its own as a pronoun ✗ → chacun."
+   ],
+   "delf": [
+    "Comparing groups in an opinion",
+    "Summarising different people’s views when reading",
+    "Repeating nouns less"
+   ],
+   "production": [
+    "Write 6 opinion sentences with certains/d’autres",
+    "Make sentences with plusieurs/chacun/les deux"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Pronoms indéfinis.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Pronoms indéfinis."
+  ]
+ },
+ "relativesB1": {
+  "use": "Expressing de/prepositional relations in more precise complex sentences",
+  "guide": {
+   "title": "Dont & relatifs composés: making de/prepositional relations clear",
+   "why": "Beyond qui/que/où, the official B1 language content also includes dont and the compound relative pronouns.",
+   "formula": [
+    null,
+    null,
+    null,
+    "Check what the verb/preposition requires first, then choose the relative pronoun."
+   ],
+   "errors": [
+    "Keeping de after dont",
+    "dont with penser à ✗",
+    "Choosing only by person/thing, ignoring the syntax."
+   ],
+   "delf": [
+    "Extending sentences in formal writing",
+    "Understanding long sentences when reading",
+    "Adding detail when speaking"
+   ],
+   "production": [
+    "Merge 8 sentence pairs with de/à/prepositional relations",
+    "Write a 100-word description using dont/auquel"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Dont & relatifs composés.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Dont & relatifs composés."
+  ]
+ },
+ "emphasis": {
+  "use": "Highlighting views and key points with ce qui / ce que / ce dont… c’est",
+  "guide": {
+   "title": "Mise en relief: putting the key point in front",
+   "why": "The B1 language content includes ce qui/ce que/ce dont… c’est, well suited to giving opinions and explaining what matters.",
+   "errors": [
+    "Choosing ce qui/ce que without checking what the clause is missing",
+    "Using a verb without de after ce dont."
+   ],
+   "delf": [
+    "Highlighting the key point in a spoken opinion",
+    "Avoiding monotonous subject–verb sentences in writing",
+    "Clarifying what you really need in an interaction"
+   ],
+   "production": [
+    "Turn 6 plain sentences into emphatic ones",
+    "Do a 1-minute clarification with ce que je veux dire…"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Mise en relief.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Mise en relief."
+  ]
+ },
+ "nominalisation": {
+  "use": "Turning actions into nouns in formal writing to compress and organise information",
+  "guide": {
+   "title": "Nominalisation: the compression tool of formal writing",
+   "why": "The B1 language content includes nominalising verbs. The point is to recognise and use the common forms, not to chase complex written style.",
+   "errors": [
+    "Inventing nouns that don’t exist",
+    "Making sentences incomprehensible for the sake of formality."
+   ],
+   "delf": [
+    "Formal/semi-formal emails",
+    "Understanding notices and administrative texts",
+    "Repeating verbs less"
+   ],
+   "production": [
+    "List 15 common verbs → nouns",
+    "Rewrite 5 sentences with nominalisations"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Nominalisation.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Nominalisation."
+  ]
+ },
+ "logicalB1": {
+  "use": "A complete chain of argument: purpose, concession, cause, result and opposition",
+  "guide": {
+   "title": "Relations logiques B1: purpose, concession, cause, result",
+   "why": "B1 needs more than d’abord/ensuite: you must express why / so / although / in order to precisely.",
+   "errors": [
+    "Mechanically stacking parce que and donc on the same logical relation",
+    null,
+    "Getting the subject/mood wrong after pour que."
+   ],
+   "delf": [
+    "Organising the logic of a 160-word text",
+    "The spoken point de vue",
+    "Explaining reasons and limits in an interaction"
+   ],
+   "production": [
+    "Sort 12 sentences into cause/result/but/concession",
+    "Write an opinion paragraph with 4 kinds of logical relation"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Relations logiques B1.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Relations logiques B1."
+  ]
+ },
+ "superlative": {
+  "use": "Expressing the highest/lowest degree to support comparing and choosing",
+  "guide": {
+   "title": "Superlatif: saying “the most…” within a group",
+   "why": "B1 requires you to compare and choose; the superlatif is a frequent structure in housing, transport and service tasks.",
+   "formula": [
+    null,
+    null,
+    null,
+    null,
+    "Often followed by de + groupe: le plus rapide de tous"
+   ],
+   "contrast": [
+    "plus rapide que… → comparing two",
+    "le plus rapide du groupe → the highest degree within a group"
+   ],
+   "errors": [
+    null,
+    "Forgetting the article défini",
+    "Confusing le mieux and le meilleur."
+   ],
+   "delf": [
+    "Comparing options",
+    "Recommending the best choice",
+    "Reading adverts/reviews"
+   ],
+   "production": [
+    "Compare 3 cities/means of transport with the superlatif",
+    "Write 5 sentences contrasting meilleur/le mieux"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Superlatif.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Superlatif."
+  ]
+ },
+ "adverbsB1": {
+  "use": "Markers of quantity, manner and time: environ, presque, finalement, la veille, le lendemain…",
+  "guide": {
+   "title": "Adverbes & repères B1: making quantity, manner and the timeline precise",
+   "why": "FEI’s B1 content includes environ/presque, adverbs of manner and time markers such as la veille/le lendemain/dès que/d’ici/vers.",
+   "formula": [
+    "Quantity: environ, presque, autant",
+    "Manner: finalement, prudemment, brièvement",
+    "Time: autrefois, récemment, aussitôt",
+    "Time reference: la veille, le lendemain, dès que, d’ici, vers"
+   ],
+   "contrast": [
+    "hier → an absolute past day",
+    "la veille → relative to another past reference point",
+    "demain → the future seen from now",
+    "le lendemain → the day after a point in the story"
+   ],
+   "errors": [
+    "Using la veille / le lendemain with no reference point, scrambling the timeline",
+    "Adding “about” after environ — the same meaning twice."
+   ],
+   "delf": [
+    "Numbers and time details in listening",
+    "Conditions/deadlines in reading",
+    "The timeline of a story"
+   ],
+   "production": [
+    "Tell a two-day trip with 6 time markers",
+    "Write 6 sentences with environ/presque/finalement"
+   ]
+  },
+  "prompts": [
+   "Write 2 sentences about today’s topic using Adverbes & repères B1.",
+   "Rewrite one exercise question as a sentence of your own.",
+   "Speak for 30–60 seconds, making yourself use Adverbes & repères B1."
+  ]
+ },
+ "conditionnelPasse": {
+  "use": "Expressing past regrets and reproaches, hypotheses contrary to past fact, and unconfirmed news",
+  "guide": {
+   "title": "Conditionnel passé: regrets, reproaches, unreal past hypotheses and hearsay",
+   "why": "B1 writing and speaking often call for looking back on an experience, expressing regret or criticising (On aurait dû…) — more natural and more measured than the plain passé composé. At B2, si + plus-que-parfait + conditionnel passé is the core structure of “counterfactual reasoning” in an argument, and in news CE/CO « l’incendie aurait fait… » must be read as “reportedly”, not “will”.",
+   "formula": [
+    "Formation: avoir / être in the conditionnel présent + participe passé: j’aurais fini, elle serait partie, nous nous serions trompés.",
+    "Auxiliary choice and agreement as in the passé composé: être verbs and pronominal verbs agree with the subject (elles seraient arrivées).",
+    "Regret: j’aurais dû / j’aurais aimé / j’aurais préféré + infinitif (= if only I had…).",
+    "Reproach: tu aurais pu / vous auriez dû + infinitif (= you could/should have… but didn’t).",
+    "Unreal past hypothesis: si + plus-que-parfait, conditionnel passé: Si j’avais su, je ne serais pas venu. Also sans + a noun: Sans ton aide, j’aurais échoué.",
+    "Mixed hypothesis: si + plus-que-parfait → conditionnel présent (a past condition, a present result): Si j’avais accepté ce poste, je vivrais à Lyon aujourd’hui.",
+    "Unconfirmed information (news style): selon / d’après… + conditionnel passé: L’accident aurait fait trois blessés."
+   ],
+   "contrast": [
+    "Je voudrais partir. (a present wish) / J’aurais voulu partir. (a past wish that didn’t come true).",
+    "Si j’avais le temps, je viendrais. (a present/future hypothesis) / Si j’avais eu le temps, je serais venu. (past, no longer changeable).",
+    "Tu pourrais m’aider ? (a present request) / Tu aurais pu m’aider ! (a reproach about the past).",
+    "Si j’aurais su ✗ → Si j’avais su ✓: no conditionnel in the si clause.",
+    "L’incendie a fait trois victimes. (confirmed) / L’incendie aurait fait trois victimes. (reportedly, not yet confirmed)."
+   ],
+   "errors": [
+    "Si j’aurais su, je serais venu ✗ → Si j’avais su ✓: no conditionnel of any kind after si.",
+    "J’aurais dû de partir ✗ → J’aurais dû partir ✓: devoir / pouvoir take the infinitive directly.",
+    "Elle aurait parti ✗ → Elle serait partie ✓: auxiliary choice and agreement as in the passé composé.",
+    "Saying “I should have…” as je devrais (present advice) changes the time completely → j’aurais dû ✓.",
+    "Reading « aurait fait » in the news as a future, when it means “reportedly, not yet confirmed”."
+   ],
+   "delf": [
+    "Production écrite (complaint letters, forums): Vous auriez dû nous informer… / J’aurais apprécié une réponse plus rapide… to criticise politely but firmly.",
+    "Production orale: reflect on the past when telling an experience with Si j’avais su…, j’aurais…; argue in the point de vue with Sans cette réforme, la situation aurait été pire.",
+    "CE / CO: in news reports, selon… + conditionnel passé marks unconfirmed information; questions often ask “has this been confirmed?”"
+   ],
+   "production": [
+    "Write 3 regrets (j’aurais dû / aimé / préféré) about choices of study or career.",
+    "Rewrite 3 si + imparfait sentences as si + plus-que-parfait + conditionnel passé, and explain how the meaning changes.",
+    "In a complaint email to a landlord or shop, write 2 reproaches (vous auriez pu / dû) and 1 piece of hearsay (selon…, … aurait…)."
+   ]
+  },
+  "prompts": [
+   "[Work] Write 2 sentences with the conditionnel passé: looking back on a job application or interview, what should you have done?",
+   "[Environment] Write 2 sentences with si + plus-que-parfait + conditionnel passé: if your city had developed public transport ten years ago, how would the last few years have been different?",
+   "[Housing] Write 2 sentences of complaint to a landlord, using vous auriez dû / vous auriez pu to point out what they didn’t do.",
+   "[Health] Write 2 sentences with j’aurais dû / j’aurais mieux fait de, reflecting on your past habits.",
+   "[Digital] Write 2 sentences in news style: a platform has reportedly leaked user data (selon…, … aurait…).",
+   "[Education] Write 2 sentences: if you had learnt another foreign language at secondary school, how would your experience have been different? (si + plus-que-parfait)"
+  ]
+ },
+ "futurAnterieur": {
+  "use": "Actions completed before a point in the future, expected completion, and guesses about the past",
+  "guide": {
+   "title": "Futur antérieur: “done first” in the future",
+   "why": "B1 emails, plans and project descriptions often say “once one thing is done, I’ll do another” (Je vous enverrai le dossier dès que je l’aurai complété) — French needs a future tense here, not the present. B2 planning and argument (D’ici 2030, nous aurons réduit…) relies on this “expected completion” too.",
+   "formula": [
+    "Formation: avoir / être in the futur simple + participe passé: j’aurai fini, elle sera partie, ils se seront inscrits.",
+    "Auxiliary and agreement as in the passé composé: nous serons rentrés, les lettres que j’aurai envoyées.",
+    "Sequence: quand / lorsque / dès que / aussitôt que / une fois que / après que + futur antérieur, with the futur simple or an imperative in the main clause.",
+    "Dès que tu auras fini, tu m’appelleras. → first “finish”, then “call”.",
+    "Expected completion: d’ici + time / avant + time / dans + duration + futur antérieur: D’ici juin, j’aurai passé le DELF.",
+    "A guess about the past (mostly spoken): Il aura oublié ≈ Il a probablement oublié.",
+    "Note: après que takes the indicative (in a future context, the futur antérieur), not the subjunctive."
+   ],
+   "contrast": [
+    "Quand j’aurai fini, je sortirai. (finish first, then go out) / Quand je finirai, je sortirai. (the two actions almost at once).",
+    "Quand j’arrive, je t’appelle. (a habit: every time I arrive) / Quand j’arriverai, je t’appellerai. (one specific future occasion).",
+    "Je partirai quand tu arrives ✗ → quand tu arriveras ✓: French future time clauses don’t use the present (unlike English when you arrive).",
+    "Je finirai à 18 h. (finishing only at 18:00) / J’aurai fini à 18 h. (already finished by 18:00).",
+    "Il a oublié. (certain) / Il aura oublié. (a guess: he must have forgotten)."
+   ],
+   "errors": [
+    "Quand je reçois les résultats demain, je vous écrirai ✗ → Quand j’aurai reçu les résultats, je vous écrirai ✓ (influenced by English “when I get…”).",
+    null,
+    "Elle aura parti ✗ → Elle sera partie ✓: the auxiliary of être verbs.",
+    "Après qu’il soit parti ✗ (subjunctive) → Après qu’il sera parti ✓ (future) / Après qu’il est parti ✓ (past).",
+    "Mixing up the spelling: j’aurai terminé (futur antérieur) ≠ j’aurais terminé (conditionnel passé)."
+   ],
+   "delf": [
+    "Production écrite (formal emails, applications): Je vous transmettrai les documents dès que je les aurai reçus. shows clear time logic.",
+    "Production orale: presenting plans and goals with D’ici un an, j’aurai obtenu… / Une fois que j’aurai terminé mes études, je…",
+    "CE / CO: notices often say « Votre inscription sera confirmée une fois que votre dossier aura été validé » — you need to spot the order of actions."
+   ],
+   "production": [
+    "Write 1 sentence each with dès que / une fois que / quand + futur antérieur, about moving house or starting a job.",
+    "Write 3 personal goals: D’ici + time, j’aurai… .",
+    "Correct 3 wrong “quand + présent” sentences into futur antérieur / futur simple."
+   ]
+  },
+  "prompts": [
+   "[Work] Write 2 sentences with dès que / une fois que + futur antérieur: in your first week in a new job, what will you do once certain steps are done?",
+   "[Education] Write 2 sentences with d’ici + time + futur antérieur: what will you have achieved in French in a year?",
+   "[Housing] Write 2 sentences of an email to an agent: say which documents you must receive before you sign the lease.",
+   "[Environment] Write 2 sentences with d’ici 2035: which environmental goals will your city have reached by then?",
+   "[Digital] Write 2 sentences with quand / après que + futur antérieur: once the new software is installed, how will the team’s way of working change?",
+   "[Health] Write 2 sentences with the futur antérieur expressing a guess: a colleague didn’t come to work today — what might have happened?"
+  ]
+ },
+ "concordance": {
+  "use": "Reporting statements, questions and orders after a past main verb: shifting tenses and time words",
+  "guide": {
+   "title": "Discours rapporté au passé: tense shift and changing time words",
+   "why": "At B1 you can already say « Il dit que… », but when you relate an experience or explain a situation in a letter, the main verb is usually il m’a dit que / on m’a expliqué que, and the tense of the clause must “shift back”. In B2 CE/CO and writing, reporting experts’ views, meetings and notices accurately is a basic requirement.",
+   "formula": [
+    "The trigger: when the reporting verb is in a past tense (a dit, a expliqué, a demandé, disait…), the tense of the clause generally shifts back.",
+    null,
+    null,
+    "futur simple → conditionnel présent; futur proche → aller in the imparfait + infinitif: « Je viendrai / Je vais venir. » → Il a dit qu’il viendrait / qu’il allait venir.",
+    "Unchanged: imparfait, plus-que-parfait and conditionnel stay as they are.",
+    "Indirect questions: yes/no → si; qu’est-ce que → ce que; qu’est-ce qui → ce qui; où / quand / pourquoi stay, with statement word order.",
+    "Orders/advice: impératif → demander / dire / conseiller à qqn de + infinitif: « Rappelez-moi. » → Il m’a demandé de le rappeler.",
+    "Time words: aujourd’hui → ce jour-là; ce matin → ce matin-là / le matin même; demain → le lendemain; hier → la veille; la semaine prochaine → la semaine suivante."
+   ],
+   "contrast": [
+    "Il dit qu’il est fatigué. (present main verb: no change) / Il a dit qu’il était fatigué. (past main verb: shifted).",
+    "Elle m’a dit qu’elle viendrait. (the standard shift) / Elle m’a dit qu’elle viendra demain. (in speech you may keep it if the event is still in the future; in exam writing, shift).",
+    null,
+    "Il m’a dit de partir. (reporting an order) / Il m’a dit que je partais. (reporting a fact — a different meaning)."
+   ],
+   "errors": [
+    null,
+    "Elle a dit qu’elle a fini ✗ → Elle a dit qu’elle avait fini ✓: forgetting passé composé → plus-que-parfait.",
+    null,
+    null,
+    "Not changing the time words: reporting something said a month ago, « Il a dit qu’il viendrait demain » ✗ → le lendemain ✓."
+   ],
+   "delf": [
+    "Production écrite: relating what happened in a complaint or explanation: Votre conseiller m’a assuré que le colis arriverait le lendemain, mais…",
+    "Production orale: relating an experience or someone’s view: Un ami m’a expliqué qu’il avait quitté son travail parce que…",
+    "CE / CO: interviews and reports are full of a déclaré que / a précisé que + imparfait / conditionnel — quickly reconstruct the timing of the original words."
+   ],
+   "production": [
+    "Rewrite a 5-sentence phone conversation as past reported speech, watching tenses and time words.",
+    "Write 1 sentence each with m’a demandé si / ce que / où, in the situation of viewing a flat.",
+    "Rewrite 3 orders (impératif) as Il m’a conseillé / demandé de + infinitif."
+   ]
+  },
+  "prompts": [
+   "[Work] Write 2 sentences with m’a expliqué que / m’a assuré que: report what an interviewer told you last week.",
+   "[Housing] Write 2 sentences of a complaint email: what the agent promised at the time (futur → conditionnel) and didn’t deliver.",
+   "[Health] Write 2 sentences with m’a conseillé de / m’a demandé si: report a doctor’s advice and questions.",
+   "[Shopping] Write 2 sentences: customer service told you on the phone about your parcel; use la veille / le lendemain.",
+   "[Education] Write 2 sentences: report what a teacher asked of you at the start of term (impératif → de + infinitif).",
+   "[Environment] Write 2 sentences: report the environmental measures a mayor announced in an interview (a annoncé que + conditionnel)."
+  ]
+ },
+ "subjonctifB2": {
+  "use": "The conjunctions that take the subjunctive, doubt/possibility, and the past subjunctive",
+  "guide": {
+   "title": "Subjonctif B2: conjunctions, doubt and the past subjunctive",
+   "why": "At B1 you already have il faut que / pour que / bien que. B2 writing and speaking demand more precise conditions, limits, time order and doubt (à condition que, à moins que, il est peu probable que), and the past subjunctive to judge completed events (Je regrette que vous n’ayez pas répondu). Telling il est possible que (subjunctive) from il est probable que (indicative) is a classic test of B2 grammatical accuracy.",
+   "formula": [
+    "Time: avant que + subjonctif (optionally with expletive ne, which is not negative); en attendant que + subjonctif; compare après que + indicatif.",
+    "Condition/limit: à condition que, pourvu que + subjonctif; à moins que (ne) + subjonctif = unless.",
+    "Manner/purpose: sans que, pour que, afin que + subjonctif; with the same subject use avant de, sans, pour, afin de, à condition de, à moins de + infinitif.",
+    "Possibility/doubt: il se peut que, il est possible que, il est peu probable que, douter que, il semble que + subjonctif.",
+    "Certain/very likely: il est probable que, il est certain que, il me semble que, il paraît que, je suis sûr que + indicatif.",
+    "Subjonctif passé: avoir / être in the subjonctif présent + participe passé: que j’aie fini, qu’elle soit partie; the action of the clause is complete.",
+    "Je suis content que tu aies réussi. (already happened) / Je suis content que tu sois là. (at the same time)."
+   ],
+   "contrast": [
+    null,
+    "Il semble qu’il soit absent. (uncertain) / Il me semble qu’il est absent. (a personal judgement, indicatif).",
+    "Je partirai avant que tu arrives. (different subjects) / Je mangerai avant de partir. (same subject, avant de + infinitif).",
+    "Avant qu’il ne parte ✓ (expletive ne, not a negative) / Avant qu’il ne parte pas ✗."
+   ],
+   "errors": [
+    "Il est probable qu’il vienne (not recommended in standard writing) → Il est probable qu’il viendra ✓.",
+    null,
+    "Pour que je réussisse, je travaille ✗ (same subject) → Pour réussir, je travaille ✓.",
+    null,
+    "Reading the expletive ne as a negative: Avant que le magasin ne ferme = before the shop closes (not “doesn’t close”)."
+   ],
+   "delf": [
+    "Production écrite: setting conditions and reservations: J’accepte cette proposition à condition que les horaires soient flexibles. / Je regrette que vous n’ayez pas tenu compte de…",
+    "Production orale (point de vue / interaction): Il se peut que…, mais je doute que… to express caution and doubt — the shades of tone B2 expects.",
+    "CE / CO: recognising à moins que (unless) and sans que (without… -ing) — these conjunctions are frequent traps in comprehension questions."
+   ],
+   "production": [
+    "Write 1 sentence each with à condition que / à moins que / sans que, about a remote-working agreement.",
+    "Write 3 contrasting pairs: il est possible que + subjonctif / il est probable que + indicatif.",
+    "Write 3 sentences with je suis déçu(e) / content(e) / je regrette que + subjonctif passé, judging something that has already happened."
+   ]
+  },
+  "prompts": [
+   "[Work] Write 2 sentences with à condition que and à moins que: your conditions for accepting remote work.",
+   "[Environment] Write 2 sentences with il est possible que / il est peu probable que: assess the prospects of a city banning petrol cars.",
+   "[Housing] Write 2 sentences with avant que and en attendant que: an email to a landlord arranging a time for repairs.",
+   "[Education] Write 2 sentences with je suis content(e) que / je regrette que + subjonctif passé: judge this year’s reform at your child’s school.",
+   "[Digital] Write 2 sentences with sans que and pour que: about social platforms collecting personal data.",
+   "[Health] Write 2 sentences with je doute que and il est probable que: about the claim that a four-day week improves health."
+  ]
+ },
+ "concessionB2": {
+  "use": "Holding your view after admitting an opposing fact; the grammar and register of concession and opposition connectors",
+  "guide": {
+   "title": "Concession et opposition B2: admit first, then hold your position",
+   "why": "In the DELF B1 point de vue and forum/letter writing, « Bien que…, je pense que… » already earns marks; B2 requires varied, grammatically accurate connectors (each takes a different mood or word class) and a clear distinction between concession (although) and opposition (whereas, on the contrary) — directly affecting the marks for cohérence et cohésion and étendue du lexique.",
+   "formula": [
+    "avoir beau + infinitif (same subject; spoken or written): J’ai beau expliquer, il ne comprend pas.",
+    "bien que / quoique + subjonctif (more written, formal): Bien que le projet soit cher, il est utile.",
+    "même si + indicatif (présent / imparfait / plus-que-parfait), never subjonctif or conditionnel: Même si c’est cher, je l’achète; Même s’il pleuvait, je sortirais.",
+    "malgré / en dépit de + a noun: malgré la pluie, en dépit des critiques (en dépit de is more formal).",
+    "alors que / tandis que + indicatif: contrasting two facts (Paul aime la ville, alors que sa femme préfère la campagne); alors que can also carry concession.",
+    "Adverbial links: pourtant, cependant, toutefois, néanmoins (written); il n’empêche que + indicatif (= even so).",
+    "Register: speech favours même si, mais quand même, j’ai beau; written argument favours bien que, toutefois, néanmoins, en dépit de."
+   ],
+   "contrast": [
+    null,
+    "Malgré la pluie ✓ / Malgré qu’il pleuve (heard in speech, avoid in the exam) / Malgré il pleut ✗.",
+    "Il a beau travailler, il échoue. (concession) / Il travaille beaucoup, donc il réussit. (cause and effect).",
+    "Je suis pour, alors que mon frère est contre. (two people contrasted) / Bien que je sois pour, je comprends les critiques. (one person conceding)."
+   ],
+   "errors": [
+    "Bien que + indicatif ✗; même si + subjonctif ✗: these two “althoughs” take opposite moods.",
+    "Malgré + a clause ✗: Malgré il est malade ✗ → Malgré sa maladie / Bien qu’il soit malade ✓.",
+    "J’ai beau de chercher ✗ / Je suis beau chercher ✗ → J’ai beau chercher ✓: conjugated avoir + beau (invariable) + infinitif.",
+    "Il n’empêche pas que ✗ → Il n’empêche que ✓: a fixed expression, no pas, followed by the indicatif.",
+    "Reading alors que only as “when” and missing its contrastive “whereas, while”, which leads to misreadings in CE."
+   ],
+   "delf": [
+    "Production écrite (B1 forum/letter, B2 argumentatif): organise a “concede–rebut” paragraph with Certes…, mais… / Bien que…, il n’empêche que… — a direct gain on cohérence.",
+    "Production orale: in the point de vue, Même si…, je reste convaincu(e) que…; in interaction, J’ai beau…, … to explain what you have already tried.",
+    "CE / CO: spot the turns introduced by pourtant, toutefois, néanmoins, alors que — they often point to the author’s real position."
+   ],
+   "production": [
+    "Write 1 sentence each with bien que / même si / malgré / avoir beau, about remote working.",
+    "Write a four-sentence concession argument with “Certes… mais… / Toutefois… / Il n’empêche que…”.",
+    "Rewrite 5 conversational sentences (même si, mais quand même) in written register (bien que, néanmoins, en dépit de)."
+   ]
+  },
+  "prompts": [
+   "[Environment] Write 2 sentences with bien que and il n’empêche que: electric cars are expensive, but are they worth promoting?",
+   "[Work] Write 2 sentences with avoir beau and pourtant: the difficulties you meet despite trying hard to find a job.",
+   "[Housing] Write 2 sentences with malgré / en dépit de + a noun: assess the housing situation in your city.",
+   "[Digital] Write 2 sentences with même si and toutefois: do social networks do teenagers more good than harm?",
+   "[Shopping] Write 2 sentences with alors que / tandis que: compare shopping online and in shops.",
+   "[Education] Write 2 sentences with quoique and néanmoins (formal register): should university be free?"
+  ]
+ }
+}
