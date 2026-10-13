@@ -1,4 +1,222 @@
 {
+ "canDo": "Can catch numbers, causes, changes, attitudes and implicit comparisons.",
+ "review": "Review cause/contrast connectors as listening cues.",
+ "input": "3 sets of audio on work and social topics.",
+ "output": "For each set: the gist + 3 details + the speaker’s attitude.",
+ "checkpoint": "Sort mistakes into “numbers / negation / attitude / cause and effect”.",
+ "challenge": "Today’s challenge: on TV5MONDE Apprendre’s B1 section, find a video about work or the workplace. Listen twice, then write 1 main idea + 3 details (numbers / causes / changes) + the speaker’s attitude (for / reserved / against); report one opinion each with selon lui… and il affirme que…, using at least 1 indefinite pronoun (chacun, certains, personne).",
+ "items": {
+  "reading": {
+   "R32-4": {
+    "questions": [
+     null,
+     {
+      "why": "« L'obstacle décisif n'est pas toujours technique »: it is often a matter of understanding administrative vocabulary."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L32-1": {
+    "questions": [
+     null,
+     {
+      "why": "He gives two examples: colleagues in other time zones and parents who go back to work at nine in the evening."
+     }
+    ]
+   },
+   "L32-4": {
+    "questions": [
+     null,
+     {
+      "why": "A quarter comes from sector and job; 4–5% is the part that can’t be explained."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V32-01": {
+   "zh": "to rest on, to rely on",
+   "exZh": "A rule that relies on individual goodwill often fails."
+  },
+  "V32-02": {
+   "zh": "to share the assessment (of the situation)",
+   "exZh": "I share the assessment, not the solution."
+  },
+  "V32-03": {
+   "zh": "I admit it",
+   "exZh": "It’s clever, I admit it, but I have one worry."
+  },
+  "V32-04": {
+   "zh": "My fear is that …",
+   "exZh": "My fear is that people will get forty messages all at once."
+  },
+  "V32-05": {
+   "zh": "to resort to, to use",
+   "exZh": "Online retail makes heavy use of short contracts at the end of the year."
+  },
+  "V32-06": {
+   "zh": "a badly framed question",
+   "exZh": "According to the economist, it’s a badly framed question."
+  },
+  "V32-07": {
+   "zh": "I’m not saying that …, I’m saying that …",
+   "exZh": "I’m not saying it’s a disaster; I’m saying the net figure hides a transformation."
+  },
+  "V32-08": {
+   "zh": "to dodge the question",
+   "exZh": "Presenting this figure as an answer is a way of dodging the question."
+  },
+  "V32-09": {
+   "zh": "in spite of oneself",
+   "exZh": "A conversation we understand in spite of ourselves takes up our attention."
+  },
+  "V32-10": {
+   "zh": "it doesn’t come by itself (you have to push)",
+   "exZh": "I had to insist three times: it didn’t come by itself."
+  },
+  "V32-11": {
+   "zh": "a work-study training programme",
+   "exZh": "She got a six-month work-study training programme."
+  },
+  "V32-12": {
+   "zh": "a refusal on principle",
+   "exZh": "It isn’t a refusal on principle: he would gladly train."
+  },
+  "V32-13": {
+   "zh": "to pretend, to go through the motions",
+   "exZh": "It’s a refusal to go through the motions."
+  },
+  "V32-14": {
+   "zh": "in the order of, about",
+   "exZh": "There remains a share of about 4 to 5% that no variable explains."
+  },
+  "V32-15": {
+   "zh": "to separate … from …",
+   "exZh": "He suggests separating sending messages from receiving them."
+  },
+  "V32-16": {
+   "zh": "to set … aside",
+   "exZh": "Controlling for a variable means setting it aside to measure something else."
+  },
+  "V32-17": {
+   "zh": "forgoing medical care",
+   "exZh": "Online consultations reduce the number of people who forgo care for simple reasons."
+  },
+  "V32-18": {
+   "zh": "medical deserts (areas short of doctors)",
+   "exZh": "Online consultations are no answer to medical deserts."
+  },
+  "V32-19": {
+   "zh": "but you still need to …",
+   "exZh": "But you still need a doctor who agrees to take you on."
+  },
+  "V32-20": {
+   "zh": "people conclude from this that …",
+   "exZh": "The noise stays below the limits; people often conclude from this that the problem is imaginary."
+  },
+  "V32-21": {
+   "zh": "to concern X less than Y",
+   "exZh": "The effects concern fatigue more than performance."
+  },
+  "V32-22": {
+   "zh": "to bring … down sharply",
+   "exZh": "Three unhappy customers can bring the rating down by several tenths."
+  },
+  "V32-23": {
+   "zh": "at random",
+   "exZh": "Reviews are not posted at random."
+  },
+  "V32-24": {
+   "zh": "to suit someone perfectly",
+   "exZh": "This hotel may suit a family perfectly."
+  },
+  "V32-25": {
+   "zh": "administrative procedures",
+   "exZh": "Moving administrative procedures online has brought real benefits."
+  },
+  "V32-26": {
+   "zh": "a transitional measure",
+   "exZh": "Keeping a counter open isn’t a transitional measure but a permanent guarantee."
+  },
+  "V32-27": {
+   "zh": "regardless of …",
+   "exZh": "The obstacle lies in the vocabulary, regardless of the medium."
+  },
+  "V32-28": {
+   "zh": "hence …",
+   "exZh": "Hence the main recommendation: keep a staffed counter."
+  },
+  "V32-29": {
+   "zh": "all employees taken together",
+   "exZh": "The raw gap is calculated with all employees taken together."
+  },
+  "V32-30": {
+   "zh": "to be sceptical about …",
+   "exZh": "The second speaker is sceptical about switching off the servers."
+  },
+  "V32-31": {
+   "zh": "to express reservations about …",
+   "exZh": "The employee has reservations about how useful the training is."
+  },
+  "V32-32": {
+   "zh": "to have a nuanced view",
+   "exZh": "The economist has a nuanced view: neither for nor against."
+  },
+  "V32-33": {
+   "zh": "to be called on, to be disturbed",
+   "exZh": "The problem isn’t that people write in the evening, it’s that people get called on in the evening."
+  },
+  "V32-34": {
+   "zh": "I’ll be frank.",
+   "exZh": "I’ll be frank: I don’t miss it."
+  },
+  "V32-35": {
+   "zh": "a missing document",
+   "exZh": "My application is held up because of a missing document."
+  },
+  "V32-36": {
+   "zh": "to submit an application",
+   "exZh": "I’d like to apply for the June training course."
+  },
+  "V32-37": {
+   "zh": "within the deadline",
+   "exZh": "My file won’t be complete within the deadline."
+  },
+  "V32-38": {
+   "zh": "to send … later",
+   "exZh": "Would it be possible to send the certificate later?"
+  },
+  "V32-39": {
+   "zh": "to organise a meeting",
+   "exZh": "I have to hold a meeting with the whole team on Thursday."
+  },
+  "V32-40": {
+   "zh": "the right to disconnect",
+   "exZh": "The right to disconnect protects employees in the evening."
+  },
+  "V32-41": {
+   "zh": "on the outskirts",
+   "exZh": "Jobs disappear in the town centre and reappear on the outskirts."
+  },
+  "V32-42": {
+   "zh": "equal pay",
+   "exZh": "Equal pay for women and men is still a goal."
+  },
+  "V32-43": {
+   "zh": "to work part-time",
+   "exZh": "Many women work part-time."
+  },
+  "V32-44": {
+   "zh": "a short contract",
+   "exZh": "At the end of the year, online retail makes heavy use of short contracts."
+  },
+  "V32-45": {
+   "zh": "to progress in one’s job",
+   "exZh": "Training regularly lets you progress in your job."
+  }
+ },
  "title": "DELF listening II: details and opinions",
  "phase": "DELF skills training"
 }

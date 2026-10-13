@@ -1,4 +1,230 @@
 {
+ "canDo": "Keep your French active, your strategy clear and your confidence up, without bringing in any new system on the last day.",
+ "review": "Look only at your personal error rules, chunks and exam routine.",
+ "input": "Light authentic input: RFI or TV5MONDE, your choice.",
+ "output": "A short writing outline + light speaking; no high-pressure full mock.",
+ "checkpoint": "Can describe the routine for all four papers, your personal top 3 risks and how you will handle them.",
+ "challenge": "Today’s challenge (light, nothing new): listen to a story that interests you in RFI’s « Journal en français facile », retell it aloud in 1 minute and add one sentence of your own view; then look through your personal error rules and chunk list, reading only, not studying. Finally write 3 sentences in French on how you plan to keep learning after the exam (e.g. Chaque matin, j'écouterai dix minutes de RFI.).",
+ "items": {
+  "reading": {
+   "R50-2": {
+    "questions": [
+     {
+      "why": "The exercises with ready-made questions are the TV5MONDE ones."
+     },
+     null,
+     {
+      "why": "The task for the second of the three listenings."
+     }
+    ]
+   },
+   "R50-4": {
+    "questions": [
+     null,
+     {
+      "why": "She still understood everything but couldn’t speak."
+     },
+     {
+      "why": "« j'étais moins bonne en français que la plupart des bénévoles »: it was precisely this situation that led to learning."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L50-4": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "The ending gives this yardstick."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V50-01": {
+   "zh": "to feel ready",
+   "exZh": "Did you feel ready to run meetings in French?"
+  },
+  "V50-02": {
+   "zh": "to dare to …",
+   "exZh": "The real problem was not daring to interrupt."
+  },
+  "V50-03": {
+   "zh": "to find the right words",
+   "exZh": "I thought the problem would be not finding my words."
+  },
+  "V50-04": {
+   "zh": "to hold / run a meeting",
+   "exZh": "With these three sentences, I can run an hour-long meeting."
+  },
+  "V50-05": {
+   "zh": "to let … go by",
+   "exZh": "The radio teaches you to let go of what you didn’t catch."
+  },
+  "V50-06": {
+   "zh": "live",
+   "exZh": "I listen to the news live every morning."
+  },
+  "V50-07": {
+   "zh": "to escape someone, to be missed",
+   "exZh": "Only listen again to the passages you missed."
+  },
+  "V50-08": {
+   "zh": "to consolidate one’s level",
+   "exZh": "This daily news bulletin is ideal for consolidating a B1 level."
+  },
+  "V50-09": {
+   "zh": "to give the feeling of …",
+   "exZh": "Listening while you cook gives you the feeling that you’re working."
+  },
+  "V50-10": {
+   "zh": "without thinking about it",
+   "exZh": "A B2 candidate uses pronouns without thinking about it."
+  },
+  "V50-11": {
+   "zh": "from day one",
+   "exZh": "I should have spoken from day one."
+  },
+  "V50-12": {
+   "zh": "to do things differently",
+   "exZh": "If you had to do it again, would you do things differently?"
+  },
+  "V50-13": {
+   "zh": "to lose one’s automatic reflexes",
+   "exZh": "After three months without speaking, you lose your reflexes, not your knowledge."
+  },
+  "V50-14": {
+   "zh": "to move up a level",
+   "exZh": "To move up a level, you first need to practise regularly."
+  },
+  "V50-15": {
+   "zh": "to offer one’s help to someone",
+   "exZh": "I offered my help to a neighbourhood association."
+  },
+  "V50-16": {
+   "zh": "to manage to …",
+   "exZh": "And what if I can’t sleep?"
+  },
+  "V50-17": {
+   "zh": "I suggest we …",
+   "exZh": "I suggest we keep this point for the end."
+  },
+  "V50-18": {
+   "zh": "can we go back to …?",
+   "exZh": "Can we go back to the original question?"
+  },
+  "V50-19": {
+   "zh": "let me rephrase to make sure I’ve understood",
+   "exZh": "Let me rephrase to make sure I’ve understood: I have to come back on Monday?"
+  },
+  "V50-20": {
+   "zh": "as for …, as regards …",
+   "exZh": "As for the refund, I’m waiting for your reply."
+  },
+  "V50-21": {
+   "zh": "it is essential to …",
+   "exZh": "It is essential to practise the language every week."
+  },
+  "V50-22": {
+   "zh": "to measure one’s progress by …",
+   "exZh": "Measure your progress by the number of situations you handle without preparing."
+  },
+  "V50-23": {
+   "zh": "on the whole",
+   "exZh": "On the whole, this programme helped me a lot."
+  },
+  "V50-24": {
+   "zh": "what makes me hesitate is …",
+   "exZh": "What makes me hesitate is the price of the second option."
+  },
+  "V50-25": {
+   "zh": "in the meantime",
+   "exZh": "In the meantime, could you lend me a device?"
+  },
+  "V50-26": {
+   "zh": "I would prefer to …",
+   "exZh": "I would prefer a credit note rather than a refund."
+  },
+  "V50-27": {
+   "zh": "by way of conclusion",
+   "exZh": "By way of conclusion, I’d say regularity matters more than intensity."
+  },
+  "V50-28": {
+   "zh": "to own …, to stand by …",
+   "exZh": "It’s an emotional kind of revision, and I own that."
+  },
+  "V50-29": {
+   "zh": "to put oneself to the test",
+   "exZh": "You stay in the language without putting yourself to the test."
+  },
+  "V50-30": {
+   "zh": "to get one’s things ready",
+   "exZh": "The night before, get your things ready: documents, route, alarm."
+  },
+  "V50-31": {
+   "zh": "to fit in one sentence",
+   "exZh": "The most useful rule fits in one sentence."
+  },
+  "V50-32": {
+   "zh": "close to zero",
+   "exZh": "The effect of distracted listening is close to zero."
+  },
+  "V50-33": {
+   "zh": "however … it may be",
+   "exZh": "Keep a weekly session, however short it may be."
+  },
+  "V50-34": {
+   "zh": "to have the basics (in …)",
+   "exZh": "I waited until I had the basics before speaking."
+  },
+  "V50-35": {
+   "zh": "to refute an argument",
+   "exZh": "At B2, you must be able to refute an argument without announcing it."
+  },
+  "V50-36": {
+   "zh": "to read between the lines",
+   "exZh": "A B2 text makes you read between the lines."
+  },
+  "V50-37": {
+   "zh": "to give a false idea of …",
+   "exZh": "This kind of testimony gives a false idea of the progress possible."
+  },
+  "V50-38": {
+   "zh": "to have … behind one",
+   "exZh": "Today I have four years of use behind me."
+  },
+  "V50-39": {
+   "zh": "out of passion",
+   "exZh": "You don’t have to learn a language out of passion."
+  },
+  "V50-40": {
+   "zh": "to pause …",
+   "exZh": "You can pause a podcast; you can’t pause the radio."
+  },
+  "V50-41": {
+   "zh": "to interrupt someone",
+   "exZh": "It’s hard to interrupt a colleague politely."
+  },
+  "V50-42": {
+   "zh": "to reassure oneself",
+   "exZh": "I reread my cards not to learn but to reassure myself."
+  },
+  "V50-43": {
+   "zh": "to pass an exam",
+   "exZh": "I hope to pass the exam first time."
+  },
+  "V50-44": {
+   "zh": "an audio document",
+   "exZh": "I can follow an audio document on a familiar topic."
+  },
+  "V50-45": {
+   "zh": "to keep up one’s French",
+   "exZh": "To keep up my French, I listen to the radio every morning."
+  }
+ },
  "title": "Steady before the exam, and what comes next",
  "phase": "Mock exams and repair"
 }

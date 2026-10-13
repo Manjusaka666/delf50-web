@@ -1,4 +1,230 @@
 {
+ "canDo": "Can write a linear but complete opinion essay: position, two reasons, an example, a concession, a conclusion.",
+ "review": "Review connectors, comparison, cause and effect.",
+ "input": "Read a short prompt text and extract only the topic.",
+ "output": "A ≥160-word opinion essay in 45 minutes.",
+ "checkpoint": "At least 2 body paragraphs; the conclusion brings in no new argument.",
+ "challenge": "Today’s challenge: find a controversial social issue in RFI’s « Journal en français facile » or TV5MONDE Apprendre B1 (e.g. Sunday shop opening, office dress codes) and write a ≥160-word opinion essay in 45 minutes: position + two reasons + one concrete example + a concession + a conclusion; use the subjunctive at least 2 times (il faut que, bien que, je souhaite que), then count the words and underline every connector.",
+ "items": {
+  "reading": {
+   "R36-1": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "54% versus 39%, and « Les réponses varient fortement selon la situation professionnelle »."
+     }
+    ]
+   },
+   "R36-3": {
+    "questions": [
+     {
+      "why": "The mechanism given is that crowding spreads disease between birds and concentrates droppings."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L36-1": {
+    "questions": [
+     {
+      "why": "« Au début j'étais contre, je ne vais pas le cacher »; the change came from the park-and-ride and the shuttle."
+     }
+    ]
+   },
+   "L36-3": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "The text gives exactly this combination of three elements."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V36-01": {
+   "zh": "It seems to me that …",
+   "exZh": "It seems to me that the four-and-a-half-day week better respects children’s rhythms."
+  },
+  "V36-02": {
+   "zh": "firstly, in the first place (written)",
+   "exZh": "Firstly, pupils concentrate better in the morning."
+  },
+  "V36-03": {
+   "zh": "what is more",
+   "exZh": "These consoles would take up a third of the room; what is more, the facility is already full."
+  },
+  "V36-04": {
+   "zh": "moreover, in addition",
+   "exZh": "Moreover, the grant doesn’t cover running costs."
+  },
+  "V36-05": {
+   "zh": "to make a concession",
+   "exZh": "Start by making a concession: acknowledge what is solid in the other side’s view."
+  },
+  "V36-06": {
+   "zh": "insofar as, given that",
+   "exZh": "I have reservations, given that the youth area is already full."
+  },
+  "V36-07": {
+   "zh": "one has to admit that …",
+   "exZh": "One has to admit that such bans are rarely enforced."
+  },
+  "V36-08": {
+   "zh": "nonetheless, the fact remains that …",
+   "exZh": "The risk is small; nonetheless, it exists."
+  },
+  "V36-09": {
+   "zh": "consequently, from then on",
+   "exZh": "The grant doesn’t cover running costs; consequently, the town will have to pay every year."
+  },
+  "V36-10": {
+   "zh": "to conclude",
+   "exZh": "To conclude, I recommend a solution that is both realistic and inexpensive."
+  },
+  "V36-11": {
+   "zh": "I am convinced that …",
+   "exZh": "I am convinced that video games belong in the media library."
+  },
+  "V36-12": {
+   "zh": "an opposing argument",
+   "exZh": "In your letter to the mayor, take an opposing argument into account."
+  },
+  "V36-13": {
+   "zh": "to draw on, to rely on …",
+   "exZh": "Draw on at least two points from the file."
+  },
+  "V36-14": {
+   "zh": "to give a ruling on, to decide on …",
+   "exZh": "The town must decide on how the school week is organised."
+  },
+  "V36-15": {
+   "zh": "it would be dishonest to …",
+   "exZh": "It would be dishonest to claim that research has settled the question."
+  },
+  "V36-16": {
+   "zh": "on an unchanged budget",
+   "exZh": "On an unchanged budget, homework help would have to be dropped."
+  },
+  "V36-17": {
+   "zh": "in the same way as, just as much as",
+   "exZh": "Video games belong in the collections just as much as cinema does."
+  },
+  "V36-18": {
+   "zh": "to challenge the legitimacy of …",
+   "exZh": "The librarians don’t challenge the cultural legitimacy of games."
+  },
+  "V36-19": {
+   "zh": "to admit that …",
+   "exZh": "The association disputes these data but admits that it is less effective."
+  },
+  "V36-20": {
+   "zh": "with data to back it up",
+   "exZh": "The association disputes this argument, with data to back it up."
+  },
+  "V36-21": {
+   "zh": "to encourage, to promote",
+   "exZh": "Feeding crowds birds together, which encourages the spread of disease."
+  },
+  "V36-22": {
+   "zh": "on its own",
+   "exZh": "One case proves nothing on its own."
+  },
+  "V36-23": {
+   "zh": "to have the opposite effect",
+   "exZh": "Piling up arguments has the opposite effect."
+  },
+  "V36-24": {
+   "zh": "to give the impression of …",
+   "exZh": "This structure gives the impression of a rich text."
+  },
+  "V36-25": {
+   "zh": "to disagree, not to be of the same opinion",
+   "exZh": "Your neighbour doesn’t agree."
+  },
+  "V36-26": {
+   "zh": "to have one’s reasons",
+   "exZh": "He’s against it, and he has his reasons."
+  },
+  "V36-27": {
+   "zh": "I won’t hide it.",
+   "exZh": "At first I was against it, I won’t hide it."
+  },
+  "V36-28": {
+   "zh": "he only has to … (often dismissive)",
+   "exZh": "I find it unfair that people tell him he just has to adapt."
+  },
+  "V36-29": {
+   "zh": "to be rather in favour",
+   "exZh": "This may surprise you: I’m rather in favour."
+  },
+  "V36-30": {
+   "zh": "to see a drawback in …",
+   "exZh": "You don’t see any drawback?"
+  },
+  "V36-31": {
+   "zh": "to get round a rule",
+   "exZh": "If the text is too detailed, people will get round the rule."
+  },
+  "V36-32": {
+   "zh": "knowingly, with full knowledge of the facts",
+   "exZh": "A small risk is something you can accept with full knowledge of the facts."
+  },
+  "V36-33": {
+   "zh": "to inspire confidence",
+   "exZh": "A risk presented as zero doesn’t inspire confidence."
+  },
+  "V36-34": {
+   "zh": "to pay for it (colloquial)",
+   "exZh": "Anyone who refuses three times in a row pays for it in their schedule."
+  },
+  "V36-35": {
+   "zh": "in practice",
+   "exZh": "In practice, anyone who refuses too often is penalised in their schedule."
+  },
+  "V36-36": {
+   "zh": "that suits me",
+   "exZh": "I get a day off during the week, and that suits me."
+  },
+  "V36-37": {
+   "zh": "to answer an opposing argument",
+   "exZh": "In your text, answer an opposing argument."
+  },
+  "V36-38": {
+   "zh": "to anticipate an objection",
+   "exZh": "Conceding a point at the start lets you anticipate an objection."
+  },
+  "V36-39": {
+   "zh": "the pedestrian street",
+   "exZh": "For two years, the pedestrian street has drawn more people out for a stroll."
+  },
+  "V36-40": {
+   "zh": "the school timetable (school rhythms)",
+   "exZh": "The debate on the school timetable comes back every year."
+  },
+  "V36-41": {
+   "zh": "Sunday work",
+   "exZh": "Sunday work is better paid in this shop."
+  },
+  "V36-42": {
+   "zh": "a dress code",
+   "exZh": "The management wants to impose a written dress code."
+  },
+  "V36-43": {
+   "zh": "in anonymous form",
+   "exZh": "Patients are invited to share their health data in anonymous form."
+  },
+  "V36-44": {
+   "zh": "to defuse an objection",
+   "exZh": "Conceding a point at the start defuses the objection before it is raised."
+  },
+  "V36-45": {
+   "zh": "a debate about society",
+   "exZh": "Sunday working is a long-standing social debate."
+  }
+ },
  "title": "DELF writing II: opinion",
  "phase": "DELF skills training"
 }

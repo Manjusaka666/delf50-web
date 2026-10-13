@@ -1,4 +1,215 @@
 {
+ "canDo": "Can take the initiative in a 3–4-minute interaction: explain, answer objections and find a solution.",
+ "review": "Review the conditionnel, negation and questions.",
+ "input": "2–3 role cards.",
+ "output": "Record each round; in the second round, the other person changes attitude.",
+ "checkpoint": "Must include an active opening, at least 1 answer to an objection and an alternative solution.",
+ "challenge": "Today’s challenge: find a “negotiating / problem-solving” dialogue on TV5MONDE Apprendre B1 or RFI and pick out 3 polite requests (e.g. Est-ce que vous pourriez… / Si c'était possible, j'aimerais…); then do a 3-minute role-play with a friend or your phone: returning an item bought online, using at least 1 si + imparfait → conditionnel and 1 double object pronoun (je vous le renvoie, vous me les remboursez).",
+ "items": {
+  "reading": {
+   "R38-2": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "Examples: cutting down trees vs leaves blocking gutters and winter light."
+     }
+    ]
+   },
+   "R38-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "The ending quotes her own words."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V38-01": {
+   "zh": "I’m well aware that …",
+   "exZh": "I’m well aware that the budget is limited, but the situation has changed."
+  },
+  "V38-02": {
+   "zh": "That’s exactly what worries me.",
+   "exZh": "— It’s going well, isn’t it? — That’s exactly what worries me: I’m passing on my mistakes too."
+  },
+  "V38-03": {
+   "zh": "Let me stop you there. (polite correction)",
+   "exZh": "Let me stop you there, politely: the page said “300 m from the beach”."
+  },
+  "V38-04": {
+   "zh": "a gesture in return",
+   "exZh": "People often give way hoping for a gesture in return, which almost never comes."
+  },
+  "V38-05": {
+   "zh": "to name a limit",
+   "exZh": "Naming a real limit makes the rest of the negotiation credible."
+  },
+  "V38-06": {
+   "zh": "On this point, I can’t go any further.",
+   "exZh": "I’ll lower the price by 10%, but on this point I can’t go any further."
+  },
+  "V38-07": {
+   "zh": "to lose face",
+   "exZh": "The more you defend your position, the harder it is to move without losing face."
+  },
+  "V38-08": {
+   "zh": "to be ready to …",
+   "exZh": "Work out in advance what you are ready to give up."
+  },
+  "V38-09": {
+   "zh": "to reach an agreement",
+   "exZh": "About 60% of mediations end in a written agreement."
+  },
+  "V38-10": {
+   "zh": "to see … through to the end",
+   "exZh": "Everyone must be able to finish what they are saying."
+  },
+  "V38-11": {
+   "zh": "to settle a dispute (by deciding)",
+   "exZh": "A mediator doesn’t settle the dispute: they organise the dialogue."
+  },
+  "V38-12": {
+   "zh": "the agenda",
+   "exZh": "The agenda no longer covered the location."
+  },
+  "V38-13": {
+   "zh": "to point out that …",
+   "exZh": "A young man pointed out that the noise after nine at night had nothing to do with them."
+  },
+  "V38-14": {
+   "zh": "It’s kind of you to …",
+   "exZh": "It’s kind of you to invite me, but I can’t come on Saturday."
+  },
+  "V38-15": {
+   "zh": "I’d be glad if …",
+   "exZh": "I’d be glad if we could meet another time."
+  },
+  "V38-16": {
+   "zh": "to talk about … again",
+   "exZh": "I wanted us to talk about the bills again: the way they’re split seems unfair to me."
+  },
+  "V38-17": {
+   "zh": "Go ahead, I’m listening.",
+   "exZh": "— I’d like us to change how we split things. — Go ahead, I’m listening."
+  },
+  "V38-18": {
+   "zh": "Thank you for listening to me.",
+   "exZh": "It’ll be done tonight. Thank you for hearing me out twice."
+  },
+  "V38-19": {
+   "zh": "a partial refund",
+   "exZh": "I don’t want a voucher: I’m asking for a partial refund."
+  },
+  "V38-20": {
+   "zh": "within what time frame?",
+   "exZh": "Who can decide, and how soon?"
+  },
+  "V38-21": {
+   "zh": "a voucher, a gift card",
+   "exZh": "The sales assistant offers me a 150-euro voucher."
+  },
+  "V38-22": {
+   "zh": "in proportion to …",
+   "exZh": "Energy and water are adjusted in proportion to the nights spent there."
+  },
+  "V38-23": {
+   "zh": "agreed in principle",
+   "exZh": "Agreed in principle, but the rent stays the same."
+  },
+  "V38-24": {
+   "zh": "That seems reasonable to me.",
+   "exZh": "Keep the rent split in thirds? That seems reasonable to me."
+  },
+  "V38-25": {
+   "zh": "to drop it, to let it go",
+   "exZh": "If the difference is ten euros, let’s drop it."
+  },
+  "V38-26": {
+   "zh": "to ask for a second opinion",
+   "exZh": "I’d like a second opinion before deciding."
+  },
+  "V38-27": {
+   "zh": "to be fully entitled to …",
+   "exZh": "You are fully entitled to see another doctor."
+  },
+  "V38-28": {
+   "zh": "I wouldn’t have thought of that.",
+   "exZh": "Go to another hospital? I wouldn’t have thought of that."
+  },
+  "V38-29": {
+   "zh": "to offend someone",
+   "exZh": "How can you ask for a second opinion without offending your doctor?"
+  },
+  "V38-30": {
+   "zh": "Sorry to bother you.",
+   "exZh": "Sorry to bother you, I have a problem with my order."
+  },
+  "V38-31": {
+   "zh": "Would there be any way to …?",
+   "exZh": "Would there be any way to deliver the right model this week?"
+  },
+  "V38-32": {
+   "zh": "to make an effort, to meet someone halfway",
+   "exZh": "If you make an effort on the delivery time, I’ll agree to wait."
+  },
+  "V38-33": {
+   "zh": "to split the difference",
+   "exZh": "I suggest we split the difference: you pay half the costs."
+  },
+  "V38-34": {
+   "zh": "That works for me.",
+   "exZh": "Delivery on Tuesday morning? That works for me."
+  },
+  "V38-35": {
+   "zh": "to ask to speak to the manager",
+   "exZh": "Since you can’t decide, I’m asking to speak to the manager."
+  },
+  "V38-36": {
+   "zh": "a polite refusal",
+   "exZh": "A polite refusal has three parts: acknowledgement, the refusal itself and an opening."
+  },
+  "V38-37": {
+   "zh": "What would make you say yes?",
+   "exZh": "You’re turning down my proposal; what would make you say yes?"
+  },
+  "V38-38": {
+   "zh": "after-sales service",
+   "exZh": "I contacted after-sales service about the repair."
+  },
+  "V38-39": {
+   "zh": "to exchange an item",
+   "exZh": "You can exchange an item within thirty days."
+  },
+  "V38-40": {
+   "zh": "to take a screenshot",
+   "exZh": "I took a screenshot of the page when I booked."
+  },
+  "V38-41": {
+   "zh": "the till receipt",
+   "exZh": "Keep the receipt if you want to exchange the product."
+  },
+  "V38-42": {
+   "zh": "to arouse suspicion",
+   "exZh": "An overlong explanation arouses suspicion: the more you justify, the less you’re believed."
+  },
+  "V38-43": {
+   "zh": "to suggest an alternative",
+   "exZh": "If the first solution doesn’t suit, suggest an alternative."
+  },
+  "V38-44": {
+   "zh": "an acceptable compromise",
+   "exZh": "We finally found a compromise acceptable to everyone."
+  },
+  "V38-45": {
+   "zh": "a concession given for nothing",
+   "exZh": "A concession given for nothing is taken for granted."
+  }
+ },
  "title": "DELF speaking II: interaction",
  "phase": "DELF skills training"
 }

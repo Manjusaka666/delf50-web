@@ -1,4 +1,214 @@
 {
+ "canDo": "Can write a complaint or request of ≥160 words with a clear purpose in 45 minutes.",
+ "review": "Review past tenses, the conditionnel and politeness.",
+ "input": "Analyse the task statement; don’t copy templates.",
+ "output": "10 minutes planning → 30 minutes writing → 5 minutes checking.",
+ "checkpoint": "Self-check on five criteria: task completion, coherence, register, vocabulary, morphosyntax.",
+ "challenge": "Today’s challenge: write a real complaint at DELF writing pace. Pick a small problem you ran into recently (a delivery, a takeaway order, a repair in your accommodation…): 10 minutes for an outline, 30 minutes to write a French complaint email of ≥160 words, 5 minutes to check it against the list; use at least 1 passive, 1 nominalisation (la livraison, le remboursement…) and 1 il faut que / je demande que + subjunctive.",
+ "items": {
+  "reading": {
+   "R35-2": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "He thinks the problem only comes from two bikes that were abandoned long ago."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L35-2": {
+    "questions": [
+     {
+      "why": "The length of the works stays the same; they just start and finish earlier."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V35-01": {
+   "zh": "to draw someone’s attention to …",
+   "exZh": "I would like to draw your attention to the closure of the station ticket office."
+  },
+  "V35-02": {
+   "zh": "I would be grateful if you would …",
+   "exZh": "I would be grateful if you would keep the advice desk open in the mornings."
+  },
+  "V35-03": {
+   "zh": "repeatedly, on several occasions",
+   "exZh": "I have reported this problem on several occasions, without result."
+  },
+  "V35-04": {
+   "zh": "I note with regret that …",
+   "exZh": "I note with regret that my request of 3 March has not been dealt with."
+  },
+  "V35-05": {
+   "zh": "compensation",
+   "exZh": "I am asking you for compensation for the costs I had to incur."
+  },
+  "V35-06": {
+   "zh": "to obtain a refund",
+   "exZh": "I would like a refund of my membership."
+  },
+  "V35-07": {
+   "zh": "as soon as possible",
+   "exZh": "Thank you for resolving this problem as soon as possible."
+  },
+  "V35-08": {
+   "zh": "to set out one’s situation",
+   "exZh": "In the first paragraph, set out your situation in a few sentences."
+  },
+  "V35-09": {
+   "zh": "Yours faithfully (formal letter ending)",
+   "exZh": "I remain at your disposal. Yours faithfully."
+  },
+  "V35-10": {
+   "zh": "I find myself obliged to …",
+   "exZh": "If I receive no reply, I will be obliged to refer the matter to a consumer association."
+  },
+  "V35-11": {
+   "zh": "to make a request",
+   "exZh": "Your letter must make a precise, realistic request."
+  },
+  "V35-12": {
+   "zh": "exactly as it is (unchanged)",
+   "exZh": "We are not asking for the ticket office to be kept exactly as it is."
+  },
+  "V35-13": {
+   "zh": "to prove nothing",
+   "exZh": "The figure of 82% is correct, and it proves nothing."
+  },
+  "V35-14": {
+   "zh": "to be no longer sustainable",
+   "exZh": "Keeping a full-time ticket office is no longer sustainable."
+  },
+  "V35-15": {
+   "zh": "to stop …-ing",
+   "exZh": "Fourteen people have stopped taking the train."
+  },
+  "V35-16": {
+   "zh": "to no effect",
+   "exZh": "A reminder of the rules was put up in January, to no effect."
+  },
+  "V35-17": {
+   "zh": "to ask for … to be kept",
+   "exZh": "Passengers are asking for the station ticket office to be kept."
+  },
+  "V35-18": {
+   "zh": "to argue that …",
+   "exZh": "Two co-owners are asking for a shelter, arguing that a bike deteriorates in the rain."
+  },
+  "V35-19": {
+   "zh": "to amount to …",
+   "exZh": "The quote for a shelter amounts to €4900."
+  },
+  "V35-20": {
+   "zh": "to be cluttered, to be obstructed",
+   "exZh": "The hall is cluttered: the passage is narrowed to less than a metre."
+  },
+  "V35-21": {
+   "zh": "in the open air",
+   "exZh": "The proposal is to install six bike racks in the courtyard, in the open air."
+  },
+  "V35-22": {
+   "zh": "as it stands",
+   "exZh": "Three co-owners support the resolution as it stands."
+  },
+  "V35-23": {
+   "zh": "to submit … for someone’s opinion",
+   "exZh": "Two options are submitted for your opinion."
+  },
+  "V35-24": {
+   "zh": "to answer the task",
+   "exZh": "Above all, you must answer the task."
+  },
+  "V35-25": {
+   "zh": "to get straight to the point",
+   "exZh": "Don’t write a general introduction: get straight to the point."
+  },
+  "V35-26": {
+   "zh": "not to be combinable (it’s one or the other)",
+   "exZh": "The two options can’t be combined: you have to choose."
+  },
+  "V35-27": {
+   "zh": "to get carried away by …",
+   "exZh": "Good candidates get carried away by an idea."
+  },
+  "V35-28": {
+   "zh": "to hinder understanding",
+   "exZh": "We look at whether the mistakes hinder understanding."
+  },
+  "V35-29": {
+   "zh": "to be offered …",
+   "exZh": "Permit holders will be offered a space in the next street."
+  },
+  "V35-30": {
+   "zh": "at no extra cost",
+   "exZh": "They will be offered a space at no extra cost."
+  },
+  "V35-31": {
+   "zh": "to let (someone) know one’s opinion",
+   "exZh": "Please let me know your opinion before 20 March."
+  },
+  "V35-32": {
+   "zh": "the wrong way round, with the opposite meaning",
+   "exZh": "Many candidates use connectors with the opposite meaning."
+  },
+  "V35-33": {
+   "zh": "to make a bad impression",
+   "exZh": "A register that slips makes a bad impression."
+  },
+  "V35-34": {
+   "zh": "to manage one’s time",
+   "exZh": "The candidate didn’t conclude because they managed their time badly."
+  },
+  "V35-35": {
+   "zh": "to stick to it",
+   "exZh": "I make a three-line plan and I stick to it."
+  },
+  "V35-36": {
+   "zh": "to take a long time to …",
+   "exZh": "It took me a long time to accept it."
+  },
+  "V35-37": {
+   "zh": "night-time disturbance (noise)",
+   "exZh": "After ten in the evening, this repeated noise counts as a night-time disturbance."
+  },
+  "V35-38": {
+   "zh": "at one’s own expense",
+   "exZh": "The landlord refuses to pay: do I have to replace the lock at my own expense?"
+  },
+  "V35-39": {
+   "zh": "facade renovation",
+   "exZh": "The property manager announces that the facade renovation will start on 3 April."
+  },
+  "V35-40": {
+   "zh": "to go unanswered",
+   "exZh": "Both my emails went unanswered."
+  },
+  "V35-41": {
+   "zh": "to get a store credit",
+   "exZh": "The shop doesn’t give refunds, but I got a store credit valid for six months."
+  },
+  "V35-42": {
+   "zh": "the legal guarantee",
+   "exZh": "An appliance that breaks down after eight months is covered by the legal guarantee of conformity."
+  },
+  "V35-43": {
+   "zh": "please find attached …",
+   "exZh": "Please find attached a copy of my invoice."
+  },
+  "V35-44": {
+   "zh": "to be out of order, to have broken down",
+   "exZh": "The lift has been out of order for three weeks."
+  },
+  "V35-45": {
+   "zh": "a faulty product",
+   "exZh": "I received a faulty product and I’d like to exchange it."
+  }
+ },
  "title": "DELF writing I: requests/complaints",
  "phase": "DELF skills training"
 }

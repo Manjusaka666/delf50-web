@@ -1,4 +1,254 @@
 {
+ "canDo": "Can locate conditions, people concerned, times and restrictions under time pressure.",
+ "review": "Review scanning and elimination.",
+ "input": "3 practical texts in different formats.",
+ "output": "A 2-sentence summary of each, with the evidence sentences marked.",
+ "checkpoint": "After the objective questions, can point to where the evidence is in the text.",
+ "challenge": "Today’s challenge: find a real practical text in French (e.g. SNCF travel rules, car-hire terms or an annonce from TV5MONDE Apprendre B1). Scan it in a 5-minute time limit, find one each of “who it concerns, when, conditions, restrictions” and underline the evidence sentences; then write 3 sentences reporting these rules with qui / où / dont and one negative structure (ne… aucun, ne… que).",
+ "items": {
+  "reading": {
+   "R33-1": {
+    "questions": [
+     {
+      "why": "« aucun retard n'est admis pour les épreuves collectives »; thirty minutes is how early you must arrive."
+     }
+    ]
+   },
+   "R33-3": {
+    "questions": [
+     {
+      "why": "« sept nuits consécutives » is the limit for consecutive nights; ten nights is over it."
+     },
+     null,
+     {
+      "why": "Both conditions must be met at the same time."
+     }
+    ]
+   },
+   "R33-4": {
+    "questions": [
+     {
+      "why": "The foods the text lists for the coldest zone include opened cooked meats."
+     },
+     null,
+     {
+      "why": "But it also must not stay at room temperature for more than two hours, so it has to be cooled quickly first."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L33-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "What is given is an identity document and the parcel number."
+     }
+    ]
+   },
+   "L33-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "Because it moved to the teaching pool and places are limited, you must book online 48 hours ahead."
+     }
+    ]
+   },
+   "L33-4": {
+    "questions": [
+     {
+      "why": "120 euros were already used fourteen months ago, leaving 180 euros."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V33-01": {
+   "zh": "a valid identity document",
+   "exZh": "Bring a valid identity document with a photo."
+  },
+  "V33-02": {
+   "zh": "to be tolerated, to be allowed",
+   "exZh": "Being less than ten minutes late may be tolerated for the individual oral exam."
+  },
+  "V33-03": {
+   "zh": "whatever …",
+   "exZh": "Missing fuel is charged for, whatever the amount."
+  },
+  "V33-04": {
+   "zh": "in case of …",
+   "exZh": "In case of damage, the excess is €1200."
+  },
+  "V33-05": {
+   "zh": "to be payable by someone",
+   "exZh": "Damage to the windscreen is entirely payable by you."
+  },
+  "V33-06": {
+   "zh": "to cover (a cost)",
+   "exZh": "Your policy covers the frames up to 100 euros."
+  },
+  "V33-07": {
+   "zh": "up to (a sum)",
+   "exZh": "The frames are reimbursed up to a maximum of 100 euros."
+  },
+  "V33-08": {
+   "zh": "to be returned to the sender",
+   "exZh": "After this deadline, the parcel is returned to the sender."
+  },
+  "V33-09": {
+   "zh": "to collect a parcel",
+   "exZh": "Bring an identity document to collect your parcel."
+  },
+  "V33-10": {
+   "zh": "with … (on you)",
+   "exZh": "Go to the branch with your parcel number."
+  },
+  "V33-11": {
+   "zh": "working days",
+   "exZh": "The branch keeps the parcel for ten working days."
+  },
+  "V33-12": {
+   "zh": "in no case, under no circumstances",
+   "exZh": "These options do not cover tyre damage under any circumstances."
+  },
+  "V33-13": {
+   "zh": "beyond …",
+   "exZh": "Beyond three hours late, a full day must be paid."
+  },
+  "V33-14": {
+   "zh": "failing that, otherwise",
+   "exZh": "The vehicle must be returned with a full tank. Otherwise, fuel is charged for."
+  },
+  "V33-15": {
+   "zh": "to entitle (someone) to …",
+   "exZh": "A four-day rental entitles you to 1 000 km."
+  },
+  "V33-16": {
+   "zh": "the current rate",
+   "exZh": "Missing fuel is charged at the current rate."
+  },
+  "V33-17": {
+   "zh": "subject to …",
+   "exZh": "Having a guest stay is allowed, subject to declaring it in advance."
+  },
+  "V33-18": {
+   "zh": "free of charge",
+   "exZh": "Any subletting, even free of charge, is prohibited."
+  },
+  "V33-19": {
+   "zh": "to lead to termination of the contract",
+   "exZh": "Subletting leads to termination of the contract without notice."
+  },
+  "V33-20": {
+   "zh": "to be reduced to …",
+   "exZh": "The notice period is one month, reduced to eight days in case of a job transfer."
+  },
+  "V33-21": {
+   "zh": "after deduction of …",
+   "exZh": "The deposit is returned after deduction of any sums owed."
+  },
+  "V33-22": {
+   "zh": "the inventory / inspection (moving in or out)",
+   "exZh": "The deposit is returned after the move-out inspection."
+  },
+  "V33-23": {
+   "zh": "to be provided for that purpose",
+   "exZh": "Drop the keys in the box provided for that purpose."
+  },
+  "V33-24": {
+   "zh": "to take precedence over …",
+   "exZh": "The times after opening take precedence over the printed date."
+  },
+  "V33-25": {
+   "zh": "unfit for consumption",
+   "exZh": "A product opened four days ago may be unfit for consumption."
+  },
+  "V33-26": {
+   "zh": "a dish that has been started",
+   "exZh": "Put dishes that have been started in the coldest part of the fridge."
+  },
+  "V33-27": {
+   "zh": "the use-by date",
+   "exZh": "Always check the use-by date of fresh products."
+  },
+  "V33-28": {
+   "zh": "to be extended automatically",
+   "exZh": "Current memberships are automatically extended by nineteen days."
+  },
+  "V33-29": {
+   "zh": "to sign up in advance",
+   "exZh": "For aqua aerobics, you must sign up in advance, online, forty-eight hours before the class."
+  },
+  "V33-30": {
+   "zh": "it is specified that …",
+   "exZh": "The rules specify that quiet is required after 22:00."
+  },
+  "V33-31": {
+   "zh": "it is forbidden to …",
+   "exZh": "It is forbidden to use a connected device during the exam."
+  },
+  "V33-32": {
+   "zh": "to be compulsory",
+   "exZh": "Signing up is compulsory for aqua aerobics classes."
+  },
+  "V33-33": {
+   "zh": "no lateness is accepted",
+   "exZh": "The doors close exactly on time: no lateness is accepted."
+  },
+  "V33-34": {
+   "zh": "How about …?",
+   "exZh": "How about moving the appointment back half an hour?"
+  },
+  "V33-35": {
+   "zh": "I’d rather choose …",
+   "exZh": "I’d rather take the bus, because it’s direct."
+  },
+  "V33-36": {
+   "zh": "an unsuccessful attempt",
+   "exZh": "After an unsuccessful delivery attempt, the courier left a notice."
+  },
+  "V33-37": {
+   "zh": "opening hours",
+   "exZh": "Check the branch’s opening hours before you go."
+  },
+  "V33-38": {
+   "zh": "to place an ad",
+   "exZh": "I placed an ad to sell my bike."
+  },
+  "V33-39": {
+   "zh": "a prior declaration",
+   "exZh": "Having a guest stay is allowed subject to declaring it at reception beforehand."
+  },
+  "V33-40": {
+   "zh": "to book online",
+   "exZh": "It’s easier to book online than to come to reception."
+  },
+  "V33-41": {
+   "zh": "to take out insurance",
+   "exZh": "I took out insurance for the car hire."
+  },
+  "V33-42": {
+   "zh": "an additional driver",
+   "exZh": "Declare any additional driver when you hire the car."
+  },
+  "V33-43": {
+   "zh": "the notice period",
+   "exZh": "In case of a job transfer, the notice period is reduced to eight days."
+  },
+  "V33-44": {
+   "zh": "to draw up a quote",
+   "exZh": "The optician gave me a quote of 420 euros."
+  },
+  "V33-45": {
+   "zh": "continuously, without a break",
+   "exZh": "The teaching pool is open continuously from 10:00 to 17:00."
+  }
+ },
  "title": "DELF reading I: practical information",
  "phase": "DELF skills training"
 }

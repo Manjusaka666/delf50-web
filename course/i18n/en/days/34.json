@@ -1,4 +1,215 @@
 {
+ "canDo": "Can identify the author’s or characters’ opinions, reasons, examples and concessions.",
+ "review": "Review opinion connectors.",
+ "input": "3 texts on general social topics.",
+ "output": "Draw a map of the argument; restate the opinions aloud.",
+ "checkpoint": "Can tell facts, opinions and examples apart.",
+ "challenge": "Today’s challenge: first do a set of connector exercises on « exprimer son opinion » at Le Point du FLE, then pick a social news story in RFI’s « Journal en français facile » and draw its “position – reasons – examples – concession” map; finally write one emphatic sentence each with Ce qui me frappe, c'est… and C'est… qui… to give your view of the story.",
+ "items": {
+  "reading": {
+   "R34-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "The ending states this reason explicitly."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L34-2": {
+    "questions": [
+     {
+      "why": "He gives the public procurement case: the journalist spent six weeks on it."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V34-01": {
+   "zh": "supporters of …",
+   "exZh": "Supporters of free travel put forward the environmental argument."
+  },
+  "V34-02": {
+   "zh": "to put forward an argument",
+   "exZh": "Opponents put forward another argument: the service would get worse."
+  },
+  "V34-03": {
+   "zh": "that’s actually the very reason why …",
+   "exZh": "That’s true, and that’s actually the very reason why I keep going."
+  },
+  "V34-04": {
+   "zh": "to be judged on …",
+   "exZh": "A measure defended with a false argument ends up being judged on that argument."
+  },
+  "V34-05": {
+   "zh": "except that",
+   "exZh": "The idea is appealing, except that budgets aren’t interchangeable."
+  },
+  "V34-06": {
+   "zh": "to point to someone to blame",
+   "exZh": "This option is attractive because it points to someone outside to blame."
+  },
+  "V34-07": {
+   "zh": "What I dispute is …",
+   "exZh": "What I dispute is the idea that free information is just as good."
+  },
+  "V34-08": {
+   "zh": "I hear you, but …",
+   "exZh": "I hear you, but I’m not going to pay eight euros a month."
+  },
+  "V34-09": {
+   "zh": "to inspire (young people) to take something up",
+   "exZh": "People often reply that medals inspire young people to take up sport."
+  },
+  "V34-10": {
+   "zh": "to age badly",
+   "exZh": "The main objection is that a modern intervention ages badly."
+  },
+  "V34-11": {
+   "zh": "overnight, from one day to the next",
+   "exZh": "Volunteer commitment can stop overnight."
+  },
+  "V34-12": {
+   "zh": "to make … free",
+   "exZh": "About thirty French cities have made their transport network free."
+  },
+  "V34-13": {
+   "zh": "One might be tempted to …",
+   "exZh": "One might be tempted to see it as a local anecdote."
+  },
+  "V34-14": {
+   "zh": "the usual talk, a conventional line",
+   "exZh": "I’d like to avoid the usual talk about young people no longer getting involved."
+  },
+  "V34-15": {
+   "zh": "What seems right to me is …",
+   "exZh": "What seems right to me is a third argument that is rarely made."
+  },
+  "V34-16": {
+   "zh": "the available data",
+   "exZh": "The available data don’t support the environmental argument."
+  },
+  "V34-17": {
+   "zh": "to deprive … of …",
+   "exZh": "Opponents say that free travel deprives the network of funds."
+  },
+  "V34-18": {
+   "zh": "to make … disappear",
+   "exZh": "Cutting these funds doesn’t redirect them: it makes them disappear."
+  },
+  "V34-19": {
+   "zh": "at the same time, meanwhile",
+   "exZh": "Meanwhile, the number of people living in the centre fell by 22%."
+  },
+  "V34-20": {
+   "zh": "to use a lever",
+   "exZh": "The cities that used this lever are getting results."
+  },
+  "V34-21": {
+   "zh": "to build connections between people",
+   "exZh": "Volunteering builds connections between people, which an administrative service doesn’t."
+  },
+  "V34-22": {
+   "zh": "to cut staff",
+   "exZh": "A public service cuts staff, and an association is set up."
+  },
+  "V34-23": {
+   "zh": "to get a lasting benefit from it",
+   "exZh": "Cities that keep using their facilities get a lasting benefit from them."
+  },
+  "V34-24": {
+   "zh": "largely, to a great extent",
+   "exZh": "These funds come largely from private partnerships."
+  },
+  "V34-25": {
+   "zh": "to keep up an illusion",
+   "exZh": "I’d rather say it than keep up an illusion."
+  },
+  "V34-26": {
+   "zh": "to manage to …",
+   "exZh": "School alone won’t manage to rebuild a community of speakers."
+  },
+  "V34-27": {
+   "zh": "non-negotiable",
+   "exZh": "Reversibility is a non-negotiable condition for me."
+  },
+  "V34-28": {
+   "zh": "anyway, in any case",
+   "exZh": "Tastes will change anyway."
+  },
+  "V34-29": {
+   "zh": "to subscribe to …",
+   "exZh": "He refuses to subscribe to the local paper."
+  },
+  "V34-30": {
+   "zh": "according to the author",
+   "exZh": "According to the author, the debate on free travel is badly framed."
+  },
+  "V34-31": {
+   "zh": "The author believes that …",
+   "exZh": "The author believes that free travel is above all a social measure."
+  },
+  "V34-32": {
+   "zh": "to invoke an argument",
+   "exZh": "Few people make this argument: free travel is an effective social measure."
+  },
+  "V34-33": {
+   "zh": "to come out in favour of …",
+   "exZh": "The author comes out in favour of free public transport."
+  },
+  "V34-34": {
+   "zh": "to qualify what one says",
+   "exZh": "The president qualifies what she says: volunteering is still useful."
+  },
+  "V34-35": {
+   "zh": "to put things in perspective",
+   "exZh": "The figures help put things in perspective."
+  },
+  "V34-36": {
+   "zh": "flexible working hours",
+   "exZh": "Some employees are asking for flexible hours."
+  },
+  "V34-37": {
+   "zh": "to save time",
+   "exZh": "With these hours, I save time on travel."
+  },
+  "V34-38": {
+   "zh": "The trouble is that …",
+   "exZh": "The trouble is that some employees prefer fixed hours."
+  },
+  "V34-39": {
+   "zh": "to find common ground",
+   "exZh": "We need to find common ground before the new term."
+  },
+  "V34-40": {
+   "zh": "mass tourism, overtourism",
+   "exZh": "Protests against mass tourism are increasing."
+  },
+  "V34-41": {
+   "zh": "short-term rentals",
+   "exZh": "Short-term rentals push up rents in the centre."
+  },
+  "V34-42": {
+   "zh": "to get involved in an association",
+   "exZh": "People in their thirties get involved in associations, but only in short projects."
+  },
+  "V34-43": {
+   "zh": "social ties",
+   "exZh": "Village festivals strengthen social ties."
+  },
+  "V34-44": {
+   "zh": "isolated elderly people",
+   "exZh": "The association supports isolated elderly people."
+  },
+  "V34-45": {
+   "zh": "a freely chosen commitment",
+   "exZh": "We must distinguish between a freely chosen commitment and a right."
+  }
+ },
  "title": "DELF reading II: opinions and details",
  "phase": "DELF skills training"
 }

@@ -1,4 +1,206 @@
 {
+ "canDo": "Can give a linear 3–5-minute opinion on a general topic and discuss it.",
+ "review": "Review opinion, cause and effect, examples, concession.",
+ "input": "Short prompt texts / topic cards.",
+ "output": "10 minutes’ preparation → a 3–5-minute recording → ask yourself follow-up questions.",
+ "checkpoint": "Topic introduced, opinion, 2 reasons, an example, a concession and a conclusion all present.",
+ "challenge": "Today’s challenge: pick a media or technology story in RFI’s « Journal en français facile ». After 10 minutes’ preparation, record a 3–5-minute point de vue: a clear position, two arguments each with an example, an opposing view and a conclusion, with at least 1 emphatic sentence (C'est… qui… / Ce qui compte, c'est…); when you listen back, ask yourself 3 examiner-style follow-ups (Pourquoi ? Un exemple ? Et si on vous dit le contraire ?) and answer them aloud.",
+ "items": {
+  "reading": {
+   "R39-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "The article ends by reframing the question: which kinds of writing are worth the price of the effort."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V39-01": {
+   "zh": "The document deals with the question of …",
+   "exZh": "The document deals with the question of free museum entry."
+  },
+  "V39-02": {
+   "zh": "For my part, …",
+   "exZh": "For my part, I’m in favour of free entry, but with conditions."
+  },
+  "V39-03": {
+   "zh": "I don’t share this view.",
+   "exZh": "Some say PE is useless; I don’t share this view."
+  },
+  "V39-04": {
+   "zh": "I understand your point of view, but …",
+   "exZh": "I understand your point of view, but cost remains a real problem."
+  },
+  "V39-05": {
+   "zh": "I notice that …",
+   "exZh": "I notice that people ask about cost for museums, never for roads."
+  },
+  "V39-06": {
+   "zh": "It all depends on …",
+   "exZh": "It all depends on how we use these things."
+  },
+  "V39-07": {
+   "zh": "the question is whether / how …",
+   "exZh": "The question is how to tell good smart devices from bad ones."
+  },
+  "V39-08": {
+   "zh": "I’m neither for nor against",
+   "exZh": "To sum up, I’m neither for nor against smart devices."
+  },
+  "V39-09": {
+   "zh": "That’s why …",
+   "exZh": "That’s why I’m setting a condition."
+  },
+  "V39-10": {
+   "zh": "to set a condition",
+   "exZh": "I’m in favour of free entry, but I set one condition."
+  },
+  "V39-11": {
+   "zh": "what’s the point of …?",
+   "exZh": "Since tools can write, what’s the point of learning to write?"
+  },
+  "V39-12": {
+   "zh": "to miss the point",
+   "exZh": "Both sides miss the point."
+  },
+  "V39-13": {
+   "zh": "an argument that doesn’t hold up",
+   "exZh": "It’s an argument that doesn’t hold up: no correlation has been shown."
+  },
+  "V39-14": {
+   "zh": "in favour of, to the benefit of …",
+   "exZh": "Some propose cutting sport in favour of the core subjects."
+  },
+  "V39-15": {
+   "zh": "to restate the thesis",
+   "exZh": "Restate the text’s thesis in one sentence, under your breath."
+  },
+  "V39-16": {
+   "zh": "… doesn’t matter, never mind …",
+   "exZh": "Choose a position, it doesn’t matter which."
+  },
+  "V39-17": {
+   "zh": "to lose the thread",
+   "exZh": "The beginning and the end are when people lose the thread."
+  },
+  "V39-18": {
+   "zh": "to pay the price of …",
+   "exZh": "Which kinds of writing are worth paying the price of effort?"
+  },
+  "V39-19": {
+   "zh": "wholesale, as a block",
+   "exZh": "Defending writing wholesale weakens the position."
+  },
+  "V39-20": {
+   "zh": "to deserve better than …",
+   "exZh": "This objection deserves better than a shrug."
+  },
+  "V39-21": {
+   "zh": "on a small scale",
+   "exZh": "Organised car-sharing works, but on a small scale."
+  },
+  "V39-22": {
+   "zh": "a polite way of refusing",
+   "exZh": "Without a timetable, “not before there’s an alternative” is a polite way of refusing."
+  },
+  "V39-23": {
+   "zh": "one choice among others",
+   "exZh": "In town, the car is one choice among others."
+  },
+  "V39-24": {
+   "zh": "social mixing",
+   "exZh": "The social mixing argument is a serious one."
+  },
+  "V39-25": {
+   "zh": "to struggle to …",
+   "exZh": "The associations struggle to fund these jobs."
+  },
+  "V39-26": {
+   "zh": "to underestimate a risk",
+   "exZh": "I think this risk is underestimated."
+  },
+  "V39-27": {
+   "zh": "to broaden the audience",
+   "exZh": "Free entry alone isn’t enough to broaden the audience."
+  },
+  "V39-28": {
+   "zh": "to keep the thread",
+   "exZh": "We assess the ability to keep the thread of the presentation."
+  },
+  "V39-29": {
+   "zh": "to switch sides",
+   "exZh": "Many presentations switch sides along the way."
+  },
+  "V39-30": {
+   "zh": "to fail in public",
+   "exZh": "PE is the only subject where you fail in public."
+  },
+  "V39-31": {
+   "zh": "to scatter, to ramble",
+   "exZh": "A short presentation is better than one that rambles."
+  },
+  "V39-32": {
+   "zh": "to consider the opposite",
+   "exZh": "Without an objection, people think you haven’t considered the opposite."
+  },
+  "V39-33": {
+   "zh": "as far as I’m concerned",
+   "exZh": "As far as I’m concerned, I get my news mainly from the radio."
+  },
+  "V39-34": {
+   "zh": "It’s a delicate question.",
+   "exZh": "It’s a delicate question, and I’ll try to be nuanced."
+  },
+  "V39-35": {
+   "zh": "I fully agree with …",
+   "exZh": "I fully agree with the author on this point."
+  },
+  "V39-36": {
+   "zh": "to pass on / share a piece of news",
+   "exZh": "Before sharing a piece of news online, check where it comes from."
+  },
+  "V39-37": {
+   "zh": "media literacy education",
+   "exZh": "Media literacy teaches pupils to tell a fact from an opinion."
+  },
+  "V39-38": {
+   "zh": "to check one’s sources",
+   "exZh": "Before sharing an article, you must check your sources."
+  },
+  "V39-39": {
+   "zh": "to develop one’s critical thinking",
+   "exZh": "School should help pupils develop their critical thinking."
+  },
+  "V39-40": {
+   "zh": "freedom of expression",
+   "exZh": "Freedom of expression also has legal limits."
+  },
+  "V39-41": {
+   "zh": "traditional media",
+   "exZh": "Traditional media lose readers every year."
+  },
+  "V39-42": {
+   "zh": "smart (connected) devices",
+   "exZh": "Do smart devices really improve everyday life?"
+  },
+  "V39-43": {
+   "zh": "to be dependent on …",
+   "exZh": "A “smart” object makes its owner dependent on a service."
+  },
+  "V39-44": {
+   "zh": "civic service (French youth volunteering scheme)",
+   "exZh": "The document proposes making civic service compulsory."
+  },
+  "V39-45": {
+   "zh": "to be unanimously approved",
+   "exZh": "Free museum entry is far from unanimously approved."
+  }
+ },
  "title": "DELF speaking III: point de vue",
  "phase": "DELF skills training"
 }
