@@ -114,7 +114,7 @@ export function segments(paragraphs) {
     String(p).replace(/<[^>]+>/g, ' ').split(/\n+/).forEach((line, turn) => {
       const dialogue = TURN.test(line);
       const speaker = dialogue ? k++ % 2 : 0;
-      split(line.replace(TURN, '')).forEach((text, i) => out.push({ text, para, turn, speaker, dialogue, first: i === 0 }));
+      split(line.replace(TURN, '').replace(/\s+/g, ' ')).forEach((text, i) => out.push({ text, para, turn, speaker, dialogue, first: i === 0 }));
     });
   });
   return out;

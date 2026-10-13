@@ -158,6 +158,38 @@ async function main() {
   const spBad = sp.filter(([a, b, ok]) => state.spelledRight(a, b) !== ok);
   check(!spBad.length, 'a typed chunk must be spelled exactly (accents, apostrophes, hyphens); spaces, case and punctuation do not count', spBad);
 
+  out.push('\nInterface languages');
+  // The same learner, the same answers, in each interface language: the records must not differ.
+  const neutral = (o) => JSON.stringify(o, (k, v) => (['at', 'answeredAt', 'startedAt'].includes(k) ? undefined : v));
+  const session = async (locale) => {
+    await course.loadCourse('delf-b1', locale);
+    const L = state.blank(), day = await course.loadDay(16), p = course.plan(day, 'high', L);
+    const Q = await course.loadQuestions(course.grammarIds(day, L));
+    for (const id of p.grammar) { const q = Q.get(id); state.answerGrammar(L, 16, q, course.node(q.node), (q.answer + 1) % q.options.length); }
+    for (const x of await course.reviewItems(16, L)) {
+      const q = x.question;
+      state.answerReview(L, 16, x, q ? (q.answer + 1) % q.options.length : false, q ? course.node(q.node) : null);
+    }
+    return { L, why: Q.get(p.grammar[0]).why, title: day.canDo };
+  };
+  const zh = await session('zh-CN'), en = await session('en');
+  check(zh.why !== en.why && zh.title !== en.title, 'the English interface shows the translated explanations and goals', [zh.why, en.why]);
+  check(zh.L.errors.length > 0 && neutral(zh.L) === neutral(en.L), 'answers given in English are recorded exactly as in Chinese (stems, explanations, grammar points)');
+  await course.loadCourse('delf-b1', 'zh-CN');
+
+  out.push('\nSpeech');
+  const speech = await imp('speech.js');
+  const seg = speech.segments(['— Bonjour. Ça va ?\n— Oui, merci.', 'Le <b>narrateur</b> parle. Fin.']);
+  const segOk = JSON.stringify(seg.map((s) => [s.text, s.para, s.speaker, s.dialogue, s.first])) === JSON.stringify([
+    ['Bonjour.', 0, 0, true, true], ['Ça va ?', 0, 0, true, false], ['Oui, merci.', 0, 1, true, true],
+    ['Le narrateur parle.', 1, 0, false, true], ['Fin.', 1, 0, false, false]]);
+  check(segOk, 'a script is read sentence by sentence; dialogue turns alternate speakers; tags are not read', seg);
+  const voices = [{ name: 'Thomas', lang: 'fr-FR' }, { name: 'Amélie', lang: 'fr-CA' }, { name: 'Audrey (Premium)', lang: 'fr-FR' },
+    { name: 'Samantha', lang: 'en-US' }, { name: 'Jacques', lang: 'fr_FR' }, { name: 'Grandma', lang: 'fr-FR' }];
+  const ranked = voices.filter((v) => speech.score(v) > -Infinity).sort((a, b) => speech.score(b) - speech.score(a)).map((v) => v.name);
+  check(JSON.stringify(ranked) === JSON.stringify(['Audrey (Premium)', 'Thomas', 'Jacques', 'Amélie', 'Grandma']),
+    'French voices are ranked: premium first, then the exam’s French, other French, novelty voices last; other languages never', ranked);
+
   out.push('\nFrench typography');
   const NN = ' ';
   const cases = [['Pourquoi ?', `Pourquoi${NN}?`], ['Attention : non', `Attention${NN}: non`], ['10:30', '10:30'], ['« oui »', `«${NN}oui${NN}»`],
