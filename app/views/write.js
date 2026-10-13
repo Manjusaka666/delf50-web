@@ -2,7 +2,8 @@
 import { store, commit, refresh } from '../store.js';
 import { itemState } from '../progress.js';
 import { saveDraft, submitText, draftKey, countWords } from '../state.js';
-import { html, icon, pad2, frText, fmtDateTime, MODULE_NAMES, MODULE_FR } from '../ui.js';
+import { html, icon, pad2, frText, fmtDateTime, moduleName, moduleFr } from '../ui.js';
+import { t } from '../i18n.js';
 import { dayContext, crumbs, pager, nextLink, triggerDoc, examNotes } from './common.js';
 
 export async function writeView(d, module, n) {
@@ -13,52 +14,52 @@ export async function writeView(d, module, n) {
   let confirmShort = false;
 
   const draft = () => store.S.drafts[module][key] || '';
-  const norm = (t) => t.toLowerCase().replace(/’/g, "'");
+  const norm = (s) => s.toLowerCase().replace(/’/g, "'");
   const keyHits = (text) => (item.keys || []).map((k) => [k, norm(text).includes(norm(k))]);
 
   const meter = (text) => {
     const w = countWords(text);
-    if (writing) return html`<span class="meter ${w >= item.minWords ? 'ok' : ''}" style="--f:${Math.min(1, w / item.minWords)}"><i></i><b>${w}</b> / ${item.minWords} 词</span>`;
-    return html`<span class="meter plain"><b>${w}</b> 词</span>`;
+    if (writing) return html`<span class="meter ${w >= item.minWords ? 'ok' : ''}" style="--f:${Math.min(1, w / item.minWords)}"><i></i><b>${w}</b> / ${item.minWords} ${t('common.wordUnit', { n: item.minWords })}</span>`;
+    return html`<span class="meter plain"><b>${w}</b> ${t('common.wordUnit', { n: w })}</span>`;
   };
   const keysLine = (text) => html`<span class="keys">${keyHits(text).map(([k, on]) => html`<span class="key ${on ? 'on' : ''}" lang="fr">${on ? icon('check') : ''}${k}</span>`)}</span>`;
 
   const render = () => {
     const st = itemState(store.S, module, d, item), text = draft();
     return html`<article class="page write ${module}">
-      ${crumbs(d, MODULE_NAMES[module], `${pad2(n)} / ${pad2(items.length)}`)}
+      ${crumbs(d, moduleName(module), `${pad2(n)} / ${pad2(items.length)}`)}
       ${pager(d, module, items, n, due, (it) => ({ done: itemState(store.S, module, d, it).done, started: Boolean(store.S.drafts[module][draftKey(d, it.id)]) }))}
       <div class="task">
         <section class="brief">
-          <p class="eyebrow">${MODULE_FR[module]}${item.genre ? ` · ${item.genre}` : ''}${n > due ? ' · 选做' : ''}</p>
+          <p class="eyebrow">${moduleFr(module)}${item.genre ? ` · ${item.genre}` : ''}${n > due ? ` · ${t('common.optional')}` : ''}</p>
           <h1 class="passage-title" lang="fr">${frText(item.title)}</h1>
           <p class="consigne" lang="fr">${frText(writing ? item.prompt : item.task)}</p>
           ${triggerDoc(item.trigger)}
-          ${item.chunks && item.chunks.length ? html`<div class="chunks"><p class="label">可用表达 · 点击插入</p>${item.chunks.map((c) => html`<button class="chip fr" data-act="insert" data-t="${c}" lang="fr">${frText(c)}</button>`)}</div>` : ''}
-          ${item.checklist && item.checklist.length ? html`<div class="checklist"><p class="label">提交前自查</p><ul>${item.checklist.map((c) => html`<li lang="fr">${frText(c)}</li>`)}</ul></div>` : ''}
+          ${item.chunks && item.chunks.length ? html`<div class="chunks"><p class="label">${t('write.chunks')}</p>${item.chunks.map((c) => html`<button class="chip fr" data-act="insert" data-t="${c}" lang="fr">${frText(c)}</button>`)}</div>` : ''}
+          ${item.checklist && item.checklist.length ? html`<div class="checklist"><p class="label">${t('write.checklist')}</p><ul>${item.checklist.map((c) => html`<li lang="fr">${frText(c)}</li>`)}</ul></div>` : ''}
           ${writing ? examNotes('writing') : ''}
         </section>
         <section class="editor">
-          <label class="label" for="ed">${st.done ? '再写一版' : '你的回答'}</label>
+          <label class="label" for="ed">${st.done ? t('write.again') : t('write.answer')}</label>
           <textarea id="ed" class="ed" data-input="draft" lang="fr" spellcheck="true" placeholder="${writing ? 'Rédigez votre texte ici…' : 'Écrivez ce que vous diriez…'}">${text}</textarea>
           <div class="ed-foot">
             <span data-meter>${meter(text)}</span>
             ${item.keys && item.keys.length ? html`<span data-keys>${keysLine(text)}</span>` : ''}
-            <span class="muted small">草稿随输入实时保存</span>
+            <span class="muted small">${t('write.draftSaved')}</span>
           </div>
-          ${confirmShort ? html`<p class="notice">还不到 ${item.minWords} 词。DELF 写作字数不足会扣分，确定先提交这一版吗？</p>` : ''}
+          ${confirmShort ? html`<p class="notice" role="alert">${t('write.short', { min: item.minWords })}</p>` : ''}
           <div class="row gap end">
-            <button class="btn" data-act="submit" ${text.trim() ? '' : 'disabled'}>${confirmShort ? '仍然提交' : '提交'}</button>
+            <button class="btn" data-act="submit" ${text.trim() ? '' : 'disabled'}>${confirmShort ? t('write.submitAnyway') : t('write.submit')}</button>
           </div>
         </section>
       </div>
       ${st.records.length ? html`<section class="versions">
-        <h2 class="section-title"><span>Versions</span>已提交 <small>${st.records.length} 版</small></h2>
+        <h2 class="section-title"><span>Versions</span>${t('write.submitted')} <small>${t('write.versions', { n: st.records.length })}</small></h2>
         ${st.records.slice().reverse().map((r, i) => html`<details class="version" ${i === 0 ? 'open' : ''}>
-          <summary><span>${fmtDateTime(r.at)}</span>${r.words != null ? html`<span class="muted">${r.words} 词</span>` : ''}</summary>
+          <summary><span>${fmtDateTime(r.at)}</span>${r.words != null ? html`<span class="muted">${t('common.words', { n: r.words })}</span>` : ''}</summary>
           <div class="prose small" lang="fr">${r.text.split(/\n+/).map((p) => html`<p>${p}</p>`)}</div>
         </details>`)}
-        ${item.model ? html`<details class="version model"><summary><span>参考范文 · Proposition de corrigé</span><span class="muted">提交后对照：结构、连接词、语式</span></summary>
+        ${item.model ? html`<details class="version model"><summary><span>${t('write.model')} · Proposition de corrigé</span><span class="muted">${t('write.modelNote')}</span></summary>
           <div class="prose small" lang="fr">${item.model.map((p) => html`<p>${frText(p)}</p>`)}</div></details>` : ''}
         <div class="qnav end">${nextLink(d, module, n, items.length)}</div>
       </section>` : ''}
@@ -73,7 +74,7 @@ export async function writeView(d, module, n) {
   };
 
   return {
-    title: `${MODULE_NAMES[module]} · Jour ${d}`,
+    title: `${moduleName(module)} · Jour ${d}`,
     render,
     inputs: {
       draft: (el) => { confirmShort = false; commit((S) => saveDraft(S, module, d, item.id, el.value), { quiet: true }); update(el.value); }

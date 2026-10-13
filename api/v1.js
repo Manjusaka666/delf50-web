@@ -13,6 +13,7 @@
  *   GET        health[?deep=1]
  *   *          auth/<neon-auth route>   e.g. sign-up/email, sign-in/email, get-session, sign-out, token
  *   GET        courses                  {courses, enrolled: [{course, rev, updatedAt}]}
+ *   GET|PUT    settings                 account-wide {locale, theme, voice, rate} (PUT merges)
  *   GET        bootstrap                {user, course, state, rev, positions, keys, collections}
  *   POST       sync                     {doc, ops, device, batch} → {rev}
  *   GET        rev                      {rev}
@@ -27,6 +28,7 @@ const records = require('./_lib/records');
 const media = require('./_lib/media');
 const vocab = require('./_lib/vocab');
 const courses = require('./_lib/courses');
+const settings = require('./_lib/settings');
 const { HttpError, readJson, send } = require('./_lib/http');
 
 function route(req) {
@@ -54,6 +56,10 @@ async function dispatch(req, res) {
 
   const user = await session.requireUser(req);
   const course = courses.courseOf(req.query.course);
+
+  // Account-wide preferences (language, appearance, voice): not per course.
+  if (path === 'settings' && m === 'GET') return send(res, 200, await settings.get(user));
+  if (path === 'settings' && m === 'PUT') return send(res, 200, await settings.put(user, await readJson(req, 8 * 1024)));
 
   if (path === 'courses' && m === 'GET') {
     const [rows] = await db.tx(user.id, [['select course, rev, updated_at from delf50.study_state order by updated_at desc', []]]);

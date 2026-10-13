@@ -15,7 +15,12 @@
  *   lexicon               "<day>:<chunk>" = 'known' | 'again'   (typed right / wrong; earlier: self-assessed)
  *   review                "<day>:<g|v>:<source day>:<item>" = {day, kind, src, contentId, selectedIndex?, correct, at}
  *   remedial              "<day>" = [grammar point ids]   Days 41–50: the weakest points, fixed when the day is opened
+ *
+ * Records are the same in every interface language: content is recorded as
+ * the course wrote it (canonical), never as it was translated on screen.
  */
+
+import { canonical } from './content.js';
 
 export const DAYS = 50;
 const DRAFT_KINDS = ['writing', 'application', 'speaking', 'production'];
@@ -72,7 +77,7 @@ export function answerGrammar(S, day, q, node, selected) {
   if (S.grammar[k]) return false;
   const correct = selected === q.answer, at = now();
   S.grammar[k] = { day, contentId: q.id, nodeId: q.node, question: q.stem, selectedIndex: selected, correctIndex: q.answer, correct, answeredAt: at };
-  if (!correct) S.errors.push({ skill: node ? node.name : q.node, original: q.options[selected], correct: q.options[q.answer], why: q.why || '', at });
+  if (!correct) S.errors.push({ skill: node ? node.name : q.node, original: q.options[selected], correct: q.options[q.answer], why: canonical(q, 'why') || '', at });
   started(S);
   return true;
 }
@@ -136,7 +141,7 @@ export function answerReview(S, day, item, result, node) {
   if (item.kind === 'g') {
     const q = item.question;
     rec.selectedIndex = result; rec.correct = result === q.answer;
-    if (!rec.correct) S.errors.push({ skill: node ? node.name : q.node, original: q.options[result], correct: q.options[q.answer], why: q.why || '', at });
+    if (!rec.correct) S.errors.push({ skill: node ? node.name : q.node, original: q.options[result], correct: q.options[q.answer], why: canonical(q, 'why') || '', at });
   } else rec.correct = result === true;
   S.review[k] = rec;
   started(S);

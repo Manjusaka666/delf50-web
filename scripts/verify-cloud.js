@@ -531,7 +531,7 @@ async function browserTests(base, owner, s3) {
   const browser = await pw.chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'] });
   const errors = [];
   const open = async (opts = {}) => {
-    const ctx = await browser.newContext(Object.assign({ viewport: { width: 1280, height: 900 } }, opts));
+    const ctx = await browser.newContext(Object.assign({ viewport: { width: 1280, height: 900 }, locale: 'zh-CN' }, opts));
     const page = await ctx.newPage();
     page.on('pageerror', (e) => errors.push(e.message));
     page.on('console', (m) => { if (m.type() === 'error' && !/status of 401/.test(m.text())) errors.push(m.text()); });
