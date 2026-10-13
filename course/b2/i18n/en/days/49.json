@@ -1,0 +1,225 @@
+{
+ "canDo": "Can score ≥ 15/25 on each of the four parts of a full DELF B2 mock exam (total ≥ 60/100): follow details and views in a long interview, read between the lines of informative and opinion texts, write a forum post of ≥ 250 words, and complete a 6-minute monologue and a 4–5-minute debate.",
+ "review": "Comprehensive review: cause and consequence (days 5–6), concession (day 7), hypothesis and the conditional (days 9–10), reported speech and speculation (days 12 and 19); check your error records from the mock exams on days 41, 43, 45 and 47, and leave the two question types you get wrong most often for a final check at the end.",
+ "input": "Read: R49-1 on family cargo bikes (informative), R49-2 “let children walk to school alone” (column) and R49-3, a music festival press release, all in one go within 60 minutes; listen: the geographer interview L49-1 twice, the school choir interview L49-2 and the news flash on lack of exercise among middle school students L49-3 once each, keeping the total to 30 minutes.",
+ "output": "Write: W49-1, a forum post (should students rate their teachers?), ≥ 250 words in 60 minutes; speak: S49-1, a 6-minute monologue (replacing fireworks with drone shows), and S49-2, a 4–5-minute debate.",
+ "checkpoint": "Self-assess against the official marking grid: each part ≥ 15/25, total ≥ 60/100 (pass mark 50, with no part below 5); every question answered; writing has an introduction, development and conclusion; monologue delivered without reading from notes.",
+ "challenge": "Today’s challenge: ask a friend or language partner to play the examiner and hold the 5-minute S49-2 debate with their follow-up questions, recording it; when you listen back, note just 3 expressions that could be more precise, then find more idiomatic wording in a TV5MONDE or RFI programme on the same topic and swap them in.",
+ "items": {
+  "reading": {
+   "R49-1": {
+    "questions": [
+     {
+      "why": "Paragraphs 1–2 describe families taking to cargo bikes, paragraph 3 the obstacles, paragraph 4 public policy and paragraph 5 attitudes. A: manufacturing isn’t discussed; C isn’t mentioned."
+     },
+     {
+      "why": "« Mes clients ne viennent pas acheter un vélo : ils viennent changer d’organisation ». A isn’t mentioned; B doesn’t fit paragraph 3’s point that the price is close to that of a used car."
+     },
+     {
+      "why": "« dans les immeubles anciens, sans local à vélos, il est presque impossible de ranger un engin de deux mètres et demi de long ». B is about price and C about safety; neither concerns housing."
+     },
+     {
+      "why": "se faire rare = to become scarce. Neither A nor C is what the expression means."
+     },
+     {
+      "why": "« le plus souvent par crainte du prix ou de la circulation ». A contradicts “almost half find it practical”; B isn’t mentioned."
+     },
+     {
+      "why": "The idea that “car = freedom” needs to change even more than the practical obstacles (« plus encore que les obstacles matériels »). B is wrong: « plus encore que » is just a comparison and doesn’t say the obstacles have been solved; C over-interprets."
+     }
+    ]
+   },
+   "R49-2": {
+    "questions": [
+     {
+      "why": "The title, « Laissez-les aller à l’école seuls », and the ending, « leur rendre, pas à pas, un peu de cette liberté ». A is just the opening scene; B isn’t mentioned."
+     },
+     {
+      "why": "par miracle = miraculously, stressing how rare this has become nowadays, in contrast with the queue of cars dropping children off described before. B and C misread the sentence."
+     },
+     {
+      "why": "« Ce qui a changé, c’est notre perception du danger » (a cleft sentence). A contradicts « on y comptait même davantage d’accidents »; C isn’t mentioned."
+     },
+     {
+      "why": "« Je ne plaide pas pour l’insouciance. Un enfant doit apprendre le trajet avec un adulte… Mais en voulant tout sécuriser, nous le privons… »: concession, then criticism. B contradicts the first sentence; C isn’t mentioned."
+     },
+     {
+      "why": "ouvrir des horizons = to broaden one’s horizons: walking lets children notice the seasons and get to know the neighbourhood and its shopkeepers, which isn’t possible from the back seat of a car. A and C are literal misreadings."
+     }
+    ]
+   },
+   "R49-3": {
+    "questions": [
+     {
+      "why": "« franchit cette année un nouveau cap dans sa démarche responsable », followed by the plastics ban, local food, reduced-price tickets and a free shuttle. A: no performances are mentioned; C: there is no price rise in the text."
+     },
+     {
+      "why": "« un gobelet consigné et pourra remplir gratuitement sa gourde aux douze fontaines ». B contradicts « bouteilles en plastique seront totalement bannies »; C contradicts being able to refill your own water bottle."
+     },
+     {
+      "why": "« sur simple justificatif, aux étudiants, aux demandeurs d’emploi et aux bénéficiaires des minima sociaux ». Neither A nor B is a condition in the text."
+     },
+     {
+      "why": "« limité à 800 places cette année, à la demande de la commune ». A and C are guesses not found in the text."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L49-1": {
+    "questions": [
+     {
+      "why": "It opens with « Phénomène réel ou effet de mode ? », then covers the scale, the types of newcomers, how they are received, public services and advice. B and C are only points mentioned in passing."
+     },
+     {
+      "why": "« les petites villes et les bourgs situés à une heure ou deux d’une métropole gagnent des habitants, tandis que les zones les plus isolées continuent… à en perdre ». A contradicts « pas eu de départ massif »; B is the opposite."
+     },
+     {
+      "why": "« une catégorie dont on parle moins : des jeunes qui se lancent dans l’agriculture ou l’artisanat sans être issus du milieu ». A and C are the more common groups he lists first."
+     },
+     {
+      "why": "« une image idéalisée de la campagne » (crowing cocks, tractors, church bells) and « fait grimper les prix de l’immobilier, au détriment des jeunes du coin ». B contradicts « Les maires sont souvent ravis »; C isn’t mentioned."
+     },
+     {
+      "why": "« Sans eux, beaucoup de nouveaux habitants repartent au bout de quelques années »; eux refers to internet, doctors, schools and transport. A and B aren’t the factors he stresses in answering this question."
+     },
+     {
+      "why": "« De louer avant d’acheter, et d’y passer au moins un hiver ». A is the opposite of “rent first”; C: he actually mentions housing price problems in tourist areas."
+     }
+    ]
+   },
+   "L49-2": {
+    "questions": [
+     {
+      "why": "« qui a créé une chorale de quatre-vingts élèves… les élèves volontaires me rejoignent ». A contradicts “no selection”; C: the choir is voluntary."
+     },
+     {
+      "why": "« Personne ne passe d’audition : la seule règle, c’est de venir régulièrement », and he explicitly denies it is « réservée aux bons musiciens ». A is the opposite; B isn’t mentioned."
+     },
+     {
+      "why": "« Certains élèves en difficulté en classe se révèlent dans la chorale : ils prennent de l’assurance ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "« Au début, quelques-uns s’inquiétaient… Depuis, ce sont souvent eux qui me demandent d’organiser plus de concerts ». A and C contradict this."
+     }
+    ]
+   },
+   "L49-3": {
+    "questions": [
+     {
+      "why": "« Les collégiens ne bougent pas assez », and all the figures that follow are about too little exercise. A isn’t mentioned; B: screens are only one cause, and eyesight isn’t discussed."
+     },
+     {
+      "why": "« Seul un sur cinq pratiquerait au moins une heure d’activité physique par jour ». B is the proportion who are driven to school; keep the two figures apart."
+     },
+     {
+      "why": "« La fédération recommande aux familles de privilégier la marche ou le vélo pour aller au collège ». Neither A nor C is the advice in the report."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V49-01": {
+   "zh": "to surprise no one any more, to have become commonplace",
+   "exZh": "On our streets, cargo bikes no longer surprise anyone."
+  },
+  "V49-02": {
+   "zh": "sizeable, considerable",
+   "exZh": "The project has run into a sizeable obstacle."
+  },
+  "V49-03": {
+   "zh": "to become scarce",
+   "exZh": "In small towns, repairers are becoming scarce."
+  },
+  "V49-04": {
+   "zh": "a purchase grant",
+   "exZh": "The region offers a purchase grant to low-income households."
+  },
+  "V49-05": {
+   "zh": "to be synonymous with",
+   "exZh": "For decades, the car was synonymous with freedom."
+  },
+  "V49-06": {
+   "zh": "to let go of someone’s hand; (figuratively) to let someone become independent",
+   "exZh": "You have to know how to let go of children’s hands little by little."
+  },
+  "V49-07": {
+   "zh": "by some miracle, on a rare occasion",
+   "exZh": "When, by some miracle, an afternoon is free, the parents start to worry."
+  },
+  "V49-08": {
+   "zh": "there was a time when … (literary)",
+   "exZh": "There was a time when children walked to school alone at the age of seven."
+  },
+  "V49-09": {
+   "zh": "step by step, gradually",
+   "exZh": "Give them back their freedom step by step."
+  },
+  "V49-10": {
+   "zh": "to broaden one’s horizons",
+   "exZh": "Extracurricular activities broaden children’s horizons."
+  },
+  "V49-11": {
+   "zh": "a sign of trust",
+   "exZh": "Letting a child walk alone is a sign of trust."
+  },
+  "V49-12": {
+   "zh": "to be likely to (lead to something bad)",
+   "exZh": "A child whose time is always fully scheduled is likely to depend on screens."
+  },
+  "V49-13": {
+   "zh": "carelessness, a carefree attitude",
+   "exZh": "The author isn’t arguing for carelessness but for trust."
+  },
+  "V49-14": {
+   "zh": "a responsible (environmental, social) approach",
+   "exZh": "The festival has taken a responsible approach for three years."
+  },
+  "V49-15": {
+   "zh": "on simple presentation of proof",
+   "exZh": "The reduced rate is available on simple presentation of proof."
+  },
+  "V49-16": {
+   "zh": "minimum social benefits (basic welfare payments)",
+   "exZh": "People on minimum social benefits pay half price."
+  },
+  "V49-17": {
+   "zh": "a passing trend",
+   "exZh": "Is this exodus from the cities real, or just a passing trend?"
+  },
+  "V49-18": {
+   "zh": "an idealised image of",
+   "exZh": "Some city dwellers arrive with an idealised image of the countryside."
+  },
+  "V49-19": {
+   "zh": "to drive prices up",
+   "exZh": "The arrival of well-off city dwellers is driving house prices up."
+  },
+  "V49-20": {
+   "zh": "local (informal)",
+   "exZh": "Rising prices penalise local young people above all."
+  },
+  "V49-21": {
+   "zh": "to audition",
+   "exZh": "You don’t need to audition to join the choir."
+  },
+  "V49-22": {
+   "zh": "half as much as",
+   "exZh": "Girls reportedly exercise half as much as boys."
+  },
+  "V49-23": {
+   "zh": "reluctantly, half-heartedly",
+   "exZh": "An imposed obligation is often carried out half-heartedly."
+  },
+  "V49-24": {
+   "zh": "a popularity contest",
+   "exZh": "Rating teachers could turn into a popularity contest."
+  },
+  "V49-25": {
+   "zh": "constructive feedback",
+   "exZh": "A questionnaire can give teachers constructive feedback."
+  }
+ },
+ "phase": "Mock exams, repair and the bridge to C1"
+}

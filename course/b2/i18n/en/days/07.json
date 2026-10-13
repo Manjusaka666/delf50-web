@@ -1,0 +1,226 @@
+{
+ "canDo": "Can take a measured position on digital topics by first acknowledging the other view and then objecting, using bien que + subjunctive, même si + indicative, alors que, malgré / en dépit de, avoir beau, il n’empêche que.",
+ "review": "Review day 2’s subjunctive forms (bien que takes soit, ait, puisse…) and day 6’s consequence expressions: concede first (certes…, mais…), then draw a consequence with si bien que / d’où, for a more complete argument.",
+ "input": "Read: an analysis of digitised administrative procedures and the “digital divide”, an opinion column “rehabilitating” screens and a forum post about quitting social media for a month (mark every concessive structure and separate “the fact conceded” from “the author’s real position”); listen: a radio interview on the “right to disconnect”, a segment on whether cash will disappear and a vox pop on social networks.",
+ "output": "Write: a 180+-word formal letter to the mayor on behalf of residents, opposing the closure of the town hall’s reception desk while acknowledging the benefits of online services; speak: a 3-minute monologue (should social media be banned for under-15s?) + a debate on writing with AI, using “concession + rebuttal” at least once each time you answer the examiner.",
+ "checkpoint": "Reading and listening accuracy ≥80%; bien que + subjunctive, même si + indicative and malgré / en dépit de + noun each used correctly at least once in the formal letter; in the debate, concede or rebut each of 4 objections in turn, with no bien que + indicative errors.",
+ "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about social media, AI or online security, and write 3 sentences giving a measured opinion, using bien que, avoir beau and il n’empêche que; then record a 1-minute voice message that first acknowledges one advantage of the technology, then states one reservation.",
+ "items": {
+  "reading": {
+   "R07-1": {
+    "questions": [
+     {
+      "why": "The article begins by acknowledging progress, then immediately points out that « cette transformation laisse une partie de la population au bord du chemin », and the whole text focuses on the people left out. A is only the opening concession; C is the opposite — young people can use social media but not handle administrative procedures."
+     },
+     {
+      "why": "« le phénomène est loin de s’y limiter : des jeunes adultes, alors qu’ils passent des heures sur leur téléphone, se retrouvent démunis ». A contradicts « loin de s’y limiter »; B: the text makes no such prediction."
+     },
+     {
+      "why": "avoir beau + infinitive = “however much…, it’s no use”, and parcours du combattant = “an obstacle course”: even with a phone, the procedures remain very hard. B and C twist “difficult” into “impossible”, which is too absolute."
+     },
+     {
+      "why": "« certaines personnes renoncent à demander une aide parce que la démarche leur paraît trop compliquée ». A isn’t mentioned; C: entrusting passwords to relatives is a privacy problem for a different group, not the reason people give up applying."
+     },
+     {
+      "why": "The fourth paragraph covers the consequences, and the fifth the public sector’s response (« Des conseillers numériques ont été recrutés »), pointing out its limits with « Il n’empêche que ces dispositifs restent insuffisants ». B doesn’t deny the consequences; C: the fifth paragraph adds no new examples of people left out."
+     },
+     {
+      "why": "« la solution ne consiste pas à revenir au tout-papier, mais à garantir le choix : … parler à une personne en chair et en os ». A is explicitly rejected in the text; B isn’t proposed."
+     }
+    ]
+   },
+   "R07-2": {
+    "questions": [
+     {
+      "why": "The conclusion: « ni diabolisation, ni naïveté… il existe une place pour un usage raisonné ». A is the opposite of the headline’s position; C contradicts « ces inquiétudes ne sont pas sans fondement » (these worries are not unfounded)."
+     },
+     {
+      "why": "« Pour elle, l’écran n’isole pas ; il relie ». B is the opposite of what the example shows; C: the author doesn’t criticise families."
+     },
+     {
+      "why": "« C’est parfois vrai. Il n’empêche que c’est aussi en ligne que beaucoup d’entre eux apprennent… » — partly conceding, then rebutting. A ignores the concession; B: she actually thinks « confisquer… n’apprennent rien à personne »."
+     },
+     {
+      "why": "« Le problème n’est donc pas l’écran en lui-même, mais l’usage qu’on en fait, ainsi que le modèle économique de certaines applications ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "céder à = “to give in to”, so céder à la panique means “to be ruled by panic”. A and C are possible consequences of behaviour, not the meaning of the expression."
+     }
+    ]
+   },
+   "R07-3": {
+    "questions": [
+     {
+      "why": "The writer shares his month without social media, with its upsides and downsides, and ends by asking readers questions — he is sharing an experience. B: he no longer believes in « la déconnexion totale » himself; C: the football club is just one example."
+     },
+     {
+      "why": "avoir beau + inf. means “however much…, it made no difference”: even knowing the apps were deleted, « je prenais mon téléphone toutes les dix minutes, par pur réflexe ». Neither A nor B shows this concessive relation."
+     },
+     {
+      "why": "« Mon club de foot organise tout sur un groupe en ligne, si bien que j’ai raté deux entraînements ». A contradicts « mes vrais amis m’ont appelé »; C contradicts « j’ai terminé deux romans »."
+     },
+     {
+      "why": "« je garde une seule application, sans notifications, et je la consulte une fois par jour ». A contradicts “keeping only one”; B: he thinks going completely offline « n’est pas tenable sur le long terme »."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L07-1": {
+    "questions": [
+     {
+      "why": "The guest opens with « Bien que ce principe paraisse évident, il est très difficile à appliquer », and the whole interview is about how hard it is to apply. B: no penalties are mentioned; C: parents are just one example of flexibility."
+     },
+     {
+      "why": "« en dehors de ses horaires de travail, un salarié n’est pas obligé de lire ses messages professionnels ni d’y répondre ». A and C turn a “right” into a “ban/obligation”, which doesn’t match the recording."
+     },
+     {
+      "why": "« Certaines… la messagerie est coupée après vingt heures… D’autres se limitent à une charte, c’est-à-dire à un texte de bonnes intentions ». A: company size isn’t compared; B isn’t the difference he mentions."
+     },
+     {
+      "why": "« Alors que la règle protège tout le monde, c’est l’exemple donné par les managers qui change tout ». B is precisely the part contrasted by alors que and judged insufficient; C isn’t mentioned."
+     },
+     {
+      "why": "« il ne s’agit pas d’interdire toute flexibilité… Il n’empêche que cette liberté doit rester un choix, pas une obligation déguisée ». A contradicts “not banning”; C contradicts “should be a choice”."
+     },
+     {
+      "why": "« aborder la question collectivement plutôt que seul face à son chef ». A isn’t mentioned; B reverses the logic of « Ce n’est pas un manque d’engagement »."
+     }
+    ]
+   },
+   "L07-2": {
+    "questions": [
+     {
+      "why": "Her conclusion: « Même si le numérique est l’avenir, garder la possibilité de payer en billets, c’est garder une liberté de choix ». A and C are the opposite of her position."
+     },
+     {
+      "why": "« pour les commerçants, il y a moins de risques de vol ». B and C are exactly the reasons she gives in favour of cash: with cards « on a tendance à dépenser davantage », and electronic payment « laisse une trace »."
+     },
+     {
+      "why": "« quand on paie en billets, on voit l’argent partir ». A and B aren’t in the recording."
+     },
+     {
+      "why": "« Les clients qui avaient des billets ont pu faire leurs courses ; les autres sont repartis les mains vides ». A: the recording says « pendant plusieurs heures », not all day; C contradicts “the terminals were down”."
+     }
+    ]
+   },
+   "L07-3": {
+    "questions": [
+     {
+      "why": "« je pourrais tout arrêter demain. Ce qui me manquerait, ce sont les photos de mes petits-enfants ». A contradicts « Je les utilise, bien sûr »; C: she hasn’t stopped using them."
+     },
+     {
+      "why": "« c’est grâce aux réseaux que je trouve la moitié de mes clients ». B: he only says he spends a lot of time on them, which isn’t the reason; C is the third interviewee’s reason."
+     },
+     {
+      "why": "« j’avais l’impression de vivre sur une autre planète. Pourtant, je sais très bien que je passe trop de temps dessus ». A and B both contradict « trop de temps »."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V07-01": {
+   "zh": "the digital divide",
+   "exZh": "The media library’s workshops aim to narrow the digital divide."
+  },
+  "V07-02": {
+   "zh": "to complete a procedure online",
+   "exZh": "One person in six can’t complete a procedure online without help."
+  },
+  "V07-03": {
+   "zh": "to leave someone by the wayside",
+   "exZh": "This reform risks leaving the most vulnerable by the wayside."
+  },
+  "V07-04": {
+   "zh": "an obstacle course, an uphill struggle",
+   "exZh": "Getting an appointment at the prefecture has become an obstacle course."
+  },
+  "V07-05": {
+   "zh": "to be at a loss (in the face of …)",
+   "exZh": "Many young people are at a loss when faced with an administrative form."
+  },
+  "V07-06": {
+   "zh": "in the flesh, a real person",
+   "exZh": "Users want to talk to an adviser in the flesh."
+  },
+  "V07-07": {
+   "zh": "not to stand idly by",
+   "exZh": "The authorities are not standing idly by in the face of the digital divide."
+  },
+  "V07-08": {
+   "zh": "however much …, it’s no use",
+   "exZh": "However much I switch my phone off, I keep thinking about my messages."
+  },
+  "V07-09": {
+   "zh": "in spite of (more formal than malgré)",
+   "exZh": "In spite of the town hall’s efforts, the internet connection in the village is still unreliable."
+  },
+  "V07-10": {
+   "zh": "the fact remains that …",
+   "exZh": "The tool is handy; the fact remains that many users get lost in it."
+  },
+  "V07-11": {
+   "zh": "not to be unfounded",
+   "exZh": "Parents’ worries are not unfounded."
+  },
+  "V07-12": {
+   "zh": "by dint of …, by constantly …",
+   "exZh": "By constantly criticising technology, we forget what it does for us."
+  },
+  "V07-13": {
+   "zh": "to demonise",
+   "exZh": "There is no point demonising video games."
+  },
+  "V07-14": {
+   "zh": "to do without, to manage without",
+   "exZh": "My grandmother can’t do without her tablet any more."
+  },
+  "V07-15": {
+   "zh": "at the expense of …",
+   "exZh": "These apps keep us hooked at the expense of our sleep."
+  },
+  "V07-16": {
+   "zh": "to give in to panic",
+   "exZh": "We shouldn’t give in to panic when faced with new technologies."
+  },
+  "V07-17": {
+   "zh": "to show common sense",
+   "exZh": "Managing screen time is often just a matter of common sense."
+  },
+  "V07-18": {
+   "zh": "sensible, moderate use",
+   "exZh": "The school encourages sensible use of digital tools."
+  },
+  "V07-19": {
+   "zh": "to feel left out",
+   "exZh": "Without a phone, he felt left out of the group chat."
+  },
+  "V07-20": {
+   "zh": "not sustainable",
+   "exZh": "Going completely offline isn’t sustainable in the long run."
+  },
+  "V07-21": {
+   "zh": "to switch off (from work)",
+   "exZh": "Because of evening work messages, many employees can no longer really switch off."
+  },
+  "V07-22": {
+   "zh": "to be reachable",
+   "exZh": "Her manager expects her to be reachable even at weekends."
+  },
+  "V07-23": {
+   "zh": "a disguised obligation",
+   "exZh": "Replying to messages in the evening shouldn’t become a disguised obligation."
+  },
+  "V07-24": {
+   "zh": "to leave a trace",
+   "exZh": "Every electronic payment leaves a trace."
+  },
+  "V07-25": {
+   "zh": "to leave empty-handed",
+   "exZh": "During the outage, customers without cash had to leave empty-handed."
+  }
+ },
+ "title": "Opposition and concession",
+ "phase": "Upgrading structures and precise expression"
+}

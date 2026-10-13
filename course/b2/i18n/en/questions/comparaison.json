@@ -1,0 +1,92 @@
+{
+ "comparaison-01": {
+  "why": "The proportional structure Plus…, plus… (the more…, the more…), with no article in either part. le plus is the superlative; Autant… must pair with autant… and can’t go with plus."
+ },
+ "comparaison-02": {
+  "why": "The proportional structure Moins…, moins… (the less…, the less…), with no article. le moins is the superlative; plus moins is a wrong combination."
+ },
+ "comparaison-03": {
+  "why": "The fixed form for “more and more” is de plus en plus. plus en plus lacks de; de plus à plus doesn’t exist."
+ },
+ "comparaison-04": {
+  "why": "The fixed form for “less and less” is de moins en moins, modifying the verb regardent. The other two options are wrongly formed."
+ },
+ "comparaison-05": {
+  "why": "moindre is already a comparative; with an article it forms the superlative la moindre (the slightest), often in the negative: pas la moindre idée. You can’t add plus; le moindre doesn’t agree with the feminine noun idée."
+ },
+ "comparaison-06": {
+  "why": "The comparative of mauvais can be pire (itself a comparative): pire qu’hier. plus pire doubles the comparison and is wrong; la pire is the superlative and can’t take que to compare with yesterday."
+ },
+ "comparaison-07": {
+  "why": "The superlative la pire + noun (the worst decision), agreeing with the feminine noun décision. la plus pire is a wrong combination; le pire is masculine."
+ },
+ "comparaison-08": {
+  "why": "d’autant plus que + indicative means “all the more… because…” (a reinforcing reason). autant plus lacks d’; de plus en plus expresses progression and can’t form a reason with que."
+ },
+ "comparaison-09": {
+  "why": "d’autant plus + adjective + que + reason: I’m all the more disappointed because I had been promised a promotion. de plus en plus doesn’t introduce a reason with que; autant doesn’t modify adjectives (adjectives take aussi)."
+ },
+ "comparaison-10": {
+  "why": "The balanced contrast Autant…, autant… (on the one hand…, on the other…) uses autant in both halves. Tant and Plus don’t match the autant in the second half."
+ },
+ "comparaison-11": {
+  "why": "comme si (as if) expresses a hypothetical comparison, with si elided before il: comme s’il connaissait. comme que doesn’t exist; tel que gives examples or means “such as” and can’t introduce this hypothesis."
+ },
+ "comparaison-12": {
+  "why": "comme si takes the indicative imparfait for a simultaneous hypothesis contrary to reality: comme si elle était. si takes neither the conditional serait nor the subjunctive soit."
+ },
+ "comparaison-13": {
+  "why": "comme si + plus-que-parfait means the hypothetical action happened before the main clause: comme s’il n’avait rien entendu. si takes neither the conditional aurait nor the subjunctive ait."
+ },
+ "comparaison-14": {
+  "why": "tel que works as an adjective and agrees with the noun it refers to: les résultats (masculine plural) → tels. telles is feminine; tel is singular."
+ },
+ "comparaison-15": {
+  "why": "tel que introduces examples and agrees with the preceding noun des pays (masculine plural): tels que. telles is feminine; tel is singular."
+ },
+ "comparaison-16": {
+  "why": "tel que agrees with the preceding noun des villes (feminine plural): telles que. tels is masculine; telle is singular."
+ },
+ "comparaison-17": {
+  "why": "The proportional structure Plus…, plus…: the two halves match, so the second also uses plus, with no article. le plus is the superlative; davantage can’t introduce the second half in this structure."
+ },
+ "comparaison-18": {
+  "why": "au moindre + noun = “at the slightest…” (au moindre problème). moins is an adverb and can’t modify a noun directly; mineur is an ordinary adjective (minor), not used in this set phrase and placed after the noun."
+ },
+ "comparaison-19": {
+  "why": "Comparing quantities of a noun takes autant de + noun + que. aussi only modifies adjectives and adverbs; tant de isn’t used in this que comparison (it can only replace autant in the negative)."
+ },
+ "comparaison-20": {
+  "why": "Comparing the degree of a verb takes autant que (Elle travaille autant que lui). aussi modifies adjectives or adverbs; si is only used for comparing adjectives in the negative."
+ },
+ "comparaison-21": {
+  "why": "d’autant plus must pair with que: d’autant plus inquiet que…. car and parce que can’t form this fixed structure with d’autant plus."
+ },
+ "comparaison-22": {
+  "why": "The proportional structure Plus…, plus…: the more the city spreads, the longer the commutes. mieux is the comparative of bien and can’t modify the adjective longs; autant doesn’t pair with plus."
+ },
+ "comparaison-23": {
+  "why": "The superlative of bon is le meilleur / la meilleure (agreeing with solution). You don’t say la plus bonne; mieux is the comparative of the adverb bien and doesn’t modify nouns."
+ },
+ "comparaison-24": {
+  "why": "Modifying the verb aller takes mieux, the comparative of the adverb bien (sales are doing better than last year). meilleur is an adjective; plus bien is wrong."
+ },
+ "comparaison-25": {
+  "why": "The proportional structure Moins…, moins…: the less you exercise, the less you want to. le moins is the superlative; plus moins doesn’t exist."
+ },
+ "comparaison-26": {
+  "why": "comme si + indicative imparfait: as if he were a millionaire. Neither the conditional serait nor the subjunctive soit can follow si."
+ },
+ "comparaison-27": {
+  "why": "The fixed expression autant que possible (as much as possible). aussi que can’t be used on its own; tant que isn’t standard here."
+ },
+ "comparaison-28": {
+  "why": "pas le moindre + noun (not the slightest…), agreeing with the masculine noun effort: le moindre. le moins is the superlative adverb and can’t modify a noun; la moindre is feminine."
+ },
+ "comparaison-29": {
+  "why": "Comparing an adjective (performant) takes aussi… que. autant modifies verbs or takes de + noun; tant only replaces aussi / autant in the negative."
+ },
+ "comparaison-30": {
+  "why": "d’autant moins que + reason: he had always supported the project, so I understand his decision all the less. de moins en moins expresses progression and doesn’t introduce a reason with que; autant moins lacks d’."
+ }
+}

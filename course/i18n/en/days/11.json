@@ -1,0 +1,297 @@
+{
+ "canDo": "Can use le/la/les/lui/leur to avoid repetition while keeping references clear.",
+ "review": "Review the parts of a sentence; tell the direct object apart from à + a person.",
+ "input": "Listening: phone/service exchanges; reading: an email thread.",
+ "output": "Write a 110-word message with at least 5 pronoun replacements; a spoken role-play.",
+ "checkpoint": "≥8 out of 10 replacements correct; don’t use lui/leur as a COD.",
+ "challenge": "Today’s challenge: write a 5–6-sentence message in French to a friend or relative saying that you lent them a book, called them and so on, replacing repeated nouns with le / la / les / lui / leur at least 5 times; then check that each pronoun comes before the verb.",
+ "items": {
+  "reading": {
+   "R11-1": {
+    "questions": [
+     {
+      "why": "What’s missing is la notice and le certificat de garantie. The installation was done (« me l'ont installé »)."
+     },
+     {
+      "why": "« garanti deux ans à partir de la date de livraison ; le certificat n'est donc pas indispensable ». It runs from the delivery date, not the order date."
+     },
+     {
+      "why": "Two solutions: by post + download from the website. Asking the delivery men to come back is what the customer had already tried."
+     }
+    ]
+   },
+   "R11-2": {
+    "questions": [
+     {
+      "why": "« Écrase-le et mélange-le à la nourriture, sinon il le recrache ». The prescription is just a document left next to it."
+     },
+     {
+      "why": "« Ne le laisse pas y aller : la rambarde est trop basse » — y refers to le balcon."
+     },
+     {
+      "why": "The only condition given for going to the vet is two days without eating."
+     }
+    ]
+   },
+   "R11-3": {
+    "questions": [
+     {
+      "why": "« Il ne s'agit pas de le former techniquement » — technical training is the project leaders’ job."
+     },
+     {
+      "why": "You volunteer by writing to Sandrine before Friday; Monday is when she replies."
+     }
+    ]
+   },
+   "R11-4": {
+    "questions": [
+     null,
+     {
+      "why": "prix coûtant = cost price. prix libre applies to second-hand parts; 15 € is the annual fee."
+     },
+     {
+      "why": "« Nous vous le disons franchement et nous vous orientons », and they give the contact details of three professional repairers."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L11-1": {
+    "questions": [
+     {
+      "why": "« votre commande a été séparée en deux colis ». Stock and lost parcels aren’t mentioned."
+     },
+     {
+      "why": "« Je vous le renvoie tout de suite par courriel ». The complaint can only be opened after Friday."
+     },
+     {
+      "why": "« ne le faites pas avant vendredi » — the carrier needs a day’s margin."
+     }
+    ]
+   },
+   "L11-2": {
+    "questions": [
+     {
+      "why": "The out-of-stock medicine can be ordered but won’t arrive until the next afternoon; since it’s needed that evening, a générique équivalent is given."
+     },
+     {
+      "why": "« pendant le repas … ne les prenez pas à jeun » — two tablets a day, with meals."
+     },
+     {
+      "why": "The only signal given to stop and see a doctor is vertiges."
+     }
+    ]
+   },
+   "L11-3": {
+    "questions": [
+     {
+      "why": "He asks her to run Thursday’s workshop in Thomas’s place. Revising the materials isn’t part of it; only the answers to the second part need sending."
+     },
+     {
+      "why": "« les exercices de la deuxième partie ne sont pas corrigés » — only this part’s answers need preparing."
+     },
+     {
+      "why": "« dis-le-moi avant demain midi, je demanderai à Sofiane » — contacting Sofiane is Pascal’s job."
+     }
+    ]
+   },
+   "L11-4": {
+    "questions": [
+     {
+      "why": "« Le justificatif de domicile, lui, nous l'avons bien reçu » — it’s the proof of address that has arrived."
+     },
+     {
+      "why": "« sinon on ne le retrouve pas ». The 10th is the submission deadline; the 15th is when the committee meets."
+     },
+     {
+      "why": "« Si nous recevons le document avant le 10 » is the only condition."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V11-01": {
+   "zh": "to go to someone (for help/a service)",
+   "exZh": "The delivery men told me to come to you."
+  },
+  "V11-02": {
+   "zh": "Let me explain the problem: …",
+   "exZh": "Let me explain the problem: I ordered four items and received two."
+  },
+  "V11-03": {
+   "zh": "not to match …",
+   "exZh": "The product I received doesn’t match the model I chose."
+  },
+  "V11-04": {
+   "zh": "to tell someone something frankly",
+   "exZh": "If the repair is too complicated, we’ll tell you frankly."
+  },
+  "V11-05": {
+   "zh": "to claim under the guarantee",
+   "exZh": "You don’t need the certificate to claim under the guarantee."
+  },
+  "V11-06": {
+   "zh": "to have a two-year guarantee",
+   "exZh": "Your appliance has a two-year guarantee from the delivery date."
+  },
+  "V11-07": {
+   "zh": "to open a complaint",
+   "exZh": "If you don’t receive the parcel on Thursday, we’ll open a complaint."
+  },
+  "V11-08": {
+   "zh": "to have a mistake corrected",
+   "exZh": "I’d like to have a mistake on my order corrected."
+  },
+  "V11-09": {
+   "zh": "to give someone a day’s margin",
+   "exZh": "The carrier asks us to give it a day’s margin."
+  },
+  "V11-10": {
+   "zh": "to look after, to take care of …",
+   "exZh": "Thank you so much for looking after him this week!"
+  },
+  "V11-11": {
+   "zh": "to tend to …",
+   "exZh": "Don’t give him more than half a tin: he tends to put on weight."
+  },
+  "V11-12": {
+   "zh": "it’s not a question of …",
+   "exZh": "It’s not a question of training him technically: the project leaders take care of that."
+  },
+  "V11-13": {
+   "zh": "to have access to …",
+   "exZh": "New starters don’t have access to client files before their training."
+  },
+  "V11-14": {
+   "zh": "to join a team",
+   "exZh": "Four people will join the team in April."
+  },
+  "V11-15": {
+   "zh": "to refer someone to …",
+   "exZh": "If a new starter asks you for this file, refer them to their mentor."
+  },
+  "V11-16": {
+   "zh": "to keep someone waiting",
+   "exZh": "We can’t keep them waiting more than an hour."
+  },
+  "V11-17": {
+   "zh": "instead of someone, in someone’s place",
+   "exZh": "Do you repair the bike for me?"
+  },
+  "V11-18": {
+   "zh": "to direct someone to …",
+   "exZh": "If the repair is too complicated, we direct you to a repairer in the neighbourhood."
+  },
+  "V11-19": {
+   "zh": "to come and collect something/someone",
+   "exZh": "Hello, I’ve come to collect my father’s medicines."
+  },
+  "V11-20": {
+   "zh": "to have something in stock",
+   "exZh": "The third medicine I don’t have in stock, but I can order it."
+  },
+  "V11-21": {
+   "zh": "on an empty stomach",
+   "exZh": "Above all, don’t take these tablets on an empty stomach."
+  },
+  "V11-22": {
+   "zh": "to forward something to someone",
+   "exZh": "Thomas sent me his slides and I’m forwarding them to you right away."
+  },
+  "V11-23": {
+   "zh": "tell me (imperative with two pronouns)",
+   "exZh": "If you can’t, tell me before noon tomorrow."
+  },
+  "V11-24": {
+   "zh": "to stand in for someone",
+   "exZh": "Thomas is away on Thursday: could you stand in for him?"
+  },
+  "V11-25": {
+   "zh": "to submit an application",
+   "exZh": "Have you submitted an application online?"
+  },
+  "V11-26": {
+   "zh": "to ask someone for advice",
+   "exZh": "The pharmacist knows this problem well: I asked her for advice."
+  },
+  "V11-27": {
+   "zh": "to trust someone",
+   "exZh": "He’s a good repairer — I trust him."
+  },
+  "V11-28": {
+   "zh": "to give someone one’s contact details",
+   "exZh": "We know three repairers in the neighbourhood and we’ll give you their contact details."
+  },
+  "V11-29": {
+   "zh": "the tax notice",
+   "exZh": "Your file is incomplete: we still need your tax notice."
+  },
+  "V11-30": {
+   "zh": "in the subject line of the email",
+   "exZh": "Put the file number in the subject line of the email, otherwise we can’t find it."
+  },
+  "V11-31": {
+   "zh": "to be on sick leave",
+   "exZh": "Thomas is on sick leave until the end of the week."
+  },
+  "V11-32": {
+   "zh": "to run a workshop",
+   "exZh": "He was supposed to run Thursday morning’s workshop with the trainees."
+  },
+  "V11-33": {
+   "zh": "by mistake",
+   "exZh": "By mistake, you weren’t given the instructions."
+  },
+  "V11-34": {
+   "zh": "to send a parcel",
+   "exZh": "We sent the second parcel yesterday."
+  },
+  "V11-35": {
+   "zh": "to send something to someone (formal)",
+   "exZh": "Could you send me the instructions by post?"
+  },
+  "V11-36": {
+   "zh": "Thank you in advance for … (closing a letter)",
+   "exZh": "Thank you in advance for your reply."
+  },
+  "V11-37": {
+   "zh": "to exchange something for something",
+   "exZh": "I’d like to exchange this item for the model I ordered."
+  },
+  "V11-38": {
+   "zh": "to make an appointment",
+   "exZh": "I’d like to make an appointment for next week."
+  },
+  "V11-39": {
+   "zh": "to do someone a favour",
+   "exZh": "My neighbour did me a favour: she looked after my cat for a week."
+  },
+  "V11-40": {
+   "zh": "to give someone a hand",
+   "exZh": "My neighbour gave me a hand with the move."
+  },
+  "V11-41": {
+   "zh": "to get on well with someone",
+   "exZh": "I get on well with my colleagues; I see them at weekends too."
+  },
+  "V11-42": {
+   "zh": "to ask after someone, to check in on someone",
+   "exZh": "I call my grandmother every Sunday to see how she’s doing."
+  },
+  "V11-43": {
+   "zh": "to reply to someone",
+   "exZh": "I got their message and replied to them straight away."
+  },
+  "V11-44": {
+   "zh": "customer service",
+   "exZh": "I called customer service three times without getting an answer."
+  },
+  "V11-45": {
+   "zh": "to stay in touch with someone",
+   "exZh": "After he left, I stayed in touch with my former colleague."
+  }
+ },
+ "title": "Pronouns I: COD/COI",
+ "phase": "Foundations and grammar on autopilot"
+}

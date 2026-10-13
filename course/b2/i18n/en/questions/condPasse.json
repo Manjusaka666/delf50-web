@@ -1,0 +1,92 @@
+{
+ "condPasse-01": {
+  "why": "Regret takes the past conditional: j’aurais aimé. aurai aimé is the future perfect (one letter s apart); avais aimé is the plus-que-parfait and doesn’t express regret."
+ },
+ "condPasse-02": {
+  "why": "Reproaching someone for what they should have done but didn’t: tu aurais dû + infinitive. auras dû is the future perfect, expressing conjecture; avais dû is the plus-que-parfait and doesn’t reproach."
+ },
+ "condPasse-03": {
+  "why": "Past conditional; partir takes être: nous serions partis. aurions is the wrong auxiliary; serons forms the future perfect and can’t pair with si + PQP."
+ },
+ "condPasse-04": {
+  "why": "News reports use the past conditional for unconfirmed information: elle aurait démissionné. démissionner takes avoir, so serait is wrong; aura démissionné is the future perfect and contradicts hier soir."
+ },
+ "condPasse-05": {
+  "why": "si + plus-que-parfait → past conditional: je t’aurais aidé. aurai forms the future perfect and avais the plus-que-parfait; neither can be the result of a hypothesis."
+ },
+ "condPasse-06": {
+  "why": "An unfulfilled wish: elle aurait voulu. vouloir takes avoir, so serait is wrong; aura voulu is the future perfect."
+ },
+ "condPasse-07": {
+  "why": "Reproach: vous auriez pu + infinitive (you could have… but didn’t). aurez pu is the future perfect; avez pu means “were able to” and carries no reproach."
+ },
+ "condPasse-08": {
+  "why": "sans + noun can also introduce a hypothesis contrary to past fact, with the result in the past conditional; pronominal verbs take être: ils se seraient perdus. auraient is the wrong auxiliary; seront forms the future perfect."
+ },
+ "condPasse-09": {
+  "why": "The future perfect in the past (seen from the past, completed by a later point) takes the past conditional: qu’elle aurait fini. aura fini takes the present as reference and doesn’t fit le lundi suivant; avait fini means completed before the promise, which makes no sense."
+ },
+ "condPasse-10": {
+  "why": "Past conditional; arriver takes être and the participle agrees with elles: elles seraient arrivées. auraient is the wrong auxiliary; seront forms the future perfect."
+ },
+ "condPasse-11": {
+  "why": "aurais dû takes an infinitive: j’aurais dû relire. relu is the past participle (a common error: ✗ aurais dû relu); relis is a conjugated form."
+ },
+ "condPasse-12": {
+  "why": "à ta place introduces hypothetical advice, so the past conditional; accepter takes avoir: je n’aurais pas accepté. ne serais pas is the wrong auxiliary; n’aurai pas is the future perfect."
+ },
+ "condPasse-13": {
+  "why": "With avoir as auxiliary, the participle agrees with a preceding direct object: les = ces photos (feminine plural) → prises. pris lacks agreement; prise is singular."
+ },
+ "condPasse-14": {
+  "why": "d’après + past conditional reports an unconfirmed claim: le conducteur aurait brûlé. brûler takes avoir, so serait is wrong; aura brûlé is the future perfect."
+ },
+ "condPasse-15": {
+  "why": "The fixed expression il aurait mieux valu + infinitive (it would have been better to…). valoir takes avoir, so serait is wrong; avait mieux valu is the plus-que-parfait and doesn’t express a judgement after the fact."
+ },
+ "condPasse-16": {
+  "why": "si + plus-que-parfait with the result also in the past (hier) → past conditional: elle aurait passé son entretien. passerait is the present conditional and doesn’t fit hier; aurait passée has the wrong agreement (the direct object son entretien comes after)."
+ },
+ "condPasse-17": {
+  "why": "j’aurais voulu que expresses a wish, so the clause takes the subjunctive: que tu sois là. es is indicative and serais conditional; neither can follow vouloir que."
+ },
+ "condPasse-18": {
+  "why": "The fixed expression on aurait dit que… (it was as if…). dire takes avoir, so serait dit is the wrong structure; aura dit is the future perfect and means actually “saying”, not this figurative use."
+ },
+ "condPasse-19": {
+  "why": "Criticising others for what they should have done but didn’t: ils auraient dû + infinitive. devoir takes avoir, so seraient is wrong; avaient dû means “had to / must have” and carries no reproach."
+ },
+ "condPasse-20": {
+  "why": "selon nos informations introduces unconfirmed news, so the past conditional: il aurait quitté. quitter is transitive and takes avoir, so serait is wrong; aura quitté is the future perfect and doesn’t fit la veille."
+ },
+ "condPasse-21": {
+  "why": "sans + noun introduces a hypothesis contrary to past fact; pronominal verbs take être: je me serais découragé. aurais is the wrong auxiliary; serai forms the future perfect."
+ },
+ "condPasse-22": {
+  "why": "Reproach: tu aurais pu + infinitive (you could at least have…). aurais pouvoir is the wrong structure — pouvoir should be the past participle pu; as pu means “you were able to” and carries no reproach."
+ },
+ "condPasse-23": {
+  "why": "sinon (otherwise) introduces a result contrary to past fact, so the past conditional: j’aurais raté. aurai forms the future perfect; avais forms the plus-que-parfait."
+ },
+ "condPasse-24": {
+  "why": "rester takes être and the participle agrees with the subject nous: nous serions restés. aurions restés has the wrong auxiliary; serions resté lacks plural agreement."
+ },
+ "condPasse-25": {
+  "why": "Future perfect in the past, in the passive: auraient été achevés (past conditional + été + past participle). auraient achevés lacks été and has the wrong agreement; auront été achevés takes the present as reference and doesn’t fit “before the summer”, which is already past."
+ },
+ "condPasse-26": {
+  "why": "j’aurais aimé que + subjunctive; the action is complete, so the past subjunctive: que vous m’ayez prévenu. aviez is indicative and auriez conditional; neither can follow aimer que."
+ },
+ "condPasse-27": {
+  "why": "Mixed hypothesis: a past condition → a present result (aujourd’hui), so the main clause takes the present conditional: je serais médecin. aurais été refers to the past and clashes with aujourd’hui; serai is the future."
+ },
+ "condPasse-28": {
+  "why": "Negative compound tense: ne + auxiliary + jamais + past participle: nous n’aurions jamais dû. n’aurions dû jamais has the wrong word order; devoir takes avoir, so ne serions jamais dû is wrong."
+ },
+ "condPasse-29": {
+  "why": "Passive + obligation: aurait dû être remis (should have been handed in yesterday). aurait été dû and serait dû être are not correct structures — devoir takes avoir and is followed by the infinitive être."
+ },
+ "condPasse-30": {
+  "why": "The past conditional of the passive: conditional of avoir + été + past participle: il n’aurait jamais été élu. The auxiliary of être’s compound tenses is avoir, so serait été is wrong; aura été is the future perfect."
+ }
+}

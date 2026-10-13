@@ -1,0 +1,92 @@
+{
+ "negation-01": {
+  "why": "ne… ni… ni… negates two parallel elements (neither… nor…), and the second must also take ni. et / ou can’t pair with the earlier ni."
+ },
+ "negation-02": {
+  "why": "ne… aucun(e) + noun, with aucun agreeing with the noun: expérience is feminine → aucune. aucun has the wrong gender; n’a pas expérience lacks d’ (it should be pas d’expérience)."
+ },
+ "negation-03": {
+  "why": "Personne as subject + ne (no pas): nobody came. Quelqu’un is an affirmative pronoun and can’t form a negation with ne alone; Rien refers to things, which can’t “venir à la réunion”."
+ },
+ "negation-04": {
+  "why": "With the same subject, use sans + infinitif. sans que needs a clause with a different subject (+ subjonctif); sans de doesn’t exist."
+ },
+ "negation-05": {
+  "why": "Rien as subject + ne: nothing went according to plan. Personne refers to people, which doesn’t fit “happen”; Aucun as a pronoun needs a noun it refers to (aucun des…) and can’t stand alone like this."
+ },
+ "negation-06": {
+  "why": "To say “me neither” in reply to a negative sentence, use moi non plus. moi aussi only replies to affirmative sentences; moi pas plus isn’t a set expression."
+ },
+ "negation-07": {
+  "why": "ne… que expresses restriction (only open at weekends), consistent with the second half (“closed on weekdays”). ne… pas / ne… plus mean “not open / no longer open at weekends”, contradicting the second half."
+ },
+ "negation-08": {
+  "why": "ne… rien as the object of a preposition: parler de rien; the same sentence can add à personne (combining two negative words is correct). aucun needs a noun or en; nul as a pronoun is only a subject (nul ne…)."
+ },
+ "negation-09": {
+  "why": "pas du tout strengthens the negation (not at all). pas tout means “not all” and doesn’t work structurally; du tout pas is the wrong word order."
+ },
+ "negation-10": {
+  "why": "ne… guère (written) = hardly, scarcely, matching à peine 5 %. aucun needs a noun; nul can’t combine with ne to form an adverbial negation modifying a verb."
+ },
+ "negation-11": {
+  "why": "ne… nullement (written) = not at all; it is an adverb and can take a noun with an article. nulle / aucune are determiners and can’t appear together with the article l’ (it would be aucune intention / nulle intention)."
+ },
+ "negation-12": {
+  "why": "ne… personne as the object (doesn’t know anyone). aucun as a pronoun needs something to refer to (aucun de mes voisins) or en; quelqu’un is an affirmative pronoun and can’t be negated with ne alone."
+ },
+ "negation-13": {
+  "why": "Aucun + noun as subject + ne (no pas); projet is masculine → Aucun. Aucune has the wrong gender; Personne is a pronoun and can’t directly modify a noun."
+ },
+ "negation-14": {
+  "why": "When personne is the subject, use only ne, never pas as well: Personne ne m’a prévenu. ne pas creates a double negation error; pas alone without ne is wrong in writing."
+ },
+ "negation-15": {
+  "why": "craindre que + subjonctif; the ne here is expletive (ne explétif) with no negative meaning: “afraid the project will be abandoned”. est / sera are indicative, which doesn’t fit the mood required by craindre que."
+ },
+ "negation-16": {
+  "why": "sans que + subjonctif (different subjects) → voient. voyaient (imparfait) and verront (simple future) are both indicative."
+ },
+ "negation-17": {
+  "why": "ne… que means “only valid in…”, with que before the restricted element. « n’est valable pas / plus » has the wrong word order (it should be n’est pas valable), and the meaning clashes with the second half."
+ },
+ "negation-18": {
+  "why": "After a comparison plus… que an expletive ne (ne explétif, not negative) can appear; the clause takes the indicative, and the “forecast” came before the “lasting” → plus-que-parfait: avions prévu. ayons is subjunctive; aurions is conditional and doesn’t express a forecast already made."
+ },
+ "negation-19": {
+  "why": "sans already contains a negation, so rien follows directly: sans rien dire. « sans ne rien dire » is a common error (an extra ne); pas rien doesn’t work."
+ },
+ "negation-20": {
+  "why": "aucun(e) agrees with the noun: réponse is feminine singular → aucune. aucun has the wrong gender; aucunes is only for nouns that exist only in the plural (aucuns frais)."
+ },
+ "negation-21": {
+  "why": "ne… ni + inf… ni + inf negates two parallel infinitives. et / ou can’t form the symmetrical structure with the following ni."
+ },
+ "negation-22": {
+  "why": "rien / personne + de + adjective (masculine singular, invariable): rien d’intéressant. Leaving out de is wrong; rien is a neutral pronoun, so the adjective isn’t feminine."
+ },
+ "negation-23": {
+  "why": "ne… aucunement (written) = not at all; it is an adverb modifying the verb and can be followed by ce type. aucun / nul are determiners and can’t go before the demonstrative ce."
+ },
+ "negation-24": {
+  "why": "ne… aucune + noun: no reason at all. nulle part is an adverb of place (nowhere); rien is a pronoun and can’t directly modify the noun raison."
+ },
+ "negation-25": {
+  "why": "ne… guère de + noun = hardly any (friends). aucun takes a noun directly and can’t take d’amis; after ne… que you need des amis (ne… que isn’t a negation, so des doesn’t become de)."
+ },
+ "negation-26": {
+  "why": "sans que + subjonctif; the help came before the success → subjonctif passé: qu’ils l’aient aidé. ont is indicative; auraient is conditional."
+ },
+ "negation-27": {
+  "why": "sans + aucun(e) + noun: without any hesitation (sans hésitation is also possible). sans pas d’ is a double negation error; nulle part is an adverb of place."
+ },
+ "negation-28": {
+  "why": "ne… que = seulement (only three seats left). aucune can’t be used with a number; « ne reste guère trois places » is ungrammatical (guère takes de + noun)."
+ },
+ "negation-29": {
+  "why": "In a negative sentence, “not … either” is non plus. aussi is only for affirmative sentences; pas plus needs a comparison after it (pas plus que…) and can’t end the sentence on its own."
+ },
+ "negation-30": {
+  "why": "à moins que + subjonctif, often with an expletive ne (ne explétif, not negative: unless the weather is too bad). fait / fera are indicative, which doesn’t fit the mood required by à moins que."
+ }
+}

@@ -1,0 +1,235 @@
+{
+ "canDo": "Switches between all four skills at close to exam pace for the first time.",
+ "review": "Review strategies only; no new grammar.",
+ "input": "Timed listening + reading combination.",
+ "output": "45 minutes of writing; a shortened mock of the three-part oral.",
+ "checkpoint": "Record points of fatigue, time overruns and error types, not just the overall score.",
+ "challenge": "Today’s challenge: do a 60-minute mini run of all four skills in a row: one RFI « Journal en français facile » story (10 minutes, write the gist) → one TV5MONDE Apprendre B1 article (15 minutes, write and answer 3 questions of your own) → a 160-word opinion piece (25 minutes, with at least 1 plus-que-parfait and 1 subjunctive) → a 3-minute spoken recording (10 minutes); note in your own language how long each part actually took and which was the most tiring.",
+ "items": {
+  "reading": {
+   "R40-1": {
+    "questions": [
+     null,
+     {
+      "why": "The text gives exactly this conversion logic."
+     }
+    ]
+   },
+   "R40-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "This judgement comes at the end of the article; it is the author’s conclusion."
+     }
+    ]
+   },
+   "R40-3": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "Fewer than one consumer in five looks at it."
+     },
+     {
+      "why": "This judgement comes at the end of the article; it is the author’s conclusion."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L40-1": {
+    "questions": [
+     null,
+     {
+      "why": "« mêmes jours, mêmes horaires, à la minute près » + half the turnover comes from pre-orders."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V40-01": {
+   "zh": "to look more closely at …",
+   "exZh": "This figure deserves a closer look."
+  },
+  "V40-02": {
+   "zh": "a fundamental change",
+   "exZh": "Some see it as proof of a fundamental change."
+  },
+  "V40-03": {
+   "zh": "more … than it seems",
+   "exZh": "The drop is smaller than it seems."
+  },
+  "V40-04": {
+   "zh": "to fall by … %",
+   "exZh": "Meat consumption has fallen by about 12% in fifteen years."
+  },
+  "V40-05": {
+   "zh": "to be based on …",
+   "exZh": "A policy based on awareness-raising alone reaches a minority."
+  },
+  "V40-06": {
+   "zh": "to put someone in touch with someone",
+   "exZh": "An association puts the student in touch with an elderly person."
+  },
+  "V40-07": {
+   "zh": "an early break-up",
+   "exZh": "Early break-ups (of house-shares) are almost never down to personalities."
+  },
+  "V40-08": {
+   "zh": "to draw the same conclusion",
+   "exZh": "The most successful associations have all drawn the same conclusion."
+  },
+  "V40-09": {
+   "zh": "to confuse X with Y",
+   "exZh": "A partial solution must not be confused with a policy."
+  },
+  "V40-10": {
+   "zh": "affordable housing",
+   "exZh": "A student is looking for affordable housing near the university."
+  },
+  "V40-11": {
+   "zh": "spare parts",
+   "exZh": "The availability of spare parts has clearly improved."
+  },
+  "V40-12": {
+   "zh": "to weigh heavily in …",
+   "exZh": "These criteria weigh heavily in the score."
+  },
+  "V40-13": {
+   "zh": "relative to …, compared with …",
+   "exZh": "The price of parts, relative to the price of a new one, remains high."
+  },
+  "V40-14": {
+   "zh": "room for decision-making",
+   "exZh": "A job where you have room to make decisions carries less risk."
+  },
+  "V40-15": {
+   "zh": "for an equal …, all else being equal",
+   "exZh": "For the same number of hours, autonomy reduces the risk."
+  },
+  "V40-16": {
+   "zh": "to lean towards …",
+   "exZh": "Recent analyses lean towards a causal effect."
+  },
+  "V40-17": {
+   "zh": "an unforeseen effect",
+   "exZh": "An unforeseen effect: the index has mainly been used by professional repairers."
+  },
+  "V40-18": {
+   "zh": "to the minute",
+   "exZh": "Same days, same times, to the minute."
+  },
+  "V40-19": {
+   "zh": "to make … available",
+   "exZh": "The town makes the pitch available free of charge."
+  },
+  "V40-20": {
+   "zh": "to deliver to people’s homes",
+   "exZh": "She refuses to deliver to people’s homes, despite requests."
+  },
+  "V40-21": {
+   "zh": "to be profitable",
+   "exZh": "The subsidy matters, but the rounds have to be profitable in themselves."
+  },
+  "V40-22": {
+   "zh": "more than you’d imagine",
+   "exZh": "There are more adults who can’t swim than you’d imagine."
+  },
+  "V40-23": {
+   "zh": "the way others look at you",
+   "exZh": "The real obstacle is the way others look at you."
+  },
+  "V40-24": {
+   "zh": "at any age",
+   "exZh": "The body floats at any age."
+  },
+  "V40-25": {
+   "zh": "to be regarded as …",
+   "exZh": "A craftsman is still regarded as a professional."
+  },
+  "V40-26": {
+   "zh": "to drive someone away",
+   "exZh": "The aim isn’t to drive professionals away."
+  },
+  "V40-27": {
+   "zh": "to change course (of study)",
+   "exZh": "She changed course after one semester of law."
+  },
+  "V40-28": {
+   "zh": "on the basis of …",
+   "exZh": "Young people are asked to choose on the basis of brochures."
+  },
+  "V40-29": {
+   "zh": "to be able to afford …",
+   "exZh": "I could afford it because my parents were housing me."
+  },
+  "V40-30": {
+   "zh": "If I were you, I would …",
+   "exZh": "If I were you, I’d ask for more time to send the supporting document."
+  },
+  "V40-31": {
+   "zh": "all things considered",
+   "exZh": "All things considered, send the file now and the supporting document later."
+  },
+  "V40-32": {
+   "zh": "the advantage is that …",
+   "exZh": "The advantage is that this option is quicker."
+  },
+  "V40-33": {
+   "zh": "to be easier to set up",
+   "exZh": "The second option is easier to set up."
+  },
+  "V40-34": {
+   "zh": "I am writing to …",
+   "exZh": "I am writing to report a mistake on my order."
+  },
+  "V40-35": {
+   "zh": "to acknowledge an advantage of …",
+   "exZh": "I acknowledge one advantage of the other solution: it’s simpler."
+  },
+  "V40-36": {
+   "zh": "far ahead of …",
+   "exZh": "Surveys put price far ahead of the environment."
+  },
+  "V40-37": {
+   "zh": "to do the papers one after another",
+   "exZh": "Today you’ll do the papers one after another, as on exam day."
+  },
+  "V40-38": {
+   "zh": "to eat less meat",
+   "exZh": "Many families eat less meat because of the price."
+  },
+  "V40-39": {
+   "zh": "animal welfare",
+   "exZh": "Animal welfare comes far behind price."
+  },
+  "V40-40": {
+   "zh": "intergenerational home-sharing",
+   "exZh": "Intergenerational home-sharing helps some students find housing."
+  },
+  "V40-41": {
+   "zh": "to take … to the recycling centre",
+   "exZh": "Private individuals can take their waste to the recycling centre for free."
+  },
+  "V40-42": {
+   "zh": "to extend the lifespan of …",
+   "exZh": "Repairing extends the lifespan of an appliance."
+  },
+  "V40-43": {
+   "zh": "fly-tipping, illegal dumping",
+   "exZh": "An overly high charge would encourage fly-tipping."
+  },
+  "V40-44": {
+   "zh": "the business model",
+   "exZh": "The van’s business model rests on its fixed round."
+  },
+  "V40-45": {
+   "zh": "to buy local",
+   "exZh": "More and more people prefer to buy local."
+  }
+ },
+ "phase": "DELF skills training"
+}

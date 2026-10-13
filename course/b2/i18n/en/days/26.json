@@ -1,0 +1,229 @@
+{
+ "canDo": "Can use “verb + à / de + infinitive” structures accurately (inciter à, dissuader de, s’efforcer de, se contenter de…) to encourage or discourage people from taking part in environmental action, and distinguish “incentives” from “compulsion” in an argument.",
+ "review": "Review day 25’s indefinites (la plupart, chacun, tel) and day 23’s text connectors (certes… mais, d’une part… d’autre part); look back at day 18’s use of y / en to replace à / de structures (j’y renonce, je l’en dissuade).",
+ "input": "Read: a long article analysing barriers to environmental engagement, a column arguing that “incentives alone are no longer enough” and a reader’s letter; listen: a radio interview on a “zero-waste family challenge”, a commentary on eco-anxiety and a town-hall tree-planting notice. Strategy: circle the à / de after verbs as you read and decide whether the speaker is encouraging, discouraging or compelling.",
+ "output": "Write: an opinion post (≥220 words) on a town forum about “charging for rubbish by weight”, with at least 5 different à / de verb structures; speak: a 4-minute monologue on “companies paying staff who cycle to work”, then a debate on “should outdoor terrace heaters be banned altogether?”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; zero preposition errors after verbs in the essay, with at least 5 structures; a 4-minute monologue without breaking off that clearly distinguishes “encouraging” from “compelling”.",
+ "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about environmental action or a climate initiative, and write 3 sentences of opinion with inciter à, dissuader de and s’engager à, or record a 1-minute spoken response.",
+ "items": {
+  "reading": {
+   "R26-1": {
+    "questions": [
+     {
+      "why": "The article opens with the question « Comment expliquer un tel décalage… ? » and then analyses three barriers in turn (powerlessness, time, how campaigns are designed) and how to address them. A is wrong: the text says explicitly « Ces gestes ne sont pas inutiles »; C is wrong: the association is just one example."
+     },
+     {
+      "why": "Based on « ils risquent de donner bonne conscience et de dispenser de toute action plus exigeante »: individual actions can ease people’s conscience so they do nothing more. B: the text makes no such comparison; C contradicts « ne sont pas inutiles »."
+     },
+     {
+      "why": "The text says « des missions courtes, de deux heures au maximum, que chacun choisit en ligne ». B is the opposite: « Nous avons renoncé à exiger un engagement régulier »; A: weekends aren’t mentioned."
+     },
+     {
+      "why": "prendre goût à qch = to develop a taste for, to come to enjoy. The association hopes people who come once will want to come back. A means the opposite; C is something else and isn’t mentioned."
+     },
+     {
+      "why": "The text says « elles poussent plutôt à détourner le regard », i.e. they make people look away. B contradicts « parviennent rarement à modifier les comportements »; C describes effective positive messages, not guilt-tripping campaigns."
+     },
+     {
+      "why": "Based on « ne prend tout son sens que lorsqu’il trouve des relais dans les décisions collectives ». A is the opposite of « elles ne sauraient se substituer à une politique… »; B: subsidies aren’t mentioned."
+     }
+    ]
+   },
+   "R26-2": {
+    "questions": [
+     {
+      "why": "The author thinks incentives have reached their limit (« elle a atteint ses limites ») and that we must dare to make rules while keeping campaigns: « la première prépare les esprits, la seconde rend le changement possible ». A is wrong: « Les campagnes… restent utiles »; C is the opposite of the ending « Les citoyens sont souvent prêts à accepter des contraintes »."
+     },
+     {
+      "why": "The text says « Il a fallu oser interdire certains produits pour que les habitudes changent réellement, et en quelques mois ». B is wrong: with polite requests, « Les résultats sont restés modestes »; C is the opposing view in the next paragraph, not the point of this example."
+     },
+     {
+      "why": "He concedes first, « L’argument mérite d’être entendu », then rebuts with « Mais refuser de légiférer… ». A is wrong — he takes the other side seriously; B is wrong — he only says “unexplained or unfair rules” fail, not all bans."
+     },
+     {
+      "why": "être voué à l’échec = doomed to fail — certain, not “sometimes possible” (B); C: the text doesn’t mention “having already failed elsewhere”."
+     },
+     {
+      "why": "The text says « pourvu qu’elles soient justes et que tout le monde y soit soumis ». Neither A nor C is mentioned."
+     }
+    ]
+   },
+   "R26-3": {
+    "questions": [
+     {
+      "why": "It opens with « Votre dossier de la semaine dernière… m’a fait réagir », and the writer tells his own story — a reader’s letter. A and C are the wrong genres."
+     },
+     {
+      "why": "The text says « Je citais des chiffres… je reprochais à mes amis… ». A is the result of what he did later (his daughter asking of her own accord); B is the opposite of the text."
+     },
+     {
+      "why": "Lecturing didn’t make his friends fly less; it made them unwilling to listen — the opposite of the intended effect. B contradicts « personne n’a changé d’avis »; C contradicts « dissuadaient… de m’écouter »."
+     },
+     {
+      "why": "His daughter had sworn never to take a 14-hour train, but after hearing about his trips she asked to come along and « en est revenue enchantée ». A is disproved by this example; C is wrong — it was the daughter who « m’a demandé »."
+     },
+     {
+      "why": "The text says « on donne plus facilement envie de changer en partageant un plaisir qu’en imposant un renoncement ». A contradicts « Je ne prétends pas avoir trouvé la recette miracle »; B isn’t mentioned."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L26-1": {
+    "questions": [
+     {
+      "why": "« une cinquantaine de familles s’engagent à peser leurs poubelles… et à essayer de les réduire ». A: no tax is mentioned; C is just one criticism discussed at the end of the interview."
+     },
+     {
+      "why": "« Souvent, ce sont les enfants » and « l’argument économique… ils dépensent moins ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "« La peur de ne pas être à la hauteur… Les gens imaginent qu’il faut tout changer d’un coup ». A and B have no basis."
+     },
+     {
+      "why": "« ce qui me frappe le plus, c’est qu’un an après la fin du défi, la plupart… n’ont pas repris leurs anciennes habitudes ». 40% is a figure she mentions first, but it isn’t what “struck her most”."
+     },
+     {
+      "why": "She concedes first, « je ne prétends pas qu’on va sauver la planète avec des bocaux », then says families question shops and « les entreprises finissent par l’entendre ». B is the opposite of the concession; C: she only « refuse d’opposer les deux »."
+     },
+     {
+      "why": "« N’attendez pas d’être prêts. Commencez par un geste, un seul ». A and B are the opposite."
+     }
+    ]
+   },
+   "L26-2": {
+    "questions": [
+     {
+      "why": "The segment discusses « l’éco-anxiété… elle touche particulièrement les jeunes » and how to deal with it. A is wrong: psychologists « refusent d’en faire une maladie »; C isn’t covered."
+     },
+     {
+      "why": "« plus de la moitié disent penser au climat « souvent » ou « tout le temps » ». Neither B nor C matches the survey."
+     },
+     {
+      "why": "« Le danger, c’est quand elle paralyse ». A is the opposite of « refusent d’en faire une maladie »; B is the opposite of « touche particulièrement les jeunes »."
+     },
+     {
+      "why": "« l’aider à trouver une action à sa mesure ». A is exactly what is rejected: « arrête de t’en faire, ça ne marche pas »; C has no basis."
+     }
+    ]
+   },
+   "L26-3": {
+    "questions": [
+     {
+      "why": "« planter 500 arbres et arbustes pour créer une haie le long de la rocade ». A and C aren’t mentioned; the gardeners only give guidance on site."
+     },
+     {
+      "why": "« Pensez à apporter des bottes et des gants ; les outils seront fournis », and soup for lunch is provided by the town too."
+     },
+     {
+      "why": "« la plantation sera reportée au samedi suivant », i.e. put back a week."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V26-01": {
+   "zh": "to prompt, to encourage (to do)",
+   "exZh": "Messages that show concrete results prompt people to act."
+  },
+  "V26-02": {
+   "zh": "to dissuade people (from doing)",
+   "exZh": "The key is less to dissuade people from polluting than to make them want to act."
+  },
+  "V26-03": {
+   "zh": "to go at one’s own pace",
+   "exZh": "Nobody rushes you in this workshop; everyone goes at their own pace."
+  },
+  "V26-04": {
+   "zh": "to ease one’s conscience",
+   "exZh": "Sorting your rubbish can ease your conscience without changing anything fundamental."
+  },
+  "V26-05": {
+   "zh": "to get involved in, to commit to",
+   "exZh": "Lack of time keeps many working people from getting involved in associations."
+  },
+  "V26-06": {
+   "zh": "to develop a taste for",
+   "exZh": "The president hopes the new volunteers will develop a taste for the experience."
+  },
+  "V26-07": {
+   "zh": "to look away",
+   "exZh": "Guilt-tripping campaigns often lead the public to look away."
+  },
+  "V26-08": {
+   "zh": "to take action",
+   "exZh": "Showing a cleaned-up riverbank encourages people to take action more than doom-mongering does."
+  },
+  "V26-09": {
+   "zh": "to replace, to substitute for",
+   "exZh": "Associations can’t replace ambitious public policies."
+  },
+  "V26-10": {
+   "zh": "to make up for shortcomings",
+   "exZh": "Volunteers try to make up for the shortcomings of public services."
+  },
+  "V26-11": {
+   "zh": "to strive to",
+   "exZh": "From the very first meeting, we strive to reassure families."
+  },
+  "V26-12": {
+   "zh": "doomed to fail",
+   "exZh": "A rule that is badly explained is doomed to fail."
+  },
+  "V26-13": {
+   "zh": "to think of (doing)",
+   "exZh": "Today nobody would think of going back."
+  },
+  "V26-14": {
+   "zh": "for fear of upsetting people",
+   "exZh": "Refusing to legislate for fear of upsetting people leaves everyone to make the effort alone."
+  },
+  "V26-15": {
+   "zh": "to infantilise (adults)",
+   "exZh": "These simplistic campaigns infantilise citizens instead of informing them."
+  },
+  "V26-16": {
+   "zh": "to lecture someone",
+   "exZh": "I realised that lecturing my friends was pointless."
+  },
+  "V26-17": {
+   "zh": "to do the same, to follow suit",
+   "exZh": "I tried to persuade those around me to do the same."
+  },
+  "V26-18": {
+   "zh": "to have dark thoughts",
+   "exZh": "Since his workshop closed, he has been having dark thoughts."
+  },
+  "V26-19": {
+   "zh": "to be up to it",
+   "exZh": "Many people hesitate to start for fear of not being up to it."
+  },
+  "V26-20": {
+   "zh": "to question, to challenge (someone)",
+   "exZh": "The families started challenging shops about excess packaging."
+  },
+  "V26-21": {
+   "zh": "a drop in the ocean",
+   "exZh": "Some think these actions are just a drop in the ocean."
+  },
+  "V26-22": {
+   "zh": "to the point of …",
+   "exZh": "Some young people have gone so far as to give up planning for the future."
+  },
+  "V26-23": {
+   "zh": "within one’s reach, suited to oneself",
+   "exZh": "Help your child find an action within their reach."
+  },
+  "V26-24": {
+   "zh": "easier said than done",
+   "exZh": "Turning anxiety into motivation is easier said than done."
+  },
+  "V26-25": {
+   "zh": "to tackle (a problem)",
+   "exZh": "I welcome the council’s determination to tackle the waste problem."
+  }
+ },
+ "title": "Verb constructions",
+ "phase": "Argument, mediation and reporting"
+}

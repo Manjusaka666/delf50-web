@@ -1,0 +1,239 @@
+{
+ "canDo": "Keep up speed with fairly high accuracy, without losing the gist by rushing.",
+ "review": "Review how time was divided in Mock 1.",
+ "input": "Focus on timed listening and reading.",
+ "output": "One full timed task: writing or speaking.",
+ "checkpoint": "Record the time actually spent on each part and compare it with the target.",
+ "challenge": "Today’s challenge: do a timed partial mock: take one RFI « Journal en français facile » broadcast (about 10 minutes), listen without the transcript and answer at exam pace 5 questions you wrote beforehand (who, where, when, why, outcome); then check against the transcript and note, in your own language, which questions you lost the gist on because you rushed, and how to divide your attention across the two listenings next time.",
+ "items": {
+  "reading": {
+   "R43-1": {
+    "questions": [
+     {
+      "why": "It contrasts the high cost of cutting noise by 5 decibels with the low cost of protecting quiet places."
+     }
+    ]
+   },
+   "R43-3": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "The three new practices listed in the text."
+     }
+    ]
+   },
+   "R43-4": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "And it explains that you must say “what to do now”."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L43-1": {
+    "questions": [
+     null,
+     {
+      "why": "The text gives exactly this contrast."
+     }
+    ]
+   },
+   "L43-4": {
+    "questions": [
+     null,
+     {
+      "why": "The text states this contrast directly."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V43-01": {
+   "zh": "to be the work of …, to come from …",
+   "exZh": "A third of new farms are started by people from outside farming."
+  },
+  "V43-02": {
+   "zh": "to come down to …, to amount to no more than …",
+   "exZh": "For a long time, fighting noise came down to dealing with its sources."
+  },
+  "V43-03": {
+   "zh": "the fight against …",
+   "exZh": "Fighting noise also means protecting quiet places."
+  },
+  "V43-04": {
+   "zh": "to underestimate …",
+   "exZh": "Many had underestimated the workload of selling."
+  },
+  "V43-05": {
+   "zh": "to come from (a background)",
+   "exZh": "A third of new farmers don’t come from a farming background."
+  },
+  "V43-06": {
+   "zh": "to look after …",
+   "exZh": "Wherever someone looks after it of their own accord, the book box works."
+  },
+  "V43-07": {
+   "zh": "to emerge from …",
+   "exZh": "What emerges from these hundred and twenty interviews?"
+  },
+  "V43-08": {
+   "zh": "there is a gap between X and Y",
+   "exZh": "There is a gap between saying you would come back and actually coming back."
+  },
+  "V43-09": {
+   "zh": "to be around …",
+   "exZh": "The threshold is around fifteen hours a week."
+  },
+  "V43-10": {
+   "zh": "to make the difference",
+   "exZh": "It is precisely these time slots that make the difference."
+  },
+  "V43-11": {
+   "zh": "better … than …",
+   "exZh": "Better twenty litres once a week than three litres every day."
+  },
+  "V43-12": {
+   "zh": "not to belong (somewhere)",
+   "exZh": "Someone comes by to remove what doesn’t belong in the box."
+  },
+  "V43-13": {
+   "zh": "to become unusable",
+   "exZh": "Without its original order, an archive collection becomes unusable."
+  },
+  "V43-14": {
+   "zh": "to put … online",
+   "exZh": "Some of the photos are digitised and then put online."
+  },
+  "V43-15": {
+   "zh": "to react to …",
+   "exZh": "After two false alarms, few people react to the next alert."
+  },
+  "V43-16": {
+   "zh": "constantly, all the time",
+   "exZh": "The services are constantly weighing up two kinds of mistake."
+  },
+  "V43-17": {
+   "zh": "to point out … to someone",
+   "exZh": "I am writing to point out a mistake on my bill."
+  },
+  "V43-18": {
+   "zh": "to cause … (formal)",
+   "exZh": "This delay caused me extra costs."
+  },
+  "V43-19": {
+   "zh": "I would like to … (polite request)",
+   "exZh": "I would like to make an appointment with an adviser."
+  },
+  "V43-20": {
+   "zh": "to be seen by appointment",
+   "exZh": "Can I be seen by appointment before 18 April?"
+  },
+  "V43-21": {
+   "zh": "to share the costs",
+   "exZh": "What if we shared the delivery costs?"
+  },
+  "V43-22": {
+   "zh": "it cannot be denied that …",
+   "exZh": "It cannot be denied that student jobs bring real experience."
+  },
+  "V43-23": {
+   "zh": "to get a refund",
+   "exZh": "If the model is no longer available, I’d like a refund."
+  },
+  "V43-24": {
+   "zh": "to demand the replacement of …",
+   "exZh": "I demand that the item be replaced, since it doesn’t match the model."
+  },
+  "V43-25": {
+   "zh": "to opt for …",
+   "exZh": "If I were you, I’d opt for sending the document by email."
+  },
+  "V43-26": {
+   "zh": "to be out of reach",
+   "exZh": "Without a family handover, buying a hundred hectares is out of reach."
+  },
+  "V43-27": {
+   "zh": "the lack of …",
+   "exZh": "The failures are explained by isolation and a lack of cash."
+  },
+  "V43-28": {
+   "zh": "access to land",
+   "exZh": "It isn’t a choice but a constraint of access to land."
+  },
+  "V43-29": {
+   "zh": "in itself",
+   "exZh": "Working while studying isn’t a problem in itself."
+  },
+  "V43-30": {
+   "zh": "direct selling (from producer to consumer)",
+   "exZh": "On these farms, direct selling accounts for most sales."
+  },
+  "V43-31": {
+   "zh": "in poor condition",
+   "exZh": "A few books in poor condition discourage good-quality donations."
+  },
+  "V43-32": {
+   "zh": "to make life easier for someone",
+   "exZh": "The town’s role is to make life easier for this person."
+  },
+  "V43-33": {
+   "zh": "to notice …",
+   "exZh": "These spaces disappear without anyone noticing."
+  },
+  "V43-34": {
+   "zh": "to raise an objection",
+   "exZh": "A serious objection was raised against this project."
+  },
+  "V43-35": {
+   "zh": "to anticipate a criticism",
+   "exZh": "The cities that anticipated this criticism reversed the method."
+  },
+  "V43-36": {
+   "zh": "more … than people think",
+   "exZh": "This change alters more things than people think."
+  },
+  "V43-37": {
+   "zh": "unflinchingly, without indulgence",
+   "exZh": "The failure rate deserves to be looked at unflinchingly."
+  },
+  "V43-38": {
+   "zh": "to come up against …",
+   "exZh": "The effectiveness of alerts comes up against a well-known phenomenon."
+  },
+  "V43-39": {
+   "zh": "to weigh up … against …",
+   "exZh": "You have to weigh up alerting too early against alerting too late."
+  },
+  "V43-40": {
+   "zh": "to go against …",
+   "exZh": "This result goes against the usual line."
+  },
+  "V43-41": {
+   "zh": "mental load",
+   "exZh": "The mental load of selling was largely underestimated."
+  },
+  "V43-42": {
+   "zh": "recently, not long since",
+   "exZh": "Recently, I’ve started buying my food directly from a producer."
+  },
+  "V43-43": {
+   "zh": "a false alarm",
+   "exZh": "Alerting late reduces false alarms but leaves less time."
+  },
+  "V43-44": {
+   "zh": "a student job",
+   "exZh": "With a student job of ten hours a week, you can still pass your degree."
+  },
+  "V43-45": {
+   "zh": "care staff",
+   "exZh": "Care homes are short of care staff."
+  }
+ },
+ "title": "Mock 2: partly timed",
+ "phase": "Mock exams and repair"
+}

@@ -1,0 +1,226 @@
+{
+ "canDo": "Can form and use the past conditional correctly to express regret (j’aurais aimé…), reproach (vous auriez dû…) and unreal hypotheses about the past (si + plus-que-parfait), and, like a journalist, report unconfirmed news cautiously with the conditional (l’incendie aurait été provoqué par…).",
+ "review": "Review day 9’s three types of si clause (today’s focus is the third type: si + plus-que-parfait → past conditional) and day 1’s past tenses (passé composé / imparfait / plus-que-parfait): first narrate the events accurately, then express regret or a hypothesis.",
+ "input": "Read: a report on “what we know and don’t know” about a flood, a newspaper editorial on “reporting in the conditional” and a reader’s letter demanding a correction (separate confirmed facts (indicative), unconfirmed information (conditional) and regrets or reproaches); listen: a radio report on two climbers stranded overnight, a myth-busting segment and a regional news bulletin.",
+ "output": "Write: a 180+-word formal email to an online newspaper’s ombudsman, correcting an inaccurate article, expressing regret and reproach, and asking for a correction; speak: a 3-minute monologue (do the media give too much space to news-in-brief?) + a debate on “filming an accident instead of helping”, using the past conditional in your answers to express reproach or hypotheses.",
+ "checkpoint": "Reading and listening accuracy ≥80%; can tell apart the three uses of the past conditional (regret/reproach, unreal hypothesis, unconfirmed information); at least 5 correct past conditionals in the email (including the choice of avoir / être and agreement); when rewriting a news brief, all unconfirmed information in the conditional.",
+ "challenge": "Today’s challenge: find a news-in-brief item (an accident, a fire, a theft…) on RFI’s « Journal en français facile » or TV5MONDE and find the unconfirmed information expressed in the conditional; then write 3 sentences with the past conditional: 1 reporting unconfirmed information, 1 expressing a regret the person might have, and 1 si + plus-que-parfait hypothesis; finally record a 1-minute “news bulletin”.",
+ "items": {
+  "reading": {
+   "R10-1": {
+    "questions": [
+     {
+      "why": "The headline is « ce que l’on sait, ce que l’on ignore encore »; the text states facts in the indicative and uses the conditional (« aurait été aggravée », « aurait connu une panne ») for unconfirmed information. B: the article reaches no conclusion; C: it quotes several sources, not just one resident."
+     },
+     {
+      "why": "« la crue aurait été aggravée par l’effondrement partiel d’une digue… Cette hypothèse… n’a toutefois pas été confirmée ». A is the opposite of the text; C: the expert « aurait été chargé d’examiner l’ouvrage dans les prochains jours » and has reached no conclusion yet."
+     },
+     {
+      "why": "si + plus-que-parfait + past conditional = an unreal hypothesis about the past; with « regrette Martine », it expresses regret. A is what the councillor says; B: she makes no claim for compensation."
+     },
+     {
+      "why": "The councillor says the text-alert system « aurait connu une panne », while the town hall speaks of only a « retard de quelques minutes seulement »; it isn’t yet possible to confirm who is right. B and C don’t match the text (the system exists)."
+     },
+     {
+      "why": "« un rapport avait recommandé de renforcer la digue… Les travaux n’ont jamais été réalisés, faute de financement ». A contradicts “never carried out”; C: some also think « aucune digue n’aurait pu résister »."
+     },
+     {
+      "why": "« la prudence s’impose : … les premières versions sont souvent les moins fiables ». A and C are over-inferences."
+     }
+    ]
+   },
+   "R10-2": {
+    "questions": [
+     {
+      "why": "It is signed « L’éditorial de la rédaction »; the paper admits « Notre journal n’a pas toujours été exemplaire » and announces « une règle simple ». A: the embezzlement case is just an example; C: it isn’t a reader’s letter."
+     },
+     {
+      "why": "« Il permet de publier vite tout en prenant ses distances avec ce que l’on rapporte ». B has nothing to do with its grammatical function; C is the function of the future tense."
+     },
+     {
+      "why": "« le démenti, lui, passe presque toujours inaperçu. Le lecteur pressé ne retient pas la nuance grammaticale ; il retient… une accusation ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "The past conditional of devoir, aurions dû, means “should have (but didn’t)” — a self-reproach, confirmed by « Nous ne l’avons pas fait » that follows. B is another use of the conditional that doesn’t apply here; C doesn’t fit the context."
+     },
+     {
+      "why": "« une information grave qui ne repose que sur une seule source ne sera plus publiée, même au conditionnel ». A is an over-inference; C is the opposite of « Nous préférons arriver les derniers »."
+     }
+    ]
+   },
+   "R10-3": {
+    "questions": [
+     {
+      "why": "She points out the article is inaccurate and writes « Au titre du droit de réponse, je vous demande de publier cette lettre ». A isn’t her purpose; C is the opposite — her association was wrongly implicated."
+     },
+     {
+      "why": "« deux partenaires ont suspendu leur soutien et plusieurs bénévoles ont été pris à partie ». B contradicts « n’est mise en cause dans aucune procédure »; C isn’t mentioned."
+     },
+     {
+      "why": "The past conditional of pouvoir, auriez pu, in the second person means “you could have (but didn’t)” — a reproach. A is the use in « aurait bénéficié »; B has nothing to do with the future."
+     },
+     {
+      "why": "« publier cette lettre dans votre prochaine édition, à la même place que l’article concerné ». Neither A nor B is requested in the letter."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L10-1": {
+    "questions": [
+     {
+      "why": "The programme looks back at two climbers stranded overnight, with those involved and the rescuers drawing lessons. B: no new rules are mentioned; C: there is no mention of a shortage of rescuers."
+     },
+     {
+      "why": "« On a continué un moment en pensant le retrouver… on aurait dû rebrousser chemin tout de suite ». A: the rescuers praise them for the right reflex of calling for help; C isn’t mentioned."
+     },
+     {
+      "why": "« Oui, mais un peu vite… On a pris l’avertissement à la légère ». A contradicts « Oui »; B: the forecast « annonçait des orages en fin de journée »."
+     },
+     {
+      "why": "« Ces deux jeunes ont eu le bon réflexe d’appeler et de rester sur place ». B and C are exactly what he points out, with si + plus-que-parfait, as things they should have done but didn’t."
+     },
+     {
+      "why": "« s’ils avaient emporté une lampe frontale et une couverture de survie, la nuit aurait été beaucoup moins pénible ». Neither A nor C is what he says."
+     },
+     {
+      "why": "« Notre rôle n’est pas de juger. Mais j’aimerais que ce genre d’histoire serve d’exemple ». A contradicts « Non, pas du tout »; B: he does point out « des erreurs simples »."
+     }
+    ]
+   },
+   "L10-2": {
+    "questions": [
+     {
+      "why": "« une vidéo qui montrerait un loup se promenant en pleine nuit dans le centre de Valrive ». B is a rumour from the comments; C is the conclusion after checking, not what users claimed."
+     },
+     {
+      "why": "« la vidéo a été tournée il y a trois ans… dans une autre ville, à l’étranger ». A is the opposite; C contradicts « aucune plainte n’a été déposée »."
+     },
+     {
+      "why": "« il coche toutes les cases : une image spectaculaire, un lieu qu’on connaît, et une petite peur ». A and B don’t match the recording."
+     },
+     {
+      "why": "« c’est justement le conditionnel qui donne l’impression qu’on reste prudent… alors qu’on diffuse une rumeur infondée ». A and C are the opposite of this criticism."
+     }
+    ]
+   },
+   "L10-3": {
+    "questions": [
+     {
+      "why": "« il aurait été provoqué par un court-circuit, mais les causes exactes restent inconnues » — the conditional marks it as unconfirmed. Neither A nor C is mentioned."
+     },
+     {
+      "why": "« D’après des témoins, il aurait voulu éviter un chevreuil ». B mixes up two news items; C isn’t mentioned."
+     },
+     {
+      "why": "sous toute réserve = “subject to confirmation, without guarantee”, matching the many conditionals in the bulletin (aurait été provoqué, aurait voulu, seraient entrés). A and B are misunderstandings."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V10-01": {
+   "zh": "a news-in-brief item (accident, crime …)",
+   "exZh": "This bike theft is a news item that has the whole town talking."
+  },
+  "V10-02": {
+   "zh": "to burst its banks (of a river)",
+   "exZh": "After three days of rain, the river burst its banks."
+  },
+  "V10-03": {
+   "zh": "according to initial information",
+   "exZh": "According to initial information, the fire may have been caused by the wiring."
+  },
+  "V10-04": {
+   "zh": "to be caught off guard",
+   "exZh": "The water rose so fast that residents were caught off guard."
+  },
+  "V10-05": {
+   "zh": "to raise the alarm",
+   "exZh": "It was a neighbour who raised the alarm after seeing the smoke."
+  },
+  "V10-06": {
+   "zh": "to refer to, to report (a situation)",
+   "exZh": "The town hall refers to a delay of only a few minutes."
+  },
+  "V10-07": {
+   "zh": "should have … (regret or reproach)",
+   "exZh": "The dyke should have been strengthened ten years ago."
+  },
+  "V10-08": {
+   "zh": "I should have … (but didn’t)",
+   "exZh": "I should have listened to the weather forecast before setting off."
+  },
+  "V10-09": {
+   "zh": "the race for a scoop",
+   "exZh": "The race for a scoop pushes some media to publish too quickly."
+  },
+  "V10-10": {
+   "zh": "to make the front page",
+   "exZh": "The affair made the front pages for a week."
+  },
+  "V10-11": {
+   "zh": "to cross-check sources",
+   "exZh": "Before publishing, a journalist must cross-check their sources."
+  },
+  "V10-12": {
+   "zh": "to deny (a report)",
+   "exZh": "The mayor denied the report the next day."
+  },
+  "V10-13": {
+   "zh": "to throw someone to the wolves",
+   "exZh": "An innocent man was thrown to the wolves online."
+  },
+  "V10-14": {
+   "zh": "to be implicated",
+   "exZh": "Our association is not implicated in any legal proceedings."
+  },
+  "V10-15": {
+   "zh": "the presumption of innocence",
+   "exZh": "The media must respect the presumption of innocence."
+  },
+  "V10-16": {
+   "zh": "the right of reply",
+   "exZh": "The association exercised its right of reply to the newspaper."
+  },
+  "V10-17": {
+   "zh": "to be harassed, to be confronted",
+   "exZh": "Several volunteers were harassed in the street."
+  },
+  "V10-18": {
+   "zh": "to turn back",
+   "exZh": "When the fog came in, they should have turned back."
+  },
+  "V10-19": {
+   "zh": "to take lightly",
+   "exZh": "They took the warning lightly."
+  },
+  "V10-20": {
+   "zh": "to have a narrow escape",
+   "exZh": "Without a phone signal it would have been over: they had a narrow escape."
+  },
+  "V10-21": {
+   "zh": "to learn the lessons from …",
+   "exZh": "The town must learn the lessons from this flood."
+  },
+  "V10-22": {
+   "zh": "to spread like wildfire on social media",
+   "exZh": "Within a few hours, the video spread like wildfire on social media."
+  },
+  "V10-23": {
+   "zh": "a hoax",
+   "exZh": "The story of a wolf in the town centre was just a hoax."
+  },
+  "V10-24": {
+   "zh": "to lose control of one’s vehicle",
+   "exZh": "On the icy road, the driver lost control of his vehicle."
+  },
+  "V10-25": {
+   "zh": "subject to confirmation",
+   "exZh": "These figures are given subject to confirmation."
+  }
+ },
+ "title": "Regret, reproach and unconfirmed information",
+ "phase": "Upgrading structures and precise expression"
+}

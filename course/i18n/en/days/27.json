@@ -1,0 +1,238 @@
+{
+ "canDo": "Can write formal/semi-formal emails with a clear subject, purpose and request, and understand/use the common passive and nominalisations.",
+ "review": "Review politeness, past/future and connectors; add être + participe passé and frequent nominalisations.",
+ "input": "Read model emails and notices.",
+ "output": "Write a 150-word email; summarise aloud its purpose and key information.",
+ "checkpoint": "Greeting/body/request/sign-off all there; at least 2 passive/nominal expressions without losing clarity.",
+ "challenge": "Today’s challenge: write a real or imaginary formal email (about 80 words) to a teacher, colleague or organisation, with a subject line, greeting, purpose, request and sign-off, using at least 1 passive (a été annulé / sera envoyé) and 2 nominalisations (la modification, la confirmation).",
+ "items": {
+  "reading": {
+   "R27-4": {
+    "questions": [
+     null,
+     {
+      "why": "The criterion the notice gives is a receipt number beginning with 26-."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L27-1": {
+    "questions": [
+     null,
+     {
+      "why": "« il faudrait refaire un point » — just another meeting to discuss pay."
+     }
+    ]
+   },
+   "L27-2": {
+    "questions": [
+     {
+      "why": "« ce sont deux documents différents » — what you download online always shows the current situation."
+     }
+    ]
+   },
+   "L27-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "« Une règle, une seule : pas de phrase de plus de deux lignes »; everything else is harmonised at proofreading."
+     }
+    ]
+   },
+   "L27-4": {
+    "questions": [
+     {
+      "why": "« Le vrai problème est ailleurs » — the legal basis comes first and the action last, the reverse of the order people read in."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V27-01": {
+   "zh": "in reply to your message of + date",
+   "exZh": "In reply to your message of 2 April, I confirm that I will attend the meeting."
+  },
+  "V27-02": {
+   "zh": "please find attached …",
+   "exZh": "Please find attached the list of documents requested."
+  },
+  "V27-03": {
+   "zh": "I confirm … to you",
+   "exZh": "I confirm Friday’s interview at 2 p.m., by video call."
+  },
+  "V27-04": {
+   "zh": "I would be grateful if you could … (formal request)",
+   "exZh": "I would be grateful if you could send me the link before Thursday."
+  },
+  "V27-05": {
+   "zh": "could you tell me …?",
+   "exZh": "Could you tell me which room the demonstration is in?"
+  },
+  "V27-06": {
+   "zh": "Kind regards (email sign-off)",
+   "exZh": "I end my email with “Kind regards” and my signature."
+  },
+  "V27-07": {
+   "zh": "I am applying for … (application)",
+   "exZh": "I am applying for a position as a cultural mediator."
+  },
+  "V27-08": {
+   "zh": "to request a postponement",
+   "exZh": "I am writing to request a postponement of the deadline for the annual report."
+  },
+  "V27-09": {
+   "zh": "to meet a deadline",
+   "exZh": "I won’t be able to meet this deadline: the data arrived late."
+  },
+  "V27-10": {
+   "zh": "to have something checked by someone",
+   "exZh": "I need to have these figures checked by the accounts department before using them."
+  },
+  "V27-11": {
+   "zh": "by + date",
+   "exZh": "I’m expecting an answer from the accounts department by Wednesday."
+  },
+  "V27-12": {
+   "zh": "on the agreed date",
+   "exZh": "The data were not sent on the agreed date."
+  },
+  "V27-13": {
+   "zh": "in person, face to face",
+   "exZh": "If you wish, we can talk about it in person."
+  },
+  "V27-14": {
+   "zh": "to be a difficulty",
+   "exZh": "If this date is a difficulty, I can send you the first three parts."
+  },
+  "V27-15": {
+   "zh": "we apologise for any inconvenience caused",
+   "exZh": "We apologise for any inconvenience caused."
+  },
+  "V27-16": {
+   "zh": "it is a matter of …, it concerns …",
+   "exZh": "This is not a security incident."
+  },
+  "V27-17": {
+   "zh": "to be the subject of …",
+   "exZh": "Your request will be carefully examined."
+  },
+  "V27-18": {
+   "zh": "to be dealt with as a priority",
+   "exZh": "The requests concerned will be dealt with as a priority."
+  },
+  "V27-19": {
+   "zh": "to go ahead as planned (not be cancelled)",
+   "exZh": "Appointments scheduled before 30 June will go ahead as planned."
+  },
+  "V27-20": {
+   "zh": "to submit an application",
+   "exZh": "If you submitted an application on 13 June after 17:00, please submit it again."
+  },
+  "V27-21": {
+   "zh": "an acknowledgement of receipt",
+   "exZh": "You will receive an acknowledgement of receipt with a file number."
+  },
+  "V27-22": {
+   "zh": "a service outage",
+   "exZh": "The portal had a service outage from 14 to 17 June."
+  },
+  "V27-23": {
+   "zh": "to have a (job) interview",
+   "exZh": "On Tuesday, I have an interview for an accountant’s job."
+  },
+  "V27-24": {
+   "zh": "a cover letter",
+   "exZh": "You must attach a CV and a cover letter to your application."
+  },
+  "V27-25": {
+   "zh": "a payslip",
+   "exZh": "We will need your last two payslips."
+  },
+  "V27-26": {
+   "zh": "aimed at …, for …",
+   "exZh": "Your programme for school audiences interests me greatly."
+  },
+  "V27-27": {
+   "zh": "to make someone want to …",
+   "exZh": "This internship made me want to work in a museum."
+  },
+  "V27-28": {
+   "zh": "to go from x to y",
+   "exZh": "The schools’ return rate went from 40 to 70% in three years."
+  },
+  "V27-29": {
+   "zh": "to be available from + date",
+   "exZh": "I am available from 15 May."
+  },
+  "V27-30": {
+   "zh": "on a date that suits you",
+   "exZh": "I can come for an interview on a date that suits you."
+  },
+  "V27-31": {
+   "zh": "as tight as possible (time, budget)",
+   "exZh": "This deadline has been calculated as tightly as possible."
+  },
+  "V27-32": {
+   "zh": "… late (by a length of time)",
+   "exZh": "The data were sent to me ten days late."
+  },
+  "V27-33": {
+   "zh": "anything at all",
+   "exZh": "It isn’t to check anything at all: it’s for the internal pay scale."
+  },
+  "V27-34": {
+   "zh": "to request …",
+   "exZh": "You request it through the contact form."
+  },
+  "V27-35": {
+   "zh": "to state the reason",
+   "exZh": "Give the exact date and state the reason for your request."
+  },
+  "V27-36": {
+   "zh": "as it is, as such",
+   "exZh": "It’s for a housing application? Put it just like that."
+  },
+  "V27-37": {
+   "zh": "to leave something out",
+   "exZh": "If you leave out the date, you’ll get the standard document."
+  },
+  "V27-38": {
+   "zh": "to obtain a certificate",
+   "exZh": "To obtain a certificate for a past date, you have to use the contact form."
+  },
+  "V27-39": {
+   "zh": "to share out the tasks",
+   "exZh": "Before writing, you need to share out the tasks."
+  },
+  "V27-40": {
+   "zh": "to write a report",
+   "exZh": "We have three weeks to write the report."
+  },
+  "V27-41": {
+   "zh": "it bothers me (a bit)",
+   "exZh": "Writing the conclusion before we have the results bothers me a bit."
+  },
+  "V27-42": {
+   "zh": "there’s no point …-ing",
+   "exZh": "There’s no point setting ourselves ten rules we won’t keep."
+  },
+  "V27-43": {
+   "zh": "a standard letter (template)",
+   "exZh": "She rewrites the authorities’ standard letters."
+  },
+  "V27-44": {
+   "zh": "to get (someone) to accept something",
+   "exZh": "It took eight months to get the lawyers to accept the new order."
+  },
+  "V27-45": {
+   "zh": "a permanent contract (CDI)",
+   "exZh": "After her trial period, she signed a permanent contract."
+  }
+ },
+ "title": "Formal written interaction",
+ "phase": "Transfer to real tasks"
+}

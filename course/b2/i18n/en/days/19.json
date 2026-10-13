@@ -1,0 +1,204 @@
+{
+ "canDo": "Can express different degrees of certainty and conjecture accurately when discussing science and climate (il est certain que / il est probable que / il se peut que / il semble que / devoir for conjecture / the conditional for caution), and tell how sure an author is of their information in articles and broadcasts.",
+ "review": "Review day 3’s “indicative or subjunctive” (il est probable que + indicative / il est possible que + subjunctive) and day 10’s past conditional (for unconfirmed information); combine with day 18’s pronouns: il se peut qu’on en sauve une partie.",
+ "input": "Read: an analysis of attribution science, a column defending “scientific doubt” and a botanist answering readers’ questions — label every statement with its degree of certainty (certain / very likely / possible / uncertain); listen: a glaciologist on Alpine glaciers, a “true or false” segment distinguishing weather from climate and a heat warning news flash — note the words speakers use to show how sure they are.",
+ "output": "Write: a ≥220-word article for a magazine’s “science explained” column, explaining that “scientific uncertainty is not ignorance”, with at least 5 different expressions of modality; speak: a 4-minute monologue on “geoengineering”, then defend “climate lessons in primary school” in the debate.",
+ "checkpoint": "Reading and listening accuracy ≥80%; can tell il semble que + subjunctive from il me semble que + indicative, and sans doute (probably) from sans aucun doute (without any doubt); article ≥220 words with accurate modality; a 4-minute monologue without breaking off.",
+ "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about climate or scientific research, and write 3 sentences giving information that is “certain”, “very likely” and “still uncertain” (e.g. « Il est certain que… / Il se peut que… »), or record a 1-minute spoken commentary.",
+ "items": {
+  "reading": {
+   "R19-1": {
+    "questions": [
+     {
+      "why": "The article presents in turn the principle of attribution science, its conclusions (certain / fairly certain / uncertain) and its uses. It says explicitly that some conclusions « restent fragiles », so B goes too far; the author doesn’t criticise the models (C)."
+     },
+     null,
+     {
+      "why": "« pour les tempêtes ou les tornades, les conclusions restent fragiles »; the conclusion on heatwaves is « sans appel », and the link with heavy rainfall « solide »."
+     },
+     null,
+     {
+      "why": "« cette nuance passe mal dans le débat public »: some think scientists know nothing, others blame every thunderstorm on the climate — two extremes."
+     },
+     {
+      "why": "« en partie » means “partly”: more and more events will have a contribution from global warming, but it won’t be the only cause. A contradicts “oui”, B contradicts “en partie”."
+     }
+    ]
+   },
+   "R19-2": {
+    "questions": [
+     {
+      "why": "« ce langage prudent n’est pas un défaut de la science, mais sa principale qualité », and the ending argues for teaching everyone to “read uncertainty”."
+     },
+     {
+      "why": "« C’est précisément ce qui la rend digne de confiance : elle peut être corrigée »; C is the opposite of “provisional conclusions”."
+     },
+     null,
+     null,
+     {
+      "why": "« Il appartient plutôt aux médias, et à l’école, d’apprendre à chacun à lire une incertitude »; to C he answers « Sans doute pas »."
+     }
+    ]
+   },
+   "R19-3": {
+    "questions": [
+     {
+      "why": "The layout is « Question de Martine » + « Réponse de Yannick Perrot, botaniste » — an expert answering a reader."
+     },
+     {
+      "why": "« Il est très probable que la hausse des températures moyennes en est la principale cause ». In C, « uniquement » goes too far."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L19-1": {
+    "questions": [
+     {
+      "why": "The interview covers in turn the observations, the causes, forecasts and the effects on people in the valleys. Tourism is only one of the consequences."
+     },
+     {
+      "why": "« une perte d’épaisseur de près de quatre mètres en une seule saison »; one metre was the figure for a “bad year” twenty years ago (A is a distractor)."
+     },
+     {
+      "why": "« il a peu neigé en hiver, et il semble que des poussières venues du Sahara aient noirci la neige » (il semble que + past subjunctive)."
+     },
+     {
+      "why": "« la plupart devraient disparaître d’ici à la fin du siècle, quoi que l’on fasse »; “cutting emissions may save some of them” refers to the large glaciers (B is a distractor)."
+     }
+    ]
+   },
+   "L19-2": {
+    "questions": [
+     {
+      "why": "The segment is called « Vrai ou faux ? » and checks a sentence circulating on social media."
+     },
+     {
+      "why": "« Le climat, c’est une moyenne sur au moins trente ans »; A says the opposite."
+     },
+     {
+      "why": "« presque une année sur deux » + « ces gelées font davantage de dégâts » because plants start growing earlier."
+     },
+     {
+      "why": "« l’auteur de la phrase devait être de bonne foi »: devoir for conjecture = he was probably sincere."
+     }
+    ]
+   },
+   "L19-3": {
+    "questions": [
+     null,
+     {
+      "why": "« pourrait durer jusqu’à dimanche ; il se peut même qu’il se prolonge […] mais cela reste à confirmer »: both the conditional and il se peut que express uncertainty."
+     },
+     {
+      "why": "« l’arrosage des jardins est interdit entre huit heures et vingt heures »; sport is only “advised against” in the hottest hours, not banned outright."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V19-01": {
+   "zh": "the degree of confidence",
+   "exZh": "Researchers always state the degree of confidence in their conclusions."
+  },
+  "V19-02": {
+   "zh": "conclusive, beyond appeal",
+   "exZh": "The results of this new study are conclusive."
+  },
+  "V19-03": {
+   "zh": "it is unlikely that … (+ subjunctive)",
+   "exZh": "It is unlikely there will still be ice on this summit by 2100."
+  },
+  "V19-04": {
+   "zh": "to admit weakness",
+   "exZh": "Acknowledging the limits of your research isn’t admitting weakness."
+  },
+  "V19-05": {
+   "zh": "to go down badly, not to get across",
+   "exZh": "Overly technical information doesn’t get across to the general public."
+  },
+  "V19-06": {
+   "zh": "to bring (a question) back up",
+   "exZh": "Every accident brings the question of cycle lane safety back up."
+  },
+  "V19-07": {
+   "zh": "careful wording, hedging",
+   "exZh": "The minister used a lot of careful wording before announcing the measure."
+  },
+  "V19-08": {
+   "zh": "as things stand, in the current state of knowledge",
+   "exZh": "As things stand, the risk seems limited."
+  },
+  "V19-09": {
+   "zh": "to keep doubt alive",
+   "exZh": "For a long time, some manufacturers tried to keep doubt alive about the dangers of their products."
+  },
+  "V19-10": {
+   "zh": "it is up to (someone) to …",
+   "exZh": "It is up to the public authorities to protect the most vulnerable."
+  },
+  "V19-11": {
+   "zh": "merchants of doubt",
+   "exZh": "For years, the merchants of doubt delayed the ban on this pesticide."
+  },
+  "V19-12": {
+   "zh": "to be careful not to, to avoid",
+   "exZh": "Be careful not to draw conclusions from a single case."
+  },
+  "V19-13": {
+   "zh": "a late frost",
+   "exZh": "A late frost destroyed part of the region’s vineyards."
+  },
+  "V19-14": {
+   "zh": "citizen science",
+   "exZh": "Through citizen science, thousands of people count the birds in their gardens."
+  },
+  "V19-15": {
+   "zh": "to make a strong impression",
+   "exZh": "The images of the collapsing glacier made a strong impression."
+  },
+  "V19-16": {
+   "zh": "the underlying (long-term) trend",
+   "exZh": "Despite a cold winter, the underlying trend is still warming."
+  },
+  "V19-17": {
+   "zh": "whatever we do",
+   "exZh": "Whatever we do, some small glaciers will disappear."
+  },
+  "V19-18": {
+   "zh": "every tenth of a degree counts",
+   "exZh": "For coral reefs, every tenth of a degree counts."
+  },
+  "V19-19": {
+   "zh": "if … is to be believed, according to …",
+   "exZh": "If the forecasters are to be believed, this summer will be very dry."
+  },
+  "V19-20": {
+   "zh": "in good faith",
+   "exZh": "He was mistaken, but probably in good faith."
+  },
+  "V19-21": {
+   "zh": "to be put on orange alert",
+   "exZh": "Three départements were put on orange alert overnight."
+  },
+  "V19-22": {
+   "zh": "that remains to be confirmed",
+   "exZh": "The episode may go on longer, but that remains to be confirmed."
+  },
+  "V19-23": {
+   "zh": "to explore an avenue",
+   "exZh": "For lack of a simple solution, researchers are exploring a new avenue."
+  },
+  "V19-24": {
+   "zh": "to make room",
+   "exZh": "To make room for this new subject, the curriculum had to be trimmed."
+  },
+  "V19-25": {
+   "zh": "to state categorically",
+   "exZh": "He states categorically things that have never been checked."
+  }
+ },
+ "title": "Certainty and conjecture",
+ "phase": "Argument, mediation and reporting"
+}

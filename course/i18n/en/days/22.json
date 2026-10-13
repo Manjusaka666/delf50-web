@@ -1,0 +1,275 @@
+{
+ "canDo": "Can state limits precisely with structures such as ne…que / aucun / ni…ni while keeping a complaint polite.",
+ "review": "Review basic negation, pronouns and the conditionnel; extend to B1 negation.",
+ "input": "Listening and reading on housing problems/repair notices.",
+ "output": "Write a 140-word complaint email; a 3-minute spoken exchange with a landlord.",
+ "checkpoint": "Specific facts, a clear impact, an explicit request, an appropriate tone.",
+ "challenge": "Today’s challenge: think of a real problem in a place you’ve lived (noise, a leak, the heating…) and write a polite 6-sentence complaint using ne…que, aucun and ni…ni at least once each; end with a specific request for a remedy and a deadline.",
+ "items": {
+  "reading": {
+   "R22-1": {
+    "questions": [
+     {
+      "why": "He quotes « le règlement de copropriété, à l'article 12 »."
+     },
+     null,
+     {
+      "why": "« vérifier si l'erreur ne s'étend pas aux trimestres précédents », admitting he doesn’t have the old statements to hand."
+     },
+     {
+      "why": "« plutôt que d'avoir à inscrire ce point à l'ordre du jour » — giving the other side a face-saving way out."
+     }
+    ]
+   },
+   "R22-2": {
+    "questions": [
+     null,
+     {
+      "why": "Three weeks without a reply to the registered letter; a settlement was offered eight days after the summons from the conciliation committee."
+     }
+    ]
+   },
+   "R22-3": {
+    "questions": [
+     {
+      "why": "The service department points out that the legal conformity guarantee is two years, not one."
+     },
+     null,
+     {
+      "why": "« S'il devait être dépassé, un appareil de prêt vous serait proposé, sur simple demande » — two conditions combined."
+     },
+     {
+      "why": "It accepts the repair request and also corrects what was said about the length of the guarantee."
+     }
+    ]
+   },
+   "R22-4": {
+    "questions": [
+     {
+      "why": "The contrasting examples show that only specific dates and times correspond to rules that can be checked."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L22-1": {
+    "questions": [
+     {
+      "why": "« Je ne veux pas une quatrième réparation identique, je veux un diagnostic complet ». Payment only comes up once the diagnosis is known."
+     }
+    ]
+   },
+   "L22-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "« on ne va pas commencer à photographier les voitures des gens, ce n'est pas notre rôle », and the other side also denies having suggested it."
+     }
+    ]
+   },
+   "L22-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "Both demands are met: next month’s bill adjusted + the Tuesday slot, confirmed by text that evening."
+     }
+    ]
+   },
+   "L22-4": {
+    "questions": [
+     {
+      "why": "By June, a January bill no longer meets the “within three months” requirement."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V22-01": {
+   "zh": "I am writing to you about …",
+   "exZh": "I am writing to you about the heating, which has not been working properly for two days."
+  },
+  "V22-02": {
+   "zh": "I would be grateful if you could …",
+   "exZh": "I would be grateful if you could send a technician before Friday."
+  },
+  "V22-03": {
+   "zh": "I am aware that … (conceding first)",
+   "exZh": "I am aware that the co-ownership comprises two buildings, but this expense only concerns building A."
+  },
+  "V22-04": {
+   "zh": "Yours faithfully (formal letter closing)",
+   "exZh": "Thanking you in advance, yours faithfully."
+  },
+  "V22-05": {
+   "zh": "to make a complaint/claim",
+   "exZh": "For an effective complaint, give a subject, dates and a single request."
+  },
+  "V22-06": {
+   "zh": "to ask for a refund of …",
+   "exZh": "If the appliance is at the end of its life, I’ll ask for a refund of the last two call-outs."
+  },
+  "V22-07": {
+   "zh": "to make a goodwill gesture",
+   "exZh": "For the subscription, I can offer you a goodwill gesture of ten euros."
+  },
+  "V22-08": {
+   "zh": "I regret to note that …",
+   "exZh": "I regret to note that nothing has been done since my last letter."
+  },
+  "V22-09": {
+   "zh": "to be entitled to …",
+   "exZh": "According to your general terms, I am entitled not to pay for the days without service."
+  },
+  "V22-10": {
+   "zh": "to find oneself obliged to … (formal)",
+   "exZh": "Without a reply from you before the 15th, I shall find myself obliged to contact a tenants’ association."
+  },
+  "V22-11": {
+   "zh": "to ask for only one thing",
+   "exZh": "I ask for only one thing: a complete written diagnosis."
+  },
+  "V22-12": {
+   "zh": "to have neither … nor …",
+   "exZh": "Since Monday, we have had neither hot water nor heating."
+  },
+  "V22-13": {
+   "zh": "to dispute no (other) …",
+   "exZh": "I do not dispute any other line of this service charge demand."
+  },
+  "V22-14": {
+   "zh": "the (rental) deposit",
+   "exZh": "Here’s how I got my deposit back."
+  },
+  "V22-15": {
+   "zh": "to do the inventory/inspection (moving in or out)",
+   "exZh": "I’d done the move-in inspection with dated photos."
+  },
+  "V22-16": {
+   "zh": "to write/send by registered post",
+   "exZh": "I first wrote by registered post, quoting the legal deadline."
+  },
+  "V22-17": {
+   "zh": "to be at the end of its life (appliance)",
+   "exZh": "If the diagnosis concludes that the appliance is at the end of its life, I’ll ask for a refund."
+  },
+  "V22-18": {
+   "zh": "this can’t go on",
+   "exZh": "Three breakdowns in six months: this can’t go on."
+  },
+  "V22-19": {
+   "zh": "that’s not what I’m asking for",
+   "exZh": "No, that’s not what I’m asking for: I want a complete written diagnosis."
+  },
+  "V22-20": {
+   "zh": "to have something repaired",
+   "exZh": "I’d like to know when you can have the front door of the building repaired."
+  },
+  "V22-21": {
+   "zh": "to address the wrong person",
+   "exZh": "Many complaints get nowhere because they’re addressed to the wrong person."
+  },
+  "V22-22": {
+   "zh": "to make a joint request",
+   "exZh": "Let’s make a joint request rather than three separate letters."
+  },
+  "V22-23": {
+   "zh": "we have received your request",
+   "exZh": "We have received your request concerning your camera."
+  },
+  "V22-24": {
+   "zh": "we remain at your disposal",
+   "exZh": "We remain at your disposal for any further information."
+  },
+  "V22-25": {
+   "zh": "in case …",
+   "exZh": "I’m posting this message in case it’s useful to someone."
+  },
+  "V22-26": {
+   "zh": "to be under guarantee",
+   "exZh": "Your appliance is under guarantee until 4 March next year."
+  },
+  "V22-27": {
+   "zh": "from + date (counting from)",
+   "exZh": "The legal guarantee covers two years from delivery of the goods."
+  },
+  "V22-28": {
+   "zh": "free of charge",
+   "exZh": "We will therefore carry out the repair free of charge."
+  },
+  "V22-29": {
+   "zh": "within + time",
+   "exZh": "A prepaid shipping label will be sent to you within forty-eight hours."
+  },
+  "V22-30": {
+   "zh": "failing which, otherwise",
+   "exZh": "Wait until you receive the label, failing which we would be unable to trace your parcel."
+  },
+  "V22-31": {
+   "zh": "to adjust, to settle … (an amount)",
+   "exZh": "I ask you to adjust this amount."
+  },
+  "V22-32": {
+   "zh": "a receipt (for something handed in)",
+   "exZh": "Ask me for a receipt when you leave, otherwise you’ll have no proof."
+  },
+  "V22-33": {
+   "zh": "to attach a supporting document",
+   "exZh": "Remember to attach a supporting document to your request."
+  },
+  "V22-34": {
+   "zh": "to go no further, to remain unanswered",
+   "exZh": "Some disturbances are authorised and complaints will go no further."
+  },
+  "V22-35": {
+   "zh": "within a reasonable time",
+   "exZh": "A letter that mixes everything up won’t be dealt with within a reasonable time."
+  },
+  "V22-36": {
+   "zh": "whatever (+ noun)",
+   "exZh": "This building site will remain authorised, whatever the quality of your letter."
+  },
+  "V22-37": {
+   "zh": "normal wear and tear",
+   "exZh": "A carpet worn after six years counts as normal wear and tear."
+  },
+  "V22-38": {
+   "zh": "to refer a case to the conciliation committee",
+   "exZh": "I then referred the case to the conciliation committee of my département."
+  },
+  "V22-39": {
+   "zh": "to claim otherwise",
+   "exZh": "I didn’t get everything back and I won’t claim otherwise."
+  },
+  "V22-40": {
+   "zh": "to accuse someone wrongly",
+   "exZh": "I went downstairs to check twice, so as not to accuse the neighbours wrongly."
+  },
+  "V22-41": {
+   "zh": "to carry more weight",
+   "exZh": "A joint request carries more weight than three separate letters."
+  },
+  "V22-42": {
+   "zh": "that won’t get us anywhere",
+   "exZh": "I’m not going to argue about the minutes — that won’t get us anywhere."
+  },
+  "V22-43": {
+   "zh": "water damage (a leak)",
+   "exZh": "After water damage, you must inform your insurer within five working days."
+  },
+  "V22-44": {
+   "zh": "the service charge demand",
+   "exZh": "I’ve received the service charge demand for the fourth quarter and I’ve spotted an error in it."
+  },
+  "V22-45": {
+   "zh": "to put an item on the agenda",
+   "exZh": "I’d rather discuss it with you than put this item on the agenda."
+  }
+ },
+ "title": "Transfer: complaints",
+ "phase": "Transfer to real tasks"
+}

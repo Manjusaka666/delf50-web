@@ -1,0 +1,214 @@
+{
+ "canDo": "Can quickly identify the people, setting, topic and purpose at exam pace.",
+ "review": "Review listening strategies; no new grammar.",
+ "input": "3 sets of original audio, gradually approaching B1 length.",
+ "output": "Notes limited to keywords; a 30-second spoken summary for each set.",
+ "checkpoint": "Answer after two listenings, without losing the gist because of a few unknown words.",
+ "challenge": "Today’s challenge: pick an everyday-life story in RFI’s « Journal en français facile ». Listen twice without the transcript, note four things in keywords (people, place, event, purpose), then sum up the gist aloud in 30 seconds and report one thing the speaker said with il explique que…; finally check against the transcript: did you get the gist right, and which unknown words didn’t actually get in the way?",
+ "items": {
+  "reading": {
+   "R31-1": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "« Un point est en revanche unanime »: it does not apply to jobs where being present is the service itself."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L31-1": {
+    "questions": [
+     {
+      "why": "« La réalité est plus stable », as opposed to the stereotype of “workers passing through”."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V31-01": {
+   "zh": "to converge on, to agree on",
+   "exZh": "The feedback agrees on three points and diverges on a fourth."
+  },
+  "V31-02": {
+   "zh": "that doesn’t mean that …",
+   "exZh": "That doesn’t mean that use is negligible."
+  },
+  "V31-03": {
+   "zh": "to result in, to translate into",
+   "exZh": "Shorter working hours resulted in work becoming more intense."
+  },
+  "V31-04": {
+   "zh": "contrary to popular belief",
+   "exZh": "Contrary to popular belief, you must have eaten before giving blood."
+  },
+  "V31-05": {
+   "zh": "in someone’s eyes",
+   "exZh": "In their eyes, this drop is offset by the earlier gains."
+  },
+  "V31-06": {
+   "zh": "it’s about …, the point is …",
+   "exZh": "This document is about an experiment carried out by sixty companies."
+  },
+  "V31-07": {
+   "zh": "in the hours that follow",
+   "exZh": "Feeling faint is still possible in the hours after giving blood."
+  },
+  "V31-08": {
+   "zh": "for lack of …",
+   "exZh": "For lack of local accommodation, the estate loses about ten applicants every year."
+  },
+  "V31-09": {
+   "zh": "to get something out of it",
+   "exZh": "The estate gets something out of it too: an experienced team cuts faster."
+  },
+  "V31-10": {
+   "zh": "to implement a measure",
+   "exZh": "The technical departments that implemented this measure all say so."
+  },
+  "V31-11": {
+   "zh": "to give rise to complaints",
+   "exZh": "And yet it is the measure that draws the most complaints."
+  },
+  "V31-12": {
+   "zh": "to be seen as …",
+   "exZh": "Tall grass is seen as neglect."
+  },
+  "V31-13": {
+   "zh": "to be a precondition for, to determine",
+   "exZh": "This interview, confidential and compulsory, determines whether you can give blood."
+  },
+  "V31-14": {
+   "zh": "to remember just one thing",
+   "exZh": "If you remember just one thing, it’s this: don’t buy."
+  },
+  "V31-15": {
+   "zh": "that’s where it’s decided",
+   "exZh": "Repairing rather than buying: that’s where it’s decided."
+  },
+  "V31-16": {
+   "zh": "not necessarily",
+   "exZh": "A low price is not necessarily a good sign."
+  },
+  "V31-17": {
+   "zh": "to make no sense",
+   "exZh": "Comparing two bills without checking this point makes no sense."
+  },
+  "V31-18": {
+   "zh": "to vary from one town to another",
+   "exZh": "The price of a cubic metre of water varies widely from one town to another."
+  },
+  "V31-19": {
+   "zh": "with no cut in pay",
+   "exZh": "Some companies have tried the four-day week with no cut in pay."
+  },
+  "V31-20": {
+   "zh": "added to that, on top of that",
+   "exZh": "On top of that there is an institutional factor: sewage charges are sometimes on the same bill."
+  },
+  "V31-21": {
+   "zh": "to be entitled to …",
+   "exZh": "Ask for an assessment, even if you think you aren’t entitled to it."
+  },
+  "V31-22": {
+   "zh": "to notice, to realise",
+   "exZh": "One day you realise you no longer have a life of your own."
+  },
+  "V31-23": {
+   "zh": "the main idea is that …",
+   "exZh": "The main idea is that making devices weighs more than using them."
+  },
+  "V31-24": {
+   "zh": "to draw attention to …",
+   "exZh": "This idea draws attention to what weighs least."
+  },
+  "V31-25": {
+   "zh": "Could you confirm that … ?",
+   "exZh": "Could you confirm that the 8:10 bus is running as usual tomorrow?"
+  },
+  "V31-26": {
+   "zh": "to fuel suspicions",
+   "exZh": "These price gaps often fuel suspicions of opaque management."
+  },
+  "V31-27": {
+   "zh": "the largest share of …",
+   "exZh": "The network accounts for the largest share of the cost."
+  },
+  "V31-28": {
+   "zh": "to take effect",
+   "exZh": "A tree planted today will only take effect in twenty years."
+  },
+  "V31-29": {
+   "zh": "within the limit of …",
+   "exZh": "You can give blood every eight weeks, up to six times a year."
+  },
+  "V31-30": {
+   "zh": "the same day",
+   "exZh": "Avoid strenuous exercise and high altitude on the same day."
+  },
+  "V31-31": {
+   "zh": "seasonal work",
+   "exZh": "The image of seasonal work is one of a workforce just passing through."
+  },
+  "V31-32": {
+   "zh": "to shift the problem (without solving it)",
+   "exZh": "Parents park further away: the problem has only been shifted."
+  },
+  "V31-33": {
+   "zh": "to conclude that it has failed",
+   "exZh": "Towns that evaluate after three months often conclude that the trial has failed."
+  },
+  "V31-34": {
+   "zh": "travel habits",
+   "exZh": "Travel habits only readjust over a full school year."
+  },
+  "V31-35": {
+   "zh": "to accept that …",
+   "exZh": "Accept that someone else will do it less well than you."
+  },
+  "V31-36": {
+   "zh": "That doesn’t solve my problem.",
+   "exZh": "One bus an hour? That doesn’t solve my problem: my class starts at seven."
+  },
+  "V31-37": {
+   "zh": "a replacement bus (during works / closures)",
+   "exZh": "During the works, a replacement bus serves the temporary stop."
+  },
+  "V31-38": {
+   "zh": "within … (distance)",
+   "exZh": "Some applicants can’t find anywhere to stay within thirty kilometres."
+  },
+  "V31-39": {
+   "zh": "bus frequency",
+   "exZh": "Before nine, buses run less often: only one every twenty minutes."
+  },
+  "V31-40": {
+   "zh": "the four-day week",
+   "exZh": "About sixty companies have tried the four-day week."
+  },
+  "V31-41": {
+   "zh": "the absenteeism rate",
+   "exZh": "With this scheme, the absenteeism rate often halves."
+  },
+  "V31-42": {
+   "zh": "the hardship of the work",
+   "exZh": "Accommodation matters more than pay or how hard the work is."
+  },
+  "V31-43": {
+   "zh": "automatic renewal (of a device / contract)",
+   "exZh": "Repairing, buying refurbished, refusing automatic upgrades: that’s what matters."
+  },
+  "V31-44": {
+   "zh": "to buy refurbished",
+   "exZh": "Repairing your phone or buying a refurbished one reduces the digital footprint."
+  },
+  "V31-45": {
+   "zh": "purchasing power",
+   "exZh": "Rising water bills weigh on households’ purchasing power."
+  }
+ },
+ "title": "DELF listening I: the gist",
+ "phase": "DELF skills training"
+}

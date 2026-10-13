@@ -1,0 +1,226 @@
+{
+ "canDo": "Can write a forum contribution of 250+ words with a clear position on a controversial topic: respond to the previous contributor, concede before rebutting, organise 2–3 arguments with connectors and give concrete examples.",
+ "review": "Review discourse connectors (d’abord / ensuite / enfin, d’une part… d’autre part, quant à, en définitive) and concession (certes… mais, bien que + subjunctive, même si, sans pour autant); build on day 32’s “identify the author’s position” reading practice: today you state your own.",
+ "input": "Read: an analysis of “digital detox”, a column arguing “stop making users feel guilty” and a forum post in which parents share a “no smartphone before the end of middle school” pact; listen: a radio debate on a minimum age for social media, an interview about a company blocking emails in the evening and an announcement for a media library’s digital workshops.",
+ "output": "Write: a forum contribution of 250+ words on “Should under-16s be banned from social media?” (respond at the start, concede then rebut, at least 5 different connectors, a summing-up at the end); speak: a 6-minute monologue on “a screen-free week at secondary school”, then debate “fully digital administrative procedures” with the examiner.",
+ "checkpoint": "The forum contribution reaches 250 words, with a clear position statement, 1 response to someone else’s view, 2 concessive structures and 5+ different connectors; self-check against the 6 criteria of the official marking grid with no obvious gaps.",
+ "challenge": "Today’s challenge: find a news item about screens, social media or artificial intelligence on TV5MONDE or RFI’s « Journal en français facile » and write 5 sentences as if replying on a forum: concede first with « Certes… », then state your position with « Toutefois / Quant à… / En définitive… ».",
+ "items": {
+  "reading": {
+   "R33-1": {
+    "questions": [
+     {
+      "why": "The question at the end of the first paragraph, « Faut-il y voir une mode passagère ou le signe d’un malaise plus profond ? », is the thread of the whole text; it then analyses causes, effects, and the effects and limits of detox. A: nothing is being sold; C is too definite: the third paragraph says researchers are cautious and causality is unclear."
+     },
+     {
+      "why": "« Ce réflexe n’est pas le fruit du hasard : de nombreuses applications sont conçues pour retenir l’utilisateur ». B contradicts « souvent sans raison précise »; C is the “individual responsibility” view the article questions at the end."
+     },
+     {
+      "why": "The text explains it straight after: « plus nous restons connectés, plus les plateformes vendent d’espaces publicitaires ». A and B both misread économie literally as “saving”."
+     },
+     {
+      "why": "« il est difficile de savoir si les écrans provoquent ces troubles ou si les personnes déjà fragiles s’y réfugient davantage »: the direction of causality is unclear. Neither A nor C is mentioned."
+     },
+     {
+      "why": "« mieux vaut modifier durablement quelques usages… que viser une abstinence totale ». B: he thinks a week without a phone « ne change rien »; C is the “total abstinence” he rejects."
+     },
+     {
+      "why": "Enfin introduces a criticism of the very idea of “detox”, and En définitive shifts the issue to “designing tools that serve us”. A is wrong: the testimonies come earlier; C: there is no ban in the text."
+     }
+    ]
+   },
+   "R33-2": {
+    "questions": [
+     {
+      "why": "« c’est bien la conception des outils qu’il faudrait encadrer » and the ending, « exiger des outils qui ne nous intoxiquent pas ». A is exactly the line the author criticises; B: he only proposes banning “infinite scroll” for minors, not phones."
+     },
+     {
+      "why": "A tired individual will versus design by teams of engineers: « lutter seul contre le courant » is a metaphor for an uneven fight. B is a literal misreading; C is the opposite of what the metaphor means."
+     },
+     {
+      "why": "« D’autre part, et c’est plus grave, il détourne le regard des vrais responsables »; d’une part… d’autre part lists two points, and c’est plus grave marks the more serious one. A and C have no basis."
+     },
+     {
+      "why": "« imposer la ceinture de sécurité… sans pour autant interdire la voiture », used to rebut « la loi ne peut pas tout ». B is the view the author concedes and then overturns; A: no comparison is intended."
+     },
+     {
+      "why": "détox / intoxiquent is a play on words, and the imperative commençons par exiger makes a forceful ending. B and C don’t fit the author’s combative stance."
+     }
+    ]
+   },
+   "R33-3": {
+    "questions": [
+     {
+      "why": "Signed Fabien_P, written in the first person (« un bilan : le voici ») and ending with an invitation to ask questions, it is a parent sharing a group initiative on a forum. B and C don’t fit the genre."
+     },
+     {
+      "why": "« Chaque parent finissait par céder parce que “tous les autres en ont un”… En nous engageant ensemble… personne n’est le seul à dire non ». A isn’t mentioned; C contradicts the fact that his daughter was angry at first."
+     },
+     {
+      "why": "« reconnaît aujourd’hui qu’elle ne se sent pas exclue, puisque ses amies sont dans le même cas ». A: it was two families who dropped out; B contrasts with « au début », showing things have changed."
+     },
+     {
+      "why": "« sans messagerie de groupe, organiser un après-midi au parc demande plusieurs coups de fil ». Neither B nor C is mentioned."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L33-1": {
+    "questions": [
+     {
+      "why": "The host opens with: « interdire les réseaux sociaux aux moins de quinze ans. Bonne idée ou fausse solution ? ». A confuses it with “banning phones at school”; C is proposed by no one."
+     },
+     {
+      "why": "« des conflits qui ont commencé en ligne… ils continuent le soir, la nuit, le week-end ». B and C aren’t mentioned."
+     },
+     {
+      "why": "« Ensuite, pour la rendre efficace, il faudrait vérifier l’identité de tous les utilisateurs… Cela porterait gravement atteinte à la vie privée ». “Easy to get round” is his first argument."
+     },
+     {
+      "why": "« on ne renonce pas à une règle simplement parce qu’elle sera parfois contournée. L’alcool est interdit aux mineurs, et pourtant certains en boivent »: it rebuts the “easy to get round” argument."
+     },
+     {
+      "why": "« Elle a raison, la loi peut aider les parents, je l’admets ». B is exactly the logic he criticises (« ne devient pas inoffensif le jour des quinze ans »); C: he is actually calling for more media education."
+     },
+     {
+      "why": "« qu’on impose aux plateformes des règles strictes pour tous les mineurs, et qu’on développe l’éducation aux médias à l’école ». Neither A nor C is what he proposes."
+     }
+    ]
+   },
+   "L33-2": {
+    "questions": [
+     {
+      "why": "« les courriels ne sont plus distribués entre vingt heures et sept heures du matin ». B goes too far; C: it’s an internal company measure, not a law."
+     },
+     {
+      "why": "« beaucoup se sentaient obligés de répondre immédiatement, de peur de passer pour peu motivés ». A and C aren’t mentioned."
+     },
+     {
+      "why": "« avaient l’impression d’être infantilisés… des parents qui préfèrent partir tôt… et terminer leur travail le soir »: they lost the freedom to organise their own time. A is the opposite of how it works (emails are still delivered in the morning)."
+     },
+     {
+      "why": "Sick leave fell “slightly”, but « il est difficile d’affirmer que c’est uniquement grâce à cette mesure », and « la technique ne règle pas tout ». A ignores the reservation; C contradicts the data."
+     }
+    ]
+   },
+   "L33-3": {
+    "questions": [
+     {
+      "why": "The opening questions, « Vous êtes mal à l’aise avec Internet ? Vous avez du mal à faire vos démarches en ligne… ? », make the target audience clear. B is mentioned only at the end, as potential volunteers."
+     },
+     {
+      "why": "« en petits groupes de six personnes au maximum » and « Inutile d’avoir un ordinateur : du matériel sera prêté sur place ». A is the opposite; C: there are only Tuesday and Thursday sessions (plus Saturdays by appointment)."
+     },
+     {
+      "why": "« pourquoi ne pas devenir bénévole ? L’équipe recherche des volontaires ». A: the workshops are free; B isn’t said."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V33-01": {
+   "zh": "a passing fad",
+   "exZh": "For some, digital detox is just a passing fad."
+  },
+  "V33-02": {
+   "zh": "the attention economy",
+   "exZh": "In the attention economy, our screen time is turned into advertising revenue."
+  },
+  "V33-03": {
+   "zh": "infinite scroll (feed design)",
+   "exZh": "With infinite scroll, you never know when to stop."
+  },
+  "V33-04": {
+   "zh": "sleep disorders",
+   "exZh": "Work stress often shows up as sleep disorders."
+  },
+  "V33-05": {
+   "zh": "to be no accident",
+   "exZh": "The little restaurant’s success is no accident."
+  },
+  "V33-06": {
+   "zh": "hard to dispute, all but undeniable",
+   "exZh": "This figure is hard to dispute: it comes from three independent studies."
+  },
+  "V33-07": {
+   "zh": "to lead by example",
+   "exZh": "Before banning screens at the table for children, parents have to lead by example."
+  },
+  "V33-08": {
+   "zh": "in the end, ultimately",
+   "exZh": "Ultimately, the problem lies in how the tool is used, not the tool itself."
+  },
+  "V33-09": {
+   "zh": "to make (someone) feel guilty",
+   "exZh": "This kind of talk makes parents who finish work late feel guilty."
+  },
+  "V33-10": {
+   "zh": "to regulate (online) platforms",
+   "exZh": "Rather than blaming users, we should regulate the platforms."
+  },
+  "V33-11": {
+   "zh": "without necessarily …",
+   "exZh": "You can limit notifications without necessarily giving up social media."
+  },
+  "V33-12": {
+   "zh": "not to be able to do everything",
+   "exZh": "Schools can’t do everything; families have a role to play too."
+  },
+  "V33-13": {
+   "zh": "I understand the argument (but …)",
+   "exZh": "I understand the argument, but it doesn’t take small towns into account."
+  },
+  "V33-14": {
+   "zh": "to be hooked on (informal)",
+   "exZh": "My younger brother has been hooked on video games since last summer."
+  },
+  "V33-15": {
+   "zh": "to take back control",
+   "exZh": "After turning off notifications, I felt I had taken back control."
+  },
+  "V33-16": {
+   "zh": "to get round a ban",
+   "exZh": "All it takes to get round the ban is to lie about your age."
+  },
+  "V33-17": {
+   "zh": "to have one’s eyes glued to",
+   "exZh": "He crossed the street with his eyes glued to his phone."
+  },
+  "V33-18": {
+   "zh": "to feel left out",
+   "exZh": "Without an account on this network, some students feel left out of conversations."
+  },
+  "V33-19": {
+   "zh": "to take refuge in, to seek comfort in",
+   "exZh": "After his failure, he took refuge in video games."
+  },
+  "V33-20": {
+   "zh": "to declare one’s income",
+   "exZh": "Every spring, you have to declare your income online."
+  },
+  "V33-21": {
+   "zh": "one-to-one support",
+   "exZh": "The media library offers one-to-one support on Saturday mornings."
+  },
+  "V33-22": {
+   "zh": "to be uncomfortable with, not at ease with",
+   "exZh": "Many older people aren’t at ease with online forms."
+  },
+  "V33-23": {
+   "zh": "where applicable, if need be",
+   "exZh": "Platforms must comply with these rules or, where applicable, pay a fine."
+  },
+  "V33-24": {
+   "zh": "what’s more, on top of that",
+   "exZh": "The measure doesn’t work, and what’s more, it’s very expensive."
+  },
+  "V33-25": {
+   "zh": "parental controls",
+   "exZh": "With parental controls, apps are locked after 22:00."
+  }
+ },
+ "title": "Writing I: forum contributions",
+ "phase": "DELF B2 task training"
+}

@@ -1,0 +1,229 @@
+{
+ "canDo": "Can catch the situation, the main changes, numbers and required actions, and pick out key information in verbes + à/de and in reported speech.",
+ "review": "Review y/en; organise verbes + à/de systematically, and restate what you hear in reported speech.",
+ "input": "Listen to 3–4 announcements/conversations/interview extracts.",
+ "output": "Write keyword notes; restate them aloud in 30 seconds.",
+ "checkpoint": "Tell apart two kinds of error — “didn’t hear it” and “didn’t parse the structure”; restate at least 4 key pieces of information.",
+ "challenge": "Today’s challenge: on RFI’s Journal en français facile, listen twice to a news item of about 1 minute: the first time write only the main idea, the second time note numbers, places and requests; then write 3 sentences in reported speech (On annonce que… / On demande aux gens de…), watching how you use à / de.",
+ "items": {
+  "reading": {
+   "R29-1": {
+    "questions": [
+     null,
+     {
+      "why": "On the first listening, listen for “who to whom, where, why”; connectors are for the second."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L29-1": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "Victor-Hugo is the stop where you change to the tram."
+     }
+    ]
+   },
+   "L29-2": {
+    "questions": [
+     {
+      "why": "« les deux jardins abandonnés avaient les meilleurs terrains » — what was missing was someone responsible for the plot."
+     }
+    ]
+   },
+   "L29-3": {
+    "questions": [
+     {
+      "why": "« l'alerte envoyée par téléphone une heure quarante avant le pic »; in 2014 there was no such system yet."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V29-01": {
+   "zh": "your attention, please (announcements)",
+   "exZh": "Your attention, please: several bus routes have changed."
+  },
+  "V29-02": {
+   "zh": "owing to …",
+   "exZh": "Owing to the setting-up of the Christmas market, several lines are changing their route."
+  },
+  "V29-03": {
+   "zh": "to be diverted",
+   "exZh": "Lines 3, 7 and 12 are diverted from tomorrow."
+  },
+  "V29-04": {
+   "zh": "until + date inclusive",
+   "exZh": "The Christmas market is open until 6 January inclusive."
+  },
+  "V29-05": {
+   "zh": "an extra service, more frequent services",
+   "exZh": "From 20 December, extra services will run on Saturdays until one in the morning."
+  },
+  "V29-06": {
+   "zh": "in both directions",
+   "exZh": "The diversion applies in both directions."
+  },
+  "V29-07": {
+   "zh": "towards …, heading for …",
+   "exZh": "Line 12 is running normally towards the station."
+  },
+  "V29-08": {
+   "zh": "a connection (with)",
+   "exZh": "Connections with the tram are available at the Victor-Hugo stop."
+  },
+  "V29-09": {
+   "zh": "every + time",
+   "exZh": "On Saturday evenings, there’s a bus every twenty minutes."
+  },
+  "V29-10": {
+   "zh": "to be running … late",
+   "exZh": "The 18:05 train is running twenty minutes late."
+  },
+  "V29-11": {
+   "zh": "it isn’t holding anything up",
+   "exZh": "The transcript is missing, but it isn’t holding anything up: you have until 30 September."
+  },
+  "V29-12": {
+   "zh": "to leave from platform + number",
+   "exZh": "The train to Lyon will leave from platform 3, not platform 5."
+  },
+  "V29-13": {
+   "zh": "to take notes",
+   "exZh": "While listening, take notes: one word per idea."
+  },
+  "V29-14": {
+   "zh": "in the margin",
+   "exZh": "A question mark in the margin marks a passage you didn’t catch properly."
+  },
+  "V29-15": {
+   "zh": "to try to …, to seek to …",
+   "exZh": "Repeat whole sentences without trying to correct every sound."
+  },
+  "V29-16": {
+   "zh": "to criticise someone for something",
+   "exZh": "Some people criticised us for this overly bureaucratic rule."
+  },
+  "V29-17": {
+   "zh": "to attribute something to …",
+   "exZh": "The councillors attribute this result to the alert sent by phone."
+  },
+  "V29-18": {
+   "zh": "to take … into account",
+   "exZh": "The new plan must take recent buildings into account."
+  },
+  "V29-19": {
+   "zh": "in addition, furthermore",
+   "exZh": "In addition, the town is calling for the prevention plan to be reviewed."
+  },
+  "V29-20": {
+   "zh": "to change one’s approach",
+   "exZh": "After two plots were abandoned, the association changed its approach."
+  },
+  "V29-21": {
+   "zh": "to point the same way (results, views)",
+   "exZh": "These two studies point the same way."
+  },
+  "V29-22": {
+   "zh": "to come out on top",
+   "exZh": "On immediate comprehension, group B comes out on top."
+  },
+  "V29-23": {
+   "zh": "to be (well) ahead of someone",
+   "exZh": "On vocabulary, group C is well ahead of group B."
+  },
+  "V29-24": {
+   "zh": "to clear up a doubt",
+   "exZh": "The second listening lets you clear up a doubt."
+  },
+  "V29-25": {
+   "zh": "to be affected by … (a disaster)",
+   "exZh": "Thirty-eight homes were affected by the flood."
+  },
+  "V29-26": {
+   "zh": "at this stage",
+   "exZh": "Only at this stage does it become useful to look for detail."
+  },
+  "V29-27": {
+   "zh": "even before …",
+   "exZh": "These words signal the important information even before you’ve understood it."
+  },
+  "V29-28": {
+   "zh": "it’s the best way to … (often ironic)",
+   "exZh": "Trying to understand everything is the best way to remember nothing."
+  },
+  "V29-29": {
+   "zh": "to approach a document",
+   "exZh": "Many candidates approach a recording by trying to understand everything."
+  },
+  "V29-30": {
+   "zh": "to lie between …",
+   "exZh": "Group A lies between the other two."
+  },
+  "V29-31": {
+   "zh": "one’s mother tongue",
+   "exZh": "Group B watched the series with subtitles in their mother tongue."
+  },
+  "V29-32": {
+   "zh": "wrongly, askew",
+   "exZh": "Information noted down wrongly never gets corrected."
+  },
+  "V29-33": {
+   "zh": "as much as possible",
+   "exZh": "The usual reflex is to write as much as possible."
+  },
+  "V29-34": {
+   "zh": "to train someone in …",
+   "exZh": "You train adults in speaking skills."
+  },
+  "V29-35": {
+   "zh": "a strong accent",
+   "exZh": "You can have a very strong accent and be perfectly understood."
+  },
+  "V29-36": {
+   "zh": "hard to …",
+   "exZh": "Someone who stresses every word becomes hard to follow."
+  },
+  "V29-37": {
+   "zh": "without hesitation",
+   "exZh": "What should you work on first? Rhythm, without hesitation."
+  },
+  "V29-38": {
+   "zh": "one by one",
+   "exZh": "Don’t correct sounds one by one: work on intonation."
+  },
+  "V29-39": {
+   "zh": "to take stock",
+   "exZh": "After five years, we’re taking stock: nine gardens are working well."
+  },
+  "V29-40": {
+   "zh": "at the outset, initially",
+   "exZh": "That’s not what we thought at the outset."
+  },
+  "V29-41": {
+   "zh": "a single-storey house",
+   "exZh": "In the low-lying neighbourhood, a third of the homes are single-storey houses."
+  },
+  "V29-42": {
+   "zh": "no one was injured (news language)",
+   "exZh": "Thirty-eight houses were affected, but no one was injured."
+  },
+  "V29-43": {
+   "zh": "a transcript (of marks)",
+   "exZh": "I’m still missing the transcript for the second semester."
+  },
+  "V29-44": {
+   "zh": "awaiting …",
+   "exZh": "My application is awaiting approval."
+  },
+  "V29-45": {
+   "zh": "to have until + date to …",
+   "exZh": "You have until 30 September to provide the transcript."
+  }
+ },
+ "title": "Listening in practice: gist and detail",
+ "phase": "Transfer to real tasks"
+}

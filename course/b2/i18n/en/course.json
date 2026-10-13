@@ -1,0 +1,390 @@
+{
+ "title": "DELF B2 · 50 days",
+ "levels": {
+  "light": {
+   "label": "2 hours"
+  },
+  "standard": {
+   "label": "3 hours"
+  },
+  "high": {
+   "label": "4 hours"
+  }
+ },
+ "phases": [
+  {
+   "name": "Upgrading structures and precise expression"
+  },
+  {
+   "name": "Argument, mediation and reporting"
+  },
+  {
+   "name": "DELF B2 task training"
+  },
+  {
+   "name": "Mock exams, repair and the bridge to C1"
+  }
+ ],
+ "map": [
+  {
+   "title": "Layers of time in narrative",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Wishes, feelings and doubt",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Degrees of certainty in opinions",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Linking information precisely",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Explaining causes",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Analysing consequences",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Opposition and concession",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Purposes and measures",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Hypotheses and conditions",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Regret, reproach and unconfirmed information",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Time relations",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Reporting what others say",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Passive and impersonal structures",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Checkpoint I: the syntax of argument",
+   "phase": "Upgrading structures and precise expression"
+  },
+  {
+   "title": "Nominalisation and journalistic style",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Participles, the gérondif and verbal adjectives",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Emphasis and highlighting",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Advanced pronouns",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Certainty and conjecture",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Complex comparisons",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Sequence and anteriority",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Past participle agreement",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Organising a text",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Negation and restriction",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Indefinites and quantity",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Verb constructions",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Register and formal letters",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Checkpoint II: reporting and argument",
+   "phase": "Argument, mediation and reporting"
+  },
+  {
+   "title": "Listening I: long radio documents",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "Listening II: short documents and opinions",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "Reading I: informative articles",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "Reading II: opinions and implicit meaning",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "Writing I: forum contributions",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "Writing II: formal letters",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "Writing III: structure and revision",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "Speaking I: the monologue",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "Speaking II: the debate",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "Speaking III: pace and adaptability",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "B2 overall checkpoint",
+   "phase": "DELF B2 task training"
+  },
+  {
+   "title": "Mock 1 + error analysis",
+   "phase": "Mock exams, repair and the bridge to C1"
+  },
+  {
+   "title": "Repair day I: grammar and writing",
+   "phase": "Mock exams, repair and the bridge to C1"
+  },
+  {
+   "title": "Mock 2: timed",
+   "phase": "Mock exams, repair and the bridge to C1"
+  },
+  {
+   "title": "Repair day II: listening and reading",
+   "phase": "Mock exams, repair and the bridge to C1"
+  },
+  {
+   "title": "Mock 3: consistency",
+   "phase": "Mock exams, repair and the bridge to C1"
+  },
+  {
+   "title": "Bridge to C1: synthesis and reporting",
+   "phase": "Mock exams, repair and the bridge to C1"
+  },
+  {
+   "title": "Mock 4: close to the real exam",
+   "phase": "Mock exams, repair and the bridge to C1"
+  },
+  {
+   "title": "Bridge to C1: the structured presentation",
+   "phase": "Mock exams, repair and the bridge to C1"
+  },
+  {
+   "phase": "Mock exams, repair and the bridge to C1"
+  },
+  {
+   "title": "Steady before the exam, and transfer",
+   "phase": "Mock exams, repair and the bridge to C1"
+  }
+ ],
+ "intro": "From B1’s “I can express myself” to B2’s “I can argue, report and persuade”, in four phases: first make complex sentences and moods precise, then work on mediation and text organisation, then train on both the old and new DELF B2 formats task by task, and finally sit mock exams, repair what they reveal and bridge to DALF C1.",
+ "labels": {
+  "application": {
+   "name": "Mediation",
+   "unit": "task|tasks"
+  }
+ },
+ "exam": {
+  "parts": [
+   [
+    null,
+    "Listening",
+    "30 minutes",
+    "Authentic radio-type documents. Two formats are in use at the same time: a long document heard twice + short documents heard only once; questions follow the order of the document and the first one tests overall understanding."
+   ],
+   [
+    null,
+    "Reading",
+    "1 hour",
+    "An informative article and an argumentative article (the new format also has short-document questions). The two exercises are independent and can be done in any order; read the questions before the text."
+   ],
+   [
+    null,
+    "Writing",
+    "1 hour",
+    "An argumentative text of at least 250 words: a forum contribution or a formal letter (in your own name or on behalf of a group), with an introduction, development and conclusion."
+   ],
+   [
+    null,
+    "Speaking",
+    "20 minutes (30 minutes’ preparation)",
+    "① Monologue: draw out the topic and the problématique of a short document, announce your outline and give a reasoned opinion; ② debate with the examiner: hold your ground, refine, concede, rebut."
+   ]
+  ],
+  "rule": "Each paper is marked out of 25, 100 in total; you pass with 50, provided no paper scores below 5."
+ },
+ "rubrics": {
+  "writing": [
+   [
+    null,
+    "Genre and topic as required; ≥250 words; facts set out in detail with concrete examples; a clear position, developed arguments, pros and cons weighed."
+   ],
+   [
+    null,
+    "Paragraphs (introduction – development – conclusion); punctuation that helps understanding; layout suited to the genre; varied connectors organising the ideas."
+   ],
+   [
+    null,
+    "Appropriate forms of address and politeness; register suited to the situation."
+   ],
+   [
+    null,
+    "B2-level vocabulary suited to the situation; synonyms to avoid repetition; precise word choice, spelling mostly correct."
+   ],
+   [
+    null,
+    "A mix of simple and complex sentences; past tenses, conditional and subjunctive used correctly; accurate gender and number agreement."
+   ]
+  ],
+  "speaking": [
+   [
+    null,
+    "Draw out the document’s topic and main ideas; state a clear problématique; announce an outline; argue with relevant examples; have an opening and a close, with varied connectors."
+   ],
+   [
+    null,
+    "Confirm and refine opinions; concede with cependant / toutefois / malgré; agree or disagree; respond to the examiner and defend a position."
+   ],
+   [
+    null,
+    "B2 vocabulary with little repetition; simple and complex sentences; correct tenses and agreement; self-correction; clear pronunciation, moderate pace, varied intonation."
+   ]
+  ]
+ },
+ "sources": {
+  "FEI-B2": {
+   "note": "Exam structure, length and marks of each paper, B2 can-do descriptors."
+  },
+  "FEI-B2-SAMPLES": {
+   "note": "Sample papers in both formats, audio transcripts, writing and speaking grading grids and notes on the criteria."
+  },
+  "FEI-B2-TRAIN": {
+   "note": "Official preparation advice for all four papers, with model answers by task type."
+  },
+  "FEI-INVENTAIRE": {
+   "note": "The basis for the B2 range of grammar, functions and vocabulary."
+  },
+  "CEFR-CV": {
+   "note": "B2 descriptors for reception, production, interaction and mediation (médiation)."
+  },
+  "FEI-C1": {
+   "note": "B2→C1 bridge: the target formats of the synthesis (synthèse) and the structured presentation."
+  },
+  "RFI-B2": {
+   "note": "News listening graded at B2, with text and exercises."
+  },
+  "TV5-ALL": {
+   "note": "Free graded video exercises, filterable to B2."
+  },
+  "TV5-BIB": {
+   "note": "600+ free original works in French, for extended B2→C1 reading."
+  },
+  "AF-DICT": {
+   "note": "For checking meanings and standard usage."
+  }
+ },
+ "resources": [
+  {
+   "note": "10 minutes of news a day, with the text"
+  },
+  {
+   "note": "News listening exercises graded at B2"
+  },
+  {
+   "note": "Video exercises filtered to B2"
+  },
+  {
+   "note": "Free original works, to build reading speed"
+  },
+  {
+   "note": "Free exercises searchable by skill and topic"
+  },
+  {
+   "note": "Explanations of the subjunctive, conditional and relative pronouns"
+  },
+  {
+   "note": "Grammar and vocabulary exercises and placement tests"
+  },
+  {
+   "note": "Official sample papers and writing grading grid"
+  },
+  {
+   "note": "Discussion topics and classroom activities filtered to B2"
+  }
+ ],
+ "methods": {
+  "listening": [
+   "Before listening, read the questions and try to remember them; they follow the order of the recording, and the first tests overall understanding.",
+   "Note: long documents are heard twice, short ones only once — with a short document, lock onto the speaker’s position from the start.",
+   "First listening: note the key points — type of document, topic, main idea and keywords.",
+   "Pay special attention to each speaker’s position, attitude and tone (approval, reservation, irony).",
+   "If you don’t understand a word, infer the overall meaning from the context."
+  ],
+  "reading": [
+   "The two exercises are independent and can be done in any order; 1 hour goes fast, so plan your time.",
+   "For each exercise, read the questions first, then the text; the first question tests the overall meaning and questions follow the order of the text.",
+   "As you read, underline the topic, main idea and keywords — especially concessions, contrasts and the author’s evaluative words.",
+   "Tell facts from opinions: the author’s real position often comes after pourtant, toutefois, en revanche."
+  ],
+  "writing": [
+   "Read the instructions and the prompt document carefully: topic, genre (forum post / formal letter), keywords, the view you must respond to.",
+   "Outline on scrap paper: introduction (context + question + position) — 2 to 3 argument paragraphs (point + explanation + example) — conclusion.",
+   "Give each argument a concrete example, and deal with one opposing view (Certes…, mais…).",
+   "Keep 5 minutes to check spelling, agreement and moods; write the word count at the end (≥250 words)."
+  ],
+  "speaking": [
+   "30 minutes’ preparation: pick one of two topics; underline the document’s keywords, write only an outline, not full sentences, and anticipate the examiner’s questions.",
+   "Monologue: state the document’s topic → raise the problématique → announce the outline → argue with examples → conclude.",
+   "Debate: confirm and refine your position, concede (certes, cependant, malgré), respond to the examiner and defend your view.",
+   "Look at the examiner as you speak; articulate clearly at a moderate pace; correct yourself when you slip."
+  ]
+ }
+}

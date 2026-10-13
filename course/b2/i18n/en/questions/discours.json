@@ -1,0 +1,92 @@
+{
+ "discours-01": {
+  "why": "The main clause is in the past (a dit), so the present of the original words (je suis) shifts back to the imparfait était. est doesn’t follow the sequence of tenses; a été is a completed event and can’t describe the state at the time."
+ },
+ "discours-02": {
+  "why": "The original future (rouvrira) becomes the present conditional rouvrirait after a past main clause (the future in the past). « l’année suivante » shows the time is seen from the past, so rouvrira is wrong; aurait rouvert is the past conditional, corresponding to an original future perfect."
+ },
+ "discours-03": {
+  "why": "The original passé composé (j’ai raté) becomes the plus-que-parfait avait raté after a past main clause; la veille also shows it was “the day before”. a raté and rate don’t follow the sequence of tenses."
+ },
+ "discours-04": {
+  "why": "When reporting after the event, the original demain becomes le lendemain (the next day). demain takes the present as reference and doesn’t fit a promise made “last week”; la veille is “the day before”, the opposite direction."
+ },
+ "discours-05": {
+  "why": "A yes/no question becomes an indirect question with si (whether). demander que means “to demand” and takes the subjunctive; ce que reports a question starting with qu’est-ce que."
+ },
+ "discours-06": {
+  "why": "qu’est-ce que becomes ce que in an indirect question. qu’est-ce que is only for direct questions; que on its own can’t introduce this indirect question."
+ },
+ "discours-07": {
+  "why": "The clause lacks a subject (what motivated me), and qu’est-ce qui becomes ce qui in an indirect question. ce que is an object, so it doesn’t fit a missing subject; qu’est-ce qui is only for direct questions."
+ },
+ "discours-08": {
+  "why": "The future perfect (j’aurai fini) becomes the past conditional aurait fini after a past main clause. aura fini hasn’t shifted back; avait fini is the plus-que-parfait, meaning completed before speaking, which contradicts “before the following Friday”."
+ },
+ "discours-09": {
+  "why": "malgré expresses concession: despite the CCTV footage, the suspect still denied being there, so nier + past infinitive. admettre and reconnaître mean admitting, which contradicts the contrast set up by malgré."
+ },
+ "discours-10": {
+  "why": "prétendre que means “to claim” and implies the reporter doesn’t believe it; the following mais confirms the claim was false. admettre (to admit) doesn’t fit a sales pitch; niait would mean denying the phone was waterproof, which doesn’t fit the contrast that follows."
+ },
+ "discours-11": {
+  "why": "An indirect question keeps the question word où but has no subject–verb inversion and no est-ce que; the tense shifts back to the plus-que-parfait: où j’avais garé. The other two options keep the form of a direct question."
+ },
+ "discours-12": {
+  "why": "An imperative is reported with dire / demander à qqn de + infinitive. que must be followed by a conjugated verb; dire can’t take a bare infinitive to report an order."
+ },
+ "discours-13": {
+  "why": "With a past day (3 March) as the reference, the original hier becomes la veille (the day before, i.e. 2 March). hier takes the present as reference; le lendemain is “the next day”, the opposite direction, and contradicts the plus-que-parfait avaient signé."
+ },
+ "discours-14": {
+  "why": "The original is already in the imparfait, so it stays the same when reported: vivait. vivrait is conditional, the future in the past, which is the wrong meaning; vive is subjunctive, and raconter que takes the indicative."
+ },
+ "discours-15": {
+  "why": "With 12 May in the past as the reference, aujourd’hui becomes ce jour-là (that day). aujourd’hui means the day of speaking; le lendemain is the next day, changing the meaning."
+ },
+ "discours-16": {
+  "why": "A yes/no question takes si, and si must elide to s’il before il / ils. « si il » is a spelling error; demander qu’il… means “to demand” and can’t report a question."
+ },
+ "discours-17": {
+  "why": "qu’est-ce qui → ce qui, and since the main clause is in the past, the present shifts back to the imparfait: ce qui se passait. The second option keeps the direct question form; the third doesn’t follow the sequence of tenses."
+ },
+ "discours-18": {
+  "why": "admettre que (to admit) + indicative; what is admitted is a mistake already made, so the plus-que-parfait avait commis. commettrait expresses the future in the past and commettra is the future; neither fits “admitting a past mistake”."
+ },
+ "discours-19": {
+  "why": "nier + (past) infinitive, with no preposition: nier avoir reçu. nier doesn’t take de or à."
+ },
+ "discours-20": {
+  "why": "prétendre + infinitive (no preposition) means “to claim to be”, and the second half shows the reporter’s doubt. prétendre de doesn’t exist; prétendre à + noun means “to aspire to” (prétendre à un poste) and can’t take this infinitive."
+ },
+ "discours-21": {
+  "why": "The near future aller + inf becomes allait + inf after a past main clause. va doesn’t follow the sequence of tenses; irait fermer means “would go and close”, changing the near-future meaning."
+ },
+ "discours-22": {
+  "why": "Seen from the past, dans deux jours becomes deux jours plus tard (two days later). dans deux jours takes the present as reference; il y a deux jours means “two days ago”, contradicting the conditional partiraient."
+ },
+ "discours-23": {
+  "why": "With 2020 as the reference, il y a un an becomes un an plus tôt (a year earlier). il y a un an takes today as reference; un an plus tard is the opposite direction and contradicts the plus-que-parfait."
+ },
+ "discours-24": {
+  "why": "Indirect question: keep pourquoi, put the subject before the verb with no inversion or est-ce que, and shift the present back to the imparfait. The other two options keep the structure of a direct question."
+ },
+ "discours-25": {
+  "why": "reconnaître que (to acknowledge a fact) + indicative; the data theft happened before the acknowledgement, so the passive plus-que-parfait avaient été piratées. aient été is subjunctive; seront is the future and fits neither the past main clause nor the facts."
+ },
+ "discours-26": {
+  "why": "The interrogative adjective quel stays the same in an indirect question and agrees with formation: quelle formation. laquelle is a pronoun and can’t go before a noun; ce que can’t take a noun."
+ },
+ "discours-27": {
+  "why": "A negative order is reported as conseiller de + negative infinitive; both parts of the negation ne rien go before the infinitive: de ne rien signer. The first option has the negation in the wrong place; the second lacks the preposition de."
+ },
+ "discours-28": {
+  "why": "affirmer que asserts something and takes the indicative; the main clause is in the present, so no shift is needed, and the past action takes the passé composé a vu. ait vu and voie are subjunctive and can’t follow affirmer."
+ },
+ "discours-29": {
+  "why": "The original si je pourrai is in the future, and after a past main clause it becomes the conditional pourrait. pourra hasn’t shifted back; puisse is subjunctive, and an indirect question with si takes the indicative or conditional."
+ },
+ "discours-30": {
+  "why": "The original future perfect (aurez lu) becomes the past conditional aurais lu when reported in the past, matching the main clause’s comprendrais (future → conditional). aurai lu hasn’t shifted back; avais lu is the plus-que-parfait and doesn’t fit the time relation with comprendrais."
+ }
+}

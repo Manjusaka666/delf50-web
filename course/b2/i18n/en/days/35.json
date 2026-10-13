@@ -1,0 +1,232 @@
+{
+ "canDo": "Can draw up a 3-part outline before writing (one topic sentence per paragraph) and, after writing, check step by step in the order “task → structure → connectors → agreement → punctuation”, correcting past participle agreement errors and misused connectors on your own.",
+ "review": "Review past participle agreement (with être it agrees with the subject; with avoir only with a preceding direct object; pronominal verbs such as se rendre compte where there is no agreement) and discourse connectors (en revanche for contrast, en outre for addition, c’est pourquoi for result); build on days 33–34’s forum post and formal letter: today the focus is on “after you’ve written it”.",
+ "input": "Read: an analysis of the debate over “abolishing marks”, a teacher’s column arguing for “teaching students to check their own work” and an extract from a writing guide, “the five-step check”; listen: an education researcher on marking and rewriting, a language column on the debate over past participle agreement rules and an announcement from a university writing support centre.",
+ "output": "Write: an argumentative essay of 250+ words, “Should marks be abolished in middle school?”; write the outline first, then check your work with R35-3’s five-step method and mark at least 3 corrections; speak: a 6-minute monologue on “should homework be abolished?”, then debate “can automatic correction / AI be used for homework?” with the examiner.",
+ "checkpoint": "Every paragraph of the outline has a topic sentence; zero past participle agreement errors in the final draft; at least 6 different connectors used correctly; can find all 5 errors in the A35-1 paragraph.",
+ "challenge": "Today’s challenge: find an education news item on TV5MONDE or RFI’s « Journal en français facile » and write 5 French sentences giving your view, at least 2 of them with avoir + a past participle after a preceding direct object (e.g. « Les réformes qu’on a annoncées… »); leave it for 10 minutes, then check it three times for “meaning → agreement → punctuation” and note what you corrected.",
+ "items": {
+  "reading": {
+   "R35-1": {
+    "questions": [
+     {
+      "why": "The article presents, in turn, the supporters’ arguments, the results of trials, the opponents’ arguments and a compromise: a balanced overview of the debate. B: there is no official decision in the text; C: there is no historical review."
+     },
+     {
+      "why": "« la note serait souvent vécue comme un jugement sur la personne plutôt que sur le travail », leading students to see themselves as “bad” and give up. A is too absolute; C isn’t mentioned."
+     },
+     {
+      "why": "The second half of the sentence explains it: « un 10 sur 20 peut correspondre à des difficultés très différentes ». A and B misread cacher literally."
+     },
+     {
+      "why": "« ces effets restent difficiles à mesurer… car les écoles qui ont tenté l’expérience étaient souvent déjà très engagées dans l’innovation pédagogique »: the sample itself is biased. C contradicts « plutôt encourageants »."
+     },
+     {
+      "why": "It comes straight after « Beaucoup de parents disent ne plus savoir où en est leur enfant »: she never finished reading the three-page skills chart. A is the opposite; C is a separate argument in the next sentence."
+     },
+     {
+      "why": "« conserver des notes, mais en moins grand nombre, et les accompagner systématiquement de commentaires précis et de possibilités de rattrapage ». A and B are the two extremes the voie médiane is meant to avoid."
+     }
+    ]
+   },
+   "R35-2": {
+    "questions": [
+     {
+      "why": "« se relire n’a rien de naturel : c’est une technique, qui s’apprend », and the ending proposes counting checking time in the marking. A: the author actually says errors often don’t come from not knowing the rules; C is explicitly rejected (« je ne prétends pas qu’il faille les interdire »)."
+     },
+     {
+      "why": "lire en diagonale = to skim; the following phrase, « en voyant ce qu’ils voulaient écrire et non ce qu’ils ont réellement écrit », explains it further. A means the opposite; B is irrelevant."
+     },
+     {
+      "why": "« relire plusieurs fois, en cherchant à chaque passage un type d’erreur précis : d’abord…, ensuite…, enfin… », with the advice to set the text aside first. B contradicts « laisser reposer son texte »; C isn’t mentioned."
+     },
+     {
+      "why": "A Certes… Mais concession: they « ont fait d’immenses progrès », but « ne détectent pas tout, loin de là », and « l’élève… n’apprend rien ». A and C are extreme positions."
+     },
+     {
+      "why": "« Ce n’est pas du temps perdu ; c’est peut-être le temps le mieux employé de toute l’épreuve ». A: she only suggests setting aside 10 minutes within the existing time; B is the opposite of what is meant."
+     }
+    ]
+   },
+   "R35-3": {
+    "questions": [
+     {
+      "why": "Imperatives set out five steps (Vérifiez, Contrôlez, Observez, Traquez, Lisez): it is a method guide. Neither B nor C is in the text."
+     },
+     {
+      "why": "« fusionnez-les » = merge them. A: it doesn’t mean “delete”; C belongs to the third step and wouldn’t fix the repetition."
+     },
+     {
+      "why": "en revanche introduces a contrast: « plan clair » is set against « conclusion trop courte ». A and B both add a further point and would need en outre or de plus."
+     },
+     {
+      "why": "« avec avoir, il ne s’accorde qu’avec un complément d’objet direct placé avant le verbe », e.g. les erreurs que j’ai corrigées. A is the rule for être."
+     },
+     {
+      "why": "« c’est bien peu, comparé aux points que vous éviterez de perdre »: a small investment for a big return. B contradicts “around ten minutes”; C gets it backwards."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L35-1": {
+    "questions": [
+     {
+      "why": "The whole interview is about whether “a page full of red ink” helps, and her three suggestions for marking. B and C are mentioned only as background or as views she rebuts."
+     },
+     {
+      "why": "« une copie très annotée n’était pratiquement jamais relue par l’élève. Il regarde la note, il range la copie ». A is the opposite; C isn’t mentioned."
+     },
+     {
+      "why": "« Enfin, et c’est le plus important, on ne lui demande rien en retour ». A and B are the first two reasons, but they aren’t singled out as the most important."
+     },
+     {
+      "why": "« C’est là que l’apprentissage a lieu : quand l’élève corrige lui-même l’erreur qu’on lui a signalée ». A and C aren’t said."
+     },
+     {
+      "why": "« Les élèves qui ont utilisé ce type de grille ont nettement progressé, surtout les plus faibles ». Neither B nor C has any basis."
+     },
+     {
+      "why": "« C’est vrai, je ne dis pas le contraire. Mais corriger vingt erreurs que personne ne lira, c’est aussi du temps perdu »: she concedes, then rebuts. A doesn’t fit the concession; C isn’t proposed."
+     }
+    ]
+   },
+   "L35-2": {
+    "questions": [
+     {
+      "why": "The column states its topic at the outset, « au participe passé employé avec avoir », and covers the rule, reform proposals and the debate. Neither A nor C is the topic."
+     },
+     {
+      "why": "« Avouez que c’est étrange : à l’oral, on n’entend presque jamais la différence ». A contradicts “established centuries ago”; B is an absurd reading of the example."
+     },
+     {
+      "why": "« proposent de rendre le participe invariable avec avoir ». B and C are wrong extrapolations."
+     },
+     {
+      "why": "« toucher à l’orthographe, c’est abîmer la langue ». A contradicts “you can’t hear the difference when speaking”; C: the rule is long-established."
+     },
+     {
+      "why": "« En attendant que le débat soit tranché, la règle s’applique… posez-vous la question « quoi ? ». Si la réponse est placée avant, on accorde ». A is the opposite; B isn’t suggested."
+     }
+    ]
+   },
+   "L35-3": {
+    "questions": [
+     {
+      "why": "« Ils ne rédigeront pas vos travaux à votre place, mais ils vous aideront à construire un plan… repérer vos erreurs ». A is explicitly ruled out; C isn’t mentioned."
+     },
+     {
+      "why": "« le premier, consacré aux connecteurs logiques, aura lieu le 8 octobre ». B and C aren’t mentioned."
+     },
+     {
+      "why": "« Pensez simplement à apporter votre brouillon et la consigne de votre devoir ». A: the service is free; B is irrelevant."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V35-01": {
+   "zh": "to lose heart, to get discouraged",
+   "exZh": "After three bad marks in a row, he’s starting to lose heart."
+  },
+  "V35-02": {
+   "zh": "to feel labelled (negatively)",
+   "exZh": "Struggling students feel that rankings label them negatively."
+  },
+  "V35-03": {
+   "zh": "sooner or later",
+   "exZh": "Sooner or later, students will have to sit marked exams."
+  },
+  "V35-04": {
+   "zh": "to know where (someone/something) stands",
+   "exZh": "With these charts, parents no longer know where their child stands."
+  },
+  "V35-05": {
+   "zh": "a middle way, a compromise",
+   "exZh": "Between abolishing marks and keeping things as they are, there is a middle way."
+  },
+  "V35-06": {
+   "zh": "a learning tool, a means of learning",
+   "exZh": "Assessment should be a means of learning, not a punishment."
+  },
+  "V35-07": {
+   "zh": "to skim",
+   "exZh": "He skimmed his paper and didn’t spot a single mistake."
+  },
+  "V35-08": {
+   "zh": "automatic correction tools",
+   "exZh": "Automatic correction tools don’t catch every mistake."
+  },
+  "V35-09": {
+   "zh": "to let a text rest before revising",
+   "exZh": "Before revising, it’s best to let your text rest for a few minutes."
+  },
+  "V35-10": {
+   "zh": "a fresh pair of eyes",
+   "exZh": "The next day, I reread my letter with a fresh pair of eyes."
+  },
+  "V35-11": {
+   "zh": "far from it",
+   "exZh": "This software is far from infallible, far from it."
+  },
+  "V35-12": {
+   "zh": "ignorance of, not knowing",
+   "exZh": "These mistakes come not from ignorance of the rules but from carelessness."
+  },
+  "V35-13": {
+   "zh": "the flow of ideas",
+   "exZh": "Your essay has no grammar mistakes, but the flow of ideas isn’t clear enough."
+  },
+  "V35-14": {
+   "zh": "first of all (above all)",
+   "exZh": "First of all, reread the instructions carefully."
+  },
+  "V35-15": {
+   "zh": "to merge",
+   "exZh": "These two paragraphs say the same thing: you should merge them."
+  },
+  "V35-16": {
+   "zh": "to hunt down errors",
+   "exZh": "On my last read-through, I hunt down agreement errors."
+  },
+  "V35-17": {
+   "zh": "not to know where to start",
+   "exZh": "Faced with twenty corrections, the student doesn’t know where to start."
+  },
+  "V35-18": {
+   "zh": "in return",
+   "exZh": "The teacher marks the work but asks nothing of the student in return."
+  },
+  "V35-19": {
+   "zh": "an annotated paper / piece of work",
+   "exZh": "An annotated paper is only useful if the student rereads it."
+  },
+  "V35-20": {
+   "zh": "the right to make mistakes",
+   "exZh": "To learn, students need the right to make mistakes."
+  },
+  "V35-21": {
+   "zh": "to make people jump (in anger), to spark fierce opposition",
+   "exZh": "The reform proposal made purists jump."
+  },
+  "V35-22": {
+   "zh": "to touch, to tamper with",
+   "exZh": "For many, spelling rules must not be tampered with."
+  },
+  "V35-23": {
+   "zh": "to settle a debate",
+   "exZh": "No study has yet been able to settle the debate."
+  },
+  "V35-24": {
+   "zh": "to break out in a cold sweat",
+   "exZh": "The thought of writing an essay makes him break out in a cold sweat."
+  },
+  "V35-25": {
+   "zh": "logical connectors",
+   "exZh": "A good argumentative essay uses a variety of logical connectors."
+  }
+ },
+ "title": "Writing III: structure and revision",
+ "phase": "DELF B2 task training"
+}

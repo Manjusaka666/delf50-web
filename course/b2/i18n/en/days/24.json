@@ -1,0 +1,205 @@
+{
+ "canDo": "Can qualify statements precisely and challenge stereotypes with ni… ni…, ne… guère, ne… nullement/aucunement, aucun(e) + noun, personne/rien as subject, ne… que, sans + infinitive / sans que + subjunctive, and disagree politely but firmly in a formal letter.",
+ "review": "Review day 7’s concessions (certes… mais) and day 23’s text connectors; today, turn “negation” into a tool for rebuttal: concede first, then negate the other side’s argument precisely with nullement / aucun / ne… guère.",
+ "input": "Read: a report on a four-day-week trial, a column rebutting the idea that “apprenticeships are a dead end” and a forum post on the “right to disconnect” — find every negative structure and judge how strong it is; listen: an interview on older workers’ employment, a segment on “meeting-itis” and a vox pop on remote work — note that ne is often dropped in speech, but personne, rien, aucun and guère remain key signals.",
+ "output": "Write: a formal letter (≥220 words) to the managing director on behalf of colleagues, rebutting the decision to end remote work, using at least 5 different negative structures; speak: a 4-minute monologue on “anonymous CVs”, then a debate on “banning work emails after 7 p.m.”.",
+ "checkpoint": "Reading + listening accuracy ≥80%; articles after ni… ni…, sans que + subjunctive and agreement of aucun all correct in the letter; in the debate, rebut at least 3 times with « Ce n’est nullement… », « Personne ne prétend que… ».",
+ "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about work (remote work, the four-day week, retirement, recruitment), write down a common stereotype from the story, then write 3 sentences rebutting it with ni… ni…, ne… guère and aucun, and record 1 minute of audio reading out your rebuttal.",
+ "items": {
+  "reading": {
+   "R24-1": {
+    "questions": [
+     {
+      "why": "The whole text presents how Arvéa trialled the four-day week, its results and its problems. Neither A nor B is the main idea."
+     },
+     null,
+     {
+      "why": "« Les réunions ne durent plus que trente minutes »; B contradicts « aucun salaire n’a été réduit »; C isn’t mentioned."
+     },
+     {
+      "why": "ne… guère = hardly, scarcely: productivity barely fell."
+     },
+     null,
+     {
+      "why": "« Rien ne permet de l’affirmer » denies that it applies everywhere, but « on ne gagne pas en efficacité sans repenser la manière dont on travaille » draws the lesson."
+     }
+    ]
+   },
+   "R24-2": {
+    "questions": [
+     {
+      "why": "« Cette idée reçue ne repose pourtant sur aucune donnée sérieuse, et je voudrais ici la réfuter. » A: the text doesn’t discuss recruitment difficulties; C is too absolute: she argues for apprenticeship as « un choix parmi d’autres »."
+     },
+     {
+      "why": "« ce n’est nullement son niveau, mais sa façon d’apprendre : par la pratique plutôt que par l’abstraction »; A is explicitly denied by nullement; B contradicts « préparent des diplômes reconnus »."
+     },
+     {
+      "why": "« l’apprenti perçoit un salaire pour apprendre son futur métier… il dispose de… de l’expérience ». B contradicts paragraph 2, « suivent des cours exigeants »; C (odd jobs) describes the university students she compares them with."
+     },
+     {
+      "why": "« On m’objectera que… C’est vrai… Mais personne ne songe à fermer les universités parce que certains stages se passent mal » — concede first, then weaken the opposing argument with an analogy. A: the text gives no figures; B: she holds her position."
+     },
+     {
+      "why": "voie de garage originally means a railway “siding”, and figuratively “a dead end where people are shunted”; the last paragraph’s « et non comme une solution par défaut » echoes this. B is a literal misreading; C means the opposite."
+     }
+    ]
+   },
+   "R24-3": {
+    "questions": [
+     {
+      "why": "She describes her own situation and ends by asking « Avez-vous vécu la même chose ? Comment avez-vous réagi ? »."
+     },
+     null,
+     {
+      "why": "« ce n’est pas tant les messages eux-mêmes que la pression implicite »; C is wrong: « Personne ne nous oblige à répondre »."
+     },
+     {
+      "why": "ne… plus que = now there is only: her only thought now is to change companies."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L24-1": {
+    "questions": [
+     {
+      "why": "It discusses stereotypes about employees over 55 (too costly, not adapting to new technology, no discrimination) and rebuts them with research findings."
+     },
+     null,
+     null,
+     {
+      "why": "« trois fois moins de réponses… avec un CV équivalent »; A contradicts « Personne ne dira ouvertement »."
+     },
+     {
+      "why": "The second half, « mais de ne pas se passer de leurs compétences », shows the aim is to make use of their skills, not to give them special treatment."
+     }
+    ]
+   },
+   "L24-2": {
+    "questions": [
+     {
+      "why": "« La réunionite »: meeting-itis, i.e. too many meetings."
+     },
+     {
+      "why": "« elle donne l’impression d’agir sans qu’on ait besoin de décider quoi que ce soit »; C contradicts « Les participants s’ennuient »."
+     },
+     {
+      "why": "« Aucune réunion sans ordre du jour envoyé à l’avance »; C is the opposite of « Pas plus de six participants »."
+     }
+    ]
+   },
+   "L24-3": {
+    "questions": [
+     null,
+     {
+      "why": "« mon métier ne se fait pas à distance… comme si tout le monde y avait droit ». B is the third interviewee’s view."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V24-01": {
+   "zh": "not without its shadows (problems)",
+   "exZh": "The picture isn’t without its shadows: some days have become too intense."
+  },
+  "V24-02": {
+   "zh": "from top to bottom, completely",
+   "exZh": "The company completely reorganised the way it works."
+  },
+  "V24-03": {
+   "zh": "a day off, a non-working day",
+   "exZh": "At Arvéa, Friday has become a day off."
+  },
+  "V24-04": {
+   "zh": "to catch one’s breath",
+   "exZh": "The days are so packed that there’s no time to catch your breath."
+  },
+  "V24-05": {
+   "zh": "transferable (elsewhere)",
+   "exZh": "This model isn’t transferable as it stands to a hospital."
+  },
+  "V24-06": {
+   "zh": "to be heading for failure",
+   "exZh": "Cutting working hours without reorganising teams is heading for failure."
+  },
+  "V24-07": {
+   "zh": "a received idea, a stereotype",
+   "exZh": "The idea that apprenticeships are for weak pupils is a received idea."
+  },
+  "V24-08": {
+   "zh": "an odd job",
+   "exZh": "To pay for her studies, she went from one odd job to another."
+  },
+  "V24-09": {
+   "zh": "to sacrifice everything for …",
+   "exZh": "An apprentice doesn’t have to sacrifice everything for the company."
+  },
+  "V24-10": {
+   "zh": "to run down, to disparage wholesale",
+   "exZh": "Let’s stop running down apprenticeships."
+  },
+  "V24-11": {
+   "zh": "cheap labour",
+   "exZh": "Some apprentices are used as cheap labour."
+  },
+  "V24-12": {
+   "zh": "starting with …, … first and foremost",
+   "exZh": "Nobody follows this rule, starting with the managers."
+  },
+  "V24-13": {
+   "zh": "implicit pressure",
+   "exZh": "Nobody forces me to reply, but the implicit pressure is real."
+  },
+  "V24-14": {
+   "zh": "to have only one thought left",
+   "exZh": "After six months of pressure, she has only one thought left: to change companies."
+  },
+  "V24-15": {
+   "zh": "for the same job",
+   "exZh": "For the same job, women still earn less than men."
+  },
+  "V24-16": {
+   "zh": "to adapt the end of one’s career",
+   "exZh": "The economist suggests adapting the end of careers, for example with part-time work."
+  },
+  "V24-17": {
+   "zh": "to be valued, to be recognised",
+   "exZh": "In many companies, older employees are neither trained nor valued."
+  },
+  "V24-18": {
+   "zh": "a labour shortage",
+   "exZh": "The labour shortage is forcing companies to hire older employees."
+  },
+  "V24-19": {
+   "zh": "meeting-itis",
+   "exZh": "Our department has meeting-itis: three meetings a day!"
+  },
+  "V24-20": {
+   "zh": "to be annoyed that … (+ subjunctive)",
+   "exZh": "The organisers are annoyed that nothing moves forward, yet they hold it again next week."
+  },
+  "V24-21": {
+   "zh": "nothing moves forward",
+   "exZh": "The organisers are annoyed that nothing moves forward."
+  },
+  "V24-22": {
+   "zh": "new recruits",
+   "exZh": "With remote work, new recruits have nobody to ask questions."
+  },
+  "V24-23": {
+   "zh": "not to fail in one’s duties",
+   "exZh": "These colleagues haven’t failed in their duties: their results are excellent."
+  },
+  "V24-24": {
+   "zh": "discrimination in hiring",
+   "exZh": "Anonymous CVs aim to reduce discrimination in hiring."
+  },
+  "V24-25": {
+   "zh": "critics of …",
+   "exZh": "Critics of anonymous CVs consider the measure ineffective."
+  }
+ },
+ "title": "Negation and restriction",
+ "phase": "Argument, mediation and reporting"
+}

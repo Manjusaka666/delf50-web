@@ -1,0 +1,226 @@
+{
+ "canDo": "Can combine cause (puisque, étant donné que, faute de), concession (bien que, certes… mais, avoir beau) and hypothesis (si + plus-que-parfait / past conditional, à condition que) in the same argument, stating a position clearly and responding to the other side, in writing and speech.",
+ "review": "Integrated review of days 1–13: choice of mood (bien que / à condition que + subjunctive, même si / puisque + indicative), logical connectors, past tenses and time conjunctions, indirect speech and passive structures; focus on days 5, 7 and 9 (cause, concession and hypothesis).",
+ "input": "Read: an investigative report on loneliness, an opinion piece against “compulsory civic service” and a forum post about a neighbourhood meal that fell flat (mark every cause, concession and hypothesis and check the mood); listen: a radio debate on intergenerational home-sharing, a segment on “third places” and a vox pop on relations between neighbours (note both sides’ arguments and concessions).",
+ "output": "Write: a forum reply (≥220 words) taking a position on “should every citizen have to volunteer every month?” and responding to opposing arguments; speak: a 3-minute monologue on moving all administrative procedures online, then a debate on “closing neighbourhood council offices”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; at least 2 each of cause, concession and hypothesis structures in the essay, all in the correct mood; a 3-minute monologue without breaking off, answering every objection in the debate with “concession + rebuttal”.",
+ "challenge": "Today’s challenge: find a social news item on RFI’s « Journal en français facile » or TV5MONDE (housing, loneliness, volunteering, public services…) and write 3 sentences of opinion: one explaining a cause with étant donné que, one conceding with bien que, and one imagining “if only…” with si + plus-que-parfait; then record a 1-minute spoken response.",
+ "items": {
+  "reading": {
+   "R14-1": {
+    "questions": [
+     {
+      "why": "The article covers in turn the survey data, causes, consequences, responses and demands. B: the researchers in the text are cautious about social media; C: the café in Nantes is just one example."
+     },
+     {
+      "why": "« Plus surprenant encore, vivre entouré ne protège pas toujours : près d’une personne sur dix vivant en couple ou en famille déclare se sentir souvent seule. » A: the text makes no such comparison; C shifts the meaning: “one in five” refers to “not having had a real conversation in a month”, not to living alone."
+     },
+     {
+      "why": "« les chercheurs restent prudents… Tout dépend, en somme, de l’usage qu’on en fait. » A and B are absolute claims."
+     },
+     {
+      "why": "faute de + noun = for lack of…, expressing a cause. B expresses concession, the opposite meaning; C misreads faute as “fault”."
+     },
+     {
+      "why": "avoir beau + infinitive = however much… (concession). A mistakes concession for cause and effect; C contradicts “on a small scale”."
+     },
+     {
+      "why": "The unreal past hypothesis « Si l’on avait pris le problème au sérieux il y a dix ans, nous n’en serions pas là » implies a reproach that the issue wasn’t taken seriously. A: she only warns against stopping at awareness campaigns; B isn’t mentioned."
+     }
+    ]
+   },
+   "R14-2": {
+    "questions": [
+     {
+      "why": "« on ne fabrique pas de la solidarité par décret. On la rend possible, on l’encourage ». A is the view he opposes; C contradicts his point about lack of funding and places."
+     },
+     {
+      "why": "« J’en sais quelque chose… nos meilleurs bénévoles sont précisément ceux qui ont choisi de venir. » B and C have no basis, and C is the opposite of “our best volunteers”."
+     },
+     {
+      "why": "« beaucoup de jeunes ne s’engagent pas faute d’en avoir eu l’occasion… C’est un argument sérieux. » A: he thinks the cost would be huge; B doesn’t appear in the text."
+     },
+     {
+      "why": "si + plus-que-parfait / past conditional expresses something contrary to past fact: the implication is that the project was never properly costed. A is the opposite of the implication; C (“lying deliberately”) reads too much into it."
+     },
+     {
+      "why": "par décret = by administrative order; the sentence means solidarity can’t be created by decree. B is the opposite of the author’s view; C twists it into a question of efficiency."
+     }
+    ]
+   },
+   "R14-3": {
+    "questions": [
+     {
+      "why": "« Quelles idées ont fonctionné chez vous ? Je suis preneuse de tous vos conseils ». A isn’t an invitation post; B: she doesn’t complain about her neighbours’ behaviour."
+     },
+     {
+      "why": "It fell from « une soixantaine » to « une quinzaine ». B and C don’t match the figures."
+     },
+     {
+      "why": "« parce que les nouveaux habitants ne se sentent pas invités, puisqu’ils ne connaissent personne ? » A isn’t mentioned; C: she says posters went up in every stairwell."
+     },
+     {
+      "why": "« C’est possible. Mais je n’ai pas envie de transformer un moment convivial en kermesse. » A: she has reservations; C: she doesn’t reject the suggestion on grounds of cost."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L14-1": {
+    "questions": [
+     {
+      "why": "« une formule qui séduit de plus en plus : la cohabitation entre étudiants et personnes âgées ». B is only mentioned at the end; C isn’t covered."
+     },
+     {
+      "why": "« Étant donné que les loyers ne cessent d’augmenter dans les villes universitaires, la demande des étudiants explose. » Neither A nor C is mentioned."
+     },
+     {
+      "why": "« Disons que je suis enthousiaste, mais lucide. Bien que ces expériences soient souvent très réussies, elles ne concernent qu’un nombre limité de personnes. » Neither A nor B matches his concessive position."
+     },
+     {
+      "why": "She thought the student would have dinner with her every evening, « alors que lui imaginait une simple colocation » — they had different expectations. A isn’t mentioned; C is the opposite."
+     },
+     {
+      "why": "« nous organisons plusieurs rencontres, et une charte est signée par les deux parties ». B isn’t mentioned; C: the charter only “sets” rules for visits, it doesn’t ban them."
+     },
+     {
+      "why": "« elle ne doit pas servir d’excuse aux pouvoirs publics », and he uses si + plus-que-parfait to say that student housing should have been funded earlier. A and B aren’t mentioned."
+     }
+    ]
+   },
+   "L14-2": {
+    "questions": [
+     {
+      "why": "It opens with the topic « les tiers-lieux », and the whole segment covers their definition, why they succeed, their difficulties and their social role. B and C are only examples."
+     },
+     {
+      "why": "« beaucoup de lieux de rencontre ont disparu… Les tiers-lieux comblent ce vide. » Neither A nor C is mentioned."
+     },
+     {
+      "why": "« de bénévoles qui finissent par s’épuiser, et de subventions qui peuvent s’arrêter du jour au lendemain ». A isn’t mentioned; B contradicts “very successful”."
+     },
+     {
+      "why": "« Ils ne se seraient jamais parlé ailleurs. C’est peut-être ça, le vrai service rendu par ces lieux. » A and C misread details."
+     }
+    ]
+   },
+   "L14-3": {
+    "questions": [
+     {
+      "why": "« il faut dire que j’habite le même immeuble depuis trente ans ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "« bien que je dise bonjour à tout le monde… personne ne m’a encore invité ». A isn’t mentioned; C: he only imagines moving to a village, he doesn’t say he comes from one."
+     },
+     {
+      "why": "« je connais surtout ceux qui ont des enfants, puisque nos enfants vont à la même école ». Neither A nor B is mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V14-01": {
+   "zh": "to be the lot of …",
+   "exZh": "Loneliness is thought to be the lot of the elderly, but young people suffer from it too."
+  },
+  "V14-02": {
+   "zh": "because of, as a result of … (written)",
+   "exZh": "Because of job mobility, many people live far from their families."
+  },
+  "V14-03": {
+   "zh": "to keep in touch",
+   "exZh": "Thanks to video calls, she keeps in touch with her grandchildren."
+  },
+  "V14-04": {
+   "zh": "the fate of …, what happens to …",
+   "exZh": "Loneliness isn’t only the fate of older people."
+  },
+  "V14-05": {
+   "zh": "a community-run café",
+   "exZh": "Since a volunteer-run café opened, the neighbourhood has come back to life."
+  },
+  "V14-06": {
+   "zh": "to tackle (an issue)",
+   "exZh": "Associations are asking elected officials to tackle the problem of isolation."
+  },
+  "V14-07": {
+   "zh": "we wouldn’t be where we are now",
+   "exZh": "If we had acted sooner, we wouldn’t be where we are now."
+  },
+  "V14-08": {
+   "zh": "a public-interest assignment",
+   "exZh": "For six months, he carried out a public-interest assignment in a school."
+  },
+  "V14-09": {
+   "zh": "to pull together again",
+   "exZh": "After the flood, the villagers pulled together again."
+  },
+  "V14-10": {
+   "zh": "a laudable intention",
+   "exZh": "The plan has a laudable intention, but it remains unrealistic."
+  },
+  "V14-11": {
+   "zh": "the intention is good",
+   "exZh": "The intention is good, but the method seems wrong to me."
+  },
+  "V14-12": {
+   "zh": "to know a thing or two about it",
+   "exZh": "Volunteering can change a life — I know a thing or two about it."
+  },
+  "V14-13": {
+   "zh": "by decree",
+   "exZh": "You can’t make people show solidarity by decree."
+  },
+  "V14-14": {
+   "zh": "to rack one’s brains",
+   "exZh": "However much I rack my brains, I can’t find a solution."
+  },
+  "V14-15": {
+   "zh": "to be open to, to welcome (suggestions)",
+   "exZh": "I welcome all your ideas, even the simplest ones."
+  },
+  "V14-16": {
+   "zh": "to sign a charter",
+   "exZh": "Before moving in, the student and the host must sign a charter."
+  },
+  "V14-17": {
+   "zh": "to get something out of it (both sides)",
+   "exZh": "When the rules are clear, both sides get something out of it."
+  },
+  "V14-18": {
+   "zh": "to get involved (in the matter)",
+   "exZh": "Does the state really need to get involved in this?"
+  },
+  "V14-19": {
+   "zh": "to serve as an excuse",
+   "exZh": "This initiative must not serve as an excuse for the public authorities."
+  },
+  "V14-20": {
+   "zh": "it’s priceless",
+   "exZh": "Seeing a lonely neighbour smile again is priceless."
+  },
+  "V14-21": {
+   "zh": "to fill a gap",
+   "exZh": "Since the café closed, this community venue has filled a gap in the village."
+  },
+  "V14-22": {
+   "zh": "it isn’t all rosy",
+   "exZh": "The project is appealing, but it isn’t all rosy."
+  },
+  "V14-23": {
+   "zh": "on a lasting basis",
+   "exZh": "Without lasting funding, these venues may close."
+  },
+  "V14-24": {
+   "zh": "to care for a parent",
+   "exZh": "Many employees care for a parent and are short of time."
+  },
+  "V14-25": {
+   "zh": "in-person reception (desk)",
+   "exZh": "Associations are asking for every town hall to keep an in-person reception desk."
+  }
+ },
+ "title": "Checkpoint I: the syntax of argument",
+ "phase": "Upgrading structures and precise expression"
+}

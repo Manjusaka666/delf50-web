@@ -1,0 +1,192 @@
+{
+ "canDo": "Can introduce yourself, your daily routine and where you live in 6–8 connected full sentences.",
+ "review": "Review subject pronouns and basic word order; learn the present tense of high-frequency verbs.",
+ "input": "Listening: a 60–90-second self-introduction/schedule; reading: 80–120 words of personal information or a timetable.",
+ "output": "Write a 60–70-word self-introduction; speak for 60–75 seconds, retelling it without notes.",
+ "checkpoint": "Only after ≥80% on the grammar questions, do the 8 output sentences; be able to correct basic errors such as je aller / nous est.",
+ "challenge": "Today’s challenge: record a 60-second self-introduction in French on your phone (name, city, job or studies, your daily routine), using être, avoir, aller and faire at least once each; play it back, write down any errors you hear (such as je aller) and record it again.",
+ "vocab": {
+  "V01-01": {
+   "zh": "to start at … o’clock",
+   "exZh": "The French class starts at nine on Mondays and Wednesdays."
+  },
+  "V01-02": {
+   "zh": "to finish at … o’clock",
+   "exZh": "The class finishes at half past ten."
+  },
+  "V01-03": {
+   "zh": "there is no …",
+   "exZh": "On Friday, there’s no class."
+  },
+  "V01-04": {
+   "zh": "to live near …",
+   "exZh": "Julie lives near the town centre."
+  },
+  "V01-05": {
+   "zh": "to get up at … o’clock",
+   "exZh": "I get up at seven every day."
+  },
+  "V01-06": {
+   "zh": "Could you repeat that, please?",
+   "exZh": "Sorry, I didn’t understand. Could you repeat that, please?"
+  },
+  "V01-07": {
+   "zh": "I would like … (polite)",
+   "exZh": "A coffee and a croissant, please."
+  },
+  "V01-08": {
+   "zh": "a quiet neighbourhood",
+   "exZh": "Julie likes living in a quiet neighbourhood, with a supermarket close by."
+  },
+  "V01-09": {
+   "zh": "five minutes from …",
+   "exZh": "There’s a supermarket five minutes from her place."
+  },
+  "V01-10": {
+   "zh": "to move an appointment",
+   "exZh": "Paul, I have to move our appointment to Wednesday at 4 p.m."
+  },
+  "V01-11": {
+   "zh": "to meet in front of …",
+   "exZh": "We’ll meet in front of the library."
+  },
+  "V01-12": {
+   "zh": "to be available",
+   "exZh": "I’m free on Wednesday from 4 p.m."
+  },
+  "V01-13": {
+   "zh": "from Monday to Friday",
+   "exZh": "The municipal pool opens at 7:30 a.m. from Monday to Friday."
+  },
+  "V01-14": {
+   "zh": "to sign up for …",
+   "exZh": "To sign up for the pool, you need to bring a photo."
+  },
+  "V01-15": {
+   "zh": "a proof of identity",
+   "exZh": "You need to bring a photo and a proof of identity."
+  },
+  "V01-16": {
+   "zh": "to get a reduced rate",
+   "exZh": "Students get a reduced rate."
+  },
+  "V01-17": {
+   "zh": "to be ten minutes late",
+   "exZh": "I’m outside the station café, but I’m ten minutes late."
+  },
+  "V01-18": {
+   "zh": "to wait for someone inside",
+   "exZh": "Wait for me inside, please."
+  },
+  "V01-19": {
+   "zh": "to be open from … to …",
+   "exZh": "The shop is open from nine a.m. to seven p.m."
+  },
+  "V01-20": {
+   "zh": "to be closed on Sundays",
+   "exZh": "The shop is closed on Sundays."
+  },
+  "V01-21": {
+   "zh": "please … (notices/formal)",
+   "exZh": "Please arrive five minutes before your appointment."
+  },
+  "V01-22": {
+   "zh": "to cancel an appointment",
+   "exZh": "If you need to cancel your appointment, call us before Thursday evening."
+  },
+  "V01-23": {
+   "zh": "to confirm an appointment",
+   "exZh": "I’m calling to confirm your appointment on Friday."
+  },
+  "V01-24": {
+   "zh": "How much is …?",
+   "exZh": "How much is the set menu of the day?"
+  },
+  "V01-25": {
+   "zh": "What time does … leave?",
+   "exZh": "What time does the train to Lyon leave?"
+  },
+  "V01-26": {
+   "zh": "to have a dinner at home",
+   "exZh": "On Saturday evening we’re having a dinner at my place at eight."
+  },
+  "V01-27": {
+   "zh": "to bring something to drink",
+   "exZh": "For the dinner, bring something to drink, please."
+  },
+  "V01-28": {
+   "zh": "to come with someone",
+   "exZh": "You can come with your friend."
+  },
+  "V01-29": {
+   "zh": "to speak more slowly",
+   "exZh": "Sorry, could you speak more slowly?"
+  },
+  "V01-30": {
+   "zh": "a ticket to + city",
+   "exZh": "Hello, a ticket to Lyon for tomorrow, please."
+  },
+  "V01-31": {
+   "zh": "to ask for information about …",
+   "exZh": "I’m writing to ask for information about your French courses."
+  },
+  "V01-32": {
+   "zh": "to be a student of + subject",
+   "exZh": "I’m an economics student in Lyon."
+  },
+  "V01-33": {
+   "zh": "to have lived in + city for + duration",
+   "exZh": "I’ve lived in Paris for two years."
+  },
+  "V01-34": {
+   "zh": "to work as a …",
+   "exZh": "I work as a waiter in a restaurant."
+  },
+  "V01-35": {
+   "zh": "in one’s free time",
+   "exZh": "In my free time, I play tennis."
+  },
+  "V01-36": {
+   "zh": "to take the metro",
+   "exZh": "In the morning I take the metro to work."
+  },
+  "V01-37": {
+   "zh": "to cycle to work",
+   "exZh": "She cycles to work when the weather is nice."
+  },
+  "V01-38": {
+   "zh": "generally",
+   "exZh": "Generally, I start work at nine."
+  },
+  "V01-39": {
+   "zh": "what I like is …",
+   "exZh": "What I like is the calm of the morning."
+  },
+  "V01-40": {
+   "zh": "not to like … at all",
+   "exZh": "I don’t like getting up early at all."
+  },
+  "V01-41": {
+   "zh": "to have breakfast",
+   "exZh": "I have breakfast at half past seven."
+  },
+  "V01-42": {
+   "zh": "to do the shopping",
+   "exZh": "On Saturdays I do the shopping at the market."
+  },
+  "V01-43": {
+   "zh": "to go back home",
+   "exZh": "I get home around six p.m."
+  },
+  "V01-44": {
+   "zh": "to do sport",
+   "exZh": "I do sport twice a week."
+  },
+  "V01-45": {
+   "zh": "to go to bed late",
+   "exZh": "At the weekend, I go to bed late."
+  }
+ },
+ "title": "Sentence skeleton and the present tense",
+ "phase": "Foundations and grammar on autopilot"
+}

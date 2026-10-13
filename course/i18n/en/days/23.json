@@ -1,0 +1,274 @@
+{
+ "canDo": "Can organise scattered events into a linear story and accurately report what others said or asked.",
+ "review": "Review past tenses and relative pronouns; learn present-tense reported speech: dire/expliquer que, demander si/question words.",
+ "input": "Read two short stories and extract their structure.",
+ "output": "Write 150 words about an experience; speak for 3 minutes, adding detail with relative pronouns.",
+ "checkpoint": "Can turn at least 6 direct statements/questions into reported speech while keeping the story’s timeline clear.",
+ "challenge": "Today’s challenge: listen to a news item on RFI’s Journal en français facile and report it in 4 sentences (Le journaliste explique que… / Il ajoute que… / Un témoin raconte que…), add 1 relative clause (qui / que / où) for detail, then read it aloud to yourself.",
+ "items": {
+  "reading": {
+   "R23-1": {
+    "questions": [
+     null,
+     {
+      "why": "« Qu'est-ce que vous entendez, en ce moment ? » — the rapids on the right correspond to only one of the three areas."
+     }
+    ]
+   },
+   "R23-2": {
+    "questions": [
+     null,
+     {
+      "why": "They kept looking for the same specific piece of information, and found it faster in the old shared file."
+     },
+     null,
+     {
+      "why": "« sans elle, nous n'aurions pas su quelles questions poser », but those questions could have been asked earlier."
+     }
+    ]
+   },
+   "R23-3": {
+    "questions": [
+     {
+      "why": "An administrative reason: exit formalities had been completed, so they couldn’t leave the ship."
+     },
+     null,
+     {
+      "why": "Scheduled for 21:00, it actually left at 9 h 20 the next day — about twelve hours twenty minutes."
+     }
+    ]
+   },
+   "R23-4": {
+    "questions": [
+     null,
+     {
+      "why": "« ce que la commune aurait refusé » — they applied instead for insulation work eligible for a regional grant."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L23-1": {
+    "questions": [
+     {
+      "why": "The backups had been failing since Friday, and the disk only died on Tuesday; Marc leaving affected the email address, not when the backups started failing."
+     }
+    ]
+   },
+   "L23-2": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "« C'est là que j'ai rencontré les gens » happened after she was forced to stay."
+     },
+     {
+      "why": "« tant que j'avais une porte de sortie chaque week-end, je la prenais », and she says plainly there’s no need to wait for a cancelled train."
+     }
+    ]
+   },
+   "L23-3": {
+    "questions": [
+     {
+      "why": "She lost her regulars within three months, while new customers didn’t yet know she existed."
+     }
+    ]
+   },
+   "L23-4": {
+    "questions": [
+     {
+      "why": "« conduite hésitante » left both him and his instructor unsure what to change."
+     },
+     null,
+     {
+      "why": "Checking the mirrors three times — not too little, but too much."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V23-01": {
+   "zh": "it all started when / the day …",
+   "exZh": "It all started the day my train was cancelled."
+  },
+  "V23-02": {
+   "zh": "it was then that …",
+   "exZh": "It was then that the dispatcher asked a decisive question."
+  },
+  "V23-03": {
+   "zh": "to tell oneself that …",
+   "exZh": "In the first month, I told myself it was normal, that it took time."
+  },
+  "V23-04": {
+   "zh": "that day (in a story)",
+   "exZh": "My train was cancelled and, that day, I had to stay in Nantes."
+  },
+  "V23-05": {
+   "zh": "around + time",
+   "exZh": "Around 10 p.m., the crew announced a problem with an engine."
+  },
+  "V23-06": {
+   "zh": "what struck me was …",
+   "exZh": "What struck me was the captain’s calm."
+  },
+  "V23-07": {
+   "zh": "I’m not claiming that … (concession)",
+   "exZh": "I’m not claiming the first version was useless."
+  },
+  "V23-08": {
+   "zh": "to ask someone whether … (reported speech)",
+   "exZh": "The instructor asked me whether I always checked my mirrors three times."
+  },
+  "V23-09": {
+   "zh": "according to him / her",
+   "exZh": "According to her, the path started just after the stone bridge."
+  },
+  "V23-10": {
+   "zh": "to break the deadlock",
+   "exZh": "A simple question from the dispatcher broke the deadlock."
+  },
+  "V23-11": {
+   "zh": "in the end, ultimately",
+   "exZh": "In the end, the journey itself was completely ordinary."
+  },
+  "V23-12": {
+   "zh": "from the start",
+   "exZh": "I liked my new job from the start."
+  },
+  "V23-13": {
+   "zh": "to go well / badly",
+   "exZh": "The work went well; it was everything else that wasn’t right."
+  },
+  "V23-14": {
+   "zh": "to almost …, to nearly …",
+   "exZh": "It was a rescue that nearly didn’t happen."
+  },
+  "V23-15": {
+   "zh": "there was no sign of …",
+   "exZh": "The sea was calm and there was no sign of what was to come."
+  },
+  "V23-16": {
+   "zh": "to be designed on the basis of …",
+   "exZh": "The first version had been designed on the basis of what the teams said in meetings."
+  },
+  "V23-17": {
+   "zh": "to state, to indicate that … (reporting)",
+   "exZh": "The hiker said the path was just after the stone bridge."
+  },
+  "V23-18": {
+   "zh": "could have … (past conditional)",
+   "exZh": "We could have asked these questions before the launch."
+  },
+  "V23-19": {
+   "zh": "thanks to …",
+   "exZh": "The cinema reopened thanks to a simple Excel spreadsheet."
+  },
+  "V23-20": {
+   "zh": "to take stock, to sum up",
+   "exZh": "I’m going to sum up, because several of you heard different versions."
+  },
+  "V23-21": {
+   "zh": "to get through it (just)",
+   "exZh": "The first year was a disaster; I only just got through it."
+  },
+  "V23-22": {
+   "zh": "to fail / pass an exam",
+   "exZh": "After failing twice, he passed his driving test."
+  },
+  "V23-23": {
+   "zh": "the regulars (of a place)",
+   "exZh": "Bringing back the old dishes brought the restaurant’s regulars back."
+  },
+  "V23-24": {
+   "zh": "without thinking",
+   "exZh": "I saw an ad for a workshop and signed up without thinking."
+  },
+  "V23-25": {
+   "zh": "as long as …",
+   "exZh": "As long as I had a way out, I took it."
+  },
+  "V23-26": {
+   "zh": "to drive someone mad (informal)",
+   "exZh": "The examiner said “hesitant driving”, and it drove me mad."
+  },
+  "V23-27": {
+   "zh": "to take a shortcut",
+   "exZh": "He slipped trying to take a shortcut."
+  },
+  "V23-28": {
+   "zh": "on the way there / on the way back",
+   "exZh": "He thought he’d seen this path on the way there."
+  },
+  "V23-29": {
+   "zh": "what I take away from it",
+   "exZh": "What we take away from it: everything is decided in the first three minutes."
+  },
+  "V23-30": {
+   "zh": "to use …",
+   "exZh": "On launch day, everything worked, but nobody used it."
+  },
+  "V23-31": {
+   "zh": "an overview",
+   "exZh": "Colleagues never looked for an overview."
+  },
+  "V23-32": {
+   "zh": "the way (in which) …",
+   "exZh": "I admired the way the captain spoke to the passengers."
+  },
+  "V23-33": {
+   "zh": "to make someone angry",
+   "exZh": "This administrative reason made everyone angry."
+  },
+  "V23-34": {
+   "zh": "to lose money",
+   "exZh": "The cinema had been losing money every year since 2014."
+  },
+  "V23-35": {
+   "zh": "to be eligible for …",
+   "exZh": "The insulation work was eligible for a regional grant."
+  },
+  "V23-36": {
+   "zh": "on its own, by itself",
+   "exZh": "The auditorium alone used the equivalent of twenty thousand tickets a year."
+  },
+  "V23-37": {
+   "zh": "to put together an application",
+   "exZh": "Three residents put together an application for a regional grant."
+  },
+  "V23-38": {
+   "zh": "to break even",
+   "exZh": "Today, the cinema breaks even."
+  },
+  "V23-39": {
+   "zh": "almost all of …",
+   "exZh": "In fact, we recovered almost all the files."
+  },
+  "V23-40": {
+   "zh": "a way out",
+   "exZh": "Going back to Paris every weekend was too easy a way out."
+  },
+  "V23-41": {
+   "zh": "to take over a restaurant / a business",
+   "exZh": "You took over this restaurant four years ago."
+  },
+  "V23-42": {
+   "zh": "to introduce someone to …",
+   "exZh": "It was the regulars who introduced the new dishes to the other customers."
+  },
+  "V23-43": {
+   "zh": "apparently …, I hear that …",
+   "exZh": "Apparently the last bus has changed its time since Monday."
+  },
+  "V23-44": {
+   "zh": "to miss the last bus",
+   "exZh": "If I miss the last bus, how do I get back to the hotel?"
+  },
+  "V23-45": {
+   "zh": "put like that",
+   "exZh": "It sounds silly put like that, but it’s what changed the mark."
+  }
+ },
+ "title": "Organising a narrative and coherence",
+ "phase": "Transfer to real tasks"
+}

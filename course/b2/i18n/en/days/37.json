@@ -1,0 +1,229 @@
+{
+ "canDo": "Can hold your position in a 4–5-minute debate against the examiner’s repeated objections: concede before rebutting, use hypotheticals to work through consequences, and adjust your view tactfully when necessary.",
+ "review": "Review day 7’s contrast and concession (bien que, même si, avoir beau, certes… mais, il n’empêche que) and day 9’s hypothesis and condition (si + imperfect/conditional, à condition que, à moins que… ne, au cas où); build on the outline structure of day 36’s monologue.",
+ "input": "Read: an analysis of “the flying dilemma”, a column arguing “travel less, travel better” and a letter from a reader in Réunion; mark every concessive structure and the real argument that follows it. Listen: a radio debate on taxing air tickets (twice), an interview with the mayor of a mountain town and a vox pop in Brussels; note each speaker’s concessions and rebuttals.",
+ "output": "Write: a formal letter on behalf of a users’ association to the president of the regional council, asking for night trains to be brought back (≥250 words); you must anticipate and answer objections. Speak: a 6-minute monologue on a document about “individual flight quotas”, then a 4–5-minute debate with the examiner on “banning advertising for cheap flights”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; in the debate, use a different strategy (concede, refine, rebut, reaffirm) for each of 4 objections, with at least 3 concessive structures and 2 si hypotheticals, without repeating your opening statement word for word.",
+ "challenge": "Today’s challenge: find a news item about transport and climate (trains, planes, air ticket taxes, etc.) on TV5MONDE or RFI’s « Journal en français facile » and record a 90-second response: first acknowledge an opposing view with « Certes… mais… », then work through a consequence with « Si l’on… , on… ».",
+ "items": {
+  "reading": {
+   "R37-1": {
+    "questions": [
+     {
+      "why": "The article moves from “more and more people feel guilty” (paragraph 1) to “acting on it is still hard” (paragraph 3: « le passage à l’acte reste difficile »); the core is the gap between awareness and behaviour. A isn’t covered; C: the text actually says plane tickets are sometimes cheaper than the train."
+     },
+     {
+      "why": "bien que introduces a concession: the data are only what respondents “say”, which may not reflect real behaviour, so they must be read with caution. B is the opposite of « simples déclarations »; C: no one in the text questions the data."
+     },
+     {
+      "why": "« un seul aller-retour entre l’Europe et l’Amérique du Nord peut équivaloir à plusieurs mois de trajets quotidiens en voiture ». A contradicts « ne représente qu’une part limitée des émissions mondiales »; B: the text makes no such comparison."
+     },
+     {
+      "why": "The quote is a hypothetical: if there were more night trains, many people would “make the leap” to rail. A takes it literally; C goes too far: switching to the train doesn’t mean not travelling."
+     },
+     {
+      "why": "It first grants that « le changement est possible », then qualifies it with « Il n’empêche que la portée de cette décision reste limitée : seules quelques lignes sont concernées ». B (“unfair”) has no basis; C contradicts « limitée »."
+     },
+     {
+      "why": "« À moins que les pouvoirs publics ne rendent le train réellement compétitif, on ne changera pas les comportements à grande échelle ». A is the opposite of her doubts about « bonne volonté »; B isn’t argued in the text."
+     }
+    ]
+   },
+   "R37-2": {
+    "questions": [
+     {
+      "why": "The title and the last paragraph, « remplacer la quantité par la qualité », sum up the text. A: the author clearly says « Je ne demande à personne de rester chez soi »; B: he actually criticises resort-style travel."
+     },
+     {
+      "why": "« On m’objectera que… Certes. Mais… »: the classic “concession + rebuttal” structure. A: he grants the other side’s point (« Certes »); C: he doesn’t give up his position."
+     },
+     {
+      "why": "« ils se nourrissent mutuellement », illustrated with a hypothetical: « si la demande de trains de nuit augmentait, les opérateurs finiraient par en proposer davantage ». B is the view he partly concedes and then rebuts."
+     },
+     {
+      "why": "« Ce n’est pas le voyage que je remets en cause, c’est sa transformation en produit de consommation rapide » (a cleft sentence). B is what he recommends; C: he thinks only slow, in-depth travel lets you really get to know local people."
+     },
+     {
+      "why": "« Je ne demande à personne… Je propose simplement… »: a gentle tone offering a constructive proposal. There is no threat (A) and no pessimism (C); on the contrary, he thinks it can help us “rediscover the joy of travel”."
+     }
+    ]
+   },
+   "R37-3": {
+    "questions": [
+     {
+      "why": "« permettez-moi de rappeler une réalité souvent oubliée »: as an overseas resident, she adds an overlooked perspective. Neither B nor C is raised in the letter."
+     },
+     {
+      "why": "The aside between dashes, « je n’ai pas de voiture et je fais attention à ma consommation », proves she is « sensible aux questions climatiques », making her concession more credible. A is the opposite; C has no basis."
+     },
+     {
+      "why": "« je n’y verrais aucun inconvénient, à condition que les liaisons avec l’outre-mer soient traitées à part ». A and B contradict “no objection”."
+     },
+     {
+      "why": "If overseas routes aren’t treated separately, the cost will once again fall on overseas residents who have no alternative. B and C misread what « les mêmes » refers to."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L37-1": {
+    "questions": [
+     {
+      "why": "The host opens with: « faut-il taxer beaucoup plus lourdement les billets d’avion ? ». A is the opposite: night trains are the alternative both sides support; C is proposed by no one."
+     },
+     {
+      "why": "« le prix d’un billet ne reflète pas du tout le coût réel du vol pour l’environnement ». B isn’t mentioned; C: she mentions fuel tax on cars only as a comparison, not because she thinks it’s too high."
+     },
+     {
+      "why": "« Ceux qui ont les moyens continueraient de voler… tandis que les familles modestes… renonceraient ». He mentions neither A nor C."
+     },
+     {
+      "why": "« Je reconnais que le risque existe. C’est pourquoi nous proposons une taxe progressive »: she concedes, then adjusts the proposal. A contradicts her concession; B: she refines the idea rather than abandoning it."
+     },
+     {
+      "why": "« comment la contrôler ? … un registre de tous les vols » and « pousserait les voyageurs à partir des aéroports voisins ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "Delaunay: « Là-dessus, nous pouvons nous rejoindre : si le train était plus rapide et moins cher… ». A is the opposite of a progressive tax; C: neither of them argues this."
+     }
+    ]
+   },
+   "L37-2": {
+    "questions": [
+     {
+      "why": "The host introduces it: « fermer ses remontées mécaniques ». A: the mayor says that even with snow cannons it was losing money; B is the opposite of closing."
+     },
+     {
+      "why": "« Si nous avions continué, la commune se serait endettée pour des décennies » (a past hypothetical). B is the opposite: ski workers were angry; C isn’t mentioned."
+     },
+     {
+      "why": "« Je comprends leur colère, même si je reste convaincue que nous n’avions pas le choix »: understanding, but standing firm. A and C don’t match the recording."
+     },
+     {
+      "why": "« Bien que la fréquentation hivernale ait baissé, l’été attire désormais deux fois plus de monde ». B contradicts this; C: most of them retrained as mountain guides."
+     },
+     {
+      "why": "être au pied du mur is an idiom meaning “to have your back to the wall, to have no choice”. She advises changing course early, while there are still resources. A and C are literal misreadings."
+     }
+    ]
+   },
+   "L37-3": {
+    "questions": [
+     {
+      "why": "« ils ont adoré dormir dans le train. Pour nous, ça fait partie du voyage ». A contradicts the children “loving it”; B: she doesn’t mention price."
+     },
+     {
+      "why": "« j’ai deux semaines de congé par an. Si je passe deux jours dans les transports, il ne me reste presque rien ». A contradicts « Bien que je sois conscient du problème »; C isn’t mentioned."
+     },
+     {
+      "why": "« Ça dépend de la destination »: the train for short trips, but the plane for a long trip to Canada. B and C both contradict « je n’hésiterais pas une seconde à prendre l’avion »."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V37-01": {
+   "zh": "a matter of conscience, a moral dilemma",
+   "exZh": "For many families, booking a long-haul flight has become a matter of conscience."
+  },
+  "V37-02": {
+   "zh": "to rely on someone’s goodwill",
+   "exZh": "We can’t rely on travellers’ goodwill alone to cut emissions."
+  },
+  "V37-03": {
+   "zh": "the figures speak for themselves",
+   "exZh": "No need for long speeches: the figures speak for themselves."
+  },
+  "V37-04": {
+   "zh": "to have limited reach, limited impact",
+   "exZh": "The law has limited impact, as it only covers three routes."
+  },
+  "V37-05": {
+   "zh": "on a large scale",
+   "exZh": "Without competitive trains, behaviour can’t be changed on a large scale."
+  },
+  "V37-06": {
+   "zh": "(data) to be telling, revealing",
+   "exZh": "The figures are telling: a short-haul flight emits far more than a train journey."
+  },
+  "V37-07": {
+   "zh": "to point the finger at someone (often in the negative)",
+   "exZh": "I’m not pointing the finger at anyone: I’ve made the same mistakes."
+  },
+  "V37-08": {
+   "zh": "to reinforce each other, to go hand in hand",
+   "exZh": "Individual choices and public policy go hand in hand."
+  },
+  "V37-09": {
+   "zh": "to hold (unexpected) surprises",
+   "exZh": "A hike close to home can hold unexpected surprises."
+  },
+  "V37-10": {
+   "zh": "a change of scene, a sense of being somewhere else",
+   "exZh": "You don’t have to go to the ends of the earth for a change of scene."
+  },
+  "V37-11": {
+   "zh": "to restore the flavour/charm of",
+   "exZh": "Travelling less often can restore the flavour of travel."
+  },
+  "V37-12": {
+   "zh": "it’s not a whim",
+   "exZh": "For families in overseas departments, flying isn’t a whim but a necessity."
+  },
+  "V37-13": {
+   "zh": "to have no objection to",
+   "exZh": "If you’d rather meet online, I have no objection."
+  },
+  "V37-14": {
+   "zh": "to treat separately",
+   "exZh": "Routes to overseas territories should be treated separately."
+  },
+  "V37-15": {
+   "zh": "to think twice",
+   "exZh": "If tickets were more expensive, people would think twice before leaving."
+  },
+  "V37-16": {
+   "zh": "a progressive tax (rising with frequency/amount)",
+   "exZh": "With a progressive tax, the first flight of the year would be taxed very lightly."
+  },
+  "V37-17": {
+   "zh": "a privilege of the rich",
+   "exZh": "If the tax were too heavy, travel would once again become a privilege of the rich."
+  },
+  "V37-18": {
+   "zh": "to agree (on a point), to find common ground",
+   "exZh": "Despite their differences, the two guests eventually found common ground on trains."
+  },
+  "V37-19": {
+   "zh": "inaction, standing still",
+   "exZh": "This argument supports a decision at European level, not inaction."
+  },
+  "V37-20": {
+   "zh": "willingly (often negative: reluctantly)",
+   "exZh": "We didn’t close the ski slopes willingly."
+  },
+  "V37-21": {
+   "zh": "to have one’s back to the wall, to have no choice",
+   "exZh": "Rather than waiting until your back is to the wall, prepare to change course early."
+  },
+  "V37-22": {
+   "zh": "snow cover",
+   "exZh": "For ten years, the resort has had only six weeks of snow cover."
+  },
+  "V37-23": {
+   "zh": "on a trial basis, as a pilot",
+   "exZh": "We propose reopening the line on a trial basis in summer."
+  },
+  "V37-24": {
+   "zh": "(a topic) to enter public debate",
+   "exZh": "The question of flight quotas has entered public debate."
+  },
+  "V37-25": {
+   "zh": "fuel-hungry, fuel-guzzling",
+   "exZh": "New planes are less fuel-hungry than old ones."
+  }
+ },
+ "title": "Speaking II: the debate",
+ "phase": "DELF B2 task training"
+}

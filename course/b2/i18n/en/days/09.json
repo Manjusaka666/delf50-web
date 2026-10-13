@@ -1,0 +1,226 @@
+{
+ "canDo": "Can imagine several scenarios for a public health issue and compare their consequences, using the three types of si clause (including mixed hypotheses with si + plus-que-parfait + past/present conditional) and structures such as à condition que, pourvu que, à moins que, à supposer que, au cas où, dans l’hypothèse où.",
+ "review": "Review day 8’s purpose expressions (propose a measure → state its purpose) and day 6’s consequence expressions: today, add a condition between “measure → consequence”, e.g. « Si l’on imposait…, beaucoup se détourneraient…, si bien que… ».",
+ "input": "Read: an analysis of three scenarios for solving “medical deserts”, an opinion column on a tax on sugary drinks and a town-hall “heatwave plan” notice (mark every si clause and decide whether it is a real condition, a hypothesis about the present or a hypothesis about the past); listen: a doctor on “exercise on prescription”, a health segment on sleep deprivation and a hospital radio notice about A&E triage.",
+ "output": "Write: a 180+-word opinion post on a health forum on whether young doctors should be required to practise in under-served areas, imagining the consequences of different scenarios; speak: a 3-minute monologue (should smoking be banned on café terraces?) + a debate on “should patients who miss appointments pay?”, with at least one conditional or hypothetical structure per argument.",
+ "checkpoint": "Reading and listening accuracy ≥80%; each of the three types of si clause used correctly at least once in writing, plus à condition que / pourvu que / à moins que + subjunctive and au cas où + conditional; no « si + conditional » errors; a 3-minute monologue comparing at least two scenarios.",
+ "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about health, hospitals or disease prevention, and write 3 sentences imagining different scenarios: one with si + present, one with si + imparfait and one with si + plus-que-parfait (a regret about the past); then record a 1-minute voice message answering: « Si vous étiez ministre de la Santé, quelle serait votre première mesure ? »",
+ "items": {
+  "reading": {
+   "R09-1": {
+    "questions": [
+     {
+      "why": "The article first describes the problem of medical deserts and its causes, then analyses « Premier / Deuxième / Troisième scénario », and finally sums up. A: there is no personal story; C: both pros and cons of the first scenario are presented, and the author doesn’t back it."
+     },
+     {
+      "why": "« ne concernent plus seulement les campagnes isolées : certaines banlieues et villes moyennes sont elles aussi sous-dotées ». B contradicts « plus seulement »; C isn’t said in the text."
+     },
+     {
+      "why": "si + plus-que-parfait + present conditional = an unreal hypothesis about the past and its effect on the present, expressing regret (« regrette Paul Mercier »). A isn’t a prediction about the future; B: the past can’t be changed (« le passé ne se réécrit pas »)."
+     },
+     {
+      "why": "« si l’on imposait un lieu d’installation, beaucoup de jeunes renonceraient à la médecine générale, ce qui aggraverait la pénurie ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« Elles peuvent fonctionner, pourvu que les collectivités s’engagent sur le long terme ». B: the text says precisely that a new building on its own « ne sert à rien » without a stable team; C is the opposite of « plusieurs professionnels travaillent ensemble »."
+     },
+     {
+      "why": "« peut rendre service, à condition qu’elle ne devienne pas la seule réponse ». A is exactly what the author warns against; B contradicts « peut rendre service »."
+     }
+    ]
+   },
+   "R09-2": {
+    "questions": [
+     {
+      "why": "« je propose que chaque euro collecté soit réinvesti dans la prévention… Taxons, donc, mais à condition d’accompagner ». A contradicts « une taxe peut être utile »; B is what the author calls « relève de l’illusion »."
+     },
+     {
+      "why": "The author thinks it is neither “an attack on freedom” nor “a miracle cure”, and sets out a middle position. Neither B nor C is expressed in the text."
+     },
+     {
+      "why": "« les fabricants… réduisent souvent la teneur en sucre de leurs recettes. C’est sans doute l’effet le plus intéressant ». A is exaggerated; C isn’t mentioned."
+     },
+     {
+      "why": "« Si l’on se contentait de taxer, on pénaliserait d’abord les ménages modestes… sans leur offrir d’alternative ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "tirer la sonnette d’alarme = “to sound the alarm”, and the danger is explained next: « nos enfants risquent de vivre moins longtemps ». Neither B nor C is what the idiom means."
+     }
+    ]
+   },
+   "R09-3": {
+    "questions": [
+     {
+      "why": "The headline and first paragraph: « la mairie ouvre un registre destiné aux personnes vulnérables… L’inscription est gratuite ». A is the opposite of the text (the media library will open a cool room); C: no recruitment of volunteers is mentioned."
+     },
+     {
+      "why": "« Un proche, un voisin ou un médecin peut également faire la démarche, à condition que la personne soit d’accord ». A and B ignore this condition."
+     },
+     {
+      "why": "« Au cas où vous ne pourriez pas vous y rendre par vos propres moyens, un transport gratuit sera organisé sur simple appel ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "« s’hydrater régulièrement sans attendre d’avoir soif ». A and C contradict « éviter les efforts physiques aux heures les plus chaudes » and « fermer les volets pendant la journée »."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L09-1": {
+    "questions": [
+     {
+      "why": "It opens with « Et si… votre médecin vous prescrivait de la marche plutôt que des médicaments ? », and the whole interview is about exercise on prescription. Neither B nor C is the topic."
+     },
+     {
+      "why": "« je rédige une ordonnance qui précise le type d’activité… le patient est orienté vers un éducateur sportif formé, qui adapte les exercices ». A ignores the specific content of the prescription; C: it is a coach, not a doctor, who supervises."
+     },
+     {
+      "why": "« si les gens bougeaient… on réduirait nettement les risques de maladies cardiovasculaires, de diabète, et même de dépression ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "« Une ordonnance, en revanche, a un poids symbolique. Et puis l’accompagnement change tout ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "« c’est le principal frein. Les séances encadrées ne sont pas toujours remboursées ». A isn’t mentioned; C is the opposite of “group activities are motivating”."
+     },
+     {
+      "why": "« ce serait l’idéal : prescrire du sport à titre préventif, avant que les problèmes n’apparaissent ». A and B are over-inferences."
+     }
+    ]
+   },
+   "L09-2": {
+    "questions": [
+     {
+      "why": "« nous dormons en moyenne six heures quarante… alors que la plupart des spécialistes recommandent entre sept et neuf heures ». A is the opposite; C contradicts « chez les adolescents, c’est encore pire »."
+     },
+     {
+      "why": "« quand le manque de sommeil devient chronique, on accumule ce qu’on appelle une dette de sommeil ». B and C misunderstand the concept."
+     },
+     {
+      "why": "« En partie seulement. Dormir jusqu’à midi le dimanche dérègle votre horloge interne ». A contradicts “only partly”; B is too absolute."
+     },
+     {
+      "why": "« levez-vous plutôt que de tourner dans votre lit ». A is the opposite of the advice to switch off screens an hour before bed; C isn’t mentioned."
+     }
+    ]
+   },
+   "L09-3": {
+    "questions": [
+     {
+      "why": "« En raison de l’épidémie de grippe, le service des urgences connaît actuellement une très forte affluence ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "« Si vos symptômes sont légers… contactez d’abord votre médecin traitant ou une maison de santé ». A only applies to serious cases; C: the notice doesn’t advise against seeking care."
+     },
+     {
+      "why": "« Au cas où vous ne parviendriez pas à joindre un médecin, appelez le numéro de permanence des soins ». C is a serious case in which you should go straight to A&E; B isn’t mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V09-01": {
+   "zh": "provided that, as long as …",
+   "exZh": "These health centres can keep going, provided that the towns commit for the long term."
+  },
+  "V09-02": {
+   "zh": "supposing that, even assuming …",
+   "exZh": "Even supposing the reform is adopted, it will take years to see the effects."
+  },
+  "V09-03": {
+   "zh": "in the event that …",
+   "exZh": "In the event of an alert, the cool rooms will open from 10:00."
+  },
+  "V09-04": {
+   "zh": "if indeed … (expressing doubt)",
+   "exZh": "This tax would only be useful if it really were spent on prevention."
+  },
+  "V09-05": {
+   "zh": "a medical desert",
+   "exZh": "Since the last doctor left, the village has become a medical desert."
+  },
+  "V09-06": {
+   "zh": "to forgo medical care",
+   "exZh": "One person in five has gone without care for lack of a doctor."
+  },
+  "V09-07": {
+   "zh": "under-served, under-resourced",
+   "exZh": "Some districts in the north of the city are under-served by doctors."
+  },
+  "V09-08": {
+   "zh": "at breaking point",
+   "exZh": "The health system is at breaking point."
+  },
+  "V09-09": {
+   "zh": "the public authorities",
+   "exZh": "Associations are calling on the public authorities to act quickly."
+  },
+  "V09-10": {
+   "zh": "sugar content",
+   "exZh": "Manufacturers have reduced the sugar content of their drinks."
+  },
+  "V09-11": {
+   "zh": "to change eating habits",
+   "exZh": "A tax alone isn’t enough to change eating habits."
+  },
+  "V09-12": {
+   "zh": "the means (to do …)",
+   "exZh": "On a single salary, they don’t always have the means to buy fresh produce."
+  },
+  "V09-13": {
+   "zh": "to sound the alarm",
+   "exZh": "Paediatricians are sounding the alarm about children’s lack of sleep."
+  },
+  "V09-14": {
+   "zh": "vulnerable people",
+   "exZh": "The register makes it easier to contact vulnerable people during a heatwave."
+  },
+  "V09-15": {
+   "zh": "to register with, to make oneself known to",
+   "exZh": "People who live alone can register with the town hall."
+  },
+  "V09-16": {
+   "zh": "to stay hydrated",
+   "exZh": "When it’s hot, remember to drink water regularly."
+  },
+  "V09-17": {
+   "zh": "a sedentary lifestyle",
+   "exZh": "A sedentary lifestyle is one of the major public health problems."
+  },
+  "V09-18": {
+   "zh": "to prescribe (something) to someone",
+   "exZh": "The doctor prescribed him walking three times a week."
+  },
+  "V09-19": {
+   "zh": "to reduce the risk of …",
+   "exZh": "Walking every day reduces the risk of diabetes."
+  },
+  "V09-20": {
+   "zh": "a virtuous circle",
+   "exZh": "Sleeping better, moving more, sleeping better still: it’s a virtuous circle."
+  },
+  "V09-21": {
+   "zh": "as a preventive measure",
+   "exZh": "Doctors recommend exercise as a preventive measure."
+  },
+  "V09-22": {
+   "zh": "lack of sleep",
+   "exZh": "Lack of sleep increases the risk of road accidents."
+  },
+  "V09-23": {
+   "zh": "sleep debt",
+   "exZh": "A month after her exams, she had built up a huge sleep debt."
+  },
+  "V09-24": {
+   "zh": "to relieve pressure on A&E",
+   "exZh": "To relieve pressure on A&E, the hospital asks people to phone their own doctor first."
+  },
+  "V09-25": {
+   "zh": "to stand someone up, to miss an appointment",
+   "exZh": "Every week, some patients stand their doctor up."
+  }
+ },
+ "title": "Hypotheses and conditions",
+ "phase": "Upgrading structures and precise expression"
+}

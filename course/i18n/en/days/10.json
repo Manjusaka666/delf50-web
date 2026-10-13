@@ -1,0 +1,298 @@
+{
+ "canDo": "Can connect present, past and future into a 2-minute personal statement.",
+ "review": "Less new material; rework the 3 grammar points with the most errors.",
+ "input": "2 sets each of mixed listening and reading material, focusing on spotting tenses and timelines.",
+ "output": "Write 110 words on “past – present – future”; speak for 2 minutes on the same topic.",
+ "checkpoint": "A mixed grammar sample of ≥25 questions; find your top three types of error and redo them.",
+ "challenge": "Today’s challenge: record a 2-minute personal statement: your life now (présent), an important past experience (passé composé + imparfait) and a future plan (futur); when you play it back, check that all three times are there and mark one sentence you could improve.",
+ "items": {
+  "reading": {
+   "R10-1": {
+    "questions": [
+     {
+      "why": "She says clearly that she liked her colleagues; the problem was « je ne voyais jamais le résultat de ce que je faisais ». Working hours aren’t a reason she gives."
+     },
+     {
+      "why": "Ten months’ training, a workshop two years later; fifteen years is the time she spent at the insurance company. All three numbers are in the text — match each to the right event."
+     },
+     {
+      "why": "She says herself « Je ne gagnerai pas plus … le métier ne survivra pas si personne ne le transmet ». The open day is one Saturday a month."
+     }
+    ]
+   },
+   "R10-2": {
+    "questions": [
+     {
+      "why": "The text explicitly rules out loans (« restés stables ») and says clearly that staff numbers haven’t risen since 2021."
+     },
+     {
+      "why": "On weekdays the seats are all taken before 10 — it’s full, not empty or closed."
+     },
+     {
+      "why": "Two measures: booking seats online and requesting new posts. Charging and closing don’t appear."
+     }
+    ]
+   },
+   "R10-3": {
+    "questions": [
+     {
+      "why": "« Le résultat est contrasté » — the workshops are all let, but the north hall still has no project. The first buildings have been decontaminated."
+     },
+     {
+      "why": "« sa toiture coûterait à elle seule près de deux millions » — à elle seule limits the scope."
+     },
+     {
+      "why": "About a hundred people compared with the original 240, but « dans des activités plus variées »."
+     }
+    ]
+   },
+   "R10-4": {
+    "questions": [
+     {
+      "why": "He thought going back to school would be the hardest part; it was actually money — three years of training on half his income."
+     },
+     {
+      "why": "His own words contrast « si la formation existe » with « comment ils vivront pendant qu'ils la suivent »."
+     },
+     {
+      "why": "« un peu moins », not the same or more; what he stresses is a sense of meaning."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L10-1": {
+    "questions": [
+     {
+      "why": "He compares explicitly: « C'est ça qui a tout changé, plus que la qualité du pain, qui elle n'a pas bougé ». Taking on an apprentice is a result, not a cause."
+     },
+     {
+      "why": "dix-huit mois = a year and a half. Three years is how long he has had the business, and twelve kilometres is a distance, not a time."
+     },
+     {
+      "why": "« pas avant d'avoir remboursé le matériel » is the only condition; three hundred baguettes is the figure already reached."
+     }
+    ]
+   },
+   "L10-2": {
+    "questions": [
+     null,
+     {
+      "why": "« nous en avons demandé deux de plus … nous n'en avons obtenu qu'un seul » — ne … que restricts; it doesn’t negate."
+     },
+     {
+      "why": "The reason is that Julien goes part-time from January. The number of adults went down."
+     }
+    ]
+   },
+   "L10-3": {
+    "questions": [
+     {
+      "why": "« Je ne trouvais pas de logement, je dormais chez un collègue ». The job was interesting; the team is what later improved things."
+     },
+     null,
+     {
+      "why": "« on décide plus vite, on discute moins » — the difference compared with France."
+     }
+    ]
+   },
+   "L10-4": {
+    "questions": [
+     {
+      "why": "She cooks at the weekend and freezes portions for the week. Cooking every evening was her old habit (imparfait)."
+     },
+     {
+      "why": "« je n'ai pas envie d'apprendre à quarante ans » — he clearly doesn’t intend to learn."
+     },
+     {
+      "why": "« Ça revient beaucoup moins cher que de commander, et on mange mieux » — both reasons are in this one sentence."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V10-01": {
+   "zh": "since … (+ clause)",
+   "exZh": "Since I’ve been living in Lyon, I take the tram every day."
+  },
+  "V10-02": {
+   "zh": "to have trouble …-ing",
+   "exZh": "At first, I had trouble finding somewhere to live."
+  },
+  "V10-03": {
+   "zh": "to get used to …",
+   "exZh": "I’ve got used to the Montreal winter."
+  },
+  "V10-04": {
+   "zh": "things are much better",
+   "exZh": "Since January, things have been much better."
+  },
+  "V10-05": {
+   "zh": "to allow someone to …",
+   "exZh": "This new job lets me see the results of my efforts."
+  },
+  "V10-06": {
+   "zh": "to plan to …",
+   "exZh": "I’m planning to open a small tearoom."
+  },
+  "V10-07": {
+   "zh": "to change one’s life",
+   "exZh": "At thirty, I decided to change my life."
+  },
+  "V10-08": {
+   "zh": "It’s been … years since/that …",
+   "exZh": "I’ve been learning French for two years."
+  },
+  "V10-09": {
+   "zh": "to come from …",
+   "exZh": "I come from China — from Chengdu, to be precise."
+  },
+  "V10-10": {
+   "zh": "to study + subject",
+   "exZh": "I studied business in Shanghai."
+  },
+  "V10-11": {
+   "zh": "to make a decision",
+   "exZh": "Last year, I made an important decision."
+  },
+  "V10-12": {
+   "zh": "a turning point in one’s life",
+   "exZh": "Going abroad was a turning point in my life."
+  },
+  "V10-13": {
+   "zh": "to set oneself a goal",
+   "exZh": "This year, I’ve set myself a goal: to pass the DELF B1."
+  },
+  "V10-14": {
+   "zh": "to be proud of …",
+   "exZh": "I’m proud of the path I’ve taken."
+  },
+  "V10-15": {
+   "zh": "actually, in fact",
+   "exZh": "I thought it would be hard. Actually, it was fine."
+  },
+  "V10-16": {
+   "zh": "the hardest thing is to …",
+   "exZh": "The hardest thing is getting up at three in the morning."
+  },
+  "V10-17": {
+   "zh": "on the other hand, however",
+   "exZh": "The workshops are all let. On the other hand, the north hall is still waiting for a project."
+  },
+  "V10-18": {
+   "zh": "not to feel like …-ing",
+   "exZh": "I don’t feel like learning to cook at forty."
+  },
+  "V10-19": {
+   "zh": "not to regret one’s choice",
+   "exZh": "I earn a bit less, but I don’t regret my choice."
+  },
+  "V10-20": {
+   "zh": "to lose one’s job",
+   "exZh": "When the factory closed, 240 people lost their jobs."
+  },
+  "V10-21": {
+   "zh": "to advise someone to …",
+   "exZh": "He advises future students to sort out the financial side first."
+  },
+  "V10-22": {
+   "zh": "to hire someone",
+   "exZh": "I hired an apprentice in September."
+  },
+  "V10-23": {
+   "zh": "to share a flat",
+   "exZh": "I share a flat with three friends."
+  },
+  "V10-24": {
+   "zh": "in turn, taking turns",
+   "exZh": "In our flat, we take turns cooking."
+  },
+  "V10-25": {
+   "zh": "It’s been a long time!",
+   "exZh": "Hi! It’s been a long time! How are you?"
+  },
+  "V10-26": {
+   "zh": "to meet people",
+   "exZh": "I joined a volleyball club to meet people."
+  },
+  "V10-27": {
+   "zh": "to feel at home",
+   "exZh": "Now I feel at home in Montreal."
+  },
+  "V10-28": {
+   "zh": "in the long term",
+   "exZh": "In the long term, I’d like to have my own workshop."
+  },
+  "V10-29": {
+   "zh": "in future, from now on",
+   "exZh": "In future, I’ll leave home earlier."
+  },
+  "V10-30": {
+   "zh": "to retrain, to change career",
+   "exZh": "After twelve years in kitchens, Yacine changed career."
+  },
+  "V10-31": {
+   "zh": "to become + profession",
+   "exZh": "At 34, he decided to become a nurse."
+  },
+  "V10-32": {
+   "zh": "to work under pressure",
+   "exZh": "In the kitchen, I was used to working under pressure."
+  },
+  "V10-33": {
+   "zh": "to fall by half",
+   "exZh": "During the training, my income fell by half."
+  },
+  "V10-34": {
+   "zh": "to spend one’s days in front of a screen",
+   "exZh": "I used to spend my days in front of a screen."
+  },
+  "V10-35": {
+   "zh": "a rise of … %",
+   "exZh": "The library has 4950 registered members, a rise of more than 20%."
+  },
+  "V10-36": {
+   "zh": "to remain stable",
+   "exZh": "Book loans have remained stable."
+  },
+  "V10-37": {
+   "zh": "to be explained by …",
+   "exZh": "This growth is mainly explained by the opening of a workspace."
+  },
+  "V10-38": {
+   "zh": "on the one hand …, on the other hand …",
+   "exZh": "On the one hand, the seats are taken by 10; on the other hand, staff numbers haven’t gone up."
+  },
+  "V10-39": {
+   "zh": "there you find …",
+   "exZh": "Today you’ll find a theatre and a nursery there."
+  },
+  "V10-40": {
+   "zh": "to take over a business",
+   "exZh": "You took over this bakery three years ago."
+  },
+  "V10-41": {
+   "zh": "barely, hardly (+ quantity)",
+   "exZh": "In the first year, I sold barely fifty baguettes a day."
+  },
+  "V10-42": {
+   "zh": "That’s what changed everything.",
+   "exZh": "I started delivering to the neighbouring villages: that’s what changed everything."
+  },
+  "V10-43": {
+   "zh": "not before …-ing",
+   "exZh": "I’ll open a tearoom, but not before I’ve paid off the equipment."
+  },
+  "V10-44": {
+   "zh": "to take stock of, to review …",
+   "exZh": "Tonight, we’re going to review the season."
+  },
+  "V10-45": {
+   "zh": "to work out cheaper (than)",
+   "exZh": "It works out much cheaper than ordering in."
+  }
+ },
+ "title": "Foundations review I",
+ "phase": "Foundations and grammar on autopilot"
+}

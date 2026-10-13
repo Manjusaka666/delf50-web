@@ -1,0 +1,204 @@
+{
+ "canDo": "Targeted repair of error patterns in main idea, details, negation, opinion and so on.",
+ "review": "No random drilling; choose material by error tag.",
+ "input": "4 sets of short listening and reading questions each + review.",
+ "output": "For each text/set, write down the evidence and the cause of the error.",
+ "checkpoint": "Stop only when the same type of error has not appeared for two sets in a row.",
+ "challenge": "Today’s challenge: targeted repair by error tag. If you often lose marks on negation, find an article on TV5MONDE Apprendre B1 and circle every negative structure (ne… plus, ne… que, aucun, sans); if you often get opinion questions wrong, circle every opinion and contrast marker (selon, pourtant, en revanche, certes). Finally write 3 sentences in your own words, “What this article is really saying is…”, and check them against the text.",
+ "items": {
+  "listening": {
+   "L44-3": {
+    "questions": [
+     null,
+     {
+      "why": "It rose from 4% to 11%."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V44-01": {
+   "zh": "to stand at … (a figure)",
+   "exZh": "The unemployment rate stands at 7.3% this quarter."
+  },
+  "V44-02": {
+   "zh": "to be misleading",
+   "exZh": "On these routes, the cost per pupil is misleading."
+  },
+  "V44-03": {
+   "zh": "half (due to …)",
+   "exZh": "Half of this drop is explained by job creation."
+  },
+  "V44-04": {
+   "zh": "to have to turn people away",
+   "exZh": "We have to turn people away: forty-three people could not be seen."
+  },
+  "V44-05": {
+   "zh": "to restore trust",
+   "exZh": "Restoring water quality doesn’t restore trust."
+  },
+  "V44-06": {
+   "zh": "a premature stop (of treatment)",
+   "exZh": "Doctors are seeing treatments stopped too early."
+  },
+  "V44-07": {
+   "zh": "to interrupt a treatment",
+   "exZh": "A patient who feels better on the third day stops their treatment."
+  },
+  "V44-08": {
+   "zh": "to be generalisable",
+   "exZh": "This solution can’t be generalised: it needs an available driver."
+  },
+  "V44-09": {
+   "zh": "to leave a lasting mark on …",
+   "exZh": "An old water restriction leaves a lasting mark on a region’s trust."
+  },
+  "V44-10": {
+   "zh": "to cover very different situations",
+   "exZh": "This average covers very different situations."
+  },
+  "V44-11": {
+   "zh": "more and more",
+   "exZh": "The bearing will make more and more noise."
+  },
+  "V44-12": {
+   "zh": "it’s not the same thing",
+   "exZh": "Finding a job and giving up looking are not the same thing."
+  },
+  "V44-13": {
+   "zh": "to be falling / rising",
+   "exZh": "Unemployment fell by 0.2 points over the quarter."
+  },
+  "V44-14": {
+   "zh": "from one person to another",
+   "exZh": "How chlorine is perceived varies a lot from one person to another."
+  },
+  "V44-15": {
+   "zh": "to be among …",
+   "exZh": "These accidents are among the most serious."
+  },
+  "V44-16": {
+   "zh": "to be indicated (of a treatment)",
+   "exZh": "Some people refuse antibiotics even when they are indicated."
+  },
+  "V44-17": {
+   "zh": "I would ask you kindly to … (formal request)",
+   "exZh": "I would ask you kindly to refund me the difference."
+  },
+  "V44-18": {
+   "zh": "please find enclosed …",
+   "exZh": "Please find enclosed a copy of my invoice."
+  },
+  "V44-19": {
+   "zh": "as agreed",
+   "exZh": "As agreed, I’ll send you the supporting document before Friday."
+  },
+  "V44-20": {
+   "zh": "to settle a dispute amicably",
+   "exZh": "I would prefer to settle this dispute amicably, without going through an association."
+  },
+  "V44-21": {
+   "zh": "as soon as possible, at the earliest opportunity",
+   "exZh": "I would like to receive the right model at the earliest opportunity."
+  },
+  "V44-22": {
+   "zh": "if I were you, I would …",
+   "exZh": "If I were you, I’d ask for an extension."
+  },
+  "V44-23": {
+   "zh": "it must be acknowledged that …",
+   "exZh": "It must be acknowledged that this measure has a cost."
+  },
+  "V44-24": {
+   "zh": "what’s the next step?",
+   "exZh": "Thank you for the information. What’s the next step?"
+  },
+  "V44-25": {
+   "zh": "labour included",
+   "exZh": "It can be repaired the same day: allow sixty euros, labour included."
+  },
+  "V44-26": {
+   "zh": "a side effect",
+   "exZh": "The campaign had an unexpected side effect."
+  },
+  "V44-27": {
+   "zh": "an intermediate solution",
+   "exZh": "An intermediate solution was adopted: a nine-seat vehicle."
+  },
+  "V44-28": {
+   "zh": "to follow a course of treatment",
+   "exZh": "You must finish the course of treatment, even if you feel better."
+  },
+  "V44-29": {
+   "zh": "to result from it",
+   "exZh": "The accidents that result from it are rare but serious."
+  },
+  "V44-30": {
+   "zh": "to comply (with a standard)",
+   "exZh": "Tap water complies with the standards in the vast majority of cases."
+  },
+  "V44-31": {
+   "zh": "as regards …, on the … side",
+   "exZh": "As regards prices, inflation is slowing."
+  },
+  "V44-32": {
+   "zh": "to be equipped to …",
+   "exZh": "We are not equipped to deal with disputes over online purchases."
+  },
+  "V44-33": {
+   "zh": "the question is no longer whether …",
+   "exZh": "The question is no longer whether we open a drop-in service, but whether we can keep it going."
+  },
+  "V44-34": {
+   "zh": "one’s relationship to …",
+   "exZh": "In adults, what changes is their relationship to failure."
+  },
+  "V44-35": {
+   "zh": "to ring false",
+   "exZh": "Saying “you can do it” rings false."
+  },
+  "V44-36": {
+   "zh": "to get a message across",
+   "exZh": "This message is hard to get across to the public."
+  },
+  "V44-37": {
+   "zh": "mistrust of …",
+   "exZh": "Mistrust of medicines has grown."
+  },
+  "V44-38": {
+   "zh": "to require …-ing, to presuppose",
+   "exZh": "This solution requires finding an available driver every day."
+  },
+  "V44-39": {
+   "zh": "to vary threefold",
+   "exZh": "Bottled water consumption varies threefold from one département to another."
+  },
+  "V44-40": {
+   "zh": "to be designed for …",
+   "exZh": "This standard was designed for an average user."
+  },
+  "V44-41": {
+   "zh": "that changes everything",
+   "exZh": "It’s a nuance, but it changes everything."
+  },
+  "V44-42": {
+   "zh": "on-demand transport",
+   "exZh": "The coach is also used for on-demand transport for the rest of the day."
+  },
+  "V44-43": {
+   "zh": "the slowdown in inflation",
+   "exZh": "A slowdown in inflation doesn’t mean prices are falling."
+  },
+  "V44-44": {
+   "zh": "the unemployment rate",
+   "exZh": "The unemployment rate stands at 7.3%."
+  },
+  "V44-45": {
+   "zh": "tap water",
+   "exZh": "Tap water is tested more than bottled water."
+  }
+ },
+ "title": "Repair day II: listening and reading",
+ "phase": "Mock exams and repair"
+}

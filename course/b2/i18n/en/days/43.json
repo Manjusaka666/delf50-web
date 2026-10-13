@@ -1,0 +1,226 @@
+{
+ "canDo": "Can complete reading (≤ 45 minutes), listening (in one go, with the set number of plays), writing (≤ 60 minutes, including 10 minutes for the outline and 10 for checking) and speaking preparation (30 minutes) under strict timing, recording the actual time spent and the points lost on each part.",
+ "review": "Review the Day 41–42 error log and the three-round checking method; go back over the concession–rebuttal structures common in argumentative essays (certes… mais, il n’en reste pas moins que), expressions of condition (à condition que, tant que) and formal letter layout, and test under time pressure whether they have become “automatic”.",
+ "input": "Read: rooftop farms in cities (long article), an editorial on tourist caps and an announcement for an intergenerational mentoring project; skim the questions for 3 minutes before reading, with a time limit for each text. Listen: an interview on night trains, a column on teenagers’ reading and a vox pop on scrapping paper tickets; only skim the questions and underline keywords in the 30 seconds before each recording.",
+ "output": "Write: a formal letter to the town council on behalf of a residents’ group about capping tourist numbers (250+ words, within 60 minutes); speak: after 30 minutes’ preparation, a monologue of about 6 minutes on remote working and the vitality of town centres, then a debate with the examiner on “should advertising for sports betting be banned?”.",
+ "checkpoint": "All four parts finished within the time limits, with no blank answers; reading + listening accuracy ≥75%; letter ≥250 words with at least 8 minutes left for checking; monologue ends between 5–7 minutes with a clear conclusion; timing sheet filled in completely.",
+ "challenge": "Today’s challenge: pick an episode of RFI’s « Journal en français facile », listen only once and give yourself 5 minutes to note the key points of three news items (who, what, why); then check against the transcript for what you missed and note which kind of information (numbers, names, causes) you most often lose marks on.",
+ "items": {
+  "reading": {
+   "R43-1": {
+    "questions": [
+     {
+      "why": "The article starts from the “double promise” of rooftop farms and analyses, in turn, the ecological benefits, economic difficulties and social role, concluding « ne remplacera donc pas les champs… Mais… ». B: peri-urban farmers aren’t the topic; C: it isn’t an introduction to building techniques."
+     },
+     {
+      "why": "« rafraîchissent les bâtiments en été, retiennent une partie des eaux de pluie et offrent un refuge aux insectes pollinisateurs ». A is called a « mythe »; C isn’t mentioned."
+     },
+     {
+      "why": "« tient largement du mythe », backed by an agronomist’s calculation: they can meet only a small part of demand. A is the opposite; B: the author clearly takes a position."
+     },
+     {
+      "why": "« ne survivent qu’à coups de subventions publiques, ou en diversifiant leurs activités ». Neither B nor C is in the text."
+     },
+     {
+      "why": "« Leur rôle n’est pas tant de produire que de faire comprendre », and they become neighbourhood « espaces de rencontre ». He rejects A; C isn’t mentioned."
+     },
+     {
+      "why": "passer à côté de qqch = to miss, to overlook; seeing rooftop farms only as a “shop window” overlooks their educational and social value. A and C don’t match the phrase’s meaning."
+     }
+    ]
+   },
+   "R43-2": {
+    "questions": [
+     {
+      "why": "« Les quotas peuvent être un outil utile, à condition de rester un dernier recours ». A ignores his partial support for caps; C contradicts « on aurait tort de voir dans les quotas une solution miracle »."
+     },
+     {
+      "why": "« un lieu détruit par sa fréquentation ne profite plus à personne… protéger le patrimoine ». B and C aren’t mentioned; C even contradicts paragraph 3 (scarce places become expensive)."
+     },
+     {
+      "why": "« transformer la visite en privilège… seuls les plus aisés pourront s’offrir le spectacle ». Neither A nor B is in the text."
+     },
+     {
+      "why": "The explanation follows straight after: « refoulés d’un site, les visiteurs se reportent sur le village voisin »; the problem is just moved elsewhere. A and C are the opposite of what is meant."
+     },
+     {
+      "why": "« il faudrait mieux répartir les flux : promouvoir des destinations moins connues, étaler les vacances… ». B: he talks about « encadrer » (regulating), not banning; C is the opposite of « Plutôt que de fermer les portes »."
+     }
+    ]
+   },
+   "R43-3": {
+    "questions": [
+     {
+      "why": "« a le plaisir d’annoncer le lancement… Les inscriptions sont ouvertes »: a launch announcement and a call for participants. B: this is the first edition (« première édition »); C: funding isn’t mentioned."
+     },
+     {
+      "why": "« accompagnent les jeunes dans leurs premiers pas professionnels (rédaction d’un CV, préparation d’un entretien…) ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« Aucune compétence particulière n’est exigée, si ce n’est de la disponibilité et l’envie de partager ». A and B misread the participants’ backgrounds."
+     },
+     {
+      "why": "« Les places étant limitées à quarante binômes… »: the participial phrase expresses cause. A and C don’t match the announcement."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L43-1": {
+    "questions": [
+     {
+      "why": "The opening, « les trains de nuit font leur retour dans plusieurs pays européens », and the whole discussion covers the reasons for their return, their limits and their prospects. B and C are only background."
+     },
+     {
+      "why": "« ils coûtaient cher et rapportaient peu… les compagnies aériennes à bas prix proposaient des billets imbattables ». A and C have no basis."
+     },
+     {
+      "why": "« La volonté politique, essentiellement. Plusieurs États ont décidé de subventionner ces liaisons ». A: he says prices « restent souvent élevés »; B: it’s state subsidies, not private investment."
+     },
+     {
+      "why": "« les prix restent souvent élevés… et les retards sont fréquents ». The details in B and C aren’t mentioned, and the new carriages are « plus confortables »."
+     },
+     {
+      "why": "« je n’ai pas très bien dormi… Mais se réveiller face aux Alpes, c’est inoubliable », and she finds the price « raisonnable ». A and C contradict what she says."
+     },
+     {
+      "why": "« à condition qu’on le considère comme un vrai service public européen… Tant que chaque pays gérera ses lignes dans son coin, on n’ira pas très loin ». A is exactly the positioning he rejects; C isn’t mentioned."
+     }
+    ]
+   },
+   "L43-2": {
+    "questions": [
+     {
+      "why": "« Un peu des deux… si on élargit la définition de la lecture, le tableau change complètement ». A is too absolute; C: she only says the two shouldn’t be set against each other, not that one replaces the other."
+     },
+     {
+      "why": "« le nombre de romans lus par plaisir, il baisse… surtout à partir du lycée ». B: she says teenagers « lisent énormément de bandes dessinées »; C isn’t mentioned."
+     },
+     {
+      "why": "« la lecture d’un roman long exige une concentration particulière, et c’est cette capacité-là qui inquiète les enseignants ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "« c’est en partant de ses goûts qu’on amène un lecteur vers d’autres livres », and one must « ne pas mépriser ce qu’ils lisent déjà ». A and C go against this."
+     }
+    ]
+   },
+   "L43-3": {
+    "questions": [
+     {
+      "why": "« les tickets de bus en papier disparaîtront… remplacés par une application et des cartes rechargeables ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« ma mère… elle n’a pas de smartphone… où les recharger ? ». B and C have no basis."
+     },
+     {
+      "why": "« à condition qu’on garde au moins un point de vente physique par quartier ». B: the fines issue comes from the third person interviewed, and it isn’t a condition."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V43-01": {
+   "zh": "to green (a place), to add greenery",
+   "exZh": "The town wants to green school playgrounds to fight the heat."
+  },
+  "V43-02": {
+   "zh": "by dint of repeated …, thanks to one … after another",
+   "exZh": "The festival only survives thanks to one subsidy after another."
+  },
+  "V43-03": {
+   "zh": "(ties) to loosen, to drift apart",
+   "exZh": "After the move, the two families gradually drifted apart."
+  },
+  "V43-04": {
+   "zh": "to make … more liveable",
+   "exZh": "Street trees make the neighbourhood more liveable in summer."
+  },
+  "V43-05": {
+   "zh": "(an idea) to gain ground, to catch on",
+   "exZh": "The idea of a four-day week is gaining ground in companies."
+  },
+  "V43-06": {
+   "zh": "a weighty argument",
+   "exZh": "The fall in accidents is a weighty argument for the measure."
+  },
+  "V43-07": {
+   "zh": "(crowds) to trample (a place)",
+   "exZh": "Every summer, the dunes are trampled by thousands of walkers."
+  },
+  "V43-08": {
+   "zh": "to be largely a myth, unrealistic",
+   "exZh": "The idea that cities could be self-sufficient is largely a myth."
+  },
+  "V43-09": {
+   "zh": "to spread out (crowds, traffic)",
+   "exZh": "The museum has introduced timed entry slots to spread out visitors."
+  },
+  "V43-10": {
+   "zh": "to stagger holidays",
+   "exZh": "To ease road congestion, holidays should be staggered over several weeks."
+  },
+  "V43-11": {
+   "zh": "to make a comeback",
+   "exZh": "Vinyl records are making a comeback among young music fans."
+  },
+  "V43-12": {
+   "zh": "to take one’s first steps (in a field)",
+   "exZh": "The programme helps young graduates take their first steps in the working world."
+  },
+  "V43-13": {
+   "zh": "except for, other than",
+   "exZh": "No qualifications are required other than the baccalauréat."
+  },
+  "V43-14": {
+   "zh": "a pair, working in twos",
+   "exZh": "In practical classes, students work in pairs."
+  },
+  "V43-15": {
+   "zh": "to come back into favour",
+   "exZh": "Bikes are coming back into favour in big cities."
+  },
+  "V43-16": {
+   "zh": "to temper enthusiasm, to add a note of caution",
+   "exZh": "The expert was careful to temper travellers’ enthusiasm: delays are still common."
+  },
+  "V43-17": {
+   "zh": "unbeatable low prices",
+   "exZh": "Low-cost airlines offer unbeatable prices on short-haul flights."
+  },
+  "V43-18": {
+   "zh": "a niche product",
+   "exZh": "Alcohol-free wine is no longer a niche product."
+  },
+  "V43-19": {
+   "zh": "each in one’s own corner, in isolation",
+   "exZh": "If each department works in its own corner, the project won’t move forward."
+  },
+  "V43-20": {
+   "zh": "true or false?",
+   "exZh": "They say the French drink less and less coffee: true or false?"
+  },
+  "V43-21": {
+   "zh": "to leave (someone) by the wayside",
+   "exZh": "Digitising public services mustn’t leave anyone by the wayside."
+  },
+  "V43-22": {
+   "zh": "a travel document (ticket, transport card, etc.)",
+   "exZh": "The inspector checks that every passenger has a valid travel document."
+  },
+  "V43-23": {
+   "zh": "(activity) to slow down, to run at half speed",
+   "exZh": "In August, the country’s economy runs at half speed."
+  },
+  "V43-24": {
+   "zh": "to agree to commit (funds)",
+   "exZh": "The town has agreed to commit substantial funds to renovating the school."
+  },
+  "V43-25": {
+   "zh": "to send rents soaring",
+   "exZh": "The rise of holiday rentals has sent town-centre rents soaring."
+  }
+ },
+ "title": "Mock 2: timed",
+ "phase": "Mock exams, repair and the bridge to C1"
+}

@@ -5,7 +5,17 @@
  * except Days 41–50, whose grammar is drawn from the learner's weakest points
  * and fixed when the day is first opened. The intensity only decides how much
  * of a day is due.
+ *
+ * The material is written in French with explanations for the learner in
+ * Chinese; for another interface language each file's translation
+ * (<root>/i18n/<locale>/<same path>) is laid over it (content.js). A missing
+ * translation leaves the original, so a course can be translated piece by piece.
  */
+import { localize } from './content.js';
+import { getLocale, t } from './i18n.js';
+
+/** The language the course material's explanations are written in. */
+export const SOURCE_LOCALE = 'zh-CN';
 
 /** The levels a learner can switch between; a level without a root is announced, not open yet. */
 export const LEVELS = [
@@ -15,7 +25,7 @@ export const LEVELS = [
 ];
 export const levelOf = (id) => LEVELS.find((l) => l.id === id) || null;
 
-let current = null, course = null, nodes = null, days = null, banks = null;
+let current = null, course = null, nodes = null, days = null, banks = null, lang = SOURCE_LOCALE;
 const loaded = new Map();
 
 async function json(url) {
@@ -24,19 +34,35 @@ async function json(url) {
   return r.json();
 }
 
-/** Loads a course (once) and makes it the current one. */
-export async function loadCourse(id = 'delf-b1') {
+/** A translation file, or null when there is none (yet) or it cannot be fetched. */
+async function translation(url) {
+  try {
+    const r = await fetch(url);
+    return r.ok ? await r.json() : null;
+  } catch (e) { return null; }
+}
+
+/** A course file in the interface language: the material with its translation laid over it. */
+function material(root, file, locale) {
+  const base = json(`${root}/${file}`);
+  if (locale === SOURCE_LOCALE) return base;
+  return Promise.all([base, translation(`${root}/i18n/${locale}/${file}`)]).then(([b, tr]) => localize(b, tr));
+}
+
+/** Loads a course (once per interface language) and makes it the current one. */
+export async function loadCourse(id = 'delf-b1', locale = getLocale()) {
   const lv = levelOf(id);
   if (!lv || !lv.root) throw new Error(`Unknown course: ${id}`);
-  if (!loaded.has(id)) {
-    const p = Promise.all([json(`${lv.root}/course.json`), json(`${lv.root}/grammar.json`)])
-      .then(([c, n]) => ({ lv, course: c, nodes: n, days: new Map(), banks: new Map() }));
-    loaded.set(id, p);
-    p.catch(() => loaded.delete(id));
+  const key = `${id}|${locale}`;
+  if (!loaded.has(key)) {
+    const p = Promise.all([material(lv.root, 'course.json', locale), material(lv.root, 'grammar.json', locale)])
+      .then(([c, n]) => ({ lv, locale, course: c, nodes: n, days: new Map(), banks: new Map() }));
+    loaded.set(key, p);
+    p.catch(() => loaded.delete(key));
   }
-  const x = await loaded.get(id);
+  const x = await loaded.get(key);
   ({ course, nodes, days, banks } = x);
-  current = lv;
+  current = lv; lang = x.locale;
   return course;
 }
 
@@ -49,7 +75,7 @@ export const allNodes = () => nodes;
 export function loadDay(d) {
   const m = days;
   if (!m.has(d)) {
-    const p = json(`${current.root}/days/${String(d).padStart(2, '0')}.json`);
+    const p = material(current.root, `days/${String(d).padStart(2, '0')}.json`, lang);
     m.set(d, p);
     p.catch(() => m.delete(d));
   }
@@ -64,7 +90,7 @@ export const nodeOf = (qid) => qid.replace(/-\d+$/, '');
 function loadBank(id) {
   const m = banks;
   if (!m.has(id)) {
-    const p = json(`${current.root}/questions/${id}.json`).then((qs) => qs.map((q) => Object.assign({ node: id }, q)));
+    const p = material(current.root, `questions/${id}.json`, lang).then((qs) => qs.map((q) => Object.assign({ node: id }, q)));
     m.set(id, p);
     p.catch(() => m.delete(id));
   }
@@ -141,7 +167,7 @@ function productionPrompts(ids, target) {
   const need = Math.ceil(target / 2);
   return ids.map((id) => {
     const n = node(id), prompts = n.prompts.slice(0, need);
-    while (prompts.length < need) prompts.push(`用 ${n.name} 再造 2 个和今天主题有关的新句子，并口头说一遍。`);
+    while (prompts.length < need) prompts.push(t('production.extraPrompt', { name: n.name }));
     return { node: n, prompts };
   });
 }

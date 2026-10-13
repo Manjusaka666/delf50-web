@@ -1,0 +1,192 @@
+{
+ "canDo": "Can describe a person or a place and get information with at least 5 questions.",
+ "review": "Review the D1 present tense; add articles, adjective agreement and où/quand/comment/combien.",
+ "input": "Listening: describing people/places; reading: short ads, flat listings or course descriptions.",
+ "output": "Write a 70-word description; a 90-second spoken Q&A with at least 5 different question words.",
+ "checkpoint": "Can keep gender and number broadly consistent in a description; asks questions without translating word for word from your own language.",
+ "challenge": "Today’s challenge: on TV5MONDE Apprendre, find a short video presenting a French city (A2 level); write 4 sentences describing the city (watch the articles and adjective agreement), then 5 questions you’d like to ask a local, each with a different question word.",
+ "vocab": {
+  "V02-01": {
+   "zh": "to be opposite …",
+   "exZh": "The tourist office is opposite the town hall."
+  },
+  "V02-02": {
+   "zh": "Do you know where … is?",
+   "exZh": "Do you know where her office is?"
+  },
+  "V02-03": {
+   "zh": "to keep going straight on",
+   "exZh": "Keep going straight on as far as the main square."
+  },
+  "V02-04": {
+   "zh": "to turn left",
+   "exZh": "Then turn left after the chemist’s."
+  },
+  "V02-05": {
+   "zh": "Is it far from here?",
+   "exZh": "— Is it far from here? — No, about five minutes."
+  },
+  "V02-06": {
+   "zh": "… minutes’ walk away",
+   "exZh": "The media library is five minutes’ walk away."
+  },
+  "V02-07": {
+   "zh": "to have short hair",
+   "exZh": "She has short brown hair."
+  },
+  "V02-08": {
+   "zh": "to wear glasses",
+   "exZh": "He wears round glasses and a blue jacket."
+  },
+  "V02-09": {
+   "zh": "to have just …",
+   "exZh": "Camille has just moved into the neighbourhood."
+  },
+  "V02-10": {
+   "zh": "the rent is … a month",
+   "exZh": "The rent is 520 euros a month."
+  },
+  "V02-11": {
+   "zh": "a furnished room",
+   "exZh": "I’m looking for a furnished room near the town centre."
+  },
+  "V02-12": {
+   "zh": "on the third floor (French/UK numbering; fourth in the US)",
+   "exZh": "The flat is on the third floor, with a lift."
+  },
+  "V02-13": {
+   "zh": "on the ground floor",
+   "exZh": "His office is on the ground floor."
+  },
+  "V02-14": {
+   "zh": "every day except + day",
+   "exZh": "The tourist office is open every day except Monday."
+  },
+  "V02-15": {
+   "zh": "Is there …?",
+   "exZh": "Is there a washing machine in the flat?"
+  },
+  "V02-16": {
+   "zh": "I’m calling about …",
+   "exZh": "Hello, I’m calling about the room to let."
+  },
+  "V02-17": {
+   "zh": "What do we need to bring?",
+   "exZh": "For the first class, what do we need to bring?"
+  },
+  "V02-18": {
+   "zh": "the only problem is that …",
+   "exZh": "The only problem is that there’s no metro station."
+  },
+  "V02-19": {
+   "zh": "a lively neighbourhood",
+   "exZh": "Belle-Rive is a lively but pleasant neighbourhood."
+  },
+  "V02-20": {
+   "zh": "a covered market",
+   "exZh": "On the square there’s a covered market and a modern media library."
+  },
+  "V02-21": {
+   "zh": "next to …",
+   "exZh": "The chemist’s is next to the bakery."
+  },
+  "V02-22": {
+   "zh": "to ask questions about …",
+   "exZh": "Residents can ask him about keys or post."
+  },
+  "V02-23": {
+   "zh": "I am writing about …",
+   "exZh": "I am writing about your advert for a room."
+  },
+  "V02-24": {
+   "zh": "Would it be possible to …?",
+   "exZh": "Would it be possible to see the room on Saturday morning?"
+  },
+  "V02-25": {
+   "zh": "to look + adjective",
+   "exZh": "Monsieur Lenoir looks patient and is always smiling."
+  },
+  "V02-26": {
+   "zh": "a bright studio flat",
+   "exZh": "She lives in a small, bright studio flat near the park."
+  },
+  "V02-27": {
+   "zh": "a shared kitchen",
+   "exZh": "There’s a shared kitchen and a small terrace."
+  },
+  "V02-28": {
+   "zh": "to say when one is available",
+   "exZh": "For the viewing, please say when you’re available."
+  },
+  "V02-29": {
+   "zh": "to view a flat",
+   "exZh": "You can view the flat on Wednesday at five p.m."
+  },
+  "V02-30": {
+   "zh": "to get to know someone",
+   "exZh": "She’d like to get to know her neighbours."
+  },
+  "V02-31": {
+   "zh": "a public garden, a park",
+   "exZh": "Families really love the big park."
+  },
+  "V02-32": {
+   "zh": "to be of medium height",
+   "exZh": "My brother is of medium height and quite slim."
+  },
+  "V02-33": {
+   "zh": "to have … eyes",
+   "exZh": "My sister has blue eyes."
+  },
+  "V02-34": {
+   "zh": "to be about … years old",
+   "exZh": "The new neighbour is about thirty."
+  },
+  "V02-35": {
+   "zh": "to be good-natured",
+   "exZh": "He’s a really nice person: he’s very good-natured."
+  },
+  "V02-36": {
+   "zh": "I’m looking for someone who …",
+   "exZh": "I’m looking for someone who works in the enrolment office."
+  },
+  "V02-37": {
+   "zh": "Which room is … in?",
+   "exZh": "Which room is the B1 class in?"
+  },
+  "V02-38": {
+   "zh": "to be interested in …",
+   "exZh": "I’m very interested in your room."
+  },
+  "V02-39": {
+   "zh": "What is there to see …?",
+   "exZh": "What is there to see in the old town?"
+  },
+  "V02-40": {
+   "zh": "public transport",
+   "exZh": "In this city, public transport is convenient."
+  },
+  "V02-41": {
+   "zh": "to be well located",
+   "exZh": "The flat is well located, near the metro."
+  },
+  "V02-42": {
+   "zh": "to be well served (by transport)",
+   "exZh": "The neighbourhood is well served by bus and tram."
+  },
+  "V02-43": {
+   "zh": "a pedestrian street",
+   "exZh": "In the centre there’s a long pedestrian street with shops."
+  },
+  "V02-44": {
+   "zh": "there are lots of people",
+   "exZh": "On Saturdays there are lots of people at the market."
+  },
+  "V02-45": {
+   "zh": "to walk in the park",
+   "exZh": "On Sundays I like walking in the park."
+  }
+ },
+ "title": "Describing, articles and asking questions",
+ "phase": "Foundations and grammar on autopilot"
+}

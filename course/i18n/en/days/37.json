@@ -1,0 +1,218 @@
+{
+ "canDo": "Can talk for 2–3 minutes about themselves, their experience and plans, and handle follow-up questions.",
+ "review": "Review the three main tenses and personal vocabulary.",
+ "input": "Listen to model questions; don’t memorise whole answers.",
+ "output": "A 2–3-minute recording + answering 5 follow-up questions yourself.",
+ "checkpoint": "Evidence of developing information, switching tenses and answering spontaneously.",
+ "challenge": "Today’s challenge: do a real self-introduction for part 1 of the DELF oral. Record 2–3 minutes on your phone, covering the present (work / studies, présent), the past (an important experience, passé composé + imparfait) and the future (plans, futur simple); on playback note 3 places where you got stuck, then watch a TV5MONDE Apprendre B1 interview, borrow 2 natural expressions and record again.",
+ "items": {
+  "listening": {
+   "L37-1": {
+    "questions": [
+     {
+      "why": "She gives her name, age and job first, then how long she has worked and how she came to France."
+     },
+     {
+      "why": "The company’s requirement was the initial motive; the turning point was a three-week placement in Lyon."
+     },
+     null,
+     {
+      "why": "She separates the two goals: B1 is a short-term administrative need; the long-term goal is to be able to chair a meeting."
+     }
+    ]
+   },
+   "L37-4": {
+    "questions": [
+     null,
+     {
+      "why": "The contrasting example shows that specific information leads on to follow-up."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V37-01": {
+   "zh": "What led you to …?",
+   "exZh": "What led you to start learning French?"
+  },
+  "V37-02": {
+   "zh": "in the short term / in the longer term",
+   "exZh": "In the short term, I want to pass B1; in the longer term, to chair a meeting."
+  },
+  "V37-03": {
+   "zh": "to realise that …",
+   "exZh": "I realised I couldn’t say anything during the breaks."
+  },
+  "V37-04": {
+   "zh": "to make someone decide to …",
+   "exZh": "It was that placement that made me decide to work seriously."
+  },
+  "V37-05": {
+   "zh": "I admit it",
+   "exZh": "I admit I started without much enthusiasm."
+  },
+  "V37-06": {
+   "zh": "I lack …",
+   "exZh": "I know that what I mostly lack is fluency."
+  },
+  "V37-07": {
+   "zh": "to take an exam",
+   "exZh": "I need to take this exam for an administrative application."
+  },
+  "V37-08": {
+   "zh": "an experience that made a mark on me",
+   "exZh": "I’m going to tell you about an experience that made a mark on me."
+  },
+  "V37-09": {
+   "zh": "to take away … from …",
+   "exZh": "What do you take away from it today?"
+  },
+  "V37-10": {
+   "zh": "to learn a lesson from …",
+   "exZh": "I learnt a lesson from it: speed only comes back in real situations."
+  },
+  "V37-11": {
+   "zh": "to keep the habit of …",
+   "exZh": "I kept the habit of listening to the tone before the content."
+  },
+  "V37-12": {
+   "zh": "to go round in circles, to get restless",
+   "exZh": "After two days alone at home, I start going round in circles."
+  },
+  "V37-13": {
+   "zh": "to move a meeting",
+   "exZh": "I asked to move the meeting back an hour."
+  },
+  "V37-14": {
+   "zh": "that annoys me",
+   "exZh": "They said no without giving a reason, and that annoys me."
+  },
+  "V37-15": {
+   "zh": "to learn … by heart",
+   "exZh": "You shouldn’t learn your introduction by heart."
+  },
+  "V37-16": {
+   "zh": "non-stop, constantly",
+   "exZh": "An answer that’s too short forces the examiner to prompt you constantly."
+  },
+  "V37-17": {
+   "zh": "to anticipate the next question",
+   "exZh": "If you say you changed careers, anticipate the next question: why?"
+  },
+  "V37-18": {
+   "zh": "to speak in public",
+   "exZh": "Three people out of four are afraid of speaking in public."
+  },
+  "V37-19": {
+   "zh": "to concentrate on …",
+   "exZh": "Concentrate on the audience’s reactions."
+  },
+  "V37-20": {
+   "zh": "to fight against …",
+   "exZh": "Trying to be calm fails, because you are fighting a physical reaction."
+  },
+  "V37-21": {
+   "zh": "to improve one’s spoken French",
+   "exZh": "Recording yourself is a good way to improve your speaking."
+  },
+  "V37-22": {
+   "zh": "to talk about one’s path (career and life)",
+   "exZh": "When we talk about our path, we choose what we tell."
+  },
+  "V37-23": {
+   "zh": "from day to day (without a long-term plan)",
+   "exZh": "A path lived from day to day is full of accidents."
+  },
+  "V37-24": {
+   "zh": "to tell a story",
+   "exZh": "Ask someone to talk about their path: they’ll tell you a neat, ordered story."
+  },
+  "V37-25": {
+   "zh": "to reach a level",
+   "exZh": "I had reached a decent level in 2019, then I stopped."
+  },
+  "V37-26": {
+   "zh": "to take up … again",
+   "exZh": "After three years without practice, I took up French again."
+  },
+  "V37-27": {
+   "zh": "effortlessly",
+   "exZh": "I recognised the words effortlessly."
+  },
+  "V37-28": {
+   "zh": "to come from (a place)",
+   "exZh": "I come from Nanjing, in eastern China."
+  },
+  "V37-29": {
+   "zh": "to work as …",
+   "exZh": "I have worked as an engineer for four years."
+  },
+  "V37-30": {
+   "zh": "I’m used to …, I usually …",
+   "exZh": "When I work from home, I usually go for a run at lunchtime."
+  },
+  "V37-31": {
+   "zh": "it’s been … (time) since …",
+   "exZh": "I’ve been living in France for work for eight months."
+  },
+  "V37-32": {
+   "zh": "to speak without preparation",
+   "exZh": "What worked was speaking without preparation twice a week."
+  },
+  "V37-33": {
+   "zh": "to aim to …",
+   "exZh": "My aim is to pass B1 before the end of the year."
+  },
+  "V37-34": {
+   "zh": "to consider …-ing, to plan to …",
+   "exZh": "I’m considering staying in France after my project."
+  },
+  "V37-35": {
+   "zh": "What taught me the most was …",
+   "exZh": "What taught me the most was working as a waiter while I was studying."
+  },
+  "V37-36": {
+   "zh": "to chair a meeting",
+   "exZh": "In the longer term, I’d like to be able to chair a meeting in French."
+  },
+  "V37-37": {
+   "zh": "to devote time to …",
+   "exZh": "I devote a lot of time to my family."
+  },
+  "V37-38": {
+   "zh": "to have a sense of …",
+   "exZh": "My colleagues say I’m very organised."
+  },
+  "V37-39": {
+   "zh": "an item that doesn’t match the order",
+   "exZh": "The item I received doesn’t match my order: it’s not the model I chose."
+  },
+  "V37-40": {
+   "zh": "to correct a mistake",
+   "exZh": "Could you correct this mistake on my order before it ships?"
+  },
+  "V37-41": {
+   "zh": "to get an appointment",
+   "exZh": "I’d like an appointment late in the day, if possible."
+  },
+  "V37-42": {
+   "zh": "passive vocabulary (words you recognise but don’t use)",
+   "exZh": "I recognised the words effortlessly: my passive vocabulary was intact."
+  },
+  "V37-43": {
+   "zh": "to describe oneself as …",
+   "exZh": "I would describe myself as curious and patient."
+  },
+  "V37-44": {
+   "zh": "to settle in France",
+   "exZh": "We settled in France eight months ago."
+  },
+  "V37-45": {
+   "zh": "free time",
+   "exZh": "In my free time, I go hiking."
+  }
+ },
+ "title": "DELF speaking I: entretien dirigé",
+ "phase": "DELF skills training"
+}

@@ -1,0 +1,192 @@
+{
+ "canDo": "Keep up performance in all four skills, and a steady mental rhythm, at close to exam pace.",
+ "review": "No last-minute new grammar.",
+ "input": "A full mock, or a large part of one.",
+ "output": "Complete writing / speaking tasks.",
+ "checkpoint": "Watch above all whether the weakest skill could still fall below the safe line.",
+ "challenge": "Today’s challenge: do a full set at close to exam pace: TV5MONDE Apprendre B1 listening and reading, 25 minutes each; writing, 45 minutes; speaking, 10 minutes’ preparation + 15 minutes of recording, with only one break. Afterwards note, in your own language: where your energy dropped most, what you did to keep your rhythm, and how you’ll plan water and breaks on exam day.",
+ "vocab": {
+  "V47-01": {
+   "zh": "to make use of …, to turn to …",
+   "exZh": "Students made use of the scheme far more than expected."
+  },
+  "V47-02": {
+   "zh": "to be faithful to …",
+   "exZh": "The subtitle is less faithful word for word, but more faithful to the effect."
+  },
+  "V47-03": {
+   "zh": "to be enough to …",
+   "exZh": "The lack of a guarantee is enough to put most customers off."
+  },
+  "V47-04": {
+   "zh": "to suit …",
+   "exZh": "The short format suits one-off crisis situations."
+  },
+  "V47-05": {
+   "zh": "to be compatible with …",
+   "exZh": "A nineteen-day wait is hardly compatible with the idea of urgency."
+  },
+  "V47-06": {
+   "zh": "unrelated to …",
+   "exZh": "The take-up rate varies, unrelated to the size of the institution."
+  },
+  "V47-07": {
+   "zh": "in the form of …",
+   "exZh": "Most of the waste is recycled in the form of backfill."
+  },
+  "V47-08": {
+   "zh": "case by case",
+   "exZh": "Insurers accept these materials case by case."
+  },
+  "V47-09": {
+   "zh": "to lead a project",
+   "exZh": "Projects led by local farmers almost always go through."
+  },
+  "V47-10": {
+   "zh": "to bear the drawbacks",
+   "exZh": "The real question: who bears the project’s drawbacks?"
+  },
+  "V47-11": {
+   "zh": "to lead someone to …",
+   "exZh": "This leads some farms to grow crops solely for the plant."
+  },
+  "V47-12": {
+   "zh": "to inherit …",
+   "exZh": "Taking over your father’s business means inheriting his habits."
+  },
+  "V47-13": {
+   "zh": "to confuse … with …",
+   "exZh": "These two questions shouldn’t be confused."
+  },
+  "V47-14": {
+   "zh": "to retire",
+   "exZh": "The technicians who can set up these machines are retiring."
+  },
+  "V47-15": {
+   "zh": "at the same time",
+   "exZh": "They trust labels too much and, at the same time, not enough."
+  },
+  "V47-16": {
+   "zh": "on the part of …, from …",
+   "exZh": "The resistance didn’t come from the people we expected."
+  },
+  "V47-17": {
+   "zh": "to take (time) to …",
+   "exZh": "It took us two years to get these works done."
+  },
+  "V47-18": {
+   "zh": "to suspect someone of …",
+   "exZh": "Consumers suspect labels of being purely commercial."
+  },
+  "V47-19": {
+   "zh": "an outside buyer (of a business)",
+   "exZh": "In the end, my father sold the workshop to an outside buyer."
+  },
+  "V47-20": {
+   "zh": "over the years",
+   "exZh": "Over the years, I’ve come to enjoy running."
+  },
+  "V47-21": {
+   "zh": "to shorten …",
+   "exZh": "You often have to shorten the first part to keep the final word."
+  },
+  "V47-22": {
+   "zh": "one could object that …",
+   "exZh": "One could object that this scheme is expensive."
+  },
+  "V47-23": {
+   "zh": "the fact remains that …",
+   "exZh": "The fact remains that the waiting time is too long."
+  },
+  "V47-24": {
+   "zh": "there must be a mistake",
+   "exZh": "There must be a mistake: I ordered the blue model."
+  },
+  "V47-25": {
+   "zh": "the relevant criterion",
+   "exZh": "For forming groups, disability isn’t the relevant criterion."
+  },
+  "V47-26": {
+   "zh": "I don’t see any problem with that",
+   "exZh": "If you deliver on Monday, I don’t see any problem with that."
+  },
+  "V47-27": {
+   "zh": "I would be most grateful if you would … (very formal)",
+   "exZh": "I would be most grateful if you would confirm this appointment in writing."
+  },
+  "V47-28": {
+   "zh": "the window is closing",
+   "exZh": "We must act quickly, because the window is closing."
+  },
+  "V47-29": {
+   "zh": "an unmet need",
+   "exZh": "High take-up signals a need that wasn’t met before."
+  },
+  "V47-30": {
+   "zh": "a persistent difficulty",
+   "exZh": "The waiting time remains a persistent difficulty."
+  },
+  "V47-31": {
+   "zh": "to cope well / badly with …",
+   "exZh": "My father coped well with selling the workshop."
+  },
+  "V47-32": {
+   "zh": "before it’s too late",
+   "exZh": "These tapes must be saved before it’s too late."
+  },
+  "V47-33": {
+   "zh": "to be hard to …",
+   "exZh": "This information is hard to find."
+  },
+  "V47-34": {
+   "zh": "to launch a programme",
+   "exZh": "We launched a two-year training programme."
+  },
+  "V47-35": {
+   "zh": "word for word",
+   "exZh": "The subtitle is less faithful word for word, but more faithful to the effect."
+  },
+  "V47-36": {
+   "zh": "to rank information by importance",
+   "exZh": "A subtitler must constantly rank information by importance."
+  },
+  "V47-37": {
+   "zh": "to combine several advantages",
+   "exZh": "On paper, anaerobic digestion combines several advantages."
+  },
+  "V47-38": {
+   "zh": "it would be convenient to … (but not necessarily right)",
+   "exZh": "It would be convenient to put this opposition down to resistance to change."
+  },
+  "V47-39": {
+   "zh": "a finding emerges",
+   "exZh": "Three years on, several findings are emerging."
+  },
+  "V47-40": {
+   "zh": "to be defensible (of an opinion or reading)",
+   "exZh": "Both readings are defensible."
+  },
+  "V47-41": {
+   "zh": "whatever … may be",
+   "exZh": "He isn’t in the same club, whatever people may say."
+  },
+  "V47-42": {
+   "zh": "with identical characteristics, all else being equal",
+   "exZh": "With identical technical characteristics, local projects go through more easily."
+  },
+  "V47-43": {
+   "zh": "the reuse of building materials",
+   "exZh": "Reusing building materials is gaining ground among social landlords."
+  },
+  "V47-44": {
+   "zh": "psychological support",
+   "exZh": "Every student can get psychological support sessions."
+  },
+  "V47-45": {
+   "zh": "working conditions",
+   "exZh": "This label says nothing about seasonal workers’ working conditions."
+  }
+ },
+ "title": "Mock 4: close to the real exam",
+ "phase": "Mock exams and repair"
+}

@@ -1,0 +1,226 @@
+{
+ "canDo": "Turn recurring errors into actionable personal rules and replacement chunks.",
+ "review": "Sort the Error Book by frequency.",
+ "input": "A new example sentence / new context for each error.",
+ "output": "Rewrite / re-say the 20 most frequent ones.",
+ "checkpoint": "Each error has a closed loop: “error → rule → correct example → new example”.",
+ "challenge": "Today’s challenge: sort out your Error Book: rank the top 5 errors by frequency, turn each into an actionable “personal rule” (e.g. « Après si, jamais de conditionnel ») with a French chunk you can reuse as is; then do 5 matching exercises for each at Le Point du FLE to check whether the rule really helps you avoid the error.",
+ "items": {
+  "reading": {
+   "R48-4": {
+    "questions": [
+     {
+      "why": "The text makes this difference in purpose explicit."
+     },
+     {
+      "why": "It is put in the “useless” category."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L48-2": {
+    "questions": [
+     null,
+     {
+      "why": "The second of the three self-tests."
+     }
+    ]
+   },
+   "L48-4": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "She explains this arrangement in her very first sentence."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V48-01": {
+   "zh": "to cap …",
+   "exZh": "Cap your error notebook at twenty entries at most."
+  },
+  "V48-02": {
+   "zh": "you mean …? (checking understanding)",
+   "exZh": "You mean I should talk about my current job?"
+  },
+  "V48-03": {
+   "zh": "what I mean is that …",
+   "exZh": "Actually, what I mean is that price isn’t the only criterion."
+  },
+  "V48-04": {
+   "zh": "to answer beside the point",
+   "exZh": "Rephrasing costs no points; answering beside the point costs a lot."
+  },
+  "V48-05": {
+   "zh": "a fast delivery (rate of speech)",
+   "exZh": "When people speak fast, “il est allé” sounds like “il était”."
+  },
+  "V48-06": {
+   "zh": "to go back",
+   "exZh": "If the conversation has moved on, avoid going back."
+  },
+  "V48-07": {
+   "zh": "to draw attention to …",
+   "exZh": "Correcting too late draws attention to the mistake."
+  },
+  "V48-08": {
+   "zh": "to be well regarded",
+   "exZh": "Examiners think very highly of this sentence."
+  },
+  "V48-09": {
+   "zh": "to watch out for …",
+   "exZh": "You can do it, but watch out for tiredness."
+  },
+  "V48-10": {
+   "zh": "any (at all)",
+   "exZh": "My neighbour asks me three questions, any three."
+  },
+  "V48-11": {
+   "zh": "it doesn’t matter at all",
+   "exZh": "He doesn’t speak very well, but it doesn’t matter at all."
+  },
+  "V48-12": {
+   "zh": "to know where one stands",
+   "exZh": "Before the exam, it’s useful to know where you really stand."
+  },
+  "V48-13": {
+   "zh": "it’s mastered",
+   "exZh": "You answer three sentences without searching? Then it’s mastered."
+  },
+  "V48-14": {
+   "zh": "to look alike",
+   "exZh": "These instruction verbs look alike, but they don’t ask for the same thing."
+  },
+  "V48-15": {
+   "zh": "to be linked to …",
+   "exZh": "These errors come from connected speech rather than vocabulary."
+  },
+  "V48-16": {
+   "zh": "a source of worry",
+   "exZh": "Checking the route removes a real source of worry."
+  },
+  "V48-17": {
+   "zh": "on a loop",
+   "exZh": "Listen to short clips on a loop."
+  },
+  "V48-18": {
+   "zh": "the day before (…)",
+   "exZh": "Don’t do a full mock exam the day before the test."
+  },
+  "V48-19": {
+   "zh": "to make someone lose marks",
+   "exZh": "Several details can still lose you marks."
+  },
+  "V48-20": {
+   "zh": "to do a mock exam",
+   "exZh": "I did a mock exam last Saturday."
+  },
+  "V48-21": {
+   "zh": "to arrive early",
+   "exZh": "Arrive early, but stay away from the group discussing everything."
+  },
+  "V48-22": {
+   "zh": "seen that way …",
+   "exZh": "Seen that way, two properly corrected essays are worth more than five."
+  },
+  "V48-23": {
+   "zh": "I think it essential to …",
+   "exZh": "I think it essential to reread your notebook before writing."
+  },
+  "V48-24": {
+   "zh": "a poor indicator",
+   "exZh": "Your sense of your own level is a very poor indicator."
+  },
+  "V48-25": {
+   "zh": "to set out the facts",
+   "exZh": "In your email, start by setting out the facts in order."
+  },
+  "V48-26": {
+   "zh": "to get details about …",
+   "exZh": "I’d like some details about the opening hours."
+  },
+  "V48-27": {
+   "zh": "to sum up",
+   "exZh": "To sum up, two serious corrections are worth more than five papers."
+  },
+  "V48-28": {
+   "zh": "you have two options",
+   "exZh": "You have two options: send the document or come and drop it off."
+  },
+  "V48-29": {
+   "zh": "on one condition",
+   "exZh": "I accept this postponement on one condition: delivery before Friday."
+  },
+  "V48-30": {
+   "zh": "the difference is that …",
+   "exZh": "The difference is that the second option is free."
+  },
+  "V48-31": {
+   "zh": "to say something silly",
+   "exZh": "Said something wrong? Correct yourself and carry on."
+  },
+  "V48-32": {
+   "zh": "to hold … against someone",
+   "exZh": "Nobody will hold it against you."
+  },
+  "V48-33": {
+   "zh": "to leave … hanging",
+   "exZh": "Many candidates leave the sentence hanging."
+  },
+  "V48-34": {
+   "zh": "to resist the temptation to …",
+   "exZh": "Resist the temptation to rewrite the whole sentence."
+  },
+  "V48-35": {
+   "zh": "exactly as, as is",
+   "exZh": "Write down the wrong sentence exactly as you wrote it."
+  },
+  "V48-36": {
+   "zh": "to reduce the force of …",
+   "exZh": "Playing something down reduces the force of what you’ve just said."
+  },
+  "V48-37": {
+   "zh": "to draw a distinction",
+   "exZh": "Nuancing means drawing a distinction within your own position."
+  },
+  "V48-38": {
+   "zh": "to argue in favour of …",
+   "exZh": "This paper compares nothing: it argues in favour of option A."
+  },
+  "V48-39": {
+   "zh": "to far exceed …",
+   "exZh": "The tiredness it causes far exceeds the information gained."
+  },
+  "V48-40": {
+   "zh": "sleep deprivation",
+   "exZh": "Lack of sleep makes it harder to find words."
+  },
+  "V48-41": {
+   "zh": "to contain, to include …",
+   "exZh": "When an instruction contains two verbs, deal with them in order."
+  },
+  "V48-42": {
+   "zh": "to reverse the meaning",
+   "exZh": "Missing the negation reverses the meaning of the sentence."
+  },
+  "V48-43": {
+   "zh": "to correct oneself",
+   "exZh": "Real speakers correct themselves: “Tuesday, I mean, Wednesday”."
+  },
+  "V48-44": {
+   "zh": "to build up fatigue",
+   "exZh": "With five new papers, you’ll mainly build up fatigue."
+  },
+  "V48-45": {
+   "zh": "nothing new",
+   "exZh": "This week I’m doing nothing new: I’m rereading my cards."
+  }
+ },
+ "title": "Final pass over your mistakes",
+ "phase": "Mock exams and repair"
+}

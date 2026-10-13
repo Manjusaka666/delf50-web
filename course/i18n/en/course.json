@@ -1,0 +1,384 @@
+{
+ "title": "DELF B1 · 50 days",
+ "levels": {
+  "light": {
+   "label": "5 hours"
+  },
+  "standard": {
+   "label": "6.5 hours"
+  },
+  "high": {
+   "label": "8 hours"
+  }
+ },
+ "phases": [
+  {
+   "name": "Foundations and grammar on autopilot"
+  },
+  {
+   "name": "Transfer to real tasks"
+  },
+  {
+   "name": "DELF skills training"
+  },
+  {
+   "name": "Mock exams and repair"
+  }
+ ],
+ "map": [
+  {
+   "title": "Sentence skeleton and the present tense",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Describing, articles and asking questions",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Negation and polite requests",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Time, place and arrangements",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Past events: avoir",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Past events: être",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Past background and habits",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "The core of narrative: two past tenses",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Plans and the future",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Foundations review I",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Pronouns I: COD/COI",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Pronouns II: y/en",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Linking sentences: relative pronouns",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Comparing and choosing",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Politeness, advice and hypotheses",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Cause, consequence and explanation",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Contrast, examples and concession",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Foundations checkpoint",
+   "phase": "Foundations and grammar on autopilot"
+  },
+  {
+   "title": "Transfer: telling a story",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Transfer: requests and negotiation",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Transfer: giving advice",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Transfer: complaints",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Organising a narrative and coherence",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Comparing options and weighing them up",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Opinion I: position and reasons",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Opinion II: examples and the other side",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Formal written interaction",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Reading in practice: finding information",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Listening in practice: gist and detail",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "Transfer checkpoint",
+   "phase": "Transfer to real tasks"
+  },
+  {
+   "title": "DELF listening I: the gist",
+   "phase": "DELF skills training"
+  },
+  {
+   "title": "DELF listening II: details and opinions",
+   "phase": "DELF skills training"
+  },
+  {
+   "title": "DELF reading I: practical information",
+   "phase": "DELF skills training"
+  },
+  {
+   "title": "DELF reading II: opinions and details",
+   "phase": "DELF skills training"
+  },
+  {
+   "title": "DELF writing I: requests/complaints",
+   "phase": "DELF skills training"
+  },
+  {
+   "title": "DELF writing II: opinion",
+   "phase": "DELF skills training"
+  },
+  {
+   "title": "DELF speaking I: entretien dirigé",
+   "phase": "DELF skills training"
+  },
+  {
+   "title": "DELF speaking II: interaction",
+   "phase": "DELF skills training"
+  },
+  {
+   "title": "DELF speaking III: point de vue",
+   "phase": "DELF skills training"
+  },
+  {
+   "phase": "DELF skills training"
+  },
+  {
+   "title": "Mock 1 + sorting your mistakes",
+   "phase": "Mock exams and repair"
+  },
+  {
+   "title": "Repair day I: grammar and tasks",
+   "phase": "Mock exams and repair"
+  },
+  {
+   "title": "Mock 2: partly timed",
+   "phase": "Mock exams and repair"
+  },
+  {
+   "title": "Repair day II: listening and reading",
+   "phase": "Mock exams and repair"
+  },
+  {
+   "title": "Mock 3: consistency",
+   "phase": "Mock exams and repair"
+  },
+  {
+   "title": "Output boost",
+   "phase": "Mock exams and repair"
+  },
+  {
+   "title": "Mock 4: close to the real exam",
+   "phase": "Mock exams and repair"
+  },
+  {
+   "title": "Final pass over your mistakes",
+   "phase": "Mock exams and repair"
+  },
+  {
+   "phase": "Mock exams and repair"
+  },
+  {
+   "title": "Steady before the exam, and what comes next",
+   "phase": "Mock exams and repair"
+  }
+ ],
+ "sources": {
+  "FEI-B1": {
+   "note": "Exam format, the four skills and the overall B1 task descriptions."
+  },
+  "FEI-SAMPLES": {
+   "note": "Sample paper format, writing ≥160 words, and the writing and speaking grading criteria."
+  },
+  "FEI-TRAIN": {
+   "note": "Listening and reading strategies, and preparation advice for writing and speaking."
+  },
+  "CEFR-DESC": {
+   "note": "Basis for the B1 reception / production / interaction can-do descriptors."
+  },
+  "CEFR-CLASS": {
+   "note": "Action-oriented approach, learner agency, and alignment of goals, activities and assessment."
+  },
+  "CEFR-CV": {
+   "note": "The updated CEFR descriptor scales and the curriculum/assessment framework."
+  },
+  "AF-DICT": {
+   "note": "A reference for word meanings and standard French; this site does not copy dictionary content."
+  },
+  "RFI-JFF": {
+   "note": "Authentic news listening for B1: about 10 minutes, with transcript, speed control and exercises."
+  },
+  "TV5-B1": {
+   "note": "B1 video, listening, vocabulary and strategy practice; this site only links to it and copies nothing."
+  }
+ },
+ "intro": "From A1+ to DELF B1: first make sentence structure and tenses automatic, then transfer them to real tasks, then train on each DELF B1 task type, and finally sit mock exams, repair what they reveal and preview the grammar that bridges B1→B2.",
+ "exam": {
+  "parts": [
+   [
+    null,
+    "Listening",
+    "about 30 minutes",
+    "Three exercises: an everyday conversation, a radio piece on a work topic and a radio piece on an everyday topic. Questions follow the order of the recording and the first one tests overall understanding; recordings are usually played twice."
+   ],
+   [
+    null,
+    "Reading",
+    "45 minutes",
+    "Three exercises, in any order. Exercise 1: compare several documents against criteria by ticking a table — the final choice must match the table or you lose 1 point. Exercises 2–3: text comprehension; wrong answers cost nothing."
+   ],
+   [
+    null,
+    "Writing",
+    "45 minutes",
+    "An email, letter or article of at least 160 words: relate events and experiences, and express feelings and opinions with examples."
+   ],
+   [
+    null,
+    "Speaking",
+    "about 15 minutes (10 minutes' preparation for part 3)",
+    "① A guided conversation (no preparation); ② an interactive exercise: a role-play resolving an everyday mishap; ③ expressing a point of view based on a short text (10 minutes' preparation)."
+   ]
+  ],
+  "rule": "Each paper is marked out of 25, 100 in total; you pass with 50, provided no paper scores below 5. Two listening/reading formats are in official use at the same time (with different numbers of exercises and questions) and they are equally difficult."
+ },
+ "rubrics": {
+  "writing": [
+   [
+    null,
+    "Genre and topic as required; ≥160 words; can relate facts, past events and personal experiences, give concrete examples, and express impressions, feelings and reasoned opinions."
+   ],
+   [
+    null,
+    "A clear opening and close; sentences follow a logical order and are linked (premièrement, ensuite…)."
+   ],
+   [
+    null,
+    "Uses common expressions and speech acts, in a register suited to the situation and the recipient."
+   ],
+   [
+    null,
+    "B1 vocabulary suited to the situation, without repetition; word-choice errors do not block understanding; punctuation, layout and spelling are broadly correct."
+   ],
+   [
+    null,
+    "Simple sentences and complex ones with two or more conjugated verbs; past tenses (passé composé, imparfait, plus-que-parfait, passé récent) and the conditional used appropriately; agreement and pronouns correct."
+   ]
+  ],
+  "speaking": [
+   [
+    null,
+    "Talks about themselves, family, activities, interests and plans without preparation, and explains why; answers the examiner’s questions with confidence."
+   ],
+   [
+    null,
+    "Uses polite forms appropriately; proposes solutions, insists, expresses and justifies opinions; responds to the examiner, checking or correcting what they say."
+   ],
+   [
+    null,
+    "Introduces the topic; sets out the main ideas with examples and arguments; clearly structured and linked with connectors."
+   ],
+   [
+    null,
+    "B1 vocabulary suited to the topic; simple and complex sentences; fluent, at a steady pace, with attention to liaison; pronunciation does not hinder understanding."
+   ]
+  ]
+ },
+ "methods": {
+  "listening": [
+   "Before listening, read the instructions and all the questions.",
+   "Questions follow the order of the recording; the first question of each exercise tests overall understanding.",
+   "First listening: get the situation (who is speaking? what about?) and answer the easy questions first; skip what you can’t answer yet.",
+   "Second listening: check and complete your answers; check once more at the end.",
+   "If you miss a word, hold on to the overall meaning and keep listening."
+  ],
+  "reading": [
+   "The exercises are independent, so start with the ones you’re sure of.",
+   "Read the instructions and questions first, then the text, underlining what relates to the questions as you go.",
+   "Comparison exercise: tick each criterion for each document; your final choice must match the table.",
+   "Look at the type of document, the title, the author and any pictures first to anticipate the content.",
+   "Wrong answers cost nothing: answer every question, and keep 5 minutes to check."
+  ],
+  "writing": [
+   "Read the instructions carefully: the genre (courriel / lettre / article), the situation, the events to relate, the feelings and opinions to express.",
+   "45 minutes: 10 minutes to outline in bullet points, 30 minutes to write, 5 minutes to check spelling and grammar.",
+   "Give your opinion with reasons, and support it with concrete examples.",
+   "Count your words and write the total at the end: j’ai = 1 word, rendez-vous = 1 word."
+  ],
+  "speaking": [
+   "Greet the examiner and say goodbye on your way in and out; if you don’t understand, ask them to repeat or slow down.",
+   "Part 1: introduce yourself, talk about the past, present and future, and explain why you like things.",
+   "Part 2: get into the role as if acting; choose tu or vous according to the examiner’s role; explain the problem, propose solutions and respond to the examiner’s suggestions.",
+   "Part 3: in the 10 minutes’ preparation, write key points only (introduction: the document, the topic, your plan; body: ideas + examples).",
+   "Link your ideas with connectors; speak clearly and at a steady pace."
+  ]
+ },
+ "resources": [
+  {
+   "note": "10 minutes of news in easy French every day, with the text"
+  },
+  {
+   "note": "Graded news listening practice at B1"
+  },
+  {
+   "note": "B1 video, listening and vocabulary practice"
+  },
+  {
+   "note": "Free exercises searchable by skill, topic and level"
+  },
+  {
+   "note": "Grammar and vocabulary exercises and placement tests"
+  },
+  {
+   "note": "Explanations of tenses, the conditional and relative pronouns (one free exercise per lesson)"
+  },
+  {
+   "note": "Official sample papers and the writing and speaking grids"
+  },
+  {
+   "note": "Discussion topics and activities you can filter by B1"
+  }
+ ]
+}

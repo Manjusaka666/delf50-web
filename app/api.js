@@ -1,4 +1,5 @@
 /** The DELF50 API (/api/v1). Learning routes address the current course (CEFR level). */
+import { t, has } from './i18n.js';
 
 let COURSE = 'delf-b1';
 const BASE = '/api/v1';
@@ -16,7 +17,7 @@ export async function call(method, path, body, { keepalive = false, raw = false 
   else if (body !== undefined) { init.body = JSON.stringify(body); init.headers['Content-Type'] = 'application/json'; }
   const url = BASE + path + (path.startsWith('/auth/') ? '' : (path.includes('?') ? '&' : '?') + 'course=' + COURSE);
   let r;
-  try { r = await fetch(url, init); } catch (e) { throw new ApiError('无法连接服务器，请检查网络。', 0, 'network'); }
+  try { r = await fetch(url, init); } catch (e) { throw new ApiError(t('api.network'), 0, 'network'); }
   if (raw && r.ok) return r;
   const text = await r.text();
   let data = null;
@@ -28,13 +29,12 @@ export async function call(method, path, body, { keepalive = false, raw = false 
   return data;
 }
 
-const AUTH_ERRORS = {
-  INVALID_EMAIL_OR_PASSWORD: '邮箱或密码不正确。',
-  USER_ALREADY_EXISTS: '该邮箱已注册，请直接登录。',
-  USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: '该邮箱已注册，请直接登录。',
-  PASSWORD_TOO_SHORT: '密码至少 8 位。',
-  INVALID_EMAIL: '邮箱格式不正确。',
-  EMAIL_NOT_VERIFIED: '请先完成邮箱验证。'
-};
+const ALIAS = { USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL: 'USER_ALREADY_EXISTS' };
 
-export const errorText = (e) => (e && e.code === 'network' ? e.message : (e && AUTH_ERRORS[e.code]) || (e && e.message) || '操作失败，请重试。');
+/** A message for the learner: the interface language's text for known codes, else the server's message. */
+export function errorText(e) {
+  if (!e) return t('api.failed');
+  if (e.code === 'network') return t('api.network');
+  const k = `api.${ALIAS[e.code] || e.code}`;
+  return (e.code && has(k)) ? t(k) : e.message || t('api.failed');
+}

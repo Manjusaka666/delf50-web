@@ -1,0 +1,232 @@
+{
+ "canDo": "Can write a formal complaint or petition letter of 250+ words on behalf of yourself or a group: complete layout (letterhead, subject line, form of address, closing formula), accurate statement of facts, a clear request, and expressions of purpose to justify it.",
+ "review": "Review formal register (the polite conditional, je vous saurais gré de, veuillez + infinitive, inverted questions, expletive ne) and expressions of purpose (afin de / afin que + subjunctive, de manière à, en vue de, de crainte que); build on day 33’s argument structure: still “position + arguments”, but today in a formal letter.",
+ "input": "Read: an analysis of urban noise, a column advocating “school streets” and a group letter of complaint from residents to the mayor (model analysis); listen: a radio debate on pedestrianising the town centre, a mediator on “how to write an effective letter of complaint” and a town-hall announcement on café terrace opening hours.",
+ "output": "Write: a letter to the mayor on behalf of a residents’ association, opposing turning a community garden into a car park and proposing an alternative (250+ words, at least 3 expressions of purpose and 3 formal-register expressions); speak: a 6-minute monologue on “should cars be banned from town centres?”, then debate bar terrace opening hours with the examiner.",
+ "checkpoint": "All 6 letter elements present (sender, recipient, Objet subject line, form of address, body, full closing formula); a clear request backed by at least 2 facts; no colloquialisms; correct mood in purpose clauses (afin que / pour que + subjunctive).",
+ "challenge": "Today’s challenge: find a news item about town life (transport, noise, green spaces) on RFI’s « Journal en français facile » or TV5MONDE and, imagining you live there, write the body of a letter to the mayor in 5 formal French sentences: 1 stating the purpose (Par la présente…), 2 giving facts, 1 making a request with afin que and 1 closing formula.",
+ "items": {
+  "reading": {
+   "R34-1": {
+    "questions": [
+     {
+      "why": "The article moves from noise being “overlooked” (first paragraph) to health effects, inequality, solutions and the need for consultation. B: two-wheelers are just one item in the opening list; C: there is no comparison between cities."
+     },
+     {
+      "why": "« le bruit est souvent considéré comme un simple désagrément, voire comme le prix à payer… ». A contradicts the fourth paragraph; C is the opposite of the survey finding that a quarter of residents find it unbearable."
+     },
+     {
+      "why": "« même lorsque le dormeur ne se réveille pas : le rythme cardiaque s’accélère, l’organisme reste en alerte ». Both A and B contradict this."
+     },
+     {
+      "why": "« Les logements situés le long des grands axes, souvent moins chers… occupés par des ménages aux revenus modestes, qui n’ont pas toujours les moyens de faire poser des fenêtres isolantes ». B gets the direction backwards; C has no basis."
+     },
+     {
+      "why": "The purpose structure « de manière à réduire le bruit de roulement ». A may be a common-sense effect, but the text doesn’t give it as the aim; C confuses it with « en vue de créer des zones de calme » (the purpose of planting trees)."
+     },
+     {
+      "why": "« Ce qui est vécu comme une nuisance par l’un est perçu comme de l’animation par l’autre », so residents need to be involved to balance everyone’s interests. A and B aren’t mentioned."
+     }
+    ]
+   },
+   "R34-2": {
+    "questions": [
+     {
+      "why": "The author supports the « rue scolaire » and wants to go further: « végétaliser, installer des bancs… redonner à la rue sa fonction de lieu de rencontre ». A over-generalises: it only concerns school gates at drop-off and pick-up times; C is the opposite of the author’s position."
+     },
+     {
+      "why": "tellement… que expresses a result: we’re so used to it that we no longer see it, followed straight away by « Elle est pourtant absurde ». B and C are literal misreadings."
+     },
+     {
+      "why": "« afin que les élèves puissent arriver à pied ou à vélo en toute sécurité » (afin que + subjunctive expresses purpose). A isn’t mentioned; B is the opposite of what parents fear."
+     },
+     {
+      "why": "« Ces inquiétudes méritent d’être entendues, mais elles résistent rarement à l’expérience »: concession, then rebuttal. Neither A nor C fits."
+     },
+     {
+      "why": "“Children learning to be wary of the street” is set against “adapting the street to children”: a rhetorical question meant to make readers think. B doesn’t fit the text’s firm position; C: it isn’t a question addressed to officials."
+     }
+    ]
+   },
+   "R34-3": {
+    "questions": [
+     {
+      "why": "The core request: « prendre les dispositions nécessaires afin que les horaires réglementaires soient respectés ». A contradicts « Nous ne contestons nullement le bien-fondé de ce projet »; C isn’t in the letter."
+     },
+     {
+      "why": "« Nous ne contestons nullement le bien-fondé de ce projet, que nous avons d’ailleurs soutenu lors de la concertation ». ne… nullement = not in the least."
+     },
+     {
+      "why": "« mis en marche dès 6 h 15, alors que l’arrêté municipal n’autorise les travaux qu’à partir de 7 h 30 ». A and B aren’t mentioned."
+     },
+     {
+      "why": "« Nous avons déjà porté ces faits à la connaissance de l’entreprise, sans résultat. C’est pourquoi… ». B and C have no basis."
+     },
+     {
+      "why": "« Nous serions également heureux de vous rencontrer, de manière à envisager ensemble des solutions durables ». Neither A nor C is proposed."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L34-1": {
+    "questions": [
+     {
+      "why": "« la mairie veut rendre piétonne la rue principale du centre-ville ». A: the shopping centre is where Gérard Pons fears customers will go; C: there is no such plan."
+     },
+     {
+      "why": "« Si on leur ferme la rue, ils iront au centre commercial… où le parking est gratuit ». B and C aren’t mentioned."
+     },
+     {
+      "why": "« elle repose sur une idée assez répandue et souvent fausse : celle selon laquelle les clients en voiture dépensent davantage ». Neither A nor B is what she says."
+     },
+     {
+      "why": "« ce n’est pas qu’on abandonne le projet, c’est qu’on prévoie un parking… et une navette gratuite, dans le but de ne perdre aucun client ». He explicitly rules out A."
+     },
+     {
+      "why": "« la mairie a présenté le projet comme une décision déjà prise. Il faut une vraie concertation ». B and C aren’t mentioned."
+     },
+     {
+      "why": "Camille Roy: « Sur la méthode, oui »; Gérard Pons: « si on nous écoute vraiment, je suis prêt à jouer le jeu »: a conditional rapprochement. Neither A nor B fits."
+     }
+    ]
+   },
+   "L34-2": {
+    "questions": [
+     {
+      "why": "The host’s question, « Qu’est-ce qui fait qu’une lettre est efficace ? », leads into all the advice that follows. Neither B nor C is covered."
+     },
+     {
+      "why": "« tenir un petit carnet… de manière à pouvoir citer des exemples concrets » (de manière à + infinitive expresses purpose). A and C have no basis."
+     },
+     {
+      "why": "« une lettre agressive met le destinataire sur la défensive », while polite wording is « bien plus efficace qu’une menace ». A and B are the opposite."
+     },
+     {
+      "why": "« ce document prouvera que vous avez tenté de régler le problème à l’amiable ». B: she says the first letter “needn’t be registered”, not that it’s required; C isn’t mentioned."
+     },
+     {
+      "why": "« Solliciter un rendez-vous, c’est montrer qu’on cherche une solution, pas un coupable ». A and C are wrong inferences."
+     }
+    ]
+   },
+   "L34-3": {
+    "questions": [
+     {
+      "why": "« afin de préserver la tranquillité publique pendant la saison estivale ». A and C contradict a measure that restricts opening hours."
+     },
+     {
+      "why": "« à minuit et demi le vendredi et le samedi ». 22:00 is the ban on amplified outdoor music, and 23:00 is closing time from Sunday to Thursday."
+     },
+     {
+      "why": "« en cas de récidive, à une fermeture administrative temporaire ». B: a first offence already means a fine; C: “permanent” is an exaggeration."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V34-01": {
+   "zh": "a minor nuisance, a mere annoyance",
+   "exZh": "For many, noise is a minor nuisance rather than a health issue."
+  },
+  "V34-02": {
+   "zh": "exposed to, affected by",
+   "exZh": "A quarter of city dwellers are exposed to disturbing noise at home."
+  },
+  "V34-03": {
+   "zh": "so as to … (+ infinitive)",
+   "exZh": "Lower the speed limit so as to reduce noise."
+  },
+  "V34-04": {
+   "zh": "in the height of the heat",
+   "exZh": "Even in the height of the heat, they have to sleep with the windows shut."
+  },
+  "V34-05": {
+   "zh": "living environment",
+   "exZh": "These changes should improve residents’ living environment."
+  },
+  "V34-06": {
+   "zh": "a school street (closed to motor traffic at school times)",
+   "exZh": "The town has created a school street outside our school, closed to cars at 8:30."
+  },
+  "V34-07": {
+   "zh": "din, deafening noise",
+   "exZh": "With the din of the pneumatic drill, it’s impossible to work."
+  },
+  "V34-08": {
+   "zh": "for fear that … (+ subjunctive, often with expletive ne)",
+   "exZh": "Some parents still drive, for fear that the journey will take longer."
+  },
+  "V34-09": {
+   "zh": "to green, to plant with vegetation",
+   "exZh": "The neighbourhood has decided to green the school playground."
+  },
+  "V34-10": {
+   "zh": "to calm traffic (reduce volume and speed)",
+   "exZh": "Chicanes have been installed outside the school to calm traffic."
+  },
+  "V34-11": {
+   "zh": "(formal) I hereby, herewith",
+   "exZh": "I hereby inform you that I am leaving the property."
+  },
+  "V34-12": {
+   "zh": "to issue a fine, to book",
+   "exZh": "The police fined around twenty drivers for excessive noise."
+  },
+  "V34-13": {
+   "zh": "the merits, the legitimacy of",
+   "exZh": "No one questions the merits of this project."
+  },
+  "V34-14": {
+   "zh": "construction machinery",
+   "exZh": "The construction machinery starts up before seven o’clock."
+  },
+  "V34-15": {
+   "zh": "a municipal by-law, a municipal order",
+   "exZh": "A municipal by-law bans outdoor music after 22:00."
+  },
+  "V34-16": {
+   "zh": "on the corner of",
+   "exZh": "The building site is on the corner of rue des Lilas and avenue des Platanes."
+  },
+  "V34-17": {
+   "zh": "never to recover (from a blow)",
+   "exZh": "After the factory closed, the village never recovered."
+  },
+  "V34-18": {
+   "zh": "a residents’ collective",
+   "exZh": "A residents’ collective was formed to defend the garden."
+  },
+  "V34-19": {
+   "zh": "pedestrianisation",
+   "exZh": "Pedestrianising the town centre worries some shopkeepers."
+  },
+  "V34-20": {
+   "zh": "to put someone on the defensive",
+   "exZh": "An aggressive letter puts the recipient on the defensive straight away."
+  },
+  "V34-21": {
+   "zh": "genuine consultation",
+   "exZh": "Residents are calling for genuine consultation before work begins."
+  },
+  "V34-22": {
+   "zh": "just in case",
+   "exZh": "Keep a copy of the letter just in case."
+  },
+  "V34-23": {
+   "zh": "(formal) to request a meeting",
+   "exZh": "May I request a meeting with you to present our situation."
+  },
+  "V34-24": {
+   "zh": "public peace and quiet",
+   "exZh": "The measure aims to preserve public peace and quiet at night."
+  },
+  "V34-25": {
+   "zh": "in the event of a repeat offence",
+   "exZh": "In the event of a repeat offence, the establishment could be temporarily closed."
+  }
+ },
+ "title": "Writing II: formal letters",
+ "phase": "DELF B2 task training"
+}

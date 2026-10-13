@@ -1,0 +1,226 @@
+{
+ "canDo": "Can give a well-structured 5–6-minute monologue based on a short text about work: identify the theme, set out a problem statement, announce a two- or three-part outline, and support the argument with cleft sentences and expressions of cause.",
+ "review": "Review day 5’s expressions of cause (étant donné que, faute de, sous prétexte que, d’autant que), day 17’s emphatic structures (c’est… qui/que, ce qui… c’est) and day 23’s discourse connectors, for announcing the outline and moving between parts of the monologue.",
+ "input": "Read: an analysis of career changes, a column against “you must be passionate about your job” and a first-hand forum post; circle each paragraph’s topic sentence and the cause connectors. Listen: a radio interview on young people’s relationship with work (twice), a short commentary on “presenteeism” and a news flash on “scrapping fixed hours and clocking in”: positions on the first listen, causes and examples on the second.",
+ "output": "Write: a forum reply (≥250 words) to a post claiming “young people don’t want to work hard any more”, with at least one cleft sentence per paragraph; speak: a 6-minute monologue on a document about “open-plan offices” (theme → problem statement → outline → arguments + examples → conclusion), then a 4-minute debate with the examiner on “publishing salaries within a company”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; in the monologue, state the problem and announce the outline within 30 seconds, speak for at least 5 minutes with no pause longer than 5 seconds; use at least 3 cleft sentences and 3 different expressions of cause.",
+ "challenge": "Today’s challenge: find a news item about work (remote working, the four-day week, career change, etc.) on RFI’s « Journal en français facile » or TV5MONDE and record a 2-minute mini-monologue on your phone: start with « Ce qui me frappe dans cette information, c’est que… » and announce a two-point outline.",
+ "items": {
+  "reading": {
+   "R36-1": {
+    "questions": [
+     {
+      "why": "The article presents, in turn, the phenomenon (paragraph 1), the motives (paragraphs 2–3), the conditions for success (paragraph 4) and companies’ response (paragraph 5): it is an analytical article. B is wrong: it actually stresses « un pari risqué » and doesn’t encourage hasty career changes; C is wrong: it says companies « commencent à prendre la mesure », with no condemnation."
+     },
+     {
+      "why": "« Ce que la majorité met en avant, c’est la perte de sens… des tâches dont on ne voit ni l’utilité ni le résultat ». A is wrong: « ce n’est pas d’abord le salaire », only 18%; B isn’t mentioned."
+     },
+     {
+      "why": "The context is the spread of digital tools: managers spend more time “reporting and accounting for their work” than actually doing it; rendre des comptes is used figuratively here, “to answer to one’s superiors”. A and C use the literal “accounts” meaning of compte, which doesn’t fit."
+     },
+     {
+      "why": "« La crise sanitaire a joué un rôle d’accélérateur … ils ont eu le temps de s’interroger sur leurs priorités »: it accelerated an existing trend. A is wrong: the article says « Les causes de ce malaise sont multiples »; C is the opposite of « accélérateur »."
+     },
+     {
+      "why": "« Ce sont ceux qui ont testé le métier visé, par un stage ou du bénévolat, avant de tout quitter ». A is the exact opposite (« rarement ceux qui partent sur un coup de tête »); B isn’t mentioned."
+     },
+     {
+      "why": "The closing question, « n’est-ce pas l’organisation même du travail qu’il faudrait repenser ? », widens the topic from individual career changes to how work itself is organised: an open ending. B: there is no opposing view in the text; C: the sentence contains no data."
+     }
+    ]
+   },
+   "R36-2": {
+    "questions": [
+     {
+      "why": "The core argument is at the end of paragraph 1: « le travail n’a pas à être une passion »; the whole text criticises society’s demand that we “love our work”. A is the opposite position; C: the author actually criticises recruiters’ rhetoric."
+     },
+     {
+      "why": "« Entendons-nous bien. Je ne prétends pas qu’il soit souhaitable de s’ennuyer… Ce que je conteste, c’est… »: first ruling out a misunderstanding, then stating exactly what is being opposed. B contradicts « je ne prétends pas »; C: the author doesn’t look down on these jobs but defends the people who do them."
+     },
+     {
+      "why": "« C’est précisément parce qu’on leur demande d’être passionnés que certains salariés acceptent l’inacceptable … un argument commode pour justifier des conditions de travail dégradées ». A isn’t mentioned; B gets the direction backwards: employees actually become more compliant."
+     },
+     {
+      "why": "It is a rhetorical question quoting a boss who refuses a pay rise, « mais enfin, vous faites un métier que vous aimez », to mock that logic: the tone is ironic and critical. It isn’t providing information (B), still less praising (C)."
+     },
+     {
+      "why": "The previous sentence lists the conditions of “decent work” society should guarantee; « le reste » (whether you love your job, whether you find meaning in it) is up to each individual. A and B take reste as “leftover money/tasks”, a literal misreading."
+     }
+    ]
+   },
+   "R36-3": {
+    "questions": [
+     {
+      "why": "« votre discussion … m’a donné envie de témoigner »: sharing personal experience. A: he gives advice rather than asking for it; C: he clearly says « ce n’est pas parce que je détestais mon entreprise »."
+     },
+     {
+      "why": "« C’est la routine qui m’a usé, d’autant que je ne voyais jamais le résultat concret de mon travail ». A and B contradict « de bons collègues et un salaire confortable »."
+     },
+     {
+      "why": "« Ce qui m’a sauvé, c’est la formation de dix mois … et le soutien sans faille de ma compagne ». Neither B nor C is mentioned, and his income halved, so he clearly didn’t have plenty of customers."
+     },
+     {
+      "why": "He is happy with where he is (« je sais pourquoi je me lève à quatre heures ») but warns: « Ne partez pas à l’aveugle. Testez, renseignez-vous »: encouraging, with conditions. A goes too far; C contradicts « la première année a été très dure »."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L36-1": {
+    "questions": [
+     {
+      "why": "The host opens with the stereotype « les jeunes n’auraient plus le goût de l’effort », and the whole discussion is about young people’s relationship with work. B and C are details mentioned in passing."
+     },
+     {
+      "why": "« c’est plutôt un lieu où l’on doit pouvoir apprendre et se sentir utile ». A contradicts « pas moins attachés au travail »; B describes their parents’ generation (« d’abord une source de sécurité »)."
+     },
+     {
+      "why": "« Étant donné qu’ils ont commencé par des stages, des contrats courts… Ce n’est pas de l’infidélité, c’est de la prudence ». She explicitly rejects A; C: pay isn’t mentioned in the interview."
+     },
+     {
+      "why": "« l’entreprise ne vous rendra pas forcément ce que vous lui donnez »: effort isn’t necessarily rewarded. A is the opposite; C over-interprets the burn-out example."
+     },
+     {
+      "why": "« les méthodes de management n’ont pas suivi … Faute de les obtenir, il se démotive vite ». A is the opposite: when given responsibility, they « s’investit énormément »; B isn’t mentioned."
+     },
+     {
+      "why": "« D’abord, d’arrêter de raisonner en termes de générations », because differences within one generation are greater. A goes against this logic; C isn’t mentioned."
+     }
+    ]
+   },
+   "L36-2": {
+    "questions": [
+     {
+      "why": "« le présentéisme, c’est-à-dire le fait de rester au bureau plus longtemps que nécessaire, simplement pour être vu ». A isn’t covered; C is just one of the consequences."
+     },
+     {
+      "why": "« Ce n’est pas forcément qu’il a plus de travail… C’est souvent qu’il a peur d’être mal jugé ». B is rejected; C isn’t mentioned."
+     },
+     {
+      "why": "« Un salarié fatigué fait plus d’erreurs, il est moins créatif ». A isn’t mentioned; B is the opposite: it even spreads to colleagues."
+     },
+     {
+      "why": "« Ce qui fait vraiment bouger les choses, ce sont les managers qui montrent l’exemple ». Neither B nor C comes up in the programme."
+     }
+    ]
+   },
+   "L36-3": {
+    "questions": [
+     {
+      "why": "« se dit satisfait : aucun projet n’a pris de retard, et les absences pour maladie ont nettement reculé ». A contradicts « aucun projet n’a pris de retard »; C contradicts « satisfait »."
+     },
+     {
+      "why": "« c’est surtout la confiance accordée aux équipes qui a changé l’ambiance, bien plus que les horaires eux-mêmes » (a cleft sentence). Neither A nor B is mentioned."
+     },
+     {
+      "why": "« sans décompte des heures, le risque serait de travailler davantage sans être mieux payé » (the conditional expresses a hypothetical risk). Neither B nor C is mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V36-01": {
+   "zh": "to change career, to retrain",
+   "exZh": "After fifteen years in banking, she decided to retrain as a nurse."
+  },
+  "V36-02": {
+   "zh": "loss of meaning (at work)",
+   "exZh": "Many managers explain their resignation by a loss of meaning."
+  },
+  "V36-03": {
+   "zh": "to report to, to be accountable to (superiors)",
+   "exZh": "I spend more time reporting to my managers than actually working."
+  },
+  "V36-04": {
+   "zh": "to act as an accelerator",
+   "exZh": "The pandemic acted as an accelerator for remote working."
+  },
+  "V36-05": {
+   "zh": "on a whim, on impulse",
+   "exZh": "He didn’t resign on a whim; he’d been thinking about it for two years."
+  },
+  "V36-06": {
+   "zh": "to grasp the scale/extent of",
+   "exZh": "Management is finally starting to grasp the extent of the team’s discontent."
+  },
+  "V36-07": {
+   "zh": "to use one’s network (to introduce others)",
+   "exZh": "A former colleague offered to use his network to help me find clients."
+  },
+  "V36-08": {
+   "zh": "to have become the norm, commonplace",
+   "exZh": "In big cities, shared bikes have become commonplace."
+  },
+  "V36-09": {
+   "zh": "all the more so since (adding a stronger reason)",
+   "exZh": "We must keep experienced staff, all the more so since replacing them is costly."
+  },
+  "V36-10": {
+   "zh": "to think privately (without daring to say it)",
+   "exZh": "She said out loud what all her colleagues were thinking but didn’t dare say."
+  },
+  "V36-11": {
+   "zh": "let’s be clear (to avoid misunderstanding)",
+   "exZh": "Let’s be clear: I’m not against remote working, I’m against excess."
+  },
+  "V36-12": {
+   "zh": "on the pretext that, using … as an excuse",
+   "exZh": "The company refused him a pay rise, using financial difficulties as an excuse."
+  },
+  "V36-13": {
+   "zh": "a convenient excuse",
+   "exZh": "“Passion” has become a convenient excuse for not paying overtime."
+  },
+  "V36-14": {
+   "zh": "a risky bet, a gamble",
+   "exZh": "Leaving a permanent contract to start a business is still a gamble."
+  },
+  "V36-15": {
+   "zh": "it is precisely because … (emphasising cause)",
+   "exZh": "It’s precisely because I love my profession that I refuse to sacrifice my health for it."
+  },
+  "V36-16": {
+   "zh": "what we need is … (cleft sentence)",
+   "exZh": "What we need is a style of management that pays more attention to teams."
+  },
+  "V36-17": {
+   "zh": "to be willing to work hard",
+   "exZh": "Contrary to the stereotype, many young people are willing to work hard."
+  },
+  "V36-18": {
+   "zh": "to find one’s vocation",
+   "exZh": "She found her vocation looking after children during the summer holidays."
+  },
+  "V36-19": {
+   "zh": "to set boundaries",
+   "exZh": "Since his burn-out, he has learned to set boundaries between work and private life."
+  },
+  "V36-20": {
+   "zh": "to be passionate about",
+   "exZh": "He isn’t exactly passionate about his job, but he does it conscientiously."
+  },
+  "V36-21": {
+   "zh": "to drive change, to shake things up",
+   "exZh": "It’s often small associations that drive change."
+  },
+  "V36-22": {
+   "zh": "time spent at work, attendance",
+   "exZh": "Employees should be judged on results, not on time spent at work."
+  },
+  "V36-23": {
+   "zh": "an ingrained habit",
+   "exZh": "Eating in front of the TV is an ingrained habit in their family."
+  },
+  "V36-24": {
+   "zh": "to express satisfaction",
+   "exZh": "Questioned by the press, the manager expressed satisfaction with the first results."
+  },
+  "V36-25": {
+   "zh": "a fixed desk, an assigned workstation",
+   "exZh": "Since hot-desking was introduced, no one in the company has a fixed desk any more."
+  }
+ },
+ "title": "Speaking I: the monologue",
+ "phase": "DELF B2 task training"
+}

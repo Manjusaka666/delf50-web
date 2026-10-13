@@ -1,0 +1,236 @@
+{
+ "canDo": "Can develop an opinion with structures of purpose, concession and emphasis, and tell apart the common contexts that trigger the subjonctif / indicatif.",
+ "review": "Review D25; add pour que/afin que, bien que, ce qui/ce que/ce dont…c’est.",
+ "input": "Listening and reading on technology/social media.",
+ "output": "Write a 150-word opinion; speak for 3–4 minutes, answering the other side.",
+ "checkpoint": "A complete chain opinion → reason → example → concession → response → conclusion; justified choices of subjonctif/indicatif.",
+ "challenge": "Today’s challenge: count how many times notifications on your phone interrupt you today, then write a 5-sentence comment: state a purpose with pour que + subjonctif, add a concession with bien que or même si, highlight a point with Ce qui me dérange, c’est…, and end with a rule to improve your own habits.",
+ "items": {
+  "reading": {
+   "R26-1": {
+    "questions": [
+     {
+      "why": "He shifts the focus from “fake news” to “real material taken out of context”."
+     }
+    ]
+   },
+   "R26-3": {
+    "questions": [
+     null,
+     {
+      "why": "« elle ne remplace rien : elle s'ajoute », and purchases of new items haven’t gone down."
+     }
+    ]
+   },
+   "R26-4": {
+    "questions": [
+     null,
+     {
+      "why": "« les faits diminuent dans la zone équipée et augmentent à sa périphérie »; the effect is zero on violence outside bars."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L26-3": {
+    "questions": [
+     null,
+     {
+      "why": "« Sans elles, je reprendrais la voiture, pas le bus » — the bus takes 25 minutes."
+     }
+    ]
+   },
+   "L26-4": {
+    "questions": [
+     {
+      "why": "« la mesure est fiable et l'effet sur l'activité est réel »; abnormal heart rhythms are a separate exception."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V26-01": {
+   "zh": "let’s take an example",
+   "exZh": "Let’s take a recent example: a video of a flooded street circulated during a storm."
+  },
+  "V26-02": {
+   "zh": "some will object that …",
+   "exZh": "Some will object that the result is the same."
+  },
+  "V26-03": {
+   "zh": "that’s true, but … (concession)",
+   "exZh": "That’s true, but it justifies a targeted network, not blanket coverage."
+  },
+  "V26-04": {
+   "zh": "I don’t believe that … (+ subjunctive)",
+   "exZh": "Some will object that the result is the same, but I don’t believe the distinction is theoretical."
+  },
+  "V26-05": {
+   "zh": "unless …",
+   "exZh": "Scooters will remain an obstacle unless parking bays become compulsory."
+  },
+  "V26-06": {
+   "zh": "it’s not …, it’s … (emphasis)",
+   "exZh": "For me, it’s not a nuisance, it’s an obstacle I can’t see."
+  },
+  "V26-07": {
+   "zh": "so that … (+ subjunctive)",
+   "exZh": "I’m calling for compulsory bays so that the pavement stays clear."
+  },
+  "V26-08": {
+   "zh": "to acknowledge that …",
+   "exZh": "I acknowledge that the situation could be reversed in a few years."
+  },
+  "V26-09": {
+   "zh": "as for …",
+   "exZh": "As for the cost, it never comes up in the debate."
+  },
+  "V26-10": {
+   "zh": "to take something seriously",
+   "exZh": "It’s the serious argument, and I take it seriously."
+  },
+  "V26-11": {
+   "zh": "the problem has never been …",
+   "exZh": "The problem has never been the scooter, but where it ends up at the end of the day."
+  },
+  "V26-12": {
+   "zh": "it is up to someone to …",
+   "exZh": "It’s up to parents to keep an eye on what their children watch."
+  },
+  "V26-13": {
+   "zh": "under these conditions",
+   "exZh": "Under these conditions, talking about free choice makes no sense."
+  },
+  "V26-14": {
+   "zh": "yes to …, no to … (stating a position)",
+   "exZh": "My position: yes to a limited network, no to a general extension."
+  },
+  "V26-15": {
+   "zh": "a telling example",
+   "exZh": "A telling example: a T-shirt worn three times and then resold."
+  },
+  "V26-16": {
+   "zh": "to pass over … in silence",
+   "exZh": "The comparison passes over an economic difference in silence."
+  },
+  "V26-17": {
+   "zh": "as if …",
+   "exZh": "People cite this precedent as if it were enough to prove everything."
+  },
+  "V26-18": {
+   "zh": "to aim at the wrong target",
+   "exZh": "Focusing on fabricated images is aiming at the wrong target."
+  },
+  "V26-19": {
+   "zh": "as it stands, as it is put",
+   "exZh": "As it stands, the question has no answer."
+  },
+  "V26-20": {
+   "zh": "to mean nothing",
+   "exZh": "“Do cameras work?” means nothing unless you say against what."
+  },
+  "V26-21": {
+   "zh": "to be a problem",
+   "exZh": "Sleep tracking is the typical example of what is a problem."
+  },
+  "V26-22": {
+   "zh": "to rely on, to trust …",
+   "exZh": "Should you rely on your watch to know whether you sleep well?"
+  },
+  "V26-23": {
+   "zh": "to brush an argument aside",
+   "exZh": "I understand your concern and I’m not going to brush this argument aside."
+  },
+  "V26-24": {
+   "zh": "to tip, to shift …",
+   "exZh": "Here is the example that shifted my position."
+  },
+  "V26-25": {
+   "zh": "to tell A from B",
+   "exZh": "Before the age of eight, many children find it hard to tell advertising from programmes."
+  },
+  "V26-26": {
+   "zh": "to have a good reputation, to be well regarded",
+   "exZh": "Second-hand clothing is well regarded, and partly deserves it."
+  },
+  "V26-27": {
+   "zh": "to give up …",
+   "exZh": "I’m not saying we should give up second-hand."
+  },
+  "V26-28": {
+   "zh": "to be added to …",
+   "exZh": "Second-hand doesn’t replace anything: it’s added to new purchases."
+  },
+  "V26-29": {
+   "zh": "to halve",
+   "exZh": "Worn twice as long, a garment has its impact halved."
+  },
+  "V26-30": {
+   "zh": "to be a matter of …, to belong to …",
+   "exZh": "This violence is a matter of impulse, not calculation."
+  },
+  "V26-31": {
+   "zh": "after the event",
+   "exZh": "The footage is mainly used after the event, to identify those responsible."
+  },
+  "V26-32": {
+   "zh": "to apply to, to hold for …",
+   "exZh": "This argument holds for television, not for short videos."
+  },
+  "V26-33": {
+   "zh": "to settle the question of …",
+   "exZh": "Compulsory bays settle the question of parking."
+  },
+  "V26-34": {
+   "zh": "fake news, false information",
+   "exZh": "Attention is focused on fake news because it’s spectacular."
+  },
+  "V26-35": {
+   "zh": "to take something out of context",
+   "exZh": "A real image taken out of context can mislead as much as a fake one."
+  },
+  "V26-36": {
+   "zh": "video surveillance (CCTV)",
+   "exZh": "The city wants to extend CCTV to the whole centre."
+  },
+  "V26-37": {
+   "zh": "to play down …",
+   "exZh": "That’s the real cost of my proposal, and I’m not going to play it down."
+  },
+  "V26-38": {
+   "zh": "self-service, shared (bikes, scooters)",
+   "exZh": "Shared scooters are left lying around everywhere on the pavements."
+  },
+  "V26-39": {
+   "zh": "anarchic parking",
+   "exZh": "Scooters parked any old how get in pedestrians’ way."
+  },
+  "V26-40": {
+   "zh": "to work from home",
+   "exZh": "I work from home three days a week."
+  },
+  "V26-41": {
+   "zh": "to go from one video call to the next",
+   "exZh": "People come into the office and go from one video call to the next."
+  },
+  "V26-42": {
+   "zh": "so … that …",
+   "exZh": "Making images has become so easy that the balance could be reversed."
+  },
+  "V26-43": {
+   "zh": "a smartwatch",
+   "exZh": "My smartwatch counts my steps and measures my pulse."
+  },
+  "V26-44": {
+   "zh": "to advance, to bring progress in …",
+   "exZh": "On this point, these devices have advanced screening."
+  },
+  "V26-45": {
+   "zh": "AI-generated images",
+   "exZh": "AI-generated images have made the price of illustrations collapse."
+  }
+ },
+ "title": "Opinion II: examples and the other side",
+ "phase": "Transfer to real tasks"
+}

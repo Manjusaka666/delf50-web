@@ -1,0 +1,225 @@
+{
+ "canDo": "Can recognise and use the present participle, the gérondif and verbal adjectives in texts and discussions about food and health, expressing simultaneity, manner and condition in tighter sentences.",
+ "review": "Review day 15’s nominalisation and journalistic style and day 13’s passive/impersonal structures: compress “qui + verb” relative clauses into present participles, and rewrite “quand/si/parce que” clauses as en + -ant.",
+ "input": "Read: an analysis of ultra-processed foods, an opinion piece against “moralising about food” and a reader’s letter about a vegetarian canteen — mark every -ant form and decide whether it is a present participle, a gérondif or a verbal adjective; listen: a nutritionist on “eating lunch in front of a screen”, a consumer segment on “healthy” snacks and a news flash on “vegetable boxes on prescription” — note the advice and figures as you listen.",
+ "output": "Write: a ≥220-word opinion forum post on a “junk food tax”, with at least 3 gérondifs or present participles; speak: a 4-minute monologue on “banning food advertising aimed at children”, then respond in the debate to the examiner’s doubts about “reimbursing dietary advice”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; can tell fatigant/fatiguant and convaincant/convainquant apart; forum post ≥220 words with at least 3 correct -ant structures; a 4-minute monologue without breaking off.",
+ "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about food, nutrition or health, and write your opinion in 3 sentences with a gérondif (e.g. « En lisant cet article, j’ai compris que… »), or record a 1-minute spoken response.",
+ "items": {
+  "reading": {
+   "R16-1": {
+    "questions": [
+     {
+      "why": "The text explains in turn the definition, research findings, an experiment and experts’ advice — an article that takes stock (faire le point). It doesn’t single out companies for blame (A goes too far), nor recommend specific recipes (C has no basis)."
+     },
+     {
+      "why": "The text says: « plus la liste des ingrédients est longue et incompréhensible, plus le produit a de chances d’appartenir à cette catégorie ». The text says explicitly that it is “not just ready meals” (ruling out B); price is only mentioned as an attraction in the first paragraph, not as a way to identify them (ruling out A)."
+     },
+     {
+      "why": "The text says: « une corrélation ne prouve pas une causalité ». The text says the findings are « convergents » (consistent), ruling out B; the studies followed « des dizaines de milliers de personnes », ruling out C."
+     },
+     {
+      "why": "The text says: « se consomment plus vite, si bien que la sensation de satiété arrive trop tard ». Both menus had « les mêmes quantités de sucre, de sel et de fibres », ruling out A; taste preferences aren’t mentioned, ruling out C."
+     },
+     {
+      "why": "The context « les soirs de fatigue » shows it is a stopgap for tired evenings (dépanner = to help out in a pinch). B and C are unrelated to the context."
+     },
+     {
+      "why": "The text says: « c’est l’offre elle-même […] qu’il faudrait faire évoluer », recommending more cooking from raw ingredients. They explicitly reject a full ban (« répondent par la négative », ruling out A) and oppose making families feel guilty (ruling out B)."
+     }
+    ]
+   },
+   "R16-2": {
+    "questions": [
+     {
+      "why": "The concluding paragraph: « Je plaide donc pour une approche plus apaisée ». The author grants that information « reste indispensable », ruling out B; the apps that score meals are exactly what she criticises, ruling out C."
+     },
+     {
+      "why": "The text says: « non pas parce qu’ils mangent mal, mais parce qu’ils ont peur de mal manger ». A and C are exactly the reasons the author rejects."
+     },
+     {
+      "why": "She concedes first, « Je ne nie évidemment pas les enjeux de santé publique », then, with « Mais », criticises turning every meal into a “moral test”. A is the opposite of the text; chocolate is only used as a comparison, not presented as healthy (B is wrong)."
+     },
+     {
+      "why": "The text says: « c’est ignorer les contraintes bien réelles qui pèsent sur elle ». The author doesn’t judge organic food itself (B), and the single mother is just an example (C)."
+     },
+     {
+      "why": "assumer = to accept without guilt, in contrast with the earlier « craquages » (giving in to cravings). A means the opposite; C isn’t in the text."
+     }
+    ]
+   },
+   "R16-3": {
+    "questions": [
+     {
+      "why": "The opening « Ayant lu dans vos colonnes la lettre de M. Garnier » shows this is a reader replying to another letter, signed by an individual — not a town-hall notice or an investigative report."
+     },
+     {
+      "why": "The text says: « Contrairement à ce qu’il affirme, nos enfants ne vont pas « manquer de protéines » ». Price and meat quality aren’t Mr Garnier’s arguments."
+     },
+     {
+      "why": "« qui boudait les lentilles, en redemande depuis qu’elles sont servies en curry »: prepared well, children enjoy it. A is the opposite of the example; C overgeneralises."
+     },
+     {
+      "why": "The text says: « la commune a pu acheter des produits locaux de meilleure qualité ». Dairy products are still on the menu (second paragraph), and the number of meals isn’t mentioned."
+     },
+     {
+      "why": "« Je comprends qu’on soit attaché à ses habitudes », plus an invitation to come and taste — a mild tone, open to dialogue. There is no contempt, nor pessimism."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L16-1": {
+    "questions": [
+     {
+      "why": "The presenter opens with « déjeuner devant son ordinateur », and the doctor then discusses the effects and gives advice. Working hours and dieting aren’t the topic."
+     },
+     {
+      "why": "« Il enregistre mal ce que l’on avale […] une heure plus tard, on a de nouveau faim ». It doesn’t say people eat more slowly (A) or digest better (C)."
+     },
+     {
+      "why": "« certains ont même l’impression qu’en quittant leur bureau à midi, ils seraient mal vus ». Neither the distance to the canteen nor saving money is mentioned."
+     },
+     {
+      "why": "« la sensation de satiété met une vingtaine de minutes à s’installer »: slowing down lets the feeling of fullness arrive in time. B is a separate piece of advice about eating with colleagues."
+     },
+     {
+      "why": "« couper la messagerie interne pendant quarante-cinq minutes à l’heure du déjeuner ». “midi et deux” refers to the slot in which other companies ban meetings, not to a longer lunch break (C)."
+     },
+     {
+      "why": "« il ne s’agit pas de culpabiliser ceux qui mangent un sandwich devant leur écran de temps en temps […] Ce qui compte, c’est l’habitude ». He considers the company’s role “essentiel”, ruling out A."
+     }
+    ]
+   },
+   "L16-2": {
+    "questions": [
+     {
+      "why": "The segment compares labels and finds that “healthy” products don’t live up to their name (« Pas toujours »). It doesn’t recommend brands or give recipes."
+     },
+     {
+      "why": "« J’ai comparé une quinzaine de produits en lisant les étiquettes » (a gérondif expressing manner)."
+     },
+     {
+      "why": "« aussi grasses et aussi salées que les chips de pommes de terre », the opposite of A; production costs aren’t mentioned."
+     },
+     null,
+     {
+      "why": "vendeur as an adjective = catchy, good for sales. The speaker means the nutritional value is about the same; only the name sells better."
+     }
+    ]
+   },
+   "L16-3": {
+    "questions": [
+     null,
+     {
+      "why": "« les personnes souffrant de diabète ou de surpoids et disposant de faibles revenus » (two present participles defining who is eligible)."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V16-01": {
+   "zh": "to take up a large place",
+   "exZh": "Screens take up a large place in teenagers’ lives."
+  },
+  "V16-02": {
+   "zh": "a higher risk",
+   "exZh": "Lack of sleep is linked to a higher risk of diabetes."
+  },
+  "V16-03": {
+   "zh": "a causal link",
+   "exZh": "No study has yet established a causal link between the two phenomena."
+  },
+  "V16-04": {
+   "zh": "to be a landmark, to go down in history",
+   "exZh": "This discovery is a landmark in the history of medicine."
+  },
+  "V16-05": {
+   "zh": "the feeling of fullness (satiety)",
+   "exZh": "Fibre prolongs the feeling of fullness after a meal."
+  },
+  "V16-06": {
+   "zh": "to answer in the negative",
+   "exZh": "Asked whether prices might rise, the manager answered in the negative."
+  },
+  "V16-07": {
+   "zh": "a stopgap, a quick fix",
+   "exZh": "On busy evenings, frozen meals remain a quick fix."
+  },
+  "V16-08": {
+   "zh": "guilt-tripping messages",
+   "exZh": "The new prevention campaign avoids guilt-tripping and relies on humour."
+  },
+  "V16-09": {
+   "zh": "to scroll through (social media) feeds",
+   "exZh": "He spends hours scrolling through his feeds before going to sleep."
+  },
+  "V16-10": {
+   "zh": "a public health issue",
+   "exZh": "Childhood obesity has become a major public health issue."
+  },
+  "V16-11": {
+   "zh": "to have the opposite effect",
+   "exZh": "By banning all sugar for her son, she risks the opposite effect."
+  },
+  "V16-12": {
+   "zh": "far more … than",
+   "exZh": "Cooking for ten is far more complicated than cooking for two."
+  },
+  "V16-13": {
+   "zh": "to hold down two jobs",
+   "exZh": "To pay the rent, she holds down two part-time jobs."
+  },
+  "V16-14": {
+   "zh": "a marker of social status",
+   "exZh": "For some sociologists, what’s in the shopping basket is a marker of social status."
+  },
+  "V16-15": {
+   "zh": "to change what is on offer",
+   "exZh": "Local authorities can change what canteens offer by buying more fresh produce."
+  },
+  "V16-16": {
+   "zh": "to offer another perspective",
+   "exZh": "This farmer’s testimony offers another perspective on the question."
+  },
+  "V16-17": {
+   "zh": "to ask for more, to come back for more",
+   "exZh": "The gratin was such a hit that the children ask for it every week."
+  },
+  "V16-18": {
+   "zh": "to be no small thing",
+   "exZh": "Changing your diet overnight is no small thing."
+  },
+  "V16-19": {
+   "zh": "to snack between meals",
+   "exZh": "Teenagers often snack between meals."
+  },
+  "V16-20": {
+   "zh": "to be frowned upon",
+   "exZh": "In this company, leaving before 7 p.m. is frowned upon."
+  },
+  "V16-21": {
+   "zh": "to take a break",
+   "exZh": "Remember to take a break every two hours."
+  },
+  "V16-22": {
+   "zh": "to have a clear conscience",
+   "exZh": "Many shoppers feel they have a clear conscience when they buy organic."
+  },
+  "V16-23": {
+   "zh": "catchy, good for sales",
+   "exZh": "For manufacturers, the word “natural” is very good for sales."
+  },
+  "V16-24": {
+   "zh": "seasonal produce",
+   "exZh": "Buying seasonal produce is usually cheaper."
+  },
+  "V16-25": {
+   "zh": "while acknowledging …",
+   "exZh": "While acknowledging the town hall’s efforts, parents are asking for more fresh produce."
+  }
+ },
+ "title": "Participles, the gérondif and verbal adjectives",
+ "phase": "Argument, mediation and reporting"
+}

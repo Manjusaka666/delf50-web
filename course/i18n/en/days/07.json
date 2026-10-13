@@ -1,0 +1,302 @@
+{
+ "canDo": "Can describe past settings, habits, weather and states.",
+ "review": "Review past participles; learn how the imparfait is formed and the être exception.",
+ "input": "Listening: childhood/life in the past; reading: someone’s memories.",
+ "output": "Write 90–100 words on “when I was little”; describe old habits aloud for 2 minutes.",
+ "checkpoint": "At least 5 imparfait forms; can convey “background/habits” rather than a list of events.",
+ "challenge": "Today’s challenge: find a photo of yourself as a child or recall a childhood scene; write 5 sentences in the imparfait describing the place, the weather, your habits and how you felt (Quand j’étais petit(e)…), then record yourself telling it for 1 minute.",
+ "items": {
+  "reading": {
+   "R07-1": {
+    "questions": [
+     {
+      "why": "Both reasons appear side by side in the first paragraph."
+     },
+     {
+      "why": "« ne souriait pas beaucoup, mais elle gardait toujours un livre » is a typical concession structure."
+     },
+     {
+      "why": "« décideraient de mon métier » points to the choice of career."
+     }
+    ]
+   },
+   "R07-2": {
+    "questions": [
+     {
+      "why": "« Ce n'était pas mieux avant ... C'était simplement plus bruyant » is an explicit denial plus a qualification."
+     },
+     {
+      "why": "The market moved away; the cafés went down to one."
+     },
+     {
+      "why": "« arriver le matin et repartir le soir » is how things are today; « la place venait d'être réaménagée » matches the redevelopment plan for 2028."
+     }
+    ]
+   },
+   "R07-3": {
+    "questions": [
+     {
+      "why": "« seulement une phrase, puis vous continuiez vous-même » — neither a full exemption nor an obligation."
+     },
+     {
+      "why": "The sign-off « Avec ma reconnaissance » matches the tone of the whole letter."
+     },
+     {
+      "why": "The last paragraph says directly that he kept using that one-sentence approach."
+     }
+    ]
+   },
+   "R07-4": {
+    "questions": [
+     {
+      "why": "« c'est vrai. Mais on avait froid » is a typical concede-then-rebut structure."
+     },
+     {
+      "why": "The doctor was slow to come, not absent; the children’s noise is something she misses."
+     },
+     {
+      "why": "The answer to « Qu'est-ce qui vous manque ? » is « Le bruit »."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L07-1": {
+    "questions": [
+     {
+      "why": "« En réalité » introduces the real explanation, overturning what the children imagined."
+     },
+     {
+      "why": "« trente ans plus tard » is an explicit time marker."
+     },
+     {
+      "why": "It opens with « l'odeur du couloir », the sensory entry point to the whole passage."
+     }
+    ]
+   },
+   "L07-2": {
+    "questions": [
+     {
+      "why": "The four people’s experiences all differ: staying in the courtyard, going to Brittany, boredom, going out freely."
+     },
+     {
+      "why": "The one in Brittany says « j'adorais ça », even though it often rained."
+     },
+     {
+      "why": "« on ne prévenait pas ... Personne ne téléphonait » is the contrast he stresses."
+     }
+    ]
+   },
+   "L07-3": {
+    "questions": [
+     {
+      "why": "« tous les dimanches » + « jamais plus d'une heure » contrast frequency and length."
+     },
+     {
+      "why": "« Il disait qu'il avait froid » is the only explanation in the text."
+     },
+     {
+      "why": "The way the question « Il y avait un mur, là ? » is asked shows it is no longer there."
+     }
+    ]
+   },
+   "L07-4": {
+    "questions": [
+     {
+      "why": "« Je ne suis pas sûr » shows clearly that he doesn’t agree with the popular view."
+     },
+     {
+      "why": "The baker was just someone else who was there at the time."
+     },
+     {
+      "why": "The answer to « C'était dur ? » is « L'hiver, oui »."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V07-01": {
+   "zh": "when I was little",
+   "exZh": "When I was little, I lived in a village."
+  },
+  "V07-02": {
+   "zh": "when I was … (years old)",
+   "exZh": "When I was ten, Wednesday wasn’t a school day."
+  },
+  "V07-03": {
+   "zh": "to be used to …, to usually …",
+   "exZh": "I used to read before going to sleep."
+  },
+  "V07-04": {
+   "zh": "to remember …",
+   "exZh": "What I remember most is the smell of the corridor in winter."
+  },
+  "V07-05": {
+   "zh": "at the time, back then",
+   "exZh": "At the time, I didn’t know those afternoons would decide my career."
+  },
+  "V07-06": {
+   "zh": "to have fond memories of …",
+   "exZh": "I have very fond memories of my primary school."
+  },
+  "V07-07": {
+   "zh": "That reminds me of …",
+   "exZh": "The smell of warm wool reminds me of school."
+  },
+  "V07-08": {
+   "zh": "to spend the afternoon at …",
+   "exZh": "I used to spend the afternoon at the local library."
+  },
+  "V07-09": {
+   "zh": "every time …",
+   "exZh": "Every time it was my turn, my hands shook."
+  },
+  "V07-10": {
+   "zh": "to read aloud",
+   "exZh": "Back then, I hated reading aloud."
+  },
+  "V07-11": {
+   "zh": "in the + decade (the 90s…)",
+   "exZh": "In the nineties there were four cafés here."
+  },
+  "V07-12": {
+   "zh": "every … minutes",
+   "exZh": "The trains stopped every twenty minutes."
+  },
+  "V07-13": {
+   "zh": "as soon as …",
+   "exZh": "The office workers had lunch outside as soon as the weather was nice."
+  },
+  "V07-14": {
+   "zh": "there is … left",
+   "exZh": "Today, there’s one café left."
+  },
+  "V07-15": {
+   "zh": "It wasn’t better before.",
+   "exZh": "“It wasn’t better before, it was just noisier.”"
+  },
+  "V07-16": {
+   "zh": "to be missed by someone (manquer à)",
+   "exZh": "I miss the noise of the children."
+  },
+  "V07-17": {
+   "zh": "to fall ill",
+   "exZh": "When someone fell ill, the doctor took two hours to come."
+  },
+  "V07-18": {
+   "zh": "to lock (the door)",
+   "exZh": "In the village, nobody locked their door."
+  },
+  "V07-19": {
+   "zh": "whereas … (contrast)",
+   "exZh": "We used to play outside, whereas today children stay in front of screens."
+  },
+  "V07-20": {
+   "zh": "there was nothing to do",
+   "exZh": "In my village, there was nothing to do."
+  },
+  "V07-21": {
+   "zh": "What has changed is that …",
+   "exZh": "What has changed is that we didn’t tell our parents (where we were going)."
+  },
+  "V07-22": {
+   "zh": "in reality, actually",
+   "exZh": "Actually, she was looking at the reflection in the window."
+  },
+  "V07-23": {
+   "zh": "every summer",
+   "exZh": "Every summer, my parents sent me to my aunt’s."
+  },
+  "V07-24": {
+   "zh": "half the time",
+   "exZh": "It rained half the time and I loved it."
+  },
+  "V07-25": {
+   "zh": "every Sunday",
+   "exZh": "The neighbour came every Sunday with a tart."
+  },
+  "V07-26": {
+   "zh": "at that moment, just then",
+   "exZh": "Just then, it started to rain."
+  },
+  "V07-27": {
+   "zh": "running water",
+   "exZh": "There was no running water in the house."
+  },
+  "V07-28": {
+   "zh": "to miss a time, to feel nostalgic for an era",
+   "exZh": "Do you miss those days?"
+  },
+  "V07-29": {
+   "zh": "to look forward to the new school year",
+   "exZh": "In summer we were bored and couldn’t wait for school to start again."
+  },
+  "V07-30": {
+   "zh": "to play until nightfall",
+   "exZh": "We stayed in the courtyard and played until nightfall."
+  },
+  "V07-31": {
+   "zh": "never more than …",
+   "exZh": "She never stayed more than an hour."
+  },
+  "V07-32": {
+   "zh": "to run a stall",
+   "exZh": "Our guest used to run a fruit stall at the market."
+  },
+  "V07-33": {
+   "zh": "it was still dark",
+   "exZh": "On Tuesdays I arrived at four: it was still dark."
+  },
+  "V07-34": {
+   "zh": "to give someone time to …",
+   "exZh": "People no longer give them time to talk."
+  },
+  "V07-35": {
+   "zh": "at the back of the classroom",
+   "exZh": "I was at the back of the classroom, on the left."
+  },
+  "V07-36": {
+   "zh": "to smell of …",
+   "exZh": "It was a dark building that smelt of paper and dust."
+  },
+  "V07-37": {
+   "zh": "to change the planned programme",
+   "exZh": "As it was raining, we changed the planned programme."
+  },
+  "V07-38": {
+   "zh": "to go to primary school",
+   "exZh": "I used to walk to primary school."
+  },
+  "V07-39": {
+   "zh": "to grow up in the countryside",
+   "exZh": "I grew up in the countryside, near Cahors."
+  },
+  "V07-40": {
+   "zh": "to play outside",
+   "exZh": "After school, we played outside until dinner."
+  },
+  "V07-41": {
+   "zh": "to get up to mischief",
+   "exZh": "My brother and I got up to a lot of mischief."
+  },
+  "V07-42": {
+   "zh": "the summer holidays",
+   "exZh": "During the summer holidays, I used to go to my grandparents’."
+  },
+  "V07-43": {
+   "zh": "a childhood memory",
+   "exZh": "It’s a childhood memory I’ll never forget."
+  },
+  "V07-44": {
+   "zh": "to share a room with someone",
+   "exZh": "As a child, I shared a room with my brother."
+  },
+  "V07-45": {
+   "zh": "to go to summer camp",
+   "exZh": "In summer, I used to go to summer camp by the sea."
+  }
+ },
+ "title": "Past background and habits",
+ "phase": "Foundations and grammar on autopilot"
+}

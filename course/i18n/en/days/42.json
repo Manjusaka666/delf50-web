@@ -1,0 +1,247 @@
+{
+ "canDo": "Fix the 3 most frequently recurring error types from Mock 1 with as little new content as possible.",
+ "review": "Pick the Top 3 skills from the Error Book.",
+ "input": "Short listening and reading that serve only these skills.",
+ "output": "Rewrite the wrong sentences + apply them in context + redo them aloud.",
+ "checkpoint": "Retest after 48 hours; only mark as “fairly stable” at ≥70%.",
+ "challenge": "Today’s challenge: from your Error Book, pick the 3 kinds of mistake you make most often (e.g. passé composé / imparfait, misused connectors, unclear references) and do a matching set of exercises for each at Le Point du FLE; then rewrite 5 wrong sentences from your earlier essays and write a “personal rule” for each type (an explanation in your own language + one correct French example).",
+ "items": {
+  "reading": {
+   "R42-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "The text uses contrasting sentences to show that piling up passé composé only produces a list, not a narrative."
+     }
+    ]
+   },
+   "R42-2": {
+    "questions": [
+     {
+      "why": "Many candidates use it as if it meant « en fait »."
+     },
+     {
+      "why": "« Par ailleurs » only adds a parallel point."
+     },
+     null,
+     {
+      "why": "The contrasting examples show the difference."
+     }
+    ]
+   },
+   "R42-3": {
+    "questions": [
+     null,
+     {
+      "why": "The rewritten example shows the concrete method."
+     }
+    ]
+   },
+   "R42-4": {
+    "questions": [
+     null,
+     {
+      "why": "The difference between « est-ce écrit ? » and « est-ce la réponse ? »."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L42-3": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "Example: « il est tombé, il ne répondait plus »."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V42-01": {
+   "zh": "indeed (explaining what came before)",
+   "exZh": "The price is high. Indeed, the material is rare."
+  },
+  "V42-02": {
+   "zh": "now, yet (introducing a fact contrary to expectation)",
+   "exZh": "This connector is very useful; yet it is almost never found in exam papers."
+  },
+  "V42-03": {
+   "zh": "yet, even so (something unexpected)",
+   "exZh": "It was raining, yet we went out."
+  },
+  "V42-04": {
+   "zh": "to introduce a contrast",
+   "exZh": "“En effet” never introduces a contrast."
+  },
+  "V42-05": {
+   "zh": "to go against expectation",
+   "exZh": "“Or” introduces a fact that goes against the reader’s expectation."
+  },
+  "V42-06": {
+   "zh": "however",
+   "exZh": "This criterion is simple; however, it has a limit."
+  },
+  "V42-07": {
+   "zh": "to be interchangeable",
+   "exZh": "“Cependant” and “pourtant” are not interchangeable."
+  },
+  "V42-08": {
+   "zh": "to answer the question asked",
+   "exZh": "Only one option answers the question asked."
+  },
+  "V42-09": {
+   "zh": "to refer to …",
+   "exZh": "The reader must know what each pronoun refers to."
+  },
+  "V42-10": {
+   "zh": "to remove an ambiguity",
+   "exZh": "To remove the ambiguity, repeat the noun instead of using a pronoun."
+  },
+  "V42-11": {
+   "zh": "to be among …",
+   "exZh": "If your answer isn’t among the options, reread the question."
+  },
+  "V42-12": {
+   "zh": "to change the meaning of …",
+   "exZh": "The choice of tense changes the meaning of the sentence."
+  },
+  "V42-13": {
+   "zh": "to practise …-ing",
+   "exZh": "You need to practise hearing numbers in sequence."
+  },
+  "V42-14": {
+   "zh": "to block understanding",
+   "exZh": "Confusing “u” and “ou” blocks understanding."
+  },
+  "V42-15": {
+   "zh": "to avoid a misunderstanding",
+   "exZh": "The word “comme” signals that it isn’t exact, which avoids a misunderstanding."
+  },
+  "V42-16": {
+   "zh": "to force someone to …",
+   "exZh": "A vague reference forces the reader to reread the sentence."
+  },
+  "V42-17": {
+   "zh": "I’m looking for the word … (spoken repair)",
+   "exZh": "I’m looking for the word… the place where you buy medicine."
+  },
+  "V42-18": {
+   "zh": "to bother nobody",
+   "exZh": "An imperfect “r” bothers nobody."
+  },
+  "V42-19": {
+   "zh": "to inform someone of …",
+   "exZh": "I am writing to express my dissatisfaction with my order."
+  },
+  "V42-20": {
+   "zh": "this solution doesn’t suit me",
+   "exZh": "I’m sorry, but this solution doesn’t quite suit me."
+  },
+  "V42-21": {
+   "zh": "to offer a credit note",
+   "exZh": "You’re offering me a credit note, but I’d prefer an exchange."
+  },
+  "V42-22": {
+   "zh": "I do understand that … (concession)",
+   "exZh": "I do understand that time is short, but we need an answer."
+  },
+  "V42-23": {
+   "zh": "to set oneself a limit",
+   "exZh": "Set yourself a firm limit: half the text written by half the time."
+  },
+  "V42-24": {
+   "zh": "one should distinguish X from Y",
+   "exZh": "One should distinguish a language error from a misreading of meaning."
+  },
+  "V42-25": {
+   "zh": "to make a diagnosis",
+   "exZh": "Before revising, make a precise diagnosis of your answer sheets."
+  },
+  "V42-26": {
+   "zh": "what precedes, what came before",
+   "exZh": "“En effet” confirms and explains what came before."
+  },
+  "V42-27": {
+   "zh": "to hand in a paper",
+   "exZh": "Eight candidates out of twelve hand in a paper with a rushed ending."
+  },
+  "V42-28": {
+   "zh": "until …",
+   "exZh": "Listen to these numbers until they no longer need working out."
+  },
+  "V42-29": {
+   "zh": "to get information across",
+   "exZh": "You get the information across even without the exact word."
+  },
+  "V42-30": {
+   "zh": "given …, in view of …",
+   "exZh": "This result is surprising given the situation."
+  },
+  "V42-31": {
+   "zh": "to misread …",
+   "exZh": "If your answer isn’t there, you misread the question."
+  },
+  "V42-32": {
+   "zh": "to be off topic",
+   "exZh": "This option is true, but it’s off topic."
+  },
+  "V42-33": {
+   "zh": "at all costs",
+   "exZh": "Many learners avoid repeating themselves at all costs."
+  },
+  "V42-34": {
+   "zh": "the right word",
+   "exZh": "Repeating the right word is almost always better."
+  },
+  "V42-35": {
+   "zh": "to have someone reread …",
+   "exZh": "Get a friend to read your text before you hand it in."
+  },
+  "V42-36": {
+   "zh": "to misread the meaning (get it backwards)",
+   "exZh": "With the wrong connector, you get the meaning backwards."
+  },
+  "V42-37": {
+   "zh": "to increase by …",
+   "exZh": "The price goes up by fifteen euros; it doesn’t reach fifteen euros."
+  },
+  "V42-38": {
+   "zh": "the latter",
+   "exZh": "I wrote to the manager, and the latter replied the next day."
+  },
+  "V42-39": {
+   "zh": "an authentic document",
+   "exZh": "Authentic documents almost always repeat information."
+  },
+  "V42-40": {
+   "zh": "to advise someone against …",
+   "exZh": "I’d advise you not to wait until the last day to send the document."
+  },
+  "V42-41": {
+   "zh": "I would like to point out that …",
+   "exZh": "I would like to point out that I had confirmed my order in writing."
+  },
+  "V42-42": {
+   "zh": "to mean nothing",
+   "exZh": "The sentence is correct, but it doesn’t say anything precise."
+  },
+  "V42-43": {
+   "zh": "a careless mistake",
+   "exZh": "Half my mistakes are careless ones."
+  },
+  "V42-44": {
+   "zh": "to reread one’s paper",
+   "exZh": "Keep five minutes to reread your paper."
+  },
+  "V42-45": {
+   "zh": "to keep X minutes for checking",
+   "exZh": "Keep five minutes for checking, without exception."
+  }
+ },
+ "title": "Repair day I: grammar and tasks",
+ "phase": "Mock exams and repair"
+}

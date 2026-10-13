@@ -1,0 +1,277 @@
+{
+ "canDo": "Can link short sentences with qui/que/où, and begin handling dont for de + antecedent.",
+ "review": "Review qui/que/où; learn the de relation of dont, and get to know common compound relative pronouns.",
+ "input": "Listening: introducing people/places; reading: a cultural profile.",
+ "output": "Write a 120-word profile of a person or place; speak for 2 minutes using ≥5 relative clauses.",
+ "checkpoint": "≥80% on mixed qui/que/où questions; can spot the de relation behind dont.",
+ "challenge": "Today’s challenge: choose a French-speaking singer, writer or athlete you admire and write 5 sentences about them, each linked with qui, que or où (e.g. C’est une chanteuse que j’écoute souvent); you can look them up first on TV5MONDE Apprendre or RFI.",
+ "items": {
+  "reading": {
+   "R13-1": {
+    "questions": [
+     {
+      "why": "« que l'on peut emprunter gratuitement, et qu'elle ne vend pas ». These aren’t books that don’t sell, but books she finds hard to recommend in a few words."
+     },
+     {
+      "why": "« que je n'arrive pas à conseiller en trois phrases » — they need a conversation to explain."
+     }
+    ]
+   },
+   "R13-2": {
+    "questions": [
+     {
+      "why": "« plutôt que de construire des logements neufs, elle a racheté et rénové huit maisons vides ». The reopened classroom is a result."
+     },
+     null,
+     {
+      "why": "« Reste une difficulté … : les emplois ». The broadband work was finished last year — a condition that has been met, not the current difficulty."
+     }
+    ]
+   },
+   "R13-3": {
+    "questions": [
+     {
+      "why": "« des photographies que les clients n'ont jamais récupérées ». 1979 is the year the studio closed."
+     }
+    ]
+   },
+   "R13-4": {
+    "questions": [
+     {
+      "why": "« C'est la décision qui a sauvé la journée » refers to moving the workshops under the halle. The stage was cancelled, not moved."
+     },
+     {
+      "why": "« ne pouvait pas être montée sur un sol détrempé ». The rain had stopped by mid-afternoon."
+     },
+     {
+      "why": "« cherche depuis deux ans un local où stocker son matériel »; forty is the current number of volunteers."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L13-1": {
+    "questions": [
+     {
+      "why": "Aerial photos taken in a drought showed the grass yellowing faster above the old paths. No seeds survived."
+     },
+     {
+      "why": "« chaque allée correspond à un tracé retrouvé »; the eighteenth-century lists were used to choose the plants, not the paths."
+     },
+     {
+      "why": "The plants were chosen by the gardeners from historical lists — a choice made in the reconstruction."
+     }
+    ]
+   },
+   "L13-2": {
+    "questions": [
+     {
+      "why": "Tapes of field recordings from the seventies: elderly singers, often unaccompanied."
+     },
+     {
+      "why": "« ces chanteurs eux-mêmes transformaient ce qu'ils avaient appris ». She keeps the melody but adds modern arrangements."
+     }
+    ]
+   },
+   "L13-3": {
+    "questions": [
+     {
+      "why": "« Ce qui a changé les choses, c'est l'arrivée du tramway en 2010 ». The shops closed first and only came back later with the people."
+     }
+    ]
+   },
+   "L13-4": {
+    "questions": [
+     null,
+     {
+      "why": "« à tarif réduit pour les personnes âgées et les étudiants »; three screenings a week is the total."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V13-01": {
+   "zh": "what strikes you is …",
+   "exZh": "What strikes you first is the bookcase near the entrance."
+  },
+  "V13-02": {
+   "zh": "he/she is someone who …",
+   "exZh": "Hélène? She’s someone who likes conversation more than business."
+  },
+  "V13-03": {
+   "zh": "that people talk about (dont = de…)",
+   "exZh": "This is the bookshop everyone in the neighbourhood is talking about."
+  },
+  "V13-04": {
+   "zh": "the neighbourhood where I grew up",
+   "exZh": "Today, I no longer recognise the neighbourhood where I grew up."
+  },
+  "V13-05": {
+   "zh": "to settle (in a place)",
+   "exZh": "This is the narrow street where she settled eight years ago."
+  },
+  "V13-06": {
+   "zh": "a place where you can …",
+   "exZh": "The bookshop is also a place where you can borrow books for free."
+  },
+  "V13-07": {
+   "zh": "to run a bookshop",
+   "exZh": "Hélène Vasseur runs a forty-square-metre bookshop."
+  },
+  "V13-08": {
+   "zh": "not to manage to …",
+   "exZh": "These are books I can’t manage to recommend in three sentences."
+  },
+  "V13-09": {
+   "zh": "I don’t mind, it’s all the same to me",
+   "exZh": "Some end up buying the book, others don’t, and I don’t mind."
+  },
+  "V13-10": {
+   "zh": "to rent something (out) to someone",
+   "exZh": "The village renovated eight empty houses, which it rents to families at a moderate rent."
+  },
+  "V13-11": {
+   "zh": "rather than …-ing",
+   "exZh": "Rather than building new housing, the town hall renovated empty houses."
+  },
+  "V13-12": {
+   "zh": "a moderate rent",
+   "exZh": "The village rents these houses to families at a moderate rent."
+  },
+  "V13-13": {
+   "zh": "to work remotely",
+   "exZh": "Most of the adults who moved here work remotely."
+  },
+  "V13-14": {
+   "zh": "to be located at …",
+   "exZh": "The village is located a thousand metres above sea level."
+  },
+  "V13-15": {
+   "zh": "to come from …",
+   "exZh": "These portraits come from a neighbourhood studio that closed in 1979."
+  },
+  "V13-16": {
+   "zh": "it is … that … (emphasis)",
+   "exZh": "It’s precisely this emptiness that the exhibition puts on stage."
+  },
+  "V13-17": {
+   "zh": "nothing indicates who/that …",
+   "exZh": "Nothing indicates who these people are."
+  },
+  "V13-18": {
+   "zh": "to be held (an event)",
+   "exZh": "The Washhouse Festival is held every year on the first Sunday in October."
+  },
+  "V13-19": {
+   "zh": "to bring together + number + people",
+   "exZh": "The festival drew nearly two thousand people despite the rain."
+  },
+  "V13-20": {
+   "zh": "to cancel a show",
+   "exZh": "The organisers cancelled the evening concert because the ground was waterlogged."
+  },
+  "V13-21": {
+   "zh": "to reopen its doors",
+   "exZh": "The Saint-Amand cinema will reopen its doors on 4 April."
+  },
+  "V13-22": {
+   "zh": "What I take away is …",
+   "exZh": "What I take away from this visit is the emotion the anonymous portraits stir up."
+  },
+  "V13-23": {
+   "zh": "at a reduced rate",
+   "exZh": "On Tuesday afternoons, there’s a screening at a reduced rate."
+  },
+  "V13-24": {
+   "zh": "to set everything off",
+   "exZh": "It was an aerial photograph that set everything off."
+  },
+  "V13-25": {
+   "zh": "according to, based on …",
+   "exZh": "The plants were chosen based on eighteenth-century lists."
+  },
+  "V13-26": {
+   "zh": "to criticise someone for …-ing",
+   "exZh": "Some people criticise me for betraying tradition."
+  },
+  "V13-27": {
+   "zh": "to be at the heart of …",
+   "exZh": "The melody, which is at the heart of these songs, doesn’t change."
+  },
+  "V13-28": {
+   "zh": "that I need (dont = de)",
+   "exZh": "The media library has all the recordings I need."
+  },
+  "V13-29": {
+   "zh": "What I like about someone is …",
+   "exZh": "What I like about her is her curiosity."
+  },
+  "V13-30": {
+   "zh": "What I like about … is …",
+   "exZh": "What I like about this village is the peace and quiet."
+  },
+  "V13-31": {
+   "zh": "I’d like to know whether …",
+   "exZh": "I’d like to know whether the museum offers visits for groups."
+  },
+  "V13-32": {
+   "zh": "a guided tour",
+   "exZh": "The museum runs a guided tour every Sunday at 15:00."
+  },
+  "V13-33": {
+   "zh": "to overlap",
+   "exZh": "The two shows overlap: I can’t see both."
+  },
+  "V13-34": {
+   "zh": "access is free/open",
+   "exZh": "Access is free; you just have to register."
+  },
+  "V13-35": {
+   "zh": "to empty (of people)",
+   "exZh": "After the factory closed, the neighbourhood emptied."
+  },
+  "V13-36": {
+   "zh": "one after another",
+   "exZh": "The shops closed one after another."
+  },
+  "V13-37": {
+   "zh": "to work in publishing",
+   "exZh": "Before opening her bookshop, she worked in publishing for a long time."
+  },
+  "V13-38": {
+   "zh": "to earn someone … (often criticism)",
+   "exZh": "These modern arrangements sometimes earn me criticism."
+  },
+  "V13-39": {
+   "zh": "to showcase …",
+   "exZh": "The exhibition showcases the work of a forgotten photographer."
+  },
+  "V13-40": {
+   "zh": "to meet someone (for the first time)",
+   "exZh": "At the festival, I met a fascinating musician."
+  },
+  "V13-41": {
+   "zh": "local heritage",
+   "exZh": "Volunteers introduce visitors to the local heritage."
+  },
+  "V13-42": {
+   "zh": "to be known for …",
+   "exZh": "This village is known for its Washhouse Festival."
+  },
+  "V13-43": {
+   "zh": "to be passionate about …",
+   "exZh": "My uncle, who is passionate about photography, visited the exhibition three times."
+  },
+  "V13-44": {
+   "zh": "to do voluntary work",
+   "exZh": "Since she retired, my mother has done voluntary work for a cultural association."
+  },
+  "V13-45": {
+   "zh": "an open-air show",
+   "exZh": "In summer, the town hall puts on open-air shows by the washhouse."
+  }
+ },
+ "title": "Linking sentences: relative pronouns",
+ "phase": "Foundations and grammar on autopilot"
+}

@@ -1,0 +1,205 @@
+{
+ "canDo": "Can compare different ways of getting around with well-founded arguments and make recommendations, using complex comparative structures such as plus… plus, d’autant plus que, de plus en plus / de moins en moins, le moindre, autant… autant, comme si + imparfait.",
+ "review": "Review day 19’s modal expressions (il semble que, il est peu probable que) and day 5’s cause expressions (d’autant que, faute de): when comparing, give both your reasons and your degree of certainty.",
+ "input": "Read: an analysis comparing ways of getting around a city, an opinion piece criticising “trains costing more than planes” and a notice of new public transport fares — find every comparative structure and say what is being compared; listen: a radio debate on free public transport, a segment on the cost of electric versus petrol cars and a station announcement about engineering works — note each option’s figures, pros and cons.",
+ "output": "Write: a ≥220-word opinion reply on a city forum to a post about “banning cars from the centre at weekends”, using at least 3 kinds of complex comparison; speak: a 4-minute monologue on “can remote work solve traffic problems?”, then defend “a 30 km/h limit across the whole city” in the debate.",
+ "checkpoint": "Reading and listening accuracy ≥80%; correct use of plus… plus (no que, no inversion), d’autant plus que and le moindre / pire; forum post ≥220 words with correct comparative structures; can compare three ways of getting around from data and make a recommendation.",
+ "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about transport, travel or urban planning, compare it with the situation in your town in 3 sentences (using at least plus… plus and d’autant plus que), or record 1 minute comparing two ways you get around each day.",
+ "items": {
+  "reading": {
+   "R20-1": {
+    "questions": [
+     {
+      "why": "The article asks « quel mode de transport est vraiment le plus avantageux ? », compares each by distance and urban density, and concludes « Aucun mode de transport n’est donc le meilleur en toutes circonstances ». The author grants that cars are still needed in the suburbs, so B is wrong."
+     },
+     {
+      "why": "« La raison invoquée est presque toujours la même : le sentiment d’insécurité ». The text says cycling is faster at rush hour and ten times cheaper, the opposite of A and C."
+     },
+     {
+      "why": "« plus on construit de routes, plus le trafic augmente », and vice versa (traffic fell after lanes were removed). A is the opposite of “the jams come back a few years later”."
+     },
+     null,
+     {
+      "why": "The sentence is « d’autant plus efficaces que la ville est dense »; in scattered suburbs, public transport « n’est guère une alternative crédible » (A and C are wrong)."
+     },
+     {
+      "why": "« la moins mauvaise » = not good, but less bad than the alternatives (the lesser of two evils), not an ideal solution (B)."
+     }
+    ]
+   },
+   "R20-2": {
+    "questions": [
+     {
+      "why": "The author starts from personal experience, criticises the fact that “the more polluting plane is cheaper” and ends by calling for prices to « refléter le coût réel ». She explicitly doesn’t call for banning flights (C is wrong)."
+     },
+     {
+      "why": "« d’autant plus absurde que chacun connaît le bilan […] l’option la plus polluante est […] moins chère que la plus sobre ». She says the train is « à peine plus long », ruling out A."
+     },
+     {
+      "why": "An analogy built with comme si + imparfait: selling what is harmful more cheaply than what is beneficial amounts to encouraging people to choose the harmful option."
+     },
+     {
+      "why": "« Le kérosène […] n’est pas taxé comme l’essence » + low-cost airlines « compensent leurs tarifs dérisoires par […] services payants »."
+     }
+    ]
+   },
+   "R20-3": {
+    "questions": [
+     {
+      "why": "The headline and first paragraph: « Lorvan Mobilités simplifie ses tarifs », and the whole text presents the new fares and services."
+     },
+     {
+      "why": "The single ticket actually goes up (1,60 → 1,80 €) while the monthly pass comes down (42 → 35 €): frequent travellers pay less per journey on average."
+     },
+     null,
+     {
+      "why": "« Les demandeurs d’emploi bénéficieront […] de la gratuité totale, sur simple présentation d’un justificatif »; the weekend family ticket costs 6 €, and the over-65 pass 20 €."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L20-1": {
+    "questions": [
+     {
+      "why": "The presenter asks: « faut-il rendre les transports en commun gratuits ? »."
+     },
+     null,
+     {
+      "why": "« une bonne partie d’entre eux marchaient ou prenaient leur vélo auparavant »; he says explicitly « Je ne conteste pas ces chiffres », ruling out A."
+     },
+     null,
+     null,
+     {
+      "why": "Dumas: « mieux vaut investir dans la fréquence que dans la gratuité »; Marin: « l’un n’empêche pas l’autre ». Both value public transport, and neither disputes the figures."
+     }
+    ]
+   },
+   "L20-2": {
+    "questions": [
+     {
+      "why": "It opens by saying listeners are hesitating between an electric and a petrol car; the segment compares purchase price, running costs and range."
+     },
+     {
+      "why": "« plus vous roulez, plus l’électrique devient avantageuse »; to buy, it is « nettement plus chère » (A is wrong)."
+     }
+    ]
+   },
+   "L20-3": {
+    "questions": [
+     null,
+     {
+      "why": "« le trajet durera environ une heure dix, soit vingt-cinq minutes de plus qu’en train »; the 25 minutes is the extra time compared with the train."
+     },
+     {
+      "why": "« les vélos ne sont pas acceptés dans les cars »; train tickets remain valid on all the replacement services."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V20-01": {
+   "zh": "to be on every street corner",
+   "exZh": "In this neighbourhood, there’s a bakery on every street corner."
+  },
+  "V20-02": {
+   "zh": "the reason given",
+   "exZh": "The reason given by the town hall is the cost of the works."
+  },
+  "V20-03": {
+   "zh": "to fear the worst",
+   "exZh": "Shopkeepers feared the worst, but sales actually went up."
+  },
+  "V20-04": {
+   "zh": "to shift to (of traffic)",
+   "exZh": "After the bridge closed, traffic shifted to the ring road."
+  },
+  "V20-05": {
+   "zh": "all the more effective as …",
+   "exZh": "A cycle lane is all the more effective when it is separated from cars."
+  },
+  "V20-06": {
+   "zh": "a credible alternative",
+   "exZh": "For many rural residents, the coach is not a credible alternative to the car."
+  },
+  "V20-07": {
+   "zh": "the lesser evil",
+   "exZh": "For lack of anything better, the car remains the lesser evil."
+  },
+  "V20-08": {
+   "zh": "a park-and-ride",
+   "exZh": "Leave your car at the park-and-ride, then take the tram."
+  },
+  "V20-09": {
+   "zh": "to bet on, to pin one’s hopes on",
+   "exZh": "To ease congestion in the centre, the city is betting on the tram."
+  },
+  "V20-10": {
+   "zh": "ridiculously low prices",
+   "exZh": "These tickets are sold at ridiculously low prices."
+  },
+  "V20-11": {
+   "zh": "to reflect the real cost",
+   "exZh": "Ticket prices should reflect the real cost of a journey."
+  },
+  "V20-12": {
+   "zh": "not the slightest …",
+   "exZh": "This district doesn’t have the slightest cycle lane."
+  },
+  "V20-13": {
+   "zh": "as if he were …",
+   "exZh": "He drives as if he were alone on the road."
+  },
+  "V20-14": {
+   "zh": "per unit, single (ticket)",
+   "exZh": "A single ticket goes up from 1.60 to 1.80 euros."
+  },
+  "V20-15": {
+   "zh": "on simple presentation of …",
+   "exZh": "Entry is free on simple presentation of a student card."
+  },
+  "V20-16": {
+   "zh": "unlimited, as much as you like",
+   "exZh": "With this pass, you can travel as much as you like for a month."
+  },
+  "V20-17": {
+   "zh": "to take stock (of the results)",
+   "exZh": "Three years on, the town hall’s assessment of the reform is very positive."
+  },
+  "V20-18": {
+   "zh": "more and more crowded",
+   "exZh": "At rush hour, the carriages are more and more crowded."
+  },
+  "V20-19": {
+   "zh": "one doesn’t rule out the other",
+   "exZh": "You can like driving and take the train: one doesn’t rule out the other."
+  },
+  "V20-20": {
+   "zh": "in use, in practice",
+   "exZh": "The sofa looked comfortable in the shop, but in use it’s very hard."
+  },
+  "V20-21": {
+   "zh": "to make up the (price) difference",
+   "exZh": "It takes several years of driving to make up the price difference."
+  },
+  "V20-22": {
+   "zh": "a replacement coach",
+   "exZh": "During the works, replacement coaches run instead of trains."
+  },
+  "V20-23": {
+   "zh": "to die a slow death",
+   "exZh": "Having lost its customers, the little shop is dying a slow death."
+  },
+  "V20-24": {
+   "zh": "to play down the benefits",
+   "exZh": "The study plays down the climate benefits of remote work."
+  },
+  "V20-25": {
+   "zh": "to waste a lot of time",
+   "exZh": "Because of the works, we waste a lot of time every morning."
+  }
+ },
+ "title": "Complex comparisons",
+ "phase": "Argument, mediation and reporting"
+}

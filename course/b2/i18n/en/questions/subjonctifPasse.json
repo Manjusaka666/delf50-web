@@ -1,0 +1,47 @@
+{
+ "subjonctifPasse-01": {
+  "why": "être content que + subjonctif; getting the diploma is already done → subjonctif passé = subjunctive of avoir + past participle: que tu aies obtenu. as obtenu is indicative; aie is the first person form."
+ },
+ "subjonctifPasse-02": {
+  "why": "il est dommage que + subjonctif; partir takes être → qu’elle soit partie. ait is avoir (the wrong auxiliary); est is indicative."
+ },
+ "subjonctifPasse-03": {
+  "why": "bien que + subjonctif; the apology came before “the controversy continues” → subjonctif passé: ait présenté. a présenté is indicative and aurait présenté conditional; neither can follow bien que."
+ },
+ "subjonctifPasse-04": {
+  "why": "regretter que + subjonctif; the pronominal verb se rencontrer takes être → que nous nous soyons rencontrés. ayons is the wrong auxiliary; sommes is indicative."
+ },
+ "subjonctifPasse-05": {
+  "why": "le seul… qui is often followed by the subjunctive, and the action is complete → qu’il ait réussi (third person ait). aie is the first person form; réussir takes avoir, so est réussi is impossible."
+ },
+ "subjonctifPasse-06": {
+  "why": "il faut que + subjonctif; an action to be completed before a deadline → subjonctif passé: que vous ayez rempli. avez rempli / aviez rempli are both indicative."
+ },
+ "subjonctifPasse-07": {
+  "why": "douter que + subjonctif; arriver takes être and the subject is plural → qu’ils soient arrivés. aient is the wrong auxiliary; sont is indicative."
+ },
+ "subjonctifPasse-08": {
+  "why": "avant que + subjonctif; the subjunctive of avoir is nous ayons (no i). avons is indicative; ayions is a common misspelling."
+ },
+ "subjonctifPasse-09": {
+  "why": "la première… qui can be followed by the subjunctive; the passive subjonctif passé = ait été + past participle. aie is first person; the compound forms of être use avoir, so soit été is wrong."
+ },
+ "subjonctifPasse-10": {
+  "why": "sans que + subjonctif; the pronominal s’apercevoir takes être, and personne counts as masculine singular → s’en soit aperçu. ait aperçu has the wrong auxiliary; est aperçu is indicative."
+ },
+ "subjonctifPasse-11": {
+  "why": "être surpris que + subjonctif (a feeling); the refusal has happened → qu’elle ait refusé. a refusé / avait refusé are both indicative."
+ },
+ "subjonctifPasse-12": {
+  "why": "bien que + subjonctif; the pronominal se disputer takes être → qu’ils se soient disputés (the participle agrees with the plural subject). aient is the wrong auxiliary; sont is indicative."
+ },
+ "subjonctifPasse-13": {
+  "why": "attendre que + subjonctif; the arrival must be complete before “starting” → subjonctif passé: soient arrivés (être + agreement). sont arrivés is indicative; arriver doesn’t take avoir."
+ },
+ "subjonctifPasse-14": {
+  "why": "il est possible que + subjonctif; the passive in the past: qu’il ait été perdu. a été is indicative; soit été doesn’t exist (the compound tenses of être use avoir)."
+ },
+ "subjonctifPasse-15": {
+  "why": "regretter que + subjonctif; pouvoir takes avoir → que vous n’ayez pas pu. avez is indicative; soyez is the wrong auxiliary."
+ }
+}

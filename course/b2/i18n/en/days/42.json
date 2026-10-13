@@ -1,0 +1,226 @@
+{
+ "canDo": "Can use the Mock 1 error log to pin down 3–4 recurring grammar errors (e.g. bien que + subjunctive, après que + indicative, dont/que, past participle agreement), state the rules, and use them without a single slip in a 250-word forum post.",
+ "review": "Review the Day 41 error log, focusing on subjunctive triggers (bien que, à moins que, sans que, pour que), the relative pronouns dont/lequel, the contrast in mood between après que and avant que, past participle agreement with a preceding object when the auxiliary is avoir, and the difference between formal and informal register.",
+ "input": "Read: a popular-science article on “mistakes and learning”, a column on automatic correction tools and a learners’ forum post; circle the structures related to your own errors as you read. Listen: an interview with a written-exam marker, a grammar column on “après que” and an ad for a media library writing workshop; note any advice you can use directly to check your own work.",
+ "output": "Write: a post on a learners’ forum (250+ words) giving your view on automatic correction tools, then revise it in three rounds using the “check one type of error at a time” method; speak: a 5-minute monologue on “should spelling mistakes rule candidates out of a job?”, then a debate on “simplifying French spelling”.",
+ "checkpoint": "0 personal recurring errors in the forum post and ≤3 grammar errors overall; can explain the 3 chosen rules aloud with 2 correct example sentences each; reading and listening accuracy ≥80%; all five errors in rewriting exercise A42-2 correctly fixed.",
+ "challenge": "Today’s challenge: find a grammar or writing exercise in TV5MONDE’s « Apprendre le français », then add the items you got wrong to your own “error notebook” (wrong sentence → rule → two new example sentences); redo the same exercise a week later and compare results.",
+ "items": {
+  "reading": {
+   "R42-1": {
+    "questions": [
+     {
+      "why": "Paragraph 1 sets out the core idea: « se tromper, à condition de comprendre pourquoi, serait l’un des moyens les plus efficaces d’apprendre », and the rest covers mechanisms, conditions and methods. B is touched on only indirectly in paragraph 4; C is the opposite of the article’s point."
+     },
+     {
+      "why": "A mistake triggers a « signal d’erreur » that forces the brain to adjust, which « améliorent souvent la mémorisation ». A: rankings aren’t mentioned; C is the opposite: « alors même que les élèves y obtiennent de mauvais résultats »."
+     },
+     {
+      "why": "The second group received corrections with explanations the next day, and after a term they « commettaient nettement moins d’erreurs récurrentes ». A isn’t mentioned; B is the opposite of the finding."
+     },
+     {
+      "why": "Paragraph 3 sets a first condition with « Encore faut-il que… » (timely feedback), and paragraph 4 adds another with « Reste un obstacle de taille » (overcoming fear of mistakes). A: there is no contradiction; C: paragraph 4 quotes a different trainer."
+     },
+     {
+      "why": "« Elle recommande de distinguer clairement les moments d’entraînement… des moments d’évaluation ». B is too extreme; C is exactly what she criticises."
+     },
+     {
+      "why": "être coutumier de qqch = to be in the habit of, to regularly (do something), here referring to mistakes you make again and again. Neither A nor B matches the meaning."
+     }
+    ]
+   },
+   "R42-2": {
+    "questions": [
+     {
+      "why": "Paragraph 2 acknowledges the tools’ benefits (« Certes… rendent de grands services »), and paragraphs 3–4 warn of the risks: a balanced position with reservations. A ignores the criticism; C: the author clearly says « Il serait absurde de les rejeter par principe »."
+     },
+     {
+      "why": "« Certes » marks a concession, followed by a list of three benefits. B is the opposite; C: the text gives no technical explanation."
+     },
+     {
+      "why": "« On clique, on accepte, on passe à la suite… sans que la règle ait jamais été intégrée ». A: the tool does make the correction every time; C isn’t mentioned."
+     },
+     {
+      "why": "aveugle literally means “blind”: trusting completely without judgement, even though the tool itself makes mistakes. A is the opposite; B isn’t what the word means."
+     },
+     {
+      "why": "The “teacher” helps us understand, while the “secretary” does the work for us; the author explains straight after: « se demander pourquoi avant de cliquer ». B and C are literal misreadings."
+     }
+    ]
+   },
+   "R42-3": {
+    "questions": [
+     {
+      "why": "Mei replies to the forum topic “how to stop making the same mistakes”, describing her error-notebook method and giving advice. B: her teacher is the one who helped her spot the problem; C: she isn’t asking a question."
+     },
+     {
+      "why": "« sur dix copies, j’avais oublié quinze fois le subjonctif »: writing a lot didn’t mean progress. A: she writes three essays a week, which isn’t little; C isn’t mentioned."
+     },
+     {
+      "why": "« je la recopie, j’écris la règle avec mes propres mots et j’invente deux phrases correctes ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "je vous l’accorde is a concession meaning “I grant you that”; here she admits the method is “not much fun”. A and C are meanings accorder can’t have in this context."
+     },
+     {
+      "why": "« Choisissez trois erreurs, pas plus ». A is the opposite of « ne cherchez pas à tout corriger en même temps »; C: she thinks writing more on its own doesn’t help."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L42-1": {
+    "questions": [
+     {
+      "why": "The host’s first question is about the most common mistakes in B2 papers, followed by task, register, grammar and checking methods. Neither B nor C is covered."
+     },
+     {
+      "why": "« La première, c’est de ne pas répondre à toute la consigne », and she stresses this has nothing to do with the quality of the language. A: she says what costs most is « pas forcément des fautes de grammaire »; C isn’t mentioned."
+     },
+     {
+      "why": "« commencent une lettre formelle très correctement, puis glissent vers des expressions familières ». A is the wrong way round; B isn’t mentioned."
+     },
+     {
+      "why": "« Une erreur systématique, on peut la cibler »: a few weeks of targeted practice is enough to gain marks. B and C are guesses."
+     },
+     {
+      "why": "« Faites plusieurs passages courts, chacun avec un objectif ». A is exactly what she advises against; B isn’t possible in the exam and isn’t mentioned."
+     }
+    ]
+   },
+   "L42-2": {
+    "questions": [
+     {
+      "why": "The whole segment is about whether « après que » takes the indicative or the subjunctive. Neither B nor C is covered."
+     },
+     {
+      "why": "« Par analogie avec “avant que”, qui, lui, est suivi du subjonctif ». A and C are unfounded guesses."
+     },
+     {
+      "why": "« “Après que”… renvoie à un fait accompli, réel, d’où l’indicatif ». A is the reason avant que takes the subjunctive; B: with the same subject he recommends the infinitive instead, which isn’t a reason for the indicative."
+     },
+     {
+      "why": "« après son départ » / « après être parti »: « en cas de doute, un nom ou un infinitif ! ». A is exactly the incorrect usage; C isn’t mentioned."
+     }
+    ]
+   },
+   "L42-3": {
+    "questions": [
+     {
+      "why": "« il ne s’agit pas d’un service de correction : c’est vous qui réécrivez, elle vous guide ». A is explicitly ruled out; C isn’t mentioned."
+     },
+     {
+      "why": "« par groupes de six personnes au maximum ». « dix-huit » is the start time (18:00), a number used as a distractor."
+     },
+     {
+      "why": "« afin de pouvoir comparer vos erreurs d’une copie à l’autre ». Neither A nor B is mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V42-01": {
+   "zh": "to make the most of, to benefit from",
+   "exZh": "Good learners know how to make the most of their mistakes."
+  },
+  "V42-02": {
+   "zh": "to turn the perspective around, to see things the other way",
+   "exZh": "These studies turn the perspective around: a mistake is no longer a failing but a tool."
+  },
+  "V42-03": {
+   "zh": "to stick (in memory) for the long term",
+   "exZh": "A rule understood after a mistake is more likely to stick in the long term."
+  },
+  "V42-04": {
+   "zh": "even when, precisely when",
+   "exZh": "Pre-tests help memory even when the results are poor."
+  },
+  "V42-05": {
+   "zh": "a recurring error",
+   "exZh": "Leaving out the subjunctive is a recurring error in his papers."
+  },
+  "V42-06": {
+   "zh": "to venture a hypothesis, to hazard a guess",
+   "exZh": "Rather than copying your neighbour’s answer, venture your own hypothesis."
+  },
+  "V42-07": {
+   "zh": "the slightest mistake",
+   "exZh": "In a contract, the slightest mistake can have serious consequences."
+  },
+  "V42-08": {
+   "zh": "to be prone to, to regularly make (a type of mistake)",
+   "exZh": "This candidate is prone to agreement errors."
+  },
+  "V42-09": {
+   "zh": "to face up to (a problem, a fact)",
+   "exZh": "To make progress, you have to accept facing up to your weaknesses."
+  },
+  "V42-10": {
+   "zh": "to be a great help, to be very useful",
+   "exZh": "This online dictionary was a great help during my studies."
+  },
+  "V42-11": {
+   "zh": "to give someone a complex",
+   "exZh": "For a long time, his accent gave him a complex about speaking in meetings."
+  },
+  "V42-12": {
+   "zh": "blind trust",
+   "exZh": "You shouldn’t place blind trust in machine translation."
+  },
+  "V42-13": {
+   "zh": "the price to pay (for it)",
+   "exZh": "Reading it three times takes time, but it’s the price to pay for an error-free paper."
+  },
+  "V42-14": {
+   "zh": "to stay in control of",
+   "exZh": "With or without tools, authors must stay in control of their text."
+  },
+  "V42-15": {
+   "zh": "to keep a notebook (e.g. of errors, of vocabulary)",
+   "exZh": "Since September, she has kept a notebook of her mistakes."
+  },
+  "V42-16": {
+   "zh": "the results are there to see",
+   "exZh": "The method is demanding, but the results are there to see: he gained four marks."
+  },
+  "V42-17": {
+   "zh": "to slide into, to drift towards",
+   "exZh": "His letter starts well, then drifts into an overly casual tone."
+  },
+  "V42-18": {
+   "zh": "if I understand you correctly",
+   "exZh": "If I understand you correctly, rather than revising everything, I should target three errors?"
+  },
+  "V42-19": {
+   "zh": "to get round the difficulty, to sidestep a problem",
+   "exZh": "If you’re unsure which mood to use, sidestep the problem: use a noun."
+  },
+  "V42-20": {
+   "zh": "by analogy with",
+   "exZh": "By analogy with avant que, many people use the subjunctive after après que."
+  },
+  "V42-21": {
+   "zh": "a fait accompli",
+   "exZh": "The decision was made without us: we were presented with a fait accompli."
+  },
+  "V42-22": {
+   "zh": "(a mistake) to be picked up, to be flagged",
+   "exZh": "In the written exam, this mistake is bound to be picked up by the marker."
+  },
+  "V42-23": {
+   "zh": "to spot one’s own mistakes",
+   "exZh": "The workshop teaches you to spot your own mistakes before handing in your paper."
+  },
+  "V42-24": {
+   "zh": "only afterwards",
+   "exZh": "I write without any tools first and only open the correction software afterwards."
+  },
+  "V42-25": {
+   "zh": "to level down, to lower standards",
+   "exZh": "Abolishing difficult rules amounts to lowering standards."
+  }
+ },
+ "title": "Repair day I: grammar and writing",
+ "phase": "Mock exams, repair and the bridge to C1"
+}

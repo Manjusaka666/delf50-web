@@ -14,6 +14,8 @@
 
 所有作答、草稿、写作、录音都实时保存在账号中（Neon Postgres + Cloudflare R2），浏览器里不存任何学习数据。
 
+界面语言可在中文与 English 之间随时切换（顶栏、登录页或设置），选择保存在账号里、跟随到所有设备。切换只改变讲解、释义和界面文字，法语材料、题目与答案不变；学习记录与语言无关，用哪种语言作答，存下的都完全相同。听力朗读使用设备自带的法语语音（Web Speech API），可在设置中选择声音和语速。
+
 ## 结构
 
 ```
@@ -27,7 +29,10 @@ app/                前端（原生 ES 模块，无构建步骤）
   store.js          载入与实时保存（差量批次、重试、多设备刷新）
   sync-core.js      状态差量算法（前端与测试共用）
   media.js          录音分段上传 / 下载（经 API 存入 R2）
-  speech.js         听力的法语语音合成
+  speech.js         听力的法语朗读（Web Speech API：逐句朗读、对话双声、暂停续读、上一句 / 下一句、选声与语速）
+  i18n.js  i18n/   界面语言与文案目录（zh-CN.js · en.js）
+  content.js        课程译文叠加（localize）与原文取回（canonical）
+  settings.js       账号级偏好：界面语言、外观、朗读声音与语速
   ui.js             模板、法语排版（窄不换行空格、’）、图标、格式化（瑞士时间）
   app.css           设计系统
 course/             DELF B1 课程数据（唯一题库）
@@ -36,6 +41,7 @@ course/             DELF B1 课程数据（唯一题库）
   questions/        每个语法点一个题库（按需加载）；Day 1–40 依次使用各题库开头的题，补练从其后继续
   days/01–50.json   每天的阅读、听力、写作、口语、应用题目，语法题 ID，45 个词块
   b2/               DELF B2 课程，结构相同（course.json · grammar.json · questions/ · days/），含 B2→C1 衔接
+  i18n/en/  b2/i18n/en/   课程的英文译文：与原文同形，只含中文讲解 / 释义的译文
 fonts/              自托管字体（EB Garamond、Plus Jakarta Sans，OFL）
 api/v1.js           API（Vercel 函数）：Neon Auth 代理、bootstrap、sync、media、vocab
 api/_lib/           records.js（状态 ↔ 数据表映射）、session、db、r2、media、vocab、courses
@@ -61,6 +67,7 @@ scripts/            检查与运维脚本
 | `review` | `"<天>:<g\|v>:<来源天>:<题或词块>"` = 当天完成的复习项 | `review_answers` |
 | `remedial` | Day 41–50 锁定的补练语法点 | `study_state.doc` |
 
+账号级偏好（界面语言 `locale`、外观 `theme`、朗读声音 `voice`、语速 `rate`）不是学习记录，存于 `user_settings`（`GET/PUT /api/v1/settings`，PUT 为合并），不区分课程。
 每条记录是一行，按 `(user_id, course, key)` 存储，行级安全按用户隔离。保存是差量的：每次修改在 60–300 ms 内只发送变化的行；重放同一批次不会改变数据。服务器上以其他键存储的列表行（例如数据迁移改写过的行）会在下次保存时原地改名，不会重复或丢失。
 
 完成度从记录推导：阅读 / 听力的一篇在所有题都作答后完成；写作、应用、口语在有提交后完成；词块在自评后完成；一天在当前强度下的所有模块都完成后完成。
@@ -72,6 +79,7 @@ scripts/            检查与运维脚本
 ```bash
 node scripts/verify.js        # 两门课程的数据（逐天逐项）、每日计划、进度引擎、状态操作、拼写核对、法语排版、模块图
 node scripts/check-course.js course/b2   # 单独校验一门课程
+node scripts/check-i18n.js    # 界面文案目录与课程译文：覆盖完整、键与原文一致、法语词 / 数字 / 标签未被改动
 node scripts/verify-cloud.js  # 单元 + API（真实 PostgreSQL）+ 浏览器端到端（Chromium）
 ```
 
@@ -83,8 +91,16 @@ node scripts/verify-cloud.js  # 单元 + API（真实 PostgreSQL）+ 浏览器�
 
 Vercel（fra1）：静态文件 + `api/v1.js`。环境变量：`DATABASE_URL`（`delf50_api` 角色）、`NEON_AUTH_BASE_URL`、`R2_ACCOUNT_ID`、`R2_ACCESS_KEY_ID`、`R2_SECRET_ACCESS_KEY`、`R2_BUCKET`。数据库结构变更：`DATABASE_URL=<owner> node scripts/db-migrate.js`。
 
+界面语言与朗读偏好需要迁移 `0007_user_settings`（只新增 `user_settings` 表，不改动任何已有表或记录）。部署前后都可执行：迁移之前 `settings` 接口返回 `available: false`，前端照常运行，只是偏好暂不跨设备保存。
+
 `vercel.json` 设置内容安全策略和缓存：`app/`、`course/` 每次重新验证（ETag），字体长期缓存。
 
 ## 多级别
 
 存储层按课程划分（`?course=`，默认 `delf-b1`）；前端地址带级别（`#/b1/…`、`#/b2/…`，不带级别的旧链接打开 B1），登录后打开地址中的级别，否则打开最近学习的级别。见 [docs/multi-level-architecture.md](docs/multi-level-architecture.md)。
+
+## 界面语言
+
+界面文字全部来自文案目录 `app/i18n/<locale>.js`。课程中写给学习者的中文（讲解、释义、目标、题目解析）由课程自带的译文提供：`course/i18n/<locale>/` 与原文同形，`localize()` 只会替换含中文的字符串，因此法语材料、选项和答案不可能被译文改动；被替换的原文仍可经 `canonical()` 取回，记录（如错题解析、题干）始终按原文保存。错题本在其他语言下按原文查找对应译文显示。
+
+新增一种语言：加一个文案目录、在 `LOCALES` 中登记，并为每门课程提供 `i18n/<locale>/`；`check-i18n.js` 会逐条报告缺漏与不一致。设计说明见 [docs/i18n-and-speech.md](docs/i18n-and-speech.md)。

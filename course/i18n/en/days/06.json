@@ -1,0 +1,299 @@
+{
+ "canDo": "Can relate journeys — leaving, arriving, coming back — and handle basic agreement.",
+ "review": "Review D5; add aller/venir/partir/arriver/rentrer and similar verbs.",
+ "input": "Listening: getting around on a trip; reading: a trip recap/a travel incident.",
+ "output": "Write 90 words about a trip; speak for 90 seconds with at least 4 être verbs.",
+ "checkpoint": "Can explain why être is used; aware of agreement with feminine/plural subjects.",
+ "challenge": "Today’s challenge: think of your latest trip (even just to a nearby town) and write 6 sentences describing leaving, arriving and coming back, with at least 4 verbs that take être (partir, arriver, rester, rentrer…); then check the gender and number agreement of every past participle.",
+ "items": {
+  "reading": {
+   "R06-1": {
+    "questions": [
+     {
+      "why": "marché is a Saturday activity; the departure time itself is not a problem."
+     },
+     {
+      "why": "« Léa est redescendue tout de suite »; the parents only arrived on Sunday."
+     },
+     {
+      "why": "mardi is the day of the return journey, vendredi the day of departure."
+     }
+    ]
+   },
+   "R06-2": {
+    "questions": [
+     {
+      "why": "The ticket goes to Amboise; the train was going the right way — it was the station he got off at that was wrong."
+     },
+     {
+      "why": "« sans supplément » rules out paying extra; the inspector hadn’t come by yet."
+     },
+     {
+      "why": "The concluding sentence says the exact opposite of the third option."
+     }
+    ]
+   },
+   "R06-3": {
+    "questions": [
+     {
+      "why": "The entorse is the only reason; « plus long » describes the way down."
+     },
+     {
+      "why": "« un autre chemin, plus long mais moins raide » is an explicit comparison."
+     },
+     {
+      "why": "« vingt minutes d'avance sur l'horaire annoncé » — note the difference between avance and retard."
+     }
+    ]
+   },
+   "R06-4": {
+    "questions": [
+     {
+      "why": "« ce que je ne fais jamais le jeudi » is the key aside; Mme Ferrand had already moved back in the spring."
+     },
+     {
+      "why": "au printemps is when she moved back, not where she went after moving away."
+     },
+     {
+      "why": "« l'impression d'avoir retrouvé quelque chose » + planning to take the same way again."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L06-1": {
+    "questions": [
+     {
+      "why": "« Non, en train » is a direct answer; the car is still at the garage."
+     },
+     {
+      "why": "He has to go back on Saturday, so he hasn’t picked it up yet."
+     }
+    ]
+   },
+   "L06-2": {
+    "questions": [
+     {
+      "why": "« Il est complet, sauf l'attestation d'assurance » is the key information."
+     },
+     {
+      "why": "The text says délai plus long; it doesn’t say the application was refused."
+     },
+     {
+      "why": "It’s his colleague who is on leave, not Mme Roux."
+     }
+    ]
+   },
+   "L06-3": {
+    "questions": [
+     {
+      "why": "Compare 410 (paying) with 200 (free); the last sentence points out the surprise."
+     },
+     {
+      "why": "« entièrement reversés » rules out any other use."
+     },
+     {
+      "why": "These thirty people are precisely the ones who did not take part in the walk."
+     }
+    ]
+   },
+   "L06-4": {
+    "questions": [
+     {
+      "why": "She had an address and her luggage; the problem was with checking her documents."
+     },
+     {
+      "why": "« une amie d'amie » is a friend of a friend."
+     },
+     {
+      "why": "deux ans is how long she has been in France."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V06-01": {
+   "zh": "to go on holiday",
+   "exZh": "Last summer, we went on holiday to the Ardèche."
+  },
+  "V06-02": {
+   "zh": "to break down",
+   "exZh": "The car broke down on the first day."
+  },
+  "V06-03": {
+   "zh": "to get on the train / the bus",
+   "exZh": "I got on the regional train at Tours."
+  },
+  "V06-04": {
+   "zh": "to get off at the wrong station",
+   "exZh": "I got off at the wrong station."
+  },
+  "V06-05": {
+   "zh": "to run into someone",
+   "exZh": "I ran into Madame Ferrand, my former neighbour."
+  },
+  "V06-06": {
+   "zh": "to go via …",
+   "exZh": "I went through the park, which I never do on Thursdays."
+  },
+  "V06-07": {
+   "zh": "to walk home",
+   "exZh": "On Thursday evening, I walked home."
+  },
+  "V06-08": {
+   "zh": "to come and join someone",
+   "exZh": "On Sunday, my parents came to join us."
+  },
+  "V06-09": {
+   "zh": "… ago",
+   "exZh": "Amina arrived in France two years ago."
+  },
+  "V06-10": {
+   "zh": "How did … go?",
+   "exZh": "How did your first days in France go?"
+  },
+  "V06-11": {
+   "zh": "to get off the plane",
+   "exZh": "I got off the plane with two suitcases and an address."
+  },
+  "V06-12": {
+   "zh": "to go straight to …",
+   "exZh": "I went straight to the residence."
+  },
+  "V06-13": {
+   "zh": "to stand still, to be stopped",
+   "exZh": "The train was stopped for an hour because of a problem on the line."
+  },
+  "V06-14": {
+   "zh": "the next train",
+   "exZh": "The next train leaves thirty-five minutes later."
+  },
+  "V06-15": {
+   "zh": "to stay calm",
+   "exZh": "The agent stayed very calm."
+  },
+  "V06-16": {
+   "zh": "at no extra cost",
+   "exZh": "He put me on the next train, at no extra cost."
+  },
+  "V06-17": {
+   "zh": "… early, ahead of time",
+   "exZh": "The group got back twenty minutes ahead of the announced time."
+  },
+  "V06-18": {
+   "zh": "to go on leave",
+   "exZh": "My colleague went on leave on Friday."
+  },
+  "V06-19": {
+   "zh": "to be in a meeting",
+   "exZh": "I came by your office, but you were in a meeting."
+  },
+  "V06-20": {
+   "zh": "according to …",
+   "exZh": "There were four hundred and ten walkers, according to the organisers."
+  },
+  "V06-21": {
+   "zh": "to expect …",
+   "exZh": "The organisers didn’t expect such a success."
+  },
+  "V06-22": {
+   "zh": "to make a detour",
+   "exZh": "With the roadworks, I have to make a detour through the centre."
+  },
+  "V06-23": {
+   "zh": "to find a compromise",
+   "exZh": "We can find a compromise: go by train and come back by bus."
+  },
+  "V06-24": {
+   "zh": "it seems to me + adjective + to …",
+   "exZh": "It seems simpler to me to take the train."
+  },
+  "V06-25": {
+   "zh": "to go up to the top of …",
+   "exZh": "On Saturday, we went up to the top of the tower."
+  },
+  "V06-26": {
+   "zh": "to walk past …",
+   "exZh": "I walked past a bookshop you’d really like."
+  },
+  "V06-27": {
+   "zh": "to be afraid of heights",
+   "exZh": "Léa came straight back down: she’s afraid of heights."
+  },
+  "V06-28": {
+   "zh": "to go as far as …",
+   "exZh": "My ticket went as far as Amboise."
+  },
+  "V06-29": {
+   "zh": "to be of use to someone",
+   "exZh": "My story may be of use to other travellers."
+  },
+  "V06-30": {
+   "zh": "to reach the foot of …",
+   "exZh": "The pupils reached the foot of the plateau around nine."
+  },
+  "V06-31": {
+   "zh": "to go and live with someone",
+   "exZh": "She went to live with her daughter."
+  },
+  "V06-32": {
+   "zh": "to feel as if …",
+   "exZh": "I felt as if I’d found an old friend again."
+  },
+  "V06-33": {
+   "zh": "to come back by road",
+   "exZh": "Did you come back by road?"
+  },
+  "V06-34": {
+   "zh": "to check with someone",
+   "exZh": "I went to check with my colleague."
+  },
+  "V06-35": {
+   "zh": "a complete application (file)",
+   "exZh": "To register, you must hand in a complete application."
+  },
+  "V06-36": {
+   "zh": "to start charging (become paying)",
+   "exZh": "This year, the walk started charging."
+  },
+  "V06-37": {
+   "zh": "to become free (a room, a place)",
+   "exZh": "A room became free on the Tuesday."
+  },
+  "V06-38": {
+   "zh": "a temporary stop",
+   "exZh": "You have to walk eight minutes to the temporary stop."
+  },
+  "V06-39": {
+   "zh": "to be temporarily moved",
+   "exZh": "Because of the works, the tram stop has been temporarily moved."
+  },
+  "V06-40": {
+   "zh": "departing from …",
+   "exZh": "The coach from Lyon arrives at 18:00."
+  },
+  "V06-41": {
+   "zh": "to pack one’s bags",
+   "exZh": "We packed our bags the day before we left."
+  },
+  "V06-42": {
+   "zh": "to go abroad",
+   "exZh": "I went abroad for the first time at twenty."
+  },
+  "V06-43": {
+   "zh": "to hire a car",
+   "exZh": "In Nîmes, we hired a car."
+  },
+  "V06-44": {
+   "zh": "a stay of + duration",
+   "exZh": "We had a two-week stay in Brittany."
+  },
+  "V06-45": {
+   "zh": "to come back from a trip",
+   "exZh": "We came back from our trip on Sunday evening."
+  }
+ },
+ "title": "Past events: être",
+ "phase": "Foundations and grammar on autopilot"
+}

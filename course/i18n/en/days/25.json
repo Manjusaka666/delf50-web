@@ -1,0 +1,225 @@
+{
+ "canDo": "Can state a clear position with two developed reasons, expressing necessity or wishes with il faut que / vouloir que and the like.",
+ "review": "Review cause and effect and organising words; learn the high-frequency subjonctif triggers.",
+ "input": "Listening and reading on school/study issues.",
+ "output": "Write a 150-word opinion; give a spoken opinion in 3 minutes.",
+ "checkpoint": "The opinion has two developed reasons; at least 3 subjonctif structures of necessity/wish done correctly.",
+ "challenge": "Today’s challenge: on “Should secondary-school pupils wear a uniform every day?”, write a 6-sentence opinion: take a clear position, give 2 reasons and use the subjunctive at least 2 times (Il faut que… / Je voudrais que…); you can first find a short text about school on TV5MONDE or Le Point du FLE for ideas.",
+ "items": {
+  "reading": {
+   "R25-1": {
+    "questions": [
+     null,
+     {
+      "why": "« ça correspond à combien ? » — showing that what really works is having something at stake tied to the result."
+     }
+    ]
+   },
+   "R25-4": {
+    "questions": [
+     null,
+     {
+      "why": "« les conflits n'ont pas diminué, ils se sont déplacés », and by the afternoon they have already taken shape."
+     },
+     {
+      "why": "« le vide en collège ne reste jamais vide » — the sports hall, table-tennis tables, the library without booking."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L25-2": {
+    "questions": [
+     null,
+     {
+      "why": "She gives her sister’s example: a 12 at a struggling lycée can’t be compared with a 15 elsewhere."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V25-01": {
+   "zh": "it is necessary that …, … must …",
+   "exZh": "The collège must offer a supervised hour for doing homework."
+  },
+  "V25-02": {
+   "zh": "to want (someone) to …",
+   "exZh": "I’d like the university to give first-year students better support."
+  },
+  "V25-03": {
+   "zh": "it is essential that …",
+   "exZh": "It is essential that every pupil can work in peace and quiet."
+  },
+  "V25-04": {
+   "zh": "provided that …",
+   "exZh": "I’m in favour of homework, provided the collège offers an hour to do it on site."
+  },
+  "V25-05": {
+   "zh": "my position is as follows: …",
+   "exZh": "My position is as follows: I’m in favour of homework, provided it’s done at school."
+  },
+  "V25-06": {
+   "zh": "to support a measure",
+   "exZh": "I support the measure, but I think that applied on its own it will fail."
+  },
+  "V25-07": {
+   "zh": "an argument in favour of …",
+   "exZh": "Here’s an argument in favour of the ban: conflicts start online."
+  },
+  "V25-08": {
+   "zh": "on principle",
+   "exZh": "I’m not against uniforms on principle."
+  },
+  "V25-09": {
+   "zh": "to agree on one point",
+   "exZh": "We agree on one point: the current situation is not satisfactory."
+  },
+  "V25-10": {
+   "zh": "I’d like to qualify that",
+   "exZh": "I’d like to qualify that: what declines with age is mainly pronunciation."
+  },
+  "V25-11": {
+   "zh": "I don’t deny it",
+   "exZh": "Young people read fewer books, I don’t deny it."
+  },
+  "V25-12": {
+   "zh": "to change one’s mind",
+   "exZh": "If these support hours can’t be guaranteed, I’ll change my mind."
+  },
+  "V25-13": {
+   "zh": "to draw a conclusion (from …)",
+   "exZh": "All that is accurate, but I draw a different conclusion from it."
+  },
+  "V25-14": {
+   "zh": "to suit nobody",
+   "exZh": "The current situation suits nobody, neither students nor teachers."
+  },
+  "V25-15": {
+   "zh": "as a …, in one’s capacity as …",
+   "exZh": "I’m responding to the consultation as a collège teacher."
+  },
+  "V25-16": {
+   "zh": "on this specific point",
+   "exZh": "On this specific point, the data are clear."
+  },
+  "V25-17": {
+   "zh": "to be wary of …",
+   "exZh": "Selecting on lycée marks? I’m wary of that criterion."
+  },
+  "V25-18": {
+   "zh": "to oppose …",
+   "exZh": "If people also want a uniform, I won’t oppose it."
+  },
+  "V25-19": {
+   "zh": "to give a favourable / unfavourable opinion",
+   "exZh": "I’m going to give an unfavourable opinion on repeating the year."
+  },
+  "V25-20": {
+   "zh": "the question of … arises",
+   "exZh": "The results are inadequate: the question of repeating the year arises."
+  },
+  "V25-21": {
+   "zh": "it is necessary that … (necessity)",
+   "exZh": "It is necessary for the school to offer a supervised homework hour."
+  },
+  "V25-22": {
+   "zh": "to widen inequalities",
+   "exZh": "People immediately reply that homework widens inequalities."
+  },
+  "V25-23": {
+   "zh": "to be about, to focus on …",
+   "exZh": "The debate is about the number of books read per year."
+  },
+  "V25-24": {
+   "zh": "to have the basics",
+   "exZh": "He doesn’t have the basics to follow next year’s course."
+  },
+  "V25-25": {
+   "zh": "to make someone repeat a year / to repeat a year",
+   "exZh": "Should this pupil repeat the year?"
+  },
+  "V25-26": {
+   "zh": "academic support, tutoring",
+   "exZh": "I propose two hours of tutoring a week."
+  },
+  "V25-27": {
+   "zh": "success at school",
+   "exZh": "This is the figure that best predicts success at school."
+  },
+  "V25-28": {
+   "zh": "academic guidance (choice of track)",
+   "exZh": "These marks count for the choice of track at the end of troisième (the last year of collège)."
+  },
+  "V25-29": {
+   "zh": "a mark out of twenty",
+   "exZh": "Replacing a mark out of twenty with four colours changes nothing."
+  },
+  "V25-30": {
+   "zh": "to hand in an assignment",
+   "exZh": "Pupils must hand in their assignment before Friday."
+  },
+  "V25-31": {
+   "zh": "to have a lot at stake",
+   "exZh": "With only six marks a term, a pupil has a lot at stake in every assignment."
+  },
+  "V25-32": {
+   "zh": "to have (at one’s disposal)",
+   "exZh": "A pupil who has a desk and an adult on hand works better."
+  },
+  "V25-33": {
+   "zh": "to have a hold on, to have control over …",
+   "exZh": "The conflicts start online at lunchtime: we no longer have any control over them."
+  },
+  "V25-34": {
+   "zh": "a lost cause from the start",
+   "exZh": "Starting a language at forty isn’t a lost cause from the start."
+  },
+  "V25-35": {
+   "zh": "to decline with age",
+   "exZh": "What declines with age is mainly acquiring a native accent."
+  },
+  "V25-36": {
+   "zh": "to hold a conversation",
+   "exZh": "Six years later, I read the papers and hold a conversation."
+  },
+  "V25-37": {
+   "zh": "beyond a certain age",
+   "exZh": "Beyond a certain age, people don’t like speaking like a child."
+  },
+  "V25-38": {
+   "zh": "to put something in its place",
+   "exZh": "Banning without putting anything in its place produces twenty minutes of emptiness."
+  },
+  "V25-39": {
+   "zh": "at break time",
+   "exZh": "At break time, many pupils stay on their screens."
+  },
+  "V25-40": {
+   "zh": "to express a reservation",
+   "exZh": "I support the measure, but I have a reservation about how it is applied."
+  },
+  "V25-41": {
+   "zh": "to erase social differences",
+   "exZh": "They say uniforms erase social differences."
+  },
+  "V25-42": {
+   "zh": "… being free of charge",
+   "exZh": "I propose making outings and school supplies free of charge."
+  },
+  "V25-43": {
+   "zh": "neither one nor the other",
+   "exZh": "What we have today is neither one nor the other."
+  },
+  "V25-44": {
+   "zh": "at the same level",
+   "exZh": "At the same level, a pupil who repeats a year makes less progress."
+  },
+  "V25-45": {
+   "zh": "to differ from someone",
+   "exZh": "That’s where I differ from some of my colleagues."
+  }
+ },
+ "title": "Opinion I: position and reasons",
+ "phase": "Transfer to real tasks"
+}

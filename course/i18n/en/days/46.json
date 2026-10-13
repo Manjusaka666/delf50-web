@@ -1,0 +1,234 @@
+{
+ "canDo": "Organise written and spoken output faster, and cut down on “I know it but can’t get it out”.",
+ "review": "Review your personal high-frequency chunks and connectors.",
+ "input": "A little input, just to spark opinions.",
+ "output": "2 writing outlines + 1 full essay; 3 speaking rounds.",
+ "checkpoint": "Planning stage ≤10 minutes; can point out pauses in speaking and re-record.",
+ "challenge": "Today’s challenge: an “output speed-up” session. Pick any social topic from RFI’s « Journal en français facile »; in a timed 2 minutes, outline position – 2 arguments – 1 example – 1 concession; then write the 160 words in 20 minutes and record 3 minutes of speaking from the same outline. Look up 3 expressions you wanted to say but couldn’t, in writing or speaking, and add them to your personal chunk list.",
+ "items": {
+  "reading": {
+   "R46-1": {
+    "questions": [
+     {
+      "why": "It contrasts “parents who ask for the report card” with “parents who only discover problems at the end of term”."
+     }
+    ]
+   },
+   "R46-2": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "The text lists caring for a sick person, childcare and work needs."
+     }
+    ]
+   },
+   "R46-3": {
+    "questions": [
+     null,
+     {
+      "why": "The example shows that a correct refusal was in fact penalised."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L46-4": {
+    "questions": [
+     {
+      "why": "Example: steady at 85, while someone of 70 shouldn’t drive at night."
+     },
+     null,
+     null,
+     {
+      "why": "The closing sentence gives this judgement."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V46-01": {
+   "zh": "it’s not a question of …, it’s a question of …",
+   "exZh": "It’s not a question of opening hours, it’s a question of location."
+  },
+  "V46-02": {
+   "zh": "to forbid oneself to …",
+   "exZh": "Don’t let yourself reread before the end."
+  },
+  "V46-03": {
+   "zh": "to be poorly rated",
+   "exZh": "Several very poorly rated counters changed their opening hours."
+  },
+  "V46-04": {
+   "zh": "to have nothing to do with …",
+   "exZh": "The competition has nothing to do with the regulations."
+  },
+  "V46-05": {
+   "zh": "to suffer the consequences of …",
+   "exZh": "The participant makes a mistake and suffers the consequences at once."
+  },
+  "V46-06": {
+   "zh": "to capture attention",
+   "exZh": "In a quiz, it’s the score that captures attention."
+  },
+  "V46-07": {
+   "zh": "to broach a subject",
+   "exZh": "Giving up driving is a subject that is often badly handled."
+  },
+  "V46-08": {
+   "zh": "to be afraid that …",
+   "exZh": "They are afraid their licence will be taken away."
+  },
+  "V46-09": {
+   "zh": "not to be representative",
+   "exZh": "With seven per cent of people responding, the result isn’t representative."
+  },
+  "V46-10": {
+   "zh": "wrongly",
+   "exZh": "This official wrongly approved the application."
+  },
+  "V46-11": {
+   "zh": "the triggering event",
+   "exZh": "Start with the triggering event: “On 12 March, I noticed that…”"
+  },
+  "V46-12": {
+   "zh": "to follow … closely",
+   "exZh": "An informed parent follows their child’s schooling closely."
+  },
+  "V46-13": {
+   "zh": "if time allows",
+   "exZh": "You’ll correct this word when you check, if time allows."
+  },
+  "V46-14": {
+   "zh": "the prevailing talk",
+   "exZh": "I’d rather say it, because the prevailing talk is too enthusiastic."
+  },
+  "V46-15": {
+   "zh": "to be opposed to …",
+   "exZh": "About fifteen per cent of spectators are still opposed to the measure."
+  },
+  "V46-16": {
+   "zh": "not to be trivial",
+   "exZh": "The reasons this minority gives are not trivial."
+  },
+  "V46-17": {
+   "zh": "travel time, commuting time",
+   "exZh": "These hours cut some employees’ commuting time."
+  },
+  "V46-18": {
+   "zh": "difficulty concentrating",
+   "exZh": "Students report difficulty concentrating at home."
+  },
+  "V46-19": {
+   "zh": "to come into force",
+   "exZh": "Will the new arrangement come into force at the start of the school year?"
+  },
+  "V46-20": {
+   "zh": "what about …?",
+   "exZh": "And what about pupils who finish later?"
+  },
+  "V46-21": {
+   "zh": "it would be desirable for … (formal suggestion)",
+   "exZh": "It would be desirable for families to be consulted before the decision."
+  },
+  "V46-22": {
+   "zh": "by way of example",
+   "exZh": "By way of example, two secondary schools chose a delay of forty-eight hours."
+  },
+  "V46-23": {
+   "zh": "taking … into account",
+   "exZh": "The choice has to take everyone’s constraints into account."
+  },
+  "V46-24": {
+   "zh": "to group … by area",
+   "exZh": "Some organisations grouped home visits by area."
+  },
+  "V46-25": {
+   "zh": "the core hours",
+   "exZh": "With flexitime, everyone is present during the core hours, from 10:00 to 16:00."
+  },
+  "V46-26": {
+   "zh": "we should stop …-ing",
+   "exZh": "We should stop setting modernity against short opening hours."
+  },
+  "V46-27": {
+   "zh": "on the substance",
+   "exZh": "On the substance, we don’t disagree."
+  },
+  "V46-28": {
+   "zh": "to lecture someone",
+   "exZh": "We should stop lecturing shopkeepers who close early."
+  },
+  "V46-29": {
+   "zh": "to barely cover …",
+   "exZh": "The extra takings barely covered the cost of the employee."
+  },
+  "V46-30": {
+   "zh": "the real issue",
+   "exZh": "Travel time is the real issue, and nobody talks about it."
+  },
+  "V46-31": {
+   "zh": "in the course of …",
+   "exZh": "Checking while you write costs a lot of time."
+  },
+  "V46-32": {
+   "zh": "in a situation of uncertainty",
+   "exZh": "Games teach you to decide in a situation of uncertainty."
+  },
+  "V46-33": {
+   "zh": "to give a reason",
+   "exZh": "The spectators who are opposed give serious reasons."
+  },
+  "V46-34": {
+   "zh": "to demand … of someone",
+   "exZh": "What can we demand of a paying audience?"
+  },
+  "V46-35": {
+   "zh": "a well-founded reason",
+   "exZh": "His application was refused for a well-founded reason."
+  },
+  "V46-36": {
+   "zh": "to say nothing about …",
+   "exZh": "This rating says almost nothing about the quality of the service."
+  },
+  "V46-37": {
+   "zh": "to take away someone’s licence",
+   "exZh": "After the accident, the judge suspended his licence for six months."
+  },
+  "V46-38": {
+   "zh": "without fear of …",
+   "exZh": "He can talk about his difficulties without fear of punishment."
+  },
+  "V46-39": {
+   "zh": "on both sides",
+   "exZh": "The feedback is positive on both sides."
+  },
+  "V46-40": {
+   "zh": "at the end of term",
+   "exZh": "Some parents only discover the problems at the end of term."
+  },
+  "V46-41": {
+   "zh": "to put off …",
+   "exZh": "Some teachers put off recording the mark."
+  },
+  "V46-42": {
+   "zh": "to drive at night",
+   "exZh": "Many participants already avoid driving at night."
+  },
+  "V46-43": {
+   "zh": "pupils’ well-being",
+   "exZh": "This reform must first improve pupils’ well-being."
+  },
+  "V46-44": {
+   "zh": "equal opportunities",
+   "exZh": "Automatic access to marks promotes equal opportunities."
+  },
+  "V46-45": {
+   "zh": "an administrative procedure",
+   "exZh": "At the end of each administrative procedure, the user can give a rating."
+  }
+ },
+ "title": "Output boost",
+ "phase": "Mock exams and repair"
+}

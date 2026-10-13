@@ -1,0 +1,229 @@
+{
+ "canDo": "Can complete all four parts back to back under real exam conditions (listening 30 minutes, reading 60 minutes, writing 60 minutes, speaking 30 minutes’ preparation + 20 minutes) with no overruns and no blank answers, and use inversion and expletive ne naturally in a formal letter.",
+ "review": "Review formal letter layout and the polite conditional (day 27) and concession and restriction (days 7 and 24), and consolidate the elegant style that bridges to C1: inversion (Peut-être objectera-t-on, Encore faut-il, Aussi me permettrai-je) and expletive ne (craindre que… ne, avant que… ne).",
+ "input": "Read: R47-1 on the return of the wolf to France (informative), R47-2 on teaching public speaking at school (opinion) and R47-3, a forum post (must cameras be on in video calls?); questions first, then the texts, within 60 minutes. Listen: the radio debate L47-1 twice, the interview L47-2 and the vox pop L47-3 once each, skimming the questions in the 30 seconds before each.",
+ "output": "Write: W47-1, a formal letter to the director of a media library, ≥ 250 words within 60 minutes, with at least one inversion and one expletive ne; speak: S47-1, a 6-minute monologue (a 110 km/h motorway speed limit), and S47-2, a 4–5-minute debate answering each of the examiner’s objections in turn.",
+ "checkpoint": "All four parts finished within the time limits; listening + reading accuracy ≥ 75%; letter ≥ 250 words with complete layout; monologue with a problem statement and an announced outline; after the exam, spend 10 minutes sorting wrong answers into “misunderstood / careless / ran out of time”.",
+ "challenge": "Today’s challenge: find a news item on wildlife protection, education or road safety on TV5MONDE or RFI’s « Journal en français facile »; time yourself strictly for 1 minute, listen once, write down 3 key facts, then add one reservation using Encore faut-il que….",
+ "items": {
+  "reading": {
+   "R47-1": {
+    "questions": [
+     {
+      "why": "The article covers, in turn, the wolf’s return (paragraph 1), farmers’ difficulties (paragraph 2), protective measures and their limits (paragraph 3), culling policy (paragraph 4) and the underlying issue (paragraph 5). A: the author doesn’t blame the farmers; C: the disappearance is only background at the start."
+     },
+     {
+      "why": "« revenu naturellement… protégé par le droit européen, l’animal profite aussi de forêts plus étendues et d’un gibier abondant ». A contradicts « naturellement »; B isn’t mentioned."
+     },
+     {
+      "why": "“Behind the figures lie sleepless nights”: besides the lost sheep, there are the farmers’ anxiety, exhaustion and sense of being abandoned (« un sentiment d’abandon »). B: the text doesn’t question the figures; C is a literal misreading."
+     },
+     {
+      "why": "« Encore faut-il pouvoir les mettre en place : sur certains alpages escarpés… les chiens de protection… inquiètent les randonneurs ». A contradicts « en grande partie financés par l’État »; B contradicts « réduisent sensiblement le nombre d’attaques »."
+     },
+     {
+      "why": "« les associations… la jugent contraire au statut d’espèce protégée, tandis que de nombreux éleveurs la trouvent bien trop timide ». A contradicts « pour ne pas menacer l’espèce »; C isn’t mentioned."
+     },
+     {
+      "why": "« la cohabitation se construit territoire par territoire, avec ceux qui vivent sur place, et non depuis un bureau parisien ». B is exactly the approach she rejects; C isn’t said."
+     }
+    ]
+   },
+   "R47-2": {
+    "questions": [
+     {
+      "why": "The author takes a first-person stance (« je voudrais rappeler une évidence… parler en public, cela s’apprend ») and argues for teaching speaking skills. A is wrong: he isn’t neutral; C: he doesn’t argue for dropping writing practice."
+     },
+     {
+      "why": "« C’est faux, et cette croyance est injuste », followed by a contrast between children who often discuss issues at home and others. B and C are the opposite or have no basis."
+     },
+     {
+      "why": "A trembling voice is a sign of nerves; the ne in de peur que… ne + subjunctive is expletive and doesn’t negate. A and B misread the sentence."
+     },
+     {
+      "why": "« L’argument n’est pas absurde. Encore faudrait-il reconnaître que… »: a concession, then a condition introduced by Encore faudrait-il (note the subject–verb inversion). A contradicts « n’est pas absurde »; B is wrong: he holds his position."
+     },
+     {
+      "why": "« ce risque se corrige par la formation des enseignants, non par le renoncement ». A is the opposite; C isn’t mentioned."
+     }
+    ]
+   },
+   "R47-3": {
+    "questions": [
+     {
+      "why": "The post ends with a string of questions (« Certains d’entre vous ont-ils réussi à poser des limites… ? ») and « Merci d’avance pour vos retours »: she is asking for advice. B goes too far: she doesn’t even dare tell her manager directly; C: there is no legal information."
+     },
+     {
+      "why": "« Je comprends l’intention, mais être filmée toute la journée… me fatigue énormément »: she first acknowledges the intention, then describes the burden. A and C ignore this concessive structure."
+     },
+     {
+      "why": "« ceux qui coupent leur caméra sont vus comme moins impliqués, et je n’ai pas envie d’être celle qu’on soupçonne de faire autre chose ». A contradicts « la règle n’est écrite nulle part »; B isn’t mentioned."
+     },
+     {
+      "why": "« je crains qu’il ne le prenne comme un manque de motivation, d’autant que je suis encore en période d’essai » (expletive ne). Neither B nor C has any basis in the text."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L47-1": {
+    "questions": [
+     {
+      "why": "The host opens with « faut-il encore montrer des animaux sauvages sous les chapiteaux ? », and the whole debate is about whether to ban it. Neither A nor B is covered."
+     },
+     {
+      "why": "« un cirque itinérant ne peut pas offrir à un animal sauvage des conditions de vie dignes », with examples such as cramped cages and stereotypical behaviour. B and C aren’t mentioned."
+     },
+     {
+      "why": "« Ce qui me gêne, c’est qu’on mette tout le monde dans le même sac » (lumping everyone together): he admits some circuses mistreat animals but says his own are well cared for. A and C aren’t what he complains about."
+     },
+     {
+      "why": "« Des refuges spécialisés existent déjà… nous demandons une transition sur plusieurs années », and she says « j’entends l’argument » (ruling out A). B is exactly what Messin points out is unworkable."
+     },
+     {
+      "why": "« Sans lui, certains petits cirques devront fermer ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "Messin says « Si on nous accompagne, je suis prêt à tenter l’aventure », and Bertin replies « Nous sommes plus proches qu’on ne le croit ». A contradicts both sides’ concessions; C: she only argues for a gradual transition."
+     }
+    ]
+   },
+   "L47-2": {
+    "questions": [
+     {
+      "why": "The whole interview is about how he reduces waste: a shorter menu, using whole ingredients, portion sizes and take-away boxes. Neither A nor C is covered."
+     },
+     {
+      "why": "He admits “absolute zero” is impossible but immediately gives figures showing a big reduction (« moins d’un petit seau par semaine »). It isn’t a failure (A), and he does answer the question (B)."
+     },
+     {
+      "why": "« Moins de références, c’est moins de produits qui dorment au frigo ». B isn’t mentioned; C is the opposite: he says prep needs « plus de main-d’œuvre »."
+     },
+     {
+      "why": "« nos coûts d’approvisionnement ont baissé d’environ quinze pour cent. En revanche, il faut plus de main-d’œuvre ». A contradicts « rentable »; C contradicts the 15% figure."
+     },
+     {
+      "why": "« regarder ce qui reste dans le frigo avant d’ouvrir un livre de recettes » and « Faire une liste avant les courses ». A and B are the opposite."
+     }
+    ]
+   },
+   "L47-3": {
+    "questions": [
+     {
+      "why": "« la consigne fait son retour… vingt centimes de plus, remboursés lorsqu’on les rapportera vides ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« Il faut garder les bouteilles chez soi, avoir de la place… Quand on vit dans un studio, ce n’est pas évident ». B and C aren’t mentioned."
+     },
+     {
+      "why": "« Vingt centimes de plus par bouteille, pour une famille qui en achète beaucoup, ça finit par compter ». A is the third interviewee’s concern; B isn’t mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V47-01": {
+   "zh": "to be experienced as an ordeal",
+   "exZh": "For farmers, living alongside wolves is experienced as an ordeal."
+  },
+  "V47-02": {
+   "zh": "sleepless nights",
+   "exZh": "Every attack on his flock means a sleepless night."
+  },
+  "V47-03": {
+   "zh": "a sense of abandonment, of being left to fend for oneself",
+   "exZh": "Farmers say they have a sense of abandonment."
+  },
+  "V47-04": {
+   "zh": "to be contrary to, to go against",
+   "exZh": "Associations consider these culls contrary to protected-species status."
+  },
+  "V47-05": {
+   "zh": "a ceiling, an upper limit",
+   "exZh": "Culling is allowed within an annual ceiling."
+  },
+  "V47-06": {
+   "zh": "to please no one, to satisfy nobody",
+   "exZh": "This compromise satisfies nobody."
+  },
+  "V47-07": {
+   "zh": "wildlife",
+   "exZh": "How much room should be left for wildlife near villages?"
+  },
+  "V47-08": {
+   "zh": "a smooth talker (often pejorative: all talk)",
+   "exZh": "The aim isn’t to train smooth talkers but citizens who can argue a case."
+  },
+  "V47-09": {
+   "zh": "once and for all",
+   "exZh": "He decided once and for all that he would never be any good."
+  },
+  "V47-10": {
+   "zh": "some may object that",
+   "exZh": "Some may object that marks prepare students for the working world."
+  },
+  "V47-11": {
+   "zh": "to make one’s voice heard, to stand up for one’s views",
+   "exZh": "Speaking practice gives every student the ability to make their voice heard."
+  },
+  "V47-12": {
+   "zh": "to start to have had enough (overloaded, informal)",
+   "exZh": "With so many messages in the evening, I’m starting to have had enough."
+  },
+  "V47-13": {
+   "zh": "to set limits",
+   "exZh": "She wants to set limits without annoying her manager."
+  },
+  "V47-14": {
+   "zh": "to lump everyone together",
+   "exZh": "Not all circuses are the same: you can’t lump them all together."
+  },
+  "V47-15": {
+   "zh": "to play to full houses",
+   "exZh": "Some circuses without animal acts play to full houses every night."
+  },
+  "V47-16": {
+   "zh": "an unworkable timetable",
+   "exZh": "He is willing to change, provided he isn’t forced into an unworkable timetable."
+  },
+  "V47-17": {
+   "zh": "to take the plunge, to give it a go",
+   "exZh": "With support, the circus director is willing to give it a go."
+  },
+  "V47-18": {
+   "zh": "to move with the times",
+   "exZh": "The aim is to help the circus move with the times."
+  },
+  "V47-19": {
+   "zh": "depending on what comes in (deliveries)",
+   "exZh": "The menu changes depending on what the market has."
+  },
+  "V47-20": {
+   "zh": "a returnable container (with a deposit)",
+   "exZh": "Leftovers are taken away in returnable containers."
+  },
+  "V47-21": {
+   "zh": "(informal) it’s as simple as that",
+   "exZh": "Make a list before you go shopping: it’s as simple as that, but it makes all the difference."
+  },
+  "V47-22": {
+   "zh": "as everyone knows, well known",
+   "exZh": "The town’s budget constraints are well known."
+  },
+  "V47-23": {
+   "zh": "conducive to, suitable for",
+   "exZh": "This noisy café is hardly conducive to studying."
+  },
+  "V47-24": {
+   "zh": "to support, to assist (someone)",
+   "exZh": "Volunteers can assist the team during homework help sessions."
+  },
+  "V47-25": {
+   "zh": "and so I would venture to … (initial aussi + inversion, formal)",
+   "exZh": "And so I would venture to put forward a few suggestions."
+  }
+ },
+ "title": "Mock 4: close to the real exam",
+ "phase": "Mock exams, repair and the bridge to C1"
+}

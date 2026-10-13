@@ -1,0 +1,92 @@
+{
+ "tempsPasses-01": {
+  "why": "autrefois + chaque matin express a past habit, so the imparfait: faisait. a fait is a one-off completed event; avait fait means before another past action, and there is no reference point here."
+ },
+ "tempsPasses-02": {
+  "why": "An ongoing state that is interrupted takes the imparfait: j’étais sous la douche, while the event a sonné is in the PC. ai été turns the state into a completed event; avais été means it was already over when the bell rang, which makes no sense."
+ },
+ "tempsPasses-03": {
+  "why": "soudain introduces a sudden event interrupting the background, so the PC: a éclaté. éclatait is background/ongoing and can’t express suddenness; avait éclaté means the storm had happened before the meal, which contradicts soudain."
+ },
+ "tempsPasses-04": {
+  "why": "chaque fois que expresses a repeated past habit, so the main clause takes the imparfait: allions. sommes allés is a one-off event; étions allés means completed earlier — neither fits the habitual meaning."
+ },
+ "tempsPasses-05": {
+  "why": "A definite number of times (trois fois) in a period that is over takes the PC; aller takes être and agrees with Clara (feminine): est allée. allait can’t go with a definite number; était allée has no later reference point."
+ },
+ "tempsPasses-06": {
+  "why": "arriver takes être as its auxiliary, and the participle agrees with the subject les candidates (feminine plural): sont arrivées. sont arrivés has the wrong agreement; ont arrivé has the wrong auxiliary."
+ },
+ "tempsPasses-07": {
+  "why": "A chain of successive events (est entré… puis est reparti) is all in the PC: a annoncé. annonçait is background and can’t move the story on; avait annoncé would place it before he came in, scrambling the order."
+ },
+ "tempsPasses-08": {
+  "why": "Describing a place and a state takes the imparfait: se trouvait (parallel with n’avait pas). s’est trouvée turns description into an event; s’était trouvée means earlier, and there is no reference point."
+ },
+ "tempsPasses-09": {
+  "why": "alors que (= just as) + imparfait gives a background action in progress, interrupted by an event in the PC. avons traversé means the crossing was finished; avions traversé means it was over before the breakdown, contradicting “while crossing”."
+ },
+ "tempsPasses-10": {
+  "why": "When they arrived the film had already been on for ten minutes: an action completed before a past reference point takes the PQP: avait commencé. a commencé can’t go with depuis; commençait means “was about to start”, contradicting depuis dix minutes."
+ },
+ "tempsPasses-11": {
+  "why": "The loss came before the finding, and la veille is a time marker relative to the past, so the PQP: avait perdu. a perdu can’t go with la veille; perdait means ongoing/habitual, which doesn’t fit."
+ },
+ "tempsPasses-12": {
+  "why": "partir takes être; the PQP is the imparfait of être + past participle: étaient parties (before Paul arrived). avaient has the wrong auxiliary; sont forms the PC, which doesn’t fit the past reference point."
+ },
+ "tempsPasses-13": {
+  "why": "A state that explains a reason takes the imparfait: je n’y connaissais personne (I didn’t know anyone there). ai connu / avais connu mean the event of “meeting” someone, the wrong meaning — and if you didn’t go to the party you couldn’t have met anyone there."
+ },
+ "tempsPasses-14": {
+  "why": "The past form of venir de is the imparfait: je venais de rentrer (I had just got back). suis venu / étais venu de… mean “came from…”, no longer the recent-past structure “had just”."
+ },
+ "tempsPasses-15": {
+  "why": "au moment de l’accident describes an action in progress when the accident happened, so the imparfait: parlait. avait parlé means the call was over before the accident; a parlé doesn’t fit the tense after a déclaré que and loses the sense of “was doing”."
+ },
+ "tempsPasses-16": {
+  "why": "She had lived in Dakar for five years before coming to Paris: PQP = imparfait of avoir + vécu: avait vécu. a vécu is the PC and can’t express “before a past reference point”; vivre takes avoir, so était is wrong."
+ },
+ "tempsPasses-17": {
+  "why": "auparavant takes a past moment (March) as its reference, so the PQP; the direct object l’ (= la voiture) comes first, so the participle agrees in the feminine: avait achetée. a achetée is the wrong tense; achetait is background/habit, not a single purchase."
+ },
+ "tempsPasses-18": {
+  "why": "un soir introduces a one-off event; the background alors qu’elle rentrait is already in the imparfait, so the event is in the PC: a croisé. croisait would become another layer of background; avait croisé would place it before she went home, the wrong order."
+ },
+ "tempsPasses-19": {
+  "why": "puis links successive events, so the PC; pronominal verbs take être, se is the direct object, so the participle agrees: se sont retrouvées. sont retrouvé lacks agreement; retrouvaient is background and can’t join the chain of events introduced by puis."
+ },
+ "tempsPasses-20": {
+  "why": "The cause of the museum closing happened earlier, and la semaine précédente is a relative time marker, so the PQP: avait lancé. a lancé would go with la semaine dernière; lançait means ongoing/habitual, not a one-off decision."
+ },
+ "tempsPasses-21": {
+  "why": "The cause came before the past state of being tired, and there is la nuit précédente, so the PQP: avait travaillé. a travaillé doesn’t fit précédente; travaillait can’t express a definite period that is over (toute la nuit précédente)."
+ },
+ "tempsPasses-22": {
+  "why": "Age is a description of state, so the imparfait: il avait à peine vingt ans. a eu means the event of “turning” that age; avait eu means turning it earlier — neither fits."
+ },
+ "tempsPasses-23": {
+  "why": "imparfait de politesse: je voulais vous demander softens a request. ai voulu means “wanted / tried to” as a past event; avais voulu means an earlier wish — neither is a polite request."
+ },
+ "tempsPasses-24": {
+  "why": "il y avait + duration + que expresses an action still going on at a past moment, so the imparfait: marchions. avons marché / avions marché mean it was over, contradicting “were still walking”."
+ },
+ "tempsPasses-25": {
+  "why": "Leaving the country came before ont découvert, and la veille is a relative time marker, so the PQP: avait quitté. a quitté doesn’t fit the tense; quittait means ongoing/habitual, not a single departure."
+ },
+ "tempsPasses-26": {
+  "why": "deux ans plus tôt takes 1960 as its reference, marking an earlier event, so the PQP: s’étaient rencontrés (pronominal verbs take être; se is the direct object, hence the -s). sont rencontrés is the PC and doesn’t fit plus tôt; rencontraient is habit/background."
+ },
+ "tempsPasses-27": {
+  "why": "The PQP of the passive: avait été + past participle, agreeing with the subject sa candidature (feminine): avait été refusée. avait été refusé lacks agreement; avait refusée lacks été, making it active with the wrong agreement."
+ },
+ "tempsPasses-28": {
+  "why": "The night on the roof came before the rescuers arrived and its duration is over, so the PQP: avaient passé. passaient can’t express a whole night that is finished; ont passé doesn’t fit the past reference point (sont arrivés)."
+ },
+ "tempsPasses-29": {
+  "why": "With avoir, the participle agrees with a preceding direct object: que refers to les lettres (feminine plural) → avait écrites. avait écrit lacks agreement; avait écrits has the wrong gender."
+ },
+ "tempsPasses-30": {
+  "why": "In s’envoyer des messages, se is the indirect object (envoyer à quelqu’un) and the direct object des messages comes after, so the participle doesn’t agree: se sont envoyé. envoyées / envoyés are both wrong agreements."
+ }
+}

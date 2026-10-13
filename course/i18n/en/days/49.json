@@ -1,0 +1,207 @@
+{
+ "canDo": "Use a final original mock to check whether all four skills have reached a stable level you can rely on.",
+ "review": "No last-minute cramming.",
+ "input": "Full listening and reading.",
+ "output": "Full writing and speaking.",
+ "checkpoint": "Judge risk from objective samples and the scoring checklist, not from a gut-feeling percentage.",
+ "challenge": "Today’s challenge: after the final full mock, do just one thing: pick a TV5MONDE Apprendre B1 video you have never seen, listen twice, then sum up the gist aloud in 3 sentences and add one sentence of your own opinion, to check you can perform steadily on brand-new material; finally write down, in your own language, “the 3 strategies I will stick to on exam day”.",
+ "items": {
+  "reading": {
+   "R49-3": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "It contrasts a book printed in a thousand copies with publishing online."
+     },
+     {
+      "why": "« Ces pratiques n'ont aucune valeur juridique », yet they settle the vast majority of cases."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V49-01": {
+   "zh": "to be formative, to teach you a lot",
+   "exZh": "Translating a book you don’t like can even teach you a lot."
+  },
+  "V49-02": {
+   "zh": "to be vulnerable to …",
+   "exZh": "Weakened by lack of water, trees become vulnerable to insects."
+  },
+  "V49-03": {
+   "zh": "to win out (over …)",
+   "exZh": "When “local” and “seasonal” conflict, seasonal wins out."
+  },
+  "V49-04": {
+   "zh": "with the exception of …",
+   "exZh": "Age doesn’t predict progress, with the exception of pronunciation."
+  },
+  "V49-05": {
+   "zh": "an occupancy rate",
+   "exZh": "Pure workspaces have a low occupancy rate."
+  },
+  "V49-06": {
+   "zh": "to bring someone in, to attract",
+   "exZh": "The spaces don’t bring in new residents."
+  },
+  "V49-07": {
+   "zh": "to be identifiable",
+   "exZh": "Publication is regulated as soon as a person is identifiable."
+  },
+  "V49-08": {
+   "zh": "to ask for permission",
+   "exZh": "The photographer must ask for permission before publishing."
+  },
+  "V49-09": {
+   "zh": "in times of drought",
+   "exZh": "In times of drought, trees compete with each other for water."
+  },
+  "V49-10": {
+   "zh": "to need care",
+   "exZh": "They aren’t priority patients, but they need care."
+  },
+  "V49-11": {
+   "zh": "without arguing",
+   "exZh": "The photographers agree to take the picture down without arguing."
+  },
+  "V49-12": {
+   "zh": "to manage to …",
+   "exZh": "Public debates fail to tell these two cases apart."
+  },
+  "V49-13": {
+   "zh": "… apart (at intervals of …)",
+   "exZh": "Redo the same page three times, six months apart."
+  },
+  "V49-14": {
+   "zh": "by far",
+   "exZh": "It is by far the most frequent request."
+  },
+  "V49-15": {
+   "zh": "to spend hours …-ing",
+   "exZh": "My son spends hours drawing."
+  },
+  "V49-16": {
+   "zh": "a viable model",
+   "exZh": "In sparsely populated areas, the viable model is the mixed-use facility."
+  },
+  "V49-17": {
+   "zh": "a widespread idea",
+   "exZh": "Contrary to a widespread idea, transport weighs little."
+  },
+  "V49-18": {
+   "zh": "to have a gift for …",
+   "exZh": "Those who say they have a gift for languages don’t progress any faster."
+  },
+  "V49-19": {
+   "zh": "a file number",
+   "exZh": "Could you remind me of my file number?"
+  },
+  "V49-20": {
+   "zh": "it is regrettable that …",
+   "exZh": "It is regrettable that nobody warned me about the delay."
+  },
+  "V49-21": {
+   "zh": "an uncomfortable conclusion",
+   "exZh": "This finding leads to a conclusion many find uncomfortable."
+  },
+  "V49-22": {
+   "zh": "first of all, initially",
+   "exZh": "First of all, I will present the advantages of this project."
+  },
+  "V49-23": {
+   "zh": "I don’t entirely agree",
+   "exZh": "I don’t entirely agree with your proposal."
+  },
+  "V49-24": {
+   "zh": "to come to an arrangement",
+   "exZh": "I’m sure we can come to an arrangement before 23 March."
+  },
+  "V49-25": {
+   "zh": "the simplest thing would be to …",
+   "exZh": "The simplest thing would be to send the document by email."
+  },
+  "V49-26": {
+   "zh": "over the course of …",
+   "exZh": "Over the years, I’ve changed the way I shop."
+  },
+  "V49-27": {
+   "zh": "I’m taking the liberty of following up",
+   "exZh": "Not having heard from you, I’m taking the liberty of following up."
+  },
+  "V49-28": {
+   "zh": "which is rarely pointed out",
+   "exZh": "This rate is higher than that of shops, which is rarely pointed out."
+  },
+  "V49-29": {
+   "zh": "to come into conflict",
+   "exZh": "Sometimes “local” and “seasonal” come into conflict."
+  },
+  "V49-30": {
+   "zh": "to do damage",
+   "exZh": "This hierarchy between books does considerable damage."
+  },
+  "V49-31": {
+   "zh": "to associate … with …",
+   "exZh": "A child who associates books with being forced won’t come back to them."
+  },
+  "V49-32": {
+   "zh": "to have nowhere to go",
+   "exZh": "Some patients have nowhere to go."
+  },
+  "V49-33": {
+   "zh": "to go first",
+   "exZh": "The nurse doesn’t decide who goes first."
+  },
+  "V49-34": {
+   "zh": "to be well-meant",
+   "exZh": "It’s a betrayal, even if it’s well-meant."
+  },
+  "V49-35": {
+   "zh": "to go on a language trip",
+   "exZh": "Last summer I went on a language trip to Montpellier."
+  },
+  "V49-36": {
+   "zh": "a mixed record",
+   "exZh": "Rural coworking spaces have a mixed record."
+  },
+  "V49-37": {
+   "zh": "less than it seems",
+   "exZh": "The advice looks simple, but it is less simple than it seems."
+  },
+  "V49-38": {
+   "zh": "to be nothing … about it",
+   "exZh": "There’s nothing inconsistent about eating apples in March."
+  },
+  "V49-39": {
+   "zh": "as soon as, once",
+   "exZh": "Publication is regulated once a person is identifiable."
+  },
+  "V49-40": {
+   "zh": "to infringe on …",
+   "exZh": "This photo infringes on his privacy."
+  },
+  "V49-41": {
+   "zh": "to arise from …",
+   "exZh": "According to them, the dispute arises from the way the photo was taken."
+  },
+  "V49-42": {
+   "zh": "the difference is not small",
+   "exZh": "For a local authority that pays, the difference is not small."
+  },
+  "V49-43": {
+   "zh": "to grow … under glass",
+   "exZh": "A tomato grown in a heated greenhouse in February has a big impact."
+  },
+  "V49-44": {
+   "zh": "in open fields",
+   "exZh": "A tomato grown in open fields in Spain may have less impact."
+  },
+  "V49-45": {
+   "zh": "respect for privacy",
+   "exZh": "Photographers must guarantee respect for privacy."
+  }
+ },
+ "phase": "Mock exams and repair"
+}

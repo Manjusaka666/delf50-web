@@ -1,4 +1,5 @@
-/** Rendering helpers: escaped HTML templates, French typography, icons, formatting. */
+/** Rendering helpers: escaped HTML templates, French typography, icons, labels, formatting. */
+import { t, plural } from './i18n.js';
 
 const ESC = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
 export const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, (c) => ESC[c]);
@@ -23,8 +24,7 @@ export function fr(text) {
 /** French course text, typographically set and escaped; the material's own <b>, <i> and <br> are kept. */
 export const frText = (s) => raw(esc(fr(s)).replace(/&lt;(\/?(?:b|i))&gt;/g, '<$1>').replace(/&lt;br\s*\/?&gt;/g, '<br>'));
 
-const TZ = 'Europe/Zurich';
-export const fmtDateTime = (iso) => (iso ? new Date(iso).toLocaleString('zh-CN', { timeZone: TZ, month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }) : '—');
+export { fmtDateTime, fmtList } from './i18n.js';
 export const fmtDuration = (sec) => `${Math.floor(sec / 60)}:${String(Math.round(sec % 60)).padStart(2, '0')}`;
 export const pct = (a, b) => (b ? Math.round((100 * a) / b) : 0);
 export const pad2 = (n) => String(n).padStart(2, '0');
@@ -52,6 +52,9 @@ const P = {
   play: '<path d="M7 4.5v15l12.5-7.5z"/>',
   pause: '<path d="M7 4.5h3.5v15H7zM13.5 4.5H17v15h-3.5z"/>',
   stop: '<rect x="6" y="6" width="12" height="12" rx="1.5"/>',
+  back: '<path d="M18 5.5v13L9 12zM6 5.5v13"/>',
+  forward: '<path d="M6 5.5v13l9-6.5zM18 5.5v13"/>',
+  repeat: '<path d="M4 12a8 8 0 0 1 13.7-5.6L20 8.5M20 4v4.5h-4.5M20 12a8 8 0 0 1-13.7 5.6L4 15.5M4 20v-4.5h4.5"/>',
   record: '<circle cx="12" cy="12" r="6"/>',
   user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
   plus: '<path d="M12 5v14M5 12h14"/>',
@@ -61,25 +64,24 @@ const P = {
 };
 export const icon = (name, cls = '') => raw(`<svg class="i ${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${P[name] || ''}</svg>`);
 
-export const MODULE_NAMES = {
-  grammar: '语法', production: '主动产出', reading: '阅读', listening: '听力', writing: '写作',
-  speaking: '口语', application: '应用', vocab: '词块', review: '复习'
-};
+/** The modules' French names (the course's own language, the same in every interface language). */
 export const MODULE_FR = {
   grammar: 'Grammaire', production: 'Production', reading: 'Compréhension écrite', listening: 'Compréhension de l’oral',
   writing: 'Production écrite', speaking: 'Production orale', application: 'Interaction', vocab: 'Lexique', review: 'Révision'
 };
-export const UNITS = { grammar: '题', production: '句', reading: '篇', listening: '组', writing: '项', speaking: '轮', application: '项', vocab: '个', review: '项' };
 
-const DEFAULT_LABELS = [MODULE_NAMES, MODULE_FR, UNITS].map((o) => Object.assign({}, o));
 /** A course may rename a module (e.g. B2 practises médiation in the application module): {module: {name, fr, unit}}. */
-export function setLabels(labels = {}) {
-  [MODULE_NAMES, MODULE_FR, UNITS].forEach((o, i) => Object.assign(o, DEFAULT_LABELS[i]));
-  for (const [k, v] of Object.entries(labels)) {
-    if (v.name) MODULE_NAMES[k] = v.name;
-    if (v.fr) MODULE_FR[k] = v.fr;
-    if (v.unit) UNITS[k] = v.unit;
-  }
+let LABELS = {};
+export function setLabels(labels = {}) { LABELS = labels || {}; }
+const label = (m, k) => (LABELS[m] && LABELS[m][k]) || '';
+
+/** A module's name in the interface language. */
+export const moduleName = (m) => label(m, 'name') || t(`module.${m}`);
+export const moduleFr = (m) => label(m, 'fr') || MODULE_FR[m];
+/** The unit a module counts in, for n of them ("question"/"questions"; a course's unit may be "task|tasks"). */
+export function unit(m, n = 2) {
+  const [one, other] = (label(m, 'unit') || t(`unit.${m}`)).split('|');
+  return other === undefined ? one : plural(n, one, other);
 }
 
 /** A circular progress mark. */

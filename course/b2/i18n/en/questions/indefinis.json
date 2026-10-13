@@ -1,0 +1,92 @@
+{
+ "indefinis-01": {
+  "why": "chaque is a determiner followed by a singular noun: chaque participant. chacun is a pronoun and can’t take a noun directly; tous needs an article and a plural (tous les participants)."
+ },
+ "indefinis-02": {
+  "why": "chacun is a pronoun and can go after the verb to refer back to a plural subject (each one individually). chaque must take a noun; chacune is feminine, which doesn’t match les candidats (masculine)."
+ },
+ "indefinis-03": {
+  "why": "With la plupart des + plural noun as subject, the verb agrees with the noun in the plural: sont. est wrongly agrees with the singular form of la plupart; soit is subjunctive, with no reason to use it."
+ },
+ "indefinis-04": {
+  "why": "n’importe quel + noun = any … at all. quiconque is a pronoun and can’t take quel; chaque quel doesn’t exist."
+ },
+ "indefinis-05": {
+  "why": "plusieurs + plural noun (several), invariable. chaque only takes singular nouns; quiconque is a pronoun and can’t modify a noun."
+ },
+ "indefinis-06": {
+  "why": "tout as an adjective agrees with the noun in gender and number: les habitants is masculine plural → Tous les habitants. Tout is singular; Toutes is feminine."
+ },
+ "indefinis-07": {
+  "why": "The indefinite plural “some other ones” is d’autres (the plural of un autre), used with en. des autres = de + les autres (referring to a specific remaining set), wrong here; autres lacks a determiner."
+ },
+ "indefinis-08": {
+  "why": "quiconque = anyone (whoever), as subject with a singular verb. N’importe quoi refers to things; Chaque is a determiner and must take a noun."
+ },
+ "indefinis-09": {
+  "why": "tout as an adverb (= tout à fait) is generally invariable, but agrees before a feminine adjective starting with a consonant or aspirate h: toute contente. tout breaks this rule; toutes is plural."
+ },
+ "indefinis-10": {
+  "why": "quelques + plural noun = a few, some. The singular quelque means “some (particular)” or, as an adverb, “about”; quelqu’ is only used in quelqu’un."
+ },
+ "indefinis-11": {
+  "why": "certains + plural noun (certain, some), agreeing with électeurs (masculine plural) → Certains. Certaines has the wrong gender; Certain lacks the plural."
+ },
+ "indefinis-12": {
+  "why": "tel as an adjective agrees with the noun: une décision (feminine singular) → une telle décision. tel / tels don’t match in gender and number."
+ },
+ "indefinis-13": {
+  "why": "aucun as a pronoun (aucun des…) takes the gender of the noun it refers to, in the singular: rapports is masculine → aucun. aucune has the wrong gender; aucuns is only used with a few nouns that exist only in the plural."
+ },
+ "indefinis-14": {
+  "why": "tout as a pronoun refers back to the subject elles (all of them) → toutes. tout as an adverb means “completely”, which makes no sense with arrivées; tous has the wrong gender."
+ },
+ "indefinis-15": {
+  "why": "la plupart must be followed by de + definite article: la plupart des (autres) pays. d’autres is an indefinite determiner and can’t follow la plupart; autres lacks des."
+ },
+ "indefinis-16": {
+  "why": "tout as a neutral pronoun (everything) is the subject, masculine singular: tout est prêt. tous refers to plural people or things and needs a plural verb; toute is feminine and needs a noun to refer to."
+ },
+ "indefinis-17": {
+  "why": "chacun d’entre vous + singular verb doit. chaque must take a noun; tous d’entre vous doesn’t work, and the verb would have to be plural."
+ },
+ "indefinis-18": {
+  "why": "The fixed expression la plupart du temps (most of the time). des is for plural nouns; de lacks the definite article."
+ },
+ "indefinis-19": {
+  "why": "With la plupart des invités as subject, the verb and the past participle after être agree with invités (masculine plural) → partis. parti / partie are both singular."
+ },
+ "indefinis-20": {
+  "why": "quelque before a number is an adverb meaning “about” (= environ), invariable: quelque trente mille. quelques is the determiner “a few” and can’t modify a number; quelqu’un is a pronoun."
+ },
+ "indefinis-21": {
+  "why": "n’importe quel + noun, with quel agreeing with poste (masculine singular). n’importe quoi / n’importe qui are pronouns and can’t take a noun."
+ },
+ "indefinis-22": {
+  "why": "n’importe quoi is a pronoun for things and can be an object (posting any old thing). n’importe quel must be followed by a noun; quiconque refers to people."
+ },
+ "indefinis-23": {
+  "why": "For people, n’importe qui (just anyone). n’importe quel needs a noun; n’importe quoi refers to things, and « raconter à n’importe quoi » makes no sense."
+ },
+ "indefinis-24": {
+  "why": "In a clause introduced by quiconque, the verb is third person singular indicative: quiconque enfreint. enfreignent is plural; enfreignant is a present participle and can’t be the verb of a clause."
+ },
+ "indefinis-25": {
+  "why": "tel agrees with the noun: embouteillages is masculine plural → de tels embouteillages. telles has the wrong gender; tel lacks the plural."
+ },
+ "indefinis-26": {
+  "why": "tout as an adverb (completely) stays invariable before a feminine adjective starting with a vowel: tout émue. It only agrees before a feminine adjective starting with a consonant (toute contente); toutes is plural."
+ },
+ "indefinis-27": {
+  "why": "certain(e)s as a pronoun agrees with the noun it refers to, entreprises (feminine plural) → certaines. certains has the wrong gender; certaine lacks the plural."
+ },
+ "indefinis-28": {
+  "why": "With aucune des… as subject, the verb is singular and the passive participle agrees with aucune (feminine) → est jugée. sont jugées uses the plural; est jugé has the wrong gender."
+ },
+ "indefinis-29": {
+  "why": "tout as an adjective agrees with la population (feminine singular) → Toute la population. Tout has the wrong gender; Toutes the wrong number."
+ },
+ "indefinis-30": {
+  "why": "chacun is a singular pronoun, so the possessive that follows is son. leur goes with a plural subject; ses would mean several computers, which doesn’t match ordinateur (singular)."
+ }
+}

@@ -1,0 +1,205 @@
+{
+ "canDo": "Can handle past participle agreement correctly in writing: agreement with the subject after être, with a preceding direct object after avoir (la ville que j’ai visitée, je les ai vus), no agreement with en, and agreement or not with pronominal verbs (elle s’est promenée / ils se sont parlé), and can self-check and correct.",
+ "review": "Review day 18’s object pronouns (le/la/les before the verb trigger agreement), day 4’s relative pronoun que and day 13’s être + PP agreement in the passive; bring them all together into “getting agreement right”.",
+ "input": "Read: a report on overtourism, a column on taking photos while travelling and a reader’s letter — in each paragraph, find the passé composé with a preceding object and explain why it agrees; listen: an interview on online reviews, an interview on home-swap holidays and a news flash on a swimming ban at a lake — notice pronominal verbs that don’t agree, such as se sont parlé / se sont dit.",
+ "output": "Write: a reply (≥220 words) to another user on a travel magazine’s forum, telling a travel story and taking a position on limiting visitor numbers at popular sites, then check it sentence by sentence against an “agreement checklist”; speak: a 4-minute monologue on “tourist taxes”, then a debate on “banning short-term rentals in the town centre”.",
+ "checkpoint": "Reading + listening accuracy ≥80%; every past participle agreement in the forum reply correct (zero errors after self-checking); can correct a short text with 5 agreement errors within 1 minute.",
+ "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about tourism or holidays and write 3 sentences of comment, each with at least one past participle that must agree (e.g. les mesures qu’on a prises…, les touristes se sont plaints…), highlighting the agreeing endings in a different colour.",
+ "items": {
+  "reading": {
+   "R22-1": {
+    "questions": [
+     {
+      "why": "The article presents the measures Port-Lauzières has taken against overtourism (booking, shuttles, limits on short-term rentals) and how they were received. A isn’t advice for tourists; B: the text doesn’t mention a sudden drop in visitors."
+     },
+     {
+      "why": "« longtemps réservées à quelques grandes capitales, se sont multipliées… dans des destinations plus modestes ». B and C have no basis in the text, and C even contradicts « habitants excédés »."
+     },
+     {
+      "why": "« trésor caché » → « parking géant »: a once-hidden gem has turned into a giant car park. A is the opposite; C misreads « se transformer en parking »."
+     },
+     {
+      "why": "The text says explicitly « réservation gratuite », and stresses at the end that « la réservation est restée gratuite ». A and B are measures that have been taken."
+     },
+     null,
+     {
+      "why": "« réserver la beauté à ceux qui savent s’organiser, ou qui peuvent payer » — the site becomes a privilege of the few. B contradicts the survey results; C isn’t mentioned."
+     }
+    ]
+   },
+   "R22-2": {
+    "questions": [
+     {
+      "why": "« nous sommes nombreux à voyager désormais pour raconter plutôt que pour vivre » + « l’abondance a tué la valeur ». A is too absolute: she suggests “one a day”, not giving up altogether; C isn’t mentioned."
+     },
+     {
+      "why": "« Je ne les juge pas : je me suis reconnue en eux. » B and C are the opposite."
+     },
+     {
+      "why": "« douze photos par voyage, pas douze cents. Chacune avait été choisie » — few and well chosen versus a flood. A is about technical quality; B contradicts « avec émotion »."
+     },
+     {
+      "why": "The more photos there are, the less each one is valued: « nous ne les regardons presque jamais ». A takes valeur to mean price; C has no basis."
+     },
+     {
+      "why": "She proposes the rule « une photo par jour », backed by her own experience: « Les plus beaux souvenirs que j’ai rapportés… »."
+     }
+    ]
+   },
+   "R22-3": {
+    "questions": [
+     {
+      "why": "« lu avec un vif intérêt, mais aussi avec un léger agacement », followed by pointing out that the article left out transport. C ignores « agacement »."
+     },
+     {
+      "why": "« et pas par militantisme : au départ, c’était faute de moyens ». A is explicitly denied; B isn’t mentioned."
+     },
+     null,
+     {
+      "why": "relever de l’exploit = to be a real feat, i.e. extremely difficult. It doesn’t mean banned (A) or expensive (C)."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L22-1": {
+    "questions": [
+     {
+      "why": "« Mais peut-on vraiment s’y fier ? » — discussing whether online reviews can be trusted."
+     },
+     {
+      "why": "« Une bonne partie de ceux que nous avons examinés présentaient des signes suspects ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "« une série d’avis très négatifs… Les réservations ont chuté de presque un tiers »; these guests were people « que nous n’avions jamais vus » — fake reviews."
+     },
+     null,
+     {
+      "why": "« croisez les sources »; A is the opposite (« ne vous arrêtez pas à la note globale »); B: he recommends the middling reviews."
+     }
+    ]
+   },
+   "L22-2": {
+    "questions": [
+     {
+      "why": "« vous prêtez votre logement à une famille, et elle vous prête le sien », with no rent (A is wrong)."
+     },
+     {
+      "why": "« la lettre que la propriétaire m’avait laissée… ses adresses préférées, le nom de sa boulangère, les horaires du marché ». The plans in B are what Karima later exchanged with other families."
+     }
+    ]
+   },
+   "L22-3": {
+    "questions": [
+     {
+      "why": "« sera interdit à la baignade jusqu’à la fin du mois d’août »; walking on the beach is still allowed (A is wrong), and dogs only need to be on a lead (C is wrong)."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V22-01": {
+   "zh": "fed up (with …)",
+   "exZh": "Fed up with the noise of night-time parties, local residents launched a petition."
+  },
+  "V22-02": {
+   "zh": "overtourism",
+   "exZh": "Several seaside villages now suffer from overtourism."
+  },
+  "V22-03": {
+   "zh": "to soar (of prices, rents)",
+   "exZh": "With the rise in seasonal rentals, rents in the centre have soared."
+  },
+  "V22-04": {
+   "zh": "to be subject to …",
+   "exZh": "Access to the coves is subject to online booking."
+  },
+  "V22-05": {
+   "zh": "turnover",
+   "exZh": "Restaurant owners fear a fall in turnover."
+  },
+  "V22-06": {
+   "zh": "to revise one’s judgement",
+   "exZh": "After two seasons, the restaurant owner revised his judgement of the limits."
+  },
+  "V22-07": {
+   "zh": "to avoid the pitfall",
+   "exZh": "The town kept booking free to avoid the pitfall of tourism only for the rich."
+  },
+  "V22-08": {
+   "zh": "from every angle",
+   "exZh": "They photographed their dessert from every angle before eating it."
+  },
+  "V22-09": {
+   "zh": "to recognise oneself in someone",
+   "exZh": "Watching this family, the columnist recognised herself in them."
+  },
+  "V22-10": {
+   "zh": "to fade from memory",
+   "exZh": "The moments we didn’t really live have faded from memory."
+  },
+  "V22-11": {
+   "zh": "with keen interest",
+   "exZh": "I read your feature on local tourism with keen interest."
+  },
+  "V22-12": {
+   "zh": "to be a real feat",
+   "exZh": "Without a car, getting to this mountain village is a real feat."
+  },
+  "V22-13": {
+   "zh": "local tourism, staying close to home",
+   "exZh": "In recent years, local tourism has attracted more and more families."
+  },
+  "V22-14": {
+   "zh": "a flood of, an avalanche of",
+   "exZh": "An avalanche of negative reviews appeared in three days."
+  },
+  "V22-15": {
+   "zh": "to cross-check sources",
+   "exZh": "Before booking, cross-check your sources: one website isn’t enough."
+  },
+  "V22-16": {
+   "zh": "a fake review",
+   "exZh": "The hotel owner proved from his register that it was a fake review."
+  },
+  "V22-17": {
+   "zh": "to follow to the letter",
+   "exZh": "We followed the owner’s advice to the letter."
+  },
+  "V22-18": {
+   "zh": "cancellation insurance",
+   "exZh": "Since that mishap, I always take out cancellation insurance."
+  },
+  "V22-19": {
+   "zh": "on a lead (of a dog)",
+   "exZh": "On the lake beach, dogs must be kept on a lead."
+  },
+  "V22-20": {
+   "zh": "in single file",
+   "exZh": "The path is so crowded that people walk in single file."
+  },
+  "V22-21": {
+   "zh": "a fragile natural environment",
+   "exZh": "The dunes are a fragile environment that must be protected from trampling."
+  },
+  "V22-22": {
+   "zh": "an entry fee",
+   "exZh": "Some cities charge day-trippers an entry fee."
+  },
+  "V22-23": {
+   "zh": "to suffer the nuisances",
+   "exZh": "Residents of the centre suffer the nuisances all summer."
+  },
+  "V22-24": {
+   "zh": "off the beaten track",
+   "exZh": "This year, we want to travel off the beaten track."
+  },
+  "V22-25": {
+   "zh": "a favourite destination",
+   "exZh": "This little port has become a favourite destination for hikers."
+  }
+ },
+ "title": "Past participle agreement",
+ "phase": "Argument, mediation and reporting"
+}

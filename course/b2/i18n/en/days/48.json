@@ -1,0 +1,226 @@
+{
+ "canDo": "After reading and listening to 3–4 documents on genetic testing, can set out a problem statement, organise a two- or three-part structured exposé that cross-references the documents, speak continuously for about 7 minutes and give a reasoned personal position.",
+ "review": "Review day 19’s hedging and speculation (il semble que, risquer de), day 23’s discourse connectors and day 46’s synthèse techniques; keep using elegant concessive structures: si légitime que soit…, ne… pas moins, ne saurait.",
+ "input": "Read: R48-1, an informative text (the reliability of direct-to-consumer genetic tests), R48-2, a legal scholar’s commentary (the collective nature of genetic information) and R48-3, a reader’s letter (a brother discovered by chance); listen: the interview with a clinical geneticist L48-1 twice; for the science column L48-2 (police use of genealogy databases) and the news flash L48-3, take three-column notes as you listen: “argument / example / source”.",
+ "output": "Write: W48-1, an essai argumenté of ≥ 250 words on whether genetic tests should be freely sold; speak: S48-1, a 7-minute structured exposé based on the document pack, and S48-2, a 5-minute debate with the examiner.",
+ "checkpoint": "Each part of the exposé cites at least two different documents; the problem is phrased as Dans quelle mesure… ? or Faut-il… ?; the 7-minute monologue has an introduction, two parts and a conclusion; reading and listening accuracy ≥ 80%.",
+ "challenge": "Today’s challenge: find a science-ethics news item (genetics, artificial intelligence, health data, etc.) on RFI’s « Journal en français facile » or TV5MONDE, write a problem statement with Dans quelle mesure… ?, then a 4-line exposé outline using Dans un premier temps / Dans un second temps, and record a 1-minute introduction.",
+ "items": {
+  "reading": {
+   "R48-1": {
+    "questions": [
+     {
+      "why": "It opens with the question « Mais que valent réellement les résultats… ? » and then analyses four aspects in turn: ancestry, medical prediction, the law and data. B is the opposite of the article’s critical tone; C: hospital advances aren’t discussed."
+     },
+     {
+      "why": "« ces pourcentages dépendent étroitement de la base de comparaison utilisée : deux sociétés peuvent donner des résultats sensiblement différents ». A contradicts « Les frontières nationales… n’ont guère de sens »; B contradicts “noticeably different results”."
+     },
+     {
+      "why": "« dépendent de centaines de variants génétiques et, surtout, du mode de vie ». A wrongly applies the case of rare single-gene diseases to common ones; C isn’t mentioned."
+     },
+     {
+      "why": "Paired with « un résultat normal »: a “normal” result makes people wrongly think they won’t get ill. B describes the first half of the sentence (needless worry); C is the topic of data security in paragraph 5, unrelated here."
+     },
+     {
+      "why": "« Les consommateurs ne s’en procurent pas moins des kits commandés à l’étranger, si bien que la loi est largement contournée » (ne… pas moins = all the same, nonetheless). A misreads “medical framework”; B contradicts “they can still get them”."
+     },
+     {
+      "why": "« mieux vaudrait donc lire les conditions d’utilisation » is a reminder and a warning to readers. A doesn’t fit the descriptions of data being resold and hacked; C is wrong: the author gives practical advice."
+     }
+    ]
+   },
+   "R48-2": {
+    "questions": [
+     {
+      "why": "« mon ADN n’est pas seulement le mien » and « reconnaître enfin la dimension collective de l’information génétique ». A is wrong: « Il ne s’agit pas d’interdire »; C is wrong: she admits « ces bases rendent aussi des services »."
+     },
+     {
+      "why": "« a l’apparence de » = looks like; it is followed straight away by « Il repose pourtant sur une erreur de fond », showing it is only superficially reasonable. B isn’t in the text; C is the opposite of « erreur de fond »."
+     },
+     {
+      "why": "« une cousine qui n’a jamais rien envoyé à personne peut ainsi se retrouver identifiable… parce que trois de ses proches l’ont fait ». A and B have nothing to do with the purpose of this example."
+     },
+     {
+      "why": "« Je ne le nie pas. Mais… ne dispense pas de s’interroger sur ses coûts »: concede, then hold firm. A is wrong: she doesn’t give up her position; C contradicts « Je ne le nie pas »."
+     },
+     {
+      "why": "Paragraph 4: inform people of the impact on relatives, ban resale without explicit consent, and allow permanent deletion on request. A isn’t mentioned; B is wrong: deletion can be requested (« puisse exiger »), it isn’t automatic."
+     }
+    ]
+   },
+   "R48-3": {
+    "questions": [
+     {
+      "why": "He describes the good side (« Patrick est aujourd’hui un ami précieux ») and the bad side (damaged family relationships). He explicitly rules out A (« pas que mon témoignage passe pour une publicité »); B: the letter asks no questions."
+     },
+     {
+      "why": "« j’ai découvert un demi-frère dont j’ignorais l’existence ». B is what he originally expected (« Je m’attendais à… »), not the result; C isn’t mentioned."
+     },
+     {
+      "why": "digérer is used figuratively here, “to come to terms with (something unpleasant)”, confirmed by « les relations familiales en ont été durablement abîmées ». A contradicts the sentence; C misreads digérer literally."
+     },
+     {
+      "why": "« présenter ces tests comme un jeu. Si l’on m’avait prévenu… j’aurais au moins pu m’y préparer » (the past conditional expresses regret). Neither A nor C is mentioned in the letter."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L48-1": {
+    "questions": [
+     {
+      "why": "The doctor repeatedly stresses that results need interpreting, counselling and double-checking. A is just the disease in the patient’s case; C isn’t covered."
+     },
+     {
+      "why": "« elle avait reçu cette information par courriel, un vendredi soir, sans personne pour la lui expliquer ». B is wrong: she hadn’t been diagnosed with the disease; C belongs to L48-3."
+     },
+     {
+      "why": "She goes on to explain: « Beaucoup de porteurs de ce variant ne développeront jamais la maladie ». A is wrong: she says the variant « augmente effectivement le risque »; B isn’t mentioned."
+     },
+     {
+      "why": "« avant de faire un test, on prend le temps d’en parler… on annonce le résultat en consultation, jamais seulement par écrit ». A is the exact opposite; C contradicts « Certaines personnes préfèrent ne pas savoir, et c’est leur droit »."
+     },
+     {
+      "why": "« Je l’entends, et je ne suis pas pour le paternalisme médical. Mais un droit d’accès suppose de pouvoir comprendre ce qu’on reçoit »: partial acceptance, with a condition. A contradicts “not in favour of paternalism”; B ignores the reservation after Mais."
+     },
+     {
+      "why": "« je conseille toujours de faire vérifier un résultat inquiétant avant de prendre la moindre décision », with a « laboratoire médical » mentioned earlier. Neither B nor C is her advice."
+     }
+    ]
+   },
+   "L48-2": {
+    "questions": [
+     {
+      "why": "« des enquêteurs qui travaillent… avec les arbres généalogiques »: the whole column is about how police use genealogy DNA databases to solve cases, and the ethical issues. A is only background; B isn’t mentioned."
+     },
+     {
+      "why": "« On ne trouve pas le suspect lui-même, mais un cousin… en reconstituant les arbres familiaux, on remonte jusqu’à lui ». B is wrong: « Cet ADN ne figure dans aucun fichier »; C isn’t mentioned."
+     },
+     {
+      "why": "« dans le consentement… voulaient retrouver des cousins, pas aider la police ». C is wrong: he says « Remarquablement bien »; A isn’t mentioned."
+     },
+     {
+      "why": "Because relatives share part of their DNA, you can still be traced if a cousin consents, echoing R48-2’s “collective nature of genetic information”. A and B distort the sentence."
+     }
+    ]
+   },
+   "L48-3": {
+    "questions": [
+     {
+      "why": "« un piratage avait touché les comptes de près de deux cent mille clients ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« n’ont pas eu accès aux séquences d’ADN brutes, mais aux noms, aux pourcentages d’origines et aux listes de parents ». B is explicitly denied; C is wrong: asking customers to change passwords is a remedial step."
+     },
+     {
+      "why": "« les clients auraient dû être prévenus plus tôt : l’intrusion remonterait en effet à plusieurs semaines » (the past conditional expresses reproach; the conditional marks unconfirmed information). A and B aren’t what the association complains about."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V48-01": {
+   "zh": "the … side, the … component (of something)",
+   "exZh": "The medical side of these tests is the most problematic."
+  },
+  "V48-02": {
+   "zh": "to make hardly any sense",
+   "exZh": "On the scale of human history, national borders make hardly any sense."
+  },
+  "V48-03": {
+   "zh": "a false sense of security",
+   "exZh": "A “normal” result can give a false sense of security."
+  },
+  "V48-04": {
+   "zh": "all the same, nonetheless",
+   "exZh": "The law bans these tests; consumers buy kits from abroad all the same."
+  },
+  "V48-05": {
+   "zh": "to get round the law",
+   "exZh": "By ordering from abroad, many people get round the law."
+  },
+  "V48-06": {
+   "zh": "by … own admission",
+   "exZh": "By users’ own admission, hardly anyone reads the terms of use."
+  },
+  "V48-07": {
+   "zh": "to seem like common sense",
+   "exZh": "This argument seems like common sense, but it doesn’t hold up."
+  },
+  "V48-08": {
+   "zh": "a fundamental error",
+   "exZh": "This reasoning rests on a fundamental error."
+  },
+  "V48-09": {
+   "zh": "not to exempt (one) from (the need to)",
+   "exZh": "A technology’s benefits don’t exempt us from examining its costs."
+  },
+  "V48-10": {
+   "zh": "a cornerstone, the core",
+   "exZh": "Informed consent is the cornerstone of medical ethics."
+  },
+  "V48-11": {
+   "zh": "to reach its limits",
+   "exZh": "Here, the principle of individual consent reaches its limits."
+  },
+  "V48-12": {
+   "zh": "during (someone’s) lifetime",
+   "exZh": "During her lifetime, she didn’t want the secret to come out."
+  },
+  "V48-13": {
+   "zh": "(informal) not to be able to swallow (something)",
+   "exZh": "My aunt has never been able to swallow the truth."
+  },
+  "V48-14": {
+   "zh": "once the shock had passed",
+   "exZh": "Once the shock had passed, the two brothers decided to meet."
+  },
+  "V48-15": {
+   "zh": "that’s exactly where the problem lies",
+   "exZh": "The results arrive with no explanation: that’s exactly where the problem lies."
+  },
+  "V48-16": {
+   "zh": "to absorb (take in) bad news",
+   "exZh": "A face-to-face consultation helps patients absorb bad news."
+  },
+  "V48-17": {
+   "zh": "medical paternalism (doctors deciding for patients)",
+   "exZh": "She opposes medical paternalism but argues for guidance and support."
+  },
+  "V48-18": {
+   "zh": "to trace back to someone",
+   "exZh": "Through a distant cousin, investigators traced the suspect."
+  },
+  "V48-19": {
+   "zh": "to solve a crime",
+   "exZh": "The method made it possible to solve a forty-year-old crime."
+  },
+  "V48-20": {
+   "zh": "(in time) to date back to",
+   "exZh": "The intrusion reportedly dates back several weeks."
+  },
+  "V48-21": {
+   "zh": "safe from, protected against",
+   "exZh": "No database is safe from hackers."
+  },
+  "V48-22": {
+   "zh": "outright, purely and simply",
+   "exZh": "Banning these tests outright would be futile."
+  },
+  "V48-23": {
+   "zh": "(formal) cannot, could not",
+   "exZh": "This right cannot be exercised without safeguards."
+  },
+  "V48-24": {
+   "zh": "safeguards",
+   "exZh": "The law should provide safeguards against the resale of data."
+  },
+  "V48-25": {
+   "zh": "at (someone’s) request",
+   "exZh": "Companies should delete data at the customer’s request."
+  }
+ },
+ "title": "Bridge to C1: the structured presentation",
+ "phase": "Mock exams, repair and the bridge to C1"
+}

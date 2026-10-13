@@ -2,7 +2,8 @@
 import { store, commit, refresh } from '../store.js';
 import { node, reviewItems } from '../course.js';
 import { answerReview, spelledRight } from '../state.js';
-import { html, icon, pad2, frText, LETTERS, MODULE_NAMES } from '../ui.js';
+import { html, icon, pad2, frText, LETTERS, moduleName } from '../ui.js';
+import { t } from '../i18n.js';
 import * as speech from '../speech.js';
 import { dayContext, crumbs, recallCard, mountRecall, insertAccent, chunkGap, plainExample } from './common.js';
 
@@ -17,37 +18,37 @@ export async function spacedView(d) {
 
   const grammarCard = (x, r) => {
     const q = x.question;
-    return html`<section class="qcard ${r ? (r.correct ? 'is-ok' : 'is-bad') : ''}" aria-live="polite">
-      <p class="qcard-meta"><span>Jour ${pad2(x.src)} · ${pad2(n + 1)} / ${pad2(items.length)}</span><span class="tag">${node(q.node).name}</span>${n >= due() ? html`<span class="tag soft">选做</span>` : ''}</p>
+    return html`<section class="qcard ${r ? (r.correct ? 'is-ok' : 'is-bad') : ''}" data-key="r:${x.key}" data-state="${r ? (r.correct ? 'ok' : 'bad') : ''}" aria-live="polite">
+      <p class="qcard-meta"><span>Jour ${pad2(x.src)} · ${pad2(n + 1)} / ${pad2(items.length)}</span><span class="tag">${node(q.node).name}</span>${n >= due() ? html`<span class="tag soft">${t('common.optional')}</span>` : ''}</p>
       <p class="stem" lang="fr">${frText(q.stem)}</p>
-      <div class="opts" role="group">${q.options.map((o, i) => {
+      <div class="opts" role="group" aria-label="${t('common.options')}">${q.options.map((o, i) => {
         const cls = r ? (i === q.answer ? 'right' : i === r.selectedIndex ? 'wrong' : 'dim') : '';
         return html`<button class="opt ${cls}" data-act="answer" data-i="${i}" ${r ? 'disabled' : ''} lang="fr"><span class="opt-key">${LETTERS[i]}</span><span class="opt-text">${frText(o)}</span>
           ${r && i === q.answer ? icon('check', 'opt-mark') : r && i === r.selectedIndex ? icon('cross', 'opt-mark') : ''}</button>`;
       })}</div>
-      ${r ? html`<div class="feedback"><p class="feedback-head">${r.correct ? '回答正确' : '已记入错题本'}</p>${q.why ? html`<p>${frText(q.why)}</p>` : ''}</div>` : ''}
-      <div class="qnav"><button class="btn ghost" data-act="prev" ${n ? '' : 'disabled'}>${icon('left')} 上一项</button>
-        ${n < items.length - 1 ? html`<button class="btn ${r ? '' : 'ghost'}" data-act="next">下一项 ${icon('right')}</button>` : html`<a class="btn" href="#/day/${d}">回到今日 ${icon('right')}</a>`}</div>
+      ${r ? html`<div class="feedback"><p class="feedback-head">${r.correct ? t('common.correct') : t('common.toErrors')}</p>${q.why ? html`<p>${frText(q.why)}</p>` : ''}</div>` : ''}
+      <div class="qnav"><button class="btn ghost" data-act="prev" ${n ? '' : 'disabled'}>${icon('left')} ${t('common.prevItem')}</button>
+        ${n < items.length - 1 ? html`<button class="btn ${r ? '' : 'ghost'}" data-act="next">${t('common.nextItem')} ${icon('right')}</button>` : html`<a class="btn" href="#/day/${d}">${t('common.backToday')} ${icon('right')}</a>`}</div>
     </section>`;
   };
 
   const render = () => {
     const m = ctx.progress().modules.review;
-    if (!items.length) return html`<article class="page">${crumbs(d, MODULE_NAMES.review)}<p class="muted">暂无可复习的内容。</p></article>`;
+    if (!items.length) return html`<article class="page">${crumbs(d, moduleName('review'))}<p class="muted">${t('review.empty')}</p></article>`;
     const x = items[n], r = rec(x);
     const sources = [...new Set(items.map((i) => i.src))].sort((a, b) => b - a);
     return html`<article class="page spaced">
-      ${crumbs(d, MODULE_NAMES.review)}
+      ${crumbs(d, moduleName('review'))}
       <header class="page-head">
         <p class="eyebrow">Révision espacée</p>
-        <h1 class="display-s">间隔复习</h1>
-        <p class="muted">今日 ${m.done} / ${m.total} 项（圆形为语法题，方形为词块）· 复习 ${sources.map((s) => `Jour ${s}`).join('、')} 的语法与词块（间隔 1、3、7、14、21、30、45 天）。</p>
+        <h1 class="display-s">${t('review.title')}</h1>
+        <p class="muted">${t('review.summary', { done: m.done, total: m.total, days: sources.map((s) => `Jour ${s}`) })}</p>
       </header>
-      <nav class="dots" aria-label="复习项">${items.map((it, i) => {
+      <nav class="dots" aria-label="${t('review.items')}">${items.map((it, i) => {
         const v = rec(it);
-        return html`<button class="dot-q ${it.kind === 'v' ? 'chunk' : ''} ${i === n ? 'on' : ''} ${v ? (v.correct ? 'ok' : 'bad') : ''} ${i >= due() ? 'extra' : ''}" data-act="goto" data-i="${i}" aria-label="第 ${i + 1} 项（${it.kind === 'v' ? '词块' : '语法'}）">${i + 1}</button>`;
+        return html`<button class="dot-q ${it.kind === 'v' ? 'chunk' : ''} ${i === n ? 'on' : ''} ${v ? (v.correct ? 'ok' : 'bad') : ''} ${i >= due() ? 'extra' : ''}" data-act="goto" data-i="${i}" aria-label="${t('review.dot', { n: i + 1, chunk: it.kind === 'v' })}">${i + 1}</button>`;
       })}</nav>
-      ${x.kind === 'g' ? grammarCard(x, r) : recallCard(x.chunk, { meta: `Jour ${pad2(x.src)} · ${pad2(n + 1)} / ${pad2(items.length)}${n >= due() ? ' · 选做' : ''}`, typed, result: result || (r ? { ok: r.correct, typed: '' } : null) })}
+      ${x.kind === 'g' ? grammarCard(x, r) : recallCard(x.chunk, { meta: `Jour ${pad2(x.src)} · ${pad2(n + 1)} / ${pad2(items.length)}${n >= due() ? ` · ${t('common.optional')}` : ''}`, typed, result: result || (r ? { ok: r.correct, typed: '' } : null) })}
     </article>`;
   };
 
@@ -61,7 +62,7 @@ export async function spacedView(d) {
   const say = () => { const x = items[n]; if (x.kind === 'v') speech.play(`chunk:${x.chunk.id}`, [x.chunk.fr + '.', plainExample(x.chunk.ex)]); };
 
   return {
-    title: `复习 · Jour ${d}`,
+    title: `${moduleName('review')} · Jour ${d}`,
     render,
     mount: (root) => mountRecall(root, check),
     unmount: () => speech.stop(),

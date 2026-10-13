@@ -1,0 +1,212 @@
+{
+ "canDo": "Check whether the repairs transfer to new material, rather than remembering old answers.",
+ "review": "Look only at the summary of the error list.",
+ "input": "Listening and reading on new topics.",
+ "output": "Writing / speaking on a different prompt.",
+ "checkpoint": "Compare trends across Mocks 1–3: sample size, accuracy, time, recurring errors.",
+ "challenge": "Today’s challenge: test transfer with brand-new material. Pick an RFI « Journal en français facile » broadcast you haven’t heard, choose a social news story and record a 3-minute point de vue on it; then spend 45 minutes writing a ≥160-word opinion essay on the same topic. Go through your personal error list item by item to see whether old mistakes came back, and note “fixed / still there” in your own language.",
+ "items": {
+  "listening": {
+   "L45-1": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "Example: the part that was nearly demolished in 1960."
+     }
+    ]
+   },
+   "L45-3": {
+    "questions": [
+     {
+      "why": "Advertising brings in less than a tenth; the main funding comes from a public support fund and agreements with the town."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V45-01": {
+   "zh": "to be on someone’s side",
+   "exZh": "I’m on the owner’s side, and that isn’t a dodge."
+  },
+  "V45-02": {
+   "zh": "depending on …, according to …",
+   "exZh": "The question only makes sense in terms of how the piano is used."
+  },
+  "V45-03": {
+   "zh": "not to stand up well to scrutiny",
+   "exZh": "The usual explanations don’t stand up well to scrutiny."
+  },
+  "V45-04": {
+   "zh": "to multiply, to increase",
+   "exZh": "Requests to rename streets have multiplied."
+  },
+  "V45-05": {
+   "zh": "to have … in common",
+   "exZh": "The successful cases all have one thing in common: prior consultation."
+  },
+  "V45-06": {
+   "zh": "a prior consultation",
+   "exZh": "The successful cases all included prior consultation of local residents."
+  },
+  "V45-07": {
+   "zh": "to be a duplicate",
+   "exZh": "This name was changed simply because it was a duplicate."
+  },
+  "V45-08": {
+   "zh": "instead",
+   "exZh": "I no longer describe what they see; instead, I tell the story of the building site."
+  },
+  "V45-09": {
+   "zh": "to nearly …, to almost …",
+   "exZh": "Part of the building was nearly demolished in 1960."
+  },
+  "V45-10": {
+   "zh": "one time in three",
+   "exZh": "One time in three, it’s a reliable source."
+  },
+  "V45-11": {
+   "zh": "to have nothing against …",
+   "exZh": "I have nothing against frozen food; some of it is very good."
+  },
+  "V45-12": {
+   "zh": "to let someone believe that …",
+   "exZh": "The customer is led to believe that everything is made on the premises."
+  },
+  "V45-13": {
+   "zh": "to keep things deliberately vague",
+   "exZh": "What I object to is keeping things vague about how it’s made."
+  },
+  "V45-14": {
+   "zh": "above average",
+   "exZh": "An experienced deckhand earns above the local average."
+  },
+  "V45-15": {
+   "zh": "to have an advantage",
+   "exZh": "Observing the Moon has one advantage: you can do it early in the evening."
+  },
+  "V45-16": {
+   "zh": "to go into …, to commit to …",
+   "exZh": "Nobody finds out what the job is like before going into it."
+  },
+  "V45-17": {
+   "zh": "to lose all value",
+   "exZh": "A badly restored old piano loses all value."
+  },
+  "V45-18": {
+   "zh": "I remain at your disposal for …",
+   "exZh": "I remain at your disposal for any further information."
+  },
+  "V45-19": {
+   "zh": "failing a reply from you",
+   "exZh": "Failing a reply from you before 24 June, I will refer the matter to the ombudsman."
+  },
+  "V45-20": {
+   "zh": "there is no doubt that …",
+   "exZh": "There is no doubt that board games bring generations together."
+  },
+  "V45-21": {
+   "zh": "not to mention that …",
+   "exZh": "This service is useful, not to mention that it costs very little."
+  },
+  "V45-22": {
+   "zh": "in short, all in all",
+   "exZh": "All in all, this measure has more advantages than drawbacks."
+  },
+  "V45-23": {
+   "zh": "this isn’t what I ordered",
+   "exZh": "Look at the reference: this isn’t what I ordered."
+  },
+  "V45-24": {
+   "zh": "the best solution would be to …",
+   "exZh": "The best solution would be to ask the authorities for an extension."
+  },
+  "V45-25": {
+   "zh": "would it be possible to …? (polite)",
+   "exZh": "Would it be possible to come on a Saturday morning?"
+  },
+  "V45-26": {
+   "zh": "to restore … exactly as it was",
+   "exZh": "A piano destined for a museum is restored exactly as it was."
+  },
+  "V45-27": {
+   "zh": "to be specific to …",
+   "exZh": "The shortage of crews isn’t specific to the region."
+  },
+  "V45-28": {
+   "zh": "fixed costs",
+   "exZh": "Young applicants have fixed costs: rent, loans, insurance."
+  },
+  "V45-29": {
+   "zh": "to get round the difficulty",
+   "exZh": "Some shipowners got round the difficulty with observation days."
+  },
+  "V45-30": {
+   "zh": "to be under consideration",
+   "exZh": "The proposal has been under consideration for four years."
+  },
+  "V45-31": {
+   "zh": "to spark a debate",
+   "exZh": "These name changes sometimes spark very heated debates."
+  },
+  "V45-32": {
+   "zh": "when it comes to …",
+   "exZh": "Astronomy seemed undemanding when it comes to equipment."
+  },
+  "V45-33": {
+   "zh": "the rise of …, the boom in …",
+   "exZh": "The market has grown despite the rise of screens."
+  },
+  "V45-34": {
+   "zh": "with the naked eye",
+   "exZh": "The Milky Way is no longer visible to the naked eye in town."
+  },
+  "V45-35": {
+   "zh": "too bad for …, … will have to give",
+   "exZh": "We make the piano reliable, and too bad for the authenticity of the felts."
+  },
+  "V45-36": {
+   "zh": "to stay in port",
+   "exZh": "Seven boats out of thirty-two stayed in port for lack of crew."
+  },
+  "V45-37": {
+   "zh": "a perverse effect",
+   "exZh": "This rule is justified, but it has a perverse effect."
+  },
+  "V45-38": {
+   "zh": "against the trend of …",
+   "exZh": "The market has tripled, against all expectations."
+  },
+  "V45-39": {
+   "zh": "a false dilemma",
+   "exZh": "Keep or replace is often a false dilemma."
+  },
+  "V45-40": {
+   "zh": "an open question",
+   "exZh": "One open question remains: is this market sustainable?"
+  },
+  "V45-41": {
+   "zh": "that’s rather a good sign",
+   "exZh": "Visitors contradict me, and that’s rather a good sign."
+  },
+  "V45-42": {
+   "zh": "home-made, made on the premises",
+   "exZh": "In this café, all the cakes are home-made."
+  },
+  "V45-43": {
+   "zh": "the local press",
+   "exZh": "The local paper closed its office here eight years ago."
+  },
+  "V45-44": {
+   "zh": "a board game",
+   "exZh": "On Saturday evenings, we play a board game as a family."
+  },
+  "V45-45": {
+   "zh": "street lighting",
+   "exZh": "The town switches off the street lights after midnight."
+  }
+ },
+ "title": "Mock 3: consistency",
+ "phase": "Mock exams and repair"
+}

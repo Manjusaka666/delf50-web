@@ -3,6 +3,7 @@ import { store, refresh } from '../store.js';
 import { getCourse } from '../course.js';
 import { studyDays } from '../progress.js';
 import { html, icon, pad2, frText } from '../ui.js';
+import { t } from '../i18n.js';
 import { studiedProgress } from './common.js';
 
 export async function routeView() {
@@ -15,8 +16,8 @@ export async function routeView() {
     return html`<article class="page route">
       <header class="page-head">
         <p class="eyebrow">Itinéraire · ${course.days} jours</p>
-        <h1 class="display-s">${course.title} 路线</h1>
-        <p class="muted">${course.intro || ''} 每一天的题目都是固定的，可随时回看任一天。</p>
+        <h1 class="display-s">${t('route.title', { title: course.title })}</h1>
+        <p class="muted">${course.intro || ''} ${t('route.fixed')}</p>
       </header>
       ${course.phases.map((p, i) => html`<section class="phase">
         <header class="phase-head"><span class="phase-num">${pad2(i + 1)}</span><div><h2>${p.name}</h2><p class="muted">Jour ${p.from} – ${p.to}</p></div></header>
@@ -35,5 +36,5 @@ export async function routeView() {
     </article>`;
   };
 
-  return { title: `${course.title} 路线`, render };
+  return { title: t('route.title', { title: course.title }), render };
 }

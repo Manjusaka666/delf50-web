@@ -1,0 +1,11 @@
+{
+ "opinion-01": {
+  "why": "À mon avis introduces a personal opinion."
+ },
+ "opinion-02": {
+  "why": "Par exemple introduces an example."
+ },
+ "opinion-03": {
+  "why": "Pour conclure ends an opinion."
+ }
+}

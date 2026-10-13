@@ -1,0 +1,302 @@
+{
+ "canDo": "Can talk about near plans, longer-term goals and simple predictions.",
+ "review": "Review the present; contrast the futur proche with the futur simple.",
+ "input": "Listening: changes of plan; reading: event plans/project descriptions.",
+ "output": "Write 100 words about future plans; talk for 2 minutes about next week and next year.",
+ "checkpoint": "Use at least two ways of expressing the future; be able to say why you chose them.",
+ "challenge": "Today’s challenge: write down in French 3 concrete plans for next week (futur proche) and 2 goals for next year (futur simple), add a prediction (Je pense que…), then talk about it into your phone for 1 minute; when you’ve finished, pin the list up by your desk.",
+ "items": {
+  "reading": {
+   "R09-1": {
+    "questions": [
+     {
+      "why": "« les concerts commenceront plus tôt … pour que les familles puissent rester ». The street performances keep the same times; côté jardin is where the food area is."
+     },
+     {
+      "why": "« afin que l'on puisse discuter sans crier » states the purpose clearly."
+     },
+     {
+      "why": "Only Thursday is free; the other three evenings need tickets bought online from 2 May. The producers run the food, not the ticket sales."
+     }
+    ]
+   },
+   "R09-2": {
+    "questions": [
+     {
+      "why": "Just over six weeks is the work on the whole building; fifteen days is the notice period; each flat needs only one day."
+     },
+     {
+      "why": "The only solution the text gives is to leave the keys with someone you trust and tell the caretaker. The curtains must be taken down the day before."
+     },
+     {
+      "why": "The letter only mentions lower heating bills, because the new windows insulate better. Neither the rent nor the light is mentioned."
+     }
+    ]
+   },
+   "R09-3": {
+    "questions": [
+     {
+      "why": "At present it’s a fifteen-minute walk or a change to line 14. A bus every twelve minutes is after the extension; the Fontaine stop hasn’t been built yet."
+     },
+     {
+      "why": "« La fréquence actuelle, elle, ne changera pas sur le reste du parcours ». The last bus will be forty minutes later, and there will be three more stops."
+     },
+     {
+      "why": "After the extension it will be 23 h 10, forty minutes later than now, so it is currently 22 h 30. This question needs a subtraction."
+     }
+    ]
+   },
+   "R09-4": {
+    "questions": [
+     {
+      "why": "The opening is explicit: « Ne commencez pas par choisir une école : commencez par le métier visé. » Funding is the third step, meetings the second."
+     },
+     {
+      "why": "The text says many people discover at exactly this step that the job differs from what they imagined. Finding an employer and shortening the course aren’t mentioned."
+     },
+     {
+      "why": "One hour is the length of an interview, two or three the number of meetings. The overall preparation takes three to six months."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L09-1": {
+    "questions": [
+     {
+      "why": "Two volunteers have dropped out, leaving only six. The stall layout will be sent that evening; it isn’t the problem."
+     },
+     {
+      "why": "She says she’ll bring her brother and arrive herself at 6 h 30 — « je ne peux pas plus tôt ». 8 is the expected finishing time."
+     },
+     {
+      "why": "« Si ton frère vient, on tiendra les horaires » — the condition is one more person."
+     }
+    ]
+   },
+   "L09-2": {
+    "questions": [
+     {
+      "why": "From the second week the street is closed to all vehicles; pedestrians can still use the right-hand pavement. One-way traffic is the arrangement for the first week."
+     },
+     {
+      "why": "« La collecte ne changera pas de jour, mais les bacs devront être sortis au coin de la rue » — it’s the place that changes."
+     },
+     {
+      "why": "The announcement gives Thursday of the second week at 18 h 30."
+     }
+    ]
+   },
+   "L09-3": {
+    "questions": [
+     {
+      "why": "Every year they turn away about a hundred people for lack of slots at the venue. The fee isn’t changing, and he’s confident about the building."
+     },
+     {
+      "why": "« C'est le point le plus délicat : les profils que nous cherchons sont rares. » He is confident about the building."
+     },
+     {
+      "why": "The journalist says confiant; he corrects it to « Prudent, plutôt ». Funding isn’t mentioned."
+     }
+    ]
+   },
+   "L09-4": {
+    "questions": [
+     {
+      "why": "Her father works until 20 on Thursday. Her brother’s classes finish at 17 on Friday."
+     },
+     {
+      "why": "« plus tu attendras, plus ce sera cher ». Monday is when the whole family comes back."
+     },
+     {
+      "why": "She only asks whether he eats fish, to plan the Saturday meal."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V09-01": {
+   "zh": "to intend to …",
+   "exZh": "I intend to look for an internship in September."
+  },
+  "V09-02": {
+   "zh": "to plan to, to expect to …",
+   "exZh": "I plan to finish my master’s in June."
+  },
+  "V09-03": {
+   "zh": "my goal is to …",
+   "exZh": "My goal is to work in tourism."
+  },
+  "V09-04": {
+   "zh": "by + date, within + time",
+   "exZh": "Within two years, I’ll have my degree."
+  },
+  "V09-05": {
+   "zh": "if all goes well",
+   "exZh": "If all goes well, I’ll start work in September."
+  },
+  "V09-06": {
+   "zh": "the more …, the more …",
+   "exZh": "The longer you wait, the more expensive it’ll be."
+  },
+  "V09-07": {
+   "zh": "to remember to …",
+   "exZh": "Remember to book your train ticket."
+  },
+  "V09-08": {
+   "zh": "to go back to studying",
+   "exZh": "She’s going back to studying at thirty-two."
+  },
+  "V09-09": {
+   "zh": "to consider, to plan …",
+   "exZh": "Are you considering a long training course?"
+  },
+  "V09-10": {
+   "zh": "to have an interview",
+   "exZh": "You’ll have a one-hour interview with an adviser."
+  },
+  "V09-11": {
+   "zh": "to match, to correspond to …",
+   "exZh": "Sometimes the job doesn’t match what people imagined."
+  },
+  "V09-12": {
+   "zh": "to be paid for (by …)",
+   "exZh": "The course can be paid for by your employer."
+  },
+  "V09-13": {
+   "zh": "in full or in part",
+   "exZh": "The costs will be reimbursed in full or in part."
+  },
+  "V09-14": {
+   "zh": "We would like to inform you that …",
+   "exZh": "We would like to inform you that the windows of the building are going to be replaced."
+  },
+  "V09-15": {
+   "zh": "… in advance",
+   "exZh": "You will receive the exact date fifteen days in advance."
+  },
+  "V09-16": {
+   "zh": "to be short of …",
+   "exZh": "On Saturday, we’re going to be short of volunteers."
+  },
+  "V09-17": {
+   "zh": "We’ll see.",
+   "exZh": "The fee won’t change in the first year. After that, we’ll see."
+  },
+  "V09-18": {
+   "zh": "full-time",
+   "exZh": "We’re going to recruit two full-time coaches."
+  },
+  "V09-19": {
+   "zh": "I’m sure of it",
+   "exZh": "The building will be ready, I’m sure of it."
+  },
+  "V09-20": {
+   "zh": "to add a document to the file",
+   "exZh": "I have to add a document to my application."
+  },
+  "V09-21": {
+   "zh": "the missing document",
+   "exZh": "I’ll send the missing document tomorrow morning."
+  },
+  "V09-22": {
+   "zh": "before the deadline",
+   "exZh": "My application will be complete before the deadline."
+  },
+  "V09-23": {
+   "zh": "to do an internship",
+   "exZh": "Next year, I’m going to do an internship in a company."
+  },
+  "V09-24": {
+   "zh": "to get one’s degree, to graduate",
+   "exZh": "I’m going to get my degree in June."
+  },
+  "V09-25": {
+   "zh": "to take a training course",
+   "exZh": "I’m going to take a training course in accounting."
+  },
+  "V09-26": {
+   "zh": "to be held from … to …",
+   "exZh": "The festival will be held from 12 to 15 June."
+  },
+  "V09-27": {
+   "zh": "to be on sale",
+   "exZh": "Tickets will be on sale online from 2 May."
+  },
+  "V09-28": {
+   "zh": "away from …",
+   "exZh": "The food area will be set up away from the main stage."
+  },
+  "V09-29": {
+   "zh": "entry remains free",
+   "exZh": "Entry will remain free on Thursdays."
+  },
+  "V09-30": {
+   "zh": "to entrust something to someone",
+   "exZh": "You can leave your keys with someone you trust."
+  },
+  "V09-31": {
+   "zh": "to go down noticeably",
+   "exZh": "After the work, heating bills should go down noticeably."
+  },
+  "V09-32": {
+   "zh": "to be extended to … (a place)",
+   "exZh": "Line 9 will be extended to the north hospital."
+  },
+  "V09-33": {
+   "zh": "on weekdays",
+   "exZh": "There will be a bus every twelve minutes on weekdays."
+  },
+  "V09-34": {
+   "zh": "the last departure",
+   "exZh": "The last departure will be at 23:10."
+  },
+  "V09-35": {
+   "zh": "it takes longer",
+   "exZh": "With six people, it’ll take longer."
+  },
+  "V09-36": {
+   "zh": "to keep to the schedule",
+   "exZh": "If your brother comes, we’ll keep to the schedule."
+  },
+  "V09-37": {
+   "zh": "that way …, so that …",
+   "exZh": "I’ll send you the plan tonight; that way you’ll know where to put the tables."
+  },
+  "V09-38": {
+   "zh": "in one direction only (one-way)",
+   "exZh": "The street will stay open to one-way traffic."
+  },
+  "V09-39": {
+   "zh": "to put the bins out",
+   "exZh": "The bins will have to be put out at the corner of the street."
+  },
+  "V09-40": {
+   "zh": "during …, at (an event)",
+   "exZh": "We’ll update you on progress at a public meeting."
+  },
+  "V09-41": {
+   "zh": "to stay at the same level",
+   "exZh": "The fee will stay at the same level in the first year."
+  },
+  "V09-42": {
+   "zh": "during the day, in the course of the day",
+   "exZh": "We’ll be back on Monday, during the day."
+  },
+  "V09-43": {
+   "zh": "a progress review (meeting)",
+   "exZh": "A progress review is scheduled for Friday morning."
+  },
+  "V09-44": {
+   "zh": "to apply (for a job)",
+   "exZh": "I’m going to apply for a job at a travel agency."
+  },
+  "V09-45": {
+   "zh": "to find a job",
+   "exZh": "After my studies, I hope to find a job in Lyon."
+  }
+ },
+ "title": "Plans and the future",
+ "phase": "Foundations and grammar on autopilot"
+}

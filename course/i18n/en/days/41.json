@@ -1,0 +1,261 @@
+{
+ "canDo": "Complete a full original mock exam and build a first version of your error map.",
+ "review": "Before the test, read only the task instructions.",
+ "input": "Listening and reading at the official time limits, in proportion.",
+ "output": "Writing ≥160 words; the three-part oral.",
+ "checkpoint": "Sort errors into knowledge gaps, application gaps, time, carelessness and comprehension strategy.",
+ "challenge": "Today’s challenge: after a full mock using a set of TV5MONDE Apprendre B1 listening and reading exercises, build your first “error map”: sort each wrong answer into main idea / detail / negation / opinion / grammar / vocabulary and count them; write down, in your own language, the 2 most frequent types and one concrete rule to fix them next week.",
+ "items": {
+  "reading": {
+   "R41-1": {
+    "questions": [
+     null,
+     {
+      "why": "The internal price hasn’t changed in two years, while the market rose 22% over the same period."
+     },
+     null,
+     {
+      "why": "« ni technique ni financière », and it needed a volunteer lawyer’s help for eighteen months."
+     }
+    ]
+   },
+   "R41-2": {
+    "questions": [
+     {
+      "why": "An annual drop-out rate of 8% is far below the average for associations."
+     }
+    ]
+   },
+   "R41-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "This assessment comes at the end of the article and sums up the nature of the investment."
+     }
+    ]
+   },
+   "R41-4": {
+    "questions": [
+     null,
+     {
+      "why": "The text states this distinction directly."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L41-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "The total cost over three years is only two thousand euros: the difficulty is not the amount but the vote."
+     }
+    ]
+   },
+   "L41-2": {
+    "questions": [
+     {
+      "why": "« peut-être une dizaine de cas » over four years."
+     }
+    ]
+   },
+   "L41-4": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "One of the three examples given in the text."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V41-01": {
+   "zh": "to conclude from this that …",
+   "exZh": "People often conclude from this that the format doesn’t work."
+  },
+  "V41-02": {
+   "zh": "to be correlated with …",
+   "exZh": "The drop in cycle traffic is mainly correlated with darkness."
+  },
+  "V41-03": {
+   "zh": "to be entrusted with …",
+   "exZh": "The intern observes, then is entrusted with clearly defined tasks."
+  },
+  "V41-04": {
+   "zh": "on average",
+   "exZh": "On average, the output covers 18% of the households’ consumption."
+  },
+  "V41-05": {
+   "zh": "to be around …",
+   "exZh": "The average price is around three euros per item."
+  },
+  "V41-06": {
+   "zh": "well below …",
+   "exZh": "About fifteen journeys: well below what we had hoped for."
+  },
+  "V41-07": {
+   "zh": "to have the advantage of …",
+   "exZh": "This criterion has the advantage of being verifiable."
+  },
+  "V41-08": {
+   "zh": "to protect someone from …",
+   "exZh": "The internal price protected participants from a 22% rise."
+  },
+  "V41-09": {
+   "zh": "that settles the question",
+   "exZh": "If no employee holds this role, that settles the question: the internship fills a job."
+  },
+  "V41-10": {
+   "zh": "to be wrong about …",
+   "exZh": "We were wrong about the main obstacle."
+  },
+  "V41-11": {
+   "zh": "to depend on someone to …",
+   "exZh": "Nobody wants to depend on someone else to get home in the evening."
+  },
+  "V41-12": {
+   "zh": "to be powerless against …",
+   "exZh": "Against the cold, a local authority is powerless; against darkness, it can do a lot."
+  },
+  "V41-13": {
+   "zh": "to request an extension",
+   "exZh": "May I request an extension until 12 February."
+  },
+  "V41-14": {
+   "zh": "to carry out an exchange",
+   "exZh": "Could you exchange it for the model I ordered?"
+  },
+  "V41-15": {
+   "zh": "in other words",
+   "exZh": "In other words, the appointment must be before 12 February?"
+  },
+  "V41-16": {
+   "zh": "to reach an agreement",
+   "exZh": "We have finally reached an agreement on the delivery date."
+  },
+  "V41-17": {
+   "zh": "everyone gets something out of it",
+   "exZh": "With a credit note and a gesture on delivery, everyone gets something out of it."
+  },
+  "V41-18": {
+   "zh": "as an exception",
+   "exZh": "Could you, as an exception, accept my confirmation on 13 February?"
+  },
+  "V41-19": {
+   "zh": "to take a position",
+   "exZh": "In an opinion article, you must take a position from the introduction."
+  },
+  "V41-20": {
+   "zh": "to provide a supporting document",
+   "exZh": "You still need to provide proof of address."
+  },
+  "V41-21": {
+   "zh": "to run on, to go on longer",
+   "exZh": "Nobody wants to depend on someone else to get home if their day runs late."
+  },
+  "V41-22": {
+   "zh": "to visit someone",
+   "exZh": "The town hall visits every new resident."
+  },
+  "V41-23": {
+   "zh": "accordingly",
+   "exZh": "The association changed its training accordingly."
+  },
+  "V41-24": {
+   "zh": "over the same period",
+   "exZh": "Prices rose by 22% over the same period."
+  },
+  "V41-25": {
+   "zh": "the sums are quickly done",
+   "exZh": "When I compare it with the time I used to waste, the sums are quickly done."
+  },
+  "V41-26": {
+   "zh": "an available slot",
+   "exZh": "Would you have a slot available before 12 February?"
+  },
+  "V41-27": {
+   "zh": "to publicise …, to communicate about …",
+   "exZh": "I’d rather say it plainly than publicise the number of sign-ups."
+  },
+  "V41-28": {
+   "zh": "to serve as a pretext for …",
+   "exZh": "Here, reading serves as a pretext for a relationship."
+  },
+  "V41-29": {
+   "zh": "the clocks changing (daylight saving)",
+   "exZh": "The drop occurs in the ten days after the clocks change."
+  },
+  "V41-30": {
+   "zh": "a drop-out rate",
+   "exZh": "The report notes a very low drop-out rate among volunteers."
+  },
+  "V41-31": {
+   "zh": "to explain only part of …",
+   "exZh": "Rain only explains part of the phenomenon."
+  },
+  "V41-32": {
+   "zh": "to halve …",
+   "exZh": "Lighting the cycle paths halved the winter drop."
+  },
+  "V41-33": {
+   "zh": "with the support of …",
+   "exZh": "The project succeeded with the support of a volunteer legal adviser."
+  },
+  "V41-34": {
+   "zh": "the real interest lies elsewhere",
+   "exZh": "The figures are modest: the real interest lies elsewhere."
+  },
+  "V41-35": {
+   "zh": "a disguised job",
+   "exZh": "An internship can be real training or a disguised job."
+  },
+  "V41-36": {
+   "zh": "a completion rate",
+   "exZh": "The completion rate of online courses remains low."
+  },
+  "V41-37": {
+   "zh": "in full knowledge of the facts",
+   "exZh": "Some customers pay more, in full knowledge of the facts."
+  },
+  "V41-38": {
+   "zh": "of a completely different order",
+   "exZh": "The rate is still low, but it is of a completely different order."
+  },
+  "V41-39": {
+   "zh": "to attach a condition to …",
+   "exZh": "We shouldn’t drop this criterion but attach a condition to it."
+  },
+  "V41-40": {
+   "zh": "collective self-consumption (of energy)",
+   "exZh": "The scheme has a technical name: collective self-consumption."
+  },
+  "V41-41": {
+   "zh": "a black spot (danger point)",
+   "exZh": "The town dealt with the black spots: junctions and underpasses beneath the railway."
+  },
+  "V41-42": {
+   "zh": "pay-what-you-want",
+   "exZh": "In this pay-what-you-want shop, customers set the price themselves."
+  },
+  "V41-43": {
+   "zh": "a cycle route",
+   "exZh": "Lighting cycle routes reduces the winter drop."
+  },
+  "V41-44": {
+   "zh": "an online course",
+   "exZh": "I gave up an online course for lack of time."
+  },
+  "V41-45": {
+   "zh": "to handle a complaint",
+   "exZh": "We used to spend hours handling complaints that came in too late."
+  }
+ },
+ "title": "Mock 1 + sorting your mistakes",
+ "phase": "Mock exams and repair"
+}

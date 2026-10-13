@@ -1,0 +1,226 @@
+{
+ "canDo": "Can accurately report other people’s views, questions and promises in past-tense indirect speech (sequence of tenses, converting time expressions, indirect questions), choosing reporting verbs that show the speaker’s attitude.",
+ "review": "Review day 10’s past conditional (« le maire aurait déclaré que… » for unconfirmed information) and day 1’s layers of past tenses: in indirect speech, présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel.",
+ "input": "Read: a report on the limits of opinion polls, an editorial against “polls instead of debate” and a reader’s letter correcting a report (mark every reporting verb and the tenses being reported); listen: a radio report with interviews on a citizens’ assembly, a segment on vox pops and a local news flash (note “who said what, with which verb”).",
+ "output": "Write: a formal letter (≥220 words) to the mayor on behalf of an association, accurately reporting what was said at a meeting to set the record straight; speak: a 3-minute monologue on the effect of publishing polls before an election, then a debate on “online public consultations”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; at least 5 instances of indirect speech in the letter, all with the correct sequence of tenses, and at least 4 different reporting verbs (affirmer, préciser, admettre, se demander si…); a 3-minute monologue without breaking off.",
+ "challenge": "Today’s challenge: choose a news item on RFI’s « Journal en français facile » or TV5MONDE that includes a poll or a politician’s statement, and write 3 sentences of indirect speech (« Le ministre a affirmé que… », « Les journalistes se sont demandé si… »); then record a 1-minute spoken summary saying whether you trust the figures.",
+ "items": {
+  "reading": {
+   "R12-1": {
+    "questions": [
+     {
+      "why": "The election is just the hook; the text discusses why polls get it wrong (abstention, question wording) and how readers should view them. A is the opening example; C: the text doesn’t describe the inner workings of polling firms."
+     },
+     {
+      "why": "« de nombreux sondés avaient affirmé qu’ils iraient voter, alors qu’ils étaient finalement restés chez eux ». B: the text doesn’t say the sample was too small; C is a general problem the sociologist raises, not Aubertin’s explanation of this error."
+     },
+     {
+      "why": "The same proposal, worded two ways, gave 70% versus 35%, and her conclusion is « un chiffre isolé n’avait aucune valeur tant qu’on ignorait la question exacte ». A and B treat the experiment’s results as genuine public opinion."
+     },
+     {
+      "why": "se défendre de qqch = to deny, to reject a claim; here, rejecting the idea of “throwing polls in the bin”. B twists it into a legal “defence”; C means the opposite."
+     },
+     {
+      "why": "« Il a toutefois admis que son institut devrait… publier systématiquement la marge d’erreur et le texte intégral des questions. » A is the opposite of « les grandes tendances étaient généralement bien mesurées »; C isn’t mentioned."
+     },
+     {
+      "why": "A “photograph” records the state of things at one moment; “not a prediction” means you can’t infer the result from it. B reads it literally; C is the opposite of the meaning."
+     }
+    ]
+   },
+   "R12-2": {
+    "questions": [
+     {
+      "why": "« elles ont pris la place de l’argumentation », with the headline « Rendez-nous le débat ! ». A: the author says explicitly « Je ne conteste pas l’utilité des enquêtes d’opinion »; C: the school reform is just an example."
+     },
+     {
+      "why": "The guest wanted to explain the text first, but the presenter demanded a simple oui or non, « car le temps pressait ». A: the guest wasn’t refusing to take a position; B: the text doesn’t say the presenter didn’t understand the reform."
+     },
+     {
+      "why": "« Une opinion n’est pas un réflexe : elle se construit… elle évolue au contact des arguments adverses. » B is the opposite of the text; C over-extends it."
+     },
+     {
+      "why": "« Certains me répondront que les sondages permettent… C’est vrai. » is a concession. B: the text doesn’t defend the presenter; C is the mistaken idea the author criticises."
+     },
+     {
+      "why": "« pour chaque sondage publié, consacrons autant d’espace aux arguments de chaque camp ». Neither A nor C is proposed."
+     }
+    ]
+   },
+   "R12-3": {
+    "questions": [
+     {
+      "why": "« Je me permets de rectifier cette affirmation… je vous demande de publier un rectificatif ». A: she isn’t against the project; B: she is only reporting the second meeting the mayor mentioned."
+     },
+     {
+      "why": "« 54 % d’entre eux approuvaient le projet, à condition que les places de stationnement soient conservées ». B is the newspaper’s version; C is the opposite of the condition."
+     },
+     {
+      "why": "« comme si leur avis représentait celui de tout le quartier ». A is the opposite — the article quoted the shopkeepers; C: she criticises the omission of figures, not their fabrication."
+     },
+     {
+      "why": "« Je ne prétends pas que le projet soit parfait. Mais… vos lecteurs ont le droit de savoir ce qui a réellement été dit. » A is the opposite of the text; B: the letter expresses no opposition."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L12-1": {
+    "questions": [
+     {
+      "why": "« ils ont remis leurs propositions au maire », followed by a discussion of whether they will be implemented. Neither B nor C is covered."
+     },
+     {
+      "why": "« Il a déclaré qu’il avait lu toutes les propositions et qu’il en retiendrait au moins dix. » A exaggerates; C contradicts « il avait lu toutes les propositions »."
+     },
+     {
+      "why": "« au début, elle ne se sentait pas capable… elle avait beaucoup appris grâce aux experts invités ». A is the opposite of “thanks to the experts”; B isn’t mentioned."
+     },
+     {
+      "why": "« il attendrait de voir les décisions concrètes avant de se réjouir », and he asks what came of the last consultation — a cautious attitude. Neither B nor C fits."
+     },
+     {
+      "why": "« Le problème, c’est la suite… ils n’en ont gardé qu’une petite partie. » A: he says the deliberation stage is “often very successful”; C isn’t mentioned."
+     },
+     {
+      "why": "« il faudrait que les élus expliquent publiquement, proposition par proposition, ce qu’ils retiennent et pourquoi ils écartent le reste ». Neither A nor B is proposed."
+     }
+    ]
+   },
+   "L12-2": {
+    "questions": [
+     {
+      "why": "« Un micro-trottoir, ce n’est pas un sondage… méfiez-vous. » A: free transport is just the topic of the vox pop; C: there is no national poll."
+     },
+     {
+      "why": "« elle m’a demandé qui paierait » — an indirect question with qui + conditional. Neither B nor C is mentioned."
+     },
+     {
+      "why": "« le présentateur a conclu que les habitants étaient massivement favorables… à partir de… six personnes ! » A: no contradiction is mentioned; C: no fabrication is mentioned."
+     },
+     {
+      "why": "« Ça donne de la couleur, de la vie, des voix. Mais ça ne dit rien de ce que pense l’ensemble de la population. » A is explicitly rejected; B isn’t mentioned."
+     }
+    ]
+   },
+   "L12-3": {
+    "questions": [
+     {
+      "why": "« 61 % se sont prononcés en faveur du projet ». B is the opposite; C: the recording doesn’t say turnout was too low."
+     },
+     {
+      "why": "« les livraisons resteraient autorisées le matin, avant 10 heures ». A: work starts in the spring; C isn’t mentioned."
+     },
+     {
+      "why": "« si leurs clients venus en voiture continueront à fréquenter leurs boutiques ». A isn’t mentioned; B: they intend to ask for a meeting and haven’t been refused."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V12-01": {
+   "zh": "(at the time) the outcome seemed settled",
+   "exZh": "Three days before the vote, everyone thought the outcome was settled."
+  },
+  "V12-02": {
+   "zh": "it all seemed settled",
+   "exZh": "With ten minutes to go, it all seemed settled, but the other team equalised."
+  },
+  "V12-03": {
+   "zh": "social desirability bias",
+   "exZh": "Social desirability bias leads respondents to present themselves better than they are."
+  },
+  "V12-04": {
+   "zh": "an opinion poll",
+   "exZh": "According to a poll published yesterday, residents remain divided."
+  },
+  "V12-05": {
+   "zh": "the margin of error",
+   "exZh": "Two points separate the candidates, which is within the margin of error."
+  },
+  "V12-06": {
+   "zh": "to deny it",
+   "exZh": "Polling firms are accused of manipulating opinion, but they deny it."
+  },
+  "V12-07": {
+   "zh": "the full text",
+   "exZh": "The newspaper published the full text of the questions put to respondents."
+  },
+  "V12-08": {
+   "zh": "won’t … any time soon",
+   "exZh": "The candidates won’t forget that election night any time soon."
+  },
+  "V12-09": {
+   "zh": "to close the debate",
+   "exZh": "A simple percentage isn’t enough to close the debate."
+  },
+  "V12-10": {
+   "zh": "through contact with …",
+   "exZh": "Opinions evolve through contact with other people’s arguments."
+  },
+  "V12-11": {
+   "zh": "the opposing arguments",
+   "exZh": "A good debater takes the time to listen to the opposing arguments."
+  },
+  "V12-12": {
+   "zh": "that’s the price to pay",
+   "exZh": "That’s the price to pay for pluralism."
+  },
+  "V12-13": {
+   "zh": "to set the record straight",
+   "exZh": "I am writing to set the record straight."
+  },
+  "V12-14": {
+   "zh": "to publish a correction",
+   "exZh": "The daily agreed to publish a correction in its Monday edition."
+  },
+  "V12-15": {
+   "zh": "to distort (her) words",
+   "exZh": "The minutes distorted her words, attributing hostile intentions to her."
+  },
+  "V12-16": {
+   "zh": "chosen by lot",
+   "exZh": "The citizens’ assembly brought together fifty citizens chosen by lot."
+  },
+  "V12-17": {
+   "zh": "a citizens’ assembly",
+   "exZh": "The town hall organised a citizens’ assembly on the future of transport."
+  },
+  "V12-18": {
+   "zh": "to hand in their proposals",
+   "exZh": "Last night, the participants handed their proposals to the mayor."
+  },
+  "V12-19": {
+   "zh": "as a formality",
+   "exZh": "They felt they had been consulted only as a formality."
+  },
+  "V12-20": {
+   "zh": "to keep one’s word",
+   "exZh": "The mayor promised a review in six months; we’ll see if he keeps his word."
+  },
+  "V12-21": {
+   "zh": "a vox pop",
+   "exZh": "The radio station broadcast a vox pop recorded outside the station."
+  },
+  "V12-22": {
+   "zh": "overwhelmingly in favour",
+   "exZh": "The presenter claimed the population was overwhelmingly in favour of free travel."
+  },
+  "V12-23": {
+   "zh": "to come out in favour of …",
+   "exZh": "61% of participants came out in favour of the project."
+  },
+  "V12-24": {
+   "zh": "a representative sample",
+   "exZh": "To be reliable, a survey must be based on a representative sample of the population."
+  },
+  "V12-25": {
+   "zh": "the outgoing mayor (seeking re-election)",
+   "exZh": "After twelve years in office, the outgoing mayor was beaten in the first round."
+  }
+ },
+ "title": "Reporting what others say",
+ "phase": "Upgrading structures and precise expression"
+}

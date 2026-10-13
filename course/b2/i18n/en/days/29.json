@@ -1,0 +1,224 @@
+{
+ "canDo": "Can follow a 7–8-minute radio interview in the DELF B2 long-listening format (played twice): get the topic and the speakers’ positions on the first listen and fill in details on the second; can recognise uncertain information conveyed by reported speech (il m’a dit que…) and modalisation (il semblerait que, the conditional).",
+ "review": "Review J12’s reported speech (sequence of tenses) and J19’s modalisation; look back at J28’s nominalised headlines and J27’s formal register (for polite rebuttals in writing and debate).",
+ "input": "Read: an analysis of radio’s enduring success, an editorial seeking funding for community radio and a listener’s letter protesting the end of a late-night show; listen: an interview with a late-night phone-in host (played twice), a podcast column and a local radio news flash. Strategy: read the questions and predict before the first listen; on the first listen note only keywords and positions; on the second check numbers, examples and reported content.",
+ "output": "Write: a reply on a media forum to “Is local radio doomed?” (≥250 words), quoting someone else’s view at least once (reported speech) and using two modalising expressions; speak: a 5-minute monologue on “AI-generated voices presenting radio shows”, then a debate on “listener phone-ins: democratic expression or a place to vent?”.",
+ "checkpoint": "DELF-format self-test: ≥5 of 6 long-listening questions correct after two listens; can recap the interview’s main points from 5 lines of notes; a well-structured 5-minute monologue.",
+ "challenge": "Today’s challenge: pick an interview or report of 5+ minutes on RFI or TV5MONDE and listen twice, exam-style: first note just 5 keywords, then expand them into 3 reporting sentences (Selon l’invité, … / Il a expliqué que…) and check yourself against the original or the transcript.",
+ "items": {
+  "reading": {
+   "R29-1": {
+    "questions": [
+     {
+      "why": "The article starts from « Pourtant, la radio est toujours là » and analyses why it has lasted (companionship, trust) and how it has adapted (the morning slot, podcasts). A is the opposite of the whole text; C: ad revenue is only mentioned in passing in the third paragraph."
+     },
+     {
+      "why": "« La radio ne demande ni les yeux ni les mains… Elle accompagne la vie au lieu de l’interrompre ». B isn’t mentioned; C is his colleagues’ mistaken prediction back then."
+     },
+     {
+      "why": "Reported speech: « ses collègues lui affirmaient que la radio n’aurait bientôt plus qu’un public de retraités » (the conditional = future in the past). A is the opposite; B has no basis."
+     },
+     {
+      "why": "« La tranche matinale… concentre désormais l’essentiel de l’audience et des recettes publicitaires ». A describes how the rest of the schedule was adjusted; C isn’t mentioned."
+     },
+     {
+      "why": "s’effacer = to fade, to disappear; tendre à = to tend to. Stations also make podcasts, so the line between the two is increasingly blurred. A and B are distortions."
+     },
+     {
+      "why": "« Plusieurs observateurs l’attribuent… créerait un sentiment de proximité »: the conditional créerait signals an unproven hypothesis. A doesn’t fit the modalised tone; C: the author doesn’t deny it, only doubts whether it can attract young people."
+     }
+    ]
+   },
+   "R29-2": {
+    "questions": [
+     {
+      "why": "The editorial stresses their irreplaceable role and calls for action: « Il serait temps de les entendre ». A is the opposite of the text’s praise; B: there is no comparison of audience figures."
+     },
+     {
+      "why": "« Elles se font l’écho de réalités que les grandes stations nationales ignorent ». Neither A nor C has any basis."
+     },
+     {
+      "why": "faire les frais de qch = to bear the brunt of something. B and C misread frais literally (as costs)."
+     },
+     {
+      "why": "« une visibilité sur trois ans pour cesser de vivre au jour le jour ». A is rejected by « Ils ne réclament pas des privilèges »; B isn’t mentioned."
+     },
+     {
+      "why": "« Une démocratie se mesure aussi au nombre de voix qu’elle laisse s’exprimer » raises the local radio question to the level of democracy. Neither A nor C fits."
+     }
+    ]
+   },
+   "R29-3": {
+    "questions": [
+     {
+      "why": "The title and the whole letter protest against the show being dropped and ask the station to « revenir sur sa décision ». B is the opposite; C isn’t mentioned."
+     },
+     {
+      "why": "Reported speech: « La direction a expliqué que l’audience nocturne était trop faible ». A and C aren’t mentioned."
+     },
+     {
+      "why": "« c’est une présence humaine au cœur de la nuit ». A is exactly what she sees as the flaw of the replacement programme; B has no basis."
+     },
+     {
+      "why": "« ou, si c’est impossible, de maintenir une émission en direct au moins deux nuits par semaine ». A: she clearly says it can’t replace the show; C isn’t mentioned."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L29-1": {
+    "questions": [
+     {
+      "why": "The interview covers the late-night phone-in’s listeners, rules and purpose, ending with « ça sert surtout à une chose : tenir compagnie ». B is only part of the audience; C isn’t covered."
+     },
+     {
+      "why": "Reported speech: « Un auditeur m’a dit un jour que j’étais la seule personne à qui il avait parlé de toute la semaine ». A confuses it with the host’s question; C isn’t mentioned."
+     },
+     {
+      "why": "« hors antenne, l’équipe lui donne les coordonnées de services d’écoute spécialisés ». A and B aren’t mentioned."
+     },
+     {
+      "why": "« ce n’est pas un défouloir : chacun peut s’exprimer, à condition de respecter les autres ». A is wrong: an assistant screens the calls; C is exactly what he denies."
+     },
+     {
+      "why": "« À la radio, on entend une voix, une hésitation, une émotion. Il semblerait que ça désamorce beaucoup de tensions »; il semblerait que expresses a cautious hypothesis. B is how he describes social media; C is wrong: listeners « ne sont pas du tout d’accord »."
+     },
+     {
+      "why": "« Les auditeurs ont envoyé des centaines de messages, et la station a finalement décidé de la maintenir ». A and B aren’t mentioned."
+     }
+    ]
+   },
+   "L29-2": {
+    "questions": [
+     {
+      "why": "The column analyses why podcasts are popular and discusses their relationship with radio. A is rejected by « Pas du tout ! »; C isn’t covered."
+     },
+     {
+      "why": "« D’abord, la liberté… on l’écoute quand on veut, en différé ». B and C aren’t mentioned."
+     },
+     {
+      "why": "« de bouche à oreille, sans aucune publicité ». A is rejected by « sans aucune publicité »; B isn’t mentioned."
+     },
+     {
+      "why": "« le podcast a un point faible : il ne connaît pas le direct ». A is something she sees as a strength; C isn’t mentioned."
+     }
+    ]
+   },
+   "L29-3": {
+    "questions": [
+     {
+      "why": "« pourrait cesser d’émettre »: the conditional of pouvoir expresses possibility, not certainty. A is too definite; C is only background."
+     },
+     null,
+     {
+      "why": "aurait décidé and auraient lancé are the news conditional, signalling “unconfirmed”; sous toutes réserves = subject to confirmation. B has no basis; C isn’t why the conditional is used."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V29-01": {
+   "zh": "in the age of …",
+   "exZh": "In the age of ubiquitous screens, radio is surprisingly resilient."
+  },
+  "V29-02": {
+   "zh": "to look like, to be seen as",
+   "exZh": "This old medium looks like a survivor."
+  },
+  "V29-03": {
+   "zh": "the morning slot",
+   "exZh": "The morning slot accounts for most of the audience."
+  },
+  "V29-04": {
+   "zh": "to keep (an audience) loyal",
+   "exZh": "Stations are struggling to keep an increasingly fickle audience loyal."
+  },
+  "V29-05": {
+   "zh": "the programme schedule",
+   "exZh": "The rest of the schedule has been completely redesigned."
+  },
+  "V29-06": {
+   "zh": "to stand the test of time",
+   "exZh": "Radio has stood the test of time."
+  },
+  "V29-07": {
+   "zh": "to shut down, to go out of business",
+   "exZh": "Without funding, several stations could shut down."
+  },
+  "V29-08": {
+   "zh": "a local, close-to-home medium",
+   "exZh": "Community radio remains an irreplaceable local medium."
+  },
+  "V29-09": {
+   "zh": "to give a voice to",
+   "exZh": "These stations give a voice to residents who are never heard elsewhere."
+  },
+  "V29-10": {
+   "zh": "to echo, to report on",
+   "exZh": "They report on realities that the big stations ignore."
+  },
+  "V29-11": {
+   "zh": "to bear the brunt of",
+   "exZh": "Remote areas would be the first to bear the brunt."
+  },
+  "V29-12": {
+   "zh": "to take over (from)",
+   "exZh": "At night, an automated music programme will take over."
+  },
+  "V29-13": {
+   "zh": "on air",
+   "exZh": "Being on air before midnight feels so strange!"
+  },
+  "V29-14": {
+   "zh": "a listener phone-in",
+   "exZh": "He hosts a phone-in between midnight and two in the morning."
+  },
+  "V29-15": {
+   "zh": "to listen attentively",
+   "exZh": "My job is to listen attentively to the people who call."
+  },
+  "V29-16": {
+   "zh": "to calm things down, to defuse tension",
+   "exZh": "When the tone gets heated, the host tries to calm things down."
+  },
+  "V29-17": {
+   "zh": "to go on air",
+   "exZh": "An assistant decides who can go on air."
+  },
+  "V29-18": {
+   "zh": "a place to let off steam",
+   "exZh": "A phone-in isn’t a place to let off steam."
+  },
+  "V29-19": {
+   "zh": "(success, interest) to show no sign of fading",
+   "exZh": "For ten years, the festival’s success has shown no sign of fading."
+  },
+  "V29-20": {
+   "zh": "to keep someone company",
+   "exZh": "At night, radio is above all there to keep people company."
+  },
+  "V29-21": {
+   "zh": "(not live) on demand, catch-up listening",
+   "exZh": "You can listen to the show on demand on the metro."
+  },
+  "V29-22": {
+   "zh": "word of mouth",
+   "exZh": "The podcast found its audience by word of mouth."
+  },
+  "V29-23": {
+   "zh": "to be at stake",
+   "exZh": "If the station closes, local news itself is at stake."
+  },
+  "V29-24": {
+   "zh": "to stop broadcasting",
+   "exZh": "The station could stop broadcasting at the end of the year."
+  },
+  "V29-25": {
+   "zh": "subject to confirmation",
+   "exZh": "The above information is subject to confirmation."
+  }
+ },
+ "title": "Listening I: long radio documents",
+ "phase": "DELF B2 task training"
+}

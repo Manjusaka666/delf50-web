@@ -1,0 +1,92 @@
+{
+ "miseEnRelief-01": {
+  "why": "Highlighting the subject takes c’est… qui: the clause lacks a subject (who made the decision). que highlights an object or adverbial; dont is for a complement introduced by de."
+ },
+ "miseEnRelief-02": {
+  "why": "The highlighted ce roman is the direct object of recommander, so c’est… que. qui highlights the subject; dont is for de + complement (recommander doesn’t take de)."
+ },
+ "miseEnRelief-03": {
+  "why": "The preposition de is already placed before the highlighted element (de ce projet), so only que follows: C’est de ce projet que…. qui highlights the subject; lequel can’t be used this way."
+ },
+ "miseEnRelief-04": {
+  "why": "parler de qqch: when there is no de before the highlighted element, dont includes the de: C’est ce projet dont je voulais parler. que lacks the preposition de; qui highlights the subject."
+ },
+ "miseEnRelief-05": {
+  "why": "The verb after c’est moi qui agrees with moi (first person singular): c’est moi qui ai raison. a is third person, a common error; avons is plural."
+ },
+ "miseEnRelief-06": {
+  "why": "After c’est nous qui the verb is first person plural: nous avons organisé. ont and a are both third person and don’t agree with nous."
+ },
+ "miseEnRelief-07": {
+  "why": "The verb agrees with vous, the antecedent of qui: c’est vous qui avez. a and ont are third person."
+ },
+ "miseEnRelief-08": {
+  "why": "The clause lacks a subject (what strikes me), so ce qui. ce que is an object; ce dont is for a complement introduced by de (frapper doesn’t take de)."
+ },
+ "miseEnRelief-09": {
+  "why": "apprécier qqch is transitive and the clause lacks a direct object, so ce que. ce qui is a subject (the clause already has the subject je); ce dont is for a complement introduced by de."
+ },
+ "miseEnRelief-10": {
+  "why": "avoir besoin de qqch: the clause lacks the complement introduced by de, so ce dont, and the highlighted part keeps de (c’est d’un logement). ce que lacks de; ce qui is a subject."
+ },
+ "miseEnRelief-11": {
+  "why": "The preposition à is already placed before the highlighted element (à cette collègue), so que follows: C’est à cette collègue que…. à qui repeats the preposition, which is non-standard; qui highlights the subject."
+ },
+ "miseEnRelief-12": {
+  "why": "confier qqch à qqn: there is no à before the highlighted element, so the clause needs à qui to introduce the indirect object. que lacks the preposition à; dont corresponds to de, not à."
+ },
+ "miseEnRelief-13": {
+  "why": "ce qui…, c’est que + clause: a que clause follows, so the singular c’est. ce sont only introduces plural nouns; il est can’t be used in this emphatic structure."
+ },
+ "miseEnRelief-14": {
+  "why": "The verb after c’est toi qui agrees with toi (second person singular): tu dois → c’est toi qui dois. doit is third person, a common error; devez is the vous form."
+ },
+ "miseEnRelief-15": {
+  "why": "Highlighting a time adverbial takes c’est… que: C’est en 1989 que…. Using où is a common error; qui highlights the subject."
+ },
+ "miseEnRelief-16": {
+  "why": "Highlighting a place adverbial with a preposition (à Dakar) takes que: C’est à Dakar qu’elle a grandi. où would duplicate the preposition à; dont corresponds to de."
+ },
+ "miseEnRelief-17": {
+  "why": "Ce dont…, c’est + noun: the second half uses c’est to introduce what is highlighted. Neither que c’est nor ce que can form the second part of this structure."
+ },
+ "miseEnRelief-18": {
+  "why": "penser que (to think) + an opinion: the clause lacks a direct object, so ce que: what I think is…. ce à quoi corresponds to penser à (to think about something) and can’t introduce an opinion; ce dont corresponds to de."
+ },
+ "miseEnRelief-19": {
+  "why": "s’intéresser à qqch: the clause lacks the complement introduced by à, so ce à quoi. ce que lacks the preposition; ce dont corresponds to de, not à."
+ },
+ "miseEnRelief-20": {
+  "why": "Highlighting an adverbial with a preposition (grâce à ses parents) takes que: C’est grâce à… qu’elle a pu…. dont and à qui would duplicate the existing prepositional structure, which is incorrect."
+ },
+ "miseEnRelief-21": {
+  "why": "Highlighting the subject takes c’est / ce sont… qui: the clause lacks a subject. que highlights an object; dont is for a complement introduced by de."
+ },
+ "miseEnRelief-22": {
+  "why": "parler de qqn: there is no de before the highlighted lui, so dont. que lacks the preposition de; qui highlights the subject, and the clause already has the subject on."
+ },
+ "miseEnRelief-23": {
+  "why": "The preposition sur is already placed before the highlighted element, so que follows. où is non-standard; sur lequel repeats the preposition."
+ },
+ "miseEnRelief-24": {
+  "why": "Ce qui compte, c’est que + clause (here with the subjunctive puisse, expressing a wish or necessity). Neither qui nor ce que can introduce this full clause."
+ },
+ "miseEnRelief-25": {
+  "why": "vous et moi together equal nous, so the verb is first person plural: c’est vous et moi qui allons. allez corresponds only to vous; vont is third person."
+ },
+ "miseEnRelief-26": {
+  "why": "elle et son frère equal ils (third person plural), so the verb is ont. a is singular; avons is first person."
+ },
+ "miseEnRelief-27": {
+  "why": "A negative emphatic sentence agrees too: ce n’est pas moi qui l’ai fait (first person singular ai). l’a is third person; l’as is second person."
+ },
+ "miseEnRelief-28": {
+  "why": "c’est que + a full clause (subject les loyers + verb) introduces the highlighted fact. qui and dont are relative pronouns with no antecedent here and can’t introduce this clause."
+ },
+ "miseEnRelief-29": {
+  "why": "Highlighting a cause adverbial with a preposition (pour cette raison) takes que. pour laquelle repeats the preceding pour; dont corresponds to de."
+ },
+ "miseEnRelief-30": {
+  "why": "The preposition de is already placed before the highlighted element (de cela), so que follows: C’est de cela qu’il s’agit. qui highlights the subject; quoi can’t be used this way."
+ }
+}

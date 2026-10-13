@@ -1,0 +1,287 @@
+{
+ "canDo": "Can propose real conditions and hypothetical advice, and explain why each piece of advice works.",
+ "review": "Review the conditionnel and cause/effect; learn si + présent/futur and si + imparfait/conditionnel systematically.",
+ "input": "Listening and reading on health and study habits.",
+ "output": "Write 140 words of advice; give 4 pieces of advice aloud in 3 minutes.",
+ "checkpoint": "Write/say at least 4 condition–result pairs; never use the conditionnel directly in the si clause.",
+ "challenge": "Today’s challenge: observe your own routine for a week (sleep, exercise, food); write 3 pieces of realistic advice with si + présent → futur and 2 hypothetical ones with si + imparfait → conditionnel; then find a health exercise on TV5MONDE Apprendre to check your vocabulary.",
+ "items": {
+  "reading": {
+   "R21-1": {
+    "questions": [
+     {
+      "why": "The physiological reason given is that “the internal clock lengthens more easily than it shortens”. Rotating shifts forward doesn’t reduce the number of night shifts."
+     },
+     {
+      "why": "« Beaucoup essaient de dormir en rentrant, échouent, puis abandonnent » — the other two options are the advice itself."
+     },
+     {
+      "why": "Skipping the night meal leads to snacking around four in the morning, exactly when digestion works least well."
+     }
+    ]
+   },
+   "R21-2": {
+    "questions": [
+     {
+      "why": "« la familiarité n'est pas la mémoire » — the exam asks you to produce, not to recognise."
+     },
+     null,
+     null,
+     {
+      "why": "The text says clearly: good immediate results, poor delayed ones, because the step of “choosing the method” was never practised."
+     }
+    ]
+   },
+   "R21-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "He stresses a minimum plan you can stick to “even in a bad week”, without changing the route or the time."
+     }
+    ]
+   },
+   "R21-4": {
+    "questions": [
+     {
+      "why": "The mechanism given is that blinking less causes dryness, plus the focusing muscles staying fixed for a long time."
+     },
+     null,
+     {
+      "why": "Lowering the screen reduces how much of the eye is exposed, which eases dryness; relaxing the focusing muscles is what “looking into the distance for twenty seconds” does."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L21-1": {
+    "questions": [
+     {
+      "why": "The biggest spending is ready meals and drinks, almost half — not vegetables."
+     },
+     {
+      "why": "Dried pulses replace part of the meat; the three reasons for frozen vegetables are the same nutrition, a stable price all year and no waste."
+     }
+    ]
+   },
+   "L21-2": {
+    "questions": [
+     {
+      "why": "« perdre le contrat, c'est perdre la formation » — tuition fees are an issue for the full-time route."
+     }
+    ]
+   },
+   "L21-3": {
+    "questions": [
+     {
+      "why": "Most people underestimate their usage by about a third; seeing the exact figure has a real effect in the first few weeks."
+     },
+     null,
+     null,
+     {
+      "why": "« se vérifie tout de suite » contrasted with « se discute chaque soir avec soi-même »."
+     }
+    ]
+   },
+   "L21-4": {
+    "questions": [
+     {
+      "why": "Both medicines contain paracetamol, so taking them together means an overdose without realising it."
+     },
+     null,
+     {
+      "why": "Keep the cold medicine and use the same tablets for the headache, six hours apart."
+     },
+     {
+      "why": "« il entretient l'obstruction qu'il est censé soulager » — it doesn’t just stop working."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V21-01": {
+   "zh": "it would be better to … / that … (tactful advice)",
+   "exZh": "If your shifts change, it would be better for them to rotate forward rather than backward."
+  },
+  "V21-02": {
+   "zh": "if I were you, I would …",
+   "exZh": "You’re asking me what I would do in your place."
+  },
+  "V21-03": {
+   "zh": "what I would suggest is … (tactful)",
+   "exZh": "What I would suggest is the opposite: start with what you know you can keep up."
+  },
+  "V21-04": {
+   "zh": "if I were you, I would …",
+   "exZh": "If I were you, I’d start with twenty minutes of brisk walking."
+  },
+  "V21-05": {
+   "zh": "you should … (advice)",
+   "exZh": "You should take your phone out of the bedroom before you sleep."
+  },
+  "V21-06": {
+   "zh": "one ought to … (tactful advice)",
+   "exZh": "On the contrary, this sleep ought to be treated as the main sleep."
+  },
+  "V21-07": {
+   "zh": "if the symptoms persist",
+   "exZh": "If the symptoms persist despite these measures, see an ophthalmologist."
+  },
+  "V21-08": {
+   "zh": "frozen vegetables",
+   "exZh": "Frozen vegetables have the same nutritional value and a stable price all year round."
+  },
+  "V21-09": {
+   "zh": "to give good results",
+   "exZh": "Revising one type of exercise in a row gives good immediate results."
+  },
+  "V21-10": {
+   "zh": "to realise …",
+   "exZh": "Ready meals cost that much? I didn’t realise."
+  },
+  "V21-11": {
+   "zh": "to get into the habit of …",
+   "exZh": "Get into the habit of looking into the distance for twenty seconds every twenty minutes."
+  },
+  "V21-12": {
+   "zh": "to have a healthy lifestyle",
+   "exZh": "To have a healthy lifestyle, you first need enough sleep."
+  },
+  "V21-13": {
+   "zh": "in a couple of clicks, effortlessly",
+   "exZh": "The limits in these apps can be got round in a couple of clicks."
+  },
+  "V21-14": {
+   "zh": "to look into the distance",
+   "exZh": "Looking into the distance for twenty seconds every twenty minutes relaxes this muscle."
+  },
+  "V21-15": {
+   "zh": "to avoid …-ing",
+   "exZh": "Avoid drinking coffee after four p.m. if you sleep badly."
+  },
+  "V21-16": {
+   "zh": "to hesitate between … and …",
+   "exZh": "You’re hesitating between a work–study programme and full-time training, is that right?"
+  },
+  "V21-17": {
+   "zh": "including …",
+   "exZh": "Keep a regular bedtime, including on your days off."
+  },
+  "V21-18": {
+   "zh": "to be supposed to …",
+   "exZh": "Beyond five days, the spray maintains the blockage it is supposed to relieve."
+  },
+  "V21-19": {
+   "zh": "to have nothing to do with …",
+   "exZh": "This accident has nothing to do with a deliberate overdose."
+  },
+  "V21-20": {
+   "zh": "contrary to …",
+   "exZh": "These lenses have no effect on falling asleep, contrary to the advertising claim."
+  },
+  "V21-21": {
+   "zh": "to be accompanied by …",
+   "exZh": "See a doctor if the discomfort is accompanied by regular headaches."
+  },
+  "V21-22": {
+   "zh": "to be better than …",
+   "exZh": "Twenty minutes’ walking every day is better than two hours of sport on Sunday."
+  },
+  "V21-23": {
+   "zh": "to drive (someone) to …",
+   "exZh": "Skipping the night meal drives you to snack around four in the morning."
+  },
+  "V21-24": {
+   "zh": "to lack sleep",
+   "exZh": "When you lack sleep, you tend to eat more sugary food."
+  },
+  "V21-25": {
+   "zh": "a decisive advantage",
+   "exZh": "The work–study route has a decisive advantage: when you finish, you have two years of real experience."
+  },
+  "V21-26": {
+   "zh": "it is advisable to … (formal, impersonal)",
+   "exZh": "It is advisable to eat a light meal before two in the morning."
+  },
+  "V21-27": {
+   "zh": "eye strain",
+   "exZh": "Eye strain from screens is real."
+  },
+  "V21-28": {
+   "zh": "the internal (body) clock",
+   "exZh": "The internal clock lengthens more easily than it shortens."
+  },
+  "V21-29": {
+   "zh": "to work nights",
+   "exZh": "About one employee in ten regularly works nights."
+  },
+  "V21-30": {
+   "zh": "even if it means …-ing",
+   "exZh": "I’ll answer you frankly, even if it means disappointing you."
+  },
+  "V21-31": {
+   "zh": "to be set on …-ing",
+   "exZh": "If you’re set on joining now, take a one-month membership, not a year."
+  },
+  "V21-32": {
+   "zh": "to join the gym",
+   "exZh": "You’ve joined the gym three times in four years."
+  },
+  "V21-33": {
+   "zh": "a lack of willpower",
+   "exZh": "If you give up, it isn’t a lack of willpower."
+  },
+  "V21-34": {
+   "zh": "to give an impression of …",
+   "exZh": "Rereading gives an impression of mastery, but familiarity isn’t memory."
+  },
+  "V21-35": {
+   "zh": "in a row, at a stretch",
+   "exZh": "Three twenty-minute sessions work better than an hour at a stretch."
+  },
+  "V21-36": {
+   "zh": "ready meals",
+   "exZh": "What weighs most on your shopping bill is ready meals."
+  },
+  "V21-37": {
+   "zh": "dried pulses (lentils, chickpeas…)",
+   "exZh": "Dried pulses cost very little and replace part of the meat."
+  },
+  "V21-38": {
+   "zh": "a trade-off between … and …",
+   "exZh": "It isn’t a money problem; it’s a trade-off between time and money."
+  },
+  "V21-39": {
+   "zh": "you might as well …",
+   "exZh": "If you don’t have that kind of time, you might as well say so now."
+  },
+  "V21-40": {
+   "zh": "to exceed the maximum dose",
+   "exZh": "If you take both, you’ll exceed the maximum dose without knowing it."
+  },
+  "V21-41": {
+   "zh": "things don’t get better",
+   "exZh": "People use this spray for months without understanding why things don’t get better."
+  },
+  "V21-42": {
+   "zh": "to turn off notifications",
+   "exZh": "Start by turning off notifications for a single app."
+  },
+  "V21-43": {
+   "zh": "tell me what you think",
+   "exZh": "That’s what I’d do in your place; tell me what you think."
+  },
+  "V21-44": {
+   "zh": "to make an appointment (with the doctor)",
+   "exZh": "The mornings are fully booked: I can’t get an appointment before 6 p.m."
+  },
+  "V21-45": {
+   "zh": "to do physical activity",
+   "exZh": "The doctor advised me to do physical activity three times a week."
+  }
+ },
+ "title": "Transfer: giving advice",
+ "phase": "Transfer to real tasks"
+}

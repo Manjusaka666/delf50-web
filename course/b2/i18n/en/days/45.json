@@ -1,0 +1,226 @@
+{
+ "canDo": "Can complete a third full mock exam following a fixed exam routine (read the questions → locate → check; outline → write → three rounds of checking; problem → outline → conclusion), with each part’s score varying by no more than 2 points compared with Mock 1 and Mock 2.",
+ "review": "Review the error logs, timing records and three-step listening/reading method from Day 41–44; go back over the structure of a forum post (response → position → concession → argument → proposal → conclusion) and common concession and condition structures (je reconnais que, cependant, à condition que, au motif que).",
+ "input": "Read: the closure of rural public service counters (long article), a column on free museum entry and a forum post about volunteering, using the same routine throughout: “questions first, then the text, with the evidence marked for each question”. Listen: an interview on reducing food waste in a school canteen, a column on the vinyl revival and an ad recruiting festival volunteers, with the set number of plays.",
+ "output": "Write: a forum post giving your view on “should rural post offices be replaced by counters in local shops?” (250+ words); speak: a 5-minute monologue on “should space tourism be banned?”, then a debate with the examiner on “should museums be free for everyone?”. Afterwards, enter the scores from all three mock exams in one table and compare them.",
+ "checkpoint": "Each of the four skills above 15/25, total ≥60/100; no skill drops by more than 2 points compared with Mock 2; your personal recurring errors no longer appear in your writing; the monologue has a clear problem, outline and conclusion.",
+ "challenge": "Today’s challenge: find a short text or audio clip about public services (health, transport, culture) on TV5MONDE or RFI and work through it with today’s fixed routine in 15 minutes: write one sentence on the topic, three key points and one view of your own, and note how long it took. Use it as your “warm-up template” for the last few days before the exam.",
+ "items": {
+  "reading": {
+   "R45-1": {
+    "questions": [
+     {
+      "why": "The article covers, in turn, the situation (paragraph 1), causes (paragraph 2), remedies tried so far (paragraphs 3–4) and the issues still under debate (paragraph 5): it is an informative analysis. B: the author doesn’t take sides; C: only one mayor is quoted."
+     },
+     {
+      "why": "« La baisse de fréquentation des bureaux de poste, liée au déclin du courrier, a rendu de nombreux guichets peu rentables ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« une partie de la population, notamment les personnes âgées et celles qui ne disposent pas d’une bonne connexion, s’est retrouvée sans interlocuteur ». Neither A nor B is in the text."
+     },
+     {
+      "why": "« On ne sauve pas un guichet en manifestant une fois par an… Ce qui marche, c’est de proposer autre chose ». B is the opposite of what she says; C: she actually thinks something can be done."
+     },
+     {
+      "why": "« elles offrent rarement tous les services d’un vrai bureau, et leurs horaires restent souvent limités ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "trancher = to settle, to decide; loin d’être tranché means “far from settled”. A means the opposite; B contradicts « une question qui divise »."
+     }
+    ]
+   },
+   "R45-2": {
+    "questions": [
+     {
+      "why": "Paragraph 1 ends with « Il est temps que cela change », and the last sentence is « il serait logique que tous puissent y entrer »: the whole text argues for free entry. B and C are just details in the argument."
+     },
+     {
+      "why": "« C’est vrai, et c’est bien la preuve que le prix n’est pas le seul obstacle. Mais il en est un »: concession, then rebuttal. A: he accepts the fact; C: he explicitly mentions this objection."
+     },
+     {
+      "why": "péage originally means a “toll”; here it is a metaphor for the entry fee as a barrier that sends the message « ce lieu n’est pas pour tout le monde ». A is a literal misreading; B has nothing to do with the context."
+     },
+     {
+      "why": "« Les recettes de billetterie ne représentent qu’une part modeste du budget », and visitors spend money elsewhere. Neither B nor C is mentioned."
+     },
+     {
+      "why": "« Bien sûr, la gratuité seule ne suffira pas » is a concession, and « Mais refuser d’essayer… » restates the position. A is the opposite; C doesn’t appear."
+     }
+    ]
+   },
+   "R45-3": {
+    "questions": [
+     {
+      "why": "Sophie describes going from “no time” to volunteering regularly, ending with « Si vous hésitez, commencez par une seule fois ». B: she is a volunteer, not an employee; C: “no time” is precisely the excuse she is reflecting on."
+     },
+     {
+      "why": "« une amie m’a proposé de l’accompagner une seule fois ». A: the hospital is where she works; C: her children only came along later."
+     },
+     {
+      "why": "« cachait surtout la peur de m’engager sur la durée »; crainte paraphrases peur. Neither A nor B has any basis."
+     },
+     {
+      "why": "crouler sous qqch = to be weighed down by, to be overwhelmed by something very heavy. B and C are misunderstandings."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L45-1": {
+    "questions": [
+     {
+      "why": "The opening, « Comment réduire ce gaspillage ? », and the whole discussion covers the causes of waste, the measures taken and their effects. B and C are peripheral."
+     },
+     {
+      "why": "« environ un tiers de ce qui était servi était jeté ». A: a lot of bread and vegetables were thrown away too; C: the host says « c’est énorme »."
+     },
+     {
+      "why": "« le temps de repas était trop court : quand on a vingt minutes pour manger… ». A is about portion size and B about taste; neither is about time."
+     },
+     {
+      "why": "« l’argent économisé nous a permis d’acheter davantage de produits locaux, ce qui… n’était pas prévu au départ ». Neither B nor C is mentioned."
+     },
+     {
+      "why": "« Certains cuisiniers ont eu l’impression qu’on critiquait leur travail ». A contradicts « résistances »; C: they later took charge of presenting the menus."
+     },
+     {
+      "why": "« Commencer par mesurer. Tant qu’on ne pèse pas ce qu’on jette… ». Neither A nor B is mentioned; the menu committee involves students, not parents."
+     }
+    ]
+   },
+   "L45-2": {
+    "questions": [
+     {
+      "why": "« un objet que l’on croyait disparu… le disque vinyle ! », followed by an analysis of why it’s back. B: streaming is still there; C isn’t covered."
+     },
+     {
+      "why": "« c’est peut-être une réaction à cette abondance. Avec le streaming, la musique est partout ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« une partie d’entre eux n’ont même pas de platine ! ». A and B have no basis."
+     },
+     {
+      "why": "« Là, je serai plus prudent… la différence est loin d’être évidente ». B and C are both too absolute."
+     }
+    ]
+   },
+   "L45-3": {
+    "questions": [
+     {
+      "why": "« recherche cent cinquante bénévoles ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« être disponible au minimum deux soirées » (and be at least 18). B is ruled out by « aucune expérience particulière »; C isn’t mentioned."
+     },
+     {
+      "why": "« accès gratuit aux concerts en dehors de leurs heures de service, ainsi que des repas et d’un tee-shirt ». A: volunteers aren’t paid; B isn’t mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V45-01": {
+   "zh": "an obstacle course (a process full of difficulties)",
+   "exZh": "Without a service counter, every administrative procedure becomes an obstacle course."
+  },
+  "V45-02": {
+   "zh": "(several factors) to pile up",
+   "exZh": "At the end of term, tiredness and stress pile up."
+  },
+  "V45-03": {
+   "zh": "a settling-in grant, a start-up grant (to attract professionals or shops)",
+   "exZh": "The village grocery receives a start-up grant to host a postal counter."
+  },
+  "V45-04": {
+   "zh": "a catchment area (where residents work, shop and run errands)",
+   "exZh": "Every catchment area should keep at least one public service counter."
+  },
+  "V45-05": {
+   "zh": "to send a signal (a message)",
+   "exZh": "Closing the library sends a bad signal to young people."
+  },
+  "V45-06": {
+   "zh": "on the grounds that",
+   "exZh": "His application was rejected on the grounds that it was incomplete."
+  },
+  "V45-07": {
+   "zh": "to know the codes and conventions (of a milieu)",
+   "exZh": "Newcomers have to learn the codes of the workplace."
+  },
+  "V45-08": {
+   "zh": "to be snowed under with",
+   "exZh": "At the end of the year, the accountants are snowed under with files."
+  },
+  "V45-09": {
+   "zh": "a one-off (temporary) assignment",
+   "exZh": "The association is recruiting volunteers for a one-off assignment next weekend."
+  },
+  "V45-10": {
+   "zh": "to take up one’s post",
+   "exZh": "The new director takes up her post on 1 September."
+  },
+  "V45-11": {
+   "zh": "(a situation) not to look good, not great",
+   "exZh": "The club’s finances aren’t looking great this year."
+  },
+  "V45-12": {
+   "zh": "to get straight to the point",
+   "exZh": "You only have three minutes: get straight to the point."
+  },
+  "V45-13": {
+   "zh": "(at a meal) to have a second helping",
+   "exZh": "Children who are still hungry can have a second helping."
+  },
+  "V45-14": {
+   "zh": "I won’t hide it from you, to be honest",
+   "exZh": "To be honest, the beginning was tough."
+  },
+  "V45-15": {
+   "zh": "the scale of the problem",
+   "exZh": "These figures reveal the scale of the problem in rural areas."
+  },
+  "V45-16": {
+   "zh": "(figuratively) a relic of the past, an antique",
+   "exZh": "In most offices, the fax machine has become a relic of the past."
+  },
+  "V45-17": {
+   "zh": "background noise (background music)",
+   "exZh": "For him, the radio is just background noise while he works."
+  },
+  "V45-18": {
+   "zh": "tangible, concrete",
+   "exZh": "Residents expect tangible results, not promises."
+  },
+  "V45-19": {
+   "zh": "a record player, a turntable",
+   "exZh": "He dug a turntable out of the attic to listen to his father’s records."
+  },
+  "V45-20": {
+   "zh": "to run the drinks stand",
+   "exZh": "At the village fête, she runs the drinks stand with two friends."
+  },
+  "V45-21": {
+   "zh": "against one’s will",
+   "exZh": "He was transferred to another region against his will."
+  },
+  "V45-22": {
+   "zh": "to be back to square one",
+   "exZh": "Without a solution for banking services, residents are back to square one."
+  },
+  "V45-23": {
+   "zh": "to fall back on, to turn to (another option)",
+   "exZh": "With too few places in medicine, many students turn to pharmacy."
+  },
+  "V45-24": {
+   "zh": "low-income households",
+   "exZh": "Rising energy prices hit low-income households first."
+  },
+  "V45-25": {
+   "zh": "to meddle in, to interfere with (others’ affairs)",
+   "exZh": "Many people feel the state shouldn’t meddle in what they eat."
+  }
+ },
+ "title": "Mock 3: consistency",
+ "phase": "Mock exams, repair and the bridge to C1"
+}
