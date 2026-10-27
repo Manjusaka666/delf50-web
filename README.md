@@ -81,11 +81,14 @@ node scripts/verify.js        # 两门课程的数据（逐天逐项）、每日
 node scripts/check-course.js course/b2   # 单独校验一门课程
 node scripts/check-i18n.js    # 界面文案目录与课程译文：覆盖完整、键与原文一致、法语词 / 数字 / 标签未被改动
 node scripts/verify-cloud.js  # 单元 + API（真实 PostgreSQL）+ 浏览器端到端（Chromium）
+node scripts/check-speech.js  # 听力朗读：在真实浏览器（Chromium、WebKit）和真实语音引擎上，每次点击播放都能出声
 ```
 
 `verify-cloud.js` 需要一个可清空的数据库（`TEST_DATABASE_URL`，Neon 测试分支或本地 PostgreSQL）和测试依赖 `npm i --no-save pg playwright`（浏览器部分从 `NODE_PATH` 解析 Playwright）。它在测试库中建立 Neon Auth 与 R2 的模拟服务，用 `delf50_api` 角色运行真实的 API，并在 Chromium 中跑完整的学习流程。
 
 `scripts/smoke-live.js` 对真实的 Neon Auth / 数据库 / R2 做冒烟测试（使用测试分支）。
+
+`check-speech.js` 需要 Playwright（从 `NODE_PATH` 解析）和带法语声音的语音引擎（Linux：`speech-dispatcher`、`espeak-ng` 和 PulseAudio 空设备，见脚本开头）。它检查点击播放即在点击内开始朗读并真正出声、播完回到开头并可重播、暂停 / 继续 / 上下句、声音尚未加载时的点击、选中的声音无法连接时自动换声音读完、没有可用声音时停止并提示；WebKit 已安装时，还检查应用能在 Safari 内核中加载，且首句在点击内开始。
 
 ## 部署
 
