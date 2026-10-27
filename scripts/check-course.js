@@ -7,7 +7,8 @@
  * Every day must be complete for the highest intensity (Days 41–50: grammar is
  * drawn from the question banks at run time), every question in every bank must
  * be answerable (distinct options, a valid key), no development marker may
- * reach a learner, and no text or chunk may repeat across the 50 days.
+ * reach a learner, and no text or chunk may repeat across the 50 days (writing
+ * tasks may not even resemble each other: distinct titles, distinct consignes).
  *
  * Run: node scripts/check-course.js [course/b2]
  */
@@ -126,6 +127,16 @@ for (const d of days) {
     check(!seen.chunk.has(k), where, `"${c.fr}" also on ${seen.chunk.get(k)}`); seen.chunk.set(k, at);
   });
 }
+
+// Writing tasks are distinct situations, not one template with the topic swapped: no two share a title, and no two
+// consignes share more than 45 % of their word trigrams (a template reused across days shares 80–95 %).
+const trigrams = (s) => { const w = norm(s).split(' ').filter(Boolean); return new Set(w.slice(2).map((x, i) => `${w[i]} ${w[i + 1]} ${x}`)); };
+const tasks = days.flatMap((d) => d.items.writing.map((x) => ({ id: x.id, title: norm(x.title), grams: trigrams(x.prompt) })));
+tasks.forEach((a, i) => tasks.slice(i + 1).forEach((b) => {
+  check(a.title !== b.title, `writing ${b.id}`, `same title as ${a.id}`);
+  const shared = [...a.grams].filter((g) => b.grams.has(g)).length / Math.max(1, Math.min(a.grams.size, b.grams.size));
+  check(shared <= 0.45, `writing ${b.id}`, `consigne ${Math.round(shared * 100)} % the same as ${a.id}`);
+}));
 
 // Each bank starts with exactly the questions Days 1–40 use (in order); remediation continues from there.
 for (const n of nodes) {
