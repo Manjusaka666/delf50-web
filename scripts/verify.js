@@ -178,12 +178,33 @@ async function main() {
   await course.loadCourse('delf-b1', 'zh-CN');
 
   out.push('\nSpeech');
+  // A device's speech engine: it speaks each utterance at once and reports its end.
+  const said = [];
+  globalThis.SpeechSynthesisUtterance = class { constructor(text) { this.text = text; } };
+  globalThis.speechSynthesis = { speaking: false, pending: false, paused: false, addEventListener() {}, cancel() {}, pause() {}, resume() {},
+    getVoices: () => [{ name: 'Thomas', lang: 'fr-FR', voiceURI: 'thomas', localService: true }],
+    speak(u) { said.push(u.text); setTimeout(() => u.onend && u.onend({}), 1); } };
   const speech = await imp('speech.js');
   const seg = speech.segments(['— Bonjour. Ça va ?\n— Oui, merci.', 'Le <b>narrateur</b> parle. Fin.']);
   const segOk = JSON.stringify(seg.map((s) => [s.text, s.para, s.speaker, s.dialogue, s.first])) === JSON.stringify([
     ['Bonjour.', 0, 0, true, true], ['Ça va ?', 0, 0, true, false], ['Oui, merci.', 0, 1, true, true],
     ['Le narrateur parle.', 1, 0, false, true], ['Fin.', 1, 0, false, false]]);
   check(segOk, 'a script is read sentence by sentence; dialogue turns alternate speakers; tags are not read', seg);
+  const quoted = speech.segments(['Il m’a dit « conduite hésitante ». Puis il est parti.', 'Elle a demandé : « Vous venez ? ». Oui.']).map((s) => s.text);
+  check(quoted.every((s) => /[\p{L}\p{N}]/u.test(s)), 'no sentence is punctuation alone (a closing « ». » stays with its sentence)', quoted);
+  const long = 'Les mesures montrent pourtant que le temps de parcours augmente très peu en ville, de l’ordre d’une minute sur un trajet de vingt minutes, parce que ce sont les feux, et non la vitesse maximale, qui déterminent la durée réelle des déplacements quotidiens.';
+  const cut = speech.parts(long);
+  check(speech.parts('Bonjour Marie.').length === 1 && cut.length > 1 && cut.every((p) => p.length <= 170) && cut.join(' ') === long,
+    'a long sentence is spoken in clause-sized parts (network voices stop after ~15 s), nothing lost', cut);
+  // Every course recording, played to its end, returns to the start and can be played again (DELF plays most recordings twice).
+  const script = ['— Bonjour. Vous avez réservé ?\n— Oui, au nom de Martin.', long];
+  const playedOut = async () => { for (let k = 0; k < 400 && speech.tts.state !== 'idle'; k++) await new Promise((r) => setTimeout(r, 10)); return speech.tts.state === 'idle'; };
+  speech.play('t:1', script);
+  const first = await playedOut(), once = said.length;
+  speech.toggle('t:1', script);
+  const second = speech.tts.state === 'playing' && await playedOut();
+  check(first && second && once === 3 + cut.length && said.length === 2 * once && speech.tts.at === 0,
+    'a recording played to the end goes back to the start, and plays in full again', { first, second, once, said: said.length, state: speech.tts.state });
   const voices = [{ name: 'Thomas', lang: 'fr-FR' }, { name: 'Amélie', lang: 'fr-CA' }, { name: 'Audrey (Premium)', lang: 'fr-FR' },
     { name: 'Samantha', lang: 'en-US' }, { name: 'Jacques', lang: 'fr_FR' }, { name: 'Grandma', lang: 'fr-FR' }];
   const ranked = voices.filter((v) => speech.score(v) > -Infinity).sort((a, b) => speech.score(b) - speech.score(a)).map((v) => v.name);
