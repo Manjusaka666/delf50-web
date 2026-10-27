@@ -28,7 +28,7 @@ export default {
   'settings.appearance': 'Appearance', 'settings.theme.system': 'System', 'settings.theme.light': 'Light', 'settings.theme.dark': 'Dark',
   'settings.voice': 'French voice', 'settings.voiceAuto': 'Automatic (best available)', 'settings.voicePreview': 'Preview',
   'settings.voiceNone': 'This device has no French voice.', 'settings.voiceNote': 'Voices come from your device. Voices marked “High quality” sound most natural; on Apple devices you can download enhanced French voices in Settings › Accessibility › Spoken Content › Voices.',
-  'settings.voiceQuality': 'High quality', 'settings.saveFailed': 'Your settings couldn’t be saved to your account; they apply until you leave.',
+  'settings.voiceQuality': 'High quality', 'settings.voiceOnline': 'online (needs its server; may not work)', 'settings.saveFailed': 'Your settings couldn’t be saved to your account; they apply until you leave.',
   'settings.voiceSample': 'Bonjour ! Je vais lire les documents sonores de votre préparation au DELF.',
 
   'auth.welcome': 'Welcome back', 'auth.create': 'Create your account',
@@ -81,6 +81,9 @@ export default {
 
   'player.unsupported': 'This browser can’t read French aloud. Use a recent Chrome, Edge or Safari, or read the transcript.',
   'player.noVoice': 'This device has no French voice, so the reading may sound wrong. Add a French voice in your system settings, or read the transcript.',
+  'player.failed': 'No sound: none of this device’s French voices could read the recording (an online voice may not reach its server). Press play again; if it is still silent, choose another French voice in Settings or add an offline French voice in your system settings. You can also read the transcript.',
+  'player.blocked': 'The browser blocked the reading. Press the play button itself to start.',
+  'player.iosMute': 'No sound? Turn off Silent mode on your iPhone or iPad and turn the volume up.',
   'player.play': 'Play', 'player.pause': 'Pause', 'player.resume': 'Resume', 'player.stop': 'Stop',
   'player.idle': 'Play the recording', 'player.paused': 'Paused', 'player.playing': 'Playing',
   'player.sentence': ({ at, total }) => `Sentence ${at} of ${total}`,

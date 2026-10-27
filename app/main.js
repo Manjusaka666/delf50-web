@@ -284,7 +284,7 @@ function voicePicker() {
   return html`<div class="voice-row">
       <select data-voice aria-label="${t('settings.voice')}">
         <option value="" ${prefs.voice ? '' : 'selected'}>${t('settings.voiceAuto')}</option>
-        ${vs.map((v) => html`<option value="${v.uri}" ${prefs.voice === v.uri ? 'selected' : ''}>${v.name} · ${v.lang}${v.quality === 'high' ? ` · ${t('settings.voiceQuality')}` : ''}</option>`)}
+        ${vs.map((v) => html`<option value="${v.uri}" ${prefs.voice === v.uri ? 'selected' : ''}>${v.name} · ${v.lang}${v.quality === 'high' ? ` · ${t('settings.voiceQuality')}` : ''}${v.online ? ` · ${t('settings.voiceOnline')}` : ''}</option>`)}
       </select>
       <button class="btn ghost small" type="button" data-preview>${icon('play')} ${t('settings.voicePreview')}</button>
     </div>

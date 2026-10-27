@@ -14,8 +14,10 @@
 - Scripts are split into sentences with `Intl.Segmenter('fr')`; `segments()` is pure and shared by the player and the transcript, so the sentence being read is the one highlighted.
 - Dialogue turns (lines starting with a dash) alternate between two French voices when the device has two; otherwise the second speaker is pitched lower. Short pauses mark changes of speaker and paragraph.
 - Pause/resume restarts the current sentence (engines' own `pause()` is unreliable); previous / next / repeat step by sentence.
-- Voices are ranked: premium / neural / enhanced first, standard French (fr-FR) before other French, novelty voices last, other languages never. A voice chosen in settings wins.
-- Robustness: waits for `voiceschanged`; keeps network voices alive; a watchdog advances if an engine never reports the end of an utterance.
+- Voices are ranked: on-device voices before network ones (Chrome's "Google français" and Edge's online voices are synthesised on a server — Google's cannot be reached from mainland China, and an unreachable voice is silent); then premium / neural / enhanced, standard French (fr-FR) before other French, novelty voices last, other languages never. A voice chosen in settings wins while it works; settings mark network voices as online.
+- A voice that reports an error, ends without having spoken, or has not started after 5 s is set aside for the session, and the same sentence is read by the next voice. After three voices fail in a row (or with no voice left) the reading stops and the player says why (`tts.error`), rather than running on in silence.
+- iOS only speaks when speech starts inside a tap, and drops every utterance after one it refused: the first sentence is spoken synchronously in the tap; when the reading must wait (voices not listed yet, a cancel in progress), a silent utterance spoken in the tap opens speech. iPhones also mute read-aloud in Silent mode, which the player mentions on iOS.
+- Long sentences are spoken in clause-sized parts (network voices stop after ~15 s); the utterance being spoken is held so it cannot be garbage-collected before its end; a watchdog advances if an engine never reports the end. No regular-expression lookbehind (Safari before 16.4 cannot parse it).
 
 ## Toward native apps
 

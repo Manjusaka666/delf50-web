@@ -7,6 +7,9 @@ import { t } from '../i18n.js';
 import * as speech from '../speech.js';
 import { dayContext, crumbs, pager, nextLink, examNotes } from './common.js';
 
+// iPhones and iPads (iPadOS reports itself as a Mac with a touch screen) mute read-aloud in Silent mode.
+const IOS = typeof navigator !== 'undefined' && (/iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
+
 /**
  * A listening script drawn from the sentences it is read in: each turn of a
  * dialogue on its own line, each sentence a span the player highlights and
@@ -53,6 +56,8 @@ export async function textView(d, module, n) {
         </div>
         <div class="rates" role="radiogroup" aria-label="${t('player.speed')}">${speech.RATES.map((r) => html`<button role="radio" aria-checked="${x.rate === r}" class="${x.rate === r ? 'on' : ''}" data-act="rate" data-r="${r}">${r}×</button>`)}</div>
       </div>
+      ${mine && x.error ? html`<p class="notice bad small" role="alert">${t(x.error === 'blocked' ? 'player.blocked' : 'player.failed')}</p>` : ''}
+      ${IOS ? html`<p class="muted small">${t('player.iosMute')}</p>` : ''}
       ${speech.hasFrench() ? html`<p class="player-foot muted small"><span>${t('player.voices', { n: speech.segments(item.script).some((s) => s.speaker === 1) ? 2 : 1 })}</span><span class="keys-hint">${t('player.keys')}</span></p>`
         : html`<p class="player-foot muted small">${t('player.noVoice')}</p>`}
     </div>`;
