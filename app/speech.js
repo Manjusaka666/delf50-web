@@ -96,8 +96,41 @@ const TURN = /^\s*[—–-]\s+/;
 const segmenter = typeof Intl !== 'undefined' && Intl.Segmenter ? new Intl.Segmenter('fr', { granularity: 'sentence' }) : null;
 
 function split(text) {
-  if (segmenter) return [...segmenter.segment(text)].map((s) => s.segment.trim()).filter(Boolean);
-  return (text.match(/[^.!?…]+(?:[.!?…]+[»"]?|$)/g) || []).map((s) => s.trim()).filter(Boolean);
+  const raw = segmenter ? [...segmenter.segment(text)].map((s) => s.segment.trim())
+    : (text.match(/[^.!?…]+(?:[.!?…]+[»"]?|$)/g) || []).map((s) => s.trim());
+  // A fragment with nothing to say (« ». » left after a quoted question) belongs to the sentence before it:
+  // read alone it is silence, and some engines never report its end.
+  const out = [];
+  raw.filter(Boolean).forEach((s) => { if (out.length && !/[\p{L}\p{N}]/u.test(s)) out[out.length - 1] += ' ' + s; else out.push(s); });
+  return out;
+}
+
+/**
+ * A sentence as the utterances it is spoken in: long sentences are cut at
+ * their clause punctuation (else between words) into parts of about
+ * MAX_PART characters, since network voices (Chrome's Google voices) stop
+ * after some 15 seconds of speech and never report the end. Pure.
+ */
+const MAX_PART = 140;
+export function parts(text) {
+  if (text.length <= MAX_PART + 30) return [text];
+  const pieces = text.split(/(?<=[,;:)])\s+|\s+(?=[—–]\s)/);
+  const out = [];
+  for (const p of pieces) {
+    const last = out.length - 1;
+    if (last >= 0 && out[last].length + 1 + p.length <= MAX_PART) out[last] += ' ' + p;
+    else out.push(p);
+  }
+  // A clause still too long is cut between words.
+  return out.flatMap((p) => {
+    if (p.length <= MAX_PART + 30) return [p];
+    const words = p.split(' '), cut = [];
+    for (const w of words) {
+      if (cut.length && cut[cut.length - 1].length + 1 + w.length <= MAX_PART) cut[cut.length - 1] += ' ' + w;
+      else cut.push(w);
+    }
+    return cut;
+  });
 }
 
 /**
@@ -122,12 +155,15 @@ export function segments(paragraphs) {
 
 // ── reading ──
 let queue = [], token = 0, timer = 0, keepAlive = 0, watchdog = 0;
+// The utterance being spoken: held here so that it cannot be garbage-collected
+// before it ends (Chrome then never fires its end, and the reading stalls).
+let speaking = null;
 
 function clearTimers() { clearTimeout(timer); clearInterval(keepAlive); clearTimeout(watchdog); }
 
 /** The pause before a sentence: longer at a new paragraph or speaker, so turns can be told apart. */
 function gap(i) {
-  if (i === 0) return 0;
+  if (i <= 0 || i >= queue.length) return 0;
   const a = queue[i - 1], b = queue[i];
   if (b.para !== a.para) return 550;
   if (b.turn !== a.turn) return 380;
@@ -137,32 +173,45 @@ function gap(i) {
 function speakAt(i, t, wait = 0) {
   clearTimers();
   if (t !== token) return;
-  if (i >= queue.length) { Object.assign(tts, { state: 'idle', at: 0 }); emit(); return; }
+  if (i >= queue.length) { speaking = null; Object.assign(tts, { state: 'idle', at: 0 }); emit(); return; }
   tts.at = i; tts.state = 'playing'; emit();
-  timer = setTimeout(() => {
-    if (t !== token) return;
-    const s = queue[i], [a, b] = cast();
-    const u = new SpeechSynthesisUtterance(s.text);
-    u.lang = 'fr-FR';
-    u.rate = tts.rate;
-    const v = s.speaker === 1 && b ? b : a;
-    if (v) { u.voice = v; u.lang = v.lang; }
-    if (s.speaker === 1 && !b) u.pitch = 0.82; // one voice only: the second speaker a little lower
-    let done = false;
-    const next = () => { if (done || t !== token) return; done = true; speakAt(i + 1, t, gap(i + 1)); };
-    u.onend = next;
-    u.onerror = (e) => { if (e.error === 'interrupted' || e.error === 'canceled') return; next(); };
-    if (synth.paused) synth.resume();
-    synth.speak(u);
-    // Network voices (Chrome's Google voices) stop after ~15 s unless nudged; any engine may never report the end.
-    if (v && !v.localService) keepAlive = setInterval(() => { if (synth.speaking && !synth.paused) { synth.pause(); synth.resume(); } }, 10000);
-    const expect = (s.text.length / (13 * tts.rate)) * 1000;
-    watchdog = setTimeout(function check() {
-      if (t !== token || done) return;
-      if (synth.speaking) { watchdog = setTimeout(check, 1500); return; }
-      next();
-    }, expect * 2 + 4000);
-  }, wait);
+  timer = setTimeout(() => speakPart(i, parts(queue[i].text), 0, t), wait);
+}
+
+/** Speaks part k of sentence i, then the next part, then the next sentence. */
+function speakPart(i, list, k, t) {
+  clearTimers();
+  if (t !== token) return;
+  const s = queue[i], text = list[k], [a, b] = cast();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'fr-FR';
+  u.rate = tts.rate;
+  const v = s.speaker === 1 && b ? b : a;
+  if (v) { u.voice = v; u.lang = v.lang; }
+  if (s.speaker === 1 && !b) u.pitch = 0.82; // one voice only: the second speaker a little lower
+  let done = false;
+  const next = () => {
+    if (done || t !== token) return;
+    done = true;
+    if (k + 1 < list.length) speakPart(i, list, k + 1, t);
+    else speakAt(i + 1, t, gap(i + 1));
+  };
+  u.onend = next;
+  u.onerror = (e) => { if (e.error === 'interrupted' || e.error === 'canceled') return; next(); };
+  speaking = u;
+  if (synth.paused) synth.resume();
+  synth.speak(u);
+  // Network voices (Chrome's Google voices) stop after ~15 s unless nudged; any engine may never report the end.
+  if (v && !v.localService) keepAlive = setInterval(() => { if (synth.speaking && !synth.paused) { synth.pause(); synth.resume(); } }, 10000);
+  // An engine that never reports the end, or that still says it is speaking long after it should have finished
+  // (a stalled network voice), is moved on to the next part.
+  const expect = (text.length / (13 * tts.rate)) * 1000, giveUp = Date.now() + expect * 4 + 10000;
+  watchdog = setTimeout(function check() {
+    if (t !== token || done) return;
+    if (synth.speaking && Date.now() < giveUp) { watchdog = setTimeout(check, 1500); return; }
+    if (synth.speaking) { synth.cancel(); watchdog = setTimeout(next, 60); return; }
+    next();
+  }, expect * 2 + 4000);
 }
 
 function restart(i) {
