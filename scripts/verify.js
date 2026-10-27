@@ -178,12 +178,22 @@ async function main() {
   await course.loadCourse('delf-b1', 'zh-CN');
 
   out.push('\nSpeech');
-  // A device's speech engine: it speaks each utterance at once and reports its end.
-  const said = [];
+  // A device's speech engine: it starts each utterance at once and reports its end. A voice in `broken` fails the way
+  // an unreachable network voice does ('network' error); `synchronous` records whether speak() ran inside the caller.
+  const said = [], broken = new Set();
+  let inCall = false, synchronous = false;
+  const VOICES = [{ name: 'Google français', lang: 'fr-FR', voiceURI: 'google', localService: false },
+    { name: 'Thomas', lang: 'fr-FR', voiceURI: 'thomas', localService: true }, { name: 'Amélie', lang: 'fr-CA', voiceURI: 'amelie', localService: true }];
   globalThis.SpeechSynthesisUtterance = class { constructor(text) { this.text = text; } };
   globalThis.speechSynthesis = { speaking: false, pending: false, paused: false, addEventListener() {}, cancel() {}, pause() {}, resume() {},
-    getVoices: () => [{ name: 'Thomas', lang: 'fr-FR', voiceURI: 'thomas', localService: true }],
-    speak(u) { said.push(u.text); setTimeout(() => u.onend && u.onend({}), 1); } };
+    getVoices: () => VOICES,
+    speak(u) {
+      if (!u.text.trim()) return;
+      if (inCall && !said.length) synchronous = true;
+      if (u.voice && broken.has(u.voice.voiceURI)) { setTimeout(() => u.onerror && u.onerror({ error: 'network' }), 1); return; }
+      said.push([u.text, u.voice ? u.voice.voiceURI : null]);
+      setTimeout(() => { if (u.onstart) u.onstart({}); setTimeout(() => u.onend && u.onend({}), 1); }, 1);
+    } };
   const speech = await imp('speech.js');
   const seg = speech.segments(['— Bonjour. Ça va ?\n— Oui, merci.', 'Le <b>narrateur</b> parle. Fin.']);
   const segOk = JSON.stringify(seg.map((s) => [s.text, s.para, s.speaker, s.dialogue, s.first])) === JSON.stringify([
@@ -199,17 +209,34 @@ async function main() {
   // Every course recording, played to its end, returns to the start and can be played again (DELF plays most recordings twice).
   const script = ['— Bonjour. Vous avez réservé ?\n— Oui, au nom de Martin.', long];
   const playedOut = async () => { for (let k = 0; k < 400 && speech.tts.state !== 'idle'; k++) await new Promise((r) => setTimeout(r, 10)); return speech.tts.state === 'idle'; };
-  speech.play('t:1', script);
+  inCall = true; speech.play('t:1', script); inCall = false;
   const first = await playedOut(), once = said.length;
+  check(synchronous, 'the first sentence is spoken inside the tap on play (iOS drops speech started later)');
   speech.toggle('t:1', script);
   const second = speech.tts.state === 'playing' && await playedOut();
-  check(first && second && once === 3 + cut.length && said.length === 2 * once && speech.tts.at === 0,
+  check(first && second && once === 3 + cut.length && said.length === 2 * once && speech.tts.at === 0 && !speech.tts.error,
     'a recording played to the end goes back to the start, and plays in full again', { first, second, once, said: said.length, state: speech.tts.state });
+  check(said.every(([, v]) => v === 'thomas' || v === 'amelie'), 'on-device French voices read before a network voice (Google’s cannot be reached from mainland China)', said.slice(0, 3));
+  // The voice in use fails (the learner chose the network voice, unreachable): the same sentence is read by the next voice.
+  said.length = 0; broken.add('google'); speech.configure({ voice: 'google' });
+  speech.play('t:2', ['Bonjour Marie. Je suis devant le café.']);
+  const fellBack = await playedOut();
+  check(fellBack && !speech.tts.error && said.map(([x]) => x).join(' ') === 'Bonjour Marie. Je suis devant le café.' && said.every(([, v]) => v === 'thomas'),
+    'a voice that cannot speak is set aside and the sentence is read again by another voice: no silent reading', said);
+  // No voice can speak at all: the reading stops and says why, instead of running on in silence.
+  said.length = 0; ['thomas', 'amelie'].forEach((v) => broken.add(v));
+  const realSpeak = speechSynthesis.speak;
+  speechSynthesis.speak = (u) => (u.voice ? realSpeak(u) : setTimeout(() => u.onerror && u.onerror({ error: 'synthesis-failed' }), 1));
+  speech.play('t:3', ['Bonjour Marie.']);
+  const stopped = await playedOut();
+  check(stopped && speech.tts.error === 'voice' && !said.length, 'when no voice can read, the player stops and shows why', { state: speech.tts.state, error: speech.tts.error });
+  speechSynthesis.speak = realSpeak; speech.configure({ voice: null });
+  check(!/\(\?<[=!]/.test(fs.readFileSync(path.join(ROOT, 'app/speech.js'), 'utf8')), 'no regular-expression lookbehind in speech.js (Safari before 16.4 cannot parse it, and the app would not load)');
   const voices = [{ name: 'Thomas', lang: 'fr-FR' }, { name: 'Amélie', lang: 'fr-CA' }, { name: 'Audrey (Premium)', lang: 'fr-FR' },
-    { name: 'Samantha', lang: 'en-US' }, { name: 'Jacques', lang: 'fr_FR' }, { name: 'Grandma', lang: 'fr-FR' }];
+    { name: 'Samantha', lang: 'en-US' }, { name: 'Jacques', lang: 'fr_FR' }, { name: 'Grandma', lang: 'fr-FR' }, { name: 'Google français', lang: 'fr-FR', localService: false }];
   const ranked = voices.filter((v) => speech.score(v) > -Infinity).sort((a, b) => speech.score(b) - speech.score(a)).map((v) => v.name);
-  check(JSON.stringify(ranked) === JSON.stringify(['Audrey (Premium)', 'Thomas', 'Jacques', 'Amélie', 'Grandma']),
-    'French voices are ranked: premium first, then the exam’s French, other French, novelty voices last; other languages never', ranked);
+  check(JSON.stringify(ranked) === JSON.stringify(['Audrey (Premium)', 'Thomas', 'Jacques', 'Amélie', 'Grandma', 'Google français']),
+    'French voices are ranked: premium first, then the exam’s French, other French, novelty voices, network voices last; other languages never', ranked);
 
   out.push('\nFrench typography');
   const NN = ' ';
