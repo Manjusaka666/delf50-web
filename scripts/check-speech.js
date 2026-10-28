@@ -68,7 +68,7 @@ const instrument = ({ drop, lateVoices }) => `(() => {
   const speak = speechSynthesis.speak.bind(speechSynthesis);
   speechSynthesis.speak = (u) => {
     const silent = u.volume === 0 || !u.text.trim();
-    const e = { kind: 'speak', t: T(), text: u.text, voice: u.voice ? u.voice.name : null, inTap, silent };
+    const e = { kind: 'speak', t: T(), text: u.text, voice: u.voice ? u.voice.name : null, lang: u.voice ? u.voice.lang : null, local: u.voice ? u.voice.localService : null, inTap, silent };
     log.push(e);
     if (!silent && drop && (drop === '*' || (u.voice && u.voice.name === drop))) { e.dropped = true; return; }
     for (const k of ['start', 'end', 'error']) u.addEventListener(k, (ev) => log.push({ kind: k, t: T(), text: u.text, error: ev.error }));
@@ -147,6 +147,10 @@ async function chromium(pw, base) {
     h = await s.heard(await s.tap('sprev'), 3000);
     check(h.start !== null, 'previous sentence is heard', h);
     check(!s.errors.length, 'no page errors', s.errors);
+    const voices = (await s.ev()).filter((x) => x.kind === 'speak');
+    check(voices.length > 0 && voices.every((x) => x.lang === 'fr-FR' && x.local === true),
+      'every utterance is read by an on-device French (France) voice — never the browser default, another accent or a network voice',
+      [...new Set(voices.map((x) => `${x.voice} ${x.lang} local=${x.local}`))]);
     await s.ctx.close();
 
     s = await session(browser, base, { lateVoices: true });

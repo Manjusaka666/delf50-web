@@ -46,18 +46,19 @@ const NOVELTY = /\b(grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley|bad news|b
 const online = (v) => v.localService === false;
 
 /**
- * How good a voice is likely to sound for DELF listening (higher is better); on-device voices before network ones.
- * Only French from France (fr-FR) is read: never Canadian, Belgian or Swiss French, never another language.
+ * How good a voice is likely to sound for DELF listening (higher is better). Only French from France (fr-FR)
+ * synthesised on the device is read: never Canadian, Belgian or Swiss French, never another language, and never a
+ * network voice (Chrome's "Google français"): when Chrome cannot use one, it reads in the system's default voice
+ * instead — on a Mac, an American English one.
  */
 export function score(v) {
   const lang = String(v.lang || '').replace('_', '-');
-  if (!/^fr-FR$/i.test(lang)) return -Infinity;
+  if (!/^fr-FR$/i.test(lang) || online(v)) return -Infinity;
   let s = 100;
   const n = String(v.name || '');
   if (/premium/i.test(n)) s += 60;
   else if (/natural|neural/i.test(n)) s += 55;
   else if (/enhanced|amélioré|améliorée/i.test(n)) s += 45;
-  if (online(v)) s -= 120; // a network voice only when the device has no French voice of its own
   if (NOVELTY.test(n)) s -= 80;
   if (v.default) s += 2;
   return s;
@@ -80,10 +81,10 @@ function cast() {
   const all = synth ? synth.getVoices() : [];
   const fr = all.filter((v) => score(v) > -Infinity && !failed.has(v.voiceURI)).sort((a, b) => score(b) - score(a));
   const first = (chosen && fr.find((v) => v.voiceURI === chosen)) || fr[0] || null;
-  // The second speaker: another fr-FR voice, on-device first, else a network one (a network voice that cannot speak
-  // is set aside like any other); with one voice only, the second speaker is pitched lower instead.
-  const others = fr.filter((v) => first && v.voiceURI !== first.voiceURI && v.name !== first.name && !NOVELTY.test(v.name));
-  const second = others.find((v) => !online(v)) || others[0] || null;
+  // The second speaker: another fr-FR voice of the device — a standard one, else Apple's French (France) Flo, Sandy
+  // or Shelley; with none, the second speaker is the same voice pitched lower.
+  const others = fr.filter((v) => first && v.voiceURI !== first.voiceURI && v.name !== first.name);
+  const second = others.find((v) => !NOVELTY.test(v.name)) || others.find((v) => /\b(flo|sandy|shelley)\b/i.test(v.name)) || null;
   return [first, second];
 }
 
