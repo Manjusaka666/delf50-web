@@ -176,8 +176,8 @@ let queue = [], token = 0, timer = 0, keepAlive = 0, watchdog = 0;
 // The utterance being spoken: held here so that it cannot be garbage-collected
 // before it ends (Chrome then never fires its end, and the reading stalls).
 let speaking = null;
-// Whether this engine reports the start of an utterance (null until seen), and whether speech was unlocked by a tap.
-let reportsStart = null, unlocked = false;
+// Whether this engine reports the start of an utterance (null until seen).
+let reportsStart = null;
 const START_WAIT = 5000; // a voice that has not started after this long is not going to
 // Voices that failed in a row in this reading: after three, the cause is not the voice (speech blocked, engine down).
 let misses = 0;
@@ -277,35 +277,17 @@ function speakPart(i, list, k, t) {
   }, 500);
 }
 
-/**
- * iOS speaks only when speech starts inside a tap — and once one utterance was
- * dropped, it drops every later one. When the reading must wait (the voices
- * are not listed yet, or another utterance is being cancelled), a silent
- * utterance spoken now, inside the tap, opens speech for the page.
- */
-function unlock() {
-  if (unlocked) return;
-  unlocked = true;
-  const u = new SpeechSynthesisUtterance(' ');
-  u.volume = 0;
-  // The best voice, not the engine's default: a default network voice that cannot be reached would hold up the queue.
-  const [v] = cast();
-  u.lang = v ? v.lang : 'fr-FR';
-  if (v) u.voice = v;
-  synth.speak(u);
-}
-
 function restart(i) {
   token++;
   clearTimers();
   tts.error = null; misses = 0;
-  const busy = synth.speaking || synth.pending;
-  synth.cancel();
   const t = token;
-  if (!busy && synth.getVoices().length) { unlocked = true; speakAt(i, t, 0); return; } // at once, inside the tap
-  // Some engines drop an utterance queued in the same tick as cancel(); Chrome lists its voices a moment after the page loads.
-  unlock();
-  voicesReady().then(() => speakAt(i, t, 60));
+  // Chrome drops an utterance spoken in the same tick as cancel(): cancel only what is playing, and speak 100 ms later.
+  if (synth.speaking || synth.pending) { synth.cancel(); voicesReady().then(() => speakAt(i, t, 100)); return; }
+  if (synth.getVoices().length) { speakAt(i, t, 0); return; } // nothing to cancel: at once, inside the tap
+  // Chrome lists its voices a moment after the page loads. (No silent "unlock" utterance here: Chrome never
+  // finishes a blank one, and every utterance after it waits behind it — no sound at all.)
+  voicesReady().then(() => speakAt(i, t, 0));
 }
 
 /** Reads a script (or resumes it where it was paused). */
@@ -354,10 +336,11 @@ export function setRate(r) {
 /** Reads a sample with a given voice (settings). */
 export function preview(uri, text) {
   if (!synth) return;
-  stop();
-  unlocked = true;
+  const busy = synth.speaking || synth.pending;
+  if (busy) stop(); else { token++; clearTimers(); }
   const u = new SpeechSynthesisUtterance(text);
   const v = synth.getVoices().find((x) => x.voiceURI === uri) || cast()[0];
   u.lang = v ? v.lang : 'fr-FR'; if (v) u.voice = v; u.rate = tts.rate;
-  synth.speak(u);
+  // Not in the same tick as the cancel in stop(): Chrome would drop it.
+  if (busy) setTimeout(() => synth.speak(u), 100); else synth.speak(u);
 }

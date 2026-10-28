@@ -150,9 +150,9 @@ async function chromium(pw, base) {
     await s.ctx.close();
 
     s = await session(browser, base, { lateVoices: true });
-    h = await s.heard(await s.tap('toggle'), 4000);
-    const unlocked = (await s.ev()).some((x) => x.kind === 'speak' && x.silent && x.inTap);
-    check(unlocked && h.start !== null, 'a tap before the voices are listed: speech is opened inside the tap, then heard', { unlocked, h });
+    h = await s.heard(await s.tap('toggle'), 6000);
+    const blank = (await s.ev()).some((x) => x.kind === 'speak' && x.silent);
+    check(h.start !== null && !blank, 'a tap before the voices are listed: heard once they are (no blank utterance, which Chrome never finishes)', { blank, h });
     await s.ctx.close();
 
     // The voice the player would choose: the learner picked it, and it cannot be reached.
