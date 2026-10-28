@@ -82,6 +82,7 @@ export default {
   'player.unsupported': 'This browser can’t read French aloud. Use a recent Chrome, Edge or Safari, or read the transcript.',
   'player.noVoice': 'This device has no French (France) voice, so nothing can be read (never in another accent or language). Add a French (France) voice in your system settings, or read the transcript.',
   'player.failed': 'No sound: none of this device’s French voices could read the recording (an online voice may not reach its server). Press play again; if it is still silent, choose another French voice in Settings or add an offline French voice in your system settings. You can also read the transcript.',
+  'player.audioFailed': 'The recording could not be loaded. Check your connection and press play again.',
   'player.blocked': 'The browser blocked the reading. Press the play button itself to start.',
   'player.iosMute': 'No sound? Turn off Silent mode on your iPhone or iPad and turn the volume up.',
   'player.play': 'Play', 'player.pause': 'Pause', 'player.resume': 'Resume', 'player.stop': 'Stop',

@@ -91,6 +91,7 @@ export default {
   'player.unsupported': '当前浏览器不支持法语语音合成，请使用最新版 Chrome、Edge 或 Safari，或直接阅读原文。',
   'player.noVoice': '此设备没有法国法语（fr-FR）声音，无法朗读（不会用其他口音或其他语言代读）。请在系统设置中添加“法语（法国）”语音，或直接阅读原文。',
   'player.failed': '没有声音：此设备的法语声音都无法朗读（在线声音可能连不上服务器）。请再点一次播放；若仍无声音，请在设置中换一个法语声音，或在系统设置中添加离线法语语音。也可以先阅读原文。',
+  'player.audioFailed': '录音未能加载，请检查网络后再点一次播放。',
   'player.blocked': '浏览器阻止了朗读。请直接点击播放按钮开始播放。',
   'player.iosMute': '没有声音？请关闭 iPhone / iPad 的静音模式并调高媒体音量。',
   'player.play': '播放', 'player.pause': '暂停', 'player.resume': '继续', 'player.stop': '停止',

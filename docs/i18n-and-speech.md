@@ -9,7 +9,14 @@
 5. **Preferences belong to the account.** Locale, theme, voice and rate live in `delf50.user_settings` (migration 0007, additive) and follow the learner across devices. Nothing is kept in browser storage. Without the migration the API reports `available: false` and the app keeps working with defaults.
 6. **Language resolution order:** `?lang=` → the account's choice → Chinese for accounts that studied before the choice existed → the device's preferred languages.
 
-## Read-aloud (Web Speech API)
+## Listening recordings
+
+- Listening never uses the browser's or the system's voices: each script has a pre-generated recording (`audio/<b1|b2>/<id>.mp3`, constant-bitrate MP3) read by native French (France) voices — Piper's fr_FR *upmc* (Pierre, male; Jessica, female) and *siwis* (female) — made by `scripts/listening-audio.py`. Credits: `audio/CREDITS.md`.
+- `<id>.json` holds the start of each sentence; the sentences are `speech.segments()` of the script, so the transcript's highlight follows the audio. `app/recording.js` plays it with one `<audio>` element, started inside the tap: pause and resume, previous / next / repeat, a sentence of the transcript, and the speed (`playbackRate`, pitch kept).
+- A dialogue alternates a man and a woman; who is who comes from the script (the agreement a speaker uses for themself, "Madame" / "Monsieur" addressed to the other, the genre such as "interview d'une restauratrice"), else Pierre then Siwis.
+- After changing a listening script, run the generator again; `verify.js` fails while a script has no recording or its sentences differ.
+
+## Read-aloud (Web Speech API) — vocabulary chunks and examples
 
 - Scripts are split into sentences with `Intl.Segmenter('fr')`; `segments()` is pure and shared by the player and the transcript, so the sentence being read is the one highlighted.
 - Dialogue turns (lines starting with a dash) alternate between two French voices when the device has two; otherwise the second speaker is pitched lower. Short pauses mark changes of speaker and paragraph.
