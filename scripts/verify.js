@@ -185,9 +185,13 @@ async function main() {
   const VOICES = [{ name: 'Google français', lang: 'fr-FR', voiceURI: 'google', localService: false },
     { name: 'Thomas', lang: 'fr-FR', voiceURI: 'thomas', localService: true }, { name: 'Amélie', lang: 'fr-CA', voiceURI: 'amelie', localService: true }];
   globalThis.SpeechSynthesisUtterance = class { constructor(text) { this.text = text; } };
-  globalThis.speechSynthesis = { speaking: false, pending: false, paused: false, addEventListener() {}, cancel() {}, pause() {}, resume() {},
+  // Like Chrome, it drops an utterance spoken in the same tick as cancel() (silently: no event at all).
+  let cancelledNow = false, dropped = 0;
+  globalThis.speechSynthesis = { speaking: false, pending: false, paused: false, addEventListener() {}, pause() {}, resume() {},
+    cancel() { cancelledNow = true; setTimeout(() => { cancelledNow = false; }, 0); },
     getVoices: () => VOICES,
     speak(u) {
+      if (cancelledNow) { dropped++; return; }
       if (!u.text.trim()) return;
       if (inCall && !said.length) synchronous = true;
       if (u.voice && broken.has(u.voice.voiceURI)) { setTimeout(() => u.onerror && u.onerror({ error: 'network' }), 1); return; }
@@ -216,6 +220,14 @@ async function main() {
   const second = speech.tts.state === 'playing' && await playedOut();
   check(first && second && once === 3 + cut.length && said.length === 2 * once && speech.tts.at === 0 && !speech.tts.error,
     'a recording played to the end goes back to the start, and plays in full again', { first, second, once, said: said.length, state: speech.tts.state });
+  // Pause, resume, step to a sentence while another is being read: each is heard, none is dropped by the cancel before it.
+  const long3 = [long, long, long];
+  speech.play('t:4', long3);
+  await new Promise((r) => setTimeout(r, 5)); speech.pause();
+  await new Promise((r) => setTimeout(r, 5)); speech.play('t:4', long3);
+  await new Promise((r) => setTimeout(r, 5)); speech.next('t:4', long3);
+  await playedOut();
+  check(dropped === 0 && !speech.tts.error, 'nothing is spoken in the same tick as a cancel (Chrome drops it, silently)', { dropped, error: speech.tts.error });
   check(said.every(([, v]) => v === 'thomas' || v === 'amelie'), 'on-device French voices read before a network voice (Google’s cannot be reached from mainland China)', said.slice(0, 3));
   // The voice in use fails (the learner chose the network voice, unreachable): the same sentence is read by the next voice.
   said.length = 0; broken.add('google'); speech.configure({ voice: 'google' });
