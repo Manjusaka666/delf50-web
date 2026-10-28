@@ -5,10 +5,9 @@ import { answerChoice } from '../state.js';
 import { html, icon, pad2, frText, LETTERS, moduleName, moduleFr } from '../ui.js';
 import { t } from '../i18n.js';
 import * as speech from '../speech.js';
+import * as recording from '../recording.js';
+import { currentLevel } from '../course.js';
 import { dayContext, crumbs, pager, nextLink, examNotes } from './common.js';
-
-// iPhones and iPads (iPadOS reports itself as a Mac with a touch screen) mute read-aloud in Silent mode.
-const IOS = typeof navigator !== 'undefined' && (/iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
 
 /**
  * A listening script drawn from the sentences it is read in: each turn of a
@@ -31,12 +30,13 @@ export async function textView(d, module, n) {
   const items = ctx.day.items[module], due = ctx.plan[module].length;
   n = Math.min(Math.max(1, n), items.length);
   const item = items[n - 1], listening = module === 'listening';
-  const ttsId = `${d}:${item.id}`;
-  let showScript = !listening, off = null, offVoices = null;
+  // The recording: pre-generated audio, read by native French voices (app/recording.js).
+  const ttsId = `${currentLevel().level.toLowerCase()}:${d}:${item.id}`, audio = `audio/${currentLevel().level.toLowerCase()}/${item.id}`;
+  let showScript = !listening, off = null;
 
   const player = () => {
-    const x = speech.tts, mine = x.id === ttsId, st = mine ? x.state : 'idle';
-    if (!speech.supported) return html`<div class="player" data-player><p class="muted">${t('player.unsupported')}</p></div>`;
+    const x = recording.rec, mine = x.id === ttsId, st = mine ? x.state : 'idle';
+    if (!recording.supported) return html`<div class="player" data-player><p class="muted">${t('player.unsupported')}</p></div>`;
     const total = mine ? x.total : speech.segments(item.script).length, at = mine ? x.at : 0;
     return html`<div class="player ${st}" data-player>
       <div class="player-main">
@@ -54,12 +54,10 @@ export async function textView(d, module, n) {
           <button class="icon-btn" data-act="snext" aria-label="${t('player.next')}" ${mine && at < total - 1 ? '' : 'disabled'}>${icon('forward')}</button>
           ${st !== 'idle' ? html`<button class="icon-btn" data-act="stop" aria-label="${t('player.stop')}">${icon('stop')}</button>` : ''}
         </div>
-        <div class="rates" role="radiogroup" aria-label="${t('player.speed')}">${speech.RATES.map((r) => html`<button role="radio" aria-checked="${x.rate === r}" class="${x.rate === r ? 'on' : ''}" data-act="rate" data-r="${r}">${r}×</button>`)}</div>
+        <div class="rates" role="radiogroup" aria-label="${t('player.speed')}">${recording.RATES.map((r) => html`<button role="radio" aria-checked="${x.rate === r}" class="${x.rate === r ? 'on' : ''}" data-act="rate" data-r="${r}">${r}×</button>`)}</div>
       </div>
-      ${mine && x.error ? html`<p class="notice bad small" role="alert">${t(x.error === 'blocked' ? 'player.blocked' : 'player.failed')}</p>` : ''}
-      ${IOS ? html`<p class="muted small">${t('player.iosMute')}</p>` : ''}
-      ${speech.hasFrench() ? html`<p class="player-foot muted small"><span>${t('player.voices', { n: speech.segments(item.script).some((s) => s.speaker === 1) ? 2 : 1 })}</span><span class="keys-hint">${t('player.keys')}</span></p>`
-        : html`<p class="player-foot muted small">${t('player.noVoice')}</p>`}
+      ${mine && x.error ? html`<p class="notice bad small" role="alert">${t(x.error === 'blocked' ? 'player.blocked' : 'player.audioFailed')}</p>` : ''}
+      <p class="player-foot muted small"><span>${t('player.voices', { n: speech.segments(item.script).some((s) => s.speaker === 1) ? 2 : 1 })}</span><span class="keys-hint">${t('player.keys')}</span></p>
     </div>`;
   };
 
@@ -118,7 +116,7 @@ export async function textView(d, module, n) {
       const again = act && document.querySelector(`[data-player] [data-act="${act}"]:not(:disabled)`);
       if (again) again.focus({ preventScroll: true });
     }
-    const x = speech.tts, mine = x.id === ttsId && x.state !== 'idle';
+    const x = recording.rec, mine = x.id === ttsId && x.state !== 'idle';
     const box = document.querySelector('[data-script]');
     if (!box) return;
     box.querySelectorAll('.s.now').forEach((s) => s.classList.remove('now'));
@@ -135,34 +133,35 @@ export async function textView(d, module, n) {
     title: `${moduleName(module)} · Jour ${d}`,
     render,
     mount: (root) => {
-      if (listening && !off) { off = speech.onSpeech(follow); offVoices = speech.onVoices(follow); }
+      if (listening && !off) off = recording.onRecording(follow);
       if (listening) {
+        recording.attach(ttsId, audio, item.script);
         follow();
         // A sentence of the transcript plays from there.
         const box = root.querySelector('[data-script]');
-        if (box) box.onclick = (e) => { const s = e.target.closest('[data-s]'); if (s) speech.seek(Number(s.dataset.s), ttsId, item.script); };
+        if (box) box.onclick = (e) => { const s = e.target.closest('[data-s]'); if (s) recording.seek(Number(s.dataset.s), ttsId); };
       }
     },
-    unmount: () => { if (off) off(); if (offVoices) offVoices(); off = offVoices = null; if (listening && speech.tts.id === ttsId) speech.stop(); },
+    unmount: () => { if (off) off(); off = null; if (listening && recording.rec.id === ttsId) recording.stop(); },
     actions: {
       answer: (el) => {
         const q = Number(el.dataset.q), k = Number(el.dataset.i);
         commit((S) => answerChoice(S, module, d, item.id, q, k));
       },
-      toggle: () => speech.toggle(ttsId, item.script),
-      stop: () => speech.stop(),
-      sprev: () => speech.prev(ttsId, item.script),
-      snext: () => speech.next(ttsId, item.script),
-      srepeat: () => speech.repeat(ttsId, item.script),
-      rate: (el) => speech.setRate(Number(el.dataset.r)),
+      toggle: () => recording.toggle(ttsId),
+      stop: () => recording.stop(),
+      sprev: () => recording.prev(ttsId),
+      snext: () => recording.next(ttsId),
+      srepeat: () => recording.repeat(ttsId),
+      rate: (el) => recording.setRate(Number(el.dataset.r)),
       script: () => { showScript = !showScript; refresh(); }
     },
     keys: (e) => {
       if (!listening || e.metaKey || e.ctrlKey || e.altKey) return;
-      if (e.key === ' ' && !(document.activeElement && document.activeElement.closest('button, a'))) { e.preventDefault(); speech.toggle(ttsId, item.script); }
-      else if (e.key === 'ArrowLeft') { e.preventDefault(); speech.prev(ttsId, item.script); }
-      else if (e.key === 'ArrowRight') { e.preventDefault(); speech.next(ttsId, item.script); }
-      else if (e.key === 'r' || e.key === 'R') { e.preventDefault(); speech.repeat(ttsId, item.script); }
+      if (e.key === ' ' && !(document.activeElement && document.activeElement.closest('button, a'))) { e.preventDefault(); recording.toggle(ttsId); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); recording.prev(ttsId); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); recording.next(ttsId); }
+      else if (e.key === 'r' || e.key === 'R') { e.preventDefault(); recording.repeat(ttsId); }
     }
   };
 }

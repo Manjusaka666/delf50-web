@@ -273,6 +273,26 @@ async function main() {
   const none = speech.tts.state === 'idle';
   check(none && said.length === 0 && speech.tts.error === 'voice' && !speech.hasFrench(), 'no French voice from France: nothing is read, and the player says why', { said, error: speech.tts.error });
 
+  out.push('\nListening recordings');
+  // Every listening script of both courses has its recording (native French voices, scripts/listening-audio.py),
+  // timed sentence by sentence on exactly the sentences the transcript shows.
+  const NATIVE = new Set(['pierre', 'jessica', 'siwis', 'pierre-low']);
+  const unrecorded = [], misaligned = [], voiced = [];
+  for (const [level, dir] of [['b1', 'course/days'], ['b2', 'course/b2/days']]) {
+    for (const f of fs.readdirSync(path.join(ROOT, dir)).filter((x) => /^\d+\.json$/.test(x))) {
+      for (const it of JSON.parse(fs.readFileSync(path.join(ROOT, dir, f), 'utf8')).items.listening) {
+        const base = path.join(ROOT, 'audio', level, it.id);
+        if (!fs.existsSync(base + '.mp3') || !fs.existsSync(base + '.json') || fs.statSync(base + '.mp3').size < 2000) { unrecorded.push(`${level}:${it.id}`); continue; }
+        const j = JSON.parse(fs.readFileSync(base + '.json', 'utf8')), texts = speech.segments(it.script).map((x) => x.text);
+        if (JSON.stringify(j.texts) !== JSON.stringify(texts) || j.t.length !== texts.length || j.t.some((x, i) => i && x <= j.t[i - 1]) || !(j.d > j.t[j.t.length - 1])) misaligned.push(`${level}:${it.id}`);
+        if (!j.voices.length || j.voices.some((v) => !NATIVE.has(v))) voiced.push(`${level}:${it.id} ${j.voices}`);
+      }
+    }
+  }
+  check(!unrecorded.length, 'every listening script of B1 and B2 has its recording (audio/<level>/<id>.mp3 and .json)', unrecorded.slice(0, 5));
+  check(!misaligned.length, 'each recording is timed on exactly the transcript’s sentences, in order', misaligned.slice(0, 5));
+  check(!voiced.length, 'each recording is read only by native French (France) voices: Pierre, Jessica, Siwis', voiced.slice(0, 5));
+
   out.push('\nFrench typography');
   const NN = ' ';
   const cases = [['Pourquoi ?', `Pourquoi${NN}?`], ['Attention : non', `Attention${NN}: non`], ['10:30', '10:30'], ['« oui »', `«${NN}oui${NN}»`],

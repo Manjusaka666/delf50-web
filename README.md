@@ -14,7 +14,7 @@
 
 所有作答、草稿、写作、录音都实时保存在账号中（Neon Postgres + Cloudflare R2），浏览器里不存任何学习数据。
 
-界面语言可在中文与 English 之间随时切换（顶栏、登录页或设置），选择保存在账号里、跟随到所有设备。切换只改变讲解、释义和界面文字，法语材料、题目与答案不变；学习记录与语言无关，用哪种语言作答，存下的都完全相同。听力朗读使用设备自带的法语语音（Web Speech API），可在设置中选择声音和语速。
+界面语言可在中文与 English 之间随时切换（顶栏、登录页或设置），选择保存在账号里、跟随到所有设备。切换只改变讲解、释义和界面文字，法语材料、题目与答案不变；学习记录与语言无关，用哪种语言作答，存下的都完全相同。听力使用预先生成的录音（`audio/b1/`、`audio/b2/`，每篇一个 MP3 和逐句时间表）：由法国法语母语声音（开源 Piper 的 fr_FR 声音：男声 Pierre，女声 Siwis、Jessica）朗读，不依赖浏览器或系统的语音，任何设备无需安装即可播放；对话按台词判断说话人性别分配男女声。词块和例句的朗读仍使用设备自带的法语语音（Web Speech API），可在设置中选择声音和语速。
 
 ## 结构
 
@@ -29,7 +29,8 @@ app/                前端（原生 ES 模块，无构建步骤）
   store.js          载入与实时保存（差量批次、重试、多设备刷新）
   sync-core.js      状态差量算法（前端与测试共用）
   media.js          录音分段上传 / 下载（经 API 存入 R2）
-  speech.js         听力的法语朗读（Web Speech API：逐句朗读、对话双声、暂停续读、上一句 / 下一句、选声与语速）
+  recording.js      听力录音的播放（预生成的法国法语录音：逐句定时、高亮、暂停续播、上一句 / 下一句、语速）
+  speech.js         词块与例句的法语朗读（Web Speech API），以及听力原文的切句 segments()
   i18n.js  i18n/   界面语言与文案目录（zh-CN.js · en.js）
   content.js        课程译文叠加（localize）与原文取回（canonical）
   settings.js       账号级偏好：界面语言、外观、朗读声音与语速
@@ -46,7 +47,8 @@ fonts/              自托管字体（EB Garamond、Plus Jakarta Sans，OFL）
 api/v1.js           API（Vercel 函数）：Neon Auth 代理、bootstrap、sync、media、vocab
 api/_lib/           records.js（状态 ↔ 数据表映射）、session、db、r2、media、vocab、courses
 db/migrations/      数据库结构（幂等，按序执行）
-scripts/            检查与运维脚本
+scripts/            检查与运维脚本；listening-audio.py 生成听力录音
+audio/b1/ audio/b2/  听力录音（MP3 + 逐句时间表），署名见 audio/CREDITS.md
 ```
 
 ## 数据
@@ -81,14 +83,16 @@ node scripts/verify.js        # 两门课程的数据（逐天逐项）、每日
 node scripts/check-course.js course/b2   # 单独校验一门课程
 node scripts/check-i18n.js    # 界面文案目录与课程译文：覆盖完整、键与原文一致、法语词 / 数字 / 标签未被改动
 node scripts/verify-cloud.js  # 单元 + API（真实 PostgreSQL）+ 浏览器端到端（Chromium）
-node scripts/check-speech.js  # 听力朗读：在真实浏览器（Chromium、WebKit）和真实语音引擎上，每次点击播放都能出声
+node scripts/check-speech.js  # 听力录音：在真实浏览器（Chromium、WebKit）中点击即播放、播完回到开头、暂停 / 继续 / 上下句 / 语速，逐句高亮对齐
 ```
 
 `verify-cloud.js` 需要一个可清空的数据库（`TEST_DATABASE_URL`，Neon 测试分支或本地 PostgreSQL）和测试依赖 `npm i --no-save pg playwright`（浏览器部分从 `NODE_PATH` 解析 Playwright）。它在测试库中建立 Neon Auth 与 R2 的模拟服务，用 `delf50_api` 角色运行真实的 API，并在 Chromium 中跑完整的学习流程。
 
 `scripts/smoke-live.js` 对真实的 Neon Auth / 数据库 / R2 做冒烟测试（使用测试分支）。
 
-`check-speech.js` 需要 Playwright（从 `NODE_PATH` 解析）和带法语声音的语音引擎（Linux：`speech-dispatcher`、`espeak-ng` 和 PulseAudio 空设备，见脚本开头）。它检查点击播放即在点击内开始朗读并真正出声、播完回到开头并可重播、暂停 / 继续 / 上下句、声音尚未加载时的点击、选中的声音无法连接时自动换声音读完、没有可用声音时停止并提示；WebKit 已安装时，还检查应用能在 Safari 内核中加载，且首句在点击内开始。
+`check-speech.js` 需要 Playwright（从 `NODE_PATH` 解析）；WebKit 可选。它检查听力页点击播放即在点击内开始播放预生成录音、从不调用浏览器语音、播完回到开头并可重播、暂停 / 继续 / 上下句 / 点击原文句子跳转到该句开头、高亮与正在播放的句子一致、语速生效，以及浏览器切分的句子与录音时间表完全一致。
+
+录音的生成：`scripts/listening-audio.py`（见脚本开头：Piper、两个 fr_FR 声音模型、ffmpeg）。修改听力原文后重新运行它；`verify.js` 会检查每篇听力都有录音且句子与原文一致。声音的授权与署名见 `audio/CREDITS.md`。
 
 ## 部署
 
