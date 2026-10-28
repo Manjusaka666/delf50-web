@@ -45,11 +45,14 @@ const NOVELTY = /\b(grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley|bad news|b
 /** Whether a voice is synthesised on a server (it is silent when the server cannot be reached). */
 const online = (v) => v.localService === false;
 
-/** How good a voice is likely to sound for DELF listening (higher is better); on-device voices before network ones. */
+/**
+ * How good a voice is likely to sound for DELF listening (higher is better); on-device voices before network ones.
+ * Only French from France (fr-FR) is read: never Canadian, Belgian or Swiss French, never another language.
+ */
 export function score(v) {
   const lang = String(v.lang || '').replace('_', '-');
-  if (!/^fr(-|$)/i.test(lang)) return -Infinity;
-  let s = /^fr-FR$/i.test(lang) ? 100 : 60; // the exam's standard French first; Canadian, Swiss, Belgian next
+  if (!/^fr-FR$/i.test(lang)) return -Infinity;
+  let s = 100;
   const n = String(v.name || '');
   if (/premium/i.test(n)) s += 60;
   else if (/natural|neural/i.test(n)) s += 55;
@@ -77,14 +80,14 @@ function cast() {
   const all = synth ? synth.getVoices() : [];
   const fr = all.filter((v) => score(v) > -Infinity && !failed.has(v.voiceURI)).sort((a, b) => score(b) - score(a));
   const first = (chosen && fr.find((v) => v.voiceURI === chosen)) || fr[0] || null;
-  // The second speaker: another good voice, preferably of the same French as the first — never a network voice
-  // beside an on-device one (it may be silent); with one voice only, the second speaker is pitched lower instead.
-  const others = fr.filter((v) => first && v.voiceURI !== first.voiceURI && v.name !== first.name && !NOVELTY.test(v.name) && (online(first) || !online(v)));
-  const second = others.find((v) => first && v.lang === first.lang) || others[0] || null;
+  // The second speaker: another fr-FR voice, on-device first, else a network one (a network voice that cannot speak
+  // is set aside like any other); with one voice only, the second speaker is pitched lower instead.
+  const others = fr.filter((v) => first && v.voiceURI !== first.voiceURI && v.name !== first.name && !NOVELTY.test(v.name));
+  const second = others.find((v) => !online(v)) || others[0] || null;
   return [first, second];
 }
 
-/** Whether the device can read French with a French voice (else the engine falls back to another language's voice). */
+/** Whether the device has a French voice from France (without one, nothing is read: the engine's default may be English). */
 export const hasFrench = () => frenchVoices().length > 0;
 
 export function configure({ voice, rate } = {}) {
@@ -99,12 +102,12 @@ if (synth) {
   else synth.onvoiceschanged = changed;
 }
 
-/** Resolves once the engine has listed its voices (Chrome lists them asynchronously), or after a second. */
+/** Resolves once the engine has listed a French voice from France (Chrome lists its voices asynchronously), or after 5 s. */
 function voicesReady() {
-  if (!synth || synth.getVoices().length) return Promise.resolve();
+  if (!synth || hasFrench()) return Promise.resolve();
   return new Promise((resolve) => {
-    const off = onVoices(() => { off(); resolve(); });
-    setTimeout(() => { off(); resolve(); }, 1000);
+    const until = Date.now() + 5000;
+    (function poll() { if (hasFrench() || Date.now() > until) resolve(); else setTimeout(poll, 200); })();
   });
 }
 
@@ -220,6 +223,8 @@ function speakPart(i, list, k, t) {
   clearTimers();
   if (t !== token) return;
   const s = queue[i], text = list[k], [a, b] = cast();
+  // No French voice from France: say so rather than let the engine read in its default voice (often English).
+  if (!a) { halt('voice'); return; }
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'fr-FR';
   u.rate = tts.rate;
@@ -284,7 +289,7 @@ function restart(i) {
   const t = token;
   // Chrome drops an utterance spoken in the same tick as cancel(): cancel only what is playing, and speak 100 ms later.
   if (synth.speaking || synth.pending) { synth.cancel(); voicesReady().then(() => speakAt(i, t, 100)); return; }
-  if (synth.getVoices().length) { speakAt(i, t, 0); return; } // nothing to cancel: at once, inside the tap
+  if (hasFrench()) { speakAt(i, t, 0); return; } // nothing to cancel: at once, inside the tap
   // Chrome lists its voices a moment after the page loads. (No silent "unlock" utterance here: Chrome never
   // finishes a blank one, and every utterance after it waits behind it — no sound at all.)
   voicesReady().then(() => speakAt(i, t, 0));
@@ -339,8 +344,9 @@ export function preview(uri, text) {
   const busy = synth.speaking || synth.pending;
   if (busy) stop(); else { token++; clearTimers(); }
   const u = new SpeechSynthesisUtterance(text);
-  const v = synth.getVoices().find((x) => x.voiceURI === uri) || cast()[0];
-  u.lang = v ? v.lang : 'fr-FR'; if (v) u.voice = v; u.rate = tts.rate;
+  const v = synth.getVoices().find((x) => x.voiceURI === uri && score(x) > -Infinity) || cast()[0];
+  if (!v) return; // no French voice from France: never a sample in another voice
+  u.lang = v.lang; u.voice = v; u.rate = tts.rate;
   // Not in the same tick as the cancel in stop(): Chrome would drop it.
   if (busy) setTimeout(() => synth.speak(u), 100); else synth.speak(u);
 }

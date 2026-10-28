@@ -186,9 +186,18 @@ async function webkit(pw, base) {
   try { browser = await pw.webkit.launch(); } catch (e) { results.push('  skip: WebKit is not installed'); return; }
   try {
     const s = await session(browser, base);
-    const h = await s.heard(await s.tap('toggle'), 5000);
+    const fr = await s.page.evaluate(() => speechSynthesis.getVoices().some((v) => /^fr-FR$/i.test(String(v.lang).replace('_', '-'))));
+    const n = await s.tap('toggle');
     check(!s.errors.length, 'the app loads in WebKit (no syntax Safari cannot parse)', s.errors);
-    check(h.inTap && h.start !== null, 'the first utterance is spoken inside the tap and the engine starts it (iOS refuses speech started later)', h);
+    if (fr) {
+      const h = await s.heard(n, 5000);
+      check(h.inTap && h.start !== null, 'the first utterance is spoken inside the tap and the engine starts it (iOS refuses speech started later)', h);
+    } else {
+      // This engine has no French voice from France (Linux WebKit: English flite voices only): nothing may be read in English.
+      await s.page.waitForTimeout(6500);
+      const spoken = (await s.ev()).filter((x) => x.kind === 'speak'), st = await s.state();
+      check(!spoken.length && Boolean(st.alert), 'no French voice from France here: nothing is read in another language, and the player says so', { spoken: spoken.length, st });
+    }
     await s.ctx.close();
   } finally { await browser.close(); }
 }

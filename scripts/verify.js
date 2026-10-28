@@ -228,7 +228,8 @@ async function main() {
   await new Promise((r) => setTimeout(r, 5)); speech.next('t:4', long3);
   await playedOut();
   check(dropped === 0 && !speech.tts.error, 'nothing is spoken in the same tick as a cancel (Chrome drops it, silently)', { dropped, error: speech.tts.error });
-  check(said.every(([, v]) => v === 'thomas' || v === 'amelie'), 'on-device French voices read before a network voice (Google’s cannot be reached from mainland China)', said.slice(0, 3));
+  check(said.filter((x) => x[0] === 'Bonjour.').every(([, v]) => v === 'thomas') && said.every(([, v]) => v === 'thomas' || v === 'google'),
+    'only French voices from France read (never the Canadian Amélie); on-device first, the second speaker another fr-FR voice', said.slice(0, 3));
   // The voice in use fails (the learner chose the network voice, unreachable): the same sentence is read by the next voice.
   said.length = 0; broken.add('google'); speech.configure({ voice: 'google' });
   speech.play('t:2', ['Bonjour Marie. Je suis devant le café.']);
@@ -247,8 +248,24 @@ async function main() {
   const voices = [{ name: 'Thomas', lang: 'fr-FR' }, { name: 'Amélie', lang: 'fr-CA' }, { name: 'Audrey (Premium)', lang: 'fr-FR' },
     { name: 'Samantha', lang: 'en-US' }, { name: 'Jacques', lang: 'fr_FR' }, { name: 'Grandma', lang: 'fr-FR' }, { name: 'Google français', lang: 'fr-FR', localService: false }];
   const ranked = voices.filter((v) => speech.score(v) > -Infinity).sort((a, b) => speech.score(b) - speech.score(a)).map((v) => v.name);
-  check(JSON.stringify(ranked) === JSON.stringify(['Audrey (Premium)', 'Thomas', 'Jacques', 'Amélie', 'Grandma', 'Google français']),
-    'French voices are ranked: premium first, then the exam’s French, other French, novelty voices, network voices last; other languages never', ranked);
+  check(JSON.stringify(ranked) === JSON.stringify(['Audrey (Premium)', 'Thomas', 'Jacques', 'Grandma', 'Google français']),
+    'only French from France (fr-FR) is read, premium first, novelty voices, then network voices; Canadian French and other languages never', ranked);
+  // The voices Chrome lists on a Mac: the dialogue's second speaker must not be Amélie (fr-CA) — it was, after #18.
+  const MAC = [['Samantha', 'en-US', true, true], ['Thomas', 'fr-FR', true], ['Amélie', 'fr-CA', true], ['Eddy (French (France))', 'fr-FR', true],
+    ['Flo (French (Canada))', 'fr-CA', true], ['Google français', 'fr-FR', false], ['Google US English', 'en-US', false]]
+    .map(([name, lang, local, dflt]) => ({ name, lang, voiceURI: name, localService: local, default: Boolean(dflt) }));
+  VOICES.splice(0, VOICES.length, ...MAC); broken.clear(); said.length = 0;
+  speech.play('t:5', ['— Bonjour, vous avez réservé ?\n— Oui, au nom de Martin.\n— Très bien.\n— Merci.']);
+  await playedOut();
+  const langs = said.map(([, v]) => MAC.find((x) => x.voiceURI === v));
+  check(said.length === 4 && langs.every((v) => v && v.lang === 'fr-FR') && said[0][1] === 'Thomas' && said[1][1] === 'Google français',
+    'a dialogue on a Mac: both speakers French from France (Thomas, Google français), never Amélie (fr-CA) or English', said);
+  // A device without any fr-FR voice: nothing is read in another accent or the engine's default (often English).
+  VOICES.splice(0, VOICES.length, ...MAC.filter((v) => v.lang !== 'fr-FR')); said.length = 0;
+  speech.play('t:6', ['Bonjour Marie.']);
+  for (let k = 0; k < 700 && speech.tts.state !== 'idle'; k++) await new Promise((r) => setTimeout(r, 10)); // the player waits up to 5 s for a voice
+  const none = speech.tts.state === 'idle';
+  check(none && said.length === 0 && speech.tts.error === 'voice' && !speech.hasFrench(), 'no French voice from France: nothing is read, and the player says why', { said, error: speech.tts.error });
 
   out.push('\nFrench typography');
   const NN = ' ';

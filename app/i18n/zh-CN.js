@@ -28,7 +28,7 @@ export default {
   'settings.title': '设置', 'settings.language': '界面语言', 'settings.languageNote': '课程材料始终是法语；讲解、释义和界面使用所选语言。',
   'settings.appearance': '外观', 'settings.theme.system': '跟随系统', 'settings.theme.light': '浅色', 'settings.theme.dark': '深色',
   'settings.voice': '法语朗读声音', 'settings.voiceAuto': '自动（最佳可用）', 'settings.voicePreview': '试听',
-  'settings.voiceNone': '此设备没有法语声音。', 'settings.voiceNote': '声音来自你的设备。标有“高品质”的声音最自然；在 Apple 设备上可于“设置 › 辅助功能 › 朗读内容 › 声音”中下载增强版法语声音。',
+  'settings.voiceNone': '此设备没有法国法语（fr-FR）声音。', 'settings.voiceNote': '声音来自你的设备。标有“高品质”的声音最自然；在 Apple 设备上可于“设置 › 辅助功能 › 朗读内容 › 声音”中下载增强版法语声音。',
   'settings.voiceQuality': '高品质', 'settings.voiceOnline': '在线（需连网，可能无法使用）', 'settings.saveFailed': '设置未能保存到账号，仅在本次使用中生效。',
   'settings.voiceSample': 'Bonjour ! Je vais lire les documents sonores de votre préparation au DELF.',
 
@@ -89,7 +89,7 @@ export default {
 
   // the listening player
   'player.unsupported': '当前浏览器不支持法语语音合成，请使用最新版 Chrome、Edge 或 Safari，或直接阅读原文。',
-  'player.noVoice': '此设备没有法语声音，朗读可能不准确。可在系统设置中添加法语语音，或直接阅读原文。',
+  'player.noVoice': '此设备没有法国法语（fr-FR）声音，无法朗读（不会用其他口音或其他语言代读）。请在系统设置中添加“法语（法国）”语音，或直接阅读原文。',
   'player.failed': '没有声音：此设备的法语声音都无法朗读（在线声音可能连不上服务器）。请再点一次播放；若仍无声音，请在设置中换一个法语声音，或在系统设置中添加离线法语语音。也可以先阅读原文。',
   'player.blocked': '浏览器阻止了朗读。请直接点击播放按钮开始播放。',
   'player.iosMute': '没有声音？请关闭 iPhone / iPad 的静音模式并调高媒体音量。',

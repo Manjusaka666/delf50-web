@@ -27,7 +27,7 @@ export default {
   'settings.title': 'Settings', 'settings.language': 'Language', 'settings.languageNote': 'The course material is always in French; explanations, glosses and the interface use the language you choose.',
   'settings.appearance': 'Appearance', 'settings.theme.system': 'System', 'settings.theme.light': 'Light', 'settings.theme.dark': 'Dark',
   'settings.voice': 'French voice', 'settings.voiceAuto': 'Automatic (best available)', 'settings.voicePreview': 'Preview',
-  'settings.voiceNone': 'This device has no French voice.', 'settings.voiceNote': 'Voices come from your device. Voices marked “High quality” sound most natural; on Apple devices you can download enhanced French voices in Settings › Accessibility › Spoken Content › Voices.',
+  'settings.voiceNone': 'This device has no French (France) voice.', 'settings.voiceNote': 'Voices come from your device. Voices marked “High quality” sound most natural; on Apple devices you can download enhanced French voices in Settings › Accessibility › Spoken Content › Voices.',
   'settings.voiceQuality': 'High quality', 'settings.voiceOnline': 'online (needs its server; may not work)', 'settings.saveFailed': 'Your settings couldn’t be saved to your account; they apply until you leave.',
   'settings.voiceSample': 'Bonjour ! Je vais lire les documents sonores de votre préparation au DELF.',
 
@@ -80,7 +80,7 @@ export default {
   'text.questions': 'Questions', 'text.comprehension': 'Comprehension', 'text.hint': 'Each answer shows its explanation straight away. Answers are final.',
 
   'player.unsupported': 'This browser can’t read French aloud. Use a recent Chrome, Edge or Safari, or read the transcript.',
-  'player.noVoice': 'This device has no French voice, so the reading may sound wrong. Add a French voice in your system settings, or read the transcript.',
+  'player.noVoice': 'This device has no French (France) voice, so nothing can be read (never in another accent or language). Add a French (France) voice in your system settings, or read the transcript.',
   'player.failed': 'No sound: none of this device’s French voices could read the recording (an online voice may not reach its server). Press play again; if it is still silent, choose another French voice in Settings or add an offline French voice in your system settings. You can also read the transcript.',
   'player.blocked': 'The browser blocked the reading. Press the play button itself to start.',
   'player.iosMute': 'No sound? Turn off Silent mode on your iPhone or iPad and turn the volume up.',
