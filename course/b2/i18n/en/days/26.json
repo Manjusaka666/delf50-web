@@ -1,7 +1,7 @@
 {
  "canDo": "Can use “verb + à / de + infinitive” structures accurately (inciter à, dissuader de, s’efforcer de, se contenter de…) to encourage or discourage people from taking part in environmental action, and distinguish “incentives” from “compulsion” in an argument.",
  "review": "Review day 25’s indefinites (la plupart, chacun, tel) and day 23’s text connectors (certes… mais, d’une part… d’autre part); look back at day 18’s use of y / en to replace à / de structures (j’y renonce, je l’en dissuade).",
- "input": "Read: a long article analysing barriers to environmental engagement, a column arguing that “incentives alone are no longer enough” and a reader’s letter; listen: a radio interview on a “zero-waste family challenge”, a commentary on eco-anxiety and a town-hall tree-planting notice. Strategy: circle the à / de after verbs as you read and decide whether the speaker is encouraging, discouraging or compelling.",
+ "input": "Read: the informative article « Ces jeunes diplômés qui refusent les « grandes entreprises » », the opinion piece « Désobéir pour le climat : jusqu’où ? » and the three-voice forum « Faut-il interdire la publicité pour les produits polluants ? » — questions first, then the text, finding the evidence for each answer; listen: « Le Défi familles zéro déchet » and « Éco-anxiété : transformer l’inquiétude en énergie » twice each, then three short recordings once each.",
  "output": "Write: an opinion post (≥250 words) on a town forum about “charging for rubbish by weight”, with at least 5 different à / de verb structures; speak: a 4-minute monologue on “companies paying staff who cycle to work”, then a debate on “should outdoor terrace heaters be banned altogether?”.",
  "checkpoint": "Reading and listening accuracy ≥80%; zero preposition errors after verbs in the essay, with at least 5 structures; a 4-minute monologue without breaking off that clearly distinguishes “encouraging” from “compelling”.",
  "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about environmental action or a climate initiative, and write 3 sentences of opinion with inciter à, dissuader de and s’engager à, or record a 1-minute spoken response.",
@@ -48,6 +48,7 @@
      {
       "why": "She concedes first, « je ne prétends pas qu’on va sauver la planète avec des bocaux », then says families question shops and « les entreprises finissent par l’entendre ». B is the opposite of the concession; C: she only « refuse d’opposer les deux »."
      },
+     null,
      {
       "why": "« N’attendez pas d’être prêts. Commencez par un geste, un seul ». A and B are the opposite."
      }
@@ -64,6 +65,11 @@
      {
       "why": "« Le danger, c’est quand elle paralyse ». A is the opposite of « refusent d’en faire une maladie »; B is the opposite of « touche particulièrement les jeunes »."
      },
+     {
+      "why": "« faire peur ou rassurer à tort » — écueil = a reef, hence a pitfall; the two pitfalls are frightening pupils and reassuring them wrongly."
+     },
+     null,
+     null,
      {
       "why": "« l’aider à trouver une action à sa mesure ». A is exactly what is rejected: « arrête de t’en faire, ça ne marche pas »; C has no basis."
      }

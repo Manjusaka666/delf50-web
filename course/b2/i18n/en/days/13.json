@@ -1,7 +1,7 @@
 {
  "canDo": "Can present the principle, advantages and limits of a technological innovation objectively, using the passive in various tenses, se faire + infinitive and impersonal structures (il s’agit de, il est + adj. + de/que, il reste, il manque).",
  "review": "Review day 12’s indirect speech (the researcher a expliqué que…) and day 9’s hypotheses; watch the agreement of the past participle with the subject in the passive (les images sont analysées, la piste a été inaugurée).",
- "input": "Read: a popular-science report on self-healing concrete, an opinion piece against “technological solutionism” and a press release on a citizen science project (mark être + past participle and the agent introduced by par); listen: an interview on AI-assisted diagnosis in a hospital, a segment on how science news gets distorted and a news flash on a heated cycle lane (note “who did what / what was done”).",
+ "input": "Read: the informative article « Des organes fabriqués à la demande ? », the opinion piece « La science doit-elle tout promettre ? » and the three-voice forum « Faut-il continuer à envoyer des humains dans l’espace ? » — questions first, then the text, finding the evidence for each answer; listen: « L’intelligence artificielle au service des radiologues » and « Comment une étude devient une fausse nouvelle » twice each, then three short recordings once each.",
  "output": "Write: a press article (≥250 words) objectively presenting an everyday innovation and assessing its prospects; speak: a 3-minute monologue on companion robots in care homes, then a debate on “drone deliveries in cities”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 6 passive or impersonal structures in the article with correct participle agreement, distinguishing statements of fact from personal opinion; a 3-minute monologue without breaking off.",
  "challenge": "Today’s challenge: find a science or medical news item on RFI’s « Journal en français facile » or TV5MONDE, rewrite 3 of its active sentences as passive or impersonal ones (« Un nouveau traitement a été mis au point… », « Il s’agit de… »), then record 1 minute presenting the innovation objectively and naming one limitation.",
@@ -69,6 +69,11 @@
      },
      {
       "why": "« l’étude elle-même n’a pas été lue… ce communiqué est résumé, puis le résumé est résumé à son tour ». A and C aren’t said in the recording."
+     },
+     null,
+     null,
+     {
+      "why": "« seules les études dont les résultats sont positifs ont des chances d’être reprises » — biais = bias; if one team in ten finds an effect, that is the only one talked about."
      },
      {
       "why": "« Trois : vérifier si les résultats ont été confirmés par d’autres équipes. » A is too absolute; B is precisely where the problem comes from."

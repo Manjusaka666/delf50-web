@@ -1,7 +1,7 @@
 {
  "canDo": "Can complete all four parts back to back under real exam conditions (listening 30 minutes, reading 60 minutes, writing 60 minutes, speaking 30 minutes’ preparation + 20 minutes) with no overruns and no blank answers, and use inversion and expletive ne naturally in a formal letter.",
  "review": "Review formal letter layout and the polite conditional (day 27) and concession and restriction (days 7 and 24), and consolidate the elegant style that bridges to C1: inversion (Peut-être objectera-t-on, Encore faut-il, Aussi me permettrai-je) and expletive ne (craindre que… ne, avant que… ne).",
- "input": "Read: R47-1 on the return of the wolf to France (informative), R47-2 on teaching public speaking at school (opinion) and R47-3, a forum post (must cameras be on in video calls?); questions first, then the texts, within 60 minutes. Listen: the radio debate L47-1 twice, the interview L47-2 and the vox pop L47-3 once each, skimming the questions in the 30 seconds before each.",
+ "input": "Read: the informative article « Don d’organes : pourquoi tant de refus ? », the opinion piece « Jeux olympiques : la fête vaut-elle son prix ? » and the three-voice forum « Les compétitions de jeux vidéo ont-elles leur place aux Jeux olympiques ? » — questions first, then the text, finding the evidence for each answer; listen: « Des animaux sauvages sous les chapiteaux ? » and « Un chef contre le gaspillage » twice each, then three short recordings once each.",
  "output": "Write: W47-1, a formal letter to the director of a media library, ≥ 250 words within 60 minutes, with at least one inversion and one expletive ne; speak: S47-1, a 6-minute monologue (a 110 km/h motorway speed limit), and S47-2, a 4–5-minute debate answering each of the examiner’s objections in turn.",
  "checkpoint": "All four parts finished within the time limits; listening + reading accuracy ≥ 75%; letter ≥ 250 words with complete layout; monologue with a problem statement and an announced outline; after the exam, spend 10 minutes sorting wrong answers into “misunderstood / careless / ran out of time”.",
  "challenge": "Today’s challenge: find a news item on wildlife protection, education or road safety on TV5MONDE or RFI’s « Journal en français facile »; time yourself strictly for 1 minute, listen once, write down 3 key facts, then add one reservation using Encore faut-il que….",
@@ -24,6 +24,7 @@
      {
       "why": "« Sans lui, certains petits cirques devront fermer ». Neither B nor C is mentioned."
      },
+     null,
      {
       "why": "Messin says « Si on nous accompagne, je suis prêt à tenter l’aventure », and Bertin replies « Nous sommes plus proches qu’on ne le croit ». A contradicts both sides’ concessions; C: she only argues for a gradual transition."
      }
@@ -45,6 +46,9 @@
      },
      {
       "why": "« regarder ce qui reste dans le frigo avant d’ouvrir un livre de recettes » and « Faire une liste avant les courses ». A and B are the opposite."
+     },
+     {
+      "why": "« c’était, à ses yeux, renier son métier » — renier son métier = to betray one’s craft; those who stayed came to see it as un défi."
      }
     ]
    },

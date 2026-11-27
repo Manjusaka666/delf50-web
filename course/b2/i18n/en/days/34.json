@@ -1,7 +1,7 @@
 {
  "canDo": "Can write a formal complaint or petition letter of 250+ words on behalf of yourself or a group: complete layout (letterhead, subject line, form of address, closing formula), accurate statement of facts, a clear request, and expressions of purpose to justify it.",
  "review": "Review formal register (the polite conditional, je vous saurais gré de, veuillez + infinitive, inverted questions, expletive ne) and expressions of purpose (afin de / afin que + subjunctive, de manière à, en vue de, de crainte que); build on day 33’s argument structure: still “position + arguments”, but today in a formal letter.",
- "input": "Read: an analysis of urban noise, a column advocating “school streets” and a group letter of complaint from residents to the mayor (model analysis); listen: a radio debate on pedestrianising the town centre, a mediator on “how to write an effective letter of complaint” and a town-hall announcement on café terrace opening hours.",
+ "input": "Read: the informative article « Lumière artificielle : la nuit disparaît », the opinion piece « Les bancs publics, une question politique » and the three-voice forum « Faut-il interdire les voitures devant les écoles ? » — questions first, then the text, finding the evidence for each answer; listen: « Un centre-ville sans voitures ? » and « Comment écrire une réclamation qui aboutit » twice each, then three short recordings once each.",
  "output": "Write: a letter to the mayor on behalf of a residents’ association, opposing turning a community garden into a car park and proposing an alternative (250+ words, at least 3 expressions of purpose and 3 formal-register expressions); speak: a 6-minute monologue on “should cars be banned from town centres?”, then debate bar terrace opening hours with the examiner.",
  "checkpoint": "All 6 letter elements present (sender, recipient, Objet subject line, form of address, body, full closing formula); a clear request backed by at least 2 facts; no colloquialisms; correct mood in purpose clauses (afin que / pour que + subjunctive).",
  "challenge": "Today’s challenge: find a news item about town life (transport, noise, green spaces) on RFI’s « Journal en français facile » or TV5MONDE and, imagining you live there, write the body of a letter to the mayor in 5 formal French sentences: 1 stating the purpose (Par la présente…), 2 giving facts, 1 making a request with afin que and 1 closing formula.",
@@ -41,6 +41,9 @@
      },
      {
       "why": "Camille Roy: « Sur la méthode, oui »; Gérard Pons: « si on nous écoute vraiment, je suis prêt à jouer le jeu »: a conditional rapprochement. Neither A nor B fits."
+     },
+     {
+      "why": "« si on nous écoute vraiment, je suis prêt à jouer le jeu » — jouer le jeu = to play along; the condition is introduced by si."
      }
     ]
    },
@@ -58,6 +61,10 @@
      {
       "why": "« ce document prouvera que vous avez tenté de régler le problème à l’amiable ». B: she says the first letter “needn’t be registered”, not that it’s required; C isn’t mentioned."
      },
+     {
+      "why": "« on ne laisse à l’autre aucune possibilité de céder sans perdre la face » — perdre la face = to lose face; Je ne dis pas qu’il ne faille jamais…: a subjunctive marking a qualified denial."
+     },
+     null,
      {
       "why": "« Solliciter un rendez-vous, c’est montrer qu’on cherche une solution, pas un coupable ». A and C are wrong inferences."
      }

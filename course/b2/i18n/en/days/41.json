@@ -1,7 +1,7 @@
 {
  "canDo": "Can complete all four skills under full mock-exam conditions and classify your own errors as “comprehension / grammar / vocabulary / structure and task” errors, identifying the 3 weaknesses most in need of fixing.",
  "review": "Review the exam format from days 29–40: three reading texts (long article, argumentative text, short text), three listening recordings, formal letter structure and the monologue’s three steps “theme → problem → outline”; also review high-frequency structures such as bien que + subjunctive, étant donné que, si bien que and à condition que, and check in the mock exam whether you have really mastered them.",
- "input": "Read: three texts on consumption (second-hand clothes), education (the debate over abolishing marks) and the city (a tram and local residents) in 50 minutes; read the questions before the texts and mark the evidence for each answer. Listen: an interview on a company’s “four-day week”, a column on teenagers’ sleep and a local news flash, only as many times as the exam allows: structure on the first listen, details on the second.",
+ "input": "Read: the informative article « Forêts françaises : plus étendues, mais plus fragiles », the opinion piece « Faut-il laisser la nature tranquille ? » and the three-voice forum « Faut-il interdire la chasse le dimanche ? » — questions first, then the text, finding the evidence for each answer; listen: « La semaine de quatre jours, deux ans après » and « Les ados manquent-ils de sommeil ? » twice each, then three short recordings once each.",
  "output": "Write: a formal letter to the mayor on behalf of a parents’ association (250+ words) in 60 minutes; speak: a 5-minute monologue on “free public transport” (30 minutes’ preparation), then a debate with the examiner on “should the four-day week become widespread?”. Afterwards, classify every lost point question by question in an error log.",
  "checkpoint": "Combined reading + listening accuracy ≥70%; a complete letter structure (form of address, purpose, argument, proposal, closing formula) of ≥250 words; a monologue with a clear problem and outline; an error log with at least 10 errors and a fix-it rule written for each type of error.",
  "challenge": "Today’s challenge: find a news item about consumption or transport on RFI’s « Journal en français facile » or TV5MONDE, write a summary of about 60 words in 3 minutes, then compare it with the original to find 2 grammar errors and 1 misunderstanding of your own, and add them to your error log.",
@@ -18,6 +18,7 @@
      {
       "why": "« Les journées sont donc plus longues… Certains l’ont d’ailleurs mal vécu ». A: hours weren’t cut and pay isn’t mentioned; B: the workshop still runs « cinq jours sur cinq »."
      },
+     null,
      {
       "why": "« La productivité, elle, est restée à peu près stable ». She also specifically says « je me méfie des chiffres miracles », which rules out A."
      },
@@ -39,6 +40,11 @@
      },
      {
       "why": "« Le problème, ce n’est pas tant l’écran que l’absence de limite ». Neither A nor B is mentioned."
+     },
+     null,
+     null,
+     {
+      "why": "« Elle soulage, mais elle entretient le problème » — A concession, then a turn; the advice is no more than two hours' shift from weekdays. The last sentence adds that adults must set the example."
      },
      {
       "why": "« ils souhaitent que les cours commencent un peu plus tard le matin ». A: the doctor actually opposes an « interdiction brutale »; C isn’t mentioned."

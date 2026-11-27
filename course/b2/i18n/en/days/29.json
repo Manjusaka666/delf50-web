@@ -1,7 +1,7 @@
 {
  "canDo": "Can follow a 7–8-minute radio interview in the DELF B2 long-listening format (played twice): get the topic and the speakers’ positions on the first listen and fill in details on the second; can recognise uncertain information conveyed by reported speech (il m’a dit que…) and modalisation (il semblerait que, the conditional).",
  "review": "Review J12’s reported speech (sequence of tenses) and J19’s modalisation; look back at J28’s nominalised headlines and J27’s formal register (for polite rebuttals in writing and debate).",
- "input": "Read: an analysis of radio’s enduring success, an editorial seeking funding for community radio and a listener’s letter protesting the end of a late-night show; listen: an interview with a late-night phone-in host (played twice), a podcast column and a local radio news flash. Strategy: read the questions and predict before the first listen; on the first listen note only keywords and positions; on the second check numbers, examples and reported content.",
+ "input": "Read: the informative article « La radio résiste, le podcast s’installe », the opinion piece « Faut-il encore écouter des gens qui ne pensent pas comme nous ? » and the three-voice forum « Les radios doivent-elles diffuser un quota de chansons en français ? » — questions first, then the text, finding the evidence for each answer; listen: « Douze ans de libre antenne la nuit » and « Podcasts : la radio sans l’horloge » twice each, then three short recordings once each.",
  "output": "Write: a reply on a media forum to “Is local radio doomed?” (≥250 words), quoting someone else’s view at least once (reported speech) and using two modalising expressions; speak: a 5-minute monologue on “AI-generated voices presenting radio shows”, then a debate on “listener phone-ins: democratic expression or a place to vent?”.",
  "checkpoint": "DELF-format self-test: ≥5 of 6 long-listening questions correct after two listens; can recap the interview’s main points from 5 lines of notes; a well-structured 5-minute monologue.",
  "challenge": "Today’s challenge: pick an interview or report of 5+ minutes on RFI or TV5MONDE and listen twice, exam-style: first note just 5 keywords, then expand them into 3 reporting sentences (Selon l’invité, … / Il a expliqué que…) and check yourself against the original or the transcript.",
@@ -57,6 +57,11 @@
      {
       "why": "« de bouche à oreille, sans aucune publicité ». A is rejected by « sans aucune publicité »; B isn’t mentioned."
      },
+     {
+      "why": "« moins de un sur cent rapporterait de quoi payer un salaire » — The conditionals rapporterait / proposeraient mark reported, unconfirmed figures or claims."
+     },
+     null,
+     null,
      {
       "why": "« le podcast a un point faible : il ne connaît pas le direct ». A is something she sees as a strength; C isn’t mentioned."
      }

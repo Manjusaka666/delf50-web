@@ -1,7 +1,7 @@
 {
  "canDo": "Can generalise and qualify precisely with quiconque, n’importe qui/quel, la plupart (de), certain(e)s, plusieurs, chacun/chaque, tel(le), quelques, aucun, tout/tous/toute(s), d’autres, avoiding sweeping “everyone…” statements, and point out overgeneralisations in other people’s arguments.",
  "review": "Review day 24’s negation (aucun is both a negative and an indefinite pronoun), day 23’s text connectors and day 20’s comparisons; today’s focus is precision when saying “how many people, and which ones”.",
- "input": "Read: a report on a participatory budget, a column against compulsory voting and a call for applications to a neighbourhood citizens’ council — circle every indefinite word and decide whether it means “all, most, some or any”; listen: a radio debate on online voting, an interview with a volunteer and a notice of a public council meeting — note that la plupart takes a plural verb and chacun a singular one.",
+ "input": "Read: the informative article « Budget participatif : quand les habitants tiennent les cordons de la bourse », the opinion piece « Voter à seize ans ? » and the three-voice forum « Le vote blanc doit-il compter ? » — questions first, then the text, finding the evidence for each answer; listen: « Voter par internet : progrès démocratique ou fausse bonne idée ? » and « « Ils s’engagent » : un étudiant au service des démarches » twice each, then three short recordings once each.",
  "output": "Write: a reply (≥250 words) on a civic discussion forum to someone opposing “votes at 16”, pointing out their overgeneralisations; speak: a 4-minute monologue on “punish or educate to reduce antisocial behaviour?”, then a debate on “compulsory civic service at 18”.",
  "checkpoint": "Reading + listening accuracy ≥80%; at least 6 different indefinites with correct agreement in the forum reply (la plupart des jeunes pensent, chacun a, toute personne, tous les citoyens); in the debate, call out the other side’s overgeneralisation at least once (« Tous ? Certains, peut-être… »).",
  "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about elections, civic participation or community life, pick out a sweeping statement and rewrite it more precisely with la plupart, certains, quiconque and chacun; then record 1 minute of audio on how residents of your town could take part in public decisions.",
@@ -52,6 +52,7 @@
      {
       "why": "« Chez soi, quiconque se trouve dans la pièce peut faire pression » (quiconque = whoever), i.e. voting at home can’t guarantee a secret ballot. B and C aren’t mentioned."
      },
+     null,
      {
       "why": "« qu’on ne nous présente pas le vote en ligne comme la solution miracle contre l’abstention ». A is the opposite; B contradicts « c’est aux citoyens et à leurs représentants de délibérer »."
      }
@@ -62,6 +63,12 @@
      null,
      {
       "why": "« La plupart n’ont aucun problème avec la langue française, mais avec le vocabulaire administratif »; B is explicitly ruled out."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« Je ne décide jamais à la place de quelqu’un » — Aider, ce n’est pas se substituer: helping is not taking someone’s place; delicate cases go to a lawyer who holds a free surgery."
      }
     ]
    },
@@ -71,6 +78,12 @@
      null,
      {
       "why": "« tous prévoient davantage d’arbres et de places pour les vélos »; B is wrong: only « certains » reduce some parking spaces."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« plusieurs de leurs propositions ont été reprises telles quelles » — telles quelles = as they stood; some adult councillors had feared it would be a mere exercise."
      }
     ]
    }

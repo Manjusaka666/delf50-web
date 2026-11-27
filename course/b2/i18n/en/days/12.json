@@ -1,7 +1,7 @@
 {
  "canDo": "Can accurately report other people’s views, questions and promises in past-tense indirect speech (sequence of tenses, converting time expressions, indirect questions), choosing reporting verbs that show the speaker’s attitude.",
  "review": "Review day 10’s past conditional (« le maire aurait déclaré que… » for unconfirmed information) and day 1’s layers of past tenses: in indirect speech, présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel.",
- "input": "Read: a report on the limits of opinion polls, an editorial against “polls instead of debate” and a reader’s letter correcting a report (mark every reporting verb and the tenses being reported); listen: a radio report with interviews on a citizens’ assembly, a segment on vox pops and a local news flash (note “who said what, with which verb”).",
+ "input": "Read: the informative article « Des citoyens tirés au sort pour débattre de la fin de vie », the opinion piece « Les sondages disent-ils ce que nous pensons ? » and the three-voice forum « Référendums locaux : les habitants doivent-ils décider ? » — questions first, then the text, finding the evidence for each answer; listen: « Convention citoyenne : et maintenant ? » and « Six passants ne font pas une opinion » twice each, then three short recordings once each.",
  "output": "Write: a formal letter (≥250 words) to the mayor on behalf of an association, accurately reporting what was said at a meeting to set the record straight; speak: a 3-minute monologue on the effect of publishing polls before an election, then a debate on “online public consultations”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 5 instances of indirect speech in the letter, all with the correct sequence of tenses, and at least 4 different reporting verbs (affirmer, préciser, admettre, se demander si…); a 3-minute monologue without breaking off.",
  "challenge": "Today’s challenge: choose a news item on RFI’s « Journal en français facile » or TV5MONDE that includes a poll or a politician’s statement, and write 3 sentences of indirect speech (« Le ministre a affirmé que… », « Les journalistes se sont demandé si… »); then record a 1-minute spoken summary saying whether you trust the figures.",
@@ -59,6 +59,9 @@
       "why": "« Le problème, c’est la suite… ils n’en ont gardé qu’une petite partie. » A: he says the deliberation stage is “often very successful”; C isn’t mentioned."
      },
      {
+      "why": "« on leur a demandé leur avis pour la forme » — pour la forme = for form’s sake; having worked unpaid for six months, they expect results."
+     },
+     {
       "why": "« il faudrait que les élus expliquent publiquement, proposition par proposition, ce qu’ils retiennent et pourquoi ils écartent le reste ». Neither A nor B is proposed."
      }
     ]
@@ -73,6 +76,11 @@
      },
      {
       "why": "« le présentateur a conclu que les habitants étaient massivement favorables… à partir de… six personnes ! » A: no contradiction is mentioned; C: no fabrication is mentioned."
+     },
+     null,
+     null,
+     {
+      "why": "« les habitants étaient partagés » — Six passers-by became “public demand” within twenty-four hours, while the serious study showed four in ten in favour and three undecided."
      },
      {
       "why": "« Ça donne de la couleur, de la vie, des voix. Mais ça ne dit rien de ce que pense l’ensemble de la population. » A is explicitly rejected; B isn’t mentioned."
@@ -89,6 +97,12 @@
      },
      {
       "why": "« si leurs clients venus en voiture continueront à fréquenter leurs boutiques ». A isn’t mentioned; B: they intend to ask for a meeting and haven’t been refused."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« L’adjoint aux transports a reconnu que l’échantillon était modeste » — tout en + participe présent marks a concession: he grants the sample is small while holding that the trend is clear."
      }
     ]
    }

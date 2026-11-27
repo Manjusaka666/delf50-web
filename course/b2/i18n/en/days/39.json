@@ -1,7 +1,7 @@
 {
  "canDo": "Can complete a timed mini B2 mock exam: listening 30 minutes, reading 60 minutes, writing 60 minutes, speaking 30 minutes’ preparation + 20 minutes’ performance, staying within time on each part while keeping your language accurate.",
  "review": "Review day 2’s subjunctive (vouloir que, regretter que, douter que, il faut que, craindre que… ne) and day 6’s expressions of result (si bien que, de sorte que, au point que, tellement… que, d’où), drawing on the listening/reading strategies and writing/speaking frameworks from days 29–38.",
- "input": "Read (60 minutes): a long article on sleep deprivation, an editorial against secondary school league tables and a forum post about a “tool library” in Lausanne, Switzerland; listen (30 minutes): an interview on how volunteering is changing (twice), an interview on the urban heat island effect (twice) and a local news flash on a municipal bike repair grant (once). Follow the real exam order: listening first, then reading.",
+ "input": "Read: the informative article « Bénévolat : les Français donnent moins de temps, mais autrement », the opinion piece « L’ennui est-il notre ennemi ? » and the three-voice forum « Faut-il limiter le nombre de touristes dans les musées ? » — questions first, then the text, finding the evidence for each answer; listen: « Le bénévolat change de visage » and « Villes : comment lutter contre les îlots de chaleur ? » twice each, then three short recordings once each.",
  "output": "Write (60 minutes): a forum post giving your view on “should employees be allowed to bring their dogs to work?” (≥250 words); speak (30 minutes’ preparation): a 6-minute monologue on a document about “street advertising”, then a 5-minute debate with the examiner on “a law banning screens for children under three”.",
  "checkpoint": "Combined listening + reading accuracy ≥75% (i.e. ≥37 out of 50); essay finished within 60 minutes, ≥250 words, with 5 minutes left for checking; monologue at least 5 minutes; no part overruns. Record the time spent and the points lost on each part for the day 40 review.",
  "challenge": "Today’s challenge: pick any society news item on RFI’s « Journal en français facile » and give yourself 10 minutes: listen once, write down 3 key points, then write one comment of your own with « si bien que » and one with « il faut que »; keep it with today’s mock-exam timesheet.",
@@ -67,6 +67,10 @@
      },
      {
       "why": "« parce qu’un arbre met vingt ans à donner de l’ombre ». Neither B nor C has any basis."
+     },
+     null,
+     {
+      "why": "« je souhaite seulement qu’elle ne devienne pas la réponse unique » — Verbs of will + subjunctive: il faut que nous comprenions, je ne demande pas qu’on l’interdise, je souhaite qu’elle ne devienne pas, j’aimerais que… s’en inspirent."
      }
     ]
    },

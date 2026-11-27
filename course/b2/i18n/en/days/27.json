@@ -1,7 +1,7 @@
 {
  "canDo": "Can write a fully structured letter of complaint or request in a formal register (inverted questions, the polite conditional, je vous saurais gré de, veuillez + infinitive, set forms of address and closing formulas), and turn a colloquial complaint into appropriate written French.",
  "review": "Review day 26’s verb structures (prier qqn de, inciter à, s’engager à), day 24’s negation (ne… guère) and day 9’s conditional; look back at the basic B1 formal letter layout (objet, formule d’appel, formule de politesse).",
- "input": "Read: an article on “how to complain effectively”, a column defending polite formulas and a letter of complaint from a residents’ association to the mayor; listen: a radio interview with a mediator on disputes between neighbours, a transport company’s customer-service manager on compensation for delays and a town-hall helpline’s recorded message. Strategy: mark inversions, conditionals and set formulas, and notice what they do to the tone.",
+ "input": "Read: the informative article « Le médiateur, dernier recours avant le tribunal », the opinion piece « Savoir se plaindre : éloge de la lettre de réclamation » and the three-voice forum « Fermeture de la maternité : comment réagir ? » — questions first, then the text, finding the evidence for each answer; listen: « Conflits de voisinage : la voie de la conciliation » and « Retards : comment se faire indemniser ? » twice each, then three short recordings once each.",
  "output": "Write: a letter (≥250 words) to the mayor on behalf of a residents’ association, opposing moving the market to the outskirts, with at least one inverted question, two polite conditionals and complete letter formulas; speak: a 4-minute monologue on “apps for citizens to report problems”, then a debate on “higher fines for antisocial behaviour”.",
  "checkpoint": "Reading and listening accuracy ≥80%; all five letter elements present (sender, recipient, objet, form of address, closing formula), with no tu or colloquial words; can rewrite a spoken complaint as a formal email within 10 minutes.",
  "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about local life or public services and, imagining you are a resident, write a short 5-sentence formal letter using je vous saurais gré de, Pourriez-vous… ? and a closing formula.",
@@ -53,6 +53,7 @@
      {
       "why": "« C’est important, parce que ça laisse une trace écrite ». Neither B nor C is mentioned."
      },
+     null,
      {
       "why": "« même si vous obtenez satisfaction… Les relations, elles, ne seront guère meilleures ». A is the opposite of « coûte du temps »; C has no basis."
      },
@@ -72,6 +73,11 @@
      {
       "why": "« dans les deux mois qui suivent les faits, sous peine d’être rejetée ». Neither A nor B is mentioned."
      },
+     null,
+     {
+      "why": "« Sont exclus ceux qui résultent d’un événement extérieur » — The inversion Sont exclus ceux qui… is formal register; delays caused by a strike of the company’s own staff are compensated."
+     },
+     null,
      {
       "why": "« ils ne traitent pas moins vite les messages agressifs, mais un message clair et poli leur fait gagner un temps précieux ». A is directly contradicted; C has no basis."
      }
@@ -87,6 +93,10 @@
      },
      {
       "why": "« veuillez composer le numéro d’astreinte indiqué sur le site ». Neither A nor C is mentioned."
+     },
+     null,
+     {
+      "why": "« votre consommation sera estimée d’après celle de l’année précédente » — Seriez-vous absent = Si vous étiez absent (a formal inverted conditional); À défaut = failing that."
      }
     ]
    }

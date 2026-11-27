@@ -1,7 +1,7 @@
 {
  "canDo": "Can recognise and use the present participle, the gérondif and verbal adjectives in texts and discussions about food and health, expressing simultaneity, manner and condition in tighter sentences.",
  "review": "Review day 15’s nominalisation and journalistic style and day 13’s passive/impersonal structures: compress “qui + verb” relative clauses into present participles, and rewrite “quand/si/parce que” clauses as en + -ant.",
- "input": "Read: an analysis of ultra-processed foods, an opinion piece against “moralising about food” and a reader’s letter about a vegetarian canteen — mark every -ant form and decide whether it is a present participle, a gérondif or a verbal adjective; listen: a nutritionist on “eating lunch in front of a screen”, a consumer segment on “healthy” snacks and a news flash on “vegetable boxes on prescription” — note the advice and figures as you listen.",
+ "input": "Read: the informative article « Aliments ultra-transformés : ce que l’on sait, ce que l’on ignore », the opinion piece « Bien manger : affaire de volonté ou de moyens ? » and the three-voice forum « Menu végétarien à la cantine : une bonne idée ? » — questions first, then the text, finding the evidence for each answer; listen: « Déjeuner devant l’écran : une mauvaise habitude ? » and « La chronique conso : le piège des produits « healthy » » twice each, then three short recordings once each.",
  "output": "Write: a ≥250-word opinion forum post on a “junk food tax”, with at least 3 gérondifs or present participles; speak: a 4-minute monologue on “banning food advertising aimed at children”, then respond in the debate to the examiner’s doubts about “reimbursing dietary advice”.",
  "checkpoint": "Reading and listening accuracy ≥80%; can tell fatigant/fatiguant and convaincant/convainquant apart; forum post ≥220 words with at least 3 correct -ant structures; a 4-minute monologue without breaking off.",
  "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about food, nutrition or health, and write your opinion in 3 sentences with a gérondif (e.g. « En lisant cet article, j’ai compris que… »), or record a 1-minute spoken response.",
@@ -59,6 +59,9 @@
       "why": "« couper la messagerie interne pendant quarante-cinq minutes à l’heure du déjeuner ». “midi et deux” refers to the slot in which other companies ban meetings, not to a longer lunch break (C)."
      },
      {
+      "why": "« la plupart disaient se sentir moins fatigués en fin de journée » — Au début… sceptiques / Six mois plus tard…: the change of attitude."
+     },
+     {
       "why": "« il ne s’agit pas de culpabiliser ceux qui mangent un sandwich devant leur écran de temps en temps […] Ce qui compte, c’est l’habitude ». He considers the company’s role “essentiel”, ruling out A."
      }
     ]
@@ -75,6 +78,10 @@
       "why": "« aussi grasses et aussi salées que les chips de pommes de terre », the opposite of A; production costs aren’t mentioned."
      },
      null,
+     null,
+     {
+      "why": "« cet affichage reste facultatif » — A further point: the grade only compares foods within a category — a B-rated pizza is not healthier than a C-rated olive oil."
+     },
      {
       "why": "vendeur as an adjective = catchy, good for sales. The speaker means the nutritional value is about the same; only the name sells better."
      }
@@ -85,6 +92,13 @@
      null,
      {
       "why": "« les personnes souffrant de diabète ou de surpoids et disposant de faibles revenus » (two present participles defining who is eligible)."
+     },
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« C’est donc moins le comportement des consommateurs que celui des fabricants qui a changé » — moins… que… = not so much… as…; but sugar was often replaced by sweeteners whose long-term effects are still debated."
      }
     ]
    }

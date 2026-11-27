@@ -1,7 +1,7 @@
 {
  "canDo": "After reading and listening to 3–4 documents on genetic testing, can set out a problem statement, organise a two- or three-part structured exposé that cross-references the documents, speak continuously for about 7 minutes and give a reasoned personal position.",
  "review": "Review day 19’s hedging and speculation (il semble que, risquer de), day 23’s discourse connectors and day 46’s synthèse techniques; keep using elegant concessive structures: si légitime que soit…, ne… pas moins, ne saurait.",
- "input": "Read: R48-1, an informative text (the reliability of direct-to-consumer genetic tests), R48-2, a legal scholar’s commentary (the collective nature of genetic information) and R48-3, a reader’s letter (a brother discovered by chance); listen: the interview with a clinical geneticist L48-1 twice; for the science column L48-2 (police use of genealogy databases) and the news flash L48-3, take three-column notes as you listen: “argument / example / source”.",
+ "input": "Read: the informative article « Quand l’algorithme lit la radio avant le médecin », the opinion piece « Vivre cent vingt ans : un progrès ? » and the three-voice forum « Faut-il autoriser les tests génétiques en vente libre ? » — questions first, then the text, finding the evidence for each answer; listen: « Un risque n’est pas un destin » and « Des enquêteurs dans les arbres généalogiques » twice each, then three short recordings once each.",
  "output": "Write: W48-1, an essai argumenté of ≥ 250 words on whether genetic tests should be freely sold; speak: S48-1, a 7-minute structured exposé based on the document pack, and S48-2, a 5-minute debate with the examiner.",
  "checkpoint": "Each part of the exposé cites at least two different documents; the problem is phrased as Dans quelle mesure… ? or Faut-il… ?; the 7-minute monologue has an introduction, two parts and a conclusion; reading and listening accuracy ≥ 80%.",
  "challenge": "Today’s challenge: find a science-ethics news item (genetics, artificial intelligence, health data, etc.) on RFI’s « Journal en français facile » or TV5MONDE, write a problem statement with Dans quelle mesure… ?, then a 4-line exposé outline using Dans un premier temps / Dans un second temps, and record a 1-minute introduction.",
@@ -49,6 +49,7 @@
      {
       "why": "« Je l’entends, et je ne suis pas pour le paternalisme médical. Mais un droit d’accès suppose de pouvoir comprendre ce qu’on reçoit »: partial acceptance, with a condition. A contradicts “not in favour of paternalism”; B ignores the reservation after Mais."
      },
+     null,
      {
       "why": "« je conseille toujours de faire vérifier un résultat inquiétant avant de prendre la moindre décision », with a « laboratoire médical » mentioned earlier. Neither B nor C is her advice."
      }
@@ -66,7 +67,10 @@
       "why": "« dans le consentement… voulaient retrouver des cousins, pas aider la police ». C is wrong: he says « Remarquablement bien »; A isn’t mentioned."
      },
      {
-      "why": "Because relatives share part of their DNA, you can still be traced if a cousin consents, echoing R48-2’s “collective nature of genetic information”. A and B distort the sentence."
+      "why": "Because relatives share part of their DNA, you can still be traced if a cousin consents, which shows the “collective nature” of genetic information. A and B distort the sentence."
+     },
+     {
+      "why": "« La technique désigne une famille, pas un coupable » — non sans avoir vu… = though not before having seen… (a double negative for an affirmative); his name had already reached the press."
      }
     ]
    },

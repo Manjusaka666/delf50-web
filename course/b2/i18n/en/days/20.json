@@ -1,7 +1,7 @@
 {
  "canDo": "Can compare different ways of getting around with well-founded arguments and make recommendations, using complex comparative structures such as plus… plus, d’autant plus que, de plus en plus / de moins en moins, le moindre, autant… autant, comme si + imparfait.",
  "review": "Review day 19’s modal expressions (il semble que, il est peu probable que) and day 5’s cause expressions (d’autant que, faute de): when comparing, give both your reasons and your degree of certainty.",
- "input": "Read: an analysis comparing ways of getting around a city, an opinion piece criticising “trains costing more than planes” and a notice of new public transport fares — find every comparative structure and say what is being compared; listen: a radio debate on free public transport, a segment on the cost of electric versus petrol cars and a station announcement about engineering works — note each option’s figures, pros and cons.",
+ "input": "Read: the informative article « La voiture électrique tient-elle ses promesses ? », the opinion piece « La vitesse est-elle un droit ? » and the three-voice forum « Faut-il rendre le permis de conduire à durée limitée ? » — questions first, then the text, finding the evidence for each answer; listen: « Transports gratuits : bonne ou fausse idée ? » and « Électrique ou essence : laquelle coûte le moins ? » twice each, then three short recordings once each.",
  "output": "Write: a ≥250-word opinion reply on a city forum to a post about “banning cars from the centre at weekends”, using at least 3 kinds of complex comparison; speak: a 4-minute monologue on “can remote work solve traffic problems?”, then defend “a 30 km/h limit across the whole city” in the debate.",
  "checkpoint": "Reading and listening accuracy ≥80%; correct use of plus… plus (no que, no inversion), d’autant plus que and le moindre / pire; forum post ≥220 words with correct comparative structures; can compare three ways of getting around from data and make a recommendation.",
  "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about transport, travel or urban planning, compare it with the situation in your town in 3 sentences (using at least plus… plus and d’autant plus que), or record 1 minute comparing two ways you get around each day.",
@@ -41,6 +41,9 @@
      null,
      null,
      {
+      "why": "« elle s’est accompagnée de nouvelles lignes et de bus plus fréquents » — n’être qu’un outil parmi d’autres = only one tool among others; she grants the drop in car use is modest but real."
+     },
+     {
       "why": "Dumas: « mieux vaut investir dans la fréquence que dans la gratuité »; Marin: « l’un n’empêche pas l’autre ». Both value public transport, and neither disputes the figures."
      }
     ]
@@ -52,6 +55,12 @@
      },
      {
       "why": "« plus vous roulez, plus l’électrique devient avantageuse »; to buy, it is « nettement plus chère » (A is wrong)."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« Pour un habitant d’immeuble sans prise, elle est aussi chère à l’usage, et plus chère à l’achat » — d’autant plus… que = all the more… as; charging at a motorway fast charger costs nearly as much as petrol."
      }
     ]
    },

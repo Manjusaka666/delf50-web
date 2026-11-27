@@ -1,7 +1,7 @@
 {
  "canDo": "Can clearly narrate the successive steps of a career path using après avoir/être + past participle, ayant/étant + past participle and une fois + past participle, and explain how each step led to the next.",
  "review": "Review day 1’s three layers of past tense (passé composé / imparfait / plus-que-parfait) and day 11’s time expressions (après que + indicative, avant que + subjunctive); today, compress “the earlier action” into a past infinitive or compound participle.",
- "input": "Read: a report on career changes, a column arguing for “skills, not diplomas” and a forum post on the VAE — first circle every structure meaning “earlier than”, then reorder the events on a timeline; listen: an interview with a career coach, a segment on “slashers” and an advert for a career-change fair — note “step 1 → step 2” as you listen, paying attention to causes introduced by ayant/après avoir.",
+ "input": "Read: the informative article « Apprentissage : le retour en grâce d’une voie longtemps méprisée », the opinion piece « Faut-il tout sacrifier à sa carrière ? » and the three-voice forum « Une année de pause dans sa carrière : bonne ou mauvaise idée ? » — questions first, then the text, finding the evidence for each answer; listen: « « Présentez-vous » : raconter son parcours en entretien » and « Chronique « Vies de travail » : les slasheurs » twice each, then three short recordings once each.",
  "output": "Write: a formal application letter (≥250 words) to a regional career-change programme’s panel, setting out your experience in time order with at least 4 sequencing structures; speak: a 4-minute monologue on “several careers in one life”, then a debate on “paid leave for retraining”.",
  "checkpoint": "Reading + listening accuracy ≥80%; all agreements with après avoir/être + PP correct in the application letter (e.g. après être partie); at least 3 kinds of sequencing structure in a 4-minute monologue without breaking off.",
  "challenge": "Today’s challenge: find a report on TV5MONDE or RFI’s « Journal en français facile » about a career change or vocational training, write one sentence each with après avoir…, ayant… and une fois… retelling the steps of the person’s path, then record 1 minute of audio about your own (or a relative’s) career path.",
@@ -52,6 +52,11 @@
      {
       "why": "« elle a négocié un temps partiel avec son employeur », and « Je n’ai pas quitté mon premier métier », so A is wrong; C: she only teaches classes and doesn’t say she opened a school."
      },
+     null,
+     {
+      "why": "« Ce qui a changé, c’est le profil » — Ayant longtemps concerné…, le cumul touche désormais…: the compound participle marks anteriority; from the countryside and modest jobs to managers in big cities."
+     },
+     null,
      {
       "why": "« Une partie des slasheurs cumulent les activités par nécessité, faute d’un salaire suffisant ». B and C aren’t mentioned."
      },

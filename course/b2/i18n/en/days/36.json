@@ -1,7 +1,7 @@
 {
  "canDo": "Can give a well-structured 5–6-minute monologue based on a short text about work: identify the theme, set out a problem statement, announce a two- or three-part outline, and support the argument with cleft sentences and expressions of cause.",
  "review": "Review day 5’s expressions of cause (étant donné que, faute de, sous prétexte que, d’autant que), day 17’s emphatic structures (c’est… qui/que, ce qui… c’est) and day 23’s discourse connectors, for announcing the outline and moving between parts of the monologue.",
- "input": "Read: an analysis of career changes, a column against “you must be passionate about your job” and a first-hand forum post; circle each paragraph’s topic sentence and the cause connectors. Listen: a radio interview on young people’s relationship with work (twice), a short commentary on “presenteeism” and a news flash on “scrapping fixed hours and clocking in”: positions on the first listen, causes and examples on the second.",
+ "input": "Read: the informative article « Semaine de quatre jours : ce que disent les expériences », the opinion piece « Le management par les chiffres rend-il fou ? » and the three-voice forum « Faut-il autoriser le travail le dimanche ? » — questions first, then the text, finding the evidence for each answer; listen: « Les jeunes et le travail : la fin d’un cliché ? » and « La chronique emploi : le présentéisme » twice each, then three short recordings once each.",
  "output": "Write: a forum reply (≥250 words) to a post claiming “young people don’t want to work hard any more”, with at least one cleft sentence per paragraph; speak: a 6-minute monologue on a document about “open-plan offices” (theme → problem statement → outline → arguments + examples → conclusion), then a 4-minute debate with the examiner on “publishing salaries within a company”.",
  "checkpoint": "Reading and listening accuracy ≥80%; in the monologue, state the problem and announce the outline within 30 seconds, speak for at least 5 minutes with no pause longer than 5 seconds; use at least 3 cleft sentences and 3 different expressions of cause.",
  "challenge": "Today’s challenge: find a news item about work (remote working, the four-day week, career change, etc.) on RFI’s « Journal en français facile » or TV5MONDE and record a 2-minute mini-monologue on your phone: start with « Ce qui me frappe dans cette information, c’est que… » and announce a two-point outline.",
@@ -56,6 +56,9 @@
      },
      {
       "why": "« Ce qui fait vraiment bouger les choses, ce sont les managers qui montrent l’exemple ». Neither B nor C comes up in the programme."
+     },
+     {
+      "why": "« On ne reste plus tard au bureau ; on reste connecté » — Il l’a déplacé: not removed, only shifted in form; montrer plutôt que faire = showing rather than doing."
      }
     ]
    },

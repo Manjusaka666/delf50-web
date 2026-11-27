@@ -1,7 +1,7 @@
 {
  "canDo": "Can read two articles on the same topic (an analysis + an opinion piece), draw out the problem they share, and write a synthèse of about 220 words organised by theme rather than by document, with no personal opinion.",
  "review": "Review nominalisation (day 15), reporting verbs and indirect speech (day 12), and contrast and concession (day 7), and preview C1’s elegant concessive structures: si… que + subjunctive, quand bien même, toujours est-il que.",
- "input": "Read: the analysis R46-1 and the opinion piece R46-2 on “living alone”; build a two-column comparison table (common ground / differences) as you read, with R46-3 as supplementary material. Listen: in the sociologist interview L46-1, first grasp the definitions of “isolation vs loneliness”; in L46-2 and L46-3, note the concrete measures.",
+ "input": "Read: the informative article « Grandes écoles : la diversité sociale en panne », the opinion piece « Le mérite existe-t-il ? » and the three-voice forum « Faut-il supprimer les notes au profit de compétences ? » — questions first, then the text, finding the evidence for each answer; listen: « Isolement et solitude : deux réalités à ne pas confondre » and « Aux Tilleuls, chacun chez soi, mais pas tout seul » twice each, then three short recordings once each.",
  "output": "Write: W46-1, a synthèse of the two articles, 250+ words, with a title, a problem statement and two or three parts, no copied sentences and no personal opinion; speak: S46-1, a 6-minute monologue citing at least two of today’s documents; in the S46-2 debate, answer the examiner with elegant concessive structures.",
  "checkpoint": "Every paragraph of the synthèse refers to both documents; not a single sentence copied from the originals and no “je pense”; reading and listening accuracy ≥ 80%.",
  "challenge": "Today’s challenge: find two news items on RFI’s « Journal en français facile » or TV5MONDE dealing with the same social issue (loneliness, housing, ageing, etc.), write 4 comparative sentences using today’s connectors (alors que, tous deux, de même), then record a 1-minute oral mini-synthèse.",
@@ -26,13 +26,16 @@
      },
      {
       "why": "« les dispositifs qui donnent un rôle aux gens ». B is wrong: he says presenting them as “treating loneliness” « peut être stigmatisant »; C is wrong: the town’s role is « repérage » (identifying people), not running schemes directly."
+     },
+     {
+      "why": "« Un rôle de repérage, avant tout » — repérage = spotting; postmen and pharmacists are often the first to notice that someone no longer goes out, and such signals should be shared better, with respect for privacy."
      }
     ]
    },
    "L46-2": {
     "questions": [
      {
-      "why": "« un habitat participatif… ce sont les futurs habitants eux-mêmes qui ont conçu le projet », with decisions that « se prennent en assemblée ». B is wrong: residents include families and young people; C belongs to R46-3; here each household has its own flat."
+      "why": "« un habitat participatif… ce sont les futurs habitants eux-mêmes qui ont conçu le projet », with decisions that « se prennent en assemblée ». B is wrong: residents include families and young people; C is wrong too: here each household has its own flat."
      },
      {
       "why": "« des familles avec enfants, mais aussi six personnes qui vivent seules, dont une veuve… et un jeune infirmier ». A is wrong: there are families too; C is wrong: « Chaque foyer a son appartement », and only some spaces are shared."
@@ -42,6 +45,11 @@
      },
      {
       "why": "« le montage du projet a pris presque sept ans… un capital de départ, ce qui exclut encore beaucoup de ménages modestes ». A exaggerates: it only says discussions can take a long time; C: rents aren’t compared."
+     },
+     null,
+     null,
+     {
+      "why": "« les banques demeurent frileuses » — frileux = timid; Reste que… = the fact remains; Tant que… n’aura pas été levé + future: a future perfect."
      }
     ]
    },

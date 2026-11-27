@@ -1,7 +1,7 @@
 {
  "canDo": "Can read 350–500-word informative articles on science or society using the method “title → paragraph gist → locate the question → check the text”, and rule out plausible-looking distractors in pick-1-of-3 questions.",
  "review": "Review the passive (être + past participle, se faire / se voir + infinitive) and nominalisation (-tion, -ment, -age, -ure), the most common written features of informative articles and news headlines; also look back at the listening location strategies from days 29–30.",
- "input": "Read: a long report on “participatory science”, a column on science and public opinion and an announcement for a volunteer river-monitoring project; read the questions first, then read closely, underlining passive sentences and nominalisations. Listen: an interview with an astrophysicist and science communicator, a column on “how to read health statistics” and a news flash on trust in science.",
+ "input": "Read: the informative article « Antibiotiques : la menace silencieuse », the opinion piece « Faut-il avoir peur de modifier le vivant ? » and the three-voice forum « Faut-il continuer à expérimenter sur les animaux ? » — questions first, then the text, finding the evidence for each answer; listen: « Une astrophysicienne derrière la caméra » and « « Le risque augmente de 50 % » : et alors ? » twice each, then three short recordings once each.",
  "output": "Write: an article of 250+ words for a university newspaper presenting the advantages and limits of participatory science, with at least 3 passive sentences and 3 nominalisations; speak: a 6-minute monologue on “should scientists take part in public debate?”, then handle 4 counter-arguments from the examiner in the debate.",
  "checkpoint": "At least 6/8 correct on R31-1, pointing to the evidence in the text for each; can rewrite 5 verb phrases as nominalised headlines; a 6-minute monologue with a clear problem statement and an announced two-part structure.",
  "challenge": "Today’s challenge: find a news item about scientific research on RFI’s « Journal en français facile » or TV5MONDE, copy out 3 passive sentences or nominalised headlines, then write 3 sentences giving your own view with today’s expressions (e.g. « Cette découverte a été rendue possible grâce à… »).",
@@ -45,6 +45,9 @@
      },
      {
       "why": "« posez-vous deux questions : combien de personnes sont réellement concernées, et le lien est-il prouvé ou seulement observé ? ». A is too extreme; B isn’t what he suggests."
+     },
+     {
+      "why": "« le choix de la période de comparaison » — exacte et néanmoins trompeuse: accurate yet misleading — the previous year may have been unusually quiet."
      }
     ]
    },

@@ -1,7 +1,7 @@
 {
  "canDo": "Can handle past participle agreement correctly in writing: agreement with the subject after être, with a preceding direct object after avoir (la ville que j’ai visitée, je les ai vus), no agreement with en, and agreement or not with pronominal verbs (elle s’est promenée / ils se sont parlé), and can self-check and correct.",
  "review": "Review day 18’s object pronouns (le/la/les before the verb trigger agreement), day 4’s relative pronoun que and day 13’s être + PP agreement in the passive; bring them all together into “getting agreement right”.",
- "input": "Read: a report on overtourism, a column on taking photos while travelling and a reader’s letter — in each paragraph, find the passé composé with a preceding object and explain why it agrees; listen: an interview on online reviews, an interview on home-swap holidays and a news flash on a swimming ban at a lake — notice pronominal verbs that don’t agree, such as se sont parlé / se sont dit.",
+ "input": "Read: the informative article « Surtourisme : les sites naturels instaurent des quotas », the opinion piece « Voyager, est-ce encore découvrir ? » and the three-voice forum « Faut-il taxer davantage les billets d’avion ? » — questions first, then the text, finding the evidence for each answer; listen: « Avis en ligne : peut-on leur faire confiance ? » and « L’échange de maisons, mode d’emploi » twice each, then three short recordings once each.",
  "output": "Write: a reply (≥250 words) to another user on a travel magazine’s forum, telling a travel story and taking a position on limiting visitor numbers at popular sites, then check it sentence by sentence against an “agreement checklist”; speak: a 4-minute monologue on “tourist taxes”, then a debate on “banning short-term rentals in the town centre”.",
  "checkpoint": "Reading + listening accuracy ≥80%; every past participle agreement in the forum reply correct (zero errors after self-checking); can correct a short text with 5 agreement errors within 1 minute.",
  "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about tourism or holidays and write 3 sentences of comment, each with at least one past participle that must agree (e.g. les mesures qu’on a prises…, les touristes se sont plaints…), highlighting the agreeing endings in a different colour.",
@@ -67,6 +67,11 @@
      },
      {
       "why": "« la lettre que la propriétaire m’avait laissée… ses adresses préférées, le nom de sa boulangère, les horaires du marché ». The plans in B are what Karima later exchanged with other families."
+     },
+     null,
+     null,
+     {
+      "why": "« cette contrainte, je l’ai finalement trouvée utile » — Past participles agreeing with a preceding direct object: les propositions que nous avons reçues, je les ai passées, je l’ai trouvée."
      }
     ]
    },

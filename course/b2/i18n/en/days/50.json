@@ -1,8 +1,8 @@
 {
  "canDo": "Can keep all four skills steady during a light review: read articles about language learning and exams, follow a psychologist’s advice on handling pre-exam stress, write a magazine article of ≥ 250 words summing up your own learning methods, and draw up a personal plan for moving from B2 to C1.",
  "review": "Light review of key points throughout: concession and restriction (quitte à, certes… mais), speculation and hedging (il semble que, ce serait aller trop vite) and formal connectors; look back at the synthèse and exposé techniques from days 46 and 48 as a starting point for C1.",
- "input": "Read: R50-1 on multilingualism and the brain (informative), R50-2 on daring to make mistakes (column) and R50-3, exam-day instructions; answer the questions without a time limit, focusing on how the texts are structured. Listen: L50-1, a psychologist on exam stress (twice), L50-2, a Chinese student’s experience going from B2 to C1, and L50-3, a vox pop from around the French-speaking world.",
- "output": "Write: W50-1, a magazine article, “Learning a language as an adult”, ≥ 250 words, with a headline and a lead paragraph; speak: S50-1, a 5-minute monologue (should foreign languages be taught from nursery school?), and S50-2, a 4-minute debate; mediation: compile an exam-day checklist and summarise L50-2 for a classmate.",
+ "input": "Read: the informative article « Le dernier café du village », the opinion piece « « C’était mieux avant » : anatomie d’une illusion » and the three-voice forum « Faut-il déboulonner les statues contestées ? » — questions first, then the text, finding the evidence for each answer; listen: « Apprivoiser le stress avant l’examen » and « Du B2 au C1 : le parcours de Lin » twice each, then three short recordings once each.",
+ "output": "Write: W50-1, a magazine article, “Learning a language as an adult”, ≥ 250 words, with a headline and a lead paragraph; speak: S50-1, a 5-minute monologue (should foreign languages be taught from nursery school?), and S50-2, a 4-minute debate; mediation: turn the forum discussion into a list of key points and summarise L50-2 for a classmate.",
  "checkpoint": "No new difficulties today: listening and reading accuracy ≥ 80%, clearly structured writing with no careless mistakes; a fluent 5-minute monologue without breaking off; write one page with an “exam-day checklist + C1 plan” (concrete weekly arrangements for reading, listening and synthèse practice).",
  "challenge": "Today’s challenge: pick a long programme you’re interested in (10+ minutes) on TV5MONDE or RFI and, afterwards, write an 80-word mini-synthèse with no personal opinion, as your first exercise towards DALF C1; then write a 3-sentence message in French to yourself a year from now.",
  "items": {
@@ -38,6 +38,9 @@
      },
      {
       "why": "« Se parler avec bienveillance… Remplacer ce discours par “j’ai travaillé, je vais faire de mon mieux” ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "« On ne dirait jamais à un ami : tu es nul, tu vas rater » — A rhetorical question: if you would not say it to a friend, why say it to yourself? Replace it with « j’ai travaillé, je vais faire de mon mieux »."
      }
     ]
    },
@@ -54,6 +57,9 @@
      },
      {
       "why": "« Ne pas s’arrêter !… Continuer à lire, à écouter la radio, même un peu chaque jour ». She says neither A nor C."
+     },
+     {
+      "why": "« les documents du C1 sont pleins de sous-entendus, d’ironie, d’allusions » — on ne saurait trop remercier… is antiphrasis: praise on the surface, criticism in fact; nothing in the grammar signals it."
      }
     ]
    },

@@ -1,7 +1,7 @@
 {
  "canDo": "Can hold your position in a 4–5-minute debate against the examiner’s repeated objections: concede before rebutting, use hypotheticals to work through consequences, and adjust your view tactfully when necessary.",
  "review": "Review day 7’s contrast and concession (bien que, même si, avoir beau, certes… mais, il n’empêche que) and day 9’s hypothesis and condition (si + imperfect/conditional, à condition que, à moins que… ne, au cas où); build on the outline structure of day 36’s monologue.",
- "input": "Read: an analysis of “the flying dilemma”, a column arguing “travel less, travel better” and a letter from a reader in Réunion; mark every concessive structure and the real argument that follows it. Listen: a radio debate on taxing air tickets (twice), an interview with the mayor of a mountain town and a vox pop in Brussels; note each speaker’s concessions and rebuttals.",
+ "input": "Read: the informative article « Éoliennes en mer : une énergie qui divise le littoral », the opinion piece « Le « pas dans mon jardin » : égoïsme ou bon sens ? » and the three-voice forum « Faut-il interdire les jets privés ? » — questions first, then the text, finding the evidence for each answer; listen: « Le grand débat : faut-il taxer lourdement les billets d’avion ? » and « Valcroze : la station qui a renoncé au ski » twice each, then three short recordings once each.",
  "output": "Write: a formal letter on behalf of a users’ association to the president of the regional council, asking for night trains to be brought back (≥250 words); you must anticipate and answer objections. Speak: a 6-minute monologue on a document about “individual flight quotas”, then a 4–5-minute debate with the examiner on “banning advertising for cheap flights”.",
  "checkpoint": "Reading and listening accuracy ≥80%; in the debate, use a different strategy (concede, refine, rebut, reaffirm) for each of 4 objections, with at least 3 concessive structures and 2 si hypotheticals, without repeating your opening statement word for word.",
  "challenge": "Today’s challenge: find a news item about transport and climate (trains, planes, air ticket taxes, etc.) on TV5MONDE or RFI’s « Journal en français facile » and record a 90-second response: first acknowledge an opposing view with « Certes… mais… », then work through a consequence with « Si l’on… , on… ».",
@@ -39,6 +39,9 @@
      },
      {
       "why": "Delaunay: « Là-dessus, nous pouvons nous rejoindre : si le train était plus rapide et moins cher… ». A is the opposite of a progressive tax; C: neither of them argues this."
+     },
+     {
+      "why": "« Encore faut-il que l’offre existe » — Encore faut-il que + subjunctive = provided that… first; he agrees but notes the condition is not yet met."
      }
     ]
    },
@@ -58,6 +61,10 @@
      },
      {
       "why": "être au pied du mur is an idiom meaning “to have your back to the wall, to have no choice”. She advises changing course early, while there are still resources. A and C are literal misreadings."
+     },
+     null,
+     {
+      "why": "« j’aurais associé les habitants beaucoup plus tôt » — Past conditionals of regret: j’aurais associé, il aurait fallu, nous aurions évité; À supposer que + subjunctive sets a hypothesis."
      }
     ]
    },

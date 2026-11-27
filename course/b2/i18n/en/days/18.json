@@ -1,7 +1,7 @@
 {
  "canDo": "Can use y, en, double object pronouns and pronouns in the imperative fluently in consumer and customer-service situations, avoiding repetition, and negotiate firmly but politely for compensation or a solution by phone or in writing.",
  "review": "Review day 17’s emphatic structures (C’est ce remboursement que je vous demande) and day 16’s gérondif (en le déballant); look back at B1 direct/indirect object pronouns as the basis for the order of double pronouns.",
- "input": "Read: an investigation into subscriptions that are “hard to cancel”, an editorial calling for human customer service to be kept and a product recall notice — find the noun each pronoun refers to; listen: an interview about a “repair café” in Liège, a phone negotiation with an internet provider’s customer service and a vox pop on returning online purchases — notice spoken linking in je vous le donne, j’en ai renvoyé un, etc.",
+ "input": "Read: the informative article « Abonnements : pourquoi il est si difficile d’en sortir », the opinion piece « Le client est-il vraiment roi ? » and the three-voice forum « Faut-il noter les services publics comme on note un restaurant ? » — questions first, then the text, finding the evidence for each answer; listen: « Réparer plutôt que jeter : le repair café » and « Panne de connexion : négocier un dédommagement » twice each, then three short recordings once each.",
  "output": "Write: a ≥250-word formal complaint email to an online shop (late delivery + damaged goods), asking for a replacement or refund and compensation; speak: a 4-minute monologue on “self-checkouts in supermarkets”, then defend “ending free returns for online purchases” in the debate.",
  "checkpoint": "Reading and listening accuracy ≥80%; double pronouns all in the right order (me le / le lui / lui en / m’en), affirmative imperatives written donnez-le-moi and negative ones ne me le donnez pas; complaint email ≥220 words with at least 5 pronoun replacements.",
  "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about consumption, prices or customer service, and retell it in 3 sentences using at least y, en and one double pronoun; or record a 1-minute mock phone call asking customer service for a refund.",
@@ -52,6 +52,9 @@
      null,
      {
       "why": "« il ne regarde plus les objets de la même façon. Avant d’acheter, il se demande… »; he says the repair café alone can’t change everything, and doesn’t talk about forcing manufacturers (C)."
+     },
+     {
+      "why": "« des vis spéciales, des éléments collés au lieu d’être vissés, des pièces détachées introuvables » — on est encore loin du compte = we are still far from it; he grants progress but finds it insufficient."
      }
     ]
    },
@@ -62,6 +65,12 @@
      },
      {
       "why": "« je travaille à domicile »; afterwards he had to work from a café."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« Je vous reproche de ne pas m’avoir dit la vérité » — Si l’on m’avait dit…, je me serais organisé…: a past unreal conditional; he separates the fault from the failure to tell the truth."
      }
     ]
    }

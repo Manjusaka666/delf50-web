@@ -1,7 +1,7 @@
 {
  "canDo": "Can allocate time across the parts of a monologue (introduction ≤1 minute, body 4 minutes, conclusion 30 seconds), and respond quickly to the examiner in a debate with rephrasing and complex comparatives, using pronouns flexibly instead of repeating nouns.",
  "review": "Review day 18’s advanced personal pronouns (y, en, double object pronouns, neuter le) and day 20’s complex comparisons (plus… plus, d’autant plus que, de plus en plus, autant… autant, comme si), keeping the monologue and debate framework from days 36–37.",
- "input": "Read: an article on cinemas holding out against streaming, a column against the prejudice that “series are inferior to films” and an announcement from a village cinema; underline every pronoun and find what it refers to. Listen: an interview with the manager of a village cinema in the Belgian Ardennes (twice), a short cultural commentary on video games and an ad for a short film festival; rephrase each answer in one sentence as you listen.",
+ "input": "Read: the informative article « Le cinéma en salle a-t-il encore un avenir ? », the opinion piece « La culture gratuite a-t-elle un prix ? » and the three-voice forum « Les jeux vidéo sont-ils un art ? » — questions first, then the text, finding the evidence for each answer; listen: « Un cinéma de village dans les Ardennes » and « La chronique culture : le jeu vidéo, une culture comme une autre ? » twice each, then three short recordings once each.",
  "output": "Write: an article for a city culture magazine comparing “cultural entertainment at home” with “going out for culture” (≥250 words); speak: a timed 6-minute monologue on a document about “a culture voucher for young people”, then a 4–5-minute debate with the examiner on “should phones be banned during performances?”, starting each reply by rephrasing the examiner’s point.",
  "checkpoint": "Reading and listening accuracy ≥80%; each part of the monologue within 30 seconds of its target time; all 4 debate replies start with a rephrasing (« Si je vous comprends bien… »), with at least 3 complex comparatives and 4 uses of the pronouns y/en/le, and no mechanical repetition of nouns.",
  "challenge": "Today’s challenge: find a cultural report about a film, exhibition or music festival on TV5MONDE or RFI; first recap it in 30 seconds (« Autrement dit… »), then spend 1 minute comparing it with a cultural event in your own city, using « plus…, plus… » and « en » at least once each.",
@@ -39,6 +39,7 @@
      {
       "why": "« je ne la vois pas comme une menace mortelle… plus les gens passent de temps seuls devant leur écran, plus ils ont besoin de lieux où se retrouver ». She rejects A; B: she admits she “of course feels it”."
      },
+     null,
      {
       "why": "y refers back to « le cinéma en salle »: children who have seen a film at the cinema usually come back. B and C get the referent of y wrong."
      }
@@ -57,6 +58,11 @@
      },
      {
       "why": "« Évidemment, je ne le nie pas… Le problème, ce n’est pas le média, c’est l’usage qu’on en fait ». A is the opposite of « je ne le nie pas »; B: she only advises « jouez moins, mais jouez mieux »."
+     },
+     null,
+     null,
+     {
+      "why": "« De s’asseoir à côté de leur enfant, manette en main » — pas plus qu’on ne jugerait… = any more than one would judge…; soit… soit… = either… or…"
      }
     ]
    },

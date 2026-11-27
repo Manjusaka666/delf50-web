@@ -1,7 +1,7 @@
 {
  "canDo": "Can define and add precise detail about a place, a project or a way of living when talking about cities and housing, using compound relative pronouns (dans lequel, auquel, autour duquel, grâce auquel, au cours desquelles) and dont, ce dont, ce à quoi.",
  "review": "Review the B1 relatives qui, que, où, dont, and link them to day 3’s opinion language: when presenting an urban project, describe it precisely and show how certain you are.",
- "input": "Read: a report on “participatory housing”, an opinion piece questioning the detached-house model and a forum post from an international student looking for a flat; listen: an urban planner on redeveloping an old industrial site, an interview about intergenerational home-sharing and a notice to residents. Strategy: find every relative pronoun, draw an arrow to its antecedent and say which preposition it corresponds to (à, de, dans, grâce à…).",
+ "input": "Read: the informative article « Des bureaux vides transformés en logements », the opinion piece « Propriétaire à tout prix ? » and the three-voice forum « Faut-il limiter les locations touristiques en ville ? » — questions first, then the text, finding the evidence for each answer; listen: « Villes en mouvement : la renaissance d’une filature » and « Vivre ensemble : 81 ans et 23 ans sous le même toit » twice each, then three short recordings once each.",
  "output": "Write: a formal letter to the mayor on behalf of a residents’ group, describing a vacant plot and proposing an alternative (250+ words); speak: a 3-minute monologue on “should short-term rentals be restricted in the centre?”, then a debate on “should new detached houses be banned on the outskirts?”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 4 different compound relative pronouns in the letter, with the right prepositions; a 3-minute monologue describing at least two specific places or measures accurately with relative clauses.",
  "challenge": "Today’s challenge: find a report on TV5MONDE or RFI’s « Journal en français facile » about housing, urban regeneration or rising rents, and write 1 sentence each with dans lequel, auquel, dont and grâce auquel describing a place or measure from the report; then record 1 minute of audio describing your ideal neighbourhood to a friend.",
@@ -54,6 +54,9 @@
      },
      {
       "why": "The recording says: « Ce sont des inquiétudes légitimes, auxquelles nous essayons de répondre… en limitant fortement le stationnement et en prolongeant la ligne de bus ». A contradicts légitimes; B isn’t mentioned."
+     },
+     {
+      "why": "« Certains riverains craignent que le quartier attire trop de voitures » — craindre que + subjunctive (attire); the other criticism is the length of the works — the first residents arrive only in 2029."
      }
     ]
    },
@@ -72,6 +75,11 @@
       "why": "The recording says: « chacun a sa chambre, dans laquelle l’autre n’entre pas sans frapper ». A: they only eat together on Sunday evenings; C isn’t mentioned."
      },
      {
+      "why": "« Nous étions si polis que c’en devenait pesant » — si… que marks a result; c’en devenait pesant = it was becoming oppressive."
+     },
+     null,
+     null,
+     {
       "why": "The recording says: « à condition d’être patient et à l’écoute ». A and B aren’t the conditions he gives."
      }
     ]
@@ -86,6 +94,12 @@
      },
      {
       "why": "The recording says: « restera ouvert, mais l’entrée se fera exceptionnellement par la cour intérieure ». A contradicts restera ouvert; B isn’t mentioned."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« Les locations saisonnières, justement, ne sont pas concernées par le texte » — redouter que… ne + subjunctive: the opposition fears owners will sell or let to tourists — and holiday lets are precisely what the text leaves out."
      }
     ]
    }

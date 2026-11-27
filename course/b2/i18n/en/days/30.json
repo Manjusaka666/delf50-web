@@ -1,7 +1,7 @@
 {
  "canDo": "After a single listen, can quickly identify each speaker’s position in short recordings (vox pops, opinion columns, news flashes): for, against or with reservations; can use mood cues (je pense que + indicative / je ne pense pas que + subjunctive) and concessive structures (bien que, même si, certes… mais) to tell how strong or nuanced a view is.",
  "review": "Review J3’s indicative/subjunctive in opinions and J7’s concession and contrast (bien que, même si, il n’en reste pas moins que); build on J29’s long-listening strategy (read the questions first, keyword notes).",
- "input": "Read: an analysis of “news fatigue”, a column by a journalist who turned off news notifications and three readers’ views on TV news from a forum; listen: a vox pop at a market (five people), an opinion column on “the right not to have an opinion yet” and a short vox pop on free weekend public transport. Strategy: on a single listen, mark each speaker “+ / − / ±” with one keyword for their reason.",
+ "input": "Read: the informative article « Canicules : les villes cherchent la parade », the opinion piece « Trop d’actualité tue-t-elle l’action ? » and the three-voice forum « Peut-on rire de tout dans les médias ? » — questions first, then the text, finding the evidence for each answer; listen: « Micro-trottoir au marché : comment vous informez-vous ? » and « Le droit de ne pas avoir d’avis » twice each, then three short recordings once each.",
  "output": "Write: a formal letter (≥250 words) to the editor of a local daily, giving your view and suggestions on the flood of crime stories and excessive notifications, with at least two concessive structures and a pair of “je pense que / je ne pense pas que”; speak: a 5-minute monologue on “a good-news section in newspapers”, then a debate on “should TV news stop showing violent images before 10 p.m.?”.",
  "checkpoint": "DELF-format self-test: ≥80% accuracy on position questions after a single listen to short recordings; can sum up each speaker’s view in one sentence within 30 seconds; no subjunctive errors after je ne pense pas que in the letter.",
  "challenge": "Today’s challenge: find a vox pop or short commentary on RFI’s « Journal en français facile » or TV5MONDE, listen once only, label each speaker “for / against / with reservations”, then write 2 sentences giving your own view with bien que or même si.",
@@ -54,6 +54,9 @@
       "why": "« Même si je sais que ce n’est pas très responsable, je me sens mieux »: même si introduces a concession (she knows it isn’t very responsible); the main clause gives her feeling. A is the opposite; B: she only says « Il paraît que beaucoup de gens font comme moi », without urging others to do it."
      },
      {
+      "why": "« quelqu’un me le dit » — She admits it is “not very responsible” (Même si je sais que ce n’est pas très responsable) but feels better."
+     },
+     {
       "why": "He first criticises (« ils ont tendance à tous parler de la même chose… »), then concedes: « Cela dit, sans les journalistes, on ne saurait pas grand-chose ». A and B are both too absolute."
      }
     ]
@@ -69,6 +72,11 @@
      {
       "why": "« Bien sûr, je ne dis pas qu’il faut rester indifférent à tout. Mais… »: Bien sûr… Mais is a typical concessive structure. B and C aren’t mentioned."
      },
+     null,
+     {
+      "why": "« elles ont été lues par dix fois moins de personnes que mon jugement » — Bien que + subjunctive (n’ait compté) / Quoique + subjunctive (ne soient): concessive clauses."
+     },
+     null,
      {
       "why": "« Ce n’est pas de la lâcheté. C’est, à mon sens, la forme la plus honnête de l’esprit critique ». A is directly rejected; B isn’t mentioned."
      }

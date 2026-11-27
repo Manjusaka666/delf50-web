@@ -1,7 +1,7 @@
 {
  "canDo": "Can tell the story of a move or study abroad that changed them, in layers, using the passé composé, imparfait and plus-que-parfait, making clear the background, the events and what had happened before.",
  "review": "Review the B1 use of past tenses (how the passé composé and imparfait divide the work), then add the plus-que-parfait to express “what had already happened before something else in the past”.",
- "input": "Read: a report on young people going abroad and coming back, an opinion column defending “those who stayed”, and a reader’s letter; listen: a profile interview, an interview about “leaving Paris” and a vox pop. Strategy: mark the three past tenses as you read and tell apart “event – background – what came earlier”.",
+ "input": "Read: the informative article « Rentrer au pays : le choc que personne n’avait prévu », the opinion piece « Faut-il vraiment partir pour réussir ? » and the three-voice forum « Quitter sa région pour trouver du travail ? » — questions first, then the text, finding the evidence for each answer; listen: « Trajectoires : de Grenoble à Thiès » and « Nouveaux départs : de Paris au Cantal » twice each, then three short recordings once each.",
  "output": "Write: tell the story of a move or study abroad that changed you, in a forum post (250+ words); speak: a 3-minute monologue on the “gap year”, then a debate on “should exchanges abroad be compulsory?”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 3 correct uses of the plus-que-parfait in the essay; a 3-minute monologue without breaking off, organising the narrative with auparavant, ce jour-là, alors que.",
  "challenge": "Today’s challenge: find a profile story on RFI’s « Journal en français facile » or TV5MONDE about migration, study abroad or a career change. Retell the person’s experience in 1 sentence each with the passé composé, imparfait and plus-que-parfait, then record 1 minute of audio on whether you would make the same choice.",
@@ -84,6 +84,9 @@
      },
      {
       "why": "The recording says: « Je regrette de ne pas avoir appris le wolof plus tôt ». He doesn’t regret A or B; on the contrary, he encourages listeners not to wait until they are 100% sure before acting."
+     },
+     {
+      "why": "« ne pas attendre d’être sûr à cent pour cent » — His answer to the last question: do not wait to be a hundred per cent sure; had he waited to be “ready”, he would still be at his screen in Grenoble."
      }
     ]
    },
@@ -100,6 +103,13 @@
      },
      {
       "why": "The recording says: « Le premier hiver a été long. Je ne connaissais personne de mon âge, et sans voiture, on est vite isolé ». B contradicts « ce n’était pas idyllique »; C has no basis."
+     },
+     null,
+     {
+      "why": "« j’ai proposé de refaire gratuitement l’affiche de la fête du village » — The lesson she draws: on n’est pas accueilli parce qu’on arrive, mais parce qu’on apporte quelque chose."
+     },
+     {
+      "why": "« je vis à peu près aussi bien qu’avant, pas mieux » — Moins qu’on ne l’imagine: rent divided by three, but income down a quarter and a car to pay for."
      },
      {
       "why": "The recording says: « j’avais un lien avec la région et un métier que je pouvais exercer n’importe où. Sans ça… ». A is the exact opposite of « il ne faut pas partir pour fuir quelque chose »; C: she only took her driving test after arriving."
@@ -119,6 +129,12 @@
      },
      {
       "why": "After missing the flight (the mishap), two days of car-sharing turned out to be « c’était le meilleur moment des vacances ». Neither A nor C is mentioned."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« Aucun hébergement n’est prévu à Modane » — Those who continue wait for the regional train at six heures quinze next morning; those who give up get a full refund until midnight."
      }
     ]
    }

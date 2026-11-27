@@ -1,7 +1,7 @@
 {
  "canDo": "Can express opinions about media and information according to degree of certainty: the indicative for affirmation and strong likelihood (je pense que, il est certain que, il est probable que), the subjunctive for negation, questions and possibility (je ne crois pas que, il est possible que, je doute que).",
  "review": "Following on from day 2’s subjunctive (wishes, feelings, doubt): today, distinguish how opinion verbs change mood in affirmative, negative and interrogative sentences, and review the exception espérer que + indicative.",
- "input": "Read: a report on how young people get their news, an editorial defending journalism and a notice for a media-literacy event; listen: a radio debate on the reliability of free information, a segment on how rumours spread and a short “word of the week” commentary. Strategy: mark every expression of opinion and sort them into three levels: “certain – possible – doubtful”.",
+ "input": "Read: the informative article « Dans les coulisses de la vérification de l’information », the opinion piece « L’information en continu nous rend-elle mieux informés ? » and the three-voice forum « Faut-il faire payer l’information en ligne ? » — questions first, then the text, finding the evidence for each answer; listen: « Le grand débat : peut-on faire confiance à l’information gratuite ? » and « Chronique « Vrai ou faux ? » : la rumeur de la piscine » twice each, then three short recordings once each.",
  "output": "Write: a measured forum post on “can you get properly informed through social networks?” (250+ words); speak: a 3-minute monologue on “paying for news”, then a debate on “should media literacy classes be compulsory?”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 1 expression at each level (“certain, possible, doubtful”) in the essay, with the right mood; a 3-minute monologue that switches mood at least once with a negative (je ne pense pas que + subjunctive).",
  "challenge": "Today’s challenge: pick one of today’s stories on RFI’s « Journal en français facile » or TV5MONDE, then find a social-media post about the same event; compare them and write 1 sentence each with il est certain que / il est probable que / il est possible que / je doute que assessing how reliable they are.",
@@ -72,6 +72,9 @@
      },
      {
       "why": "The recording says: « J’espère surtout que l’éducation aux médias deviendra une priorité » (espérer que + indicative future). C is the journalist Sandrine’s view; A isn’t mentioned."
+     },
+     {
+      "why": "« qui parle, et comment le sait-il ? » — He replaces “free or paid?” with “who is speaking, and how do they know?”."
      }
     ]
    },
@@ -86,6 +89,11 @@
      {
       "why": "« c’est sans doute le point essentiel, personne n’a pensé à poser la question directement à la mairie ». A is the second reason she lists, but not the key one; B is a consequence, not a cause."
      },
+     null,
+     {
+      "why": "« Il parlait de son propre contrat, qui s’achevait ce jour-là » — Personne n’a menti ; chacun a simplement complété ce qu’il ne savait pas: nobody lied; each filled in what they did not know."
+     },
+     null,
      {
       "why": "The recording says: « demandez-vous qui l’affirme… il est sage d’attendre avant de la diffuser ». A is too absolute — she says « je ne dis pas que l’information soit forcément fausse »; C isn’t mentioned."
      }
@@ -101,6 +109,12 @@
      },
      {
       "why": "The recording says: « deux ou trois rendez-vous d’information par jour, plutôt qu’un flux permanent ». B contradicts « La solution n’est pas de tout couper »; C isn’t mentioned."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« une lecture trop rapide d’un communiqué syndical » — rectificatif = a correction; under the station’s charter it is broadcast at the same hour and at the same length."
      }
     ]
    }

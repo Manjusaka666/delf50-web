@@ -1,7 +1,7 @@
 {
  "canDo": "Can explain the causes of an environmental phenomenon with a range of cause expressions (parce que, puisque, comme at the start of a sentence, étant donné que, vu que, du fait de, en raison de, faute de, grâce à / à cause de, sous prétexte que, d’autant que), telling neutral, positive, negative and doubtful causes apart.",
  "review": "Following on from day 4’s relative pronouns: describe a phenomenon precisely with relative clauses (les zones dans lesquelles…, les insectes dont…), then explain its causes with cause connectors; review the B1 parce que / car / à cause de.",
- "input": "Read: a report explaining why the tiger mosquito is spreading, an editorial against looking for scapegoats in a drought and a notice banning swimming in a lake; listen: an ecologist on the decline of insects, a segment on coastal erosion and an ozone pollution news flash. Strategy: sort each cause expression (introduces a noun / a clause; neutral / positive / negative / doubtful).",
+ "input": "Read: the informative article « Sécheresse : l’eau, une ressource qu’il faut désormais partager », the opinion piece « Les « petits gestes » sauveront-ils la planète ? » and the three-voice forum « Interdire les vols intérieurs courts ? » — questions first, then the text, finding the evidence for each answer; listen: « La Terre en questions : où sont passés les insectes ? » and « Comprendre la planète : pourquoi les plages reculent » twice each, then three short recordings once each.",
  "output": "Write: a forum post explaining “why so many people drive even for short trips”, with suggestions (250+ words); speak: a 3-minute monologue on “switching off street lights at night”, then a debate on “do individual green actions make a difference?”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 5 different cause expressions in the essay, correctly structured (faute de + noun/infinitive, étant donné que + indicative, comme at the start); a 3-minute monologue clearly stating at least three causes.",
  "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about drought, a heatwave, pollution or biodiversity, and write 1 sentence each with étant donné que, faute de, grâce à and comme (at the start) explaining the causes; then record 1 minute of audio explaining the phenomenon to a friend.",
@@ -59,6 +59,9 @@
       "why": "The recording says: « s’orientent la nuit grâce à la lune. Attirés par les lampadaires, ils tournent autour jusqu’à l’épuisement, ou ils deviennent des proies faciles ». A and C aren’t mentioned."
      },
      {
+      "why": "« Il aggrave tout le reste » — aggraver = to make worse; climate is not the sole cause but amplifies the others."
+     },
+     {
       "why": "The recording says: « on observe parfois le retour de certaines espèces en deux ou trois ans seulement. Et chacun peut agir ». A contradicts « c’est la bonne nouvelle »; B contradicts « chacun peut agir »."
      }
     ]
@@ -75,6 +78,11 @@
       "why": "The recording says: « elles déplacent souvent l’érosion un peu plus loin ». A and B aren’t said in the recording."
      },
      {
+      "why": "« l’érosion n’est pas considérée comme une catastrophe naturelle » — Unlike a flood, erosion is prévisible, so it is not compensated as a natural disaster."
+     },
+     null,
+     null,
+     {
       "why": "The recording says: « puisqu’il s’agit parfois de maisons où des familles vivent depuis des générations ». B and C have no basis."
      }
     ]
@@ -89,6 +97,12 @@
      },
      {
       "why": "The recording says: « sont invitées à éviter les efforts physiques en plein air ». A is exaggerated; B is the opposite — public transport is free."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« grâce à elle, deux aiglons ont pu prendre leur envol » — contrarier = to annoy; the park first grants the visitors' displeasure, then persuades with last year’s result."
      }
     ]
    }

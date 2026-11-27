@@ -1,7 +1,7 @@
 {
  "canDo": "Can narrate a career episode or set out a work process in a clear time order, using time conjunctions such as avant que / après que / dès que / jusqu’à ce que.",
  "review": "Review day 1’s layers of past tenses (passé composé / imparfait / plus-que-parfait) and day 2’s subjunctive: avant que, jusqu’à ce que and en attendant que take the subjunctive, while après que, dès que and depuis que take the indicative.",
- "input": "Read: a report on the stages of a career change, an opinion piece on “gaps in your CV” and a forum post asking for help (first pick out the time markers and draw a timeline of events); listen: a radio interview on annual appraisal meetings, a segment on onboarding new employees and a job-fair notice (take notes in three columns: “before / during / after”).",
+ "input": "Read: the informative article « Changer de métier à quarante ans », the opinion piece « Faut-il aimer son travail ? » and the three-voice forum « Recruter sans CV ? » — questions first, then the text, finding the evidence for each answer; listen: « Bien préparer son entretien annuel » and « Recruter, c’est bien ; accueillir, c’est mieux » twice each, then three short recordings once each.",
  "output": "Write: a forum reply (≥250 words) telling a career episode in time order and taking a position; speak: a 3-minute monologue on training for experienced employees, then a debate on “promotion by seniority”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 4 different time conjunctions used correctly in the essay, with the subjunctive throughout after avant que / jusqu’à ce que and the indicative after après que; a 3-minute monologue without breaking off.",
  "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about employment, recruitment or career change, and write one sentence each with avant que, dès que and après que summarising the order of events; then record a 1-minute spoken response: what advice would you give the person in the story?",
@@ -68,6 +68,11 @@
      {
       "why": "« environ un sur cinq a pensé à partir avant même que sa période d’essai ne soit terminée ». B exaggerates it into “most, on the first day”; C changes the content."
      },
+     null,
+     {
+      "why": "« le nouvel arrivant aura raconté son expérience autour de lui » — aura raconté: the future perfect marks what is done before he leaves — the bad word of mouth has already spread."
+     },
+     null,
      {
       "why": "« Le salarié se sent attendu, et il arrive beaucoup moins stressé. » A and C aren’t said in the recording."
      }
@@ -83,6 +88,12 @@
      },
      {
       "why": "« Dès que vous serez arrivé, passez à l’accueil pour retirer votre badge et le plan du forum. » B contradicts « Entrée libre et gratuite »; A: CVs are for the employers, not handed in at the entrance."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« la priorité sera accordée aux parents d’enfants scolarisés, puis selon l’ancienneté » — être tenu de + infinitive = to be required to; Passé ce délai = after that deadline."
      }
     ]
    }

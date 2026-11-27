@@ -1,7 +1,7 @@
 {
  "canDo": "Can combine cause (puisque, étant donné que, faute de), concession (bien que, certes… mais, avoir beau) and hypothesis (si + plus-que-parfait / past conditional, à condition que) in the same argument, stating a position clearly and responding to the other side, in writing and speech.",
  "review": "Integrated review of days 1–13: choice of mood (bien que / à condition que + subjunctive, même si / puisque + indicative), logical connectors, past tenses and time conjunctions, indirect speech and passive structures; focus on days 5, 7 and 9 (cause, concession and hypothesis).",
- "input": "Read: an investigative report on loneliness, an opinion piece against “compulsory civic service” and a forum post about a neighbourhood meal that fell flat (mark every cause, concession and hypothesis and check the mood); listen: a radio debate on intergenerational home-sharing, a segment on “third places” and a vox pop on relations between neighbours (note both sides’ arguments and concessions).",
+ "input": "Read: the informative article « Naissances en baisse : la France ne fait plus exception », the opinion piece « Les jeunes sont-ils vraiment moins engagés ? » and the three-voice forum « Un service civique obligatoire pour tous les jeunes ? » — questions first, then the text, finding the evidence for each answer; listen: « Étudiants et seniors sous le même toit » and « Les tiers-lieux, ces endroits où l’on se croise » twice each, then three short recordings once each.",
  "output": "Write: a forum reply (≥250 words) taking a position on “should every citizen have to volunteer every month?” and responding to opposing arguments; speak: a 3-minute monologue on moving all administrative procedures online, then a debate on “closing neighbourhood council offices”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 2 each of cause, concession and hypothesis structures in the essay, all in the correct mood; a 3-minute monologue without breaking off, answering every objection in the debate with “concession + rebuttal”.",
  "challenge": "Today’s challenge: find a social news item on RFI’s « Journal en français facile » or TV5MONDE (housing, loneliness, volunteering, public services…) and write 3 sentences of opinion: one explaining a cause with étant donné que, one conceding with bien que, and one imagining “if only…” with si + plus-que-parfait; then record a 1-minute spoken response.",
@@ -44,6 +44,9 @@
      },
      {
       "why": "« elle ne doit pas servir d’excuse aux pouvoirs publics », and he uses si + plus-que-parfait to say that student housing should have been funded earlier. A and B aren’t mentioned."
+     },
+     {
+      "why": "« c’est une réponse formidable à la solitude » — She grants her opponent one point — it does not solve student housing — but it answers loneliness."
      }
     ]
    },
@@ -58,6 +61,11 @@
      {
       "why": "« de bénévoles qui finissent par s’épuiser, et de subventions qui peuvent s’arrêter du jour au lendemain ». A isn’t mentioned; B contradicts “very successful”."
      },
+     null,
+     {
+      "why": "« Le vocabulaire y est pour quelque chose » — y être pour quelque chose = to have something to do with it; wording like “collaborative co-repair workshop” makes people feel it is not for them."
+     },
+     null,
      {
       "why": "« Ils ne se seraient jamais parlé ailleurs. C’est peut-être ça, le vrai service rendu par ces lieux. » A and C misread details."
      }
@@ -73,6 +81,12 @@
      },
      {
       "why": "« je connais surtout ceux qui ont des enfants, puisque nos enfants vont à la même école ». Neither A nor B is mentioned."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« si ce n’est la régularité » — si ce n’est = except for; one hour kept every week beats three hours now and then."
      }
     ]
    }

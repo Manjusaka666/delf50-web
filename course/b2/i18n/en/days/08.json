@@ -1,7 +1,7 @@
 {
  "canDo": "Can propose a concrete education measure and clearly state the goal it aims at and the risks it should avoid, using pour que / afin que + subjunctive, de façon à / de manière à, en vue de, de peur que / de crainte de.",
  "review": "Review day 2’s subjunctive (puisse, soit, ait after pour que / afin que) and day 7’s concessions: when proposing a measure, first acknowledge the objection (certes…, mais…), then state the measure’s purpose, to make the proposal more persuasive.",
- "input": "Read: a report on “peer tutoring” in a lower secondary school, an opinion column arguing that “homework should be done at school” and a notice about longer opening hours at a university library (mark every expression of purpose and ask yourself: what is this measure “for”, and what is it meant “to avoid”?); listen: a radio interview on choosing studies and careers, a primary teacher on the “outdoor classroom” and a town-hall radio notice about after-school support.",
+ "input": "Read: the informative article « Orientation : choisir sa voie à dix-sept ans », the opinion piece « À quoi sert encore le baccalauréat ? » and the three-voice forum « Le redoublement est-il utile ? » — questions first, then the text, finding the evidence for each answer; listen: « Orientation : faut-il choisir sa voie à quinze ans ? » and « Faire classe dehors, même quand il pleut » twice each, then three short recordings once each.",
  "output": "Write: a 250+-word article for a language school’s magazine, proposing a concrete measure to improve learning and stating its purpose; speak: a 3-minute monologue (should schools abolish marks?) + a debate on shortening the summer holidays, stating the purpose (afin que…) and the risk to avoid (de peur que…) whenever you make a proposal.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 4 different purpose expressions in the article, with the subjunctive after pour que / afin que and pour / afin de + infinitive when the subject is the same; a 3-minute monologue in which each measure is matched to its purpose.",
  "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about schools, universities or vocational training, and write 1 sentence each with afin que, de façon à and de peur que proposing a measure for the problem in the story; then record a 1-minute voice message presenting your measure as if at a parents’ meeting.",
@@ -80,6 +80,11 @@
      {
       "why": "« de peur que leurs enfants ne tombent malades. Mais en deux ans, nous n’avons pas eu plus d’absences qu’avant ». B: marks aren’t mentioned; C: the town hall only lent a shelter, and families provide the gear."
      },
+     null,
+     {
+      "why": "« D’autres redoutaient, à juste titre, la question de la responsabilité » — à juste titre = rightly: she grants that this worry is legitimate, hence the protocol drawn up with the town hall."
+     },
+     null,
      {
       "why": "« Ils sont plus calmes, et plus solidaires aussi ». A and C contradict the recording or aren’t mentioned."
      }
@@ -95,6 +100,12 @@
      },
      {
       "why": "« les personnes qui souhaitent devenir bénévoles sont, elles aussi, invitées à se faire connaître ». B: the deadline is 31 October, and 6 November is when the sessions start; A isn’t mentioned."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« une réunion d’information obligatoire se tiendra le douze décembre » — Aucune condition d’âge ni de diplôme: no age or diploma requirement; the only obligation is the information meeting."
      }
     ]
    }

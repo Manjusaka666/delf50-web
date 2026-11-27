@@ -1,7 +1,7 @@
 {
  "canDo": "Can recognise the three question types that cost the most marks in B2 reading and listening (implied meaning, author’s tone/position, paraphrase) and give answers backed by the text using a three-step method: “locate the passage → find the paraphrase → eliminate distractors”.",
  "review": "Review your wrong answers in reading and listening from Mock 1 and Mock 2: which were “didn’t hear it / didn’t find it”, which were misunderstandings and which were caused by distractors; go back over the markers of concession, irony and reservation (certes, pourtant, je ne prétends pas que, sans tomber dans).",
- "input": "Read: a long article on functional illiteracy in adults, an ironic column “in defence of boredom” and a restaurant owner’s reply to a bad review; write down the evidence in the text for each question. Listen: a debate on “parking charges based on vehicle weight”, a linguist on English loanwords at work and a pollen alert news flash; on the first listen focus only on structure and positions, on the second check details and paraphrases.",
+ "input": "Read: the informative article « Plastique : le recyclage ne suffira pas », the opinion piece « Faut-il fermer les zoos ? » and the three-voice forum « Mangerons-nous de la viande produite en laboratoire ? » — questions first, then the text, finding the evidence for each answer; listen: « Stationnement : faire payer plus cher les voitures lourdes ? » and « Anglicismes au bureau : faut-il s’inquiéter ? » twice each, then three short recordings once each.",
  "output": "Write: an article for a community newspaper on adults’ reading and writing difficulties (250+ words), with a headline, a description of the situation, an analysis of the consequences and concrete proposals; speak: a 5-minute monologue on “should daylight saving time be abolished?”, then a debate with the examiner on “parking charges based on vehicle weight”.",
  "checkpoint": "Reading + listening accuracy ≥85%, with every tone/implied-meaning question correct; for each question, can say in one sentence of your own language where the evidence is and why the distractors are wrong; can summarise both sides’ arguments in L44-1 and one concession.",
  "challenge": "Today’s challenge: find a debate or interview with two points of view on TV5MONDE or RFI (3 minutes or less), listen only once, then write in French “A pense que… / B réplique que… / Les deux s’accordent sur…”; check against the transcript and count the paraphrases you missed.",
@@ -56,6 +56,9 @@
      },
      {
       "why": "« apprenez les deux… il faut les comprendre. Mais à l’écrit… préférez le mot français ». A is too absolute; C is exactly the attitude she criticises."
+     },
+     {
+      "why": "« ils ont le sentiment que leur langue est menacée » — Force est de constater que… = one has to admit; the conclusion: attachment to a language depends on the feeling that it could be lost."
      }
     ]
    },
@@ -69,6 +72,12 @@
      },
      {
       "why": "« peuvent recevoir chaque matin, par SMS, le niveau de risque de leur commune en s’inscrivant »; chaque matin paraphrases chaque jour. Neither A nor B is mentioned."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« de diversifier les nouvelles plantations » — il ne s’agit pas de… mais de…: not felling existing trees but diversifying new plantings, so that no species exceeds ten per cent."
      }
     ]
    }

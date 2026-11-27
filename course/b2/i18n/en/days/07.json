@@ -1,7 +1,7 @@
 {
  "canDo": "Can take a measured position on digital topics by first acknowledging the other view and then objecting, using bien que + subjunctive, même si + indicative, alors que, malgré / en dépit de, avoir beau, il n’empêche que.",
  "review": "Review day 2’s subjunctive forms (bien que takes soit, ait, puisse…) and day 6’s consequence expressions: concede first (certes…, mais…), then draw a consequence with si bien que / d’où, for a more complete argument.",
- "input": "Read: an analysis of digitised administrative procedures and the “digital divide”, an opinion column “rehabilitating” screens and a forum post about quitting social media for a month (mark every concessive structure and separate “the fact conceded” from “the author’s real position”); listen: a radio interview on the “right to disconnect”, a segment on whether cash will disappear and a vox pop on social networks.",
+ "input": "Read: the informative article « Réseaux sociaux : un âge minimum, mais comment le vérifier ? », the opinion piece « L’intelligence artificielle va-t-elle nous rendre paresseux ? » and the three-voice forum « Peut-on encore vivre sans smartphone ? » — questions first, then the text, finding the evidence for each answer; listen: « Droit à la déconnexion : la loi ne suffit pas » and « La chronique conso : l’argent liquide va-t-il disparaître ? » twice each, then three short recordings once each.",
  "output": "Write: a 250+-word formal letter to the mayor on behalf of residents, opposing the closure of the town hall’s reception desk while acknowledging the benefits of online services; speak: a 3-minute monologue (should social media be banned for under-15s?) + a debate on writing with AI, using “concession + rebuttal” at least once each time you answer the examiner.",
  "checkpoint": "Reading and listening accuracy ≥80%; bien que + subjunctive, même si + indicative and malgré / en dépit de + noun each used correctly at least once in the formal letter; in the debate, concede or rebut each of 4 objections in turn, with no bien que + indicative errors.",
  "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about social media, AI or online security, and write 3 sentences giving a measured opinion, using bien que, avoir beau and il n’empêche que; then record a 1-minute voice message that first acknowledges one advantage of the technology, then states one reservation.",
@@ -71,6 +71,11 @@
      {
       "why": "« quand on paie en billets, on voit l’argent partir ». A and B aren’t in the recording."
      },
+     null,
+     null,
+     {
+      "why": "« elle fait aujourd’hui marche arrière » — faire marche arrière = to backtrack; the reason is fear of a general outage or a cyberattack."
+     },
      {
       "why": "« Les clients qui avaient des billets ont pu faire leurs courses ; les autres sont repartis les mains vides ». A: the recording says « pendant plusieurs heures », not all day; C contradicts “the terminals were down”."
      }
@@ -86,6 +91,12 @@
      },
      {
       "why": "« j’avais l’impression de vivre sur une autre planète. Pourtant, je sais très bien que je passe trop de temps dessus ». A and B both contradict « trop de temps »."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« Si vous dépendez d’un tel appareil, signalez-vous à la mairie » — Alarms and medical devices linked to the box stop working during the cut, hence the free backup unit."
      }
     ]
    }
