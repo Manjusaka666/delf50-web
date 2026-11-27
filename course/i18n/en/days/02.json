@@ -2,7 +2,7 @@
  "canDo": "Can describe a person or a place and get information with at least 5 questions.",
  "review": "Review the D1 present tense; add articles, adjective agreement and où/quand/comment/combien.",
  "input": "Listening: describing people/places; reading: short ads, flat listings or course descriptions.",
- "output": "Write a 70-word description; a 90-second spoken Q&A with at least 5 different question words.",
+ "output": "Write a 160-word description; a 90-second spoken Q&A with at least 5 different question words.",
  "checkpoint": "Can keep gender and number broadly consistent in a description; asks questions without translating word for word from your own language.",
  "challenge": "Today’s challenge: on TV5MONDE Apprendre, find a short video presenting a French city (A2 level); write 4 sentences describing the city (watch the articles and adjective agreement), then 5 questions you’d like to ask a local, each with a different question word.",
  "vocab": {

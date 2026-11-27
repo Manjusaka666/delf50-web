@@ -87,7 +87,7 @@ async function main() {
   // Do the whole standard plan.
   for (const q of q16.slice(1)) state.answerGrammar(S, 16, q, course.node(q.node), q.answer);
   for (const m of ['reading', 'listening']) for (const it of p16[m]) it.questions.forEach((q, i) => state.answerChoice(S, m, 16, state.recordId(it), i, q.answer));
-  for (const it of p16.writing) { state.saveDraft(S, 'writing', 16, it.id, 'Un brouillon.'); state.submitText(S, 'writing', 16, it, 'Je pense que l’air de la ville est pollué.'); }
+  for (const it of p16.writing) { state.saveDraft(S, 'writing', 16, state.recordId(it), 'Un brouillon.'); state.submitText(S, 'writing', 16, it, 'Je pense que l’air de la ville est pollué.'); }
   for (const it of p16.application) state.submitText(S, 'application', 16, it, 'Je voudrais savoir…');
   for (const it of p16.speaking) state.addSpeaking(S, 16, it, null, 95.4);
   const half = p16.production.map((x) => x.prompts.length).reduce((a, b) => a + b, 0);
@@ -110,7 +110,7 @@ async function main() {
   state.saveProduction(S, 16, n0, 0, '  ');
   check(S.production[k0] === true && !(k0 in S.drafts.production), 'clearing the sentences removes the text, not the done mark');
   const sp0 = p16.speaking[0];
-  state.saveDraft(S, 'speaking', 16, sp0.id, 'Plan : 1. constat 2. causes ');
+  state.saveDraft(S, 'speaking', 16, state.recordId(sp0), 'Plan : 1. constat 2. causes ');
   state.addSpeaking(S, 16, sp0, null, 60);
   check(S.speaking[S.speaking.length - 1].notes === 'Plan : 1. constat 2. causes' && S.drafts.speaking[state.draftKey(16, sp0.id)], 'a speaking round keeps the typed plan, which stays for the next round');
   state.markChunk(S, 16, p16.vocab[0].id, 'known');

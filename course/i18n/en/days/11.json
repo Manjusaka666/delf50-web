@@ -2,7 +2,7 @@
  "canDo": "Can use le/la/les/lui/leur to avoid repetition while keeping references clear.",
  "review": "Review the parts of a sentence; tell the direct object apart from à + a person.",
  "input": "Listening: phone/service exchanges; reading: an email thread.",
- "output": "Write a 110-word message with at least 5 pronoun replacements; a spoken role-play.",
+ "output": "Write a 160-word message with at least 5 pronoun replacements; a spoken role-play.",
  "checkpoint": "≥8 out of 10 replacements correct; don’t use lui/leur as a COD.",
  "challenge": "Today’s challenge: write a 5–6-sentence message in French to a friend or relative saying that you lent them a book, called them and so on, replacing repeated nouns with le / la / les / lui / leur at least 5 times; then check that each pronoun comes before the verb.",
  "items": {
