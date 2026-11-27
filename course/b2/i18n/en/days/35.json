@@ -7,63 +7,15 @@
  "challenge": "Today’s challenge: find an education news item on TV5MONDE or RFI’s « Journal en français facile » and write 5 French sentences giving your view, at least 2 of them with avoir + a past participle after a preceding direct object (e.g. « Les réformes qu’on a annoncées… »); leave it for 10 minutes, then check it three times for “meaning → agreement → punctuation” and note what you corrected.",
  "items": {
   "reading": {
-   "R35-1": {
-    "questions": [
-     {
-      "why": "The article presents, in turn, the supporters’ arguments, the results of trials, the opponents’ arguments and a compromise: a balanced overview of the debate. B: there is no official decision in the text; C: there is no historical review."
-     },
-     {
-      "why": "« la note serait souvent vécue comme un jugement sur la personne plutôt que sur le travail », leading students to see themselves as “bad” and give up. A is too absolute; C isn’t mentioned."
-     },
-     {
-      "why": "The second half of the sentence explains it: « un 10 sur 20 peut correspondre à des difficultés très différentes ». A and B misread cacher literally."
-     },
-     {
-      "why": "« ces effets restent difficiles à mesurer… car les écoles qui ont tenté l’expérience étaient souvent déjà très engagées dans l’innovation pédagogique »: the sample itself is biased. C contradicts « plutôt encourageants »."
-     },
-     {
-      "why": "It comes straight after « Beaucoup de parents disent ne plus savoir où en est leur enfant »: she never finished reading the three-page skills chart. A is the opposite; C is a separate argument in the next sentence."
-     },
-     {
-      "why": "« conserver des notes, mais en moins grand nombre, et les accompagner systématiquement de commentaires précis et de possibilités de rattrapage ». A and B are the two extremes the voie médiane is meant to avoid."
-     }
-    ]
-   },
    "R35-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« se relire n’a rien de naturel : c’est une technique, qui s’apprend », and the ending proposes counting checking time in the marking. A: the author actually says errors often don’t come from not knowing the rules; C is explicitly rejected (« je ne prétends pas qu’il faille les interdire »)."
-     },
-     {
-      "why": "lire en diagonale = to skim; the following phrase, « en voyant ce qu’ils voulaient écrire et non ce qu’ils ont réellement écrit », explains it further. A means the opposite; B is irrelevant."
-     },
-     {
-      "why": "« relire plusieurs fois, en cherchant à chaque passage un type d’erreur précis : d’abord…, ensuite…, enfin… », with the advice to set the text aside first. B contradicts « laisser reposer son texte »; C isn’t mentioned."
-     },
-     {
-      "why": "A Certes… Mais concession: they « ont fait d’immenses progrès », but « ne détectent pas tout, loin de là », and « l’élève… n’apprend rien ». A and C are extreme positions."
-     },
-     {
-      "why": "« Ce n’est pas du temps perdu ; c’est peut-être le temps le mieux employé de toute l’épreuve ». A: she only suggests setting aside 10 minutes within the existing time; B is the opposite of what is meant."
-     }
-    ]
-   },
-   "R35-3": {
-    "questions": [
-     {
-      "why": "Imperatives set out five steps (Vérifiez, Contrôlez, Observez, Traquez, Lisez): it is a method guide. Neither B nor C is in the text."
-     },
-     {
-      "why": "« fusionnez-les » = merge them. A: it doesn’t mean “delete”; C belongs to the third step and wouldn’t fix the repetition."
-     },
-     {
-      "why": "en revanche introduces a contrast: « plan clair » is set against « conclusion trop courte ». A and B both add a further point and would need en outre or de plus."
-     },
-     {
-      "why": "« avec avoir, il ne s’accorde qu’avec un complément d’objet direct placé avant le verbe », e.g. les erreurs que j’ai corrigées. A is the rule for être."
-     },
-     {
-      "why": "« c’est bien peu, comparé aux points que vous éviterez de perdre »: a small investment for a big return. B contradicts “around ten minutes”; C gets it backwards."
+      "why": "« Ce sont les autres qui paient la facture » — de surcroît = moreover."
      }
     ]
    }

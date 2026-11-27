@@ -7,60 +7,18 @@
  "challenge": "Today’s challenge: pick an interview or report of 5+ minutes on RFI or TV5MONDE and listen twice, exam-style: first note just 5 keywords, then expand them into 3 reporting sentences (Selon l’invité, … / Il a expliqué que…) and check yourself against the original or the transcript.",
  "items": {
   "reading": {
-   "R29-1": {
-    "questions": [
-     {
-      "why": "The article starts from « Pourtant, la radio est toujours là » and analyses why it has lasted (companionship, trust) and how it has adapted (the morning slot, podcasts). A is the opposite of the whole text; C: ad revenue is only mentioned in passing in the third paragraph."
-     },
-     {
-      "why": "« La radio ne demande ni les yeux ni les mains… Elle accompagne la vie au lieu de l’interrompre ». B isn’t mentioned; C is his colleagues’ mistaken prediction back then."
-     },
-     {
-      "why": "Reported speech: « ses collègues lui affirmaient que la radio n’aurait bientôt plus qu’un public de retraités » (the conditional = future in the past). A is the opposite; B has no basis."
-     },
-     {
-      "why": "« La tranche matinale… concentre désormais l’essentiel de l’audience et des recettes publicitaires ». A describes how the rest of the schedule was adjusted; C isn’t mentioned."
-     },
-     {
-      "why": "s’effacer = to fade, to disappear; tendre à = to tend to. Stations also make podcasts, so the line between the two is increasingly blurred. A and B are distortions."
-     },
-     {
-      "why": "« Plusieurs observateurs l’attribuent… créerait un sentiment de proximité »: the conditional créerait signals an unproven hypothesis. A doesn’t fit the modalised tone; C: the author doesn’t deny it, only doubts whether it can attract young people."
-     }
-    ]
-   },
    "R29-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The editorial stresses their irreplaceable role and calls for action: « Il serait temps de les entendre ». A is the opposite of the text’s praise; B: there is no comparison of audience figures."
+      "why": "« dont on ne connaît que les représentants les plus outranciers » — outrancier = extreme, excessive."
      },
      {
-      "why": "« Elles se font l’écho de réalités que les grandes stations nationales ignorent ». Neither A nor C has any basis."
-     },
-     {
-      "why": "faire les frais de qch = to bear the brunt of something. B and C misread frais literally (as costs)."
-     },
-     {
-      "why": "« une visibilité sur trois ans pour cesser de vivre au jour le jour ». A is rejected by « Ils ne réclament pas des privilèges »; B isn’t mentioned."
-     },
-     {
-      "why": "« Une démocratie se mesure aussi au nombre de voix qu’elle laisse s’exprimer » raises the local radio question to the level of democracy. Neither A nor C fits."
-     }
-    ]
-   },
-   "R29-3": {
-    "questions": [
-     {
-      "why": "The title and the whole letter protest against the show being dropped and ask the station to « revenir sur sa décision ». B is the opposite; C isn’t mentioned."
-     },
-     {
-      "why": "Reported speech: « La direction a expliqué que l’audience nocturne était trop faible ». A and C aren’t mentioned."
-     },
-     {
-      "why": "« c’est une présence humaine au cœur de la nuit ». A is exactly what she sees as the flaw of the replacement programme; B has no basis."
-     },
-     {
-      "why": "« ou, si c’est impossible, de maintenir une émission en direct au moins deux nuits par semaine ». A: she clearly says it can’t replace the show; C isn’t mentioned."
+      "why": "« n’ont pas leur place dans une discussion honnête » — on ne saurait admettre = cannot be accepted (formal)."
      }
     ]
    }

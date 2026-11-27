@@ -9,58 +9,23 @@
   "reading": {
    "R49-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Paragraphs 1–2 describe families taking to cargo bikes, paragraph 3 the obstacles, paragraph 4 public policy and paragraph 5 attitudes. A: manufacturing isn’t discussed; C isn’t mentioned."
-     },
-     {
-      "why": "« Mes clients ne viennent pas acheter un vélo : ils viennent changer d’organisation ». A isn’t mentioned; B doesn’t fit paragraph 3’s point that the price is close to that of a used car."
-     },
-     {
-      "why": "« dans les immeubles anciens, sans local à vélos, il est presque impossible de ranger un engin de deux mètres et demi de long ». B is about price and C about safety; neither concerns housing."
-     },
-     {
-      "why": "se faire rare = to become scarce. Neither A nor C is what the expression means."
-     },
-     {
-      "why": "« le plus souvent par crainte du prix ou de la circulation ». A contradicts “almost half find it practical”; B isn’t mentioned."
-     },
-     {
-      "why": "The idea that “car = freedom” needs to change even more than the practical obstacles (« plus encore que les obstacles matériels »). B is wrong: « plus encore que » is just a comparison and doesn’t say the obstacles have been solved; C over-interprets."
+      "why": "« combien l’emploieront avec leurs propres enfants » — la cuisine is a metonymy for everyday family life, set against la salle de classe."
      }
     ]
    },
    "R49-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The title, « Laissez-les aller à l’école seuls », and the ending, « leur rendre, pas à pas, un peu de cette liberté ». A is just the opening scene; B isn’t mentioned."
-     },
-     {
-      "why": "par miracle = miraculously, stressing how rare this has become nowadays, in contrast with the queue of cars dropping children off described before. B and C misread the sentence."
-     },
-     {
-      "why": "« Ce qui a changé, c’est notre perception du danger » (a cleft sentence). A contradicts « on y comptait même davantage d’accidents »; C isn’t mentioned."
-     },
-     {
-      "why": "« Je ne plaide pas pour l’insouciance. Un enfant doit apprendre le trajet avec un adulte… Mais en voulant tout sécuriser, nous le privons… »: concession, then criticism. B contradicts the first sentence; C isn’t mentioned."
-     },
-     {
-      "why": "ouvrir des horizons = to broaden one’s horizons: walking lets children notice the seasons and get to know the neighbourhood and its shopkeepers, which isn’t possible from the back seat of a car. A and C are literal misreadings."
-     }
-    ]
-   },
-   "R49-3": {
-    "questions": [
-     {
-      "why": "« franchit cette année un nouveau cap dans sa démarche responsable », followed by the plastics ban, local food, reduced-price tickets and a free shuttle. A: no performances are mentioned; C: there is no price rise in the text."
-     },
-     {
-      "why": "« un gobelet consigné et pourra remplir gratuitement sa gourde aux douze fontaines ». B contradicts « bouteilles en plastique seront totalement bannies »; C contradicts being able to refill your own water bottle."
-     },
-     {
-      "why": "« sur simple justificatif, aux étudiants, aux demandeurs d’emploi et aux bénéficiaires des minima sociaux ». Neither A nor B is a condition in the text."
-     },
-     {
-      "why": "« limité à 800 places cette année, à la demande de la commune ». A and C are guesses not found in the text."
+      "why": "« se sentir un instant étranger à sa propre langue » — évidences = what we take to be self-evident; learning a language reveals these to be mere habits formed by our mother tongue."
      }
     ]
    }

@@ -9,58 +9,33 @@
   "reading": {
    "R05-1": {
     "questions": [
+     null,
      {
-      "why": "The first paragraph asks « Comment expliquer qu’il ait gagné autant de terrain… ? », and the rest analyses three main causes in turn: trade, climate and human behaviour. B: dengue is only mentioned in passing; C: the text says the health authorities « suivent la situation de près », with no criticism."
+      "why": "« autrefois exceptionnels, deviendront la norme » — l’insouciance = carefree lack of concern."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« la seule vraie solution : cultiver autrement » — gourmand (en eau) = water-hungry."
      },
      {
-      "why": "The text says: « a voyagé à travers le monde grâce au commerce des pneus usagés, dans lesquels l’eau de pluie stagne ». Neither A nor C is mentioned."
-     },
-     {
-      "why": "The text says: « il lui arrive de monter dans un véhicule et d’en descendre des centaines de kilomètres plus loin », hence « ce n’est donc pas un hasard si… ». A and B are invented causes."
-     },
-     {
-      "why": "The text says: « Le réchauffement ne l’a pas fait venir, mais il lui a permis de s’installer durablement plus au nord ». B contradicts the first half; C contradicts the second half."
-     },
-     {
-      "why": "The text says: « Puisque ces gîtes larvaires se trouvent surtout dans les jardins et sur les balcons, les traitements à grande échelle sont peu efficaces ». A and C have no basis in the text."
-     },
-     {
-      "why": "The text goes on to explain that plant-pot saucers, forgotten watering cans and blocked gutters all become breeding sites — i.e. humans help it without meaning to. A is wrong in saying “deliberately”; B has nothing to do with the “ally” metaphor."
+      "why": "« au sein d’une même commission pour fixer, chaque année, le volume que chacun peut prélever » — houleux = stormy, heated."
      }
     ]
    },
    "R05-2": {
     "questions": [
      {
-      "why": "The author criticises « Cette recherche d’un bouc émissaire… est pourtant stérile » and argues that « c’est collectivement qu’il faut décider ». A is one of the accusations the author criticises; C: the author only says watering golf courses can be questioned, not that it should be banned."
+      "why": "« Ce que je conteste, c’est qu’on s’arrête là » — The author rejects both the idea that small gestures are enough and those who mock everyday environmentalists (je me sépare de ceux qui raillent…)."
      },
+     null,
      {
-      "why": "The text says: « puisqu’il est toujours plus confortable de penser que la solution dépend des autres » (puisque introduces a cause the reader can also accept). B and C aren’t said in the text."
+      "why": "« la manière dont on produit l’électricité, dont on isole les bâtiments » — n’avoir aucune prise sur = to have no control over."
      },
+     null,
      {
-      "why": "The text says: « c’est d’abord parce que les pluies d’hiver sont devenues plus irrégulières et que des sols imperméabilisés laissent l’eau ruisseler ». A and B are about “water use”, which the author says only « ne font qu’aggraver »."
-     },
-     {
-      "why": "« Certes, tous les usages ne se valent pas… Mais opposer les agriculteurs aux citadins ne fera pas tomber une goutte de pluie »: concede first, then return to the argument. B: he doesn’t change position; C contradicts « tous les usages ne se valent pas »."
-     },
-     {
-      "why": "This is a vivid way of saying that blaming each other won’t solve the root problem of water shortage. A and C are literal misreadings."
-     }
-    ]
-   },
-   "R05-3": {
-    "questions": [
-     {
-      "why": "The first sentence says it: « En raison de la présence de cyanobactéries, la baignade est interdite », and the rest explains the causes and the measures. A only mentions that pedalos are still allowed; C isn’t mentioned."
-     },
-     {
-      "why": "The text says: « du fait des fortes chaleurs et du faible niveau de l’eau. Comme le lac reçoit également… des eaux chargées en engrais ». B and C aren’t listed as causes."
-     },
-     {
-      "why": "The text says: « Les activités nautiques sans contact avec l’eau, comme le pédalo, sont maintenues ». A is banned; B: « il est vivement déconseillé de consommer les poissons »."
-     },
-     {
-      "why": "The text says: « Faute d’amélioration rapide, la mairie étudiera avec les agriculteurs voisins des solutions » (faute de = failing, in the absence of). A and C aren’t in the text."
+      "why": "« Ce n’est pas un hasard » — Ce n’est pas un hasard si… hints that interests lie behind it."
      }
     ]
    }

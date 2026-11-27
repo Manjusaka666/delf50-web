@@ -9,58 +9,41 @@
   "reading": {
    "R10-1": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "The headline is « ce que l’on sait, ce que l’on ignore encore »; the text states facts in the indicative and uses the conditional (« aurait été aggravée », « aurait connu une panne ») for unconfirmed information. B: the article reaches no conclusion; C: it quotes several sources, not just one resident."
+      "why": "« Rien n’indique à ce stade qu’il en ait connu l’origine » — The conditional (aurait acheté) marks unconfirmed information."
      },
+     null,
      {
-      "why": "« la crue aurait été aggravée par l’effondrement partiel d’une digue… Cette hypothèse… n’a toutefois pas été confirmée ». A is the opposite of the text; C: the expert « aurait été chargé d’examiner l’ouvrage dans les prochains jours » and has reached no conclusion yet."
-     },
-     {
-      "why": "si + plus-que-parfait + past conditional = an unreal hypothesis about the past; with « regrette Martine », it expresses regret. A is what the councillor says; B: she makes no claim for compensation."
-     },
-     {
-      "why": "The councillor says the text-alert system « aurait connu une panne », while the town hall speaks of only a « retard de quelques minutes seulement »; it isn’t yet possible to confirm who is right. B and C don’t match the text (the system exists)."
-     },
-     {
-      "why": "« un rapport avait recommandé de renforcer la digue… Les travaux n’ont jamais été réalisés, faute de financement ». A contradicts “never carried out”; C: some also think « aucune digue n’aurait pu résister »."
-     },
-     {
-      "why": "« la prudence s’impose : … les premières versions sont souvent les moins fiables ». A and C are over-inferences."
+      "why": "« celui qui acquiert un objet de bonne foi peut, sous certaines conditions, en devenir le propriétaire légitime » — aller de soi = to be a matter of course; de bonne foi = in good faith."
      }
     ]
    },
    "R10-2": {
     "questions": [
+     null,
      {
-      "why": "It is signed « L’éditorial de la rédaction »; the paper admits « Notre journal n’a pas toujours été exemplaire » and announces « une règle simple ». A: the embezzlement case is just an example; C: it isn’t a reader’s letter."
+      "why": "« J’ai longtemps éprouvé une certaine honte à lire les faits divers » — malsain = unhealthy, morbid."
      },
      {
-      "why": "« Il permet de publier vite tout en prenant ses distances avec ce que l’on rapporte ». B has nothing to do with its grammatical function; C is the function of the future tense."
+      "why": "« livrés à l’opinion avant tout jugement » — auraient dû / auraient pu: the past conditional expresses reproach — what should have been done."
      },
      {
-      "why": "« le démenti, lui, passe presque toujours inaperçu. Le lecteur pressé ne retient pas la nuance grammaticale ; il retient… une accusation ». Neither A nor B is mentioned."
-     },
-     {
-      "why": "The past conditional of devoir, aurions dû, means “should have (but didn’t)” — a self-reproach, confirmed by « Nous ne l’avons pas fait » that follows. B is another use of the conditional that doesn’t apply here; C doesn’t fit the context."
-     },
-     {
-      "why": "« une information grave qui ne repose que sur une seule source ne sera plus publiée, même au conditionnel ». A is an over-inference; C is the opposite of « Nous préférons arriver les derniers »."
+      "why": "« une majorité de la population est persuadée que la violence augmente » — insidieux = insidious, harmful in a hidden, gradual way."
      }
     ]
    },
    "R10-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "She points out the article is inaccurate and writes « Au titre du droit de réponse, je vous demande de publier cette lettre ». A isn’t her purpose; C is the opposite — her association was wrongly implicated."
-     },
-     {
-      "why": "« deux partenaires ont suspendu leur soutien et plusieurs bénévoles ont été pris à partie ». B contradicts « n’est mise en cause dans aucune procédure »; C isn’t mentioned."
-     },
-     {
-      "why": "The past conditional of pouvoir, auriez pu, in the second person means “you could have (but didn’t)” — a reproach. A is the use in « aurait bénéficié »; B has nothing to do with the future."
-     },
-     {
-      "why": "« publier cette lettre dans votre prochaine édition, à la même place que l’article concerné ». Neither A nor B is requested in the letter."
+      "why": "« l’habitude que l’on prend d’être observé » — anodin = harmless, insignificant."
      }
     ]
    }

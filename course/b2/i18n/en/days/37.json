@@ -7,60 +7,14 @@
  "challenge": "Today’s challenge: find a news item about transport and climate (trains, planes, air ticket taxes, etc.) on TV5MONDE or RFI’s « Journal en français facile » and record a 90-second response: first acknowledge an opposing view with « Certes… mais… », then work through a consequence with « Si l’on… , on… ».",
  "items": {
   "reading": {
-   "R37-1": {
-    "questions": [
-     {
-      "why": "The article moves from “more and more people feel guilty” (paragraph 1) to “acting on it is still hard” (paragraph 3: « le passage à l’acte reste difficile »); the core is the gap between awareness and behaviour. A isn’t covered; C: the text actually says plane tickets are sometimes cheaper than the train."
-     },
-     {
-      "why": "bien que introduces a concession: the data are only what respondents “say”, which may not reflect real behaviour, so they must be read with caution. B is the opposite of « simples déclarations »; C: no one in the text questions the data."
-     },
-     {
-      "why": "« un seul aller-retour entre l’Europe et l’Amérique du Nord peut équivaloir à plusieurs mois de trajets quotidiens en voiture ». A contradicts « ne représente qu’une part limitée des émissions mondiales »; B: the text makes no such comparison."
-     },
-     {
-      "why": "The quote is a hypothetical: if there were more night trains, many people would “make the leap” to rail. A takes it literally; C goes too far: switching to the train doesn’t mean not travelling."
-     },
-     {
-      "why": "It first grants that « le changement est possible », then qualifies it with « Il n’empêche que la portée de cette décision reste limitée : seules quelques lignes sont concernées ». B (“unfair”) has no basis; C contradicts « limitée »."
-     },
-     {
-      "why": "« À moins que les pouvoirs publics ne rendent le train réellement compétitif, on ne changera pas les comportements à grande échelle ». A is the opposite of her doubts about « bonne volonté »; B isn’t argued in the text."
-     }
-    ]
-   },
    "R37-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The title and the last paragraph, « remplacer la quantité par la qualité », sum up the text. A: the author clearly says « Je ne demande à personne de rester chez soi »; B: he actually criticises resort-style travel."
-     },
-     {
-      "why": "« On m’objectera que… Certes. Mais… »: the classic “concession + rebuttal” structure. A: he grants the other side’s point (« Certes »); C: he doesn’t give up his position."
-     },
-     {
-      "why": "« ils se nourrissent mutuellement », illustrated with a hypothetical: « si la demande de trains de nuit augmentait, les opérateurs finiraient par en proposer davantage ». B is the view he partly concedes and then rebuts."
-     },
-     {
-      "why": "« Ce n’est pas le voyage que je remets en cause, c’est sa transformation en produit de consommation rapide » (a cleft sentence). B is what he recommends; C: he thinks only slow, in-depth travel lets you really get to know local people."
-     },
-     {
-      "why": "« Je ne demande à personne… Je propose simplement… »: a gentle tone offering a constructive proposal. There is no threat (A) and no pessimism (C); on the contrary, he thinks it can help us “rediscover the joy of travel”."
-     }
-    ]
-   },
-   "R37-3": {
-    "questions": [
-     {
-      "why": "« permettez-moi de rappeler une réalité souvent oubliée »: as an overseas resident, she adds an overlooked perspective. Neither B nor C is raised in the letter."
-     },
-     {
-      "why": "The aside between dashes, « je n’ai pas de voiture et je fais attention à ma consommation », proves she is « sensible aux questions climatiques », making her concession more credible. A is the opposite; C has no basis."
-     },
-     {
-      "why": "« je n’y verrais aucun inconvénient, à condition que les liaisons avec l’outre-mer soient traitées à part ». A and B contradict “no objection”."
-     },
-     {
-      "why": "If overseas routes aren’t treated separately, the cost will once again fall on overseas residents who have no alternative. B and C misread what « les mêmes » refers to."
+      "why": "« les habitants découvrent le projet lorsqu’il est bouclé » — être tenu pour quantité négligeable = to be treated as of no account."
      }
     ]
    }

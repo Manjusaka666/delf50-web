@@ -9,52 +9,30 @@
   "reading": {
    "R24-1": {
     "questions": [
+     null,
      {
-      "why": "The whole text presents how Arvéa trialled the four-day week, its results and its problems. Neither A nor B is the main idea."
+      "why": "« Les études ne la confirment guère » — ne… guère = hardly (a formal negative)."
+     },
+     {
+      "why": "« sans que l’employeur et le postulant parviennent à s’entendre » — sans que + subjunctive = without… -ing."
      },
      null,
      {
-      "why": "« Les réunions ne durent plus que trente minutes »; B contradicts « aucun salaire n’a été réduit »; C isn’t mentioned."
-     },
-     {
-      "why": "ne… guère = hardly, scarcely: productivity barely fell."
-     },
-     null,
-     {
-      "why": "« Rien ne permet de l’affirmer » denies that it applies everywhere, but « on ne gagne pas en efficacité sans repenser la manière dont on travaille » draws the lesson."
+      "why": "« que l’on ne peut ni rentabiliser ni passer chez soi » — ni… ni… = neither… nor…."
      }
     ]
    },
    "R24-2": {
     "questions": [
-     {
-      "why": "« Cette idée reçue ne repose pourtant sur aucune donnée sérieuse, et je voudrais ici la réfuter. » A: the text doesn’t discuss recruitment difficulties; C is too absolute: she argues for apprenticeship as « un choix parmi d’autres »."
-     },
-     {
-      "why": "« ce n’est nullement son niveau, mais sa façon d’apprendre : par la pratique plutôt que par l’abstraction »; A is explicitly denied by nullement; B contradicts « préparent des diplômes reconnus »."
-     },
-     {
-      "why": "« l’apprenti perçoit un salaire pour apprendre son futur métier… il dispose de… de l’expérience ». B contradicts paragraph 2, « suivent des cours exigeants »; C (odd jobs) describes the university students she compares them with."
-     },
-     {
-      "why": "« On m’objectera que… C’est vrai… Mais personne ne songe à fermer les universités parce que certains stages se passent mal » — concede first, then weaken the opposing argument with an analogy. A: the text gives no figures; B: she holds her position."
-     },
-     {
-      "why": "voie de garage originally means a railway “siding”, and figuratively “a dead end where people are shunted”; the last paragraph’s « et non comme une solution par défaut » echoes this. B is a literal misreading; C means the opposite."
-     }
-    ]
-   },
-   "R24-3": {
-    "questions": [
-     {
-      "why": "She describes her own situation and ends by asking « Avez-vous vécu la même chose ? Comment avez-vous réagi ? »."
-     },
+     null,
      null,
      {
-      "why": "« ce n’est pas tant les messages eux-mêmes que la pression implicite »; C is wrong: « Personne ne nous oblige à répondre »."
+      "why": "« D’autres sont apparues, que nul n’avait prévues » — nul (pronoun) = no one (formal)."
      },
+     null,
+     null,
      {
-      "why": "ne… plus que = now there is only: her only thought now is to change companies."
+      "why": "« il devient, le plus souvent, préparateur de commandes » — quiconque = whoever (indefinite pronoun)."
      }
     ]
    }

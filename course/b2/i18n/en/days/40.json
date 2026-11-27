@@ -6,65 +6,6 @@
  "checkpoint": "Reading and listening accuracy ≥80%; essay ≥250 words with at least 3 time expressions and 3 indefinites in the correct mood; monologue ≥5 minutes and replies to 4 objections in the debate; give yourself a score on each of the grid’s five criteria, list the 3 points most in need of work and put them in your day 41 plan.",
  "challenge": "Today’s challenge: look back at the goals you wrote on day 1, pick a B2-level video on TV5MONDE, listen twice without subtitles and write a 5-line summary (using at least « au fur et à mesure que » and « la plupart »); compare it with your level on day 1, and write down your biggest progress and one concrete goal for the next stage.",
  "items": {
-  "reading": {
-   "R40-1": {
-    "questions": [
-     {
-      "why": "Paragraph 1 asks « à quoi bon passer des années à apprendre une langue étrangère ? », and the whole text is about the relationship between machine translation and language learning. A and C are just related details."
-     },
-     {
-      "why": "« près d’un quart déclarent avoir renoncé à un cours de langue optionnel ». B contradicts « la plupart utilisent ces outils plusieurs fois par semaine »; C is the opposite of documents now being handled by software."
-     },
-     {
-      "why": "The text goes on to explain that learning a language also means understanding humour and implied meaning, and how to disagree without offending. A over-interprets; B isn’t mentioned."
-     },
-     {
-      "why": "« Ils restent fragiles dès que le texte devient ambigu, ironique ou très technique ». The text says neither B nor C."
-     },
-     {
-      "why": "« au fur et à mesure que les logiciels progressent, leur métier se transforme et se tourne vers la relecture, l’adaptation et le contrôle de qualité ». A is ruled out by « ne disparaissent pas »; C isn’t mentioned."
-     },
-     {
-      "why": "« pourrait devenir non pas une concurrente, mais une alliée. À condition… que quelqu’un sache encore la corriger ». A and B don’t fit this conciliatory position."
-     }
-    ]
-   },
-   "R40-2": {
-    "questions": [
-     {
-      "why": "The title, « une piste qu’on aurait tort d’ignorer », and the concrete proposals in paragraph 4 show the author is defending the idea. B is only the opening background; C: remote working is mentioned only as the reason offices are empty, without criticism."
-     },
-     {
-      "why": "« livrés en moins de deux ans, bien plus vite qu’une construction neuve, et sans consommer un mètre carré de terres agricoles ». A contradicts paragraph 3’s « Il arrive que le coût des travaux dépasse… »; C isn’t mentioned."
-     },
-     {
-      "why": "« Certes, la transformation n’est pas toujours simple… C’est pourquoi chaque bâtiment doit être étudié avant que le projet ne soit lancé »: it admits the limits, then proposes a remedy. A goes against the whole text’s position; B: there is no personal experience."
-     },
-     {
-      "why": "« ces conversions restent confidentielles, faute d’incitations et de volonté politique ». Neither B nor C is mentioned."
-     },
-     {
-      "why": "rester confidentiel here means “to remain small-scale, little known”, in contrast with the following « pour qu’elles se multiplient ». A misreads confidentiel literally as “secret”; C distorts the meaning."
-     }
-    ]
-   },
-   "R40-3": {
-    "questions": [
-     {
-      "why": "The announcement covers Sunday opening, longer Thursday hours and a self-service loans system. A is the opposite of “longer opening”; C isn’t mentioned."
-     },
-     {
-      "why": "« Cette décision fait suite à une consultation… la plupart des personnes interrogées… regrettaient de ne pas pouvoir venir ». B isn’t mentioned; C: the building work only affects where the children’s section is."
-     },
-     {
-      "why": "« Le personnel, ainsi libéré de certaines tâches répétitives, sera davantage disponible pour conseiller le public » (dès que + future perfect). Neither A nor B is mentioned."
-     },
-     {
-      "why": "« Toute personne extérieure peut s’inscrire moyennant une cotisation annuelle de 15 euros »; residents of the town register free. A and C contradict « gratuite pour tous les habitants »."
-     }
-    ]
-   }
-  },
   "listening": {
    "L40-1": {
     "questions": [

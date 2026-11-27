@@ -9,58 +9,27 @@
   "reading": {
    "R04-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Using Les Glycines as its example, the article presents the principles of participatory housing (paragraph 2), its advantages (shared spaces, community life) and its difficulties (paragraphs 4 and 5). B: the architect is just one of the people quoted; C: the text doesn’t discuss rising house prices."
+      "why": "« deux à trois fois plus cher qu’un mètre carré d’habitation » — The reason they mention more quietly is profit: they would rather leave buildings empty than accept a lasting loss of value."
      },
+     null,
      {
-      "why": "The text says: « ne l’ont pas simplement acheté sur plan : elles l’ont conçu ensemble… avec un architecte auquel elles avaient confié une mission inhabituelle ». A is exactly what is denied; C isn’t mentioned."
-     },
-     {
-      "why": "« une grande salle autour de laquelle s’organise la vie de l’immeuble », where they hold « les réunions mensuelles au cours desquelles se prennent toutes les décisions ». A overgeneralises (uniquement); B: the text only says they sometimes welcome neighbours, not that it is rented out."
-     },
-     {
-      "why": "The explanation follows immediately: « On renonce à quelques mètres carrés privés pour gagner une vraie vie de voisinage » — giving something up in exchange for another benefit. B is wrong: the price is the same, only the space is smaller; C: the text says nothing about time pressure."
-     },
-     {
-      "why": "The text says: « Ce qui nous a le plus manqué, c’est le temps ». Neither A nor C is the architect’s conclusion."
-     },
-     {
-      "why": "The text says: « Reste une question à laquelle personne n’a encore vraiment répondu : comment ouvrir l’habitat participatif aux ménages modestes… ? ». A was a past debate; B: the text says towns are starting to take an interest, so it isn’t an open question."
+      "why": "« rapporte des impôts sans exiger ni écoles ni crèches » — réticent = reluctant."
      }
     ]
    },
    "R04-2": {
     "questions": [
      {
-      "why": "The text says: « il est temps de mesurer ce que ce modèle coûte à la collectivité ». A contradicts the ending « Je ne demande pas que l’on interdise les maisons individuelles »; C: the author admits the centre is expensive and noisy, but argues for improving it rather than abandoning it."
+      "why": "« Je conteste seulement qu’il n’y ait qu’une manière respectable de se loger » — The author explicitly says this is not a plea against ownership (Qu’on ne voie pas ici un plaidoyer contre la propriété)."
      },
+     null,
      {
-      "why": "The text says: « l’usage quotidien de la voiture, sans laquelle il devient impossible d’aller travailler… ». B and C are the opposite of the text."
-     },
-     {
-      "why": "« On me dira que… C’est vrai, et c’est précisément le problème auquel il faudrait s’attaquer »: he first concedes the objection, then turns it into his own argument. A: he clearly does respond; C: he doesn’t change his position."
-     },
-     {
-      "why": "horizon is figurative here, “prospect, goal”, so unique horizon means “the only model regarded as a successful life”. A is the literal meaning; B is unrelated."
-     },
-     {
-      "why": "« Je ne demande pas… Je demande que… »: a firm position, but he explicitly rejects banning detached houses — a measured tone. B: he is actively making demands; C: there is no irony in the text."
-     }
-    ]
-   },
-   "R04-3": {
-    "questions": [
-     {
-      "why": "She asks « Quelqu’un a-t-il déjà utilisé ce système ? » to find out about the state guarantee scheme. B: she is looking for a flat; C: the university is just location information."
-     },
-     {
-      "why": "The text says: « Le problème, ce n’est pas tant les visites que le dossier ». A is exactly what is ruled out; C isn’t mentioned."
-     },
-     {
-      "why": "The text says: « Mes parents vivent à l’étranger et ne peuvent pas se porter garants ». A and B have no basis in the text."
-     },
-     {
-      "why": "retour d’expérience = feedback from people who have been through it, echoing the previous sentence « Quelqu’un a-t-il déjà utilisé ce système ? ». A and B are literal misreadings of retour."
+      "why": "« autant de dépenses que le locataire ignore » — à fonds perdu = money you never get back."
      }
     ]
    }

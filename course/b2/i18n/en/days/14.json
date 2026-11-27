@@ -7,60 +7,19 @@
  "challenge": "Today’s challenge: find a social news item on RFI’s « Journal en français facile » or TV5MONDE (housing, loneliness, volunteering, public services…) and write 3 sentences of opinion: one explaining a cause with étant donné que, one conceding with bien que, and one imagining “if only…” with si + plus-que-parfait; then record a 1-minute spoken response.",
  "items": {
   "reading": {
-   "R14-1": {
-    "questions": [
-     {
-      "why": "The article covers in turn the survey data, causes, consequences, responses and demands. B: the researchers in the text are cautious about social media; C: the café in Nantes is just one example."
-     },
-     {
-      "why": "« Plus surprenant encore, vivre entouré ne protège pas toujours : près d’une personne sur dix vivant en couple ou en famille déclare se sentir souvent seule. » A: the text makes no such comparison; C shifts the meaning: “one in five” refers to “not having had a real conversation in a month”, not to living alone."
-     },
-     {
-      "why": "« les chercheurs restent prudents… Tout dépend, en somme, de l’usage qu’on en fait. » A and B are absolute claims."
-     },
-     {
-      "why": "faute de + noun = for lack of…, expressing a cause. B expresses concession, the opposite meaning; C misreads faute as “fault”."
-     },
-     {
-      "why": "avoir beau + infinitive = however much… (concession). A mistakes concession for cause and effect; C contradicts “on a small scale”."
-     },
-     {
-      "why": "The unreal past hypothesis « Si l’on avait pris le problème au sérieux il y a dix ans, nous n’en serions pas là » implies a reproach that the issue wasn’t taken seriously. A: she only warns against stopping at awareness campaigns; B isn’t mentioned."
-     }
-    ]
-   },
    "R14-2": {
     "questions": [
      {
-      "why": "« on ne fabrique pas de la solidarité par décret. On la rend possible, on l’encourage ». A is the view he opposes; C contradicts his point about lack of funding and places."
+      "why": "« On ne peut pas les appeler de l’indifférence » — The author rejects the idea of apathy yet points out the cost of not voting."
      },
+     null,
      {
-      "why": "« J’en sais quelque chose… nos meilleurs bénévoles sont précisément ceux qui ont choisi de venir. » B and C have no basis, and C is the opposite of “our best volunteers”."
+      "why": "« cet écart ne se résorbe plus avec l’âge aussi vite qu’autrefois » — se résorber = to shrink away gradually."
      },
+     null,
+     null,
      {
-      "why": "« beaucoup de jeunes ne s’engagent pas faute d’en avoir eu l’occasion… C’est un argument sérieux. » A: he thinks the cost would be huge; B doesn’t appear in the text."
-     },
-     {
-      "why": "si + plus-que-parfait / past conditional expresses something contrary to past fact: the implication is that the project was never properly costed. A is the opposite of the implication; C (“lying deliberately”) reads too much into it."
-     },
-     {
-      "why": "par décret = by administrative order; the sentence means solidarity can’t be created by decree. B is the opposite of the author’s view; C twists it into a question of efficiency."
-     }
-    ]
-   },
-   "R14-3": {
-    "questions": [
-     {
-      "why": "« Quelles idées ont fonctionné chez vous ? Je suis preneuse de tous vos conseils ». A isn’t an invitation post; B: she doesn’t complain about her neighbours’ behaviour."
-     },
-     {
-      "why": "It fell from « une soixantaine » to « une quinzaine ». B and C don’t match the figures."
-     },
-     {
-      "why": "« parce que les nouveaux habitants ne se sentent pas invités, puisqu’ils ne connaissent personne ? » A isn’t mentioned; C: she says posters went up in every stairwell."
-     },
-     {
-      "why": "« C’est possible. Mais je n’ai pas envie de transformer un moment convivial en kermesse. » A: she has reservations; C: she doesn’t reject the suggestion on grounds of cost."
+      "why": "« Une manifestation, si massive soit-elle, ne vote pas une loi » — si massive soit-elle = however large it may be (concession)."
      }
     ]
    }

@@ -6,68 +6,6 @@
  "checkpoint": "0 personal recurring errors in the forum post and ≤3 grammar errors overall; can explain the 3 chosen rules aloud with 2 correct example sentences each; reading and listening accuracy ≥80%; all five errors in rewriting exercise A42-2 correctly fixed.",
  "challenge": "Today’s challenge: find a grammar or writing exercise in TV5MONDE’s « Apprendre le français », then add the items you got wrong to your own “error notebook” (wrong sentence → rule → two new example sentences); redo the same exercise a week later and compare results.",
  "items": {
-  "reading": {
-   "R42-1": {
-    "questions": [
-     {
-      "why": "Paragraph 1 sets out the core idea: « se tromper, à condition de comprendre pourquoi, serait l’un des moyens les plus efficaces d’apprendre », and the rest covers mechanisms, conditions and methods. B is touched on only indirectly in paragraph 4; C is the opposite of the article’s point."
-     },
-     {
-      "why": "A mistake triggers a « signal d’erreur » that forces the brain to adjust, which « améliorent souvent la mémorisation ». A: rankings aren’t mentioned; C is the opposite: « alors même que les élèves y obtiennent de mauvais résultats »."
-     },
-     {
-      "why": "The second group received corrections with explanations the next day, and after a term they « commettaient nettement moins d’erreurs récurrentes ». A isn’t mentioned; B is the opposite of the finding."
-     },
-     {
-      "why": "Paragraph 3 sets a first condition with « Encore faut-il que… » (timely feedback), and paragraph 4 adds another with « Reste un obstacle de taille » (overcoming fear of mistakes). A: there is no contradiction; C: paragraph 4 quotes a different trainer."
-     },
-     {
-      "why": "« Elle recommande de distinguer clairement les moments d’entraînement… des moments d’évaluation ». B is too extreme; C is exactly what she criticises."
-     },
-     {
-      "why": "être coutumier de qqch = to be in the habit of, to regularly (do something), here referring to mistakes you make again and again. Neither A nor B matches the meaning."
-     }
-    ]
-   },
-   "R42-2": {
-    "questions": [
-     {
-      "why": "Paragraph 2 acknowledges the tools’ benefits (« Certes… rendent de grands services »), and paragraphs 3–4 warn of the risks: a balanced position with reservations. A ignores the criticism; C: the author clearly says « Il serait absurde de les rejeter par principe »."
-     },
-     {
-      "why": "« Certes » marks a concession, followed by a list of three benefits. B is the opposite; C: the text gives no technical explanation."
-     },
-     {
-      "why": "« On clique, on accepte, on passe à la suite… sans que la règle ait jamais été intégrée ». A: the tool does make the correction every time; C isn’t mentioned."
-     },
-     {
-      "why": "aveugle literally means “blind”: trusting completely without judgement, even though the tool itself makes mistakes. A is the opposite; B isn’t what the word means."
-     },
-     {
-      "why": "The “teacher” helps us understand, while the “secretary” does the work for us; the author explains straight after: « se demander pourquoi avant de cliquer ». B and C are literal misreadings."
-     }
-    ]
-   },
-   "R42-3": {
-    "questions": [
-     {
-      "why": "Mei replies to the forum topic “how to stop making the same mistakes”, describing her error-notebook method and giving advice. B: her teacher is the one who helped her spot the problem; C: she isn’t asking a question."
-     },
-     {
-      "why": "« sur dix copies, j’avais oublié quinze fois le subjonctif »: writing a lot didn’t mean progress. A: she writes three essays a week, which isn’t little; C isn’t mentioned."
-     },
-     {
-      "why": "« je la recopie, j’écris la règle avec mes propres mots et j’invente deux phrases correctes ». Neither A nor B is mentioned."
-     },
-     {
-      "why": "je vous l’accorde is a concession meaning “I grant you that”; here she admits the method is “not much fun”. A and C are meanings accorder can’t have in this context."
-     },
-     {
-      "why": "« Choisissez trois erreurs, pas plus ». A is the opposite of « ne cherchez pas à tout corriger en même temps »; C: she thinks writing more on its own doesn’t help."
-     }
-    ]
-   }
-  },
   "listening": {
    "L42-1": {
     "questions": [

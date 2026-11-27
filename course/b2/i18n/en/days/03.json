@@ -9,58 +9,45 @@
   "reading": {
    "R03-1": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "The article starts with Yanis getting his news from videos, quotes a survey and a sociologist’s analysis, and discusses how young people get information and the risks such as algorithms. B: the local daily in the text is adapting, not disappearing; C is just one story Yanis saw."
+      "why": "« Lorsque le démenti paraît, le public est déjà passé à autre chose » — un démenti = a denial, a correction."
      },
+     null,
+     null,
+     null,
      {
-      "why": "The text says: « je ne pense pas être mal informé pour autant ». A is the opposite; C: he never reads newspapers and makes no such judgement."
-     },
-     {
-      "why": "The text says: « il n’est pas sûr que les jeunes soient plus crédules que leurs aînés » (note the subjunctive after a negative, expressing uncertainty). A turns “uncertain” into “certain”; B isn’t said in the text."
-     },
-     {
-      "why": "The text says: « proposent à chacun des contenus proches de ceux qu’il a déjà regardés… qui confirment son opinion de départ ». Neither B nor C is in the text."
-     },
-     {
-      "why": "mitigé = mixed. The text immediately explains: video views are very high (positive), but few people click the links (disappointing). Neither A nor C fits."
-     },
-     {
-      "why": "« il est possible que ce soit exagéré »: he admits the story may have been exaggerated (il est possible que + subjunctive expresses possibility). A: he answers with a laugh; B is the opposite of the meaning."
+      "why": "« C’est une forme de dissuasion, discrète mais réelle » — y regarder à deux fois = to think twice."
      }
     ]
    },
    "R03-2": {
     "questions": [
      {
-      "why": "« Je ne crois pas que ce diagnostic soit juste », and he says « le public n’a pas renoncé au journalisme ; il a simplement changé de porte d’entrée ». A contradicts his closing hope that journalism will survive; C: the author stresses precisely that in-depth investigation is irreplaceable."
+      "why": "« c’est confondre la quantité et la compréhension » — The author explicitly says he does not think newsrooms are less scrupulous than before, so C is wrong."
      },
      {
-      "why": "rengaine originally means an old tune, and by extension “a cliché, the same old refrain”, echoing « Chaque année… revient ». B is the literal meaning, which doesn’t fit the context; C isn’t in the text."
+      "why": "« l’on ne s’en portait pas plus mal » — ne pas s’en porter plus mal = to be none the worse for it."
      },
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The text says: « sans modèle économique solide… les enquêtes longues, coûteuses, deviendront rares ». A: podcasts are one of the author’s positive examples; B isn’t mentioned."
-     },
-     {
-      "why": "« ne remplacera jamais trois mois de vérifications sur le terrain »: however many views, they can’t replace checking. B contradicts the author’s view; C isn’t the point this sentence is arguing."
-     },
-     {
-      "why": "He admits the press « a commis des erreurs » and « Je ne prétends pas… qu’elle soit irréprochable », but still says « je suis convaincu que nous avons tous intérêt à ce qu’elle survive ». A ignores the criticism; C contradicts his call for paid support."
+      "why": "« où la rapidité sauve des vies » — Qu’on ne se méprenne pas = make no mistake (a clarification before conceding a point)."
      }
     ]
    },
    "R03-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "This is an event notice: « organise… une semaine consacrée à l’éducation aux médias », followed by the programme. Neither B nor C is mentioned."
-     },
-     {
-      "why": "The text says: « il est possible d’apprendre, simplement et sans jargon, à les repérer ». A contradicts sans jargon; C: there is in fact an activity designed for older people."
-     },
-     {
-      "why": "The text says: « un café-info destiné aux seniors… (samedi, 10 h) ». A is for 12–15-year-olds; B doesn’t specify an audience."
-     },
-     {
-      "why": "The text says: « il est probable que les places pour l’atelier partiront vite ». A contradicts « Toutes les activités sont gratuites »; C: there is in fact an activity on Saturday."
+      "why": "« des sites remplis de publicités et de titres racoleurs » — racoleur = sensationalist, clickbait."
      }
     ]
    }

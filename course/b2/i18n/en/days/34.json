@@ -9,61 +9,14 @@
   "reading": {
    "R34-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The article moves from noise being “overlooked” (first paragraph) to health effects, inequality, solutions and the need for consultation. B: two-wheelers are just one item in the opening list; C: there is no comparison between cities."
-     },
-     {
-      "why": "« le bruit est souvent considéré comme un simple désagrément, voire comme le prix à payer… ». A contradicts the fourth paragraph; C is the opposite of the survey finding that a quarter of residents find it unbearable."
-     },
-     {
-      "why": "« même lorsque le dormeur ne se réveille pas : le rythme cardiaque s’accélère, l’organisme reste en alerte ». Both A and B contradict this."
-     },
-     {
-      "why": "« Les logements situés le long des grands axes, souvent moins chers… occupés par des ménages aux revenus modestes, qui n’ont pas toujours les moyens de faire poser des fenêtres isolantes ». B gets the direction backwards; C has no basis."
-     },
-     {
-      "why": "The purpose structure « de manière à réduire le bruit de roulement ». A may be a common-sense effect, but the text doesn’t give it as the aim; C confuses it with « en vue de créer des zones de calme » (the purpose of planting trees)."
-     },
-     {
-      "why": "« Ce qui est vécu comme une nuisance par l’un est perçu comme de l’animation par l’autre », so residents need to be involved to balance everyone’s interests. A and B aren’t mentioned."
-     }
-    ]
-   },
-   "R34-2": {
-    "questions": [
-     {
-      "why": "The author supports the « rue scolaire » and wants to go further: « végétaliser, installer des bancs… redonner à la rue sa fonction de lieu de rencontre ». A over-generalises: it only concerns school gates at drop-off and pick-up times; C is the opposite of the author’s position."
-     },
-     {
-      "why": "tellement… que expresses a result: we’re so used to it that we no longer see it, followed straight away by « Elle est pourtant absurde ». B and C are literal misreadings."
-     },
-     {
-      "why": "« afin que les élèves puissent arriver à pied ou à vélo en toute sécurité » (afin que + subjunctive expresses purpose). A isn’t mentioned; B is the opposite of what parents fear."
-     },
-     {
-      "why": "« Ces inquiétudes méritent d’être entendues, mais elles résistent rarement à l’expérience »: concession, then rebuttal. Neither A nor C fits."
-     },
-     {
-      "why": "“Children learning to be wary of the street” is set against “adapting the street to children”: a rhetorical question meant to make readers think. B doesn’t fit the text’s firm position; C: it isn’t a question addressed to officials."
-     }
-    ]
-   },
-   "R34-3": {
-    "questions": [
-     {
-      "why": "The core request: « prendre les dispositions nécessaires afin que les horaires réglementaires soient respectés ». A contradicts « Nous ne contestons nullement le bien-fondé de ce projet »; C isn’t in the letter."
-     },
-     {
-      "why": "« Nous ne contestons nullement le bien-fondé de ce projet, que nous avons d’ailleurs soutenu lors de la concertation ». ne… nullement = not in the least."
-     },
-     {
-      "why": "« mis en marche dès 6 h 15, alors que l’arrêté municipal n’autorise les travaux qu’à partir de 7 h 30 ». A and B aren’t mentioned."
-     },
-     {
-      "why": "« Nous avons déjà porté ces faits à la connaissance de l’entreprise, sans résultat. C’est pourquoi… ». B and C have no basis."
-     },
-     {
-      "why": "« Nous serions également heureux de vous rencontrer, de manière à envisager ensemble des solutions durables ». Neither A nor C is proposed."
+      "why": "« Nous avons cru faire des économies, et nous avons éclairé plus » — ambivalent = cutting both ways."
      }
     ]
    }

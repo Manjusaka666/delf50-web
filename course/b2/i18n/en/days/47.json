@@ -6,65 +6,6 @@
  "checkpoint": "All four parts finished within the time limits; listening + reading accuracy ≥ 75%; letter ≥ 250 words with complete layout; monologue with a problem statement and an announced outline; after the exam, spend 10 minutes sorting wrong answers into “misunderstood / careless / ran out of time”.",
  "challenge": "Today’s challenge: find a news item on wildlife protection, education or road safety on TV5MONDE or RFI’s « Journal en français facile »; time yourself strictly for 1 minute, listen once, write down 3 key facts, then add one reservation using Encore faut-il que….",
  "items": {
-  "reading": {
-   "R47-1": {
-    "questions": [
-     {
-      "why": "The article covers, in turn, the wolf’s return (paragraph 1), farmers’ difficulties (paragraph 2), protective measures and their limits (paragraph 3), culling policy (paragraph 4) and the underlying issue (paragraph 5). A: the author doesn’t blame the farmers; C: the disappearance is only background at the start."
-     },
-     {
-      "why": "« revenu naturellement… protégé par le droit européen, l’animal profite aussi de forêts plus étendues et d’un gibier abondant ». A contradicts « naturellement »; B isn’t mentioned."
-     },
-     {
-      "why": "“Behind the figures lie sleepless nights”: besides the lost sheep, there are the farmers’ anxiety, exhaustion and sense of being abandoned (« un sentiment d’abandon »). B: the text doesn’t question the figures; C is a literal misreading."
-     },
-     {
-      "why": "« Encore faut-il pouvoir les mettre en place : sur certains alpages escarpés… les chiens de protection… inquiètent les randonneurs ». A contradicts « en grande partie financés par l’État »; B contradicts « réduisent sensiblement le nombre d’attaques »."
-     },
-     {
-      "why": "« les associations… la jugent contraire au statut d’espèce protégée, tandis que de nombreux éleveurs la trouvent bien trop timide ». A contradicts « pour ne pas menacer l’espèce »; C isn’t mentioned."
-     },
-     {
-      "why": "« la cohabitation se construit territoire par territoire, avec ceux qui vivent sur place, et non depuis un bureau parisien ». B is exactly the approach she rejects; C isn’t said."
-     }
-    ]
-   },
-   "R47-2": {
-    "questions": [
-     {
-      "why": "The author takes a first-person stance (« je voudrais rappeler une évidence… parler en public, cela s’apprend ») and argues for teaching speaking skills. A is wrong: he isn’t neutral; C: he doesn’t argue for dropping writing practice."
-     },
-     {
-      "why": "« C’est faux, et cette croyance est injuste », followed by a contrast between children who often discuss issues at home and others. B and C are the opposite or have no basis."
-     },
-     {
-      "why": "A trembling voice is a sign of nerves; the ne in de peur que… ne + subjunctive is expletive and doesn’t negate. A and B misread the sentence."
-     },
-     {
-      "why": "« L’argument n’est pas absurde. Encore faudrait-il reconnaître que… »: a concession, then a condition introduced by Encore faudrait-il (note the subject–verb inversion). A contradicts « n’est pas absurde »; B is wrong: he holds his position."
-     },
-     {
-      "why": "« ce risque se corrige par la formation des enseignants, non par le renoncement ». A is the opposite; C isn’t mentioned."
-     }
-    ]
-   },
-   "R47-3": {
-    "questions": [
-     {
-      "why": "The post ends with a string of questions (« Certains d’entre vous ont-ils réussi à poser des limites… ? ») and « Merci d’avance pour vos retours »: she is asking for advice. B goes too far: she doesn’t even dare tell her manager directly; C: there is no legal information."
-     },
-     {
-      "why": "« Je comprends l’intention, mais être filmée toute la journée… me fatigue énormément »: she first acknowledges the intention, then describes the burden. A and C ignore this concessive structure."
-     },
-     {
-      "why": "« ceux qui coupent leur caméra sont vus comme moins impliqués, et je n’ai pas envie d’être celle qu’on soupçonne de faire autre chose ». A contradicts « la règle n’est écrite nulle part »; B isn’t mentioned."
-     },
-     {
-      "why": "« je crains qu’il ne le prenne comme un manque de motivation, d’autant que je suis encore en période d’essai » (expletive ne). Neither B nor C has any basis in the text."
-     }
-    ]
-   }
-  },
   "listening": {
    "L47-1": {
     "questions": [

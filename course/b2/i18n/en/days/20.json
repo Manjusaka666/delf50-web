@@ -10,50 +10,20 @@
    "R20-1": {
     "questions": [
      {
-      "why": "The article asks « quel mode de transport est vraiment le plus avantageux ? », compares each by distance and urban density, and concludes « Aucun mode de transport n’est donc le meilleur en toutes circonstances ». The author grants that cars are still needed in the suburbs, so B is wrong."
-     },
-     {
-      "why": "« La raison invoquée est presque toujours la même : le sentiment d’insécurité ». The text says cycling is faster at rush hour and ten times cheaper, the opposite of A and C."
-     },
-     {
-      "why": "« plus on construit de routes, plus le trafic augmente », and vice versa (traffic fell after lanes were removed). A is the opposite of “the jams come back a few years later”."
+      "why": "« Sont-ils vraiment meilleurs pour le climat ? » — Plus… plus… = the more… the more…."
      },
      null,
+     null,
      {
-      "why": "The sentence is « d’autant plus efficaces que la ville est dense »; in scattered suburbs, public transport « n’est guère une alternative crédible » (A and C are wrong)."
-     },
-     {
-      "why": "« la moins mauvaise » = not good, but less bad than the alternatives (the lesser of two evils), not an ideal solution (B)."
+      "why": "« D’autant plus lourde qu’elle dispose d’une grande autonomie » — d’autant plus… que = all the more… because."
      }
     ]
    },
    "R20-2": {
     "questions": [
-     {
-      "why": "The author starts from personal experience, criticises the fact that “the more polluting plane is cheaper” and ends by calling for prices to « refléter le coût réel ». She explicitly doesn’t call for banning flights (C is wrong)."
-     },
-     {
-      "why": "« d’autant plus absurde que chacun connaît le bilan […] l’option la plus polluante est […] moins chère que la plus sobre ». She says the train is « à peine plus long », ruling out A."
-     },
-     {
-      "why": "An analogy built with comme si + imparfait: selling what is harmful more cheaply than what is beneficial amounts to encouraging people to choose the harmful option."
-     },
-     {
-      "why": "« Le kérosène […] n’est pas taxé comme l’essence » + low-cost airlines « compensent leurs tarifs dérisoires par […] services payants »."
-     }
-    ]
-   },
-   "R20-3": {
-    "questions": [
-     {
-      "why": "The headline and first paragraph: « Lorvan Mobilités simplifie ses tarifs », and the whole text presents the new fares and services."
-     },
-     {
-      "why": "The single ticket actually goes up (1,60 → 1,80 €) while the monthly pass comes down (42 → 35 €): frequent travellers pay less per journey on average."
-     },
      null,
      {
-      "why": "« Les demandeurs d’emploi bénéficieront […] de la gratuité totale, sur simple présentation d’un justificatif »; the weekend family ticket costs 6 €, and the over-65 pass 20 €."
+      "why": "« J’ai moi-même pesté, les premiers jours, derrière mon volant » — pester = to grumble, to curse."
      }
     ]
    }

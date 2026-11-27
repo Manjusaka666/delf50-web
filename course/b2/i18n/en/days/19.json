@@ -10,43 +10,14 @@
    "R19-1": {
     "questions": [
      {
-      "why": "The article presents in turn the principle of attribution science, its conclusions (certain / fairly certain / uncertain) and its uses. It says explicitly that some conclusions « restent fragiles », so B goes too far; the author doesn’t criticise the models (C)."
-     },
-     null,
-     {
-      "why": "« pour les tempêtes ou les tornades, les conclusions restent fragiles »; the conclusion on heatwaves is « sans appel », and the link with heavy rainfall « solide »."
-     },
-     null,
-     {
-      "why": "« cette nuance passe mal dans le débat public »: some think scientists know nothing, others blame every thunderstorm on the climate — two extremes."
-     },
-     {
-      "why": "« en partie » means “partly”: more and more events will have a contribution from global warming, but it won’t be the only cause. A contradicts “oui”, B contradicts “en partie”."
-     }
-    ]
-   },
-   "R19-2": {
-    "questions": [
-     {
-      "why": "« ce langage prudent n’est pas un défaut de la science, mais sa principale qualité », and the ending argues for teaching everyone to “read uncertainty”."
-     },
-     {
-      "why": "« C’est précisément ce qui la rend digne de confiance : elle peut être corrigée »; C is the opposite of “provisional conclusions”."
+      "why": "« montrerait des signes d’essoufflement » — The conditionals montrerait / indiqueraient mark what is not yet confirmed: “would seem to show”."
      },
      null,
      null,
+     null,
+     null,
      {
-      "why": "« Il appartient plutôt aux médias, et à l’école, d’apprendre à chacun à lire une incertitude »; to C he answers « Sans doute pas »."
-     }
-    ]
-   },
-   "R19-3": {
-    "questions": [
-     {
-      "why": "The layout is « Question de Martine » + « Réponse de Yannick Perrot, botaniste » — an expert answering a reader."
-     },
-     {
-      "why": "« Il est très probable que la hausse des températures moyennes en est la principale cause ». In C, « uniquement » goes too far."
+      "why": "« Il se peut qu’ils aient raison, mais leurs calculs reposent sur des hypothèses très fragiles » — il se peut que + subjunctive = it may be that (uncertainty)."
      }
     ]
    }

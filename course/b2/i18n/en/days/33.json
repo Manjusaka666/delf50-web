@@ -9,58 +9,14 @@
   "reading": {
    "R33-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The question at the end of the first paragraph, « Faut-il y voir une mode passagère ou le signe d’un malaise plus profond ? », is the thread of the whole text; it then analyses causes, effects, and the effects and limits of detox. A: nothing is being sold; C is too definite: the third paragraph says researchers are cautious and causality is unclear."
-     },
-     {
-      "why": "« Ce réflexe n’est pas le fruit du hasard : de nombreuses applications sont conçues pour retenir l’utilisateur ». B contradicts « souvent sans raison précise »; C is the “individual responsibility” view the article questions at the end."
-     },
-     {
-      "why": "The text explains it straight after: « plus nous restons connectés, plus les plateformes vendent d’espaces publicitaires ». A and B both misread économie literally as “saving”."
-     },
-     {
-      "why": "« il est difficile de savoir si les écrans provoquent ces troubles ou si les personnes déjà fragiles s’y réfugient davantage »: the direction of causality is unclear. Neither A nor C is mentioned."
-     },
-     {
-      "why": "« mieux vaut modifier durablement quelques usages… que viser une abstinence totale ». B: he thinks a week without a phone « ne change rien »; C is the “total abstinence” he rejects."
-     },
-     {
-      "why": "Enfin introduces a criticism of the very idea of “detox”, and En définitive shifts the issue to “designing tools that serve us”. A is wrong: the testimonies come earlier; C: there is no ban in the text."
-     }
-    ]
-   },
-   "R33-2": {
-    "questions": [
-     {
-      "why": "« c’est bien la conception des outils qu’il faudrait encadrer » and the ending, « exiger des outils qui ne nous intoxiquent pas ». A is exactly the line the author criticises; B: he only proposes banning “infinite scroll” for minors, not phones."
-     },
-     {
-      "why": "A tired individual will versus design by teams of engineers: « lutter seul contre le courant » is a metaphor for an uneven fight. B is a literal misreading; C is the opposite of what the metaphor means."
-     },
-     {
-      "why": "« D’autre part, et c’est plus grave, il détourne le regard des vrais responsables »; d’une part… d’autre part lists two points, and c’est plus grave marks the more serious one. A and C have no basis."
-     },
-     {
-      "why": "« imposer la ceinture de sécurité… sans pour autant interdire la voiture », used to rebut « la loi ne peut pas tout ». B is the view the author concedes and then overturns; A: no comparison is intended."
-     },
-     {
-      "why": "détox / intoxiquent is a play on words, and the imperative commençons par exiger makes a forceful ending. B and C don’t fit the author’s combative stance."
-     }
-    ]
-   },
-   "R33-3": {
-    "questions": [
-     {
-      "why": "Signed Fabien_P, written in the first person (« un bilan : le voici ») and ending with an invitation to ask questions, it is a parent sharing a group initiative on a forum. B and C don’t fit the genre."
-     },
-     {
-      "why": "« Chaque parent finissait par céder parce que “tous les autres en ont un”… En nous engageant ensemble… personne n’est le seul à dire non ». A isn’t mentioned; C contradicts the fact that his daughter was angry at first."
-     },
-     {
-      "why": "« reconnaît aujourd’hui qu’elle ne se sent pas exclue, puisque ses amies sont dans le même cas ». A: it was two families who dropped out; B contrasts with « au début », showing things have changed."
-     },
-     {
-      "why": "« sans messagerie de groupe, organiser un après-midi au parc demande plusieurs coups de fil ». Neither B nor C is mentioned."
+      "why": "« le refus exige trois manipulations de plus » — la pierre angulaire = the cornerstone."
      }
     ]
    }

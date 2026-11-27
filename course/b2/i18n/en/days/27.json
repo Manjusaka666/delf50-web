@@ -9,61 +9,31 @@
   "reading": {
    "R27-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "It opens by asking « Qu’est-ce qui fait la différence ? », then covers clarity, tone, going digital and why complaints matter. Neither B nor C is the topic."
+      "why": "« j’explique à l’habitant la règle, et à l’administration ce que cette règle produit dans une vie » — le plus clair de mon temps = most of my time."
      },
      {
-      "why": "« une lettre qui expose les faits avec précision… et qui se termine par une demande claire ». A is the opposite of « se limiter à une page »; C isn’t mentioned."
-     },
-     {
-      "why": "« L’agent… n’est généralement pas responsable du problème. Si vous l’insultez, il fera son travail, mais sans zèle ». A is wrong: the letter will still be dealt with; B has no basis."
-     },
-     {
-      "why": "« ne relèvent pas de la flatterie : elles signalent que l’on connaît les usages et que l’on entend faire valoir ses droits sérieusement ». A is directly contradicted; C has no basis."
-     },
-     {
-      "why": "« Les services reçoivent davantage de messages, souvent brefs et peu documentés ». B is the opposite of “complaining has never been easier”; C is wrong: you still need to « compléter par téléphone »."
-     },
-     {
-      "why": "« qu’il ne s’attende pas à ce que tout soit réglé avant même que sa lettre ne soit arrivée » is an exaggeration: don’t expect the problem to be solved at once. A and B are literal misreadings."
+      "why": "« rémunérés par l’organisme même dont ils examinent les décisions » — ne pas manquer de + infinitive = to be bound to (formal)."
      }
     ]
    },
    "R27-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The headline is « Éloge », and the author argues that set formulas mean « c’est poser un cadre », and that « la politesse… c’est souvent elle qui en fait gagner ». A is the view the author rebuts (« L’ironie est facile »); C is only the hook."
+      "why": "« ne supplie pas ; il annonce, calmement, ce qu’il fera » — Je vous saurais gré de… = I should be obliged if… (formal letter formula); faute de quoi = failing which."
      },
+     null,
      {
-      "why": "« il n’avait indiqué ni son numéro de dossier ni le motif de sa demande ». A is the opposite (the email was very short); B isn’t mentioned."
-     },
-     {
-      "why": "« ces formules ne disent pas ce que l’on ressent ; elles disent la manière dont on entend se comporter… j’attends de vous la même chose ». A is contradicted in the text; C has no basis."
-     },
-     {
-      "why": "au risque de = at the risk of, even if it means being seen as…. The author expects to be seen as a “grumpy old fogey” but sticks to his view. B misreads the concession as a cause; C means the opposite."
-     },
-     {
-      "why": "The whole text argues that politeness works, so the closing “probably a coincidence” is ironic, implying it was the politeness that did it. A takes it literally, contradicting the whole text; B has no basis."
-     }
-    ]
-   },
-   "R27-3": {
-    "questions": [
-     {
-      "why": "« Nous nous permettons d’attirer votre attention sur une situation… », asking the mayor to « prendre les dispositions nécessaires ». A goes too far; C doesn’t match the content."
-     },
-     {
-      "why": "« Nous avons signalé ces nuisances à la direction du magasin à deux reprises… Ces démarches sont restées lettre morte ». B and C aren’t mentioned."
-     },
-     {
-      "why": "rester lettre morte = to go unheeded, to have no effect. A is a literal misunderstanding; B has no basis."
-     },
-     {
-      "why": "They ask to « rappeler… les horaires de livraison fixés par l’arrêté municipal » and to organise a three-way meeting. A is wrong: it’s about enforcing the existing rules, not changing them; C isn’t mentioned."
-     },
-     {
-      "why": "« Aussi vous saurions-nous gré » (initial aussi triggering inversion), « Serait-il envisageable » (inversion + conditional), « nous vous prions d’agréer… ». Neither A nor B fits."
+      "why": "« Elle récompense ceux qui ont de nombreux abonnés et le sens de la formule, non ceux qui ont raison » — désigner à la vindicte = to expose someone to public condemnation."
      }
     ]
    }

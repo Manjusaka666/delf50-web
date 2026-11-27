@@ -9,45 +9,28 @@
   "reading": {
    "R23-1": {
     "questions": [
-     {
-      "why": "« La réalité est plus nuancée, et elle mérite d’être examinée point par point », and the whole text assesses each point in turn with d’abord / ensuite / quant à / en définitive. B is too absolute — the author is against “throwing it all out”; C isn’t mentioned."
-     },
-     {
-      "why": "« Sur le second point [individualiser], les résultats sont plutôt encourageants »; as for motivation, « en revanche, l’effet s’est vite dissipé » (A is wrong)."
-     },
-     {
-      "why": "Certes first concedes that “it’s hard to blame school screens for everything”, then Mais argues that schools may still have reinforced fragmented reading — a classic concessive structure."
-     },
      null,
      {
-      "why": "ne… que par = only depends on: a tool’s value depends entirely on how it is used in teaching. B takes valoir to mean price; C over-negates."
+      "why": "« Les performances des élèves en lecture […] ont reculé de manière continue » — D’une part… D’autre part… introduces two parallel arguments."
+     },
+     null,
+     null,
+     {
+      "why": "« elle rend des services que le papier ne peut offrir » — Certes… mais… = admittedly… but… (concession, then objection)."
+     },
+     null,
+     null,
+     {
+      "why": "« on demande à l’école de suivre les modes, alors qu’elle a besoin de stabilité » — En somme = in short (a summarising connector)."
      }
     ]
    },
    "R23-2": {
     "questions": [
-     {
-      "why": "« Plutôt qu’une interdiction, une éducation. » C is wrong: he grants that notifications disrupt lessons and that social media fuel bullying."
-     },
-     {
-      "why": "Certes introduces the ban supporters’ reasons (disrupted lessons, bullying), which Mais then rebuts."
-     },
-     null,
-     {
-      "why": "« ils n’ont pas vocation à jouer les policiers » — it isn’t their job."
-     },
-     {
-      "why": "This is a rhetorical question; the previous sentence, « les adultes devraient être cohérents », shows adults can’t manage it themselves."
-     }
-    ]
-   },
-   "R23-3": {
-    "questions": [
-     null,
      null,
      null,
      {
-      "why": "« Quant aux élèves qui ne disposent pas d’un ordinateur… ils pourront en emprunter un » — a measure addressing unequal access to devices at home."
+      "why": "« personne ne propose d’enseigner la plomberie à tous sous prétexte que l’on manque de plombiers » — En premier lieu / En deuxième lieu / En troisième lieu order the arguments."
      }
     ]
    }

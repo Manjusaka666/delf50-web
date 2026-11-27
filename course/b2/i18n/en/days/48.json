@@ -9,58 +9,24 @@
   "reading": {
    "R48-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "It opens with the question « Mais que valent réellement les résultats… ? » and then analyses four aspects in turn: ancestry, medical prediction, the law and data. B is the opposite of the article’s critical tone; C: hospital advances aren’t discussed."
-     },
-     {
-      "why": "« ces pourcentages dépendent étroitement de la base de comparaison utilisée : deux sociétés peuvent donner des résultats sensiblement différents ». A contradicts « Les frontières nationales… n’ont guère de sens »; B contradicts “noticeably different results”."
-     },
-     {
-      "why": "« dépendent de centaines de variants génétiques et, surtout, du mode de vie ». A wrongly applies the case of rare single-gene diseases to common ones; C isn’t mentioned."
-     },
-     {
-      "why": "Paired with « un résultat normal »: a “normal” result makes people wrongly think they won’t get ill. B describes the first half of the sentence (needless worry); C is the topic of data security in paragraph 5, unrelated here."
-     },
-     {
-      "why": "« Les consommateurs ne s’en procurent pas moins des kits commandés à l’étranger, si bien que la loi est largement contournée » (ne… pas moins = all the same, nonetheless). A misreads “medical framework”; B contradicts “they can still get them”."
-     },
-     {
-      "why": "« mieux vaudrait donc lire les conditions d’utilisation » is a reminder and a warning to readers. A doesn’t fit the descriptions of data being resold and hacked; C is wrong: the author gives practical advice."
+      "why": "« avait en réalité appris à identifier l’hôpital d’où provenait l’image » — The model learned a shortcut (which hospital), not the disease itself."
      }
     ]
    },
    "R48-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« mon ADN n’est pas seulement le mien » and « reconnaître enfin la dimension collective de l’information génétique ». A is wrong: « Il ne s’agit pas d’interdire »; C is wrong: she admits « ces bases rendent aussi des services »."
-     },
-     {
-      "why": "« a l’apparence de » = looks like; it is followed straight away by « Il repose pourtant sur une erreur de fond », showing it is only superficially reasonable. B isn’t in the text; C is the opposite of « erreur de fond »."
-     },
-     {
-      "why": "« une cousine qui n’a jamais rien envoyé à personne peut ainsi se retrouver identifiable… parce que trois de ses proches l’ont fait ». A and B have nothing to do with the purpose of this example."
-     },
-     {
-      "why": "« Je ne le nie pas. Mais… ne dispense pas de s’interroger sur ses coûts »: concede, then hold firm. A is wrong: she doesn’t give up her position; C contradicts « Je ne le nie pas »."
-     },
-     {
-      "why": "Paragraph 4: inform people of the impact on relatives, ban resale without explicit consent, and allow permanent deletion on request. A isn’t mentioned; B is wrong: deletion can be requested (« puisse exiger »), it isn’t automatic."
-     }
-    ]
-   },
-   "R48-3": {
-    "questions": [
-     {
-      "why": "He describes the good side (« Patrick est aujourd’hui un ami précieux ») and the bad side (damaged family relationships). He explicitly rules out A (« pas que mon témoignage passe pour une publicité »); B: the letter asks no questions."
-     },
-     {
-      "why": "« j’ai découvert un demi-frère dont j’ignorais l’existence ». B is what he originally expected (« Je m’attendais à… »), not the result; C isn’t mentioned."
-     },
-     {
-      "why": "digérer is used figuratively here, “to come to terms with (something unpleasant)”, confirmed by « les relations familiales en ont été durablement abîmées ». A contradicts the sentence; C misreads digérer literally."
-     },
-     {
-      "why": "« présenter ces tests comme un jeu. Si l’on m’avait prévenu… j’aurais au moins pu m’y préparer » (the past conditional expresses regret). Neither A nor C is mentioned in the letter."
+      "why": "« c’est ce qui permet aux idées neuves d’avoir leur chance » — The quotation means new ideas prevail through generational turnover; the author extends it from science to society as a whole."
      }
     ]
    }

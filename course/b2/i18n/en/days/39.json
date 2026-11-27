@@ -9,58 +9,24 @@
   "reading": {
    "R39-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The article gives sleep-deprivation data first (paragraph 1), then consequences (paragraph 2), causes (paragraph 3), remedies (paragraph 4) and obstacles (paragraph 5). Neither A nor C is covered."
-     },
-     {
-      "why": "« À court terme, la concentration baisse… si bien que les erreurs se multiplient ». B is a “long-term” risk; C is the opposite of « l’humeur se dégrade »."
-     },
-     {
-      "why": "« refuse qu’on en fasse le seul bouc émissaire : « Il faut que l’on regarde aussi l’organisation du travail » ». A is exactly what she objects to; B: she doesn’t deny that screens have an effect."
-     },
-     {
-      "why": "The day is taken up by work and commuting, so the evening is the only time “that belongs to them”, which is why they don’t want to go to bed early. A is the opposite of the context; C reads appartenir too literally."
-     },
-     {
-      "why": "« autorisent de courtes siestes… au point que des salles de repos font leur apparition dans les bureaux ». B and C aren’t mentioned, and C even contradicts the text."
-     },
-     {
-      "why": "« dormir peu passe encore pour une preuve d’énergie, voire de réussite. Tant que cette idée persistera, il est peu probable que les comportements changent ». Neither A nor B is mentioned."
+      "why": "« les postes de président et de trésorier ne trouvent plus preneurs » — une tâche ingrate = a thankless task."
      }
     ]
    },
    "R39-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« Je souhaite simplement qu’on les présente autrement… », ending with « Il est temps que l’on cesse de confondre… ». A is explicitly rejected: « Je ne demande pas qu’on cache les résultats »; C goes against the whole text’s position."
-     },
-     {
-      "why": "« ils mesurent surtout le profil des élèves qui entrent dans un lycée, et non ce que le lycée leur apporte ». Neither B nor C is mentioned."
-     },
-     {
-      "why": "« Je ne doute pas que cette demande soit légitime. Mais je doute fort qu’un rang dans un tableau les informe vraiment »: a partial concession followed by a rebuttal (note douter que + subjunctive). A: he doesn’t fully accept it; B: he explicitly quotes the other side’s argument."
-     },
-     {
-      "why": "« si bien que les écarts se creusent d’année en année » (si bien que introduces a result). Neither A nor C is mentioned."
-     },
-     {
-      "why": "« Il est temps que l’on cesse de… » is a clear call to action, and it describes the benefits of reform: the tone argues for change. There is no resignation (A) and no irony (B)."
-     }
-    ]
-   },
-   "R39-3": {
-    "questions": [
-     {
-      "why": "« Je voulais partager une belle découverte », ending with a suggestion that readers donate their unused tools: she is recommending the tool library. Neither B nor C is why she is writing."
-     },
-     {
-      "why": "« J’avais peur qu’on me prenne pour une incapable, car je n’avais jamais tenu une perceuse » (avoir peur que + subjunctive). A: the annual fee is only twenty francs; C isn’t mentioned."
-     },
-     {
-      "why": "« certains outils très demandés, comme la ponceuse, sont réservés des semaines à l’avance ». A contradicts the help from a “former carpenter”; B contradicts « chacun rapporte l’outil propre et vérifié »."
-     },
-     {
-      "why": "« Si vous en avez une qui dort dans un placard, pensez à la donner : elle sera bien plus utile là-bas »; là-bas refers to the tool library. Neither A nor C is mentioned."
+      "why": "« celui-là ne rend pas créatif, il détruit » — fécond = fruitful."
      }
     ]
    }

@@ -9,58 +9,11 @@
   "reading": {
    "R32-1": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "The article covers, in turn, the scale (survey data), who is affected, possible causes, consequences and responses: it is an analytical report. A: there are no personal testimonies; C: the author gives no advice to parents."
-     },
-     {
-      "why": "« de nombreux jeunes diplômés, pourtant en poste, reviennent eux aussi, le temps d’économiser… » (pourtant marks an unexpected contrast). B contradicts « ne concernent pas seulement des jeunes en difficulté »; C has no basis."
-     },
-     {
-      "why": "« avancent plusieurs hypothèses, sans qu’aucune ne s’impose clairement », followed by the conditionals rendrait / aurait retardé / pourrait rendre, marking them as unconfirmed. A ignores the speculative tone; B isn’t mentioned."
-     },
-     {
-      "why": "« Il est probable que ces facteurs se combinent… il serait imprudent de désigner un coupable unique ». A is exactly the “single culprit” she rejects; C is too absolute."
-     },
-     {
-      "why": "avoir beau + infinitive = however much…, (to no avail), equivalent to bien que + subjunctive, followed by « leur portée reste limitée ». A expresses cause and C purpose, so both get the logical link wrong."
-     },
-     {
-      "why": "« ne sera vraiment compris que lorsqu’on cessera d’y voir une affaire privée… pour le considérer comme une question de politique du logement ». B is precisely the “private family matter” view being rejected; C isn’t mentioned."
-     }
-    ]
-   },
-   "R32-2": {
-    "questions": [
-     {
-      "why": "The whole column mocks “scheduled friendliness” ironically and contrasts it with the closure of the post office and the library. A ignores the satire; B contradicts the last paragraph, « J’irai quand même à la fête »."
-     },
-     {
-      "why": "The « temps d’échange libre » is actually scheduled for 20:00: “free time on a timetable” is ironic, mocking how contrived and artificial the event is. B takes it literally and misses the tone; C isn’t in the text."
-     },
-     {
-      "why": "This is the classic rhetorical move of “disclaim first, then criticise”, followed straight away by « Mais je ne peux m’empêcher de remarquer que… », pointing out that the post office and library were closed. A: no earlier article is mentioned; C goes against the text’s whole position."
-     },
-     {
-      "why": "« Il naît de la répétition : croiser chaque matin la même personne… échanger trois mots avec le pharmacien ». A and B are exactly the “made-to-order” methods the author doubts (« sans affiche ni animateur »)."
-     },
-     {
-      "why": "The previous sentence, « Rien de spectaculaire, rien de photographiable pour le bulletin municipal »: everyday ties “don’t make good publicity photos”, implying the town cares more about events it can show off. A contradicts the strangers talking every day in the text; C is a literal misreading."
-     }
-    ]
-   },
-   "R32-3": {
-    "questions": [
-     {
-      "why": "She says « je ne le regrette pas un instant » and ends with « oui à l’entraide entre générations, mais sans naïveté »: supportive, but adding a correction. B contradicts her satisfaction; C: she already has a year’s experience and isn’t asking for advice."
-     },
-     {
-      "why": "conte de fées here is a metaphor for a “flawless story”; she then mentions the need for rules and early friction. A is too negative and contradicts her satisfaction; B has no basis."
-     },
-     {
-      "why": "« Votre journaliste semble croire que tout repose sur la bonne entente. Or la cohabitation entre adultes exige des règles claires ». semble croire is a tactful criticism. A is the opposite; C isn’t mentioned."
-     },
-     {
-      "why": "« Mon fils paie une partie des courses, cherche activement un logement et vit ce retour comme une étape, non comme un refuge ». A contradicts the facts; B isn’t mentioned."
+      "why": "« Si elle a envie de parler, je regarde ma montre » — The implication: she chose this job to care for people, not to work against the clock."
      }
     ]
    }

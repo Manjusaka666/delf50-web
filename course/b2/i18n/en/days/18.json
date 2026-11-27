@@ -9,50 +9,32 @@
   "reading": {
    "R18-1": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "The headline and the end of the first paragraph, « jusqu’au jour où ils veulent en sortir », give the topic: how hard it is to cancel. Price rises aren’t mentioned; the “convenience” of subscriptions is only the set-up."
+      "why": "« On m’a demandé de confirmer cinq fois » — The pronoun y refers to à la résiliation: what she gave up was cancelling, said with self-mockery."
      },
+     null,
+     null,
      {
-      "why": "« D’abord parce qu’on les oublie […] Mais aussi parce que certaines entreprises font tout pour qu’on n’y parvienne pas » (y = managing to cancel). A and C aren’t mentioned."
-     },
-     {
-      "why": "The text explains straight after: « des interfaces conçues pour décourager le client sans jamais le lui dire » (le lui = telling him so). It is deliberate design, not a technical error (B)."
-     },
-     {
-      "why": "« Un progrès réel, reconnaissent les associations, qui en attendent toutefois les effets concrets »: positive, but cautious."
-     },
-     {
-      "why": "« noter quelque part la date de fin de chaque période d’essai gratuite ». It doesn’t advise refusing trials (A)."
+      "why": "« leur application laisse à désirer » — laisser à désirer = to leave much to be desired."
      }
     ]
    },
    "R18-2": {
     "questions": [
-     {
-      "why": "The ending: « Exigeons qu’un interlocuteur humain soit joignable ». The author grants that automated tools are useful and doesn’t call for a ban (A is wrong)."
-     },
-     {
-      "why": "« Le service client, autrefois argument commercial, est devenu […] un coût à réduire ». The music is just a detail; the “FAQ” is exactly what is criticised (C is the opposite)."
-     },
-     {
-      "why": "« Je ne conteste pas l’utilité des outils automatiques. Pour suivre un colis ou modifier une adresse… », and he says many customers « s’en contentent », ruling out A and B."
-     }
-    ]
-   },
-   "R18-3": {
-    "questions": [
-     {
-      "why": "« procède au rappel » + a series of instructions (ne l’utilisez plus, rapportez-la…): it is a recall notice."
-     },
-     {
-      "why": "« Si vous en possédez une, ne l’utilisez plus et débranchez-la » (pronoun position in negative and affirmative imperatives)."
-     },
      null,
      {
-      "why": "The masculine singular noun in the previous sentence is « le numéro de série »; the pronoun le refers to it."
+      "why": "« Le lendemain, la même entreprise m’adressait une enquête de satisfaction » — Je la lui ai retournée: la = l’enquête, lui = à l’entreprise (double object pronouns)."
+     },
+     null,
+     null,
+     {
+      "why": "« la porte est fermée, puisqu’il n’y a plus de guichet » — réfractaire = resistant, unwilling."
      },
      {
-      "why": "« un bon de retour gratuit vous sera envoyé par courriel, et le remboursement vous parviendra sous quinze jours », so the refund isn’t immediate (C)."
+      "why": "« Je n’en disconviens pas pour les opérations simples » — ne pas disconvenir de = not to deny."
      }
     ]
    }

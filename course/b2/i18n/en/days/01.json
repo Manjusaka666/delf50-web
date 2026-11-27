@@ -10,60 +10,56 @@
    "R01-1": {
     "questions": [
      {
-      "why": "The whole article follows Clara’s experience, covering both how going abroad changed her (« m’ont appris à douter de mes certitudes ») and, above all, how hard coming back was (« Le retour, pourtant, se révèle souvent plus délicat que le départ »). B: the text never encourages “settling for good”; C is only the background to Clara’s departure, not the main idea."
+      "why": "« le retour est plus éprouvant que le départ » — The article is about returning being harder than leaving, not about reasons or benefits of going abroad."
      },
      {
-      "why": "The text says: « Je m’étais dit que je partirais six mois, le temps de réfléchir ». A contradicts « elle n’avait jamais vécu plus de trois semaines loin de sa famille »; C is wrong because the “three years” was the outcome (« Elle est finalement restée trois ans »), not a contract signed in advance."
+      "why": "« lui semblait une formalité » — une formalité = a mere formality, something effortless."
      },
      {
-      "why": "The text contrasts the past, « on partait surtout pour apprendre une langue ou pour enrichir son CV », with today, « le besoin de se tester » — more personal motives. A describes exactly the situation twenty years ago; B: the text doesn’t compare lengths of stay."
+      "why": "« Celui qui revient croit retrouver un monde familier » — Those who leave are prepared; those who return expect everything to be as before and are caught off guard."
      },
      {
-      "why": "gravir les échelons means climbing the career ladder rung by rung, contrasted here with Clara’s job-hunting setbacks. Neither B nor C matches the “climbing the ladder” metaphor."
+      "why": "« a dû demander à son père de se porter garant pour son logement » — se porter garant = to stand as guarantor."
      },
+     null,
+     null,
      {
-      "why": "The text says: « son entourage, lui, s’attend à retrouver la même personne… ce décalage est rarement anticipé ». A and C aren’t mentioned at all — they are invented."
-     },
-     {
-      "why": "The third paragraph describes Clara’s repeated failures (« elle a enchaîné les candidatures sans succès »), and the last the turning point (« le déclic est venu d’une rencontre »). B overgeneralises: only one project manager understood her; A: the text doesn’t say she was poorly prepared."
+      "why": "« celui d’une vie plus intense » — un deuil = mourning, the grief of a loss."
      }
     ]
    },
    "R01-2": {
     "questions": [
      {
-      "why": "The author states his position clearly: « Je voudrais ici prendre la défense de ceux qui sont restés ». A is wrong: the author is precisely someone who didn’t go abroad; C is wrong: « je ne prétends pas que partir soit inutile » — he isn’t against going abroad."
+      "why": "« interroger cette évidence » — The author does not deny the value of travel; he questions the consensus that it is a must."
      },
      {
-      "why": "The text says: « parce que ma mère était malade et que l’entreprise familiale avait besoin de bras ». B isn’t mentioned; C doesn’t match the text, which says his classmates left as soon as they had the baccalauréat."
+      "why": "« écarter d’emblée les candidatures « trop hexagonales » » — l’Hexagone = mainland France; hexagonal means confined to France."
      },
      {
-      "why": "pitié means “pity”, and polie shows it was courteous on the surface and left unsaid, echoing « comme si j’avais raté un train » later. A is the opposite of pity; B contradicts polie (polite, reserved)."
+      "why": "« ceux qui partent ne ressemblent pas à ceux qui restent » — A classic selection bias: one cannot tell whether success comes from the stay or from background and grades."
      },
+     null,
      {
-      "why": "The text says: « ériger la mobilité en modèle unique revient à mépriser ceux qui n’ont ni les moyens ni la possibilité de s’en aller », backed by a survey: nearly half of rural young people feel “left behind”. A isn’t in the text; C contradicts the survey."
+      "why": "« on transforme donc un avantage de naissance en mérite personnel » — habiller en vertu = to dress up as a virtue."
      },
+     null,
      {
-      "why": "« L’aventure n’est pas une affaire de kilomètres » denies that distance matters, and « un choix difficile… où l’on s’y tient » stresses the courage to stick to a choice. A and B both contradict the denial in the first sentence."
+      "why": "« La distance ne se mesure pas en kilomètres » — l’altérité = otherness, people and worlds unlike one’s own."
      }
     ]
    },
    "R01-3": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "She is responding to the paper’s feature (« Votre dossier… m’a rappelé ma propre expérience ») and points out that it left out one side: learning to be alone. B is wrong: she has already been; C: the letter doesn’t complain about working conditions."
+      "why": "« j’y aurais perdu de l’argent » — She did the sums: after rent and childcare, a 30% higher salary would have left her worse off."
      },
+     null,
      {
-      "why": "The plus-que-parfait describes what happened before she left: « J’avais économisé pendant un an et j’avais tout organisé ». A says the opposite; C has no basis — she was clearly not used to the extreme cold."
-     },
-     {
-      "why": "faillir + infinitive = to nearly do something (but not actually do it). A is wrong in saying she “had already bought” it; B means wanting to buy but being unable to, which has nothing to do with faillir."
-     },
-     {
-      "why": "The text says: « m’a convaincue de rester… Donne-toi jusqu’au printemps. », i.e. persuaded her to hold on a little longer. B: her job had been arranged before she left; C isn’t in the text."
-     },
-     {
-      "why": "The text says: « votre dossier ne parlait que de réussites professionnelles ». A isn’t mentioned; C has no basis either."
+      "why": "« je n’accepte pas le discours qui présente ceux qui restent comme des gens sans ambition » — Solveig also defends staying, but the refusal to look down on those who stay is voiced by Maxence."
      }
     ]
    }

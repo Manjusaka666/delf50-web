@@ -7,60 +7,13 @@
  "challenge": "Today’s challenge: pick a long programme you’re interested in (10+ minutes) on TV5MONDE or RFI and, afterwards, write an 80-word mini-synthèse with no personal opinion, as your first exercise towards DALF C1; then write a 3-sentence message in French to yourself a year from now.",
  "items": {
   "reading": {
-   "R50-1": {
-    "questions": [
-     {
-      "why": "It opens with the question « Mais qu’en dit réellement la recherche ? », then reviews the early studies, later doubts and the current consensus. A isn’t the main aim (the author is cautious about “cognitive benefits”); C: the text gives no learning methods."
-     },
-     {
-      "why": "« un bilingue doit sans cesse sélectionner une langue et inhiber l’autre, ce qui entraînerait en permanence ses fonctions de contrôle ». B is a confounding factor raised by later researchers, not the early explanation; C isn’t mentioned."
-     },
-     {
-      "why": "The text goes on to say that larger studies « n’ont pas retrouvé ces différences, ou seulement de manière très faible », i.e. the conclusions are no longer so clear-cut. A is wrong: research is ongoing; B is the opposite."
-     },
-     {
-      "why": "« les études concluant à un avantage auraient plus de chances d’être publiées que celles qui ne trouvent rien ». Neither A nor C is mentioned."
-     },
-     {
-      "why": "« certaines observations suggèrent… un peu plus tard… même si ce résultat reste débattu ». B exaggerates (« un peu plus tard », not “prevents entirely”); C contradicts « certaines observations suggèrent »."
-     },
-     {
-      "why": "« on oublierait presque l’essentiel : une langue est d’abord une porte ouverte sur d’autres manières de penser… ». A has no basis; B contradicts the text’s cautious conclusion."
-     }
-    ]
-   },
    "R50-2": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "« la peur de l’erreur fait plus de dégâts que l’erreur elle-même »: the whole text develops this idea. B goes against « une faute… coûte rarement cher »; C distorts the opening example."
-     },
-     {
-      "why": "« chaque conversation évitée est une occasion d’apprendre qui ne reviendra pas ». A isn’t mentioned; B is the opposite of “spoken mistakes cost little”."
-     },
-     {
-      "why": "« Certaines erreurs méritent qu’on s’y attarde… Mais il faut les distinguer des petites imperfections ». A is the opposite of “distinguishing”; C is wrong: she only notes in passing that native speakers make small mistakes too (soit dit en passant), without criticising them."
-     },
-     {
-      "why": "« notez vos erreurs récurrentes dans un carnet, travaillez-les à tête reposée, et, le reste du temps, parlez ». A and B are the opposite."
-     },
-     {
-      "why": "« Il évalue votre capacité à vous faire comprendre, à argumenter, à vous corriger »; B contradicts « n’attend pas de vous un français parfait »; C isn’t mentioned."
-     }
-    ]
-   },
-   "R50-3": {
-    "questions": [
-     {
-      "why": "The document explains how admission slips are sent, arrival times, ID, banned items, publication of results and procedures for absence: it is all about organisation and rules. A only names the exam papers without describing them; B isn’t mentioned."
-     },
-     {
-      "why": "« l’épreuve orale individuelle, qui peut avoir lieu à une date différente ». B isn’t mentioned; C contradicts « individuelle »."
-     },
-     {
-      "why": "« Aucun candidat ne sera admis dans la salle après le début de l’épreuve de compréhension de l’oral ». Neither A nor C is a rule."
-     },
-     {
-      "why": "« doivent transmettre un certificat dans les cinq jours suivant l’examen ». Neither A nor B is mentioned."
+      "why": "« les archives de la justice montrent qu’ils se surveillaient aussi beaucoup » — Irony: the other side of “people talked to each other” was mutual surveillance and denunciation."
      }
     ]
    }
