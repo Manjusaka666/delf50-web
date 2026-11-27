@@ -9,53 +9,62 @@
   "reading": {
    "R03-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« Vous devez arriver dix minutes avant et apporter votre carte Vitale » is the only requirement for turning up. The lab is only for blood tests, and cheques are explicitly not accepted."
-     },
-     {
-      "why": "« ne fait plus » corresponds directly to the service that has stopped; Thursday at 15 h 40 is precisely the time of this appointment."
-     },
-     {
-      "why": "la veille means the day before the appointment: the appointment is on jeudi, so the day before is mercredi. This question tests working out veille."
+      "why": "« Les réparations courantes (freins, roues, vitesses) sont faites dans les 48 heures » — Cycles Martin fails only on the waiting time (a week)."
      }
     ]
    },
    "R03-2": {
     "questions": [
      {
-      "why": "The only thing the text excludes is the facture de téléphone portable; the other two meet the requirement of “proof of address less than three months old”."
+      "why": "« Depuis le 1er mars, il est définitivement fermé » — Three mornings a week was the situation before the closure."
      },
+     null,
+     null,
      {
-      "why": "« mais elles doivent payer » is the only extra condition for non-residents."
+      "why": "« Ça me fait venir du monde » — She finds the 350-euro allowance insufficient and says she is not trained."
      },
+     null,
+     null,
+     null,
      {
-      "why": "« La carte est remise tout de suite » and « vous ne devez pas revenir un autre jour » confirm each other; trois mois is about how long the proof documents are valid."
+      "why": "« Les bénévoles ne peuvent pas remplacer un service public » — se féliciter de = to be pleased with; yet he refuses to see it as a lasting solution."
      }
     ]
    },
    "R03-3": {
     "questions": [
+     null,
      {
-      "why": "« nous n'ouvrons plus le lundi matin » — Monday afternoon 14 h–19 h is still open, and Saturday is as usual."
+      "why": "« avoir déjà quitté un magasin sans rien acheter parce qu’elles n’avaient trouvé personne pour les renseigner » — faute de = for lack of."
      },
      {
-      "why": "« Nous ne gardons pas les vêtements plus longtemps »; the ID is required if you lose your collection slip, which has nothing to do with the time limit."
+      "why": "« pour obtenir ce qu’Internet ne lui donne pas : un conseil, une démonstration » — Wanting speed is precisely what he admits he wrongly believed (Nous avons cru que…)."
      },
+     null,
+     null,
      {
-      "why": "« nous ne rendons rien sans vérification » is an explicit negative, ruling out the third option."
-     }
-    ]
-   },
-   "R03-4": {
-    "questions": [
-     {
-      "why": "« le formulaire n'est pas signé » is the only reason given in the letter."
+      "why": "« un métier, cela s’apprend et cela se paie » — She does not oppose the return of advice (Très bien); she objects to one-day training and inadequate pay."
      },
+     null,
      {
-      "why": "The text gives two methods; courriel is explicitly ruled out; « obligatoirement » contradicts “or by post”."
-     },
-     {
-      "why": "« Vous ne devez pas refaire toute la demande » — note that ne pas devoir means “you don’t have to”, not “you mustn’t”."
+      "why": "« les démissions y ont été divisées par deux » — What was halved is the number of resignations, not the number of staff."
      }
     ]
    }

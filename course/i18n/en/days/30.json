@@ -6,28 +6,6 @@
  "checkpoint": "Grammar errors in the combined task sorted into tense/agreement/pronoun/logic; a retest of high-frequency structures reaches a steady level.",
  "challenge": "Today’s challenge: take 15 minutes for a small real task: write a message to a friend about 3 things you did yesterday (watch past participle agreement, e.g. les photos que j’ai prises), use 1 double pronoun (je te les envoie), then suggest a plan for the weekend and ask them to reply.",
  "items": {
-  "reading": {
-   "R30-1": {
-    "questions": [
-     {
-      "why": "68% claim they changed their shopping habits, but the flow of money shows most people still spend it in shops they already went to."
-     },
-     null,
-     null,
-     {
-      "why": "Some shopkeepers see their benefit as indirect and hard to measure, so they oppose paying a contribution."
-     }
-    ]
-   },
-   "R30-2": {
-    "questions": [
-     null,
-     {
-      "why": "61% is the share of vehicles with visual announcements, not the share of journeys that are possible."
-     }
-    ]
-   }
-  },
   "listening": {
    "L30-1": {
     "questions": [

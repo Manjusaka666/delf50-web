@@ -9,46 +9,24 @@
   "reading": {
    "R12-1": {
     "questions": [
-     {
-      "why": "« des producteurs installés à moins de quatre-vingts kilomètres ». Cash only applies to two stalls, and pre-ordering only to meat and cheese."
-     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "« Apportez-en : les producteurs n'en fournissent plus depuis l'an dernier » — en refers to des contenants."
-     }
-    ]
-   },
-   "R12-2": {
-    "questions": [
-     {
-      "why": "Two out of five subscribers throw some vegetables away. A is the cheapest, collected from a pickup point."
-     },
-     {
-      "why": "C’s contents are fixed too; the difference is that it comes with recipes. Choosing is B’s feature."
-     }
-    ]
-   },
-   "R12-3": {
-    "questions": [
-     {
-      "why": "About thirty kilos in total, of which a third (about ten kilos) is unopened."
-     },
-     {
-      "why": "After « À consommer jusqu'au » you can’t eat it (safety); « de préférence avant le » only means the quality declines."
-     },
-     {
-      "why": "« en jettent près de moitié moins » — it’s about the amount thrown away, not the budget."
-     }
-    ]
-   },
-   "R12-4": {
-    "questions": [
-     {
-      "why": "« Aujourd'hui, on pouvait encore le faire la veille ; ce ne sera plus possible ». The vegetarian dish is new, and the office can still handle bookings."
-     },
-     null,
-     {
-      "why": "The first six bands stay the same; the last two go up by 15 centimes."
+      "why": "« sans obligation d’achat chaque semaine » — No order, no charge: holidays are covered automatically."
      }
     ]
    }

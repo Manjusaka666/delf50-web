@@ -6,30 +6,6 @@
  "checkpoint": "Can describe the routine for all four papers, your personal top 3 risks and how you will handle them.",
  "challenge": "Today’s challenge (light, nothing new): listen to a story that interests you in RFI’s « Journal en français facile », retell it aloud in 1 minute and add one sentence of your own view; then look through your personal error rules and chunk list, reading only, not studying. Finally write 3 sentences in French on how you plan to keep learning after the exam (e.g. Chaque matin, j'écouterai dix minutes de RFI.).",
  "items": {
-  "reading": {
-   "R50-2": {
-    "questions": [
-     {
-      "why": "The exercises with ready-made questions are the TV5MONDE ones."
-     },
-     null,
-     {
-      "why": "The task for the second of the three listenings."
-     }
-    ]
-   },
-   "R50-4": {
-    "questions": [
-     null,
-     {
-      "why": "She still understood everything but couldn’t speak."
-     },
-     {
-      "why": "« j'étais moins bonne en français que la plupart des bénévoles »: it was precisely this situation that led to learning."
-     }
-    ]
-   }
-  },
   "listening": {
    "L50-4": {
     "questions": [

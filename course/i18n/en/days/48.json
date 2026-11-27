@@ -6,18 +6,6 @@
  "checkpoint": "Each error has a closed loop: “error → rule → correct example → new example”.",
  "challenge": "Today’s challenge: sort out your Error Book: rank the top 5 errors by frequency, turn each into an actionable “personal rule” (e.g. « Après si, jamais de conditionnel ») with a French chunk you can reuse as is; then do 5 matching exercises for each at Le Point du FLE to check whether the rule really helps you avoid the error.",
  "items": {
-  "reading": {
-   "R48-4": {
-    "questions": [
-     {
-      "why": "The text makes this difference in purpose explicit."
-     },
-     {
-      "why": "It is put in the “useless” category."
-     }
-    ]
-   }
-  },
   "listening": {
    "L48-2": {
     "questions": [

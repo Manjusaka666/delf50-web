@@ -5,29 +5,7 @@
  "output": "Record each round; in the second round, the other person changes attitude.",
  "checkpoint": "Must include an active opening, at least 1 answer to an objection and an alternative solution.",
  "challenge": "Today’s challenge: find a “negotiating / problem-solving” dialogue on TV5MONDE Apprendre B1 or RFI and pick out 3 polite requests (e.g. Est-ce que vous pourriez… / Si c'était possible, j'aimerais…); then do a 3-minute role-play with a friend or your phone: returning an item bought online, using at least 1 si + imparfait → conditionnel and 1 double object pronoun (je vous le renvoie, vous me les remboursez).",
- "items": {
-  "reading": {
-   "R38-2": {
-    "questions": [
-     null,
-     null,
-     {
-      "why": "Examples: cutting down trees vs leaves blocking gutters and winter light."
-     }
-    ]
-   },
-   "R38-3": {
-    "questions": [
-     null,
-     null,
-     null,
-     {
-      "why": "The ending quotes her own words."
-     }
-    ]
-   }
-  }
- },
+ "items": {},
  "vocab": {
   "V38-01": {
    "zh": "I’m well aware that …",

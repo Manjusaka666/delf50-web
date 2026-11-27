@@ -188,5 +188,27 @@
   }
  },
  "title": "Mock 4: close to the real exam",
- "phase": "Mock exams and repair"
+ "phase": "Mock exams and repair",
+ "items": {
+  "reading": {
+   "R47-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« 135 euros la nuit pour deux » — The criterion caps the price of the night for two; dinner is charged separately and does not affect it."
+     }
+    ]
+   }
+  }
+ }
 }

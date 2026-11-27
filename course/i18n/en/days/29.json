@@ -7,11 +7,14 @@
  "challenge": "Today’s challenge: on RFI’s Journal en français facile, listen twice to a news item of about 1 minute: the first time write only the main idea, the second time note numbers, places and requests; then write 3 sentences in reported speech (On annonce que… / On demande aux gens de…), watching how you use à / de.",
  "items": {
   "reading": {
-   "R29-1": {
+   "R29-2": {
     "questions": [
      null,
+     null,
+     null,
+     null,
      {
-      "why": "On the first listening, listen for “who to whom, where, why”; connectors are for the second."
+      "why": "« J’ai refusé » — faillir + infinitive = to almost do (but not)."
      }
     ]
    }

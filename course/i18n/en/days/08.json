@@ -9,53 +9,50 @@
   "reading": {
    "R08-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The imparfait « il fonctionnait normalement » describes the ongoing state the day before, showing the breakdown was sudden. Neither the weather nor how long the repairman took is evidence that it was foreseeable."
-     },
-     {
-      "why": "« attendait assise sur une chaise » — the imparfait gives a background action going on during the repair. The one who phoned was the narrator."
-     },
-     {
-      "why": "At the end she proposes putting up the emergency repair number on every floor. The circuit board has already been replaced; the chair was a stopgap on the day, not her proposal."
+      "why": "« vous connaissez le prix dès votre appel » — SOS Plomberie 24 only gives a price on site, which is exactly what you want to avoid."
      }
     ]
    },
    "R08-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "First a one-hour delay, meal vouchers at noon, then at 15 the departure is announced for the next day — getting steadily worse. There is no cancellation and no luggage problem in the text."
-     },
-     {
-      "why": "« Ce qui m'a le plus surprise, ce n'est pas le retard lui-même : c'est que personne ne savait quoi nous dire. » explicitly rules out the length of the wait itself."
-     },
-     {
-      "why": "Scheduled for 6 h 40, it actually left at 7 h 10 the next day — 24 and a half hours later. The twelve hours in the headline is the wait at the airport, not the total delay."
+      "why": "« ce n’est pas un chèque, c’est un réseau entretenu » — dérisoire = paltry; but she stresses that money is not the point."
      }
     ]
    },
    "R08-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The direct cause of the braking was the van pulling out. The slippery road is the background (imparfait), and the parked cars are a long-standing problem residents raised."
-     },
-     {
-      "why": "« elle portait un casque et n'a pas été blessée ». The mirror hasn’t been installed yet; the driver stopping happened after the fall."
-     },
-     {
-      "why": "The ending only says braking distance doubles on a wet road. The other two options move the “doubling” onto things the text never mentions."
-     }
-    ]
-   },
-   "R08-4": {
-    "questions": [
-     {
-      "why": "From 19 h 20 to 22 h 40, about three hours twenty minutes. One hour is the threshold they want to trigger a notification; the repair was finished that night, but the power cut didn’t last all night."
-     },
-     {
-      "why": "The text says câble endommagé pendant des travaux de voirie. Cooking is what residents were doing when the power went, not the cause."
-     },
-     {
-      "why": "One of the two demands is a text message when it lasts more than an hour. Working at night is how this repair was done, not a demand."
+      "why": "« sont vendus aux enchères, et l’argent revient à l’État » — What goes to charities is clothes and glasses."
      }
     ]
    }

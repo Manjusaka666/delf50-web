@@ -6,43 +6,6 @@
  "checkpoint": "Your output follows opinion → reason → example → turn → conclusion.",
  "challenge": "Today’s challenge: on “Do smartphones make us lonelier?”, write a 5-sentence opinion: take a position, give an example from your own life, bring in the opposite view with mais / pourtant / même si, and end with a balanced conclusion; then record yourself for 2 minutes.",
  "items": {
-  "reading": {
-   "R17-1": {
-    "questions": [
-     {
-      "why": "« il tourne toujours autour de la même question : combien d'heures ? C'est précisément là qu'il se trompe ». The author doesn’t deny the effect on sleep."
-     },
-     {
-      "why": "The example illustrates « les compter ensemble n'a pas de sens »."
-     },
-     {
-      "why": "« Cela ne signifie pas qu'il ne faut aucune règle » — what he opposes is rules based only on time."
-     }
-    ]
-   },
-   "R17-2": {
-    "questions": [
-     null,
-     {
-      "why": "The example is four people living in forty square metres: the real conditions for télétravail are unequal."
-     }
-    ]
-   },
-   "R17-3": {
-    "questions": [
-     {
-      "why": "The number of jobs is falling, but the main point is that the work has changed: more technical, more mentally tiring."
-     }
-    ]
-   },
-   "R17-4": {
-    "questions": [
-     {
-      "why": "« elle est même supérieure à ses concurrentes »; it still works normally after location is refused."
-     }
-    ]
-   }
-  },
   "listening": {
    "L17-1": {
     "questions": [

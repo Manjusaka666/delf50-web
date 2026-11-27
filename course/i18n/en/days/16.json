@@ -6,39 +6,6 @@
  "checkpoint": "At least 2 kinds of cause/effect link in the same paragraph; logically correct relations.",
  "challenge": "Today’s challenge: in RFI’s Journal en français facile, find a news item about the environment and write it up in 3 sentences as “cause → result → purpose” (parce que / donc / pour que or pour + infinitive); then add one sentence about something green you can do in your own life.",
  "items": {
-  "reading": {
-   "R16-1": {
-    "questions": [
-     {
-      "why": "The reason given is that we spend about 85% of our time indoors. The sources are many; the text doesn’t say they are necessarily more toxic."
-     },
-     null,
-     {
-      "why": "The ending is explicit: ten minutes of airing won’t cool the walls."
-     }
-    ]
-   },
-   "R16-3": {
-    "questions": [
-     {
-      "why": "« quand les plantes sont au repos » is the reason given; saturated soil actually prevents water from soaking in."
-     }
-    ]
-   },
-   "R16-4": {
-    "questions": [
-     {
-      "why": "« contrairement à ce que supposaient de nombreux riverains » — the culprit is uneven wheels caused by old brakes."
-     },
-     {
-      "why": "« un quart du trafic mais l'essentiel des plaintes » — note that the two proportions refer to different things."
-     },
-     {
-      "why": "« Leur coût, en revanche, dépasse le budget disponible », so sections with homes within fifty metres come first."
-     }
-    ]
-   }
-  },
   "listening": {
    "L16-1": {
     "questions": [

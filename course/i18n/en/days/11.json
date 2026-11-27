@@ -9,48 +9,53 @@
   "reading": {
    "R11-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "What’s missing is la notice and le certificat de garantie. The installation was done (« me l'ont installé »)."
-     },
-     {
-      "why": "« garanti deux ans à partir de la date de livraison ; le certificat n'est donc pas indispensable ». It runs from the delivery date, not the order date."
-     },
-     {
-      "why": "Two solutions: by post + download from the website. Asking the delivery men to come back is what the customer had already tried."
+      "why": "« Après chaque visite, vous recevez un message avec des photos » — Léa fails only on the frequency of news: once a week, on Sundays."
      }
     ]
    },
    "R11-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« Écrase-le et mélange-le à la nourriture, sinon il le recrache ». The prescription is just a document left next to it."
+      "why": "« C’est une bonne nouvelle que les gens se parlent. Mais il est tout de même étrange » — se dire partagé = to say one has mixed feelings."
      },
+     null,
      {
-      "why": "« Ne le laisse pas y aller : la rambarde est trop basse » — y refers to le balcon."
-     },
-     {
-      "why": "The only condition given for going to the vet is two days without eating."
+      "why": "« J’ai gagné bien plus que j’ai perdu » — relativiser = to put things in perspective."
      }
     ]
    },
    "R11-3": {
     "questions": [
-     {
-      "why": "« Il ne s'agit pas de le former techniquement » — technical training is the project leaders’ job."
-     },
-     {
-      "why": "You volunteer by writing to Sandrine before Friday; Monday is when she replies."
-     }
-    ]
-   },
-   "R11-4": {
-    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "prix coûtant = cost price. prix libre applies to second-hand parts; 15 € is the annual fee."
-     },
-     {
-      "why": "« Nous vous le disons franchement et nous vous orientons », and they give the contact details of three professional repairers."
+      "why": "« un conseiller en moins de deux minutes, et que ce sera toujours le même » — Its fees are in fact slightly higher (légèrement plus élevés)."
      }
     ]
    }

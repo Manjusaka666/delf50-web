@@ -6,18 +6,6 @@
  "checkpoint": "Can tell facts, opinions and examples apart.",
  "challenge": "Today’s challenge: first do a set of connector exercises on « exprimer son opinion » at Le Point du FLE, then pick a social news story in RFI’s « Journal en français facile » and draw its “position – reasons – examples – concession” map; finally write one emphatic sentence each with Ce qui me frappe, c'est… and C'est… qui… to give your view of the story.",
  "items": {
-  "reading": {
-   "R34-1": {
-    "questions": [
-     null,
-     null,
-     null,
-     {
-      "why": "The ending states this reason explicitly."
-     }
-    ]
-   }
-  },
   "listening": {
    "L34-2": {
     "questions": [

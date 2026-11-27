@@ -9,49 +9,49 @@
   "reading": {
    "R14-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The flight is shorter, but getting to and from the airport and security add about two hours. The text doesn’t say the train is never late."
-     },
-     {
-      "why": "« le prix bouge peu selon la date » — that is exactly what sets it apart from the other two."
-     },
-     {
-      "why": "« aussi souple que l'avion sur le prix, mais nettement plus régulier sur la durée ». aussi … que means equal."
+      "why": "« louez ici et rendez ailleurs sans supplément » — Déménag’Facile fails only on volume (8 m³)."
      }
     ]
    },
    "R14-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The costs the text lists as specific to owners are the taxe foncière, major repairs and service charges that can’t be passed on."
-     },
-     {
-      "why": "One to two years’ rent is the scale of the owner’s extra costs over twenty years, not the notary’s fees."
-     },
-     {
-      "why": "« plus votre horizon est incertain, moins l'achat est intéressant » — the double comparison plus…moins."
+      "why": "« Tant que le carburant des avions ne sera pas taxé » — lutter à armes égales = to compete on equal terms."
      }
     ]
    },
    "R14-3": {
     "questions": [
-     {
-      "why": "« moins de deux euros de différence » — differences in speed hardly affect annual energy use."
-     },
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "« le seul à obtenir une bonne note sur les quatre critères à la fois »; the fastest is D, and the text doesn’t say B is the cheapest."
-     }
-    ]
-   },
-   "R14-4": {
-    "questions": [
-     {
-      "why": "« elle dépend surtout du logement ». Rural areas are where the gap widens, not the main factor."
-     },
-     null,
-     {
-      "why": "The lowest-earning 20% spend almost twice the share on housing and energy that the highest-earning 20% do."
+      "why": "« se montrent parfois réticents » — réticent = reluctant."
      }
     ]
    }

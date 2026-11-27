@@ -6,17 +6,6 @@
  "checkpoint": "Answer after two listenings, without losing the gist because of a few unknown words.",
  "challenge": "Today’s challenge: pick an everyday-life story in RFI’s « Journal en français facile ». Listen twice without the transcript, note four things in keywords (people, place, event, purpose), then sum up the gist aloud in 30 seconds and report one thing the speaker said with il explique que…; finally check against the transcript: did you get the gist right, and which unknown words didn’t actually get in the way?",
  "items": {
-  "reading": {
-   "R31-1": {
-    "questions": [
-     null,
-     null,
-     {
-      "why": "« Un point est en revanche unanime »: it does not apply to jobs where being present is the service itself."
-     }
-    ]
-   }
-  },
   "listening": {
    "L31-1": {
     "questions": [

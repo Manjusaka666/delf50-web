@@ -10,52 +10,56 @@
    "R04-1": {
     "questions": [
      {
-      "why": "On Wednesdays the bassin sportif closes early at 19 h (« le mercredi, il ferme à 19 h »). 20 h is the time on other weekdays; handing the pool over to clubs explains why it closes early — it is not a condition for individual entry."
+      "why": "« Premier départ à 6 h 40 » — Leaving at 6 h 40, it arrives at 7 h 35 after 55 minutes."
      },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« n'ouvre que l'après-midi, sauf le samedi » — sauf introduces the only exception. 7 h–9 h is the slot of the bassin sportif, not the leisure pool."
-     },
-     {
-      "why": "The end of the text says clearly « et non par téléphone ». mardi/jeudi soir are class times, not a way of signing up."
+      "why": "« le train met vingt-deux minutes » — The coach fails only on duration (55 minutes), the shuttle only on arrival time (8 h 50)."
      }
     ]
    },
    "R04-2": {
     "questions": [
+     null,
      {
-      "why": "libre depuis le 1er juillet → about two months by September. depuis marks the starting point; you have to work out the length yourself."
+      "why": "« je mets trente-cinq minutes, tous les jours, qu’il pleuve ou non » — By car it sometimes took only 20 minutes, so cycling is not always faster; he still uses his car at weekends."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« Il s’est fait renverser l’hiver dernier, heureusement sans gravité » — se faire renverser = to be knocked down."
      },
      {
-      "why": "Ten minutes is the distance to the university; the third floor is the floor — other numbers in the same passage."
+      "why": "« Elle promet soixante kilomètres de nouvelles pistes d’ici deux ans » — promet… d’ici deux ans: a promise, not yet built."
      },
      {
-      "why": "« je travaille tous les samedis pendant les vacances ». The Saturday-morning clean is a house rule, not her reason for saying no; 18–20 h is the Thursday slot."
+      "why": "« Nous jugerons sur les travaux, pas sur les discours » — The associations welcome the announcements, so it is not a total rejection."
      }
     ]
    },
    "R04-3": {
     "questions": [
+     null,
      {
-      "why": "« à trois cents mètres de la salle des fêtes » gets the direction of the distance the wrong way round: three hundred metres is measured from the square to the car park. The square itself is under construction."
+      "why": "« Le nombre d’heures reste donc presque identique » — Four days of nine hours: the total is almost unchanged."
      },
      {
-      "why": "« le marché du mercredi et du samedi » — two days."
-     },
-     {
-      "why": "Tuesday is not a market day, so « limité à deux heures le reste de la semaine » applies. Free unlimited parking is only on market days; 13 h 30 is when the stalls pack up."
-     }
-    ]
-   },
-   "R04-4": {
-    "questions": [
-     {
-      "why": "pendant dix semaines is the length of the whole session. Fifteen days is how early you must register; two evenings is the weekly frequency."
-     },
-     {
-      "why": "Monday and Thursday are class times; fifteen days before refers to the registration deadline."
-     },
-     {
-      "why": "The end of the text says that the third unannounced absence ends your registration. liste d'attente is the consequence of registering too late; emailing the day before is what should have been done and wasn’t."
+      "why": "« il reçoit trois fois plus de candidatures » — It is the workers who save on fuel, not the employer."
      }
     ]
    }

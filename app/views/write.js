@@ -1,7 +1,7 @@
 /** Writing and application: a task, a draft saved as it is typed, and the submitted versions. */
 import { store, commit, refresh } from '../store.js';
 import { itemState } from '../progress.js';
-import { saveDraft, submitText, draftKey, countWords } from '../state.js';
+import { saveDraft, submitText, draftKey, countWords, recordId } from '../state.js';
 import { html, icon, pad2, frText, fmtDateTime, moduleName, moduleFr } from '../ui.js';
 import { t } from '../i18n.js';
 import { dayContext, crumbs, pager, nextLink, triggerDoc, examNotes } from './common.js';
@@ -10,7 +10,7 @@ export async function writeView(d, module, n) {
   const ctx = await dayContext(d);
   const items = ctx.day.items[module], due = ctx.plan[module].length;
   n = Math.min(Math.max(1, n), items.length);
-  const item = items[n - 1], writing = module === 'writing', key = draftKey(d, item.id);
+  const item = items[n - 1], writing = module === 'writing', key = draftKey(d, recordId(item));
   let confirmShort = false;
 
   const draft = () => store.S.drafts[module][key] || '';
@@ -28,7 +28,7 @@ export async function writeView(d, module, n) {
     const st = itemState(store.S, module, d, item), text = draft();
     return html`<article class="page write ${module}">
       ${crumbs(d, moduleName(module), `${pad2(n)} / ${pad2(items.length)}`)}
-      ${pager(d, module, items, n, due, (it) => ({ done: itemState(store.S, module, d, it).done, started: Boolean(store.S.drafts[module][draftKey(d, it.id)]) }))}
+      ${pager(d, module, items, n, due, (it) => ({ done: itemState(store.S, module, d, it).done, started: Boolean(store.S.drafts[module][draftKey(d, recordId(it))]) }))}
       <div class="task">
         <section class="brief">
           <p class="eyebrow">${moduleFr(module)}${item.genre ? ` · ${item.genre}` : ''}${n > due ? ` · ${t('common.optional')}` : ''}</p>
@@ -77,7 +77,7 @@ export async function writeView(d, module, n) {
     title: `${moduleName(module)} · Jour ${d}`,
     render,
     inputs: {
-      draft: (el) => { confirmShort = false; commit((S) => saveDraft(S, module, d, item.id, el.value), { quiet: true }); update(el.value); }
+      draft: (el) => { confirmShort = false; commit((S) => saveDraft(S, module, d, recordId(item), el.value), { quiet: true }); update(el.value); }
     },
     actions: {
       insert: (el) => {

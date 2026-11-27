@@ -7,15 +7,13 @@
  "challenge": "Today’s challenge: after the final full mock, do just one thing: pick a TV5MONDE Apprendre B1 video you have never seen, listen twice, then sum up the gist aloud in 3 sentences and add one sentence of your own opinion, to check you can perform steadily on brand-new material; finally write down, in your own language, “the 3 strategies I will stick to on exam day”.",
  "items": {
   "reading": {
-   "R49-3": {
+   "R49-1": {
     "questions": [
      null,
      null,
+     null,
      {
-      "why": "It contrasts a book printed in a thousand copies with publishing online."
-     },
-     {
-      "why": "« Ces pratiques n'ont aucune valeur juridique », yet they settle the vast majority of cases."
+      "why": "« aux remarques de l’assemblée » — The feedback comes from the whole membership, not from a trainer."
      }
     ]
    }

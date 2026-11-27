@@ -188,5 +188,70 @@
   }
  },
  "title": "Describing, articles and asking questions",
- "phase": "Foundations and grammar on autopilot"
+ "phase": "Foundations and grammar on autopilot",
+ "items": {
+  "reading": {
+   "R02-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« 690 euros, plus 60 euros de charges » — 690 + 60 = 750 euros, still within the budget."
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« La chambre est meublée » — Only the shared house in Talence meets all four criteria; living alone was not one of them."
+     }
+    ]
+   },
+   "R02-2": {
+    "questions": [
+     null,
+     {
+      "why": "« Je montre l’école où j’allais enfant, le café où mon père jouait aux cartes » — He is retired; the factory is only where he started working at sixteen."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« Aucun pourboire n’est accepté » — A donation is possible, but to the association, not to the volunteer."
+     },
+     null,
+     {
+      "why": "« Nous ne faisons pas le même métier » — The worry was at first (ont d’abord vu… avec inquiétude); she only asks associations to state that volunteers are untrained, not that they be trained."
+     }
+    ]
+   },
+   "R02-3": {
+    "questions": [
+     {
+      "why": "« les villes de 20 000 à 100 000 habitants attirent de nouveau » — One in three is the share of workers who say they want to move, not of residents who have left."
+     },
+     null,
+     {
+      "why": "« se rend au siège de son entreprise le vendredi » — He is still with the same company, working remotely four days a week."
+     },
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« dépendra moins du télétravail que de leur capacité à maintenir des hôpitaux, des écoles et des gares » — moins… que: remote work matters less than public services."
+     }
+    ]
+   }
+  }
+ }
 }

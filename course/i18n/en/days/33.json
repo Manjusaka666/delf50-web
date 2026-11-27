@@ -6,37 +6,6 @@
  "checkpoint": "After the objective questions, can point to where the evidence is in the text.",
  "challenge": "Today’s challenge: find a real practical text in French (e.g. SNCF travel rules, car-hire terms or an annonce from TV5MONDE Apprendre B1). Scan it in a 5-minute time limit, find one each of “who it concerns, when, conditions, restrictions” and underline the evidence sentences; then write 3 sentences reporting these rules with qui / où / dont and one negative structure (ne… aucun, ne… que).",
  "items": {
-  "reading": {
-   "R33-1": {
-    "questions": [
-     {
-      "why": "« aucun retard n'est admis pour les épreuves collectives »; thirty minutes is how early you must arrive."
-     }
-    ]
-   },
-   "R33-3": {
-    "questions": [
-     {
-      "why": "« sept nuits consécutives » is the limit for consecutive nights; ten nights is over it."
-     },
-     null,
-     {
-      "why": "Both conditions must be met at the same time."
-     }
-    ]
-   },
-   "R33-4": {
-    "questions": [
-     {
-      "why": "The foods the text lists for the coldest zone include opened cooked meats."
-     },
-     null,
-     {
-      "why": "But it also must not stay at room temperature for more than two hours, so it has to be cooled quickly first."
-     }
-    ]
-   }
-  },
   "listening": {
    "L33-2": {
     "questions": [

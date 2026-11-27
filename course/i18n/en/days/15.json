@@ -9,30 +9,52 @@
   "reading": {
    "R15-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The fault is an automatic shutdown below zero. Three rooms relying on temporary heaters is a consequence, not a description of the boiler’s fault."
-     },
-     {
-      "why": "The first demand is a repair visit as soon as possible; replacing the appliance is the fallback « Si une réparation n'était pas possible »."
-     },
-     {
-      "why": "« je saisirais le médiateur … Je préférerais évidemment éviter cette démarche » — the conditional leaves room for manoeuvre."
+      "why": "« Bâtiment de plain-pied » — de plain-pied = on one level, with no steps."
      }
     ]
    },
    "R15-2": {
     "questions": [
+     {
+      "why": "« fait désormais partie du quotidien » — One in twenty is not a majority."
+     },
+     null,
+     null,
+     null,
      null,
      null,
      {
-      "why": "« Il pourrait chercher une cause précise plutôt que prescrire d'emblée un somnifère »; the threshold for seeing a doctor is one month."
+      "why": "« ne doit pas devenir une médecine au rabais pour les campagnes » — au rabais = cut-price, second-rate."
      }
     ]
    },
-   "R15-4": {
+   "R15-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Footfall does eventually rise, but with a lag of 12–18 months, and « peu de commerces peuvent absorber une année difficile »."
+      "why": "« C’est un pansement » — A metaphor: a sticking plaster covers the wound without curing the cause."
      }
     ]
    }

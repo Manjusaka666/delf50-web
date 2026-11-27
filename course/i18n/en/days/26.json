@@ -9,24 +9,35 @@
   "reading": {
    "R26-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "He shifts the focus from “fake news” to “real material taken out of context”."
+      "why": "« Cette formule ne comprend pas la télévision » — Television is a 5-euro option, not included; with it the total of 34,99 euros still fits the budget."
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« ce qui porte l’ensemble à 34,99 euros » — With the TV option: fibre, no commitment, television, 34,99 euros with no later increase."
      }
     ]
    },
    "R26-3": {
     "questions": [
      null,
-     {
-      "why": "« elle ne remplace rien : elle s'ajoute », and purchases of new items haven’t gone down."
-     }
-    ]
-   },
-   "R26-4": {
-    "questions": [
      null,
      {
-      "why": "« les faits diminuent dans la zone équipée et augmentent à sa périphérie »; the effect is zero on violence outside bars."
+      "why": "« On reconnaît ces textes au premier coup d’œil » — ne pas être dupe = not to be fooled."
      }
     ]
    }

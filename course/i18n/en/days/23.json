@@ -6,47 +6,6 @@
  "checkpoint": "Can turn at least 6 direct statements/questions into reported speech while keeping the story’s timeline clear.",
  "challenge": "Today’s challenge: listen to a news item on RFI’s Journal en français facile and report it in 4 sentences (Le journaliste explique que… / Il ajoute que… / Un témoin raconte que…), add 1 relative clause (qui / que / où) for detail, then read it aloud to yourself.",
  "items": {
-  "reading": {
-   "R23-1": {
-    "questions": [
-     null,
-     {
-      "why": "« Qu'est-ce que vous entendez, en ce moment ? » — the rapids on the right correspond to only one of the three areas."
-     }
-    ]
-   },
-   "R23-2": {
-    "questions": [
-     null,
-     {
-      "why": "They kept looking for the same specific piece of information, and found it faster in the old shared file."
-     },
-     null,
-     {
-      "why": "« sans elle, nous n'aurions pas su quelles questions poser », but those questions could have been asked earlier."
-     }
-    ]
-   },
-   "R23-3": {
-    "questions": [
-     {
-      "why": "An administrative reason: exit formalities had been completed, so they couldn’t leave the ship."
-     },
-     null,
-     {
-      "why": "Scheduled for 21:00, it actually left at 9 h 20 the next day — about twelve hours twenty minutes."
-     }
-    ]
-   },
-   "R23-4": {
-    "questions": [
-     null,
-     {
-      "why": "« ce que la commune aurait refusé » — they applied instead for insulation work eligible for a regional grant."
-     }
-    ]
-   }
-  },
   "listening": {
    "L23-1": {
     "questions": [

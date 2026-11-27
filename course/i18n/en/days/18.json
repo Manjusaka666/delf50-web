@@ -9,43 +9,50 @@
   "reading": {
    "R18-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Half versus a third is the share in work/training; 61% is the share who got their licence, a different indicator."
-     },
-     {
-      "why": "People living more than twenty kilometres from a driving school give up most often — « ce qui est précisément le problème que l'aide devait résoudre »."
+      "why": "« La carte bancaire est offerte tant que vous l’utilisez au moins une fois par mois » — offert = free of charge; the only condition is using it once a month."
      }
     ]
    },
    "R18-2": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« Ce que nous contestons, c'est la méthode »: proposed on 12 May, voted on the 24th, with no meeting for families."
-     },
-     {
-      "why": "« Si le calendrier devait être maintenu, nous souhaiterions au minimum qu'une réunion publique se tienne avant le vote » — a fallback request."
+      "why": "« une loi oblige désormais les grandes banques à fournir des espèces partout dans le pays » — faire marche arrière = to backtrack."
      }
     ]
    },
    "R18-3": {
     "questions": [
-     {
-      "why": "46% say they buy newspapers and magazines, but these make up less than 9% of turnover."
-     },
-     {
-      "why": "« L'explication tenterait de passer par la mauvaise foi ; elle est plus simple » — the reason is that decisions and memory work differently."
-     }
-    ]
-   },
-   "R18-4": {
-    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "The gain from zero to fifteen minutes is greater than from thirty to forty-five."
-     },
-     {
-      "why": "The ending explicitly excludes strength training and says the official recommendation still stands."
+      "why": "« Lyon a limité la vitesse à 30 km/h » — The noise radars are being tested in Paris."
      }
     ]
    }

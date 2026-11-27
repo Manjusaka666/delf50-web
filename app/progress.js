@@ -6,20 +6,20 @@
  * a review item done. A module is done when
  * the day's plan for the chosen intensity is covered; the day when every module is.
  */
-import { DAYS, answerKey, grammarKey, productionKey } from './state.js';
+import { DAYS, answerKey, grammarKey, productionKey, recordId } from './state.js';
 import { nodeOf } from './course.js';
 
 export function questionState(S, module, day, item, q) {
-  const v = S[module][answerKey(day, item.id, q)];
+  const v = S[module][answerKey(day, recordId(item), q)];
   return v === undefined ? null : { selected: v, correct: v === item.questions[q].answer };
 }
 
 export function itemState(S, module, day, item) {
   if (module === 'reading' || module === 'listening') {
-    const answered = item.questions.filter((_, q) => S[module][answerKey(day, item.id, q)] !== undefined).length;
+    const answered = item.questions.filter((_, q) => S[module][answerKey(day, recordId(item), q)] !== undefined).length;
     return { done: answered === item.questions.length, answered, total: item.questions.length };
   }
-  const recs = S[module].filter((r) => r.day === day && r.contentId === item.id);
+  const recs = S[module].filter((r) => r.day === day && r.contentId === recordId(item));
   return { done: recs.length > 0, records: recs };
 }
 
@@ -77,7 +77,7 @@ export function grammarAccuracy(S) {
 export function choiceAccuracy(S, module, loadedDays) {
   let correct = 0, answered = 0;
   for (const day of loadedDays) for (const item of day.items[module]) item.questions.forEach((q, i) => {
-    const v = S[module][answerKey(day.day, item.id, i)];
+    const v = S[module][answerKey(day.day, recordId(item), i)];
     if (v === undefined) return;
     answered++; if (v === q.answer) correct++;
   });

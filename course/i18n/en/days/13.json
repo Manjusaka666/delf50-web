@@ -9,42 +9,38 @@
   "reading": {
    "R13-1": {
     "questions": [
-     {
-      "why": "« que l'on peut emprunter gratuitement, et qu'elle ne vend pas ». These aren’t books that don’t sell, but books she finds hard to recommend in a few words."
-     },
-     {
-      "why": "« que je n'arrive pas à conseiller en trois phrases » — they need a conversation to explain."
-     }
-    ]
-   },
-   "R13-2": {
-    "questions": [
-     {
-      "why": "« plutôt que de construire des logements neufs, elle a racheté et rénové huit maisons vides ». The reopened classroom is a result."
-     },
+     null,
      null,
      {
-      "why": "« Reste une difficulté … : les emplois ». The broadband work was finished last year — a condition that has been met, not the current difficulty."
+      "why": "« Places de 14 à 38 euros » — The cheapest seats, at 14 euros, are within budget."
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« ce spectacle de cirque contemporain parle à tous » — The museum fails only on booking, the concert only on the day."
      }
     ]
    },
    "R13-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« des photographies que les clients n'ont jamais récupérées ». 1979 is the year the studio closed."
-     }
-    ]
-   },
-   "R13-4": {
-    "questions": [
-     {
-      "why": "« C'est la décision qui a sauvé la journée » refers to moving the workshops under the halle. The stage was cancelled, not moved."
-     },
-     {
-      "why": "« ne pouvait pas être montée sur un sol détrempé ». The rain had stopped by mid-afternoon."
-     },
-     {
-      "why": "« cherche depuis deux ans un local où stocker son matériel »; forty is the current number of volunteers."
+      "why": "« ils se souvenaient aussi bien de l’histoire » — Reading only has the edge for difficult texts (a lecture, an essay)."
      }
     ]
    }

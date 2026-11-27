@@ -1,7 +1,7 @@
 /** Reading and listening: one text or recording with its questions. */
 import { store, commit, refresh } from '../store.js';
 import { itemState, questionState } from '../progress.js';
-import { answerChoice } from '../state.js';
+import { answerChoice, recordId } from '../state.js';
 import { html, icon, pad2, frText, LETTERS, moduleName, moduleFr } from '../ui.js';
 import { t } from '../i18n.js';
 import * as speech from '../speech.js';
@@ -65,7 +65,7 @@ export async function textView(d, module, n) {
     const s = questionState(store.S, module, d, item, i);
     return html`<li class="q ${s ? (s.correct ? 'is-ok' : 'is-bad') : ''}" data-key="q${i}" data-state="${s ? (s.correct ? 'ok' : 'bad') : ''}">
       <p class="q-stem" lang="fr"><span class="q-num">${i + 1}</span>${frText(q.stem)}</p>
-      <div class="opts" role="group">
+      <div class="opts ${q.options.length === 2 ? 'binary' : ''}" role="group">
         ${q.options.map((o, k) => {
           const cls = s ? (k === q.answer ? 'right' : k === s.selected ? 'wrong' : 'dim') : '';
           return html`<button class="opt ${cls}" data-act="answer" data-q="${i}" data-i="${k}" ${s ? 'disabled' : ''} lang="fr">
@@ -146,7 +146,7 @@ export async function textView(d, module, n) {
     actions: {
       answer: (el) => {
         const q = Number(el.dataset.q), k = Number(el.dataset.i);
-        commit((S) => answerChoice(S, module, d, item.id, q, k));
+        commit((S) => answerChoice(S, module, d, recordId(item), q, k));
       },
       toggle: () => recording.toggle(ttsId),
       stop: () => recording.stop(),

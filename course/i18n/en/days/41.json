@@ -6,45 +6,6 @@
  "checkpoint": "Sort errors into knowledge gaps, application gaps, time, carelessness and comprehension strategy.",
  "challenge": "Today’s challenge: after a full mock using a set of TV5MONDE Apprendre B1 listening and reading exercises, build your first “error map”: sort each wrong answer into main idea / detail / negation / opinion / grammar / vocabulary and count them; write down, in your own language, the 2 most frequent types and one concrete rule to fix them next week.",
  "items": {
-  "reading": {
-   "R41-1": {
-    "questions": [
-     null,
-     {
-      "why": "The internal price hasn’t changed in two years, while the market rose 22% over the same period."
-     },
-     null,
-     {
-      "why": "« ni technique ni financière », and it needed a volunteer lawyer’s help for eighteen months."
-     }
-    ]
-   },
-   "R41-2": {
-    "questions": [
-     {
-      "why": "An annual drop-out rate of 8% is far below the average for associations."
-     }
-    ]
-   },
-   "R41-3": {
-    "questions": [
-     null,
-     null,
-     null,
-     {
-      "why": "This assessment comes at the end of the article and sums up the nature of the investment."
-     }
-    ]
-   },
-   "R41-4": {
-    "questions": [
-     null,
-     {
-      "why": "The text states this distinction directly."
-     }
-    ]
-   }
-  },
   "listening": {
    "L41-1": {
     "questions": [

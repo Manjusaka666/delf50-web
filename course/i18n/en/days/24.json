@@ -6,27 +6,6 @@
  "checkpoint": "At least 3 criteria compared + 1 concession + a clear choice.",
  "challenge": "Today’s challenge: compare two neighbourhoods you know (or two commuting routes) in 6 sentences, using at least 3 of certains, d’autres, plusieurs, chacun; mark the contrast with alors que / en revanche, and admit one drawback of the option you choose.",
  "items": {
-  "reading": {
-   "R24-1": {
-    "questions": [
-     null,
-     {
-      "why": "« Son inconvénient est ailleurs » — explicitly ruling out installation cost and radiator compatibility."
-     }
-    ]
-   },
-   "R24-3": {
-    "questions": [
-     null,
-     {
-      "why": "The regional grant only applies to new-build, so the real difference is about 3.4 million, not 5.6 million."
-     },
-     {
-      "why": "Building new takes 26 months, but the old building can partly stay open during the work; with a renovation it can’t."
-     }
-    ]
-   }
-  },
   "listening": {
    "L24-1": {
     "questions": [

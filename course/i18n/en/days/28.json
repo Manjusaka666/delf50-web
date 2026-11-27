@@ -11,15 +11,22 @@
     "questions": [
      null,
      null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The text states this replacement explicitly."
-     }
-    ]
-   },
-   "R28-2": {
-    "questions": [
-     {
-      "why": "The first 4 hours cost 5 €, then 3 € for each further 4 hours or part of 4 hours: 9 hours = 4 + 4 + 1, so 5 + 3 + 3 = 11 €."
+      "why": "« La photo est prise gratuitement au guichet » — There is no booth, but the photo is taken at the counter: the criterion is a photo on site."
      }
     ]
    }

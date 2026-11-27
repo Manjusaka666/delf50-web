@@ -6,38 +6,6 @@
  "checkpoint": "Record points of fatigue, time overruns and error types, not just the overall score.",
  "challenge": "Today’s challenge: do a 60-minute mini run of all four skills in a row: one RFI « Journal en français facile » story (10 minutes, write the gist) → one TV5MONDE Apprendre B1 article (15 minutes, write and answer 3 questions of your own) → a 160-word opinion piece (25 minutes, with at least 1 plus-que-parfait and 1 subjunctive) → a 3-minute spoken recording (10 minutes); note in your own language how long each part actually took and which was the most tiring.",
  "items": {
-  "reading": {
-   "R40-1": {
-    "questions": [
-     null,
-     {
-      "why": "The text gives exactly this conversion logic."
-     }
-    ]
-   },
-   "R40-2": {
-    "questions": [
-     null,
-     null,
-     null,
-     {
-      "why": "This judgement comes at the end of the article; it is the author’s conclusion."
-     }
-    ]
-   },
-   "R40-3": {
-    "questions": [
-     null,
-     null,
-     {
-      "why": "Fewer than one consumer in five looks at it."
-     },
-     {
-      "why": "This judgement comes at the end of the article; it is the author’s conclusion."
-     }
-    ]
-   }
-  },
   "listening": {
    "L40-1": {
     "questions": [

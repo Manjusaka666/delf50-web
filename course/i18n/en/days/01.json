@@ -188,5 +188,76 @@
   }
  },
  "title": "Sentence skeleton and the present tense",
- "phase": "Foundations and grammar on autopilot"
+ "phase": "Foundations and grammar on autopilot",
+ "items": {
+  "reading": {
+   "R01-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "« Le trimestre coûte 320 euros » — The 10% discount is for students only, and you are here to work; even discounted it would be 288 euros."
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« nous n’acceptons jamais plus de dix inscrits par groupe » — Only Institut Lumière meets all four criteria; each of the others fails on at least one (price, diploma, time and group size)."
+     }
+    ]
+   },
+   "R01-2": {
+    "questions": [
+     null,
+     {
+      "why": "« la première chose que je faisais, c’était de regarder mon téléphone » — B and C are what she does now, after the change."
+     },
+     {
+      "why": "« c’est d’avoir enfin un moment où personne ne me demande rien » — She says explicitly that it was not the sport that helped her."
+     },
+     null,
+     {
+      "why": "« réserver une heure le soir, sans écran, pour dessiner » — He gave up getting up early, not time for himself: he moved the hour to the evening."
+     },
+     {
+      "why": "« Se lever plus tôt n’a de sens que si l’on se couche plus tôt » — ne… que si = only on condition that."
+     },
+     null,
+     {
+      "why": "« commencer par éteindre les écrans une demi-heure avant de dormir » — She advises this before changing the alarm, so B is not the first step."
+     }
+    ]
+   },
+   "R01-3": {
+    "questions": [
+     null,
+     {
+      "why": "« il suffit de déposer un dossier à la mairie » — Going before a judge was the old procedure (Longtemps… il fallait)."
+     },
+     {
+      "why": "« La plupart des gens demandent simplement à officialiser le prénom que tout le monde utilise déjà » — Ridiculous first names are exactly what she calls quite rare."
+     },
+     null,
+     null,
+     {
+      "why": "« Le demandeur doit prouver que sa demande repose sur un « intérêt légitime » » — The procedure is free (La démarche est gratuite); letters from relatives are one kind of evidence, not a consent form."
+     },
+     null,
+     {
+      "why": "« une partie de leur identité qu’ils ont le droit de choisir » — B is the view of the past (Autrefois…)."
+     }
+    ]
+   }
+  }
+ }
 }

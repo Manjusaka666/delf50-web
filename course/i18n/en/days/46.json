@@ -6,32 +6,6 @@
  "checkpoint": "Planning stage ≤10 minutes; can point out pauses in speaking and re-record.",
  "challenge": "Today’s challenge: an “output speed-up” session. Pick any social topic from RFI’s « Journal en français facile »; in a timed 2 minutes, outline position – 2 arguments – 1 example – 1 concession; then write the 160 words in 20 minutes and record 3 minutes of speaking from the same outline. Look up 3 expressions you wanted to say but couldn’t, in writing or speaking, and add them to your personal chunk list.",
  "items": {
-  "reading": {
-   "R46-1": {
-    "questions": [
-     {
-      "why": "It contrasts “parents who ask for the report card” with “parents who only discover problems at the end of term”."
-     }
-    ]
-   },
-   "R46-2": {
-    "questions": [
-     null,
-     null,
-     {
-      "why": "The text lists caring for a sick person, childcare and work needs."
-     }
-    ]
-   },
-   "R46-3": {
-    "questions": [
-     null,
-     {
-      "why": "The example shows that a correct refusal was in fact penalised."
-     }
-    ]
-   }
-  },
   "listening": {
    "L46-4": {
     "questions": [

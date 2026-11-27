@@ -332,6 +332,8 @@ a.mod:hover .mod-name, a.tile:hover .tile-title { color: var(--azur); }
 .qcard-meta .tag { margin: 0; }
 .stem { margin: 0 0 36px; font: 500 clamp(21px, 2.3vw, 26px)/1.45 var(--sans); letter-spacing: -.005em; }
 .opts { display: grid; gap: 8px; }
+.opts.binary { grid-template-columns: 1fr 1fr; }
+.opts.binary .opt { min-height: 48px; padding: 8px 12px 8px 10px; gap: 10px; }
 .opt { display: grid; grid-template-columns: 32px 1fr auto; align-items: center; gap: 16px; width: 100%; min-height: 60px; padding: 12px 16px 12px 14px; text-align: left; border-radius: var(--r); background: var(--paper); font: 400 16.5px/1.45 var(--sans); }
 .opt:hover:not(:disabled) { background: var(--paper-2); }
 .opt-key { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--card); font: 600 12px var(--sans); color: var(--azur); }

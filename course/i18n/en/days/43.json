@@ -6,33 +6,6 @@
  "checkpoint": "Record the time actually spent on each part and compare it with the target.",
  "challenge": "Today’s challenge: do a timed partial mock: take one RFI « Journal en français facile » broadcast (about 10 minutes), listen without the transcript and answer at exam pace 5 questions you wrote beforehand (who, where, when, why, outcome); then check against the transcript and note, in your own language, which questions you lost the gist on because you rushed, and how to divide your attention across the two listenings next time.",
  "items": {
-  "reading": {
-   "R43-1": {
-    "questions": [
-     {
-      "why": "It contrasts the high cost of cutting noise by 5 decibels with the low cost of protecting quiet places."
-     }
-    ]
-   },
-   "R43-3": {
-    "questions": [
-     null,
-     null,
-     {
-      "why": "The three new practices listed in the text."
-     }
-    ]
-   },
-   "R43-4": {
-    "questions": [
-     null,
-     null,
-     {
-      "why": "And it explains that you must say “what to do now”."
-     }
-    ]
-   }
-  },
   "listening": {
    "L43-1": {
     "questions": [

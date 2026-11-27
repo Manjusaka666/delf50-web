@@ -6,48 +6,6 @@
  "checkpoint": "Retest after 48 hours; only mark as “fairly stable” at ≥70%.",
  "challenge": "Today’s challenge: from your Error Book, pick the 3 kinds of mistake you make most often (e.g. passé composé / imparfait, misused connectors, unclear references) and do a matching set of exercises for each at Le Point du FLE; then rewrite 5 wrong sentences from your earlier essays and write a “personal rule” for each type (an explanation in your own language + one correct French example).",
  "items": {
-  "reading": {
-   "R42-1": {
-    "questions": [
-     null,
-     null,
-     null,
-     {
-      "why": "The text uses contrasting sentences to show that piling up passé composé only produces a list, not a narrative."
-     }
-    ]
-   },
-   "R42-2": {
-    "questions": [
-     {
-      "why": "Many candidates use it as if it meant « en fait »."
-     },
-     {
-      "why": "« Par ailleurs » only adds a parallel point."
-     },
-     null,
-     {
-      "why": "The contrasting examples show the difference."
-     }
-    ]
-   },
-   "R42-3": {
-    "questions": [
-     null,
-     {
-      "why": "The rewritten example shows the concrete method."
-     }
-    ]
-   },
-   "R42-4": {
-    "questions": [
-     null,
-     {
-      "why": "The difference between « est-ce écrit ? » and « est-ce la réponse ? »."
-     }
-    ]
-   }
-  },
   "listening": {
    "L42-3": {
     "questions": [

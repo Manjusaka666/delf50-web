@@ -25,6 +25,8 @@ let checks = 0;
 const fail = (where, what) => failures.push(`${where}: ${what}`);
 const check = (ok, where, what) => { checks++; if (!ok) fail(where, what); };
 
+// The level of the official papers, below which no text, recording or task may fall (course.json: floors).
+const FLOORS = course.floors || {};
 const MODULES = { reading: 'R', listening: 'L', writing: 'W', speaking: 'S', application: 'A' };
 const MAX = Object.fromEntries(Object.keys(MODULES).map((m) => [m, course.quotas.high[m]]));
 const LEAK = /\b(?:traceId|sourceSeed|contentId|familyId|semanticFingerprint|Dossier\s+[RLWSA]\d|Audio\s+[RL]\d{2}-\d|[rlwsa]1(?:76|77|81)-d\d|GQ\d*-)/i;
@@ -50,14 +52,14 @@ for (const n of nodes) {
   qs.forEach((q, i) => {
     const where = `bank ${n.id} ${i + 1}`;
     check(q.id === `${n.id}-${String(i + 1).padStart(2, '0')}` && !bank.has(q.id), where, `id ${q.id}`);
-    question(where, q);
+    question(where, q, true);
     bank.set(q.id, q);
   });
 }
 
-function question(where, q) {
+function question(where, q, bankQuestion) {
   check(q.stem && plain(q.stem).length > 2, where, 'empty stem');
-  check(Array.isArray(q.options) && q.options.length >= 3, where, 'fewer than 3 options');
+  check(Array.isArray(q.options) && q.options.length >= (bankQuestion ? 3 : 2), where, bankQuestion ? 'fewer than 3 options' : 'fewer than 2 options');
   check(Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.options.length, where, `invalid key ${q.answer}`);
   check(new Set(q.options.map(norm)).size === q.options.length, where, 'duplicate options');
   check(!LEAK.test([q.stem, ...q.options, q.why].join(' ')), where, 'development marker');
@@ -84,10 +86,18 @@ for (const d of days) {
       check(!seen.body.has(key), where, `same text as ${seen.body.get(key)}`); seen.body.set(key, where);
       if (m === 'reading' || m === 'listening') {
         check(x.questions.length >= 3, where, 'fewer than 3 questions');
+        const floor = FLOORS[m];
+        if (floor) {
+          check(words(body) >= floor.words, where, `${words(body)} words, the exam level needs ${floor.words}`);
+          check(x.questions.length >= floor.questions, where, `${x.questions.length} questions, the exam level needs ${floor.questions}`);
+          // No key may be guessed from its position: the right answers of the multiple-choice questions are spread.
+          const keys = x.questions.filter((q) => q.options.length > 2).map((q) => q.answer);
+          check(keys.length < 4 || new Set(keys).size > 1, where, 'every key in the same position');
+        }
         x.questions.forEach((q, qi) => question(`${where} Q${qi + 1}`, q));
         check(new Set(x.questions.map((q) => norm(q.stem))).size === x.questions.length, where, 'repeated stem');
       }
-      if (m === 'writing') check(x.minWords >= 60 && x.checklist.length, where, 'no word target or checklist');
+      if (m === 'writing') check(x.minWords >= (FLOORS.writing || 60) && x.checklist.length, where, `word target ${x.minWords}, the exam asks for ${FLOORS.writing || 60}`);
       if (m === 'writing' && x.model) check(words(x.model.join(' ')) >= x.minWords, where, 'model answer shorter than the word target');
       if (x.trigger) check(x.trigger.title && Array.isArray(x.trigger.text) && words(x.trigger.text.join(' ')) >= 20, where, 'trigger document without title or text');
       if (x.followUps) check(Array.isArray(x.followUps) && x.followUps.every((f) => plain(f).length > 8), where, 'empty follow-up question');
