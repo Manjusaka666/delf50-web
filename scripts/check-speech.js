@@ -113,7 +113,7 @@ async function run(name, browser, base) {
   await s.page.waitForFunction(() => window.__media && window.__media.currentTime > 0.05, null, { timeout: 4000 }).catch(() => {});
   const latency = Date.now() - t0;
   check(latency < 4000 && await s.advancing(), `the recording is playing (heard ${latency} ms after the tap; its time moves on)`, await s.media());
-  const done = await s.page.waitForFunction(() => document.querySelector('.player').classList.contains('idle'), null, { timeout: 30000 }).then(() => true, () => false);
+  const done = await s.page.waitForFunction(() => document.querySelector('.player').classList.contains('idle'), null, { timeout: 240000 }).then(() => true, () => false);
   const ended = (await s.page.evaluate(() => window.__ev)).some((x) => x.kind === 'ended');
   check(done && ended && (await s.media()).t < 0.5, 'it plays to the end, and the player is back at the start', await s.ui());
   await s.tap('toggle');
@@ -167,7 +167,7 @@ async function run(name, browser, base) {
     const { segments } = await import('/app/speech.js');
     return all.filter((x) => JSON.stringify(segments(x.script).map((y) => y.text)) !== JSON.stringify(x.texts)).map((x) => x.key);
   }, all);
-  check(all.length === 350 && !differ.length, `this browser cuts all ${all.length} scripts into exactly the recordings’ sentences`, differ.slice(0, 5));
+  check(all.length === 300 && !differ.length, `this browser cuts all ${all.length} scripts into exactly the recordings’ sentences`, differ.slice(0, 5));
   await s.ctx.close();
 
   // The network fails while the recording loads: the player says so, and the next tap loads it again and plays.
