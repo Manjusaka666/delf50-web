@@ -63,7 +63,7 @@ Neon Auth 账号（一人一个，跨所有级别）
 
 B2 已按以下步骤上线；C1 照做即可：
 
-1. **内容**：照 `course/` 的结构编写（C1：`course/c1/course.json`、`grammar.json`、`questions/`、`days/NN.json`），用 `node scripts/check-course.js course/c1` 校验，并加入 `scripts/verify.js` 的 `ROOTS`。内容 ID 在课程内部唯一即可，不必避开其他级别。
+1. **内容**：照 `course/` 的结构编写（C1：`course/c1/course.json`、`grammar.json`、`questions/`、`days/NN.json`），用 `node scripts/check-course.js course/c1` 校验，并加入 `scripts/verify.js` 的 `ROOTS`。内容 ID 在课程内部唯一即可，不必避开其他级别。课程在 `course.json` 的 `floors` 中声明本级别考试的下限（阅读 / 听力的词数与题数、写作的最低词数），校验脚本据此拒绝低于考试水平的材料；替换已发布的题目时给它加上 `rev`，旧作答不会算到新题上。
 2. **前端**：在 `app/course.js` 的 `LEVELS` 中给 `dalf-c1` 填上 `root: '/course/c1'`。
 3. **注册**：在 `api/_lib/courses.js` 加一行 `'dalf-c1': { level: 'C1', exam: 'DALF', days: …, title: … }`。
    B1、B2 都是 50 天；若 C1 的天数不同，把 `app/state.js` 的 `DAYS` 改为取当前课程的 `days`。
