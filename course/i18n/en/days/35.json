@@ -1,16 +1,47 @@
 {
  "canDo": "Can write a complaint or request of ≥160 words with a clear purpose in 45 minutes.",
  "review": "Review past tenses, the conditionnel and politeness.",
- "input": "Analyse the task statement; don’t copy templates.",
+ "input": "Listen: three recordings, « Je voudrais faire une réclamation », « Elle défend les consommateurs » and « Colis perdus, colis volés », twice each; read: the comparison grid « Se faire rembourser un billet de train » and the articles « Colis perdu : qui est responsable ? » and « Se plaindre, tout un art », questions first, then the text.",
  "output": "10 minutes planning → 30 minutes writing → 5 minutes checking.",
  "checkpoint": "Self-check on five criteria: task completion, coherence, register, vocabulary, morphosyntax.",
  "challenge": "Today’s challenge: write a real complaint at DELF writing pace. Pick a small problem you ran into recently (a delivery, a takeaway order, a repair in your accommodation…): 10 minutes for an outline, 30 minutes to write a French complaint email of ≥160 words, 5 minutes to check it against the list; use at least 1 passive, 1 nominalisation (la livraison, le remboursement…) and 1 il faut que / je demande que + subjunctive.",
  "items": {
   "listening": {
+   "L35-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« je vous accorde un bon d’achat de cinquante euros » — The shape of a complaint: facts (dates) → steps already taken → a clear demand (soit un échange, soit le remboursement) → written confirmation."
+     }
+    ]
+   },
    "L35-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The length of the works stays the same; they just start and finish earlier."
+      "why": "« elle a récupéré trois cent vingt-quatre euros » — Nine euros a month × three years = 324 euros; she had not dared complain (Elle n’osait pas réclamer)."
+     }
+    ]
+   },
+   "L35-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Elle a été remboursée en huit jours » — lettre recommandée = registered letter; D’où la tentation de… introduces a consequence."
      }
     ]
    }

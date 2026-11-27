@@ -1,7 +1,7 @@
 {
  "canDo": "Can state limits precisely with structures such as ne…que / aucun / ni…ni while keeping a complaint polite.",
  "review": "Review basic negation, pronouns and the conditionnel; extend to B1 negation.",
- "input": "Listening and reading on housing problems/repair notices.",
+ "input": "Listen: three recordings, « Il y a une fuite chez moi ! », « Elle aide les jeunes à trouver un logement » and « Des maisons minuscules pour un toit à soi », twice each; read: the comparison grid « Faire isoler son logement » and the articles « Locataires : ce que le propriétaire ne peut pas vous refuser » and « Habiter à plusieurs, chacun chez soi », questions first, then the text.",
  "output": "Write a 160-word complaint email; a 3-minute spoken exchange with a landlord.",
  "checkpoint": "Specific facts, a clear impact, an explicit request, an appropriate tone.",
  "challenge": "Today’s challenge: think of a real problem in a place you’ve lived (noise, a leak, the heating…) and write a polite 6-sentence complaint using ne…que, aucun and ni…ni at least once each; end with a specific request for a remedy and a deadline.",
@@ -30,8 +30,10 @@
   "listening": {
    "L22-1": {
     "questions": [
+     null,
+     null,
      {
-      "why": "« Je ne veux pas une quatrième réparation identique, je veux un diagnostic complet ». Payment only comes up once the diagnosis is known."
+      "why": "« j’en suis aussi le propriétaire » — puisque j’en suis…: en = of that flat; hence he holds un double des clés."
      }
     ]
    },
@@ -41,7 +43,7 @@
      null,
      null,
      {
-      "why": "« on ne va pas commencer à photographier les voitures des gens, ce n'est pas notre rôle », and the other side also denies having suggested it."
+      "why": "« alors qu’un jeune en apprentissage en gagne neuf cents » — en = euros; 650 in rent against 900 in pay. alors que marks the contrast."
      }
     ]
    },
@@ -50,15 +52,10 @@
      null,
      null,
      null,
+     null,
+     null,
      {
-      "why": "Both demands are met: next month’s bill adjusted + the Tuesday slot, confirmed by text that evening."
-     }
-    ]
-   },
-   "L22-4": {
-    "questions": [
-     {
-      "why": "By June, a January bill no longer meets the “within three months” requirement."
+      "why": "« aucun incident n’a été signalé, et des voisins ont même apporté des meubles » — houleuse = stormy; the open days (portes ouvertes) then eased the fears."
      }
     ]
    }

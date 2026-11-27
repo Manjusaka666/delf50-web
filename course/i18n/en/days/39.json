@@ -1,11 +1,52 @@
 {
  "canDo": "Can give a linear 3–5-minute opinion on a general topic and discuss it.",
  "review": "Review opinion, cause and effect, examples, concession.",
- "input": "Short prompt texts / topic cards.",
+ "input": "Listen: three recordings, « Tu l’as lu où ? », « Journaliste dans un journal local » and « Les podcasts changent notre façon d’écouter », twice each; read: the comparison grid « S’informer chaque matin » and the articles « Le journal du village renaît » and « Infox : pourquoi nous y croyons », questions first, then the text.",
  "output": "10 minutes’ preparation → a 3–5-minute recording → ask yourself follow-up questions.",
  "checkpoint": "Topic introduced, opinion, 2 reasons, an example, a concession and a conclusion all present.",
  "challenge": "Today’s challenge: pick a media or technology story in RFI’s « Journal en français facile ». After 10 minutes’ preparation, record a 3–5-minute point de vue: a clear position, two arguments each with an example, an opposing view and a conclusion, with at least 1 emphatic sentence (C'est… qui… / Ce qui compte, c'est…); when you listen back, ask yourself 3 examiner-style follow-ups (Pourquoi ? Un exemple ? Et si on vous dit le contraire ?) and answer them aloud.",
- "items": {},
+ "items": {
+  "listening": {
+   "L39-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« je me méfie quand ça me met très en colère ou que ça me fait très peur » — Plus…, plus… expresses proportion; three checks: who publishes, do other media report it, is it stirring emotion."
+     }
+    ]
+   },
+   "L39-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Nous étions cinq journalistes dans cette agence il y a dix ans. Je suis seule » — si l’on ne veut fâcher personne, on n’écrit plus rien d’intéressant: her defence of critical reporting."
+     }
+    ]
+   },
+   "L39-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« L’écoute gratuite ne durera peut-être pas toujours » — Cette liberté a son revers: the downside of freedom; pour autant = for all that."
+     }
+    ]
+   }
+  }
+ },
  "vocab": {
   "V39-01": {
    "zh": "The document deals with the question of …",

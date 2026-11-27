@@ -1,7 +1,7 @@
 {
  "canDo": "Keep up speed with fairly high accuracy, without losing the gist by rushing.",
  "review": "Review how time was divided in Mock 1.",
- "input": "Focus on timed listening and reading.",
+ "input": "Listen: three recordings, « Les travaux du voisin », « Vétérinaire à la campagne » and « Les cabines téléphoniques ont une seconde vie », twice each; read: the comparison grid « Choisir une activité pour se détendre » and the articles « Les villes découvrent le silence » and « Animaux au bureau : une bonne idée ? », questions first, then the text.",
  "output": "One full timed task: writing or speaking.",
  "checkpoint": "Record the time actually spent on each part and compare it with the target.",
  "challenge": "Today’s challenge: do a timed partial mock: take one RFI « Journal en français facile » broadcast (about 10 minutes), listen without the transcript and answer at exam pace 5 questions you wrote beforehand (who, where, when, why, outcome); then check against the transcript and note, in your own language, which questions you lost the gist on because you rushed, and how to divide your attention across the two listenings next time.",
@@ -10,16 +10,38 @@
    "L43-1": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The text gives exactly this contrast."
+      "why": "« J’aurais préféré être prévenue avant le début » — The past conditional for regret or reproach: vous auriez dû sonner, j’aurais préféré, j’aurais dû passer."
      }
     ]
    },
-   "L43-4": {
+   "L43-2": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The text states this contrast directly."
+      "why": "« je ne m’en lasse pas » — ne pas se lasser de = never to tire of; en = of seeing the calf get up."
+     }
+    ]
+   },
+   "L43-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« ne pas ouvrir de vraie bibliothèque » — On aurait pu craindre…: a past fear that did not come true; servir d’excuse à = to serve as an excuse."
      }
     ]
    }

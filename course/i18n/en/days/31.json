@@ -1,7 +1,7 @@
 {
  "canDo": "Can quickly identify the people, setting, topic and purpose at exam pace.",
  "review": "Review listening strategies; no new grammar.",
- "input": "3 sets of original audio, gradually approaching B1 length.",
+ "input": "Listen: three recordings, « On s’organise pour les vacances des enfants », « Il livre les repas aux personnes âgées » and « Le dimanche sans voitures », twice each; read: the comparison grid « Faire garder un enfant de deux ans » and the articles « Emprunter une perceuse comme on emprunte un livre » and « 19 degrés à la maison : effort utile ou sacrifice inutile ? », questions first, then the text.",
  "output": "Notes limited to keywords; a 30-second spoken summary for each set.",
  "checkpoint": "Answer after two listenings, without losing the gist because of a few unknown words.",
  "challenge": "Today’s challenge: pick an everyday-life story in RFI’s « Journal en français facile ». Listen twice without the transcript, note four things in keywords (people, place, event, purpose), then sum up the gist aloud in 30 seconds and report one thing the speaker said with il explique que…; finally check against the transcript: did you get the gist right, and which unknown words didn’t actually get in the way?",
@@ -9,8 +9,36 @@
   "listening": {
    "L31-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« La réalité est plus stable », as opposed to the stereotype of “workers passing through”."
+      "why": "« il prend les nôtres le mardi, et nous, on garde le sien un jour de la deuxième semaine » — les nôtres / le sien: possessive pronouns. Zoé (ten euros an hour) is only the fallback."
+     }
+    ]
+   },
+   "L31-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Personne ne me disait merci » — A contrast: no one thanked him when he delivered parcels; here people ask after his children."
+     }
+    ]
+   },
+   "L31-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« les voitures se reportent sur leurs quartiers » — se reporter sur = to shift onto; banning cars downtown pushes traffic into outlying districts."
      }
     ]
    }

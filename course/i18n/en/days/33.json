@@ -1,19 +1,34 @@
 {
  "canDo": "Can locate conditions, people concerned, times and restrictions under time pressure.",
  "review": "Review scanning and elimination.",
- "input": "3 practical texts in different formats.",
+ "input": "Listen: three recordings, « Vous avez un nouveau message », « Standardiste au numéro d’urgence » and « Les guichets de gare ferment : qui renseigne les voyageurs ? », twice each; read: the comparison grid « Envoyer un colis à l’étranger » and the articles « Le dernier kiosque du quartier » and « Peut-on se fier aux avis en ligne ? », questions first, then the text.",
  "output": "A 2-sentence summary of each, with the evidence sentences marked.",
  "checkpoint": "After the objective questions, can point to where the evidence is in the text.",
  "challenge": "Today’s challenge: find a real practical text in French (e.g. SNCF travel rules, car-hire terms or an annonce from TV5MONDE Apprendre B1). Scan it in a 5-minute time limit, find one each of “who it concerns, when, conditions, restrictions” and underline the evidence sentences; then write 3 sentences reporting these rules with qui / où / dont and one negative structure (ne… aucun, ne… que).",
  "items": {
   "listening": {
+   "L33-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« je vais leur demander de payer la nuit d’hôtel » — The contract: a change of over three hours gives a right to compensation or free cancellation; here it is four and a quarter hours."
+     }
+    ]
+   },
    "L33-2": {
     "questions": [
      null,
      null,
      null,
+     null,
+     null,
+     null,
      {
-      "why": "What is given is an identity document and the parcel number."
+      "why": "« Presque jamais, et c’est le plus dur » — She almost never learns the outcome; the boy’s case was the exception (exceptionnellement) because the mother wrote."
      }
     ]
    },
@@ -22,15 +37,11 @@
      null,
      null,
      null,
+     null,
+     null,
+     null,
      {
-      "why": "Because it moved to the teaching pool and places are limited, you must book online 48 hours ahead."
-     }
-    ]
-   },
-   "L33-4": {
-    "questions": [
-     {
-      "why": "120 euros were already used fourteen months ago, leaving 180 euros."
+      "why": "« la présence d’un agent au moins aux heures de pointe » — faute de + infinitive = for want of being able to; heures de pointe = peak hours."
      }
     ]
    }

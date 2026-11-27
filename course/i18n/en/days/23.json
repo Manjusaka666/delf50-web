@@ -1,7 +1,7 @@
 {
  "canDo": "Can organise scattered events into a linear story and accurately report what others said or asked.",
  "review": "Review past tenses and relative pronouns; learn present-tense reported speech: dire/expliquer que, demander si/question words.",
- "input": "Read two short stories and extract their structure.",
+ "input": "Listen: three recordings, « Mon premier marathon », « Un an sans rien acheter de neuf » and « Ils ont vécu une semaine sans écran », twice each; read: the comparison grid « Choisir une mission de bénévolat » and the articles « « J’ai appris à nager à cinquante ans » » and « Ce que les voyages scolaires apportent vraiment », questions first, then the text.",
  "output": "Write 160 words about an experience; speak for 3 minutes, adding detail with relative pronouns.",
  "checkpoint": "Can turn at least 6 direct statements/questions into reported speech while keeping the story’s timeline clear.",
  "challenge": "Today’s challenge: listen to a news item on RFI’s Journal en français facile and report it in 4 sentences (Le journaliste explique que… / Il ajoute que… / Un témoin raconte que…), add 1 relative clause (qui / que / où) for detail, then read it aloud to yourself.",
@@ -9,8 +9,12 @@
   "listening": {
    "L23-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The backups had been failing since Friday, and the disk only died on Tuesday; Marc leaving affected the email address, not when the backups started failing."
+      "why": "« C’est le moment auquel je repense le plus » — auquel = à + lequel (repenser à): the hundred metres his daughter ran beside him."
      }
     ]
    },
@@ -18,29 +22,24 @@
     "questions": [
      null,
      null,
+     null,
+     null,
+     null,
      {
-      "why": "« C'est là que j'ai rencontré les gens » happened after she was forced to stay."
-     },
-     {
-      "why": "« tant que j'avais une porte de sortie chaque week-end, je la prenais », and she says plainly there’s no need to wait for a cancelled train."
+      "why": "« Nous avons appris à attendre » — ce dont je suis le plus fière (être fier de → dont); the six mille euros saved are not what she is proudest of."
      }
     ]
    },
    "L23-3": {
     "questions": [
-     {
-      "why": "She lost her regulars within three months, while new customers didn’t yet know she existed."
-     }
-    ]
-   },
-   "L23-4": {
-    "questions": [
-     {
-      "why": "« conduite hésitante » left both him and his instructor unsure what to change."
-     },
+     null,
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "Checking the mirrors three times — not too little, but too much."
+      "why": "« quatre élèves sur dix ont gardé une règle » — Ils ne se font pas d’illusions: the teachers have no illusions, phones were back the next week; yet four in ten kept one rule."
      }
     ]
    }

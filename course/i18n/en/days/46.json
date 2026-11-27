@@ -1,21 +1,47 @@
 {
  "canDo": "Organise written and spoken output faster, and cut down on “I know it but can’t get it out”.",
  "review": "Review your personal high-frequency chunks and connectors.",
- "input": "A little input, just to spark opinions.",
+ "input": "Listen: three recordings, « Camping ou hôtel cet été ? », « Infirmier scolaire dans un collège » and « La sieste entre au bureau », twice each; read: the comparison grid « Donner ses vêtements » and the articles « Les notes de l’élève en direct sur le téléphone des parents » and « Sport : les filles décrochent à l’adolescence », questions first, then the text.",
  "output": "2 writing outlines + 1 full essay; 3 speaking rounds.",
  "checkpoint": "Planning stage ≤10 minutes; can point out pauses in speaking and re-record.",
  "challenge": "Today’s challenge: an “output speed-up” session. Pick any social topic from RFI’s « Journal en français facile »; in a timed 2 minutes, outline position – 2 arguments – 1 example – 1 concession; then write the 160 words in 20 minutes and record 3 minutes of speaking from the same outline. Look up 3 expressions you wanted to say but couldn’t, in writing or speaking, and add them to your personal chunk list.",
  "items": {
   "listening": {
-   "L46-4": {
+   "L46-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Example: steady at 85, while someone of 70 shouldn’t drive at night."
-     },
+      "why": "« va pour le camping » — The sums: hotel 980 plus about 700 in meals, against 780 for the bungalow; hence plus du double."
+     }
+    ]
+   },
+   "L46-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
      null,
      null,
      {
-      "why": "The closing sentence gives this judgement."
+      "why": "« Je ne suis ici que trois jours par semaine » — À l’hôpital, je réparais. Ici, j’ai parfois la chance d’arriver avant: cure versus prevention."
+     }
+    ]
+   },
+   "L46-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« faire accepter des journées trop longues » — Plutôt que de…, il vaudrait mieux que + subjunctive: the union delegate’s alternative."
      }
     ]
    }

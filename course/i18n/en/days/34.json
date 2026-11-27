@@ -1,16 +1,44 @@
 {
  "canDo": "Can identify the author’s or characters’ opinions, reasons, examples and concessions.",
  "review": "Review opinion connectors.",
- "input": "3 texts on general social topics.",
+ "input": "Listen: three recordings, « Tu fais du bénévolat, toi ? », « Juge de paix au village » and « Les jeunes et le vote », twice each; read: the comparison grid « S’engager dans son quartier » and the articles « Quand les habitants décident du budget » and « Solitude : le mal discret des grandes villes », questions first, then the text.",
  "output": "Draw a map of the argument; restate the opinions aloud.",
  "checkpoint": "Can tell facts, opinions and examples apart.",
  "challenge": "Today’s challenge: first do a set of connector exercises on « exprimer son opinion » at Le Point du FLE, then pick a social news story in RFI’s « Journal en français facile » and draw its “position – reasons – examples – concession” map; finally write one emphatic sentence each with Ce qui me frappe, c'est… and C'est… qui… to give your view of the story.",
  "items": {
   "listening": {
+   "L34-1": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "« Je me sens utile » — j’en retire plus que je ne donne: en = de cette activité (from this activity); the ne is expletive after a comparison."
+     }
+    ]
+   },
    "L34-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "He gives the public procurement case: the journalist spent six weeks on it."
+      "why": "« Avec moi, il n’y a pas de perdant » — Compared with court: an eighteen-month wait, a lawyer’s fees, and one side always loses."
+     }
+    ]
+   },
+   "L34-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« la participation des jeunes a augmenté, et elle est restée plus élevée ensuite » — The argument: at sixteen young people still live at home and are at school, so the voting habit forms more easily."
      }
     ]
    }

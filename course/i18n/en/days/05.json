@@ -1,7 +1,7 @@
 {
  "canDo": "Can relate 5–7 completed events in order, in the past.",
  "review": "Review the present; learn avoir + participe passé and common past participles.",
- "input": "Listening: looking back on a weekend/event; reading: a short diary.",
+ "input": "Listen: three recordings, « Alors, ce week-end à la mer ? », « Une nuit dans un refuge de montagne » and « Les jardins ouvriers ont cent ans », twice each; read: the comparison grid « Un week-end à la campagne » and the articles « J’ai passé un week-end sans téléphone » and « Le dimanche, jour de repos ou jour de courses ? », questions first, then the text.",
  "output": "Write 160 words about “last weekend”; retell it aloud in time order in 90 seconds.",
  "checkpoint": "At least 5 sentences of past events; don’t leave verbs in the present.",
  "challenge": "Today’s challenge: pick 3 photos from last weekend on your phone, say what you did in each with 2 sentences in the passé composé (with avoir), then tell it aloud in the order d’abord → ensuite → enfin, in under 90 seconds.",
@@ -62,53 +62,34 @@
   "listening": {
    "L05-1": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "The message does two things: tells a story + passes on Inès’s message."
-     },
-     {
-      "why": "« préviens-la vite » is a clear instruction; rappels here means encores, not calling back."
-     },
-     {
-      "why": "He says clearly « je les ai toutes ratées »."
+      "why": "« Je croyais m’ennuyer, et finalement j’ai adoré » — croire + infinitive / finalement: the outcome reverses the expectation."
      }
     ]
    },
    "L05-2": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "He explicitly rejects the third option: « plutôt que baisser la qualité »."
-     },
-     {
-      "why": "The customers are a consequence, not a cause, and he only learnt how they reacted afterwards."
-     },
-     {
-      "why": "« mieux que je ne l'avais imaginé » states it clearly."
+      "why": "« D’autres, au contraire, m’ont dit que c’était exactement ce qu’ils cherchaient » — Certains… D’autres, au contraire… contrasts two kinds of reaction."
      }
     ]
    },
    "L05-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The compte rendu has been reread and salle 2 is booked."
-     },
-     {
-      "why": "« seulement la première partie » is the fallback plan proposed."
-     },
-     {
-      "why": "« La dernière fois, on a oublié » points straight to the coffee."
-     }
-    ]
-   },
-   "L05-4": {
-    "questions": [
-     {
-      "why": "The last sentence states the main point clearly; sending out thirty applications is exactly what didn’t work."
-     },
-     {
-      "why": "boulangère → sa cousine: the chain is clear."
-     },
-     {
-      "why": "une trentaine is the number of applications sent; six is the number of weeks."
+      "why": "« les jardins seraient désormais protégés » — The housing plan of two years ago was dropped after six thousand signatures (le projet a été abandonné)."
      }
     ]
    }

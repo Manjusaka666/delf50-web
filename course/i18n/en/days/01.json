@@ -1,7 +1,7 @@
 {
  "canDo": "Can introduce yourself, your daily routine and where you live in 6–8 connected full sentences.",
  "review": "Review subject pronouns and basic word order; learn the present tense of high-frequency verbs.",
- "input": "Listening: a 60–90-second self-introduction/schedule; reading: 80–120 words of personal information or a timetable.",
+ "input": "Listen: three recordings, « Une nouvelle collègue au bureau », « Boulanger la nuit, musicien le jour » and « Le marché du samedi cherche ses clients », twice each; read: the comparison grid « Choisir un cours de français du soir » and the articles « Le matin, une heure pour soi » and « Changer de prénom, une démarche qui se banalise », questions first, then the text.",
  "output": "Write a 160-word self-introduction; speak for 60–75 seconds, retelling it without notes.",
  "checkpoint": "Only after ≥80% on the grammar questions, do the 8 output sentences; be able to correct basic errors such as je aller / nous est.",
  "challenge": "Today’s challenge: record a 60-second self-introduction in French on your phone (name, city, job or studies, your daily routine), using être, avoir, aller and faire at least once each; play it back, write down any errors you hear (such as je aller) and record it again.",
@@ -255,6 +255,35 @@
      null,
      {
       "why": "« une partie de leur identité qu’ils ont le droit de choisir » — B is the view of the past (Autrefois…)."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L01-1": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "« Presque tout le monde descend vers treize heures, parce que la réunion du matin finit tard » — descendre = to go down (to eat); the reason follows parce que."
+     }
+    ]
+   },
+   "L01-2": {
+    "questions": [
+     {
+      "why": "« À trois heures, je suis devant le four » — Keep the three times apart: he gets up at deux heures et quart, starts at trois heures, customers come at six heures et demie."
+     }
+    ]
+   },
+   "L01-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Le problème, c’est l’habitude » — Jeanne explicitly rules out price: les prix ne sont pas le problème."
      }
     ]
    }

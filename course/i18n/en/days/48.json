@@ -1,27 +1,47 @@
 {
  "canDo": "Turn recurring errors into actionable personal rules and replacement chunks.",
  "review": "Sort the Error Book by frequency.",
- "input": "A new example sentence / new context for each error.",
+ "input": "Listen: three recordings, « Je viens pour le vélo de l’annonce », « Elle écrit les sous-titres des films » and « Faut-il accepter les chiens au bureau ? », twice each; read: the comparison grid « Faire réparer son téléphone » and the articles « « J’ai tenu un mois sans rien acheter de neuf » » and « L’indice de réparabilité a-t-il changé nos achats ? », questions first, then the text.",
  "output": "Rewrite / re-say the 20 most frequent ones.",
  "checkpoint": "Each error has a closed loop: “error → rule → correct example → new example”.",
  "challenge": "Today’s challenge: sort out your Error Book: rank the top 5 errors by frequency, turn each into an actionable “personal rule” (e.g. « Après si, jamais de conditionnel ») with a French chunk you can reuse as is; then do 5 matching exercises for each at Le Point du FLE to check whether the rule really helps you avoid the error.",
  "items": {
   "listening": {
-   "L48-2": {
+   "L48-1": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The second of the three self-tests."
+      "why": "« Allez, mille euros. Marché conclu » — The haggling: asked 1100 → offered 950 → 1050 with extras → settled at 1000 including lock and panniers."
      }
     ]
    },
-   "L48-4": {
+   "L48-2": {
     "questions": [
      null,
      null,
      null,
+     null,
+     null,
+     null,
      {
-      "why": "She explains this arrangement in her very first sentence."
+      "why": "« c’est le français qu’il faut maîtriser à la perfection » — Je choisis: her answer to the charge of betrayal — she keeps the meaning, the tone and the emotion."
+     }
+    ]
+   },
+   "L48-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« ne peut pas se faire aux dépens des autres » — aux dépens de = at the expense of; the conditional ferait baisser marks a finding still to be confirmed."
      }
     ]
    }

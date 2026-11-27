@@ -1,7 +1,7 @@
 {
  "canDo": "Can describe past settings, habits, weather and states.",
  "review": "Review past participles; learn how the imparfait is formed and the être exception.",
- "input": "Listening: childhood/life in the past; reading: someone’s memories.",
+ "input": "Listen: three recordings, « Tu te souviens de l’école primaire ? », « Grandir dans un phare » and « Les jouets d’autrefois au musée », twice each; read: the comparison grid « Inscrire un enfant à une activité du mercredi » and the articles « Quand on jouait dans la rue » and « Faut-il encore donner des devoirs à la maison ? », questions first, then the text.",
  "output": "Write 160 words on “when I was little”; describe old habits aloud for 2 minutes.",
  "checkpoint": "At least 5 imparfait forms; can convey “background/habits” rather than a list of events.",
  "challenge": "Today’s challenge: find a photo of yourself as a child or recall a childhood scene; write 5 sentences in the imparfait describing the place, the weather, your habits and how you felt (Quand j’étais petit(e)…), then record yourself telling it for 1 minute.",
@@ -61,53 +61,38 @@
   "listening": {
    "L07-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« En réalité » introduces the real explanation, overturning what the children imagined."
-     },
-     {
-      "why": "« trente ans plus tard » is an explicit time marker."
-     },
-     {
-      "why": "It opens with « l'odeur du couloir », the sensory entry point to the whole passage."
+      "why": "« Je ne suis pas sûre que ce soit mieux » — The imparfait (on rentrait…) describes past habits, set against aujourd’hui."
      }
     ]
    },
    "L07-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The four people’s experiences all differ: staying in the courtyard, going to Brittany, boredom, going out freely."
-     },
-     {
-      "why": "The one in Brittany says « j'adorais ça », even though it often rained."
-     },
-     {
-      "why": "« on ne prévenait pas ... Personne ne téléphonait » is the contrast he stresses."
+      "why": "« il est automatique depuis vingt ans » — It is the keeper’s house (La maison) that became a small museum; the lighthouse itself still runs automatically."
      }
     ]
    },
    "L07-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« tous les dimanches » + « jamais plus d'une heure » contrast frequency and length."
-     },
-     {
-      "why": "« Il disait qu'il avait froid » is the only explanation in the text."
-     },
-     {
-      "why": "The way the question « Il y avait un mur, là ? » is asked shows it is no longer there."
-     }
-    ]
-   },
-   "L07-4": {
-    "questions": [
-     {
-      "why": "« Je ne suis pas sûr » shows clearly that he doesn’t agree with the popular view."
-     },
-     {
-      "why": "The baker was just someone else who was there at the time."
-     },
-     {
-      "why": "The answer to « C'était dur ? » is « L'hiver, oui »."
+      "why": "« leur maîtresse n’arrivait plus à les faire sortir » — Au début… / Vingt minutes plus tard… marks the change of attitude."
      }
     ]
    }

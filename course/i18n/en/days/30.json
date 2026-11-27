@@ -1,7 +1,7 @@
 {
  "canDo": "Can complete real multi-step tasks while controlling past participle agreement, double pronouns and the main B1 logical relations in combined output.",
  "review": "Consolidate D19–D29; pin down participle agreement with être/a preceding COD and the order of double pronouns.",
- "input": "3 sets each of combined listening and reading material.",
+ "input": "Listen: three recordings, « Qui a pris mon colis ? », « Je garde les maisons des autres » and « Le pain invendu ne finit plus à la poubelle », twice each; read: the comparison grid « Offrir un cours de cuisine » and the articles « Des paniers d’invendus pour éviter le gaspillage » and « Rapporter ses bouteilles : le retour de la consigne », questions first, then the text.",
  "output": "Write a 160-word multi-step task; a 4-minute spoken interaction.",
  "checkpoint": "Grammar errors in the combined task sorted into tense/agreement/pronoun/logic; a retest of high-frequency structures reaches a steady level.",
  "challenge": "Today’s challenge: take 15 minutes for a small real task: write a message to a friend about 3 things you did yesterday (watch past participle agreement, e.g. les photos que j’ai prises), use 1 double pronoun (je te les envoie), then suggest a plan for the weekend and ask them to reply.",
@@ -10,15 +10,23 @@
    "L30-1": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "1 200 built − 800 withdrawn = 400."
+      "why": "« il faut signaler un dommage dans les quarante-huit heures » — Agreement of the past participle: je les ai vues (les conditions), je les lui avais choisis (les verres); double pronouns: Offrez-les-lui."
      }
     ]
    },
    "L30-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Both attempts are described explicitly as « Effet nul »."
+      "why": "« je les ai prévenus immédiatement » — les = les propriétaires, the owners (direct object placed before) → prévenus agrees."
      }
     ]
    },
@@ -27,15 +35,11 @@
      null,
      null,
      null,
+     null,
+     null,
+     null,
      {
-      "why": "« j'avais consulté huit responsables et zéro utilisateur », so now he always spends half a day on site."
-     }
-    ]
-   },
-   "L30-4": {
-    "questions": [
-     {
-      "why": "The other two only quoted over the phone without seeing the flat, so they didn’t allow for a furniture lift."
+      "why": "« Un rayon vide à dix-huit heures, et ils vont ailleurs » — The final example contradicts that fear: Il n’a perdu aucun client."
      }
     ]
    }

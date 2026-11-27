@@ -1,7 +1,7 @@
 {
  "canDo": "Can write formal/semi-formal emails with a clear subject, purpose and request, and understand/use the common passive and nominalisations.",
  "review": "Review politeness, past/future and connectors; add être + participe passé and frequent nominalisations.",
- "input": "Read model emails and notices.",
+ "input": "Listen: three recordings, « Mon premier entretien d’embauche », « Elle recrute sans CV » and « Travailler pendant ses études : chance ou handicap ? », twice each; read: the comparison grid « Trouver un stage d’été » and the articles « Le CV sans photo ni adresse » and « Télétravail : le bureau à la maison, pour le meilleur et pour le pire », questions first, then the text.",
  "output": "Write a 160-word email; summarise aloud its purpose and key information.",
  "checkpoint": "Greeting/body/request/sign-off all there; at least 2 passive/nominal expressions without losing clarity.",
  "challenge": "Today’s challenge: write a real or imaginary formal email (about 80 words) to a teacher, colleague or organisation, with a subject line, greeting, purpose, request and sign-off, using at least 1 passive (a été annulé / sera envoyé) and 2 nominalisations (la modification, la confirmation).",
@@ -10,15 +10,25 @@
    "L27-1": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« il faudrait refaire un point » — just another meeting to discuss pay."
+      "why": "« Envoie un courriel le soir même pour les remercier » — Deux lignes suffisent: a short thank-you email; few candidates send one, so it is remembered."
      }
     ]
    },
    "L27-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« ce sont deux documents différents » — what you download online always shows the current situation."
+      "why": "« pour tous les métiers où le geste compte plus que le papier » — le geste / le papier: practical skill versus the diploma. Accountants and lawyers still need the qualification."
      }
     ]
    },
@@ -27,15 +37,11 @@
      null,
      null,
      null,
+     null,
+     null,
+     null,
      {
-      "why": "« Une règle, une seule : pas de phrase de plus de deux lignes »; everything else is harmonised at proofreading."
-     }
-    ]
-   },
-   "L27-4": {
-    "questions": [
-     {
-      "why": "« Le vrai problème est ailleurs » — the legal basis comes first and the action last, the reverse of the order people read in."
+      "why": "« si les bourses suffisaient pour vivre, personne ne serait obligé de choisir » — Si + imparfait → conditional: a hypothesis contrary to fact, voicing a demand."
      }
     ]
    }

@@ -1,7 +1,7 @@
 {
  "canDo": "Can explain a problem, make a request, respond to a refusal, and use double pronouns to avoid repetition in common service situations.",
  "review": "Review conditionnel, COD/COI and questions; add the order of double pronouns such as le/la/les + lui/leur.",
- "input": "Listening: reception/customer-service conversations; reading: terms of service and short emails.",
+ "input": "Listen: three recordings, « À la réception de l’hôtel », « Hôtelier depuis trois générations » and « Dormir chez l’habitant : la fin de la fête ? », twice each; read: the comparison grid « Réserver un hôtel pour un séminaire » and the articles « Hôtels sans réception : pratique ou inhumain ? » and « Faut-il encore laisser un pourboire ? », questions first, then the text.",
  "output": "Write a complaint message; a 3-minute hotel role-play.",
  "checkpoint": "The exchange goes at least “problem → request → response → alternative → close”.",
  "challenge": "Today’s challenge: imagine the hotel room you booked doesn’t match its description; write a polite 5-sentence request (Pourriez-vous… / J’aimerais…) with at least 2 double pronouns (je vous le renvoie, pouvez-vous me la changer); then practise a phone version aloud once and prepare a reply to a refusal.",
@@ -47,28 +47,38 @@
   "listening": {
    "L20-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "His reason is work, not medical, so « la seconde option ne s'applique pas »."
-     },
-     {
-      "why": "She looks up a 6 h 40 ticket for 62 euros herself, cheaper than the same-day fare of 94 euros."
+      "why": "« je ne vous facturerai pas la nuit de ce soir » — ne pas facturer = not to charge; he also offers breakfast on both mornings (Je vous offre le petit-déjeuner des deux matins)."
      }
     ]
    },
    "L20-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« C'est le poste où je ne peux pas bouger » — three days, two people."
+      "why": "« Je demande au client ce qui lui ferait plaisir » — Reported speech: il m’a écrit que…, elle m’a annoncé qu’elle voulait…; his rule is je ne discute jamais."
      }
     ]
    },
-   "L20-4": {
+   "L20-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Client meetings are on Monday and Thursday, so there’s no fixed meeting on Wednesday."
-     },
-     {
-      "why": "Sophie proposes a swap: she takes Wednesday and he takes her Friday morning; the two of them have already agreed."
+      "why": "« trois cents logements sont revenus sur le marché de la location ordinaire » — Sequence of tenses in reported speech: elle cherchait, il voulait, elle avait signé."
      }
     ]
    }

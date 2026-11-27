@@ -1,7 +1,7 @@
 {
  "canDo": "Can connect present, past and future into a 2-minute personal statement.",
  "review": "Less new material; rework the 3 grammar points with the most errors.",
- "input": "2 sets each of mixed listening and reading material, focusing on spotting tenses and timelines.",
+ "input": "Listen: three recordings, « Dix ans après le lycée », « Je suis devenue apicultrice en ville » and « Vivre à plusieurs générations sous le même toit », twice each; read: the comparison grid « Trouver une salle de sport » and the articles « La boîte à lire du quartier » and « Le tutoiement gagne du terrain », questions first, then the text.",
  "output": "Write 160 words on “past – present – future”; speak for 2 minutes on the same topic.",
  "checkpoint": "A mixed grammar sample of ≥25 questions; find your top three types of error and redo them.",
  "challenge": "Today’s challenge: record a 2-minute personal statement: your life now (présent), an important past experience (passé composé + imparfait) and a future plan (futur); when you play it back, check that all three times are there and mark one sentence you could improve.",
@@ -49,49 +49,36 @@
   "listening": {
    "L10-1": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "He compares explicitly: « C'est ça qui a tout changé, plus que la qualité du pain, qui elle n'a pas bougé ». Taking on an apprentice is a result, not a cause."
-     },
-     {
-      "why": "dix-huit mois = a year and a half. Three years is how long he has had the business, and twelve kilometres is a distance, not a time."
-     },
-     {
-      "why": "« pas avant d'avoir remboursé le matériel » is the only condition; three hundred baguettes is the figure already reached."
+      "why": "« J’ai appris sur le tas, avec l’ancien mécanicien de mon père » — apprendre sur le tas = to learn on the job."
      }
     ]
    },
    "L10-2": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« nous en avons demandé deux de plus … nous n'en avons obtenu qu'un seul » — ne … que restricts; it doesn’t negate."
-     },
-     {
-      "why": "The reason is that Julien goes part-time from January. The number of adults went down."
+      "why": "« Je gagne environ la moitié de mon ancien salaire » — Mais je ne regarde plus ma montre: half the pay, but no regrets."
      }
     ]
    },
    "L10-3": {
     "questions": [
-     {
-      "why": "« Je ne trouvais pas de logement, je dormais chez un collègue ». The job was interesting; the team is what later improved things."
-     },
+     null,
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "« on décide plus vite, on discute moins » — the difference compared with France."
-     }
-    ]
-   },
-   "L10-4": {
-    "questions": [
-     {
-      "why": "She cooks at the weekend and freezes portions for the week. Cooking every evening was her old habit (imparfait)."
-     },
-     {
-      "why": "« je n'ai pas envie d'apprendre à quarante ans » — he clearly doesn’t intend to learn."
-     },
-     {
-      "why": "« Ça revient beaucoup moins cher que de commander, et on mange mieux » — both reasons are in this one sentence."
+      "why": "« ce mode de vie se développe surtout pour des raisons économiques » — The raisons économiques are le prix des logements and le coût des maisons de retraite."
      }
     ]
    }

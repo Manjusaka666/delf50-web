@@ -1,11 +1,52 @@
 {
  "canDo": "Can take the initiative in a 3–4-minute interaction: explain, answer objections and find a solution.",
  "review": "Review the conditionnel, negation and questions.",
- "input": "2–3 role cards.",
+ "input": "Listen: three recordings, « À la banque », « Réparateur de vélos à domicile » and « Des médiateurs dans les transports », twice each; read: the comparison grid « Organiser un repas de fête » and the articles « Dire non poliment : tout un apprentissage » and « Des caisses où l’on prend son temps », questions first, then the text.",
  "output": "Record each round; in the second round, the other person changes attitude.",
  "checkpoint": "Must include an active opening, at least 1 answer to an objection and an alternative solution.",
  "challenge": "Today’s challenge: find a “negotiating / problem-solving” dialogue on TV5MONDE Apprendre B1 or RFI and pick out 3 polite requests (e.g. Est-ce que vous pourriez… / Si c'était possible, j'aimerais…); then do a 3-minute role-play with a friend or your phone: returning an item bought online, using at least 1 si + imparfait → conditionnel and 1 double object pronoun (je vous le renvoie, vous me les remboursez).",
- "items": {},
+ "items": {
+  "listening": {
+   "L38-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« une carte virtuelle à usage unique » — à usage unique = single-use; Elle ne fonctionne qu’une fois."
+     }
+    ]
+   },
+   "L38-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« j’aimerais former des jeunes sans diplôme » — Je refuse quinze demandes par semaine: demand exceeds what he can do, hence the hiring."
+     }
+    ]
+   },
+   "L38-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Les médiateurs ne travaillent pas après vingt-deux heures » — Deux réserves demeurent: two reservations — no cover after 10 p.m., and two-year contracts only."
+     }
+    ]
+   }
+  }
+ },
  "vocab": {
   "V38-01": {
    "zh": "I’m well aware that …",

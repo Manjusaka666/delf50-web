@@ -1,7 +1,7 @@
 {
  "canDo": "Can say when, where and for how long, and arrange a simple schedule.",
  "review": "Review the present/questions; learn à/en/au/de/depuis/pendant.",
- "input": "Listening: travel times, changes of place; reading: timetables/appointment notices.",
+ "input": "Listen: three recordings, « Comment tu vas au travail, toi ? », « Facteur à la campagne » and « Le bus à la demande arrive dans les villages », twice each; read: the comparison grid « Aller au travail sans voiture » and the articles « Depuis qu’ils vont au travail à vélo » and « La semaine de quatre jours à l’essai », questions first, then the text.",
  "output": "Write a 160-word schedule; explain aloud your route and travel time from home to a destination.",
  "checkpoint": "≥80% correct on prepositions of time and place; can tell apart the core uses of depuis and pendant.",
  "challenge": "Today’s challenge: write out your real schedule for tomorrow in French (at least 5 times of day), using à, en, depuis, pendant and a frequency word (souvent / tous les jours); then spend 1 minute explaining aloud your route from home to school or work and how long it takes.",
@@ -67,53 +67,28 @@
   "listening": {
    "L04-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The reason is that the doctor is away all week. The carte Vitale is only a reminder at the end; the opening hours are extra information, not the reason for the call."
-     },
-     {
-      "why": "Two slots are offered: Thursday morning and late Friday afternoon. Saturday morning is only mentioned as opening hours, not as an option for rebooking."
-     },
-     {
-      "why": "avant vendredi midi. Tuesday at 11 was the original, cancelled appointment; 19 is when the practice closes."
+      "why": "« On repart à dix-sept heures quinze, tous les jours » — The fixed return time is le seul inconvénient; anyone with a late meeting takes the bus."
      }
     ]
    },
    "L04-2": {
     "questions": [
      {
-      "why": "The announcement first gives the delay, then the platform change. Saint-Brieuc is where people change trains, not the destination."
-     },
-     {
-      "why": "environ vingt minutes is the only length of time given; 14 h 20 was the scheduled departure."
-     },
-     {
-      "why": "19 heures is when the ticket office closes, not a requirement to wait."
+      "why": "« sur la même tournée depuis onze ans » — Two figures: dix-neuf ans as a postman, onze ans on the same round."
      }
     ]
    },
    "L04-3": {
     "questions": [
+     null,
+     null,
      {
-      "why": "sauf le dimanche is the key restriction; 20 août is the deadline for collecting the book, not for the opening period."
-     },
-     {
-      "why": "Note the difference between depuis (starting point) and pendant (length): 3 mars is when the library card became valid."
-     },
-     {
-      "why": "The message gives one clear solution: rappelez-nous."
-     }
-    ]
-   },
-   "L04-4": {
-    "questions": [
-     {
-      "why": "The agent deliberately distinguishes première utilisation from achat; septembre is when the address started."
-     },
-     {
-      "why": "complément 1,80 € is the only solution mentioned."
-     },
-     {
-      "why": "This question tests depuis + a point in time directly; trente jours belongs to the pendant structure."
+      "why": "« Le trajet coûte deux euros » — The passenger pays deux euros; the real cost is quatorze euros, douze of which the local authority covers."
      }
     ]
    }

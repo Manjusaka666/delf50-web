@@ -1,7 +1,7 @@
 {
  "canDo": "Switches between all four skills at close to exam pace for the first time.",
  "review": "Review strategies only; no new grammar.",
- "input": "Timed listening + reading combination.",
+ "input": "Listen: three recordings, « On organise le pot de départ », « Sauveteur en mer bénévole » and « La bibliothèque ouvre le dimanche », twice each; read: the comparison grid « Partir en vacances en famille » and the articles « Échanger sa maison pour les vacances » and « Manger moins de viande : où en sont les Français ? », questions first, then the text.",
  "output": "45 minutes of writing; a shortened mock of the three-part oral.",
  "checkpoint": "Record points of fatigue, time overruns and error types, not just the overall score.",
  "challenge": "Today’s challenge: do a 60-minute mini run of all four skills in a row: one RFI « Journal en français facile » story (10 minutes, write the gist) → one TV5MONDE Apprendre B1 article (15 minutes, write and answer 3 questions of your own) → a 160-word opinion piece (25 minutes, with at least 1 plus-que-parfait and 1 subjunctive) → a 3-minute spoken recording (10 minutes); note in your own language how long each part actually took and which was the most tiring.",
@@ -10,8 +10,38 @@
    "L40-1": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« mêmes jours, mêmes horaires, à la minute près » + half the turnover comes from pre-orders."
+      "why": "« Je lui dirai qu’il y a une réunion sur la sécurité » — A prétexte (pretext): he hates such meetings (Il déteste ça, mais il viendra), so he will suspect nothing."
+     }
+    ]
+   },
+   "L40-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« les logements ici sont devenus trop chers pour les jeunes » — The condition: living à moins de dix minutes du port."
+     }
+    ]
+   },
+   "L40-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« aucun autre équipement culturel ne reçoit autant de monde pour ce prix » — nous sommes allés vérifier: the reporter checks the council’s claim; excessif = too high."
      }
     ]
    }

@@ -1,7 +1,7 @@
 {
  "canDo": "Can tell apart something just finished, background, completed events and “the past before the past”, turning an experience into a clear timeline.",
  "review": "Review passé composé / imparfait; learn the passé récent and plus-que-parfait to build a four-layer past timeline.",
- "input": "Listening and reading about travel experiences, paying attention to the order of the story.",
+ "input": "Listen: three recordings, « Un voyage qui a mal commencé », « Elle guide les touristes dans sa propre ville » and « Vacances près de chez soi », twice each; read: the comparison grid « Choisir une assurance voyage » and the articles « « Mes bagages sont arrivés trois jours après moi » » and « Partir seule : elles sont de plus en plus nombreuses », questions first, then the text.",
  "output": "Write 160 words about a trip; retell it aloud in 3 minutes and answer follow-up questions.",
  "checkpoint": "Correctly distinguish passé composé / imparfait in a story, and understand or actively use the passé récent and plus-que-parfait.",
  "challenge": "Today’s challenge: in RFI’s Journal en français facile, find a news item about travel or a transport breakdown and retell it in 4 sentences, including one with venir de + infinitive and one in the plus-que-parfait (Les voyageurs avaient déjà…); then write one sentence comparing it with a trip of your own.",
@@ -37,25 +37,31 @@
    "L19-1": {
     "questions": [
      {
-      "why": "« La ville en compte deux qui portent presque le même nom ». All the pupils were there."
-     },
-     {
-      "why": "« les élèves étaient tous là, on a marché » — one kilometre, twenty minutes."
+      "why": "« Le mien avait expiré depuis trois semaines » — Plus-que-parfait avait expiré: it had already run out before she checked."
      }
     ]
    },
    "L19-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "On the second day they couldn’t set off at all, because Marion’s knee hurt."
+      "why": "« Parlez aux habitants » — ne… que ça = that is all they ask: locals are glad to talk."
      }
     ]
    },
-   "L19-4": {
+   "L19-3": {
     "questions": [
      null,
+     null,
+     null,
+     null,
      {
-      "why": "« Montrez-nous d'abord ce que votre outil fait de plus » — polite but firm."
+      "why": "« il a affiché complet de juin à septembre » — avait prévu (pluperfect) against a affiché (passé composé): he expected an average season and was full."
      }
     ]
    }

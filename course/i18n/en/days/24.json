@@ -1,7 +1,7 @@
 {
  "canDo": "Can compare two options, avoid repetition with certains/d’autres/plusieurs and the like, and admit one drawback of the option chosen.",
  "review": "Review comparison and contrast; add common pronoms indéfinis.",
- "input": "Listening and reading about making choices.",
+ "input": "Listen: three recordings, « Train ou covoiturage pour Lyon ? », « Il a transformé un bus en maison » and « Habiter loin, travailler en ville », twice each; read: the comparison grid « Acheter un vélo électrique » and the articles « Trottinettes en libre-service : stop ou encore ? » and « Gratuité des transports : une fausse bonne idée ? », questions first, then the text.",
  "output": "Write a 160-word comparison of options; make a recommendation aloud in 3 minutes.",
  "checkpoint": "At least 3 criteria compared + 1 concession + a clear choice.",
  "challenge": "Today’s challenge: compare two neighbourhoods you know (or two commuting routes) in 6 sentences, using at least 3 of certains, d’autres, plusieurs, chacun; mark the contrast with alors que / en revanche, and admit one drawback of the option you choose.",
@@ -12,27 +12,34 @@
      null,
      null,
      null,
+     null,
      {
-      "why": "After three or four years it loses about a third of its capacity, and replacing it costs about a quarter of the price of the bike."
+      "why": "« Si on part le vendredi matin, à neuf heures, le billet est à quatre-vingt-dix euros » — A compromise: cheaper than the 15 h train (90 against 134 euros) and faster than car-sharing."
      }
     ]
    },
    "L24-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The first speaker’s reason is that many children have never been to Paris."
-     },
-     {
-      "why": "Last year, six families couldn’t afford the Lyon trip, and six pupils stayed at school."
+      "why": "« À quelqu’un qui sait bricoler, oui » — To everyone else he advises trying it for a week first (essayer une semaine avant)."
      }
     ]
    },
-   "L24-4": {
+   "L24-3": {
     "questions": [
      null,
      null,
+     null,
+     null,
+     null,
      {
-      "why": "The last two options are precisely what characterises digital lending."
+      "why": "« sont nombreux à abandonner au bout de deux ou trois ans » — En revanche sets the contrast: those commuting two days are happy, those commuting five often give up."
      }
     ]
    }

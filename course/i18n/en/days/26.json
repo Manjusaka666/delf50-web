@@ -1,7 +1,7 @@
 {
  "canDo": "Can develop an opinion with structures of purpose, concession and emphasis, and tell apart the common contexts that trigger the subjonctif / indicatif.",
  "review": "Review D25; add pour que/afin que, bien que, ce qui/ce que/ce dont…c’est.",
- "input": "Listening and reading on technology/social media.",
+ "input": "Listen: three recordings, « Une tablette pour Noël ? », « Il fabrique des prothèses avec une imprimante » and « Robots à l’hôpital : aide ou menace ? », twice each; read: the comparison grid « Choisir un forfait Internet » and the articles « Mon grand-père, sa tablette et moi » and « L’intelligence artificielle fait ses devoirs », questions first, then the text.",
  "output": "Write a 160-word opinion; speak for 3–4 minutes, answering the other side.",
  "checkpoint": "A complete chain opinion → reason → example → concession → response → conclusion; justified choices of subjonctif/indicatif.",
  "challenge": "Today’s challenge: count how many times notifications on your phone interrupt you today, then write a 5-sentence comment: state a purpose with pour que + subjonctif, add a concession with bien que or même si, highlight a point with Ce qui me dérange, c’est…, and end with a rule to improve your own habits.",
@@ -43,18 +43,38 @@
    }
   },
   "listening": {
-   "L26-3": {
+   "L26-1": {
     "questions": [
      null,
+     null,
+     null,
+     null,
      {
-      "why": "« Sans elles, je reprendrais la voiture, pas le bus » — the bus takes 25 minutes."
+      "why": "« pas de tablette en semaine, une heure le samedi et le dimanche » — He rebuts the example: ses parents ne lui ont fixé aucune règle, so the issue is rules, not the device."
      }
     ]
    },
-   "L26-4": {
+   "L26-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« la mesure est fiable et l'effet sur l'activité est réel »; abnormal heart rhythms are a separate exception."
+      "why": "« je suis convaincu que c’est mieux que rien » — je comprends leur point de vue… C’est exact… Mais…: he concedes first, then holds his view."
+     }
+    ]
+   },
+   "L26-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« les robots s’arrêtent à la porte du service » — This answers the old lady’s condition: à condition que ce soit toujours une personne qui entre dans sa chambre."
      }
     ]
    }

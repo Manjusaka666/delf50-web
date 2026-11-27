@@ -1,7 +1,7 @@
 {
  "canDo": "Can link short sentences with qui/que/où, and begin handling dont for de + antecedent.",
  "review": "Review qui/que/où; learn the de relation of dont, and get to know common compound relative pronouns.",
- "input": "Listening: introducing people/places; reading: a cultural profile.",
+ "input": "Listen: three recordings, « Le film dont tout le monde parle », « Bibliothécaire dans un bus » and « Le festival qui fait revivre un village », twice each; read: the comparison grid « Une sortie culturelle pour samedi » and the articles « La libraire qui roule » and « Le livre audio, une autre façon de lire ? », questions first, then the text.",
  "output": "Write a 160-word profile of a person or place; speak for 2 minutes using ≥5 relative clauses.",
  "checkpoint": "≥80% on mixed qui/que/où questions; can spot the de relation behind dont.",
  "challenge": "Today’s challenge: choose a French-speaking singer, writer or athlete you admire and write 5 sentences about them, each linked with qui, que or où (e.g. C’est une chanteuse que j’écoute souvent); you can look them up first on TV5MONDE Apprendre or RFI.",
@@ -48,39 +48,39 @@
   "listening": {
    "L13-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Aerial photos taken in a drought showed the grass yellowing faster above the old paths. No seeds survived."
-     },
-     {
-      "why": "« chaque allée correspond à un tracé retrouvé »; the eighteenth-century lists were used to choose the plants, not the paths."
-     },
-     {
-      "why": "The plants were chosen by the gardeners from historical lists — a choice made in the reconstruction."
+      "why": "« J’irai dimanche, à la séance de dix-huit heures » — Relative pronouns: le film dont…, l’actrice qui…, le cinéma où…; he picks the 18 h showing because after the 21 h one je sortirais à minuit."
      }
     ]
    },
    "L13-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Tapes of field recordings from the seventies: elderly singers, often unaccompanied."
-     },
-     {
-      "why": "« ces chanteurs eux-mêmes transformaient ce qu'ils avaient appris ». She keeps the melody but adds modern arrangements."
+      "why": "« C’est quelqu’un à qui parler de ce qu’ils ont lu » — quelqu’un à qui parler: preposition + qui for a person."
      }
     ]
    },
    "L13-3": {
     "questions": [
-     {
-      "why": "« Ce qui a changé les choses, c'est l'arrivée du tramway en 2010 ». The shops closed first and only came back later with the people."
-     }
-    ]
-   },
-   "L13-4": {
-    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "« à tarif réduit pour les personnes âgées et les étudiants »; three screenings a week is the total."
+      "why": "« ils ont limité le nombre de spectacles à quarante » — They also turned down a large company that wanted naming rights (ils ont refusé l’aide d’une grande entreprise)."
      }
     ]
    }

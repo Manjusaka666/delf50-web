@@ -1,7 +1,7 @@
 {
  "canDo": "Use a final original mock to check whether all four skills have reached a stable level you can rely on.",
  "review": "No last-minute cramming.",
- "input": "Full listening and reading.",
+ "input": "Listen: three recordings, « On y va comment, au festival ? », « Sage-femme dans une maison de naissance » and « Un jardin pour soigner à l’hôpital », twice each; read: the comparison grid « Suivre un cours de photographie » and the articles « Photographier dans la rue : a-t-on tous les droits ? » and « Musées gratuits : une fausse bonne idée ? », questions first, then the text.",
  "output": "Full writing and speaking.",
  "checkpoint": "Judge risk from objective samples and the scoring checklist, not from a gut-feeling percentage.",
  "challenge": "Today’s challenge: after the final full mock, do just one thing: pick a TV5MONDE Apprendre B1 video you have never seen, listen twice, then sum up the gist aloud in 3 sentences and add one sentence of your own opinion, to check you can perform steadily on brand-new material; finally write down, in your own language, “the 3 strategies I will stick to on exam day”.",
@@ -14,6 +14,46 @@
      null,
      {
       "why": "« aux remarques de l’assemblée » — The feedback comes from the whole membership, not from a trainer."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L49-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« je n’ai mon permis que depuis deux ans » — The condition: driver over twenty-three with three years' licence; she has had hers only two."
+     }
+    ]
+   },
+   "L49-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« nous refusons deux demandes sur trois, faute de place » — il faut le dire clairement: she stresses the restriction; faute de place = for lack of room."
+     }
+    ]
+   },
+   "L49-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« l’hôpital n’a prévu aucun budget durable » — de sorte que + indicative gives a result; C’est la limite du projet: it relies on volunteers and has no lasting budget."
      }
     ]
    }

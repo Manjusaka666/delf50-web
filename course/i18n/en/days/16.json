@@ -1,7 +1,7 @@
 {
  "canDo": "Can state causes, results and purposes clearly, forming a 2–3-step chain of reasoning.",
  "review": "Review parce que; extend to puisque/donc/c’est pourquoi, and add afin de / pour que.",
- "input": "Listening: cause and effect in the environment/daily life; reading: a short explanatory text.",
+ "input": "Listen: three recordings, « On arrête la voiture ? », « Il répare les objets au lieu de les jeter » and « Une ville éteint ses lumières la nuit », twice each; read: the comparison grid « Réduire ses déchets : quel atelier choisir ? » and the articles « Une ville éteint ses lumières » and « Acheter d’occasion : bon pour la planète ? », questions first, then the text.",
  "output": "Write 160 words: problem – cause – result; explain a choice aloud in 2 minutes.",
  "checkpoint": "At least 2 kinds of cause/effect link in the same paragraph; logically correct relations.",
  "challenge": "Today’s challenge: in RFI’s Journal en français facile, find a news item about the environment and write it up in 3 sentences as “cause → result → purpose” (parce que / donc / pour que or pour + infinitive); then add one sentence about something green you can do in your own life.",
@@ -10,37 +10,32 @@
    "L16-1": {
     "questions": [
      null,
-     null,
      {
-      "why": "The ending says the priority is the places minérales, not along the avenues."
+      "why": "« puisque tu vas au travail en train et moi à vélo » — puisque introduces a reason both speakers already know."
      }
     ]
    },
    "L16-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« Ce qui tue, c'est le cumul »; each factor on its own is often bearable."
-     },
-     {
-      "why": "It refers to the two months, June to August, when there are no flowers to forage once the rapeseed has finished flowering."
+      "why": "« c’est en général faute de pièces » — faute de + noun = for lack of (a negative cause)."
      }
     ]
    },
    "L16-3": {
     "questions": [
-     {
-      "why": "He sets out the cost of doing nothing: rising heating bills, a ban on letting from 2028, a lower resale value."
-     },
-     {
-      "why": "8 of the 22 flats are let, and class F can’t be let from 2028."
-     }
-    ]
-   },
-   "L16-4": {
-    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "Braking distance at fifty km/h is almost twice that at thirty."
+      "why": "« les rues qui mènent à l’hôpital et à la gare restent éclairées » — A chain of cause and effect: si bien que, grâce à, comme, c’est pourquoi, puisque, car, par conséquent."
      }
     ]
    }

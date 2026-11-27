@@ -1,7 +1,7 @@
 {
  "canDo": "Can relate journeys — leaving, arriving, coming back — and handle basic agreement.",
  "review": "Review D5; add aller/venir/partir/arriver/rentrer and similar verbs.",
- "input": "Listening: getting around on a trip; reading: a trip recap/a travel incident.",
+ "input": "Listen: three recordings, « Retour de Lisbonne », « Il a traversé la France à pied » and « Le train de nuit est revenu », twice each; read: the comparison grid « Trois jours à Lisbonne » and the articles « Venise fait payer ses visiteurs d’un jour » and « Voyager moins loin, mais mieux ? », questions first, then the text.",
  "output": "Write 160 words about a trip; speak for 90 seconds with at least 4 être verbs.",
  "checkpoint": "Can explain why être is used; aware of agreement with feminine/plural subjects.",
  "challenge": "Today’s challenge: think of your latest trip (even just to a nearby town) and write 6 sentences describing leaving, arriving and coming back, with at least 4 verbs that take être (partir, arriver, rester, rentrer…); then check the gender and number agreement of every past participle.",
@@ -63,50 +63,37 @@
   "listening": {
    "L06-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« Non, en train » is a direct answer; the car is still at the garage."
-     },
-     {
-      "why": "He has to go back on Saturday, so he hasn’t picked it up yet."
+      "why": "« je suis passée par un marché aux puces » — It was the cousin who stayed in (ma cousine est restée à la pension), not Solène."
      }
     ]
    },
    "L06-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« Il est complet, sauf l'attestation d'assurance » is the key information."
-     },
-     {
-      "why": "The text says délai plus long; it doesn’t say the application was refused."
-     },
-     {
-      "why": "It’s his colleague who is on leave, not Mme Roux."
+      "why": "« Dormez, vous déciderez demain » — The café owner told him to sleep on it; the next day le soleil est revenu and he set off again."
      }
     ]
    },
    "L06-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Compare 410 (paying) with 200 (free); the last sentence points out the surprise."
-     },
-     {
-      "why": "« entièrement reversés » rules out any other use."
-     },
-     {
-      "why": "These thirty people are precisely the ones who did not take part in the walk."
-     }
-    ]
-   },
-   "L06-4": {
-    "questions": [
-     {
-      "why": "She had an address and her luggage; the problem was with checking her documents."
-     },
-     {
-      "why": "« une amie d'amie » is a friend of a friend."
-     },
-     {
-      "why": "deux ans is how long she has been in France."
+      "why": "« elles n’arriveront que dans quatre ans » — ne… que = only; what comes before summer is des prises (sockets), not the new carriages."
      }
     ]
    }

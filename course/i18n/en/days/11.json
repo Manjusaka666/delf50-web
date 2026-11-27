@@ -1,7 +1,7 @@
 {
  "canDo": "Can use le/la/les/lui/leur to avoid repetition while keeping references clear.",
  "review": "Review the parts of a sentence; tell the direct object apart from à + a person.",
- "input": "Listening: phone/service exchanges; reading: an email thread.",
+ "input": "Listen: three recordings, « Tu peux me rendre un service ? », « Écrivain public : il écrit pour les autres » and « Une épicerie tenue par ses clients », twice each; read: the comparison grid « Faire garder son chat pendant les vacances » and the articles « Rendre service à ses voisins, mode d’emploi » and « Service client : parler enfin à un humain », questions first, then the text.",
  "output": "Write a 160-word message with at least 5 pronoun replacements; a spoken role-play.",
  "checkpoint": "≥8 out of 10 replacements correct; don’t use lui/leur as a COD.",
  "challenge": "Today’s challenge: write a 5–6-sentence message in French to a friend or relative saying that you lent them a book, called them and so on, replacing repeated nouns with le / la / les / lui / leur at least 5 times; then check that each pronoun comes before the verb.",
@@ -63,53 +63,34 @@
   "listening": {
    "L11-1": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "« votre commande a été séparée en deux colis ». Stock and lost parcels aren’t mentioned."
-     },
-     {
-      "why": "« Je vous le renvoie tout de suite par courriel ». The complaint can only be opened after Friday."
-     },
-     {
-      "why": "« ne le faites pas avant vendredi » — the carrier needs a day’s margin."
+      "why": "« je peux donc te la prêter de huit heures à quatorze heures » — te la prêter: te = à Garance, la = la camionnette (the van). The brother only collects it at quinze heures."
      }
     ]
    },
    "L11-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The out-of-stock medicine can be ordered but won’t arrive until the next afternoon; since it’s needed that evening, a générique équivalent is given."
-     },
-     {
-      "why": "« pendant le repas … ne les prenez pas à jeun » — two tablets a day, with meals."
-     },
-     {
-      "why": "The only signal given to stop and see a doctor is vertiges."
+      "why": "« Je reçois deux fois plus de monde qu’il y a cinq ans » — Au contraire: online procedures have brought him more people, not fewer."
      }
     ]
    },
    "L11-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "He asks her to run Thursday’s workshop in Thomas’s place. Revising the materials isn’t part of it; only the answers to the second part need sending."
-     },
-     {
-      "why": "« les exercices de la deuxième partie ne sont pas corrigés » — only this part’s answers need preparing."
-     },
-     {
-      "why": "« dis-le-moi avant demain midi, je demanderai à Sofiane » — contacting Sofiane is Pascal’s job."
-     }
-    ]
-   },
-   "L11-4": {
-    "questions": [
-     {
-      "why": "« Le justificatif de domicile, lui, nous l'avons bien reçu » — it’s the proof of address that has arrived."
-     },
-     {
-      "why": "« sinon on ne le retrouve pas ». The 10th is the submission deadline; the 15th is when the committee meets."
-     },
-     {
-      "why": "« Si nous recevons le document avant le 10 » is the only condition."
+      "why": "« ses trois heures ne lui pèsent pas » — ne pas peser à qqn = not to feel like a burden; lui = à la retraitée (the retired woman)."
      }
     ]
    }

@@ -1,7 +1,7 @@
 {
  "canDo": "Can use y/en naturally in common à/de/quantity structures and recognise what common verbs take.",
  "review": "Review COD/COI; learn common verbes + à/de and connect them with y/en.",
- "input": "Listening: shopping/city life; reading: menus, services and everyday texts.",
+ "input": "Listen: three recordings, « On mange où ce soir ? », « La cheffe qui cuisine les légumes oubliés » and « Des potagers au pied des immeubles », twice each; read: the comparison grid « Commander un panier de légumes » and the articles « Les cantines changent de recette » and « Manger local : une bonne idée, vraiment ? », questions first, then the text.",
  "output": "Write 160 words on the city or food with at least 4 uses of y/en; quick spoken replacements.",
  "checkpoint": "Complete 12 replacements; be able to explain the difference between y/en, lui/leur and the verb’s preposition.",
  "challenge": "Today’s challenge: list in French the food you bought this week and the places you went to; write 6 sentences, at least 4 with y or en (J’en ai acheté deux kilos. / J’y vais le samedi.); then find a short TV5MONDE video about a market or food and note 3 expressions of quantity.",
@@ -34,40 +34,35 @@
   "listening": {
    "L12-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "He says he could get some in (« Je pourrais en faire venir »); his reason for refusing is that they have no taste and travel for three days."
-     },
-     {
-      "why": "The Landes is where the kiwis come from; the advice about the fridge is about the kiwis too."
+      "why": "« n’en prends pas trop » — en = some fruit; last week on en a jeté la moitié, so buy less."
      }
     ]
    },
    "L12-2": {
     "questions": [
      null,
+     null,
+     null,
+     null,
      {
-      "why": "The reason is that it contains almost no fibre; three glasses counting as only one portion is the consequence, not the reason."
+      "why": "« je leur en fais goûter une cuillère, gratuitement » — leur = aux clients, en = de ces légumes; note the order leur + en."
      }
     ]
    },
    "L12-3": {
     "questions": [
-     {
-      "why": "Saturday evening is full; the options are Saturday lunchtime or Friday evening. 19 h 30 is when Friday evening starts."
-     },
-     {
-      "why": "« il faut en choisir un seul pour tout le monde », and they must be told two days in advance."
-     }
-    ]
-   },
-   "L12-4": {
-    "questions": [
-     {
-      "why": "« montée sans clou ». The rails are on the ground and have nothing to do with the roof frame."
-     },
+     null,
+     null,
+     null,
      null,
      {
-      "why": "The directions are: turn left on leaving, walk to the little square, stop in front of the fountain. The river comes later."
+      "why": "« y voient surtout un lieu de rencontre » — y = in the garden; surtout marks this as the main benefit."
      }
     ]
    }

@@ -1,7 +1,7 @@
 {
  "canDo": "Can say what you don’t need, can’t do or never do, and make polite requests.",
  "review": "Review questions; add ne…pas/jamais/plus and pouvoir/vouloir.",
- "input": "Listening: requests in service situations; reading: rules/notices.",
+ "input": "Listen: three recordings, « Au guichet de la gare », « Le dernier cordonnier du quartier » and « Un seul numéro pour toutes les démarches », twice each; read: the comparison grid « Faire réparer son vélo » and the articles « Le guichet ferme, les habitants s’organisent » and « « Bonjour, puis-je vous aider ? » : le retour des vendeurs », questions first, then the text.",
  "output": "Write a 160-word request for information; speaking: complete the exchange “didn’t understand → ask them to repeat → confirm”.",
  "checkpoint": "Can turn 5 affirmative sentences into different negatives; can say 3 kinds of polite request.",
  "challenge": "Today’s challenge: imagine you’re in a French café or bakery and write a 6-line mini-dialogue: order politely with pouvoir / vouloir, use two negatives (ne…pas, ne…jamais) to say what you don’t want or don’t eat, then read it aloud twice.",
@@ -72,53 +72,30 @@
   "listening": {
    "L03-1": {
     "questions": [
+     null,
+     null,
      {
-      "why": "« il manque le nom de l'autre conducteur » is the only reason given."
-     },
-     {
-      "why": "« N'envoyez pas … par courriel » is the only prohibition; the other two are exactly what she recommends."
-     },
-     {
-      "why": "« Je ne travaille pas le mercredi ; ce jour-là, demandez monsieur Fabre » gives the alternative contact."
+      "why": "« Trente euros en tout » — 18 euros (first-class supplement) + 12 euros (exchange fee) = trente euros."
      }
     ]
    },
    "L03-2": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "« joindre votre avis d'imposition » is the only attachment required."
-     },
-     {
-      "why": "« sans ce document, nous ne pouvons pas calculer le tarif » explains what it’s for."
-     },
-     {
-      "why": "« le changement ne prend effet que le mois suivant » — ne … que means “only”, not a refusal."
+      "why": "« je ne sais pas le faire correctement » — ne pas vouloir faire semblant = he will not pretend to know how."
      }
     ]
    },
    "L03-3": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "« le bassin ne sera pas accessible », whereas the gym and group classes « ne sont pas concernés »."
-     },
-     {
-      "why": "« Nous ne prolongeons pas automatiquement » explicitly rules out anything automatic."
-     },
-     {
-      "why": "« ils ont lieu normalement » says so directly."
-     }
-    ]
-   },
-   "L03-4": {
-    "questions": [
-     {
-      "why": "The technician’s visit is the second step, after « si le voyant reste rouge », not the first."
-     },
-     {
-      "why": "« Si le voyant reste rouge, nous devons envoyer un technicien » is the only condition."
-     },
-     {
-      "why": "He isn’t in during the day (ne peux pas être là en journée), and « nous ne pouvons pas venir le soir » rules out the evening."
+      "why": "« un appel sur trois concerne les déchets » — The town hall expected identity papers (La mairie pensait…); in fact it is waste."
      }
     ]
    }

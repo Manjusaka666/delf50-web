@@ -1,7 +1,7 @@
 {
  "canDo": "Can write a linear but complete opinion essay: position, two reasons, an example, a concession, a conclusion.",
  "review": "Review connectors, comparison, cause and effect.",
- "input": "Read a short prompt text and extract only the topic.",
+ "input": "Listen: three recordings, « Les cadeaux de Noël, on arrête ? », « Il a ouvert un café où l’on paie ce qu’on peut » and « Vieillir ensemble plutôt que seul », twice each; read: the comparison grid « Donner de son temps aux personnes âgées » and the articles « Des jeux vidéo à la médiathèque » and « Faut-il rendre le vote obligatoire ? », questions first, then the text.",
  "output": "A ≥160-word opinion essay in 45 minutes.",
  "checkpoint": "At least 2 body paragraphs; the conclusion brings in no new argument.",
  "challenge": "Today’s challenge: find a controversial social issue in RFI’s « Journal en français facile » or TV5MONDE Apprendre B1 (e.g. Sunday shop opening, office dress codes) and write a ≥160-word opinion essay in 45 minutes: position + two reasons + one concrete example + a concession + a conclusion; use the subjunctive at least 2 times (il faut que, bien que, je souhaite que), then count the words and underline every connector.",
@@ -9,8 +9,25 @@
   "listening": {
    "L36-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« Au début j'étais contre, je ne vais pas le cacher »; the change came from the park-and-ride and the shuttle."
+      "why": "« on pourrait louer une grande maison tous ensemble à Pâques » — The method: grant the other’s reservation (Tu as raison), then adjust the proposal."
+     }
+    ]
+   },
+   "L36-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« si dix personnes abusent pour que cent mangent correctement, je l’accepte » — C’est possible. Mais…: a concession followed by a value judgement."
      }
     ]
    },
@@ -18,8 +35,12 @@
     "questions": [
      null,
      null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The text gives exactly this combination of three elements."
+      "why": "« Les demandes sont dix fois supérieures aux places » — Tout n’est pas idyllique: the turn towards reservations (tensions, a departure, the limit)."
      }
     ]
    }
