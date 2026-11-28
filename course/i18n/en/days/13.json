@@ -11,9 +11,7 @@
     "questions": [
      null,
      null,
-     {
-      "why": "« Places de 14 à 38 euros » — The cheapest seats, at 14 euros, are within budget."
-     },
+     null,
      null,
      null,
      null,
@@ -28,12 +26,13 @@
      null,
      null,
      {
-      "why": "« ce spectacle de cirque contemporain parle à tous » — The museum fails only on booking, the concert only on the day."
+      "why": "« ce spectacle de cirque contemporain parle à tous » — The museum only fails on booking; the concert fails on the day and the price; the play needs good French and costs too much."
      }
     ]
    },
    "R13-3": {
     "questions": [
+     null,
      null,
      null,
      null,

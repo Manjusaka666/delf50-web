@@ -26,7 +26,7 @@
      null,
      null,
      {
-      "why": "« vous arrêtez quand vous voulez, sans frais » — Basic Gym fails only on classes, Studio Équilibre only on opening hours."
+      "why": "« vous arrêtez quand vous voulez, sans frais » — Basic Gym has no group classes and closes too early; Studio Équilibre only fails on opening hours."
      }
     ]
    },
@@ -39,6 +39,7 @@
      {
       "why": "« que s’il est choisi par les deux personnes » — ne… que si = only if."
      },
+     null,
      null,
      {
       "why": "« beaucoup de clients plus âgés jugent cette familiarité déplacée » — déplacé = inappropriate."

@@ -28,7 +28,7 @@
      null,
      null,
      {
-      "why": "« le train met vingt-deux minutes » — The coach fails only on duration (55 minutes), the shuttle only on arrival time (8 h 50)."
+      "why": "« le train met vingt-deux minutes » — Only the train meets all four criteria: the coach is too slow with no late return, car-sharing costs too much, the shuttle arrives too late."
      }
     ]
    },
@@ -38,6 +38,7 @@
      {
       "why": "« je mets trente-cinq minutes, tous les jours, qu’il pleuve ou non » — By car it sometimes took only 20 minutes, so cycling is not always faster; he still uses his car at weekends."
      },
+     null,
      null,
      null,
      null,

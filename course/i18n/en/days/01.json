@@ -212,7 +212,7 @@
      null,
      null,
      {
-      "why": "« nous n’acceptons jamais plus de dix inscrits par groupe » — Only Institut Lumière meets all four criteria; each of the others fails on at least one (price, diploma, time and group size)."
+      "why": "« nous n’acceptons jamais plus de dix inscrits par groupe » — Only Institut Lumière meets all four criteria; each of the others fails on at least one (time, group size, diploma or price)."
      }
     ]
    },
@@ -220,7 +220,7 @@
     "questions": [
      null,
      {
-      "why": "« la première chose que je faisais, c’était de regarder mon téléphone » — B and C are what she does now, after the change."
+      "why": "« la première chose que je faisais, c’était de regarder mon téléphone » — Breakfast and the notebook are what she did after changing her habits."
      },
      {
       "why": "« c’est d’avoir enfin un moment où personne ne me demande rien » — She says explicitly that it was not the sport that helped her."
@@ -229,12 +229,13 @@
      {
       "why": "« réserver une heure le soir, sans écran, pour dessiner » — He gave up getting up early, not time for himself: he moved the hour to the evening."
      },
+     null,
      {
       "why": "« Se lever plus tôt n’a de sens que si l’on se couche plus tôt » — ne… que si = only on condition that."
      },
      null,
      {
-      "why": "« commencer par éteindre les écrans une demi-heure avant de dormir » — She advises this before changing the alarm, so B is not the first step."
+      "why": "« commencer par éteindre les écrans une demi-heure avant de dormir » — She advises doing this before changing the alarm, so setting the alarm earlier is not her first advice."
      }
     ]
    },
@@ -253,8 +254,9 @@
       "why": "« Le demandeur doit prouver que sa demande repose sur un « intérêt légitime » » — The procedure is free (La démarche est gratuite); letters from relatives are one kind of evidence, not a consent form."
      },
      null,
+     null,
      {
-      "why": "« une partie de leur identité qu’ils ont le droit de choisir » — B is the view of the past (Autrefois…)."
+      "why": "« une partie de leur identité qu’ils ont le droit de choisir » — Treating the first name as a family tradition accepted without question was the view of the past (Autrefois…)."
      }
     ]
    }
