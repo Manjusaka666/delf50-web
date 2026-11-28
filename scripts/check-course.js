@@ -86,6 +86,7 @@ function question(where, q, bankQuestion, body) {
 // and absolute words (toujours, jamais…) do not mark the wrong ones.
 const ABSOLUTE = /\b(toujours|jamais|aucun|aucune|seulement|uniquement|totalement|interdit|interdite|tous|toutes|rien|personne|exclusivement|systématiquement|entièrement|complètement)\b/i;
 const tells = {};
+const grid = { n: 0, oui: 0 };
 function choiceTells(m, x) {
   const t = tells[m] || (tells[m] = { n: 0, longest: 0, shortest: 0, right: 0, wrong: 0, rightAbs: 0, wrongAbs: 0, nr: 0, nw: 0 });
   for (const q of x.questions) {
@@ -129,6 +130,12 @@ for (const d of days) {
         x.questions.forEach((q, qi) => question(`${where} Q${qi + 1}`, q, false, body));
         choiceTells(m, x);
         check(new Set(x.questions.map((q) => norm(q.stem))).size === x.questions.length, where, 'repeated stem');
+        // One point, one question: two multiple-choice questions never rest on the same quotation
+        // (the grid's closing « which one fits every criterion » question sums up the others by design).
+        const proofs = x.questions.filter((q) => q.options && q.options[0] !== 'Oui' && !q.cite && !/correspond à tous/.test(q.stem) && plain(q.why || '').length > 12)
+          .map((q) => norm(String(q.why).split('»')[0]));
+        check(new Set(proofs).size === proofs.length, where, 'two questions test the same passage');
+        for (const q of x.questions) if (q.options && q.options.length === 2 && q.options[0] === 'Oui' && q.options[1] === 'Non') { grid.n++; grid.oui += q.answer === 0; }
       }
       if (m === 'writing') check(x.minWords >= (FLOORS.writing || 60) && x.checklist.length, where, `word target ${x.minWords}, the exam asks for ${FLOORS.writing || 60}`);
       if (m === 'writing' && x.model) check(words(x.model.join(' ')) >= x.minWords, where, 'model answer shorter than the word target');
@@ -195,6 +202,12 @@ for (const [m, t] of Object.entries(tells)) {
   check(shortest <= 0.45, `${m}`, `the right option is the shortest in ${(100 * shortest).toFixed(0)}% of the multiple-choice questions`);
   check(ratio <= 1.15 && ratio >= 0.87, `${m}`, `right options are ${ratio.toFixed(2)}× as long as wrong ones`);
   check(absWrong <= absRight + 0.04, `${m}`, `absolute words mark the wrong options (${(100 * absWrong).toFixed(1)}% of wrong options, ${(100 * absRight).toFixed(1)}% of right ones)`);
+}
+
+// The criteria grid is not a « mostly yes » exercise: about as many « non » as the official papers.
+if (grid.n) {
+  if (process.env.TELLS) console.log(`grid: « oui » ${(100 * grid.oui / grid.n).toFixed(0)}% of ${grid.n}`);
+  check(grid.oui / grid.n <= 0.68 && grid.oui / grid.n >= 0.45, 'reading grid', `« oui » is the answer in ${(100 * grid.oui / grid.n).toFixed(0)}% of the criteria`);
 }
 
 if (failures.length) {
