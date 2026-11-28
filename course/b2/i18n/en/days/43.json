@@ -12,8 +12,18 @@
      null,
      null,
      null,
+     null,
      {
       "why": "« Supprimez la moitié des trains sur une ligne, et vous démontrerez ensuite qu’elle ne sert à rien » — un tollé = an outcry."
+     }
+    ]
+   },
+   "R43-2": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "« Chaque enfant peut recevoir de chacun de ses parents cent mille euros sans payer le moindre impôt » — One hundred thousand euros from each parent, tax-free, makes two hundred thousand: the answer adds two figures."
      }
     ]
    }

@@ -5,6 +5,7 @@ import { studyDays, itemState, questionState, chunkMark } from '../progress.js';
 import { html, icon, pad2, frText, fmtDateTime, fmtDuration, LETTERS, moduleName } from '../ui.js';
 import { t } from '../i18n.js';
 import { empty, clip, listenAction } from './common.js';
+import { kindOf } from '../answers.js';
 
 export async function archiveView(d) {
   const course = getCourse();
@@ -27,7 +28,7 @@ export async function archiveView(d) {
       <p class="arc-head"><a href="#/day/${d}/${module}/${day.items[module].indexOf(it) + 1}" lang="fr">${frText(it.title)}</a><span class="muted">${t('common.answeredOf', { n: st.answered, total: it.questions.length })}</span></p>
       <ol class="arc-qs">${it.questions.map((q, i) => {
         const s = questionState(store.S, module, d, it, i);
-        return s ? html`<li class="${s.correct ? 'ok' : 'bad'}" lang="fr">${icon(s.correct ? 'check' : 'cross')}<span>${frText(q.stem)}<br><small>${LETTERS[s.selected]}. ${frText(q.options[s.selected])}${s.correct ? '' : html` → ${LETTERS[q.answer]}. ${frText(q.options[q.answer])}`}</small></span></li>` : '';
+        return s ? html`<li class="${s.correct ? 'ok' : 'bad'}" lang="fr">${icon(s.correct ? 'check' : 'cross')}<span>${frText(q.stem)}<br><small>${kindOf(q) === 'open' ? html`${frText(s.selected)}${s.correct ? '' : html` → ${frText(q.model)}`}` : html`${LETTERS[kindOf(q) === 'cite' ? s.selected.c : s.selected]}. ${frText(q.options[kindOf(q) === 'cite' ? s.selected.c : s.selected])}${kindOf(q) === 'cite' ? html` · « ${frText(s.selected.j)} »` : ''}${s.correct ? '' : html` → ${LETTERS[q.answer]}. ${frText(q.options[q.answer])}${kindOf(q) === 'cite' ? html` · « ${frText(q.cite)} »` : ''}`}`}</small></span></li>` : '';
       })}</ol>
     </div>`;
   });

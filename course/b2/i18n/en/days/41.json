@@ -64,6 +64,17 @@
      }
     ]
    }
+  },
+  "reading": {
+   "R41-1": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "« la mortalité des arbres a augmenté de 80 % en dix ans » — An 80 % rise is about 1.8 times the earlier figure, nearly double: the answer needs a conversion."
+     }
+    ]
+   }
   }
  },
  "vocab": {

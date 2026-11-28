@@ -77,6 +77,10 @@ export default {
 
   'text.playedOnce': 'Played once in the exam', 'text.playedTwice': 'Played twice in the exam',
   'text.hideScript': 'Hide transcript', 'text.showScript': 'Show transcript', 'text.listenFirst': 'Listen first without reading; check the transcript after you answer.',
+  'text.quotePrompt': 'Justify: copy the passage that proves your answer, then choose true or false.', 'text.answerPrompt': 'Write your answer (a few words are enough, as in the exam).',
+  'text.quoteFirst': 'Copy the passage of the text that justifies your answer first: without a justification, the answer earns no point.', 'text.answerFirst': 'Write your answer first.',
+  'text.submitAnswer': 'Submit answer', 'text.yourQuote': 'Your justification', 'text.yourAnswer': 'Your answer',
+  'text.expectedQuote': 'Expected passage', 'text.expectedAnswer': 'Expected answer', 'text.quoteMissing': 'Right choice, but your quotation is not the passage that proves it: in the exam this earns no point.',
   'text.questions': 'Questions', 'text.comprehension': 'Comprehension', 'text.hint': 'Each answer shows its explanation straight away. Answers are final.',
 
   'player.unsupported': 'This browser can’t read French aloud. Use a recent Chrome, Edge or Safari, or read the transcript.',

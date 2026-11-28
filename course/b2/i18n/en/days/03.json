@@ -12,9 +12,11 @@
      null,
      null,
      null,
+     null,
      {
       "why": "« Lorsque le démenti paraît, le public est déjà passé à autre chose » — un démenti = a denial, a correction."
      },
+     null,
      null,
      null,
      null,
@@ -26,7 +28,7 @@
    "R03-2": {
     "questions": [
      {
-      "why": "« c’est confondre la quantité et la compréhension » — The author explicitly says he does not think newsrooms are less scrupulous than before, so C is wrong."
+      "why": "« c’est confondre la quantité et la compréhension » — The author explicitly says he does not think newsrooms are less scrupulous than before (Je ne crois pas que…); keeping instant news for life-saving alerts is a concession, not his thesis."
      },
      {
       "why": "« l’on ne s’en portait pas plus mal » — ne pas s’en porter plus mal = to be none the worse for it."
@@ -35,6 +37,9 @@
      null,
      null,
      null,
+     {
+      "why": "« plus d’un tiers des personnes interrogées déclarent éviter volontairement les informations » — More than a third is necessarily more than a quarter: the answer needs a conversion, not a matching word."
+     },
      {
       "why": "« où la rapidité sauve des vies » — Qu’on ne se méprenne pas = make no mistake (a clarification before conceding a point)."
      }

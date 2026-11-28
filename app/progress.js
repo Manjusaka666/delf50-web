@@ -8,10 +8,11 @@
  */
 import { DAYS, answerKey, grammarKey, productionKey, recordId } from './state.js';
 import { nodeOf } from './course.js';
+import { isCorrect } from './answers.js';
 
 export function questionState(S, module, day, item, q) {
   const v = S[module][answerKey(day, recordId(item), q)];
-  return v === undefined ? null : { selected: v, correct: v === item.questions[q].answer };
+  return v === undefined || v === null ? null : { selected: v, correct: isCorrect(item.questions[q], v) };
 }
 
 export function itemState(S, module, day, item) {
@@ -79,7 +80,7 @@ export function choiceAccuracy(S, module, loadedDays) {
   for (const day of loadedDays) for (const item of day.items[module]) item.questions.forEach((q, i) => {
     const v = S[module][answerKey(day.day, recordId(item), i)];
     if (v === undefined) return;
-    answered++; if (v === q.answer) correct++;
+    answered++; if (isCorrect(q, v)) correct++;
   });
   return { correct, answered };
 }

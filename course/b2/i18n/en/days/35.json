@@ -7,8 +7,22 @@
  "challenge": "Today’s challenge: find an education news item on TV5MONDE or RFI’s « Journal en français facile » and write 5 French sentences giving your view, at least 2 of them with avoir + a past participle after a preceding direct object (e.g. « Les réformes qu’on a annoncées… »); leave it for 10 minutes, then check it three times for “meaning → agreement → punctuation” and note what you corrected.",
  "items": {
   "reading": {
+   "R35-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« réduisait de 40 % le nombre de victimes » — 40 % is more than a third (about 33 %), so it is true: the answer compares two figures."
+     }
+    ]
+   },
    "R35-2": {
     "questions": [
+     null,
      null,
      null,
      null,
