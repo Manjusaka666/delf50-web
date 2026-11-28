@@ -89,8 +89,8 @@ const tells = {};
 function choiceTells(m, x) {
   const t = tells[m] || (tells[m] = { n: 0, longest: 0, shortest: 0, right: 0, wrong: 0, rightAbs: 0, wrongAbs: 0, nr: 0, nw: 0 });
   for (const q of x.questions) {
-    // Names (who says what) and one-word options carry no length tell.
-    if (q.open || q.cite || q.options.length < 3 || q.options.every((o) => words(o) <= 2)) continue;
+    // Names (who says what) and options of a few words carry no length tell.
+    if (q.open || q.cite || q.options.length < 3 || q.options.every((o) => words(o) <= 3)) continue;
     const len = q.options.map((o) => plain(o).length), max = Math.max(...len);
     if (len.filter((l) => l === max).length === 1) { t.n++; if (len[q.answer] === max) t.longest++; if (len[q.answer] === Math.min(...len)) t.shortest++; }
     q.options.forEach((o, k) => { if (k === q.answer) { t.right += len[k]; t.nr++; t.rightAbs += ABSOLUTE.test(o); } else { t.wrong += len[k]; t.nw++; t.wrongAbs += ABSOLUTE.test(o); } });
