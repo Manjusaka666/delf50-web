@@ -1,8 +1,8 @@
 {
  "canDo": "Can express different degrees of certainty and conjecture accurately when discussing science and climate (il est certain que / il est probable que / il se peut que / il semble que / devoir for conjecture / the conditional for caution), and tell how sure an author is of their information in articles and broadcasts.",
  "review": "Review day 3’s “indicative or subjunctive” (il est probable que + indicative / il est possible que + subjunctive) and day 10’s past conditional (for unconfirmed information); combine with day 18’s pronouns: il se peut qu’on en sauve une partie.",
- "input": "Read: an analysis of attribution science, a column defending “scientific doubt” and a botanist answering readers’ questions — label every statement with its degree of certainty (certain / very likely / possible / uncertain); listen: a glaciologist on Alpine glaciers, a “true or false” segment distinguishing weather from climate and a heat warning news flash — note the words speakers use to show how sure they are.",
- "output": "Write: a ≥220-word article for a magazine’s “science explained” column, explaining that “scientific uncertainty is not ignorance”, with at least 5 different expressions of modality; speak: a 4-minute monologue on “geoengineering”, then defend “climate lessons in primary school” in the debate.",
+ "input": "Read: the informative article « Le Gulf Stream pourrait-il s’arrêter ? », the opinion piece « Peut-on encore douter du réchauffement ? » and the three-voice forum « Géo-ingénierie : faut-il tenter de refroidir la planète ? » — questions first, then the text, finding the evidence for each answer; listen: « Les glaciers alpins en sursis » and « Vrai ou faux : « Il gèle en avril, donc le réchauffement n’existe pas » » twice each, then three short recordings once each.",
+ "output": "Write: a ≥250-word article for a magazine’s “science explained” column, explaining that “scientific uncertainty is not ignorance”, with at least 5 different expressions of modality; speak: a 4-minute monologue on “geoengineering”, then defend “climate lessons in primary school” in the debate.",
  "checkpoint": "Reading and listening accuracy ≥80%; can tell il semble que + subjunctive from il me semble que + indicative, and sans doute (probably) from sans aucun doute (without any doubt); article ≥220 words with accurate modality; a 4-minute monologue without breaking off.",
  "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about climate or scientific research, and write 3 sentences giving information that is “certain”, “very likely” and “still uncertain” (e.g. « Il est certain que… / Il se peut que… »), or record a 1-minute spoken commentary.",
  "items": {
@@ -10,43 +10,14 @@
    "R19-1": {
     "questions": [
      {
-      "why": "The article presents in turn the principle of attribution science, its conclusions (certain / fairly certain / uncertain) and its uses. It says explicitly that some conclusions « restent fragiles », so B goes too far; the author doesn’t criticise the models (C)."
-     },
-     null,
-     {
-      "why": "« pour les tempêtes ou les tornades, les conclusions restent fragiles »; the conclusion on heatwaves is « sans appel », and the link with heavy rainfall « solide »."
-     },
-     null,
-     {
-      "why": "« cette nuance passe mal dans le débat public »: some think scientists know nothing, others blame every thunderstorm on the climate — two extremes."
-     },
-     {
-      "why": "« en partie » means “partly”: more and more events will have a contribution from global warming, but it won’t be the only cause. A contradicts “oui”, B contradicts “en partie”."
-     }
-    ]
-   },
-   "R19-2": {
-    "questions": [
-     {
-      "why": "« ce langage prudent n’est pas un défaut de la science, mais sa principale qualité », and the ending argues for teaching everyone to “read uncertainty”."
-     },
-     {
-      "why": "« C’est précisément ce qui la rend digne de confiance : elle peut être corrigée »; C is the opposite of “provisional conclusions”."
+      "why": "« montrerait des signes d’essoufflement » — The conditionals montrerait / indiqueraient mark what is not yet confirmed: “would seem to show”."
      },
      null,
      null,
+     null,
+     null,
      {
-      "why": "« Il appartient plutôt aux médias, et à l’école, d’apprendre à chacun à lire une incertitude »; to C he answers « Sans doute pas »."
-     }
-    ]
-   },
-   "R19-3": {
-    "questions": [
-     {
-      "why": "The layout is « Question de Martine » + « Réponse de Yannick Perrot, botaniste » — an expert answering a reader."
-     },
-     {
-      "why": "« Il est très probable que la hausse des températures moyennes en est la principale cause ». In C, « uniquement » goes too far."
+      "why": "« Il se peut qu’ils aient raison, mais leurs calculs reposent sur des hypothèses très fragiles » — il se peut que + subjunctive = it may be that (uncertainty)."
      }
     ]
    }
@@ -65,6 +36,9 @@
      },
      {
       "why": "« la plupart devraient disparaître d’ici à la fin du siècle, quoi que l’on fasse »; “cutting emissions may save some of them” refers to the large glaciers (B is a distractor)."
+     },
+     {
+      "why": "« tout dépendra de nos émissions dans les prochaines décennies » — en revanche sets the contrast: low and mid-altitude glaciers will go “whatever we do”; the large ones depend on emissions. il se peut que + subjunctive expresses possibility."
      }
     ]
    },
@@ -81,6 +55,9 @@
      },
      {
       "why": "« l’auteur de la phrase devait être de bonne foi »: devoir for conjecture = he was probably sincere."
+     },
+     {
+      "why": "« ils expriment plutôt une lassitude » — Il est probable que + indicative / Je doute que + subjunctive: the mood follows the degree of certainty."
      }
     ]
    },

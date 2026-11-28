@@ -1,66 +1,53 @@
 {
  "canDo": "Can express opinions about media and information according to degree of certainty: the indicative for affirmation and strong likelihood (je pense que, il est certain que, il est probable que), the subjunctive for negation, questions and possibility (je ne crois pas que, il est possible que, je doute que).",
  "review": "Following on from day 2’s subjunctive (wishes, feelings, doubt): today, distinguish how opinion verbs change mood in affirmative, negative and interrogative sentences, and review the exception espérer que + indicative.",
- "input": "Read: a report on how young people get their news, an editorial defending journalism and a notice for a media-literacy event; listen: a radio debate on the reliability of free information, a segment on how rumours spread and a short “word of the week” commentary. Strategy: mark every expression of opinion and sort them into three levels: “certain – possible – doubtful”.",
- "output": "Write: a measured forum post on “can you get properly informed through social networks?” (180+ words); speak: a 3-minute monologue on “paying for news”, then a debate on “should media literacy classes be compulsory?”.",
+ "input": "Read: the informative article « Dans les coulisses de la vérification de l’information », the opinion piece « L’information en continu nous rend-elle mieux informés ? » and the three-voice forum « Faut-il faire payer l’information en ligne ? » — questions first, then the text, finding the evidence for each answer; listen: « Le grand débat : peut-on faire confiance à l’information gratuite ? » and « Chronique « Vrai ou faux ? » : la rumeur de la piscine » twice each, then three short recordings once each.",
+ "output": "Write: a measured forum post on “can you get properly informed through social networks?” (250+ words); speak: a 3-minute monologue on “paying for news”, then a debate on “should media literacy classes be compulsory?”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 1 expression at each level (“certain, possible, doubtful”) in the essay, with the right mood; a 3-minute monologue that switches mood at least once with a negative (je ne pense pas que + subjunctive).",
  "challenge": "Today’s challenge: pick one of today’s stories on RFI’s « Journal en français facile » or TV5MONDE, then find a social-media post about the same event; compare them and write 1 sentence each with il est certain que / il est probable que / il est possible que / je doute que assessing how reliable they are.",
  "items": {
   "reading": {
    "R03-1": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "The article starts with Yanis getting his news from videos, quotes a survey and a sociologist’s analysis, and discusses how young people get information and the risks such as algorithms. B: the local daily in the text is adapting, not disappearing; C is just one story Yanis saw."
+      "why": "« Lorsque le démenti paraît, le public est déjà passé à autre chose » — un démenti = a denial, a correction."
      },
+     null,
+     null,
+     null,
      {
-      "why": "The text says: « je ne pense pas être mal informé pour autant ». A is the opposite; C: he never reads newspapers and makes no such judgement."
-     },
-     {
-      "why": "The text says: « il n’est pas sûr que les jeunes soient plus crédules que leurs aînés » (note the subjunctive after a negative, expressing uncertainty). A turns “uncertain” into “certain”; B isn’t said in the text."
-     },
-     {
-      "why": "The text says: « proposent à chacun des contenus proches de ceux qu’il a déjà regardés… qui confirment son opinion de départ ». Neither B nor C is in the text."
-     },
-     {
-      "why": "mitigé = mixed. The text immediately explains: video views are very high (positive), but few people click the links (disappointing). Neither A nor C fits."
-     },
-     {
-      "why": "« il est possible que ce soit exagéré »: he admits the story may have been exaggerated (il est possible que + subjunctive expresses possibility). A: he answers with a laugh; B is the opposite of the meaning."
+      "why": "« C’est une forme de dissuasion, discrète mais réelle » — y regarder à deux fois = to think twice."
      }
     ]
    },
    "R03-2": {
     "questions": [
      {
-      "why": "« Je ne crois pas que ce diagnostic soit juste », and he says « le public n’a pas renoncé au journalisme ; il a simplement changé de porte d’entrée ». A contradicts his closing hope that journalism will survive; C: the author stresses precisely that in-depth investigation is irreplaceable."
+      "why": "« c’est confondre la quantité et la compréhension » — The author explicitly says he does not think newsrooms are less scrupulous than before (Je ne crois pas que…); keeping instant news for life-saving alerts is a concession, not his thesis."
      },
      {
-      "why": "rengaine originally means an old tune, and by extension “a cliché, the same old refrain”, echoing « Chaque année… revient ». B is the literal meaning, which doesn’t fit the context; C isn’t in the text."
+      "why": "« l’on ne s’en portait pas plus mal » — ne pas s’en porter plus mal = to be none the worse for it."
      },
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The text says: « sans modèle économique solide… les enquêtes longues, coûteuses, deviendront rares ». A: podcasts are one of the author’s positive examples; B isn’t mentioned."
-     },
-     {
-      "why": "« ne remplacera jamais trois mois de vérifications sur le terrain »: however many views, they can’t replace checking. B contradicts the author’s view; C isn’t the point this sentence is arguing."
-     },
-     {
-      "why": "He admits the press « a commis des erreurs » and « Je ne prétends pas… qu’elle soit irréprochable », but still says « je suis convaincu que nous avons tous intérêt à ce qu’elle survive ». A ignores the criticism; C contradicts his call for paid support."
+      "why": "« où la rapidité sauve des vies » — Qu’on ne se méprenne pas = make no mistake (a clarification before conceding a point)."
      }
     ]
    },
    "R03-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "This is an event notice: « organise… une semaine consacrée à l’éducation aux médias », followed by the programme. Neither B nor C is mentioned."
-     },
-     {
-      "why": "The text says: « il est possible d’apprendre, simplement et sans jargon, à les repérer ». A contradicts sans jargon; C: there is in fact an activity designed for older people."
-     },
-     {
-      "why": "The text says: « un café-info destiné aux seniors… (samedi, 10 h) ». A is for 12–15-year-olds; B doesn’t specify an audience."
-     },
-     {
-      "why": "The text says: « il est probable que les places pour l’atelier partiront vite ». A contradicts « Toutes les activités sont gratuites »; C: there is in fact an activity on Saturday."
+      "why": "« des sites remplis de publicités et de titres racoleurs » — racoleur = sensationalist, clickbait."
      }
     ]
    }
@@ -76,6 +63,9 @@
      },
      {
       "why": "The recording says: « je ne crois pas que le fait de payer garantisse la qualité ». A is wrong: he agrees the advertising model encourages sensationalism; B is the opposite of his view."
+     },
+     {
+      "why": "« qui parle, et comment le sait-il ? » — He replaces “free or paid?” with “who is speaking, and how do they know?”."
      },
      {
       "why": "The recording says: « Sur une vingtaine d’exemples, il y en avait au moins six qui étaient faux ou très déformés ». B contradicts this; C: they checked them together."
@@ -99,6 +89,11 @@
      {
       "why": "« c’est sans doute le point essentiel, personne n’a pensé à poser la question directement à la mairie ». A is the second reason she lists, but not the key one; B is a consequence, not a cause."
      },
+     null,
+     {
+      "why": "« Il parlait de son propre contrat, qui s’achevait ce jour-là » — Personne n’a menti ; chacun a simplement complété ce qu’il ne savait pas: nobody lied; each filled in what they did not know."
+     },
+     null,
      {
       "why": "The recording says: « demandez-vous qui l’affirme… il est sage d’attendre avant de la diffuser ». A is too absolute — she says « je ne dis pas que l’information soit forcément fausse »; C isn’t mentioned."
      }
@@ -114,6 +109,12 @@
      },
      {
       "why": "The recording says: « deux ou trois rendez-vous d’information par jour, plutôt qu’un flux permanent ». B contradicts « La solution n’est pas de tout couper »; C isn’t mentioned."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« une lecture trop rapide d’un communiqué syndical » — rectificatif = a correction; under the station’s charter it is broadcast at the same hour and at the same length."
      }
     ]
    }

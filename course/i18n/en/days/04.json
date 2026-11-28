@@ -1,8 +1,8 @@
 {
  "canDo": "Can say when, where and for how long, and arrange a simple schedule.",
  "review": "Review the present/questions; learn à/en/au/de/depuis/pendant.",
- "input": "Listening: travel times, changes of place; reading: timetables/appointment notices.",
- "output": "Write an 80-word schedule; explain aloud your route and travel time from home to a destination.",
+ "input": "Listen: three recordings, « Comment tu vas au travail, toi ? », « Facteur à la campagne » and « Le bus à la demande arrive dans les villages », twice each; read: the comparison grid « Aller au travail sans voiture » and the articles « Depuis qu’ils vont au travail à vélo » and « La semaine de quatre jours à l’essai », questions first, then the text.",
+ "output": "Write a 160-word schedule; explain aloud your route and travel time from home to a destination.",
  "checkpoint": "≥80% correct on prepositions of time and place; can tell apart the core uses of depuis and pendant.",
  "challenge": "Today’s challenge: write out your real schedule for tomorrow in French (at least 5 times of day), using à, en, depuis, pendant and a frequency word (souvent / tous les jours); then spend 1 minute explaining aloud your route from home to school or work and how long it takes.",
  "items": {
@@ -10,52 +10,50 @@
    "R04-1": {
     "questions": [
      {
-      "why": "On Wednesdays the bassin sportif closes early at 19 h (« le mercredi, il ferme à 19 h »). 20 h is the time on other weekdays; handing the pool over to clubs explains why it closes early — it is not a condition for individual entry."
+      "why": "« Premier départ à 6 h 40 » — Leaving at 6 h 40, it arrives at 7 h 35 after 55 minutes."
      },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« n'ouvre que l'après-midi, sauf le samedi » — sauf introduces the only exception. 7 h–9 h is the slot of the bassin sportif, not the leisure pool."
-     },
-     {
-      "why": "The end of the text says clearly « et non par téléphone ». mardi/jeudi soir are class times, not a way of signing up."
+      "why": "« le train met vingt-deux minutes » — Only the train meets all four criteria: the coach is too slow with no late return, car-sharing costs too much, the shuttle arrives too late."
      }
     ]
    },
    "R04-2": {
     "questions": [
+     null,
      {
-      "why": "libre depuis le 1er juillet → about two months by September. depuis marks the starting point; you have to work out the length yourself."
+      "why": "« je mets trente-cinq minutes, tous les jours, qu’il pleuve ou non » — By car it sometimes took only 20 minutes, so cycling is not always faster; he still uses his car at weekends."
      },
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Ten minutes is the distance to the university; the third floor is the floor — other numbers in the same passage."
-     },
-     {
-      "why": "« je travaille tous les samedis pendant les vacances ». The Saturday-morning clean is a house rule, not her reason for saying no; 18–20 h is the Thursday slot."
+      "why": "« Nous jugerons sur les travaux, pas sur les discours » — The associations welcome the announcements, so it is not a total rejection."
      }
     ]
    },
    "R04-3": {
     "questions": [
+     null,
+     null,
      {
-      "why": "« à trois cents mètres de la salle des fêtes » gets the direction of the distance the wrong way round: three hundred metres is measured from the square to the car park. The square itself is under construction."
-     },
-     {
-      "why": "« le marché du mercredi et du samedi » — two days."
-     },
-     {
-      "why": "Tuesday is not a market day, so « limité à deux heures le reste de la semaine » applies. Free unlimited parking is only on market days; 13 h 30 is when the stalls pack up."
-     }
-    ]
-   },
-   "R04-4": {
-    "questions": [
-     {
-      "why": "pendant dix semaines is the length of the whole session. Fifteen days is how early you must register; two evenings is the weekly frequency."
-     },
-     {
-      "why": "Monday and Thursday are class times; fifteen days before refers to the registration deadline."
-     },
-     {
-      "why": "The end of the text says that the third unannounced absence ends your registration. liste d'attente is the consequence of registering too late; emailing the day before is what should have been done and wasn’t."
+      "why": "« il reçoit trois fois plus de candidatures » — It is the workers who save on fuel, not the employer."
      }
     ]
    }
@@ -63,53 +61,28 @@
   "listening": {
    "L04-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The reason is that the doctor is away all week. The carte Vitale is only a reminder at the end; the opening hours are extra information, not the reason for the call."
-     },
-     {
-      "why": "Two slots are offered: Thursday morning and late Friday afternoon. Saturday morning is only mentioned as opening hours, not as an option for rebooking."
-     },
-     {
-      "why": "avant vendredi midi. Tuesday at 11 was the original, cancelled appointment; 19 is when the practice closes."
+      "why": "« On repart à dix-sept heures quinze, tous les jours » — The fixed return time is le seul inconvénient; anyone with a late meeting takes the bus."
      }
     ]
    },
    "L04-2": {
     "questions": [
      {
-      "why": "The announcement first gives the delay, then the platform change. Saint-Brieuc is where people change trains, not the destination."
-     },
-     {
-      "why": "environ vingt minutes is the only length of time given; 14 h 20 was the scheduled departure."
-     },
-     {
-      "why": "19 heures is when the ticket office closes, not a requirement to wait."
+      "why": "« sur la même tournée depuis onze ans » — Two figures: dix-neuf ans as a postman, onze ans on the same round."
      }
     ]
    },
    "L04-3": {
     "questions": [
+     null,
+     null,
      {
-      "why": "sauf le dimanche is the key restriction; 20 août is the deadline for collecting the book, not for the opening period."
-     },
-     {
-      "why": "Note the difference between depuis (starting point) and pendant (length): 3 mars is when the library card became valid."
-     },
-     {
-      "why": "The message gives one clear solution: rappelez-nous."
-     }
-    ]
-   },
-   "L04-4": {
-    "questions": [
-     {
-      "why": "The agent deliberately distinguishes première utilisation from achat; septembre is when the address started."
-     },
-     {
-      "why": "complément 1,80 € is the only solution mentioned."
-     },
-     {
-      "why": "This question tests depuis + a point in time directly; trente jours belongs to the pendant structure."
+      "why": "« Le trajet coûte deux euros » — The passenger pays deux euros; the real cost is quatorze euros, douze of which the local authority covers."
      }
     ]
    }

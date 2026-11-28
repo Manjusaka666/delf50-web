@@ -1,7 +1,8 @@
 /** Reading and listening: one text or recording with its questions. */
 import { store, commit, refresh } from '../store.js';
 import { itemState, questionState } from '../progress.js';
-import { answerChoice } from '../state.js';
+import { answerChoice, recordId, countWords } from '../state.js';
+import { kindOf, chosen } from '../answers.js';
 import { html, icon, pad2, frText, LETTERS, moduleName, moduleFr } from '../ui.js';
 import { t } from '../i18n.js';
 import * as speech from '../speech.js';
@@ -62,19 +63,39 @@ export async function textView(d, module, n) {
   };
 
   const question = (q, i) => {
-    const s = questionState(store.S, module, d, item, i);
-    return html`<li class="q ${s ? (s.correct ? 'is-ok' : 'is-bad') : ''}" data-key="q${i}" data-state="${s ? (s.correct ? 'ok' : 'bad') : ''}">
-      <p class="q-stem" lang="fr"><span class="q-num">${i + 1}</span>${frText(q.stem)}</p>
-      <div class="opts" role="group">
+    const s = questionState(store.S, module, d, item, i), kind = kindOf(q), pick = s ? chosen(q, s.selected) : null;
+    const opts = kind === 'open' ? '' : html`<div class="opts ${q.options.length === 2 ? 'binary' : ''}" role="group">
         ${q.options.map((o, k) => {
-          const cls = s ? (k === q.answer ? 'right' : k === s.selected ? 'wrong' : 'dim') : '';
+          const cls = s ? (k === q.answer ? 'right' : k === pick ? 'wrong' : 'dim') : '';
           return html`<button class="opt ${cls}" data-act="answer" data-q="${i}" data-i="${k}" ${s ? 'disabled' : ''} lang="fr">
             <span class="opt-key">${LETTERS[k]}</span><span class="opt-text">${frText(o)}</span>
-            ${s && k === q.answer ? icon('check', 'opt-mark') : s && k === s.selected ? icon('cross', 'opt-mark') : ''}</button>`;
+            ${s && k === q.answer ? icon('check', 'opt-mark') : s && k === pick ? icon('cross', 'opt-mark') : ''}</button>`;
         })}
-      </div>
+      </div>`;
+    // A true/false to justify, or a short answer: the learner writes, then answers.
+    const write = kind === 'choice' ? '' : s
+      ? html`<div class="given" lang="fr"><p class="given-label">${t(kind === 'cite' ? 'text.yourQuote' : 'text.yourAnswer')}</p><p>${frText(kind === 'cite' ? s.selected.j : s.selected)}</p></div>
+        ${kind === 'cite' && pick === q.answer && !s.correct ? html`<p class="notice bad small">${t('text.quoteMissing')}</p>` : ''}
+        <div class="given expect" lang="fr"><p class="given-label">${t(kind === 'cite' ? 'text.expectedQuote' : 'text.expectedAnswer')}</p><p>${frText(kind === 'cite' ? `« ${q.cite} »` : q.model)}</p></div>`
+      : html`<label class="write-label" for="w-${item.id}-${i}">${t(kind === 'cite' ? 'text.quotePrompt' : 'text.answerPrompt')}</label>
+        <textarea class="write-box" id="w-${item.id}-${i}" data-w="${i}" rows="${kind === 'cite' ? 2 : 3}" lang="fr" spellcheck="false"></textarea>
+        <p class="notice bad small" data-need="${i}" hidden>${t(kind === 'cite' ? 'text.quoteFirst' : 'text.answerFirst')}</p>
+        ${kind === 'open' ? html`<button class="btn small" data-act="submit" data-q="${i}">${t('text.submitAnswer')}</button>` : ''}`;
+    return html`<li class="q ${s ? (s.correct ? 'is-ok' : 'is-bad') : ''}" data-key="q${i}" data-state="${s ? (s.correct ? 'ok' : 'bad') : ''}">
+      <p class="q-stem" lang="fr"><span class="q-num">${i + 1}</span>${frText(q.stem)}</p>
+      ${kind === 'cite' ? html`${s ? '' : write}${opts}${s ? write : ''}` : kind === 'open' ? write : opts}
       ${s && q.why ? html`<p class="why">${frText(q.why)}</p>` : ''}
     </li>`;
+  };
+
+  // What the learner wrote for question i; null (and the box asks for it) when it is too short.
+  const written = (i, min) => {
+    const box = document.querySelector(`[data-w="${i}"]`), text = box ? box.value.trim() : '';
+    if (countWords(text) >= min) return text;
+    const need = document.querySelector(`[data-need="${i}"]`);
+    if (need) need.hidden = false;
+    if (box) box.focus();
+    return null;
   };
 
   const render = () => {
@@ -146,7 +167,16 @@ export async function textView(d, module, n) {
     actions: {
       answer: (el) => {
         const q = Number(el.dataset.q), k = Number(el.dataset.i);
-        commit((S) => answerChoice(S, module, d, item.id, q, k));
+        if (item.questions[q].cite) {
+          const j = written(q, 3);
+          if (j !== null) commit((S) => answerChoice(S, module, d, recordId(item), q, { c: k, j }));
+          return;
+        }
+        commit((S) => answerChoice(S, module, d, recordId(item), q, k));
+      },
+      submit: (el) => {
+        const q = Number(el.dataset.q), text = written(q, 1);
+        if (text !== null) commit((S) => answerChoice(S, module, d, recordId(item), q, text));
       },
       toggle: () => recording.toggle(ttsId),
       stop: () => recording.stop(),

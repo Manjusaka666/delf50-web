@@ -1,66 +1,38 @@
 {
  "canDo": "Can take a measured position on digital topics by first acknowledging the other view and then objecting, using bien que + subjunctive, même si + indicative, alors que, malgré / en dépit de, avoir beau, il n’empêche que.",
  "review": "Review day 2’s subjunctive forms (bien que takes soit, ait, puisse…) and day 6’s consequence expressions: concede first (certes…, mais…), then draw a consequence with si bien que / d’où, for a more complete argument.",
- "input": "Read: an analysis of digitised administrative procedures and the “digital divide”, an opinion column “rehabilitating” screens and a forum post about quitting social media for a month (mark every concessive structure and separate “the fact conceded” from “the author’s real position”); listen: a radio interview on the “right to disconnect”, a segment on whether cash will disappear and a vox pop on social networks.",
- "output": "Write: a 180+-word formal letter to the mayor on behalf of residents, opposing the closure of the town hall’s reception desk while acknowledging the benefits of online services; speak: a 3-minute monologue (should social media be banned for under-15s?) + a debate on writing with AI, using “concession + rebuttal” at least once each time you answer the examiner.",
+ "input": "Read: the informative article « Réseaux sociaux : un âge minimum, mais comment le vérifier ? », the opinion piece « L’intelligence artificielle va-t-elle nous rendre paresseux ? » and the three-voice forum « Peut-on encore vivre sans smartphone ? » — questions first, then the text, finding the evidence for each answer; listen: « Droit à la déconnexion : la loi ne suffit pas » and « La chronique conso : l’argent liquide va-t-il disparaître ? » twice each, then three short recordings once each.",
+ "output": "Write: a 250+-word formal letter to the mayor on behalf of residents, opposing the closure of the town hall’s reception desk while acknowledging the benefits of online services; speak: a 3-minute monologue (should social media be banned for under-15s?) + a debate on writing with AI, using “concession + rebuttal” at least once each time you answer the examiner.",
  "checkpoint": "Reading and listening accuracy ≥80%; bien que + subjunctive, même si + indicative and malgré / en dépit de + noun each used correctly at least once in the formal letter; in the debate, concede or rebut each of 4 objections in turn, with no bien que + indicative errors.",
  "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about social media, AI or online security, and write 3 sentences giving a measured opinion, using bien que, avoir beau and il n’empêche que; then record a 1-minute voice message that first acknowledges one advantage of the technology, then states one reservation.",
  "items": {
   "reading": {
    "R07-1": {
     "questions": [
+     null,
+     null,
      {
-      "why": "The article begins by acknowledging progress, then immediately points out that « cette transformation laisse une partie de la population au bord du chemin », and the whole text focuses on the people left out. A is only the opening concession; C is the opposite — young people can use social media but not handle administrative procedures."
+      "why": "« les adolescents fragiles sont peut-être simplement ceux qui se réfugient le plus derrière un écran » — Correlation is not causation: perhaps vulnerable teenagers are simply the ones who retreat behind screens."
      },
+     null,
+     null,
      {
-      "why": "« le phénomène est loin de s’y limiter : des jeunes adultes, alors qu’ils passent des heures sur leur téléphone, se retrouvent démunis ». A contradicts « loin de s’y limiter »; B: the text makes no such prediction."
-     },
-     {
-      "why": "avoir beau + infinitive = “however much…, it’s no use”, and parcours du combattant = “an obstacle course”: even with a phone, the procedures remain very hard. B and C twist “difficult” into “impossible”, which is too absolute."
-     },
-     {
-      "why": "« certaines personnes renoncent à demander une aide parce que la démarche leur paraît trop compliquée ». A isn’t mentioned; C: entrusting passwords to relatives is a privacy problem for a different group, not the reason people give up applying."
-     },
-     {
-      "why": "The fourth paragraph covers the consequences, and the fifth the public sector’s response (« Des conseillers numériques ont été recrutés »), pointing out its limits with « Il n’empêche que ces dispositifs restent insuffisants ». B doesn’t deny the consequences; C: the fifth paragraph adds no new examples of people left out."
-     },
-     {
-      "why": "« la solution ne consiste pas à revenir au tout-papier, mais à garantir le choix : … parler à une personne en chair et en os ». A is explicitly rejected in the text; B isn’t proposed."
+      "why": "« qui certifie que la personne est majeure sans révéler son identité au réseau social » — quoique + subjunctive = although (formal)."
      }
     ]
    },
    "R07-2": {
     "questions": [
      {
-      "why": "The conclusion: « ni diabolisation, ni naïveté… il existe une place pour un usage raisonné ». A is the opposite of the headline’s position; C contradicts « ces inquiétudes ne sont pas sans fondement » (these worries are not unfounded)."
+      "why": "« Je ne le crois pas tout à fait » — pas tout à fait = not entirely: he neither fully accepts nor fully dismisses the fears."
      },
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« Pour elle, l’écran n’isole pas ; il relie ». B is the opposite of what the example shows; C: the author doesn’t criticise families."
-     },
-     {
-      "why": "« C’est parfois vrai. Il n’empêche que c’est aussi en ligne que beaucoup d’entre eux apprennent… » — partly conceding, then rebutting. A ignores the concession; B: she actually thinks « confisquer… n’apprennent rien à personne »."
-     },
-     {
-      "why": "« Le problème n’est donc pas l’écran en lui-même, mais l’usage qu’on en fait, ainsi que le modèle économique de certaines applications ». Neither A nor C is mentioned."
-     },
-     {
-      "why": "céder à = “to give in to”, so céder à la panique means “to be ruled by panic”. A and C are possible consequences of behaviour, not the meaning of the expression."
-     }
-    ]
-   },
-   "R07-3": {
-    "questions": [
-     {
-      "why": "The writer shares his month without social media, with its upsides and downsides, and ends by asking readers questions — he is sharing an experience. B: he no longer believes in « la déconnexion totale » himself; C: the football club is just one example."
-     },
-     {
-      "why": "avoir beau + inf. means “however much…, it made no difference”: even knowing the apps were deleted, « je prenais mon téléphone toutes les dix minutes, par pur réflexe ». Neither A nor B shows this concessive relation."
-     },
-     {
-      "why": "« Mon club de foot organise tout sur un groupe en ligne, si bien que j’ai raté deux entraînements ». A contradicts « mes vrais amis m’ont appelé »; C contradicts « j’ai terminé deux romans »."
-     },
-     {
-      "why": "« je garde une seule application, sans notifications, et je la consulte une fois par jour ». A contradicts “keeping only one”; B: he thinks going completely offline « n’est pas tenable sur le long terme »."
+      "why": "« On ne peut déléguer sans risque que ce que l’on saurait faire soi-même » — chevronné = seasoned; faute d’avoir eu à peiner = for want of ever having had to struggle."
      }
     ]
    }
@@ -83,6 +55,7 @@
      {
       "why": "« il ne s’agit pas d’interdire toute flexibilité… Il n’empêche que cette liberté doit rester un choix, pas une obligation déguisée ». A contradicts “not banning”; C contradicts “should be a choice”."
      },
+     null,
      {
       "why": "« aborder la question collectivement plutôt que seul face à son chef ». A isn’t mentioned; B reverses the logic of « Ce n’est pas un manque d’engagement »."
      }
@@ -101,6 +74,11 @@
      },
      {
       "why": "« Les clients qui avaient des billets ont pu faire leurs courses ; les autres sont repartis les mains vides ». A: the recording says « pendant plusieurs heures », not all day; C contradicts “the terminals were down”."
+     },
+     null,
+     null,
+     {
+      "why": "« elle fait aujourd’hui marche arrière » — faire marche arrière = to backtrack; the reason is fear of a general outage or a cyberattack."
      }
     ]
    },
@@ -114,6 +92,12 @@
      },
      {
       "why": "« j’avais l’impression de vivre sur une autre planète. Pourtant, je sais très bien que je passe trop de temps dessus ». A and B both contradict « trop de temps »."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« Si vous dépendez d’un tel appareil, signalez-vous à la mairie » — Alarms and medical devices linked to the box stop working during the cut, hence the free backup unit."
      }
     ]
    }

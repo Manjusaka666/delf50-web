@@ -1,70 +1,11 @@
 {
  "canDo": "Can complete a third full mock exam following a fixed exam routine (read the questions → locate → check; outline → write → three rounds of checking; problem → outline → conclusion), with each part’s score varying by no more than 2 points compared with Mock 1 and Mock 2.",
  "review": "Review the error logs, timing records and three-step listening/reading method from Day 41–44; go back over the structure of a forum post (response → position → concession → argument → proposal → conclusion) and common concession and condition structures (je reconnais que, cependant, à condition que, au motif que).",
- "input": "Read: the closure of rural public service counters (long article), a column on free museum entry and a forum post about volunteering, using the same routine throughout: “questions first, then the text, with the evidence marked for each question”. Listen: an interview on reducing food waste in a school canteen, a column on the vinyl revival and an ad recruiting festival volunteers, with the set number of plays.",
+ "input": "Read: the informative article « Jurés d’assises : quand les citoyens rendent la justice », the opinion piece « La prison rend-elle meilleur ? » and the three-voice forum « Faut-il filmer les procès ? » — questions first, then the text, finding the evidence for each answer; listen: « Moins de gaspillage à la cantine » and « Le vinyle tourne encore » twice each, then three short recordings once each.",
  "output": "Write: a forum post giving your view on “should rural post offices be replaced by counters in local shops?” (250+ words); speak: a 5-minute monologue on “should space tourism be banned?”, then a debate with the examiner on “should museums be free for everyone?”. Afterwards, enter the scores from all three mock exams in one table and compare them.",
  "checkpoint": "Each of the four skills above 15/25, total ≥60/100; no skill drops by more than 2 points compared with Mock 2; your personal recurring errors no longer appear in your writing; the monologue has a clear problem, outline and conclusion.",
  "challenge": "Today’s challenge: find a short text or audio clip about public services (health, transport, culture) on TV5MONDE or RFI and work through it with today’s fixed routine in 15 minutes: write one sentence on the topic, three key points and one view of your own, and note how long it took. Use it as your “warm-up template” for the last few days before the exam.",
  "items": {
-  "reading": {
-   "R45-1": {
-    "questions": [
-     {
-      "why": "The article covers, in turn, the situation (paragraph 1), causes (paragraph 2), remedies tried so far (paragraphs 3–4) and the issues still under debate (paragraph 5): it is an informative analysis. B: the author doesn’t take sides; C: only one mayor is quoted."
-     },
-     {
-      "why": "« La baisse de fréquentation des bureaux de poste, liée au déclin du courrier, a rendu de nombreux guichets peu rentables ». Neither A nor C is mentioned."
-     },
-     {
-      "why": "« une partie de la population, notamment les personnes âgées et celles qui ne disposent pas d’une bonne connexion, s’est retrouvée sans interlocuteur ». Neither A nor B is in the text."
-     },
-     {
-      "why": "« On ne sauve pas un guichet en manifestant une fois par an… Ce qui marche, c’est de proposer autre chose ». B is the opposite of what she says; C: she actually thinks something can be done."
-     },
-     {
-      "why": "« elles offrent rarement tous les services d’un vrai bureau, et leurs horaires restent souvent limités ». Neither A nor C is mentioned."
-     },
-     {
-      "why": "trancher = to settle, to decide; loin d’être tranché means “far from settled”. A means the opposite; B contradicts « une question qui divise »."
-     }
-    ]
-   },
-   "R45-2": {
-    "questions": [
-     {
-      "why": "Paragraph 1 ends with « Il est temps que cela change », and the last sentence is « il serait logique que tous puissent y entrer »: the whole text argues for free entry. B and C are just details in the argument."
-     },
-     {
-      "why": "« C’est vrai, et c’est bien la preuve que le prix n’est pas le seul obstacle. Mais il en est un »: concession, then rebuttal. A: he accepts the fact; C: he explicitly mentions this objection."
-     },
-     {
-      "why": "péage originally means a “toll”; here it is a metaphor for the entry fee as a barrier that sends the message « ce lieu n’est pas pour tout le monde ». A is a literal misreading; B has nothing to do with the context."
-     },
-     {
-      "why": "« Les recettes de billetterie ne représentent qu’une part modeste du budget », and visitors spend money elsewhere. Neither B nor C is mentioned."
-     },
-     {
-      "why": "« Bien sûr, la gratuité seule ne suffira pas » is a concession, and « Mais refuser d’essayer… » restates the position. A is the opposite; C doesn’t appear."
-     }
-    ]
-   },
-   "R45-3": {
-    "questions": [
-     {
-      "why": "Sophie describes going from “no time” to volunteering regularly, ending with « Si vous hésitez, commencez par une seule fois ». B: she is a volunteer, not an employee; C: “no time” is precisely the excuse she is reflecting on."
-     },
-     {
-      "why": "« une amie m’a proposé de l’accompagner une seule fois ». A: the hospital is where she works; C: her children only came along later."
-     },
-     {
-      "why": "« cachait surtout la peur de m’engager sur la durée »; crainte paraphrases peur. Neither A nor B has any basis."
-     },
-     {
-      "why": "crouler sous qqch = to be weighed down by, to be overwhelmed by something very heavy. B and C are misunderstandings."
-     }
-    ]
-   }
-  },
   "listening": {
    "L45-1": {
     "questions": [
@@ -83,6 +24,7 @@
      {
       "why": "« Certains cuisiniers ont eu l’impression qu’on critiquait leur travail ». A contradicts « résistances »; C: they later took charge of presenting the menus."
      },
+     null,
      {
       "why": "« Commencer par mesurer. Tant qu’on ne pèse pas ce qu’on jette… ». Neither A nor B is mentioned; the menu committee involves students, not parents."
      }
@@ -96,6 +38,11 @@
      {
       "why": "« c’est peut-être une réaction à cette abondance. Avec le streaming, la musique est partout ». Neither A nor C is mentioned."
      },
+     {
+      "why": "« les petits labels attendent parfois dix mois pour obtenir leurs disques » — le revers de la médaille = the other side of the coin; big stars book up the few pressing plants."
+     },
+     null,
+     null,
      {
       "why": "« une partie d’entre eux n’ont même pas de platine ! ». A and B have no basis."
      },
@@ -111,9 +58,6 @@
      },
      {
       "why": "« être disponible au minimum deux soirées » (and be at least 18). B is ruled out by « aucune expérience particulière »; C isn’t mentioned."
-     },
-     {
-      "why": "« accès gratuit aux concerts en dehors de leurs heures de service, ainsi que des repas et d’un tee-shirt ». A: volunteers aren’t paid; B isn’t mentioned."
      }
     ]
    }

@@ -1,66 +1,41 @@
 {
  "canDo": "Can accurately report other people’s views, questions and promises in past-tense indirect speech (sequence of tenses, converting time expressions, indirect questions), choosing reporting verbs that show the speaker’s attitude.",
  "review": "Review day 10’s past conditional (« le maire aurait déclaré que… » for unconfirmed information) and day 1’s layers of past tenses: in indirect speech, présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel.",
- "input": "Read: a report on the limits of opinion polls, an editorial against “polls instead of debate” and a reader’s letter correcting a report (mark every reporting verb and the tenses being reported); listen: a radio report with interviews on a citizens’ assembly, a segment on vox pops and a local news flash (note “who said what, with which verb”).",
- "output": "Write: a formal letter (≥220 words) to the mayor on behalf of an association, accurately reporting what was said at a meeting to set the record straight; speak: a 3-minute monologue on the effect of publishing polls before an election, then a debate on “online public consultations”.",
+ "input": "Read: the informative article « Des citoyens tirés au sort pour débattre de la fin de vie », the opinion piece « Les sondages disent-ils ce que nous pensons ? » and the three-voice forum « Référendums locaux : les habitants doivent-ils décider ? » — questions first, then the text, finding the evidence for each answer; listen: « Convention citoyenne : et maintenant ? » and « Six passants ne font pas une opinion » twice each, then three short recordings once each.",
+ "output": "Write: a formal letter (≥250 words) to the mayor on behalf of an association, accurately reporting what was said at a meeting to set the record straight; speak: a 3-minute monologue on the effect of publishing polls before an election, then a debate on “online public consultations”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 5 instances of indirect speech in the letter, all with the correct sequence of tenses, and at least 4 different reporting verbs (affirmer, préciser, admettre, se demander si…); a 3-minute monologue without breaking off.",
  "challenge": "Today’s challenge: choose a news item on RFI’s « Journal en français facile » or TV5MONDE that includes a poll or a politician’s statement, and write 3 sentences of indirect speech (« Le ministre a affirmé que… », « Les journalistes se sont demandé si… »); then record a 1-minute spoken summary saying whether you trust the figures.",
  "items": {
   "reading": {
    "R12-1": {
     "questions": [
+     null,
+     null,
      {
-      "why": "The election is just the hook; the text discusses why polls get it wrong (abstention, question wording) and how readers should view them. A is the opening example; C: the text doesn’t describe the inner workings of polling firms."
+      "why": "« elle avait changé trois fois d’avis au fil des auditions » — Reported speech: a expliqué qu’elle avait changé (pluperfect) = she said “I changed my mind three times”."
      },
+     null,
      {
-      "why": "« de nombreux sondés avaient affirmé qu’ils iraient voter, alors qu’ils étaient finalement restés chez eux ». B: the text doesn’t say the sample was too small; C is a general problem the sociologist raises, not Aubertin’s explanation of this error."
+      "why": "« n’ayant de comptes à rendre à personne » — ne sauraient = cannot (formal); se substituer à = to take the place of."
      },
+     null,
      {
-      "why": "The same proposal, worded two ways, gave 70% versus 35%, and her conclusion is « un chiffre isolé n’avait aucune valeur tant qu’on ignorait la question exacte ». A and B treat the experiment’s results as genuine public opinion."
-     },
-     {
-      "why": "se défendre de qqch = to deny, to reject a claim; here, rejecting the idea of “throwing polls in the bin”. B twists it into a legal “defence”; C means the opposite."
-     },
-     {
-      "why": "« Il a toutefois admis que son institut devrait… publier systématiquement la marge d’erreur et le texte intégral des questions. » A is the opposite of « les grandes tendances étaient généralement bien mesurées »; C isn’t mentioned."
-     },
-     {
-      "why": "A “photograph” records the state of things at one moment; “not a prediction” means you can’t infer the result from it. B reads it literally; C is the opposite of the meaning."
+      "why": "« une minorité seulement avait été adoptée sans modification » — laisser un goût amer = to leave a bitter taste."
      }
     ]
    },
    "R12-2": {
     "questions": [
      {
-      "why": "« elles ont pris la place de l’argumentation », with the headline « Rendez-nous le débat ! ». A: the author says explicitly « Je ne conteste pas l’utilité des enquêtes d’opinion »; C: the school reform is just an example."
+      "why": "« Je demande plutôt qu’on les lise comme on lit une étiquette » — The author explicitly does not question the pollsters' honesty (je ne mets pas en cause l’honnêteté des professionnels) and rejects a ban."
      },
+     null,
      {
-      "why": "The guest wanted to explain the text first, but the presenter demanded a simple oui or non, « car le temps pressait ». A: the guest wasn’t refusing to take a position; B: the text doesn’t say the presenter didn’t understand the reform."
+      "why": "« Elle en produit un sur-le-champ, pour ne pas paraître ignorante » — sur-le-champ = on the spot."
      },
+     null,
      {
-      "why": "« Une opinion n’est pas un réflexe : elle se construit… elle évolue au contact des arguments adverses. » B is the opposite of the text; C over-extends it."
-     },
-     {
-      "why": "« Certains me répondront que les sondages permettent… C’est vrai. » is a concession. B: the text doesn’t defend the presenter; C is the mistaken idea the author criticises."
-     },
-     {
-      "why": "« pour chaque sondage publié, consacrons autant d’espace aux arguments de chaque camp ». Neither A nor C is proposed."
-     }
-    ]
-   },
-   "R12-3": {
-    "questions": [
-     {
-      "why": "« Je me permets de rectifier cette affirmation… je vous demande de publier un rectificatif ». A: she isn’t against the project; B: she is only reporting the second meeting the mayor mentioned."
-     },
-     {
-      "why": "« 54 % d’entre eux approuvaient le projet, à condition que les places de stationnement soient conservées ». B is the newspaper’s version; C is the opposite of the condition."
-     },
-     {
-      "why": "« comme si leur avis représentait celui de tout le quartier ». A is the opposite — the article quoted the shopkeepers; C: she criticises the omission of figures, not their fabrication."
-     },
-     {
-      "why": "« Je ne prétends pas que le projet soit parfait. Mais… vos lecteurs ont le droit de savoir ce qui a réellement été dit. » A is the opposite of the text; B: the letter expresses no opposition."
+      "why": "« celui qui paie l’enquête est rarement désintéressé » — plébisciter = to approve overwhelmingly."
      }
     ]
    }
@@ -84,6 +59,9 @@
       "why": "« Le problème, c’est la suite… ils n’en ont gardé qu’une petite partie. » A: he says the deliberation stage is “often very successful”; C isn’t mentioned."
      },
      {
+      "why": "« on leur a demandé leur avis pour la forme » — pour la forme = for form’s sake; having worked unpaid for six months, they expect results."
+     },
+     {
       "why": "« il faudrait que les élus expliquent publiquement, proposition par proposition, ce qu’ils retiennent et pourquoi ils écartent le reste ». Neither A nor B is proposed."
      }
     ]
@@ -101,6 +79,11 @@
      },
      {
       "why": "« Ça donne de la couleur, de la vie, des voix. Mais ça ne dit rien de ce que pense l’ensemble de la population. » A is explicitly rejected; B isn’t mentioned."
+     },
+     null,
+     null,
+     {
+      "why": "« les habitants étaient partagés » — Six passers-by became “public demand” within twenty-four hours, while the serious study showed four in ten in favour and three undecided."
      }
     ]
    },
@@ -114,6 +97,12 @@
      },
      {
       "why": "« si leurs clients venus en voiture continueront à fréquenter leurs boutiques ». A isn’t mentioned; B: they intend to ask for a meeting and haven’t been refused."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« L’adjoint aux transports a reconnu que l’échantillon était modeste » — tout en + participe présent marks a concession: he grants the sample is small while holding that the trend is clear."
      }
     ]
    }

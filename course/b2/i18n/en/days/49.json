@@ -1,7 +1,7 @@
 {
  "canDo": "Can score ≥ 15/25 on each of the four parts of a full DELF B2 mock exam (total ≥ 60/100): follow details and views in a long interview, read between the lines of informative and opinion texts, write a forum post of ≥ 250 words, and complete a 6-minute monologue and a 4–5-minute debate.",
  "review": "Comprehensive review: cause and consequence (days 5–6), concession (day 7), hypothesis and the conditional (days 9–10), reported speech and speculation (days 12 and 19); check your error records from the mock exams on days 41, 43, 45 and 47, and leave the two question types you get wrong most often for a final check at the end.",
- "input": "Read: R49-1 on family cargo bikes (informative), R49-2 “let children walk to school alone” (column) and R49-3, a music festival press release, all in one go within 60 minutes; listen: the geographer interview L49-1 twice, the school choir interview L49-2 and the news flash on lack of exercise among middle school students L49-3 once each, keeping the total to 30 minutes.",
+ "input": "Read: the informative article « Langues régionales : un renouveau fragile », the opinion piece « La machine traduit : pourquoi apprendre encore les langues ? » and the three-voice forum « L’anglais dès la maternelle : une bonne idée ? » — questions first, then the text, finding the evidence for each answer; listen: « Quitter la ville : mythe ou réalité ? » and « Chanter ensemble à l’école » twice each, then three short recordings once each.",
  "output": "Write: W49-1, a forum post (should students rate their teachers?), ≥ 250 words in 60 minutes; speak: S49-1, a 6-minute monologue (replacing fireworks with drone shows), and S49-2, a 4–5-minute debate.",
  "checkpoint": "Self-assess against the official marking grid: each part ≥ 15/25, total ≥ 60/100 (pass mark 50, with no part below 5); every question answered; writing has an introduction, development and conclusion; monologue delivered without reading from notes.",
  "challenge": "Today’s challenge: ask a friend or language partner to play the examiner and hold the 5-minute S49-2 debate with their follow-up questions, recording it; when you listen back, note just 3 expressions that could be more precise, then find more idiomatic wording in a TV5MONDE or RFI programme on the same topic and swap them in.",
@@ -9,58 +9,23 @@
   "reading": {
    "R49-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Paragraphs 1–2 describe families taking to cargo bikes, paragraph 3 the obstacles, paragraph 4 public policy and paragraph 5 attitudes. A: manufacturing isn’t discussed; C isn’t mentioned."
-     },
-     {
-      "why": "« Mes clients ne viennent pas acheter un vélo : ils viennent changer d’organisation ». A isn’t mentioned; B doesn’t fit paragraph 3’s point that the price is close to that of a used car."
-     },
-     {
-      "why": "« dans les immeubles anciens, sans local à vélos, il est presque impossible de ranger un engin de deux mètres et demi de long ». B is about price and C about safety; neither concerns housing."
-     },
-     {
-      "why": "se faire rare = to become scarce. Neither A nor C is what the expression means."
-     },
-     {
-      "why": "« le plus souvent par crainte du prix ou de la circulation ». A contradicts “almost half find it practical”; B isn’t mentioned."
-     },
-     {
-      "why": "The idea that “car = freedom” needs to change even more than the practical obstacles (« plus encore que les obstacles matériels »). B is wrong: « plus encore que » is just a comparison and doesn’t say the obstacles have been solved; C over-interprets."
+      "why": "« combien l’emploieront avec leurs propres enfants » — la cuisine is a metonymy for everyday family life, set against la salle de classe."
      }
     ]
    },
    "R49-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The title, « Laissez-les aller à l’école seuls », and the ending, « leur rendre, pas à pas, un peu de cette liberté ». A is just the opening scene; B isn’t mentioned."
-     },
-     {
-      "why": "par miracle = miraculously, stressing how rare this has become nowadays, in contrast with the queue of cars dropping children off described before. B and C misread the sentence."
-     },
-     {
-      "why": "« Ce qui a changé, c’est notre perception du danger » (a cleft sentence). A contradicts « on y comptait même davantage d’accidents »; C isn’t mentioned."
-     },
-     {
-      "why": "« Je ne plaide pas pour l’insouciance. Un enfant doit apprendre le trajet avec un adulte… Mais en voulant tout sécuriser, nous le privons… »: concession, then criticism. B contradicts the first sentence; C isn’t mentioned."
-     },
-     {
-      "why": "ouvrir des horizons = to broaden one’s horizons: walking lets children notice the seasons and get to know the neighbourhood and its shopkeepers, which isn’t possible from the back seat of a car. A and C are literal misreadings."
-     }
-    ]
-   },
-   "R49-3": {
-    "questions": [
-     {
-      "why": "« franchit cette année un nouveau cap dans sa démarche responsable », followed by the plastics ban, local food, reduced-price tickets and a free shuttle. A: no performances are mentioned; C: there is no price rise in the text."
-     },
-     {
-      "why": "« un gobelet consigné et pourra remplir gratuitement sa gourde aux douze fontaines ». B contradicts « bouteilles en plastique seront totalement bannies »; C contradicts being able to refill your own water bottle."
-     },
-     {
-      "why": "« sur simple justificatif, aux étudiants, aux demandeurs d’emploi et aux bénéficiaires des minima sociaux ». Neither A nor B is a condition in the text."
-     },
-     {
-      "why": "« limité à 800 places cette année, à la demande de la commune ». A and C are guesses not found in the text."
+      "why": "« se sentir un instant étranger à sa propre langue » — évidences = what we take to be self-evident; learning a language reveals these to be mere habits formed by our mother tongue."
      }
     ]
    }
@@ -82,9 +47,6 @@
      },
      {
       "why": "« Sans eux, beaucoup de nouveaux habitants repartent au bout de quelques années »; eux refers to internet, doctors, schools and transport. A and B aren’t the factors he stresses in answering this question."
-     },
-     {
-      "why": "« De louer avant d’acheter, et d’y passer au moins un hiver ». A is the opposite of “rent first”; C: he actually mentions housing price problems in tourist areas."
      }
     ]
    },
@@ -101,6 +63,11 @@
      },
      {
       "why": "« Au début, quelques-uns s’inquiétaient… Depuis, ce sont souvent eux qui me demandent d’organiser plus de concerts ». A and C contradict this."
+     },
+     null,
+     null,
+     {
+      "why": "« un projet qui repose sur une seule personne disparaît le jour où elle s’en va » — Si la direction ne m’avait pas soutenue, j’aurais… renoncé: a past unreal conditional; she ran it unpaid for four years."
      }
     ]
    },
@@ -108,9 +75,6 @@
     "questions": [
      {
       "why": "« Les collégiens ne bougent pas assez », and all the figures that follow are about too little exercise. A isn’t mentioned; B: screens are only one cause, and eyesight isn’t discussed."
-     },
-     {
-      "why": "« Seul un sur cinq pratiquerait au moins une heure d’activité physique par jour ». B is the proportion who are driven to school; keep the two figures apart."
      },
      {
       "why": "« La fédération recommande aux familles de privilégier la marche ou le vélo pour aller au collège ». Neither A nor C is the advice in the report."

@@ -1,45 +1,34 @@
 {
  "canDo": "Can tell apart something just finished, background, completed events and “the past before the past”, turning an experience into a clear timeline.",
  "review": "Review passé composé / imparfait; learn the passé récent and plus-que-parfait to build a four-layer past timeline.",
- "input": "Listening and reading about travel experiences, paying attention to the order of the story.",
- "output": "Write 140 words about a trip; retell it aloud in 3 minutes and answer follow-up questions.",
+ "input": "Listen: three recordings, « Un voyage qui a mal commencé », « Elle guide les touristes dans sa propre ville » and « Vacances près de chez soi », twice each; read: the comparison grid « Choisir une assurance voyage » and the articles « « Mes bagages sont arrivés trois jours après moi » » and « Partir seule : elles sont de plus en plus nombreuses », questions first, then the text.",
+ "output": "Write 160 words about a trip; retell it aloud in 3 minutes and answer follow-up questions.",
  "checkpoint": "Correctly distinguish passé composé / imparfait in a story, and understand or actively use the passé récent and plus-que-parfait.",
  "challenge": "Today’s challenge: in RFI’s Journal en français facile, find a news item about travel or a transport breakdown and retell it in 4 sentences, including one with venir de + infinitive and one in the plus-que-parfait (Les voyageurs avaient déjà…); then write one sentence comparing it with a trip of your own.",
  "items": {
   "reading": {
    "R19-1": {
     "questions": [
-     {
-      "why": "The forecast deterioration was for the next evening, and they set off on time. The mistake was adding a secondary summit on the spot “because there was time”."
-     },
-     {
-      "why": "« plutôt que de continuer vers le refuge, pourtant plus proche » — which is why it seemed absurd at the time."
-     },
-     {
-      "why": "« La leçon n'est pas « il faut avoir un guide ». Elle est plus simple… » The author explicitly rules out “you need a guide”."
-     }
-    ]
-   },
-   "R19-2": {
-    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      null,
      null,
      {
-      "why": "« ce n'est pas le train qui crée ces moments : c'est l'absence d'alternative », and he says plainly that he doesn’t wish for breakdowns."
-     }
-    ]
-   },
-   "R19-3": {
-    "questions": [
+      "why": "« Les frais médicaux à l’étranger sont pris en charge dans la limite de 11 000 euros » — They are covered, though with a low ceiling; the criterion asks whether they are covered."
+     },
+     null,
+     null,
+     null,
      {
-      "why": "She shared with two French people and spoke English to customers at the café. The breakthrough only came after she changed flatshare in January."
-     }
-    ]
-   },
-   "R19-4": {
-    "questions": [
-     {
-      "why": "« Ils s'étaient renseignés … mais sur l'horaire de la marée d'un port situé à trente kilomètres », about an hour and a half different locally."
+      "why": "« couverts sans plafond » — The Gold card ticks all four, but its ceiling of 11 000 euros may be insufficient in North America; Globe Trotter has no ceiling."
      }
     ]
    }
@@ -48,25 +37,31 @@
    "L19-1": {
     "questions": [
      {
-      "why": "« La ville en compte deux qui portent presque le même nom ». All the pupils were there."
-     },
-     {
-      "why": "« les élèves étaient tous là, on a marché » — one kilometre, twenty minutes."
+      "why": "« Le mien avait expiré depuis trois semaines » — Plus-que-parfait avait expiré: it had already run out before she checked."
      }
     ]
    },
    "L19-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "On the second day they couldn’t set off at all, because Marion’s knee hurt."
+      "why": "« Parlez aux habitants » — ne… que ça = that is all they ask: locals are glad to talk."
      }
     ]
    },
-   "L19-4": {
+   "L19-3": {
     "questions": [
      null,
+     null,
+     null,
+     null,
      {
-      "why": "« Montrez-nous d'abord ce que votre outil fait de plus » — polite but firm."
+      "why": "« il a affiché complet de juin à septembre » — avait prévu (pluperfect) against a affiché (passé composé): he expected an average season and was full."
      }
     ]
    }

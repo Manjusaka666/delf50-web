@@ -1,7 +1,7 @@
 {
  "canDo": "Can recognise the three question types that cost the most marks in B2 reading and listening (implied meaning, author’s tone/position, paraphrase) and give answers backed by the text using a three-step method: “locate the passage → find the paraphrase → eliminate distractors”.",
  "review": "Review your wrong answers in reading and listening from Mock 1 and Mock 2: which were “didn’t hear it / didn’t find it”, which were misunderstandings and which were caused by distractors; go back over the markers of concession, irony and reservation (certes, pourtant, je ne prétends pas que, sans tomber dans).",
- "input": "Read: a long article on functional illiteracy in adults, an ironic column “in defence of boredom” and a restaurant owner’s reply to a bad review; write down the evidence in the text for each question. Listen: a debate on “parking charges based on vehicle weight”, a linguist on English loanwords at work and a pollen alert news flash; on the first listen focus only on structure and positions, on the second check details and paraphrases.",
+ "input": "Read: the informative article « Plastique : le recyclage ne suffira pas », the opinion piece « Faut-il fermer les zoos ? » and the three-voice forum « Mangerons-nous de la viande produite en laboratoire ? » — questions first, then the text, finding the evidence for each answer; listen: « Stationnement : faire payer plus cher les voitures lourdes ? » and « Anglicismes au bureau : faut-il s’inquiéter ? » twice each, then three short recordings once each.",
  "output": "Write: an article for a community newspaper on adults’ reading and writing difficulties (250+ words), with a headline, a description of the situation, an analysis of the consequences and concrete proposals; speak: a 5-minute monologue on “should daylight saving time be abolished?”, then a debate with the examiner on “parking charges based on vehicle weight”.",
  "checkpoint": "Reading + listening accuracy ≥85%, with every tone/implied-meaning question correct; for each question, can say in one sentence of your own language where the evidence is and why the distractors are wrong; can summarise both sides’ arguments in L44-1 and one concession.",
  "challenge": "Today’s challenge: find a debate or interview with two points of view on TV5MONDE or RFI (3 minutes or less), listen only once, then write in French “A pense que… / B réplique que… / Les deux s’accordent sur…”; check against the transcript and count the paraphrases you missed.",
@@ -9,58 +9,13 @@
   "reading": {
    "R44-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The article defines illettrisme, then explains how hidden it is (paragraph 2), its effects (paragraph 3), remedies and obstacles (paragraph 4), and ends by calling for a change of attitude (« que l’on peut surmonter à tout âge »). B: the text doesn’t discuss primary school teaching; C: the author attributes it to shame and doesn’t criticise those affected."
-     },
-     {
-      "why": "« Ces personnes ont pourtant été scolarisées… à ne pas confondre avec l’analphabétisme, qui concerne ceux qui n’ont jamais appris à lire ». A has no basis; C contradicts « la lecture et l’écriture »."
-     },
-     {
-      "why": "« d’autant plus difficile à mesurer qu’il se cache », followed by a list of cover-up strategies (claiming to have forgotten their glasses, asking relatives to fill in forms, etc.). Neither A nor B is mentioned."
-     },
-     {
-      "why": "The first half, « Ils ne sont pas moins intelligents que les autres », shows that all their intelligence goes into hiding the problem. A takes it literally; C: the text talks about “hiding”, not “teaching themselves”."
-     },
-     {
-      "why": "« là où l’on pouvait autrefois se faire aider au guichet, il faut désormais lire et écrire seul devant un écran ». Neither B nor C is in the text."
-     },
-     {
-      "why": "« Tant que l’illettrisme sera perçu comme un échec individuel… ceux qui en souffrent continueront de se taire »: society’s view must change first before those affected dare to speak up. A is exactly the view the author criticises; B contradicts the praise for workshops in paragraph 4."
-     }
-    ]
-   },
-   "R44-2": {
-    "questions": [
-     {
-      "why": "« Pauvre ennui ! », « un seau percé » and « sans doute plus fort » are humorous and exaggerated, but paragraph 3 makes a serious point drawing on psychology. A: the tone isn’t alarmed; C: the author takes a clear position."
-     },
-     {
-      "why": "Pouring water into a leaky bucket never fills it: endless scrolling never fills the empty time either; it’s futile. B is a literal misreading; C is irrelevant."
-     },
-     {
-      "why": "Before this: « Je ne prétends pas qu’ils étaient plus heureux »: the author heads off any “nostalgia filter” and only stresses that they were able to be “bored”. A is exactly the conclusion he rejects; B: he isn’t criticising anyone."
-     },
-     {
-      "why": "« l’esprit vagabonde, établit des liens inattendus, invente… les meilleures idées ». Neither B nor C is in the text."
-     },
-     {
-      "why": "« très sérieusement » is self-mocking, but the suggestion fits the text’s argument (idle time sparks creativity). A is the author’s idea, not reality; C ties in with the logic of the whole text."
-     }
-    ]
-   },
-   "R44-3": {
-    "questions": [
-     {
-      "why": "It is the owner’s public reply to a one-star review (« Réponse du propriétaire »). Neither B nor C is in the text."
-     },
-     {
-      "why": "The bad review was posted at 20:12, but the main course only arrived at 20:15: the customer wrote the review before finishing the meal, and the owner uses this to imply it was hasty. A and C draw the wrong conclusions from the numbers."
-     },
-     {
-      "why": "« Nous aurions sans doute dû vous en informer dès votre arrivée ; c’est une erreur ». B: he defends the waiter; A isn’t covered."
-     },
-     {
-      "why": "Polite on the surface (« Merci », « Nous serions heureux »), but « Nous sommes toujours ravis… surtout lorsqu’ils sont rédigés à chaud » is clearly ironic. B: there is no insulting language; C: his reply is very detailed."
+      "why": "« il n’a aucune raison d’en acheter moins » — un pis-aller = a stopgap; un alibi = an excuse, a cover."
      }
     ]
    }
@@ -101,6 +56,9 @@
      },
      {
       "why": "« apprenez les deux… il faut les comprendre. Mais à l’écrit… préférez le mot français ». A is too absolute; C is exactly the attitude she criticises."
+     },
+     {
+      "why": "« ils ont le sentiment que leur langue est menacée » — Force est de constater que… = one has to admit; the conclusion: attachment to a language depends on the feeling that it could be lost."
      }
     ]
    },
@@ -114,6 +72,12 @@
      },
      {
       "why": "« peuvent recevoir chaque matin, par SMS, le niveau de risque de leur commune en s’inscrivant »; chaque matin paraphrases chaque jour. Neither A nor B is mentioned."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« de diversifier les nouvelles plantations » — il ne s’agit pas de… mais de…: not felling existing trees but diversifying new plantings, so that no species exceeds ten per cent."
      }
     ]
    }

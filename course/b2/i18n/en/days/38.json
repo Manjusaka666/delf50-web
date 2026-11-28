@@ -1,7 +1,7 @@
 {
  "canDo": "Can allocate time across the parts of a monologue (introduction ≤1 minute, body 4 minutes, conclusion 30 seconds), and respond quickly to the examiner in a debate with rephrasing and complex comparatives, using pronouns flexibly instead of repeating nouns.",
  "review": "Review day 18’s advanced personal pronouns (y, en, double object pronouns, neuter le) and day 20’s complex comparisons (plus… plus, d’autant plus que, de plus en plus, autant… autant, comme si), keeping the monologue and debate framework from days 36–37.",
- "input": "Read: an article on cinemas holding out against streaming, a column against the prejudice that “series are inferior to films” and an announcement from a village cinema; underline every pronoun and find what it refers to. Listen: an interview with the manager of a village cinema in the Belgian Ardennes (twice), a short cultural commentary on video games and an ad for a short film festival; rephrase each answer in one sentence as you listen.",
+ "input": "Read: the informative article « Le cinéma en salle a-t-il encore un avenir ? », the opinion piece « La culture gratuite a-t-elle un prix ? » and the three-voice forum « Les jeux vidéo sont-ils un art ? » — questions first, then the text, finding the evidence for each answer; listen: « Un cinéma de village dans les Ardennes » and « La chronique culture : le jeu vidéo, une culture comme une autre ? » twice each, then three short recordings once each.",
  "output": "Write: an article for a city culture magazine comparing “cultural entertainment at home” with “going out for culture” (≥250 words); speak: a timed 6-minute monologue on a document about “a culture voucher for young people”, then a 4–5-minute debate with the examiner on “should phones be banned during performances?”, starting each reply by rephrasing the examiner’s point.",
  "checkpoint": "Reading and listening accuracy ≥80%; each part of the monologue within 30 seconds of its target time; all 4 debate replies start with a rephrasing (« Si je vous comprends bien… »), with at least 3 complex comparatives and 4 uses of the pronouns y/en/le, and no mechanical repetition of nouns.",
  "challenge": "Today’s challenge: find a cultural report about a film, exhibition or music festival on TV5MONDE or RFI; first recap it in 30 seconds (« Autrement dit… »), then spend 1 minute comparing it with a cultural event in your own city, using « plus…, plus… » and « en » at least once each.",
@@ -9,58 +9,14 @@
   "reading": {
    "R38-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The title, « n’a pas dit son dernier mot », and paragraph 1’s « Pourtant, les salles résistent » state the topic. A is the prediction rejected at the start of the article; C isn’t covered."
-     },
-     {
-      "why": "« Ce qui attire ces spectateurs… c’est l’expérience collective », confirmed by Léa’s words, « Rire avec deux cents inconnus ». A contradicts the rising ticket prices in paragraph 4; B isn’t mentioned."
-     },
-     {
-      "why": "plus… plus expresses proportional change: the richer the online offer, the more going to the cinema feels like a special occasion. B and C misread the subject and the logical link."
-     },
-     {
-      "why": "« misent sur ce qui les distingue : rencontres avec des réalisateurs, ciné-débats… » and « on ne la trouve qu’ici ». A isn’t mentioned; C is exactly what multiplexes do."
-     },
-     {
-      "why": "« Le tableau n’est pas pour autant idyllique » introduces ticket prices, village cinema closures and art films being pulled quickly: it adds to and qualifies what came before. B is the opposite; C: the author states facts without blaming anyone."
-     },
-     {
-      "why": "« Autant…, autant… » contrasts the strengths of both, concluding that cinemas have an advantage that can’t be taken away, « celui de nous rassembler ». A and B are the opposite."
-     }
-    ]
-   },
-   "R38-2": {
-    "questions": [
-     {
-      "why": "The title, « Arrêtons d’opposer », and the ending, « les deux », show the author refuses to rank one above the other. A goes too far: he says « aussi ambitieuses », not superior across the board; B is the prejudice the author attacks."
-     },
-     {
-      "why": "« Leur longueur leur offre un luxe que le cinéma n’a pas : le temps ». Neither B nor C is mentioned."
-     },
-     {
-      "why": "« Je ne prétends pas que tout se vaille » is a concession admitting that assembly-line series exist; he then defends his argument with « Mais le cinéma a, lui aussi, ses produits formatés ». A is the opposite; C: the text says « personne n’en conclut que le septième art est mort »."
-     },
-     {
-      "why": "« Le vrai danger… c’est la façon dont on la regarde. Enchaîner six épisodes en une soirée… Plus on consomme vite, moins on se souvient ». A and C aren’t what the author calls the “real danger”."
-     },
-     {
-      "why": "avoir la vie dure means “to be deeply rooted, hard to get rid of”. B is a literal misreading; C is the opposite of the persistence implied by « la scène se répète »."
-     }
-    ]
-   },
-   "R38-3": {
-    "questions": [
-     {
-      "why": "Low-price screenings, a free shuttle, extra family screenings and audience-chosen films are all part of « Cinéma pour tous ». Neither B nor C is in the announcement."
-     },
-     {
-      "why": "« de plus en plus d’habitants renoncent à venir en salle, que ce soit pour des raisons financières ou faute de moyens de transport ». A and C aren’t mentioned."
-     },
-     {
-      "why": "« il suffira de la réserver la veille par téléphone » (la = la navette). A: the shuttle is free; B gets both the timing and the method wrong."
-     },
-     {
-      "why": "en stands for « de suggestions »: the three films with the most suggestions. B: viewers are the ones making suggestions, not what is received; C makes no sense."
+      "why": "« n’en constituent plus qu’un cinquième » — ne pas être étranger à = to have something to do with (an understated cause)."
      }
     ]
    }
@@ -83,6 +39,7 @@
      {
       "why": "« je ne la vois pas comme une menace mortelle… plus les gens passent de temps seuls devant leur écran, plus ils ont besoin de lieux où se retrouver ». She rejects A; B: she admits she “of course feels it”."
      },
+     null,
      {
       "why": "y refers back to « le cinéma en salle »: children who have seen a film at the cinema usually come back. B and C get the referent of y wrong."
      }
@@ -101,6 +58,11 @@
      },
      {
       "why": "« Évidemment, je ne le nie pas… Le problème, ce n’est pas le média, c’est l’usage qu’on en fait ». A is the opposite of « je ne le nie pas »; B: she only advises « jouez moins, mais jouez mieux »."
+     },
+     null,
+     null,
+     {
+      "why": "« De s’asseoir à côté de leur enfant, manette en main » — pas plus qu’on ne jugerait… = any more than one would judge…; soit… soit… = either… or…"
      }
     ]
    },

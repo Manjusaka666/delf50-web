@@ -1,60 +1,45 @@
 {
  "canDo": "Fix the 3 most frequently recurring error types from Mock 1 with as little new content as possible.",
  "review": "Pick the Top 3 skills from the Error Book.",
- "input": "Short listening and reading that serve only these skills.",
+ "input": "Listen: three recordings, « Je voudrais m’inscrire au club », « Moniteur d’auto-école : les jeunes et le permis » and « Des cantines qui cuisinent local », twice each; read: the comparison grid « S’abonner à une salle de spectacle » and the articles « Loger un étudiant chez une personne âgée » and « Des arbres contre la chaleur en ville », questions first, then the text.",
  "output": "Rewrite the wrong sentences + apply them in context + redo them aloud.",
  "checkpoint": "Retest after 48 hours; only mark as “fairly stable” at ≥70%.",
  "challenge": "Today’s challenge: from your Error Book, pick the 3 kinds of mistake you make most often (e.g. passé composé / imparfait, misused connectors, unclear references) and do a matching set of exercises for each at Le Point du FLE; then rewrite 5 wrong sentences from your earlier essays and write a “personal rule” for each type (an explanation in your own language + one correct French example).",
  "items": {
-  "reading": {
-   "R42-1": {
-    "questions": [
-     null,
-     null,
-     null,
-     {
-      "why": "The text uses contrasting sentences to show that piling up passé composé only produces a list, not a narrative."
-     }
-    ]
-   },
-   "R42-2": {
-    "questions": [
-     {
-      "why": "Many candidates use it as if it meant « en fait »."
-     },
-     {
-      "why": "« Par ailleurs » only adds a parallel point."
-     },
-     null,
-     {
-      "why": "The contrasting examples show the difference."
-     }
-    ]
-   },
-   "R42-3": {
-    "questions": [
-     null,
-     {
-      "why": "The rewritten example shows the concrete method."
-     }
-    ]
-   },
-   "R42-4": {
-    "questions": [
-     null,
-     {
-      "why": "The difference between « est-ce écrit ? » and « est-ce la réponse ? »."
-     }
-    ]
-   }
-  },
   "listening": {
+   "L42-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« La première séance est gratuite » — Documents: a medical certificate under three months old, a photo, parental consent; one signature is enough when the father lives abroad."
+     }
+    ]
+   },
+   "L42-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Leur point faible, c’est l’attention » — En revanche: they know the highway code better (thanks to apps) but struggle to concentrate."
+     }
+    ]
+   },
    "L42-3": {
     "questions": [
      null,
      null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Example: « il est tombé, il ne répondait plus »."
+      "why": "« En hiver, la ferme produit peu » — On pourrait croire que… Or…: a common assumption stated, then contradicted by the facts."
      }
     ]
    }

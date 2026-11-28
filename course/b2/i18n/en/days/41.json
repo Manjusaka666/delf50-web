@@ -1,70 +1,11 @@
 {
  "canDo": "Can complete all four skills under full mock-exam conditions and classify your own errors as “comprehension / grammar / vocabulary / structure and task” errors, identifying the 3 weaknesses most in need of fixing.",
  "review": "Review the exam format from days 29–40: three reading texts (long article, argumentative text, short text), three listening recordings, formal letter structure and the monologue’s three steps “theme → problem → outline”; also review high-frequency structures such as bien que + subjunctive, étant donné que, si bien que and à condition que, and check in the mock exam whether you have really mastered them.",
- "input": "Read: three texts on consumption (second-hand clothes), education (the debate over abolishing marks) and the city (a tram and local residents) in 50 minutes; read the questions before the texts and mark the evidence for each answer. Listen: an interview on a company’s “four-day week”, a column on teenagers’ sleep and a local news flash, only as many times as the exam allows: structure on the first listen, details on the second.",
+ "input": "Read: the informative article « Forêts françaises : plus étendues, mais plus fragiles », the opinion piece « Faut-il laisser la nature tranquille ? » and the three-voice forum « Faut-il interdire la chasse le dimanche ? » — questions first, then the text, finding the evidence for each answer; listen: « La semaine de quatre jours, deux ans après » and « Les ados manquent-ils de sommeil ? » twice each, then three short recordings once each.",
  "output": "Write: a formal letter to the mayor on behalf of a parents’ association (250+ words) in 60 minutes; speak: a 5-minute monologue on “free public transport” (30 minutes’ preparation), then a debate with the examiner on “should the four-day week become widespread?”. Afterwards, classify every lost point question by question in an error log.",
  "checkpoint": "Combined reading + listening accuracy ≥70%; a complete letter structure (form of address, purpose, argument, proposal, closing formula) of ≥250 words; a monologue with a clear problem and outline; an error log with at least 10 errors and a fix-it rule written for each type of error.",
  "challenge": "Today’s challenge: find a news item about consumption or transport on RFI’s « Journal en français facile » or TV5MONDE, write a summary of about 60 words in 3 minutes, then compare it with the original to find 2 grammar errors and 1 misunderstanding of your own, and add them to your error log.",
  "items": {
-  "reading": {
-   "R41-1": {
-    "questions": [
-     {
-      "why": "The article first explains the rise of second-hand clothing (paragraphs 1–2), then uses « Rien n’est moins sûr » to introduce its limits (paragraphs 3–5): it is an analytical article. A is too absolute: the author doesn’t urge buying only second-hand; C: platforms are just one cause, not the target of criticism."
-     },
-     {
-      "why": "The text: « les plateformes de revente entre particuliers ont rendu la démarche aussi facile qu’un achat en ligne classique ». A: the text doesn’t say new clothes got cheaper; B: ecology is a motive, not the reason it became “easier”."
-     },
-     {
-      "why": "She says second-hand « sert parfois à financer une consommation encore plus rapide », i.e. it can fuel overconsumption. B is the opposite of « ne remplace pas toujours le neuf »; C: paragraph 1 says the proportion is higher among young people."
-     },
-     {
-      "why": "« piètre » means “poor, shoddy”; paired with « usés », it refers to poor-quality clothes that are hard to reuse. A, “uneven”, isn’t negative enough; B has nothing to do with the text."
-     },
-     {
-      "why": "The text: « Les pièces de qualité partent directement sur les applications de revente »: good clothes are resold online, leaving charities with the rejects. A: the text talks about falling quality, not quantity; C: exports continue, and there is no ban."
-     },
-     {
-      "why": "Last paragraph: it is « ces habitudes, bien plus que le simple changement de canal d’achat » that reduce our footprint; the key is “buying less”. A contradicts « n’a de sens que si… »; C contradicts « Reste à savoir si les consommateurs sont prêts »."
-     }
-    ]
-   },
-   "R41-2": {
-    "questions": [
-     {
-      "why": "The core of the text is at the end: « Plutôt que de le supprimer, apprenons à mieux le parler ». A is the opposite of the author’s position; C: there is no international comparison."
-     },
-     {
-      "why": "« Je comprends cette critique, et je la partage en partie » is a concession, admitting part of the criticism is valid. B ignores « en partie »; C: with twenty years of teaching, he has clearly thought about it."
-     },
-     {
-      "why": "Paragraph 2 contrasts an 8 with specific comments, which is a « point d’appui », with an unexplained 8 compared publicly, which is a « sanction humiliante ». A’s “always” is too absolute; C: paragraph 3 actually criticises replacing marks with colours."
-     },
-     {
-      "why": "Before this: « n’ont pas fait disparaître le classement »; parents convert the colours back into marks, so the ranking logic remains, just with a different “label”. A means the opposite; B: parents don’t reject it, they “translate” it."
-     },
-     {
-      "why": "« former sérieusement les enseignants à l’évaluation… voilà le véritable chantier ». B: the author thinks high-profile reforms achieve less; C: publicly comparing averages is exactly what he criticises."
-     }
-    ]
-   },
-   "R41-3": {
-    "questions": [
-     {
-      "why": "The key sentence: « Je ne demande pas qu’on renonce au tramway, mais qu’on nous associe réellement aux décisions ». A: she clearly doesn’t oppose the project; B: she actually implies the coverage was too one-sided."
-     },
-     {
-      "why": "« Je ne conteste pas l’intérêt du projet : moins de voitures, un air plus respirable… ». B: costs aren’t discussed; C: she accepts the air will be better."
-     },
-     {
-      "why": "A 20-minute presentation + « un échange expédié en un quart d’heure »: too little time for discussion. A: the timing of the meeting isn’t mentioned; C: there is no such restriction in the text."
-     },
-     {
-      "why": "expédier une discussion = to rush through a discussion, to get it over with. A is the literal meaning of expédier (to send), which doesn’t apply here; C has nothing to do with the context."
-     }
-    ]
-   }
-  },
   "listening": {
    "L41-1": {
     "questions": [
@@ -77,6 +18,7 @@
      {
       "why": "« Les journées sont donc plus longues… Certains l’ont d’ailleurs mal vécu ». A: hours weren’t cut and pay isn’t mentioned; B: the workshop still runs « cinq jours sur cinq »."
      },
+     null,
      {
       "why": "« La productivité, elle, est restée à peu près stable ». She also specifically says « je me méfie des chiffres miracles », which rules out A."
      },
@@ -99,6 +41,11 @@
      {
       "why": "« Le problème, ce n’est pas tant l’écran que l’absence de limite ». Neither A nor B is mentioned."
      },
+     null,
+     null,
+     {
+      "why": "« Elle soulage, mais elle entretient le problème » — A concession, then a turn; the advice is no more than two hours' shift from weekdays. The last sentence adds that adults must set the example."
+     },
      {
       "why": "« ils souhaitent que les cours commencent un peu plus tard le matin ». A: the doctor actually opposes an « interdiction brutale »; C isn’t mentioned."
      }
@@ -117,7 +64,8 @@
      }
     ]
    }
-  }
+  },
+  "reading": {}
  },
  "vocab": {
   "V41-01": {

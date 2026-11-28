@@ -1,57 +1,45 @@
 {
  "canDo": "Can compare two or more options with comparatives and superlatives, explaining choices and trade-offs.",
  "review": "Review adjectives/quantities; add plus/moins/aussi/autant.",
- "input": "Listening: consumer choices; reading: two options compared.",
- "output": "Write a 120-word comparison; speak for 2 minutes on “A or B?”.",
+ "input": "Listen: three recordings, « Deux appartements, un seul choix », « Elle a quitté Paris pour un village de cent habitants » and « Vélo, bus ou voiture : le grand test », twice each; read: the comparison grid « Louer un véhicule pour déménager » and the articles « Train de nuit : le grand retour » and « Colocation : pas seulement pour les étudiants », questions first, then the text.",
+ "output": "Write a 160-word comparison; speak for 2 minutes on “A or B?”.",
  "checkpoint": "Compare on at least 3 criteria and reach a conclusion; use plus/moins/aussi/autant and common superlatif forms correctly.",
  "challenge": "Today’s challenge: compare two means of transport or two housing options in your city in 6 sentences, using plus…que, moins…que, aussi…que and le plus at least once each; end with one sentence giving your choice and your reason, and talk about it for 2 minutes.",
  "items": {
   "reading": {
    "R14-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The flight is shorter, but getting to and from the airport and security add about two hours. The text doesn’t say the train is never late."
-     },
-     {
-      "why": "« le prix bouge peu selon la date » — that is exactly what sets it apart from the other two."
-     },
-     {
-      "why": "« aussi souple que l'avion sur le prix, mais nettement plus régulier sur la durée ». aussi … que means equal."
+      "why": "« louez ici et rendez ailleurs sans supplément » — Déménag’Facile fails only on volume (8 m³)."
      }
     ]
    },
    "R14-2": {
     "questions": [
-     {
-      "why": "The costs the text lists as specific to owners are the taxe foncière, major repairs and service charges that can’t be passed on."
-     },
-     {
-      "why": "One to two years’ rent is the scale of the owner’s extra costs over twenty years, not the notary’s fees."
-     },
-     {
-      "why": "« plus votre horizon est incertain, moins l'achat est intéressant » — the double comparison plus…moins."
-     }
-    ]
-   },
-   "R14-3": {
-    "questions": [
-     {
-      "why": "« moins de deux euros de différence » — differences in speed hardly affect annual energy use."
-     },
+     null,
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "« le seul à obtenir une bonne note sur les quatre critères à la fois »; the fastest is D, and the text doesn’t say B is the cheapest."
-     }
-    ]
-   },
-   "R14-4": {
-    "questions": [
-     {
-      "why": "« elle dépend surtout du logement ». Rural areas are where the gap widens, not the main factor."
-     },
-     null,
-     {
-      "why": "The lowest-earning 20% spend almost twice the share on housing and energy that the highest-earning 20% do."
+      "why": "« Tant que le carburant des avions ne sera pas taxé » — lutter à armes égales = to compete on equal terms."
      }
     ]
    }
@@ -59,41 +47,35 @@
   "listening": {
    "L14-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« il est mieux isolé : les charges sont deux fois moins élevées ». The second flat is smaller and on the first floor."
-     },
-     {
-      "why": "« C'est là que l'écart est le plus net » comes straight after the travel distance (ten minutes versus three)."
+      "why": "« Donc on est d’accord : le quai » — Comparatives and a superlative: plus grand, moins calme, aussi pratique… que, le moins clair des deux."
      }
     ]
    },
    "L14-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The low first-year price is real, but it doubles after twelve months: you only save if you switch again in time."
-     },
-     {
-      "why": "Poor coverage → using mobile data at home too → more expensive in practice."
+      "why": "« je vois plus de monde qu’à Paris » — Je croyais que… En réalité…: expectation and fact are opposed."
      }
     ]
    },
    "L14-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "20 minutes by car + 10–15 minutes to find a space ≈ 25 minutes by bike."
-     },
-     {
-      "why": "« Si, l'entretien, à peu près cent euros par an. Beaucoup moins, donc » — a hundred euros a year versus forty euros a month for parking."
-     },
-     {
-      "why": "« je vais essayer trois jours par semaine, pas tous les jours ». The bus is the plan for rainy days."
-     }
-    ]
-   },
-   "L14-4": {
-    "questions": [
-     {
-      "why": "The price is in the graphics card, which a law student has no use for."
+      "why": "« Sur ce point, le classement s’inverse » — s’inverser = to be reversed: the slowest (car) is the most comfortable, the fastest (bike) le plus fatigué des trois."
      }
     ]
    }

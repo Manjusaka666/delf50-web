@@ -1,66 +1,49 @@
 {
  "canDo": "Can form and use the past conditional correctly to express regret (j’aurais aimé…), reproach (vous auriez dû…) and unreal hypotheses about the past (si + plus-que-parfait), and, like a journalist, report unconfirmed news cautiously with the conditional (l’incendie aurait été provoqué par…).",
  "review": "Review day 9’s three types of si clause (today’s focus is the third type: si + plus-que-parfait → past conditional) and day 1’s past tenses (passé composé / imparfait / plus-que-parfait): first narrate the events accurately, then express regret or a hypothesis.",
- "input": "Read: a report on “what we know and don’t know” about a flood, a newspaper editorial on “reporting in the conditional” and a reader’s letter demanding a correction (separate confirmed facts (indicative), unconfirmed information (conditional) and regrets or reproaches); listen: a radio report on two climbers stranded overnight, a myth-busting segment and a regional news bulletin.",
- "output": "Write: a 180+-word formal email to an online newspaper’s ombudsman, correcting an inaccurate article, expressing regret and reproach, and asking for a correction; speak: a 3-minute monologue (do the media give too much space to news-in-brief?) + a debate on “filming an accident instead of helping”, using the past conditional in your answers to express reproach or hypotheses.",
+ "input": "Read: the informative article « Un tableau volé retrouvé quarante ans plus tard », the opinion piece « Faits divers : pourquoi nous fascinent-ils ? » and the three-voice forum « Caméras de surveillance : rassurantes ou inquiétantes ? » — questions first, then the text, finding the evidence for each answer; listen: « Une nuit bloqués en montagne » and « Vrai ou faux : un loup en plein centre-ville ? » twice each, then three short recordings once each.",
+ "output": "Write: a 250+-word formal email to an online newspaper’s ombudsman, correcting an inaccurate article, expressing regret and reproach, and asking for a correction; speak: a 3-minute monologue (do the media give too much space to news-in-brief?) + a debate on “filming an accident instead of helping”, using the past conditional in your answers to express reproach or hypotheses.",
  "checkpoint": "Reading and listening accuracy ≥80%; can tell apart the three uses of the past conditional (regret/reproach, unreal hypothesis, unconfirmed information); at least 5 correct past conditionals in the email (including the choice of avoir / être and agreement); when rewriting a news brief, all unconfirmed information in the conditional.",
  "challenge": "Today’s challenge: find a news-in-brief item (an accident, a fire, a theft…) on RFI’s « Journal en français facile » or TV5MONDE and find the unconfirmed information expressed in the conditional; then write 3 sentences with the past conditional: 1 reporting unconfirmed information, 1 expressing a regret the person might have, and 1 si + plus-que-parfait hypothesis; finally record a 1-minute “news bulletin”.",
  "items": {
   "reading": {
    "R10-1": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "The headline is « ce que l’on sait, ce que l’on ignore encore »; the text states facts in the indicative and uses the conditional (« aurait été aggravée », « aurait connu une panne ») for unconfirmed information. B: the article reaches no conclusion; C: it quotes several sources, not just one resident."
+      "why": "« Rien n’indique à ce stade qu’il en ait connu l’origine » — The conditional (aurait acheté) marks unconfirmed information."
      },
+     null,
      {
-      "why": "« la crue aurait été aggravée par l’effondrement partiel d’une digue… Cette hypothèse… n’a toutefois pas été confirmée ». A is the opposite of the text; C: the expert « aurait été chargé d’examiner l’ouvrage dans les prochains jours » and has reached no conclusion yet."
-     },
-     {
-      "why": "si + plus-que-parfait + past conditional = an unreal hypothesis about the past; with « regrette Martine », it expresses regret. A is what the councillor says; B: she makes no claim for compensation."
-     },
-     {
-      "why": "The councillor says the text-alert system « aurait connu une panne », while the town hall speaks of only a « retard de quelques minutes seulement »; it isn’t yet possible to confirm who is right. B and C don’t match the text (the system exists)."
-     },
-     {
-      "why": "« un rapport avait recommandé de renforcer la digue… Les travaux n’ont jamais été réalisés, faute de financement ». A contradicts “never carried out”; C: some also think « aucune digue n’aurait pu résister »."
-     },
-     {
-      "why": "« la prudence s’impose : … les premières versions sont souvent les moins fiables ». A and C are over-inferences."
+      "why": "« celui qui acquiert un objet de bonne foi peut, sous certaines conditions, en devenir le propriétaire légitime » — aller de soi = to be a matter of course; de bonne foi = in good faith."
      }
     ]
    },
    "R10-2": {
     "questions": [
+     null,
      {
-      "why": "It is signed « L’éditorial de la rédaction »; the paper admits « Notre journal n’a pas toujours été exemplaire » and announces « une règle simple ». A: the embezzlement case is just an example; C: it isn’t a reader’s letter."
+      "why": "« J’ai longtemps éprouvé une certaine honte à lire les faits divers » — malsain = unhealthy, morbid."
      },
      {
-      "why": "« Il permet de publier vite tout en prenant ses distances avec ce que l’on rapporte ». B has nothing to do with its grammatical function; C is the function of the future tense."
+      "why": "« livrés à l’opinion avant tout jugement » — auraient dû / auraient pu: the past conditional expresses reproach — what should have been done."
      },
      {
-      "why": "« le démenti, lui, passe presque toujours inaperçu. Le lecteur pressé ne retient pas la nuance grammaticale ; il retient… une accusation ». Neither A nor B is mentioned."
-     },
-     {
-      "why": "The past conditional of devoir, aurions dû, means “should have (but didn’t)” — a self-reproach, confirmed by « Nous ne l’avons pas fait » that follows. B is another use of the conditional that doesn’t apply here; C doesn’t fit the context."
-     },
-     {
-      "why": "« une information grave qui ne repose que sur une seule source ne sera plus publiée, même au conditionnel ». A is an over-inference; C is the opposite of « Nous préférons arriver les derniers »."
+      "why": "« une majorité de la population est persuadée que la violence augmente » — insidieux = insidious, harmful in a hidden, gradual way."
      }
     ]
    },
    "R10-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "She points out the article is inaccurate and writes « Au titre du droit de réponse, je vous demande de publier cette lettre ». A isn’t her purpose; C is the opposite — her association was wrongly implicated."
-     },
-     {
-      "why": "« deux partenaires ont suspendu leur soutien et plusieurs bénévoles ont été pris à partie ». B contradicts « n’est mise en cause dans aucune procédure »; C isn’t mentioned."
-     },
-     {
-      "why": "The past conditional of pouvoir, auriez pu, in the second person means “you could have (but didn’t)” — a reproach. A is the use in « aurait bénéficié »; B has nothing to do with the future."
-     },
-     {
-      "why": "« publier cette lettre dans votre prochaine édition, à la même place que l’article concerné ». Neither A nor B is requested in the letter."
+      "why": "« l’habitude que l’on prend d’être observé » — anodin = harmless, insignificant."
      }
     ]
    }
@@ -72,10 +55,10 @@
       "why": "The programme looks back at two climbers stranded overnight, with those involved and the rescuers drawing lessons. B: no new rules are mentioned; C: there is no mention of a shortage of rescuers."
      },
      {
-      "why": "« On a continué un moment en pensant le retrouver… on aurait dû rebrousser chemin tout de suite ». A: the rescuers praise them for the right reflex of calling for help; C isn’t mentioned."
+      "why": "« Oui, mais un peu vite… On a pris l’avertissement à la légère ». A contradicts « Oui »; B: the forecast « annonçait des orages en fin de journée »."
      },
      {
-      "why": "« Oui, mais un peu vite… On a pris l’avertissement à la légère ». A contradicts « Oui »; B: the forecast « annonçait des orages en fin de journée »."
+      "why": "« On a continué un moment en pensant le retrouver… on aurait dû rebrousser chemin tout de suite ». A: the rescuers praise them for the right reflex of calling for help; C isn’t mentioned."
      },
      {
       "why": "« Ces deux jeunes ont eu le bon réflexe d’appeler et de rester sur place ». B and C are exactly what he points out, with si + plus-que-parfait, as things they should have done but didn’t."
@@ -85,6 +68,9 @@
      },
      {
       "why": "« Notre rôle n’est pas de juger. Mais j’aimerais que ce genre d’histoire serve d’exemple ». A contradicts « Non, pas du tout »; B: he does point out « des erreurs simples »."
+     },
+     {
+      "why": "« on partira à l’aube, avec du matériel, et on fera demi-tour au premier doute » — ça ne s’improvise pas = it cannot be improvised; he states three concrete resolutions in the future tense."
      }
     ]
    },
@@ -101,6 +87,11 @@
      },
      {
       "why": "« c’est justement le conditionnel qui donne l’impression qu’on reste prudent… alors qu’on diffuse une rumeur infondée ». A and C are the opposite of this criticism."
+     },
+     null,
+     null,
+     {
+      "why": "« en l’absence de preuve, affirmer l’une ou l’autre hypothèse reviendrait à faire exactement ce que je dénonce » — se garder de + infinitive = to refrain from; trancher = to settle the matter. The conditionals (aurait pu, se pourrait) mark what is unconfirmed."
      }
     ]
    },
@@ -114,6 +105,10 @@
      },
      {
       "why": "sous toute réserve = “subject to confirmation, without guarantee”, matching the many conditionals in the bulletin (aurait été provoqué, aurait voulu, seraient entrés). A and B are misunderstandings."
+     },
+     null,
+     {
+      "why": "« Le niveau rouge n’est pas exclu en cours de soirée » — n’est pas exclu = is not ruled out; red is the level above orange."
      }
     ]
    }

@@ -1,74 +1,47 @@
 {
  "canDo": "Complete a full original mock exam and build a first version of your error map.",
  "review": "Before the test, read only the task instructions.",
- "input": "Listening and reading at the official time limits, in proportion.",
+ "input": "Listen: three recordings, « Un cadeau pour les quarante ans de mariage », « Elle apprend à nager aux adultes » and « Le covoiturage entre voisins devient un service public », twice each; read: the comparison grid « Passer le permis de conduire » and the articles « Le permis à dix-sept ans, une liberté attendue » and « Le stage, formation ou emploi déguisé ? », questions first, then the text.",
  "output": "Writing ≥160 words; the three-part oral.",
  "checkpoint": "Sort errors into knowledge gaps, application gaps, time, carelessness and comprehension strategy.",
  "challenge": "Today’s challenge: after a full mock using a set of TV5MONDE Apprendre B1 listening and reading exercises, build your first “error map”: sort each wrong answer into main idea / detail / negation / opinion / grammar / vocabulary and count them; write down, in your own language, the 2 most frequent types and one concrete rule to fix them next week.",
  "items": {
-  "reading": {
-   "R41-1": {
-    "questions": [
-     null,
-     {
-      "why": "The internal price hasn’t changed in two years, while the market rose 22% over the same period."
-     },
-     null,
-     {
-      "why": "« ni technique ni financière », and it needed a volunteer lawyer’s help for eighteen months."
-     }
-    ]
-   },
-   "R41-2": {
-    "questions": [
-     {
-      "why": "An annual drop-out rate of 8% is far below the average for associations."
-     }
-    ]
-   },
-   "R41-3": {
-    "questions": [
-     null,
-     null,
-     null,
-     {
-      "why": "This assessment comes at the end of the article and sums up the nature of the investment."
-     }
-    ]
-   },
-   "R41-4": {
-    "questions": [
-     null,
-     {
-      "why": "The text states this distinction directly."
-     }
-    ]
-   }
-  },
   "listening": {
    "L41-1": {
     "questions": [
      null,
      null,
      null,
+     null,
+     null,
      {
-      "why": "The total cost over three years is only two thousand euros: the difficulty is not the amount but the vote."
+      "why": "« Alors faisons les deux, mais simplement » — Conditionals for what is being imagined: ça coûterait, on choisirait, ça reviendrait; the tickets are refundable, so On ne risque rien."
      }
     ]
    },
    "L41-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« peut-être une dizaine de cas » over four years."
+      "why": "« il y a soixante personnes sur liste d’attente » — ne… que huit par groupe: only eight per group, hence the waiting list."
      }
     ]
    },
-   "L41-4": {
+   "L41-3": {
     "questions": [
      null,
      null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "One of the three examples given in the text."
+      "why": "« sur les petites routes, les voitures sont trop rares » — Cost: eighty thousand euros a year, a tenth of a bus line (dix fois moins)."
      }
     ]
    }

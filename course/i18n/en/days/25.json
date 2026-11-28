@@ -1,8 +1,8 @@
 {
  "canDo": "Can state a clear position with two developed reasons, expressing necessity or wishes with il faut que / vouloir que and the like.",
  "review": "Review cause and effect and organising words; learn the high-frequency subjonctif triggers.",
- "input": "Listening and reading on school/study issues.",
- "output": "Write a 150-word opinion; give a spoken opinion in 3 minutes.",
+ "input": "Listen: three recordings, « Les devoirs à la maison, tu es pour ou contre ? », « Professeur des écoles en classe unique » and « Faut-il interdire le téléphone au collège ? », twice each; read: the comparison grid « Trouver du soutien scolaire » and the articles « L’école où l’on apprend dehors » and « Faut-il supprimer les notes à l’école ? », questions first, then the text.",
+ "output": "Write a 160-word opinion; give a spoken opinion in 3 minutes.",
  "checkpoint": "The opinion has two developed reasons; at least 3 subjonctif structures of necessity/wish done correctly.",
  "challenge": "Today’s challenge: on “Should secondary-school pupils wear a uniform every day?”, write a 6-sentence opinion: take a clear position, give 2 reasons and use the subjunctive at least 2 times (Il faut que… / Je voudrais que…); you can first find a short text about school on TV5MONDE or Le Point du FLE for ideas.",
  "items": {
@@ -10,29 +10,50 @@
    "R25-1": {
     "questions": [
      null,
-     {
-      "why": "« ça correspond à combien ? » — showing that what really works is having something at stake tied to the result."
-     }
-    ]
-   },
-   "R25-4": {
-    "questions": [
+     null,
      null,
      {
-      "why": "« les conflits n'ont pas diminué, ils se sont déplacés », and by the afternoon they have already taken shape."
-     },
-     {
-      "why": "« le vide en collège ne reste jamais vide » — the sports hall, table-tennis tables, the library without booking."
+      "why": "« 44 euros de l’heure » — Half is tax-deductible (22 euros net), but the price charged is 44; judge by the price charged."
      }
     ]
    }
   },
   "listening": {
+   "L25-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« je serais d’accord pour un essai d’un trimestre » — Giving an opinion: je trouve que, à mon avis, il me semble que; conceding: Je comprends ta crainte. Pourtant…"
+     }
+    ]
+   },
    "L25-2": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "She gives her sister’s example: a 12 at a struggling lycée can’t be compared with a 15 elsewhere."
+      "why": "« ils ont raison sur les chiffres, mais pas sur le reste » — Concession + rebuttal: he grants the figures, then points to the cost of bussing children (un coût que personne ne calcule)."
+     }
+    ]
+   },
+   "L25-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« l’interdiction est utile, mais insuffisante » — Ways of reporting opinions: selon lui, il estime que, à son avis, d’après lui, elle considère que."
      }
     ]
    }

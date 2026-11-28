@@ -1,66 +1,37 @@
 {
  "canDo": "Can turn verbal and adjectival sentences into noun structures (fermer → la fermeture, baisser → la baisse, rapide → la rapidité), read and write nominalised news headlines and leads, and sum up a piece of news in concise journalistic style.",
  "review": "Review day 13’s passive and impersonal structures (presenting facts objectively) and day 12’s indirect speech (reporting sources); look back at day 10’s “conditional for unconfirmed information” (la diffusion aurait reculé).",
- "input": "Read: a report on the local press going digital, an editorial against “clickbait” and a notice of a newspaper relaunch (circle every nominalised structure and turn it back into a verbal sentence); listen: an interview with a sub-editor on headlines and leads, a radio press review and news-flash headlines (note the nominalised headlines and how they are expanded).",
- "output": "Write: a formal letter (≥220 words) to a newspaper’s director on behalf of a group of readers, expressing concern about dropping the print edition and making suggestions; speak: a 4-minute monologue on whether the state should fund local newspapers, then a debate on “closing comment sections on news sites”.",
+ "input": "Read: the informative article « Presse locale : la disparition silencieuse des journaux de proximité », the opinion piece « Journalistes et influenceurs : la confusion des genres » and the three-voice forum « Faut-il supprimer la publicité à la radio et à la télévision publiques ? » — questions first, then the text, finding the evidence for each answer; listen: « Dans les coulisses d’un journal : l’art du titre » and « La revue de presse du jeudi » twice each, then three short recordings once each.",
+ "output": "Write: a formal letter (≥250 words) to a newspaper’s director on behalf of a group of readers, expressing concern about dropping the print edition and making suggestions; speak: a 4-minute monologue on whether the state should fund local newspapers, then a debate on “closing comment sections on news sites”.",
  "checkpoint": "Reading and listening accuracy ≥80%; can rewrite 10 verbal sentences as nominalised headlines with the right noun genders; at least 6 nominalised structures in the letter; a 4-minute monologue without breaking off.",
  "challenge": "Today’s challenge: open the news pages of RFI’s « Journal en français facile » or TV5MONDE, copy down 5 nominalised headlines (e.g. « Hausse des prix de l’énergie ») and turn each back into a full sentence; then pick one of the day’s stories, write your own nominalised headline and a 2-line lead, and record a 1-minute spoken bulletin.",
  "items": {
   "reading": {
    "R15-1": {
     "questions": [
+     null,
+     null,
      {
-      "why": "The text covers the local press’s difficulties (causes), its transformation (newsrooms, readers) and the way forward. B: the newspaper is just an example; C: national media only come up as a comparison at the end."
+      "why": "« La première est la chute des recettes publicitaires » — Note the journalistic nominalisations: la chute, le vieillissement, la hausse, la fermeture."
      },
+     null,
+     null,
+     null,
      {
-      "why": "The second paragraph has three nominalised structures: « La baisse continue des ventes…, la hausse du prix du papier et la chute des recettes publicitaires ». A and C aren’t mentioned."
-     },
-     {
-      "why": "« Selon une étude… aurait reculé » is the journalistic “cautious conditional”, showing the information comes from someone else and the journalist doesn’t vouch for it (see day 10). Neither A nor B is this use."
-     },
-     {
-      "why": "« Le risque… est la course à la rapidité au détriment de la vérification. » B isn’t mentioned; C: he says there is no longer any such thing as a deadline."
-     },
-     {
-      "why": "« les plus âgés regrettent la disparition d’un rituel : l’achat du journal au café… ». A is what young readers welcome; C isn’t mentioned."
-     },
-     {
-      "why": "« moins dans le choix du support que dans sa capacité à rester indispensable à la vie de son territoire ». A is explicitly ruled out by « moins… que »; B isn’t mentioned."
+      "why": "« Elle laisse le champ libre aux groupes de discussion en ligne » — laisser le champ libre à = to leave the field open to."
      }
     ]
    },
    "R15-2": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "« Leur objectif n’est pas d’informer, mais de provoquer le clic. » B is only the background cause; C isn’t covered."
+      "why": "« aucune question n’a fâché » — devoir des comptes = to be answerable."
      },
      {
-      "why": "« les revenus de nombreux sites dépendent du nombre de visites. Plus un article est consulté, plus il rapporte. » A and C have no basis."
-     },
-     {
-      "why": "tenir ses promesses = to deliver on its promises; the article doesn’t live up to what the headline promised, which disappoints. A and C misread it."
-     },
-     {
-      "why": "« il entretient la méfiance du public… retiennent donc une version fausse ou incomplète des faits ». A and B are the opposite of the text."
-     },
-     {
-      "why": "« L’argument est compréhensible, mais il mène à une impasse. » B: he grants that it is “understandable”; C: he clearly rebuts it."
-     }
-    ]
-   },
-   "R15-3": {
-    "questions": [
-     {
-      "why": "« Le Courrier de la Vallée adoptera une nouvelle formule. Les principaux changements sont les suivants ». A: the paper continues to appear; C: it only says there will be no redundancies, not that it is hiring."
-     },
-     {
-      "why": "« Parution papier les mercredis, vendredis et samedis » — three days. It is the website that is updated daily."
-     },
-     {
-      "why": "« nos journalistes répondront chaque semaine aux interrogations des lecteurs ». A and B don’t fit."
-     },
-     {
-      "why": "« Pour les lecteurs qui ne disposent pas d’Internet, une permanence téléphonique sera assurée du lundi au vendredi ». A is for subscribers who choose the digital edition; C: the newsletter is digital."
+      "why": "« la presse n’a pas attendu les influenceurs pour brouiller les frontières » — complaisant = fawning, soft."
      }
     ]
    }
@@ -85,6 +56,9 @@
      },
      {
       "why": "« la règle est claire : le titre doit correspondre exactement au contenu de l’article ». A is exactly the temptation she resists; B isn’t mentioned."
+     },
+     {
+      "why": "« Ne vous arrêtez jamais au titre » — Read at least the standfirst (le chapeau); reality is nearly always plus nuancée than the headline."
      }
     ]
    },
@@ -94,13 +68,18 @@
       "why": "« À la une de la plupart des quotidiens régionaux ce matin : la hausse du prix des transports scolaires. » A and C are other news items."
      },
      {
-      "why": "« Les familles rurales en première ligne », with an interview with a rural mother. B is the angle of the paper in the east; C isn’t mentioned."
-     },
-     {
       "why": "« cette hausse intervient après deux années de gel des prix ». A and B don’t match the recording."
      },
      {
+      "why": "« Les familles rurales en première ligne », with an interview with a rural mother. B is the angle of the paper in the east; C isn’t mentioned."
+     },
+     {
       "why": "« avec ce titre plein de nostalgie ». Neither A nor C fits."
+     },
+     null,
+     null,
+     {
+      "why": "« on investit dans les métros des métropoles » — tribune = a signed opinion piece; n’engage que son auteure = it commits only its author."
      }
     ]
    },

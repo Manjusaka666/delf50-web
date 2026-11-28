@@ -1,77 +1,41 @@
 {
  "canDo": "Can give an opinion with examples and add limits or the other side with opposition / concession.",
  "review": "Review cause and effect; add contrast and concession with cependant/pourtant/en revanche/malgré/bien que.",
- "input": "Listening: simple opinions; reading: a short text on both sides of a question.",
- "output": "Write a 130–140-word opinion; speak for 2.5 minutes with examples and a turn.",
+ "input": "Listen: three recordings, « Tu devrais essayer cette application », « Elle enseigne l’informatique aux seniors » and « Caisses automatiques : progrès ou recul ? », twice each; read: the comparison grid « Un téléphone pour une personne âgée » and the articles « Des élèves sans téléphone, de 8 heures à 17 heures » and « Réparer plutôt que jeter : un droit encore fragile », questions first, then the text.",
+ "output": "Write a 160-word opinion; speak for 2.5 minutes with examples and a turn.",
  "checkpoint": "Your output follows opinion → reason → example → turn → conclusion.",
  "challenge": "Today’s challenge: on “Do smartphones make us lonelier?”, write a 5-sentence opinion: take a position, give an example from your own life, bring in the opposite view with mais / pourtant / même si, and end with a balanced conclusion; then record yourself for 2 minutes.",
  "items": {
-  "reading": {
-   "R17-1": {
-    "questions": [
-     {
-      "why": "« il tourne toujours autour de la même question : combien d'heures ? C'est précisément là qu'il se trompe ». The author doesn’t deny the effect on sleep."
-     },
-     {
-      "why": "The example illustrates « les compter ensemble n'a pas de sens »."
-     },
-     {
-      "why": "« Cela ne signifie pas qu'il ne faut aucune règle » — what he opposes is rules based only on time."
-     }
-    ]
-   },
-   "R17-2": {
-    "questions": [
-     null,
-     {
-      "why": "The example is four people living in forty square metres: the real conditions for télétravail are unequal."
-     }
-    ]
-   },
-   "R17-3": {
-    "questions": [
-     {
-      "why": "The number of jobs is falling, but the main point is that the work has changed: more technical, more mentally tiring."
-     }
-    ]
-   },
-   "R17-4": {
-    "questions": [
-     {
-      "why": "« elle est même supérieure à ses concurrentes »; it still works normally after location is refused."
-     }
-    ]
-   }
-  },
   "listening": {
    "L17-1": {
     "questions": [
+     null,
+     null,
      {
-      "why": "« Non, je suis contre leur application uniforme »; what he proposes is phased deadlines, not a permanent exemption."
+      "why": "« En revanche, au bout d’un mois, je n’y pensais plus » — en revanche introduces the contrast with the first week."
      }
     ]
    },
    "L17-2": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "« je retiens moins bien. Je ne saurais pas dire pourquoi » — yet she still reads mainly on screen."
+      "why": "« C’est la peur » — bien que beaucoup le croient: many assume it is memory; she denies it."
      }
     ]
    },
    "L17-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Hours have fallen, but the number of people taking part hasn’t; what has changed is the form."
-     },
-     {
-      "why": "He gives the example of the trésorier: « ces fonctions-là ne trouvent plus preneur »."
-     }
-    ]
-   },
-   "L17-4": {
-    "questions": [
-     {
-      "why": "An eighty-kilometre round trip twice a week, « ni en temps ni en argent ». House prices are actually a point in its favour."
+      "why": "« des « caisses lentes », où l’on prend le temps de discuter » — faire marche arrière = to backtrack; Malgré les moqueries is a concession."
      }
     ]
    }

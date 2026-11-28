@@ -1,42 +1,46 @@
 {
  "canDo": "Can catch the situation, the main changes, numbers and required actions, and pick out key information in verbes + à/de and in reported speech.",
  "review": "Review y/en; organise verbes + à/de systematically, and restate what you hear in reported speech.",
- "input": "Listen to 3–4 announcements/conversations/interview extracts.",
+ "input": "Listen: three recordings, « Tu as entendu l’annonce ? », « La voix des annonces » and « Les petites annonces ne sont pas mortes », twice each; read: the comparison grid « Adopter un animal de compagnie » and the articles « Les petites annonces ont changé de visage » and « La publicité dans les boîtes aux lettres, c’est fini ? », questions first, then the text.",
  "output": "Write keyword notes; restate them aloud in 30 seconds.",
  "checkpoint": "Tell apart two kinds of error — “didn’t hear it” and “didn’t parse the structure”; restate at least 4 key pieces of information.",
  "challenge": "Today’s challenge: on RFI’s Journal en français facile, listen twice to a news item of about 1 minute: the first time write only the main idea, the second time note numbers, places and requests; then write 3 sentences in reported speech (On annonce que… / On demande aux gens de…), watching how you use à / de.",
  "items": {
-  "reading": {
-   "R29-1": {
-    "questions": [
-     null,
-     {
-      "why": "On the first listening, listen for “who to whom, where, why”; connectors are for the second."
-     }
-    ]
-   }
-  },
+  "reading": {},
   "listening": {
    "L29-1": {
     "questions": [
      null,
      null,
+     null,
+     null,
      {
-      "why": "Victor-Hugo is the stop where you change to the tram."
+      "why": "« Si on renonce au voyage, le billet est remboursé intégralement » — Two cases: giving up the trip → full refund; over thirty minutes late → vingt-cinq pour cent."
      }
     ]
    },
    "L29-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« les deux jardins abandonnés avaient les meilleurs terrains » — what was missing was someone responsible for the plot."
+      "why": "« les voyageurs comprennent mieux une voix humaine » — Je ne m’y oppose pas… Mais…: a concession followed by a reservation."
      }
     ]
    },
    "L29-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« l'alerte envoyée par téléphone une heure quarante avant le pic »; in 2014 there was no such system yet."
+      "why": "« seuls les moins de cinquante ans l’utilisent » — faire de la résistance = to hold out; seuls… = only."
      }
     ]
    }

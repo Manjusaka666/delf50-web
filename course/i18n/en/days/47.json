@@ -1,7 +1,7 @@
 {
  "canDo": "Keep up performance in all four skills, and a steady mental rhythm, at close to exam pace.",
  "review": "No last-minute new grammar.",
- "input": "A full mock, or a large part of one.",
+ "input": "Listen: three recordings, « J’ai raté mon rendez-vous », « Conductrice de métro » and « Des chiens pour aider les enfants à lire », twice each; read: the comparison grid « Passer une nuit insolite » and the articles « Des salles de spectacle sans téléphone » and « Du gaz produit à la ferme : une énergie qui divise », questions first, then the text.",
  "output": "Complete writing / speaking tasks.",
  "checkpoint": "Watch above all whether the weakest skill could still fall below the safe line.",
  "challenge": "Today’s challenge: do a full set at close to exam pace: TV5MONDE Apprendre B1 listening and reading, 25 minutes each; writing, 45 minutes; speaking, 10 minutes’ preparation + 15 minutes of recording, with only one break. Afterwards note, in your own language: where your energy dropped most, what you did to keep your rhythm, and how you’ll plan water and breaks on exam day.",
@@ -188,5 +188,67 @@
   }
  },
  "title": "Mock 4: close to the real exam",
- "phase": "Mock exams and repair"
+ "phase": "Mock exams and repair",
+ "items": {
+  "reading": {
+   "R47-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« 135 euros la nuit pour deux » — The criterion caps the price of the night for two; dinner is charged separately and does not affect it."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L47-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Votre pharmacien peut vous délivrer une boîte en dépannage » — en dépannage = as a stopgap; he takes 17 h 20 because at 16 h 40 he is still at work."
+     }
+    ]
+   },
+   "L47-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Je ne suis pas inquiète, mais la cabine me manquera » — Certes… Mais…: a concession; manquer à qqn: la cabine me manquera = I shall miss the cab."
+     }
+    ]
+   },
+   "L47-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« si un adulte patient n’aurait pas le même effet » — rester sceptique = to remain doubtful; ne… que si = only if."
+     }
+    ]
+   }
+  }
+ }
 }

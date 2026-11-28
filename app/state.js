@@ -53,6 +53,12 @@ export function normalize(raw) {
   return s;
 }
 
+/**
+ * The id a learner's records of an item are kept under. A text, recording or task that was replaced by a
+ * new one carries a revision: records of the earlier version stay in the account, under the plain id, and
+ * do not answer the new one.
+ */
+export const recordId = (item) => (item.rev ? `${item.id}.${item.rev}` : item.id);
 export const answerKey = (day, itemId, q) => `${day}:${itemId}:${q}`;
 export const grammarKey = (day, qid) => `${day}:${qid}`;
 export const productionKey = (day, node, i) => `${day}:${node}:${i}`;
@@ -101,17 +107,17 @@ export function saveProduction(S, day, node, i, text) {
 }
 
 export function submitText(S, module, day, item, text) {
-  const rec = { day, contentId: item.id, title: item.title, text: String(text).trim(), at: now() };
+  const rec = { day, contentId: recordId(item), title: item.title, text: String(text).trim(), at: now() };
   if (module === 'writing') rec.words = countWords(text);
   S[module].push(rec);
-  delete S.drafts[module][draftKey(day, item.id)];
+  delete S.drafts[module][draftKey(day, recordId(item))];
   started(S);
   return rec;
 }
 
 export function addSpeaking(S, day, item, clip, sec) {
-  const rec = { clip: clip || null, day, contentId: item.id, title: item.title, sec: Math.max(0, Math.round(sec || 0)), at: now() };
-  const notes = String(S.drafts.speaking[draftKey(day, item.id)] || '').trim();
+  const rec = { clip: clip || null, day, contentId: recordId(item), title: item.title, sec: Math.max(0, Math.round(sec || 0)), at: now() };
+  const notes = String(S.drafts.speaking[draftKey(day, recordId(item))] || '').trim();
   if (notes) rec.notes = notes;
   S.speaking.push(rec);
   started(S);

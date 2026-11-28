@@ -1,8 +1,8 @@
 {
  "canDo": "Can tell the story of a move or study abroad that changed them, in layers, using the passé composé, imparfait and plus-que-parfait, making clear the background, the events and what had happened before.",
  "review": "Review the B1 use of past tenses (how the passé composé and imparfait divide the work), then add the plus-que-parfait to express “what had already happened before something else in the past”.",
- "input": "Read: a report on young people going abroad and coming back, an opinion column defending “those who stayed”, and a reader’s letter; listen: a profile interview, an interview about “leaving Paris” and a vox pop. Strategy: mark the three past tenses as you read and tell apart “event – background – what came earlier”.",
- "output": "Write: tell the story of a move or study abroad that changed you, in a forum post (180+ words); speak: a 3-minute monologue on the “gap year”, then a debate on “should exchanges abroad be compulsory?”.",
+ "input": "Read: the informative article « Rentrer au pays : le choc que personne n’avait prévu », the opinion piece « Faut-il vraiment partir pour réussir ? » and the three-voice forum « Quitter sa région pour trouver du travail ? » — questions first, then the text, finding the evidence for each answer; listen: « Trajectoires : de Grenoble à Thiès » and « Nouveaux départs : de Paris au Cantal » twice each, then three short recordings once each.",
+ "output": "Write: tell the story of a move or study abroad that changed you, in a forum post (250+ words); speak: a 3-minute monologue on the “gap year”, then a debate on “should exchanges abroad be compulsory?”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 3 correct uses of the plus-que-parfait in the essay; a 3-minute monologue without breaking off, organising the narrative with auparavant, ce jour-là, alors que.",
  "challenge": "Today’s challenge: find a profile story on RFI’s « Journal en français facile » or TV5MONDE about migration, study abroad or a career change. Retell the person’s experience in 1 sentence each with the passé composé, imparfait and plus-que-parfait, then record 1 minute of audio on whether you would make the same choice.",
  "items": {
@@ -10,60 +10,56 @@
    "R01-1": {
     "questions": [
      {
-      "why": "The whole article follows Clara’s experience, covering both how going abroad changed her (« m’ont appris à douter de mes certitudes ») and, above all, how hard coming back was (« Le retour, pourtant, se révèle souvent plus délicat que le départ »). B: the text never encourages “settling for good”; C is only the background to Clara’s departure, not the main idea."
+      "why": "« le retour est plus éprouvant que le départ » — The article is about returning being harder than leaving, not about reasons or benefits of going abroad."
      },
      {
-      "why": "The text says: « Je m’étais dit que je partirais six mois, le temps de réfléchir ». A contradicts « elle n’avait jamais vécu plus de trois semaines loin de sa famille »; C is wrong because the “three years” was the outcome (« Elle est finalement restée trois ans »), not a contract signed in advance."
+      "why": "« lui semblait une formalité » — une formalité = a mere formality, something effortless."
      },
      {
-      "why": "The text contrasts the past, « on partait surtout pour apprendre une langue ou pour enrichir son CV », with today, « le besoin de se tester » — more personal motives. A describes exactly the situation twenty years ago; B: the text doesn’t compare lengths of stay."
+      "why": "« Celui qui revient croit retrouver un monde familier » — Those who leave are prepared; those who return expect everything to be as before and are caught off guard."
      },
      {
-      "why": "gravir les échelons means climbing the career ladder rung by rung, contrasted here with Clara’s job-hunting setbacks. Neither B nor C matches the “climbing the ladder” metaphor."
+      "why": "« a dû demander à son père de se porter garant pour son logement » — se porter garant = to stand as guarantor."
      },
+     null,
+     null,
      {
-      "why": "The text says: « son entourage, lui, s’attend à retrouver la même personne… ce décalage est rarement anticipé ». A and C aren’t mentioned at all — they are invented."
-     },
-     {
-      "why": "The third paragraph describes Clara’s repeated failures (« elle a enchaîné les candidatures sans succès »), and the last the turning point (« le déclic est venu d’une rencontre »). B overgeneralises: only one project manager understood her; A: the text doesn’t say she was poorly prepared."
+      "why": "« celui d’une vie plus intense » — un deuil = mourning, the grief of a loss."
      }
     ]
    },
    "R01-2": {
     "questions": [
      {
-      "why": "The author states his position clearly: « Je voudrais ici prendre la défense de ceux qui sont restés ». A is wrong: the author is precisely someone who didn’t go abroad; C is wrong: « je ne prétends pas que partir soit inutile » — he isn’t against going abroad."
+      "why": "« interroger cette évidence » — The author does not deny the value of travel; he questions the consensus that it is a must."
      },
      {
-      "why": "The text says: « parce que ma mère était malade et que l’entreprise familiale avait besoin de bras ». B isn’t mentioned; C doesn’t match the text, which says his classmates left as soon as they had the baccalauréat."
+      "why": "« écarter d’emblée les candidatures « trop hexagonales » » — l’Hexagone = mainland France; hexagonal means confined to France."
      },
      {
-      "why": "pitié means “pity”, and polie shows it was courteous on the surface and left unsaid, echoing « comme si j’avais raté un train » later. A is the opposite of pity; B contradicts polie (polite, reserved)."
+      "why": "« ceux qui partent ne ressemblent pas à ceux qui restent » — A classic selection bias: one cannot tell whether success comes from the stay or from background and grades."
      },
+     null,
      {
-      "why": "The text says: « ériger la mobilité en modèle unique revient à mépriser ceux qui n’ont ni les moyens ni la possibilité de s’en aller », backed by a survey: nearly half of rural young people feel “left behind”. A isn’t in the text; C contradicts the survey."
+      "why": "« on transforme donc un avantage de naissance en mérite personnel » — habiller en vertu = to dress up as a virtue."
      },
+     null,
      {
-      "why": "« L’aventure n’est pas une affaire de kilomètres » denies that distance matters, and « un choix difficile… où l’on s’y tient » stresses the courage to stick to a choice. A and B both contradict the denial in the first sentence."
+      "why": "« La distance ne se mesure pas en kilomètres » — l’altérité = otherness, people and worlds unlike one’s own."
      }
     ]
    },
    "R01-3": {
     "questions": [
+     null,
+     null,
+     null,
      {
-      "why": "She is responding to the paper’s feature (« Votre dossier… m’a rappelé ma propre expérience ») and points out that it left out one side: learning to be alone. B is wrong: she has already been; C: the letter doesn’t complain about working conditions."
+      "why": "« j’y aurais perdu de l’argent » — She did the sums: after rent and childcare, a 30% higher salary would have left her worse off."
      },
+     null,
      {
-      "why": "The plus-que-parfait describes what happened before she left: « J’avais économisé pendant un an et j’avais tout organisé ». A says the opposite; C has no basis — she was clearly not used to the extreme cold."
-     },
-     {
-      "why": "faillir + infinitive = to nearly do something (but not actually do it). A is wrong in saying she “had already bought” it; B means wanting to buy but being unable to, which has nothing to do with faillir."
-     },
-     {
-      "why": "The text says: « m’a convaincue de rester… Donne-toi jusqu’au printemps. », i.e. persuaded her to hold on a little longer. B: her job had been arranged before she left; C isn’t in the text."
-     },
-     {
-      "why": "The text says: « votre dossier ne parlait que de réussites professionnelles ». A isn’t mentioned; C has no basis either."
+      "why": "« je n’accepte pas le discours qui présente ceux qui restent comme des gens sans ambition » — Solveig also defends staying, but the refusal to look down on those who stay is voiced by Maxence."
      }
     ]
    }
@@ -88,6 +84,9 @@
      },
      {
       "why": "The recording says: « Je regrette de ne pas avoir appris le wolof plus tôt ». He doesn’t regret A or B; on the contrary, he encourages listeners not to wait until they are 100% sure before acting."
+     },
+     {
+      "why": "« ne pas attendre d’être sûr à cent pour cent » — His answer to the last question: do not wait to be a hundred per cent sure; had he waited to be “ready”, he would still be at his screen in Grenoble."
      }
     ]
    },
@@ -104,6 +103,13 @@
      },
      {
       "why": "The recording says: « Le premier hiver a été long. Je ne connaissais personne de mon âge, et sans voiture, on est vite isolé ». B contradicts « ce n’était pas idyllique »; C has no basis."
+     },
+     null,
+     {
+      "why": "« j’ai proposé de refaire gratuitement l’affiche de la fête du village » — The lesson she draws: on n’est pas accueilli parce qu’on arrive, mais parce qu’on apporte quelque chose."
+     },
+     {
+      "why": "« je vis à peu près aussi bien qu’avant, pas mieux » — Moins qu’on ne l’imagine: rent divided by three, but income down a quarter and a car to pay for."
      },
      {
       "why": "The recording says: « j’avais un lien avec la région et un métier que je pouvais exercer n’importe où. Sans ça… ». A is the exact opposite of « il ne faut pas partir pour fuir quelque chose »; C: she only took her driving test after arriving."
@@ -123,6 +129,12 @@
      },
      {
       "why": "After missing the flight (the mishap), two days of car-sharing turned out to be « c’était le meilleur moment des vacances ». Neither A nor C is mentioned."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« Aucun hébergement n’est prévu à Modane » — Those who continue wait for the regional train at six heures quinze next morning; those who give up get a full refund until midnight."
      }
     ]
    }

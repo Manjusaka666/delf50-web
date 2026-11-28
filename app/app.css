@@ -332,6 +332,8 @@ a.mod:hover .mod-name, a.tile:hover .tile-title { color: var(--azur); }
 .qcard-meta .tag { margin: 0; }
 .stem { margin: 0 0 36px; font: 500 clamp(21px, 2.3vw, 26px)/1.45 var(--sans); letter-spacing: -.005em; }
 .opts { display: grid; gap: 8px; }
+.opts.binary { grid-template-columns: 1fr 1fr; }
+.opts.binary .opt { min-height: 48px; padding: 8px 12px 8px 10px; gap: 10px; }
 .opt { display: grid; grid-template-columns: 32px 1fr auto; align-items: center; gap: 16px; width: 100%; min-height: 60px; padding: 12px 16px 12px 14px; text-align: left; border-radius: var(--r); background: var(--paper); font: 400 16.5px/1.45 var(--sans); }
 .opt:hover:not(:disabled) { background: var(--paper-2); }
 .opt-key { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--card); font: 600 12px var(--sans); color: var(--azur); }
@@ -404,6 +406,15 @@ a.mod:hover .mod-name, a.tile:hover .tile-title { color: var(--azur); }
 .q.is-ok .q-num { background: var(--sauge); color: var(--card); }
 .q.is-bad .q-num { background: var(--terre); color: var(--card); }
 .q .opt { font-size: 15px; min-height: 52px; }
+.write-label { display: block; margin: 0 0 8px; font-size: 13.5px; color: var(--ink-2); }
+.write-box { display: block; width: 100%; margin: 0 0 12px; padding: 12px 14px; border-radius: var(--r); background: var(--paper); border: 1px solid var(--paper-3); font: 400 15.5px/1.55 var(--sans); color: var(--ink); resize: vertical; }
+.write-box:focus { outline: 2px solid var(--azur); outline-offset: 1px; }
+.q [data-need] { margin: 0 0 12px; }
+.given { margin: 14px 0 0; padding: 12px 16px; border-radius: var(--r); background: var(--paper); font-size: 15px; line-height: 1.6; }
+.given p { margin: 0; }
+.given .given-label { margin-bottom: 4px; font-size: 12.5px; color: var(--muted); }
+.given.expect { border-left: 3px solid var(--sauge); }
+.q .notice { margin-top: 12px; }
 .why { margin: 14px 0 0; padding: 14px 18px; border-radius: var(--r); background: var(--paper); font-size: 14px; line-height: 1.75; color: var(--ink-2); }
 .text.listening .btn.ghost.small { margin: 0 0 22px; }
 

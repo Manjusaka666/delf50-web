@@ -1,66 +1,21 @@
 {
  "canDo": "Can give a well-structured 5–6-minute monologue based on a short text about work: identify the theme, set out a problem statement, announce a two- or three-part outline, and support the argument with cleft sentences and expressions of cause.",
  "review": "Review day 5’s expressions of cause (étant donné que, faute de, sous prétexte que, d’autant que), day 17’s emphatic structures (c’est… qui/que, ce qui… c’est) and day 23’s discourse connectors, for announcing the outline and moving between parts of the monologue.",
- "input": "Read: an analysis of career changes, a column against “you must be passionate about your job” and a first-hand forum post; circle each paragraph’s topic sentence and the cause connectors. Listen: a radio interview on young people’s relationship with work (twice), a short commentary on “presenteeism” and a news flash on “scrapping fixed hours and clocking in”: positions on the first listen, causes and examples on the second.",
+ "input": "Read: the informative article « Semaine de quatre jours : ce que disent les expériences », the opinion piece « Le management par les chiffres rend-il fou ? » and the three-voice forum « Faut-il autoriser le travail le dimanche ? » — questions first, then the text, finding the evidence for each answer; listen: « Les jeunes et le travail : la fin d’un cliché ? » and « La chronique emploi : le présentéisme » twice each, then three short recordings once each.",
  "output": "Write: a forum reply (≥250 words) to a post claiming “young people don’t want to work hard any more”, with at least one cleft sentence per paragraph; speak: a 6-minute monologue on a document about “open-plan offices” (theme → problem statement → outline → arguments + examples → conclusion), then a 4-minute debate with the examiner on “publishing salaries within a company”.",
  "checkpoint": "Reading and listening accuracy ≥80%; in the monologue, state the problem and announce the outline within 30 seconds, speak for at least 5 minutes with no pause longer than 5 seconds; use at least 3 cleft sentences and 3 different expressions of cause.",
  "challenge": "Today’s challenge: find a news item about work (remote working, the four-day week, career change, etc.) on RFI’s « Journal en français facile » or TV5MONDE and record a 2-minute mini-monologue on your phone: start with « Ce qui me frappe dans cette information, c’est que… » and announce a two-point outline.",
  "items": {
   "reading": {
-   "R36-1": {
-    "questions": [
-     {
-      "why": "The article presents, in turn, the phenomenon (paragraph 1), the motives (paragraphs 2–3), the conditions for success (paragraph 4) and companies’ response (paragraph 5): it is an analytical article. B is wrong: it actually stresses « un pari risqué » and doesn’t encourage hasty career changes; C is wrong: it says companies « commencent à prendre la mesure », with no condemnation."
-     },
-     {
-      "why": "« Ce que la majorité met en avant, c’est la perte de sens… des tâches dont on ne voit ni l’utilité ni le résultat ». A is wrong: « ce n’est pas d’abord le salaire », only 18%; B isn’t mentioned."
-     },
-     {
-      "why": "The context is the spread of digital tools: managers spend more time “reporting and accounting for their work” than actually doing it; rendre des comptes is used figuratively here, “to answer to one’s superiors”. A and C use the literal “accounts” meaning of compte, which doesn’t fit."
-     },
-     {
-      "why": "« La crise sanitaire a joué un rôle d’accélérateur … ils ont eu le temps de s’interroger sur leurs priorités »: it accelerated an existing trend. A is wrong: the article says « Les causes de ce malaise sont multiples »; C is the opposite of « accélérateur »."
-     },
-     {
-      "why": "« Ce sont ceux qui ont testé le métier visé, par un stage ou du bénévolat, avant de tout quitter ». A is the exact opposite (« rarement ceux qui partent sur un coup de tête »); B isn’t mentioned."
-     },
-     {
-      "why": "The closing question, « n’est-ce pas l’organisation même du travail qu’il faudrait repenser ? », widens the topic from individual career changes to how work itself is organised: an open ending. B: there is no opposing view in the text; C: the sentence contains no data."
-     }
-    ]
-   },
    "R36-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The core argument is at the end of paragraph 1: « le travail n’a pas à être une passion »; the whole text criticises society’s demand that we “love our work”. A is the opposite position; C: the author actually criticises recruiters’ rhetoric."
-     },
-     {
-      "why": "« Entendons-nous bien. Je ne prétends pas qu’il soit souhaitable de s’ennuyer… Ce que je conteste, c’est… »: first ruling out a misunderstanding, then stating exactly what is being opposed. B contradicts « je ne prétends pas »; C: the author doesn’t look down on these jobs but defends the people who do them."
-     },
-     {
-      "why": "« C’est précisément parce qu’on leur demande d’être passionnés que certains salariés acceptent l’inacceptable … un argument commode pour justifier des conditions de travail dégradées ». A isn’t mentioned; B gets the direction backwards: employees actually become more compliant."
-     },
-     {
-      "why": "It is a rhetorical question quoting a boss who refuses a pay rise, « mais enfin, vous faites un métier que vous aimez », to mock that logic: the tone is ironic and critical. It isn’t providing information (B), still less praising (C)."
-     },
-     {
-      "why": "The previous sentence lists the conditions of “decent work” society should guarantee; « le reste » (whether you love your job, whether you find meaning in it) is up to each individual. A and B take reste as “leftover money/tasks”, a literal misreading."
-     }
-    ]
-   },
-   "R36-3": {
-    "questions": [
-     {
-      "why": "« votre discussion … m’a donné envie de témoigner »: sharing personal experience. A: he gives advice rather than asking for it; C: he clearly says « ce n’est pas parce que je détestais mon entreprise »."
-     },
-     {
-      "why": "« C’est la routine qui m’a usé, d’autant que je ne voyais jamais le résultat concret de mon travail ». A and B contradict « de bons collègues et un salaire confortable »."
-     },
-     {
-      "why": "« Ce qui m’a sauvé, c’est la formation de dix mois … et le soutien sans faille de ma compagne ». Neither B nor C is mentioned, and his income halved, so he clearly didn’t have plenty of customers."
-     },
-     {
-      "why": "He is happy with where he is (« je sais pourquoi je me lève à quatre heures ») but warns: « Ne partez pas à l’aveugle. Testez, renseignez-vous »: encouraging, with conditions. A goes too far; C contradicts « la première année a été très dure »."
+      "why": "« Nous documentions de plus en plus précisément des soins que nous avions de moins en moins le loisir de donner » — insidieux = insidious."
      }
     ]
    }
@@ -101,6 +56,9 @@
      },
      {
       "why": "« Ce qui fait vraiment bouger les choses, ce sont les managers qui montrent l’exemple ». Neither B nor C comes up in the programme."
+     },
+     {
+      "why": "« On ne reste plus tard au bureau ; on reste connecté » — Il l’a déplacé: not removed, only shifted in form; montrer plutôt que faire = showing rather than doing."
      }
     ]
    },

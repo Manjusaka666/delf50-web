@@ -1,61 +1,42 @@
 {
  "canDo": "Can talk about near plans, longer-term goals and simple predictions.",
  "review": "Review the present; contrast the futur proche with the futur simple.",
- "input": "Listening: changes of plan; reading: event plans/project descriptions.",
- "output": "Write 100 words about future plans; talk for 2 minutes about next week and next year.",
+ "input": "Listen: three recordings, « Qu’est-ce que tu vas faire après le bac ? », « Reprendre ses études à cinquante ans » and « Les jeunes et l’emploi saisonnier », twice each; read: the comparison grid « Choisir une formation en alternance » and the articles « Ils ont quitté le bureau pour un métier manuel » and « Une année de pause avant les études », questions first, then the text.",
+ "output": "Write 160 words about future plans; talk for 2 minutes about next week and next year.",
  "checkpoint": "Use at least two ways of expressing the future; be able to say why you chose them.",
  "challenge": "Today’s challenge: write down in French 3 concrete plans for next week (futur proche) and 2 goals for next year (futur simple), add a prediction (Je pense que…), then talk about it into your phone for 1 minute; when you’ve finished, pin the list up by your desk.",
  "items": {
   "reading": {
    "R09-1": {
     "questions": [
+     null,
      {
-      "why": "« les concerts commenceront plus tôt … pour que les familles puissent rester ». The street performances keep the same times; côté jardin is where the food area is."
+      "why": "« se déroule entièrement au lycée, en dehors des périodes de stage » — Internships are not alternance: the student is not an employee."
      },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "« afin que l'on puisse discuter sans crier » states the purpose clearly."
-     },
-     {
-      "why": "Only Thursday is free; the other three evenings need tickets bought online from 2 May. The producers run the food, not the ticket sales."
-     }
-    ]
-   },
-   "R09-2": {
-    "questions": [
-     {
-      "why": "Just over six weeks is the work on the whole building; fifteen days is the notice period; each flat needs only one day."
-     },
-     {
-      "why": "The only solution the text gives is to leave the keys with someone you trust and tell the caretaker. The curtains must be taken down the day before."
-     },
-     {
-      "why": "The letter only mentions lower heating bills, because the new windows insulate better. Neither the rent nor the light is mentioned."
+      "why": "« Un conseiller vous accompagne dans vos candidatures » — Each of the other three lacks at least one criterion: housing, length, help finding an employer or the work-study format."
      }
     ]
    },
    "R09-3": {
     "questions": [
+     null,
      {
-      "why": "At present it’s a fifteen-minute walk or a change to line 14. A bus every twelve minutes is after the extension; the Fontaine stop hasn’t been built yet."
-     },
-     {
-      "why": "« La fréquence actuelle, elle, ne changera pas sur le reste du parcours ». The last bus will be forty minutes later, and there will be three more stops."
-     },
-     {
-      "why": "After the extension it will be 23 h 10, forty minutes later than now, so it is currently 22 h 30. This question needs a subtraction."
-     }
-    ]
-   },
-   "R09-4": {
-    "questions": [
-     {
-      "why": "The opening is explicit: « Ne commencez pas par choisir une école : commencez par le métier visé. » Funding is the third step, meetings the second."
-     },
-     {
-      "why": "The text says many people discover at exactly this step that the job differs from what they imagined. Finding an employer and shortening the course aren’t mentioned."
-     },
-     {
-      "why": "One hour is the length of an interview, two or three the number of meetings. The overall preparation takes three to six months."
+      "why": "« j’ai compris que je voulais travailler dans le droit de l’environnement » — He still studies law; he simply found his direction."
      }
     ]
    }
@@ -63,53 +44,38 @@
   "listening": {
    "L09-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Two volunteers have dropped out, leaving only six. The stall layout will be sent that evening; it isn’t the problem."
-     },
-     {
-      "why": "She says she’ll bring her brother and arrive herself at 6 h 30 — « je ne peux pas plus tôt ». 8 is the expected finishing time."
-     },
-     {
-      "why": "« Si ton frère vient, on tiendra les horaires » — the condition is one more person."
+      "why": "« j’aimerais travailler à domicile, à la campagne » — The futur simple (je chercherai, je travaillerai…) states plans; j’aimerais is a conditional expressing a wish."
      }
     ]
    },
    "L09-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "From the second week the street is closed to all vehicles; pedestrians can still use the right-hand pavement. One-way traffic is the arrangement for the first week."
-     },
-     {
-      "why": "« La collecte ne changera pas de jour, mais les bacs devront être sortis au coin de la rue » — it’s the place that changes."
-     },
-     {
-      "why": "The announcement gives Thursday of the second week at 18 h 30."
+      "why": "« je touche une aide pendant deux ans, mais ensuite, je devrai travailler à mi-temps » — The degree takes three years but the grant lasts two, so she will then have to work part-time."
      }
     ]
    },
    "L09-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Every year they turn away about a hundred people for lack of slots at the venue. The fee isn’t changing, and he’s confident about the building."
-     },
-     {
-      "why": "« C'est le point le plus délicat : les profils que nous cherchons sont rares. » He is confident about the building."
-     },
-     {
-      "why": "The journalist says confiant; he corrects it to « Prudent, plutôt ». Funding isn’t mentioned."
-     }
-    ]
-   },
-   "L09-4": {
-    "questions": [
-     {
-      "why": "Her father works until 20 on Thursday. Her brother’s classes finish at 17 on Friday."
-     },
-     {
-      "why": "« plus tu attendras, plus ce sera cher ». Monday is when the whole family comes back."
-     },
-     {
-      "why": "She only asks whether he eats fish, to plan the Saturday meal."
+      "why": "« il a recruté toute son équipe en une seule journée, grâce à ses bungalows » — grâce à introduces a positive cause: offering lodging made hiring easy."
      }
     ]
    }

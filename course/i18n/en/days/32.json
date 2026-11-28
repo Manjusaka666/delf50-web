@@ -1,35 +1,47 @@
 {
  "canDo": "Can catch numbers, causes, changes, attitudes and implicit comparisons.",
  "review": "Review cause/contrast connectors as listening cues.",
- "input": "3 sets of audio on work and social topics.",
+ "input": "Listen: three recordings, « Tu vas accepter cette promotion ? », « Elle a créé une entreprise où tout le monde gagne le même salaire » and « Le retour des usines dans les petites villes », twice each; read: the comparison grid « Trouver un espace pour travailler » and the articles « Livreurs à vélo : la liberté à quel prix ? » and « Travailler après soixante ans : choix ou nécessité ? », questions first, then the text.",
  "output": "For each set: the gist + 3 details + the speaker’s attitude.",
  "checkpoint": "Sort mistakes into “numbers / negation / attitude / cause and effect”.",
  "challenge": "Today’s challenge: on TV5MONDE Apprendre’s B1 section, find a video about work or the workplace. Listen twice, then write 1 main idea + 3 details (numbers / causes / changes) + the speaker’s attitude (for / reserved / against); report one opinion each with selon lui… and il affirme que…, using at least 1 indefinite pronoun (chacun, certains, personne).",
  "items": {
-  "reading": {
-   "R32-4": {
-    "questions": [
-     null,
-     {
-      "why": "« L'obstacle décisif n'est pas toujours technique »: it is often a matter of understanding administrative vocabulary."
-     }
-    ]
-   }
-  },
   "listening": {
    "L32-1": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "He gives two examples: colleagues in other time zones and parents who go back to work at nine in the evening."
+      "why": "« je demanderais un essai de six mois » — À ta place + conditional: giving advice. If refused, he expects to stay (je crois que je resterai)."
      }
     ]
    },
-   "L32-4": {
+   "L32-2": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "A quarter comes from sector and job; 4–5% is the part that can’t be explained."
+      "why": "« réduire les écarts, cela, tout le monde peut le faire » — Honnêtement, je ne crois pas: she doubts it scales; twenty-three people versus a thousand."
+     }
+    ]
+   },
+   "L32-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Ils ne remplaceront pas les milliers d’emplois perdus » — Les économistes restent mesurés: a qualified verdict — high quality, small volume."
      }
     ]
    }

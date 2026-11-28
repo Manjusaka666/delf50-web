@@ -1,53 +1,36 @@
 {
  "canDo": "Can build a clearly structured argumentative essay with d’abord/ensuite/enfin, d’une part… d’autre part, en outre/par ailleurs, quant à, certes… mais, en revanche, autrement dit, bref/en définitive, and use connectors to predict where an argument is going when reading and listening.",
  "review": "Review day 7’s concessions (bien que, même si, pourtant), day 6’s consequence expressions and day 5’s cause expressions; today, fit them into a “text skeleton”: introduction – argument – concession – rebuttal – conclusion.",
- "input": "Read: an article assessing digital tools in schools, a column against a “blanket” phone ban and a notice of a school’s digital charter — mark the connectors in each paragraph and write an outline of the whole text; listen: a debate on coding in primary school, a segment defending handwriting and a news flash about handing out refurbished computers — when you hear certes, en revanche or quant à, predict where the next sentence is going.",
- "output": "Write: an argumentative article for a school magazine, “AI in schools: threat or ally?” (≥220 words), with at least one text connector per paragraph; speak: a 4-minute structured monologue on “parents seeing grades in real time”, then a debate on “replacing paper textbooks entirely with digital ones”.",
+ "input": "Read: the informative article « Tablettes à l’école : le grand retour en arrière », the opinion piece « Faut-il apprendre à coder à l’école ? » and the three-voice forum « Interdire les devoirs faits par l’intelligence artificielle ? » — questions first, then the text, finding the evidence for each answer; listen: « Coder dès l’école primaire ? » and « Chronique : éloge du stylo » twice each, then three short recordings once each.",
+ "output": "Write: an argumentative article for a school magazine, “AI in schools: threat or ally?” (≥250 words), with at least one text connector per paragraph; speak: a 4-minute structured monologue on “parents seeing grades in real time”, then a debate on “replacing paper textbooks entirely with digital ones”.",
  "checkpoint": "Reading + listening accuracy ≥80%; at least 6 different connectors used correctly in the article (certes must be followed by mais/toutefois); in the first 30 seconds of the monologue, clearly announce a two- or three-part outline.",
  "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about schools, screens or AI, and write 3 sentences of comment with « Certes…, mais… », « D’une part…, d’autre part… » and « Quant à… »; then record 1 minute of audio, starting by announcing your two-point outline.",
  "items": {
   "reading": {
    "R23-1": {
     "questions": [
-     {
-      "why": "« La réalité est plus nuancée, et elle mérite d’être examinée point par point », and the whole text assesses each point in turn with d’abord / ensuite / quant à / en définitive. B is too absolute — the author is against “throwing it all out”; C isn’t mentioned."
-     },
-     {
-      "why": "« Sur le second point [individualiser], les résultats sont plutôt encourageants »; as for motivation, « en revanche, l’effet s’est vite dissipé » (A is wrong)."
-     },
-     {
-      "why": "Certes first concedes that “it’s hard to blame school screens for everything”, then Mais argues that schools may still have reinforced fragmented reading — a classic concessive structure."
-     },
      null,
      {
-      "why": "ne… que par = only depends on: a tool’s value depends entirely on how it is used in teaching. B takes valoir to mean price; C over-negates."
+      "why": "« Les performances des élèves en lecture […] ont reculé de manière continue » — D’une part… D’autre part… introduces two parallel arguments."
+     },
+     null,
+     null,
+     {
+      "why": "« elle rend des services que le papier ne peut offrir » — Certes… mais… = admittedly… but… (concession, then objection)."
+     },
+     null,
+     null,
+     {
+      "why": "« on demande à l’école de suivre les modes, alors qu’elle a besoin de stabilité » — En somme = in short (a summarising connector)."
      }
     ]
    },
    "R23-2": {
     "questions": [
-     {
-      "why": "« Plutôt qu’une interdiction, une éducation. » C is wrong: he grants that notifications disrupt lessons and that social media fuel bullying."
-     },
-     {
-      "why": "Certes introduces the ban supporters’ reasons (disrupted lessons, bullying), which Mais then rebuts."
-     },
-     null,
-     {
-      "why": "« ils n’ont pas vocation à jouer les policiers » — it isn’t their job."
-     },
-     {
-      "why": "This is a rhetorical question; the previous sentence, « les adultes devraient être cohérents », shows adults can’t manage it themselves."
-     }
-    ]
-   },
-   "R23-3": {
-    "questions": [
-     null,
      null,
      null,
      {
-      "why": "« Quant aux élèves qui ne disposent pas d’un ordinateur… ils pourront en emprunter un » — a measure addressing unequal access to devices at home."
+      "why": "« personne ne propose d’enseigner la plomberie à tous sous prétexte que l’on manque de plombiers » — En premier lieu / En deuxième lieu / En troisième lieu order the arguments."
      }
     ]
    }
@@ -57,10 +40,16 @@
     "questions": [
      null,
      {
-      "why": "« décomposer le problème en étapes, anticiper, corriger ses erreurs… il fait des mathématiques et de la logique ». B is exactly the argument Nadia rebuts."
+      "why": "« je conteste l’argument… selon lequel il faudrait coder tôt pour trouver un emploi plus tard »; B is something she actually « reconnais volontiers »."
      },
      {
-      "why": "« je conteste l’argument… selon lequel il faudrait coder tôt pour trouver un emploi plus tard »; B is something she actually « reconnais volontiers »."
+      "why": "« décomposer le problème en étapes, anticiper, corriger ses erreurs… il fait des mathématiques et de la logique ». B is exactly the argument Nadia rebuts."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« à condition d’être au service des apprentissages et d’être enseigné par des professeurs formés » — Je signe des deux mains = I agree wholeheartedly: Paul Clavel fully endorses the conclusion."
      }
     ]
    },
@@ -72,6 +61,11 @@
      {
       "why": "« on ne peut pas tout recopier : on est obligé de reformuler, de choisir l’essentiel »; B is the opposite."
      },
+     null,
+     {
+      "why": "« ceux qui avaient écrit à la main réussissaient nettement mieux » — The distinction: both groups recalled facts equally; for explaining and applying, the handwriting group did better. le clavier permet de stocker ; le stylo, de comprendre."
+     },
+     null,
      null,
      {
       "why": "« apprenons les deux, mais dans le bon ordre : le stylo d’abord, le clavier ensuite »; A is rejected with « Pas du tout ! »."

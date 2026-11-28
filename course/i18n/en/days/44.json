@@ -1,17 +1,46 @@
 {
  "canDo": "Targeted repair of error patterns in main idea, details, negation, opinion and so on.",
  "review": "No random drilling; choose material by error tag.",
- "input": "4 sets of short listening and reading questions each + review.",
+ "input": "Listen: three recordings, « On prépare la sortie scolaire », « Luthier : il fabrique des violons » and « Une monnaie qui ne sert que dans la région », twice each; read: the comparison grid « Inscrire son enfant au centre de loisirs » and the articles « Un car pour six élèves » and « Le loup est revenu, la colère aussi », questions first, then the text.",
  "output": "For each text/set, write down the evidence and the cause of the error.",
  "checkpoint": "Stop only when the same type of error has not appeared for two sets in a row.",
  "challenge": "Today’s challenge: targeted repair by error tag. If you often lose marks on negation, find an article on TV5MONDE Apprendre B1 and circle every negative structure (ne… plus, ne… que, aucun, sans); if you often get opinion questions wrong, circle every opinion and contrast marker (selon, pourtant, en revanche, certes). Finally write 3 sentences in your own words, “What this article is really saying is…”, and check them against the text.",
  "items": {
   "listening": {
+   "L44-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« il faudra deux parents » — One adult per twelve pupils → five; three teachers already, so two parents are needed."
+     }
+    ]
+   },
+   "L44-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Ce qui me préoccupe, c’est le bois » — Moins qu’on ne le pense: the craft is less threatened than people think; the real worry is the wood."
+     }
+    ]
+   },
    "L44-3": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "It rose from 4% to 11%."
+      "why": "« Les économistes sont partagés » — C’est précisément le but: the restriction is the point; symbolique = merely symbolic (of limited weight)."
      }
     ]
    }

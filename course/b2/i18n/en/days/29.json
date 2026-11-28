@@ -1,66 +1,24 @@
 {
  "canDo": "Can follow a 7–8-minute radio interview in the DELF B2 long-listening format (played twice): get the topic and the speakers’ positions on the first listen and fill in details on the second; can recognise uncertain information conveyed by reported speech (il m’a dit que…) and modalisation (il semblerait que, the conditional).",
  "review": "Review J12’s reported speech (sequence of tenses) and J19’s modalisation; look back at J28’s nominalised headlines and J27’s formal register (for polite rebuttals in writing and debate).",
- "input": "Read: an analysis of radio’s enduring success, an editorial seeking funding for community radio and a listener’s letter protesting the end of a late-night show; listen: an interview with a late-night phone-in host (played twice), a podcast column and a local radio news flash. Strategy: read the questions and predict before the first listen; on the first listen note only keywords and positions; on the second check numbers, examples and reported content.",
+ "input": "Read: the informative article « La radio résiste, le podcast s’installe », the opinion piece « Faut-il encore écouter des gens qui ne pensent pas comme nous ? » and the three-voice forum « Les radios doivent-elles diffuser un quota de chansons en français ? » — questions first, then the text, finding the evidence for each answer; listen: « Douze ans de libre antenne la nuit » and « Podcasts : la radio sans l’horloge » twice each, then three short recordings once each.",
  "output": "Write: a reply on a media forum to “Is local radio doomed?” (≥250 words), quoting someone else’s view at least once (reported speech) and using two modalising expressions; speak: a 5-minute monologue on “AI-generated voices presenting radio shows”, then a debate on “listener phone-ins: democratic expression or a place to vent?”.",
  "checkpoint": "DELF-format self-test: ≥5 of 6 long-listening questions correct after two listens; can recap the interview’s main points from 5 lines of notes; a well-structured 5-minute monologue.",
  "challenge": "Today’s challenge: pick an interview or report of 5+ minutes on RFI or TV5MONDE and listen twice, exam-style: first note just 5 keywords, then expand them into 3 reporting sentences (Selon l’invité, … / Il a expliqué que…) and check yourself against the original or the transcript.",
  "items": {
   "reading": {
-   "R29-1": {
-    "questions": [
-     {
-      "why": "The article starts from « Pourtant, la radio est toujours là » and analyses why it has lasted (companionship, trust) and how it has adapted (the morning slot, podcasts). A is the opposite of the whole text; C: ad revenue is only mentioned in passing in the third paragraph."
-     },
-     {
-      "why": "« La radio ne demande ni les yeux ni les mains… Elle accompagne la vie au lieu de l’interrompre ». B isn’t mentioned; C is his colleagues’ mistaken prediction back then."
-     },
-     {
-      "why": "Reported speech: « ses collègues lui affirmaient que la radio n’aurait bientôt plus qu’un public de retraités » (the conditional = future in the past). A is the opposite; B has no basis."
-     },
-     {
-      "why": "« La tranche matinale… concentre désormais l’essentiel de l’audience et des recettes publicitaires ». A describes how the rest of the schedule was adjusted; C isn’t mentioned."
-     },
-     {
-      "why": "s’effacer = to fade, to disappear; tendre à = to tend to. Stations also make podcasts, so the line between the two is increasingly blurred. A and B are distortions."
-     },
-     {
-      "why": "« Plusieurs observateurs l’attribuent… créerait un sentiment de proximité »: the conditional créerait signals an unproven hypothesis. A doesn’t fit the modalised tone; C: the author doesn’t deny it, only doubts whether it can attract young people."
-     }
-    ]
-   },
    "R29-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The editorial stresses their irreplaceable role and calls for action: « Il serait temps de les entendre ». A is the opposite of the text’s praise; B: there is no comparison of audience figures."
+      "why": "« dont on ne connaît que les représentants les plus outranciers » — outrancier = extreme, excessive."
      },
      {
-      "why": "« Elles se font l’écho de réalités que les grandes stations nationales ignorent ». Neither A nor C has any basis."
-     },
-     {
-      "why": "faire les frais de qch = to bear the brunt of something. B and C misread frais literally (as costs)."
-     },
-     {
-      "why": "« une visibilité sur trois ans pour cesser de vivre au jour le jour ». A is rejected by « Ils ne réclament pas des privilèges »; B isn’t mentioned."
-     },
-     {
-      "why": "« Une démocratie se mesure aussi au nombre de voix qu’elle laisse s’exprimer » raises the local radio question to the level of democracy. Neither A nor C fits."
-     }
-    ]
-   },
-   "R29-3": {
-    "questions": [
-     {
-      "why": "The title and the whole letter protest against the show being dropped and ask the station to « revenir sur sa décision ». B is the opposite; C isn’t mentioned."
-     },
-     {
-      "why": "Reported speech: « La direction a expliqué que l’audience nocturne était trop faible ». A and C aren’t mentioned."
-     },
-     {
-      "why": "« c’est une présence humaine au cœur de la nuit ». A is exactly what she sees as the flaw of the replacement programme; B has no basis."
-     },
-     {
-      "why": "« ou, si c’est impossible, de maintenir une émission en direct au moins deux nuits par semaine ». A: she clearly says it can’t replace the show; C isn’t mentioned."
+      "why": "« n’ont pas leur place dans une discussion honnête » — on ne saurait admettre = cannot be accepted (formal)."
      }
     ]
    }
@@ -69,7 +27,7 @@
    "L29-1": {
     "questions": [
      {
-      "why": "The interview covers the late-night phone-in’s listeners, rules and purpose, ending with « ça sert surtout à une chose : tenir compagnie ». B is only part of the audience; C isn’t covered."
+      "why": "The interview moves from the listeners (« Des gens qui travaillent la nuit, bien sûr : des infirmières, des boulangers, des chauffeurs ») to the programme’s rules and purpose: its thread is the social role of a late-night show. B is only part of the audience; C isn’t covered."
      },
      {
       "why": "Reported speech: « Un auditeur m’a dit un jour que j’étais la seule personne à qui il avait parlé de toute la semaine ». A confuses it with the host’s question; C isn’t mentioned."
@@ -94,10 +52,15 @@
       "why": "The column analyses why podcasts are popular and discusses their relationship with radio. A is rejected by « Pas du tout ! »; C isn’t covered."
      },
      {
-      "why": "« D’abord, la liberté… on l’écoute quand on veut, en différé ». B and C aren’t mentioned."
+      "why": "« de bouche à oreille, sans aucune publicité ». A is rejected by « sans aucune publicité »; B isn’t mentioned."
      },
      {
-      "why": "« de bouche à oreille, sans aucune publicité ». A is rejected by « sans aucune publicité »; B isn’t mentioned."
+      "why": "« moins de un sur cent rapporterait de quoi payer un salaire » — The conditionals rapporterait / proposeraient mark reported, unconfirmed figures or claims."
+     },
+     null,
+     null,
+     {
+      "why": "« D’abord, la liberté… on l’écoute quand on veut, en différé ». B and C aren’t mentioned."
      },
      {
       "why": "« le podcast a un point faible : il ne connaît pas le direct ». A is something she sees as a strength; C isn’t mentioned."

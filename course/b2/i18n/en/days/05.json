@@ -1,66 +1,41 @@
 {
  "canDo": "Can explain the causes of an environmental phenomenon with a range of cause expressions (parce que, puisque, comme at the start of a sentence, étant donné que, vu que, du fait de, en raison de, faute de, grâce à / à cause de, sous prétexte que, d’autant que), telling neutral, positive, negative and doubtful causes apart.",
  "review": "Following on from day 4’s relative pronouns: describe a phenomenon precisely with relative clauses (les zones dans lesquelles…, les insectes dont…), then explain its causes with cause connectors; review the B1 parce que / car / à cause de.",
- "input": "Read: a report explaining why the tiger mosquito is spreading, an editorial against looking for scapegoats in a drought and a notice banning swimming in a lake; listen: an ecologist on the decline of insects, a segment on coastal erosion and an ozone pollution news flash. Strategy: sort each cause expression (introduces a noun / a clause; neutral / positive / negative / doubtful).",
- "output": "Write: a forum post explaining “why so many people drive even for short trips”, with suggestions (180+ words); speak: a 3-minute monologue on “switching off street lights at night”, then a debate on “do individual green actions make a difference?”.",
+ "input": "Read: the informative article « Sécheresse : l’eau, une ressource qu’il faut désormais partager », the opinion piece « Les « petits gestes » sauveront-ils la planète ? » and the three-voice forum « Interdire les vols intérieurs courts ? » — questions first, then the text, finding the evidence for each answer; listen: « La Terre en questions : où sont passés les insectes ? » and « Comprendre la planète : pourquoi les plages reculent » twice each, then three short recordings once each.",
+ "output": "Write: a forum post explaining “why so many people drive even for short trips”, with suggestions (250+ words); speak: a 3-minute monologue on “switching off street lights at night”, then a debate on “do individual green actions make a difference?”.",
  "checkpoint": "Reading and listening accuracy ≥80%; at least 5 different cause expressions in the essay, correctly structured (faute de + noun/infinitive, étant donné que + indicative, comme at the start); a 3-minute monologue clearly stating at least three causes.",
  "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about drought, a heatwave, pollution or biodiversity, and write 1 sentence each with étant donné que, faute de, grâce à and comme (at the start) explaining the causes; then record 1 minute of audio explaining the phenomenon to a friend.",
  "items": {
   "reading": {
    "R05-1": {
     "questions": [
+     null,
      {
-      "why": "The first paragraph asks « Comment expliquer qu’il ait gagné autant de terrain… ? », and the rest analyses three main causes in turn: trade, climate and human behaviour. B: dengue is only mentioned in passing; C: the text says the health authorities « suivent la situation de près », with no criticism."
+      "why": "« autrefois exceptionnels, deviendront la norme » — l’insouciance = carefree lack of concern."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« la seule vraie solution : cultiver autrement » — gourmand (en eau) = water-hungry."
      },
      {
-      "why": "The text says: « a voyagé à travers le monde grâce au commerce des pneus usagés, dans lesquels l’eau de pluie stagne ». Neither A nor C is mentioned."
-     },
-     {
-      "why": "The text says: « il lui arrive de monter dans un véhicule et d’en descendre des centaines de kilomètres plus loin », hence « ce n’est donc pas un hasard si… ». A and B are invented causes."
-     },
-     {
-      "why": "The text says: « Le réchauffement ne l’a pas fait venir, mais il lui a permis de s’installer durablement plus au nord ». B contradicts the first half; C contradicts the second half."
-     },
-     {
-      "why": "The text says: « Puisque ces gîtes larvaires se trouvent surtout dans les jardins et sur les balcons, les traitements à grande échelle sont peu efficaces ». A and C have no basis in the text."
-     },
-     {
-      "why": "The text goes on to explain that plant-pot saucers, forgotten watering cans and blocked gutters all become breeding sites — i.e. humans help it without meaning to. A is wrong in saying “deliberately”; B has nothing to do with the “ally” metaphor."
+      "why": "« au sein d’une même commission pour fixer, chaque année, le volume que chacun peut prélever » — houleux = stormy, heated."
      }
     ]
    },
    "R05-2": {
     "questions": [
      {
-      "why": "The author criticises « Cette recherche d’un bouc émissaire… est pourtant stérile » and argues that « c’est collectivement qu’il faut décider ». A is one of the accusations the author criticises; C: the author only says watering golf courses can be questioned, not that it should be banned."
+      "why": "« Ce que je conteste, c’est qu’on s’arrête là » — The author rejects both the idea that small gestures are enough and those who mock everyday environmentalists (je me sépare de ceux qui raillent…)."
      },
+     null,
      {
-      "why": "The text says: « puisqu’il est toujours plus confortable de penser que la solution dépend des autres » (puisque introduces a cause the reader can also accept). B and C aren’t said in the text."
+      "why": "« la manière dont on produit l’électricité, dont on isole les bâtiments » — n’avoir aucune prise sur = to have no control over."
      },
+     null,
      {
-      "why": "The text says: « c’est d’abord parce que les pluies d’hiver sont devenues plus irrégulières et que des sols imperméabilisés laissent l’eau ruisseler ». A and B are about “water use”, which the author says only « ne font qu’aggraver »."
-     },
-     {
-      "why": "« Certes, tous les usages ne se valent pas… Mais opposer les agriculteurs aux citadins ne fera pas tomber une goutte de pluie »: concede first, then return to the argument. B: he doesn’t change position; C contradicts « tous les usages ne se valent pas »."
-     },
-     {
-      "why": "This is a vivid way of saying that blaming each other won’t solve the root problem of water shortage. A and C are literal misreadings."
-     }
-    ]
-   },
-   "R05-3": {
-    "questions": [
-     {
-      "why": "The first sentence says it: « En raison de la présence de cyanobactéries, la baignade est interdite », and the rest explains the causes and the measures. A only mentions that pedalos are still allowed; C isn’t mentioned."
-     },
-     {
-      "why": "The text says: « du fait des fortes chaleurs et du faible niveau de l’eau. Comme le lac reçoit également… des eaux chargées en engrais ». B and C aren’t listed as causes."
-     },
-     {
-      "why": "The text says: « Les activités nautiques sans contact avec l’eau, comme le pédalo, sont maintenues ». A is banned; B: « il est vivement déconseillé de consommer les poissons »."
-     },
-     {
-      "why": "The text says: « Faute d’amélioration rapide, la mairie étudiera avec les agriculteurs voisins des solutions » (faute de = failing, in the absence of). A and C aren’t in the text."
+      "why": "« Ce n’est pas un hasard » — Ce n’est pas un hasard si… hints that interests lie behind it."
      }
     ]
    }
@@ -84,6 +59,9 @@
       "why": "The recording says: « s’orientent la nuit grâce à la lune. Attirés par les lampadaires, ils tournent autour jusqu’à l’épuisement, ou ils deviennent des proies faciles ». A and C aren’t mentioned."
      },
      {
+      "why": "« Il aggrave tout le reste » — aggraver = to make worse; climate is not the sole cause but amplifies the others."
+     },
+     {
       "why": "The recording says: « on observe parfois le retour de certaines espèces en deux ou trois ans seulement. Et chacun peut agir ». A contradicts « c’est la bonne nouvelle »; B contradicts « chacun peut agir »."
      }
     ]
@@ -96,6 +74,11 @@
      {
       "why": "The recording says: « Les barrages construits sur les fleuves retiennent une partie du sable ». B and C aren’t mentioned."
      },
+     {
+      "why": "« l’érosion n’est pas considérée comme une catastrophe naturelle » — Unlike a flood, erosion is prévisible, so it is not compensated as a natural disaster."
+     },
+     null,
+     null,
      {
       "why": "The recording says: « elles déplacent souvent l’érosion un peu plus loin ». A and B aren’t said in the recording."
      },
@@ -114,6 +97,12 @@
      },
      {
       "why": "The recording says: « sont invitées à éviter les efforts physiques en plein air ». A is exaggerated; B is the opposite — public transport is free."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« grâce à elle, deux aiglons ont pu prendre leur envol » — contrarier = to annoy; the park first grants the visitors' displeasure, then persuades with last year’s result."
      }
     ]
    }

@@ -1,43 +1,47 @@
 {
  "canDo": "Keep your French active, your strategy clear and your confidence up, without bringing in any new system on the last day.",
  "review": "Look only at your personal error rules, chunks and exam routine.",
- "input": "Light authentic input: RFI or TV5MONDE, your choice.",
+ "input": "Listen: three recordings, « Demain, c’est l’examen », « Examinatrice du DELF : ce qu’elle attend des candidats » and « Apprendre le français à l’âge adulte », twice each; read: the comparison grid « Trouver un job d’été » and the articles « Pompiers volontaires : l’engagement d’à côté » and « Apprendre toute sa vie : l’université ouvre ses portes aux retraités », questions first, then the text.",
  "output": "A short writing outline + light speaking; no high-pressure full mock.",
  "checkpoint": "Can describe the routine for all four papers, your personal top 3 risks and how you will handle them.",
  "challenge": "Today’s challenge (light, nothing new): listen to a story that interests you in RFI’s « Journal en français facile », retell it aloud in 1 minute and add one sentence of your own view; then look through your personal error rules and chunk list, reading only, not studying. Finally write 3 sentences in French on how you plan to keep learning after the exam (e.g. Chaque matin, j'écouterai dix minutes de RFI.).",
  "items": {
-  "reading": {
-   "R50-2": {
+  "listening": {
+   "L50-1": {
     "questions": [
-     {
-      "why": "The exercises with ready-made questions are the TV5MONDE ones."
-     },
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "The task for the second of the three listenings."
+      "why": "« Il faut insister poliment et proposer une solution » — l’examinateur joue un rôle: the refusal is part of the role, not aimed at the candidate."
      }
     ]
    },
-   "R50-4": {
+   "L50-2": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "She still understood everything but couldn’t speak."
-     },
-     {
-      "why": "« j'étais moins bonne en français que la plupart des bénévoles »: it was precisely this situation that led to learning."
+      "why": "« Souriez en entrant » — on donne des points, on n’en retire pas: marking adds points for what is achieved; it does not subtract."
      }
     ]
-   }
-  },
-  "listening": {
-   "L50-4": {
+   },
+   "L50-3": {
     "questions": [
      null,
      null,
      null,
+     null,
+     null,
+     null,
      {
-      "why": "The ending gives this yardstick."
+      "why": "« chaque apprenant rencontre un habitant une heure par semaine » — contrairement à une idée reçue = contrary to received opinion; à condition de + infinitive = provided that."
      }
     ]
    }

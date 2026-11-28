@@ -85,6 +85,10 @@ export default {
   // reading and listening
   'text.playedOnce': '考试中只听一遍', 'text.playedTwice': '考试中听两遍',
   'text.hideScript': '隐藏原文', 'text.showScript': '显示原文', 'text.listenFirst': '先只听不看，作答后再对照原文。',
+  'text.quotePrompt': '先摘抄原文中能证明答案的句子，再选择正确或错误。', 'text.answerPrompt': '写出答案（和考试一样，写几个词即可）。',
+  'text.quoteFirst': '请先摘抄能证明答案的原文：没有理由，这道题不得分。', 'text.answerFirst': '请先写出答案。',
+  'text.submitAnswer': '提交答案', 'text.yourQuote': '你的摘抄', 'text.yourAnswer': '你的答案',
+  'text.expectedQuote': '应摘抄的原文', 'text.expectedAnswer': '参考答案', 'text.quoteMissing': '判断正确，但摘抄的不是能证明答案的原文：考试中这一题不得分。',
   'text.questions': '问题', 'text.comprehension': '理解题', 'text.hint': '每题作答后立即显示解析，答案不可更改。',
 
   // the listening player

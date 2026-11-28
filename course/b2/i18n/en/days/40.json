@@ -1,70 +1,11 @@
 {
  "canDo": "Can complete a combined test of all four skills on your own and use the results to identify your weak areas on the B2 marking grid (task completion, coherence and cohesion, vocabulary, grammar), drawing up a personal remedial plan for the full mock exams on days 41–50.",
  "review": "Review day 11’s time expressions (avant que… ne + subjunctive, après que + indicative, jusqu’à ce que, depuis que, au fur et à mesure que, dès que + future perfect) and day 25’s indefinites and quantifiers (quiconque, n’importe quel, la plupart, chacun, tel ou tel, aucun, tout), and look back at the points lost in day 39’s mini mock exam.",
- "input": "Read: a long article on “is it still worth learning languages in the age of machine translation?”, a column calling for empty office blocks to be converted into student housing and a media library announcement; listen: an interview with a doctor at a rural group practice (twice), an interview with a women’s football coach in Liège, Belgium, and a public transport announcement on a bus network overhaul. After each text or recording, write one sentence giving “topic + the author’s/speaker’s position”.",
+ "input": "Read: the informative article « Réparer, louer, partager : l’économie de l’usage », the opinion piece « La gentillesse est-elle une faiblesse ? » and the three-voice forum « Faut-il noter ses professeurs ? » — questions first, then the text, finding the evidence for each answer; listen: « Une maison de santé contre le désert médical » and « Football féminin : un succès qui manque de terrains » twice each, then three short recordings once each.",
  "output": "Write: a formal letter to the mayor as a parents’ representative, asking for training slots at the municipal pitch to be shared fairly (≥250 words); speak: a 6-minute monologue on a document about “is esports a sport?”, then a 5-minute debate with the examiner on “should foreign languages remain compulsory at secondary school?”. Afterwards, assess yourself item by item against the official marking grid.",
  "checkpoint": "Reading and listening accuracy ≥80%; essay ≥250 words with at least 3 time expressions and 3 indefinites in the correct mood; monologue ≥5 minutes and replies to 4 objections in the debate; give yourself a score on each of the grid’s five criteria, list the 3 points most in need of work and put them in your day 41 plan.",
  "challenge": "Today’s challenge: look back at the goals you wrote on day 1, pick a B2-level video on TV5MONDE, listen twice without subtitles and write a 5-line summary (using at least « au fur et à mesure que » and « la plupart »); compare it with your level on day 1, and write down your biggest progress and one concrete goal for the next stage.",
  "items": {
-  "reading": {
-   "R40-1": {
-    "questions": [
-     {
-      "why": "Paragraph 1 asks « à quoi bon passer des années à apprendre une langue étrangère ? », and the whole text is about the relationship between machine translation and language learning. A and C are just related details."
-     },
-     {
-      "why": "« près d’un quart déclarent avoir renoncé à un cours de langue optionnel ». B contradicts « la plupart utilisent ces outils plusieurs fois par semaine »; C is the opposite of documents now being handled by software."
-     },
-     {
-      "why": "The text goes on to explain that learning a language also means understanding humour and implied meaning, and how to disagree without offending. A over-interprets; B isn’t mentioned."
-     },
-     {
-      "why": "« Ils restent fragiles dès que le texte devient ambigu, ironique ou très technique ». The text says neither B nor C."
-     },
-     {
-      "why": "« au fur et à mesure que les logiciels progressent, leur métier se transforme et se tourne vers la relecture, l’adaptation et le contrôle de qualité ». A is ruled out by « ne disparaissent pas »; C isn’t mentioned."
-     },
-     {
-      "why": "« pourrait devenir non pas une concurrente, mais une alliée. À condition… que quelqu’un sache encore la corriger ». A and B don’t fit this conciliatory position."
-     }
-    ]
-   },
-   "R40-2": {
-    "questions": [
-     {
-      "why": "The title, « une piste qu’on aurait tort d’ignorer », and the concrete proposals in paragraph 4 show the author is defending the idea. B is only the opening background; C: remote working is mentioned only as the reason offices are empty, without criticism."
-     },
-     {
-      "why": "« livrés en moins de deux ans, bien plus vite qu’une construction neuve, et sans consommer un mètre carré de terres agricoles ». A contradicts paragraph 3’s « Il arrive que le coût des travaux dépasse… »; C isn’t mentioned."
-     },
-     {
-      "why": "« Certes, la transformation n’est pas toujours simple… C’est pourquoi chaque bâtiment doit être étudié avant que le projet ne soit lancé »: it admits the limits, then proposes a remedy. A goes against the whole text’s position; B: there is no personal experience."
-     },
-     {
-      "why": "« ces conversions restent confidentielles, faute d’incitations et de volonté politique ». Neither B nor C is mentioned."
-     },
-     {
-      "why": "rester confidentiel here means “to remain small-scale, little known”, in contrast with the following « pour qu’elles se multiplient ». A misreads confidentiel literally as “secret”; C distorts the meaning."
-     }
-    ]
-   },
-   "R40-3": {
-    "questions": [
-     {
-      "why": "The announcement covers Sunday opening, longer Thursday hours and a self-service loans system. A is the opposite of “longer opening”; C isn’t mentioned."
-     },
-     {
-      "why": "« Cette décision fait suite à une consultation… la plupart des personnes interrogées… regrettaient de ne pas pouvoir venir ». B isn’t mentioned; C: the building work only affects where the children’s section is."
-     },
-     {
-      "why": "« Le personnel, ainsi libéré de certaines tâches répétitives, sera davantage disponible pour conseiller le public » (dès que + future perfect). Neither A nor B is mentioned."
-     },
-     {
-      "why": "« Toute personne extérieure peut s’inscrire moyennant une cotisation annuelle de 15 euros »; residents of the town register free. A and C contradict « gratuite pour tous les habitants »."
-     }
-    ]
-   }
-  },
   "listening": {
    "L40-1": {
     "questions": [
@@ -83,6 +24,7 @@
      {
       "why": "It is used for « certains suivis simples », but « la téléconsultation ne remplace pas tout. Rien ne vaut un examen clinique ». A is rejected; C goes too far."
      },
+     null,
      {
       "why": "« arrivent avec des préjugés, et repartent en me demandant s’il reste de la place ! ». A: they did come for placements; B contradicts their wanting to stay."
      }
@@ -101,6 +43,10 @@
      },
      {
       "why": "« surtout la confiance en soi. Une fille qui ose prendre la parole dans un vestiaire osera aussi la prendre en classe ». Neither A nor C is mentioned."
+     },
+     null,
+     {
+      "why": "« les horaires se sont libérés comme par miracle » — Time conjunctions: Tant que + future, dès que, En attendant que + subjunctive, Depuis que, Aussi longtemps que + future."
      }
     ]
    },

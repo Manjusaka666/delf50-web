@@ -1,7 +1,7 @@
 {
  "canDo": "Can talk for 2–3 minutes about themselves, their experience and plans, and handle follow-up questions.",
  "review": "Review the three main tenses and personal vocabulary.",
- "input": "Listen to model questions; don’t memorise whole answers.",
+ "input": "Listen: three recordings, « Tu te sens d’où, toi ? », « Elle a retrouvé le village de son arrière-grand-père » and « Changer de prénom : pourquoi ? », twice each; read: the comparison grid « Apprendre une langue régionale » and the articles « Garder son accent, ou le perdre ? » and « Double nationalité, double culture : une richesse ? », questions first, then the text.",
  "output": "A 2–3-minute recording + answering 5 follow-up questions yourself.",
  "checkpoint": "Evidence of developing information, switching tenses and answering spontaneously.",
  "challenge": "Today’s challenge: do a real self-introduction for part 1 of the DELF oral. Record 2–3 minutes on your phone, covering the present (work / studies, présent), the past (an important experience, passé composé + imparfait) and the future (plans, futur simple); on playback note 3 places where you got stuck, then watch a TV5MONDE Apprendre B1 interview, borrow 2 natural expressions and record again.",
@@ -9,23 +9,39 @@
   "listening": {
    "L37-1": {
     "questions": [
-     {
-      "why": "She gives her name, age and job first, then how long she has worked and how she came to France."
-     },
-     {
-      "why": "The company’s requirement was the initial motive; the turning point was a three-week placement in Lyon."
-     },
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "She separates the two goals: B1 is a short-term administrative need; the long-term goal is to be able to chair a meeting."
+      "why": "« Je suis lyonnaise, et mes parents sont marocains » — Les deux sont vrais / Je n’ai pas à choisir: the conclusion of the conversation."
      }
     ]
    },
-   "L37-4": {
+   "L37-2": {
     "questions": [
      null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The contrasting example shows that specific information leads on to follow-up."
+      "why": "« savoir d’où l’on vient n’empêche pas d’être de quelque part » — Je les comprends… Mais… Au contraire: concession, then rebuttal."
+     }
+    ]
+   },
+   "L37-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« il devient quelque chose que l’on choisit » — n’est plus reçu une fois pour toutes: no longer something given once and for all."
      }
     ]
    }

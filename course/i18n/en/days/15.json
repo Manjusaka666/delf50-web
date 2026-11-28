@@ -1,38 +1,60 @@
 {
  "canDo": "Can make polite requests, give advice and express simple hypotheses with si + imparfait / conditionnel.",
  "review": "Review future stems; master voudrais/pourriez/devriez/serait.",
- "input": "Listening: complaints and advice; reading: emails asking for help/giving advice.",
- "output": "Write a 120-word email of advice; give 4 pieces of advice aloud in 2 minutes, with explanations.",
+ "input": "Listen: three recordings, « Tu devrais consulter », « Pharmacienne dans un désert médical » and « Dormir mieux : ce que conseillent les spécialistes », twice each; read: the comparison grid « Prendre rendez-vous pour un mal de dos » and the articles « Le médecin au bout de l’écran » and « Faut-il dormir plus pour travailler mieux ? », questions first, then the text.",
+ "output": "Write a 160-word email of advice; give 4 pieces of advice aloud in 2 minutes, with explanations.",
  "checkpoint": "At least 4 conditional forms; avoid errors such as si je serais.",
  "challenge": "Today’s challenge: imagine a friend has been sleeping badly lately; write them 4 pieces of advice in French (Tu devrais…, À ta place, je…, Si j’étais toi, je…), each with a reason; you can first look up a health expression to review on TV5MONDE or Le Point du FLE.",
  "items": {
   "reading": {
    "R15-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The fault is an automatic shutdown below zero. Three rooms relying on temporary heaters is a consequence, not a description of the boiler’s fault."
-     },
-     {
-      "why": "The first demand is a repair visit as soon as possible; replacing the appliance is the fallback « Si une réparation n'était pas possible »."
-     },
-     {
-      "why": "« je saisirais le médiateur … Je préférerais évidemment éviter cette démarche » — the conditional leaves room for manoeuvre."
+      "why": "« Bâtiment de plain-pied » — de plain-pied = on one level, with no steps."
      }
     ]
    },
    "R15-2": {
     "questions": [
+     {
+      "why": "« fait désormais partie du quotidien » — One in twenty is not a majority."
+     },
+     null,
+     null,
+     null,
      null,
      null,
      {
-      "why": "« Il pourrait chercher une cause précise plutôt que prescrire d'emblée un somnifère »; the threshold for seeing a doctor is one month."
+      "why": "« ne doit pas devenir une médecine au rabais pour les campagnes » — au rabais = cut-price, second-rate."
      }
     ]
    },
-   "R15-4": {
+   "R15-3": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "Footfall does eventually rise, but with a lag of 12–18 months, and « peu de commerces peuvent absorber une année difficile »."
+      "why": "« C’est un pansement » — A metaphor: a sticking plaster covers the wound without curing the cause."
      }
     ]
    }
@@ -40,34 +62,34 @@
   "listening": {
    "L15-1": {
     "questions": [
-     {
-      "why": "The first step is a registered letter stating the precise facts; mediation is the next step « si ça ne suffit pas »."
-     },
+     null,
+     null,
      null,
      {
-      "why": "« Ce n'est pas un tribunal : personne n'est obligé d'accepter le résultat », and it’s free."
+      "why": "« ça pourrait venir de ton bureau » — The conditional pourrait marks a guess, based on the low screen and the broken chair."
+     }
+    ]
+   },
+   "L15-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "« Ce n’est pas l’idéal » — Conditional je préférerais que…: she would rather have a real doctor; but without the booth many elderly people ne se soigneraient plus."
      }
     ]
    },
    "L15-3": {
     "questions": [
-     {
-      "why": "« si on cloisonnait, on perdrait la lumière du fond », so glass partitions are needed, which are expensive."
-     },
+     null,
+     null,
+     null,
+     null,
+     null,
      null,
      {
-      "why": "The ending gives the order clearly: glass partitions come last, depending on the budget."
-     }
-    ]
-   },
-   "L15-4": {
-    "questions": [
-     null,
-     {
-      "why": "« Sans ces éléments, l'attente serait beaucoup plus longue » — a longer wait, not being turned away."
-     },
-     {
-      "why": "One of the three red-flag symptoms is weakness on one side of the body: call 15 immediately."
+      "why": "« ne devraient être pris que quelques jours » — ne… que = only; the conditional devraient gives advice."
      }
     ]
    }

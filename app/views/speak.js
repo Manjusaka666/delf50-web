@@ -2,7 +2,7 @@
 import { store, commit, refresh } from '../store.js';
 import { itemState } from '../progress.js';
 import { loadDay } from '../course.js';
-import { addSpeaking, saveDraft, draftKey, countWords } from '../state.js';
+import { addSpeaking, saveDraft, draftKey, countWords, recordId } from '../state.js';
 import { upload, newClipId } from '../media.js';
 import { html, icon, pad2, frText, fmtDateTime, fmtDuration, moduleName, moduleFr } from '../ui.js';
 import { t } from '../i18n.js';
@@ -90,7 +90,7 @@ export async function speakView(d, n) {
     ${r.notes ? html`<details class="round-notes"><summary>${t('speak.notesThen')}</summary><div class="prose small" lang="fr">${r.notes.split(/\n+/).map((p) => html`<p>${p}</p>`)}</div></details>` : ''}
   </li>`;
 
-  const key = draftKey(d, item.id), notes = () => store.S.drafts.speaking[key] || '';
+  const key = draftKey(d, recordId(item)), notes = () => store.S.drafts.speaking[key] || '';
   const notesBox = () => html`<div class="notes">
     <label class="label" for="notes">${t('speak.notes')} · Plan</label>
     <textarea id="notes" class="ed notes-ed" data-input="notes" lang="fr" spellcheck="true" placeholder="Notez votre plan ou rédigez ce que vous allez dire…">${notes()}</textarea>
@@ -135,7 +135,7 @@ export async function speakView(d, n) {
     },
     inputs: {
       notes: (el) => {
-        commit((S) => saveDraft(S, 'speaking', d, item.id, el.value), { quiet: true });
+        commit((S) => saveDraft(S, 'speaking', d, recordId(item), el.value), { quiet: true });
         const w = document.querySelector('[data-notes-words]');
         const n = countWords(el.value), u = document.querySelector('[data-notes-unit]');
         if (w) w.textContent = n;

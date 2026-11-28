@@ -1,7 +1,7 @@
 {
  "canDo": "Can locate conditions, limits and actions in 150–250-word practical texts, and understand the gérondif, dont/compound relative pronouns and relative time markers.",
  "review": "Learn the gérondif, dont/compound relative pronouns and B1 markers such as la veille/le lendemain/d’ici; practise scanning strategies at the same time.",
- "input": "Read 3–4 service notices/instructions.",
+ "input": "Listen: three recordings, « À la préfecture », « Elle conduit le bus des services publics » and « Urgences : appeler avant de venir », twice each; read: the comparison grid « Refaire son passeport rapidement » and the articles « Un bus qui amène l’administration dans les villages » and « Tout faire en ligne : progrès ou exclusion ? », questions first, then the text.",
  "output": "Write a 2-sentence summary in French; restate the key actions aloud.",
  "checkpoint": "Objective questions + main idea done; can explain what at least 4 long sentences/time markers do.",
  "challenge": "Today’s challenge: on the website or notice board of your town (or any French town) — library opening hours, how to get an ID document — find a French text of about 150 words; mark 3 conditions, 2 limits and 1 required action, and sum it up with 1 sentence using the gérondif and 1 using dont.",
@@ -11,15 +11,60 @@
     "questions": [
      null,
      null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The text states this replacement explicitly."
+      "why": "« La photo est prise gratuitement au guichet » — There is no booth, but the photo is taken at the counter: the criterion is a photo on site."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L28-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Vous recevrez aujourd’hui un récépissé, valable quatre mois » — récépissé = a temporary receipt valid four months; the card itself takes about eight weeks."
      }
     ]
    },
-   "R28-2": {
+   "L28-2": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The first 4 hours cost 5 €, then 3 € for each further 4 hours or part of 4 hours: 9 hours = 4 + 4 + 1, so 5 + 3 + 3 = 11 €."
+      "why": "« il faut garder une présence humaine » — Je ne suis pas contre… ; je dis seulement que…: a measured position."
+     }
+    ]
+   },
+   "L28-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« ces solutions ne font que gérer la pénurie » — ne faire que + infinitive = merely; they want more students trained."
      }
     ]
    }

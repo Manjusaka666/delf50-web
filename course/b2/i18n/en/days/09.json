@@ -1,66 +1,45 @@
 {
  "canDo": "Can imagine several scenarios for a public health issue and compare their consequences, using the three types of si clause (including mixed hypotheses with si + plus-que-parfait + past/present conditional) and structures such as à condition que, pourvu que, à moins que, à supposer que, au cas où, dans l’hypothèse où.",
  "review": "Review day 8’s purpose expressions (propose a measure → state its purpose) and day 6’s consequence expressions: today, add a condition between “measure → consequence”, e.g. « Si l’on imposait…, beaucoup se détourneraient…, si bien que… ».",
- "input": "Read: an analysis of three scenarios for solving “medical deserts”, an opinion column on a tax on sugary drinks and a town-hall “heatwave plan” notice (mark every si clause and decide whether it is a real condition, a hypothesis about the present or a hypothesis about the past); listen: a doctor on “exercise on prescription”, a health segment on sleep deprivation and a hospital radio notice about A&E triage.",
- "output": "Write: a 180+-word opinion post on a health forum on whether young doctors should be required to practise in under-served areas, imagining the consequences of different scenarios; speak: a 3-minute monologue (should smoking be banned on café terraces?) + a debate on “should patients who miss appointments pay?”, with at least one conditional or hypothetical structure per argument.",
+ "input": "Read: the informative article « Déserts médicaux : faut-il contraindre les médecins ? », the opinion piece « Prévenir plutôt que guérir : un vœu pieux ? » and the three-voice forum « Faut-il rendre certains vaccins obligatoires ? » — questions first, then the text, finding the evidence for each answer; listen: « Du sport sur ordonnance » and « La chronique santé : la dette de sommeil » twice each, then three short recordings once each.",
+ "output": "Write: a 250+-word opinion post on a health forum on whether young doctors should be required to practise in under-served areas, imagining the consequences of different scenarios; speak: a 3-minute monologue (should smoking be banned on café terraces?) + a debate on “should patients who miss appointments pay?”, with at least one conditional or hypothetical structure per argument.",
  "checkpoint": "Reading and listening accuracy ≥80%; each of the three types of si clause used correctly at least once in writing, plus à condition que / pourvu que / à moins que + subjunctive and au cas où + conditional; no « si + conditional » errors; a 3-minute monologue comparing at least two scenarios.",
  "challenge": "Today’s challenge: find a news item on RFI’s « Journal en français facile » or TV5MONDE about health, hospitals or disease prevention, and write 3 sentences imagining different scenarios: one with si + present, one with si + imparfait and one with si + plus-que-parfait (a regret about the past); then record a 1-minute voice message answering: « Si vous étiez ministre de la Santé, quelle serait votre première mesure ? »",
  "items": {
   "reading": {
    "R09-1": {
     "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
      {
-      "why": "The article first describes the problem of medical deserts and its causes, then analyses « Premier / Deuxième / Troisième scénario », and finally sums up. A: there is no personal story; C: both pros and cons of the first scenario are presented, and the author doesn’t back it."
+      "why": "« j’aurais choisi un autre métier » — farouchement = fiercely."
      },
      {
-      "why": "« ne concernent plus seulement les campagnes isolées : certaines banlieues et villes moyennes sont elles aussi sous-dotées ». B contradicts « plus seulement »; C isn’t said in the text."
-     },
-     {
-      "why": "si + plus-que-parfait + present conditional = an unreal hypothesis about the past and its effect on the present, expressing regret (« regrette Paul Mercier »). A isn’t a prediction about the future; B: the past can’t be changed (« le passé ne se réécrit pas »)."
-     },
-     {
-      "why": "« si l’on imposait un lieu d’installation, beaucoup de jeunes renonceraient à la médecine générale, ce qui aggraverait la pénurie ». Neither A nor C is mentioned."
-     },
-     {
-      "why": "« Elles peuvent fonctionner, pourvu que les collectivités s’engagent sur le long terme ». B: the text says precisely that a new building on its own « ne sert à rien » without a stable team; C is the opposite of « plusieurs professionnels travaillent ensemble »."
-     },
-     {
-      "why": "« peut rendre service, à condition qu’elle ne devienne pas la seule réponse ». A is exactly what the author warns against; B contradicts « peut rendre service »."
+      "why": "« les patients, eux, resteraient inscrits chez nous » — au cas où + conditional = in case."
      }
     ]
    },
    "R09-2": {
     "questions": [
      {
-      "why": "« je propose que chaque euro collecté soit réinvesti dans la prévention… Taxons, donc, mais à condition d’accompagner ». A contradicts « une taxe peut être utile »; B is what the author calls « relève de l’illusion »."
+      "why": "« Comment expliquer qu’une idée sur laquelle tout le monde s’accorde soit si peu suivie d’effet ? » — un vœu pieux = wishful thinking, a pious hope."
      },
+     null,
+     null,
+     null,
      {
-      "why": "The author thinks it is neither “an attack on freedom” nor “a miracle cure”, and sets out a middle position. Neither B nor C is expressed in the text."
-     },
-     {
-      "why": "« les fabricants… réduisent souvent la teneur en sucre de leurs recettes. C’est sans doute l’effet le plus intéressant ». A is exaggerated; C isn’t mentioned."
-     },
-     {
-      "why": "« Si l’on se contentait de taxer, on pénaliserait d’abord les ménages modestes… sans leur offrir d’alternative ». Neither A nor B is mentioned."
-     },
-     {
-      "why": "tirer la sonnette d’alarme = “to sound the alarm”, and the danger is explained next: « nos enfants risquent de vivre moins longtemps ». Neither B nor C is what the idiom means."
+      "why": "« le dispositif n’a finalement été adopté qu’à titre facultatif » — acharné = relentless."
      }
     ]
    },
    "R09-3": {
     "questions": [
      {
-      "why": "The headline and first paragraph: « la mairie ouvre un registre destiné aux personnes vulnérables… L’inscription est gratuite ». A is the opposite of the text (the media library will open a cool room); C: no recruitment of volunteers is mentioned."
-     },
-     {
-      "why": "« Un proche, un voisin ou un médecin peut également faire la démarche, à condition que la personne soit d’accord ». A and B ignore this condition."
-     },
-     {
-      "why": "« Au cas où vous ne pourriez pas vous y rendre par vos propres moyens, un transport gratuit sera organisé sur simple appel ». Neither B nor C is mentioned."
-     },
-     {
-      "why": "« s’hydrater régulièrement sans attendre d’avoir soif ». A and C contradict « éviter les efforts physiques aux heures les plus chaudes » and « fermer les volets pendant la journée »."
+      "why": "« les parents hésitants se braquent » — se braquer = to dig one’s heels in."
      }
     ]
    }
@@ -84,6 +63,9 @@
       "why": "« c’est le principal frein. Les séances encadrées ne sont pas toujours remboursées ». A isn’t mentioned; C is the opposite of “group activities are motivating”."
      },
      {
+      "why": "« on creuse encore les inégalités de santé » — creuser les inégalités = to deepen inequalities; hence his call for access regardless of income."
+     },
+     {
       "why": "« ce serait l’idéal : prescrire du sport à titre préventif, avant que les problèmes n’apparaissent ». A and B are over-inferences."
      }
     ]
@@ -100,6 +82,11 @@
       "why": "« En partie seulement. Dormir jusqu’à midi le dimanche dérègle votre horloge interne ». A contradicts “only partly”; B is too absolute."
      },
      {
+      "why": "« l’horloge interne se décale de deux heures environ » — il n’y est pour rien = it is not his fault; add screens in the bedroom and two hours are lost each night."
+     },
+     null,
+     null,
+     {
       "why": "« levez-vous plutôt que de tourner dans votre lit ». A is the opposite of the advice to switch off screens an hour before bed; C isn’t mentioned."
      }
     ]
@@ -114,6 +101,10 @@
      },
      {
       "why": "« Au cas où vous ne parviendriez pas à joindre un médecin, appelez le numéro de permanence des soins ». C is a serious case in which you should go straight to A&E; B isn’t mentioned."
+     },
+     null,
+     {
+      "why": "« contrairement à une idée répandue, ne pas venir à jeun » — à jeun = on an empty stomach; contrary to common belief, one should eat before giving blood."
      }
     ]
    }
