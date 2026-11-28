@@ -1,1 +1,235 @@
-{"canDo":"Can express opinions about media and information according to degree of certainty: the indicative for affirmation and strong likelihood (je pense que, il est certain que, il est probable que), the subjunctive for negation, questions and possibility (je ne crois pas que, il est possible que, je doute que).","review":"Following on from day 2’s subjunctive (wishes, feelings, doubt): today, distinguish how opinion verbs change mood in affirmative, negative and interrogative sentences, and review the exception espérer que + indicative.","input":"Read: the informative article « Dans les coulisses de la vérification de l’information », the opinion piece « L’information en continu nous rend-elle mieux informés ? » and the three-voice forum « Faut-il faire payer l’information en ligne ? » — questions first, then the text, finding the evidence for each answer; listen: « Le grand débat : peut-on faire confiance à l’information gratuite ? » and « Chronique « Vrai ou faux ? » : la rumeur de la piscine » twice each, then three short recordings once each.","output":"Write: a measured forum post on “can you get properly informed through social networks?” (250+ words); speak: a 3-minute monologue on “paying for news”, then a debate on “should media literacy classes be compulsory?”.","checkpoint":"Reading and listening accuracy ≥80%; at least 1 expression at each level (“certain, possible, doubtful”) in the essay, with the right mood; a 3-minute monologue that switches mood at least once with a negative (je ne pense pas que + subjunctive).","challenge":"Today’s challenge: pick one of today’s stories on RFI’s « Journal en français facile » or TV5MONDE, then find a social-media post about the same event; compare them and write 1 sentence each with il est certain que / il est probable que / il est possible que / je doute que assessing how reliable they are.","items":{"reading":{"R03-1":{"questions":[null,null,null,null,{"why":"« Lorsque le démenti paraît, le public est déjà passé à autre chose » — un démenti = a denial, a correction."},null,null,null,null,{"why":"« C’est une forme de dissuasion, discrète mais réelle » — y regarder à deux fois = to think twice."}]},"R03-2":{"questions":[{"why":"« c’est confondre la quantité et la compréhension » — The author explicitly says he does not think newsrooms are less scrupulous than before (Je ne crois pas que…); keeping instant news for life-saving alerts is a concession, not his thesis."},{"why":"« l’on ne s’en portait pas plus mal » — ne pas s’en porter plus mal = to be none the worse for it."},null,null,null,null,{"why":"« plus d’un tiers des personnes interrogées déclarent éviter volontairement les informations » — More than a third is necessarily more than a quarter: the answer needs a conversion, not a matching word."},{"why":"« où la rapidité sauve des vies » — Qu’on ne se méprenne pas = make no mistake (a clarification before conceding a point)."}]},"R03-3":{"questions":[null,null,null,null,{"why":"« des sites remplis de publicités et de titres racoleurs » — racoleur = sensationalist, clickbait."}]}},"listening":{"L03-1":{"questions":[{"why":"The presenter asks: « peut-on encore faire confiance à l’information gratuite ? ». B and C are only details loosely related to the topic."},{"why":"The recording says: « quelqu’un paie quand même, souvent la publicité… la publicité récompense ce qui attire les clics ». A contradicts « Il existe des sites gratuits très sérieux »; C isn’t mentioned."},{"why":"The recording says: « je ne crois pas que le fait de payer garantisse la qualité ». A is wrong: he agrees the advertising model encourages sensationalism; B is the opposite of his view."},null,{"why":"The recording says: « Sur une vingtaine d’exemples, il y en avait au moins six qui étaient faux ou très déformés ». B contradicts this; C: they checked them together."},{"why":"The recording says: « nous expliquons désormais à la fin de chaque enquête comment nous avons travaillé ». Neither A nor B is mentioned."},{"why":"The recording says: « J’espère surtout que l’éducation aux médias deviendra une priorité » (espérer que + indicative future). C is the journalist Sandrine’s view; A isn’t mentioned."},{"why":"« qui parle, et comment le sait-il ? » — He replaces “free or paid?” with “who is speaking, and how do they know?”."}]},"L03-2":{"questions":[{"why":"The recording says: « comment une rumeur a enflammé une petite ville ». B isn’t mentioned; C: the petition was against the rumoured “permanent closure”, not against the works."},{"why":"The recording says: « la piscine va bien fermer… mais seulement trois semaines, pour des travaux de rénovation ». A is the content of the rumour; C: the town hall answered very clearly."},{"why":"« c’est sans doute le point essentiel, personne n’a pensé à poser la question directement à la mairie ». A is the second reason she lists, but not the key one; B is a consequence, not a cause."},null,null,{"why":"« Il parlait de son propre contrat, qui s’achevait ce jour-là » — Personne n’a menti ; chacun a simplement complété ce qu’il ne savait pas: nobody lied; each filled in what they did not know."},null,{"why":"The recording says: « demandez-vous qui l’affirme… il est sage d’attendre avant de la diffuser ». A is too absolute — she says « je ne dis pas que l’information soit forcément fausse »; C isn’t mentioned."}]},"L03-3":{"questions":[{"why":"The recording says: « Le mot désigne la surcharge d’informations à laquelle nous sommes exposés ». A and B are misunderstandings arising from the word obésité."},{"why":"The recording says: « nous retenons moins de choses qu’il y a vingt ans, alors que nous en lisons beaucoup plus ». A goes in the opposite direction; C contradicts “information overload”."},{"why":"The recording says: « deux ou trois rendez-vous d’information par jour, plutôt qu’un flux permanent ». B contradicts « La solution n’est pas de tout couper »; C isn’t mentioned."},null,null,null,null,{"why":"« une lecture trop rapide d’un communiqué syndical » — rectificatif = a correction; under the station’s charter it is broadcast at the same hour and at the same length."}]}}},"vocab":{"V03-01":{"zh":"to be far from an isolated case","exZh":"This secondary-school student who never reads newspapers is far from an isolated case."},"V03-02":{"zh":"(but) not … for all that","exZh":"He doesn’t read newspapers, but he isn’t badly informed for all that."},"V03-03":{"zh":"fragmented information","exZh":"Very short videos encourage fragmented information."},"V03-04":{"zh":"recommendation algorithms","exZh":"Recommendation algorithms push us content similar to what we already like."},"V03-05":{"zh":"it is unrealistic to …","exZh":"It is unrealistic to think a single law can solve the problem."},"V03-06":{"zh":"mixed results","exZh":"Six months on, the results of the trial are mixed."},"V03-07":{"zh":"taken out of its original context","exZh":"Taken out of context, this photo made people think the disaster was recent."},"V03-08":{"zh":"gullible, credulous","exZh":"Young people are not necessarily more gullible than their elders."},"V03-09":{"zh":"the same old refrain, a cliché","exZh":"Every new school year brings the same old refrain: young people don’t read any more."},"V03-10":{"zh":"to collapse, to plummet","exZh":"In ten years, print newspaper sales have collapsed."},"V03-11":{"zh":"a way in to …","exZh":"A well-made video can be a way in to an in-depth investigation."},"V03-12":{"zh":"the editor-in-chief","exZh":"The editor-in-chief decided to publish three videos every morning."},"V03-13":{"zh":"to have an interest in …, it is in someone’s interest that …","exZh":"It is in all our interests that independent media survive."},"V03-14":{"zh":"to take the discussion further","exZh":"The debate is over, but we invite you to take the discussion further on our website."},"V03-15":{"zh":"a doctored (manipulated) image","exZh":"The students learnt to spot doctored images."},"V03-16":{"zh":"to attract clicks","exZh":"This sensational headline is mainly designed to attract clicks."},"V03-17":{"zh":"sensationalism","exZh":"The advertising model sometimes encourages sensationalist reporting."},"V03-18":{"zh":"biased, one-sided","exZh":"This article is very one-sided: it only gives one side a voice."},"V03-19":{"zh":"to launch a petition","exZh":"Worried parents launched a petition within hours."},"V03-20":{"zh":"to get out of hand, to spiral","exZh":"Nobody expected things to spiral like that on social media."},"V03-21":{"zh":"to set (a place) alight, to cause an uproar","exZh":"A simple rumour set the whole town alight."},"V03-22":{"zh":"information overload","exZh":"To fight information overload, she turned off all her notifications."},"V03-23":{"zh":"two-tier","exZh":"Paid subscriptions could create a two-tier access to information."},"V03-24":{"zh":"advertising revenue","exZh":"Advertising revenue is no longer enough to pay for investigative reporting."},"V03-25":{"zh":"to tell truth from falsehood","exZh":"When faced with a rumour, take the time to tell truth from falsehood."}},"title":"Degrees of certainty in opinions","phase":"Upgrading structures and precise expression"}
+{
+ "canDo": "Can express opinions about media and information according to degree of certainty: the indicative for affirmation and strong likelihood (je pense que, il est certain que, il est probable que), the subjunctive for negation, questions and possibility (je ne crois pas que, il est possible que, je doute que).",
+ "review": "Following on from day 2’s subjunctive (wishes, feelings, doubt): today, distinguish how opinion verbs change mood in affirmative, negative and interrogative sentences, and review the exception espérer que + indicative.",
+ "input": "Read: the informative article « Dans les coulisses de la vérification de l’information », the opinion piece « L’information en continu nous rend-elle mieux informés ? » and the three-voice forum « Faut-il faire payer l’information en ligne ? » — questions first, then the text, finding the evidence for each answer; listen: « Le grand débat : peut-on faire confiance à l’information gratuite ? » and « Chronique « Vrai ou faux ? » : la rumeur de la piscine » twice each, then three short recordings once each.",
+ "output": "Write: a measured forum post on “can you get properly informed through social networks?” (250+ words); speak: a 3-minute monologue on “paying for news”, then a debate on “should media literacy classes be compulsory?”.",
+ "checkpoint": "Reading and listening accuracy ≥80%; at least 1 expression at each level (“certain, possible, doubtful”) in the essay, with the right mood; a 3-minute monologue that switches mood at least once with a negative (je ne pense pas que + subjunctive).",
+ "challenge": "Today’s challenge: pick one of today’s stories on RFI’s « Journal en français facile » or TV5MONDE, then find a social-media post about the same event; compare them and write 1 sentence each with il est certain que / il est probable que / il est possible que / je doute que assessing how reliable they are.",
+ "items": {
+  "reading": {
+   "R03-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Lorsque le démenti paraît, le public est déjà passé à autre chose » — un démenti = a denial, a correction."
+     },
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« C’est une forme de dissuasion, discrète mais réelle » — y regarder à deux fois = to think twice."
+     }
+    ]
+   },
+   "R03-2": {
+    "questions": [
+     {
+      "why": "« c’est confondre la quantité et la compréhension » — The author explicitly says he does not think newsrooms are less scrupulous than before (Je ne crois pas que…); keeping instant news for life-saving alerts is a concession, not his thesis."
+     },
+     {
+      "why": "« l’on ne s’en portait pas plus mal » — ne pas s’en porter plus mal = to be none the worse for it."
+     },
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« plus d’un tiers des personnes interrogées déclarent éviter volontairement les informations » — More than a third is necessarily more than a quarter: the answer needs a conversion, not a matching word."
+     },
+     {
+      "why": "« où la rapidité sauve des vies » — Qu’on ne se méprenne pas = make no mistake (a clarification before conceding a point)."
+     }
+    ]
+   },
+   "R03-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« des sites remplis de publicités et de titres racoleurs » — racoleur = sensationalist, clickbait."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L03-1": {
+    "questions": [
+     {
+      "why": "The presenter asks: « peut-on encore faire confiance à l’information gratuite ? ». B and C are only details loosely related to the topic."
+     },
+     {
+      "why": "The recording says: « quelqu’un paie quand même, souvent la publicité… la publicité récompense ce qui attire les clics ». A contradicts « Il existe des sites gratuits très sérieux »; C isn’t mentioned."
+     },
+     {
+      "why": "The recording says: « je ne crois pas que le fait de payer garantisse la qualité ». A is wrong: he agrees the advertising model encourages sensationalism; B is the opposite of his view."
+     },
+     null,
+     {
+      "why": "The recording says: « Sur une vingtaine d’exemples, il y en avait au moins six qui étaient faux ou très déformés ». B contradicts this; C: they checked them together."
+     },
+     {
+      "why": "The recording says: « nous expliquons désormais à la fin de chaque enquête comment nous avons travaillé ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "The recording says: « J’espère surtout que l’éducation aux médias deviendra une priorité » (espérer que + indicative future). C is the journalist Sandrine’s view; A isn’t mentioned."
+     },
+     {
+      "why": "« qui parle, et comment le sait-il ? » — He replaces “free or paid?” with “who is speaking, and how do they know?”."
+     }
+    ]
+   },
+   "L03-2": {
+    "questions": [
+     {
+      "why": "The recording says: « comment une rumeur a enflammé une petite ville ». B isn’t mentioned; C: the petition was against the rumoured “permanent closure”, not against the works."
+     },
+     {
+      "why": "The recording says: « la piscine va bien fermer… mais seulement trois semaines, pour des travaux de rénovation ». A is the content of the rumour; C: the town hall answered very clearly."
+     },
+     {
+      "why": "« c’est sans doute le point essentiel, personne n’a pensé à poser la question directement à la mairie ». A is the second reason she lists, but not the key one; B is a consequence, not a cause."
+     },
+     null,
+     null,
+     {
+      "why": "« Il parlait de son propre contrat, qui s’achevait ce jour-là » — Personne n’a menti ; chacun a simplement complété ce qu’il ne savait pas: nobody lied; each filled in what they did not know."
+     },
+     null,
+     {
+      "why": "The recording says: « demandez-vous qui l’affirme… il est sage d’attendre avant de la diffuser ». A is too absolute — she says « je ne dis pas que l’information soit forcément fausse »; C isn’t mentioned."
+     }
+    ]
+   },
+   "L03-3": {
+    "questions": [
+     {
+      "why": "The recording says: « Le mot désigne la surcharge d’informations à laquelle nous sommes exposés ». A and B are misunderstandings arising from the word obésité."
+     },
+     {
+      "why": "The recording says: « nous retenons moins de choses qu’il y a vingt ans, alors que nous en lisons beaucoup plus ». A goes in the opposite direction; C contradicts “information overload”."
+     },
+     {
+      "why": "The recording says: « deux ou trois rendez-vous d’information par jour, plutôt qu’un flux permanent ». B contradicts « La solution n’est pas de tout couper »; C isn’t mentioned."
+     },
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« une lecture trop rapide d’un communiqué syndical » — rectificatif = a correction; under the station’s charter it is broadcast at the same hour and at the same length."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V03-01": {
+   "zh": "to be far from an isolated case",
+   "exZh": "This secondary-school student who never reads newspapers is far from an isolated case."
+  },
+  "V03-02": {
+   "zh": "(but) not … for all that",
+   "exZh": "He doesn’t read newspapers, but he isn’t badly informed for all that."
+  },
+  "V03-03": {
+   "zh": "fragmented information",
+   "exZh": "Very short videos encourage fragmented information."
+  },
+  "V03-04": {
+   "zh": "recommendation algorithms",
+   "exZh": "Recommendation algorithms push us content similar to what we already like."
+  },
+  "V03-05": {
+   "zh": "it is unrealistic to …",
+   "exZh": "It is unrealistic to think a single law can solve the problem."
+  },
+  "V03-06": {
+   "zh": "mixed results",
+   "exZh": "Six months on, the results of the trial are mixed."
+  },
+  "V03-07": {
+   "zh": "taken out of its original context",
+   "exZh": "Taken out of context, this photo made people think the disaster was recent."
+  },
+  "V03-08": {
+   "zh": "gullible, credulous",
+   "exZh": "Young people are not necessarily more gullible than their elders."
+  },
+  "V03-09": {
+   "zh": "the same old refrain, a cliché",
+   "exZh": "Every new school year brings the same old refrain: young people don’t read any more."
+  },
+  "V03-10": {
+   "zh": "to collapse, to plummet",
+   "exZh": "In ten years, print newspaper sales have collapsed."
+  },
+  "V03-11": {
+   "zh": "a way in to …",
+   "exZh": "A well-made video can be a way in to an in-depth investigation."
+  },
+  "V03-12": {
+   "zh": "the editor-in-chief",
+   "exZh": "The editor-in-chief decided to publish three videos every morning."
+  },
+  "V03-13": {
+   "zh": "to have an interest in …, it is in someone’s interest that …",
+   "exZh": "It is in all our interests that independent media survive."
+  },
+  "V03-14": {
+   "zh": "to take the discussion further",
+   "exZh": "The debate is over, but we invite you to take the discussion further on our website."
+  },
+  "V03-15": {
+   "zh": "a doctored (manipulated) image",
+   "exZh": "The students learnt to spot doctored images."
+  },
+  "V03-16": {
+   "zh": "to attract clicks",
+   "exZh": "This sensational headline is mainly designed to attract clicks."
+  },
+  "V03-17": {
+   "zh": "sensationalism",
+   "exZh": "The advertising model sometimes encourages sensationalist reporting."
+  },
+  "V03-18": {
+   "zh": "biased, one-sided",
+   "exZh": "This article is very one-sided: it only gives one side a voice."
+  },
+  "V03-19": {
+   "zh": "to launch a petition",
+   "exZh": "Worried parents launched a petition within hours."
+  },
+  "V03-20": {
+   "zh": "to get out of hand, to spiral",
+   "exZh": "Nobody expected things to spiral like that on social media."
+  },
+  "V03-21": {
+   "zh": "to set (a place) alight, to cause an uproar",
+   "exZh": "A simple rumour set the whole town alight."
+  },
+  "V03-22": {
+   "zh": "information overload",
+   "exZh": "To fight information overload, she turned off all her notifications."
+  },
+  "V03-23": {
+   "zh": "two-tier",
+   "exZh": "Paid subscriptions could create a two-tier access to information."
+  },
+  "V03-24": {
+   "zh": "advertising revenue",
+   "exZh": "Advertising revenue is no longer enough to pay for investigative reporting."
+  },
+  "V03-25": {
+   "zh": "to tell truth from falsehood",
+   "exZh": "When faced with a rumour, take the time to tell truth from falsehood."
+  }
+ },
+ "title": "Degrees of certainty in opinions",
+ "phase": "Upgrading structures and precise expression"
+}

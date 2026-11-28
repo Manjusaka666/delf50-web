@@ -1,1 +1,226 @@
-{"canDo":"Can propose a concrete education measure and clearly state the goal it aims at and the risks it should avoid, using pour que / afin que + subjunctive, de façon à / de manière à, en vue de, de peur que / de crainte de.","review":"Review day 2’s subjunctive (puisse, soit, ait after pour que / afin que) and day 7’s concessions: when proposing a measure, first acknowledge the objection (certes…, mais…), then state the measure’s purpose, to make the proposal more persuasive.","input":"Read: the informative article « Orientation : choisir sa voie à dix-sept ans », the opinion piece « À quoi sert encore le baccalauréat ? » and the three-voice forum « Le redoublement est-il utile ? » — questions first, then the text, finding the evidence for each answer; listen: « Orientation : faut-il choisir sa voie à quinze ans ? » and « Faire classe dehors, même quand il pleut » twice each, then three short recordings once each.","output":"Write: a 250+-word article for a language school’s magazine, proposing a concrete measure to improve learning and stating its purpose; speak: a 3-minute monologue (should schools abolish marks?) + a debate on shortening the summer holidays, stating the purpose (afin que…) and the risk to avoid (de peur que…) whenever you make a proposal.","checkpoint":"Reading and listening accuracy ≥80%; at least 4 different purpose expressions in the article, with the subjunctive after pour que / afin que and pour / afin de + infinitive when the subject is the same; a 3-minute monologue in which each measure is matched to its purpose.","challenge":"Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about schools, universities or vocational training, and write 1 sentence each with afin que, de façon à and de peur que proposing a measure for the problem in the story; then record a 1-minute voice message presenting your measure as if at a parents’ meeting.","items":{"reading":{"R08-1":{"questions":[null,null,null,{"why":"« qui ne sont publiés que dans leurs grandes lignes » — l’opacité = lack of transparency."},null,null,null,null,{"why":"« se tromper fait partie du chemin » — de peur que… ne + subjunctive = for fear that."}]},"R08-2":{"questions":[{"why":"« Il mérite qu’on tienne la promesse qu’il contient » — The author explicitly refuses abolition (Je n’irai pas jusque-là) and also refuses making the exam harder."},{"why":"« ils comparent 10 % d’une génération à 80 % » — oublier commodément = to conveniently forget (ironic)."},{"why":"« ils comparent 10 % d’une génération à 80 % » — From one in ten in 1960 to four in five today is about eight times: the answer needs a conversion."}]},"R08-3":{"questions":[null,null,null,null,null,null,{"why":"« Répéter n’est pas apprendre » — sans appel = beyond dispute."}]}},"listening":{"L08-1":{"questions":[{"why":"The whole interview discusses how to improve choices of studies and careers: exploring early, having a contact person, allowing mistakes, parents listening. Neither B nor C is mentioned."},{"why":"« beaucoup n’ont jamais mis les pieds dans une entreprise. Ils connaissent à peine une dizaine de métiers ». A isn’t mentioned; C is the opposite of what follows — parents actually tend to impose their own dreams on their children."},{"why":"« dès douze ou treize ans, les élèves rencontrent régulièrement des professionnels… Pas une fois par an lors d’un forum ». A is exactly what she considers insufficient; B isn’t something she proposes."},{"why":"« un référent chargé de construire un réseau avec les entreprises… un vrai levier pour les élèves dont les familles n’ont pas de relations professionnelles ». A and C aren’t in the recording."},{"why":"« des passerelles, pour qu’un élève qui s’est trompé de filière puisse changer de voie sans tout recommencer ». Neither B nor C matches the recording."},null,{"why":"« c’est d’écouter… l’aider à se projeter dans l’avenir sans lui imposer un chemin ». A is exactly the “projection” she warns against; B: she considers the family’s role « important »."}]},"L08-2":{"questions":[{"why":"« Au départ, c’était pour que les enfants bougent davantage ». A isn’t mentioned; C is the opposite — some parents had doubts at first."},{"why":"« Le but, c’est de susciter la curiosité : un enfant qui a touché l’écorce d’un chêne retient bien mieux… ». Neither A nor B is the purpose she states."},{"why":"« de peur que leurs enfants ne tombent malades. Mais en deux ans, nous n’avons pas eu plus d’absences qu’avant ». B: marks aren’t mentioned; C: the town hall only lent a shelter, and families provide the gear."},null,{"why":"« D’autres redoutaient, à juste titre, la question de la responsabilité » — à juste titre = rightly: she grants that this worry is legitimate, hence the protocol drawn up with the town hall."},null,null,{"why":"« Ils sont plus calmes, et plus solidaires aussi ». A and C contradict the recording or aren’t mentioned."}]},"L08-3":{"questions":[{"why":"« pour les élèves du CP à la troisième », i.e. from the first year of primary school to the last year of lower secondary. Neither B nor C fits."},{"why":"« Les groupes étant limités à quinze enfants, l’inscription est obligatoire ». A contradicts « gratuits »; C isn’t mentioned."},null,{"why":"« les personnes qui souhaitent devenir bénévoles sont, elles aussi, invitées à se faire connaître ». B: the deadline is 31 October, and 6 November is when the sessions start; A isn’t mentioned."},null,null,null,{"why":"« une réunion d’information obligatoire se tiendra le douze décembre » — Aucune condition d’âge ni de diplôme: no age or diploma requirement; the only obligation is the information meeting."}]}}},"vocab":{"V08-01":{"zh":"to make sure that … (+ subjunctive)","exZh":"The team makes sure that the tutors’ commitment stays reasonable."},"V08-02":{"zh":"for fear that …","exZh":"He didn’t dare raise his hand for fear that the others would laugh at him."},"V08-03":{"zh":"for fear of (oneself) …-ing","exZh":"Many young people don’t dare change courses for fear of wasting a year."},"V08-04":{"zh":"so as to … (same subject; the word façon)","exZh":"Each tutor works with the same pupil all year so as to build trust."},"V08-05":{"zh":"so that … (different subject; the word manière)","exZh":"Seats are limited to four hours so that everyone can use them."},"V08-06":{"zh":"with a view to, in preparation for …","exZh":"The library is extending its opening hours in preparation for the exams."},"V08-07":{"zh":"with the aim of …","exZh":"The project aims to turn mutual help into a real skill."},"V08-08":{"zh":"dropping out (of school)","exZh":"The tutoring scheme was set up to tackle dropping out."},"V08-09":{"zh":"peer tutoring","exZh":"Peer tutoring benefits tutors and tutees alike."},"V08-10":{"zh":"to catch up","exZh":"Thanks to the Tuesday sessions, Léo quickly caught up in maths."},"V08-11":{"zh":"to gain self-confidence","exZh":"By helping younger pupils, the tutors gained self-confidence."},"V08-12":{"zh":"to feel valued","exZh":"For the first time, these pupils feel valued at school."},"V08-13":{"zh":"to bring out the best in someone","exZh":"A good teacher knows how to bring out the best in their pupils."},"V08-14":{"zh":"to be left to one’s own devices","exZh":"In the evening, many children are left to their own devices with their homework."},"V08-15":{"zh":"to go without saying","exZh":"For many parents, the usefulness of homework goes without saying."},"V08-16":{"zh":"to fill one’s gaps","exZh":"The evening classes helped her fill the gaps in her grammar."},"V08-17":{"zh":"a vicious circle","exZh":"Discouragement, falling behind, more discouragement: it’s a vicious circle."},"V08-18":{"zh":"to live up to expectations","exZh":"If the results live up to expectations, the trial will be extended."},"V08-19":{"zh":"to choose one’s path","exZh":"At fifteen, it is hard to choose your path."},"V08-20":{"zh":"to broaden one’s horizons","exZh":"A placement abroad broadens your horizons."},"V08-21":{"zh":"to put the emphasis on …","exZh":"The reform puts the emphasis on discovering careers."},"V08-22":{"zh":"to picture one’s future","exZh":"Work placements help teenagers picture their future."},"V08-23":{"zh":"to teach outdoors","exZh":"Every Friday, the primary teacher teaches outdoors, even in the rain."},"V08-24":{"zh":"to spark curiosity","exZh":"Watching insects sparks the children’s curiosity."},"V08-25":{"zh":"to be reluctant","exZh":"At first, some parents were reluctant to let their children go out in the rain."}},"title":"Purposes and measures","phase":"Upgrading structures and precise expression"}
+{
+ "canDo": "Can propose a concrete education measure and clearly state the goal it aims at and the risks it should avoid, using pour que / afin que + subjunctive, de façon à / de manière à, en vue de, de peur que / de crainte de.",
+ "review": "Review day 2’s subjunctive (puisse, soit, ait after pour que / afin que) and day 7’s concessions: when proposing a measure, first acknowledge the objection (certes…, mais…), then state the measure’s purpose, to make the proposal more persuasive.",
+ "input": "Read: the informative article « Orientation : choisir sa voie à dix-sept ans », the opinion piece « À quoi sert encore le baccalauréat ? » and the three-voice forum « Le redoublement est-il utile ? » — questions first, then the text, finding the evidence for each answer; listen: « Orientation : faut-il choisir sa voie à quinze ans ? » and « Faire classe dehors, même quand il pleut » twice each, then three short recordings once each.",
+ "output": "Write: a 250+-word article for a language school’s magazine, proposing a concrete measure to improve learning and stating its purpose; speak: a 3-minute monologue (should schools abolish marks?) + a debate on shortening the summer holidays, stating the purpose (afin que…) and the risk to avoid (de peur que…) whenever you make a proposal.",
+ "checkpoint": "Reading and listening accuracy ≥80%; at least 4 different purpose expressions in the article, with the subjunctive after pour que / afin que and pour / afin de + infinitive when the subject is the same; a 3-minute monologue in which each measure is matched to its purpose.",
+ "challenge": "Today’s challenge: find a news item on TV5MONDE or RFI’s « Journal en français facile » about schools, universities or vocational training, and write 1 sentence each with afin que, de façon à and de peur que proposing a measure for the problem in the story; then record a 1-minute voice message presenting your measure as if at a parents’ meeting.",
+ "items": {
+  "reading": {
+   "R08-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "« qui ne sont publiés que dans leurs grandes lignes » — l’opacité = lack of transparency."
+     },
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« se tromper fait partie du chemin » — de peur que… ne + subjunctive = for fear that."
+     }
+    ]
+   },
+   "R08-2": {
+    "questions": [
+     {
+      "why": "« Il mérite qu’on tienne la promesse qu’il contient » — The author explicitly refuses abolition (Je n’irai pas jusque-là) and also refuses making the exam harder."
+     },
+     {
+      "why": "« ils comparent 10 % d’une génération à 80 % » — oublier commodément = to conveniently forget (ironic)."
+     },
+     {
+      "why": "« ils comparent 10 % d’une génération à 80 % » — From one in ten in 1960 to four in five today is about eight times: the answer needs a conversion."
+     }
+    ]
+   },
+   "R08-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Répéter n’est pas apprendre » — sans appel = beyond dispute."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L08-1": {
+    "questions": [
+     {
+      "why": "The whole interview discusses how to improve choices of studies and careers: exploring early, having a contact person, allowing mistakes, parents listening. Neither B nor C is mentioned."
+     },
+     {
+      "why": "« beaucoup n’ont jamais mis les pieds dans une entreprise. Ils connaissent à peine une dizaine de métiers ». A isn’t mentioned; C is the opposite of what follows — parents actually tend to impose their own dreams on their children."
+     },
+     {
+      "why": "« dès douze ou treize ans, les élèves rencontrent régulièrement des professionnels… Pas une fois par an lors d’un forum ». A is exactly what she considers insufficient; B isn’t something she proposes."
+     },
+     {
+      "why": "« un référent chargé de construire un réseau avec les entreprises… un vrai levier pour les élèves dont les familles n’ont pas de relations professionnelles ». A and C aren’t in the recording."
+     },
+     {
+      "why": "« des passerelles, pour qu’un élève qui s’est trompé de filière puisse changer de voie sans tout recommencer ». Neither B nor C matches the recording."
+     },
+     null,
+     {
+      "why": "« c’est d’écouter… l’aider à se projeter dans l’avenir sans lui imposer un chemin ». A is exactly the “projection” she warns against; B: she considers the family’s role « important »."
+     }
+    ]
+   },
+   "L08-2": {
+    "questions": [
+     {
+      "why": "« Au départ, c’était pour que les enfants bougent davantage ». A isn’t mentioned; C is the opposite — some parents had doubts at first."
+     },
+     {
+      "why": "« Le but, c’est de susciter la curiosité : un enfant qui a touché l’écorce d’un chêne retient bien mieux… ». Neither A nor B is the purpose she states."
+     },
+     {
+      "why": "« de peur que leurs enfants ne tombent malades. Mais en deux ans, nous n’avons pas eu plus d’absences qu’avant ». B: marks aren’t mentioned; C: the town hall only lent a shelter, and families provide the gear."
+     },
+     null,
+     {
+      "why": "« D’autres redoutaient, à juste titre, la question de la responsabilité » — à juste titre = rightly: she grants that this worry is legitimate, hence the protocol drawn up with the town hall."
+     },
+     null,
+     null,
+     {
+      "why": "« Ils sont plus calmes, et plus solidaires aussi ». A and C contradict the recording or aren’t mentioned."
+     }
+    ]
+   },
+   "L08-3": {
+    "questions": [
+     {
+      "why": "« pour les élèves du CP à la troisième », i.e. from the first year of primary school to the last year of lower secondary. Neither B nor C fits."
+     },
+     {
+      "why": "« Les groupes étant limités à quinze enfants, l’inscription est obligatoire ». A contradicts « gratuits »; C isn’t mentioned."
+     },
+     null,
+     {
+      "why": "« les personnes qui souhaitent devenir bénévoles sont, elles aussi, invitées à se faire connaître ». B: the deadline is 31 October, and 6 November is when the sessions start; A isn’t mentioned."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« une réunion d’information obligatoire se tiendra le douze décembre » — Aucune condition d’âge ni de diplôme: no age or diploma requirement; the only obligation is the information meeting."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V08-01": {
+   "zh": "to make sure that … (+ subjunctive)",
+   "exZh": "The team makes sure that the tutors’ commitment stays reasonable."
+  },
+  "V08-02": {
+   "zh": "for fear that …",
+   "exZh": "He didn’t dare raise his hand for fear that the others would laugh at him."
+  },
+  "V08-03": {
+   "zh": "for fear of (oneself) …-ing",
+   "exZh": "Many young people don’t dare change courses for fear of wasting a year."
+  },
+  "V08-04": {
+   "zh": "so as to … (same subject; the word façon)",
+   "exZh": "Each tutor works with the same pupil all year so as to build trust."
+  },
+  "V08-05": {
+   "zh": "so that … (different subject; the word manière)",
+   "exZh": "Seats are limited to four hours so that everyone can use them."
+  },
+  "V08-06": {
+   "zh": "with a view to, in preparation for …",
+   "exZh": "The library is extending its opening hours in preparation for the exams."
+  },
+  "V08-07": {
+   "zh": "with the aim of …",
+   "exZh": "The project aims to turn mutual help into a real skill."
+  },
+  "V08-08": {
+   "zh": "dropping out (of school)",
+   "exZh": "The tutoring scheme was set up to tackle dropping out."
+  },
+  "V08-09": {
+   "zh": "peer tutoring",
+   "exZh": "Peer tutoring benefits tutors and tutees alike."
+  },
+  "V08-10": {
+   "zh": "to catch up",
+   "exZh": "Thanks to the Tuesday sessions, Léo quickly caught up in maths."
+  },
+  "V08-11": {
+   "zh": "to gain self-confidence",
+   "exZh": "By helping younger pupils, the tutors gained self-confidence."
+  },
+  "V08-12": {
+   "zh": "to feel valued",
+   "exZh": "For the first time, these pupils feel valued at school."
+  },
+  "V08-13": {
+   "zh": "to bring out the best in someone",
+   "exZh": "A good teacher knows how to bring out the best in their pupils."
+  },
+  "V08-14": {
+   "zh": "to be left to one’s own devices",
+   "exZh": "In the evening, many children are left to their own devices with their homework."
+  },
+  "V08-15": {
+   "zh": "to go without saying",
+   "exZh": "For many parents, the usefulness of homework goes without saying."
+  },
+  "V08-16": {
+   "zh": "to fill one’s gaps",
+   "exZh": "The evening classes helped her fill the gaps in her grammar."
+  },
+  "V08-17": {
+   "zh": "a vicious circle",
+   "exZh": "Discouragement, falling behind, more discouragement: it’s a vicious circle."
+  },
+  "V08-18": {
+   "zh": "to live up to expectations",
+   "exZh": "If the results live up to expectations, the trial will be extended."
+  },
+  "V08-19": {
+   "zh": "to choose one’s path",
+   "exZh": "At fifteen, it is hard to choose your path."
+  },
+  "V08-20": {
+   "zh": "to broaden one’s horizons",
+   "exZh": "A placement abroad broadens your horizons."
+  },
+  "V08-21": {
+   "zh": "to put the emphasis on …",
+   "exZh": "The reform puts the emphasis on discovering careers."
+  },
+  "V08-22": {
+   "zh": "to picture one’s future",
+   "exZh": "Work placements help teenagers picture their future."
+  },
+  "V08-23": {
+   "zh": "to teach outdoors",
+   "exZh": "Every Friday, the primary teacher teaches outdoors, even in the rain."
+  },
+  "V08-24": {
+   "zh": "to spark curiosity",
+   "exZh": "Watching insects sparks the children’s curiosity."
+  },
+  "V08-25": {
+   "zh": "to be reluctant",
+   "exZh": "At first, some parents were reluctant to let their children go out in the rain."
+  }
+ },
+ "title": "Purposes and measures",
+ "phase": "Upgrading structures and precise expression"
+}

@@ -1,1 +1,201 @@
-{"canDo":"Can complete a timed mini B2 mock exam: listening 30 minutes, reading 60 minutes, writing 60 minutes, speaking 30 minutes’ preparation + 20 minutes’ performance, staying within time on each part while keeping your language accurate.","review":"Review day 2’s subjunctive (vouloir que, regretter que, douter que, il faut que, craindre que… ne) and day 6’s expressions of result (si bien que, de sorte que, au point que, tellement… que, d’où), drawing on the listening/reading strategies and writing/speaking frameworks from days 29–38.","input":"Read: the informative article « Bénévolat : les Français donnent moins de temps, mais autrement », the opinion piece « L’ennui est-il notre ennemi ? » and the three-voice forum « Faut-il limiter le nombre de touristes dans les musées ? » — questions first, then the text, finding the evidence for each answer; listen: « Le bénévolat change de visage » and « Villes : comment lutter contre les îlots de chaleur ? » twice each, then three short recordings once each.","output":"Write (60 minutes): a forum post giving your view on “should employees be allowed to bring their dogs to work?” (≥250 words); speak (30 minutes’ preparation): a 6-minute monologue on a document about “street advertising”, then a 5-minute debate with the examiner on “a law banning screens for children under three”.","checkpoint":"Combined listening + reading accuracy ≥75% (i.e. ≥37 out of 50); essay finished within 60 minutes, ≥250 words, with 5 minutes left for checking; monologue at least 5 minutes; no part overruns. Record the time spent and the points lost on each part for the day 40 review.","challenge":"Today’s challenge: pick any society news item on RFI’s « Journal en français facile » and give yourself 10 minutes: listen once, write down 3 key points, then write one comment of your own with « si bien que » and one with « il faut que »; keep it with today’s mock-exam timesheet.","items":{"reading":{"R39-1":{"questions":[null,null,null,null,null,{"why":"« les postes de président et de trésorier ne trouvent plus preneurs » — une tâche ingrate = a thankless task."}]},"R39-2":{"questions":[null,null,null,null,null,null,null,{"why":"« celui-là ne rend pas créatif, il détruit » — fécond = fruitful."}]}},"listening":{"L39-1":{"questions":[{"why":"« le bénévolat ne disparaît pas, il change de visage »: the whole interview is about how people take part differently. A isn’t mentioned; C: grant applications are only mentioned in passing."},{"why":"« Le nombre de bénévoles reste à peu près stable ». B is the popular belief mentioned at the start, which he corrects; C has no basis."},{"why":"« des emplois du temps plus morcelés, ils déménagent plus souvent, si bien qu’il leur est difficile de promettre une présence régulière ». Neither A nor B has any basis."},{"why":"« certaines petites associations ont dû fermer, faute de président. Je crains que ce phénomène ne s’accentue ». B: he sees it as an opportunity; C isn’t mentioned."},{"why":"« c’est aussi une porte d’entrée : un jeune qui vient aider une fois peut revenir, et peut-être prendre des responsabilités plus tard ». A is the opposite of his view; C isn’t mentioned."},null,{"why":"« un service commun qui s’occupe de la comptabilité de vingt associations, de sorte que leurs bénévoles peuvent se consacrer à l’essentiel ». Neither A nor B is what the service does."}]},"L39-2":{"questions":[{"why":"« absorbent la chaleur pendant la journée et la restituent la nuit, si bien que la ville ne se refroidit presque plus ». B gets the direction backwards; C has nothing to do with the concept."},{"why":"« ce sont souvent les quartiers les plus denses et les plus pauvres qui souffrent le plus ». A is the opposite; C isn’t mentioned."},{"why":"« remplacer le bitume des cours d’école par de la terre et de la végétation ». Neither A nor B is mentioned."},{"why":"« parce qu’un arbre met vingt ans à donner de l’ombre ». Neither B nor C has any basis."},null,null,{"why":"« je souhaite seulement qu’elle ne devienne pas la réponse unique » — Verbs of will + subjunctive: il faut que nous comprenions, je ne demande pas qu’on l’interdise, je souhaite qu’elle ne devienne pas, j’aimerais que… s’en inspirent."}]},"L39-3":{"questions":[{"why":"« a voté hier soir la création d’une prime à la réparation des vélos », covering half the repair cost. A isn’t mentioned; C is what the opposition wanted the money for, not what was decided."},null,{"why":"« près d’un vélo sur trois reste au garage faute d’entretien, si bien que de nombreux habitants reprennent leur voiture ». B: there are twelve partner repair shops; C isn’t mentioned."},{"why":"« elle aurait préféré que cet argent serve à sécuriser les pistes cyclables » (aurait préféré que + subjunctive). Neither A nor B is mentioned."}]}}},"vocab":{"V39-01":{"zh":"the adjustment variable, the first thing to be sacrificed","exZh":"When time runs short, sleep is often the first thing to be sacrificed."},"V39-02":{"zh":"to be singled out as the culprit","exZh":"Screens are singled out as the culprit for lack of sleep."},"V39-03":{"zh":"an image problem","exZh":"Napping still has an image problem in the workplace."},"V39-04":{"zh":"in depth, fundamentally","exZh":"A simple awareness campaign isn’t enough to change habits fundamentally."},"V39-05":{"zh":"irregular working hours (nights, shifts, etc.)","exZh":"Irregular working hours disrupt the sleep of many healthcare workers."},"V39-06":{"zh":"to hardly dare","exZh":"The habit is so ingrained that people hardly dare criticise it."},"V39-07":{"zh":"it is time that … (+ subjunctive)","exZh":"It’s time schools took children’s tiredness into account."},"V39-08":{"zh":"to take someone for an incompetent","exZh":"I was afraid these DIY experts would take me for someone who can’t do anything."},"V39-09":{"zh":"(an object) to sit unused in a cupboard","exZh":"My old sewing machine has been sitting unused in a cupboard for years."},"V39-10":{"zh":"to be designed in such a way that …","exZh":"These phones are designed in such a way that the battery can’t be replaced."},"V39-11":{"zh":"to change its face, to take on a new form","exZh":"With short-term assignments, volunteering is changing its face."},"V39-12":{"zh":"long-term commitment","exZh":"The association is looking for volunteers willing to commit for the long term."},"V39-13":{"zh":"a fragmented schedule","exZh":"With a fragmented schedule, it’s hard to promise to be there every week."},"V39-14":{"zh":"(something) to appeal to someone, to resonate","exZh":"A concrete project like renovating a school appeals to them more than meetings."},"V39-15":{"zh":"to keep the accounts","exZh":"Every association needs someone willing to keep the accounts."},"V39-16":{"zh":"to lighten the administrative burden","exZh":"To attract people to lead associations, the administrative burden must be lightened."},"V39-17":{"zh":"to focus on what matters most","exZh":"Freed from bookkeeping, the volunteers can focus on what matters most."},"V39-18":{"zh":"to fear that … (+ subjunctive, can take expletive ne)","exZh":"I fear this phenomenon will grow in the coming years."},"V39-19":{"zh":"to give shade","exZh":"A young tree takes years to give shade."},"V39-20":{"zh":"to find something hard to bear","exZh":"Elderly people find heatwave nights hard to bear."},"V39-21":{"zh":"to get someone back in the saddle (literally and figuratively)","exZh":"The grant aims to get occasional cyclists back in the saddle."},"V39-22":{"zh":"street furniture (benches, bus shelters, streetlights, etc.)","exZh":"Advertising pays for the upkeep of street furniture."},"V39-23":{"zh":"to come out on top, to be the winner","exZh":"Only the big chains will come out on top."},"V39-24":{"zh":"an advertising medium (billboards, screens, etc.)","exZh":"Every bus shelter is also an advertising medium."},"V39-25":{"zh":"all it takes is … for … (both clauses + subjunctive)","exZh":"All it takes is one colleague with an allergy for everything to get complicated."}},"phase":"DELF B2 task training"}
+{
+ "canDo": "Can complete a timed mini B2 mock exam: listening 30 minutes, reading 60 minutes, writing 60 minutes, speaking 30 minutes’ preparation + 20 minutes’ performance, staying within time on each part while keeping your language accurate.",
+ "review": "Review day 2’s subjunctive (vouloir que, regretter que, douter que, il faut que, craindre que… ne) and day 6’s expressions of result (si bien que, de sorte que, au point que, tellement… que, d’où), drawing on the listening/reading strategies and writing/speaking frameworks from days 29–38.",
+ "input": "Read: the informative article « Bénévolat : les Français donnent moins de temps, mais autrement », the opinion piece « L’ennui est-il notre ennemi ? » and the three-voice forum « Faut-il limiter le nombre de touristes dans les musées ? » — questions first, then the text, finding the evidence for each answer; listen: « Le bénévolat change de visage » and « Villes : comment lutter contre les îlots de chaleur ? » twice each, then three short recordings once each.",
+ "output": "Write (60 minutes): a forum post giving your view on “should employees be allowed to bring their dogs to work?” (≥250 words); speak (30 minutes’ preparation): a 6-minute monologue on a document about “street advertising”, then a 5-minute debate with the examiner on “a law banning screens for children under three”.",
+ "checkpoint": "Combined listening + reading accuracy ≥75% (i.e. ≥37 out of 50); essay finished within 60 minutes, ≥250 words, with 5 minutes left for checking; monologue at least 5 minutes; no part overruns. Record the time spent and the points lost on each part for the day 40 review.",
+ "challenge": "Today’s challenge: pick any society news item on RFI’s « Journal en français facile » and give yourself 10 minutes: listen once, write down 3 key points, then write one comment of your own with « si bien que » and one with « il faut que »; keep it with today’s mock-exam timesheet.",
+ "items": {
+  "reading": {
+   "R39-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« les postes de président et de trésorier ne trouvent plus preneurs » — une tâche ingrate = a thankless task."
+     }
+    ]
+   },
+   "R39-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« celui-là ne rend pas créatif, il détruit » — fécond = fruitful."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L39-1": {
+    "questions": [
+     {
+      "why": "« le bénévolat ne disparaît pas, il change de visage »: the whole interview is about how people take part differently. A isn’t mentioned; C: grant applications are only mentioned in passing."
+     },
+     {
+      "why": "« Le nombre de bénévoles reste à peu près stable ». B is the popular belief mentioned at the start, which he corrects; C has no basis."
+     },
+     {
+      "why": "« des emplois du temps plus morcelés, ils déménagent plus souvent, si bien qu’il leur est difficile de promettre une présence régulière ». Neither A nor B has any basis."
+     },
+     {
+      "why": "« certaines petites associations ont dû fermer, faute de président. Je crains que ce phénomène ne s’accentue ». B: he sees it as an opportunity; C isn’t mentioned."
+     },
+     {
+      "why": "« c’est aussi une porte d’entrée : un jeune qui vient aider une fois peut revenir, et peut-être prendre des responsabilités plus tard ». A is the opposite of his view; C isn’t mentioned."
+     },
+     null,
+     {
+      "why": "« un service commun qui s’occupe de la comptabilité de vingt associations, de sorte que leurs bénévoles peuvent se consacrer à l’essentiel ». Neither A nor B is what the service does."
+     }
+    ]
+   },
+   "L39-2": {
+    "questions": [
+     {
+      "why": "« absorbent la chaleur pendant la journée et la restituent la nuit, si bien que la ville ne se refroidit presque plus ». B gets the direction backwards; C has nothing to do with the concept."
+     },
+     {
+      "why": "« ce sont souvent les quartiers les plus denses et les plus pauvres qui souffrent le plus ». A is the opposite; C isn’t mentioned."
+     },
+     {
+      "why": "« remplacer le bitume des cours d’école par de la terre et de la végétation ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "« parce qu’un arbre met vingt ans à donner de l’ombre ». Neither B nor C has any basis."
+     },
+     null,
+     null,
+     {
+      "why": "« je souhaite seulement qu’elle ne devienne pas la réponse unique » — Verbs of will + subjunctive: il faut que nous comprenions, je ne demande pas qu’on l’interdise, je souhaite qu’elle ne devienne pas, j’aimerais que… s’en inspirent."
+     }
+    ]
+   },
+   "L39-3": {
+    "questions": [
+     {
+      "why": "« a voté hier soir la création d’une prime à la réparation des vélos », covering half the repair cost. A isn’t mentioned; C is what the opposition wanted the money for, not what was decided."
+     },
+     null,
+     {
+      "why": "« près d’un vélo sur trois reste au garage faute d’entretien, si bien que de nombreux habitants reprennent leur voiture ». B: there are twelve partner repair shops; C isn’t mentioned."
+     },
+     {
+      "why": "« elle aurait préféré que cet argent serve à sécuriser les pistes cyclables » (aurait préféré que + subjunctive). Neither A nor B is mentioned."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V39-01": {
+   "zh": "the adjustment variable, the first thing to be sacrificed",
+   "exZh": "When time runs short, sleep is often the first thing to be sacrificed."
+  },
+  "V39-02": {
+   "zh": "to be singled out as the culprit",
+   "exZh": "Screens are singled out as the culprit for lack of sleep."
+  },
+  "V39-03": {
+   "zh": "an image problem",
+   "exZh": "Napping still has an image problem in the workplace."
+  },
+  "V39-04": {
+   "zh": "in depth, fundamentally",
+   "exZh": "A simple awareness campaign isn’t enough to change habits fundamentally."
+  },
+  "V39-05": {
+   "zh": "irregular working hours (nights, shifts, etc.)",
+   "exZh": "Irregular working hours disrupt the sleep of many healthcare workers."
+  },
+  "V39-06": {
+   "zh": "to hardly dare",
+   "exZh": "The habit is so ingrained that people hardly dare criticise it."
+  },
+  "V39-07": {
+   "zh": "it is time that … (+ subjunctive)",
+   "exZh": "It’s time schools took children’s tiredness into account."
+  },
+  "V39-08": {
+   "zh": "to take someone for an incompetent",
+   "exZh": "I was afraid these DIY experts would take me for someone who can’t do anything."
+  },
+  "V39-09": {
+   "zh": "(an object) to sit unused in a cupboard",
+   "exZh": "My old sewing machine has been sitting unused in a cupboard for years."
+  },
+  "V39-10": {
+   "zh": "to be designed in such a way that …",
+   "exZh": "These phones are designed in such a way that the battery can’t be replaced."
+  },
+  "V39-11": {
+   "zh": "to change its face, to take on a new form",
+   "exZh": "With short-term assignments, volunteering is changing its face."
+  },
+  "V39-12": {
+   "zh": "long-term commitment",
+   "exZh": "The association is looking for volunteers willing to commit for the long term."
+  },
+  "V39-13": {
+   "zh": "a fragmented schedule",
+   "exZh": "With a fragmented schedule, it’s hard to promise to be there every week."
+  },
+  "V39-14": {
+   "zh": "(something) to appeal to someone, to resonate",
+   "exZh": "A concrete project like renovating a school appeals to them more than meetings."
+  },
+  "V39-15": {
+   "zh": "to keep the accounts",
+   "exZh": "Every association needs someone willing to keep the accounts."
+  },
+  "V39-16": {
+   "zh": "to lighten the administrative burden",
+   "exZh": "To attract people to lead associations, the administrative burden must be lightened."
+  },
+  "V39-17": {
+   "zh": "to focus on what matters most",
+   "exZh": "Freed from bookkeeping, the volunteers can focus on what matters most."
+  },
+  "V39-18": {
+   "zh": "to fear that … (+ subjunctive, can take expletive ne)",
+   "exZh": "I fear this phenomenon will grow in the coming years."
+  },
+  "V39-19": {
+   "zh": "to give shade",
+   "exZh": "A young tree takes years to give shade."
+  },
+  "V39-20": {
+   "zh": "to find something hard to bear",
+   "exZh": "Elderly people find heatwave nights hard to bear."
+  },
+  "V39-21": {
+   "zh": "to get someone back in the saddle (literally and figuratively)",
+   "exZh": "The grant aims to get occasional cyclists back in the saddle."
+  },
+  "V39-22": {
+   "zh": "street furniture (benches, bus shelters, streetlights, etc.)",
+   "exZh": "Advertising pays for the upkeep of street furniture."
+  },
+  "V39-23": {
+   "zh": "to come out on top, to be the winner",
+   "exZh": "Only the big chains will come out on top."
+  },
+  "V39-24": {
+   "zh": "an advertising medium (billboards, screens, etc.)",
+   "exZh": "Every bus shelter is also an advertising medium."
+  },
+  "V39-25": {
+   "zh": "all it takes is … for … (both clauses + subjunctive)",
+   "exZh": "All it takes is one colleague with an allergy for everything to get complicated."
+  }
+ },
+ "phase": "DELF B2 task training"
+}

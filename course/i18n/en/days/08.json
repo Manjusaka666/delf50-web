@@ -1,1 +1,289 @@
-{"canDo":"Can organise a short story as “background → sudden event → outcome”.","review":"Review D5–D7; focus on deciding by what the tense does, not just by time adverbs.","input":"Listen: three recordings, « Tu ne devineras jamais ce qui m’est arrivé », « Pompier volontaire : une nuit pas comme les autres » and « Panne géante dans le centre-ville », twice each; read: the comparison grid « Dégât des eaux : trouver un plombier » and the articles « Panne géante dans le métro : deux heures dans le noir » and « Objets perdus : ce qu’ils disent de nous », questions first, then the text.","output":"Write 160 words about a small incident; speak for 2 minutes with at least 3 background + event pairs.","checkpoint":"Can explain the reasons for 5 tense choices; both tenses appear in the story with sensible functions.","challenge":"Today’s challenge: in RFI’s Journal en français facile, find a news item about an accident or mishap and retell it in 3 sentences (imparfait for the background, passé composé for the sudden event and the outcome); then use the same structure to write about a small mishap of your own.","items":{"reading":{"R08-1":{"questions":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"why":"« vous connaissez le prix dès votre appel » — SOS Plomberie 24 only gives a price on site, which is exactly what you want to avoid."}]},"R08-2":{"questions":[null,null,null,null,null,null,null,null,{"why":"« ce n’est pas un chèque, c’est un réseau entretenu » — dérisoire = paltry; but she stresses that money is not the point."}]},"R08-3":{"questions":[null,null,null,null,null,null,{"why":"« sont vendus aux enchères, et l’argent revient à l’État » — What goes to charities is clothes and glasses."}]}},"listening":{"L08-1":{"questions":[null,null,null,null,null,{"why":"« Le réparateur était bloqué dans les embouteillages » — The imparfait (était bloqué) gives the background cause; the passé composé (est enfin arrivé) tells the event."}]},"L08-2":{"questions":[null,null,null,null,null,null,{"why":"« C’est après, quand je suis rentré chez moi à huit heures, que j’ai commencé à trembler » — C’est… que stresses the moment: the fear came afterwards, not at the time (Sur le moment, non)."}]},"L08-3":{"questions":[null,null,null,null,null,null,null,null,{"why":"« pourront être indemnisés » — indemniser = to compensate; they must file a claim (déposer un dossier) by the end of the month."}]}}},"vocab":{"V08-01":{"zh":"to be in the middle of … -ing","exZh":"I was in the middle of cooking when the power went off."},"V08-02":{"zh":"suddenly, all of a sudden","exZh":"All of a sudden, the lift stopped between two floors."},"V08-03":{"zh":"just as …, at the moment when …","exZh":"Just as I was going out, the storm started."},"V08-04":{"zh":"while …","exZh":"While the technician was working, Mme Roux was waiting on a chair."},"V08-05":{"zh":"what was happening","exZh":"Nobody understood what was happening."},"V08-06":{"zh":"at first","exZh":"At first, the airline talked about a one-hour delay."},"V08-07":{"zh":"What surprised me most was that …","exZh":"What surprised me most was that nobody knew anything."},"V08-08":{"zh":"to ask someone to …","exZh":"The driver asked us to get off."},"V08-09":{"zh":"to try to …","exZh":"I tried to take the metro."},"V08-10":{"zh":"to be blocked","exZh":"There had been an accident and the street was blocked."},"V08-11":{"zh":"so, as a result (informal)","exZh":"The station was closed. So I’m walking."},"V08-12":{"zh":"I’m writing to tell you about …","exZh":"I’m writing to tell you about my misadventure on Tuesday."},"V08-13":{"zh":"it’s a good thing that …","exZh":"It’s a good thing the driver stopped straight away!"},"V08-14":{"zh":"luckily, by chance","exZh":"Luckily, there was a taxi outside the station."},"V08-15":{"zh":"everything turned out fine","exZh":"We had a fright, but everything turned out fine."},"V08-16":{"zh":"It could have been worse.","exZh":"I missed my class, but it could have been worse."},"V08-17":{"zh":"following …, as a result of …","exZh":"Following roadworks, the tram stop has been moved."},"V08-18":{"zh":"to work normally","exZh":"Only the day before, the lift was working normally."},"V08-19":{"zh":"the emergency number","exZh":"I called the emergency number displayed in the hall."},"V08-20":{"zh":"to keep … up to date","exZh":"Residents are asking for the list of vulnerable people to be kept up to date with the town hall."},"V08-21":{"zh":"to brake sharply","exZh":"A cyclist braked sharply."},"V08-22":{"zh":"not to be injured","exZh":"She fell, but she wasn’t injured."},"V08-23":{"zh":"to be afraid, to get a fright","exZh":"I got a real fright when the van pulled out."},"V08-24":{"zh":"to call the emergency services","exZh":"A passer-by called the emergency services."},"V08-25":{"zh":"to leave something (behind) in …","exZh":"I left a bag on the tram last night."},"V08-26":{"zh":"a power cut","exZh":"A power cut hit four streets on Wednesday evening."},"V08-27":{"zh":"the power comes back","exZh":"The power came back at 22:40."},"V08-28":{"zh":"to be on time","exZh":"At check-in, the plane was on time."},"V08-29":{"zh":"not to know what to say","exZh":"The staff didn’t know what to tell us."},"V08-30":{"zh":"to claim compensation","exZh":"I claimed compensation from the airline."},"V08-31":{"zh":"to report to the police, to press charges","exZh":"My wallet was stolen, so I reported it to the police."},"V08-32":{"zh":"the road is slippery","exZh":"It had been raining since dawn and the road was slippery."},"V08-33":{"zh":"to wear a helmet","exZh":"Luckily, the cyclist was wearing a helmet."},"V08-34":{"zh":"to stop immediately","exZh":"The driver stopped immediately."},"V08-35":{"zh":"to report that …","exZh":"Local residents report that this exit is dangerous."},"V08-36":{"zh":"the nearest station","exZh":"The nearest station was closed."},"V08-37":{"zh":"See you later!","exZh":"Thanks, Karim, see you later!"},"V08-38":{"zh":"to disrupt transport","exZh":"The snow seriously disrupted transport this morning."},"V08-39":{"zh":"traffic resumes","exZh":"Traffic resumed at around 6."},"V08-40":{"zh":"to park one’s car","exZh":"Luckily, I had parked the car in the street that morning."},"V08-41":{"zh":"to notify the insurer","exZh":"Have you notified your insurer?"},"V08-42":{"zh":"It was more of a scare than anything.","exZh":"The cyclist fell, but it was more of a scare than anything."},"V08-43":{"zh":"to be stuck","exZh":"Two people were stuck in the lift."},"V08-44":{"zh":"to have something stolen","exZh":"I had my phone stolen on the metro."},"V08-45":{"zh":"to witness …","exZh":"I witnessed an accident this morning."}},"title":"The core of narrative: two past tenses","phase":"Foundations and grammar on autopilot"}
+{
+ "canDo": "Can organise a short story as “background → sudden event → outcome”.",
+ "review": "Review D5–D7; focus on deciding by what the tense does, not just by time adverbs.",
+ "input": "Listen: three recordings, « Tu ne devineras jamais ce qui m’est arrivé », « Pompier volontaire : une nuit pas comme les autres » and « Panne géante dans le centre-ville », twice each; read: the comparison grid « Dégât des eaux : trouver un plombier » and the articles « Panne géante dans le métro : deux heures dans le noir » and « Objets perdus : ce qu’ils disent de nous », questions first, then the text.",
+ "output": "Write 160 words about a small incident; speak for 2 minutes with at least 3 background + event pairs.",
+ "checkpoint": "Can explain the reasons for 5 tense choices; both tenses appear in the story with sensible functions.",
+ "challenge": "Today’s challenge: in RFI’s Journal en français facile, find a news item about an accident or mishap and retell it in 3 sentences (imparfait for the background, passé composé for the sudden event and the outcome); then use the same structure to write about a small mishap of your own.",
+ "items": {
+  "reading": {
+   "R08-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« vous connaissez le prix dès votre appel » — SOS Plomberie 24 only gives a price on site, which is exactly what you want to avoid."
+     }
+    ]
+   },
+   "R08-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« ce n’est pas un chèque, c’est un réseau entretenu » — dérisoire = paltry; but she stresses that money is not the point."
+     }
+    ]
+   },
+   "R08-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« sont vendus aux enchères, et l’argent revient à l’État » — What goes to charities is clothes and glasses."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L08-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Le réparateur était bloqué dans les embouteillages » — The imparfait (était bloqué) gives the background cause; the passé composé (est enfin arrivé) tells the event."
+     }
+    ]
+   },
+   "L08-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« C’est après, quand je suis rentré chez moi à huit heures, que j’ai commencé à trembler » — C’est… que stresses the moment: the fear came afterwards, not at the time (Sur le moment, non)."
+     }
+    ]
+   },
+   "L08-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« pourront être indemnisés » — indemniser = to compensate; they must file a claim (déposer un dossier) by the end of the month."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V08-01": {
+   "zh": "to be in the middle of … -ing",
+   "exZh": "I was in the middle of cooking when the power went off."
+  },
+  "V08-02": {
+   "zh": "suddenly, all of a sudden",
+   "exZh": "All of a sudden, the lift stopped between two floors."
+  },
+  "V08-03": {
+   "zh": "just as …, at the moment when …",
+   "exZh": "Just as I was going out, the storm started."
+  },
+  "V08-04": {
+   "zh": "while …",
+   "exZh": "While the technician was working, Mme Roux was waiting on a chair."
+  },
+  "V08-05": {
+   "zh": "what was happening",
+   "exZh": "Nobody understood what was happening."
+  },
+  "V08-06": {
+   "zh": "at first",
+   "exZh": "At first, the airline talked about a one-hour delay."
+  },
+  "V08-07": {
+   "zh": "What surprised me most was that …",
+   "exZh": "What surprised me most was that nobody knew anything."
+  },
+  "V08-08": {
+   "zh": "to ask someone to …",
+   "exZh": "The driver asked us to get off."
+  },
+  "V08-09": {
+   "zh": "to try to …",
+   "exZh": "I tried to take the metro."
+  },
+  "V08-10": {
+   "zh": "to be blocked",
+   "exZh": "There had been an accident and the street was blocked."
+  },
+  "V08-11": {
+   "zh": "so, as a result (informal)",
+   "exZh": "The station was closed. So I’m walking."
+  },
+  "V08-12": {
+   "zh": "I’m writing to tell you about …",
+   "exZh": "I’m writing to tell you about my misadventure on Tuesday."
+  },
+  "V08-13": {
+   "zh": "it’s a good thing that …",
+   "exZh": "It’s a good thing the driver stopped straight away!"
+  },
+  "V08-14": {
+   "zh": "luckily, by chance",
+   "exZh": "Luckily, there was a taxi outside the station."
+  },
+  "V08-15": {
+   "zh": "everything turned out fine",
+   "exZh": "We had a fright, but everything turned out fine."
+  },
+  "V08-16": {
+   "zh": "It could have been worse.",
+   "exZh": "I missed my class, but it could have been worse."
+  },
+  "V08-17": {
+   "zh": "following …, as a result of …",
+   "exZh": "Following roadworks, the tram stop has been moved."
+  },
+  "V08-18": {
+   "zh": "to work normally",
+   "exZh": "Only the day before, the lift was working normally."
+  },
+  "V08-19": {
+   "zh": "the emergency number",
+   "exZh": "I called the emergency number displayed in the hall."
+  },
+  "V08-20": {
+   "zh": "to keep … up to date",
+   "exZh": "Residents are asking for the list of vulnerable people to be kept up to date with the town hall."
+  },
+  "V08-21": {
+   "zh": "to brake sharply",
+   "exZh": "A cyclist braked sharply."
+  },
+  "V08-22": {
+   "zh": "not to be injured",
+   "exZh": "She fell, but she wasn’t injured."
+  },
+  "V08-23": {
+   "zh": "to be afraid, to get a fright",
+   "exZh": "I got a real fright when the van pulled out."
+  },
+  "V08-24": {
+   "zh": "to call the emergency services",
+   "exZh": "A passer-by called the emergency services."
+  },
+  "V08-25": {
+   "zh": "to leave something (behind) in …",
+   "exZh": "I left a bag on the tram last night."
+  },
+  "V08-26": {
+   "zh": "a power cut",
+   "exZh": "A power cut hit four streets on Wednesday evening."
+  },
+  "V08-27": {
+   "zh": "the power comes back",
+   "exZh": "The power came back at 22:40."
+  },
+  "V08-28": {
+   "zh": "to be on time",
+   "exZh": "At check-in, the plane was on time."
+  },
+  "V08-29": {
+   "zh": "not to know what to say",
+   "exZh": "The staff didn’t know what to tell us."
+  },
+  "V08-30": {
+   "zh": "to claim compensation",
+   "exZh": "I claimed compensation from the airline."
+  },
+  "V08-31": {
+   "zh": "to report to the police, to press charges",
+   "exZh": "My wallet was stolen, so I reported it to the police."
+  },
+  "V08-32": {
+   "zh": "the road is slippery",
+   "exZh": "It had been raining since dawn and the road was slippery."
+  },
+  "V08-33": {
+   "zh": "to wear a helmet",
+   "exZh": "Luckily, the cyclist was wearing a helmet."
+  },
+  "V08-34": {
+   "zh": "to stop immediately",
+   "exZh": "The driver stopped immediately."
+  },
+  "V08-35": {
+   "zh": "to report that …",
+   "exZh": "Local residents report that this exit is dangerous."
+  },
+  "V08-36": {
+   "zh": "the nearest station",
+   "exZh": "The nearest station was closed."
+  },
+  "V08-37": {
+   "zh": "See you later!",
+   "exZh": "Thanks, Karim, see you later!"
+  },
+  "V08-38": {
+   "zh": "to disrupt transport",
+   "exZh": "The snow seriously disrupted transport this morning."
+  },
+  "V08-39": {
+   "zh": "traffic resumes",
+   "exZh": "Traffic resumed at around 6."
+  },
+  "V08-40": {
+   "zh": "to park one’s car",
+   "exZh": "Luckily, I had parked the car in the street that morning."
+  },
+  "V08-41": {
+   "zh": "to notify the insurer",
+   "exZh": "Have you notified your insurer?"
+  },
+  "V08-42": {
+   "zh": "It was more of a scare than anything.",
+   "exZh": "The cyclist fell, but it was more of a scare than anything."
+  },
+  "V08-43": {
+   "zh": "to be stuck",
+   "exZh": "Two people were stuck in the lift."
+  },
+  "V08-44": {
+   "zh": "to have something stolen",
+   "exZh": "I had my phone stolen on the metro."
+  },
+  "V08-45": {
+   "zh": "to witness …",
+   "exZh": "I witnessed an accident this morning."
+  }
+ },
+ "title": "The core of narrative: two past tenses",
+ "phase": "Foundations and grammar on autopilot"
+}

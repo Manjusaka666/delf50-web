@@ -1,1 +1,294 @@
-{"canDo":"Can relate journeys — leaving, arriving, coming back — and handle basic agreement.","review":"Review D5; add aller/venir/partir/arriver/rentrer and similar verbs.","input":"Listen: three recordings, « Retour de Lisbonne », « Il a traversé la France à pied » and « Le train de nuit est revenu », twice each; read: the comparison grid « Trois jours à Lisbonne » and the articles « Venise fait payer ses visiteurs d’un jour » and « Voyager moins loin, mais mieux ? », questions first, then the text.","output":"Write 160 words about a trip; speak for 90 seconds with at least 4 être verbs.","checkpoint":"Can explain why être is used; aware of agreement with feminine/plural subjects.","challenge":"Today’s challenge: think of your latest trip (even just to a nearby town) and write 6 sentences describing leaving, arriving and coming back, with at least 4 verbs that take être (partir, arriver, rester, rentrer…); then check the gender and number agreement of every past participle.","items":{"reading":{"R06-1":{"questions":[null,null,null,null,null,null,null,{"why":"« jusqu’à dix jours avant le départ » — Free cancellation ends ten days before departure, so a week before is too late."},null,null,null,null,null,null,null,null,{"why":"« Vous pouvez annuler sans frais jusqu’à sept jours avant le départ » — “Until X days before”: if X is more than 7, you can no longer cancel free a week before."}]},"R06-2":{"questions":[null,null,null,{"why":"« Ils ne dépensent presque rien, mais ce sont eux qui usent la ville » — user = to wear out."},null,{"why":"« cinq euros ne découragent personne » — On the contrary, she thinks five euros is too little to put anyone off."}]},"R06-3":{"questions":[null,null,null,{"why":"« la protection de la planète n’arrive qu’en troisième position » — The first reason is the budget."},null,null,{"why":"« cent voitures garées dans un pré, cela reste cent voitures » — ne pas voir d’un bon œil = to take a dim view of."}]}},"listening":{"L06-1":{"questions":[null,null,null,null,null,null,{"why":"« je suis passée par un marché aux puces » — It was the cousin who stayed in (ma cousine est restée à la pension), not Solène."}]},"L06-2":{"questions":[null,null,null,null,null,null,null,{"why":"« Dormez, vous déciderez demain » — The café owner told him to sleep on it; the next day le soleil est revenu and he set off again."}]},"L06-3":{"questions":[null,null,null,null,null,null,null,null,{"why":"« elles n’arriveront que dans quatre ans » — ne… que = only; what comes before summer is des prises (sockets), not the new carriages."}]}}},"vocab":{"V06-01":{"zh":"to go on holiday","exZh":"Last summer, we went on holiday to the Ardèche."},"V06-02":{"zh":"to break down","exZh":"The car broke down on the first day."},"V06-03":{"zh":"to get on the train / the bus","exZh":"I got on the regional train at Tours."},"V06-04":{"zh":"to get off at the wrong station","exZh":"I got off at the wrong station."},"V06-05":{"zh":"to run into someone","exZh":"I ran into Madame Ferrand, my former neighbour."},"V06-06":{"zh":"to go via …","exZh":"I went through the park, which I never do on Thursdays."},"V06-07":{"zh":"to walk home","exZh":"On Thursday evening, I walked home."},"V06-08":{"zh":"to come and join someone","exZh":"On Sunday, my parents came to join us."},"V06-09":{"zh":"… ago","exZh":"Amina arrived in France two years ago."},"V06-10":{"zh":"How did … go?","exZh":"How did your first days in France go?"},"V06-11":{"zh":"to get off the plane","exZh":"I got off the plane with two suitcases and an address."},"V06-12":{"zh":"to go straight to …","exZh":"I went straight to the residence."},"V06-13":{"zh":"to stand still, to be stopped","exZh":"The train was stopped for an hour because of a problem on the line."},"V06-14":{"zh":"the next train","exZh":"The next train leaves thirty-five minutes later."},"V06-15":{"zh":"to stay calm","exZh":"The agent stayed very calm."},"V06-16":{"zh":"at no extra cost","exZh":"He put me on the next train, at no extra cost."},"V06-17":{"zh":"… early, ahead of time","exZh":"The group got back twenty minutes ahead of the announced time."},"V06-18":{"zh":"to go on leave","exZh":"My colleague went on leave on Friday."},"V06-19":{"zh":"to be in a meeting","exZh":"I came by your office, but you were in a meeting."},"V06-20":{"zh":"according to …","exZh":"There were four hundred and ten walkers, according to the organisers."},"V06-21":{"zh":"to expect …","exZh":"The organisers didn’t expect such a success."},"V06-22":{"zh":"to make a detour","exZh":"With the roadworks, I have to make a detour through the centre."},"V06-23":{"zh":"to find a compromise","exZh":"We can find a compromise: go by train and come back by bus."},"V06-24":{"zh":"it seems to me + adjective + to …","exZh":"It seems simpler to me to take the train."},"V06-25":{"zh":"to go up to the top of …","exZh":"On Saturday, we went up to the top of the tower."},"V06-26":{"zh":"to walk past …","exZh":"I walked past a bookshop you’d really like."},"V06-27":{"zh":"to be afraid of heights","exZh":"Léa came straight back down: she’s afraid of heights."},"V06-28":{"zh":"to go as far as …","exZh":"My ticket went as far as Amboise."},"V06-29":{"zh":"to be of use to someone","exZh":"My story may be of use to other travellers."},"V06-30":{"zh":"to reach the foot of …","exZh":"The pupils reached the foot of the plateau around nine."},"V06-31":{"zh":"to go and live with someone","exZh":"She went to live with her daughter."},"V06-32":{"zh":"to feel as if …","exZh":"I felt as if I’d found an old friend again."},"V06-33":{"zh":"to come back by road","exZh":"Did you come back by road?"},"V06-34":{"zh":"to check with someone","exZh":"I went to check with my colleague."},"V06-35":{"zh":"a complete application (file)","exZh":"To register, you must hand in a complete application."},"V06-36":{"zh":"to start charging (become paying)","exZh":"This year, the walk started charging."},"V06-37":{"zh":"to become free (a room, a place)","exZh":"A room became free on the Tuesday."},"V06-38":{"zh":"a temporary stop","exZh":"You have to walk eight minutes to the temporary stop."},"V06-39":{"zh":"to be temporarily moved","exZh":"Because of the works, the tram stop has been temporarily moved."},"V06-40":{"zh":"departing from …","exZh":"The coach from Lyon arrives at 18:00."},"V06-41":{"zh":"to pack one’s bags","exZh":"We packed our bags the day before we left."},"V06-42":{"zh":"to go abroad","exZh":"I went abroad for the first time at twenty."},"V06-43":{"zh":"to hire a car","exZh":"In Nîmes, we hired a car."},"V06-44":{"zh":"a stay of + duration","exZh":"We had a two-week stay in Brittany."},"V06-45":{"zh":"to come back from a trip","exZh":"We came back from our trip on Sunday evening."}},"title":"Past events: être","phase":"Foundations and grammar on autopilot"}
+{
+ "canDo": "Can relate journeys — leaving, arriving, coming back — and handle basic agreement.",
+ "review": "Review D5; add aller/venir/partir/arriver/rentrer and similar verbs.",
+ "input": "Listen: three recordings, « Retour de Lisbonne », « Il a traversé la France à pied » and « Le train de nuit est revenu », twice each; read: the comparison grid « Trois jours à Lisbonne » and the articles « Venise fait payer ses visiteurs d’un jour » and « Voyager moins loin, mais mieux ? », questions first, then the text.",
+ "output": "Write 160 words about a trip; speak for 90 seconds with at least 4 être verbs.",
+ "checkpoint": "Can explain why être is used; aware of agreement with feminine/plural subjects.",
+ "challenge": "Today’s challenge: think of your latest trip (even just to a nearby town) and write 6 sentences describing leaving, arriving and coming back, with at least 4 verbs that take être (partir, arriver, rester, rentrer…); then check the gender and number agreement of every past participle.",
+ "items": {
+  "reading": {
+   "R06-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« jusqu’à dix jours avant le départ » — Free cancellation ends ten days before departure, so a week before is too late."
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Vous pouvez annuler sans frais jusqu’à sept jours avant le départ » — “Until X days before”: if X is more than 7, you can no longer cancel free a week before."
+     }
+    ]
+   },
+   "R06-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "« Ils ne dépensent presque rien, mais ce sont eux qui usent la ville » — user = to wear out."
+     },
+     null,
+     {
+      "why": "« cinq euros ne découragent personne » — On the contrary, she thinks five euros is too little to put anyone off."
+     }
+    ]
+   },
+   "R06-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "« la protection de la planète n’arrive qu’en troisième position » — The first reason is the budget."
+     },
+     null,
+     null,
+     {
+      "why": "« cent voitures garées dans un pré, cela reste cent voitures » — ne pas voir d’un bon œil = to take a dim view of."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L06-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« je suis passée par un marché aux puces » — It was the cousin who stayed in (ma cousine est restée à la pension), not Solène."
+     }
+    ]
+   },
+   "L06-2": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Dormez, vous déciderez demain » — The café owner told him to sleep on it; the next day le soleil est revenu and he set off again."
+     }
+    ]
+   },
+   "L06-3": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« elles n’arriveront que dans quatre ans » — ne… que = only; what comes before summer is des prises (sockets), not the new carriages."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V06-01": {
+   "zh": "to go on holiday",
+   "exZh": "Last summer, we went on holiday to the Ardèche."
+  },
+  "V06-02": {
+   "zh": "to break down",
+   "exZh": "The car broke down on the first day."
+  },
+  "V06-03": {
+   "zh": "to get on the train / the bus",
+   "exZh": "I got on the regional train at Tours."
+  },
+  "V06-04": {
+   "zh": "to get off at the wrong station",
+   "exZh": "I got off at the wrong station."
+  },
+  "V06-05": {
+   "zh": "to run into someone",
+   "exZh": "I ran into Madame Ferrand, my former neighbour."
+  },
+  "V06-06": {
+   "zh": "to go via …",
+   "exZh": "I went through the park, which I never do on Thursdays."
+  },
+  "V06-07": {
+   "zh": "to walk home",
+   "exZh": "On Thursday evening, I walked home."
+  },
+  "V06-08": {
+   "zh": "to come and join someone",
+   "exZh": "On Sunday, my parents came to join us."
+  },
+  "V06-09": {
+   "zh": "… ago",
+   "exZh": "Amina arrived in France two years ago."
+  },
+  "V06-10": {
+   "zh": "How did … go?",
+   "exZh": "How did your first days in France go?"
+  },
+  "V06-11": {
+   "zh": "to get off the plane",
+   "exZh": "I got off the plane with two suitcases and an address."
+  },
+  "V06-12": {
+   "zh": "to go straight to …",
+   "exZh": "I went straight to the residence."
+  },
+  "V06-13": {
+   "zh": "to stand still, to be stopped",
+   "exZh": "The train was stopped for an hour because of a problem on the line."
+  },
+  "V06-14": {
+   "zh": "the next train",
+   "exZh": "The next train leaves thirty-five minutes later."
+  },
+  "V06-15": {
+   "zh": "to stay calm",
+   "exZh": "The agent stayed very calm."
+  },
+  "V06-16": {
+   "zh": "at no extra cost",
+   "exZh": "He put me on the next train, at no extra cost."
+  },
+  "V06-17": {
+   "zh": "… early, ahead of time",
+   "exZh": "The group got back twenty minutes ahead of the announced time."
+  },
+  "V06-18": {
+   "zh": "to go on leave",
+   "exZh": "My colleague went on leave on Friday."
+  },
+  "V06-19": {
+   "zh": "to be in a meeting",
+   "exZh": "I came by your office, but you were in a meeting."
+  },
+  "V06-20": {
+   "zh": "according to …",
+   "exZh": "There were four hundred and ten walkers, according to the organisers."
+  },
+  "V06-21": {
+   "zh": "to expect …",
+   "exZh": "The organisers didn’t expect such a success."
+  },
+  "V06-22": {
+   "zh": "to make a detour",
+   "exZh": "With the roadworks, I have to make a detour through the centre."
+  },
+  "V06-23": {
+   "zh": "to find a compromise",
+   "exZh": "We can find a compromise: go by train and come back by bus."
+  },
+  "V06-24": {
+   "zh": "it seems to me + adjective + to …",
+   "exZh": "It seems simpler to me to take the train."
+  },
+  "V06-25": {
+   "zh": "to go up to the top of …",
+   "exZh": "On Saturday, we went up to the top of the tower."
+  },
+  "V06-26": {
+   "zh": "to walk past …",
+   "exZh": "I walked past a bookshop you’d really like."
+  },
+  "V06-27": {
+   "zh": "to be afraid of heights",
+   "exZh": "Léa came straight back down: she’s afraid of heights."
+  },
+  "V06-28": {
+   "zh": "to go as far as …",
+   "exZh": "My ticket went as far as Amboise."
+  },
+  "V06-29": {
+   "zh": "to be of use to someone",
+   "exZh": "My story may be of use to other travellers."
+  },
+  "V06-30": {
+   "zh": "to reach the foot of …",
+   "exZh": "The pupils reached the foot of the plateau around nine."
+  },
+  "V06-31": {
+   "zh": "to go and live with someone",
+   "exZh": "She went to live with her daughter."
+  },
+  "V06-32": {
+   "zh": "to feel as if …",
+   "exZh": "I felt as if I’d found an old friend again."
+  },
+  "V06-33": {
+   "zh": "to come back by road",
+   "exZh": "Did you come back by road?"
+  },
+  "V06-34": {
+   "zh": "to check with someone",
+   "exZh": "I went to check with my colleague."
+  },
+  "V06-35": {
+   "zh": "a complete application (file)",
+   "exZh": "To register, you must hand in a complete application."
+  },
+  "V06-36": {
+   "zh": "to start charging (become paying)",
+   "exZh": "This year, the walk started charging."
+  },
+  "V06-37": {
+   "zh": "to become free (a room, a place)",
+   "exZh": "A room became free on the Tuesday."
+  },
+  "V06-38": {
+   "zh": "a temporary stop",
+   "exZh": "You have to walk eight minutes to the temporary stop."
+  },
+  "V06-39": {
+   "zh": "to be temporarily moved",
+   "exZh": "Because of the works, the tram stop has been temporarily moved."
+  },
+  "V06-40": {
+   "zh": "departing from …",
+   "exZh": "The coach from Lyon arrives at 18:00."
+  },
+  "V06-41": {
+   "zh": "to pack one’s bags",
+   "exZh": "We packed our bags the day before we left."
+  },
+  "V06-42": {
+   "zh": "to go abroad",
+   "exZh": "I went abroad for the first time at twenty."
+  },
+  "V06-43": {
+   "zh": "to hire a car",
+   "exZh": "In Nîmes, we hired a car."
+  },
+  "V06-44": {
+   "zh": "a stay of + duration",
+   "exZh": "We had a two-week stay in Brittany."
+  },
+  "V06-45": {
+   "zh": "to come back from a trip",
+   "exZh": "We came back from our trip on Sunday evening."
+  }
+ },
+ "title": "Past events: être",
+ "phase": "Foundations and grammar on autopilot"
+}

@@ -1,1 +1,190 @@
-{"canDo":"Can identify an author’s real position and tone in argumentative essays, satirical columns and letters to the editor, read the implied meaning behind irony, concession and speculative phrasing, and defend answers with evidence from the text.","review":"Review concession (certes… mais, avoir beau, bien que + subjunctive, même si) and hedging/speculation (il semble que, il se peut que, sans doute, the speculative conditional): these are the key signals for judging an author’s attitude; build on day 31’s “locate → check” reading method.","input":"Read: the informative article « Vieillir chez soi : une promesse difficile à tenir », the opinion piece « Sommes-nous devenus impatients ? » and the three-voice forum « Les animaux de compagnie ont-ils pris trop de place ? » — questions first, then the text, finding the evidence for each answer; listen: « Une aide pour tous les 18-25 ans ? » and « Le café qui a rendu la parole à un village » twice each, then three short recordings once each.","output":"Write: a letter of 250+ words to a newspaper giving a qualified view on an article (at least 2 concessive structures and 2 hedging expressions); speak: a 6-minute monologue on “until what age should parents support their adult children?”, then answer the examiner in the debate with concession + rebuttal.","checkpoint":"Can point out at least 2 instances of irony or implied meaning in R32-2 and explain what is really meant; ≥80% accuracy on the day’s multiple-choice questions; at least 4 correct uses of concession and hedging in the letter.","challenge":"Today’s challenge: find a social commentary or report on RFI’s « Journal en français facile » or TV5MONDE, copy out a sentence with a conditional (e.g. « il y aurait… ») or a concessive structure, and write one sentence in your own language explaining the attitude the author conveys with it; then write a reply of your own with « Certes…, mais… ».","items":{"reading":{"R32-1":{"questions":[null,null,null,null,{"why":"« Si elle a envie de parler, je regarde ma montre » — The implication: she chose this job to care for people, not to work against the clock."}]}},"listening":{"L32-1":{"questions":[{"why":"The host opens with: « faut-il verser une aide financière à tous les jeunes de 18 à 25 ans qui n’ont pas de revenus ? ». B is only part of the background; C isn’t covered."},{"why":"« les 18-25 ans sont aujourd’hui la tranche d’âge la plus touchée par la pauvreté… la plupart n’ont droit à aucun revenu minimum ». Neither A nor C is mentioned."},{"why":"« une aide versée à tous coûterait très cher… il se peut qu’une partie des jeunes… n’en aient pas vraiment besoin » (il se peut que + subjunctive expresses a hypothesis). Neither A nor B is mentioned."},{"why":"« Sur le coût, elle a raison, je le reconnais volontiers. Mais les aides ciblées ont un défaut… »: classic “concession + rebuttal”. B: he doesn’t question the data; C is the opposite of his conclusion."},null,{"why":"« la solution serait peut-être de simplifier les démarches… ces jeunes ont aussi besoin de logements abordables, d’accompagnement, de formations ». Neither A nor C is what she proposes."},{"why":"« Non, c’est une idée qui mérite d’être étudiée… à condition de ne pas lui demander plus qu’elle ne peut donner ». A is the host’s guess, which she rejects; B exaggerates."},{"why":"« Une aide financière ne remplacera ni un logement ni un emploi » — ne… ni… ni…: a double negative coordination; Mais… c’est déjà beaucoup holds his ground after conceding."}]},"L32-2":{"questions":[{"why":"The core is « une quinzaine d’habitants… ouvrir un café associatif… des bénévoles qui tiennent le comptoir ». A: bread is only an extra service of the café; C: the school is mentioned only as the one place people used to meet."},{"why":"« On aurait pu croire que ce serait un lieu réservé aux anciens. Eh bien, pas du tout », followed by a list: retirees, young remote workers, mothers. C goes too far: retirees are there too (« bien sûr »)."},null,{"why":"« loue désormais le local pour un euro symbolique » — sceptique, pour ne pas dire réticente: an understated intensifier — “sceptical, not to say reluctant”."},null,null,{"why":"« Les bénévoles s’épuisent un peu, et les recettes suffisent tout juste à payer le chauffage ». Neither A nor B is mentioned."},{"why":"même si + imperfect + past conditional: “even if it closed tomorrow, we would have shown that…”, stressing what has already been achieved. A misreads the hypothetical; C takes silence literally as “quiet”."}]},"L32-3":{"questions":[{"why":"« je suis revenue l’an dernier… avec des loyers à neuf cents euros, je n’ai pas vraiment le choix ». A contradicts the facts; C: she says « Ce n’est pas l’idéal », not that she refuses to leave."},{"why":"« Au début, c’était juste pour mes études »; sharing a flat with friends came later (« maintenant »)."},{"why":"« ça me convient… Cela dit, si je trouvais un studio pas trop cher près de mon travail, je partirais demain »: cela dit introduces a concession. B has no basis; C contradicts the ending."}]}}},"vocab":{"V32-01":{"zh":"a growing share of …","exZh":"The phenomenon reportedly affects a growing share of young adults."},"V32-02":{"zh":"to leave no room for doubt","exZh":"The results of the analysis leave no room for doubt."},"V32-03":{"zh":"to admit defeat","exZh":"Moving back in with your parents doesn’t necessarily mean admitting defeat."},"V32-04":{"zh":"an age group","exZh":"18-to-25-year-olds are the age group hardest hit by poverty."},"V32-05":{"zh":"to put forward a hypothesis","exZh":"The sociologist put forward a cautious hypothesis to explain the figures."},"V32-06":{"zh":"to point to a culprit, to find a scapegoat","exZh":"With such a complex phenomenon, pointing to a single culprit is pointless."},"V32-07":{"zh":"it would be unwise to …","exZh":"It would be unwise to draw conclusions from a single poll."},"V32-08":{"zh":"(a phenomenon) to spread, to grow","exZh":"The “boomerang generation” phenomenon is reportedly growing."},"V32-09":{"zh":"to move back in with one’s parents","exZh":"When his contract ended, he had to move back in with his parents."},"V32-10":{"zh":"to come at a cost","exZh":"Every hour lost in traffic jams comes at a cost to the economy."},"V32-11":{"zh":"to introduce (people) to each other","exZh":"Before the meeting starts, let me introduce you all to each other."},"V32-12":{"zh":"far be it from me to …","exZh":"Far be it from me to criticise the volunteers, but the organisation could be improved."},"V32-13":{"zh":"can’t help …","exZh":"Seeing a poster like that, I couldn’t help laughing."},"V32-14":{"zh":"on command, deliberately (not spontaneously)","exZh":"Friendship can’t be made to order."},"V32-15":{"zh":"(a schedule) timed to the minute","exZh":"The visit was scheduled to the minute."},"V32-16":{"zh":"a fairy tale, a story too good to be true","exZh":"Flatsharing is nothing like a fairy tale."},"V32-17":{"zh":"fresh volunteers, new willing helpers","exZh":"To keep going, the association is looking for fresh volunteers."},"V32-18":{"zh":"a targeted allowance (only for specific groups)","exZh":"The economist prefers targeted support to an allowance for everyone."},"V32-19":{"zh":"to remain marginal, to have limited reach","exZh":"Despite the media hype, the phenomenon remains marginal."},"V32-20":{"zh":"to wear oneself out, to run out of steam","exZh":"With no one to take over, the volunteers will end up wearing themselves out."},"V32-21":{"zh":"an idea that seems good but isn’t","exZh":"Waiving the rent seems generous, but it’s a bad idea in disguise."},"V32-22":{"zh":"to breathe new life into","exZh":"This little café has helped breathe new life into the whole village."},"V32-23":{"zh":"just about enough to …","exZh":"The takings are just about enough to pay for the heating."},"V32-24":{"zh":"the last line of defence","exZh":"For many young people, the family remains the last line of defence against poverty."},"V32-25":{"zh":"to know someone inside out","exZh":"After twenty-five years under the same roof, I know my parents inside out."}},"title":"Reading II: opinions and implicit meaning","phase":"DELF B2 task training"}
+{
+ "canDo": "Can identify an author’s real position and tone in argumentative essays, satirical columns and letters to the editor, read the implied meaning behind irony, concession and speculative phrasing, and defend answers with evidence from the text.",
+ "review": "Review concession (certes… mais, avoir beau, bien que + subjunctive, même si) and hedging/speculation (il semble que, il se peut que, sans doute, the speculative conditional): these are the key signals for judging an author’s attitude; build on day 31’s “locate → check” reading method.",
+ "input": "Read: the informative article « Vieillir chez soi : une promesse difficile à tenir », the opinion piece « Sommes-nous devenus impatients ? » and the three-voice forum « Les animaux de compagnie ont-ils pris trop de place ? » — questions first, then the text, finding the evidence for each answer; listen: « Une aide pour tous les 18-25 ans ? » and « Le café qui a rendu la parole à un village » twice each, then three short recordings once each.",
+ "output": "Write: a letter of 250+ words to a newspaper giving a qualified view on an article (at least 2 concessive structures and 2 hedging expressions); speak: a 6-minute monologue on “until what age should parents support their adult children?”, then answer the examiner in the debate with concession + rebuttal.",
+ "checkpoint": "Can point out at least 2 instances of irony or implied meaning in R32-2 and explain what is really meant; ≥80% accuracy on the day’s multiple-choice questions; at least 4 correct uses of concession and hedging in the letter.",
+ "challenge": "Today’s challenge: find a social commentary or report on RFI’s « Journal en français facile » or TV5MONDE, copy out a sentence with a conditional (e.g. « il y aurait… ») or a concessive structure, and write one sentence in your own language explaining the attitude the author conveys with it; then write a reply of your own with « Certes…, mais… ».",
+ "items": {
+  "reading": {
+   "R32-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     null,
+     {
+      "why": "« Si elle a envie de parler, je regarde ma montre » — The implication: she chose this job to care for people, not to work against the clock."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L32-1": {
+    "questions": [
+     {
+      "why": "The host opens with: « faut-il verser une aide financière à tous les jeunes de 18 à 25 ans qui n’ont pas de revenus ? ». B is only part of the background; C isn’t covered."
+     },
+     {
+      "why": "« les 18-25 ans sont aujourd’hui la tranche d’âge la plus touchée par la pauvreté… la plupart n’ont droit à aucun revenu minimum ». Neither A nor C is mentioned."
+     },
+     {
+      "why": "« une aide versée à tous coûterait très cher… il se peut qu’une partie des jeunes… n’en aient pas vraiment besoin » (il se peut que + subjunctive expresses a hypothesis). Neither A nor B is mentioned."
+     },
+     {
+      "why": "« Sur le coût, elle a raison, je le reconnais volontiers. Mais les aides ciblées ont un défaut… »: classic “concession + rebuttal”. B: he doesn’t question the data; C is the opposite of his conclusion."
+     },
+     null,
+     {
+      "why": "« la solution serait peut-être de simplifier les démarches… ces jeunes ont aussi besoin de logements abordables, d’accompagnement, de formations ». Neither A nor C is what she proposes."
+     },
+     {
+      "why": "« Non, c’est une idée qui mérite d’être étudiée… à condition de ne pas lui demander plus qu’elle ne peut donner ». A is the host’s guess, which she rejects; B exaggerates."
+     },
+     {
+      "why": "« Une aide financière ne remplacera ni un logement ni un emploi » — ne… ni… ni…: a double negative coordination; Mais… c’est déjà beaucoup holds his ground after conceding."
+     }
+    ]
+   },
+   "L32-2": {
+    "questions": [
+     {
+      "why": "The core is « une quinzaine d’habitants… ouvrir un café associatif… des bénévoles qui tiennent le comptoir ». A: bread is only an extra service of the café; C: the school is mentioned only as the one place people used to meet."
+     },
+     {
+      "why": "« On aurait pu croire que ce serait un lieu réservé aux anciens. Eh bien, pas du tout », followed by a list: retirees, young remote workers, mothers. C goes too far: retirees are there too (« bien sûr »)."
+     },
+     null,
+     {
+      "why": "« loue désormais le local pour un euro symbolique » — sceptique, pour ne pas dire réticente: an understated intensifier — “sceptical, not to say reluctant”."
+     },
+     null,
+     null,
+     {
+      "why": "« Les bénévoles s’épuisent un peu, et les recettes suffisent tout juste à payer le chauffage ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "même si + imperfect + past conditional: “even if it closed tomorrow, we would have shown that…”, stressing what has already been achieved. A misreads the hypothetical; C takes silence literally as “quiet”."
+     }
+    ]
+   },
+   "L32-3": {
+    "questions": [
+     {
+      "why": "« je suis revenue l’an dernier… avec des loyers à neuf cents euros, je n’ai pas vraiment le choix ». A contradicts the facts; C: she says « Ce n’est pas l’idéal », not that she refuses to leave."
+     },
+     {
+      "why": "« Au début, c’était juste pour mes études »; sharing a flat with friends came later (« maintenant »)."
+     },
+     {
+      "why": "« ça me convient… Cela dit, si je trouvais un studio pas trop cher près de mon travail, je partirais demain »: cela dit introduces a concession. B has no basis; C contradicts the ending."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V32-01": {
+   "zh": "a growing share of …",
+   "exZh": "The phenomenon reportedly affects a growing share of young adults."
+  },
+  "V32-02": {
+   "zh": "to leave no room for doubt",
+   "exZh": "The results of the analysis leave no room for doubt."
+  },
+  "V32-03": {
+   "zh": "to admit defeat",
+   "exZh": "Moving back in with your parents doesn’t necessarily mean admitting defeat."
+  },
+  "V32-04": {
+   "zh": "an age group",
+   "exZh": "18-to-25-year-olds are the age group hardest hit by poverty."
+  },
+  "V32-05": {
+   "zh": "to put forward a hypothesis",
+   "exZh": "The sociologist put forward a cautious hypothesis to explain the figures."
+  },
+  "V32-06": {
+   "zh": "to point to a culprit, to find a scapegoat",
+   "exZh": "With such a complex phenomenon, pointing to a single culprit is pointless."
+  },
+  "V32-07": {
+   "zh": "it would be unwise to …",
+   "exZh": "It would be unwise to draw conclusions from a single poll."
+  },
+  "V32-08": {
+   "zh": "(a phenomenon) to spread, to grow",
+   "exZh": "The “boomerang generation” phenomenon is reportedly growing."
+  },
+  "V32-09": {
+   "zh": "to move back in with one’s parents",
+   "exZh": "When his contract ended, he had to move back in with his parents."
+  },
+  "V32-10": {
+   "zh": "to come at a cost",
+   "exZh": "Every hour lost in traffic jams comes at a cost to the economy."
+  },
+  "V32-11": {
+   "zh": "to introduce (people) to each other",
+   "exZh": "Before the meeting starts, let me introduce you all to each other."
+  },
+  "V32-12": {
+   "zh": "far be it from me to …",
+   "exZh": "Far be it from me to criticise the volunteers, but the organisation could be improved."
+  },
+  "V32-13": {
+   "zh": "can’t help …",
+   "exZh": "Seeing a poster like that, I couldn’t help laughing."
+  },
+  "V32-14": {
+   "zh": "on command, deliberately (not spontaneously)",
+   "exZh": "Friendship can’t be made to order."
+  },
+  "V32-15": {
+   "zh": "(a schedule) timed to the minute",
+   "exZh": "The visit was scheduled to the minute."
+  },
+  "V32-16": {
+   "zh": "a fairy tale, a story too good to be true",
+   "exZh": "Flatsharing is nothing like a fairy tale."
+  },
+  "V32-17": {
+   "zh": "fresh volunteers, new willing helpers",
+   "exZh": "To keep going, the association is looking for fresh volunteers."
+  },
+  "V32-18": {
+   "zh": "a targeted allowance (only for specific groups)",
+   "exZh": "The economist prefers targeted support to an allowance for everyone."
+  },
+  "V32-19": {
+   "zh": "to remain marginal, to have limited reach",
+   "exZh": "Despite the media hype, the phenomenon remains marginal."
+  },
+  "V32-20": {
+   "zh": "to wear oneself out, to run out of steam",
+   "exZh": "With no one to take over, the volunteers will end up wearing themselves out."
+  },
+  "V32-21": {
+   "zh": "an idea that seems good but isn’t",
+   "exZh": "Waiving the rent seems generous, but it’s a bad idea in disguise."
+  },
+  "V32-22": {
+   "zh": "to breathe new life into",
+   "exZh": "This little café has helped breathe new life into the whole village."
+  },
+  "V32-23": {
+   "zh": "just about enough to …",
+   "exZh": "The takings are just about enough to pay for the heating."
+  },
+  "V32-24": {
+   "zh": "the last line of defence",
+   "exZh": "For many young people, the family remains the last line of defence against poverty."
+  },
+  "V32-25": {
+   "zh": "to know someone inside out",
+   "exZh": "After twenty-five years under the same roof, I know my parents inside out."
+  }
+ },
+ "title": "Reading II: opinions and implicit meaning",
+ "phase": "DELF B2 task training"
+}

@@ -1,1 +1,188 @@
-{"canDo":"Can highlight key arguments with emphatic structures such as c’est… qui/que and ce qui/ce que/ce dont… c’est when discussing culture and heritage, and quickly pick out highlighted information in reading and listening.","review":"Review day 16’s participles and gérondif and day 15’s nominalisation: embed nominalised phrases in emphatic structures (ce qui frappe, c’est l’élargissement de…), and look back at choosing qui/que/dont (day 4’s relative pronouns).","input":"Read: the informative article « Restituer les œuvres d’art : un débat qui s’accélère », the opinion piece « Faut-il tout conserver ? » and the three-voice forum « Faire payer l’entrée des cathédrales ? » — questions first, then the text, finding the evidence for each answer; listen: « Le clocher de Belcourt : reconstruire à l’identique ? » and « Les voix du quartier » twice each, then three short recordings once each.","output":"Write: a ≥250-word formal letter to the mayor on behalf of a residents’ association, opposing the demolition of an old cinema, with at least 3 emphatic structures; speak: a 4-minute monologue on “charging tourists to visit monuments”, then defend “a monthly cultural outing for schools” in the debate.","checkpoint":"Reading and listening accuracy ≥80%; can choose correctly between ce qui / ce que / ce dont and handle verb agreement in c’est moi qui; a complete formal letter of ≥220 words; at least 3 emphatic structures in a 4-minute monologue.","challenge":"Today’s challenge: find a report on TV5MONDE or RFI about a museum, a monument or a traditional craft, and write 3 emphatic sentences about what struck you most (e.g. « Ce qui m’a frappé, c’est… »), or record 1 minute presenting a piece of “small heritage” from your home town.","items":{"reading":{"R17-1":{"questions":[null,null,null,{"why":"« Ce sont les demandes répétées des États africains […] qui ont fini par imposer la question » — The cleft Ce sont… qui highlights that it was precisely the repeated African requests."}]},"R17-2":{"questions":[null,{"why":"« C’est que l’on ne sache plus dire non » — The emphatic frame Ce qui… ce n’est pas que… C’est que… denies one worry to pinpoint the real one."},null,null,null,{"why":"« L’édifice se dégrade lentement, à l’abri de la loi » — This is ironic: the law “protects” the building while it quietly falls apart."}]}},"listening":{"L17-1":{"questions":[{"why":"The opening: « faut-il le reconstruire à l’identique ou oser un geste contemporain ? ». Neither the cause of the fire nor architects’ training is discussed."},{"why":"« Ce que les habitants ont perdu, ce n’est pas seulement un bâtiment, c’est un repère ». She also points out the bell tower wasn’t the original, ruling out C."},null,null,{"why":"« Ce n’est pas ce que je dis. Ce qui me paraît essentiel, c’est que la décision soit expliquée et partagée ». She denies backing a purely contemporary option (B) and grants the value of rebuilding as it was (C is wrong)."}]},"L17-2":{"questions":[null,null,{"why":"The emphatic sentence « Ce sont eux qui font les interviews ! »."},null,{"why":"« Ce n’est qu’à la quatrième rencontre qu’il a raconté la grève de 1968 » — Ce n’est qu’à… que… is emphatic: only at the fourth meeting did he speak."}]},"L17-3":{"questions":[null,{"why":"« la réservation est donc obligatoire sur le site de la mairie »; the visit is free, and children under 12 aren’t admitted."},null,{"why":"« En cas de pluie, le concert aura lieu dans la salle des fêtes »; the museum is closed all weekend."},null,null,null,{"why":"« n’appartient pas à la paroisse mais à la commune » — The funding: half from the commune, a quarter from the region, seventy thousand euros still missing; the instrument belongs to the commune and will also serve conservatoire pupils."}]}}},"vocab":{"V17-01":{"zh":"to deserve the status of …","exZh":"Does this modest wash house really deserve the status of historic monument?"},"V17-02":{"zh":"a craft skill (savoir-faire)","exZh":"The village is fighting to preserve a three-hundred-year-old craft skill."},"V17-03":{"zh":"the challenge is …","exZh":"The challenge is to pass these skills on to young people."},"V17-04":{"zh":"a change in how … is seen","exZh":"Converting the factory reflects a change in how industrial heritage is seen."},"V17-05":{"zh":"to wipe off the map","exZh":"The 1910 flood almost wiped the hamlet off the map."},"V17-06":{"zh":"not without risk","exZh":"Such a rapid renovation is not without risk for the structure."},"V17-07":{"zh":"rents are soaring","exZh":"Since tourists started flocking in, rents in the old town have soared."},"V17-08":{"zh":"to take shape, to emerge","exZh":"After months of discussion, a compromise is finally taking shape."},"V17-09":{"zh":"to be a spoilsport","exZh":"I don’t want to be a spoilsport, but this project is far too expensive."},"V17-10":{"zh":"cultural democracy (culture for all)","exZh":"Making works of art accessible to all is at the heart of cultural democracy."},"V17-11":{"zh":"to be left at the door","exZh":"Without a booking, many visitors were left at the door."},"V17-12":{"zh":"a feeling of not belonging","exZh":"Many young people feel they don’t belong when they walk into an opera house."},"V17-13":{"zh":"budgets are tightening","exZh":"When budgets tighten, culture is often the first to suffer."},"V17-14":{"zh":"to give someone a hard time","exZh":"Breton pronunciation gives me a hard time."},"V17-15":{"zh":"not what it used to be","exZh":"With age, my memory isn’t what it used to be."},"V17-16":{"zh":"to keep a language alive","exZh":"These choirs help keep an endangered language alive."},"V17-17":{"zh":"to matter a lot to someone","exZh":"It’s a cause that has mattered a lot to me for a long time."},"V17-18":{"zh":"to keep a record of …","exZh":"These notebooks keep a record of every meeting since 1990."},"V17-19":{"zh":"to follow something closely","exZh":"This journalist has followed the affair closely from the start."},"V17-20":{"zh":"to leave one’s mark","exZh":"Each generation has left its mark on this old house."},"V17-21":{"zh":"imposed from above","exZh":"Projects imposed from above often make residents suspicious."},"V17-22":{"zh":"to get caught up in it","exZh":"Reluctant at first, the students got caught up in it."},"V17-23":{"zh":"the highlight","exZh":"The closing concert will be the highlight of the festival."},"V17-24":{"zh":"in the long run","exZh":"Some fear that in the long run residents will have to pay too."},"V17-25":{"zh":"a place of worship","exZh":"The old chapel has not been a place of worship since 1950."}},"title":"Emphasis and highlighting","phase":"Argument, mediation and reporting"}
+{
+ "canDo": "Can highlight key arguments with emphatic structures such as c’est… qui/que and ce qui/ce que/ce dont… c’est when discussing culture and heritage, and quickly pick out highlighted information in reading and listening.",
+ "review": "Review day 16’s participles and gérondif and day 15’s nominalisation: embed nominalised phrases in emphatic structures (ce qui frappe, c’est l’élargissement de…), and look back at choosing qui/que/dont (day 4’s relative pronouns).",
+ "input": "Read: the informative article « Restituer les œuvres d’art : un débat qui s’accélère », the opinion piece « Faut-il tout conserver ? » and the three-voice forum « Faire payer l’entrée des cathédrales ? » — questions first, then the text, finding the evidence for each answer; listen: « Le clocher de Belcourt : reconstruire à l’identique ? » and « Les voix du quartier » twice each, then three short recordings once each.",
+ "output": "Write: a ≥250-word formal letter to the mayor on behalf of a residents’ association, opposing the demolition of an old cinema, with at least 3 emphatic structures; speak: a 4-minute monologue on “charging tourists to visit monuments”, then defend “a monthly cultural outing for schools” in the debate.",
+ "checkpoint": "Reading and listening accuracy ≥80%; can choose correctly between ce qui / ce que / ce dont and handle verb agreement in c’est moi qui; a complete formal letter of ≥220 words; at least 3 emphatic structures in a 4-minute monologue.",
+ "challenge": "Today’s challenge: find a report on TV5MONDE or RFI about a museum, a monument or a traditional craft, and write 3 emphatic sentences about what struck you most (e.g. « Ce qui m’a frappé, c’est… »), or record 1 minute presenting a piece of “small heritage” from your home town.",
+ "items": {
+  "reading": {
+   "R17-1": {
+    "questions": [
+     null,
+     null,
+     null,
+     {
+      "why": "« Ce sont les demandes répétées des États africains […] qui ont fini par imposer la question » — The cleft Ce sont… qui highlights that it was precisely the repeated African requests."
+     }
+    ]
+   },
+   "R17-2": {
+    "questions": [
+     null,
+     {
+      "why": "« C’est que l’on ne sache plus dire non » — The emphatic frame Ce qui… ce n’est pas que… C’est que… denies one worry to pinpoint the real one."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« L’édifice se dégrade lentement, à l’abri de la loi » — This is ironic: the law “protects” the building while it quietly falls apart."
+     }
+    ]
+   }
+  },
+  "listening": {
+   "L17-1": {
+    "questions": [
+     {
+      "why": "The opening: « faut-il le reconstruire à l’identique ou oser un geste contemporain ? ». Neither the cause of the fire nor architects’ training is discussed."
+     },
+     {
+      "why": "« Ce que les habitants ont perdu, ce n’est pas seulement un bâtiment, c’est un repère ». She also points out the bell tower wasn’t the original, ruling out C."
+     },
+     null,
+     null,
+     {
+      "why": "« Ce n’est pas ce que je dis. Ce qui me paraît essentiel, c’est que la décision soit expliquée et partagée ». She denies backing a purely contemporary option (B) and grants the value of rebuilding as it was (C is wrong)."
+     }
+    ]
+   },
+   "L17-2": {
+    "questions": [
+     null,
+     null,
+     {
+      "why": "The emphatic sentence « Ce sont eux qui font les interviews ! »."
+     },
+     null,
+     {
+      "why": "« Ce n’est qu’à la quatrième rencontre qu’il a raconté la grève de 1968 » — Ce n’est qu’à… que… is emphatic: only at the fourth meeting did he speak."
+     }
+    ]
+   },
+   "L17-3": {
+    "questions": [
+     null,
+     {
+      "why": "« la réservation est donc obligatoire sur le site de la mairie »; the visit is free, and children under 12 aren’t admitted."
+     },
+     null,
+     {
+      "why": "« En cas de pluie, le concert aura lieu dans la salle des fêtes »; the museum is closed all weekend."
+     },
+     null,
+     null,
+     null,
+     {
+      "why": "« n’appartient pas à la paroisse mais à la commune » — The funding: half from the commune, a quarter from the region, seventy thousand euros still missing; the instrument belongs to the commune and will also serve conservatoire pupils."
+     }
+    ]
+   }
+  }
+ },
+ "vocab": {
+  "V17-01": {
+   "zh": "to deserve the status of …",
+   "exZh": "Does this modest wash house really deserve the status of historic monument?"
+  },
+  "V17-02": {
+   "zh": "a craft skill (savoir-faire)",
+   "exZh": "The village is fighting to preserve a three-hundred-year-old craft skill."
+  },
+  "V17-03": {
+   "zh": "the challenge is …",
+   "exZh": "The challenge is to pass these skills on to young people."
+  },
+  "V17-04": {
+   "zh": "a change in how … is seen",
+   "exZh": "Converting the factory reflects a change in how industrial heritage is seen."
+  },
+  "V17-05": {
+   "zh": "to wipe off the map",
+   "exZh": "The 1910 flood almost wiped the hamlet off the map."
+  },
+  "V17-06": {
+   "zh": "not without risk",
+   "exZh": "Such a rapid renovation is not without risk for the structure."
+  },
+  "V17-07": {
+   "zh": "rents are soaring",
+   "exZh": "Since tourists started flocking in, rents in the old town have soared."
+  },
+  "V17-08": {
+   "zh": "to take shape, to emerge",
+   "exZh": "After months of discussion, a compromise is finally taking shape."
+  },
+  "V17-09": {
+   "zh": "to be a spoilsport",
+   "exZh": "I don’t want to be a spoilsport, but this project is far too expensive."
+  },
+  "V17-10": {
+   "zh": "cultural democracy (culture for all)",
+   "exZh": "Making works of art accessible to all is at the heart of cultural democracy."
+  },
+  "V17-11": {
+   "zh": "to be left at the door",
+   "exZh": "Without a booking, many visitors were left at the door."
+  },
+  "V17-12": {
+   "zh": "a feeling of not belonging",
+   "exZh": "Many young people feel they don’t belong when they walk into an opera house."
+  },
+  "V17-13": {
+   "zh": "budgets are tightening",
+   "exZh": "When budgets tighten, culture is often the first to suffer."
+  },
+  "V17-14": {
+   "zh": "to give someone a hard time",
+   "exZh": "Breton pronunciation gives me a hard time."
+  },
+  "V17-15": {
+   "zh": "not what it used to be",
+   "exZh": "With age, my memory isn’t what it used to be."
+  },
+  "V17-16": {
+   "zh": "to keep a language alive",
+   "exZh": "These choirs help keep an endangered language alive."
+  },
+  "V17-17": {
+   "zh": "to matter a lot to someone",
+   "exZh": "It’s a cause that has mattered a lot to me for a long time."
+  },
+  "V17-18": {
+   "zh": "to keep a record of …",
+   "exZh": "These notebooks keep a record of every meeting since 1990."
+  },
+  "V17-19": {
+   "zh": "to follow something closely",
+   "exZh": "This journalist has followed the affair closely from the start."
+  },
+  "V17-20": {
+   "zh": "to leave one’s mark",
+   "exZh": "Each generation has left its mark on this old house."
+  },
+  "V17-21": {
+   "zh": "imposed from above",
+   "exZh": "Projects imposed from above often make residents suspicious."
+  },
+  "V17-22": {
+   "zh": "to get caught up in it",
+   "exZh": "Reluctant at first, the students got caught up in it."
+  },
+  "V17-23": {
+   "zh": "the highlight",
+   "exZh": "The closing concert will be the highlight of the festival."
+  },
+  "V17-24": {
+   "zh": "in the long run",
+   "exZh": "Some fear that in the long run residents will have to pay too."
+  },
+  "V17-25": {
+   "zh": "a place of worship",
+   "exZh": "The old chapel has not been a place of worship since 1950."
+  }
+ },
+ "title": "Emphasis and highlighting",
+ "phase": "Argument, mediation and reporting"
+}
