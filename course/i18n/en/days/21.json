@@ -27,7 +27,6 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« si je faisais du sport trois fois par semaine, je ne prendrais presque rien » — Si + imparfait → conditional: the doctor’s hypothesis."
      }
@@ -35,8 +34,6 @@
    },
    "L21-2": {
     "questions": [
-     null,
-     null,
      null,
      null,
      null,
@@ -54,13 +51,9 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« ils sortent de chez eux » — le bénéfice dont ils parlent le plus est ailleurs: what matters most is not weight or medication but getting out and company."
-     },
-     null,
-     null
+     }
     ]
    }
   }

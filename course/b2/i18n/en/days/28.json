@@ -21,7 +21,6 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« près d’un tiers de son vocabulaire vient du français » — il serait malvenu de = it would be inappropriate to (formal)."
      }
@@ -40,7 +39,6 @@
      {
       "why": "« Certains y voient un appauvrissement. Moi, j’y vois plutôt une compétence ». A is others’ view, which she reports; B contradicts what follows (these young people can speak standard French at school)."
      },
-     null,
      {
       "why": "« C’est exactement ce que font les jeunes Parisiens… quand ils changent de registre. Chacun dispose de plusieurs façons de parler ». B and C aren’t her point."
      },
@@ -58,7 +56,6 @@
      {
       "why": "The column presents regional words: Belgian drache, Swiss natel, and Quebec’s magasiner / dépanneur. A is only the angle of approach; C isn’t covered."
      },
-     null,
      {
       "why": "« vous filez au dépanneur, la petite épicerie du coin ». A is the usual meaning of dépanneur in France, used here as a distractor."
      },
@@ -66,6 +63,9 @@
      null,
      {
       "why": "« c’est le système le plus cohérent » — À tort ! = wrongly so; French soixante-dix and quatre-vingt-dix are relics of an old way of counting in twenties."
+     },
+     {
+      "why": "« en Suisse romande, le « dîner » désigne le repas de midi » — in France dîner is the evening meal, hence the misunderstandings."
      },
      {
       "why": "« Il semblerait que les Français empruntent plus volontiers à l’anglais qu’à leurs voisins francophones »; il semblerait que is a cautious modalising expression. B and C aren’t mentioned."
@@ -77,7 +77,6 @@
      {
       "why": "« ouvert à tous à partir de quinze ans ». A and C are wrong restrictions."
      },
-     null,
      null,
      {
       "why": "« seront lues en public lors d’une soirée festive le 20 mars ». The deadline is 28 February; the rules are already on the website."

@@ -42,12 +42,7 @@
      null,
      null,
      null,
-     {
-      "why": "« Il s’est fait renverser l’hiver dernier, heureusement sans gravité » — se faire renverser = to be knocked down."
-     },
-     {
-      "why": "« Elle promet soixante kilomètres de nouvelles pistes d’ici deux ans » — promet… d’ici deux ans: a promise, not yet built."
-     },
+     null,
      {
       "why": "« Nous jugerons sur les travaux, pas sur les discours » — The associations welcome the announcements, so it is not a total rejection."
      }
@@ -56,9 +51,7 @@
    "R04-3": {
     "questions": [
      null,
-     {
-      "why": "« Le nombre d’heures reste donc presque identique » — Four days of nine hours: the total is almost unchanged."
-     },
+     null,
      {
       "why": "« il reçoit trois fois plus de candidatures » — It is the workers who save on fuel, not the employer."
      }
@@ -72,8 +65,6 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« On repart à dix-sept heures quinze, tous les jours » — The fixed return time is le seul inconvénient; anyone with a late meeting takes the bus."
      }
@@ -83,30 +74,16 @@
     "questions": [
      {
       "why": "« sur la même tournée depuis onze ans » — Two figures: dix-neuf ans as a postman, onze ans on the same round."
-     },
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
+     }
     ]
    },
    "L04-3": {
     "questions": [
      null,
      null,
-     null,
-     null,
      {
       "why": "« Le trajet coûte deux euros » — The passenger pays deux euros; the real cost is quatorze euros, douze of which the local authority covers."
-     },
-     null,
-     null,
-     null,
-     null
+     }
     ]
    }
   }

@@ -6,25 +6,10 @@
  "checkpoint": "Tell apart two kinds of error — “didn’t hear it” and “didn’t parse the structure”; restate at least 4 key pieces of information.",
  "challenge": "Today’s challenge: on RFI’s Journal en français facile, listen twice to a news item of about 1 minute: the first time write only the main idea, the second time note numbers, places and requests; then write 3 sentences in reported speech (On annonce que… / On demande aux gens de…), watching how you use à / de.",
  "items": {
-  "reading": {
-   "R29-2": {
-    "questions": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     {
-      "why": "« J’ai refusé » — faillir + infinitive = to almost do (but not)."
-     }
-    ]
-   }
-  },
+  "reading": {},
   "listening": {
    "L29-1": {
     "questions": [
-     null,
-     null,
      null,
      null,
      null,
@@ -41,18 +26,13 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« les voyageurs comprennent mieux une voix humaine » — Je ne m’y oppose pas… Mais…: a concession followed by a reservation."
-     },
-     null
+     }
     ]
    },
    "L29-3": {
     "questions": [
-     null,
-     null,
      null,
      null,
      null,

@@ -37,7 +37,6 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« C’est une bonne nouvelle que les gens se parlent. Mais il est tout de même étrange » — se dire partagé = to say one has mixed feelings."
      },
@@ -49,7 +48,6 @@
    },
    "R11-3": {
     "questions": [
-     null,
      null,
      null,
      null,
@@ -68,8 +66,6 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« je peux donc te la prêter de huit heures à quatorze heures » — te la prêter: te = à Garance, la = la camionnette (the van). The brother only collects it at quinze heures."
      }
@@ -77,8 +73,6 @@
    },
    "L11-2": {
     "questions": [
-     null,
-     null,
      null,
      null,
      null,
@@ -95,13 +89,9 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« ses trois heures ne lui pèsent pas » — ne pas peser à qqn = not to feel like a burden; lui = à la retraitée (the retired woman)."
-     },
-     null,
-     null,
-     null
+     }
     ]
    }
   }

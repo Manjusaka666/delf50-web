@@ -12,18 +12,8 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« Supprimez la moitié des trains sur une ligne, et vous démontrerez ensuite qu’elle ne sert à rien » — un tollé = an outcry."
-     }
-    ]
-   },
-   "R43-2": {
-    "questions": [
-     null,
-     null,
-     {
-      "why": "« Chaque enfant peut recevoir de chacun de ses parents cent mille euros sans payer le moindre impôt » — One hundred thousand euros from each parent, tax-free, makes two hundred thousand: the answer adds two figures."
      }
     ]
    }
@@ -34,7 +24,6 @@
      {
       "why": "The opening, « les trains de nuit font leur retour dans plusieurs pays européens », and the whole discussion covers the reasons for their return, their limits and their prospects. B and C are only background."
      },
-     null,
      {
       "why": "« ils coûtaient cher et rapportaient peu… les compagnies aériennes à bas prix proposaient des billets imbattables ». A and C have no basis."
      },
@@ -66,7 +55,6 @@
       "why": "« huit jeunes sur dix déclarent aimer lire » — Ce n’est donc pas le goût qui manque, c’est le temps: the conclusion (donc) — what is lacking is not taste but time."
      },
      null,
-     null,
      {
       "why": "« la lecture d’un roman long exige une concentration particulière, et c’est cette capacité-là qui inquiète les enseignants ». Neither A nor B is mentioned."
      },
@@ -85,12 +73,7 @@
      },
      {
       "why": "« à condition qu’on garde au moins un point de vente physique par quartier ». B: the fines issue comes from the third person interviewed, and it isn’t a condition."
-     },
-     null,
-     null,
-     null,
-     null,
-     null
+     }
     ]
    }
   }

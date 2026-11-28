@@ -15,7 +15,6 @@
      {
       "why": "« j’ai été frappée par la curiosité des élèves… ils n’avaient aucun endroit où trouver des réponses à la fois fiables et accessibles ». She says « sans grande ambition », which rules out B; A contradicts the fact that her lab doesn’t recognise the work."
      },
-     null,
      {
       "why": "« une carrière de chercheur est évaluée presque uniquement sur les publications. Les heures passées à préparer une vidéo ne sont prises en compte nulle part ». B goes too far: officially, sharing knowledge is even part of their mission; C isn’t mentioned."
      },
@@ -27,8 +26,7 @@
      },
      {
       "why": "« ils créent des attentes qui seront forcément déçues. À long terme, c’est la confiance du public qui en souffre ». B and C are unfounded guesses."
-     },
-     null
+     }
     ]
    },
    "L31-2": {
@@ -39,7 +37,6 @@
      {
       "why": "The set phrase y perdre son latin = to be baffled, not to know what to make of it: one study says one thing today, another seems to say the opposite tomorrow. B and C are literal misreadings."
      },
-     null,
      {
       "why": "A 50% increase on “2 in 10,000” only makes “3 in 10,000”: « L’augmentation est réelle, mais elle est très loin de ce que le titre laisse imaginer ». A confuses relative and absolute risk; B: he doesn’t dismiss the study itself."
      },
@@ -51,8 +48,7 @@
      },
      {
       "why": "« le choix de la période de comparaison » — exacte et néanmoins trompeuse: accurate yet misleading — the previous year may have been unusually quiet."
-     },
-     null
+     }
     ]
    },
    "L31-3": {
@@ -65,12 +61,7 @@
      },
      {
       "why": "« les laboratoires de l’université seront exceptionnellement ouverts au public vendredi soir, jusqu’à minuit ». A and B attach details from the earlier news items to this one."
-     },
-     null,
-     null,
-     null,
-     null,
-     null
+     }
     ]
    }
   }

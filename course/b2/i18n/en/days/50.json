@@ -33,7 +33,6 @@
      {
       "why": "« attendre une heure devant la salle en écoutant les autres comparer leurs révisions, c’est le meilleur moyen de se déstabiliser ». Neither A nor C is the reason he gives."
      },
-     null,
      {
       "why": "« Se parler avec bienveillance… Remplacer ce discours par “j’ai travaillé, je vais faire de mon mieux” ». Neither A nor B is mentioned."
      },
@@ -53,7 +52,6 @@
      {
       "why": "« Au C1, il faut d’abord comprendre plusieurs documents… puis les synthétiser sans donner son avis, et seulement ensuite argumenter ». B was her initial misconception (« Je me trompais »); C contradicts what she later says about preparing for the oral."
      },
-     null,
      {
       "why": "« Ne pas s’arrêter !… Continuer à lire, à écouter la radio, même un peu chaque jour ». She says neither A nor C."
      },
@@ -62,9 +60,7 @@
      },
      {
       "why": "« les documents du C1 sont pleins de sous-entendus, d’ironie, d’allusions » — on ne saurait trop remercier… is antiphrasis: praise on the surface, criticism in fact; nothing in the grammar signals it."
-     },
-     null,
-     null
+     }
     ]
    },
    "L50-3": {
@@ -77,12 +73,7 @@
      },
      {
       "why": "« Des amis partout : au Québec, en Belgique, au Cameroun. C’est une langue qui voyage ». A contradicts « depuis l’enfance »; C isn’t mentioned."
-     },
-     null,
-     null,
-     null,
-     null,
-     null
+     }
     ]
    }
   }

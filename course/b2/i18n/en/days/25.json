@@ -13,10 +13,6 @@
      {
       "why": "« n’importe quel habitant âgé d’au moins seize ans » — n’importe quel = any (indefinite adjective)."
      },
-     {
-      "why": "« elles sont plus de quatre cents aujourd’hui » — 6 communes in 2014, more than 400 today: over sixty times as many, which needs a calculation."
-     },
-     null,
      null,
      null,
      {
@@ -50,7 +46,6 @@
      {
       "why": "« aucun citoyen ordinaire ne peut vérifier que sa voix a bien été comptée : il faut faire confiance à quelques techniciens », contrasting with the polling station where « chacun peut assister au dépouillement ». Neither A nor B is mentioned."
      },
-     null,
      {
       "why": "« une expérimentation, limitée à quelques communes volontaires, lors d’une élection locale ». A contradicts « ne proposons donc pas de tout changer d’un coup »; C is existing practice, not a new proposal."
      },
@@ -72,11 +67,9 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« Je ne décide jamais à la place de quelqu’un » — Aider, ce n’est pas se substituer: helping is not taking someone’s place; delicate cases go to a lawyer who holds a free surgery."
-     },
-     null
+     }
     ]
    },
    "L25-3": {
@@ -86,7 +79,6 @@
      {
       "why": "« tous prévoient davantage d’arbres et de places pour les vélos »; B is wrong: only « certains » reduce some parking spaces."
      },
-     null,
      null,
      null,
      null,

@@ -15,7 +15,6 @@
      {
       "why": "« On avait un vrai problème de recrutement… »: the aim was to attract job seekers. B: she says it was « pas du tout une démarche militante »; C: unions aren’t mentioned."
      },
-     null,
      {
       "why": "« Les journées sont donc plus longues… Certains l’ont d’ailleurs mal vécu ». A: hours weren’t cut and pay isn’t mentioned; B: the workshop still runs « cinq jours sur cinq »."
      },
@@ -36,7 +35,6 @@
      {
       "why": "The opening question is « ils ne dorment pas assez ; c’est vraiment le cas ? », followed by analysis of both biological and screen-related causes. B: mental health isn’t discussed; C only comes up as advice at the end."
      },
-     null,
      {
       "why": "« il faut nuancer… l’horloge interne se décale »: even without phones, going to sleep early is hard. A contradicts « En partie »; C: homework isn’t mentioned."
      },
@@ -63,26 +61,11 @@
      },
      {
       "why": "« Les abonnements en cours seront prolongés de la durée de la fermeture ». A and B are distractors."
-     },
-     null,
-     null,
-     null,
-     null,
-     null
-    ]
-   }
-  },
-  "reading": {
-   "R41-1": {
-    "questions": [
-     null,
-     null,
-     {
-      "why": "« la mortalité des arbres a augmenté de 80 % en dix ans » — An 80 % rise is about 1.8 times the earlier figure, nearly double: the answer needs a conversion."
      }
     ]
    }
-  }
+  },
+  "reading": {}
  },
  "vocab": {
   "V41-01": {

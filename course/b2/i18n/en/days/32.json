@@ -12,7 +12,6 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« Si elle a envie de parler, je regarde ma montre » — The implication: she chose this job to care for people, not to work against the clock."
      }
@@ -34,7 +33,6 @@
      {
       "why": "« Sur le coût, elle a raison, je le reconnais volontiers. Mais les aides ciblées ont un défaut… »: classic “concession + rebuttal”. B: he doesn’t question the data; C is the opposite of his conclusion."
      },
-     null,
      {
       "why": "« la solution serait peut-être de simplifier les démarches… ces jeunes ont aussi besoin de logements abordables, d’accompagnement, de formations ». Neither A nor C is what she proposes."
      },
@@ -54,7 +52,6 @@
      {
       "why": "« On aurait pu croire que ce serait un lieu réservé aux anciens. Eh bien, pas du tout », followed by a list: retirees, young remote workers, mothers. C goes too far: retirees are there too (« bien sûr »)."
      },
-     null,
      null,
      {
       "why": "« loue désormais le local pour un euro symbolique » — sceptique, pour ne pas dire réticente: an understated intensifier — “sceptical, not to say reluctant”."
@@ -78,12 +75,7 @@
      },
      {
       "why": "« ça me convient… Cela dit, si je trouvais un studio pas trop cher près de mon travail, je partirais demain »: cela dit introduces a concession. B has no basis; C contradicts the ending."
-     },
-     null,
-     null,
-     null,
-     null,
-     null
+     }
     ]
    }
   }

@@ -14,7 +14,6 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« Nous documentions de plus en plus précisément des soins que nous avions de moins en moins le loisir de donner » — insidieux = insidious."
      }
@@ -33,7 +32,6 @@
      {
       "why": "« Étant donné qu’ils ont commencé par des stages, des contrats courts… Ce n’est pas de l’infidélité, c’est de la prudence ». She explicitly rejects A; C: pay isn’t mentioned in the interview."
      },
-     null,
      {
       "why": "« l’entreprise ne vous rendra pas forcément ce que vous lui donnez »: effort isn’t necessarily rewarded. A is the opposite; C over-interprets the burn-out example."
      },
@@ -42,8 +40,7 @@
      },
      {
       "why": "« D’abord, d’arrêter de raisonner en termes de générations », because differences within one generation are greater. A goes against this logic; C isn’t mentioned."
-     },
-     null
+     }
     ]
    },
    "L36-2": {
@@ -54,7 +51,6 @@
      {
       "why": "« Ce n’est pas forcément qu’il a plus de travail… C’est souvent qu’il a peur d’être mal jugé ». B is rejected; C isn’t mentioned."
      },
-     null,
      {
       "why": "« Un salarié fatigué fait plus d’erreurs, il est moins créatif ». A isn’t mentioned; B is the opposite: it even spreads to colleagues."
      },
@@ -71,17 +67,12 @@
      {
       "why": "« se dit satisfait : aucun projet n’a pris de retard, et les absences pour maladie ont nettement reculé ». A contradicts « aucun projet n’a pris de retard »; C contradicts « satisfait »."
      },
-     null,
      {
       "why": "« c’est surtout la confiance accordée aux équipes qui a changé l’ambiance, bien plus que les horaires eux-mêmes » (a cleft sentence). Neither A nor B is mentioned."
      },
      {
       "why": "« sans décompte des heures, le risque serait de travailler davantage sans être mieux payé » (the conditional expresses a hypothetical risk). Neither B nor C is mentioned."
-     },
-     null,
-     null,
-     null,
-     null
+     }
     ]
    }
   }

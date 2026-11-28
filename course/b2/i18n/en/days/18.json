@@ -12,11 +12,9 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« On m’a demandé de confirmer cinq fois » — The pronoun y refers to à la résiliation: what she gave up was cancelling, said with self-mockery."
      },
-     null,
      null,
      null,
      {
@@ -30,7 +28,6 @@
      {
       "why": "« Le lendemain, la même entreprise m’adressait une enquête de satisfaction » — Je la lui ai retournée: la = l’enquête, lui = à l’entreprise (double object pronouns)."
      },
-     null,
      null,
      null,
      {
@@ -53,14 +50,12 @@
      },
      null,
      null,
-     null,
      {
       "why": "« des vis spéciales, des éléments collés au lieu d’être vissés, des pièces détachées introuvables » — on est encore loin du compte = we are still far from it; he grants progress but finds it insufficient."
      },
      {
       "why": "« il ne regarde plus les objets de la même façon. Avant d’acheter, il se demande… »; he says the repair café alone can’t change everything, and doesn’t talk about forcing manufacturers (C)."
-     },
-     null
+     }
     ]
    },
    "L18-2": {
@@ -73,12 +68,9 @@
      },
      null,
      null,
-     null,
      {
       "why": "« Je vous reproche de ne pas m’avoir dit la vérité » — Si l’on m’avait dit…, je me serais organisé…: a past unreal conditional; he separates the fault from the failure to tell the truth."
-     },
-     null,
-     null
+     }
     ]
    }
   }

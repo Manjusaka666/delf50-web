@@ -226,9 +226,6 @@
      null,
      null,
      null,
-     {
-      "why": "« Aucun pourboire n’est accepté » — A donation is possible, but to the association, not to the volunteer."
-     },
      null,
      {
       "why": "« Nous ne faisons pas le même métier » — The worry was at first (ont d’abord vu… avec inquiétude); she only asks associations to state that volunteers are untrained, not that they be trained."
@@ -241,9 +238,6 @@
       "why": "« les villes de 20 000 à 100 000 habitants attirent de nouveau » — One in three is the share of workers who say they want to move, not of residents who have left."
      },
      null,
-     {
-      "why": "« se rend au siège de son entreprise le vendredi » — He is still with the same company, working remotely four days a week."
-     },
      null,
      null,
      null,
@@ -261,13 +255,9 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« Elle est infirmière à l’hôpital, elle travaille surtout la nuit » — She works nights and sleeps in the morning, so Firmin puts off his drilling until onze heures."
-     },
-     null,
-     null
+     }
     ]
    },
    "L02-2": {
@@ -277,12 +267,9 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« chaque habitant recevra le sien » — le sien = their own portrait; Je ne les vends pas just before rules out a sale."
-     },
-     null
+     }
     ]
    },
    "L02-3": {
@@ -291,13 +278,9 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« il devient difficile de se loger » — House prices rose trente pour cent in three years, which hits local young people on lower incomes."
-     },
-     null,
-     null
+     }
     ]
    }
   }

@@ -13,8 +13,6 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« Si on part le vendredi matin, à neuf heures, le billet est à quatre-vingt-dix euros » — A compromise: cheaper than the 15 h train (90 against 134 euros) and faster than car-sharing."
      }
@@ -22,8 +20,6 @@
    },
    "L24-2": {
     "questions": [
-     null,
-     null,
      null,
      null,
      null,
@@ -42,12 +38,9 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« sont nombreux à abandonner au bout de deux ou trois ans » — En revanche sets the contrast: those commuting two days are happy, those commuting five often give up."
-     },
-     null
+     }
     ]
    }
   }

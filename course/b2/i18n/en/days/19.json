@@ -16,7 +16,6 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« Il se peut qu’ils aient raison, mais leurs calculs reposent sur des hypothèses très fragiles » — il se peut que + subjunctive = it may be that (uncertainty)."
      }
@@ -32,7 +31,6 @@
      {
       "why": "« une perte d’épaisseur de près de quatre mètres en une seule saison »; one metre was the figure for a “bad year” twenty years ago (A is a distractor)."
      },
-     null,
      {
       "why": "« il a peu neigé en hiver, et il semble que des poussières venues du Sahara aient noirci la neige » (il semble que + past subjunctive)."
      },
@@ -41,9 +39,7 @@
      },
      {
       "why": "« tout dépendra de nos émissions dans les prochaines décennies » — en revanche sets the contrast: low and mid-altitude glaciers will go “whatever we do”; the large ones depend on emissions. il se peut que + subjunctive expresses possibility."
-     },
-     null,
-     null
+     }
     ]
    },
    "L19-2": {
@@ -54,7 +50,6 @@
      {
       "why": "« Le climat, c’est une moyenne sur au moins trente ans »; A says the opposite."
      },
-     null,
      {
       "why": "« presque une année sur deux » + « ces gelées font davantage de dégâts » because plants start growing earlier."
      },
@@ -63,9 +58,7 @@
      },
      {
       "why": "« ils expriment plutôt une lassitude » — Il est probable que + indicative / Je doute que + subjunctive: the mood follows the degree of certainty."
-     },
-     null,
-     null
+     }
     ]
    },
    "L19-3": {
@@ -76,12 +69,7 @@
      },
      {
       "why": "« l’arrosage des jardins est interdit entre huit heures et vingt heures »; sport is only “advised against” in the hottest hours, not banned outright."
-     },
-     null,
-     null,
-     null,
-     null,
-     null
+     }
     ]
    }
   }

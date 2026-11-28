@@ -36,7 +36,6 @@
     "questions": [
      null,
      null,
-     null,
      {
       "why": "« Ils ne dépensent presque rien, mais ce sont eux qui usent la ville » — user = to wear out."
      },
@@ -51,9 +50,6 @@
      null,
      null,
      null,
-     {
-      "why": "« la protection de la planète n’arrive qu’en troisième position » — The first reason is the budget."
-     },
      null,
      null,
      {
@@ -65,8 +61,6 @@
   "listening": {
    "L06-1": {
     "questions": [
-     null,
-     null,
      null,
      null,
      null,
@@ -83,18 +77,13 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« Dormez, vous déciderez demain » — The café owner told him to sleep on it; the next day le soleil est revenu and he set off again."
-     },
-     null
+     }
     ]
    },
    "L06-3": {
     "questions": [
-     null,
-     null,
      null,
      null,
      null,

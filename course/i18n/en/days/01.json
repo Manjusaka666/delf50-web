@@ -222,13 +222,8 @@
      {
       "why": "« la première chose que je faisais, c’était de regarder mon téléphone » — Breakfast and the notebook are what she did after changing her habits."
      },
-     {
-      "why": "« c’est d’avoir enfin un moment où personne ne me demande rien » — She says explicitly that it was not the sport that helped her."
-     },
      null,
-     {
-      "why": "« réserver une heure le soir, sans écran, pour dessiner » — He gave up getting up early, not time for himself: he moved the hour to the evening."
-     },
+     null,
      null,
      {
       "why": "« Se lever plus tôt n’a de sens que si l’on se couche plus tôt » — ne… que si = only on condition that."
@@ -242,9 +237,7 @@
    "R01-3": {
     "questions": [
      null,
-     {
-      "why": "« il suffit de déposer un dossier à la mairie » — Going before a judge was the old procedure (Longtemps… il fallait)."
-     },
+     null,
      {
       "why": "« La plupart des gens demandent simplement à officialiser le prénom que tout le monde utilise déjà » — Ridiculous first names are exactly what she calls quite rare."
      },
@@ -253,7 +246,6 @@
      {
       "why": "« Le demandeur doit prouver que sa demande repose sur un « intérêt légitime » » — The procedure is free (La démarche est gratuite); letters from relatives are one kind of evidence, not a consent form."
      },
-     null,
      null,
      {
       "why": "« une partie de leur identité qu’ils ont le droit de choisir » — Treating the first name as a family tradition accepted without question was the view of the past (Autrefois…)."
@@ -266,14 +258,9 @@
     "questions": [
      null,
      null,
-     null,
      {
       "why": "« Presque tout le monde descend vers treize heures, parce que la réunion du matin finit tard » — descendre = to go down (to eat); the reason follows parce que."
-     },
-     null,
-     null,
-     null,
-     null
+     }
     ]
    },
    "L01-2": {
@@ -289,13 +276,9 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« Le problème, c’est l’habitude » — Jeanne explicitly rules out price: les prix ne sont pas le problème."
-     },
-     null,
-     null,
-     null
+     }
     ]
    }
   }

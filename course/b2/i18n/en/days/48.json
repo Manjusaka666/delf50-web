@@ -25,8 +25,6 @@
      null,
      null,
      null,
-     null,
-     null,
      {
       "why": "« c’est ce qui permet aux idées neuves d’avoir leur chance » — The quotation means new ideas prevail through generational turnover; the author extends it from science to society as a whole."
      }
@@ -45,7 +43,6 @@
      {
       "why": "« elle avait reçu cette information par courriel, un vendredi soir, sans personne pour la lui expliquer ». B is wrong: she hadn’t been diagnosed with the disease; C belongs to L48-3."
      },
-     null,
      {
       "why": "« avant de faire un test, on prend le temps d’en parler… on annonce le résultat en consultation, jamais seulement par écrit ». A is the exact opposite; C contradicts « Certaines personnes préfèrent ne pas savoir, et c’est leur droit »."
      },
@@ -69,9 +66,11 @@
      {
       "why": "« dans le consentement… voulaient retrouver des cousins, pas aider la police ». C is wrong: he says « Remarquablement bien »; A isn’t mentioned."
      },
-     null,
      {
       "why": "Because relatives share part of their DNA, you can still be traced if a cousin consents, which shows the “collective nature” of genetic information. A and B distort the sentence."
+     },
+     {
+      "why": "« Pour l’instant, très peu, parce que la loi française est beaucoup plus restrictive ». C is the opposite: some victims’ families « réclament qu’on autorise ces techniques »."
      }
     ]
    },
@@ -80,7 +79,6 @@
      {
       "why": "« un piratage avait touché les comptes de près de deux cent mille clients ». Neither A nor C is mentioned."
      },
-     null,
      {
       "why": "« n’ont pas eu accès aux séquences d’ADN brutes, mais aux noms, aux pourcentages d’origines et aux listes de parents ». B is explicitly denied; C is wrong: asking customers to change passwords is a remedial step."
      },
