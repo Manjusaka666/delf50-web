@@ -34,7 +34,7 @@ async function main() {
   // The app's modules, loaded as the browser loads them (fetch serves course/ from disk).
   globalThis.fetch = async (url) => ({ ok: true, status: 200, json: async () => readJson(String(url).replace(/^\//, '')) });
   const imp = (p) => import(path.join(ROOT, 'app', p));
-  const [course, state, progress, ui] = await Promise.all([imp('course.js'), imp('state.js'), imp('progress.js'), imp('ui.js')]);
+  const [course, state, progress, ui, answers] = await Promise.all([imp('course.js'), imp('state.js'), imp('progress.js'), imp('ui.js'), imp('answers.js')]);
 
   const order = ['light', 'standard', 'high'];
   // Plans in every interface language: a translation may relabel a day, never reshape it.
@@ -73,10 +73,10 @@ async function main() {
   check(empty.fraction === 0 && !empty.complete && progress.studyDays(S).length === 0, 'a new learner has no progress');
 
   const r = p16.reading[0];
-  check(state.answerChoice(S, 'reading', 16, state.recordId(r), 0, r.questions[0].answer) && !state.answerChoice(S, 'reading', 16, state.recordId(r), 0, 0)
-    && S.reading[state.answerKey(16, state.recordId(r), 0)] === r.questions[0].answer, 'a reading answer is final once given');
+  check(state.answerChoice(S, 'reading', 16, state.recordId(r), 0, answers.expected(r.questions[0])) && !state.answerChoice(S, 'reading', 16, state.recordId(r), 0, 0)
+    && answers.isCorrect(r.questions[0], S.reading[state.answerKey(16, state.recordId(r), 0)]), 'a reading answer is final once given');
   check(!progress.itemState(S, 'reading', 16, r).done && progress.dayProgress(S, d16, p16).modules.reading.done === 0, 'a partly answered text is not done');
-  { const old = state.blank(); r.questions.forEach((q, i) => state.answerChoice(old, 'reading', 16, r.id, i, q.answer));
+  { const old = state.blank(); r.questions.forEach((q, i) => state.answerChoice(old, 'reading', 16, r.id, i, answers.expected(q)));
     check(r.rev > 1 && state.recordId(r) !== r.id && progress.itemState(old, 'reading', 16, r).answered === 0, 'answers given to an earlier version of a text do not answer the text that replaced it'); }
 
   const wrong = q16[0], wi = (wrong.answer + 1) % wrong.options.length;
@@ -86,7 +86,7 @@ async function main() {
 
   // Do the whole standard plan.
   for (const q of q16.slice(1)) state.answerGrammar(S, 16, q, course.node(q.node), q.answer);
-  for (const m of ['reading', 'listening']) for (const it of p16[m]) it.questions.forEach((q, i) => state.answerChoice(S, m, 16, state.recordId(it), i, q.answer));
+  for (const m of ['reading', 'listening']) for (const it of p16[m]) it.questions.forEach((q, i) => state.answerChoice(S, m, 16, state.recordId(it), i, answers.expected(q)));
   for (const it of p16.writing) { state.saveDraft(S, 'writing', 16, state.recordId(it), 'Un brouillon.'); state.submitText(S, 'writing', 16, it, 'Je pense que l’air de la ville est pollué.'); }
   for (const it of p16.application) state.submitText(S, 'application', 16, it, 'Je voudrais savoir…');
   for (const it of p16.speaking) state.addSpeaking(S, 16, it, null, 95.4);
