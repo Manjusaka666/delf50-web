@@ -52,13 +52,14 @@
      {
       "why": "« Certaines… la messagerie est coupée après vingt heures… D’autres se limitent à une charte, c’est-à-dire à un texte de bonnes intentions ». A: company size isn’t compared; B isn’t the difference he mentions."
      },
+     null,
      {
       "why": "« Alors que la règle protège tout le monde, c’est l’exemple donné par les managers qui change tout ». B is precisely the part contrasted by alors que and judged insufficient; C isn’t mentioned."
      },
-     null,
      {
       "why": "« il ne s’agit pas d’interdire toute flexibilité… Il n’empêche que cette liberté doit rester un choix, pas une obligation déguisée ». A contradicts “not banning”; C contradicts “should be a choice”."
      },
+     null,
      {
       "why": "« aborder la question collectivement plutôt que seul face à son chef ». A isn’t mentioned; B reverses the logic of « Ce n’est pas un manque d’engagement »."
      }
@@ -75,14 +76,14 @@
      {
       "why": "« quand on paie en billets, on voit l’argent partir ». A and B aren’t in the recording."
      },
+     {
+      "why": "« Les clients qui avaient des billets ont pu faire leurs courses ; les autres sont repartis les mains vides ». A: the recording says « pendant plusieurs heures », not all day; C contradicts “the terminals were down”."
+     },
      null,
      null,
      null,
      {
       "why": "« elle fait aujourd’hui marche arrière » — faire marche arrière = to backtrack; the reason is fear of a general outage or a cyberattack."
-     },
-     {
-      "why": "« Les clients qui avaient des billets ont pu faire leurs courses ; les autres sont repartis les mains vides ». A: the recording says « pendant plusieurs heures », not all day; C contradicts “the terminals were down”."
      }
     ]
    },

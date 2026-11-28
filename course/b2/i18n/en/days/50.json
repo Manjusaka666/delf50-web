@@ -33,12 +33,12 @@
      {
       "why": "« attendre une heure devant la salle en écoutant les autres comparer leurs révisions, c’est le meilleur moyen de se déstabiliser ». Neither A nor C is the reason he gives."
      },
-     {
-      "why": "« On la laisse de côté et on y revient plus tard », and he criticises « s’acharner sur une difficulté » (ruling out B). C isn’t mentioned."
-     },
      null,
      {
       "why": "« Se parler avec bienveillance… Remplacer ce discours par “j’ai travaillé, je vais faire de mon mieux” ». Neither A nor B is mentioned."
+     },
+     {
+      "why": "« On la laisse de côté et on y revient plus tard », and he criticises « s’acharner sur une difficulté » (ruling out B). C isn’t mentioned."
      },
      {
       "why": "« On ne dirait jamais à un ami : tu es nul, tu vas rater » — A rhetorical question: if you would not say it to a friend, why say it to yourself? Replace it with « j’ai travaillé, je vais faire de mon mieux »."
@@ -53,16 +53,18 @@
      {
       "why": "« Au C1, il faut d’abord comprendre plusieurs documents… puis les synthétiser sans donner son avis, et seulement ensuite argumenter ». B was her initial misconception (« Je me trompais »); C contradicts what she later says about preparing for the oral."
      },
-     {
-      "why": "The previous sentence says her first syntheses « faisaient deux pages », so couper means cutting down, writing more concisely. A is a literal misreading; C contradicts her practice of reading whole dossiers."
-     },
      null,
      {
       "why": "« Ne pas s’arrêter !… Continuer à lire, à écouter la radio, même un peu chaque jour ». She says neither A nor C."
      },
      {
+      "why": "The previous sentence says her first syntheses « faisaient deux pages », so couper means cutting down, writing more concisely. A is a literal misreading; C contradicts her practice of reading whole dossiers."
+     },
+     {
       "why": "« les documents du C1 sont pleins de sous-entendus, d’ironie, d’allusions » — on ne saurait trop remercier… is antiphrasis: praise on the surface, criticism in fact; nothing in the grammar signals it."
-     }
+     },
+     null,
+     null
     ]
    },
    "L50-3": {
@@ -75,7 +77,12 @@
      },
      {
       "why": "« Des amis partout : au Québec, en Belgique, au Cameroun. C’est une langue qui voyage ». A contradicts « depuis l’enfance »; C isn’t mentioned."
-     }
+     },
+     null,
+     null,
+     null,
+     null,
+     null
     ]
    }
   }

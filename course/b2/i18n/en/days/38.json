@@ -35,10 +35,10 @@
      {
       "why": "« ils viennent rarement seuls. Pour eux, aller au cinéma, c’est une sortie ». B contradicts « rarement seuls »; A isn’t mentioned."
      },
-     null,
      {
       "why": "« Il faut des films grand public pour remplir la salle, sinon on ne tiendrait pas ». A contradicts « je tiens aussi à montrer des films d’auteur »; C isn’t mentioned."
      },
+     null,
      {
       "why": "« je ne la vois pas comme une menace mortelle… plus les gens passent de temps seuls devant leur écran, plus ils ont besoin de lieux où se retrouver ». She rejects A; B: she admits she “of course feels it”."
      },
@@ -75,12 +75,17 @@
      {
       "why": "« Nouveauté cette année : le prix du public sera décerné par les spectateurs eux-mêmes ». The ad doesn’t present A or C as new."
      },
+     null,
      {
       "why": "« il est gratuit pour les moins de dix-huit ans ». €4 is the price of a single screening, and €20 is the adult festival pass."
      },
      {
       "why": "« les séances du week-end affichent souvent complet : pensez à réserver vos places à l’avance ». Neither A nor B is mentioned."
-     }
+     },
+     null,
+     null,
+     null,
+     null
     ]
    }
   }

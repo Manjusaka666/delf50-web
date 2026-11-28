@@ -83,7 +83,15 @@
     "questions": [
      {
       "why": "« sur la même tournée depuis onze ans » — Two figures: dix-neuf ans as a postman, onze ans on the same round."
-     }
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
     ]
    },
    "L04-3": {
@@ -91,9 +99,14 @@
      null,
      null,
      null,
+     null,
      {
       "why": "« Le trajet coûte deux euros » — The passenger pays deux euros; the real cost is quatorze euros, douze of which the local authority covers."
-     }
+     },
+     null,
+     null,
+     null,
+     null
     ]
    }
   }

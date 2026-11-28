@@ -12,7 +12,13 @@
      null,
      {
       "why": "« puisque tu vas au travail en train et moi à vélo » — puisque introduces a reason both speakers already know."
-     }
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
     ]
    },
    "L16-2": {
@@ -22,9 +28,12 @@
      null,
      null,
      null,
+     null,
      {
       "why": "« c’est en général faute de pièces » — faute de + noun = for lack of (a negative cause)."
-     }
+     },
+     null,
+     null
     ]
    },
    "L16-3": {

@@ -71,19 +71,19 @@
       "why": "« À la une de la plupart des quotidiens régionaux ce matin : la hausse du prix des transports scolaires. » A and C are other news items."
      },
      {
-      "why": "« Les familles rurales en première ligne », with an interview with a rural mother. B is the angle of the paper in the east; C isn’t mentioned."
-     },
-     {
       "why": "« cette hausse intervient après deux années de gel des prix ». A and B don’t match the recording."
      },
+     {
+      "why": "« Les familles rurales en première ligne », with an interview with a rural mother. B is the angle of the paper in the east; C isn’t mentioned."
+     },
      null,
+     {
+      "why": "« avec ce titre plein de nostalgie ». Neither A nor C fits."
+     },
      null,
      null,
      {
       "why": "« on investit dans les métros des métropoles » — tribune = a signed opinion piece; n’engage que son auteure = it commits only its author."
-     },
-     {
-      "why": "« avec ce titre plein de nostalgie ». Neither A nor C fits."
      }
     ]
    },

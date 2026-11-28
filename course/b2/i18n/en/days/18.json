@@ -55,11 +55,12 @@
      null,
      null,
      {
-      "why": "« il ne regarde plus les objets de la même façon. Avant d’acheter, il se demande… »; he says the repair café alone can’t change everything, and doesn’t talk about forcing manufacturers (C)."
+      "why": "« des vis spéciales, des éléments collés au lieu d’être vissés, des pièces détachées introuvables » — on est encore loin du compte = we are still far from it; he grants progress but finds it insufficient."
      },
      {
-      "why": "« des vis spéciales, des éléments collés au lieu d’être vissés, des pièces détachées introuvables » — on est encore loin du compte = we are still far from it; he grants progress but finds it insufficient."
-     }
+      "why": "« il ne regarde plus les objets de la même façon. Avant d’acheter, il se demande… »; he says the repair café alone can’t change everything, and doesn’t talk about forcing manufacturers (C)."
+     },
+     null
     ]
    },
    "L18-2": {
@@ -73,10 +74,11 @@
      null,
      null,
      null,
-     null,
      {
       "why": "« Je vous reproche de ne pas m’avoir dit la vérité » — Si l’on m’avait dit…, je me serais organisé…: a past unreal conditional; he separates the fault from the failure to tell the truth."
-     }
+     },
+     null,
+     null
     ]
    }
   }

@@ -80,15 +80,15 @@
      {
       "why": "The recording says: « Les barrages construits sur les fleuves retiennent une partie du sable ». B and C aren’t mentioned."
      },
-     {
-      "why": "The recording says: « elles déplacent souvent l’érosion un peu plus loin ». A and B aren’t said in the recording."
-     },
+     null,
      {
       "why": "« l’érosion n’est pas considérée comme une catastrophe naturelle » — Unlike a flood, erosion is prévisible, so it is not compensated as a natural disaster."
      },
      null,
      null,
-     null,
+     {
+      "why": "The recording says: « elles déplacent souvent l’érosion un peu plus loin ». A and B aren’t said in the recording."
+     },
      {
       "why": "The recording says: « puisqu’il s’agit parfois de maisons où des familles vivent depuis des générations ». B and C have no basis."
      }

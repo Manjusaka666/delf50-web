@@ -55,12 +55,12 @@
      {
       "why": "The programme looks back at two climbers stranded overnight, with those involved and the rescuers drawing lessons. B: no new rules are mentioned; C: there is no mention of a shortage of rescuers."
      },
-     {
-      "why": "« On a continué un moment en pensant le retrouver… on aurait dû rebrousser chemin tout de suite ». A: the rescuers praise them for the right reflex of calling for help; C isn’t mentioned."
-     },
      null,
      {
       "why": "« Oui, mais un peu vite… On a pris l’avertissement à la légère ». A contradicts « Oui »; B: the forecast « annonçait des orages en fin de journée »."
+     },
+     {
+      "why": "« On a continué un moment en pensant le retrouver… on aurait dû rebrousser chemin tout de suite ». A: the rescuers praise them for the right reflex of calling for help; C isn’t mentioned."
      },
      {
       "why": "« Ces deux jeunes ont eu le bon réflexe d’appeler et de rester sur place ». B and C are exactly what he points out, with si + plus-que-parfait, as things they should have done but didn’t."
@@ -84,17 +84,17 @@
      {
       "why": "« la vidéo a été tournée il y a trois ans… dans une autre ville, à l’étranger ». A is the opposite; C contradicts « aucune plainte n’a été déposée »."
      },
+     null,
      {
       "why": "« il coche toutes les cases : une image spectaculaire, un lieu qu’on connaît, et une petite peur ». A and B don’t match the recording."
      },
-     null,
+     {
+      "why": "« c’est justement le conditionnel qui donne l’impression qu’on reste prudent… alors qu’on diffuse une rumeur infondée ». A and C are the opposite of this criticism."
+     },
      null,
      null,
      {
       "why": "« en l’absence de preuve, affirmer l’une ou l’autre hypothèse reviendrait à faire exactement ce que je dénonce » — se garder de + infinitive = to refrain from; trancher = to settle the matter. The conditionals (aurait pu, se pourrait) mark what is unconfirmed."
-     },
-     {
-      "why": "« c’est justement le conditionnel qui donne l’impression qu’on reste prudent… alors qu’on diffuse une rumeur infondée ». A and C are the opposite of this criticism."
      }
     ]
    },
@@ -113,7 +113,9 @@
      null,
      {
       "why": "« Le niveau rouge n’est pas exclu en cours de soirée » — n’est pas exclu = is not ruled out; red is the level above orange."
-     }
+     },
+     null,
+     null
     ]
    }
   }

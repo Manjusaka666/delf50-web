@@ -15,20 +15,20 @@
      {
       "why": "« un cirque itinérant ne peut pas offrir à un animal sauvage des conditions de vie dignes », with examples such as cramped cages and stereotypical behaviour. B and C aren’t mentioned."
      },
-     null,
      {
       "why": "« Ce qui me gêne, c’est qu’on mette tout le monde dans le même sac » (lumping everyone together): he admits some circuses mistreat animals but says his own are well cared for. A and C aren’t what he complains about."
      },
      {
       "why": "« Des refuges spécialisés existent déjà… nous demandons une transition sur plusieurs années », and she says « j’entends l’argument » (ruling out A). B is exactly what Messin points out is unworkable."
      },
+     null,
      {
       "why": "« Sans lui, certains petits cirques devront fermer ». Neither B nor C is mentioned."
      },
-     null,
      {
       "why": "Messin says « Si on nous accompagne, je suis prêt à tenter l’aventure », and Bertin replies « Nous sommes plus proches qu’on ne le croit ». A contradicts both sides’ concessions; C: she only argues for a gradual transition."
-     }
+     },
+     null
     ]
    },
    "L47-2": {
@@ -39,10 +39,10 @@
      {
       "why": "He admits “absolute zero” is impossible but immediately gives figures showing a big reduction (« moins d’un petit seau par semaine »). It isn’t a failure (A), and he does answer the question (B)."
      },
-     null,
      {
       "why": "« Moins de références, c’est moins de produits qui dorment au frigo ». B isn’t mentioned; C is the opposite: he says prep needs « plus de main-d’œuvre »."
      },
+     null,
      {
       "why": "« nos coûts d’approvisionnement ont baissé d’environ quinze pour cent. En revanche, il faut plus de main-d’œuvre ». A contradicts « rentable »; C contradicts the 15% figure."
      },
@@ -51,7 +51,8 @@
      },
      {
       "why": "« c’était, à ses yeux, renier son métier » — renier son métier = to betray one’s craft; those who stayed came to see it as un défi."
-     }
+     },
+     null
     ]
    },
    "L47-3": {
@@ -64,7 +65,12 @@
      },
      {
       "why": "« Vingt centimes de plus par bouteille, pour une famille qui en achète beaucoup, ça finit par compter ». A is the third interviewee’s concern; B isn’t mentioned."
-     }
+     },
+     null,
+     null,
+     null,
+     null,
+     null
     ]
    }
   }

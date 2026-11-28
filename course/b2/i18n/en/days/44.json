@@ -31,10 +31,10 @@
      {
       "why": "« Ces voitures prennent plus de place, abîment davantage la chaussée et… elles sont plus dangereuses pour les piétons et les cyclistes ». A isn’t mentioned; C: although it only targets visitors from outside, she doesn’t give that as a reason."
      },
-     null,
      {
       "why": "« Pensez aux familles nombreuses, aux artisans, aux personnes handicapées… cette mesure est une punition ». He explicitly denies A; B: he only says “weight doesn’t tell the whole story”, not that heavy cars pollute less."
      },
+     null,
      {
       "why": "« Nous avons étudié les véhicules concernés… ceux-là bénéficient d’ailleurs d’une exemption ». B and C are the opposite of her position."
      },
@@ -43,7 +43,8 @@
      },
      {
       "why": "« je reconnais que la concertation aurait pu être meilleure ». A and B: she sticks to her views throughout."
-     }
+     },
+     null
     ]
    },
    "L44-2": {

@@ -39,10 +39,11 @@
      {
       "why": "« la plupart devraient disparaître d’ici à la fin du siècle, quoi que l’on fasse »; “cutting emissions may save some of them” refers to the large glaciers (B is a distractor)."
      },
-     null,
      {
       "why": "« tout dépendra de nos émissions dans les prochaines décennies » — en revanche sets the contrast: low and mid-altitude glaciers will go “whatever we do”; the large ones depend on emissions. il se peut que + subjunctive expresses possibility."
-     }
+     },
+     null,
+     null
     ]
    },
    "L19-2": {
@@ -62,7 +63,9 @@
      },
      {
       "why": "« ils expriment plutôt une lassitude » — Il est probable que + indicative / Je doute que + subjunctive: the mood follows the degree of certainty."
-     }
+     },
+     null,
+     null
     ]
    },
    "L19-3": {
@@ -73,7 +76,12 @@
      },
      {
       "why": "« l’arrosage des jardins est interdit entre huit heures et vingt heures »; sport is only “advised against” in the hottest hours, not banned outright."
-     }
+     },
+     null,
+     null,
+     null,
+     null,
+     null
     ]
    }
   }

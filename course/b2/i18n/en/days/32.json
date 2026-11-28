@@ -55,10 +55,10 @@
       "why": "« On aurait pu croire que ce serait un lieu réservé aux anciens. Eh bien, pas du tout », followed by a list: retirees, young remote workers, mothers. C goes too far: retirees are there too (« bien sûr »)."
      },
      null,
+     null,
      {
       "why": "« loue désormais le local pour un euro symbolique » — sceptique, pour ne pas dire réticente: an understated intensifier — “sceptical, not to say reluctant”."
      },
-     null,
      null,
      {
       "why": "« Les bénévoles s’épuisent un peu, et les recettes suffisent tout juste à payer le chauffage ». Neither A nor B is mentioned."
@@ -78,7 +78,12 @@
      },
      {
       "why": "« ça me convient… Cela dit, si je trouvais un studio pas trop cher près de mon travail, je partirais demain »: cela dit introduces a concession. B has no basis; C contradicts the ending."
-     }
+     },
+     null,
+     null,
+     null,
+     null,
+     null
     ]
    }
   }

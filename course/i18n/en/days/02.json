@@ -265,7 +265,9 @@
      null,
      {
       "why": "« Elle est infirmière à l’hôpital, elle travaille surtout la nuit » — She works nights and sleeps in the morning, so Firmin puts off his drilling until onze heures."
-     }
+     },
+     null,
+     null
     ]
    },
    "L02-2": {
@@ -279,7 +281,8 @@
      null,
      {
       "why": "« chaque habitant recevra le sien » — le sien = their own portrait; Je ne les vends pas just before rules out a sale."
-     }
+     },
+     null
     ]
    },
    "L02-3": {
@@ -289,9 +292,12 @@
      null,
      null,
      null,
+     null,
      {
       "why": "« il devient difficile de se loger » — House prices rose trente pour cent in three years, which hits local young people on lower incomes."
-     }
+     },
+     null,
+     null
     ]
    }
   }

@@ -34,10 +34,10 @@
      {
       "why": "The opening, « les trains de nuit font leur retour dans plusieurs pays européens », and the whole discussion covers the reasons for their return, their limits and their prospects. B and C are only background."
      },
+     null,
      {
       "why": "« ils coûtaient cher et rapportaient peu… les compagnies aériennes à bas prix proposaient des billets imbattables ». A and C have no basis."
      },
-     null,
      {
       "why": "« La volonté politique, essentiellement. Plusieurs États ont décidé de subventionner ces liaisons ». A: he says prices « restent souvent élevés »; B: it’s state subsidies, not private investment."
      },
@@ -61,10 +61,10 @@
      {
       "why": "« le nombre de romans lus par plaisir, il baisse… surtout à partir du lycée ». B: she says teenagers « lisent énormément de bandes dessinées »; C isn’t mentioned."
      },
+     null,
      {
       "why": "« huit jeunes sur dix déclarent aimer lire » — Ce n’est donc pas le goût qui manque, c’est le temps: the conclusion (donc) — what is lacking is not taste but time."
      },
-     null,
      null,
      null,
      {
@@ -85,7 +85,12 @@
      },
      {
       "why": "« à condition qu’on garde au moins un point de vente physique par quartier ». B: the fines issue comes from the third person interviewed, and it isn’t a condition."
-     }
+     },
+     null,
+     null,
+     null,
+     null,
+     null
     ]
    }
   }

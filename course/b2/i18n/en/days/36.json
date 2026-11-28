@@ -27,13 +27,13 @@
      {
       "why": "The host opens with the stereotype « les jeunes n’auraient plus le goût de l’effort », and the whole discussion is about young people’s relationship with work. B and C are details mentioned in passing."
      },
-     null,
      {
       "why": "« c’est plutôt un lieu où l’on doit pouvoir apprendre et se sentir utile ». A contradicts « pas moins attachés au travail »; B describes their parents’ generation (« d’abord une source de sécurité »)."
      },
      {
       "why": "« Étant donné qu’ils ont commencé par des stages, des contrats courts… Ce n’est pas de l’infidélité, c’est de la prudence ». She explicitly rejects A; C: pay isn’t mentioned in the interview."
      },
+     null,
      {
       "why": "« l’entreprise ne vous rendra pas forcément ce que vous lui donnez »: effort isn’t necessarily rewarded. A is the opposite; C over-interprets the burn-out example."
      },
@@ -42,7 +42,8 @@
      },
      {
       "why": "« D’abord, d’arrêter de raisonner en termes de générations », because differences within one generation are greater. A goes against this logic; C isn’t mentioned."
-     }
+     },
+     null
     ]
    },
    "L36-2": {
@@ -70,13 +71,17 @@
      {
       "why": "« se dit satisfait : aucun projet n’a pris de retard, et les absences pour maladie ont nettement reculé ». A contradicts « aucun projet n’a pris de retard »; C contradicts « satisfait »."
      },
+     null,
      {
       "why": "« c’est surtout la confiance accordée aux équipes qui a changé l’ambiance, bien plus que les horaires eux-mêmes » (a cleft sentence). Neither A nor B is mentioned."
      },
-     null,
      {
       "why": "« sans décompte des heures, le risque serait de travailler davantage sans être mieux payé » (the conditional expresses a hypothetical risk). Neither B nor C is mentioned."
-     }
+     },
+     null,
+     null,
+     null,
+     null
     ]
    }
   }

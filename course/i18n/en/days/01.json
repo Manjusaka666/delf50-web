@@ -269,7 +269,11 @@
      null,
      {
       "why": "« Presque tout le monde descend vers treize heures, parce que la réunion du matin finit tard » — descendre = to go down (to eat); the reason follows parce que."
-     }
+     },
+     null,
+     null,
+     null,
+     null
     ]
    },
    "L01-2": {
@@ -288,7 +292,10 @@
      null,
      {
       "why": "« Le problème, c’est l’habitude » — Jeanne explicitly rules out price: les prix ne sont pas le problème."
-     }
+     },
+     null,
+     null,
+     null
     ]
    }
   }
